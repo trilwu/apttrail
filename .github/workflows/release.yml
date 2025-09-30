@@ -1,0 +1,115 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag name for release'
+        required: true
+        default: 'v1.0.0'
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Clone Maltrail repository
+      run: |
+        mkdir -p data
+        git clone https://github.com/stamparm/maltrail.git data/maltrail
+
+    - name: Generate all feed formats
+      run: |
+        python apt_threat_feed_collector.py --output-dir release-feeds
+
+    - name: Create release archive
+      run: |
+        # Create archives for different formats
+        cd release-feeds
+        tar -czf ../apttrail-feeds-json.tar.gz apttrail_threat_feed.json
+        tar -czf ../apttrail-feeds-csv.tar.gz apttrail_threat_feed.csv apttrail_threat_feed_metadata.csv
+        if [ -f apttrail_threat_feed_stix.json ]; then
+          tar -czf ../apttrail-feeds-stix.tar.gz apttrail_threat_feed_stix.json
+        fi
+        tar -czf ../apttrail-feeds-all.tar.gz *
+        cd ..
+
+    - name: Generate release notes
+      run: |
+        echo "# APT Threat Feeds Release" > release_notes.md
+        echo "" >> release_notes.md
+        echo "## 📊 Statistics" >> release_notes.md
+
+        python3 -c "import json
+          with open('release-feeds/apttrail_threat_feed.json') as f:
+              data = json.load(f)
+              print(f\"- **APT Groups:** {data['total_apt_groups']}\")
+              total = 0
+              types = {}
+              for group in data['apt_groups'].values():
+                  total += group['statistics']['total']
+                  for itype, count in group['statistics']['by_type'].items():
+                      types[itype] = types.get(itype, 0) + count
+              print(f'- **Total Indicators:** {total:,}')
+              print()
+              print('### Indicators by Type:')
+              for itype, count in sorted(types.items()):
+                  print(f'- {itype}: {count:,}')
+          " >> release_notes.md
+
+        echo "" >> release_notes.md
+        echo "## 📦 Download Options" >> release_notes.md
+        echo "" >> release_notes.md
+        echo "- **apttrail-feeds-all.tar.gz** - Complete package with all formats" >> release_notes.md
+        echo "- **apttrail-feeds-json.tar.gz** - JSON format only (smallest)" >> release_notes.md
+        echo "- **apttrail-feeds-csv.tar.gz** - CSV format with metadata" >> release_notes.md
+        echo "- **apttrail-feeds-stix.tar.gz** - STIX 2.1 format" >> release_notes.md
+        echo "" >> release_notes.md
+        echo "## 🔄 What's New" >> release_notes.md
+        echo "" >> release_notes.md
+        echo "- Updated threat indicators from latest Maltrail data" >> release_notes.md
+        echo "- Optimized Suricata rules (70% size reduction)" >> release_notes.md
+        echo "- Improved indicator classification" >> release_notes.md
+        echo "" >> release_notes.md
+        echo "## 📝 Usage" >> release_notes.md
+        echo "" >> release_notes.md
+        echo '```bash' >> release_notes.md
+        echo '# Download and extract' >> release_notes.md
+        echo 'curl -LO https://github.com/trilwu/apttrail/releases/latest/download/apttrail-feeds-all.tar.gz' >> release_notes.md
+        echo 'tar -xzf apttrail-feeds-all.tar.gz' >> release_notes.md
+        echo '```' >> release_notes.md
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ github.event.inputs.tag_name || github.ref }}
+        name: APT Threat Feeds ${{ github.event.inputs.tag_name || github.ref }}
+        body_path: release_notes.md
+        draft: false
+        prerelease: false
+        files: |
+          apttrail-feeds-all.tar.gz
+          apttrail-feeds-json.tar.gz
+          apttrail-feeds-csv.tar.gz
+          apttrail-feeds-stix.tar.gz
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

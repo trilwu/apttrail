@@ -1,0 +1,112 @@
+name: Collect APT Threat Feeds
+
+on:
+  schedule:
+    # Run every 1 hour
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      update_maltrail:
+        description: 'Update Maltrail repository'
+        required: false
+        default: true
+        type: boolean
+  push:
+    branches:
+      - main
+    paths:
+      - 'apt_threat_feed_collector.py'
+      - '.github/workflows/collect-apt-feeds.yml'
+
+jobs:
+  collect-and-update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Clone/Update Maltrail repository
+      run: |
+        mkdir -p data
+        if [ -d "data/maltrail" ]; then
+          cd data/maltrail
+          git pull origin master
+          cd ../..
+        else
+          git clone https://github.com/stamparm/maltrail.git data/maltrail
+        fi
+
+    - name: Collect APT indicators
+      run: |
+        python apt_threat_feed_collector.py --output-dir feeds
+
+    - name: Generate collection report
+      run: |
+        echo "## APT Threat Feed Collection Report" > collection_report.md
+        echo "**Collection Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> collection_report.md
+        echo "" >> collection_report.md
+
+        if [ -f "feeds/apttrail_threat_feed.json" ]; then
+          echo "### Statistics" >> collection_report.md
+          python3 -c "import json
+            with open('feeds/apttrail_threat_feed.json') as f:
+                data = json.load(f)
+                print(f\"- **Total APT Groups:** {data['total_apt_groups']}\")
+                total = 0
+                for group in data['apt_groups'].values():
+                    total += group['statistics']['total']
+                print(f'- **Total Indicators:** {total:,}')
+                groups = [(name, group['statistics']['total']) for name, group in data['apt_groups'].items()]
+                groups.sort(key=lambda x: x[1], reverse=True)
+                print('\n### Top 10 APT Groups by Indicator Count')
+                for name, count in groups[:10]:
+                    print(f'1. **{name}**: {count:,} indicators')
+            " >> collection_report.md
+        fi
+
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+        # Check if there are changes
+        git add feeds/
+        git add collection_report.md
+
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🔄 Update APT threat feeds - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+        fi
+
+    - name: Create release (weekly)
+      if: github.event_name == 'schedule' && contains('0 0 * * 0', github.event.schedule)
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v${{ github.run_number }}
+        name: APT Threat Feeds Release ${{ github.run_number }}
+        body_path: collection_report.md
+        files: |
+          feeds/apttrail_threat_feed.json
+          feeds/apttrail_threat_feed.csv
+          feeds/apttrail_threat_feed_metadata.csv
+          feeds/apttrail_threat_feed.rules
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
