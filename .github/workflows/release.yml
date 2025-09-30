@@ -59,22 +59,7 @@ jobs:
         echo "" >> release_notes.md
         echo "## 📊 Statistics" >> release_notes.md
 
-        python3 -c "import json
-          with open('release-feeds/apttrail_threat_feed.json') as f:
-              data = json.load(f)
-              print(f\"- **APT Groups:** {data['total_apt_groups']}\")
-              total = 0
-              types = {}
-              for group in data['apt_groups'].values():
-                  total += group['statistics']['total']
-                  for itype, count in group['statistics']['by_type'].items():
-                      types[itype] = types.get(itype, 0) + count
-              print(f'- **Total Indicators:** {total:,}')
-              print()
-              print('### Indicators by Type:')
-              for itype, count in sorted(types.items()):
-                  print(f'- {itype}: {count:,}')
-          " >> release_notes.md
+        python3 .github/scripts/generate_release_stats.py >> release_notes.md
 
         echo "" >> release_notes.md
         echo "## 📦 Download Options" >> release_notes.md

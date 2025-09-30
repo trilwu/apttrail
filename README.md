@@ -21,7 +21,7 @@ Download and deploy 117,000 optimized detection rules:
 
 ```bash
 # Download rules
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/main/feeds/apttrail_threat_feed.rules
+curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.rules
 
 # Deploy to Suricata
 sudo cp apttrail_threat_feed.rules /etc/suricata/rules/
@@ -47,13 +47,13 @@ Download feeds from the [feeds directory](feeds/):
 
 ```bash
 # JSON feed (120K+ indicators)
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/main/feeds/apttrail_threat_feed.json
+curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.json
 
 # CSV feed (compact format)
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/main/feeds/apttrail_threat_feed.csv
+curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.csv
 
 # STIX 2.1 format
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/main/feeds/apttrail_threat_feed_stix.json
+curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed_stix.json
 ```
 
 ### Run Your Own Instance

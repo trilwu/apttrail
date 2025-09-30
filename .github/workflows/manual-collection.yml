@@ -14,6 +14,7 @@ on:
           - csv
           - stix
           - suricata
+          - yara
       update_maltrail:
         description: 'Update Maltrail repository'
         required: true
@@ -52,7 +53,7 @@ jobs:
         mkdir -p data
         if [ -d "data/maltrail" ]; then
           cd data/maltrail
-          git pull origin master
+          git pull origin main
           cd ../..
         else
           git clone https://github.com/stamparm/maltrail.git data/maltrail
@@ -78,6 +79,9 @@ jobs:
             ;;
           suricata)
             FLAGS="$FLAGS --suricata-only"
+            ;;
+          yara)
+            FLAGS="$FLAGS --yara-only"
             ;;
         esac
 

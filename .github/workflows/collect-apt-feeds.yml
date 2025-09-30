@@ -15,7 +15,7 @@ on:
     branches:
       - main
     paths:
-      - 'apt_threat_feed_collector.py'
+      - 'apttrail_threat_feed_collector.py'
       - '.github/workflows/collect-apt-feeds.yml'
 
 jobs:
@@ -46,7 +46,7 @@ jobs:
         mkdir -p data
         if [ -d "data/maltrail" ]; then
           cd data/maltrail
-          git pull origin master
+          git pull origin main
           cd ../..
         else
           git clone https://github.com/stamparm/maltrail.git data/maltrail
@@ -54,7 +54,7 @@ jobs:
 
     - name: Collect APT indicators
       run: |
-        python apt_threat_feed_collector.py --output-dir feeds
+        python apttrail_threat_feed_collector.py --output-dir feeds
 
     - name: Generate collection report
       run: |
@@ -64,20 +64,7 @@ jobs:
 
         if [ -f "feeds/apttrail_threat_feed.json" ]; then
           echo "### Statistics" >> collection_report.md
-          python3 -c "import json
-            with open('feeds/apttrail_threat_feed.json') as f:
-                data = json.load(f)
-                print(f\"- **Total APT Groups:** {data['total_apt_groups']}\")
-                total = 0
-                for group in data['apt_groups'].values():
-                    total += group['statistics']['total']
-                print(f'- **Total Indicators:** {total:,}')
-                groups = [(name, group['statistics']['total']) for name, group in data['apt_groups'].items()]
-                groups.sort(key=lambda x: x[1], reverse=True)
-                print('\n### Top 10 APT Groups by Indicator Count')
-                for name, count in groups[:10]:
-                    print(f'1. **{name}**: {count:,} indicators')
-            " >> collection_report.md
+          python3 .github/scripts/generate_collection_report.py >> collection_report.md
         fi
 
     - name: Commit and push if changed
@@ -85,14 +72,14 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # Check if there are changes
+        # Check if there are changes in feeds only
         git add feeds/
-        git add collection_report.md
 
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "🔄 Update APT threat feeds - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          # Use collection report as commit message body
+          git commit -F collection_report.md
           git push
         fi
 
