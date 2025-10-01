@@ -263,13 +263,21 @@ class APTThreatFeedCollector:
             indicators_with_timestamps = {}
             for indicator_type in sorted(indicators.keys()):
                 if timestamps:
-                    # Include timestamps
+                    # Group indicators by first_seen date to reduce duplicates
+                    grouped_by_date = {}
+                    for indicator in sorted(indicators[indicator_type]):
+                        first_seen = timestamps.get(indicator, 'unknown')
+                        if first_seen not in grouped_by_date:
+                            grouped_by_date[first_seen] = []
+                        grouped_by_date[first_seen].append(indicator)
+
+                    # Convert to compact format: {date: [indicators]}
                     indicators_with_timestamps[indicator_type] = [
                         {
-                            'value': indicator,
-                            'first_seen': timestamps.get(indicator, 'unknown')
+                            'first_seen': date,
+                            'indicators': values
                         }
-                        for indicator in sorted(indicators[indicator_type])
+                        for date, values in sorted(grouped_by_date.items())
                     ]
                 else:
                     # No timestamps collected
