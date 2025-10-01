@@ -46,7 +46,7 @@ jobs:
         mkdir -p data
         if [ -d "data/maltrail" ]; then
           cd data/maltrail
-          git pull origin main
+          git pull origin master
           cd ../..
         else
           git clone https://github.com/stamparm/maltrail.git data/maltrail
