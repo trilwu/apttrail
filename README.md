@@ -71,13 +71,15 @@ Customize the schedule in [.github/workflows/collect-apt-feeds.yml](.github/work
 - Bidirectional blocking with rate limiting
 - 70% smaller than unoptimized rules
 
-**JSON** (`apttrail_threat_feed.json`) - Full structured data with timestamps
+**JSON** (`apttrail_threat_feed.json`) - Full structured data with timestamps and references
 - Indicators grouped by first_seen date (reduces redundancy)
-- Format: `{"first_seen": "2024-01-15T10:30:00", "indicators": ["evil.com", "bad.com"]}`
+- Format: `{"first_seen": "2024-01-15T10:30:00", "indicators": ["evil.com"], "references": ["https://..."]}`
+- References extracted from Maltrail commit messages
 - Includes APT group metadata and statistics
 
-**CSV** (`apttrail_threat_feed.csv`) - Compact format with timestamps
-- Format: `apt_group,indicator_type,indicator,first_seen`
+**CSV** (`apttrail_threat_feed.csv`) - Compact format with timestamps and references
+- Format: `apt_group,indicator_type,indicator,first_seen,references`
+- References from commit messages included for provenance tracking
 - Easy to import into spreadsheets and SIEMs
 
 **STIX 2.1** (`apttrail_threat_feed_stix.json`) - Industry-standard threat intel format

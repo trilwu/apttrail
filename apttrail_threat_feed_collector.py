@@ -35,6 +35,7 @@ class APTThreatFeedCollector:
         self.indicators = defaultdict(lambda: defaultdict(set))
         self.metadata = defaultdict(dict)
         self.indicator_timestamps = defaultdict(dict)  # Store timestamps for each indicator
+        self.commit_references = {}  # Store reference URLs from commit messages
 
     def update_repository(self) -> bool:
         """Update the Maltrail repository via git pull"""
@@ -62,17 +63,18 @@ class APTThreatFeedCollector:
             print(f"Error updating repository: {e}")
             return False
 
-    def get_file_timestamps_bulk(self, filepath: Path) -> Dict[str, str]:
+    def get_file_timestamps_bulk(self, filepath: Path) -> Dict[str, Dict[str, str]]:
         """
-        Get timestamps for all lines in a file using git blame (much faster than individual git log calls)
+        Get timestamps and commit info for all lines in a file using git blame
 
         Args:
             filepath: Path to the APT file
 
         Returns:
-            Dictionary mapping line content to ISO format timestamp
+            Dictionary mapping line content to {timestamp, commit_hash}
         """
         timestamps = {}
+        commit_cache = {}  # Cache commit messages to avoid repeated git log calls
 
         try:
             # Use git blame to get commit info for each line in one command
@@ -92,21 +94,62 @@ class APTThreatFeedCollector:
 
             for line in result.stdout.split('\n'):
                 # Parse git blame porcelain format
-                if line.startswith('author-time '):
+                if line and not line.startswith('\t'):
+                    parts = line.split(' ', 1)
+                    if len(parts) == 2 and len(parts[0]) == 40:  # SHA1 hash
+                        current_commit = parts[0]
+                elif line.startswith('author-time '):
                     # Unix timestamp
                     unix_time = int(line.split()[1])
                     current_timestamp = datetime.fromtimestamp(unix_time).isoformat()
                 elif line.startswith('\t'):
                     # This is the actual line content
                     content = line[1:].strip()  # Remove leading tab
-                    if content and not content.startswith('#') and current_timestamp:
-                        # Store timestamp for this indicator
-                        timestamps[content] = current_timestamp
+                    if content and not content.startswith('#') and current_timestamp and current_commit:
+                        # Store timestamp and commit for this indicator
+                        timestamps[content] = {
+                            'first_seen': current_timestamp,
+                            'commit': current_commit
+                        }
 
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired, Exception) as e:
             print(f"Warning: Could not get timestamps for {filepath.name}: {e}")
 
         return timestamps
+
+    def get_commit_references(self, commit_hashes: set) -> Dict[str, List[str]]:
+        """
+        Extract reference URLs from commit messages
+
+        Args:
+            commit_hashes: Set of commit hashes to lookup
+
+        Returns:
+            Dictionary mapping commit hash to list of reference URLs
+        """
+        commit_refs = {}
+
+        try:
+            for commit_hash in commit_hashes:
+                result = subprocess.run(
+                    ["git", "log", "-1", "--format=%B", commit_hash],
+                    cwd=self.maltrail_path,
+                    capture_output=True,
+                    text=True,
+                    timeout=5
+                )
+
+                if result.returncode == 0:
+                    # Extract URLs from commit message
+                    import re
+                    urls = re.findall(r'https?://[^\s\)]+', result.stdout)
+                    if urls:
+                        commit_refs[commit_hash] = urls
+
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, Exception):
+            pass
+
+        return commit_refs
 
     def classify_indicator(self, indicator: str) -> str:
         """
@@ -247,6 +290,18 @@ class APTThreatFeedCollector:
             if total_indicators > 0:
                 print(f"  {apt_name}: {total_indicators} indicators collected")
 
+        # Collect commit references if timestamps were collected
+        if collect_timestamps:
+            print("Extracting reference URLs from commit messages...")
+            all_commits = set()
+            for timestamps in self.indicator_timestamps.values():
+                for ts_info in timestamps.values():
+                    if isinstance(ts_info, dict) and 'commit' in ts_info:
+                        all_commits.add(ts_info['commit'])
+
+            self.commit_references = self.get_commit_references(all_commits)
+            print(f"  Found references in {len(self.commit_references)} commits")
+
     def export_json(self, output_file: str = "apttrail_threat_feed.json") -> None:
         """Export indicators to JSON format"""
         output = {
@@ -263,22 +318,35 @@ class APTThreatFeedCollector:
             indicators_with_timestamps = {}
             for indicator_type in sorted(indicators.keys()):
                 if timestamps:
-                    # Group indicators by first_seen date to reduce duplicates
-                    grouped_by_date = {}
+                    # Group indicators by first_seen date and commit to reduce duplicates
+                    grouped_by_date_commit = {}
                     for indicator in sorted(indicators[indicator_type]):
-                        first_seen = timestamps.get(indicator, 'unknown')
-                        if first_seen not in grouped_by_date:
-                            grouped_by_date[first_seen] = []
-                        grouped_by_date[first_seen].append(indicator)
+                        ts_info = timestamps.get(indicator, {})
+                        if isinstance(ts_info, dict):
+                            first_seen = ts_info.get('first_seen', 'unknown')
+                            commit = ts_info.get('commit', '')
+                        else:
+                            # Backward compatibility: if ts_info is just a string
+                            first_seen = ts_info if ts_info else 'unknown'
+                            commit = ''
 
-                    # Convert to compact format: {date: [indicators]}
-                    indicators_with_timestamps[indicator_type] = [
-                        {
-                            'first_seen': date,
+                        # Group by (date, commit) to keep references together
+                        key = (first_seen, commit)
+                        if key not in grouped_by_date_commit:
+                            grouped_by_date_commit[key] = []
+                        grouped_by_date_commit[key].append(indicator)
+
+                    # Convert to compact format with references
+                    indicators_with_timestamps[indicator_type] = []
+                    for (first_seen, commit), values in sorted(grouped_by_date_commit.items()):
+                        entry = {
+                            'first_seen': first_seen,
                             'indicators': values
                         }
-                        for date, values in sorted(grouped_by_date.items())
-                    ]
+                        # Add references from commit message if available
+                        if commit and commit in self.commit_references:
+                            entry['references'] = self.commit_references[commit]
+                        indicators_with_timestamps[indicator_type].append(entry)
                 else:
                     # No timestamps collected
                     indicators_with_timestamps[indicator_type] = [
@@ -327,7 +395,7 @@ class APTThreatFeedCollector:
             has_timestamps = any(self.indicator_timestamps.values())
 
             if has_timestamps:
-                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'first_seen'])
+                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'first_seen', 'references'])
             else:
                 writer.writerow(['apt_group', 'indicator_type', 'indicator'])
 
@@ -338,8 +406,17 @@ class APTThreatFeedCollector:
                 for indicator_type in sorted(indicators.keys()):
                     for indicator in sorted(indicators[indicator_type]):
                         if has_timestamps:
-                            first_seen = timestamps.get(indicator, 'unknown')
-                            writer.writerow([apt_name, indicator_type, indicator, first_seen])
+                            ts_info = timestamps.get(indicator, {})
+                            if isinstance(ts_info, dict):
+                                first_seen = ts_info.get('first_seen', 'unknown')
+                                commit = ts_info.get('commit', '')
+                                # Get references from commit if available
+                                refs = self.commit_references.get(commit, [])
+                                refs_str = ' | '.join(refs) if refs else ''
+                            else:
+                                first_seen = ts_info if ts_info else 'unknown'
+                                refs_str = ''
+                            writer.writerow([apt_name, indicator_type, indicator, first_seen, refs_str])
                         else:
                             writer.writerow([apt_name, indicator_type, indicator])
 
