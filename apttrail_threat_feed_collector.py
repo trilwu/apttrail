@@ -150,6 +150,22 @@ class APTThreatFeedCollector:
 
         return 'unknown'
 
+    def get_file_last_commit_time(self, filepath: Path) -> str:
+        """Get the last commit time for a file from git"""
+        try:
+            result = subprocess.run(
+                ["git", "log", "-1", "--format=%aI", "--", str(filepath.relative_to(self.maltrail_path))],
+                cwd=self.maltrail_path,
+                capture_output=True,
+                text=True,
+                timeout=5
+            )
+            if result.returncode == 0 and result.stdout.strip():
+                return result.stdout.strip()
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, Exception):
+            pass
+        return datetime.now().isoformat()
+
     def parse_apt_file(self, filepath: Path, collect_timestamps: bool = False) -> Tuple[Dict[str, Set[str]], Dict, Dict]:
         """
         Parse a single APT indicator file
@@ -162,12 +178,16 @@ class APTThreatFeedCollector:
         """
         indicators = defaultdict(set)
         timestamps = {}
+
+        # Get last modified time from git instead of filesystem
+        last_modified = self.get_file_last_commit_time(filepath)
+
         metadata = {
             'filename': filepath.name,
             'apt_group': filepath.stem.replace('apt_', '').upper(),
             'references': [],
             'aliases': [],
-            'last_modified': datetime.fromtimestamp(filepath.stat().st_mtime).isoformat()
+            'last_modified': last_modified
         }
 
         # Get all timestamps in one bulk operation if needed
