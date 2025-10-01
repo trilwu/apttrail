@@ -62,49 +62,51 @@ class APTThreatFeedCollector:
             print(f"Error updating repository: {e}")
             return False
 
-    def get_indicator_timestamp(self, filepath: Path, indicator: str) -> str:
+    def get_file_timestamps_bulk(self, filepath: Path) -> Dict[str, str]:
         """
-        Get the first commit timestamp when an indicator was added to the file
+        Get timestamps for all lines in a file using git blame (much faster than individual git log calls)
 
         Args:
             filepath: Path to the APT file
-            indicator: The indicator string to search for
 
         Returns:
-            ISO format timestamp of first commit, or current time if not found
+            Dictionary mapping line content to ISO format timestamp
         """
+        timestamps = {}
+
         try:
-            # Get the first commit where this line was added
-            # Using git log with -S to find when the indicator was added
+            # Use git blame to get commit info for each line in one command
             result = subprocess.run(
-                ["git", "log", "--follow", "--format=%aI", "--diff-filter=A", "-S", indicator, "--", str(filepath.relative_to(self.maltrail_path))],
+                ["git", "blame", "--line-porcelain", str(filepath.relative_to(self.maltrail_path))],
                 cwd=self.maltrail_path,
                 capture_output=True,
                 text=True,
-                timeout=5
+                timeout=30
             )
 
-            if result.returncode == 0 and result.stdout.strip():
-                # Get the oldest (last) commit timestamp
-                timestamps = result.stdout.strip().split('\n')
-                return timestamps[-1] if timestamps else datetime.now().isoformat()
+            if result.returncode != 0:
+                return timestamps
 
-            # Fallback: get file's first commit time
-            result = subprocess.run(
-                ["git", "log", "--follow", "--format=%aI", "--reverse", "--", str(filepath.relative_to(self.maltrail_path))],
-                cwd=self.maltrail_path,
-                capture_output=True,
-                text=True,
-                timeout=5
-            )
+            current_commit = None
+            current_timestamp = None
 
-            if result.returncode == 0 and result.stdout.strip():
-                return result.stdout.strip().split('\n')[0]
+            for line in result.stdout.split('\n'):
+                # Parse git blame porcelain format
+                if line.startswith('author-time '):
+                    # Unix timestamp
+                    unix_time = int(line.split()[1])
+                    current_timestamp = datetime.fromtimestamp(unix_time).isoformat()
+                elif line.startswith('\t'):
+                    # This is the actual line content
+                    content = line[1:].strip()  # Remove leading tab
+                    if content and not content.startswith('#') and current_timestamp:
+                        # Store timestamp for this indicator
+                        timestamps[content] = current_timestamp
 
-        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, Exception):
-            pass
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired, Exception) as e:
+            print(f"Warning: Could not get timestamps for {filepath.name}: {e}")
 
-        return datetime.now().isoformat()
+        return timestamps
 
     def classify_indicator(self, indicator: str) -> str:
         """
@@ -154,7 +156,7 @@ class APTThreatFeedCollector:
 
         Args:
             filepath: Path to the APT file
-            collect_timestamps: Whether to collect git timestamps (slower but more accurate)
+            collect_timestamps: Whether to collect git timestamps (fast bulk operation using git blame)
 
         Returns: (indicators_dict, metadata_dict, timestamps_dict)
         """
@@ -167,6 +169,10 @@ class APTThreatFeedCollector:
             'aliases': [],
             'last_modified': datetime.fromtimestamp(filepath.stat().st_mtime).isoformat()
         }
+
+        # Get all timestamps in one bulk operation if needed
+        if collect_timestamps:
+            timestamps = self.get_file_timestamps_bulk(filepath)
 
         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
             for line in f:
@@ -193,10 +199,6 @@ class APTThreatFeedCollector:
                 indicator_type = self.classify_indicator(line)
                 if indicator_type != 'unknown':
                     indicators[indicator_type].add(line)
-
-                    # Get timestamp for this indicator
-                    if collect_timestamps:
-                        timestamps[line] = self.get_indicator_timestamp(filepath, line)
 
         return indicators, metadata, timestamps
 
@@ -237,12 +239,23 @@ class APTThreatFeedCollector:
             indicators = self.indicators[apt_name]
             timestamps = self.indicator_timestamps.get(apt_name, {})
 
-            # Convert sets to sorted lists (without timestamps for performance)
+            # Convert sets to sorted lists with timestamps if available
             indicators_with_timestamps = {}
             for indicator_type in sorted(indicators.keys()):
-                indicators_with_timestamps[indicator_type] = [
-                    indicator for indicator in sorted(indicators[indicator_type])
-                ]
+                if timestamps:
+                    # Include timestamps
+                    indicators_with_timestamps[indicator_type] = [
+                        {
+                            'value': indicator,
+                            'first_seen': timestamps.get(indicator, 'unknown')
+                        }
+                        for indicator in sorted(indicators[indicator_type])
+                    ]
+                else:
+                    # No timestamps collected
+                    indicators_with_timestamps[indicator_type] = [
+                        indicator for indicator in sorted(indicators[indicator_type])
+                    ]
 
             output['apt_groups'][apt_name] = {
                 'metadata': self.metadata.get(apt_name, {}),
@@ -281,14 +294,26 @@ class APTThreatFeedCollector:
             import io
             csv_buffer = io.StringIO()
             writer = csv.writer(csv_buffer)
-            writer.writerow(['apt_group', 'indicator_type', 'indicator'])
+
+            # Check if we have any timestamps
+            has_timestamps = any(self.indicator_timestamps.values())
+
+            if has_timestamps:
+                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'first_seen'])
+            else:
+                writer.writerow(['apt_group', 'indicator_type', 'indicator'])
 
             # Sort for deterministic output
             for apt_name in sorted(self.indicators.keys()):
                 indicators = self.indicators[apt_name]
+                timestamps = self.indicator_timestamps.get(apt_name, {})
                 for indicator_type in sorted(indicators.keys()):
                     for indicator in sorted(indicators[indicator_type]):
-                        writer.writerow([apt_name, indicator_type, indicator])
+                        if has_timestamps:
+                            first_seen = timestamps.get(indicator, 'unknown')
+                            writer.writerow([apt_name, indicator_type, indicator, first_seen])
+                        else:
+                            writer.writerow([apt_name, indicator_type, indicator])
 
             new_content = csv_buffer.getvalue()
 
@@ -485,102 +510,103 @@ class APTThreatFeedCollector:
         import io
         content_buffer = io.StringIO()
         f = content_buffer
-            # Write header
-            f.write("# Maltrail APT Threat Feed - Suricata Rules\n")
-            f.write("# Source: https://github.com/stamparm/maltrail\n")
-            f.write("#\n")
-            f.write("# IMPORTANT: These are automatically generated rules for threat detection\n")
-            f.write("# Review and test before deploying to production\n")
-            f.write("#\n\n")
 
-            # Sort for deterministic output
-            for apt_name in sorted(self.indicators.keys()):
-                indicators = self.indicators[apt_name]
-                metadata = self.metadata.get(apt_name, {})
-                aliases = ', '.join(metadata.get('aliases', []))
+        # Write header
+        f.write("# Maltrail APT Threat Feed - Suricata Rules\n")
+        f.write("# Source: https://github.com/stamparm/maltrail\n")
+        f.write("#\n")
+        f.write("# IMPORTANT: These are automatically generated rules for threat detection\n")
+        f.write("# Review and test before deploying to production\n")
+        f.write("#\n\n")
 
-                # Write APT group header
-                f.write(f"# ==================================================\n")
-                f.write(f"# APT Group: {apt_name}\n")
-                if aliases:
-                    f.write(f"# Aliases: {aliases}\n")
-                f.write(f"# ==================================================\n\n")
+        # Sort for deterministic output
+        for apt_name in sorted(self.indicators.keys()):
+            indicators = self.indicators[apt_name]
+            metadata = self.metadata.get(apt_name, {})
+            aliases = ', '.join(metadata.get('aliases', []))
 
-                # Generate rules for domains
-                if 'domain' in indicators:
-                    f.write(f"# {apt_name} - Domain Indicators\n")
-                    for domain in sorted(indicators['domain']):
-                        if optimized:
-                            # Single efficient rule using DNS OR HTTP OR TLS
-                            rule = f'alert dns any any -> any any (msg:"APT {apt_name} - Malicious Domain {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+            # Write APT group header
+            f.write(f"# ==================================================\n")
+            f.write(f"# APT Group: {apt_name}\n")
+            if aliases:
+                f.write(f"# Aliases: {aliases}\n")
+            f.write(f"# ==================================================\n\n")
+
+            # Generate rules for domains
+            if 'domain' in indicators:
+                f.write(f"# {apt_name} - Domain Indicators\n")
+                for domain in sorted(indicators['domain']):
+                    if optimized:
+                        # Single efficient rule using DNS OR HTTP OR TLS
+                        rule = f'alert dns any any -> any any (msg:"APT {apt_name} - Malicious Domain {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+                    else:
+                        # DNS query rule
+                        rule = f'alert dns $HOME_NET any -> any any (msg:"APT {apt_name} - Suspicious DNS Query to {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+
+                        # HTTP Host header rule
+                        rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Connection to {domain}"; flow:established,to_server; http.host; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+
+                        # TLS SNI rule
+                        rule = f'alert tls $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - TLS Connection to {domain}"; flow:established,to_server; tls.sni; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+                f.write("\n")
+
+            # Generate rules for IPs
+            if 'ipv4' in indicators:
+                f.write(f"# {apt_name} - IPv4 Indicators\n")
+                for ip in sorted(indicators['ipv4']):
+                    # Remove port if present
+                    ip_clean = ip.split(':')[0]
+                    if optimized:
+                        # Single bidirectional rule
+                        rule = f'alert ip any any <> {ip_clean} any (msg:"APT {apt_name} - Traffic to/from Malicious IP {ip}"; classtype:trojan-activity; threshold:type limit, track by_src, count 1, seconds 3600; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+                    else:
+                        # Outbound connection rule
+                        rule = f'alert ip $HOME_NET any -> {ip_clean} any (msg:"APT {apt_name} - Connection to Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+
+                        # Inbound connection rule
+                        rule = f'alert ip {ip_clean} any -> $HOME_NET any (msg:"APT {apt_name} - Inbound Connection from Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
+                f.write("\n")
+
+            # Generate rules for URLs
+            if 'url' in indicators:
+                f.write(f"# {apt_name} - URL Indicators\n")
+                for url in sorted(indicators['url']):
+                    # Extract domain and path from URL
+                    try:
+                        parsed = urllib.parse.urlparse(url)
+                        if parsed.netloc:
+                            # HTTP URL detection
+                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Request to Malicious URL"; flow:established,to_server; http.uri; content:"{parsed.path if parsed.path else "/"}"; http.host; content:"{parsed.netloc}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
                             f.write(rule)
                             sid_counter += 1
-                        else:
-                            # DNS query rule
-                            rule = f'alert dns $HOME_NET any -> any any (msg:"APT {apt_name} - Suspicious DNS Query to {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
+                    except:
+                        pass
+                f.write("\n")
 
-                            # HTTP Host header rule
-                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Connection to {domain}"; flow:established,to_server; http.host; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
-
-                            # TLS SNI rule
-                            rule = f'alert tls $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - TLS Connection to {domain}"; flow:established,to_server; tls.sni; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
+            # Generate rules for file hashes
+            for hash_type in ['md5', 'sha1', 'sha256']:
+                if hash_type in indicators:
+                    f.write(f"# {apt_name} - {hash_type.upper()} File Hash Indicators\n")
+                    for file_hash in sorted(indicators[hash_type]):
+                        # File hash detection rule
+                        rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - Download of File with Known {hash_type.upper()} Hash"; flow:established,to_server; filestore; filemd5:!{file_hash}; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                        f.write(rule)
+                        sid_counter += 1
                     f.write("\n")
-
-                # Generate rules for IPs
-                if 'ipv4' in indicators:
-                    f.write(f"# {apt_name} - IPv4 Indicators\n")
-                    for ip in sorted(indicators['ipv4']):
-                        # Remove port if present
-                        ip_clean = ip.split(':')[0]
-                        if optimized:
-                            # Single bidirectional rule
-                            rule = f'alert ip any any <> {ip_clean} any (msg:"APT {apt_name} - Traffic to/from Malicious IP {ip}"; classtype:trojan-activity; threshold:type limit, track by_src, count 1, seconds 3600; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
-                        else:
-                            # Outbound connection rule
-                            rule = f'alert ip $HOME_NET any -> {ip_clean} any (msg:"APT {apt_name} - Connection to Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
-
-                            # Inbound connection rule
-                            rule = f'alert ip {ip_clean} any -> $HOME_NET any (msg:"APT {apt_name} - Inbound Connection from Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
-                    f.write("\n")
-
-                # Generate rules for URLs
-                if 'url' in indicators:
-                    f.write(f"# {apt_name} - URL Indicators\n")
-                    for url in sorted(indicators['url']):
-                        # Extract domain and path from URL
-                        try:
-                            parsed = urllib.parse.urlparse(url)
-                            if parsed.netloc:
-                                # HTTP URL detection
-                                rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Request to Malicious URL"; flow:established,to_server; http.uri; content:"{parsed.path if parsed.path else "/"}"; http.host; content:"{parsed.netloc}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                                f.write(rule)
-                                sid_counter += 1
-                        except:
-                            pass
-                    f.write("\n")
-
-                # Generate rules for file hashes
-                for hash_type in ['md5', 'sha1', 'sha256']:
-                    if hash_type in indicators:
-                        f.write(f"# {apt_name} - {hash_type.upper()} File Hash Indicators\n")
-                        for file_hash in sorted(indicators[hash_type]):
-                            # File hash detection rule
-                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - Download of File with Known {hash_type.upper()} Hash"; flow:established,to_server; filestore; filemd5:!{file_hash}; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                            f.write(rule)
-                            sid_counter += 1
-                        f.write("\n")
 
         # Get generated content
         new_content = content_buffer.getvalue()
@@ -838,6 +864,8 @@ Examples:
                         help='Path to Maltrail repository (default: data/maltrail)')
     parser.add_argument('--no-update', action='store_true',
                         help='Skip repository update')
+    parser.add_argument('--collect-timestamps', action='store_true',
+                        help='Collect git timestamps for IOCs (adds ~2-3 minutes, uses git blame)')
     parser.add_argument('--json-only', action='store_true',
                         help='Export only JSON format')
     parser.add_argument('--csv-only', action='store_true',
@@ -871,7 +899,9 @@ Examples:
 
     # Collect indicators
     print("\nCollecting APT indicators...")
-    collector.collect_all_indicators()
+    if args.collect_timestamps:
+        print("Timestamp collection enabled (using git blame for fast bulk collection)")
+    collector.collect_all_indicators(collect_timestamps=args.collect_timestamps)
 
     # Print statistics
     collector.print_statistics()
