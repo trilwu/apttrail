@@ -56,17 +56,6 @@ jobs:
       run: |
         python apttrail_threat_feed_collector.py --output-dir feeds
 
-    - name: Generate collection report
-      run: |
-        echo "## APT Threat Feed Collection Report" > collection_report.md
-        echo "**Collection Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> collection_report.md
-        echo "" >> collection_report.md
-
-        if [ -f "feeds/apttrail_threat_feed.json" ]; then
-          echo "### Statistics" >> collection_report.md
-          python3 .github/scripts/generate_collection_report.py >> collection_report.md
-        fi
-
     - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
@@ -78,9 +67,15 @@ jobs:
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          # Use collection report as commit message body
-          git commit -F collection_report.md
-          git push
+          # Generate commit message with only changed groups
+          python3 .github/scripts/generate_collection_report.py > collection_report.md
+
+          if [ -s collection_report.md ]; then
+            git commit -F collection_report.md
+            git push
+          else
+            echo "No changes detected by report generator"
+          fi
         fi
 
     - name: Create release (weekly)

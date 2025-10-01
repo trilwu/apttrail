@@ -226,7 +226,7 @@ class APTThreatFeedCollector:
                 print(f"  {apt_name}: {total_indicators} indicators collected")
 
     def export_json(self, output_file: str = "apttrail_threat_feed.json") -> None:
-        """Export indicators to JSON format with timestamps"""
+        """Export indicators to JSON format"""
         output = {
             'source': 'Maltrail APT Indicators',
             'total_apt_groups': len(self.indicators),
@@ -253,8 +253,19 @@ class APTThreatFeedCollector:
                 }
             }
 
+        # Generate new content
+        new_content = json.dumps(output, indent=2, ensure_ascii=False, sort_keys=True)
+
+        # Only write if content changed
+        if Path(output_file).exists():
+            with open(output_file, 'r', encoding='utf-8') as f:
+                old_content = f.read()
+            if old_content == new_content:
+                print(f"JSON feed unchanged: {output_file}")
+                return
+
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(output, f, indent=2, ensure_ascii=False, sort_keys=True)
+            f.write(new_content)
 
         print(f"JSON feed exported to {output_file}")
 
@@ -267,48 +278,96 @@ class APTThreatFeedCollector:
         """
         if compact:
             # Compact format: just the essential IOC data
+            import io
+            csv_buffer = io.StringIO()
+            writer = csv.writer(csv_buffer)
+            writer.writerow(['apt_group', 'indicator_type', 'indicator'])
+
+            # Sort for deterministic output
+            for apt_name in sorted(self.indicators.keys()):
+                indicators = self.indicators[apt_name]
+                for indicator_type in sorted(indicators.keys()):
+                    for indicator in sorted(indicators[indicator_type]):
+                        writer.writerow([apt_name, indicator_type, indicator])
+
+            new_content = csv_buffer.getvalue()
+
+            # Only write if content changed
+            if Path(output_file).exists():
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    old_content = f.read()
+                if old_content == new_content:
+                    print(f"CSV feed unchanged: {output_file}")
+                    # Still check metadata file
+                    self._export_csv_metadata(output_file)
+                    return
+
             with open(output_file, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(['apt_group', 'indicator_type', 'indicator'])
-
-                # Sort for deterministic output
-                for apt_name in sorted(self.indicators.keys()):
-                    indicators = self.indicators[apt_name]
-                    for indicator_type in sorted(indicators.keys()):
-                        for indicator in sorted(indicators[indicator_type]):
-                            writer.writerow([apt_name, indicator_type, indicator])
-
-            # Also export a metadata file
-            metadata_file = str(output_file).replace('.csv', '_metadata.csv')
-            with open(metadata_file, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(['apt_group', 'aliases', 'references'])
-
-                for apt_name in sorted(self.indicators.keys()):
-                    metadata = self.metadata.get(apt_name, {})
-                    aliases = ', '.join(sorted(metadata.get('aliases', [])))
-                    references = ' | '.join(sorted(metadata.get('references', [])))
-                    writer.writerow([apt_name, aliases, references])
+                f.write(new_content)
 
             print(f"Compact CSV feed exported to {output_file}")
-            print(f"Metadata exported to {metadata_file}")
+            self._export_csv_metadata(output_file)
         else:
             # Full format with all metadata (original - very large)
+            import io
+            csv_buffer = io.StringIO()
+            writer = csv.writer(csv_buffer)
+            writer.writerow(['apt_group', 'indicator_type', 'indicator', 'aliases', 'references'])
+
+            for apt_name in sorted(self.indicators.keys()):
+                indicators = self.indicators[apt_name]
+                metadata = self.metadata.get(apt_name, {})
+                aliases = ', '.join(sorted(metadata.get('aliases', [])))
+                references = ' | '.join(sorted(metadata.get('references', [])))
+
+                for indicator_type in sorted(indicators.keys()):
+                    for indicator in sorted(indicators[indicator_type]):
+                        writer.writerow([apt_name, indicator_type, indicator, aliases, references])
+
+            new_content = csv_buffer.getvalue()
+
+            # Only write if content changed
+            if Path(output_file).exists():
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    old_content = f.read()
+                if old_content == new_content:
+                    print(f"CSV feed unchanged: {output_file}")
+                    return
+
             with open(output_file, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.writer(f)
-                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'aliases', 'references'])
-
-                for apt_name in sorted(self.indicators.keys()):
-                    indicators = self.indicators[apt_name]
-                    metadata = self.metadata.get(apt_name, {})
-                    aliases = ', '.join(sorted(metadata.get('aliases', [])))
-                    references = ' | '.join(sorted(metadata.get('references', [])))
-
-                    for indicator_type in sorted(indicators.keys()):
-                        for indicator in sorted(indicators[indicator_type]):
-                            writer.writerow([apt_name, indicator_type, indicator, aliases, references])
+                f.write(new_content)
 
             print(f"Full CSV feed exported to {output_file}")
+
+    def _export_csv_metadata(self, output_file: str) -> None:
+        """Export CSV metadata file"""
+        metadata_file = str(output_file).replace('.csv', '_metadata.csv')
+
+        import io
+        csv_buffer = io.StringIO()
+        writer = csv.writer(csv_buffer)
+        writer.writerow(['apt_group', 'aliases', 'references'])
+
+        for apt_name in sorted(self.indicators.keys()):
+            metadata = self.metadata.get(apt_name, {})
+            aliases = ', '.join(sorted(metadata.get('aliases', [])))
+            references = ' | '.join(sorted(metadata.get('references', [])))
+            writer.writerow([apt_name, aliases, references])
+
+        new_content = csv_buffer.getvalue()
+
+        # Only write if content changed
+        if Path(metadata_file).exists():
+            with open(metadata_file, 'r', encoding='utf-8') as f:
+                old_content = f.read()
+            if old_content == new_content:
+                print(f"Metadata unchanged: {metadata_file}")
+                return
+
+        with open(metadata_file, 'w', newline='', encoding='utf-8') as f:
+            f.write(new_content)
+
+        print(f"Metadata exported to {metadata_file}")
 
     def export_stix(self, output_file: str = "apttrail_threat_feed_stix.json") -> None:
         """Export indicators to STIX 2.1 format"""
@@ -422,7 +481,10 @@ class APTThreatFeedCollector:
             print(f"Suricata rules split into {len(self.indicators)} files in {output_dir}")
             return
 
-        with open(output_file, 'w', encoding='utf-8') as f:
+        # Generate content in memory first
+        import io
+        content_buffer = io.StringIO()
+        f = content_buffer
             # Write header
             f.write("# Maltrail APT Threat Feed - Suricata Rules\n")
             f.write("# Source: https://github.com/stamparm/maltrail\n")
@@ -520,6 +582,20 @@ class APTThreatFeedCollector:
                             sid_counter += 1
                         f.write("\n")
 
+        # Get generated content
+        new_content = content_buffer.getvalue()
+
+        # Only write if content changed
+        if Path(output_file).exists():
+            with open(output_file, 'r', encoding='utf-8') as existing_f:
+                old_content = existing_f.read()
+            if old_content == new_content:
+                print(f"Suricata rules unchanged: {output_file}")
+                return
+
+        with open(output_file, 'w', encoding='utf-8') as out_f:
+            out_f.write(new_content)
+
         print(f"Suricata rules exported to {output_file}")
         print(f"Total rules generated: {sid_counter - 9000000}")
 
@@ -541,23 +617,40 @@ class APTThreatFeedCollector:
             print(f"YARA rules split into {len(self.indicators)} files in {output_dir}")
             return
 
-        with open(output_file, 'w', encoding='utf-8') as f:
-            # Write header
-            f.write("/*\n")
-            f.write("   Maltrail APT Threat Feed - YARA Rules\n")
-            f.write("   Source: https://github.com/stamparm/maltrail\n")
-            f.write("   \n")
-            f.write("   IMPORTANT: These are automatically generated rules for threat detection\n")
-            f.write("   Review and test before deploying to production\n")
-            f.write("*/\n\n")
+        # Generate content in memory first
+        import io
+        content_buffer = io.StringIO()
 
-            # Import required modules
-            f.write("import \"hash\"\n")
-            f.write("import \"pe\"\n\n")
+        # Write header
+        content_buffer.write("/*\n")
+        content_buffer.write("   Maltrail APT Threat Feed - YARA Rules\n")
+        content_buffer.write("   Source: https://github.com/stamparm/maltrail\n")
+        content_buffer.write("   \n")
+        content_buffer.write("   IMPORTANT: These are automatically generated rules for threat detection\n")
+        content_buffer.write("   Review and test before deploying to production\n")
+        content_buffer.write("*/\n\n")
 
-            # Generate rules for each APT group
-            for apt_name in sorted(self.indicators.keys()):
-                self._write_yara_rules_to_stream(f, apt_name)
+        # Import required modules
+        content_buffer.write("import \"hash\"\n")
+        content_buffer.write("import \"pe\"\n\n")
+
+        # Generate rules for each APT group
+        for apt_name in sorted(self.indicators.keys()):
+            self._write_yara_rules_to_stream(content_buffer, apt_name)
+
+        # Get generated content
+        new_content = content_buffer.getvalue()
+
+        # Only write if content changed
+        if Path(output_file).exists():
+            with open(output_file, 'r', encoding='utf-8') as existing_f:
+                old_content = existing_f.read()
+            if old_content == new_content:
+                print(f"YARA rules unchanged: {output_file}")
+                return
+
+        with open(output_file, 'w', encoding='utf-8') as out_f:
+            out_f.write(new_content)
 
         print(f"YARA rules exported to {output_file}")
 

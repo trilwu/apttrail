@@ -1,47 +1,59 @@
 #!/usr/bin/env python3
 import json
 import sys
-from datetime import datetime
+import subprocess
+from pathlib import Path
 
+# Check if there are actual changes in the feeds
+result = subprocess.run(
+    ['git', 'diff', '--stat', 'feeds/'],
+    capture_output=True,
+    text=True
+)
+
+if not result.stdout.strip():
+    print("No changes detected in feeds")
+    sys.exit(0)
+
+# Parse git diff to get actual changes
+diff_result = subprocess.run(
+    ['git', 'diff', '--numstat', 'feeds/apttrail_threat_feed.json'],
+    capture_output=True,
+    text=True
+)
+
+# Get list of changed APT groups
+changed_groups = set()
+if diff_result.stdout.strip():
+    diff_lines = subprocess.run(
+        ['git', 'diff', 'feeds/apttrail_threat_feed.json'],
+        capture_output=True,
+        text=True
+    )
+
+    for line in diff_lines.stdout.split('\n'):
+        # Look for APT group names in the diff (lines with + or - and apt_groups)
+        if (line.startswith('+') or line.startswith('-')) and '"apt_groups"' not in line:
+            # Extract APT group names from changed sections
+            import re
+            matches = re.findall(r'"([A-Z0-9_]+)":\s*{', line)
+            changed_groups.update(matches)
+
+# Load current data
 with open('feeds/apttrail_threat_feed.json') as f:
     data = json.load(f)
 
-    # Calculate total indicators
-    total = 0
-    for group in data['apt_groups'].values():
-        total += group['statistics']['total']
+# Generate concise summary of changes
+print(f"Update APT threat feeds")
+print()
 
-    # Get top 3 groups
-    groups = [(name, group['statistics']['total']) for name, group in data['apt_groups'].items()]
-    groups.sort(key=lambda x: x[1], reverse=True)
-    top3 = ', '.join([f"{name} ({count:,})" for name, count in groups[:3]])
+if changed_groups:
+    print(f"Changed groups: {', '.join(sorted(changed_groups)[:10])}")
+    if len(changed_groups) > 10:
+        print(f"... and {len(changed_groups) - 10} more")
+else:
+    # If we can't detect specific groups, show general update
+    print(f"Updated {data['total_apt_groups']} APT groups")
 
-    # Calculate indicator type distribution
-    type_totals = {}
-    for group in data['apt_groups'].values():
-        for itype, count in group['statistics']['by_type'].items():
-            type_totals[itype] = type_totals.get(itype, 0) + count
-    top_types = sorted(type_totals.items(), key=lambda x: x[1], reverse=True)[:3]
-    types_summary = ', '.join([f"{t}: {c:,}" for t, c in top_types])
-
-    # Short commit-friendly summary
-    print(f"Update APT threat feeds: {data['total_apt_groups']} groups, {total:,} indicators")
-    print()
-    print(f"Top 3 groups: {top3}")
-    print(f"Top types: {types_summary}")
-
-    # Detailed section for commit body
-    print()
-    print("---")
-    print()
-    print(f"Total APT Groups: {data['total_apt_groups']}")
-    print(f"Total Indicators: {total:,}")
-    print()
-    print("Top 10 APT Groups:")
-    for i, (name, count) in enumerate(groups[:10], 1):
-        print(f"  {i}. {name}: {count:,}")
-
-    print()
-    print("Indicator Types:")
-    for itype, count in sorted(type_totals.items(), key=lambda x: x[1], reverse=True):
-        print(f"  - {itype}: {count:,}")
+print()
+print(f"Total indicators: {sum(g['statistics']['total'] for g in data['apt_groups'].values()):,}")
