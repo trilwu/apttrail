@@ -395,7 +395,7 @@ class APTThreatFeedCollector:
             has_timestamps = any(self.indicator_timestamps.values())
 
             if has_timestamps:
-                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'first_seen', 'references'])
+                writer.writerow(['apt_group', 'indicator_type', 'indicator', 'first_seen'])
             else:
                 writer.writerow(['apt_group', 'indicator_type', 'indicator'])
 
@@ -409,14 +409,9 @@ class APTThreatFeedCollector:
                             ts_info = timestamps.get(indicator, {})
                             if isinstance(ts_info, dict):
                                 first_seen = ts_info.get('first_seen', 'unknown')
-                                commit = ts_info.get('commit', '')
-                                # Get references from commit if available
-                                refs = self.commit_references.get(commit, [])
-                                refs_str = ' | '.join(refs) if refs else ''
                             else:
                                 first_seen = ts_info if ts_info else 'unknown'
-                                refs_str = ''
-                            writer.writerow([apt_name, indicator_type, indicator, first_seen, refs_str])
+                            writer.writerow([apt_name, indicator_type, indicator, first_seen])
                         else:
                             writer.writerow([apt_name, indicator_type, indicator])
 

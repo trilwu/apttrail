@@ -77,10 +77,10 @@ Customize the schedule in [.github/workflows/collect-apt-feeds.yml](.github/work
 - References extracted from Maltrail commit messages
 - Includes APT group metadata and statistics
 
-**CSV** (`apttrail_threat_feed.csv`) - Compact format with timestamps and references
-- Format: `apt_group,indicator_type,indicator,first_seen,references`
-- References from commit messages included for provenance tracking
-- Easy to import into spreadsheets and SIEMs
+**CSV** (`apttrail_threat_feed.csv`) - Compact format with timestamps
+- Format: `apt_group,indicator_type,indicator,first_seen`
+- Lightweight format for SIEM ingestion
+- Easy to import into spreadsheets and databases
 
 **STIX 2.1** (`apttrail_threat_feed_stix.json`) - Industry-standard threat intel format
 
