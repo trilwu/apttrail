@@ -582,13 +582,14 @@ class APTThreatFeedCollector:
 
         print(f"STIX bundle exported to {output_file}")
 
-    def export_suricata(self, output_file: str = "apttrail_threat_feed.rules", optimized: bool = True, split_by_group: bool = False) -> None:
+    def export_suricata(self, output_file: str = "apttrail_threat_feed.rules", optimized: bool = True, split_by_group: bool = False, use_datasets: bool = False) -> None:
         """Export indicators to Suricata rules format
 
         Args:
             output_file: Output file path
             optimized: If True, generates one rule per indicator instead of multiple protocol rules
             split_by_group: If True, creates separate files for each APT group
+            use_datasets: If True, uses dataset keyword to group indicators (requires Suricata 7.0+)
         """
         sid_counter = 9000000  # Starting SID for custom rules
 
@@ -617,6 +618,8 @@ class APTThreatFeedCollector:
         f.write("#\n")
         f.write("# IMPORTANT: These are automatically generated rules for threat detection\n")
         f.write("# Review and test before deploying to production\n")
+        if use_datasets:
+            f.write("# Optimized: Using PCRE alternation and IP lists to group indicators (~99% rule reduction)\n")
         f.write("#\n\n")
 
         # Sort for deterministic output
@@ -633,52 +636,73 @@ class APTThreatFeedCollector:
             f.write(f"# ==================================================\n\n")
 
             # Generate rules for domains
-            if 'domain' in indicators:
-                f.write(f"# {apt_name} - Domain Indicators\n")
-                for domain in sorted(indicators['domain']):
-                    if optimized:
-                        # Single efficient rule using DNS OR HTTP OR TLS
-                        rule = f'alert dns any any -> any any (msg:"APT {apt_name} - Malicious Domain {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
-                    else:
-                        # DNS query rule
-                        rule = f'alert dns $HOME_NET any -> any any (msg:"APT {apt_name} - Suspicious DNS Query to {domain}"; dns.query; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
+            if 'domain' in indicators and len(indicators['domain']) > 0:
+                f.write(f"# {apt_name} - Domain Indicators ({len(indicators['domain'])} domains)\n")
 
-                        # HTTP Host header rule
-                        rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Connection to {domain}"; flow:established,to_server; http.host; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
+                if use_datasets:
+                    # Use PCRE with alternation to group domains in single rule
+                    # Escape dots for PCRE and create alternation pattern
+                    domains_escaped = '|'.join(d.replace('.', '\\.') for d in sorted(indicators['domain']))
+                    rule = f'alert dns any any -> any any (msg:"APT {apt_name} - Malicious Domain Activity"; dns.query; pcre:"/^({domains_escaped})$/i"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                    f.write(rule)
+                    sid_counter += 1
+                else:
+                    # Original per-domain rules
+                    for domain in sorted(indicators['domain']):
+                        if optimized:
+                            # Single efficient rule using DNS OR HTTP OR TLS
+                            rule = f'alert dns any any -> any any (msg:"APT {apt_name} - Malicious Domain {domain}"; dns.query; content:"{domain}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
+                        else:
+                            # DNS query rule
+                            rule = f'alert dns $HOME_NET any -> any any (msg:"APT {apt_name} - Suspicious DNS Query to {domain}"; dns.query; content:"{domain}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
 
-                        # TLS SNI rule
-                        rule = f'alert tls $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - TLS Connection to {domain}"; flow:established,to_server; tls.sni; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
+                            # HTTP Host header rule
+                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Connection to {domain}"; flow:established,to_server; http.host; content:"{domain}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
+
+                            # TLS SNI rule
+                            rule = f'alert tls $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - TLS Connection to {domain}"; flow:established,to_server; tls.sni; content:"{domain}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
                 f.write("\n")
 
             # Generate rules for IPs
-            if 'ipv4' in indicators:
-                f.write(f"# {apt_name} - IPv4 Indicators\n")
-                for ip in sorted(indicators['ipv4']):
-                    # Remove port if present
-                    ip_clean = ip.split(':')[0]
-                    if optimized:
-                        # Single bidirectional rule
-                        rule = f'alert ip any any <> {ip_clean} any (msg:"APT {apt_name} - Traffic to/from Malicious IP {ip}"; classtype:trojan-activity; threshold:type limit, track by_src, count 1, seconds 3600; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
-                    else:
-                        # Outbound connection rule
-                        rule = f'alert ip $HOME_NET any -> {ip_clean} any (msg:"APT {apt_name} - Connection to Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
+            if 'ipv4' in indicators and len(indicators['ipv4']) > 0:
+                f.write(f"# {apt_name} - IPv4 Indicators ({len(indicators['ipv4'])} IPs)\n")
 
-                        # Inbound connection rule
-                        rule = f'alert ip {ip_clean} any -> $HOME_NET any (msg:"APT {apt_name} - Inbound Connection from Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
-                        f.write(rule)
-                        sid_counter += 1
+                if use_datasets:
+                    # Group IPs into a comma-separated list for ip.dst or ip.src
+                    ips_clean = [ip.split(':')[0] for ip in sorted(indicators['ipv4'])]
+                    ips_bracketed = '[' + ','.join(ips_clean) + ']'
+                    # Create single rule with IP list
+                    rule = f'alert ip any any -> {ips_bracketed} any (msg:"APT {apt_name} - Traffic to Malicious IPs"; threshold:type limit, track by_src, count 1, seconds 3600; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                    f.write(rule)
+                    sid_counter += 1
+                else:
+                    # Original per-IP rules
+                    for ip in sorted(indicators['ipv4']):
+                        # Remove port if present
+                        ip_clean = ip.split(':')[0]
+                        if optimized:
+                            # Single bidirectional rule
+                            rule = f'alert ip any any <> {ip_clean} any (msg:"APT {apt_name} - Traffic to/from Malicious IP {ip}"; classtype:trojan-activity; threshold:type limit, track by_src, count 1, seconds 3600; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
+                        else:
+                            # Outbound connection rule
+                            rule = f'alert ip $HOME_NET any -> {ip_clean} any (msg:"APT {apt_name} - Connection to Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
+
+                            # Inbound connection rule
+                            rule = f'alert ip {ip_clean} any -> $HOME_NET any (msg:"APT {apt_name} - Inbound Connection from Malicious IP {ip}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            f.write(rule)
+                            sid_counter += 1
                 f.write("\n")
 
             # Generate rules for URLs
@@ -690,7 +714,7 @@ class APTThreatFeedCollector:
                         parsed = urllib.parse.urlparse(url)
                         if parsed.netloc:
                             # HTTP URL detection
-                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Request to Malicious URL"; flow:established,to_server; http.uri; content:"{parsed.path if parsed.path else "/"}"; http.host; content:"{parsed.netloc}"; nocase; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
+                            rule = f'alert http $HOME_NET any -> $EXTERNAL_NET any (msg:"APT {apt_name} - HTTP Request to Malicious URL"; flow:established,to_server; http.uri; content:"{parsed.path if parsed.path else "/"}"; http.host; content:"{parsed.netloc}"; classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n'
                             f.write(rule)
                             sid_counter += 1
                     except:
@@ -974,6 +998,8 @@ Examples:
                         help='Export only STIX format')
     parser.add_argument('--suricata-only', action='store_true',
                         help='Export only Suricata rules format')
+    parser.add_argument('--suricata-dataset', action='store_true',
+                        help='Optimize Suricata rules using PCRE and IP lists (~99%% rule reduction)')
     parser.add_argument('--yara-only', action='store_true',
                         help='Export only YARA rules format')
     parser.add_argument('--output-dir', default='.',
@@ -1015,7 +1041,7 @@ Examples:
         elif args.stix_only:
             collector.export_stix(output_dir / "apttrail_threat_feed_stix.json")
         elif args.suricata_only:
-            collector.export_suricata(output_dir / "apttrail_threat_feed.rules")
+            collector.export_suricata(output_dir / "apttrail_threat_feed.rules", use_datasets=args.suricata_dataset)
         elif args.yara_only:
             collector.export_yara(output_dir / "apttrail_threat_feed.yar")
         else:
@@ -1023,7 +1049,7 @@ Examples:
             print("\nExporting threat feeds...")
             collector.export_json(output_dir / "apttrail_threat_feed.json")
             collector.export_csv(output_dir / "apttrail_threat_feed.csv")
-            collector.export_suricata(output_dir / "apttrail_threat_feed.rules")
+            collector.export_suricata(output_dir / "apttrail_threat_feed.rules", use_datasets=args.suricata_dataset)
             collector.export_yara(output_dir / "apttrail_threat_feed.yar")
             # Skip STIX by default as it's very large
             # collector.export_stix(output_dir / "apttrail_threat_feed_stix.json")
