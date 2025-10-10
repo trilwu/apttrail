@@ -4,9 +4,9 @@ import sys
 import subprocess
 from pathlib import Path
 
-# Check if there are actual changes in the feeds
+# Check if there are actual changes in the feeds (check staged changes)
 result = subprocess.run(
-    ['git', 'diff', '--stat', 'feeds/'],
+    ['git', 'diff', '--staged', '--stat', 'feeds/'],
     capture_output=True,
     text=True
 )
@@ -15,9 +15,9 @@ if not result.stdout.strip():
     print("No changes detected in feeds")
     sys.exit(0)
 
-# Parse git diff to get actual changes
+# Parse git diff to get actual changes (check staged changes)
 diff_result = subprocess.run(
-    ['git', 'diff', '--numstat', 'feeds/apttrail_threat_feed.json'],
+    ['git', 'diff', '--staged', '--numstat', 'feeds/apttrail_threat_feed.json'],
     capture_output=True,
     text=True
 )
@@ -26,7 +26,7 @@ diff_result = subprocess.run(
 changed_groups = set()
 if diff_result.stdout.strip():
     diff_lines = subprocess.run(
-        ['git', 'diff', 'feeds/apttrail_threat_feed.json'],
+        ['git', 'diff', '--staged', 'feeds/apttrail_threat_feed.json'],
         capture_output=True,
         text=True
     )
