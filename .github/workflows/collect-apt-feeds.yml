@@ -59,7 +59,14 @@ jobs:
         git config --local user.name "GitHub Action"
 
         # Check if there are changes in feeds only
-        git add feeds/
+        # Only commit files that are under the 100MB limit
+        # STIX and MISP are too large (100MB+) so we don't commit them to the repo
+        git add feeds/apttrail_threat_feed.json
+        git add feeds/apttrail_threat_feed.csv
+        git add feeds/apttrail_threat_feed_metadata.csv
+        git add feeds/apttrail_threat_feed.rules
+        git add feeds/apttrail_threat_feed.yar
+        git add feeds/apttrail_threat_feed.yaml
 
         if git diff --staged --quiet; then
           echo "No changes to commit"
