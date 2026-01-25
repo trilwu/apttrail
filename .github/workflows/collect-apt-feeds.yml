@@ -53,12 +53,28 @@ jobs:
         pip install .
         python -m apttrail --output-dir feeds --collect-timestamps --suricata-dataset
 
+    - name: Normalize timestamps and check for changes
+      run: |
+        # Normalize generated_at timestamp in JSON to avoid false positives
+        # This allows us to detect real IOC changes vs just timestamp updates
+        if [ -f feeds/apttrail_threat_feed.json ]; then
+          python3 -c "
+import json
+from pathlib import Path
+
+file = Path('feeds/apttrail_threat_feed.json')
+data = json.loads(file.read_text())
+# Set to a fixed timestamp for comparison
+data['generated_at'] = '2024-01-01T00:00:00'
+file.write_text(json.dumps(data, indent=2, sort_keys=True))
+"
+        fi
+
     - name: Commit and push if changed
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # Check if there are changes in feeds only
         # Only commit files that are under the 100MB limit
         # STIX and MISP are too large (100MB+) so we don't commit them to the repo
         git add feeds/apttrail_threat_feed.json
@@ -69,17 +85,19 @@ jobs:
         git add feeds/apttrail_threat_feed.yaml
 
         if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          # Generate commit message with only changed groups
-          python3 .github/scripts/generate_collection_report.py > collection_report.md
+          echo "No real changes detected (only timestamp updates)"
+          exit 0
+        fi
 
-          if [ -s collection_report.md ]; then
-            git commit -F collection_report.md
-            git push
-          else
-            echo "No changes detected by report generator"
-          fi
+        # Generate meaningful commit message based on actual changes
+        python3 .github/scripts/generate_commit_message.py > commit_message.txt
+        
+        if [ -s commit_message.txt ]; then
+          git commit -F commit_message.txt
+          git push
+          echo "Changes committed and pushed"
+        else
+          echo "No meaningful changes to commit"
         fi
 
     - name: Create release (weekly)
