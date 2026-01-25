@@ -41,6 +41,11 @@ Examples:
         action="store_true",
         help="Collect git timestamps for IOCs (adds ~2-3 minutes, uses git blame)",
     )
+    parser.add_argument(
+        "--force-refresh",
+        action="store_true",
+        help="Force refresh timestamps (ignore cache)",
+    )
     
     # Export format flags
     parser.add_argument(
@@ -154,6 +159,11 @@ def main() -> int:
         
         # Initialize and run collector
         collector = APTThreatFeedCollector(config)
+        
+        # Handle force refresh
+        if args.force_refresh and collector.cache:
+            print("Force refresh requested, invalidating cache...")
+            collector.cache.invalidate()
         
         # Update repo
         if not collector.update_repository():

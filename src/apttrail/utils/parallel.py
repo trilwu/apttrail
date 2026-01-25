@@ -19,7 +19,7 @@ class ParallelProcessor:
         max_workers: Maximum number of worker threads
     """
 
-    DEFAULT_WORKERS: int = 8
+    DEFAULT_WORKERS: int = 32  # Increased for better timestamp collection performance
 
     def __init__(self, max_workers: int = DEFAULT_WORKERS) -> None:
         """

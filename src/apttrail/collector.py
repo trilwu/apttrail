@@ -26,6 +26,7 @@ from apttrail.models import (
 )
 from apttrail.utils.git import GitOperations
 from apttrail.utils.parallel import ParallelProcessor
+from apttrail.utils.cache import TimestampCache
 
 
 class APTThreatFeedCollector:
@@ -50,6 +51,7 @@ class APTThreatFeedCollector:
         self.maltrail_path = Path(config.maltrail_path)
         self.apt_files_path = self.maltrail_path / "trails" / "static" / "malware"
         self.git_ops = GitOperations(self.maltrail_path)
+        self.cache = TimestampCache() if config.export_config.collect_timestamps else None
         
         # State
         self.apt_groups: dict[str, APTGroup] = {}
@@ -119,8 +121,17 @@ class APTThreatFeedCollector:
         
         # Get timestamps if requested
         timestamps = {}
-        if self.config.export_config.collect_timestamps:
-            timestamps = self.git_ops.get_file_timestamps_bulk(filepath)
+        if self.config.export_config.collect_timestamps and self.cache:
+            # Check if Maltrail repo has been updated
+            current_commit = self.git_ops.get_current_commit()
+            cached_commit = self.cache.get_maltrail_commit()
+            
+            if current_commit != cached_commit:
+                print(f"  Maltrail updated ({cached_commit[:8] if cached_commit else 'none'} → {current_commit[:8] if current_commit else 'none'}), refreshing cache...")
+                timestamps = self.git_ops.get_file_timestamps_bulk(filepath)
+            else:
+                # Use cache for faster lookups
+                timestamps = {}
 
         indicators_by_type: dict[IndicatorType, set[Indicator]] = defaultdict(set)
 
@@ -147,6 +158,13 @@ class APTThreatFeedCollector:
                     ts_info = timestamps.get(line, {})
                     first_seen = ts_info.get("first_seen")
                     commit = ts_info.get("commit")
+                    
+                    # Try cache if no timestamp from git
+                    if not first_seen and self.cache:
+                        cached = self.cache.get(line)
+                        if cached:
+                            first_seen = cached.get("first_seen")
+                            commit = cached.get("commit")
 
                     indicator = Indicator(
                         value=line,
@@ -154,6 +172,10 @@ class APTThreatFeedCollector:
                         first_seen=first_seen,
                         commit_hash=commit
                     )
+                    
+                    # Update cache if we have timestamp info
+                    if self.cache and (first_seen or commit):
+                        self.cache.set(line, first_seen, commit)
                     
                     indicators_by_type[indicator_type].add(indicator)
 
@@ -184,6 +206,15 @@ class APTThreatFeedCollector:
         if all_commits:
             self.commit_references = self.git_ops.get_commit_references(all_commits)
             print(f"  Found references in {len(self.commit_references)} commits")
+        
+        # Update cache metadata
+        if self.cache:
+            current_commit = self.git_ops.get_current_commit()
+            if current_commit:
+                self.cache.set_maltrail_commit(current_commit)
+            
+            stats = self.cache.get_stats()
+            print(f"  Cache: {stats['total_indicators']} indicators, {stats['db_size_mb']:.2f} MB")
 
     def export_feeds(self) -> None:
         """Export collected indicators to configured formats."""
