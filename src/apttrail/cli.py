@@ -37,9 +37,9 @@ Examples:
         help="Skip repository update",
     )
     parser.add_argument(
-        "--collect-timestamps",
+        "--no-timestamps",
         action="store_true",
-        help="Collect git timestamps for IOCs (adds ~2-3 minutes, uses git blame)",
+        help="Skip timestamp collection (faster but no first_seen data)",
     )
     parser.add_argument(
         "--force-refresh",
@@ -147,7 +147,7 @@ def main() -> int:
             output_dir=args.output_dir,
             formats=get_export_formats(args),
             optimized=True, # Always optimized by default now? Original code had default True
-            collect_timestamps=args.collect_timestamps,
+            collect_timestamps=not args.no_timestamps,  # Inverted: default True, disable with flag
             use_datasets=args.suricata_dataset
         )
         

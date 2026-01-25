@@ -158,7 +158,7 @@ class FeedExportConfig(BaseModel):
         description="Export formats",
     )
     optimized: bool = Field(default=True, description="Use optimized output")
-    collect_timestamps: bool = Field(default=False, description="Collect git timestamps")
+    collect_timestamps: bool = Field(default=True, description="Collect git timestamps")
     use_datasets: bool = Field(default=False, description="Use Suricata datasets")
 
 
