@@ -34,8 +34,8 @@ class CSVExporter(BaseExporter):
     def export(
         self,
         apt_groups: dict[str, APTGroup],
-        metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _metadata: FeedMetadata,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to CSV format.
@@ -75,17 +75,15 @@ class CSVExporter(BaseExporter):
             for indicator_type in sorted(apt_group.indicators.keys(), key=lambda x: x.value):
                 for indicator in sorted(apt_group.indicators[indicator_type], key=lambda x: x.value):
                     if has_timestamps:
-                        first_seen = (
-                            indicator.first_seen.isoformat()
-                            if indicator.first_seen
-                            else "unknown"
+                        first_seen = indicator.first_seen.isoformat() if indicator.first_seen else "unknown"
+                        writer.writerow(
+                            [
+                                apt_name,
+                                indicator_type.value,
+                                indicator.value,
+                                first_seen,
+                            ]
                         )
-                        writer.writerow([
-                            apt_name,
-                            indicator_type.value,
-                            indicator.value,
-                            first_seen,
-                        ])
                     else:
                         writer.writerow([apt_name, indicator_type.value, indicator.value])
 
@@ -109,21 +107,21 @@ class CSVExporter(BaseExporter):
 
             for indicator_type in sorted(apt_group.indicators.keys(), key=lambda x: x.value):
                 for indicator in sorted(apt_group.indicators[indicator_type], key=lambda x: x.value):
-                    writer.writerow([
-                        apt_name,
-                        indicator_type.value,
-                        indicator.value,
-                        aliases,
-                        references,
-                    ])
+                    writer.writerow(
+                        [
+                            apt_name,
+                            indicator_type.value,
+                            indicator.value,
+                            aliases,
+                            references,
+                        ]
+                    )
 
         return self._write_if_changed(buffer.getvalue())
 
     def _export_metadata(self, apt_groups: dict[str, APTGroup]) -> None:
         """Export metadata to a separate CSV file."""
-        metadata_path = self.output_path.with_name(
-            self.output_path.stem + "_metadata.csv"
-        )
+        metadata_path = self.output_path.with_name(self.output_path.stem + "_metadata.csv")
 
         buffer = io.StringIO()
         writer = csv.writer(buffer)

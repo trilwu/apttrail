@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from apttrail.exporters.base import BaseExporter
-from apttrail.models import APTGroup, FeedMetadata, IndicatorType
+from apttrail.models import APTGroup, FeedMetadata
 
 
 class JSONExporter(BaseExporter):
@@ -62,9 +62,7 @@ class JSONExporter(BaseExporter):
 
         for apt_name in sorted(apt_groups.keys()):
             apt_group = apt_groups[apt_name]
-            output["apt_groups"][apt_name] = self._serialize_apt_group(
-                apt_group, commit_references
-            )
+            output["apt_groups"][apt_name] = self._serialize_apt_group(apt_group, commit_references)
 
         return output
 
@@ -74,9 +72,7 @@ class JSONExporter(BaseExporter):
         commit_references: dict[str, list[str]] | None,
     ) -> dict[str, Any]:
         """Serialize a single APT group."""
-        indicators_data = self._serialize_indicators_with_timestamps(
-            apt_group, commit_references
-        )
+        indicators_data = self._serialize_indicators_with_timestamps(apt_group, commit_references)
 
         return {
             "metadata": {
@@ -84,9 +80,7 @@ class JSONExporter(BaseExporter):
                 "aliases": sorted(apt_group.metadata.aliases),
                 "references": sorted(apt_group.metadata.references),
                 "last_modified": (
-                    apt_group.metadata.last_modified.isoformat()
-                    if apt_group.metadata.last_modified
-                    else None
+                    apt_group.metadata.last_modified.isoformat() if apt_group.metadata.last_modified else None
                 ),
             },
             "indicators": indicators_data,
@@ -111,9 +105,7 @@ class JSONExporter(BaseExporter):
             has_timestamps = any(ind.first_seen for ind in indicators)
 
             if has_timestamps:
-                result[indicator_type.value] = self._group_by_timestamp(
-                    indicators, commit_references
-                )
+                result[indicator_type.value] = self._group_by_timestamp(indicators, commit_references)
             else:
                 result[indicator_type.value] = sorted(ind.value for ind in indicators)
 
@@ -128,9 +120,7 @@ class JSONExporter(BaseExporter):
         grouped: dict[tuple[str, str], list[str]] = defaultdict(list)
 
         for indicator in indicators:
-            first_seen = (
-                indicator.first_seen.isoformat() if indicator.first_seen else "unknown"
-            )
+            first_seen = indicator.first_seen.isoformat() if indicator.first_seen else "unknown"
             commit = indicator.commit_hash or ""
             key = (first_seen, commit)
             grouped[key].append(indicator.value)

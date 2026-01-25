@@ -30,8 +30,8 @@ class STIXExporter(BaseExporter):
     def export(
         self,
         apt_groups: dict[str, APTGroup],
-        metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _metadata: FeedMetadata,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to STIX 2.1 format.
@@ -97,9 +97,7 @@ class STIXExporter(BaseExporter):
             "external_references": [{"url": ref} for ref in sorted(apt_group.metadata.references)],
         }
 
-    def _create_indicator(
-        self, apt_name: str, indicator_type: IndicatorType, value: str
-    ) -> dict[str, Any] | None:
+    def _create_indicator(self, apt_name: str, indicator_type: IndicatorType, value: str) -> dict[str, Any] | None:
         """Create a STIX indicator object."""
         pattern = self._get_stix_pattern(indicator_type, value)
         if not pattern:

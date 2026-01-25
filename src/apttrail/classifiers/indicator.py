@@ -35,7 +35,7 @@ class IndicatorClassifier:
     MD5_PATTERN: ClassVar[re.Pattern[str]] = re.compile(r"^[a-f0-9]{32}$", re.IGNORECASE)
     SHA1_PATTERN: ClassVar[re.Pattern[str]] = re.compile(r"^[a-f0-9]{40}$", re.IGNORECASE)
     SHA256_PATTERN: ClassVar[re.Pattern[str]] = re.compile(r"^[a-f0-9]{64}$", re.IGNORECASE)
-    
+
     # Domain pattern: segments separated by dots, last segment (TLD) must not be all-numeric
     DOMAIN_PATTERN: ClassVar[re.Pattern[str]] = re.compile(
         r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+"
@@ -116,7 +116,7 @@ class IndicatorClassifier:
             return IndicatorType.IPV6
         except ValueError:
             pass
-            
+
         # Handle IPv4:port
         if "." in indicator and ":" in indicator:
             try:
@@ -126,7 +126,7 @@ class IndicatorClassifier:
                     return IndicatorType.IPV4
             except ValueError:
                 pass
-                
+
         # Handle [IPv6]:port if standard format used
         if indicator.startswith("[") and "]" in indicator:
             try:
@@ -135,7 +135,7 @@ class IndicatorClassifier:
                 return IndicatorType.IPV6
             except ValueError:
                 pass
-                
+
         return IndicatorType.UNKNOWN
 
     def _is_url(self, indicator: str) -> bool:
@@ -156,12 +156,12 @@ class IndicatorClassifier:
         """Check if indicator is a valid domain name."""
         if "." not in indicator:
             return False
-            
+
         # TLD cannot be all numeric
         tld = indicator.split(".")[-1].split(":")[0]
         if tld.isdigit():
             return False
-            
+
         return self.DOMAIN_PATTERN.match(indicator) is not None
 
 

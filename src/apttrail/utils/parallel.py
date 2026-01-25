@@ -4,9 +4,10 @@ Parallel processing utilities for APTtrail.
 Provides thread-safe parallel processing for file operations.
 """
 
+from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import Any, Callable, TypeVar
+from typing import Any, TypeVar
 
 T = TypeVar("T")
 
@@ -52,12 +53,10 @@ class ParallelProcessor:
         with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_file = {executor.submit(processor, f): f for f in files}
 
-            completed = 0
             total = len(files)
 
-            for future in as_completed(future_to_file):
+            for completed, future in enumerate(as_completed(future_to_file), 1):
                 file_path = future_to_file[future]
-                completed += 1
 
                 try:
                     result = future.result()

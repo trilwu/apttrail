@@ -97,9 +97,7 @@ class APTGroup(BaseModel):
 
     name: str = Field(..., min_length=1, description="APT group name")
     metadata: APTGroupMetadata = Field(..., description="Group metadata")
-    indicators: dict[IndicatorType, set[Indicator]] = Field(
-        default_factory=dict, description="Indicators by type"
-    )
+    indicators: dict[IndicatorType, set[Indicator]] = Field(default_factory=dict, description="Indicators by type")
 
     @property
     def total_indicators(self) -> int:
@@ -176,9 +174,7 @@ class CollectorConfig(BaseModel):
 
     maltrail_path: str = Field(default="data/maltrail", description="Maltrail repo path")
     auto_update: bool = Field(default=True, description="Auto-update repository")
-    export_config: FeedExportConfig = Field(
-        default_factory=FeedExportConfig, description="Export settings"
-    )
+    export_config: FeedExportConfig = Field(default_factory=FeedExportConfig, description="Export settings")
 
 
 # Type aliases for convenience

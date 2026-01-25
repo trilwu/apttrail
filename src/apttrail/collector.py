@@ -6,7 +6,6 @@ Orchestrates the collection, processing, and export of APT threat indicators.
 
 from collections import defaultdict
 from pathlib import Path
-from typing import Any
 
 from apttrail.classifiers.indicator import classify_indicator
 from apttrail.exporters import (
@@ -24,9 +23,9 @@ from apttrail.models import (
     Indicator,
     IndicatorType,
 )
+from apttrail.utils.cache import TimestampCache
 from apttrail.utils.git import GitOperations
 from apttrail.utils.parallel import ParallelProcessor
-from apttrail.utils.cache import TimestampCache
 
 
 class APTThreatFeedCollector:
@@ -52,7 +51,7 @@ class APTThreatFeedCollector:
         self.apt_files_path = self.maltrail_path / "trails" / "static" / "malware"
         self.git_ops = GitOperations(self.maltrail_path)
         self.cache = TimestampCache() if config.export_config.collect_timestamps else None
-        
+
         # State
         self.apt_groups: dict[str, APTGroup] = {}
         self.commit_references: dict[str, list[str]] = {}
@@ -66,7 +65,7 @@ class APTThreatFeedCollector:
         """
         if not self.config.auto_update:
             return True
-            
+
         return self.git_ops.update_or_clone()
 
     def collect_indicators(self) -> None:
@@ -77,7 +76,7 @@ class APTThreatFeedCollector:
             print(f"Error: APT files path not found: {self.apt_files_path}")
             return
 
-        apt_files = sorted(list(self.apt_files_path.glob("apt_*.txt")))
+        apt_files = sorted(self.apt_files_path.glob("apt_*.txt"))
         print(f"Found {len(apt_files)} APT indicator files")
 
         if self.config.export_config.collect_timestamps:
@@ -87,11 +86,7 @@ class APTThreatFeedCollector:
         # For now we use sequential processing or simple parallel if stable
         # Using parallel processor for file parsing
         processor = ParallelProcessor()
-        results = processor.process_files(
-            apt_files,
-            self._parse_apt_file,
-            show_progress=True
-        )
+        results = processor.process_files(apt_files, self._parse_apt_file, show_progress=True)
 
         for _, apt_group in results:
             if apt_group:
@@ -113,21 +108,23 @@ class APTThreatFeedCollector:
             APTGroup object with parsed indicators
         """
         apt_name = filepath.stem.replace("apt_", "").upper()
-        
+
         # Get metadata
         last_modified = self.git_ops.get_file_last_commit_time(filepath)
         aliases = []
         references = []
-        
+
         # Get timestamps if requested
         timestamps = {}
         if self.config.export_config.collect_timestamps and self.cache:
             # Check if Maltrail repo has been updated
             current_commit = self.git_ops.get_current_commit()
             cached_commit = self.cache.get_maltrail_commit()
-            
+
             if current_commit != cached_commit:
-                print(f"  Maltrail updated ({cached_commit[:8] if cached_commit else 'none'} → {current_commit[:8] if current_commit else 'none'}), refreshing cache...")
+                print(
+                    f"  Maltrail updated ({cached_commit[:8] if cached_commit else 'none'} → {current_commit[:8] if current_commit else 'none'}), refreshing cache..."
+                )
                 timestamps = self.git_ops.get_file_timestamps_bulk(filepath)
             else:
                 # Use cache for faster lookups
@@ -135,7 +132,7 @@ class APTThreatFeedCollector:
 
         indicators_by_type: dict[IndicatorType, set[Indicator]] = defaultdict(set)
 
-        with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+        with open(filepath, encoding="utf-8", errors="ignore") as f:
             for line in f:
                 line = line.strip()
                 if not line:
@@ -158,7 +155,7 @@ class APTThreatFeedCollector:
                     ts_info = timestamps.get(line, {})
                     first_seen = ts_info.get("first_seen")
                     commit = ts_info.get("commit")
-                    
+
                     # Try cache if no timestamp from git
                     if not first_seen and self.cache:
                         cached = self.cache.get(line)
@@ -167,36 +164,26 @@ class APTThreatFeedCollector:
                             commit = cached.get("commit")
 
                     indicator = Indicator(
-                        value=line,
-                        indicator_type=indicator_type,
-                        first_seen=first_seen,
-                        commit_hash=commit
+                        value=line, indicator_type=indicator_type, first_seen=first_seen, commit_hash=commit
                     )
-                    
+
                     # Update cache if we have timestamp info
                     if self.cache and (first_seen or commit):
                         self.cache.set(line, first_seen, commit)
-                    
+
                     indicators_by_type[indicator_type].add(indicator)
 
         metadata = APTGroupMetadata(
-            filename=filepath.name,
-            aliases=aliases,
-            references=references,
-            last_modified=last_modified
+            filename=filepath.name, aliases=aliases, references=references, last_modified=last_modified
         )
 
-        return APTGroup(
-            name=apt_name,
-            metadata=metadata,
-            indicators=indicators_by_type
-        )
+        return APTGroup(name=apt_name, metadata=metadata, indicators=indicators_by_type)
 
     def _collect_commit_references(self) -> None:
         """Extract reference URLs from commit messages."""
         print("Extracting reference URLs from commit messages...")
         all_commits = set()
-        
+
         for group in self.apt_groups.values():
             for indicators in group.indicators.values():
                 for ind in indicators:
@@ -206,13 +193,13 @@ class APTThreatFeedCollector:
         if all_commits:
             self.commit_references = self.git_ops.get_commit_references(all_commits)
             print(f"  Found references in {len(self.commit_references)} commits")
-        
+
         # Update cache metadata
         if self.cache:
             current_commit = self.git_ops.get_current_commit()
             if current_commit:
                 self.cache.set_maltrail_commit(current_commit)
-            
+
             stats = self.cache.get_stats()
             print(f"  Cache: {stats['total_indicators']} indicators, {stats['db_size_mb']:.2f} MB")
 
@@ -221,57 +208,57 @@ class APTThreatFeedCollector:
         export_config = self.config.export_config
         output_dir = Path(export_config.output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
-        
+
         metadata = FeedMetadata(
             total_apt_groups=len(self.apt_groups),
             total_indicators=sum(g.total_indicators for g in self.apt_groups.values()),
-            maltrail_commit=self.git_ops.get_current_commit()
+            maltrail_commit=self.git_ops.get_current_commit(),
         )
-        
+
         formats = export_config.formats
         print(f"\nExporting threat feeds to {output_dir}...")
-        
+
         if "json" in formats:
             JSONExporter(output_dir / "apttrail_threat_feed.json").export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
+
         if "csv" in formats:
-            # Always compact for this exporter logic based on original, 
+            # Always compact for this exporter logic based on original,
             # or configurable? Original had compact=True default.
             CSVExporter(output_dir / "apttrail_threat_feed.csv", compact=True).export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
+
         if "stix" in formats:
             STIXExporter(output_dir / "apttrail_threat_feed_stix.json").export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
+
         if "suricata" in formats:
             SuricataExporter(
                 output_dir / "apttrail_threat_feed.rules",
                 optimized=export_config.optimized,
-                use_datasets=export_config.use_datasets
-            ).export(
-                self.apt_groups, metadata, self.commit_references
-            )
-            
+                use_datasets=export_config.use_datasets,
+            ).export(self.apt_groups, metadata, self.commit_references)
+
         if "yara" in formats:
             YARAExporter(output_dir / "apttrail_threat_feed.yar").export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
+
         if "misp" in formats:
             from apttrail.exporters.misp import MISPExporter
+
             MISPExporter(output_dir / "apttrail_threat_feed_misp.json").export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
+
         if "sigma" in formats:
             from apttrail.exporters.sigma import SigmaExporter
+
             SigmaExporter(output_dir / "apttrail_threat_feed.yaml").export(
                 self.apt_groups, metadata, self.commit_references
             )
-            
-        print(f"All feeds exported successfully.")
+
+        print("All feeds exported successfully.")

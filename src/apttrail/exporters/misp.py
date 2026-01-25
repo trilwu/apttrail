@@ -28,7 +28,7 @@ class MISPExporter(BaseExporter):
         self,
         apt_groups: dict[str, APTGroup],
         metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to MISP format.
@@ -53,9 +53,9 @@ class MISPExporter(BaseExporter):
         """Build the MISP event structure."""
         # Create a single large event or multiple events?
         # A single event for the feed is typical for a daily/hourly dump.
-        
+
         event_uuid = str(uuid.uuid4())
-        
+
         event = {
             "Event": {
                 "uuid": event_uuid,
@@ -69,7 +69,7 @@ class MISPExporter(BaseExporter):
                 "Tag": [
                     {"name": "tlp:white", "colour": "#ffffff"},
                     {"name": "source:apttrail", "colour": "#0088cc"},
-                ]
+                ],
             }
         }
 
@@ -87,7 +87,7 @@ class MISPExporter(BaseExporter):
     ) -> None:
         """Add attributes for an APT group."""
         tag = f"apt:{apt_name.lower()}"
-        
+
         for indicator_type, indicators in apt_group.indicators.items():
             misp_type = self._map_to_misp_type(indicator_type)
             if not misp_type:
@@ -100,7 +100,7 @@ class MISPExporter(BaseExporter):
                     "to_ids": True,
                     "timestamp": str(int(self._get_timestamp(indicator).timestamp())),
                     "comment": f"APT {apt_name} Indicator",
-                    "Tag": [{"name": tag, "colour": "#ff0000"}]
+                    "Tag": [{"name": tag, "colour": "#ff0000"}],
                 }
                 attributes.append(attr)
 
@@ -108,7 +108,7 @@ class MISPExporter(BaseExporter):
         """Map internal type to MISP attribute type."""
         mapping = {
             IndicatorType.IPV4: "ip-dst",
-            IndicatorType.IPV6: "ip-dst", # MISP uses same type, auto-detects? or ip-dst|port
+            IndicatorType.IPV6: "ip-dst",  # MISP uses same type, auto-detects? or ip-dst|port
             IndicatorType.DOMAIN: "domain",
             IndicatorType.URL: "url",
             IndicatorType.MD5: "md5",
@@ -121,4 +121,5 @@ class MISPExporter(BaseExporter):
     def _get_timestamp(self, indicator: Any) -> Any:
         """Get timestamp for indicator, defaulting to now."""
         from datetime import datetime
+
         return indicator.first_seen if indicator.first_seen else datetime.now()

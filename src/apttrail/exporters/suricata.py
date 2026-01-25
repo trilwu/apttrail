@@ -42,8 +42,8 @@ class SuricataExporter(BaseExporter):
     def export(
         self,
         apt_groups: dict[str, APTGroup],
-        metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _metadata: FeedMetadata,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to Suricata rules format.
@@ -90,11 +90,11 @@ class SuricataExporter(BaseExporter):
         """Write rules for a single APT group."""
         aliases = ", ".join(apt_group.metadata.aliases)
 
-        buffer.write(f"# ==================================================\n")
+        buffer.write("# ==================================================\n")
         buffer.write(f"# APT Group: {apt_name}\n")
         if aliases:
             buffer.write(f"# Aliases: {aliases}\n")
-        buffer.write(f"# ==================================================\n\n")
+        buffer.write("# ==================================================\n\n")
 
         # Domain rules
         if IndicatorType.DOMAIN in apt_group.indicators:
@@ -104,15 +104,11 @@ class SuricataExporter(BaseExporter):
 
         # IP rules
         if IndicatorType.IPV4 in apt_group.indicators:
-            sid_counter = self._write_ip_rules(
-                buffer, apt_name, apt_group.indicators[IndicatorType.IPV4], sid_counter
-            )
+            sid_counter = self._write_ip_rules(buffer, apt_name, apt_group.indicators[IndicatorType.IPV4], sid_counter)
 
         # URL rules
         if IndicatorType.URL in apt_group.indicators:
-            sid_counter = self._write_url_rules(
-                buffer, apt_name, apt_group.indicators[IndicatorType.URL], sid_counter
-            )
+            sid_counter = self._write_url_rules(buffer, apt_name, apt_group.indicators[IndicatorType.URL], sid_counter)
 
         # Hash rules
         for hash_type in [IndicatorType.MD5, IndicatorType.SHA1, IndicatorType.SHA256]:
@@ -206,7 +202,7 @@ class SuricataExporter(BaseExporter):
                 if parsed.netloc:
                     path = parsed.path or "/"
                     rule = (
-                        f'alert http $HOME_NET any -> $EXTERNAL_NET any '
+                        f"alert http $HOME_NET any -> $EXTERNAL_NET any "
                         f'(msg:"APT {apt_name} - HTTP Request to Malicious URL"; '
                         f'flow:established,to_server; http.uri; content:"{path}"; '
                         f'http.host; content:"{parsed.netloc}"; classtype:trojan-activity; '
@@ -233,7 +229,7 @@ class SuricataExporter(BaseExporter):
 
         for indicator in sorted(indicators, key=lambda x: x.value):
             rule = (
-                f'alert http $HOME_NET any -> $EXTERNAL_NET any '
+                f"alert http $HOME_NET any -> $EXTERNAL_NET any "
                 f'(msg:"APT {apt_name} - Download of File with Known {hash_type.value.upper()} Hash"; '
                 f"flow:established,to_server; filestore; filemd5:!{indicator.value}; "
                 f"classtype:trojan-activity; sid:{sid_counter}; rev:1; metadata:apt_group {apt_name};)\n"

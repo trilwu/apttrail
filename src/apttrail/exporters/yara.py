@@ -26,8 +26,8 @@ class YARAExporter(BaseExporter):
     def export(
         self,
         apt_groups: dict[str, APTGroup],
-        metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _metadata: FeedMetadata,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to YARA rules format.
@@ -93,9 +93,7 @@ class YARAExporter(BaseExporter):
             ("sha256", IndicatorType.SHA256),
         ]:
             if indicator_type in apt_group.indicators:
-                hashes[hash_type] = sorted(
-                    ind.value for ind in apt_group.indicators[indicator_type]
-                )
+                hashes[hash_type] = sorted(ind.value for ind in apt_group.indicators[indicator_type])
 
         # Skip if no usable indicators
         if not domains and not ips and not any(hashes.values()):
@@ -103,25 +101,24 @@ class YARAExporter(BaseExporter):
 
         # Write the rule
         buffer.write(f"rule APT_{safe_name} {{\n")
-        buffer.write(f"    meta:\n")
+        buffer.write("    meta:\n")
         buffer.write(f'        description = "Indicators associated with APT {apt_name}"\n')
-        buffer.write(f'        author = "APTtrail"\n')
-        buffer.write(f'        date = "auto-generated"\n')
+        buffer.write('        author = "APTtrail"\n')
+        buffer.write('        date = "auto-generated"\n')
 
         if apt_group.metadata.aliases:
             aliases = ", ".join(apt_group.metadata.aliases[:3])
             buffer.write(f'        aliases = "{aliases}"\n')
 
-        buffer.write(f"\n")
+        buffer.write("\n")
 
         # Write strings section
         if domains or ips:
-            buffer.write(f"    strings:\n")
+            buffer.write("    strings:\n")
             string_count = 0
 
             # Add domains (limit to avoid rule explosion)
             for domain in domains[:100]:
-                escaped = domain.replace(".", "\\.")
                 buffer.write(f'        $domain{string_count} = "{domain}" nocase\n')
                 string_count += 1
 
@@ -131,10 +128,10 @@ class YARAExporter(BaseExporter):
                 buffer.write(f'        $ip{string_count} = "{ip_clean}"\n')
                 string_count += 1
 
-            buffer.write(f"\n")
+            buffer.write("\n")
 
         # Write condition section
-        buffer.write(f"    condition:\n")
+        buffer.write("    condition:\n")
         conditions = []
 
         if domains or ips:
@@ -142,25 +139,21 @@ class YARAExporter(BaseExporter):
 
         # Add hash conditions
         if hashes["md5"]:
-            md5_list = " or ".join(
-                f'hash.md5(0, filesize) == "{h}"' for h in hashes["md5"][:20]
-            )
+            md5_list = " or ".join(f'hash.md5(0, filesize) == "{h}"' for h in hashes["md5"][:20])
             if md5_list:
                 conditions.append(f"({md5_list})")
 
         if hashes["sha256"]:
-            sha256_list = " or ".join(
-                f'hash.sha256(0, filesize) == "{h}"' for h in hashes["sha256"][:20]
-            )
+            sha256_list = " or ".join(f'hash.sha256(0, filesize) == "{h}"' for h in hashes["sha256"][:20])
             if sha256_list:
                 conditions.append(f"({sha256_list})")
 
         if conditions:
             buffer.write(f"        {' or '.join(conditions)}\n")
         else:
-            buffer.write(f"        false\n")
+            buffer.write("        false\n")
 
-        buffer.write(f"}}\n\n")
+        buffer.write("}\n\n")
 
     def _sanitize_name(self, name: str) -> str:
         """Sanitize a name for use as a YARA identifier."""

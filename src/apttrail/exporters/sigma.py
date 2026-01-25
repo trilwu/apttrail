@@ -4,7 +4,6 @@ Sigma rules exporter for APTtrail.
 Exports threat indicators to Sigma rule format (YAML).
 """
 
-import datetime
 from pathlib import Path
 
 from apttrail.exporters.base import BaseExporter
@@ -26,7 +25,7 @@ class SigmaExporter(BaseExporter):
         self,
         apt_groups: dict[str, APTGroup],
         metadata: FeedMetadata,
-        commit_references: dict[str, list[str]] | None = None,
+        _commit_references: dict[str, list[str]] | None = None,
     ) -> bool:
         """
         Export indicators to Sigma format.
@@ -42,15 +41,15 @@ class SigmaExporter(BaseExporter):
         # Collect all indicators
         domains = []
         hashes = []
-        
+
         for group in apt_groups.values():
             if IndicatorType.DOMAIN in group.indicators:
                 domains.extend(i.value for i in group.indicators[IndicatorType.DOMAIN])
-            
+
             for hash_type in [IndicatorType.MD5, IndicatorType.SHA1, IndicatorType.SHA256]:
                 if hash_type in group.indicators:
                     hashes.extend(i.value for i in group.indicators[hash_type])
-        
+
         if not domains and not hashes:
             return False
 
@@ -61,11 +60,11 @@ class SigmaExporter(BaseExporter):
     def _generate_yaml(self, domains: list[str], hashes: list[str], metadata: FeedMetadata) -> str:
         """Generate Sigma YAML content."""
         date_str = metadata.generated_at.strftime("%Y/%m/%d")
-        
+
         # Helper for yaml list
         def to_yaml_list(items: list[str]) -> str:
             return "\n".join(f"      - '{item}'" for item in sorted(set(items)))
-            
+
         yaml = f"""title: APTtrail Threat Indicators
 id: apttrail-feed-detection
 status: experimental

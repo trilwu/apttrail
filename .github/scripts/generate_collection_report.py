@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 import json
-import sys
 import subprocess
-from pathlib import Path
+import sys
 
 # Check if there are actual changes in the feeds (check staged changes)
-result = subprocess.run(
-    ['git', 'diff', '--staged', '--stat', 'feeds/'],
-    capture_output=True,
-    text=True
-)
+result = subprocess.run(["git", "diff", "--staged", "--stat", "feeds/"], capture_output=True, text=True)
 
 if not result.stdout.strip():
     print("No changes detected in feeds")
@@ -17,34 +12,31 @@ if not result.stdout.strip():
 
 # Parse git diff to get actual changes (check staged changes)
 diff_result = subprocess.run(
-    ['git', 'diff', '--staged', '--numstat', 'feeds/apttrail_threat_feed.json'],
-    capture_output=True,
-    text=True
+    ["git", "diff", "--staged", "--numstat", "feeds/apttrail_threat_feed.json"], capture_output=True, text=True
 )
 
 # Get list of changed APT groups
 changed_groups = set()
 if diff_result.stdout.strip():
     diff_lines = subprocess.run(
-        ['git', 'diff', '--staged', 'feeds/apttrail_threat_feed.json'],
-        capture_output=True,
-        text=True
+        ["git", "diff", "--staged", "feeds/apttrail_threat_feed.json"], capture_output=True, text=True
     )
 
-    for line in diff_lines.stdout.split('\n'):
+    for line in diff_lines.stdout.split("\n"):
         # Look for APT group names in the diff (lines with + or - and apt_groups)
-        if (line.startswith('+') or line.startswith('-')) and '"apt_groups"' not in line:
+        if (line.startswith("+") or line.startswith("-")) and '"apt_groups"' not in line:
             # Extract APT group names from changed sections
             import re
+
             matches = re.findall(r'"([A-Z0-9_]+)":\s*{', line)
             changed_groups.update(matches)
 
 # Load current data
-with open('feeds/apttrail_threat_feed.json') as f:
+with open("feeds/apttrail_threat_feed.json") as f:
     data = json.load(f)
 
 # Generate concise summary of changes
-print(f"Update APT threat feeds")
+print("Update APT threat feeds")
 print()
 
 if changed_groups:
