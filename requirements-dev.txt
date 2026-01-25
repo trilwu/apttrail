@@ -1,0 +1,9 @@
+# Development dependencies for APTtrail
+pytest==8.0.0
+pytest-cov==4.1.0
+ruff==0.2.0
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Include core dependencies
+-r requirements.txt

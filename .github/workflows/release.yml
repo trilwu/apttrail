@@ -39,7 +39,8 @@ jobs:
 
     - name: Generate all feed formats
       run: |
-        python apt_threat_feed_collector.py --output-dir release-feeds
+        pip install .
+        python -m apttrail --output-dir release-feeds
 
     - name: Create release archive
       run: |

@@ -1,105 +1,80 @@
-# 🛡️ APTtrail - Automated APT Threat Feed Collector
+# APTtrail - APT Threat Feed Collector
 
-[![Collect APT Threat Feeds](https://github.com/trilwu/apttrail/actions/workflows/collect-apt-feeds.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/collect-apt-feeds.yml)
+**APTtrail** is an automated threat intelligence collector that processes indicators from the [Maltrail](https://github.com/stamparm/maltrail) repository into multiple standard formats.
+
+[![CI](https://github.com/trilwu/apttrail/actions/workflows/ci.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Automated collection of APT (Advanced Persistent Threat) indicators from [Maltrail](https://github.com/stamparm/maltrail). Updates hourly with ready-to-use threat feeds in JSON, CSV, STIX 2.1, and optimized Suricata/Snort rules.
+## 🚀 Features
 
-## 💡 Why This Project?
+- **Multi-Format Export**: JSON, CSV, STIX 2.1, Suricata, YARA, MISP, and Sigma.
+- **Git Integration**: Auto-updates source repository and extracts commit timestamps.
+- **Optimized**: Generates high-performance Suricata rules (regex-optimized).
+- **Type-Safe**: Fully typed Python codebase with Pydantic validation.
+- **Dockerized**: Ready-to-use container image.
 
-**Maltrail** is one of the best **free, open-source threat intelligence feeds** available, maintained by security researcher Miroslav Stampar. It provides 120,000+ indicators covering 323+ APT groups with exceptional data quality.
+## 📦 Installation
 
-**The Problem:** Maltrail's data is scattered across hundreds of trail files, making it difficult to consume programmatically.
-
-**The Solution:** APTtrail automatically extracts, normalizes, and publishes all APT indicators in multiple formats - updated hourly via GitHub Actions. Zero infrastructure needed.
-
-## 🚀 Quick Start
-
-### Deploy Suricata Rules (Recommended)
-
-Download and deploy 117,000 optimized detection rules:
-
+### From Source
 ```bash
-# Download rules
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.rules
-
-# Deploy to Suricata
-sudo cp apttrail_threat_feed.rules /etc/suricata/rules/
-sudo systemctl restart suricata
+git clone https://github.com/trilwu/apttrail.git
+cd apttrail
+pip install -e .
 ```
 
-Or add to `/etc/suricata/suricata.yaml`:
-```yaml
-rule-files:
-  - apttrail_threat_feed.rules
-```
-
-**Rule Features:**
-- 117K optimized rules (70% smaller than unoptimized)
-- DNS, IP, HTTP URL, and file hash detection
-- Bidirectional IP blocking with rate limiting
-- SID range: 9000000-9116772
-- Compatible with Suricata 6.x+ and Snort 3.x
-
-### Use Other Feed Formats
-
-Download feeds from the [feeds directory](feeds/):
-
+### Using Docker
 ```bash
-# JSON feed (120K+ indicators)
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.json
-
-# CSV feed (compact format)
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed.csv
-
-# STIX 2.1 format
-curl -O https://raw.githubusercontent.com/trilwu/apttrail/refs/heads/main/feeds/apttrail_threat_feed_stix.json
+docker build -t apttrail .
+docker run -v $(pwd)/feeds:/app/feeds apttrail --json-only
 ```
 
-### Run Your Own Instance
+## 🛠 Usage
 
-1. **Fork this repository**
-2. **Enable GitHub Actions** in Settings → Actions → General
-3. **Done!** Feeds update hourly automatically
+Basic usage (collects all feeds):
+```bash
+apttrail
+```
 
-Customize the schedule in [.github/workflows/collect-apt-feeds.yml](.github/workflows/collect-apt-feeds.yml)
+Custom output directory:
+```bash
+apttrail --output-dir /path/to/feeds
+```
 
-## 📁 Feed Formats
+Specific formats:
+```bash
+apttrail --json-only     # JSON only
+apttrail --csv-only      # CSV only
+apttrail --stix-only     # STIX 2.1 bundle
+apttrail --misp-only     # MISP event JSON
+apttrail --sigma-only    # Sigma detection rules
+apttrail --yara-only     # YARA rules
+```
 
-**Suricata Rules** (`apttrail_threat_feed.rules`) - 117K optimized detection rules
-- DNS, IP, HTTP URL, file hash detection
-- Bidirectional blocking with rate limiting
-- 70% smaller than unoptimized rules
+Enable timestamp collection (slower, uses `git blame`):
+```bash
+apttrail --collect-timestamps
+```
 
-**JSON** (`apttrail_threat_feed.json`) - Full structured data with timestamps and references
-- Indicators grouped by first_seen date (reduces redundancy)
-- Format: `{"first_seen": "2024-01-15T10:30:00", "indicators": ["evil.com"], "references": ["https://..."]}`
-- References extracted from Maltrail commit messages
-- Includes APT group metadata and statistics
+## 📊 Output Formats
 
-**CSV** (`apttrail_threat_feed.csv`) - Compact format with timestamps
-- Format: `apt_group,indicator_type,indicator,first_seen`
-- Lightweight format for SIEM ingestion
-- Easy to import into spreadsheets and databases
+| Format | File | Description |
+|--------|------|-------------|
+| **JSON** | `apttrail_threat_feed.json` | Full structured data with metadata |
+| **CSV** | `apttrail_threat_feed.csv` | Compact list of indicators |
+| **STIX** | `apttrail_threat_feed_stix.json` | STIX 2.1 Bundle |
+| **Suricata** | `apttrail_threat_feed.rules` | Detection rules for IDS |
+| **YARA** | `apttrail_threat_feed.yar` | File scanning rules |
+| **MISP** | `apttrail_threat_feed_misp.json` | MISP Event format |
+| **Sigma** | `apttrail_threat_feed.yaml` | Generic detection rules |
 
-**STIX 2.1** (`apttrail_threat_feed_stix.json`) - Industry-standard threat intel format
+## 🤝 Contributing
 
-## 📊 Statistics
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-- **APT Groups:** 323+
-- **Total Indicators:** 120,000+
-- **Suricata Rules:** 117,000 (optimized)
-- **Update Frequency:** Hourly
-- **Data Source:** [Maltrail](https://github.com/stamparm/maltrail)
+## 📜 License
 
-## 🙏 Acknowledgments
+MIT License. See [LICENSE](LICENSE) for details.
 
-Built on [Maltrail](https://github.com/stamparm/maltrail) by Miroslav Stampar - one of the best free, open-source threat intelligence feeds available.
+## 🙏 Acknowledgements
 
-## 📝 License
-
-MIT License. Maltrail data subject to [Maltrail license](https://github.com/stamparm/maltrail/blob/master/LICENSE).
-
----
-
-⚠️ **Disclaimer:** Always verify indicators before defensive action. Use at your own risk.
+- [Maltrail](https://github.com/stamparm/maltrail) by Miroslav Stampar for the incredible data source.
