@@ -46,7 +46,7 @@ jobs:
         # apttrail handles cloning, but we can pre-clone if we want to cache or control location
         # Default location is data/maltrail
         # Note: apttrail will clone if missing
-        pass
+        echo "Repository update handled by apttrail package"
 
     - name: Collect APT indicators
       run: |
