@@ -51,7 +51,7 @@ jobs:
     - name: Collect APT indicators
       run: |
         pip install .
-        python -m apttrail --output-dir feeds --collect-timestamps --suricata-dataset
+        python -m apttrail --output-dir feeds --suricata-dataset
 
     - name: Normalize timestamps and check for changes
       run: |
