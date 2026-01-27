@@ -58,16 +58,19 @@ jobs:
         # Normalize generated_at timestamp in JSON to avoid false positives
         # This allows us to detect real IOC changes vs just timestamp updates
         if [ -f feeds/apttrail_threat_feed.json ]; then
-          python3 -c "
-import json
-from pathlib import Path
+          cat <<EOF > normalize.py
+          import json
+          from pathlib import Path
 
-file = Path('feeds/apttrail_threat_feed.json')
-data = json.loads(file.read_text())
-# Set to a fixed timestamp for comparison
-data['generated_at'] = '2024-01-01T00:00:00'
-file.write_text(json.dumps(data, indent=2, sort_keys=True))
-"
+          file = Path('feeds/apttrail_threat_feed.json')
+          if file.exists():
+              data = json.loads(file.read_text())
+              # Set to a fixed timestamp for comparison
+              data['generated_at'] = '2024-01-01T00:00:00'
+              file.write_text(json.dumps(data, indent=2, sort_keys=True))
+          EOF
+          python3 normalize.py
+          rm normalize.py
         fi
 
     - name: Commit and push if changed
