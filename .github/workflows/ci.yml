@@ -6,7 +6,10 @@ on:
     paths:
       - 'src/**'
       - 'tests/**'
+      - 'scripts/**'
       - 'pyproject.toml'
+      - 'Dockerfile'
+      - '.github/workflows/ci.yml'
   pull_request:
     branches: [ main ]
 
