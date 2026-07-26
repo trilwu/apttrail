@@ -5,6 +5,7 @@ Orchestrates the collection, processing, and export of APT threat indicators.
 """
 
 from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 
 from apttrail.classifiers.indicator import classify_indicator
@@ -55,6 +56,7 @@ class APTThreatFeedCollector:
         # State
         self.apt_groups: dict[str, APTGroup] = {}
         self.commit_references: dict[str, list[str]] = {}
+        self.file_last_modified: dict[str, datetime] = {}
 
     def update_repository(self) -> bool:
         """
@@ -78,6 +80,10 @@ class APTThreatFeedCollector:
 
         apt_files = sorted(self.apt_files_path.glob("apt_*.txt"))
         print(f"Found {len(apt_files)} APT indicator files")
+
+        # One history walk for every file, instead of one `git log` per file.
+        self.file_last_modified = self.git_ops.get_last_commit_times(self.apt_files_path)
+        print(f"Resolved commit times for {len(self.file_last_modified)} files")
 
         if self.config.export_config.collect_timestamps:
             print("Timestamp collection enabled (using git blame)")
@@ -110,7 +116,7 @@ class APTThreatFeedCollector:
         apt_name = filepath.stem.replace("apt_", "").upper()
 
         # Get metadata
-        last_modified = self.git_ops.get_file_last_commit_time(filepath)
+        last_modified = self._get_last_modified(filepath)
         aliases = []
         references = []
 
@@ -178,6 +184,24 @@ class APTThreatFeedCollector:
         )
 
         return APTGroup(name=apt_name, metadata=metadata, indicators=indicators_by_type)
+
+    def _get_last_modified(self, filepath: Path) -> datetime | None:
+        """
+        Look up a file's last commit time from the prefetched history.
+
+        Args:
+            filepath: Path to the APT file
+
+        Returns:
+            Last commit datetime, or None if the file has no history. Callers
+            must not substitute the current time: doing so makes the exported
+            feed change on every run even when no indicator changed.
+        """
+        try:
+            key = filepath.relative_to(self.maltrail_path).as_posix()
+        except ValueError:
+            return None
+        return self.file_last_modified.get(key)
 
     def _collect_commit_references(self) -> None:
         """Extract reference URLs from commit messages."""

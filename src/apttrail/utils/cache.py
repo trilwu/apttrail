@@ -7,8 +7,10 @@ repeated git blame operations.
 
 import hashlib
 import sqlite3
+import threading
 from datetime import datetime
 from pathlib import Path
+from types import TracebackType
 from typing import Any
 
 
@@ -18,6 +20,10 @@ class TimestampCache:
 
     Stores first_seen timestamps and commit hashes to avoid
     redundant git operations on subsequent runs.
+
+    A single connection is shared across the collector's worker threads and
+    guarded by a lock. Opening a connection per indicator, as an earlier
+    version did, dominated the runtime at ~125k indicators.
     """
 
     def __init__(self, cache_dir: Path | None = None) -> None:
@@ -32,11 +38,37 @@ class TimestampCache:
 
         cache_dir.mkdir(parents=True, exist_ok=True)
         self.db_path = cache_dir / "cache.db"
+        self._lock = threading.Lock()
+        self._conn = sqlite3.connect(self.db_path, check_same_thread=False)
         self._init_db()
+
+    def __enter__(self) -> "TimestampCache":
+        return self
+
+    def __exit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc: BaseException | None,
+        tb: TracebackType | None,
+    ) -> None:
+        self.close()
+
+    def close(self) -> None:
+        """Commit pending writes and close the connection."""
+        with self._lock:
+            self._conn.commit()
+            self._conn.close()
+
+    def commit(self) -> None:
+        """Flush pending writes to disk."""
+        with self._lock:
+            self._conn.commit()
 
     def _init_db(self) -> None:
         """Initialize the database schema."""
-        with sqlite3.connect(self.db_path) as conn:
+        with self._lock:
+            conn = self._conn
+            conn.execute("PRAGMA journal_mode=WAL")
             conn.execute(
                 """
                 CREATE TABLE IF NOT EXISTS indicator_timestamps (
@@ -64,6 +96,7 @@ class TimestampCache:
                 ON indicator_timestamps(last_checked)
             """
             )
+            conn.commit()
 
     def _hash_indicator(self, value: str) -> str:
         """Generate a hash for an indicator value."""
@@ -81,8 +114,8 @@ class TimestampCache:
         """
         indicator_hash = self._hash_indicator(indicator_value)
 
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute(
+        with self._lock:
+            cursor = self._conn.execute(
                 """
                 SELECT first_seen, commit_hash
                 FROM indicator_timestamps
@@ -113,8 +146,8 @@ class TimestampCache:
         indicator_hash = self._hash_indicator(indicator_value)
         now = datetime.now().isoformat()
 
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute(
+        with self._lock:
+            self._conn.execute(
                 """
                 INSERT OR REPLACE INTO indicator_timestamps
                 (indicator_hash, indicator_value, first_seen, commit_hash, last_checked)
@@ -125,35 +158,38 @@ class TimestampCache:
 
     def get_maltrail_commit(self) -> str | None:
         """Get the cached Maltrail commit hash."""
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute("SELECT value FROM cache_metadata WHERE key = 'maltrail_commit'")
+        with self._lock:
+            cursor = self._conn.execute("SELECT value FROM cache_metadata WHERE key = 'maltrail_commit'")
             row = cursor.fetchone()
             return row[0] if row else None
 
     def set_maltrail_commit(self, commit_hash: str) -> None:
         """Set the Maltrail commit hash."""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute(
+        with self._lock:
+            self._conn.execute(
                 """
                 INSERT OR REPLACE INTO cache_metadata (key, value)
                 VALUES ('maltrail_commit', ?)
                 """,
                 (commit_hash,),
             )
+            self._conn.commit()
 
     def invalidate(self) -> None:
         """Clear all cached timestamps."""
-        with sqlite3.connect(self.db_path) as conn:
-            conn.execute("DELETE FROM indicator_timestamps")
-            conn.execute("DELETE FROM cache_metadata")
+        with self._lock:
+            self._conn.execute("DELETE FROM indicator_timestamps")
+            self._conn.execute("DELETE FROM cache_metadata")
+            self._conn.commit()
 
     def get_stats(self) -> dict[str, Any]:
         """Get cache statistics."""
-        with sqlite3.connect(self.db_path) as conn:
-            cursor = conn.execute("SELECT COUNT(*) FROM indicator_timestamps")
+        with self._lock:
+            self._conn.commit()
+            cursor = self._conn.execute("SELECT COUNT(*) FROM indicator_timestamps")
             count = cursor.fetchone()[0]
 
-            cursor = conn.execute("SELECT MIN(last_checked), MAX(last_checked) FROM indicator_timestamps")
+            cursor = self._conn.execute("SELECT MIN(last_checked), MAX(last_checked) FROM indicator_timestamps")
             min_check, max_check = cursor.fetchone()
 
             return {

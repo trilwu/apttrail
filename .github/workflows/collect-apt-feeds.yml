@@ -53,12 +53,22 @@ jobs:
         pip install .
         python -m apttrail --output-dir feeds --suricata-dataset
 
-    - name: Normalize timestamps and check for changes
+    - name: Discard JSON if only generated_at changed
       run: |
-        # Normalize generated_at timestamp in JSON to avoid false positives
-        # This allows us to detect real IOC changes vs just timestamp updates
+        # generated_at moves every run, so a plain diff always looks dirty.
+        # Compare against HEAD ignoring that field; if nothing else changed,
+        # restore the committed copy so we don't push a no-op 7MB blob.
         if [ -f feeds/apttrail_threat_feed.json ]; then
-          python .github/scripts/normalize_timestamp.py feeds/apttrail_threat_feed.json
+          set +e
+          python .github/scripts/detect_material_change.py feeds/apttrail_threat_feed.json
+          status=$?
+          set -e
+          if [ "$status" -eq 1 ]; then
+            git checkout -- feeds/apttrail_threat_feed.json || true
+          elif [ "$status" -gt 1 ]; then
+            echo "::error::change detection failed with status $status"
+            exit "$status"
+          fi
         fi
 
     - name: Commit and push if changed
@@ -91,17 +101,42 @@ jobs:
           echo "No meaningful changes to commit"
         fi
 
+    # Weekly release. The previous condition compared the cron string against
+    # itself and was always false, so no release was ever published.
+    # Releases also carry the STIX and MISP bundles, which are too large to
+    # commit into git but are fine as release assets.
+    - name: Decide weekly release tag
+      id: weekly
+      if: github.event_name == 'schedule'
+      run: |
+        TAG="weekly-$(date -u +%G-W%V)"
+        if [ "$(date -u +%u)" != "7" ]; then
+          echo "Not Sunday, skipping release"
+        elif git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null 2>&1; then
+          echo "Tag $TAG already exists, skipping release"
+        else
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+        fi
+
+    - name: Generate release notes
+      if: steps.weekly.outputs.tag != ''
+      run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
+
     - name: Create release (weekly)
-      if: github.event_name == 'schedule' && contains('0 0 * * 0', github.event.schedule)
+      if: steps.weekly.outputs.tag != ''
       uses: softprops/action-gh-release@v1
       with:
-        tag_name: v${{ github.run_number }}
-        name: APT Threat Feeds Release ${{ github.run_number }}
-        body_path: collection_report.md
+        tag_name: ${{ steps.weekly.outputs.tag }}
+        name: APT Threat Feeds ${{ steps.weekly.outputs.tag }}
+        body_path: release_notes.md
         files: |
           feeds/apttrail_threat_feed.json
           feeds/apttrail_threat_feed.csv
           feeds/apttrail_threat_feed_metadata.csv
           feeds/apttrail_threat_feed.rules
+          feeds/apttrail_threat_feed.yar
+          feeds/apttrail_threat_feed.yaml
+          feeds/apttrail_threat_feed_stix.json
+          feeds/apttrail_threat_feed_misp.json
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
