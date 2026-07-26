@@ -4,6 +4,9 @@
 121 of them resolved onto 95 MITRE ATT&CK intrusion sets, refreshed hourly.
 
 [![CI](https://github.com/trilwu/apttrail/actions/workflows/ci.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/ci.yml)
+[![indicators](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Findex.json&query=%24.totals.indicators&label=indicators&color=blue)](https://trilwu.github.io/apttrail/)
+[![ATT&CK groups](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Findex.json&query=%24.totals.attack_groups&label=ATT%26CK%20groups&color=blue)](https://trilwu.github.io/apttrail/)
+[![updated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Findex.json&query=%24.generated_at&label=updated&color=green)](https://trilwu.github.io/apttrail/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Most free IOC feeds hand you a flat list of bad domains. Actor attribution lives
