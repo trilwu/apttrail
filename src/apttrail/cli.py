@@ -46,6 +46,11 @@ Examples:
         help="Deprecated: timestamp collection is off unless --collect-timestamps is given",
     )
     parser.add_argument(
+        "--cache-dir",
+        default=None,
+        help="Directory for the timestamp cache (default: ~/.apttrail)",
+    )
+    parser.add_argument(
         "--no-changelog",
         action="store_true",
         help="Skip appending IOC additions/removals to feeds/changes/YYYY-MM.jsonl",
@@ -162,7 +167,10 @@ def main() -> int:
         )
 
         config = CollectorConfig(
-            maltrail_path=args.maltrail_path, auto_update=not args.no_update, export_config=export_config
+            maltrail_path=args.maltrail_path,
+            auto_update=not args.no_update,
+            cache_dir=args.cache_dir,
+            export_config=export_config,
         )
 
         # Initialize and run collector

@@ -55,6 +55,20 @@ Enable timestamp collection (slower, uses `git blame`):
 apttrail --collect-timestamps
 ```
 
+## 📥 Getting the feeds
+
+Feeds are published as **release assets**, not committed to the repository —
+hourly commits of multi-megabyte files are what previously grew this repo to
+841MB. The `latest` tag is updated every hour and its URLs are stable:
+
+```bash
+curl -LO https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed.json
+curl -LO https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed.rules
+```
+
+Swap the filename for any format in the table below. `weekly-YYYY-Wxx` tags hold
+immutable snapshots if you need a fixed point in time.
+
 ## 📊 Output Formats
 
 | Format | File | Description |
@@ -76,8 +90,10 @@ diffing multi-megabyte feed files:
 - **`first_seen`** — when an indicator entered *Maltrail*, derived from the
   upstream repository's own git history. Present in the JSON feed when
   collection is enabled (`--collect-timestamps`, on by default in CI).
-- **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** the
-  APTtrail feed, which `first_seen` cannot express. One JSON object per event:
+- **`feeds/changes/YYYY-MM.jsonl`** — when an indicator entered or **left** the
+  APTtrail feed, which `first_seen` cannot express. This is the one feed
+  artifact kept in git, because it is small and append-only. One JSON object
+  per event:
 
 ```json
 {"action":"added","group":"BLUENOROFF","ts":"2026-07-26T04:00:00","type":"domain","value":"example.com"}

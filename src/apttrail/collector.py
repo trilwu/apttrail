@@ -53,7 +53,8 @@ class APTThreatFeedCollector:
         self.maltrail_path = Path(config.maltrail_path)
         self.apt_files_path = self.maltrail_path / "trails" / "static" / "malware"
         self.git_ops = GitOperations(self.maltrail_path)
-        self.cache = TimestampCache() if config.export_config.collect_timestamps else None
+        cache_dir = Path(config.cache_dir) if config.cache_dir else None
+        self.cache = TimestampCache(cache_dir) if config.export_config.collect_timestamps else None
 
         # State
         self.apt_groups: dict[str, APTGroup] = {}

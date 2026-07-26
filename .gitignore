@@ -65,3 +65,7 @@ Thumbs.db
 *.pem
 credentials.json
 secrets.json
+# Generated feed artifacts are published as release assets, not committed.
+# Only the append-only IOC changelog lives in git.
+feeds/*
+!feeds/changes/

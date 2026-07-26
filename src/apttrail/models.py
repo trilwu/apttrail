@@ -175,6 +175,7 @@ class CollectorConfig(BaseModel):
 
     maltrail_path: str = Field(default="data/maltrail", description="Maltrail repo path")
     auto_update: bool = Field(default=True, description="Auto-update repository")
+    cache_dir: str | None = Field(default=None, description="Timestamp cache directory (default: ~/.apttrail)")
     export_config: FeedExportConfig = Field(default_factory=FeedExportConfig, description="Export settings")
 
 

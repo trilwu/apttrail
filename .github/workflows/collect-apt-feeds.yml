@@ -41,6 +41,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    # Both caches are keyed on the upstream commit rather than the run id.
+    # Keying on the run id would store a fresh ~50MB entry every hour even when
+    # nothing upstream moved; keying on the SHA means an exact hit (and no
+    # save) whenever Maltrail is unchanged.
+    - name: Resolve upstream Maltrail commit
+      id: upstream
+      run: echo "sha=$(git ls-remote https://github.com/stamparm/maltrail.git HEAD | cut -f1)" >> "$GITHUB_OUTPUT"
+
     # apttrail clones Maltrail into data/maltrail itself and pulls on each run.
     # Caching the clone avoids re-downloading ~50MB hourly and, more
     # importantly, keeps the history that `git blame` needs for first_seen.
@@ -48,16 +56,14 @@ jobs:
       uses: actions/cache@v4
       with:
         path: data/maltrail
-        key: maltrail-clone-${{ github.run_id }}
+        key: maltrail-clone-${{ steps.upstream.outputs.sha }}
         restore-keys: maltrail-clone-
 
-    # Per-indicator first_seen timestamps. Keyed per run so each run saves a
-    # fresh entry; restore-keys picks up the most recent one.
     - name: Restore timestamp cache
       uses: actions/cache@v4
       with:
         path: ~/.apttrail
-        key: apttrail-timestamps-${{ github.run_id }}
+        key: apttrail-timestamps-${{ steps.upstream.outputs.sha }}
         restore-keys: apttrail-timestamps-
 
     - name: Collect APT indicators
@@ -65,63 +71,58 @@ jobs:
         pip install .
         python -m apttrail --output-dir feeds --suricata-dataset --collect-timestamps
 
-    - name: Discard JSON if only generated_at changed
-      run: |
-        # generated_at moves every run, so a plain diff always looks dirty.
-        # Compare against HEAD ignoring that field; if nothing else changed,
-        # restore the committed copy so we don't push a no-op 7MB blob.
-        if [ -f feeds/apttrail_threat_feed.json ]; then
-          set +e
-          python .github/scripts/detect_material_change.py feeds/apttrail_threat_feed.json
-          status=$?
-          set -e
-          if [ "$status" -eq 1 ]; then
-            git checkout -- feeds/apttrail_threat_feed.json || true
-          elif [ "$status" -gt 1 ]; then
-            echo "::error::change detection failed with status $status"
-            exit "$status"
-          fi
-        fi
+    - name: Generate feed statistics
+      run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
 
-    - name: Commit and push if changed
+    # The feed files are published as release assets, not committed. Assets are
+    # replaced in place, so hourly updates cost nothing in repository size -
+    # committing them is what grew this repo to 841MB. STIX and MISP ride along
+    # here too; they exceed the 100MB git limit but are fine as assets.
+    - name: Publish rolling feed release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: latest
+        name: Latest APT Threat Feeds
+        body_path: release_notes.md
+        make_latest: true
+        files: |
+          feeds/apttrail_threat_feed.json
+          feeds/apttrail_threat_feed.csv
+          feeds/apttrail_threat_feed_metadata.csv
+          feeds/apttrail_threat_feed.rules
+          feeds/apttrail_threat_feed.yar
+          feeds/apttrail_threat_feed.yaml
+          feeds/apttrail_threat_feed_stix.json
+          feeds/apttrail_threat_feed_misp.json
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # Only the changelog goes into git: a few KB per day, and it is the record
+    # that the feed snapshots cannot provide.
+    - name: Commit changelog
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
 
-        # Only commit files that are under the 100MB limit
-        # STIX and MISP are too large (100MB+) so we don't commit them to the repo
-        git add feeds/apttrail_threat_feed.json
-        git add feeds/apttrail_threat_feed.csv
-        git add feeds/apttrail_threat_feed_metadata.csv
-        git add feeds/apttrail_threat_feed.rules
-        git add feeds/apttrail_threat_feed.yar
-        git add feeds/apttrail_threat_feed.yaml
-        # Append-only IOC change log; a few KB per day. Absent until the first
-        # run that observes an actual indicator change.
-        if [ -d feeds/changes ]; then
-          git add feeds/changes/
-        fi
-
-        if git diff --staged --quiet; then
-          echo "No real changes detected (only timestamp updates)"
+        # Absent until the first run that observes an actual indicator change.
+        if [ ! -d feeds/changes ]; then
+          echo "No changelog directory yet"
           exit 0
         fi
 
-        # Generate meaningful commit message based on actual changes
-        python3 .github/scripts/generate_commit_message.py > commit_message.txt
-        
-        if [ -s commit_message.txt ]; then
-          git commit -F commit_message.txt
-          git push
-          echo "Changes committed and pushed"
-        else
-          echo "No meaningful changes to commit"
+        git add feeds/changes/
+        if git diff --staged --quiet; then
+          echo "No indicator changes to record"
+          exit 0
         fi
 
-    # Weekly release. The previous condition compared the cron string against
-    # itself and was always false, so no release was ever published.
-    # Releases also carry the STIX and MISP bundles, which are too large to
-    # commit into git but are fine as release assets.
+        git commit -m "chore: record IOC changes"
+        git push
+        echo "Changelog committed and pushed"
+
+    # Weekly immutable snapshot. The previous condition compared the cron
+    # string against itself and was always false, so no release was ever
+    # published. make_latest is false so these do not displace the rolling tag.
     - name: Decide weekly release tag
       id: weekly
       if: github.event_name == 'schedule'
@@ -135,17 +136,14 @@ jobs:
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
         fi
 
-    - name: Generate release notes
-      if: steps.weekly.outputs.tag != ''
-      run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
-
     - name: Create release (weekly)
       if: steps.weekly.outputs.tag != ''
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{ steps.weekly.outputs.tag }}
         name: APT Threat Feeds ${{ steps.weekly.outputs.tag }}
         body_path: release_notes.md
+        make_latest: false
         files: |
           feeds/apttrail_threat_feed.json
           feeds/apttrail_threat_feed.csv
