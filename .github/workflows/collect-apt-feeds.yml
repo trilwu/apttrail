@@ -15,7 +15,7 @@ on:
     branches:
       - main
     paths:
-      - 'apttrail_threat_feed_collector.py'
+      - 'src/**'
       - '.github/workflows/collect-apt-feeds.yml'
 
 jobs:

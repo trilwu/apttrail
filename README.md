@@ -1,7 +1,7 @@
 # APTtrail
 
-**IOCs that tell you whose they are.** 155,000 indicators from 339 APT groups,
-121 of them resolved to their MITRE ATT&CK group id, refreshed hourly.
+**IOCs that tell you whose they are.** 167,000 indicators from 340 APT groups,
+122 of them resolved to their MITRE ATT&CK group id, refreshed hourly.
 
 [![CI](https://github.com/trilwu/apttrail/actions/workflows/ci.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -31,8 +31,8 @@ assets. Both have stable URLs you can construct by hand.
 SITE=https://trilwu.github.io/apttrail
 REL=https://github.com/trilwu/apttrail/releases/download/latest
 
-curl -sLO $SITE/by-type/domain.txt          # 141,148 domains, one per line
-curl -sLO $SITE/by-type/ipv4.txt            #   3,813 IPs, ports stripped
+curl -sLO $SITE/by-type/domain.txt          # every domain, one per line
+curl -sLO $SITE/by-type/ipv4.txt            # every IP, ports stripped
 curl -sLO $SITE/by-group/G0007.json         # one actor, full detail
 curl -sLO $SITE/index.json                  # what exists, with counts
 curl -sLO $REL/apttrail_threat_feed_stix.json
@@ -83,8 +83,9 @@ curl -s $SITE/index.json | jq -r '.groups[] | select(.counts.domain) | .slug' \
 
 For repeated lookups, pull `by-type/domain.txt` once and keep the whole set local.
 
-One hop from a single hit to the actor's ATT&CK page, their full infrastructure
-set, and 22 aliases that other vendors' reporting will use for the same group.
+Either direction, you land one hop from the actor's ATT&CK page, their full
+infrastructure set, and the 22 aliases other vendors' reporting will use for the
+same group.
 
 The id travels into every format, so it survives the trip into your tooling:
 
@@ -114,7 +115,7 @@ cp apttrail_threat_feed.rules /etc/suricata/rules/
 suricata -T -c /etc/suricata/suricata.yaml -S /etc/suricata/rules/apttrail_threat_feed.rules
 ```
 
-4,094 rules, not 150,000: domains and IPs are matched through Suricata
+~4,100 rules, not 150,000: domains and IPs are matched through Suricata
 `dataset:` lookups rather than one rule per indicator. SIDs occupy the
 `9000000+` local range, clear of Emerging Threats.
 
@@ -179,13 +180,13 @@ URL and aliases, so you can enrich a match without a second lookup.
 
 | Type | Count | Notes |
 |---|---|---|
-| `domain` | 141,148 | |
-| `url_path` | 3,554 | bare request paths, e.g. `/gate.php` |
-| `ipv4` | 3,813 | ports recorded separately, addresses are bare |
-| `url` | 3,223 | includes scheme-less `host/path` |
+| `domain` | ~141,000 | |
+| `url_path` | ~3,600 | bare request paths, e.g. `/gate.php` |
+| `ipv4` | ~3,800 | ports recorded separately, addresses are bare |
+| `url` | ~3,200 | includes scheme-less `host/path` |
 | hashes | 0 | Maltrail's APT trails carry none today |
 
-339 groups, 121 mapped to ATT&CK. Largest: GAMAREDON (G0047, 52,028),
+340 groups, 122 mapped to ATT&CK. Largest: GAMAREDON (G0047, 52,028),
 KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346).
 
 ### Indicator history
@@ -209,7 +210,7 @@ grep '"value":"example.com"' feeds/changes/*.jsonl   # when did we see this, and
 
 ## Honest limitations
 
-- **Attribution is 121 of 339 groups (36%).** ATT&CK tracks 191 intrusion sets;
+- **Attribution is 122 of 340 groups (36%).** ATT&CK tracks 191 intrusion sets;
   Maltrail tracks actors from vendor reporting that ATT&CK has not named. An
   unmapped group still carries its Maltrail name and aliases.
 - **These are historical indicators, not a real-time blocklist.** Domains get
@@ -234,7 +235,7 @@ Feeds are not published on trust:
   double quote and a URL with no path.
 - The hourly workflow runs `suricata -T` over the actual rule file and
   **refuses to publish** if it fails.
-- 130 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- 134 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
 
 ---
 
