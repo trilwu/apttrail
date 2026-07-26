@@ -45,7 +45,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 | Loading into MISP | `apttrail_threat_feed_misp.json` |
 | Loading into OpenCTI or any STIX tool | `apttrail_threat_feed_stix.json` |
 | Suricata / Snort IDS | `apttrail_threat_feed.rules` + `suricata-datasets/` |
-| Sigma-based SIEM | `apttrail_threat_feed.yaml` |
+| Sigma-based SIEM | `apttrail_threat_feed.yaml` (one rule per group, ATT&CK-tagged) |
 | Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
 
 `weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time
@@ -224,8 +224,10 @@ grep '"value":"example.com"' feeds/changes/*.jsonl   # when did we see this, and
 - **Attribution is inherited, not independent.** APTtrail trusts Maltrail's
   group assignment and the MISP galaxy's alias table. It does no analysis of
   its own.
-- **No file hashes.** The YARA output therefore matches on domain and IP strings
-  in files, which is weak. If you want hashes, this is not your feed.
+- **No file hashes.** The YARA output therefore matches indicator *strings*
+  inside files and memory, which also hits benign files that merely mention a
+  domain — logs, PCAPs, this feed itself. Its header says so. If you want hash
+  detection, this is not your feed.
 - **One upstream source.** Everything here derives from
   [Maltrail](https://github.com/stamparm/maltrail). Its coverage is your coverage.
 
@@ -240,7 +242,9 @@ Feeds are not published on trust:
   double quote and a URL with no path.
 - The hourly workflow runs `suricata -T` over the actual rule file and
   **refuses to publish** if it fails.
-- 140 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- Sigma output is parsed as multi-document YAML in the test suite; every rule
+  must have a condition naming only selections that exist and hold values.
+- 156 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
 
 ---
 

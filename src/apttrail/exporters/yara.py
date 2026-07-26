@@ -12,6 +12,11 @@ from apttrail.exporters.base import BaseExporter
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 
 
+def _escape_yara(value: str) -> str:
+    """Escape a value for a YARA text string literal."""
+    return value.replace("\\", "\\\\").replace('"', '\\"')
+
+
 class YARAExporter(BaseExporter):
     """
     Exports indicators to YARA rules format.
@@ -47,18 +52,32 @@ class YARAExporter(BaseExporter):
         """Generate all YARA rules."""
         buffer = io.StringIO()
 
-        # Write header
+        has_hashes = any(
+            apt_group.indicators.get(indicator_type)
+            for apt_group in apt_groups.values()
+            for indicator_type in (IndicatorType.MD5, IndicatorType.SHA1, IndicatorType.SHA256)
+        )
+
         buffer.write("/*\n")
-        buffer.write("   Maltrail APT Threat Feed - YARA Rules\n")
+        buffer.write("   APTtrail - YARA rules\n")
         buffer.write("   Source: https://github.com/stamparm/maltrail\n")
-        buffer.write("   \n")
-        buffer.write("   IMPORTANT: These are automatically generated rules for threat detection\n")
-        buffer.write("   Review and test before deploying to production\n")
+        buffer.write("   Docs:   https://github.com/trilwu/apttrail\n")
+        buffer.write("\n")
+        if not has_hashes:
+            # Be explicit rather than let someone assume these are hash rules.
+            buffer.write("   NOTE: the Maltrail APT trails carry no file hashes, so these rules\n")
+            buffer.write("   match indicator STRINGS - domains and IPs - inside files and memory.\n")
+            buffer.write("   That is a weaker signal than hash matching and will also hit benign\n")
+            buffer.write("   files that merely mention a domain, such as logs, PCAPs and this\n")
+            buffer.write("   feed itself. Scope your scans accordingly.\n")
+            buffer.write("\n")
+        buffer.write("   Review and test before deploying to production.\n")
         buffer.write("*/\n\n")
 
-        # Import required modules
-        buffer.write('import "hash"\n')
-        buffer.write('import "pe"\n\n')
+        # `hash` is only needed where hash conditions are emitted; `pe` was
+        # imported but never used.
+        if has_hashes:
+            buffer.write('import "hash"\n\n')
 
         for apt_name in sorted(apt_groups.keys()):
             apt_group = apt_groups[apt_name]
@@ -117,15 +136,13 @@ class YARAExporter(BaseExporter):
             buffer.write("    strings:\n")
             string_count = 0
 
-            # Add domains (limit to avoid rule explosion)
-            for domain in domains[:100]:
-                buffer.write(f'        $domain{string_count} = "{domain}" nocase\n')
+            for domain in domains:
+                buffer.write(f'        $domain{string_count} = "{_escape_yara(domain)}" nocase\n')
                 string_count += 1
 
-            # Add IPs
-            for ip in ips[:50]:
+            for ip in ips:
                 ip_clean = ip.split(":")[0]
-                buffer.write(f'        $ip{string_count} = "{ip_clean}"\n')
+                buffer.write(f'        $ip{string_count} = "{_escape_yara(ip_clean)}"\n')
                 string_count += 1
 
             buffer.write("\n")
@@ -137,16 +154,13 @@ class YARAExporter(BaseExporter):
         if domains or ips:
             conditions.append("any of them")
 
-        # Add hash conditions
-        if hashes["md5"]:
-            md5_list = " or ".join(f'hash.md5(0, filesize) == "{h}"' for h in hashes["md5"][:20])
-            if md5_list:
-                conditions.append(f"({md5_list})")
-
-        if hashes["sha256"]:
-            sha256_list = " or ".join(f'hash.sha256(0, filesize) == "{h}"' for h in hashes["sha256"][:20])
-            if sha256_list:
-                conditions.append(f"({sha256_list})")
+        # sha1 was previously collected but never given a condition, so those
+        # hashes were silently dropped from the rule.
+        for hash_type, function in (("md5", "hash.md5"), ("sha1", "hash.sha1"), ("sha256", "hash.sha256")):
+            digests = hashes[hash_type]
+            if digests:
+                clause = " or ".join(f'{function}(0, filesize) == "{digest}"' for digest in digests)
+                conditions.append(f"({clause})")
 
         if conditions:
             buffer.write(f"        {' or '.join(conditions)}\n")
