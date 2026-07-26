@@ -141,8 +141,11 @@ class FeedMetadata(BaseModel):
     source: str = Field(default="Maltrail APT Indicators", description="Data source")
     # Timezone-aware: a bare local timestamp published on a public feed
     # gives a consumer no way to tell how fresh the data actually is.
+    # Second precision: microseconds are noise in a banner a human reads, and
+    # they appear in every exported file.
     generated_at: datetime = Field(
-        default_factory=lambda: datetime.now(timezone.utc), description="Generation time (UTC)"
+        default_factory=lambda: datetime.now(timezone.utc).replace(microsecond=0),
+        description="Generation time (UTC)",
     )
     total_apt_groups: int = Field(default=0, ge=0, description="Number of APT groups")
     total_indicators: int = Field(default=0, ge=0, description="Total indicators")

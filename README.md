@@ -19,7 +19,10 @@ belongs to, and where MITRE tracks that group, with its `Gxxxx` id.
 curl -sL https://trilwu.github.io/apttrail/by-group/G0007-domain.txt
 ```
 
-Browse it: **[trilwu.github.io/apttrail](https://trilwu.github.io/apttrail/)**
+Browse it: **[trilwu.github.io/apttrail](https://trilwu.github.io/apttrail/)** —
+every group has a profile page with description, suspected origin, targeted
+sectors, ATT&CK techniques and its indicators dated, e.g.
+[APT28](https://trilwu.github.io/apttrail/by-group/G0007.html).
 
 ---
 
@@ -50,6 +53,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 | Suricata / Snort IDS | `apttrail_threat_feed.rules` + `suricata-datasets/` |
 | Sigma-based SIEM | `apttrail_threat_feed.yaml` (one rule per group, ATT&CK-tagged) |
 | Looking up one indicator from an alert | `by-indicator/<shard>.json` |
+| Reading up on an actor | [`by-group/<G-id>.html`](https://trilwu.github.io/apttrail/by-group/G0007.html) |
 | Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
 
 `weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time
@@ -272,7 +276,7 @@ Feeds are not published on trust:
   must have a condition naming only selections that exist and hold values.
 - The MISP feed layout is asserted against what MISP reads: manifest keys
   matching event files, stable UUIDs across runs, galaxy tags where mapped.
-- 191 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- 208 tests, `mypy` clean, `ruff` clean, coverage 91% against a gate of 80%.
 
 ---
 
