@@ -81,8 +81,10 @@ jobs:
       run: |
         for mode in plain dataset; do
           echo "::group::suricata -T (${mode})"
+          mkdir -p "sclog-${mode}"
           suricata -T -c /etc/suricata/suricata.yaml \
             -S "rules-${mode}/apttrail_sample.rules" \
+            -l "sclog-${mode}" \
             --set "default-rule-path=${PWD}/rules-${mode}"
           echo "::endgroup::"
         done

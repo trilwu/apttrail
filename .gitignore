@@ -43,7 +43,8 @@ logs/
 *.log
 
 # Data directory (Maltrail repository)
-data/
+# The Maltrail working clone, not src/apttrail/data
+/data/
 
 # Test files
 test_*.json

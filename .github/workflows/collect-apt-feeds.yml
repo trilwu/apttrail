@@ -80,12 +80,39 @@ jobs:
         mkdir -p rulecheck
         cp feeds/apttrail_threat_feed.rules rulecheck/
         cp feeds/suricata-datasets/*.lst rulecheck/ 2>/dev/null || true
+        mkdir -p sclog
         suricata -T -c /etc/suricata/suricata.yaml \
           -S rulecheck/apttrail_threat_feed.rules \
+          -l sclog \
           --set "default-rule-path=${PWD}/rulecheck"
+
+    - name: Package Suricata datasets
+      run: tar czf feeds/apttrail_suricata_datasets.tar.gz -C feeds suricata-datasets
 
     - name: Generate feed statistics
       run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
+
+    # The per-group and per-type slices are served over GitHub Pages rather
+    # than as release assets: 339 groups would mean ~600 assets, and analysts
+    # want a URL they can construct, not a tarball to unpack. The branch is
+    # force-pushed so its history never accumulates.
+    - name: Publish slices to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        mkdir -p pages
+        cp feeds/index.html feeds/index.json pages/
+        cp -r feeds/by-type feeds/by-group pages/
+        touch pages/.nojekyll
+        cd pages
+        git init -q .
+        git config user.email "action@github.com"
+        git config user.name "GitHub Action"
+        git add -A
+        git commit -q -m "Publish APTtrail slices"
+        git push -q --force \
+          "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" HEAD:gh-pages
+        echo "Published to https://trilwu.github.io/apttrail/"
 
     # The feed files are published as release assets, not committed. Assets are
     # replaced in place, so hourly updates cost nothing in repository size -
@@ -107,6 +134,7 @@ jobs:
           feeds/apttrail_threat_feed.yaml
           feeds/apttrail_threat_feed_stix.json
           feeds/apttrail_threat_feed_misp.json
+          feeds/apttrail_suricata_datasets.tar.gz
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -166,5 +194,6 @@ jobs:
           feeds/apttrail_threat_feed.yaml
           feeds/apttrail_threat_feed_stix.json
           feeds/apttrail_threat_feed_misp.json
+          feeds/apttrail_suricata_datasets.tar.gz
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

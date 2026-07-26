@@ -1,0 +1,2342 @@
+{
+  "galaxy_version": 40,
+  "groups": [
+    {
+      "aliases": [
+        "Axiom",
+        "Group 72"
+      ],
+      "id": "G0001",
+      "name": "Axiom"
+    },
+    {
+      "aliases": [
+        "Moafee"
+      ],
+      "id": "G0002",
+      "name": "Moafee"
+    },
+    {
+      "aliases": [
+        "Cleaver",
+        "TG-2889",
+        "Threat Group 2889"
+      ],
+      "id": "G0003",
+      "name": "Cleaver"
+    },
+    {
+      "aliases": [
+        "APT15",
+        "BRONZE DAVENPORT",
+        "BRONZE IDLEWOOD",
+        "BRONZE PALACE",
+        "G0004",
+        "GREF",
+        "Ke3Chang",
+        "Ke3chang",
+        "Lurid",
+        "Metushy",
+        "Mirage",
+        "NICKEL",
+        "Nylon Typhoon",
+        "Playful Dragon",
+        "Red Vulture",
+        "Royal APT",
+        "RoyalAPT",
+        "Social Network Team",
+        "VIXEN PANDA",
+        "Vixen Panda"
+      ],
+      "id": "G0004",
+      "name": "Ke3chang"
+    },
+    {
+      "aliases": [
+        "APT12",
+        "BRONZE GLOBE",
+        "BeeBus",
+        "Calc Team",
+        "Crimson Iron",
+        "DNSCALC",
+        "DNSCalc",
+        "DynCalc",
+        "Group 22",
+        "Hexagon Typhoon",
+        "IXESHE",
+        "NUMBERED PANDA",
+        "Numbered Panda",
+        "TG-2754"
+      ],
+      "id": "G0005",
+      "name": "APT12"
+    },
+    {
+      "aliases": [
+        "APT1",
+        "Brown Fox",
+        "Byzantine Candor",
+        "COMMENT PANDA",
+        "Comment Crew",
+        "Comment Group",
+        "Comment Panda",
+        "G0006",
+        "GIF89a",
+        "Group 3",
+        "PLA Unit 61398",
+        "ShadyRAT",
+        "TG-8223"
+      ],
+      "id": "G0006",
+      "name": "APT1"
+    },
+    {
+      "aliases": [
+        "APT-C-20",
+        "APT28",
+        "ATK5",
+        "Blue Athena",
+        "BlueDelta",
+        "FANCY BEAR",
+        "FROZENLAKE",
+        "Fancy Bear",
+        "Fighting Ursa",
+        "Forest Blizzard",
+        "G0007",
+        "Grizzly Steppe",
+        "Group 74",
+        "GruesomeLarch",
+        "IRON TWILIGHT",
+        "ITG05",
+        "Pawn Storm",
+        "SIG40",
+        "SNAKEMACKEREL",
+        "STRONTIUM",
+        "Sednit",
+        "Sofacy",
+        "Swallowtail",
+        "T-APT-12",
+        "TA422",
+        "TG-4127",
+        "Threat Group-4127",
+        "Tsar Team",
+        "UAC-0001",
+        "UAC-0028"
+      ],
+      "id": "G0007",
+      "name": "APT28"
+    },
+    {
+      "aliases": [
+        "Anunak",
+        "Carbanak"
+      ],
+      "id": "G0008",
+      "name": "Carbanak"
+    },
+    {
+      "aliases": [
+        "Black Vine",
+        "Deep Panda",
+        "KungFu Kittens",
+        "PinkPanther",
+        "Shell Crew",
+        "WebMasters"
+      ],
+      "id": "G0009",
+      "name": "Deep Panda"
+    },
+    {
+      "aliases": [
+        "ATK13",
+        "BELUGASTURGEON",
+        "Blue Python",
+        "G0010",
+        "Group 88",
+        "Hippo Team",
+        "IRON HUNTER",
+        "ITG12",
+        "KRYPTON",
+        "Krypton",
+        "MAKERSMARK",
+        "Pacifier APT",
+        "Pfinet",
+        "Popeye",
+        "SIG23",
+        "SUMMIT",
+        "Secret Blizzard",
+        "Skipper Turla",
+        "Snake",
+        "TAG_0530",
+        "Turla",
+        "UAC-0003",
+        "UAC-0024",
+        "UAC-0144",
+        "UNC4210",
+        "Uroburos",
+        "VENOMOUS Bear",
+        "Venomous Bear",
+        "WRAITH",
+        "Waterbug",
+        "White Bear",
+        "WhiteBear"
+      ],
+      "id": "G0010",
+      "name": "Turla"
+    },
+    {
+      "aliases": [
+        "PittyTiger"
+      ],
+      "id": "G0011",
+      "name": "PittyTiger"
+    },
+    {
+      "aliases": [
+        "APT-C-06",
+        "ATK52",
+        "DUBNIUM",
+        "DarkHotel",
+        "Darkhotel",
+        "Fallout Team",
+        "G0012",
+        "Karba",
+        "Luder",
+        "Nemim",
+        "Nemin",
+        "Pioneer",
+        "SIG25",
+        "Shadow Crane",
+        "T-APT-02",
+        "TUNGSTEN BRIDGE",
+        "Tapaoux",
+        "Zigzag Hail"
+      ],
+      "id": "G0012",
+      "name": "Darkhotel"
+    },
+    {
+      "aliases": [
+        "APT30",
+        "G0013"
+      ],
+      "id": "G0013",
+      "name": "APT30"
+    },
+    {
+      "aliases": [
+        "G0014",
+        "Night Dragon"
+      ],
+      "id": "G0014",
+      "name": "Night Dragon"
+    },
+    {
+      "aliases": [
+        "Earth Aughisky",
+        "G0015",
+        "Taidoor"
+      ],
+      "id": "G0015",
+      "name": "Taidoor"
+    },
+    {
+      "aliases": [
+        "APT29",
+        "ATK7",
+        "Blue Kitsune",
+        "BlueBravo",
+        "COZY BEAR",
+        "Cloaked Ursa",
+        "Cozy Bear",
+        "CozyDuke",
+        "Dark Halo",
+        "G0016",
+        "Grizzly Steppe",
+        "Group 100",
+        "IRON HEMLOCK",
+        "IRON RITUAL",
+        "ITG11",
+        "Midnight Blizzard",
+        "Minidionis",
+        "NOBELIUM",
+        "Nobelium",
+        "NobleBaron",
+        "SeaDuke",
+        "SolarStorm",
+        "TA421",
+        "The Dukes",
+        "UAC-0029",
+        "UNC2452",
+        "UNC3524",
+        "YTTRIUM"
+      ],
+      "id": "G0016",
+      "name": "APT29"
+    },
+    {
+      "aliases": [
+        "DragonOK"
+      ],
+      "id": "G0017",
+      "name": "DragonOK"
+    },
+    {
+      "aliases": [
+        "Admin338",
+        "G0018",
+        "MAGNESIUM",
+        "TEMPER PANDA",
+        "Team338",
+        "admin@338"
+      ],
+      "id": "G0018",
+      "name": "admin@338"
+    },
+    {
+      "aliases": [
+        "BRONZE GENEVA",
+        "BRONZE STERLING",
+        "Camerashy",
+        "G0013",
+        "G0019",
+        "Naikon",
+        "OVERRIDE PANDA",
+        "PLA Unit 78020"
+      ],
+      "id": "G0019",
+      "name": "Naikon"
+    },
+    {
+      "aliases": [
+        "Equation"
+      ],
+      "id": "G0020",
+      "name": "Equation"
+    },
+    {
+      "aliases": [
+        "ALUMINUM SARATOGA",
+        "BLACKSTEM",
+        "Extreme Jackal",
+        "G0021",
+        "Gaza Cybergang",
+        "Gaza Hackers Team",
+        "Gaza cybergang",
+        "Molerats",
+        "Moonlight",
+        "Operation Molerats"
+      ],
+      "id": "G0021",
+      "name": "Molerats"
+    },
+    {
+      "aliases": [
+        "APT3",
+        "BORON",
+        "BRONZE MAYFAIR",
+        "Boyusec",
+        "Brocade Typhoon",
+        "Buckeye",
+        "GOTHIC PANDA",
+        "Gothic Panda",
+        "Group 6",
+        "Pirpi",
+        "Red Sylvan",
+        "TG-0110",
+        "Threat Group-0110",
+        "UPS",
+        "UPS Team"
+      ],
+      "id": "G0022",
+      "name": "APT3"
+    },
+    {
+      "aliases": [
+        "APT16",
+        "G0023",
+        "SVCMONDR"
+      ],
+      "id": "G0023",
+      "name": "APT16"
+    },
+    {
+      "aliases": [
+        "4HCrew",
+        "APT2",
+        "G0024",
+        "MSUpdater",
+        "PLA Unit 61486",
+        "PUTTER PANDA",
+        "Putter Panda",
+        "SULPHUR",
+        "SearchFire",
+        "TG-6952"
+      ],
+      "id": "G0024",
+      "name": "Putter Panda"
+    },
+    {
+      "aliases": [
+        "APT17",
+        "Deputy Dog"
+      ],
+      "id": "G0025",
+      "name": "APT17"
+    },
+    {
+      "aliases": [
+        "APT18",
+        "DYNAMITE PANDA",
+        "Dynamite Panda",
+        "G0026",
+        "PLA Navy",
+        "SCANDIUM",
+        "Satin Typhoon",
+        "TG-0416",
+        "Threat Group-0416",
+        "Wekby"
+      ],
+      "id": "G0026",
+      "name": "APT18"
+    },
+    {
+      "aliases": [
+        "APT27",
+        "BRONZE UNION",
+        "Budworm",
+        "Circle Typhoon",
+        "EMISSARY PANDA",
+        "Earth Smilodon",
+        "Emissary Panda",
+        "G0027",
+        "GreedyTaotie",
+        "Group 35",
+        "Iron Taurus",
+        "Iron Tiger",
+        "Linen Typhoon",
+        "Lucky Mouse",
+        "LuckyMouse",
+        "Red Phoenix",
+        "TEMP.Hippo",
+        "TG-3390",
+        "Threat Group-3390",
+        "ZipToken"
+      ],
+      "id": "G0027",
+      "name": "Threat Group-3390"
+    },
+    {
+      "aliases": [
+        "TG-1314",
+        "Threat Group-1314"
+      ],
+      "id": "G0028",
+      "name": "Threat Group-1314"
+    },
+    {
+      "aliases": [
+        "G0029",
+        "Golfing Taurus",
+        "Scarlet Mimic"
+      ],
+      "id": "G0029",
+      "name": "Scarlet Mimic"
+    },
+    {
+      "aliases": [
+        "ATK1",
+        "ATK78",
+        "BRONZE ELGIN",
+        "Bilbug",
+        "Billbug",
+        "DRAGONFISH",
+        "G0030",
+        "G0076",
+        "LOTUS PANDA",
+        "Lotus BLossom",
+        "Lotus Blossom",
+        "RADIUM",
+        "Raspberry Typhoon",
+        "Red Salamander",
+        "ST Group",
+        "Spring Dragon",
+        "Thrip"
+      ],
+      "id": "G0030",
+      "name": "Lotus Blossom"
+    },
+    {
+      "aliases": [
+        "Dust Storm",
+        "G0031"
+      ],
+      "id": "G0031",
+      "name": "Dust Storm"
+    },
+    {
+      "aliases": [
+        "Diamond Sleet",
+        "Guardians of Peace",
+        "HIDDEN COBRA",
+        "Labyrinth Chollima",
+        "Lazarus Group",
+        "NICKEL ACADEMY",
+        "ZINC"
+      ],
+      "id": "G0032",
+      "name": "Lazarus Group"
+    },
+    {
+      "aliases": [
+        "G0033",
+        "Poseidon Group"
+      ],
+      "id": "G0033",
+      "name": "Poseidon Group"
+    },
+    {
+      "aliases": [
+        "APT44",
+        "BlackEnergy (Group)",
+        "Blue Echidna",
+        "ELECTRUM",
+        "FROZENBARENTS",
+        "G0034",
+        "IRIDIUM",
+        "IRON VIKING",
+        "Quedagh",
+        "Sandworm",
+        "Sandworm Team",
+        "Seashell Blizzard",
+        "TEMP.Noble",
+        "TeleBots",
+        "Telebots",
+        "UAC-0082",
+        "UAC-0113",
+        "VOODOO BEAR",
+        "Voodoo Bear"
+      ],
+      "id": "G0034",
+      "name": "Sandworm Team"
+    },
+    {
+      "aliases": [
+        "ALLANITE",
+        "ATK6",
+        "BERSERK BEAR",
+        "BROMINE",
+        "Berserk Bear",
+        "Blue Kraken",
+        "CASTLE",
+        "Crouching Yeti",
+        "DYMALLOY",
+        "Dragonfly",
+        "ENERGETIC BEAR",
+        "Energetic Bear",
+        "G0035",
+        "Ghost Blizzard",
+        "Group 24",
+        "Havex",
+        "IRON LIBERTY",
+        "ITG15",
+        "Koala Team",
+        "TEMP.Isotope",
+        "TG-4192"
+      ],
+      "id": "G0035",
+      "name": "Dragonfly"
+    },
+    {
+      "aliases": [
+        "G0036",
+        "GCMAN"
+      ],
+      "id": "G0036",
+      "name": "GCMAN"
+    },
+    {
+      "aliases": [
+        "ATK88",
+        "Camouflage Tempest",
+        "FIN6",
+        "G0037",
+        "GOLD FRANKLIN",
+        "ITG08",
+        "MageCart Group 6",
+        "Magecart Group 6",
+        "SKELETON SPIDER",
+        "Skeleton Spider",
+        "Storm-0538",
+        "TA4557",
+        "TAAL",
+        "White Giant"
+      ],
+      "id": "G0037",
+      "name": "FIN6"
+    },
+    {
+      "aliases": [
+        "FruityArmor",
+        "G0038",
+        "Stealth Falcon"
+      ],
+      "id": "G0038",
+      "name": "Stealth Falcon"
+    },
+    {
+      "aliases": [
+        "APT22",
+        "BRONZE OLIVE",
+        "G0039",
+        "Group 46",
+        "Suckfly"
+      ],
+      "id": "G0039",
+      "name": "Suckfly"
+    },
+    {
+      "aliases": [
+        "APT-C-09",
+        "APT-C-35",
+        "ATK11",
+        "Chinastrats",
+        "Donot Team",
+        "Dropping Elephant",
+        "G0040",
+        "Hangover Group",
+        "MONSOON",
+        "Monsoon",
+        "OPERATION HANGOVER",
+        "Operation Hangover",
+        "Orange Athos",
+        "Orange Kala",
+        "Patchwork",
+        "QUILTED TIGER",
+        "Sarit",
+        "SectorE02",
+        "Thirsty Gemini",
+        "VICEROY TIGER",
+        "ZINC EMERSON"
+      ],
+      "id": "G0040",
+      "name": "Patchwork"
+    },
+    {
+      "aliases": [
+        "G0041",
+        "Project Sauron",
+        "ProjectSauron",
+        "Sauron",
+        "Strider"
+      ],
+      "id": "G0041",
+      "name": "Strider"
+    },
+    {
+      "aliases": [
+        "MONSOON"
+      ],
+      "id": "G0042",
+      "name": "MONSOON"
+    },
+    {
+      "aliases": [
+        "G0043",
+        "Group5"
+      ],
+      "id": "G0043",
+      "name": "Group5"
+    },
+    {
+      "aliases": [
+        "Blackfly",
+        "Winnti Group"
+      ],
+      "id": "G0044",
+      "name": "Winnti Group"
+    },
+    {
+      "aliases": [
+        "APT10",
+        "ATK41",
+        "BRONZE RIVERSIDE",
+        "CVNX",
+        "Cicada",
+        "Cloud Hopper",
+        "G0045",
+        "Granite Taurus",
+        "HOGFISH",
+        "Menupass Team",
+        "POTASSIUM",
+        "Purple Typhoon",
+        "Red Apollo",
+        "STONE PANDA",
+        "Stone Panda",
+        "TA429",
+        "happyyongzi",
+        "menuPass"
+      ],
+      "id": "G0045",
+      "name": "menuPass"
+    },
+    {
+      "aliases": [
+        "Carbon Spider",
+        "ELBRUS",
+        "FIN7",
+        "GOLD NIAGARA",
+        "ITG14",
+        "Sangria Tempest"
+      ],
+      "id": "G0046",
+      "name": "FIN7"
+    },
+    {
+      "aliases": [
+        "ACTINIUM",
+        "Actinium",
+        "Aqua Blizzard",
+        "Armageddon",
+        "Blue Otso",
+        "BlueAlpha",
+        "DEV-0157",
+        "G0047",
+        "Gamaredon Group",
+        "IRON TILDEN",
+        "NastyShrew",
+        "PRIMITIVE BEAR",
+        "Primitive Bear",
+        "Shuckworm",
+        "Trident Ursa",
+        "UAC-0010",
+        "Winterflounder"
+      ],
+      "id": "G0047",
+      "name": "Gamaredon Group"
+    },
+    {
+      "aliases": [
+        "G0048",
+        "RTM"
+      ],
+      "id": "G0048",
+      "name": "RTM"
+    },
+    {
+      "aliases": [
+        "APT 34",
+        "APT34",
+        "ATK40",
+        "CHRYSENE",
+        "COBALT GYPSY",
+        "Cobalt Gypsy",
+        "Crambus",
+        "EUROPIUM",
+        "Earth Simnavaz",
+        "Evasive Serpens",
+        "G0049",
+        "Greenbug",
+        "Hazel Sandstorm",
+        "Helix Kitten",
+        "IRN2",
+        "ITG13",
+        "OilRig",
+        "TA452",
+        "Twisted Kitten"
+      ],
+      "id": "G0049",
+      "name": "OilRig"
+    },
+    {
+      "aliases": [
+        "APT 32",
+        "APT-32",
+        "APT-C-00",
+        "APT32",
+        "ATK17",
+        "BISMUTH",
+        "Canvas Cyclone",
+        "Cobalt Kitty",
+        "G0050",
+        "Ocean Buffalo",
+        "Ocean Lotus",
+        "OceanLotus",
+        "OceanLotus Group",
+        "POND LOACH",
+        "Sea Lotus",
+        "SeaLotus",
+        "TIN WOODLAWN"
+      ],
+      "id": "G0050",
+      "name": "APT32"
+    },
+    {
+      "aliases": [
+        "FIN10",
+        "G0051"
+      ],
+      "id": "G0051",
+      "name": "FIN10"
+    },
+    {
+      "aliases": [
+        "CopyKittens",
+        "G0052",
+        "Slayer Kitten"
+      ],
+      "id": "G0052",
+      "name": "CopyKittens"
+    },
+    {
+      "aliases": [
+        "FIN5",
+        "G0053"
+      ],
+      "id": "G0053",
+      "name": "FIN5"
+    },
+    {
+      "aliases": [
+        "G0054",
+        "Sowbug"
+      ],
+      "id": "G0054",
+      "name": "Sowbug"
+    },
+    {
+      "aliases": [
+        "G0055",
+        "NEODYMIUM"
+      ],
+      "id": "G0055",
+      "name": "NEODYMIUM"
+    },
+    {
+      "aliases": [
+        "G0056",
+        "PROMETHIUM",
+        "StrongPity"
+      ],
+      "id": "G0056",
+      "name": "PROMETHIUM"
+    },
+    {
+      "aliases": [
+        "APT34"
+      ],
+      "id": "G0057",
+      "name": "APT34"
+    },
+    {
+      "aliases": [
+        "Charming Kitten"
+      ],
+      "id": "G0058",
+      "name": "Charming Kitten"
+    },
+    {
+      "aliases": [
+        "APT35",
+        "Agent Serpens",
+        "COBALT ILLUSION",
+        "COBALT MIRAGE",
+        "Charming Kitten",
+        "G0059",
+        "ITG18",
+        "Magic Hound",
+        "Mint Sandstorm",
+        "Newscaster",
+        "Newscaster Team",
+        "Phosphorus",
+        "TA453",
+        "TunnelVision"
+      ],
+      "id": "G0059",
+      "name": "Magic Hound"
+    },
+    {
+      "aliases": [
+        "BRONZE BUTLER",
+        "G0060",
+        "Nian",
+        "PLA Unit 61419",
+        "REDBALDKNIGHT",
+        "STALKER PANDA",
+        "Stalker Taurus",
+        "Swirl Typhoon",
+        "Tick"
+      ],
+      "id": "G0060",
+      "name": "BRONZE BUTLER"
+    },
+    {
+      "aliases": [
+        "ATK113",
+        "FIN8",
+        "G0061",
+        "Syssphinx"
+      ],
+      "id": "G0061",
+      "name": "FIN8"
+    },
+    {
+      "aliases": [
+        "G0062",
+        "TA459"
+      ],
+      "id": "G0062",
+      "name": "TA459"
+    },
+    {
+      "aliases": [
+        "BlackOasis",
+        "G0063"
+      ],
+      "id": "G0063",
+      "name": "BlackOasis"
+    },
+    {
+      "aliases": [
+        "APT 33",
+        "APT33",
+        "ATK35",
+        "COBALT TRINITY",
+        "Elfin",
+        "G0064",
+        "HOLMIUM",
+        "MAGNALLIUM",
+        "Peach Sandstorm",
+        "Refined Kitten",
+        "TA451"
+      ],
+      "id": "G0064",
+      "name": "APT33"
+    },
+    {
+      "aliases": [
+        "APT40",
+        "ATK29",
+        "BRONZE MOHAWK",
+        "G0065",
+        "GADOLINIUM",
+        "Gadolinium",
+        "Gingham Typhoon",
+        "ISLANDDREAMS",
+        "ITG09",
+        "KRYPTONITE PANDA",
+        "Kryptonite Panda",
+        "Leviathan",
+        "MUDCARP",
+        "Red Ladon",
+        "TA423",
+        "TEMP.Jumper",
+        "TEMP.Periscope"
+      ],
+      "id": "G0065",
+      "name": "Leviathan"
+    },
+    {
+      "aliases": [
+        "Beijing Group",
+        "Elderwood",
+        "Elderwood Gang",
+        "G0066",
+        "SIG22",
+        "SNEAKY PANDA",
+        "Sneaky Panda"
+      ],
+      "id": "G0066",
+      "name": "Elderwood"
+    },
+    {
+      "aliases": [
+        "APT 37",
+        "APT-C-28",
+        "APT37",
+        "ATK4",
+        "G0067",
+        "Group 123",
+        "Group123",
+        "InkySquid",
+        "Moldy Pisces",
+        "Operation Daybreak",
+        "Operation Erebus",
+        "Reaper",
+        "Reaper Group",
+        "Red Eyes",
+        "Ricochet Chollima",
+        "ScarCruft",
+        "TEMP.Reaper",
+        "Venus 121"
+      ],
+      "id": "G0067",
+      "name": "APT37"
+    },
+    {
+      "aliases": [
+        "ATK33",
+        "G0068",
+        "PLATINUM",
+        "TwoForOne"
+      ],
+      "id": "G0068",
+      "name": "PLATINUM"
+    },
+    {
+      "aliases": [
+        "ATK51",
+        "Boggy Serpens",
+        "COBALT ULSTER",
+        "Earth Vetala",
+        "G0069",
+        "MERCURY",
+        "Mango Sandstorm",
+        "MuddyKrill",
+        "MuddyWater",
+        "Seedworm",
+        "Static Kitten",
+        "TA450",
+        "TEMP.Zagros"
+      ],
+      "id": "G0069",
+      "name": "MuddyWater"
+    },
+    {
+      "aliases": [
+        "Dark Caracal",
+        "G0070"
+      ],
+      "id": "G0070",
+      "name": "Dark Caracal"
+    },
+    {
+      "aliases": [
+        "Orangeworm"
+      ],
+      "id": "G0071",
+      "name": "Orangeworm"
+    },
+    {
+      "aliases": [
+        "G0072",
+        "Honeybee"
+      ],
+      "id": "G0072",
+      "name": "Honeybee"
+    },
+    {
+      "aliases": [
+        "APT19",
+        "C0d0so0",
+        "Codoso",
+        "Codoso Team",
+        "Sunshop Group"
+      ],
+      "id": "G0073",
+      "name": "APT19"
+    },
+    {
+      "aliases": [
+        "Berserk Bear",
+        "DYMALLOY",
+        "Dragonfly 2.0",
+        "IRON LIBERTY"
+      ],
+      "id": "G0074",
+      "name": "Dragonfly 2.0"
+    },
+    {
+      "aliases": [
+        "G0075",
+        "RANCOR",
+        "Rancor",
+        "Rancor Group",
+        "Rancor Taurus",
+        "Rancor group"
+      ],
+      "id": "G0075",
+      "name": "Rancor"
+    },
+    {
+      "aliases": [
+        "Thrip"
+      ],
+      "id": "G0076",
+      "name": "Thrip"
+    },
+    {
+      "aliases": [
+        "LeafMiner",
+        "Leafminer",
+        "RASPITE",
+        "Raspite"
+      ],
+      "id": "G0077",
+      "name": "Leafminer"
+    },
+    {
+      "aliases": [
+        "ATK92",
+        "G0078",
+        "Gorgon Group",
+        "Pasty Gemini",
+        "Subaat",
+        "The Gorgon Group"
+      ],
+      "id": "G0078",
+      "name": "Gorgon Group"
+    },
+    {
+      "aliases": [
+        "DarkHydrus",
+        "G0079",
+        "LazyMeerkat",
+        "Obscure Serpens"
+      ],
+      "id": "G0079",
+      "name": "DarkHydrus"
+    },
+    {
+      "aliases": [
+        "COBALT SPIDER",
+        "Cobalt",
+        "Cobalt Gang",
+        "Cobalt Group",
+        "Cobalt Spider",
+        "G0080",
+        "GOLD KINGSWOOD",
+        "Mule Libra"
+      ],
+      "id": "G0080",
+      "name": "Cobalt Group"
+    },
+    {
+      "aliases": [
+        "APT23",
+        "BRONZE HOBART",
+        "Earth Centaur",
+        "G0081",
+        "KeyBoy",
+        "PIRATE PANDA",
+        "Pirate Panda",
+        "Red Orthrus",
+        "Tropic Trooper"
+      ],
+      "id": "G0081",
+      "name": "Tropic Trooper"
+    },
+    {
+      "aliases": [
+        "APT38",
+        "BeagleBoyz",
+        "Bluenoroff",
+        "COPERNICIUM",
+        "NICKEL GLADSTONE",
+        "STARDUST CHOLLIMA",
+        "Sapphire Sleet",
+        "Stardust Chollima"
+      ],
+      "id": "G0082",
+      "name": "APT38"
+    },
+    {
+      "aliases": [
+        "SilverTerrier"
+      ],
+      "id": "G0083",
+      "name": "SilverTerrier"
+    },
+    {
+      "aliases": [
+        "Gallmaker"
+      ],
+      "id": "G0084",
+      "name": "Gallmaker"
+    },
+    {
+      "aliases": [
+        "FIN4",
+        "G0085",
+        "WOLF SPIDER"
+      ],
+      "id": "G0085",
+      "name": "FIN4"
+    },
+    {
+      "aliases": [
+        "Stolen Pencil"
+      ],
+      "id": "G0086",
+      "name": "Stolen Pencil"
+    },
+    {
+      "aliases": [
+        "APT39",
+        "Burgundy Sandstorm",
+        "COBALT HICKMAN",
+        "Chafer",
+        "G0087",
+        "ITG07",
+        "REMIX KITTEN",
+        "Radio Serpens",
+        "Remix Kitten",
+        "TA454"
+      ],
+      "id": "G0087",
+      "name": "APT39"
+    },
+    {
+      "aliases": [
+        "ATK91",
+        "G0088",
+        "TEMP.Veles",
+        "XENOTIME",
+        "Xenotime"
+      ],
+      "id": "G0088",
+      "name": "TEMP.Veles"
+    },
+    {
+      "aliases": [
+        "The White Company"
+      ],
+      "id": "G0089",
+      "name": "The White Company"
+    },
+    {
+      "aliases": [
+        "Ashen Lepus",
+        "WIRTE"
+      ],
+      "id": "G0090",
+      "name": "WIRTE"
+    },
+    {
+      "aliases": [
+        "Silence",
+        "Silence group",
+        "WHISPER SPIDER",
+        "Whisper Spider"
+      ],
+      "id": "G0091",
+      "name": "Silence"
+    },
+    {
+      "aliases": [
+        "ATK103",
+        "CHIMBORAZO",
+        "Dudear",
+        "G0092",
+        "GOLD TAHOE",
+        "GRACEFUL SPIDER",
+        "Hive0065",
+        "MONTY SPIDER",
+        "SectorJ04",
+        "SectorJ04 Group",
+        "Spandex Tempest",
+        "TA505"
+      ],
+      "id": "G0092",
+      "name": "TA505"
+    },
+    {
+      "aliases": [
+        "Alloy Taurus",
+        "GALLIUM",
+        "Granite Typhoon",
+        "PHANTOM PANDA",
+        "Red Dev 4"
+      ],
+      "id": "G0093",
+      "name": "GALLIUM"
+    },
+    {
+      "aliases": [
+        "APT43",
+        "Black Banshee",
+        "Earth Kumiho",
+        "Emerald Sleet",
+        "G0086",
+        "Kimsuky",
+        "Operation Stolen Pencil",
+        "PatheticSlug",
+        "Sparkling Pisces",
+        "Springtail",
+        "TA427",
+        "THALLIUM",
+        "Thallium",
+        "Velvet Chollima"
+      ],
+      "id": "G0094",
+      "name": "Kimsuky"
+    },
+    {
+      "aliases": [
+        "APT-C-43",
+        "El Machete",
+        "G0095",
+        "Machete",
+        "machete-apt"
+      ],
+      "id": "G0095",
+      "name": "Machete"
+    },
+    {
+      "aliases": [
+        "APT41",
+        "BARIUM",
+        "Brass Typhoon",
+        "Wicked Panda"
+      ],
+      "id": "G0096",
+      "name": "APT41"
+    },
+    {
+      "aliases": [
+        "APT-C-50",
+        "Bouncing Golf",
+        "Domestic Kitten"
+      ],
+      "id": "G0097",
+      "name": "Bouncing Golf"
+    },
+    {
+      "aliases": [
+        "BlackTech",
+        "CIRCUIT PANDA",
+        "Canary Typhoon",
+        "Earth Hundun",
+        "G0098",
+        "HUAPI",
+        "Manga Taurus",
+        "Mobwork",
+        "Palmerworm",
+        "Red Djinn",
+        "T-APT-03",
+        "Temp.Overboard"
+      ],
+      "id": "G0098",
+      "name": "BlackTech"
+    },
+    {
+      "aliases": [
+        "APT-C-36",
+        "APT-Q-98",
+        "AguilaCiega",
+        "Blind Eagle",
+        "TAG-144"
+      ],
+      "id": "G0099",
+      "name": "APT-C-36"
+    },
+    {
+      "aliases": [
+        "ATK116",
+        "Blue Odin",
+        "Clean Ursa",
+        "Cloud Atlas",
+        "G0100",
+        "Inception",
+        "Inception Framework",
+        "OXYGEN"
+      ],
+      "id": "G0100",
+      "name": "Inception"
+    },
+    {
+      "aliases": [
+        "Frankenstein"
+      ],
+      "id": "G0101",
+      "name": "Frankenstein"
+    },
+    {
+      "aliases": [
+        "DEV-0193",
+        "DEV-0237",
+        "FIN12",
+        "GOLD BLACKBURN",
+        "GOLD ULRICK",
+        "GRIM SPIDER",
+        "Grim Spider",
+        "ITG23",
+        "Periwinkle Tempest",
+        "Pistachio Tempest",
+        "Storm-0193",
+        "Storm-0230",
+        "TEMP.MixMaster",
+        "Trickbot LLC",
+        "UNC1878",
+        "UNC2053",
+        "WIZARD SPIDER",
+        "Wizard Spider"
+      ],
+      "id": "G0102",
+      "name": "Wizard Spider"
+    },
+    {
+      "aliases": [
+        "BRONZE WALKER",
+        "Mofang",
+        "Superman"
+      ],
+      "id": "G0103",
+      "name": "Mofang"
+    },
+    {
+      "aliases": [
+        "Sharpshooter"
+      ],
+      "id": "G0104",
+      "name": "Sharpshooter"
+    },
+    {
+      "aliases": [
+        "DarkVishnya"
+      ],
+      "id": "G0105",
+      "name": "DarkVishnya"
+    },
+    {
+      "aliases": [
+        "Aged Libra",
+        "Rocke"
+      ],
+      "id": "G0106",
+      "name": "Rocke"
+    },
+    {
+      "aliases": [
+        "Whitefly"
+      ],
+      "id": "G0107",
+      "name": "Whitefly"
+    },
+    {
+      "aliases": [
+        "Blue Mockingbird"
+      ],
+      "id": "G0108",
+      "name": "Blue Mockingbird"
+    },
+    {
+      "aliases": [
+        "Bahamut",
+        "WindShift",
+        "Windshift",
+        "Windy Phoenix"
+      ],
+      "id": "G0112",
+      "name": "Windshift"
+    },
+    {
+      "aliases": [
+        "Chimera"
+      ],
+      "id": "G0114",
+      "name": "Chimera"
+    },
+    {
+      "aliases": [
+        "GOLD SOUTHFIELD",
+        "PINCHY SPIDER",
+        "Pinchy Spider"
+      ],
+      "id": "G0115",
+      "name": "GOLD SOUTHFIELD"
+    },
+    {
+      "aliases": [
+        "Operation Wocao"
+      ],
+      "id": "G0116",
+      "name": "Operation Wocao"
+    },
+    {
+      "aliases": [
+        "Fox Kitten",
+        "Lemon Sandstorm",
+        "PARISITE",
+        "PIONEER KITTEN",
+        "Parisite",
+        "Pioneer Kitten",
+        "RUBIDIUM",
+        "UNC757"
+      ],
+      "id": "G0117",
+      "name": "Fox Kitten"
+    },
+    {
+      "aliases": [
+        "Dark Halo",
+        "NOBELIUM",
+        "StellarParticle",
+        "UNC2452"
+      ],
+      "id": "G0118",
+      "name": "UNC2452"
+    },
+    {
+      "aliases": [
+        "DEV-0243",
+        "Evil Corp",
+        "GOLD DRAKE",
+        "INDRIK SPIDER",
+        "Indrik Spider",
+        "Manatee Tempest",
+        "UNC2165"
+      ],
+      "id": "G0119",
+      "name": "Indrik Spider"
+    },
+    {
+      "aliases": [
+        "DeathStalker",
+        "EvilNum",
+        "Evilnum",
+        "Jointworm",
+        "KNOCKOUT SPIDER",
+        "TA4563"
+      ],
+      "id": "G0120",
+      "name": "Evilnum"
+    },
+    {
+      "aliases": [
+        "APT-C-17",
+        "RAZOR TIGER",
+        "Rattlesnake",
+        "SideWinder",
+        "Sidewinder",
+        "T-APT-04"
+      ],
+      "id": "G0121",
+      "name": "Sidewinder"
+    },
+    {
+      "aliases": [
+        "COBALT DICKENS",
+        "Mabna Institute",
+        "Mabna Institute Group",
+        "Silent Librarian",
+        "TA407",
+        "TA4900",
+        "Yellow Nabu"
+      ],
+      "id": "G0122",
+      "name": "Silent Librarian"
+    },
+    {
+      "aliases": [
+        "Amethyst Rain",
+        "DeftTorero",
+        "Lebanese Cedar",
+        "Volatile Cedar",
+        "VolcanicTimber"
+      ],
+      "id": "G0123",
+      "name": "Volatile Cedar"
+    },
+    {
+      "aliases": [
+        "Windigo"
+      ],
+      "id": "G0124",
+      "name": "Windigo"
+    },
+    {
+      "aliases": [
+        "ATK233",
+        "G0125",
+        "HAFNIUM",
+        "MURKY PANDA",
+        "Operation Exchange Marauder",
+        "Red Dev 13",
+        "Silk Typhoon"
+      ],
+      "id": "G0125",
+      "name": "HAFNIUM"
+    },
+    {
+      "aliases": [
+        "Higaisa"
+      ],
+      "id": "G0126",
+      "name": "Higaisa"
+    },
+    {
+      "aliases": [
+        "ATK236",
+        "G0127",
+        "GOLD CABIN",
+        "Monster Libra",
+        "Shakthak",
+        "Shathak",
+        "TA551"
+      ],
+      "id": "G0127",
+      "name": "TA551"
+    },
+    {
+      "aliases": [
+        "APT31",
+        "BRONZE VINEWOOD",
+        "JUDGMENT PANDA",
+        "Red keres",
+        "TA412",
+        "Violet Typhoon",
+        "ZIRCONIUM",
+        "Zirconium"
+      ],
+      "id": "G0128",
+      "name": "ZIRCONIUM"
+    },
+    {
+      "aliases": [
+        "BASIN",
+        "BRONZE PRESIDENT",
+        "CAMARO DRAGON",
+        "Camaro Dragon",
+        "ClumsyToad",
+        "EARTH PRETA",
+        "Earth Preta",
+        "FIREANT",
+        "HIVE0154",
+        "HoneyMyte",
+        "LUMINOUS MOTH",
+        "LuminousMoth",
+        "MUSTANG PANDA",
+        "Mustang Panda",
+        "Polaris",
+        "Red Lich",
+        "RedDelta",
+        "STATELY TAURUS",
+        "Stately Taurus",
+        "TA416",
+        "TANTALUM",
+        "TEMP.HEX",
+        "TEMP.Hex",
+        "TWILL TYPHOON",
+        "Twill Typhoon",
+        "UNC6384",
+        "Vertigo Panda"
+      ],
+      "id": "G0129",
+      "name": "Mustang Panda"
+    },
+    {
+      "aliases": [
+        "Ajax Security Team",
+        "AjaxSecurityTeam",
+        "AjaxTM",
+        "Flying Kitten",
+        "Group 26",
+        "Operation Saffron Rose",
+        "Operation Woolen Goldfish",
+        "Operation Woolen-Goldfish",
+        "Rocket Kitten",
+        "Saffron Rose",
+        "SaffronRose",
+        "Sayad",
+        "TEMP.Beanie",
+        "Thamar Reservoir",
+        "Timberworm"
+      ],
+      "id": "G0130",
+      "name": "Ajax Security Team"
+    },
+    {
+      "aliases": [
+        "BRONZE HUNTLEY",
+        "COPPER",
+        "CactusPete",
+        "Earth Akhlut",
+        "G0131",
+        "KARMA PANDA",
+        "Karma Panda",
+        "PLA Unit 65017",
+        "Red Beifang",
+        "TAG-74",
+        "Tonto Team"
+      ],
+      "id": "G0131",
+      "name": "Tonto Team"
+    },
+    {
+      "aliases": [
+        "CostaRicto"
+      ],
+      "id": "G0132",
+      "name": "CostaRicto"
+    },
+    {
+      "aliases": [
+        "DustSquad",
+        "Nomadic Octopus"
+      ],
+      "id": "G0133",
+      "name": "Nomadic Octopus"
+    },
+    {
+      "aliases": [
+        "APT 36",
+        "APT36",
+        "C-Major",
+        "COPPER FIELDSTONE",
+        "Earth Karkaddan",
+        "Green Havildar",
+        "Mythic Leopard",
+        "Operation C-Major",
+        "ProjectM",
+        "Storm-0156",
+        "TMP.Lapis",
+        "Transparent Tribe"
+      ],
+      "id": "G0134",
+      "name": "Transparent Tribe"
+    },
+    {
+      "aliases": [
+        "BackDip",
+        "BackdoorDiplomacy",
+        "CloudComputating",
+        "Quarian"
+      ],
+      "id": "G0135",
+      "name": "BackdoorDiplomacy"
+    },
+    {
+      "aliases": [
+        "IndigoZebra"
+      ],
+      "id": "G0136",
+      "name": "IndigoZebra"
+    },
+    {
+      "aliases": [
+        "Ferocious Kitten"
+      ],
+      "id": "G0137",
+      "name": "Ferocious Kitten"
+    },
+    {
+      "aliases": [
+        "Andariel",
+        "GOP",
+        "Guardian of Peace",
+        "Onyx Sleet",
+        "OperationTroy",
+        "PLUTONIUM",
+        "Silent Chollima",
+        "Subgroup: Andariel",
+        "WHOis Team"
+      ],
+      "id": "G0138",
+      "name": "Andariel"
+    },
+    {
+      "aliases": [
+        "Adept Libra",
+        "TeamTNT"
+      ],
+      "id": "G0139",
+      "name": "TeamTNT"
+    },
+    {
+      "aliases": [
+        "LazyScripter"
+      ],
+      "id": "G0140",
+      "name": "LazyScripter"
+    },
+    {
+      "aliases": [
+        "Gelsemium",
+        "狼毒草"
+      ],
+      "id": "G0141",
+      "name": "Gelsemium"
+    },
+    {
+      "aliases": [
+        "Confucius",
+        "Confucius APT"
+      ],
+      "id": "G0142",
+      "name": "Confucius"
+    },
+    {
+      "aliases": [
+        "Aquatic Panda"
+      ],
+      "id": "G0143",
+      "name": "Aquatic Panda"
+    },
+    {
+      "aliases": [
+        "COBALT LYCEUM",
+        "Chrono Kitten",
+        "HEXANE",
+        "LYCEUM",
+        "Lyceum",
+        "MYSTICDOME",
+        "Siamesekitten",
+        "Spirlin",
+        "Storm-0133",
+        "UNC1530",
+        "siamesekitten"
+      ],
+      "id": "G1001",
+      "name": "HEXANE"
+    },
+    {
+      "aliases": [
+        "APT-C-08",
+        "BITTER",
+        "Bitter",
+        "HAZY TIGER",
+        "Orange Yali",
+        "T-APT-17",
+        "TA397"
+      ],
+      "id": "G1002",
+      "name": "BITTER"
+    },
+    {
+      "aliases": [
+        "Bleeding Bear",
+        "Cadet Blizzard",
+        "DEV-0586",
+        "Ember Bear",
+        "Frozenvista",
+        "Ruinous Ursa",
+        "UAC-0056",
+        "UNC2589"
+      ],
+      "id": "G1003",
+      "name": "Ember Bear"
+    },
+    {
+      "aliases": [
+        "DEV-0537",
+        "LAPSUS",
+        "LAPSUS$",
+        "Lapsus",
+        "SLIPPY SPIDER",
+        "Strawberry Tempest",
+        "UNC3661"
+      ],
+      "id": "G1004",
+      "name": "LAPSUS$"
+    },
+    {
+      "aliases": [
+        "GREATRIFT",
+        "INCENDIARY JACKAL",
+        "POLONIUM",
+        "Plaid Rain",
+        "UNC4453"
+      ],
+      "id": "G1005",
+      "name": "POLONIUM"
+    },
+    {
+      "aliases": [
+        "CHROMIUM",
+        "Charcoal Typhoon",
+        "ControlX",
+        "Earth Lusca",
+        "TAG-22"
+      ],
+      "id": "G1006",
+      "name": "Earth Lusca"
+    },
+    {
+      "aliases": [
+        "Aoqin Dragon",
+        "UNC94"
+      ],
+      "id": "G1007",
+      "name": "Aoqin Dragon"
+    },
+    {
+      "aliases": [
+        "SideCopy"
+      ],
+      "id": "G1008",
+      "name": "SideCopy"
+    },
+    {
+      "aliases": [
+        "DEV-0500",
+        "Marigold Sandstorm",
+        "Moses Staff",
+        "MosesStaff",
+        "VENGEFUL KITTEN"
+      ],
+      "id": "G1009",
+      "name": "Moses Staff"
+    },
+    {
+      "aliases": [
+        "DEV-0413",
+        "EXOTIC LILY"
+      ],
+      "id": "G1011",
+      "name": "EXOTIC LILY"
+    },
+    {
+      "aliases": [
+        "CURIUM",
+        "Crimson Sandstorm",
+        "Cuboid Sandstorm",
+        "DUSTYCAVE",
+        "IMPERIAL KITTEN",
+        "Imperial Kitten",
+        "Smoke Sandstorm",
+        "TA456",
+        "Tortoise Shell",
+        "Tortoiseshell",
+        "Yellow Liderc"
+      ],
+      "id": "G1012",
+      "name": "CURIUM"
+    },
+    {
+      "aliases": [
+        "Metador"
+      ],
+      "id": "G1013",
+      "name": "Metador"
+    },
+    {
+      "aliases": [
+        "LuminousMoth"
+      ],
+      "id": "G1014",
+      "name": "LuminousMoth"
+    },
+    {
+      "aliases": [
+        "0ktapus",
+        "DEV-0971",
+        "Muddled Libra",
+        "Octo Tempest",
+        "Oktapus",
+        "Roasted 0ktapus",
+        "Scatter Swine",
+        "Scattered Spider",
+        "Scattered Swine",
+        "Starfraud",
+        "Storm-0875",
+        "Storm-0971",
+        "UNC3944"
+      ],
+      "id": "G1015",
+      "name": "Scattered Spider"
+    },
+    {
+      "aliases": [
+        "Elephant Beetle",
+        "FIN13",
+        "TG2003"
+      ],
+      "id": "G1016",
+      "name": "FIN13"
+    },
+    {
+      "aliases": [
+        "BRONZE SILHOUETTE",
+        "DEV-0391",
+        "DazedToad",
+        "Dev-0391",
+        "Insidious Taurus",
+        "Storm-0391",
+        "UNC3236",
+        "VANGUARD PANDA",
+        "VOLTZITE",
+        "Vanguard Panda",
+        "Volt Typhoon",
+        "Voltzite"
+      ],
+      "id": "G1017",
+      "name": "Volt Typhoon"
+    },
+    {
+      "aliases": [
+        "TA2541"
+      ],
+      "id": "G1018",
+      "name": "TA2541"
+    },
+    {
+      "aliases": [
+        "MoustachedBouncer"
+      ],
+      "id": "G1019",
+      "name": "MoustachedBouncer"
+    },
+    {
+      "aliases": [
+        "DEV-0206",
+        "GOLD PRELUDE",
+        "Mustard Tempest",
+        "Purple Vallhund",
+        "TA569",
+        "UNC1543"
+      ],
+      "id": "G1020",
+      "name": "Mustard Tempest"
+    },
+    {
+      "aliases": [
+        "BRONZE STARLIGHT",
+        "Cinnamon Tempest",
+        "DEV-0401",
+        "Emperor Dragonfly",
+        "SLIME34"
+      ],
+      "id": "G1021",
+      "name": "Cinnamon Tempest"
+    },
+    {
+      "aliases": [
+        "ToddyCat",
+        "Websiic"
+      ],
+      "id": "G1022",
+      "name": "ToddyCat"
+    },
+    {
+      "aliases": [
+        "APT5",
+        "BRONZE FLEETWOOD",
+        "KEYHOLE PANDA",
+        "Keyhole Panda",
+        "MANGANESE",
+        "Mulberry Typhoon",
+        "Poisoned Flight",
+        "TEMP.Bottle",
+        "UNC2630"
+      ],
+      "id": "G1023",
+      "name": "APT5"
+    },
+    {
+      "aliases": [
+        "Akira",
+        "GOLD SAHARA",
+        "Howling Scorpius",
+        "PUNK SPIDER",
+        "Storm-1567"
+      ],
+      "id": "G1024",
+      "name": "Akira"
+    },
+    {
+      "aliases": [
+        "Malteiro"
+      ],
+      "id": "G1026",
+      "name": "Malteiro"
+    },
+    {
+      "aliases": [
+        "APT-C-23",
+        "Arid Viper",
+        "AridViper",
+        "Bearded Barbie",
+        "Big Bang APT",
+        "Desert Falcon",
+        "Desert Falcons",
+        "Grey Karkadann",
+        "Mantis",
+        "NIOBIUM",
+        "Pinstripe Lightning",
+        "RENEGADE JACKAL",
+        "Scimitar",
+        "TAG-63",
+        "Two-tailed Scorpion"
+      ],
+      "id": "G1028",
+      "name": "APT-C-23"
+    },
+    {
+      "aliases": [
+        "UNC788"
+      ],
+      "id": "G1029",
+      "name": "UNC788"
+    },
+    {
+      "aliases": [
+        "AMERICIUM",
+        "Agonizing Serpens",
+        "Agrius",
+        "Black Shadow",
+        "BlackShadow",
+        "DEV-0022",
+        "Pink Sandstorm",
+        "SPECTRAL KITTEN",
+        "UNC2428"
+      ],
+      "id": "G1030",
+      "name": "Agrius"
+    },
+    {
+      "aliases": [
+        "Lorec53",
+        "Saint Bear",
+        "Storm-0587",
+        "TA471",
+        "UAC-0056"
+      ],
+      "id": "G1031",
+      "name": "Saint Bear"
+    },
+    {
+      "aliases": [
+        "GOLD IONIC",
+        "INC Ransom"
+      ],
+      "id": "G1032",
+      "name": "INC Ransom"
+    },
+    {
+      "aliases": [
+        "Blue Callisto",
+        "BlueCharlie",
+        "COLDRIVER",
+        "Callisto",
+        "Callisto Group",
+        "Cold River",
+        "GOSSAMER BEAR",
+        "IRON FRONTIER",
+        "Nahr Elbard",
+        "Nahr el bared",
+        "SEABORGIUM",
+        "Star Blizzard",
+        "TA446",
+        "TAG-53",
+        "UNC4057"
+      ],
+      "id": "G1033",
+      "name": "Star Blizzard"
+    },
+    {
+      "aliases": [
+        " Daggerfly",
+        "BRONZE HIGHLAND",
+        "Daggerfly",
+        "Evasive Panda"
+      ],
+      "id": "G1034",
+      "name": "Daggerfly"
+    },
+    {
+      "aliases": [
+        "TA-473",
+        "TA473",
+        "TAG-70",
+        "UAC-0114",
+        "Winter Vivern"
+      ],
+      "id": "G1035",
+      "name": "Winter Vivern"
+    },
+    {
+      "aliases": [
+        "Moonstone Sleet",
+        "Storm-1789"
+      ],
+      "id": "G1036",
+      "name": "Moonstone Sleet"
+    },
+    {
+      "aliases": [
+        "Hive0118",
+        "TA577"
+      ],
+      "id": "G1037",
+      "name": "TA577"
+    },
+    {
+      "aliases": [
+        "TA578"
+      ],
+      "id": "G1038",
+      "name": "TA578"
+    },
+    {
+      "aliases": [
+        "Earth Kapre",
+        "GOLD BLADE",
+        "Red Wolf",
+        "RedCurl"
+      ],
+      "id": "G1039",
+      "name": "RedCurl"
+    },
+    {
+      "aliases": [
+        "Play"
+      ],
+      "id": "G1040",
+      "name": "Play"
+    },
+    {
+      "aliases": [
+        "COSMIC WOLF",
+        "Cosmic Wolf",
+        "Marbled Dust",
+        "SILICON",
+        "Sea Turtle",
+        "Teal Kurma",
+        "UNC1326"
+      ],
+      "id": "G1041",
+      "name": "Sea Turtle"
+    },
+    {
+      "aliases": [
+        "RedEcho"
+      ],
+      "id": "G1042",
+      "name": "RedEcho"
+    },
+    {
+      "aliases": [
+        "BlackByte",
+        "Hecamede"
+      ],
+      "id": "G1043",
+      "name": "BlackByte"
+    },
+    {
+      "aliases": [
+        "APT42"
+      ],
+      "id": "G1044",
+      "name": "APT42"
+    },
+    {
+      "aliases": [
+        "FamousSparrow",
+        "GhostEmperor",
+        "OPERATOR PANDA",
+        "RedMike",
+        "Salt Typhoon",
+        "UNC2286"
+      ],
+      "id": "G1045",
+      "name": "Salt Typhoon"
+    },
+    {
+      "aliases": [
+        "CURLY SPIDER",
+        "Cardinal",
+        "STAC5777",
+        "Storm-1811",
+        "UNC4393"
+      ],
+      "id": "G1046",
+      "name": "Storm-1811"
+    },
+    {
+      "aliases": [
+        "Velvet Ant"
+      ],
+      "id": "G1047",
+      "name": "Velvet Ant"
+    },
+    {
+      "aliases": [
+        "UNC3886"
+      ],
+      "id": "G1048",
+      "name": "UNC3886"
+    },
+    {
+      "aliases": [
+        "AppleJeus",
+        "Citrine Sleet",
+        "Gleaming Pisces",
+        "UNC1720",
+        "UNC4736"
+      ],
+      "id": "G1049",
+      "name": "AppleJeus"
+    },
+    {
+      "aliases": [
+        "GOLD FEATHER",
+        "Water Galura"
+      ],
+      "id": "G1050",
+      "name": "Water Galura"
+    },
+    {
+      "aliases": [
+        "Medusa Group"
+      ],
+      "id": "G1051",
+      "name": "Medusa Group"
+    },
+    {
+      "aliases": [
+        "Contagious Interview",
+        "DEV#POPPER",
+        "DeceptiveDevelopment",
+        "Famous Chollima",
+        "Gwisin Gang",
+        "Nickel Tapestry",
+        "PurpleBravo",
+        "Storm-1877",
+        "TAG-121",
+        "Tenacious Pungsan",
+        "UNC5267",
+        "Void Dokkaebi",
+        "WageMole",
+        "Wagemole",
+        "WaterPlum"
+      ],
+      "id": "G1052",
+      "name": "Contagious Interview"
+    },
+    {
+      "aliases": [
+        "Storm-0501"
+      ],
+      "id": "G1053",
+      "name": "Storm-0501"
+    },
+    {
+      "aliases": [
+        "Earth Kasha",
+        "MirrorFace"
+      ],
+      "id": "G1054",
+      "name": "MirrorFace"
+    },
+    {
+      "aliases": [
+        "BANISHED KITTEN",
+        "COBALT MYSTIQUE",
+        "DUNE",
+        "Handala Hack",
+        "HomeLand Justice",
+        "Homeland Justice",
+        "Karma",
+        "Karmabelow80",
+        "Red Sandstorm",
+        "Storm-0842",
+        "VOID MANTICORE",
+        "Void Manticore"
+      ],
+      "id": "G1055",
+      "name": "VOID MANTICORE"
+    }
+  ],
+  "source": "https://github.com/MISP/misp-galaxy (mitre-intrusion-set + threat-actor)"
+}

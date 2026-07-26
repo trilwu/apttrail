@@ -176,3 +176,84 @@ class SliceExporter:
             encoding="utf-8",
             newline="\n",
         )
+        self._write_html_index(payload)
+
+    def _write_html_index(self, payload: dict[str, Any]) -> None:
+        """
+        Write a browsable landing page.
+
+        Served over GitHub Pages this is the first thing a responder sees, so
+        it answers the only two questions that matter on arrival: what is here,
+        and what is the URL for the actor I care about.
+        """
+        totals = payload["totals"]
+        groups = sorted(payload["groups"], key=lambda g: -g["total"])
+
+        rows = "\n".join(
+            "<tr>"
+            f"<td>{self._esc(g['attack_id'] or '')}</td>"
+            f"<td>{self._esc(g['attack_name'] or g['group'])}</td>"
+            f"<td class=n>{g['total']:,}</td>"
+            f"<td><a href=\"by-group/{self._esc(g['slug'])}.json\">json</a>"
+            + (
+                f" · <a href=\"by-group/{self._esc(g['slug'])}-domain.txt\">domains</a>"
+                if g["counts"].get("domain")
+                else ""
+            )
+            + "</td></tr>"
+            for g in groups
+        )
+
+        lists = "\n".join(
+            f'<li><a href="by-type/{t.value}.txt">{t.value}.txt</a></li>'
+            for t in FLAT_TYPES
+            if (self.output_dir / "by-type" / f"{t.value}.txt").exists()
+        )
+
+        html = f"""<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APTtrail - APT indicators with ATT&amp;CK attribution</title>
+<style>
+ :root {{ color-scheme: light dark; }}
+ body {{ font: 15px/1.55 ui-sans-serif, system-ui, sans-serif; max-width: 60rem;
+        margin: 2rem auto; padding: 0 1rem; }}
+ h1 {{ margin-bottom: .2rem; }}
+ .sub {{ opacity: .75; margin-top: 0; }}
+ code, pre {{ font-family: ui-monospace, monospace; font-size: .9em; }}
+ pre {{ background: #8881; padding: .8rem; overflow-x: auto; border-radius: 6px; }}
+ table {{ border-collapse: collapse; width: 100%; margin-top: .5rem; }}
+ th, td {{ text-align: left; padding: .3rem .6rem; border-bottom: 1px solid #8883; }}
+ td.n, th.n {{ text-align: right; font-variant-numeric: tabular-nums; }}
+ ul {{ columns: 2; }}
+</style>
+<h1>APTtrail</h1>
+<p class=sub>{totals["indicators"]:,} indicators &middot; {totals["groups"]} APT groups &middot;
+{totals["groups_mapped_to_attack"]} mapped to MITRE ATT&amp;CK &middot;
+generated {self._esc(payload["generated_at"])}</p>
+
+<p>Every indicator carries the group it belongs to. Plain files, stable URLs,
+no API key. <a href="{PROJECT_URL}">Source and docs</a>.</p>
+
+<pre>curl -sL {PROJECT_URL.replace("github.com", "trilwu.github.io").replace("/trilwu/apttrail", "/apttrail")}/by-group/G0007-domain.txt</pre>
+
+<h2>Full lists</h2>
+<ul>
+{lists}
+<li><a href="index.json">index.json</a></li>
+</ul>
+
+<h2>By group</h2>
+<table>
+<tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th>Files</th></tr>
+{rows}
+</table>
+</html>
+"""
+        (self.output_dir / "index.html").write_text(html, encoding="utf-8", newline="\n")
+
+    @staticmethod
+    def _esc(value: str) -> str:
+        """Minimal HTML escaping for values that come from upstream data."""
+        return value.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")

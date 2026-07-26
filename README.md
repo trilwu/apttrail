@@ -1,122 +1,264 @@
-# APTtrail - APT Threat Feed Collector
+# APTtrail
 
-**APTtrail** is an automated threat intelligence collector that processes indicators from the [Maltrail](https://github.com/stamparm/maltrail) repository into multiple standard formats.
+**IOCs that tell you whose they are.** 155,000 indicators from 339 APT groups,
+121 of them resolved to their MITRE ATT&CK group id, refreshed hourly.
 
 [![CI](https://github.com/trilwu/apttrail/actions/workflows/ci.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🚀 Features
-
-- **Multi-Format Export**: JSON, CSV, STIX 2.1, Suricata, YARA, MISP, and Sigma.
-- **Git Integration**: Auto-updates source repository and extracts commit timestamps.
-- **Optimized**: Generates high-performance Suricata rules (regex-optimized).
-- **Type-Safe**: Fully typed Python codebase with Pydantic validation.
-- **Dockerized**: Ready-to-use container image.
-
-## 📦 Installation
-
-### From Source
-```bash
-git clone https://github.com/trilwu/apttrail.git
-cd apttrail
-pip install -e .
-```
-
-### Using Docker
-```bash
-docker build -t apttrail .
-docker run -v $(pwd)/feeds:/app/feeds apttrail --json-only
-```
-
-## 🛠 Usage
-
-Basic usage (collects all feeds):
-```bash
-apttrail
-```
-
-Custom output directory:
-```bash
-apttrail --output-dir /path/to/feeds
-```
-
-Specific formats:
-```bash
-apttrail --json-only     # JSON only
-apttrail --csv-only      # CSV only
-apttrail --stix-only     # STIX 2.1 bundle
-apttrail --misp-only     # MISP event JSON
-apttrail --sigma-only    # Sigma detection rules
-apttrail --yara-only     # YARA rules
-```
-
-Enable timestamp collection (slower, uses `git blame`):
-```bash
-apttrail --collect-timestamps
-```
-
-## 📥 Getting the feeds
-
-Feeds are published as **release assets**, not committed to the repository —
-hourly commits of multi-megabyte files are what previously grew this repo to
-841MB. The `latest` tag is updated every hour and its URLs are stable:
+Most free IOC feeds hand you a flat list of bad domains. Actor attribution lives
+somewhere else, in a different format, joined by hand through alias tables.
+APTtrail ships them together: every indicator arrives tagged with the group it
+belongs to, and where MITRE tracks that group, with its `Gxxxx` id.
 
 ```bash
-curl -LO https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed.json
-curl -LO https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed.rules
+# Every domain APT28 (G0007) has ever been seen using
+curl -sL https://trilwu.github.io/apttrail/by-group/G0007-domain.txt
 ```
 
-Swap the filename for any format in the table below. `weekly-YYYY-Wxx` tags hold
-immutable snapshots if you need a fixed point in time.
+Browse it: **[trilwu.github.io/apttrail](https://trilwu.github.io/apttrail/)**
 
-## 📊 Output Formats
+---
 
-| Format | File | Description |
-|--------|------|-------------|
-| **JSON** | `apttrail_threat_feed.json` | Full structured data with metadata |
-| **CSV** | `apttrail_threat_feed.csv` | Compact list of indicators |
-| **STIX** | `apttrail_threat_feed_stix.json` | STIX 2.1 Bundle |
-| **Suricata** | `apttrail_threat_feed.rules` | Detection rules for IDS |
-| **YARA** | `apttrail_threat_feed.yar` | File scanning rules |
-| **MISP** | `apttrail_threat_feed_misp.json` | MISP Event format |
-| **Sigma** | `apttrail_threat_feed.yaml` | Generic detection rules |
-| **Changelog** | `changes/YYYY-MM.jsonl` | Append-only log of indicator additions and removals |
+## 60-second start
 
-## 🕰 Indicator history
+Everything is a static file on a stable URL. No account, no API key, no rate limit.
 
-Two complementary records answer "when did this indicator change?" without
-diffing multi-megabyte feed files:
+Slices are served over GitHub Pages; the big single-file formats are release
+assets. Both have stable URLs you can construct by hand.
 
-- **`first_seen`** — when an indicator entered *Maltrail*, derived from the
-  upstream repository's own git history. Present in the JSON feed when
-  collection is enabled (`--collect-timestamps`, on by default in CI).
-- **`feeds/changes/YYYY-MM.jsonl`** — when an indicator entered or **left** the
-  APTtrail feed, which `first_seen` cannot express. This is the one feed
-  artifact kept in git, because it is small and append-only. One JSON object
-  per event:
+```bash
+SITE=https://trilwu.github.io/apttrail
+REL=https://github.com/trilwu/apttrail/releases/download/latest
+
+curl -sLO $SITE/by-type/domain.txt          # 141,148 domains, one per line
+curl -sLO $SITE/by-type/ipv4.txt            #   3,813 IPs, ports stripped
+curl -sLO $SITE/by-group/G0007.json         # one actor, full detail
+curl -sLO $SITE/index.json                  # what exists, with counts
+curl -sLO $REL/apttrail_threat_feed_stix.json
+```
+
+| Doing this | Grab this |
+|---|---|
+| Blocklist for pfBlockerNG / Pi-hole / firewall | `by-type/domain.txt`, `by-type/ipv4.txt` |
+| Hunting one actor in DNS or proxy logs | `by-group/<G-id>-domain.txt` |
+| Loading into MISP | `apttrail_threat_feed_misp.json` |
+| Loading into OpenCTI or any STIX tool | `apttrail_threat_feed_stix.json` |
+| Suricata / Snort IDS | `apttrail_threat_feed.rules` + `suricata-datasets/` |
+| Sigma-based SIEM | `apttrail_threat_feed.yaml` |
+| Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
+
+`weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time
+for an investigation.
+
+---
+
+## What attribution buys you
+
+An alert says `evil-domain.example`. With a flat blocklist that is where the
+story ends. Here:
+
+```console
+$ SITE=https://trilwu.github.io/apttrail
+
+$ curl -s $SITE/by-group/G0007.json | jq '{attack_id, attack_name, attack_url, counts}'
+{
+  "attack_id": "G0007",
+  "attack_name": "APT28",
+  "attack_url": "https://attack.mitre.org/groups/G0007/",
+  "counts": { "domain": 1431, "ipv4": 240, "url": 144, "url_path": 79 }
+}
+```
+
+Going the other way — an alert fires on a domain and you want to know whose it is:
+
+```bash
+# one-off lookup across every group, no local copy needed
+curl -s $SITE/index.json | jq -r '.groups[] | select(.counts.domain) | .slug' \
+  | while read -r slug; do
+      curl -s "$SITE/by-group/$slug-domain.txt" \
+        | grep -qFx "evil-domain.example" && echo "$slug"
+    done
+```
+
+For repeated lookups, pull `by-type/domain.txt` once and keep the whole set local.
+
+One hop from a single hit to the actor's ATT&CK page, their full infrastructure
+set, and 22 aliases that other vendors' reporting will use for the same group.
+
+The id travels into every format, so it survives the trip into your tooling:
+
+- **Suricata** — `metadata:apt_group SOFACY, mitre_group_id G0007;`
+- **MISP** — a `misp-galaxy:mitre-intrusion-set` tag, so the event pivots to the cluster
+- **STIX** — an `intrusion-set` with an `external_references` entry to ATT&CK
+- **JSON / CSV** — `attack_id`, `attack_name`, `attack_url` per group
+
+Alias resolution is vendored from the [MISP galaxy](https://github.com/MISP/misp-galaxy),
+so it works offline and is reproducible. Refresh with
+`python scripts/refresh_attack_groups.py`.
+
+---
+
+## Per-tool setup
+
+<details>
+<summary><b>Suricata</b></summary>
+
+```bash
+BASE=https://github.com/trilwu/apttrail/releases/download/latest
+curl -sLO $BASE/apttrail_threat_feed.rules
+curl -sLO $BASE/apttrail_suricata_datasets.tar.gz
+tar xzf apttrail_suricata_datasets.tar.gz -C /etc/suricata/rules/
+
+cp apttrail_threat_feed.rules /etc/suricata/rules/
+suricata -T -c /etc/suricata/suricata.yaml -S /etc/suricata/rules/apttrail_threat_feed.rules
+```
+
+4,094 rules, not 150,000: domains and IPs are matched through Suricata
+`dataset:` lookups rather than one rule per indicator. SIDs occupy the
+`9000000+` local range, clear of Emerging Threats.
+
+Every published rule file has been through `suricata -T` in CI before release —
+see [Verification](#verification).
+</details>
+
+<details>
+<summary><b>MISP</b></summary>
+
+Add as a feed under *Sync Actions → Feeds → Add Feed*:
+
+- Input source: `Network`
+- Format: `MISP Feed`
+- URL: `https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed_misp.json`
+
+Attributes arrive with `to_ids` set and tagged `apt:<group>`, plus the ATT&CK
+galaxy tag where the group is mapped.
+</details>
+
+<details>
+<summary><b>OpenCTI / STIX 2.1</b></summary>
+
+```bash
+curl -sLO https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed_stix.json
+```
+
+The bundle contains `intrusion-set` objects (not `threat-actor`), so it merges
+with ATT&CK data already in your platform instead of creating duplicates.
+Object ids are UUIDv5 over a fixed namespace: re-ingesting updates objects
+rather than multiplying them.
+</details>
+
+<details>
+<summary><b>pfBlockerNG / Pi-hole / firewall</b></summary>
+
+Point at the flat lists; they are plain text with `#` comments.
+
+```
+https://trilwu.github.io/apttrail/by-type/domain.txt
+https://trilwu.github.io/apttrail/by-type/ipv4.txt
+```
+
+Read the [caveats](#honest-limitations) before blocking on these outright.
+</details>
+
+<details>
+<summary><b>Splunk / Sentinel / anything with a lookup table</b></summary>
+
+```bash
+curl -sL https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed.csv -o apttrail.csv
+# apt_group,indicator_type,indicator[,first_seen]
+```
+
+`apttrail_threat_feed_metadata.csv` maps each group to its ATT&CK id, name,
+URL and aliases, so you can enrich a match without a second lookup.
+</details>
+
+---
+
+## What is in the feed
+
+| Type | Count | Notes |
+|---|---|---|
+| `domain` | 141,148 | |
+| `url_path` | 3,554 | bare request paths, e.g. `/gate.php` |
+| `ipv4` | 3,813 | ports recorded separately, addresses are bare |
+| `url` | 3,223 | includes scheme-less `host/path` |
+| hashes | 0 | Maltrail's APT trails carry none today |
+
+339 groups, 121 mapped to ATT&CK. Largest: GAMAREDON (G0047, 52,028),
+KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346).
+
+### Indicator history
+
+Two records, neither of which requires diffing a 7MB file:
+
+- **`first_seen`** — when an indicator entered *Maltrail*, read from the upstream
+  repository's own git history. Present per indicator in the JSON feed.
+- **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** APTtrail,
+  which `first_seen` cannot express. Append-only, a few KB per day, kept in git:
 
 ```json
 {"action":"added","group":"BLUENOROFF","ts":"2026-07-26T04:00:00","type":"domain","value":"example.com"}
 ```
 
-Query it directly, no tooling required:
-
 ```bash
-grep '"value":"example.com"' feeds/changes/*.jsonl
+grep '"value":"example.com"' feeds/changes/*.jsonl   # when did we see this, and when did it go
 ```
 
-Weekly release tags (`weekly-YYYY-Wxx`) provide immutable point-in-time
-snapshots of the full feed, including the STIX and MISP bundles that are too
-large to store in git.
+---
 
-## 🤝 Contributing
+## Honest limitations
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+- **Attribution is 121 of 339 groups (36%).** ATT&CK tracks 191 intrusion sets;
+  Maltrail tracks actors from vendor reporting that ATT&CK has not named. An
+  unmapped group still carries its Maltrail name and aliases.
+- **These are historical indicators, not a real-time blocklist.** Domains get
+  reused and sinkholed. Treat a hit as a lead to triage, not proof of compromise,
+  and expect false positives if you block `domain.txt` wholesale.
+- **Attribution is inherited, not independent.** APTtrail trusts Maltrail's
+  group assignment and the MISP galaxy's alias table. It does no analysis of
+  its own.
+- **No file hashes.** The YARA output therefore matches on domain and IP strings
+  in files, which is weak. If you want hashes, this is not your feed.
+- **One upstream source.** Everything here derives from
+  [Maltrail](https://github.com/stamparm/maltrail). Its coverage is your coverage.
 
-## 📜 License
+---
 
-MIT License. See [LICENSE](LICENSE) for details.
+## Verification
 
-## 🙏 Acknowledgements
+Feeds are not published on trust:
 
-- [Maltrail](https://github.com/stamparm/maltrail) by Miroslav Stampar for the incredible data source.
+- CI runs the real Suricata engine (`suricata -T`) over rules built from a
+  fixture covering every rule shape, including a live indicator containing a
+  double quote and a URL with no path.
+- The hourly workflow runs `suricata -T` over the actual rule file and
+  **refuses to publish** if it fails.
+- 130 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+
+---
+
+## Running it yourself
+
+```bash
+pip install -e .
+apttrail --output-dir feeds --suricata-dataset --collect-timestamps
+```
+
+```bash
+docker build -t apttrail . && docker run -v $(pwd)/feeds:/app/feeds apttrail
+```
+
+Useful flags: `--json-only`, `--slices-only`, `--misp-only`, `--no-update`,
+`--cache-dir`, `--no-changelog`. Full list with `apttrail --help`.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+MIT. Indicator data originates from
+[Maltrail](https://github.com/stamparm/maltrail) by Miroslav Stampar — the
+project this one stands on. Alias data from the
+[MISP galaxy](https://github.com/MISP/misp-galaxy), CC-BY-SA.
