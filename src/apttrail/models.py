@@ -5,7 +5,7 @@ These models provide type safety, validation, and serialization
 for threat intelligence data.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any
 
@@ -139,7 +139,11 @@ class FeedMetadata(BaseModel):
     model_config = ConfigDict(frozen=True)
 
     source: str = Field(default="Maltrail APT Indicators", description="Data source")
-    generated_at: datetime = Field(default_factory=datetime.now, description="Generation time")
+    # Timezone-aware: a bare local timestamp published on a public feed
+    # gives a consumer no way to tell how fresh the data actually is.
+    generated_at: datetime = Field(
+        default_factory=lambda: datetime.now(timezone.utc), description="Generation time (UTC)"
+    )
     total_apt_groups: int = Field(default=0, ge=0, description="Number of APT groups")
     total_indicators: int = Field(default=0, ge=0, description="Total indicators")
     maltrail_commit: str | None = Field(default=None, description="Source commit hash")

@@ -155,7 +155,7 @@ class TestMergingByAttackId:
     def test_one_file_per_attack_id(self, collided):
         files = sorted(p.name for p in (collided / "by-group").iterdir())
 
-        assert files == ["G0040-domain.txt", "G0040.json"]
+        assert files == ["G0040-domain.txt", "G0040.html", "G0040.json"]
 
     def test_indicators_from_every_member_are_present(self, collided):
         payload = json.loads((collided / "by-group" / "G0040.json").read_text("utf-8"))

@@ -23,7 +23,9 @@ import json
 from pathlib import Path
 from typing import Any
 
+from apttrail.exporters.group_pages import write_group_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
+from apttrail.profiles import load_profiles
 
 #: Types that make sense as flat, directly consumable lists.
 FLAT_TYPES = (
@@ -39,6 +41,7 @@ FLAT_TYPES = (
 
 BANNER = "# APTtrail - {title}\n# {count} indicators | {url}\n# Generated {generated}\n"
 PROJECT_URL = "https://github.com/trilwu/apttrail"
+SITE_URL = "https://trilwu.github.io/apttrail"
 
 
 class SliceExporter:
@@ -144,8 +147,14 @@ class SliceExporter:
                 entry["last_modified"] = metadata.last_modified
 
             for indicator_type, indicators in group.indicators.items():
-                bucket = entry["indicators"].setdefault(indicator_type.value, set())
-                bucket.update(i.value for i in indicators)
+                bucket = entry["indicators"].setdefault(indicator_type.value, {})
+                for indicator in indicators:
+                    seen = indicator.first_seen
+                    known = bucket.get(indicator.value)
+                    # The same value can arrive from two merged groups; keep
+                    # the earlier sighting.
+                    if indicator.value not in bucket or (seen and (known is None or seen < known)):
+                        bucket[indicator.value] = seen
 
         return merged
 
@@ -165,6 +174,7 @@ class SliceExporter:
 
     def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> None:
         last_modified = entry["last_modified"]
+        profile = load_profiles().get(entry["attack_id"])
         payload = {
             "slug": slug,
             "maltrail_groups": sorted(entry["maltrail_groups"]),
@@ -175,9 +185,14 @@ class SliceExporter:
             "references": sorted(entry["references"]),
             "last_modified": last_modified.isoformat() if last_modified else None,
             "generated_at": generated,
+            "first_seen_range": self._first_seen_range(entry),
             "counts": self._counts(entry),
             "indicators": {
                 indicator_type: sorted(values) for indicator_type, values in sorted(entry["indicators"].items())
+            },
+            "first_seen": {
+                indicator_type: {value: seen.date().isoformat() for value, seen in sorted(values.items()) if seen}
+                for indicator_type, values in sorted(entry["indicators"].items())
             },
         }
         (directory / f"{slug}.json").write_text(
@@ -186,12 +201,30 @@ class SliceExporter:
             newline="\n",
         )
 
+        # The human-readable actor page: description, targeting, techniques and
+        # dated indicators.
+        write_group_page(directory, slug, entry, profile, generated)
+
         # Flat domain list per group: the single most requested shape for
         # hunting one actor in DNS logs.
-        domains = sorted(entry["indicators"].get(IndicatorType.DOMAIN.value, set()))
+        domains = sorted(entry["indicators"].get(IndicatorType.DOMAIN.value, {}))
         if domains:
             label = f"{entry['attack_id']} {entry['attack_name']}" if entry["attack_id"] else slug
             self._write_list(directory / f"{slug}-domain.txt", f"{label} domains", domains, generated)
+
+    @staticmethod
+    def _first_seen_range(entry: dict[str, Any]) -> dict[str, str] | None:
+        """
+        Earliest and latest first_seen across a group's indicators.
+
+        Answers "how long has this actor's infrastructure been known?" without
+        downloading the group's indicators, and is the only place the recovered
+        history is visible from the site.
+        """
+        dates = [seen for bucket in entry["indicators"].values() for seen in bucket.values() if seen]
+        if not dates:
+            return None
+        return {"earliest": min(dates).date().isoformat(), "latest": max(dates).date().isoformat()}
 
     @staticmethod
     def _counts(entry: dict[str, Any]) -> dict[str, int]:
@@ -207,6 +240,7 @@ class SliceExporter:
             "aliases": sorted(entry["aliases"]),
             "total": sum(counts.values()),
             "counts": counts,
+            "first_seen_range": self._first_seen_range(entry),
         }
 
     def _write_index(self, index: list[dict[str, Any]], metadata: FeedMetadata, written: dict[str, int]) -> None:
@@ -253,7 +287,9 @@ class SliceExporter:
             f"<td>{self._esc(g['attack_id'] or '')}</td>"
             f"<td>{self._esc(g['attack_name'] or ', '.join(g['maltrail_groups']))}</td>"
             f"<td class=n>{g['total']:,}</td>"
-            f"<td><a href=\"by-group/{self._esc(g['slug'])}.json\">json</a>"
+            f"<td class=span>{self._span(g)}</td>"
+            f"<td><a href=\"by-group/{self._esc(g['slug'])}.html\">profile</a>"
+            f" &middot; <a href=\"by-group/{self._esc(g['slug'])}.json\">json</a>"
             + (
                 f" · <a href=\"by-group/{self._esc(g['slug'])}-domain.txt\">domains</a>"
                 if g["counts"].get("domain")
@@ -285,33 +321,84 @@ class SliceExporter:
  table {{ border-collapse: collapse; width: 100%; margin-top: .5rem; }}
  th, td {{ text-align: left; padding: .3rem .6rem; border-bottom: 1px solid #8883; }}
  td.n, th.n {{ text-align: right; font-variant-numeric: tabular-nums; }}
+ td.span, th.span {{ white-space: nowrap; font-variant-numeric: tabular-nums; opacity: .8; }}
  ul {{ columns: 2; }}
+ .freshness {{ border: 1px solid #8884; border-radius: 6px; padding: .6rem .8rem;
+              margin: 1rem 0; display: flex; gap: .6rem; flex-wrap: wrap;
+              align-items: baseline; }}
+ .freshness b {{ font-size: 1.05rem; }}
+ .stale {{ color: #b45309; }}
 </style>
 <h1>APTtrail</h1>
 <p class=sub>{totals["indicators"]:,} indicators &middot;
 {totals["maltrail_groups"]} APT groups &middot;
-{totals["maltrail_groups_mapped_to_attack"]} mapped onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets &middot;
-generated {self._esc(payload["generated_at"])}</p>
+{totals["maltrail_groups_mapped_to_attack"]} mapped onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets</p>
+
+<div class=freshness>
+  <b>Updated <span id=ago>&hellip;</span></b>
+  <span>&middot;</span>
+  <span><time id=generated datetime="{self._esc(payload["generated_at"])}">{self._esc(payload["generated_at"])}</time> UTC</span>
+  <span>&middot;</span>
+  <span>rebuilt hourly</span>
+</div>
 
 <p>Every indicator carries the group it belongs to. Plain files, stable URLs,
 no API key. <a href="{PROJECT_URL}">Source and docs</a>.</p>
 
-<pre>curl -sL {PROJECT_URL.replace("github.com", "trilwu.github.io").replace("/trilwu/apttrail", "/apttrail")}/by-group/G0007-domain.txt</pre>
+<pre>curl -sL {SITE_URL}/by-group/G0007-domain.txt</pre>
+
+<h2>Look up one indicator</h2>
+<p>Indicators are sharded by <code>sha256(value)</code>, so you can build the URL
+yourself. The reply carries the actor, its ATT&amp;CK id and when the indicator
+was first seen.</p>
+<pre>shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)
+curl -s {SITE_URL}/by-indicator/$shard.json | jq --arg v "$IOC" '.[$v]'</pre>
 
 <h2>Full lists</h2>
 <ul>
 {lists}
 <li><a href="index.json">index.json</a></li>
+<li><a href="misp-feed/manifest.json">misp-feed/</a></li>
 </ul>
 
 <h2>By group</h2>
+<p class=sub>The <em>seen</em> column is the span of first-seen dates across a
+group's indicators, recovered from upstream history reaching back to 2014.</p>
 <table>
-<tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th>Files</th></tr>
+<tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th class=span>Seen</th><th>Files</th></tr>
 {rows}
 </table>
+<script>
+// Rendered client-side so the age is right whenever the page is opened,
+// not whenever it was generated.
+(function () {{
+  var el = document.getElementById('generated');
+  var out = document.getElementById('ago');
+  var then = new Date(el.getAttribute('datetime') + (el.textContent.endsWith('Z') ? '' : 'Z'));
+  if (isNaN(then)) {{ out.textContent = 'unknown'; return; }}
+  var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
+  var text = mins < 1 ? 'just now'
+    : mins < 60 ? mins + ' min ago'
+    : mins < 1440 ? Math.round(mins / 60) + ' h ago'
+    : Math.round(mins / 1440) + ' d ago';
+  out.textContent = text;
+  if (mins > 180) {{ out.parentElement.classList.add('stale'); }}
+  el.textContent = then.toISOString().replace('T', ' ').replace('.000Z', '');
+}})();
+</script>
 </html>
 """
         (self.output_dir / "index.html").write_text(html, encoding="utf-8", newline="\n")
+
+    @staticmethod
+    def _span(group: dict[str, Any]) -> str:
+        """Render a group's first-seen span for the table."""
+        span = group.get("first_seen_range")
+        if not span:
+            return "&ndash;"
+
+        earliest, latest = str(span["earliest"])[:4], str(span["latest"])[:4]
+        return earliest if earliest == latest else f"{earliest}&ndash;{latest}"
 
     @staticmethod
     def _esc(value: str) -> str:
