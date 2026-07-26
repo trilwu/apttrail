@@ -75,6 +75,7 @@ class TestByGroup:
     def test_group_file_carries_attribution_and_indicators(self, written):
         payload = json.loads((written / "by-group" / "G0007.json").read_text("utf-8"))
 
+        assert payload["maltrail_groups"] == ["APT28"]
         assert payload["attack_id"] == "G0007"
         assert payload["attack_url"] == "https://attack.mitre.org/groups/G0007/"
         assert payload["aliases"] == ["Fancy Bear"]
@@ -97,15 +98,17 @@ class TestIndex:
     def test_index_reports_attack_coverage(self, written):
         payload = json.loads((written / "index.json").read_text("utf-8"))
 
-        assert payload["totals"]["groups"] == 2  # EMPTY is excluded
-        assert payload["totals"]["groups_mapped_to_attack"] == 1
+        assert payload["totals"]["slices"] == 2  # EMPTY is excluded
+        assert payload["totals"]["maltrail_groups"] == 2
+        assert payload["totals"]["maltrail_groups_mapped_to_attack"] == 1
+        assert payload["totals"]["attack_groups"] == 1
         assert payload["totals"]["indicators"] == 4
 
     def test_index_lets_a_client_find_a_group_without_downloading_it(self, written):
         payload = json.loads((written / "index.json").read_text("utf-8"))
 
-        entry = next(e for e in payload["groups"] if e["group"] == "APT28")
-        assert entry["slug"] == "G0007"
+        entry = next(e for e in payload["groups"] if e["slug"] == "G0007")
+        assert entry["maltrail_groups"] == ["APT28"]
         assert entry["attack_name"] == "APT28"
         assert entry["counts"] == {"domain": 2, "ipv4": 1}
 
@@ -119,3 +122,74 @@ def test_export_is_idempotent(tmp_path, feed):
 
     assert (tmp_path / "by-type" / "domain.txt").read_text("utf-8").count("bear.example") == 1
     assert first.count("bear.example") == 1
+
+
+class TestMergingByAttackId:
+    """Maltrail splits actors that ATT&CK treats as one intrusion set.
+
+    22 ATT&CK ids are affected in the live feed; G0040 covers DONOT, PATCHWORK
+    and HANGOVER. Without merging, the last group written won and a request for
+    Patchwork returned 984 of its 2,225 indicators.
+    """
+
+    @pytest.fixture
+    def collided(self, tmp_path):
+        attack = {
+            "attack_id": "G0040",
+            "attack_name": "Patchwork",
+            "attack_url": "https://attack.mitre.org/groups/G0040/",
+        }
+        feed = {
+            "DONOT": group("DONOT", [("donot.example", IndicatorType.DOMAIN)], aliases=["apt-c-35"], **attack),
+            "PATCHWORK": group(
+                "PATCHWORK",
+                [("patchwork.example", IndicatorType.DOMAIN), ("9.9.9.9", IndicatorType.IPV4)],
+                aliases=["dropping elephant"],
+                **attack,
+            ),
+            "HANGOVER": group("HANGOVER", [("hangover.example", IndicatorType.DOMAIN)], **attack),
+        }
+        SliceExporter(tmp_path).export(feed, FeedMetadata())
+        return tmp_path
+
+    def test_one_file_per_attack_id(self, collided):
+        files = sorted(p.name for p in (collided / "by-group").iterdir())
+
+        assert files == ["G0040-domain.txt", "G0040.json"]
+
+    def test_indicators_from_every_member_are_present(self, collided):
+        payload = json.loads((collided / "by-group" / "G0040.json").read_text("utf-8"))
+
+        assert payload["indicators"]["domain"] == [
+            "donot.example",
+            "hangover.example",
+            "patchwork.example",
+        ]
+        assert payload["counts"] == {"domain": 3, "ipv4": 1}
+
+    def test_source_groups_are_recorded(self, collided):
+        payload = json.loads((collided / "by-group" / "G0040.json").read_text("utf-8"))
+
+        assert payload["maltrail_groups"] == ["DONOT", "HANGOVER", "PATCHWORK"]
+
+    def test_aliases_are_unioned(self, collided):
+        payload = json.loads((collided / "by-group" / "G0040.json").read_text("utf-8"))
+
+        assert payload["aliases"] == ["apt-c-35", "dropping elephant"]
+
+    def test_flat_list_covers_every_member(self, collided):
+        lines = [
+            line
+            for line in (collided / "by-group" / "G0040-domain.txt").read_text("utf-8").splitlines()
+            if not line.startswith("#")
+        ]
+
+        assert lines == ["donot.example", "hangover.example", "patchwork.example"]
+
+    def test_index_counts_the_merged_group_once(self, collided):
+        payload = json.loads((collided / "index.json").read_text("utf-8"))
+
+        assert payload["totals"]["slices"] == 1
+        assert payload["totals"]["maltrail_groups"] == 3
+        assert payload["totals"]["attack_groups"] == 1
+        assert payload["totals"]["indicators"] == 4

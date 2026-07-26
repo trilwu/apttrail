@@ -84,14 +84,9 @@ class SliceExporter:
             written["by_type"] += 1
 
         index: list[dict[str, Any]] = []
-        for name in sorted(apt_groups):
-            group = apt_groups[name]
-            if not group.total_indicators:
-                continue
-
-            slug = self._slug(group, name)
-            self._write_group(by_group_dir, slug, name, group, generated)
-            index.append(self._index_entry(slug, name, group))
+        for slug, entry in sorted(self._merge_by_slug(apt_groups).items()):
+            self._write_group(by_group_dir, slug, entry, generated)
+            index.append(self._index_entry(slug, entry))
             written["by_group"] += 1
 
         self._write_index(index, metadata, written)
@@ -101,6 +96,58 @@ class SliceExporter:
     def _slug(group: APTGroup, name: str) -> str:
         """Prefer the ATT&CK id so ATT&CK-driven lookups resolve directly."""
         return group.metadata.attack_id or name
+
+    def _merge_by_slug(self, apt_groups: dict[str, APTGroup]) -> dict[str, dict[str, Any]]:
+        """
+        Combine Maltrail groups that resolve to the same ATT&CK intrusion set.
+
+        Maltrail tracks DONOT, PATCHWORK and HANGOVER separately; ATT&CK calls
+        all three G0040. Writing them to the same slug without merging meant the
+        last one won, so a request for Patchwork's infrastructure returned 984
+        of its 2,225 indicators. 22 ATT&CK ids are affected.
+
+        Args:
+            apt_groups: Collected groups, keyed by Maltrail name
+
+        Returns:
+            Merged entries keyed by slug, skipping groups with no indicators
+        """
+        merged: dict[str, dict[str, Any]] = {}
+
+        for name in sorted(apt_groups):
+            group = apt_groups[name]
+            if not group.total_indicators:
+                continue
+
+            metadata = group.metadata
+            slug = self._slug(group, name)
+            entry = merged.setdefault(
+                slug,
+                {
+                    "maltrail_groups": [],
+                    "attack_id": metadata.attack_id,
+                    "attack_name": metadata.attack_name,
+                    "attack_url": metadata.attack_url,
+                    "aliases": set(),
+                    "references": set(),
+                    "last_modified": None,
+                    "indicators": {},
+                },
+            )
+
+            entry["maltrail_groups"].append(name)
+            entry["aliases"].update(metadata.aliases)
+            entry["references"].update(metadata.references)
+            if metadata.last_modified and (
+                entry["last_modified"] is None or metadata.last_modified > entry["last_modified"]
+            ):
+                entry["last_modified"] = metadata.last_modified
+
+            for indicator_type, indicators in group.indicators.items():
+                bucket = entry["indicators"].setdefault(indicator_type.value, set())
+                bucket.update(i.value for i in indicators)
+
+        return merged
 
     @staticmethod
     def _collect_type(apt_groups: dict[str, APTGroup], indicator_type: IndicatorType) -> list[str]:
@@ -116,21 +163,21 @@ class SliceExporter:
         banner = BANNER.format(title=title, count=len(values), url=PROJECT_URL, generated=generated)
         path.write_text(banner + "\n".join(values) + "\n", encoding="utf-8", newline="\n")
 
-    def _write_group(self, directory: Path, slug: str, name: str, group: APTGroup, generated: str) -> None:
-        metadata = group.metadata
+    def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> None:
+        last_modified = entry["last_modified"]
         payload = {
-            "group": name,
-            "attack_id": metadata.attack_id,
-            "attack_name": metadata.attack_name,
-            "attack_url": metadata.attack_url,
-            "aliases": sorted(metadata.aliases),
-            "references": sorted(metadata.references),
-            "last_modified": metadata.last_modified.isoformat() if metadata.last_modified else None,
+            "slug": slug,
+            "maltrail_groups": sorted(entry["maltrail_groups"]),
+            "attack_id": entry["attack_id"],
+            "attack_name": entry["attack_name"],
+            "attack_url": entry["attack_url"],
+            "aliases": sorted(entry["aliases"]),
+            "references": sorted(entry["references"]),
+            "last_modified": last_modified.isoformat() if last_modified else None,
             "generated_at": generated,
-            "counts": group.indicator_counts,
+            "counts": self._counts(entry),
             "indicators": {
-                indicator_type.value: sorted(i.value for i in indicators)
-                for indicator_type, indicators in sorted(group.indicators.items(), key=lambda kv: kv[0].value)
+                indicator_type: sorted(values) for indicator_type, values in sorted(entry["indicators"].items())
             },
         }
         (directory / f"{slug}.json").write_text(
@@ -141,31 +188,43 @@ class SliceExporter:
 
         # Flat domain list per group: the single most requested shape for
         # hunting one actor in DNS logs.
-        domains = sorted(i.value for i in group.indicators.get(IndicatorType.DOMAIN, set()))
+        domains = sorted(entry["indicators"].get(IndicatorType.DOMAIN.value, set()))
         if domains:
-            label = f"{metadata.attack_id} {metadata.attack_name}" if metadata.attack_id else name
+            label = f"{entry['attack_id']} {entry['attack_name']}" if entry["attack_id"] else slug
             self._write_list(directory / f"{slug}-domain.txt", f"{label} domains", domains, generated)
 
     @staticmethod
-    def _index_entry(slug: str, name: str, group: APTGroup) -> dict[str, Any]:
+    def _counts(entry: dict[str, Any]) -> dict[str, int]:
+        return {indicator_type: len(values) for indicator_type, values in sorted(entry["indicators"].items())}
+
+    def _index_entry(self, slug: str, entry: dict[str, Any]) -> dict[str, Any]:
+        counts = self._counts(entry)
         return {
             "slug": slug,
-            "group": name,
-            "attack_id": group.metadata.attack_id,
-            "attack_name": group.metadata.attack_name,
-            "aliases": sorted(group.metadata.aliases),
-            "total": group.total_indicators,
-            "counts": group.indicator_counts,
+            "maltrail_groups": sorted(entry["maltrail_groups"]),
+            "attack_id": entry["attack_id"],
+            "attack_name": entry["attack_name"],
+            "aliases": sorted(entry["aliases"]),
+            "total": sum(counts.values()),
+            "counts": counts,
         }
 
     def _write_index(self, index: list[dict[str, Any]], metadata: FeedMetadata, written: dict[str, int]) -> None:
-        attributed = sum(1 for entry in index if entry["attack_id"])
+        # Two different counts, and conflating them is misleading: several
+        # Maltrail groups can share one ATT&CK id, so the number of mapped
+        # source groups exceeds the number of distinct intrusion sets.
+        attack_ids = {entry["attack_id"] for entry in index if entry["attack_id"]}
+        mapped_sources = sum(len(entry["maltrail_groups"]) for entry in index if entry["attack_id"])
+        source_groups = sum(len(entry["maltrail_groups"]) for entry in index)
+
         payload = {
             "generated_at": metadata.generated_at.isoformat(),
             "project": PROJECT_URL,
             "totals": {
-                "groups": len(index),
-                "groups_mapped_to_attack": attributed,
+                "slices": len(index),
+                "maltrail_groups": source_groups,
+                "maltrail_groups_mapped_to_attack": mapped_sources,
+                "attack_groups": len(attack_ids),
                 "indicators": sum(entry["total"] for entry in index),
                 "by_type_files": written["by_type"],
             },
@@ -192,7 +251,7 @@ class SliceExporter:
         rows = "\n".join(
             "<tr>"
             f"<td>{self._esc(g['attack_id'] or '')}</td>"
-            f"<td>{self._esc(g['attack_name'] or g['group'])}</td>"
+            f"<td>{self._esc(g['attack_name'] or ', '.join(g['maltrail_groups']))}</td>"
             f"<td class=n>{g['total']:,}</td>"
             f"<td><a href=\"by-group/{self._esc(g['slug'])}.json\">json</a>"
             + (
@@ -229,8 +288,9 @@ class SliceExporter:
  ul {{ columns: 2; }}
 </style>
 <h1>APTtrail</h1>
-<p class=sub>{totals["indicators"]:,} indicators &middot; {totals["groups"]} APT groups &middot;
-{totals["groups_mapped_to_attack"]} mapped to MITRE ATT&amp;CK &middot;
+<p class=sub>{totals["indicators"]:,} indicators &middot;
+{totals["maltrail_groups"]} APT groups &middot;
+{totals["maltrail_groups_mapped_to_attack"]} mapped onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets &middot;
 generated {self._esc(payload["generated_at"])}</p>
 
 <p>Every indicator carries the group it belongs to. Plain files, stable URLs,

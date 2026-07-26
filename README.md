@@ -1,7 +1,7 @@
 # APTtrail
 
-**IOCs that tell you whose they are.** 167,000 indicators from 340 APT groups,
-122 of them resolved to their MITRE ATT&CK group id, refreshed hourly.
+**IOCs that tell you whose they are.** ~167,000 indicators from ~340 APT groups,
+121 of them resolved onto 95 MITRE ATT&CK intrusion sets, refreshed hourly.
 
 [![CI](https://github.com/trilwu/apttrail/actions/workflows/ci.yml/badge.svg)](https://github.com/trilwu/apttrail/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -68,6 +68,9 @@ $ curl -s $SITE/by-group/G0007.json | jq '{attack_id, attack_name, attack_url, c
   "attack_url": "https://attack.mitre.org/groups/G0007/",
   "counts": { "domain": 1431, "ipv4": 240, "url": 144, "url_path": 79 }
 }
+
+$ curl -s $SITE/by-group/G0040.json | jq '.maltrail_groups'
+["DONOT", "HANGOVER", "PATCHWORK"]
 ```
 
 Going the other way — an alert fires on a domain and you want to know whose it is:
@@ -186,7 +189,9 @@ URL and aliases, so you can enrich a match without a second lookup.
 | `url` | ~3,200 | includes scheme-less `host/path` |
 | hashes | 0 | Maltrail's APT trails carry none today |
 
-340 groups, 122 mapped to ATT&CK. Largest: GAMAREDON (G0047, 52,028),
+~340 Maltrail groups, 121 of which resolve onto 95 distinct ATT&CK intrusion
+sets. Groups that ATT&CK treats as one actor are merged into one slice, so
+`G0040` covers DONOT, PATCHWORK and HANGOVER together. Largest: GAMAREDON (G0047, 52,028),
 KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346).
 
 ### Indicator history
@@ -210,7 +215,7 @@ grep '"value":"example.com"' feeds/changes/*.jsonl   # when did we see this, and
 
 ## Honest limitations
 
-- **Attribution is 122 of 340 groups (36%).** ATT&CK tracks 191 intrusion sets;
+- **Attribution covers 121 of ~340 groups (36%).** ATT&CK tracks 191 intrusion sets;
   Maltrail tracks actors from vendor reporting that ATT&CK has not named. An
   unmapped group still carries its Maltrail name and aliases.
 - **These are historical indicators, not a real-time blocklist.** Domains get
@@ -235,7 +240,7 @@ Feeds are not published on trust:
   double quote and a URL with no path.
 - The hourly workflow runs `suricata -T` over the actual rule file and
   **refuses to publish** if it fails.
-- 134 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- 140 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
 
 ---
 
