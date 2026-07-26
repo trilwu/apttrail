@@ -1,0 +1,53 @@
+name: Backfill IOC history
+
+# One-off, manually triggered. Maltrail reset its repository on 2026-01-03, so
+# blame against master dates every older indicator to the reset. The discarded
+# history survives in pre-reset pull-request refs; this job recovers it and
+# publishes the resulting map as an artifact to be vendored.
+#
+# It runs here rather than on a laptop because the legacy history is a large,
+# separate object graph and the walk wants local reads on a fast link.
+on:
+  workflow_dispatch:
+    inputs:
+      pull_request_ref:
+        description: 'Pre-reset PR number to take history from'
+        required: false
+        default: '19300'
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Fetch the legacy history
+      run: |
+        # A full fetch, deliberately not blob-filtered: the walk reads a patch
+        # per commit, and on a partial clone each one is a network round-trip.
+        mkdir -p legacy && cd legacy
+        git init -q .
+        git remote add origin https://github.com/stamparm/maltrail.git
+        git fetch -q --no-tags origin \
+          "refs/pull/${{ inputs.pull_request_ref }}/head:refs/heads/legacy"
+        echo "commits: $(git rev-list --count legacy)"
+        echo "oldest:  $(git log --format=%ad --date=short legacy | tail -1)"
+        du -sh .git
+
+    - name: Walk the history
+      run: |
+        python scripts/backfill_first_seen.py legacy \
+          --ref refs/heads/legacy \
+          --out legacy_first_seen.json.gz
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: legacy-first-seen
+        path: legacy_first_seen.json.gz
+        retention-days: 30

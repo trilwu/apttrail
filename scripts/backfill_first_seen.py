@@ -11,10 +11,12 @@ The old history survives in the repository's pull-request refs: a PR opened
 before the reset still has the pre-reset history as its ancestry. Fetching one
 such ref restores a decade of dates.
 
-Algorithm: one ``git log --reverse -p`` pass over the trails directory,
-recording the first commit that *added* each line. That is a single history
-walk, where blaming each file separately meant one deep walk per file and took
-hours.
+Algorithm: one ``git log -p`` pass over the trails directory, recording the
+oldest commit that *added* each line. That is a single history walk; blaming
+each file separately meant one deep walk per file and ran for hours.
+
+Run it against a full clone. On a blob-filtered clone every patch is a network
+round-trip and the walk takes about ten hours instead of minutes.
 
 Usage:
     python scripts/backfill_first_seen.py <maltrail-repo> [--pr 19300] [--out FILE]
@@ -36,6 +38,30 @@ from pathlib import Path
 TRAILS_DIR = "trails/static/malware"
 DEFAULT_PR = 19300  # head 2025-02-19, 117,351 commits reaching back to 2014
 LEGACY_REF = "refs/apttrail/legacy"
+
+
+def warn_if_partial_clone(repo: Path) -> None:
+    """
+    Refuse to run quietly against a partial clone.
+
+    A ``--filter=blob:none`` clone fetches blobs on demand, and this script
+    reads a patch for every commit. Measured against such a clone it managed
+    372 commits in two minutes - roughly ten hours for the full history, all of
+    it network round-trips. A full clone turns the same work into local reads.
+    """
+    result = subprocess.run(
+        ["git", "config", "--get-all", "remote.origin.promisor"],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+    )
+    if "true" in result.stdout:
+        print(
+            "WARNING: this looks like a partial (blob-filtered) clone.\n"
+            "         Every commit's patch will be fetched over the network and the\n"
+            "         run will take hours. Use a full clone of the legacy ref instead.",
+            file=sys.stderr,
+        )
 
 
 def fetch_legacy(repo: Path, pull_request: int) -> str:
@@ -64,11 +90,14 @@ def walk_history(repo: Path, ref: str) -> dict[str, int]:
     Returns:
         Mapping of indicator value to the unix timestamp of that commit
     """
+    # Deliberately not --reverse: that makes git buffer the entire commit list
+    # before emitting anything, which stalls for many minutes on a 117,000
+    # commit history. Walking newest-first streams immediately, and letting
+    # each older commit overwrite the entry leaves the oldest one standing.
     process = subprocess.Popen(
         [
             "git",
             "log",
-            "--reverse",
             "--format=@%at",
             "-p",
             "--no-renames",
@@ -113,9 +142,9 @@ def walk_history(repo: Path, ref: str) -> dict[str, int]:
         if not value or value.startswith("#") or timestamp is None:
             continue
 
-        # First addition wins: the log is walked oldest-first.
-        if value not in first_seen:
-            first_seen[value] = timestamp
+        # Walking newest-first, so the last write for a value comes from the
+        # oldest commit that added it - which is the first_seen we want.
+        first_seen[value] = timestamp
 
     process.wait()
     print(f"walked {commits:,} commits in {time.time() - started:.0f}s")
@@ -139,6 +168,7 @@ def main(argv: list[str]) -> int:
         print(f"not a git repository: {args.repo}", file=sys.stderr)
         return 2
 
+    warn_if_partial_clone(args.repo)
     ref = args.ref or fetch_legacy(args.repo, args.pr)
     first_seen = walk_history(args.repo, ref)
 
