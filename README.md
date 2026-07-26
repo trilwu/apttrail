@@ -210,12 +210,20 @@ KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346)
 
 Two records, neither of which requires diffing a 7MB file:
 
-- **`first_seen`** — when an indicator entered *Maltrail*, read from the upstream
-  repository's own git history, with a `first_seen_precision` of `exact` or
-  `at-or-before`. The distinction matters: Maltrail reset its repository on
-  2026-01-03 ("Initial commit (fresh repo)"), discarding years of history, so
-  anything already present at that point can only be dated *at or before* the
-  reset. Reporting those as "first seen January 2026" would be false.
+- **`first_seen`** — when an indicator entered *Maltrail*, with a
+  `first_seen_precision` of `exact` or `at-or-before`.
+
+  This took recovering history that upstream had thrown away. Maltrail reset its
+  repository on 2026-01-03 ("Initial commit (fresh repo)"), and `git blame`
+  cannot see past a root commit, so a naive reading dates every older indicator
+  to January 2026 — which is what this feed used to publish. The discarded
+  history survives in pre-reset pull-request refs; walking one of them recovers
+  the commit that first added each line, back to 2014.
+
+  Today **126,915 indicators carry an exact date spanning 2015–2026**. 4,646
+  fall in the gap between the recovered history and the reset and are marked
+  `at-or-before` — they may be older. 23,649 stay undated rather than guessed
+  at. Regenerate the map with the *Backfill IOC history* workflow.
 - **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** APTtrail,
   which `first_seen` cannot express. Append-only, a few KB per day, kept in git:
 
@@ -236,7 +244,9 @@ grep '"value":"example.com"' feeds/changes/*.jsonl   # when did we see this, and
   unmapped group still carries its Maltrail name and aliases.
 - **These are historical indicators, not a real-time blocklist.** Domains get
   reused and sinkholed. Treat a hit as a lead to triage, not proof of compromise,
-  and expect false positives if you block `domain.txt` wholesale.
+  and expect false positives if you block `domain.txt` wholesale. `first_seen`
+  tells you how old an indicator is — much of the feed predates 2022 — so filter
+  on age if you intend to block rather than hunt.
 - **Attribution is inherited, not independent.** APTtrail trusts Maltrail's
   group assignment and the MISP galaxy's alias table. It does no analysis of
   its own.
@@ -262,7 +272,7 @@ Feeds are not published on trust:
   must have a condition naming only selections that exist and hold values.
 - The MISP feed layout is asserted against what MISP reads: manifest keys
   matching event files, stable UUIDs across runs, galaxy tags where mapped.
-- 168 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- 191 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
 
 ---
 
