@@ -18,6 +18,14 @@ on:
       - 'src/**'
       - '.github/workflows/collect-apt-feeds.yml'
 
+# One run at a time. Two runs publishing gh-pages concurrently lose the ref
+# lock race, which is how a manual dispatch overlapping the hourly schedule
+# failed. Queue rather than cancel: a run that has already validated and built
+# should be allowed to publish.
+concurrency:
+  group: collect-feeds
+  cancel-in-progress: false
+
 jobs:
   collect-and-update:
     runs-on: ubuntu-latest
