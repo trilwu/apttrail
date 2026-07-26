@@ -294,6 +294,33 @@ class GitOperations:
 
         return commit_refs
 
+    def get_root_commits(self) -> set[str]:
+        """
+        Return the parentless commits of the current history.
+
+        Maltrail reset its repository on 2026-01-03 with an "Initial commit
+        (fresh repo)", discarding years of history. Anything blame attributes
+        to a root commit was already present at that boundary, so its date is a
+        floor rather than a first observation. Without this distinction the
+        feed asserts that every pre-2026 indicator appeared in January 2026.
+
+        Returns:
+            Set of root commit hashes; empty if git is unavailable
+        """
+        try:
+            result = subprocess.run(
+                ["git", "rev-list", "--max-parents=0", "HEAD"],
+                cwd=self.repo_path,
+                capture_output=True,
+                text=True,
+                timeout=self.timeout,
+            )
+            if result.returncode == 0:
+                return {line.strip() for line in result.stdout.splitlines() if line.strip()}
+        except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+            pass
+        return set()
+
     def get_current_commit(self) -> str | None:
         """
         Get the current HEAD commit hash.

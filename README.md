@@ -49,6 +49,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 | Loading into OpenCTI or any STIX tool | `apttrail_threat_feed_stix.json` |
 | Suricata / Snort IDS | `apttrail_threat_feed.rules` + `suricata-datasets/` |
 | Sigma-based SIEM | `apttrail_threat_feed.yaml` (one rule per group, ATT&CK-tagged) |
+| Looking up one indicator from an alert | `by-indicator/<shard>.json` |
 | Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
 
 `weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time
@@ -210,7 +211,11 @@ KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346)
 Two records, neither of which requires diffing a 7MB file:
 
 - **`first_seen`** — when an indicator entered *Maltrail*, read from the upstream
-  repository's own git history. Present per indicator in the JSON feed.
+  repository's own git history, with a `first_seen_precision` of `exact` or
+  `at-or-before`. The distinction matters: Maltrail reset its repository on
+  2026-01-03 ("Initial commit (fresh repo)"), discarding years of history, so
+  anything already present at that point can only be dated *at or before* the
+  reset. Reporting those as "first seen January 2026" would be false.
 - **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** APTtrail,
   which `first_seen` cannot express. Append-only, a few KB per day, kept in git:
 

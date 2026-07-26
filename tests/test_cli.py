@@ -16,6 +16,7 @@ FORMAT_FLAGS = [
     ("sigma", "sigma"),
     ("slices", "slices"),
     ("misp_feed", "misp-feed"),
+    ("lookup", "lookup"),
 ]
 ALL_FORMATS = [token for _, token in FORMAT_FLAGS]
 

@@ -103,6 +103,11 @@ Examples:
         help="Export only the MISP feed directory (manifest.json + per-group events)",
     )
     parser.add_argument(
+        "--lookup-only",
+        action="store_true",
+        help="Export only the sharded per-indicator lookup index",
+    )
+    parser.add_argument(
         "--slices-only",
         action="store_true",
         help="Export only the per-type and per-group slices",
@@ -152,10 +157,12 @@ def get_export_formats(args: argparse.Namespace) -> list[str]:
         formats.append("slices")
     if args.misp_feed_only:
         formats.append("misp-feed")
+    if args.lookup_only:
+        formats.append("lookup")
 
     # If no specific format requested, export all
     if not formats:
-        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices", "misp-feed"]
+        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices", "misp-feed", "lookup"]
 
     return formats
 

@@ -120,20 +120,25 @@ class JSONExporter(BaseExporter):
         commit_references: dict[str, list[str]] | None,
     ) -> list[dict[str, Any]]:
         """Group indicators by first_seen date and commit."""
-        grouped: dict[tuple[str, str], list[str]] = defaultdict(list)
+        grouped: dict[tuple[str, str, str], list[str]] = defaultdict(list)
 
         for indicator in indicators:
             first_seen = indicator.first_seen.isoformat() if indicator.first_seen else "unknown"
             commit = indicator.commit_hash or ""
-            key = (first_seen, commit)
+            precision = indicator.first_seen_precision or ""
+            key = (first_seen, commit, precision)
             grouped[key].append(indicator.value)
 
         result = []
-        for (first_seen, commit), values in sorted(grouped.items()):
+        for (first_seen, commit, precision), values in sorted(grouped.items()):
             entry: dict[str, Any] = {
                 "first_seen": first_seen,
                 "indicators": sorted(values),
             }
+            # "at-or-before" means upstream history does not reach further back;
+            # the indicator may well be older.
+            if precision:
+                entry["first_seen_precision"] = precision
             if commit and commit_references and commit in commit_references:
                 entry["references"] = commit_references[commit]
             result.append(entry)

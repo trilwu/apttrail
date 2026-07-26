@@ -107,6 +107,9 @@ jobs:
         cp -r feeds/by-type feeds/by-group pages/
         # Served as a real MISP feed: manifest.json + one event per group.
         cp -r feeds/misp-feed pages/
+        # Per-indicator lookup: sha256-sharded so a client fetches 1/256th
+        # of the data to answer 'what do you know about this domain?'
+        cp -r feeds/by-indicator pages/
         touch pages/.nojekyll
         cd pages
         git init -q .

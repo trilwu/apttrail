@@ -62,6 +62,7 @@ class APTThreatFeedCollector:
         self.apt_groups: dict[str, APTGroup] = {}
         self.commit_references: dict[str, list[str]] = {}
         self.file_last_modified: dict[str, datetime] = {}
+        self.history_roots: set[str] = set()
 
     def update_repository(self) -> bool:
         """
@@ -92,6 +93,12 @@ class APTThreatFeedCollector:
 
         if self.config.export_config.collect_timestamps:
             print("Timestamp collection enabled (using git blame)")
+            # Blame cannot see past a root commit. Maltrail reset its history
+            # on 2026-01-03, so anything attributed to a root was already
+            # present then and its date is a floor, not a first observation.
+            self.history_roots = self.git_ops.get_root_commits()
+            if self.history_roots:
+                print(f"History boundary: {len(self.history_roots)} root commit(s)")
 
         # In Phase 3 we will enable parallel processing fully
         # For now we use sequential processing or simple parallel if stable
@@ -171,8 +178,16 @@ class APTThreatFeedCollector:
                             first_seen = cached.get("first_seen")
                             commit = cached.get("commit")
 
+                    precision = None
+                    if first_seen:
+                        precision = "at-or-before" if commit in self.history_roots else "exact"
+
                     indicator = Indicator(
-                        value=line, indicator_type=indicator_type, first_seen=first_seen, commit_hash=commit
+                        value=line,
+                        indicator_type=indicator_type,
+                        first_seen=first_seen,
+                        first_seen_precision=precision,
+                        commit_hash=commit,
                     )
 
                     # Update cache if we have timestamp info
@@ -334,6 +349,12 @@ class APTThreatFeedCollector:
 
             events = MISPFeedExporter(output_dir / "misp-feed").export(self.apt_groups, metadata)
             print(f"  MISP feed: {events} events")
+
+        if "lookup" in formats:
+            from apttrail.exporters import LookupExporter
+
+            indexed = LookupExporter(output_dir).export(self.apt_groups, metadata)
+            print(f"  Lookup index: {indexed} indicators across 256 shards")
 
         if "slices" in formats:
             counts = SliceExporter(output_dir).export(self.apt_groups, metadata)

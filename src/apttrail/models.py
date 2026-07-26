@@ -44,6 +44,10 @@ class Indicator(BaseModel):
     value: str = Field(..., min_length=1, description="The indicator value")
     indicator_type: IndicatorType = Field(..., description="Type of indicator")
     first_seen: datetime | None = Field(default=None, description="First observation time")
+    first_seen_precision: str | None = Field(
+        default=None,
+        description="'exact', or 'at-or-before' when the date is only the earliest observable point",
+    )
     commit_hash: str | None = Field(default=None, description="Git commit hash")
     references: list[str] = Field(default_factory=list, description="Source URLs")
 
@@ -156,7 +160,7 @@ class FeedExportConfig(BaseModel):
 
     output_dir: str = Field(default=".", description="Output directory")
     formats: list[str] = Field(
-        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix", "slices", "misp-feed"],
+        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix", "slices", "misp-feed", "lookup"],
         description="Export formats",
     )
     optimized: bool = Field(default=True, description="Use optimized output")
