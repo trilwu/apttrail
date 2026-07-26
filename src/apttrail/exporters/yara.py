@@ -79,7 +79,7 @@ class YARAExporter(BaseExporter):
         # Collect all string indicators
         domains = []
         ips = []
-        hashes = {"md5": [], "sha1": [], "sha256": []}
+        hashes: dict[str, list[str]] = {"md5": [], "sha1": [], "sha256": []}
 
         if IndicatorType.DOMAIN in apt_group.indicators:
             domains = sorted(ind.value for ind in apt_group.indicators[IndicatorType.DOMAIN])

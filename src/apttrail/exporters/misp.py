@@ -55,8 +55,9 @@ class MISPExporter(BaseExporter):
         # A single event for the feed is typical for a daily/hourly dump.
 
         event_uuid = str(uuid.uuid4())
+        attributes: list[dict[str, Any]] = []
 
-        event = {
+        event: dict[str, Any] = {
             "Event": {
                 "uuid": event_uuid,
                 "info": f"APTtrail Feed - {metadata.generated_at.date()}",
@@ -65,7 +66,7 @@ class MISPExporter(BaseExporter):
                 "analysis": "2",  # Completed
                 "threat_level_id": "2",  # Medium
                 "published": True,
-                "Attribute": [],
+                "Attribute": attributes,
                 "Tag": [
                     {"name": "tlp:white", "colour": "#ffffff"},
                     {"name": "source:apttrail", "colour": "#0088cc"},
@@ -75,7 +76,7 @@ class MISPExporter(BaseExporter):
 
         for apt_name in sorted(apt_groups.keys()):
             apt_group = apt_groups[apt_name]
-            self._add_group_attributes(event["Event"]["Attribute"], apt_name, apt_group)
+            self._add_group_attributes(attributes, apt_name, apt_group)
 
         return event
 

@@ -39,8 +39,8 @@ class SigmaExporter(BaseExporter):
             True if export succeeded
         """
         # Collect all indicators
-        domains = []
-        hashes = []
+        domains: list[str] = []
+        hashes: list[str] = []
 
         for group in apt_groups.values():
             if IndicatorType.DOMAIN in group.indicators:

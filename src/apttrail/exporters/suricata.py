@@ -9,7 +9,7 @@ import urllib.parse
 from pathlib import Path
 
 from apttrail.exporters.base import BaseExporter
-from apttrail.models import APTGroup, FeedMetadata, IndicatorType
+from apttrail.models import APTGroup, FeedMetadata, Indicator, IndicatorType
 
 
 class SuricataExporter(BaseExporter):
@@ -123,7 +123,7 @@ class SuricataExporter(BaseExporter):
         self,
         buffer: io.StringIO,
         apt_name: str,
-        indicators: set,
+        indicators: set[Indicator],
         sid_counter: int,
     ) -> int:
         """Write domain detection rules."""
@@ -157,7 +157,7 @@ class SuricataExporter(BaseExporter):
         self,
         buffer: io.StringIO,
         apt_name: str,
-        indicators: set,
+        indicators: set[Indicator],
         sid_counter: int,
     ) -> int:
         """Write IP address detection rules."""
@@ -190,7 +190,7 @@ class SuricataExporter(BaseExporter):
         self,
         buffer: io.StringIO,
         apt_name: str,
-        indicators: set,
+        indicators: set[Indicator],
         sid_counter: int,
     ) -> int:
         """Write URL detection rules."""
@@ -221,7 +221,7 @@ class SuricataExporter(BaseExporter):
         buffer: io.StringIO,
         apt_name: str,
         hash_type: IndicatorType,
-        indicators: set,
+        indicators: set[Indicator],
         sid_counter: int,
     ) -> int:
         """Write file hash detection rules."""
