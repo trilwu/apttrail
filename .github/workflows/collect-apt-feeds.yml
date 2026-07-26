@@ -96,8 +96,11 @@ jobs:
         git add feeds/apttrail_threat_feed.rules
         git add feeds/apttrail_threat_feed.yar
         git add feeds/apttrail_threat_feed.yaml
-        # Append-only IOC change log; a few KB per day
-        git add feeds/changes/
+        # Append-only IOC change log; a few KB per day. Absent until the first
+        # run that observes an actual indicator change.
+        if [ -d feeds/changes ]; then
+          git add feeds/changes/
+        fi
 
         if git diff --staged --quiet; then
           echo "No real changes detected (only timestamp updates)"
