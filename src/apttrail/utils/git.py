@@ -211,7 +211,10 @@ class GitOperations:
                 cwd=self.repo_path,
                 capture_output=True,
                 text=True,
-                timeout=self.timeout,
+                # The largest trail file holds ~52,000 lines; blaming it does
+                # not finish inside the default timeout, and a timeout here
+                # silently drops every timestamp for that group.
+                timeout=self.HISTORY_TIMEOUT,
             )
 
             if result.returncode != 0:

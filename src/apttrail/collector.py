@@ -20,6 +20,7 @@ from apttrail.exporters import (
     SuricataExporter,
     YARAExporter,
 )
+from apttrail.history import load_legacy
 from apttrail.models import (
     APTGroup,
     APTGroupMetadata,
@@ -145,6 +146,7 @@ class APTThreatFeedCollector:
                 if file_key and fingerprint and timestamps:
                     self.cache.set_file_state(file_key, fingerprint)
 
+        legacy = load_legacy()
         indicators_by_type: dict[IndicatorType, set[Indicator]] = defaultdict(set)
 
         with open(filepath, encoding="utf-8", errors="ignore") as f:
@@ -181,6 +183,14 @@ class APTThreatFeedCollector:
                     precision = None
                     if first_seen:
                         precision = "at-or-before" if commit in self.history_roots else "exact"
+
+                    # Dates recovered from the discarded history beat a blame
+                    # date pinned to the reset boundary.
+                    recovered, recovered_precision = legacy.earliest(line, first_seen)
+                    if recovered_precision == "exact" and (
+                        precision == "at-or-before" or first_seen is None or recovered < first_seen
+                    ):
+                        first_seen, precision = recovered, "exact"
 
                     indicator = Indicator(
                         value=line,

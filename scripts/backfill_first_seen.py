@@ -151,11 +151,50 @@ def walk_history(repo: Path, ref: str) -> dict[str, int]:
     return first_seen
 
 
+def current_values(repo: Path, ref: str) -> set[str]:
+    """
+    Collect the indicator values present in a tree.
+
+    The legacy walk records every line that ever existed - 1.5 million of them,
+    most long since removed. Trimming to what upstream still ships takes the
+    vendored map from 13MB to under 1MB.
+    """
+    listing = subprocess.run(
+        ["git", "ls-tree", "--name-only", f"{ref}:{TRAILS_DIR}"],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+    )
+    values: set[str] = set()
+
+    for name in listing.stdout.split():
+        if not (name.startswith("apt_") and name.endswith(".txt")):
+            continue
+        blob = subprocess.run(
+            ["git", "show", f"{ref}:{TRAILS_DIR}/{name}"],
+            cwd=repo,
+            capture_output=True,
+            text=True,
+            errors="replace",
+        )
+        for line in blob.stdout.splitlines():
+            line = line.strip()
+            if line and not line.startswith("#"):
+                values.add(line)
+
+    return values
+
+
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("repo", type=Path, help="Path to a Maltrail clone")
     parser.add_argument("--pr", type=int, default=DEFAULT_PR, help=f"Pre-reset PR ref to fetch (default: {DEFAULT_PR})")
     parser.add_argument("--ref", default=None, help="Use an already-fetched ref instead of fetching")
+    parser.add_argument(
+        "--trim-ref",
+        default=None,
+        help="Keep only values still present in this ref's trails (e.g. refs/heads/master)",
+    )
     parser.add_argument(
         "--out",
         type=Path,
@@ -175,6 +214,12 @@ def main(argv: list[str]) -> int:
     if not first_seen:
         print("no indicators recovered - is the ref really pre-reset?", file=sys.stderr)
         return 1
+
+    if args.trim_ref:
+        keep = current_values(args.repo, args.trim_ref)
+        before = len(first_seen)
+        first_seen = {value: ts for value, ts in first_seen.items() if value in keep}
+        print(f"trimmed to {args.trim_ref}: {before:,} -> {len(first_seen):,}")
 
     years = Counter(datetime.fromtimestamp(ts, tz=timezone.utc).year for ts in first_seen.values())
     print(f"{len(first_seen):,} indicators dated")

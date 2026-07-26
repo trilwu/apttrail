@@ -53,7 +53,7 @@ apttrail = "apttrail.cli:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-apttrail = ["py.typed", "data/*.json"]
+apttrail = ["py.typed", "data/*.json", "data/*.json.gz"]
 
 # Ruff configuration
 [tool.ruff]
