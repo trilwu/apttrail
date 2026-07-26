@@ -8,6 +8,7 @@ from apttrail.exporters.base import BaseExporter
 from apttrail.exporters.csv_exporter import CSVExporter
 from apttrail.exporters.json_exporter import JSONExporter
 from apttrail.exporters.misp import MISPExporter
+from apttrail.exporters.misp_feed import MISPFeedExporter
 from apttrail.exporters.sigma import SigmaExporter
 from apttrail.exporters.slices import SliceExporter
 from apttrail.exporters.stix import STIXExporter
@@ -22,6 +23,7 @@ __all__ = [
     "SuricataExporter",
     "YARAExporter",
     "MISPExporter",
+    "MISPFeedExporter",
     "SigmaExporter",
     "SliceExporter",
 ]

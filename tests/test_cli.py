@@ -5,12 +5,24 @@ import pytest
 
 from apttrail import cli
 
-ALL_FORMATS = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices"]
+# (flag stem, format token) - they differ where the token is hyphenated.
+FORMAT_FLAGS = [
+    ("json", "json"),
+    ("csv", "csv"),
+    ("stix", "stix"),
+    ("suricata", "suricata"),
+    ("yara", "yara"),
+    ("misp", "misp"),
+    ("sigma", "sigma"),
+    ("slices", "slices"),
+    ("misp_feed", "misp-feed"),
+]
+ALL_FORMATS = [token for _, token in FORMAT_FLAGS]
 
 
 def namespace(**overrides):
     """Build an args namespace with every format flag off by default."""
-    args = {f"{fmt}_only": False for fmt in ALL_FORMATS}
+    args = {f"{flag}_only": False for flag, _ in FORMAT_FLAGS}
     args.update(overrides)
     return argparse.Namespace(**args)
 
@@ -19,9 +31,9 @@ def test_no_flag_exports_every_format():
     assert cli.get_export_formats(namespace()) == ALL_FORMATS
 
 
-@pytest.mark.parametrize("fmt", ALL_FORMATS)
-def test_single_flag_selects_only_that_format(fmt):
-    assert cli.get_export_formats(namespace(**{f"{fmt}_only": True})) == [fmt]
+@pytest.mark.parametrize(("flag", "token"), FORMAT_FLAGS)
+def test_single_flag_selects_only_that_format(flag, token):
+    assert cli.get_export_formats(namespace(**{f"{flag}_only": True})) == [token]
 
 
 def test_flags_combine():

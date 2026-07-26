@@ -42,7 +42,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 |---|---|
 | Blocklist for pfBlockerNG / Pi-hole / firewall | `by-type/domain.txt`, `by-type/ipv4.txt` |
 | Hunting one actor in DNS or proxy logs | `by-group/<G-id>-domain.txt` |
-| Loading into MISP | `apttrail_threat_feed_misp.json` |
+| Loading into MISP | `misp-feed/` (add the URL as a MISP Feed) |
 | Loading into OpenCTI or any STIX tool | `apttrail_threat_feed_stix.json` |
 | Suricata / Snort IDS | `apttrail_threat_feed.rules` + `suricata-datasets/` |
 | Sigma-based SIEM | `apttrail_threat_feed.yaml` (one rule per group, ATT&CK-tagged) |
@@ -133,10 +133,18 @@ Add as a feed under *Sync Actions → Feeds → Add Feed*:
 
 - Input source: `Network`
 - Format: `MISP Feed`
-- URL: `https://github.com/trilwu/apttrail/releases/download/latest/apttrail_threat_feed_misp.json`
+- URL: `https://trilwu.github.io/apttrail/misp-feed/`
 
-Attributes arrive with `to_ids` set and tagged `apt:<group>`, plus the ATT&CK
-galaxy tag where the group is mapped.
+That URL is a real MISP feed — `manifest.json`, one event per APT group, and
+`hashes.csv` for correlation. **One event per actor**, not one event with
+155,000 attributes, so you can pivot from a hit to that group's full
+infrastructure. Events carry `tlp:clear`, `apt:<group>` and, where the group is
+mapped, the `misp-galaxy:mitre-intrusion-set` tag that links to the actor
+cluster. Attributes have `to_ids` set.
+
+Event and attribute UUIDs are deterministic, so re-fetching updates events in
+place instead of duplicating them. For an air-gapped instance,
+`apttrail_misp_feed.tar.gz` in the release has the same directory.
 </details>
 
 <details>
@@ -244,7 +252,9 @@ Feeds are not published on trust:
   **refuses to publish** if it fails.
 - Sigma output is parsed as multi-document YAML in the test suite; every rule
   must have a condition naming only selections that exist and hold values.
-- 156 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
+- The MISP feed layout is asserted against what MISP reads: manifest keys
+  matching event files, stable UUIDs across runs, galaxy tags where mapped.
+- 168 tests, `mypy` clean, `ruff` clean, coverage gate at 80%.
 
 ---
 

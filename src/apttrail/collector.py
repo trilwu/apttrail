@@ -329,6 +329,12 @@ class APTThreatFeedCollector:
                 self.apt_groups, metadata, self.commit_references
             )
 
+        if "misp-feed" in formats:
+            from apttrail.exporters import MISPFeedExporter
+
+            events = MISPFeedExporter(output_dir / "misp-feed").export(self.apt_groups, metadata)
+            print(f"  MISP feed: {events} events")
+
         if "slices" in formats:
             counts = SliceExporter(output_dir).export(self.apt_groups, metadata)
             print(f"  Slices: {counts['by_type']} by-type, {counts['by_group']} by-group")

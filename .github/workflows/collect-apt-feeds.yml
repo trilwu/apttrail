@@ -86,8 +86,10 @@ jobs:
           -l sclog \
           --set "default-rule-path=${PWD}/rulecheck"
 
-    - name: Package Suricata datasets
-      run: tar czf feeds/apttrail_suricata_datasets.tar.gz -C feeds suricata-datasets
+    - name: Package Suricata datasets and MISP feed
+      run: |
+        tar czf feeds/apttrail_suricata_datasets.tar.gz -C feeds suricata-datasets
+        tar czf feeds/apttrail_misp_feed.tar.gz -C feeds misp-feed
 
     - name: Generate feed statistics
       run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
@@ -103,6 +105,8 @@ jobs:
         mkdir -p pages
         cp feeds/index.html feeds/index.json pages/
         cp -r feeds/by-type feeds/by-group pages/
+        # Served as a real MISP feed: manifest.json + one event per group.
+        cp -r feeds/misp-feed pages/
         touch pages/.nojekyll
         cd pages
         git init -q .
@@ -133,8 +137,8 @@ jobs:
           feeds/apttrail_threat_feed.yar
           feeds/apttrail_threat_feed.yaml
           feeds/apttrail_threat_feed_stix.json
-          feeds/apttrail_threat_feed_misp.json
           feeds/apttrail_suricata_datasets.tar.gz
+          feeds/apttrail_misp_feed.tar.gz
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -193,7 +197,7 @@ jobs:
           feeds/apttrail_threat_feed.yar
           feeds/apttrail_threat_feed.yaml
           feeds/apttrail_threat_feed_stix.json
-          feeds/apttrail_threat_feed_misp.json
           feeds/apttrail_suricata_datasets.tar.gz
+          feeds/apttrail_misp_feed.tar.gz
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

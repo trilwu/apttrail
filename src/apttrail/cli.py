@@ -98,6 +98,11 @@ Examples:
         help="Export only Sigma rules format",
     )
     parser.add_argument(
+        "--misp-feed-only",
+        action="store_true",
+        help="Export only the MISP feed directory (manifest.json + per-group events)",
+    )
+    parser.add_argument(
         "--slices-only",
         action="store_true",
         help="Export only the per-type and per-group slices",
@@ -145,10 +150,12 @@ def get_export_formats(args: argparse.Namespace) -> list[str]:
         formats.append("sigma")
     if args.slices_only:
         formats.append("slices")
+    if args.misp_feed_only:
+        formats.append("misp-feed")
 
     # If no specific format requested, export all
     if not formats:
-        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices"]
+        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices", "misp-feed"]
 
     return formats
 

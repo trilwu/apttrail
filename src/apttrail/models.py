@@ -156,7 +156,7 @@ class FeedExportConfig(BaseModel):
 
     output_dir: str = Field(default=".", description="Output directory")
     formats: list[str] = Field(
-        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix", "slices"],
+        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix", "slices", "misp-feed"],
         description="Export formats",
     )
     optimized: bool = Field(default=True, description="Use optimized output")
