@@ -9,11 +9,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+from apttrail.attribution import load_index
 from apttrail.changelog import append_changes, diff_indicators, index_current, load_previous_feed
 from apttrail.classifiers.indicator import classify_indicator
 from apttrail.exporters import (
     CSVExporter,
     JSONExporter,
+    SliceExporter,
     STIXExporter,
     SuricataExporter,
     YARAExporter,
@@ -179,8 +181,16 @@ class APTThreatFeedCollector:
 
                     indicators_by_type[indicator_type].add(indicator)
 
+        attack_group = load_index().resolve(apt_name, *aliases)
+
         metadata = APTGroupMetadata(
-            filename=filepath.name, aliases=aliases, references=references, last_modified=last_modified
+            filename=filepath.name,
+            aliases=aliases,
+            references=references,
+            last_modified=last_modified,
+            attack_id=attack_group.id if attack_group else None,
+            attack_name=attack_group.name if attack_group else None,
+            attack_url=attack_group.url if attack_group else None,
         )
 
         return APTGroup(name=apt_name, metadata=metadata, indicators=indicators_by_type)
@@ -318,5 +328,9 @@ class APTThreatFeedCollector:
             SigmaExporter(output_dir / "apttrail_threat_feed.yaml").export(
                 self.apt_groups, metadata, self.commit_references
             )
+
+        if "slices" in formats:
+            counts = SliceExporter(output_dir).export(self.apt_groups, metadata)
+            print(f"  Slices: {counts['by_type']} by-type, {counts['by_group']} by-group")
 
         print("All feeds exported successfully.")

@@ -47,8 +47,9 @@ def test_suricata_export(tmp_path, sample_apt_group, sample_metadata):
 
     assert output_file.exists()
     content = output_file.read_text("utf-8")
-    assert "alert ip any any <> 1.2.3.4 any" in content
-    assert 'msg:"APT TEST - Traffic to/from Malicious IP 1.2.3.4"' in content
+    # Rule-level behaviour is pinned in test_suricata.py; this is a smoke test.
+    assert "alert ip $HOME_NET any -> 1.2.3.4 any" in content
+    assert 'msg:"APTtrail TEST - traffic to 1.2.3.4"' in content
 
 
 def test_yara_export(tmp_path, sample_apt_group, sample_metadata):

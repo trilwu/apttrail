@@ -71,6 +71,19 @@ jobs:
         pip install .
         python -m apttrail --output-dir feeds --suricata-dataset --collect-timestamps
 
+    # Nothing is published until Suricata itself accepts the rule file. This
+    # is the gate that stops a malformed indicator from reaching users.
+    - name: Validate Suricata rules
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq suricata
+        mkdir -p rulecheck
+        cp feeds/apttrail_threat_feed.rules rulecheck/
+        cp feeds/suricata-datasets/*.lst rulecheck/ 2>/dev/null || true
+        suricata -T -c /etc/suricata/suricata.yaml \
+          -S rulecheck/apttrail_threat_feed.rules \
+          --set "default-rule-path=${PWD}/rulecheck"
+
     - name: Generate feed statistics
       run: python .github/scripts/generate_release_stats.py feeds/apttrail_threat_feed.json > release_notes.md
 

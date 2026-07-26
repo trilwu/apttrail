@@ -97,12 +97,17 @@ Examples:
         action="store_true",
         help="Export only Sigma rules format",
     )
+    parser.add_argument(
+        "--slices-only",
+        action="store_true",
+        help="Export only the per-type and per-group slices",
+    )
 
     # Optimization flags
     parser.add_argument(
         "--suricata-dataset",
         action="store_true",
-        help="Optimize Suricata rules using PCRE and IP lists (~99%% rule reduction)",
+        help="Emit dataset-backed Suricata rules plus sidecar .lst files",
     )
 
     parser.add_argument(
@@ -138,10 +143,12 @@ def get_export_formats(args: argparse.Namespace) -> list[str]:
         formats.append("misp")
     if args.sigma_only:
         formats.append("sigma")
+    if args.slices_only:
+        formats.append("slices")
 
     # If no specific format requested, export all
     if not formats:
-        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma"]
+        formats = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices"]
 
     return formats
 

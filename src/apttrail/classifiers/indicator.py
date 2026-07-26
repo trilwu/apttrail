@@ -78,9 +78,21 @@ class IndicatorClassifier:
         if self._is_url(indicator):
             return IndicatorType.URL
 
-        # Check for file paths
+        # A bare URI path. Maltrail records these to match the request path of
+        # any host, so they are emphatically not filesystem paths: exporting
+        # them as file:name produced nonsense like [file:name = '/index.php'].
+        if indicator.startswith("/"):
+            return IndicatorType.URL_PATH
+
+        # Filesystem paths: a Windows drive letter or a backslash separator.
         if self._is_file_path(indicator):
             return IndicatorType.FILE_PATH
+
+        # Scheme-less URL, e.g. "example.com/wp-content/shell.php". Maltrail
+        # writes host+path without a scheme; treating it as a domain would
+        # match the whole host, and as a file path would be meaningless.
+        if self._is_schemeless_url(indicator):
+            return IndicatorType.URL
 
         # Check for domains
         if self._is_domain(indicator):
@@ -143,14 +155,26 @@ class IndicatorClassifier:
         return indicator.startswith(self.URL_PREFIXES)
 
     def _is_file_path(self, indicator: str) -> bool:
-        """Check if indicator looks like a file path."""
-        has_path_separator = "/" in indicator or "\\" in indicator
-        if not has_path_separator:
+        """
+        Check if indicator is a filesystem path.
+
+        Deliberately narrow: only Windows-style paths qualify. A leading slash
+        is handled earlier as a URI path, which is what Maltrail actually
+        records.
+        """
+        if "\\" in indicator:
+            return True
+
+        # Drive-letter paths such as C:/Users/...
+        return len(indicator) > 2 and indicator[1] == ":" and indicator[0].isalpha()
+
+    def _is_schemeless_url(self, indicator: str) -> bool:
+        """Check for host+path with no scheme, e.g. evil.com/shell.php."""
+        host, separator, _ = indicator.partition("/")
+        if not separator or not host:
             return False
 
-        # Check if the last component has a file extension
-        last_component = indicator.split("/")[-1].split("\\")[-1]
-        return "." in last_component
+        return self._is_domain(host) or self._classify_ip(host) != IndicatorType.UNKNOWN
 
     def _is_domain(self, indicator: str) -> bool:
         """Check if indicator is a valid domain name."""

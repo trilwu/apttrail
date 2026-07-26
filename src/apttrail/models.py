@@ -19,6 +19,7 @@ class IndicatorType(str, Enum):
     IPV6 = "ipv6"
     DOMAIN = "domain"
     URL = "url"
+    URL_PATH = "url_path"
     MD5 = "md5"
     SHA1 = "sha1"
     SHA256 = "sha256"
@@ -81,6 +82,9 @@ class APTGroupMetadata(BaseModel):
     aliases: list[str] = Field(default_factory=list, description="Alternative names")
     references: list[str] = Field(default_factory=list, description="Reference URLs")
     last_modified: datetime | None = Field(default=None, description="Last modification time")
+    attack_id: str | None = Field(default=None, description="MITRE ATT&CK group id, e.g. G0007")
+    attack_name: str | None = Field(default=None, description="MITRE ATT&CK group name, e.g. APT28")
+    attack_url: str | None = Field(default=None, description="MITRE ATT&CK group page URL")
 
 
 class APTGroup(BaseModel):
@@ -152,7 +156,7 @@ class FeedExportConfig(BaseModel):
 
     output_dir: str = Field(default=".", description="Output directory")
     formats: list[str] = Field(
-        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix"],
+        default_factory=lambda: ["json", "csv", "suricata", "yara", "stix", "slices"],
         description="Export formats",
     )
     optimized: bool = Field(default=True, description="Use optimized output")

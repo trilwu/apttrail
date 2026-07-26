@@ -82,6 +82,9 @@ class JSONExporter(BaseExporter):
                 "last_modified": (
                     apt_group.metadata.last_modified.isoformat() if apt_group.metadata.last_modified else None
                 ),
+                "attack_id": apt_group.metadata.attack_id,
+                "attack_name": apt_group.metadata.attack_name,
+                "attack_url": apt_group.metadata.attack_url,
             },
             "indicators": indicators_data,
             "statistics": {

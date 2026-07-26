@@ -1,25 +1,30 @@
 """
 STIX 2.1 exporter for APTtrail.
 
-Exports threat indicators to STIX 2.1 bundle format.
+Emits ``intrusion-set`` objects rather than ``threat-actor``: an intrusion set
+is the STIX concept that MITRE ATT&CK groups map to, so a bundle built this way
+merges cleanly with ATT&CK data in OpenCTI or any other STIX consumer.
+
+Object ids are UUIDv5 over a fixed namespace, which keeps them stable across
+runs (a consumer re-ingesting the feed updates objects instead of duplicating
+them) while remaining valid UUIDs. The previous exporter used a raw MD5 digest,
+which is not a well-formed UUID at all.
 """
 
-import hashlib
 import json
+import uuid
 from pathlib import Path
 from typing import Any
 
 from apttrail.exporters.base import BaseExporter
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 
+# Stable namespace so ids are reproducible run to run.
+APTTRAIL_NAMESPACE = uuid.UUID("8f1f2b9e-0d2c-5a3e-9c47-2f0d3a5b6c71")
+
 
 class STIXExporter(BaseExporter):
-    """
-    Exports indicators to STIX 2.1 format.
-
-    Produces a STIX bundle with threat actors, indicators,
-    and relationships between them.
-    """
+    """Exports indicators to a STIX 2.1 bundle."""
 
     FIXED_TIMESTAMP = "2024-01-01T00:00:00.000Z"
 
@@ -38,8 +43,8 @@ class STIXExporter(BaseExporter):
 
         Args:
             apt_groups: Dictionary of APT groups with indicators
-            metadata: Feed metadata
-            commit_references: Optional commit hash to references mapping
+            _metadata: Feed metadata
+            _commit_references: Optional commit hash to references mapping
 
         Returns:
             True if export succeeded
@@ -48,67 +53,71 @@ class STIXExporter(BaseExporter):
         content = json.dumps(bundle, indent=2, ensure_ascii=False, sort_keys=True)
         return self._write_if_changed(content)
 
-    def _build_bundle(self, apt_groups: dict[str, APTGroup]) -> dict[str, Any]:
-        """Build the STIX bundle."""
-        bundle_id = hashlib.md5(b"apttrail-bundle").hexdigest()
+    @staticmethod
+    def stix_id(object_type: str, key: str) -> str:
+        """Build a deterministic, spec-valid STIX id."""
+        return f"{object_type}--{uuid.uuid5(APTTRAIL_NAMESPACE, f'{object_type}:{key}')}"
 
+    def _build_bundle(self, apt_groups: dict[str, APTGroup]) -> dict[str, Any]:
         bundle: dict[str, Any] = {
             "type": "bundle",
-            "id": self._format_uuid(bundle_id),
+            "id": self.stix_id("bundle", "apttrail"),
             "objects": [],
         }
 
-        for apt_name in sorted(apt_groups.keys()):
+        for apt_name in sorted(apt_groups):
             apt_group = apt_groups[apt_name]
-            threat_actor = self._create_threat_actor(apt_name, apt_group)
-            bundle["objects"].append(threat_actor)
+            intrusion_set = self._create_intrusion_set(apt_name, apt_group)
+            bundle["objects"].append(intrusion_set)
 
-            # Create indicators and relationships
-            for indicator_type in sorted(apt_group.indicators.keys(), key=lambda x: x.value):
-                for indicator in sorted(apt_group.indicators[indicator_type], key=lambda x: x.value):
+            for indicator_type in sorted(apt_group.indicators, key=lambda t: t.value):
+                for indicator in sorted(apt_group.indicators[indicator_type], key=lambda i: i.value):
                     indicator_obj = self._create_indicator(apt_name, indicator_type, indicator.value)
-                    if indicator_obj:
-                        bundle["objects"].append(indicator_obj)
+                    if not indicator_obj:
+                        continue
 
-                        relationship = self._create_relationship(
-                            indicator_obj["id"], threat_actor["id"], apt_name, indicator.value
-                        )
-                        bundle["objects"].append(relationship)
+                    bundle["objects"].append(indicator_obj)
+                    bundle["objects"].append(
+                        self._create_relationship(indicator_obj["id"], intrusion_set["id"], apt_name, indicator.value)
+                    )
 
         return bundle
 
-    def _format_uuid(self, hex_hash: str) -> str:
-        """Format a hex hash as a UUID-like string."""
-        return f"bundle--{hex_hash[:8]}-{hex_hash[8:12]}-{hex_hash[12:16]}-{hex_hash[16:20]}-{hex_hash[20:32]}"
+    def _create_intrusion_set(self, apt_name: str, apt_group: APTGroup) -> dict[str, Any]:
+        """Create a STIX intrusion-set, linked to ATT&CK when the group is mapped."""
+        metadata = apt_group.metadata
 
-    def _create_threat_actor(self, apt_name: str, apt_group: APTGroup) -> dict[str, Any]:
-        """Create a STIX threat actor object."""
-        actor_hash = hashlib.md5(apt_name.encode()).hexdigest()
+        external_references: list[dict[str, Any]] = []
+        if metadata.attack_id:
+            external_references.append(
+                {
+                    "source_name": "mitre-attack",
+                    "external_id": metadata.attack_id,
+                    "url": metadata.attack_url,
+                }
+            )
+        external_references.extend({"source_name": "apttrail", "url": ref} for ref in sorted(metadata.references))
 
         return {
-            "type": "threat-actor",
+            "type": "intrusion-set",
             "spec_version": "2.1",
-            "id": f"threat-actor--{actor_hash[:8]}-{actor_hash[8:12]}-{actor_hash[12:16]}-{actor_hash[16:20]}-{actor_hash[20:32]}",
+            "id": self.stix_id("intrusion-set", metadata.attack_id or apt_name),
             "created": self.FIXED_TIMESTAMP,
             "modified": self.FIXED_TIMESTAMP,
-            "name": f"APT {apt_name}",
-            "threat_actor_types": ["nation-state", "hacktivist", "criminal"],
-            "aliases": sorted(apt_group.metadata.aliases),
-            "external_references": [{"url": ref} for ref in sorted(apt_group.metadata.references)],
+            "name": metadata.attack_name or f"APT {apt_name}",
+            "aliases": sorted({*metadata.aliases, apt_name}),
+            "external_references": external_references,
         }
 
     def _create_indicator(self, apt_name: str, indicator_type: IndicatorType, value: str) -> dict[str, Any] | None:
-        """Create a STIX indicator object."""
         pattern = self._get_stix_pattern(indicator_type, value)
         if not pattern:
             return None
 
-        ind_hash = hashlib.md5(value.encode()).hexdigest()
-
         return {
             "type": "indicator",
             "spec_version": "2.1",
-            "id": f"indicator--{ind_hash[:8]}-{ind_hash[8:12]}-{ind_hash[12:16]}-{ind_hash[16:20]}-{ind_hash[20:32]}",
+            "id": self.stix_id("indicator", value),
             "created": self.FIXED_TIMESTAMP,
             "modified": self.FIXED_TIMESTAMP,
             "name": f"{apt_name} - {indicator_type.value}",
@@ -119,33 +128,42 @@ class STIXExporter(BaseExporter):
             "description": f"Indicator associated with APT {apt_name}",
         }
 
+    @staticmethod
+    def _escape(value: str) -> str:
+        """Escape a value for a STIX pattern string literal."""
+        return value.replace("\\", "\\\\").replace("'", "\\'")
+
     def _get_stix_pattern(self, indicator_type: IndicatorType, value: str) -> str | None:
-        """Get STIX pattern for an indicator type."""
+        """Build the STIX pattern for an indicator."""
+        escaped = self._escape(value)
+
+        if indicator_type is IndicatorType.IPV4:
+            # Ports are recorded separately; the address alone is the observable.
+            return f"[ipv4-addr:value = '{self._escape(value.split(':')[0])}']"
+
         patterns = {
-            IndicatorType.IPV4: f"[network-traffic:dst_ref.value = '{value}']",
-            IndicatorType.IPV6: f"[network-traffic:dst_ref.value = '{value}']",
-            IndicatorType.DOMAIN: f"[domain-name:value = '{value}']",
-            IndicatorType.URL: f"[url:value = '{value}']",
-            IndicatorType.MD5: f"[file:hashes.MD5 = '{value}']",
-            IndicatorType.SHA1: f"[file:hashes.SHA1 = '{value}']",
-            IndicatorType.SHA256: f"[file:hashes.SHA256 = '{value}']",
-            IndicatorType.FILE_PATH: f"[file:name = '{value}']",
+            IndicatorType.IPV6: f"[ipv6-addr:value = '{escaped}']",
+            IndicatorType.DOMAIN: f"[domain-name:value = '{escaped}']",
+            IndicatorType.URL: f"[url:value = '{escaped}']",
+            # A bare request path is an HTTP request property, not a filename.
+            IndicatorType.URL_PATH: (f"[network-traffic:extensions.'http-request-ext'.request_value = '{escaped}']"),
+            IndicatorType.MD5: f"[file:hashes.MD5 = '{escaped}']",
+            IndicatorType.SHA1: f"[file:hashes.'SHA-1' = '{escaped}']",
+            IndicatorType.SHA256: f"[file:hashes.'SHA-256' = '{escaped}']",
+            IndicatorType.FILE_PATH: f"[file:name = '{escaped}']",
         }
         return patterns.get(indicator_type)
 
     def _create_relationship(
-        self, indicator_id: str, threat_actor_id: str, apt_name: str, value: str
+        self, indicator_id: str, intrusion_set_id: str, apt_name: str, value: str
     ) -> dict[str, Any]:
-        """Create a STIX relationship object."""
-        rel_hash = hashlib.md5(f"{apt_name}{value}".encode()).hexdigest()
-
         return {
             "type": "relationship",
             "spec_version": "2.1",
-            "id": f"relationship--{rel_hash[:8]}-{rel_hash[8:12]}-{rel_hash[12:16]}-{rel_hash[16:20]}-{rel_hash[20:32]}",
+            "id": self.stix_id("relationship", f"{apt_name}:{value}"),
             "created": self.FIXED_TIMESTAMP,
             "modified": self.FIXED_TIMESTAMP,
             "relationship_type": "indicates",
             "source_ref": indicator_id,
-            "target_ref": threat_actor_id,
+            "target_ref": intrusion_set_id,
         }

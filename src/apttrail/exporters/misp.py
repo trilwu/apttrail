@@ -87,7 +87,17 @@ class MISPExporter(BaseExporter):
         apt_group: APTGroup,
     ) -> None:
         """Add attributes for an APT group."""
-        tag = f"apt:{apt_name.lower()}"
+        tags = [{"name": f"apt:{apt_name.lower()}", "colour": "#ff0000"}]
+
+        # The galaxy tag is what makes a MISP event pivot to the actor cluster.
+        if apt_group.metadata.attack_id:
+            tags.append(
+                {
+                    "name": f'misp-galaxy:mitre-intrusion-set="{apt_group.metadata.attack_name}'
+                    f' - {apt_group.metadata.attack_id}"',
+                    "colour": "#0088cc",
+                }
+            )
 
         for indicator_type, indicators in apt_group.indicators.items():
             misp_type = self._map_to_misp_type(indicator_type)
@@ -101,7 +111,7 @@ class MISPExporter(BaseExporter):
                     "to_ids": True,
                     "timestamp": str(int(self._get_timestamp(indicator).timestamp())),
                     "comment": f"APT {apt_name} Indicator",
-                    "Tag": [{"name": tag, "colour": "#ff0000"}],
+                    "Tag": tags,
                 }
                 attributes.append(attr)
 
@@ -112,6 +122,7 @@ class MISPExporter(BaseExporter):
             IndicatorType.IPV6: "ip-dst",  # MISP uses same type, auto-detects? or ip-dst|port
             IndicatorType.DOMAIN: "domain",
             IndicatorType.URL: "url",
+            IndicatorType.URL_PATH: "uri",
             IndicatorType.MD5: "md5",
             IndicatorType.SHA1: "sha1",
             IndicatorType.SHA256: "sha256",

@@ -125,13 +125,23 @@ class CSVExporter(BaseExporter):
 
         buffer = io.StringIO()
         writer = csv.writer(buffer)
-        writer.writerow(["apt_group", "aliases", "references"])
+        writer.writerow(["apt_group", "attack_id", "attack_name", "attack_url", "aliases", "references"])
 
         for apt_name in sorted(apt_groups.keys()):
             apt_group = apt_groups[apt_name]
-            aliases = ", ".join(sorted(apt_group.metadata.aliases))
-            references = " | ".join(sorted(apt_group.metadata.references))
-            writer.writerow([apt_name, aliases, references])
+            metadata = apt_group.metadata
+            aliases = ", ".join(sorted(metadata.aliases))
+            references = " | ".join(sorted(metadata.references))
+            writer.writerow(
+                [
+                    apt_name,
+                    metadata.attack_id or "",
+                    metadata.attack_name or "",
+                    metadata.attack_url or "",
+                    aliases,
+                    references,
+                ]
+            )
 
         content = buffer.getvalue()
 

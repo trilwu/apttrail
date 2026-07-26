@@ -5,7 +5,7 @@ import pytest
 
 from apttrail import cli
 
-ALL_FORMATS = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma"]
+ALL_FORMATS = ["json", "csv", "stix", "suricata", "yara", "misp", "sigma", "slices"]
 
 
 def namespace(**overrides):

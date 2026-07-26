@@ -48,3 +48,41 @@ jobs:
       uses: codecov/codecov-action@v3
       with:
         file: ./coverage.xml
+
+  # Parse the rules we generate with the real Suricata engine. Unit tests can
+  # assert on rule text; only Suricata can say whether it loads. A previous
+  # release shipped rules with a negated file-hash match and an unescaped
+  # quote, which is exactly what this catches.
+  suricata:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install APTtrail
+      run: pip install -e .
+
+    - name: Install Suricata
+      run: |
+        sudo apt-get update -qq
+        sudo apt-get install -y -qq suricata
+        suricata --build-info | head -3
+
+    - name: Generate sample rules (per-indicator mode)
+      run: python scripts/make_sample_rules.py rules-plain
+
+    - name: Generate sample rules (dataset mode)
+      run: python scripts/make_sample_rules.py rules-dataset --datasets
+
+    - name: Validate with suricata -T
+      run: |
+        for mode in plain dataset; do
+          echo "::group::suricata -T (${mode})"
+          suricata -T -c /etc/suricata/suricata.yaml \
+            -S "rules-${mode}/apttrail_sample.rules" \
+            --set "default-rule-path=${PWD}/rules-${mode}"
+          echo "::endgroup::"
+        done
