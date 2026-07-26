@@ -65,6 +65,21 @@ def escape_content(value: str) -> str:
     return "".join(out)
 
 
+def escape_msg(value: str) -> str:
+    """
+    Escape a value for use inside a Suricata ``msg:"..."``.
+
+    An unescaped semicolon ends the option early: Suricata reported
+    ``bad option value formatting (possible missing semicolon) for keyword
+    msg`` for an indicator named ``/semi;colon.php``. Unlike content, msg is
+    human-readable text, so unprintable bytes are dropped rather than
+    hex-encoded.
+    """
+    return "".join(
+        _MUST_ESCAPE.get(char, char) for char in value if char in _MUST_ESCAPE or _SAFE_MIN <= ord(char) <= _SAFE_MAX
+    )
+
+
 class SuricataExporter(BaseExporter):
     """
     Exports indicators to Suricata rules.
@@ -233,7 +248,7 @@ class SuricataExporter(BaseExporter):
             # startswith+endswith pins the whole buffer, so neither
             # notevil.com nor evil.com.attacker.net matches evil.com.
             buffer.write(
-                f'alert dns any any -> any any (msg:"APTtrail {apt_name} - DNS query for {domain}"; '
+                f'alert dns any any -> any any (msg:"APTtrail {apt_name} - DNS query for {escape_msg(domain)}"; '
                 f'dns.query; content:"{escape_content(domain)}"; nocase; startswith; endswith; '
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
@@ -260,7 +275,7 @@ class SuricataExporter(BaseExporter):
 
         for address in addresses:
             buffer.write(
-                f'alert ip $HOME_NET any -> {address} any (msg:"APTtrail {apt_name} - traffic to {address}"; '
+                f'alert ip $HOME_NET any -> {address} any (msg:"APTtrail {apt_name} - traffic to {escape_msg(address)}"; '
                 f"threshold:type limit, track by_src, count 1, seconds 3600; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
@@ -278,7 +293,9 @@ class SuricataExporter(BaseExporter):
             if not host:
                 continue
 
-            clauses = [f'http.host; content:"{escape_content(host)}"; nocase; startswith; endswith']
+            # The http.host buffer is already lowercased, and Suricata 7 rejects
+            # `nocase` on it outright.
+            clauses = [f'http.host; content:"{escape_content(host)}"; startswith; endswith']
             # A path of "/" carries no signal: matching it alerts on every
             # request to any host. Fall back to host-only detection.
             if path and path != "/":
@@ -289,7 +306,7 @@ class SuricataExporter(BaseExporter):
 
             body.write(
                 f"alert http $HOME_NET any -> $EXTERNAL_NET any "
-                f'(msg:"APTtrail {apt_name} - HTTP request to {described}"; '
+                f'(msg:"APTtrail {apt_name} - HTTP request to {escape_msg(described)}"; '
                 f"flow:established,to_server; {'; '.join(clauses)}; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
@@ -338,7 +355,7 @@ class SuricataExporter(BaseExporter):
         for path in paths:
             buffer.write(
                 f"alert http $HOME_NET any -> $EXTERNAL_NET any "
-                f'(msg:"APTtrail {apt_name} - HTTP request to {path}"; '
+                f'(msg:"APTtrail {apt_name} - HTTP request to {escape_msg(path)}"; '
                 f'flow:established,to_server; http.uri; content:"{escape_content(path)}"; startswith; '
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )

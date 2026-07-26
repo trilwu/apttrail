@@ -187,3 +187,39 @@ class TestAttribution:
 
         assert "mitre_group_id" not in content
         assert "metadata:apt_group DEMO;" in content
+
+
+class TestSuricataParserConstraints:
+    """Constraints learned from running `suricata -T` in CI, not from docs."""
+
+    def test_msg_semicolon_is_escaped(self, tmp_path):
+        # Suricata: bad option value formatting (possible missing semicolon)
+        # for keyword msg -- an unescaped ; ends the option early.
+        content = render(tmp_path, build_group(values=[("/semi;colon.php", IndicatorType.URL_PATH)]))
+
+        line = rule_lines(content)[0]
+        assert "msg:" in line
+        assert r"- HTTP request to /semi\;colon.php" in line
+
+    def test_msg_quote_is_escaped(self, tmp_path):
+        content = render(tmp_path, build_group(values=[('/a/"q"/b.php', IndicatorType.URL_PATH)]))
+
+        line = rule_lines(content)[0]
+        assert '\\"q\\"' in line
+        assert line.count('"') % 2 == 0
+
+    def test_http_host_does_not_carry_nocase(self, tmp_path):
+        # Suricata 7 rejects nocase on http.host; the buffer is already
+        # normalised to lowercase.
+        content = render(tmp_path, build_group(values=[("http://evil.com/x.php", IndicatorType.URL)]))
+
+        line = rule_lines(content)[0]
+        assert "http.host;" in line
+        assert "nocase" not in line.split("http.host;")[1].split("http.uri;")[0]
+
+    def test_dns_query_keeps_nocase(self, tmp_path):
+        # dns.query accepts nocase and anchoring together; only http.host does not.
+        content = render(tmp_path, build_group(values=[("evil.com", IndicatorType.DOMAIN)]))
+
+        assert "dns.query;" in rule_lines(content)[0]
+        assert "nocase" in rule_lines(content)[0]
