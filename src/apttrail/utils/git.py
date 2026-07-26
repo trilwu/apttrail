@@ -145,7 +145,7 @@ class GitOperations:
         try:
             relative_dir = directory.relative_to(self.repo_path)
             result = subprocess.run(
-                ["git", "log", "--format=%aI", "--name-only", "--no-renames", "--", str(relative_dir)],
+                ["git", "log", "--format=@%at", "--name-only", "--no-renames", "--", str(relative_dir)],
                 cwd=self.repo_path,
                 capture_output=True,
                 text=True,
@@ -161,16 +161,21 @@ class GitOperations:
     @staticmethod
     def parse_log_name_only(output: str) -> dict[str, datetime]:
         """
-        Parse ``git log --format=%aI --name-only`` output.
+        Parse ``git log --format=@%at --name-only`` output.
 
         The log is ordered newest-first, so the first time a path is seen is its
         most recent commit.
+
+        Commit lines are an ``@`` followed by a unix timestamp. An earlier
+        version emitted ISO dates and told them apart from paths by whether
+        ``datetime.fromisoformat`` accepted them, which silently parsed nothing
+        on Python 3.10 and left every last_modified as None.
 
         Args:
             output: Raw stdout of the git log command
 
         Returns:
-            Mapping of repo-relative path to last commit datetime
+            Mapping of repo-relative path to last commit datetime, in UTC
         """
         times: dict[str, datetime] = {}
         current: datetime | None = None
@@ -180,14 +185,9 @@ class GitOperations:
             if not line:
                 continue
 
-            # A date line starts a new commit block; anything else is a path.
-            try:
-                current = datetime.fromisoformat(line)
-                continue
-            except ValueError:
-                pass
-
-            if current is not None and line not in times:
+            if line.startswith("@") and line[1:].lstrip("-").isdigit():
+                current = datetime.fromtimestamp(int(line[1:]), tz=timezone.utc)
+            elif current is not None and line not in times:
                 times[line] = current
 
         return times

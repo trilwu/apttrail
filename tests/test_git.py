@@ -18,14 +18,17 @@ filename trails/static/malware/apt_demo.txt
 \t# Reference: https://example.com
 """
 
-# Shape of `git log --format=%aI --name-only`: a date line, then the paths
-# touched by that commit, newest commit first.
-SAMPLE_LOG = """2026-07-25T13:23:55+02:00
+# Shape of `git log --format=@%at --name-only`: an @-prefixed unix timestamp,
+# then the paths touched by that commit, newest commit first.
+NEWER = 1785331435
+OLDER = 1784883600
+
+SAMPLE_LOG = f"""@{NEWER}
 
 trails/static/malware/apt_bluenoroff.txt
 trails/static/malware/apt_oceanlotus.txt
 
-2026-07-20T09:00:00+02:00
+@{OLDER}
 
 trails/static/malware/apt_bluenoroff.txt
 trails/static/malware/apt_12.txt
@@ -35,9 +38,10 @@ trails/static/malware/apt_12.txt
 def test_parse_log_name_only_takes_most_recent_commit_per_file():
     times = GitOperations.parse_log_name_only(SAMPLE_LOG)
 
-    assert times["trails/static/malware/apt_bluenoroff.txt"] == datetime.fromisoformat("2026-07-25T13:23:55+02:00")
-    assert times["trails/static/malware/apt_oceanlotus.txt"] == datetime.fromisoformat("2026-07-25T13:23:55+02:00")
-    assert times["trails/static/malware/apt_12.txt"] == datetime.fromisoformat("2026-07-20T09:00:00+02:00")
+    newer = datetime.fromtimestamp(NEWER, tz=timezone.utc)
+    assert times["trails/static/malware/apt_bluenoroff.txt"] == newer
+    assert times["trails/static/malware/apt_oceanlotus.txt"] == newer
+    assert times["trails/static/malware/apt_12.txt"] == datetime.fromtimestamp(OLDER, tz=timezone.utc)
 
 
 def test_parse_log_name_only_handles_empty_output():
