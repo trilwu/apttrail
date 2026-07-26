@@ -79,6 +79,7 @@ jobs:
 
     - name: Validate with suricata -T
       run: |
+        set -o pipefail
         for mode in plain dataset; do
           echo "::group::suricata -T (${mode})"
           mkdir -p "sclog-${mode}"
@@ -88,3 +89,26 @@ jobs:
             --set "default-rule-path=${PWD}/rules-${mode}"
           echo "::endgroup::"
         done
+
+  # The README advertises a container image, so build it and check the thing
+  # people actually depend on: that the ATT&CK table travels with the package.
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build image
+      run: docker build -t apttrail:ci .
+
+    - name: CLI responds
+      run: docker run --rm apttrail:ci --help
+
+    - name: Attribution table is present in the image
+      run: |
+        docker run --rm --entrypoint python apttrail:ci -c "
+        from apttrail.attribution import load_index
+        index = load_index()
+        assert len(index) > 150, f'attribution table missing or short: {len(index)}'
+        assert index.resolve('SOFACY', 'apt28').id == 'G0007'
+        print(f'{len(index)} ATT&CK groups available in the image')
+        "
