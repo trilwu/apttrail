@@ -46,6 +46,11 @@ Examples:
         help="Deprecated: timestamp collection is off unless --collect-timestamps is given",
     )
     parser.add_argument(
+        "--no-changelog",
+        action="store_true",
+        help="Skip appending IOC additions/removals to feeds/changes/YYYY-MM.jsonl",
+    )
+    parser.add_argument(
         "--force-refresh",
         action="store_true",
         help="Force refresh timestamps (ignore cache)",
@@ -152,6 +157,7 @@ def main() -> int:
             formats=get_export_formats(args),
             optimized=True,  # Always optimized by default now? Original code had default True
             collect_timestamps=args.collect_timestamps and not args.no_timestamps,
+            write_changelog=not args.no_changelog,
             use_datasets=args.suricata_dataset,
         )
 

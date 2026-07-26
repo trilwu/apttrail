@@ -156,6 +156,39 @@ class TimestampCache:
                 (indicator_hash, indicator_value, first_seen.isoformat() if first_seen else None, commit_hash, now),
             )
 
+    def get_file_state(self, file_key: str) -> str | None:
+        """
+        Get the fingerprint recorded for a source file.
+
+        Used to decide whether a file needs re-blaming. Keying on the file's
+        own last commit time, rather than on the repository HEAD, means an
+        upstream push that touches three files does not invalidate all 340.
+
+        Args:
+            file_key: Repo-relative path of the source file
+
+        Returns:
+            The stored fingerprint, or None if the file was never processed
+        """
+        with self._lock:
+            cursor = self._conn.execute("SELECT value FROM cache_metadata WHERE key = ?", (f"file:{file_key}",))
+            row = cursor.fetchone()
+            return row[0] if row else None
+
+    def set_file_state(self, file_key: str, fingerprint: str) -> None:
+        """
+        Record the fingerprint of a processed source file.
+
+        Args:
+            file_key: Repo-relative path of the source file
+            fingerprint: Value identifying the file's current version
+        """
+        with self._lock:
+            self._conn.execute(
+                "INSERT OR REPLACE INTO cache_metadata (key, value) VALUES (?, ?)",
+                (f"file:{file_key}", fingerprint),
+            )
+
     def get_maltrail_commit(self) -> str | None:
         """Get the cached Maltrail commit hash."""
         with self._lock:

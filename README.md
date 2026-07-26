@@ -66,6 +66,32 @@ apttrail --collect-timestamps
 | **YARA** | `apttrail_threat_feed.yar` | File scanning rules |
 | **MISP** | `apttrail_threat_feed_misp.json` | MISP Event format |
 | **Sigma** | `apttrail_threat_feed.yaml` | Generic detection rules |
+| **Changelog** | `changes/YYYY-MM.jsonl` | Append-only log of indicator additions and removals |
+
+## 🕰 Indicator history
+
+Two complementary records answer "when did this indicator change?" without
+diffing multi-megabyte feed files:
+
+- **`first_seen`** — when an indicator entered *Maltrail*, derived from the
+  upstream repository's own git history. Present in the JSON feed when
+  collection is enabled (`--collect-timestamps`, on by default in CI).
+- **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** the
+  APTtrail feed, which `first_seen` cannot express. One JSON object per event:
+
+```json
+{"action":"added","group":"BLUENOROFF","ts":"2026-07-26T04:00:00","type":"domain","value":"example.com"}
+```
+
+Query it directly, no tooling required:
+
+```bash
+grep '"value":"example.com"' feeds/changes/*.jsonl
+```
+
+Weekly release tags (`weekly-YYYY-Wxx`) provide immutable point-in-time
+snapshots of the full feed, including the STIX and MISP bundles that are too
+large to store in git.
 
 ## 🤝 Contributing
 

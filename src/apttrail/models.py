@@ -157,6 +157,7 @@ class FeedExportConfig(BaseModel):
     )
     optimized: bool = Field(default=True, description="Use optimized output")
     collect_timestamps: bool = Field(default=False, description="Collect git timestamps")
+    write_changelog: bool = Field(default=True, description="Append IOC additions/removals to feeds/changes")
     use_datasets: bool = Field(default=False, description="Use Suricata datasets")
 
 

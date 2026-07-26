@@ -7,7 +7,9 @@ Orchestrates the collection, processing, and export of APT threat indicators.
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from typing import Any
 
+from apttrail.changelog import append_changes, diff_indicators, index_current, load_previous_feed
 from apttrail.classifiers.indicator import classify_indicator
 from apttrail.exporters import (
     CSVExporter,
@@ -120,21 +122,18 @@ class APTThreatFeedCollector:
         aliases = []
         references = []
 
-        # Get timestamps if requested
-        timestamps = {}
+        # Get timestamps if requested. Re-blame only files whose own last
+        # commit time moved; the previous HEAD-based check re-blamed all 340
+        # files on every upstream push, which is most hours.
+        timestamps: dict[str, dict[str, Any]] = {}
         if self.config.export_config.collect_timestamps and self.cache:
-            # Check if Maltrail repo has been updated
-            current_commit = self.git_ops.get_current_commit()
-            cached_commit = self.cache.get_maltrail_commit()
+            file_key = self._repo_key(filepath)
+            fingerprint = last_modified.isoformat() if last_modified else None
 
-            if current_commit != cached_commit:
-                print(
-                    f"  Maltrail updated ({cached_commit[:8] if cached_commit else 'none'} → {current_commit[:8] if current_commit else 'none'}), refreshing cache..."
-                )
+            if file_key is None or fingerprint is None or self.cache.get_file_state(file_key) != fingerprint:
                 timestamps = self.git_ops.get_file_timestamps_bulk(filepath)
-            else:
-                # Use cache for faster lookups
-                timestamps = {}
+                if file_key and fingerprint and timestamps:
+                    self.cache.set_file_state(file_key, fingerprint)
 
         indicators_by_type: dict[IndicatorType, set[Indicator]] = defaultdict(set)
 
@@ -185,6 +184,32 @@ class APTThreatFeedCollector:
 
         return APTGroup(name=apt_name, metadata=metadata, indicators=indicators_by_type)
 
+    def _record_changes(self, output_dir: Path, generated_at: datetime) -> None:
+        """
+        Append indicator additions and removals to the monthly changelog.
+
+        Skipped when no previous export exists: a first run would otherwise
+        record every indicator as newly added.
+
+        Args:
+            output_dir: Directory holding the exported feeds
+            generated_at: Timestamp to stamp onto the change events
+        """
+        previous = load_previous_feed(output_dir / "apttrail_threat_feed.json")
+        if previous is None:
+            print("  Changelog: no previous feed, skipping baseline run")
+            return
+
+        events = diff_indicators(previous, index_current(self.apt_groups))
+        written = append_changes(output_dir / "changes", events, generated_at)
+
+        if written:
+            added = sum(1 for e in events if e["action"] == "added")
+            removed = len(events) - added
+            print(f"  Changelog: +{added} / -{removed} written to {written.name}")
+        else:
+            print("  Changelog: no indicator changes")
+
     def _get_last_modified(self, filepath: Path) -> datetime | None:
         """
         Look up a file's last commit time from the prefetched history.
@@ -197,11 +222,15 @@ class APTThreatFeedCollector:
             must not substitute the current time: doing so makes the exported
             feed change on every run even when no indicator changed.
         """
+        key = self._repo_key(filepath)
+        return self.file_last_modified.get(key) if key else None
+
+    def _repo_key(self, filepath: Path) -> str | None:
+        """Repo-relative POSIX path used as the key for cached file state."""
         try:
-            key = filepath.relative_to(self.maltrail_path).as_posix()
+            return filepath.relative_to(self.maltrail_path).as_posix()
         except ValueError:
             return None
-        return self.file_last_modified.get(key)
 
     def _collect_commit_references(self) -> None:
         """Extract reference URLs from commit messages."""
@@ -241,6 +270,10 @@ class APTThreatFeedCollector:
 
         formats = export_config.formats
         print(f"\nExporting threat feeds to {output_dir}...")
+
+        # Must run before the JSON export overwrites the previous snapshot.
+        if export_config.write_changelog:
+            self._record_changes(output_dir, metadata.generated_at)
 
         if "json" in formats:
             JSONExporter(output_dir / "apttrail_threat_feed.json").export(

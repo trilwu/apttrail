@@ -41,17 +41,29 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Clone/Update Maltrail repository
-      run: |
-        # apttrail handles cloning, but we can pre-clone if we want to cache or control location
-        # Default location is data/maltrail
-        # Note: apttrail will clone if missing
-        echo "Repository update handled by apttrail package"
+    # apttrail clones Maltrail into data/maltrail itself and pulls on each run.
+    # Caching the clone avoids re-downloading ~50MB hourly and, more
+    # importantly, keeps the history that `git blame` needs for first_seen.
+    - name: Restore Maltrail clone
+      uses: actions/cache@v4
+      with:
+        path: data/maltrail
+        key: maltrail-clone-${{ github.run_id }}
+        restore-keys: maltrail-clone-
+
+    # Per-indicator first_seen timestamps. Keyed per run so each run saves a
+    # fresh entry; restore-keys picks up the most recent one.
+    - name: Restore timestamp cache
+      uses: actions/cache@v4
+      with:
+        path: ~/.apttrail
+        key: apttrail-timestamps-${{ github.run_id }}
+        restore-keys: apttrail-timestamps-
 
     - name: Collect APT indicators
       run: |
         pip install .
-        python -m apttrail --output-dir feeds --suricata-dataset
+        python -m apttrail --output-dir feeds --suricata-dataset --collect-timestamps
 
     - name: Discard JSON if only generated_at changed
       run: |
@@ -84,6 +96,8 @@ jobs:
         git add feeds/apttrail_threat_feed.rules
         git add feeds/apttrail_threat_feed.yar
         git add feeds/apttrail_threat_feed.yaml
+        # Append-only IOC change log; a few KB per day
+        git add feeds/changes/
 
         if git diff --staged --quiet; then
           echo "No real changes detected (only timestamp updates)"
