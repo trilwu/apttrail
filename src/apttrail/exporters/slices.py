@@ -137,7 +137,15 @@ class SliceExporter:
         """
         self.output_dir = Path(output_dir)
         self._labels: dict[str, str] = {}
-        self._stats: dict[str, Any] = {"indicators": 0, "sourced": 0, "dated": 0, "earliest": None, "relationships": 0}
+        self._stats: dict[str, Any] = {
+            "indicators": 0,
+            "sourced": 0,
+            "dated": 0,
+            "exact": 0,
+            "earliest": None,
+            "latest": None,
+            "relationships": 0,
+        }
         self._sample: dict[str, Any] | None = None
 
     def export(self, apt_groups: dict[str, APTGroup], metadata: FeedMetadata) -> dict[str, int]:
@@ -509,7 +517,8 @@ class SliceExporter:
         sourced: set[str] = set()
         dated: set[str] = set()
         every: set[str] = set()
-        earliest = None
+        exact: set[str] = set()
+        earliest = latest = None
 
         for entry in merged.values():
             for values in entry["indicators"].values():
@@ -520,14 +529,23 @@ class SliceExporter:
                     seen = record.get("first_seen")
                     if seen:
                         dated.add(value)
+                        # Blame gives every line a date, so "dated" is close to
+                        # everything; what varies is whether the date is a
+                        # sighting or the floor left by upstream's history reset.
+                        if record.get("precision") == "exact":
+                            exact.add(value)
                         if earliest is None or seen < earliest:
                             earliest = seen
+                        if latest is None or seen > latest:
+                            latest = seen
 
         return {
             "indicators": len(every),
             "sourced": len(sourced),
             "dated": len(dated),
+            "exact": len(exact),
             "earliest": earliest.date().isoformat() if earliest else None,
+            "latest": latest.date().isoformat() if latest else None,
             "relationships": sum(len(items) for items in relations.values()) // 2,
         }
 

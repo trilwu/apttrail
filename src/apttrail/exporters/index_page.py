@@ -263,6 +263,11 @@ def render_index_page(payload: dict[str, Any], stats: dict[str, Any], sample: di
     generated = _esc(payload["generated_at"])
     sourced = stats["sourced"]
     indicators = max(stats["indicators"], 1)
+    span = (
+        f"{str(stats['earliest'])[:4]} &rarr; {str(stats['latest'])[:4]}"
+        if stats.get("earliest") and stats.get("latest")
+        else "Dated"
+    )
 
     formats = "".join(f"<li><b>{_esc(name)}</b><br><span>{_esc(note)}</span></li>" for name, _, note in FORMATS)
 
@@ -324,10 +329,10 @@ MISP still says <em>whose</em>.</dd></div>
 indicators name the report that published them. Not a reference list at the bottom
 of a page &mdash; the specific write-up behind that specific value.</dd></div>
 
-<div><dt>History</dt><dd><b>{stats["dated"]:,} dated</b>
-{"back to " + str(stats["earliest"])[:4] if stats.get("earliest") else ""},
-recovered from history upstream had discarded. Filter on age instead of blocking
-a domain first seen in 2016.</dd></div>
+<div><dt>History</dt><dd><b>{span}</b>
+{f"{stats['exact']:,} carry an exact first-seen date" if stats.get("exact") else "first-seen dates"},
+recovered from history upstream had discarded. Filter on age instead of blocking a
+domain last used in 2016.</dd></div>
 
 <div><dt>No friction</dt><dd><b>Static files</b>
 on stable URLs. No account, no key, no rate limit, rebuilt hourly. Look-ups run in
