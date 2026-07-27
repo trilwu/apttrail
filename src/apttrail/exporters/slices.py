@@ -23,7 +23,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from apttrail.exporters.group_pages import write_group_page
+from apttrail.exporters.group_pages import build_timeline, write_group_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
 
@@ -149,12 +149,24 @@ class SliceExporter:
             for indicator_type, indicators in group.indicators.items():
                 bucket = entry["indicators"].setdefault(indicator_type.value, {})
                 for indicator in indicators:
-                    seen = indicator.first_seen
                     known = bucket.get(indicator.value)
+                    if known is None:
+                        bucket[indicator.value] = {
+                            "first_seen": indicator.first_seen,
+                            "precision": indicator.first_seen_precision,
+                            "references": list(indicator.references),
+                        }
+                        continue
+
                     # The same value can arrive from two merged groups; keep
-                    # the earlier sighting.
-                    if indicator.value not in bucket or (seen and (known is None or seen < known)):
-                        bucket[indicator.value] = seen
+                    # the earlier sighting and every source that cited it.
+                    seen = indicator.first_seen
+                    if seen and (known["first_seen"] is None or seen < known["first_seen"]):
+                        known["first_seen"] = seen
+                        known["precision"] = indicator.first_seen_precision
+                    for url in indicator.references:
+                        if url not in known["references"]:
+                            known["references"].append(url)
 
         return merged
 
@@ -175,6 +187,8 @@ class SliceExporter:
     def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> None:
         last_modified = entry["last_modified"]
         profile = load_profiles().get(entry["attack_id"])
+        # Built once so the page and the JSON slice cannot drift apart.
+        timeline = build_timeline(entry)
         payload = {
             "slug": slug,
             "maltrail_groups": sorted(entry["maltrail_groups"]),
@@ -191,9 +205,26 @@ class SliceExporter:
                 indicator_type: sorted(values) for indicator_type, values in sorted(entry["indicators"].items())
             },
             "first_seen": {
-                indicator_type: {value: seen.date().isoformat() for value, seen in sorted(values.items()) if seen}
+                indicator_type: {
+                    value: record["first_seen"].date().isoformat()
+                    for value, record in sorted(values.items())
+                    if record["first_seen"]
+                }
                 for indicator_type, values in sorted(entry["indicators"].items())
             },
+            # Only the dates that are a floor rather than a sighting are listed;
+            # anything absent here and present in first_seen is exact.
+            "first_seen_precision": {
+                indicator_type: {
+                    value: record["precision"]
+                    for value, record in sorted(values.items())
+                    if record["precision"] and record["precision"] != "exact"
+                }
+                for indicator_type, values in sorted(entry["indicators"].items())
+            },
+            # Where each batch of indicators came from: the date it appeared
+            # upstream and the report it was filed under.
+            "timeline": timeline,
         }
         (directory / f"{slug}.json").write_text(
             json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
@@ -202,8 +233,8 @@ class SliceExporter:
         )
 
         # The human-readable actor page: description, targeting, techniques and
-        # dated indicators.
-        write_group_page(directory, slug, entry, profile, generated)
+        # the indicator timeline.
+        write_group_page(directory, slug, entry, profile, generated, timeline)
 
         # Flat domain list per group: the single most requested shape for
         # hunting one actor in DNS logs.
@@ -221,7 +252,12 @@ class SliceExporter:
         downloading the group's indicators, and is the only place the recovered
         history is visible from the site.
         """
-        dates = [seen for bucket in entry["indicators"].values() for seen in bucket.values() if seen]
+        dates = [
+            record["first_seen"]
+            for bucket in entry["indicators"].values()
+            for record in bucket.values()
+            if record["first_seen"]
+        ]
         if not dates:
             return None
         return {"earliest": min(dates).date().isoformat(), "latest": max(dates).date().isoformat()}

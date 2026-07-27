@@ -29,6 +29,7 @@ from apttrail.models import (
     Indicator,
     IndicatorType,
 )
+from apttrail.trails import read_trail
 from apttrail.utils.cache import TimestampCache
 from apttrail.utils.git import GitOperations
 from apttrail.utils.parallel import ParallelProcessor
@@ -130,8 +131,9 @@ class APTThreatFeedCollector:
 
         # Get metadata
         last_modified = self._get_last_modified(filepath)
-        aliases = []
-        references = []
+        trail = read_trail(filepath)
+        aliases = trail.aliases
+        references = trail.references
 
         # Get timestamps if requested. Re-blame only files whose own last
         # commit time moved; the previous HEAD-based check re-blamed all 340
@@ -149,62 +151,50 @@ class APTThreatFeedCollector:
         legacy = load_legacy()
         indicators_by_type: dict[IndicatorType, set[Indicator]] = defaultdict(set)
 
-        with open(filepath, encoding="utf-8", errors="ignore") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
+        for line, sources in trail.indicators.items():
+            indicator_type = classify_indicator(line)
+            if indicator_type == IndicatorType.UNKNOWN:
+                continue
 
-                if line.startswith("#"):
-                    if "Reference:" in line:
-                        ref = line.split("Reference:", 1)[1].strip()
-                        if ref.startswith(("http://", "https://")):
-                            references.append(ref)
-                    elif "Aliases:" in line or "Alias:" in line:
-                        alias_str = line.split(":", 1)[1].strip()
-                        aliases.extend([a.strip() for a in alias_str.split(",")])
-                    continue
+            # Enrich with timestamp info if available
+            ts_info = timestamps.get(line, {})
+            first_seen = ts_info.get("first_seen")
+            commit = ts_info.get("commit")
 
-                # Classify indicator
-                indicator_type = classify_indicator(line)
-                if indicator_type != IndicatorType.UNKNOWN:
-                    # Enrich with timestamp info if available
-                    ts_info = timestamps.get(line, {})
-                    first_seen = ts_info.get("first_seen")
-                    commit = ts_info.get("commit")
+            # Try cache if no timestamp from git
+            if not first_seen and self.cache:
+                cached = self.cache.get(line)
+                if cached:
+                    first_seen = cached.get("first_seen")
+                    commit = cached.get("commit")
 
-                    # Try cache if no timestamp from git
-                    if not first_seen and self.cache:
-                        cached = self.cache.get(line)
-                        if cached:
-                            first_seen = cached.get("first_seen")
-                            commit = cached.get("commit")
+            precision = None
+            if first_seen:
+                precision = "at-or-before" if commit in self.history_roots else "exact"
 
-                    precision = None
-                    if first_seen:
-                        precision = "at-or-before" if commit in self.history_roots else "exact"
+            # Dates recovered from the discarded history beat a blame
+            # date pinned to the reset boundary.
+            recovered, recovered_precision = legacy.earliest(line, first_seen)
+            if recovered_precision == "exact" and (
+                precision == "at-or-before" or first_seen is None or recovered < first_seen
+            ):
+                first_seen, precision = recovered, "exact"
 
-                    # Dates recovered from the discarded history beat a blame
-                    # date pinned to the reset boundary.
-                    recovered, recovered_precision = legacy.earliest(line, first_seen)
-                    if recovered_precision == "exact" and (
-                        precision == "at-or-before" or first_seen is None or recovered < first_seen
-                    ):
-                        first_seen, precision = recovered, "exact"
+            indicator = Indicator(
+                value=line,
+                indicator_type=indicator_type,
+                first_seen=first_seen,
+                first_seen_precision=precision,
+                commit_hash=commit,
+                # The report this indicator was filed under upstream.
+                references=sources,
+            )
 
-                    indicator = Indicator(
-                        value=line,
-                        indicator_type=indicator_type,
-                        first_seen=first_seen,
-                        first_seen_precision=precision,
-                        commit_hash=commit,
-                    )
+            # Update cache if we have timestamp info
+            if self.cache and (first_seen or commit):
+                self.cache.set(line, first_seen, commit)
 
-                    # Update cache if we have timestamp info
-                    if self.cache and (first_seen or commit):
-                        self.cache.set(line, first_seen, commit)
-
-                    indicators_by_type[indicator_type].add(indicator)
+            indicators_by_type[indicator_type].add(indicator)
 
         attack_group = load_index().resolve(apt_name, *aliases)
 

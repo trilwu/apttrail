@@ -16,6 +16,25 @@ def test_json_export(tmp_path, sample_apt_group, sample_metadata):
     assert len(data["apt_groups"]["TEST"]["indicators"]["ipv4"]) == 1
 
 
+def test_json_export_keeps_each_indicators_source_report(tmp_path, sample_metadata):
+    from apttrail.models import APTGroup, APTGroupMetadata, Indicator, IndicatorType
+
+    group = APTGroup(name="TEST", metadata=APTGroupMetadata(filename="apt_test.txt"))
+    for value, report in [("a.example", "https://one.test/a"), ("b.example", "https://two.test/b")]:
+        group.add_indicator(Indicator(value=value, indicator_type=IndicatorType.DOMAIN, references=[report]))
+    output_file = tmp_path / "feed.json"
+
+    JSONExporter(output_file).export({"TEST": group}, sample_metadata)
+
+    # Same date, different reports: separate entries, or the reader cannot tell
+    # which reference explains which domain.
+    entries = json.loads(output_file.read_text("utf-8"))["apt_groups"]["TEST"]["indicators"]["domain"]
+    assert {e["indicators"][0]: e["references"] for e in entries} == {
+        "a.example": ["https://one.test/a"],
+        "b.example": ["https://two.test/b"],
+    }
+
+
 def test_csv_compact_export(tmp_path, sample_apt_group, sample_metadata):
     output_file = tmp_path / "feed.csv"
     exporter = CSVExporter(output_file, compact=True)

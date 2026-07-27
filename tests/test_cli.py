@@ -1,4 +1,5 @@
 import argparse
+import json
 from pathlib import Path
 
 import pytest
@@ -102,7 +103,17 @@ def test_deprecated_no_timestamps_still_wins(monkeypatch, maltrail_repo, tmp_pat
         "--no-timestamps",
     )
 
-    assert "first_seen" not in (out / "apttrail_threat_feed.json").read_text("utf-8")
+    # Indicators still carry the report they were filed under, so entries are
+    # still grouped - but nothing was dated.
+    feed = json.loads((out / "apttrail_threat_feed.json").read_text("utf-8"))
+    dates = {
+        entry["first_seen"]
+        for group in feed["apt_groups"].values()
+        for entries in group["indicators"].values()
+        for entry in entries
+        if isinstance(entry, dict)
+    }
+    assert dates == {"unknown"}
 
 
 def test_force_refresh_invalidates_cache(monkeypatch, maltrail_repo, tmp_path):

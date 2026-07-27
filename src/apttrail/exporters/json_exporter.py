@@ -104,10 +104,11 @@ class JSONExporter(BaseExporter):
         for indicator_type in sorted(apt_group.indicators.keys(), key=lambda x: x.value):
             indicators = apt_group.indicators[indicator_type]
 
-            # Check if we have timestamps
-            has_timestamps = any(ind.first_seen for ind in indicators)
+            # The grouped shape carries dates and source reports; the flat list
+            # carries neither, so use it only when there is nothing to lose.
+            has_context = any(ind.first_seen or ind.references for ind in indicators)
 
-            if has_timestamps:
+            if has_context:
                 result[indicator_type.value] = self._group_by_timestamp(indicators, commit_references)
             else:
                 result[indicator_type.value] = sorted(ind.value for ind in indicators)
@@ -119,18 +120,25 @@ class JSONExporter(BaseExporter):
         indicators: set[Any],
         commit_references: dict[str, list[str]] | None,
     ) -> list[dict[str, Any]]:
-        """Group indicators by first_seen date and commit."""
-        grouped: dict[tuple[str, str, str], list[str]] = defaultdict(list)
+        """
+        Group indicators by first_seen date, commit and source report.
+
+        The report an indicator was filed under upstream is part of the key:
+        two domains dated the same day but published by different write-ups are
+        separate findings, and merging them would leave the reader unable to
+        tell which reference belongs to which value.
+        """
+        grouped: dict[tuple[str, str, str, tuple[str, ...]], list[str]] = defaultdict(list)
 
         for indicator in indicators:
             first_seen = indicator.first_seen.isoformat() if indicator.first_seen else "unknown"
             commit = indicator.commit_hash or ""
             precision = indicator.first_seen_precision or ""
-            key = (first_seen, commit, precision)
+            key = (first_seen, commit, precision, tuple(indicator.references))
             grouped[key].append(indicator.value)
 
         result = []
-        for (first_seen, commit, precision), values in sorted(grouped.items()):
+        for (first_seen, commit, precision, sources), values in sorted(grouped.items()):
             entry: dict[str, Any] = {
                 "first_seen": first_seen,
                 "indicators": sorted(values),
@@ -139,8 +147,14 @@ class JSONExporter(BaseExporter):
             # the indicator may well be older.
             if precision:
                 entry["first_seen_precision"] = precision
-            if commit and commit_references and commit in commit_references:
-                entry["references"] = commit_references[commit]
+
+            references = list(sources)
+            for url in (commit_references or {}).get(commit, []):
+                if url not in references:
+                    references.append(url)
+            if references:
+                entry["references"] = references
+
             result.append(entry)
 
         return result

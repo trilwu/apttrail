@@ -1,4 +1,5 @@
 import json
+from datetime import datetime, timezone
 
 import pytest
 
@@ -92,6 +93,59 @@ class TestByGroup:
 
         assert (tmp_path / "by-group" / "IPONLY.json").exists()
         assert not (tmp_path / "by-group" / "IPONLY-domain.txt").exists()
+
+
+class TestProvenance:
+    """Every indicator should be traceable to the report that published it."""
+
+    @pytest.fixture
+    def sourced(self, tmp_path):
+        apt = APTGroup(name="APT28", metadata=APTGroupMetadata(filename="apt_apt28.txt"))
+        apt.add_indicator(
+            Indicator(
+                value="fresh.example",
+                indicator_type=IndicatorType.DOMAIN,
+                first_seen=datetime(2026, 3, 21, tzinfo=timezone.utc),
+                first_seen_precision="exact",
+                references=["https://vendor.test/march-report"],
+            )
+        )
+        apt.add_indicator(
+            Indicator(
+                value="9.9.9.9",
+                indicator_type=IndicatorType.IPV4,
+                first_seen=datetime(2026, 1, 3, tzinfo=timezone.utc),
+                first_seen_precision="at-or-before",
+            )
+        )
+        SliceExporter(tmp_path).export({"APT28": apt}, FeedMetadata())
+        return tmp_path
+
+    def payload(self, sourced):
+        return json.loads((sourced / "by-group" / "APT28.json").read_text("utf-8"))
+
+    def test_json_timeline_records_the_source_of_each_batch(self, sourced):
+        newest = self.payload(sourced)["timeline"][0]
+
+        assert newest["first_seen"] == "2026-03-21"
+        assert newest["references"] == ["https://vendor.test/march-report"]
+        assert newest["indicators"] == {"domain": ["fresh.example"]}
+        assert newest["counts"] == {"domain": 1}
+
+    def test_json_timeline_is_newest_first(self, sourced):
+        assert [b["first_seen"] for b in self.payload(sourced)["timeline"]] == ["2026-03-21", "2026-01-03"]
+
+    def test_only_dates_that_are_a_floor_are_flagged(self, sourced):
+        precision = self.payload(sourced)["first_seen_precision"]
+
+        assert precision["ipv4"] == {"9.9.9.9": "at-or-before"}
+        assert precision["domain"] == {}
+
+    def test_the_page_puts_the_report_link_beside_its_indicator(self, sourced):
+        page = (sourced / "by-group" / "APT28.html").read_text("utf-8")
+
+        assert 'href="https://vendor.test/march-report"' in page
+        assert page.index("march-report") < page.index("fresh.example")
 
 
 class TestIndex:

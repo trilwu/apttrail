@@ -21,7 +21,8 @@ curl -sL https://trilwu.github.io/apttrail/by-group/G0007-domain.txt
 
 Browse it: **[trilwu.github.io/apttrail](https://trilwu.github.io/apttrail/)** —
 every group has a profile page with description, suspected origin, targeted
-sectors, ATT&CK techniques and its indicators dated, e.g.
+sectors, ATT&CK techniques, and a timeline of its indicators: each batch dated
+and linked to the report it came from, e.g.
 [APT28](https://trilwu.github.io/apttrail/by-group/G0007.html).
 
 ---
@@ -212,7 +213,7 @@ KIMSUKY (G0094, 25,227), TRANSPARENTTRIBE (G0134, 7,776), LAZARUS (G0032, 5,346)
 
 ### Indicator history
 
-Two records, neither of which requires diffing a 7MB file:
+Three records, none of which requires diffing a 7MB file:
 
 - **`first_seen`** — when an indicator entered *Maltrail*, with a
   `first_seen_precision` of `exact` or `at-or-before`.
@@ -228,6 +229,28 @@ Two records, neither of which requires diffing a 7MB file:
   fall in the gap between the recovered history and the reset and are marked
   `at-or-before` — they may be older. 23,649 stay undated rather than guessed
   at. Regenerate the map with the *Backfill IOC history* workflow.
+- **the report each indicator came from.** Maltrail files indicators under the
+  write-up that published them:
+
+  ```text
+  # Reference: https://vendor.example/apt28-write-up
+  evil.example
+  1.2.3.4
+  ```
+
+  That association is the only per-indicator provenance upstream carries, and
+  flattening it into one list per group — which is what this project used to do —
+  left an analyst with 1,600 references at the foot of a page and no way to tell
+  which one explains the domain in front of them. It is now kept: `by-group/<G-id>.json`
+  carries a `timeline` of `(date, report, indicators)` batches, and the actor
+  page renders it, newest first, each batch linked to its source. 9,837 batches
+  cover 155,190 indicators; exactly one of them has no report behind it.
+
+  ```bash
+  # Which report brought this domain in, and when?
+  curl -s $SITE/by-group/G0007.json |
+    jq '.timeline[] | select(.indicators.domain // [] | index("evil.example"))'
+  ```
 - **`changes/YYYY-MM.jsonl`** — when an indicator entered or **left** APTtrail,
   which `first_seen` cannot express. Append-only, a few KB per day, kept in git:
 

@@ -35,6 +35,22 @@ def test_collect_extracts_aliases_and_references(collector_config):
     assert metadata.references == ["https://example.com/report"]
 
 
+def test_indicators_carry_the_report_they_were_filed_under(collector_config, maltrail_repo):
+    # Upstream groups indicators under the write-up they came from. That
+    # association is the only per-indicator provenance the feed can offer.
+    trail = maltrail_repo / "trails" / "static" / "malware" / "apt_sourced.txt"
+    trail.write_text(
+        "# Reference: https://vendor.test/report-a\nalpha.com\n\n# Reference: https://vendor.test/report-b\nbeta.com\n",
+        encoding="utf-8",
+    )
+
+    collector = collect(collector_config)
+
+    by_value = {i.value: i for i in collector.apt_groups["SOURCED"].indicators[IndicatorType.DOMAIN]}
+    assert by_value["alpha.com"].references == ["https://vendor.test/report-a"]
+    assert by_value["beta.com"].references == ["https://vendor.test/report-b"]
+
+
 def test_last_modified_is_the_real_commit_time(collector_config):
     # A wall-clock fallback here was what produced ~4,000 no-op feed commits.
     collector = collect(collector_config)
