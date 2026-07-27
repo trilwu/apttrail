@@ -74,3 +74,10 @@ feeds/*
 # Node is only here for the page tests.
 node_modules/
 build/
+
+# Test and coverage artefacts
+.coverage
+test_output.txt
+
+# Agent tooling state
+.agent/
