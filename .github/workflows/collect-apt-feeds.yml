@@ -80,15 +80,27 @@ jobs:
     # skipping baseline run". The feature had never recorded one event. Pull
     # last run's feed back down first.
     - name: Restore the previous feed for the changelog diff
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         mkdir -p feeds
         if curl -sfL -o feeds/apttrail_threat_feed.json \
              "https://github.com/${GITHUB_REPOSITORY}/releases/download/latest/apttrail_threat_feed.json"; then
-          python -c "import json,sys; json.load(open('feeds/apttrail_threat_feed.json')); print('previous feed restored')" \
-            || { echo "previous feed unreadable, treating as first run"; rm -f feeds/apttrail_threat_feed.json; }
-        else
-          echo "no previous release yet, this run is the baseline"
+          python -c "import json; json.load(open('feeds/apttrail_threat_feed.json'))" \
+            && echo "previous feed restored" \
+            && exit 0
+          echo "::error::previous feed downloaded but is not valid JSON"
+          exit 1
         fi
+
+        # Distinguish "no release yet" from "the restore broke". The first is a
+        # genuine baseline run; the second silently disables the changelog,
+        # which is exactly how it went unnoticed for its entire existence.
+        if gh release view latest --repo "${GITHUB_REPOSITORY}" >/dev/null 2>&1; then
+          echo "::error::the latest release exists but its feed asset could not be fetched"
+          exit 1
+        fi
+        echo "no release yet, this run is the baseline"
 
     - name: Collect APT indicators
       run: |
