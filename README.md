@@ -55,6 +55,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 | Sigma-based SIEM | `apttrail_threat_feed.yaml` (one rule per group, ATT&CK-tagged) |
 | Looking up one indicator from an alert | `by-indicator/<shard>.json` |
 | Reading up on an actor | [`by-group/<G-id>.html`](https://trilwu.github.io/apttrail/by-group/G0007.html) |
+| Seeing what moved this week | [`activity.html`](https://trilwu.github.io/apttrail/activity.html) / `activity.json` |
 | Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
 
 `weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time

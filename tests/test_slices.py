@@ -1,4 +1,5 @@
 import json
+import re
 from datetime import datetime, timezone
 
 import pytest
@@ -208,6 +209,112 @@ class TestLandingPage:
 
     def test_the_filter_is_hidden_until_script_reveals_it(self, page):
         assert "id=tools hidden" in page
+
+
+class TestActivityPage:
+    """Every other view is keyed on an actor, which needs a name to start from."""
+
+    @pytest.fixture
+    def site(self, tmp_path):
+        apt = APTGroup(
+            name="APT28",
+            metadata=APTGroupMetadata(filename="apt_sofacy.txt", attack_id="G0007", attack_name="APT28"),
+        )
+        apt.add_indicator(
+            Indicator(
+                value="fresh.example",
+                indicator_type=IndicatorType.DOMAIN,
+                first_seen=datetime(2026, 7, 20, tzinfo=timezone.utc),
+                references=["https://vendor.test/july"],
+            )
+        )
+        apt.add_indicator(
+            Indicator(
+                value="old.example",
+                indicator_type=IndicatorType.DOMAIN,
+                first_seen=datetime(2019, 1, 2, tzinfo=timezone.utc),
+                references=["https://vendor.test/2019"],
+            )
+        )
+        quiet = APTGroup(name="QUIET", metadata=APTGroupMetadata(filename="apt_quiet.txt"))
+        quiet.add_indicator(Indicator(value="undated.example", indicator_type=IndicatorType.DOMAIN))
+
+        SliceExporter(tmp_path).export({"APT28": apt, "QUIET": quiet}, FeedMetadata())
+        return tmp_path
+
+    def test_newest_batch_leads(self, site):
+        # Scoped to the feed itself: the header states the window oldest-first.
+        body = (site / "activity.html").read_text("utf-8").split("<main class=solo>")[1]
+
+        assert body.index("2026-07-20") < body.index("2019-01-02")
+
+    def test_each_entry_names_its_group_and_source(self, site):
+        page = (site / "activity.html").read_text("utf-8")
+
+        assert "APT28" in page
+        assert "vendor.test" in page
+
+    def test_undated_indicators_are_not_activity(self, site):
+        # An undated indicator says nothing about when anything happened;
+        # including it would make a quiet week look busy.
+        page = (site / "activity.html").read_text("utf-8")
+
+        assert "QUIET" not in page
+
+    def test_entries_deep_link_to_the_batch_on_the_actor_page(self, site):
+        page = (site / "activity.html").read_text("utf-8")
+        anchor = re.search(r'href="by-group/G0007\.html#(b-[^"]+)"', page).group(1)
+
+        assert f'<li id="{anchor}"' in (site / "by-group" / "G0007.html").read_text("utf-8")
+
+    def test_the_anchor_survives_a_newer_batch_landing_above_it(self, site, tmp_path):
+        # Positional ids would renumber and break every citation.
+        before = re.findall(r'id="(b-2019-01-02[^"]*)"', (site / "by-group" / "G0007.html").read_text("utf-8"))
+
+        apt = APTGroup(
+            name="APT28",
+            metadata=APTGroupMetadata(filename="apt_sofacy.txt", attack_id="G0007", attack_name="APT28"),
+        )
+        for value, when, ref in [
+            ("old.example", datetime(2019, 1, 2, tzinfo=timezone.utc), "https://vendor.test/2019"),
+            ("newer.example", datetime(2026, 7, 26, tzinfo=timezone.utc), "https://vendor.test/newest"),
+        ]:
+            apt.add_indicator(
+                Indicator(value=value, indicator_type=IndicatorType.DOMAIN, first_seen=when, references=[ref])
+            )
+        later = tmp_path / "later"
+        SliceExporter(later).export({"APT28": apt}, FeedMetadata())
+
+        after = re.findall(r'id="(b-2019-01-02[^"]*)"', (later / "by-group" / "G0007.html").read_text("utf-8"))
+        assert before == after
+
+    def test_machine_readable_twin(self, site):
+        payload = json.loads((site / "activity.json").read_text("utf-8"))
+
+        assert payload["batches"][0]["date"] == "2026-07-20"
+        assert payload["batches"][0]["references"] == ["https://vendor.test/july"]
+        assert payload["window"] == {"from": "2019-01-02", "to": "2026-07-20"}
+
+
+class TestLinks:
+    """Text that looks clickable and is not reads as a broken page."""
+
+    def test_the_group_name_and_id_both_open_the_profile(self, written):
+        page = (written / "index.html").read_text("utf-8")
+
+        assert '<td class=gid><a href="by-group/G0007.html">G0007</a></td>' in page
+        assert '<a class=who href="by-group/G0007.html">APT28</a>' in page
+
+    def test_an_unmapped_group_still_has_a_clickable_cell(self, written):
+        page = (written / "index.html").read_text("utf-8")
+
+        assert '<a href="by-group/UNMAPPED.html">&mdash;</a>' in page
+
+    def test_the_actor_page_links_the_upstream_trail_file(self, written):
+        page = (written / "by-group" / "G0007.html").read_text("utf-8")
+
+        assert "Upstream trail" in page
+        assert "maltrail/blob/master/trails/static/malware/apt_apt28.txt" in page
 
 
 def test_export_is_idempotent(tmp_path, feed):

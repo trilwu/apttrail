@@ -112,6 +112,9 @@ jobs:
       run: |
         mkdir -p pages
         cp feeds/index.html feeds/index.json pages/
+        # The feed-wide "what moved recently" view, for a reader who does not
+        # already have an actor name to look up.
+        cp feeds/activity.html feeds/activity.json pages/
         cp -r feeds/by-type feeds/by-group pages/
         # Served as a real MISP feed: manifest.json + one event per group.
         cp -r feeds/misp-feed pages/

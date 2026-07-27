@@ -32,6 +32,7 @@ indicators; the page shows the most recent batches and links to the complete
 files.
 """
 
+import hashlib
 import html
 from collections import Counter
 from pathlib import Path
@@ -52,6 +53,7 @@ PROJECT_URL = "https://github.com/trilwu/apttrail"
 SITE_URL = "https://trilwu.github.io/apttrail"
 ATTACK_GROUP_URL = "https://attack.mitre.org/groups/{group_id}/"
 MALTRAIL_URL = "https://github.com/stamparm/maltrail"
+MALTRAIL_TRAIL_URL = "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/{filename}"
 
 STYLE = """
 :root {
@@ -313,7 +315,7 @@ def build_timeline(entry: dict[str, Any]) -> list[dict[str, Any]]:
 # --------------------------------------------------------------------------- #
 
 
-def _split_url(url: str) -> tuple[str, str]:
+def split_url(url: str) -> tuple[str, str]:
     """Split a reference into host and a shortened path, for a readable link."""
     rest = url.split("://", 1)[-1]
     host, _, path = rest.partition("/")
@@ -452,14 +454,25 @@ def _rail(slug: str, entry: dict[str, Any], profile: ActorProfile | None, sectio
     if profile and profile.victims:
         rows.append(("Suspected victims", _tags(profile.victims[:24])))
 
+    # The upstream file is the primary source; a reader checking our work
+    # should be one click from it, not left to guess the path.
+    upstream = [
+        f'<a href="{esc(MALTRAIL_TRAIL_URL.format(filename=filename))}">{esc(name)}</a>'
+        for name, filename in sorted((entry.get("filenames") or {}).items())
+    ]
+    if upstream:
+        rows.append(("Upstream trail", " &middot; ".join(upstream)))
+
     facts = ""
     if rows:
         body = "\n".join(f"<dt>{label}</dt><dd>{value}</dd>" for label, value in rows)
         facts = f"<h3>Attribution</h3>\n<dl class=facts>\n{body}\n</dl>"
 
     has_domains = bool(entry["indicators"].get("domain"))
+    files = [f'<a href="{esc(slug)}.json">{esc(slug)}.json</a>']
     lines = [f"<span class=c># everything, with sources</span>\ncurl -sL {SITE_URL}/by-group/{esc(slug)}.json"]
     if has_domains:
+        files.append(f'<a href="{esc(slug)}-domain.txt">{esc(slug)}-domain.txt</a>')
         lines.append(
             f"<span class=c># domains, one per line</span>\ncurl -sL {SITE_URL}/by-group/{esc(slug)}-domain.txt"
         )
@@ -467,7 +480,9 @@ def _rail(slug: str, entry: dict[str, Any], profile: ActorProfile | None, sectio
     return (
         f"<h3>On this page</h3>\n<nav><ul>{nav}</ul></nav>\n"
         f"{facts}\n"
-        f"<h3>Take the data</h3>\n<pre>" + "\n\n".join(lines) + "</pre>"
+        f"<h3>Take the data</h3>\n<pre>" + "\n\n".join(lines) + "</pre>\n"
+        # The same files as links, because not every reader wants a shell.
+        f'<p class=note>{" &middot; ".join(files)}</p>'
     )
 
 
@@ -517,11 +532,23 @@ def _techniques(profile: ActorProfile | None) -> str:
 
 
 def _software(profile: ActorProfile | None) -> str:
+    """
+    Named malware and tooling, linked to ATT&CK where it has an id.
+
+    Not everything the galaxy names is catalogued by ATT&CK, so entries without
+    an id render as plain text rather than as a link that would 404.
+    """
     if not profile or not profile.software:
         return ""
 
-    return f"<h2 id=software>Software <span class=n>{len(profile.software)}</span></h2>\n" + _tags(
-        [s.name for s in profile.software], mark=True
+    chips = []
+    for item in profile.software:
+        label = f"<b>{esc(item.name)}</b>"
+        chips.append(f'<li><a href="{esc(item.url)}">{label}</a></li>' if item.url else f"<li>{label}</li>")
+
+    return (
+        f"<h2 id=software>Software <span class=n>{len(profile.software)}</span></h2>\n"
+        f'<ul class=chips>{"".join(chips)}</ul>'
     )
 
 
@@ -546,7 +573,7 @@ def _reporting(batches: list[dict[str, Any]]) -> str:
     peak = top[0][1]
     items = []
     for url, count in top:
-        host, path = _split_url(url)
+        host, path = split_url(url)
         items.append(
             f"<li><span class=c>{count:,}</span>"
             f'<a href="{esc(url)}" rel="noopener nofollow">'
@@ -574,13 +601,13 @@ def _timeline(slug: str, batches: list[dict[str, Any]], now: int) -> str:
 
     items: list[str] = []
     shown = 0
-    for index, batch in enumerate(batches):
+    for batch in batches:
         if shown >= MAX_ROWS:
             break
         pairs = [(kind, value) for kind, values in batch["indicators"].items() for value in values]
         visible = pairs[: MAX_ROWS - shown]
         shown += len(visible)
-        items.append(_batch(index, batch, visible, len(pairs), now))
+        items.append(_batch(batch, visible, len(pairs), now))
 
     truncated = ""
     if shown < total:
@@ -607,11 +634,27 @@ def _timeline(slug: str, batches: list[dict[str, Any]], now: int) -> str:
     )
 
 
-def _batch(index: int, batch: dict[str, Any], visible: list[tuple[str, str]], size: int, now: int) -> str:
+def batch_anchor(batch: dict[str, Any]) -> str:
+    """
+    A stable id for one batch.
+
+    Position would be simpler and would break every citation the moment a newer
+    batch lands above it. Keying on the date plus a short digest of the sources
+    survives a rebuild, so a link pasted into a ticket still lands on the right
+    entry a month later.
+    """
+    date = batch["first_seen"] or "undated"
+    if not batch["references"]:
+        return f"b-{date}"
+    digest = hashlib.sha256("\n".join(batch["references"]).encode("utf-8")).hexdigest()[:6]
+    return f"b-{date}-{digest}"
+
+
+def _batch(batch: dict[str, Any], visible: list[tuple[str, str]], size: int, now: int) -> str:
     """Render one timeline entry: when, from where, and what."""
     date = batch["first_seen"]
     year = _year(date)
-    anchor = f"b{index}"
+    anchor = batch_anchor(batch)
 
     if not date:
         when = "<span class=approx>date unknown</span>"
@@ -654,7 +697,7 @@ def _sources(references: list[str]) -> str:
 
     links = []
     for url in references:
-        host, path = _split_url(url)
+        host, path = split_url(url)
         links.append(
             f'<a href="{esc(url)}" rel="noopener nofollow">'
             f"<span class=host>{esc(host)}</span><span class=path>{esc(path)}</span></a>"
@@ -681,7 +724,7 @@ def _further_reading(slug: str, entry: dict[str, Any], profile: ActorProfile | N
 
     shown = seen[:MAX_REFERENCES]
     items = "\n".join(
-        f'<li><a href="{esc(url)}" rel="noopener nofollow">{esc("".join(_split_url(url)))}</a></li>' for url in shown
+        f'<li><a href="{esc(url)}" rel="noopener nofollow">{esc("".join(split_url(url)))}</a></li>' for url in shown
     )
     more = ""
     if len(seen) > len(shown):
@@ -756,7 +799,7 @@ def render(
 <div class=wrap>
 <div class=topbar>
   <a href="../index.html">&larr; All groups</a>
-  <span class=brand>APTtrail</span>
+  <a href="../activity.html">Recent activity</a>
 </div>
 
 <header class=masthead>

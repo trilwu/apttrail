@@ -20,10 +20,11 @@ the right file.
 """
 
 import json
+from itertools import groupby
 from pathlib import Path
 from typing import Any
 
-from apttrail.exporters.group_pages import STYLE, build_timeline, write_group_page
+from apttrail.exporters.group_pages import STYLE, batch_anchor, build_timeline, split_url, write_group_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
 
@@ -55,7 +56,10 @@ code { font: .88em var(--mono); color: var(--muted); }
              padding: 0 .8rem .4rem 0; border-bottom: 1px solid var(--line-firm); }
 .groups td { padding: .45rem .8rem .45rem 0; border-bottom: 1px solid var(--line);
              vertical-align: baseline; }
-.groups td.gid { font: .84rem/1.5 var(--mono); color: var(--accent); white-space: nowrap; }
+.groups td.gid { font: .84rem/1.5 var(--mono); white-space: nowrap; }
+.groups td.gid a { color: var(--accent); text-decoration: none; }
+.groups td .who { text-decoration: none; }
+.groups tr:hover td .who, .groups tr:hover td.gid a { color: var(--accent); }
 .groups td.n { text-align: right; font: .88rem/1.5 var(--mono); font-variant-numeric: tabular-nums; }
 .groups td.span { white-space: nowrap; font: .82rem/1.5 var(--mono); color: var(--muted);
                   font-variant-numeric: tabular-nums; }
@@ -65,6 +69,28 @@ code { font: .88em var(--mono); color: var(--muted); }
 .groups .aka { font: .76rem/1.5 var(--mono); color: var(--faint); margin-top: .1rem; }
 .stale { color: var(--warn); }
 @media (max-width: 40rem) { .groups td.span, .groups th.span { display: none; } }
+"""
+
+#: Batches on the activity page. A fixed count rather than a fixed number of
+#: days: never empty in a quiet week, never unbounded in a busy one.
+ACTIVITY_BATCHES = 150
+
+ACTIVITY_STYLE = """
+main.solo { grid-column: 1 / -1; max-width: 58rem; }
+.day { margin-top: 2rem; }
+.daymark { font: .78rem/1 var(--mono); letter-spacing: .09em; color: var(--faint);
+           margin: 0 0 .6rem; padding-bottom: .35rem; border-bottom: 1px solid var(--line-firm); }
+.event { padding: .55rem 0; border-bottom: 1px solid var(--line); }
+.event .who { font: 500 .98rem/1.5 var(--sans); text-decoration: none; }
+.event .who:hover { color: var(--accent); }
+.event .gid { font: .76rem/1.5 var(--mono); color: var(--accent); margin-left: .45rem; }
+.event .cnt { font: .78rem/1.5 var(--mono); color: var(--faint); margin-left: .5rem; }
+.event .src { margin-top: .12rem; font: .78rem/1.6 var(--mono); }
+.event .src a { text-decoration: none; color: var(--muted); }
+.event .src a:hover .host { color: var(--accent); }
+.event .src .host { color: var(--ink); }
+.event .src .path { color: var(--faint); }
+.event .src .nosrc { color: var(--faint); font-style: italic; }
 """
 
 INDEX_SCRIPT = """
@@ -158,12 +184,15 @@ class SliceExporter:
             written["by_type"] += 1
 
         index: list[dict[str, Any]] = []
+        activity: list[dict[str, Any]] = []
         for slug, entry in sorted(self._merge_by_slug(apt_groups).items()):
-            self._write_group(by_group_dir, slug, entry, generated)
+            timeline = self._write_group(by_group_dir, slug, entry, generated)
             index.append(self._index_entry(slug, entry))
+            activity.extend(self._activity_entries(slug, entry, timeline))
             written["by_group"] += 1
 
         self._write_index(index, metadata, written)
+        self._write_activity(activity, metadata)
         return written
 
     @staticmethod
@@ -205,11 +234,15 @@ class SliceExporter:
                     "aliases": set(),
                     "references": set(),
                     "last_modified": None,
+                    # Maltrail name to its upstream file, so a reader checking
+                    # our work is one click from the primary source.
+                    "filenames": {},
                     "indicators": {},
                 },
             )
 
             entry["maltrail_groups"].append(name)
+            entry["filenames"][name] = metadata.filename
             entry["aliases"].update(metadata.aliases)
             entry["references"].update(metadata.references)
             if metadata.last_modified and (
@@ -255,7 +288,7 @@ class SliceExporter:
         banner = BANNER.format(title=title, count=len(values), url=PROJECT_URL, generated=generated)
         path.write_text(banner + "\n".join(values) + "\n", encoding="utf-8", newline="\n")
 
-    def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> None:
+    def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> list[dict[str, Any]]:
         last_modified = entry["last_modified"]
         profile = load_profiles().get(entry["attack_id"])
         # Built once so the page and the JSON slice cannot drift apart.
@@ -313,6 +346,33 @@ class SliceExporter:
         if domains:
             label = f"{entry['attack_id']} {entry['attack_name']}" if entry["attack_id"] else slug
             self._write_list(directory / f"{slug}-domain.txt", f"{label} domains", domains, generated)
+
+        return timeline
+
+    @staticmethod
+    def _activity_entries(slug: str, entry: dict[str, Any], timeline: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """
+        Flatten a group's recent batches into feed-wide activity rows.
+
+        Only dated batches qualify: an undated indicator says nothing about
+        when anything happened, and padding the feed with them would make a
+        quiet week look busy.
+        """
+        name = entry["attack_name"] or ", ".join(entry["maltrail_groups"])
+        return [
+            {
+                "date": batch["first_seen"],
+                "slug": slug,
+                "attack_id": entry["attack_id"],
+                "group": name,
+                "anchor": batch_anchor(batch),
+                "counts": batch["counts"],
+                "total": batch["total"],
+                "references": batch["references"],
+            }
+            for batch in timeline
+            if batch["first_seen"]
+        ]
 
     @staticmethod
     def _first_seen_range(entry: dict[str, Any]) -> dict[str, str] | None:
@@ -436,6 +496,7 @@ URLs &mdash; no account, no API key, no rate limit.</p>
 <aside>
 <h3>Start here</h3>
 <nav><ul>
+  <li><a href="activity.html">Recent activity</a></li>
   <li><a href="#lookup">Look up one indicator</a></li>
   <li><a href="#groups">Browse by group</a></li>
   <li><a href="#files">Whole-feed files</a></li>
@@ -443,10 +504,16 @@ URLs &mdash; no account, no API key, no rate limit.</p>
 
 <h3>Formats</h3>
 <p class=note>MISP feed, STIX 2.1 bundle, Suricata rules with datasets, Sigma,
-CSV and JSON. <a href="{PROJECT_URL}#formats">All of them</a>.</p>
+CSV and JSON. <a href="{PROJECT_URL}#per-tool-setup">All of them</a>.</p>
 </aside>
 
 <main>
+<h2 id=recent>Recent activity <span class=n>what moved</span></h2>
+<p>Every other view here is keyed on an actor, which only helps a reader who
+already has a name. <a href="activity.html">Recent activity</a> is the view for
+one who does not: the newest batches of indicators across every group, by day,
+each linked to the report that published it.</p>
+
 <h2 id=lookup>Look up one indicator <span class=n>an alert just fired</span></h2>
 <p>Indicators are sharded by <code>sha256(value)</code>, so the URL is
 computable offline. The reply carries the actor, its ATT&amp;CK id, when the
@@ -498,6 +565,119 @@ triage, not proof of compromise.</p>
     #: Alternative names shown under a group. The rest stay searchable.
     VISIBLE_ALIASES = 6
 
+    def _write_activity(self, activity: list[dict[str, Any]], metadata: FeedMetadata) -> None:
+        """
+        Write the feed-wide "what moved recently" page.
+
+        Everything else here is organised by actor, which only helps a reader
+        who already has a name. This is the view for the reader who has none:
+        the batches that landed most recently, across every group, so a daily
+        check answers "is anything I care about active" in one screen.
+
+        The window is a fixed number of batches rather than a number of days
+        so the page is never empty in a quiet week and never unbounded in a
+        busy one; the dates it actually covers are stated on the page.
+        """
+        batches = sorted(activity, key=lambda b: (b["date"], b["total"]), reverse=True)[:ACTIVITY_BATCHES]
+        if not batches:
+            return
+
+        payload = {
+            "generated_at": metadata.generated_at.isoformat(),
+            "project": PROJECT_URL,
+            "window": {"from": batches[-1]["date"], "to": batches[0]["date"]},
+            "batches": batches,
+        }
+        (self.output_dir / "activity.json").write_text(
+            json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+
+        groups = {b["slug"] for b in batches}
+        indicators = sum(b["total"] for b in batches)
+
+        days: list[str] = []
+        for date, rows in groupby(batches, key=lambda b: str(b["date"])):
+            entries = "\n".join(self._activity_row(row) for row in rows)
+            days.append(
+                f'<section class=day><h3 class=daymark><time datetime="{date}">{date}</time></h3>\n{entries}</section>'
+            )
+
+        html = f"""<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Recent activity &middot; APTtrail</title>
+<meta name=description content="The most recent APT indicators added upstream, by day, each linked to the report that published it.">
+<style>{STYLE}{INDEX_STYLE}{ACTIVITY_STYLE}</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="index.html">&larr; APTtrail</a>
+  <a href="activity.json">activity.json</a>
+</div>
+
+<header class=masthead>
+<h1>Recent activity</h1>
+<p class=lede>The newest batches of indicators across every tracked group. Each
+one is a set of indicators that appeared upstream on a single day, under the
+report it was filed with.</p>
+
+<dl class=stats>
+<div><dt>Batches</dt><dd>{len(batches):,}</dd></div>
+<div><dt>Indicators</dt><dd>{indicators:,}</dd></div>
+<div><dt>Groups</dt><dd>{len(groups):,}</dd></div>
+<div><dt>Window</dt><dd>{self._esc(batches[-1]["date"])}
+  <small>&rarr; {self._esc(batches[0]["date"])}</small></dd></div>
+</dl>
+</header>
+
+<main class=solo>
+<p class=note>Dates are when an indicator entered Maltrail, not when the actor
+first used it. A batch appearing today can still describe old infrastructure.
+For additions and <em>removals</em> at this project's own level, see
+<a href="{PROJECT_URL}/tree/main/feeds/changes">feeds/changes</a>.</p>
+
+{"".join(days)}
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>;
+attribution from <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>.
+Historical indicators: treat a hit as a lead to triage, not proof of compromise.</p>
+<p>Rebuilt hourly &middot; <a href="{PROJECT_URL}">source</a></p>
+</footer>
+</main>
+</div>
+</html>
+"""
+        (self.output_dir / "activity.html").write_text(html, encoding="utf-8", newline="\n")
+
+    def _activity_row(self, row: dict[str, Any]) -> str:
+        """One batch: which actor, how much, and what published it."""
+        label = ", ".join(f"{count:,} {kind}" for kind, count in row["counts"].items())
+        gid = f'<span class=gid>{self._esc(row["attack_id"])}</span>' if row["attack_id"] else ""
+        target = f'by-group/{self._esc(row["slug"])}.html#{self._esc(row["anchor"])}'
+
+        sources = "<span class=nosrc>no upstream reference</span>"
+        if row["references"]:
+            links = []
+            for url in row["references"][:3]:
+                host, path = split_url(url)
+                links.append(
+                    f'<a href="{self._esc(url)}" rel="noopener nofollow">'
+                    f"<span class=host>{self._esc(host)}</span><span class=path>{self._esc(path)}</span></a>"
+                )
+            extra = len(row["references"]) - len(links)
+            sources = " &middot; ".join(links) + (f" &middot; +{extra}" if extra > 0 else "")
+
+        return (
+            "<div class=event>"
+            f'<a class=who href="{target}">{self._esc(row["group"])}</a> {gid}'
+            f"<span class=cnt>{self._esc(label)}</span>"
+            f"<div class=src>{sources}</div>"
+            "</div>"
+        )
+
     def _index_row(self, group: dict[str, Any]) -> str:
         """
         One group row.
@@ -530,14 +710,18 @@ triage, not proof of compromise.</p>
         # them without the table having to print them all.
         key = self._esc(" ".join([slug, group["attack_id"] or "", heading, *sources, *aliases]).lower())
 
-        files = [f'<a href="by-group/{slug}.html">profile</a>', f'<a href="by-group/{slug}.json">json</a>']
+        # "profile" as a separate link was redundant once the name itself opens
+        # the page - and an accent-coloured G-id that was not clickable read as
+        # a broken link.
+        files = [f'<a href="by-group/{slug}.json">json</a>']
         if group["counts"].get("domain"):
             files.append(f'<a href="by-group/{slug}-domain.txt">domains</a>')
 
         return (
             f'<tr data-k="{key}">'
-            f'<td class=gid>{self._esc(group["attack_id"] or "")}</td>'
-            f"<td>{self._esc(heading)}{also}</td>"
+            f'<td class=gid><a href="by-group/{slug}.html">'
+            f'{self._esc(group["attack_id"]) if group["attack_id"] else "&mdash;"}</a></td>'
+            f'<td><a class=who href="by-group/{slug}.html">{self._esc(heading)}</a>{also}</td>'
             f'<td class=n>{group["total"]:,}</td>'
             f"<td class=span>{self._span(group)}</td>"
             f'<td class=f>{" &middot; ".join(files)}</td>'

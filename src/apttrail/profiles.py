@@ -20,6 +20,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 DATA_FILE = Path(__file__).parent / "data" / "attack_profiles.json.gz"
 TECHNIQUE_URL = "https://attack.mitre.org/techniques/{path}/"
+SOFTWARE_URL = "https://attack.mitre.org/software/{software_id}/"
 
 
 class Technique(BaseModel):
@@ -43,6 +44,17 @@ class Software(BaseModel):
 
     id: str = Field(default="", description="ATT&CK software id, when known")
     name: str = Field(..., description="Software name")
+
+    @property
+    def url(self) -> str | None:
+        """
+        ATT&CK page for the software.
+
+        None where the galaxy carried a name but no id, which happens for
+        tooling ATT&CK has not catalogued; the caller renders plain text rather
+        than a link that would 404.
+        """
+        return SOFTWARE_URL.format(software_id=self.id) if self.id.startswith("S") else None
 
 
 class ActorProfile(BaseModel):
