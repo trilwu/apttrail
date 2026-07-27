@@ -23,6 +23,12 @@ ATTACK_URL = "https://attack.mitre.org/groups/{group_id}/"
 
 _NON_ALNUM = re.compile(r"[^a-z0-9]+")
 
+#: Generic words ATT&CK appends to an actor's name but Maltrail's filename does
+#: not. Kept to a closed set: stripping *any* trailing word would make
+#: "Sandworm Team" and "Sandworm" indistinguishable from anything else starting
+#: with Sandworm.
+GENERIC_SUFFIXES = frozenset({"group", "team", "gang", "crew"})
+
 
 def normalize(name: str) -> str:
     """
@@ -58,12 +64,32 @@ class AttackGroupIndex:
 
         for group in groups:
             for alias in [group.name, *group.aliases]:
-                key = normalize(alias)
-                # Lower G-ids win ties so the mapping is stable regardless of
-                # input ordering.
-                existing = self._by_alias.get(key)
-                if existing is None or group.id < existing.id:
-                    self._by_alias[key] = group
+                for key in self._keys_for(alias):
+                    # Lower G-ids win ties so the mapping is stable regardless
+                    # of input ordering.
+                    existing = self._by_alias.get(key)
+                    if existing is None or group.id < existing.id:
+                        self._by_alias[key] = group
+
+    @staticmethod
+    def _keys_for(alias: str) -> list[str]:
+        """
+        Lookup keys for one ATT&CK alias.
+
+        ATT&CK writes "Gamaredon Group" and "Gorgon Group" where Maltrail files
+        say GAMAREDON and GORGON, so the bare name resolved to nothing at all.
+        Indexing the name without its trailing generic word fixes that. Only
+        that closed set of words is stripped - dropping any last word would
+        collapse "Lazarus Group" and "Lazarus" onto whatever else began with
+        Lazarus.
+        """
+        keys = [normalize(alias)]
+        words = alias.split()
+        if len(words) > 1 and words[-1].lower() in GENERIC_SUFFIXES:
+            stripped = normalize(" ".join(words[:-1]))
+            if stripped:
+                keys.append(stripped)
+        return keys
 
     def __len__(self) -> int:
         return len(self.groups)

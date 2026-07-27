@@ -103,3 +103,25 @@ class TestDegradedMode:
         broken.write_text("{not json", encoding="utf-8")
 
         assert len(load_index(broken)) == 0
+
+
+class TestGenericSuffixes:
+    """ATT&CK writes "Gamaredon Group"; the Maltrail file is apt_gamaredon.txt."""
+
+    def test_a_bare_name_resolves_past_a_trailing_generic_word(self):
+        index = AttackGroupIndex([AttackGroup(id="G0047", name="Gamaredon Group", aliases=["Primitive Bear"])])
+
+        assert index.resolve("GAMAREDON").id == "G0047"
+        assert index.resolve("Gamaredon Group").id == "G0047"
+
+    def test_only_that_closed_set_of_words_is_stripped(self):
+        # Dropping any last word would make "Fancy Bear" resolve from "Fancy".
+        index = AttackGroupIndex([AttackGroup(id="G0007", name="Fancy Bear")])
+
+        assert index.resolve("Fancy") is None
+        assert index.resolve("Fancy Bear").id == "G0007"
+
+    def test_a_single_word_name_is_left_alone(self):
+        index = AttackGroupIndex([AttackGroup(id="G0001", name="Group")])
+
+        assert index.resolve("Group").id == "G0001"

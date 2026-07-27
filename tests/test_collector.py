@@ -199,3 +199,49 @@ class TestChangelog:
         collector.export_feeds()
 
         assert not (Path(config.export_config.output_dir) / "changes").exists()
+
+
+class TestContinuationFiles:
+    """
+    Upstream splits a big actor across apt_<name>.txt and apt_<name>-1.txt. The
+    continuation lists malware names as its aliases, so it never resolved and
+    GAMAREDON-1's 10,952 indicators shipped with no ATT&CK id.
+    """
+
+    def write(self, repo, name, body):
+        (repo / "trails" / "static" / "malware" / f"apt_{name}.txt").write_text(body, encoding="utf-8")
+
+    def test_a_continuation_inherits_the_base_group_attribution(self, collector_config, maltrail_repo):
+        self.write(maltrail_repo, "sofacy", "# Aliases: fancy bear\nbase.example\n")
+        self.write(maltrail_repo, "sofacy-1", "# Aliases: some-malware-name\nmore.example\n")
+
+        groups = collect(collector_config).apt_groups
+
+        assert groups["SOFACY"].metadata.attack_id == "G0007"
+        assert groups["SOFACY-1"].metadata.attack_id == "G0007"
+        assert groups["SOFACY-1"].metadata.attack_name == groups["SOFACY"].metadata.attack_name
+
+    def test_nothing_is_inherited_when_the_base_group_is_absent(self, collector_config, maltrail_repo):
+        # Guessing from the name alone would turn "APT-C-35" into "APT-C".
+        self.write(maltrail_repo, "orphan-1", "lonely.example\n")
+
+        groups = collect(collector_config).apt_groups
+
+        assert groups["ORPHAN-1"].metadata.attack_id is None
+
+    def test_nothing_is_inherited_when_the_base_group_is_itself_unmapped(self, collector_config, maltrail_repo):
+        self.write(maltrail_repo, "nosuchactor", "a.example\n")
+        self.write(maltrail_repo, "nosuchactor-1", "b.example\n")
+
+        groups = collect(collector_config).apt_groups
+
+        assert groups["NOSUCHACTOR"].metadata.attack_id is None
+        assert groups["NOSUCHACTOR-1"].metadata.attack_id is None
+
+    def test_a_continuation_that_resolves_on_its_own_is_untouched(self, collector_config, maltrail_repo):
+        self.write(maltrail_repo, "sofacy", "# Aliases: fancy bear\nbase.example\n")
+        self.write(maltrail_repo, "sofacy-1", "# Aliases: lazarus group\nother.example\n")
+
+        groups = collect(collector_config).apt_groups
+
+        assert groups["SOFACY-1"].metadata.attack_id == "G0032"

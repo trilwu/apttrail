@@ -4,6 +4,7 @@ Main collector module for APTtrail.
 Orchestrates the collection, processing, and export of APT threat indicators.
 """
 
+import re
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
@@ -33,6 +34,9 @@ from apttrail.trails import read_trail
 from apttrail.utils.cache import TimestampCache
 from apttrail.utils.git import GitOperations
 from apttrail.utils.parallel import ParallelProcessor
+
+#: Upstream splits a large actor across apt_<name>.txt and apt_<name>-1.txt.
+CONTINUATION = re.compile(r"^(.+)-\d+$")
 
 
 class APTThreatFeedCollector:
@@ -113,9 +117,48 @@ class APTThreatFeedCollector:
                 self.apt_groups[apt_group.name] = apt_group
                 print(f"  {apt_group.name}: {apt_group.total_indicators} indicators collected")
 
+        self._inherit_continuation_attribution()
+
         # Collect commit references if needed
         if self.config.export_config.collect_timestamps:
             self._collect_commit_references()
+
+    def _inherit_continuation_attribution(self) -> None:
+        """
+        Give ``apt_<name>-<n>.txt`` the attribution of ``apt_<name>.txt``.
+
+        Upstream splits an actor's indicators across a base file and numbered
+        continuations. The continuation carries malware names in its Aliases
+        line rather than actor synonyms, so alias matching never resolves it:
+        GAMAREDON-1's 10,952 indicators were published with no ATT&CK id while
+        GAMAREDON's 52,028 sat under G0047.
+
+        The base group must actually be present and already attributed. Guessing
+        from the name alone would truncate genuine names - "APT-C-35" would
+        become "APT-C" - so this only ever copies an answer that is already in
+        the feed.
+        """
+        attributed = {name: group.metadata for name, group in self.apt_groups.items() if group.metadata.attack_id}
+
+        for name, group in self.apt_groups.items():
+            if group.metadata.attack_id:
+                continue
+
+            match = CONTINUATION.match(name)
+            if not match:
+                continue
+            base = attributed.get(match.group(1))
+            if not base:
+                continue
+
+            group.metadata = group.metadata.model_copy(
+                update={
+                    "attack_id": base.attack_id,
+                    "attack_name": base.attack_name,
+                    "attack_url": base.attack_url,
+                }
+            )
+            print(f"  {name}: inherited {base.attack_id} from {match.group(1)}")
 
     def _parse_apt_file(self, filepath: Path) -> APTGroup:
         """
