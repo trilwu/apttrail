@@ -32,6 +32,7 @@ from apttrail.exporters.group_pages import (
     split_url,
     write_group_page,
 )
+from apttrail.exporters.search_page import render_search_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
 
@@ -310,6 +311,9 @@ class SliceExporter:
         self._write_index(index, metadata, written)
         self._write_activity(activity, metadata)
         self._write_discovery([entry["slug"] for entry in index], metadata)
+
+        totals = {"indicators": sum(entry["total"] for entry in index)}
+        (self.output_dir / "search.html").write_text(render_search_page(totals), encoding="utf-8", newline="\n")
         return written
 
     @staticmethod
@@ -652,8 +656,8 @@ URLs &mdash; no account, no API key, no rate limit.</p>
 <aside>
 <h3>Start here</h3>
 <nav><ul>
+  <li><a href="search.html">Search an indicator</a></li>
   <li><a href="activity.html">Recent activity</a></li>
-  <li><a href="#lookup">Look up one indicator</a></li>
   <li><a href="#groups">Browse by group</a></li>
   <li><a href="#files">Whole-feed files</a></li>
 </ul></nav>
@@ -671,9 +675,11 @@ one who does not: the newest batches of indicators across every group, by day,
 each linked to the report that published it.</p>
 
 <h2 id=lookup>Look up one indicator <span class=n>an alert just fired</span></h2>
-<p>Indicators are sharded by <code>sha256(value)</code>, so the URL is
-computable offline. The reply carries the actor, its ATT&amp;CK id, when the
-indicator was first seen and the report it came from.</p>
+<p><a href="search.html">Search it here</a> &mdash; the lookup runs in your
+browser, so nothing you paste is sent anywhere. Or build the URL yourself:
+indicators are sharded by <code>sha256</code> of their canonical form, and the
+reply carries the actor, its ATT&amp;CK id, when the indicator was first seen
+and the report it came from.</p>
 <pre><span class=c># what do you know about this domain?</span>
 IOC=evil.example
 shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)

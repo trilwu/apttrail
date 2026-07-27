@@ -17,7 +17,8 @@
  */
 
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { webcrypto } from 'node:crypto';
+import { existsSync, readFileSync } from 'node:fs';
 import { test, describe, before } from 'node:test';
 import { JSDOM } from 'jsdom';
 
@@ -37,8 +38,20 @@ function open(path) {
       return Promise.resolve();
     },
   };
+  // Nor SubtleCrypto or fetch. Serve both from the fixtures on disk, so the
+  // search page exercises the real shard files the exporter wrote.
+  dom.window.crypto.subtle = webcrypto.subtle;
+  dom.window.TextEncoder = TextEncoder;
+  dom.window.fetch = async (url) => {
+    const file = `${FIXTURES}/${String(url).replace(/^.*apttrail\//, '')}`;
+    if (!existsSync(file)) return { ok: false };
+    const body = readFileSync(file, 'utf8');
+    return { ok: true, json: async () => JSON.parse(body), text: async () => body };
+  };
   return { window: dom.window, doc: dom.window.document, copied };
 }
+
+const settle = () => new Promise((resolve) => setTimeout(resolve, 60));
 
 const type = (input, value) => {
   input.value = value;
@@ -188,6 +201,58 @@ describe('landing page', () => {
 
   test('freshness is rendered client-side', () => {
     assert.match(ctx.doc.getElementById('ago').textContent, /ago|just now/);
+  });
+});
+
+describe('search page', () => {
+  let ctx;
+  const search = async (value) => {
+    ctx.doc.getElementById('ioc').value = value;
+    ctx.doc.getElementById('hunt').dispatchEvent(
+      new ctx.window.Event('submit', { cancelable: true, bubbles: true }),
+    );
+    for (let i = 0; i < 40 && !ctx.doc.getElementById('out').textContent.trim(); i++) {
+      await settle();
+    }
+    return ctx.doc.getElementById('out').textContent.replace(/\s+/g, ' ');
+  };
+
+  before(() => {
+    ctx = open('search.html');
+  });
+
+  test('finds an indicator that is in the feed', async () => {
+    const text = await search('fresh.example');
+
+    assert.match(text, /known indicator/);
+    assert.match(text, /APT28|SOFACY/);
+    assert.match(text, /vendor\.test/, 'the source report should be shown');
+  });
+
+  test('accepts input defanged the way a ticket defangs it', async () => {
+    assert.match(await search('fresh[.]example'), /known indicator/);
+  });
+
+  test('is case insensitive, matching the index rule', async () => {
+    assert.match(await search('FRESH.EXAMPLE'), /known indicator/);
+  });
+
+  test('a URL is found with or without its scheme', async () => {
+    assert.match(await search('http://84.38.134.56'), /known indicator/);
+    assert.match(await search('84.38.134.56'), /known indicator/);
+  });
+
+  test('a miss says so without implying the indicator is safe', async () => {
+    const text = await search('nothing-like-this-exists.invalid');
+
+    assert.match(text, /Not a known indicator/);
+    assert.match(text, /not the same as it being safe/);
+  });
+
+  test('the query is reflected in the URL so a lookup can be shared', async () => {
+    await search('fresh.example');
+
+    assert.equal(ctx.window.location.search, '?q=fresh.example');
   });
 });
 

@@ -10,7 +10,7 @@ from datetime import datetime
 
 import pytest
 
-from apttrail.exporters.lookup import LookupExporter, shard_for
+from apttrail.exporters.lookup import LookupExporter, canonical, shard_for
 from apttrail.models import APTGroup, APTGroupMetadata, FeedMetadata, Indicator, IndicatorType
 
 
@@ -96,10 +96,46 @@ class TestEntries:
         assert entry["attack_ids"] == ["G0007"]
 
     def test_missing_first_seen_is_omitted_not_null(self, written):
-        entry = entry_for(written, "1.2.3.4:8080")
+        entry = entry_for(written, "1.2.3.4")
 
         assert "first_seen" not in entry
         assert entry["type"] == "ipv4"
+
+
+class TestCanonicalKeys:
+    """A responder pastes what their alert showed, not what upstream stored."""
+
+    def test_a_bare_address_finds_an_indicator_recorded_with_a_port(self, written):
+        # Upstream holds "1.2.3.4:8080". Keying on that verbatim meant a lookup
+        # for the address landed on the wrong shard and returned nothing,
+        # which reads exactly like "not a known indicator".
+        entry = entry_for(written, "1.2.3.4")
+
+        assert entry["type"] == "ipv4"
+        assert entry["seen_as"] == ["1.2.3.4:8080"]
+
+    def test_the_port_form_is_not_a_separate_key(self, written):
+        payload = json.loads(
+            (written / "by-indicator" / f"{shard_for(canonical('1.2.3.4:8080', IndicatorType.IPV4))}.json").read_text(
+                "utf-8"
+            )
+        )
+
+        assert "1.2.3.4:8080" not in payload
+
+    def test_case_is_folded(self):
+        assert canonical("Evil.EXAMPLE") == "evil.example"
+
+    def test_only_ipv4_loses_its_port(self):
+        # An IPv6 address is mostly colons and a URL's colon is its scheme.
+        assert canonical("2001:db8::1", IndicatorType.IPV6) == "2001:db8::1"
+        assert canonical("http://evil.example/x", IndicatorType.URL) == "http://evil.example/x"
+
+    def test_the_rule_is_published_for_clients(self, written):
+        index = json.loads((written / "by-indicator" / "index.json").read_text("utf-8"))
+
+        assert "lowercase" in index["canonical"]
+        assert ":port" in index["canonical"]
 
 
 def test_returns_the_indicator_count(tmp_path, feed):

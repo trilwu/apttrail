@@ -10,11 +10,17 @@ The index shards indicators by the first byte of ``sha256(value)`` into 256
 files, so a client fetches roughly 1/256th of the data to answer one lookup and
 can compute the path offline:
 
-    shard = sha256("evil.example").hexdigest()[:2]
+    shard = sha256(canonical("evil.example")).hexdigest()[:2]
     GET /by-indicator/<shard>.json
 
 Sharding on a hash rather than on, say, the first letter keeps the shards
 evenly sized regardless of how indicator values cluster.
+
+Keys are canonical, not verbatim. Upstream stores ``212.72.189.74:21`` and
+mixed-case hostnames; a responder pastes the bare address in whatever case
+their alert used it. Hashing the raw value meant those lookups landed on the
+wrong shard and returned nothing, which reads exactly like "not a known
+indicator". The original spelling is preserved in ``seen_as`` when it differs.
 """
 
 import hashlib
@@ -26,13 +32,36 @@ from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 
 SHARD_COUNT_HEX = 2  # 256 shards
 
+#: How a client must normalise an indicator before hashing it. Published in
+#: the index so a consumer can reproduce it without reading this source.
+CANONICAL_RULE = "lowercase; for ipv4, drop any :port suffix"
+
+
+def canonical(value: str, indicator_type: IndicatorType | None = None) -> str:
+    """
+    Normalise an indicator to the form the index is keyed on.
+
+    Args:
+        value: Indicator value as it appears upstream, or as a user pasted it
+        indicator_type: Known type, when the caller has one. Ports are only
+            stripped from IPv4 - an IPv6 address is mostly colons, and a URL's
+            colon belongs to its scheme.
+
+    Returns:
+        The canonical key
+    """
+    text = value.strip().lower()
+    if indicator_type is IndicatorType.IPV4:
+        text = text.split(":", 1)[0]
+    return text
+
 
 def shard_for(value: str) -> str:
     """
     Return the shard name holding an indicator.
 
     Args:
-        value: Indicator value, exactly as it appears in the feed
+        value: Canonical indicator value; see :func:`canonical`
 
     Returns:
         Two lowercase hex characters
@@ -83,7 +112,8 @@ class LookupExporter:
                     "generated_at": metadata.generated_at.isoformat(),
                     "indicators": len(entries),
                     "shards": sorted(shards),
-                    "scheme": "sha256(value) hex, first 2 characters",
+                    "scheme": "sha256(canonical value) hex, first 2 characters",
+                    "canonical": CANONICAL_RULE,
                     "example": "curl $SITE/by-indicator/$(printf %s evil.example | sha256sum | cut -c1-2).json",
                 },
                 indent=2,
@@ -115,8 +145,9 @@ class LookupExporter:
                     continue
 
                 for indicator in indicators:
+                    key = canonical(indicator.value, indicator_type)
                     entry = entries.setdefault(
-                        indicator.value,
+                        key,
                         {
                             "type": indicator_type.value,
                             "groups": [],
@@ -124,8 +155,14 @@ class LookupExporter:
                             "first_seen": None,
                             "first_seen_precision": None,
                             "references": [],
+                            "seen_as": [],
                         },
                     )
+
+                    # "212.72.189.74:21" is a real observation, not noise; the
+                    # port just cannot be part of the key.
+                    if indicator.value != key and indicator.value not in entry["seen_as"]:
+                        entry["seen_as"].append(indicator.value)
 
                     if name not in entry["groups"]:
                         entry["groups"].append(name)
@@ -152,5 +189,9 @@ class LookupExporter:
                 del entry["first_seen_precision"]
             if not entry["references"]:
                 del entry["references"]
+            if not entry["seen_as"]:
+                del entry["seen_as"]
+            else:
+                entry["seen_as"].sort()
 
         return entries

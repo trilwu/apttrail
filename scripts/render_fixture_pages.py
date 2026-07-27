@@ -20,6 +20,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from apttrail.exporters.lookup import LookupExporter
 from apttrail.exporters.slices import SliceExporter
 from apttrail.models import APTGroup, APTGroupMetadata, FeedMetadata, Indicator, IndicatorType
 
@@ -73,7 +74,11 @@ def main() -> int:
     out = Path(sys.argv[1] if len(sys.argv) > 1 else "build/fixtures")
     out.mkdir(parents=True, exist_ok=True)
 
-    SliceExporter(out).export(build(), FeedMetadata(generated_at=NOW))
+    feed = build()
+    meta = FeedMetadata(generated_at=NOW)
+    SliceExporter(out).export(feed, meta)
+    # search.html is useless without the shards it queries.
+    LookupExporter(out).export(feed, meta)
 
     written = sorted(p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file())
     print(f"Wrote {len(written)} files to {out}")
