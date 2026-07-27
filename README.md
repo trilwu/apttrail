@@ -133,6 +133,21 @@ suricata -T -c /etc/suricata/suricata.yaml -S /etc/suricata/rules/apttrail_threa
 `dataset:` lookups rather than one rule per indicator. SIDs occupy the
 `9000000+` local range, clear of Emerging Threats.
 
+Every rule carries a `content` or `dataset` match, so the multi-pattern matcher
+has something to prefilter on — CI fails the build if `suricata --engine-analysis`
+finds a rule it would have to evaluate against every packet.
+
+Repeat alerts are collapsed where that cannot cost you an indicator:
+
+| Rule | Threshold | Why |
+|---|---|---|
+| `ip` | `track by_both` | Beaconing to one C2 collapses to one alert an hour; a *different* address in the same set still alerts |
+| `http` per host/path | `track by_src` | One rule, one indicator — nothing to hide |
+| `dns`, `tls`, URI-path datasets | none | One rule covers the whole set, and a DNS query's destination is the resolver, so no `track` key tells one domain from the next. Suppressing here would drop the second domain a host contacted |
+
+If you want the DNS rules rate-limited too, that belongs in your own
+`threshold.config`, where it can be decided against your traffic.
+
 Every published rule file has been through `suricata -T` in CI before release —
 see [Verification](#verification).
 </details>

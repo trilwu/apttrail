@@ -270,6 +270,14 @@ class TestAlertVolume:
 
         assert "track by_src" in self.rule_for(text, "dns")
 
+    def test_a_dataset_rule_covering_many_paths_is_also_left_alone(self, tmp_path):
+        # Same reasoning as DNS, and it was right here only by accident until
+        # it was written down.
+        text = self.rules(tmp_path, [("/a/", IndicatorType.URL_PATH), ("/b/", IndicatorType.URL_PATH)])
+
+        rule = next(line for line in text.splitlines() if "uripaths" in line)
+        assert "threshold:" not in rule
+
     def test_every_rule_still_has_something_for_the_prefilter(self, tmp_path):
         # A rule with only pcre: and no content/dataset gives the multi-pattern
         # matcher nothing to prefilter on, so it runs against every packet.

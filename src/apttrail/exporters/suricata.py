@@ -372,6 +372,9 @@ class SuricataExporter(BaseExporter):
         if self.use_datasets:
             name = f"apttrail-{self._slug(apt_name)}-uripaths"
             dataset = self._write_dataset(name, paths, "string")
+            # Unthresholded for the same reason as the DNS dataset rule: one
+            # rule stands for every path in the set, so suppressing repeats
+            # would also suppress the *next* distinct path a host requested.
             buffer.write(
                 f"alert http $HOME_NET any -> $EXTERNAL_NET any "
                 f'(msg:"APTtrail {apt_name} - HTTP request to known malicious URI path"; '
@@ -381,10 +384,12 @@ class SuricataExporter(BaseExporter):
             return
 
         for path in paths:
+            # One rule per path here, so the threshold hides nothing.
             buffer.write(
                 f"alert http $HOME_NET any -> $EXTERNAL_NET any "
                 f'(msg:"APTtrail {apt_name} - HTTP request to {escape_msg(path)}"; '
                 f'flow:established,to_server; http.uri; content:"{escape_content(path)}"; startswith; '
+                f"{THRESHOLD_SRC}; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
 
