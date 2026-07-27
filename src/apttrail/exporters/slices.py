@@ -24,6 +24,7 @@ from itertools import groupby
 from pathlib import Path
 from typing import Any
 
+from apttrail.exporters.graph_page import render_graph_page
 from apttrail.exporters.group_pages import (
     STYLE,
     batch_anchor,
@@ -35,6 +36,7 @@ from apttrail.exporters.group_pages import (
 from apttrail.exporters.search_page import render_search_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
+from apttrail.relations import build_relations, to_graph
 
 #: Types that make sense as flat, directly consumable lists.
 FLAT_TYPES = (
@@ -267,6 +269,7 @@ class SliceExporter:
             output_dir: Directory to populate; created if absent
         """
         self.output_dir = Path(output_dir)
+        self._labels: dict[str, str] = {}
 
     def export(self, apt_groups: dict[str, APTGroup], metadata: FeedMetadata) -> dict[str, int]:
         """
@@ -300,10 +303,19 @@ class SliceExporter:
             )
             written["by_type"] += 1
 
+        merged = self._merge_by_slug(apt_groups)
+        # Which groups relate to which, worked out once over the whole feed and
+        # then handed to each actor page.
+        relations = build_relations(merged, load_profiles())
+        # Related groups are referred to by slug; the page needs their names.
+        self._labels = {
+            slug: entry.get("attack_name") or ", ".join(entry["maltrail_groups"]) for slug, entry in merged.items()
+        }
+
         index: list[dict[str, Any]] = []
         activity: list[dict[str, Any]] = []
-        for slug, entry in sorted(self._merge_by_slug(apt_groups).items()):
-            timeline = self._write_group(by_group_dir, slug, entry, generated)
+        for slug, entry in sorted(merged.items()):
+            timeline = self._write_group(by_group_dir, slug, entry, generated, relations.get(slug, []))
             index.append(self._index_entry(slug, entry))
             activity.extend(self._activity_entries(slug, entry, timeline))
             written["by_group"] += 1
@@ -311,6 +323,15 @@ class SliceExporter:
         self._write_index(index, metadata, written)
         self._write_activity(activity, metadata)
         self._write_discovery([entry["slug"] for entry in index], metadata)
+
+        graph = to_graph(merged, relations)
+        (self.output_dir / "graph.json").write_text(
+            json.dumps({"generated_at": generated, **graph}, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+
+        (self.output_dir / "graph.html").write_text(render_graph_page(graph, generated), encoding="utf-8", newline="\n")
 
         totals = {"indicators": sum(entry["total"] for entry in index)}
         (self.output_dir / "search.html").write_text(render_search_page(totals), encoding="utf-8", newline="\n")
@@ -409,7 +430,14 @@ class SliceExporter:
         banner = BANNER.format(title=title, count=len(values), url=PROJECT_URL, generated=generated)
         path.write_text(banner + "\n".join(values) + "\n", encoding="utf-8", newline="\n")
 
-    def _write_group(self, directory: Path, slug: str, entry: dict[str, Any], generated: str) -> list[dict[str, Any]]:
+    def _write_group(
+        self,
+        directory: Path,
+        slug: str,
+        entry: dict[str, Any],
+        generated: str,
+        relations: list[dict[str, Any]],
+    ) -> list[dict[str, Any]]:
         last_modified = entry["last_modified"]
         profile = load_profiles().get(entry["attack_id"])
         # Built once so the page and the JSON slice cannot drift apart.
@@ -450,6 +478,7 @@ class SliceExporter:
             # Where each batch of indicators came from: the date it appeared
             # upstream and the report it was filed under.
             "timeline": timeline,
+            "related": relations,
         }
         (directory / f"{slug}.json").write_text(
             json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
@@ -459,7 +488,7 @@ class SliceExporter:
 
         # The human-readable actor page: description, targeting, techniques and
         # the indicator timeline.
-        write_group_page(directory, slug, entry, profile, generated, timeline)
+        write_group_page(directory, slug, entry, profile, generated, timeline, relations, self._labels)
 
         # Flat domain list per group: the single most requested shape for
         # hunting one actor in DNS logs.
@@ -658,6 +687,7 @@ URLs &mdash; no account, no API key, no rate limit.</p>
 <nav><ul>
   <li><a href="search.html">Search an indicator</a></li>
   <li><a href="activity.html">Recent activity</a></li>
+  <li><a href="graph.html">How groups relate</a></li>
   <li><a href="#groups">Browse by group</a></li>
   <li><a href="#files">Whole-feed files</a></li>
 </ul></nav>

@@ -121,6 +121,8 @@ jobs:
         # Client-side IOC lookup over the shards; no backend, and nothing the
         # analyst types leaves their machine.
         cp feeds/search.html pages/
+        # How the groups relate, and the data behind it.
+        cp feeds/graph.html feeds/graph.json pages/
         cp -r feeds/by-type feeds/by-group pages/
         # Served as a real MISP feed: manifest.json + one event per group.
         cp -r feeds/misp-feed pages/

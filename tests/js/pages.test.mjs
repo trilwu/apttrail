@@ -256,6 +256,61 @@ describe('search page', () => {
   });
 });
 
+describe('relationship graph', () => {
+  let ctx;
+  before(() => {
+    ctx = open('graph.html');
+  });
+
+  test('the layout separates the nodes rather than stacking them', () => {
+    // Distance, not per-axis extent: two nodes legitimately share a y.
+    const points = [...ctx.doc.querySelectorAll('.node')].map((n) => [+n.dataset.x, +n.dataset.y]);
+    assert.ok(points.length >= 2, 'no nodes to lay out');
+
+    let closest = Infinity;
+    let furthest = 0;
+    for (let i = 0; i < points.length; i++) {
+      for (let j = i + 1; j < points.length; j++) {
+        const d = Math.hypot(points[i][0] - points[j][0], points[i][1] - points[j][1]);
+        closest = Math.min(closest, d);
+        furthest = Math.max(furthest, d);
+      }
+    }
+    assert.ok(furthest > 100, `layout collapsed: widest pair only ${furthest.toFixed(0)} apart`);
+    assert.ok(closest > 4, `two nodes stacked ${closest.toFixed(1)} apart`);
+  });
+
+  test('every edge names the evidence it rests on', () => {
+    for (const edge of ctx.doc.querySelectorAll('.edge')) {
+      assert.ok(edge.dataset.kinds, 'edge with no evidence kind');
+      assert.match(edge.dataset.detail, /infrastructure|reporting|software|technique/);
+    }
+  });
+
+  test('turning off an evidence kind hides only its edges', () => {
+    const boxes = [...ctx.doc.querySelectorAll('.legend input')];
+    const infra = boxes.find((b) => b.value === 'infrastructure');
+    boxes.forEach((b) => {
+      b.checked = b === infra;
+      b.dispatchEvent(new ctx.window.Event('change'));
+    });
+
+    const visible = [...ctx.doc.querySelectorAll('.edge')].filter((e) => !e.hidden);
+    assert.ok(visible.length > 0);
+    assert.ok(visible.every((e) => e.dataset.kinds.includes('infrastructure')));
+
+    boxes.forEach((b) => {
+      b.checked = true;
+      b.dispatchEvent(new ctx.window.Event('change'));
+    });
+  });
+
+  test('a node links to its actor page', () => {
+    const node = ctx.doc.querySelector('.node');
+    assert.ok(existsSync(`${FIXTURES}/by-group/${node.dataset.slug}.html`));
+  });
+});
+
 describe('activity page', () => {
   let ctx;
   before(() => {

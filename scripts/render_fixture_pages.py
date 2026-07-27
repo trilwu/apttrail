@@ -66,6 +66,9 @@ def build() -> dict[str, APTGroup]:
 
     quiet = APTGroup(name="QUIET", metadata=APTGroupMetadata(filename="apt_quiet.txt"))
     quiet.add_indicator(indicator("quiet.example", IndicatorType.DOMAIN, 900, old))
+    # Shares an indicator and a report with APT28, so the relationship graph
+    # has something to draw and the "related groups" panel has a row.
+    quiet.add_indicator(indicator("second.example", IndicatorType.DOMAIN, 30, recent))
 
     return {"SOFACY": apt28, "QUIET": quiet}
 

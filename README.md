@@ -56,6 +56,7 @@ curl -sLO $REL/apttrail_threat_feed_stix.json
 | Looking up one indicator from an alert | [`search.html`](https://trilwu.github.io/apttrail/search.html) or `by-indicator/<shard>.json` |
 | Reading up on an actor | [`by-group/<G-id>.html`](https://trilwu.github.io/apttrail/by-group/G0007.html) |
 | Seeing what moved this week | [`activity.html`](https://trilwu.github.io/apttrail/activity.html) / `activity.json` |
+| Asking which groups overlap | [`graph.html`](https://trilwu.github.io/apttrail/graph.html) / `graph.json` |
 | Your own tooling | `apttrail_threat_feed.json`, `.csv`, `index.json` |
 
 `weekly-YYYY-Wxx` tags are immutable snapshots if you need a fixed point in time

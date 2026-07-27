@@ -50,6 +50,9 @@ MAX_REFERENCES = 40
 #: Reports ranked in the sourcing panel.
 MAX_SOURCES = 8
 
+#: Related groups listed on an actor page before deferring to the graph.
+MAX_RELATED = 8
+
 PROJECT_URL = "https://github.com/trilwu/apttrail"
 SITE_URL = "https://trilwu.github.io/apttrail"
 ATTACK_GROUP_URL = "https://attack.mitre.org/groups/{group_id}/"
@@ -203,6 +206,16 @@ pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3p
 pre .c { color: var(--faint); }
 footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
          font-size: .82rem; color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 .98rem/1.5 var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: .74rem/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: .78rem/1.7 var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
 [hidden] { display: none !important; }
 /* "/" and Escape make the keyboard a real path through this page, so the focus
    ring has to be ours rather than whatever the browser defaults to on a dark
@@ -668,6 +681,44 @@ def _software(profile: ActorProfile | None) -> str:
     )
 
 
+def _related(related: list[dict[str, Any]], labels: dict[str, str]) -> str:
+    """
+    Other groups this one has something in common with, and what.
+
+    The evidence is named rather than reduced to a similarity score, because
+    "56 shared indicators" and "63% of published techniques in common" mean
+    very different things and a reader has to be able to tell them apart. The
+    strongest kind of evidence leads; nothing here claims two groups are the
+    same actor.
+    """
+    if not related:
+        return ""
+
+    rows = []
+    for item in related[:MAX_RELATED]:
+        slug = item["slug"]
+        name = labels.get(slug, slug)
+        why = " &middot; ".join(
+            f'<span class="ev {esc(e["kind"])}">{esc(e["detail"])}</span>' for e in item["evidence"]
+        )
+        rows.append(
+            f'<li><a href="{esc(slug)}.html">{esc(name)}</a>'
+            + (f" <span class=gidtag>{esc(slug)}</span>" if slug.startswith("G") else "")
+            + f"<div class=why>{why}</div></li>"
+        )
+
+    more = ""
+    if len(related) > MAX_RELATED:
+        more = f'<p class=note>{len(related) - MAX_RELATED} more in the <a href="../graph.html">relationship graph</a>.</p>'
+
+    return (
+        f'<h2 id=related>Related groups <span class=n>{len(related)}</span></h2>\n'
+        "<p class=note>What the sources have in common &mdash; not a claim that these are "
+        'the same actor. <a href="../graph.html">See the whole graph</a>.</p>\n'
+        f'<ul class=related>\n{"".join(rows)}\n</ul>\n{more}'
+    )
+
+
 def _reporting(batches: list[dict[str, Any]]) -> str:
     """
     Which write-ups actually account for this actor's infrastructure.
@@ -891,6 +942,8 @@ def render(
     profile: ActorProfile | None,
     generated: str,
     timeline: list[dict[str, Any]] | None = None,
+    related: list[dict[str, Any]] | None = None,
+    labels: dict[str, str] | None = None,
 ) -> str:
     """
     Render one actor page.
@@ -902,6 +955,8 @@ def render(
         generated: Feed generation timestamp
         timeline: Prebuilt batches, so the page and the JSON slice cannot
             disagree; built from the entry when omitted
+        related: Other groups sharing evidence with this one
+        labels: Slug to display name, for naming those groups
 
     Returns:
         A complete HTML document
@@ -917,6 +972,7 @@ def render(
     techniques = _techniques(slug, profile)
     software = _software(profile)
     reporting = _reporting(timeline)
+    relatives = _related(related or [], labels or {})
     reading = _further_reading(slug, entry, profile)
 
     sections = [("overview", "Overview")]
@@ -926,6 +982,8 @@ def render(
         sections.append(("software", "Software"))
     if reporting:
         sections.append(("reporting", "Principal sources"))
+    if relatives:
+        sections.append(("related", "Related groups"))
     sections.append(("timeline", "Timeline"))
     if reading:
         sections.append(("reading", "Further reading"))
@@ -971,6 +1029,8 @@ def render(
 
 {reporting}
 
+{relatives}
+
 {_timeline(slug, timeline, now)}
 
 {reading}
@@ -1000,8 +1060,14 @@ def write_group_page(
     profile: ActorProfile | None,
     generated: str,
     timeline: list[dict[str, Any]] | None = None,
+    related: list[dict[str, Any]] | None = None,
+    labels: dict[str, str] | None = None,
 ) -> Path:
     """Write one actor page and return its path."""
     path = directory / f"{slug}.html"
-    path.write_text(render(slug, entry, profile, generated, timeline), encoding="utf-8", newline="\n")
+    path.write_text(
+        render(slug, entry, profile, generated, timeline, related, labels),
+        encoding="utf-8",
+        newline="\n",
+    )
     return path

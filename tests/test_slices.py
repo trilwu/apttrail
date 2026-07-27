@@ -408,3 +408,53 @@ class TestMergingByAttackId:
         assert payload["totals"]["maltrail_groups"] == 3
         assert payload["totals"]["attack_groups"] == 1
         assert payload["totals"]["indicators"] == 4
+
+
+class TestRelations:
+    """Relatedness is only useful if the reader can see what it rests on."""
+
+    @pytest.fixture
+    def linked(self, tmp_path):
+        shared = Indicator(
+            value="shared.example",
+            indicator_type=IndicatorType.DOMAIN,
+            first_seen=datetime(2026, 2, 2, tzinfo=timezone.utc),
+            references=["https://vendor.test/both"],
+        )
+        a = APTGroup(name="ALPHA", metadata=APTGroupMetadata(filename="apt_alpha.txt", references=["https://v.test/x"]))
+        b = APTGroup(name="BETA", metadata=APTGroupMetadata(filename="apt_beta.txt", references=["https://v.test/x"]))
+        for apt in (a, b):
+            apt.add_indicator(shared)
+        a.add_indicator(Indicator(value="only-a.example", indicator_type=IndicatorType.DOMAIN))
+        SliceExporter(tmp_path).export({"ALPHA": a, "BETA": b}, FeedMetadata())
+        return tmp_path
+
+    def test_the_actor_page_names_what_is_shared(self, linked):
+        page = (linked / "by-group" / "ALPHA.html").read_text("utf-8")
+
+        assert "Related groups" in page
+        assert "BETA" in page
+        assert "1 shared indicator" in page
+
+    def test_it_does_not_claim_the_groups_are_one_actor(self, linked):
+        page = (linked / "by-group" / "ALPHA.html").read_text("utf-8")
+
+        assert "not a claim that these are the same actor" in page
+
+    def test_the_json_slice_carries_the_same_relations(self, linked):
+        payload = json.loads((linked / "by-group" / "ALPHA.json").read_text("utf-8"))
+
+        assert payload["related"][0]["slug"] == "BETA"
+        kinds = {e["kind"] for e in payload["related"][0]["evidence"]}
+        assert kinds == {"infrastructure", "reporting"}
+
+    def test_the_graph_only_holds_groups_that_connect_to_something(self, linked):
+        graph = json.loads((linked / "graph.json").read_text("utf-8"))
+
+        assert {n["slug"] for n in graph["nodes"]} == {"ALPHA", "BETA"}
+        assert len(graph["links"]) == 1
+
+    def test_a_group_with_no_relations_gets_no_panel(self, written):
+        page = (written / "by-group" / "UNMAPPED.html").read_text("utf-8")
+
+        assert "Related groups" not in page
