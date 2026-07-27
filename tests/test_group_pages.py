@@ -213,6 +213,56 @@ class TestPrincipalSources:
         assert "Principal sources" not in page
 
 
+class TestInteractionContract:
+    """
+    The script reads structure out of the page. These are the hooks it needs.
+
+    Both defects here shipped: the defang rule turned "http://x" into
+    "hxxphttp://x", and the batch date stopped being a <time> element when it
+    became a link, which silently emptied the age filter and left the CSV
+    export with no dates.
+    """
+
+    def test_defang_does_not_repeat_the_scheme(self, page):
+        assert "'hxxp$1:'" in page
+        assert "/^http(s?):/i" in page
+        assert "/^(https?):/i" not in page
+
+    def test_the_batch_date_is_machine_readable(self, page):
+        # The age filter and the CSV export both read this attribute.
+        assert '<time datetime="2026-03-21">' in page
+
+    def test_every_row_carries_its_type_for_the_chips(self, page):
+        assert '<tr data-t="domain">' in page
+        assert '<tr data-t="ipv4">' in page
+
+    def test_type_chips_cover_the_types_present(self, page):
+        assert "data-type=all" in page
+        assert 'data-type="domain"' in page
+        assert 'data-type="ipv4"' in page
+
+    def test_the_age_cutoff_is_relative_to_the_newest_indicator(self, profile):
+        # Cutting against today would empty the page for a dormant actor.
+        dormant = {"domain": {"a.example": ioc(datetime(2019, 5, 1, tzinfo=timezone.utc))}}
+        dormant["domain"]["b.example"] = ioc(datetime(2012, 5, 1, tzinfo=timezone.utc))
+
+        page = render("G0007", entry(indicators=dormant), profile, "2026-07-27")
+
+        assert 'data-recent="2017-01-01"' in page
+        assert "since 2017" in page
+
+    def test_no_age_toggle_when_everything_is_recent(self, profile):
+        recent = {"domain": {"a.example": ioc(datetime(2026, 5, 1, tzinfo=timezone.utc))}}
+
+        page = render("G0007", entry(indicators=recent), profile, "2026-07-27")
+
+        assert "id=recent" not in page
+
+    def test_an_empty_filter_result_is_explained(self, page):
+        assert "id=empty" in page
+        assert "No indicator matches" in page
+
+
 class TestNoExternalDependencies:
     """SOC networks block third-party origins and these pages get saved to disk."""
 

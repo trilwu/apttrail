@@ -161,6 +161,9 @@ table { border-collapse: collapse; width: 100%; }
 button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
          padding: .4rem .6rem; font: inherit; cursor: pointer; }
 button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: .78rem/1.5 var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
 
 ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
 ol.timeline > li { position: relative; padding: 0 0 1.9rem 1.5rem; border-left: 1px solid var(--line-firm); }
@@ -214,10 +217,25 @@ SCRIPT = """
   var q = document.getElementById('q');
   var fang = document.getElementById('defang');
   var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
   if (tools) tools.hidden = false;
 
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
   function defanged(v) {
-    return v.replace(/^(https?):/i, 'hxxp$1:').replace(/\\./g, '[.]');
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
   }
   function apply() {
     var needle = (q.value || '').trim().toLowerCase();
@@ -225,7 +243,11 @@ SCRIPT = """
     var visible = 0;
     rows.forEach(function (r) {
       var v = r.dataset.v;
-      var hit = !needle || v.toLowerCase().indexOf(needle) !== -1;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
       r.hidden = !hit;
       if (hit) visible++;
       r.querySelector('.val').textContent = bite ? defanged(v) : v;
@@ -234,24 +256,67 @@ SCRIPT = """
       li.hidden = !li.querySelector('tr:not([hidden])');
     });
     count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
   }
   q.addEventListener('input', apply);
   fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
 
   document.addEventListener('click', function (e) {
     var btn = e.target.closest('button[data-copy]');
     if (!btn) return;
-    var scope = btn.getAttribute('data-copy') === 'all'
-      ? root : btn.closest('li');
-    var text = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'))
-      .map(function (c) { return c.textContent; }).join('\\n');
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\\n');
+    }
     var done = function () {
       var was = btn.textContent;
-      btn.textContent = 'copied';
-      setTimeout(function () { btn.textContent = was; }, 1200);
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
     };
     if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
   });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\\+/g, ' ')); }
+  apply();
 })();
 """
 
@@ -616,13 +681,35 @@ def _timeline(slug: str, batches: list[dict[str, Any]], now: int) -> str:
             f'Complete: <a href="{esc(slug)}.json">{esc(slug)}.json</a>.</p>'
         )
 
+    # Chips for the types actually present, so a reader chasing DNS logs can
+    # drop the IPs without typing anything.
+    present: Counter[str] = Counter()
+    for batch in batches:
+        present.update(batch["counts"])
+    chips = "<button type=button data-type=all aria-pressed=true>all</button>"
+    chips += "".join(
+        f'<button type=button data-type="{esc(kind)}" aria-pressed=false>{esc(kind)} {count:,}</button>'
+        for kind, count in sorted(present.items(), key=lambda kv: -kv[1])
+    )
+
+    # Two years back from the newest indicator, not from today: for an actor
+    # dormant since 2019 a "recent" cut against today would empty the page.
+    newest = next((b["first_seen"] for b in batches if b["first_seen"]), "")
+    cutoff = f"{int(newest[:4]) - 2}-01-01" if newest[:4].isdigit() else ""
+    age = ""
+    if cutoff and any((b["first_seen"] or "") < cutoff for b in batches):
+        age = f"<label><input type=checkbox id=recent> since {esc(cutoff[:4])}</label>"
+
     tools = (
-        "<div class=tools id=tools hidden>"
-        '<input type=search id=q placeholder="filter indicators" aria-label="Filter indicators">'
+        f'<div class=tools id=tools hidden data-recent="{esc(cutoff)}">'
+        '<input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators">'
         "<label><input type=checkbox id=defang> defang</label>"
-        "<button type=button data-copy=all>copy shown</button>"
-        f"<span class=note><b id=shown>{shown:,}</b> rows</span>"
-        "</div>"
+        f"{age}"
+        "<button type=button data-copy=all>copy</button>"
+        "<button type=button data-copy=csv>copy CSV</button>"
+        f"<span class=note><b id=shown>{shown:,}</b> shown</span>"
+        "</div>\n"
+        f"<div class=chips id=types>{chips}</div>"
     )
 
     return (
@@ -630,6 +717,8 @@ def _timeline(slug: str, batches: list[dict[str, Any]], now: int) -> str:
         "<p class=note>Each entry is a batch of indicators that appeared upstream on one date, "
         "under the report it was filed with.</p>\n"
         f"{tools}\n{truncated}\n"
+        "<p class=note id=empty hidden>No indicator matches. Only the most recent "
+        f"{MAX_ROWS:,} are on this page &mdash; the rest are in the JSON.</p>\n"
         "<ol class=timeline id=timeline-list>\n" + "\n".join(items) + "\n</ol>"
     )
 
@@ -659,7 +748,9 @@ def _batch(batch: dict[str, Any], visible: list[tuple[str, str]], size: int, now
     if not date:
         when = "<span class=approx>date unknown</span>"
     else:
-        when = f'<a class=date href="#{anchor}">{esc(date)}</a>'
+        # The <time> is not decoration: the age filter and the CSV export both
+        # read the batch date out of it.
+        when = f'<a class=date href="#{anchor}"><time datetime="{esc(date)}">{esc(date)}</time></a>'
         if batch["precision"] == "at-or-before":
             # Upstream reset its history; these dates are a floor, not a sighting.
             when += (
@@ -672,8 +763,12 @@ def _batch(batch: dict[str, Any], visible: list[tuple[str, str]], size: int, now
     hot = " class=hot" if year is not None and year >= now - 1 else ""
 
     mixed = len(batch["counts"]) > 1
+    # data-t on every row, printed only when the batch mixes types: the filter
+    # chips need the type on each row, the reader does not.
     rows = "\n".join(
-        (f"<tr><td class=kind>{esc(kind)}</td>" if mixed else "<tr>") + f"<td class=val>{esc(value)}</td></tr>"
+        f'<tr data-t="{esc(kind)}">'
+        + (f"<td class=kind>{esc(kind)}</td>" if mixed else "")
+        + f"<td class=val>{esc(value)}</td></tr>"
         for kind, value in visible
     )
 

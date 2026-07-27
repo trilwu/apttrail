@@ -54,6 +54,10 @@ code { font: .88em var(--mono); color: var(--muted); }
 .groups th { text-align: left; font: .68rem/1.4 var(--mono); letter-spacing: .09em;
              text-transform: uppercase; color: var(--faint); font-weight: 400;
              padding: 0 .8rem .4rem 0; border-bottom: 1px solid var(--line-firm); }
+.groups th[data-col] { cursor: pointer; user-select: none; }
+.groups th[data-col]:hover { color: var(--accent); }
+.groups th[aria-sort=ascending]::after { content: " \\2191"; color: var(--accent); }
+.groups th[aria-sort=descending]::after { content: " \\2193"; color: var(--accent); }
 .groups td { padding: .45rem .8rem .45rem 0; border-bottom: 1px solid var(--line);
              vertical-align: baseline; }
 .groups td.gid { font: .84rem/1.5 var(--mono); white-space: nowrap; }
@@ -74,6 +78,50 @@ code { font: .88em var(--mono); color: var(--muted); }
 #: Batches on the activity page. A fixed count rather than a fixed number of
 #: days: never empty in a quiet week, never unbounded in a busy one.
 ACTIVITY_BATCHES = 150
+
+ACTIVITY_SCRIPT = """
+(function () {
+  var feed = document.getElementById('feed');
+  var q = document.getElementById('q');
+  var tools = document.getElementById('tools');
+  var count = document.getElementById('shown');
+  if (!feed || !q) return;
+  tools.hidden = false;
+
+  var events = Array.prototype.slice.call(feed.querySelectorAll('.event'));
+  events.forEach(function (e) { e.dataset.k = e.textContent.toLowerCase(); });
+
+  function apply() {
+    var needle = q.value.trim().toLowerCase();
+    var shown = 0;
+    events.forEach(function (e) {
+      var hit = !needle || e.dataset.k.indexOf(needle) !== -1;
+      e.hidden = !hit;
+      if (hit) shown++;
+    });
+    // A day with nothing left in it is noise.
+    Array.prototype.forEach.call(feed.querySelectorAll('.day'), function (day) {
+      day.hidden = !day.querySelector('.event:not([hidden])');
+    });
+    count.textContent = shown.toLocaleString();
+    document.getElementById('empty').hidden = shown > 0;
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\\+/g, ' ')); }
+  apply();
+})();
+"""
 
 ACTIVITY_STYLE = """
 main.solo { grid-column: 1 / -1; max-width: 58rem; }
@@ -127,16 +175,69 @@ INDEX_SCRIPT = """
     if (!r.dataset.k) { r.dataset.k = r.textContent.toLowerCase(); }
   });
 
-  q.addEventListener('input', function () {
+  var mapped = document.getElementById('mapped');
+  var active = document.getElementById('active');
+  var horizon = '';
+  if (active) {
+    var d = new Date();
+    d.setDate(d.getDate() - 90);
+    horizon = d.toISOString().slice(0, 10);
+  }
+
+  function apply() {
     var needle = q.value.trim().toLowerCase();
     var shown = 0;
     rows.forEach(function (r) {
       var hit = !needle || r.dataset.k.indexOf(needle) !== -1;
+      if (hit && mapped && mapped.checked) { hit = r.dataset.attack === '1'; }
+      if (hit && active && active.checked) { hit = (r.dataset.latest || '') >= horizon; }
       r.hidden = !hit;
       if (hit) shown++;
     });
     count.textContent = shown.toLocaleString();
+    var empty = document.getElementById('empty');
+    if (empty) { empty.hidden = shown > 0; }
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  if (mapped) mapped.addEventListener('change', apply);
+  if (active) active.addEventListener('change', apply);
+
+  // Sorting. Rows carry data-sort on the cells that are not plain text, so
+  // "52,028" and "2017-2025" sort as a number and a date rather than as
+  // whatever their rendered form happens to collate to.
+  var head = list.parentNode.tHead;
+  if (head) {
+    var order = {};
+    head.addEventListener('click', function (e) {
+      var th = e.target.closest('th[data-col]');
+      if (!th) return;
+      var col = +th.dataset.col;
+      var dir = order[col] = order[col] === 'asc' ? 'desc' : 'asc';
+      var sign = dir === 'asc' ? 1 : -1;
+      Array.prototype.forEach.call(head.querySelectorAll('th[data-col]'), function (h) {
+        h.setAttribute('aria-sort', h === th ? (dir === 'asc' ? 'ascending' : 'descending') : 'none');
+      });
+      rows.slice().sort(function (a, b) {
+        var x = a.cells[col], y = b.cells[col];
+        var xv = x.dataset.sort, yv = y.dataset.sort;
+        if (xv !== undefined && yv !== undefined) { return sign * (Number(xv) - Number(yv)); }
+        return sign * x.textContent.trim().localeCompare(y.textContent.trim());
+      }).forEach(function (r) { list.appendChild(r); });
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
   });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\\+/g, ' ')); }
+  apply();
 })();
 """
 
@@ -528,15 +629,22 @@ curl -s {SITE_URL}/by-indicator/$shard.json | jq --arg v "$IOC" '.[$v]'</pre>
 <em>fancy bear</em> or <em>G0007</em>. <em>Seen</em> is the span of first-seen
 dates, recovered from upstream history reaching back to 2014.</p>
 <div class=tools id=tools hidden>
-  <input type=search id=q placeholder="filter groups" aria-label="Filter groups">
+  <input type=search id=q placeholder="filter groups &mdash; name, alias or G-id  (press /)" aria-label="Filter groups">
+  <label><input type=checkbox id=mapped> ATT&amp;CK only</label>
+  <label><input type=checkbox id=active> active 90d</label>
   <span class=note><b id=shown>{totals["slices"]:,}</b> groups</span>
 </div>
 <table class=groups>
-<thead><tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th class=span>Seen</th><th>Files</th></tr></thead>
+<thead><tr><th data-col=0 aria-sort=none>ATT&amp;CK</th><th data-col=1 aria-sort=none>Group</th>
+<th class=n data-col=2 aria-sort=none>IOCs</th><th class=span data-col=3 aria-sort=none>Seen</th>
+<th>Files</th></tr></thead>
 <tbody id=grouplist>
 {rows}
 </tbody>
 </table>
+<p class=note id=empty hidden>No group matches. <em>Active 90d</em> uses the date an
+indicator entered Maltrail, so a long-quiet actor drops out even when its
+infrastructure is still listed.</p>
 
 <h2 id=files>Whole-feed files</h2>
 <p>Flat lists, one value per line, safe to point a blocklist at &mdash; with the
@@ -638,7 +746,16 @@ first used it. A batch appearing today can still describe old infrastructure.
 For additions and <em>removals</em> at this project's own level, see
 <a href="{PROJECT_URL}/tree/main/feeds/changes">feeds/changes</a>.</p>
 
+<div class=tools id=tools hidden>
+  <input type=search id=q placeholder="filter by group or source  (press /)" aria-label="Filter activity">
+  <span class=note><b id=shown>{len(batches):,}</b> batches</span>
+</div>
+
+<p class=note id=empty hidden>Nothing in this window matches.</p>
+
+<div id=feed>
 {"".join(days)}
+</div>
 
 <footer>
 <p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>;
@@ -648,6 +765,7 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
 </footer>
 </main>
 </div>
+<script>{ACTIVITY_SCRIPT}</script>
 </html>
 """
         (self.output_dir / "activity.html").write_text(html, encoding="utf-8", newline="\n")
@@ -717,13 +835,16 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
         if group["counts"].get("domain"):
             files.append(f'<a href="by-group/{slug}-domain.txt">domains</a>')
 
+        span = group.get("first_seen_range") or {}
+        latest = str(span.get("latest") or "")
+
         return (
-            f'<tr data-k="{key}">'
+            f'<tr data-k="{key}" data-attack="{1 if group["attack_id"] else 0}" data-latest="{self._esc(latest)}">'
             f'<td class=gid><a href="by-group/{slug}.html">'
             f'{self._esc(group["attack_id"]) if group["attack_id"] else "&mdash;"}</a></td>'
             f'<td><a class=who href="by-group/{slug}.html">{self._esc(heading)}</a>{also}</td>'
-            f'<td class=n>{group["total"]:,}</td>'
-            f"<td class=span>{self._span(group)}</td>"
+            f'<td class=n data-sort="{group["total"]}">{group["total"]:,}</td>'
+            f'<td class=span data-sort="{latest.replace("-", "") or 0}">{self._span(group)}</td>'
             f'<td class=f>{" &middot; ".join(files)}</td>'
             "</tr>"
         )
