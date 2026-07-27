@@ -256,38 +256,29 @@ describe('search page', () => {
   });
 });
 
-describe('relationship graph', () => {
+describe('relationships page', () => {
   let ctx;
   before(() => {
     ctx = open('graph.html');
   });
 
-  test('the layout separates the nodes rather than stacking them', () => {
-    // Distance, not per-axis extent: two nodes legitimately share a y.
-    const points = [...ctx.doc.querySelectorAll('.node')].map((n) => [+n.dataset.x, +n.dataset.y]);
-    assert.ok(points.length >= 2, 'no nodes to lay out');
+  test('the ranked list works with no script at all', () => {
+    // The list is server-rendered; script only filters it.
+    const raw = readFileSync(`${FIXTURES}/graph.html`, 'utf8');
+    const list = raw.split('<ul class=pairs>')[1].split('</ul>')[0];
 
-    let closest = Infinity;
-    let furthest = 0;
-    for (let i = 0; i < points.length; i++) {
-      for (let j = i + 1; j < points.length; j++) {
-        const d = Math.hypot(points[i][0] - points[j][0], points[i][1] - points[j][1]);
-        closest = Math.min(closest, d);
-        furthest = Math.max(furthest, d);
-      }
-    }
-    assert.ok(furthest > 100, `layout collapsed: widest pair only ${furthest.toFixed(0)} apart`);
-    assert.ok(closest > 4, `two nodes stacked ${closest.toFixed(1)} apart`);
+    assert.match(list, /<li data-kinds=/);
+    assert.match(list, /infrastructure|reporting|software|technique/);
   });
 
-  test('every edge names the evidence it rests on', () => {
-    for (const edge of ctx.doc.querySelectorAll('.edge')) {
-      assert.ok(edge.dataset.kinds, 'edge with no evidence kind');
-      assert.match(edge.dataset.detail, /infrastructure|reporting|software|technique/);
+  test('every row names the evidence it rests on', () => {
+    for (const row of ctx.doc.querySelectorAll('.pairs li')) {
+      assert.ok(row.dataset.kinds, 'row with no evidence kind');
+      assert.ok(row.querySelector('.ev'), 'row with no evidence text');
     }
   });
 
-  test('turning off an evidence kind hides only its edges', () => {
+  test('turning off an evidence kind hides only its rows', () => {
     const boxes = [...ctx.doc.querySelectorAll('.legend input')];
     const infra = boxes.find((b) => b.value === 'infrastructure');
     boxes.forEach((b) => {
@@ -295,9 +286,9 @@ describe('relationship graph', () => {
       b.dispatchEvent(new ctx.window.Event('change'));
     });
 
-    const visible = [...ctx.doc.querySelectorAll('.edge')].filter((e) => !e.hidden);
+    const visible = [...ctx.doc.querySelectorAll('.pairs li')].filter((r) => !r.hidden);
     assert.ok(visible.length > 0);
-    assert.ok(visible.every((e) => e.dataset.kinds.includes('infrastructure')));
+    assert.ok(visible.every((r) => r.dataset.kinds.includes('infrastructure')));
 
     boxes.forEach((b) => {
       b.checked = true;
@@ -305,9 +296,40 @@ describe('relationship graph', () => {
     });
   });
 
-  test('a node links to its actor page', () => {
-    const node = ctx.doc.querySelector('.node');
-    assert.ok(existsSync(`${FIXTURES}/by-group/${node.dataset.slug}.html`));
+  test('the neighbourhood draws the focus and its peers', () => {
+    const peers = ctx.doc.querySelectorAll('#ego g.peer');
+
+    assert.ok(peers.length >= 1, 'nothing drawn');
+    assert.equal(ctx.doc.querySelectorAll('#ego g.focus').length, 1);
+    assert.match(ctx.doc.getElementById('egocap').textContent, /related to/);
+  });
+
+  test('every peer is labelled with why it is there', () => {
+    for (const peer of ctx.doc.querySelectorAll('#ego g.peer')) {
+      assert.ok(peer.querySelector('text.name').textContent.trim(), 'peer with no name');
+      assert.ok(peer.querySelector('text.why').textContent.trim(), 'peer with no reason');
+    }
+  });
+
+  test('clicking a peer recentres on it and updates the URL', () => {
+    const peer = ctx.doc.querySelector('#ego g.peer');
+    const slug = peer.dataset.slug;
+
+    peer.dispatchEvent(new ctx.window.MouseEvent('click', { bubbles: true }));
+
+    assert.equal(ctx.doc.getElementById('focus').value, slug);
+    assert.equal(ctx.window.location.search, `?g=${slug}`);
+  });
+
+  test('the drawing is sized to the neighbourhood, not to the largest one', () => {
+    const [, , , height] = ctx.doc.getElementById('ego').getAttribute('viewBox').split(' ').map(Number);
+    const peers = ctx.doc.querySelectorAll('#ego g.peer').length;
+
+    assert.ok(height > 100, 'no height');
+    assert.ok(height <= 690, 'panel taller than the widest neighbourhood needs');
+    if (peers <= 2) {
+      assert.ok(height < 300, `${height}px of panel for ${peers} peers`);
+    }
   });
 });
 

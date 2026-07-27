@@ -1,19 +1,28 @@
 """
-The relationship graph as one picture.
+How the groups relate.
 
-Layout is computed here, at build time, not in the reader's browser. A
-force-directed simulation in JavaScript would mean shipping a physics loop,
-watching the graph writhe for two seconds on every visit, and getting a
-different picture each time - which for something people will screenshot into a
-report is the wrong property. Solved once, deterministically, the page is a
-static SVG the browser only has to filter and pan.
+The first version of this page drew all 116 groups at once with a
+force-directed layout. It was unusable, and the data says why: the graph is one
+component of 104 nodes and 194 edges in which 48 nodes have exactly one link.
+That is a fuzzball, not a picture - and at the size a browser renders it, the
+labels come out around seven pixels tall.
 
-The simulation is Fruchterman-Reingold with a deterministic start: nodes begin
-on a circle in slug order, so the same input always produces the same picture
-and a rebuild does not reshuffle a layout someone has already cited.
+So the whole-graph view is gone. What replaced it is built around the two
+questions someone actually arrives with:
+
+- *Which relationships are the strongest?* A ranked list, strongest evidence
+  first, each row naming what it rests on. Scannable, searchable, linkable, and
+  it works with no JavaScript at all.
+- *Who is this group near?* One group's immediate neighbourhood, drawn as a
+  radial: focus in the middle, neighbours around it. Ego networks here run from
+  1 to 21 nodes, which is a readable picture at any density in this corpus.
+
+A hub list stands in for community detection. Naming clusters would mean
+asserting a structure the evidence does not support; counting a group's
+relationships does not.
 """
 
-import math
+import json
 from typing import Any
 
 from apttrail.exporters.group_pages import STYLE, esc, head
@@ -22,275 +31,268 @@ from apttrail.relations import TIERS
 SITE_URL = "https://trilwu.github.io/apttrail"
 PROJECT_URL = "https://github.com/trilwu/apttrail"
 
-WIDTH, HEIGHT = 1200.0, 820.0
-ITERATIONS = 260
+#: Relationships listed before the reader is asked to filter.
+TOP_RELATIONSHIPS = 40
 
-#: Drawing order and colour, weakest evidence underneath.
-EVIDENCE_STYLE = {
-    "infrastructure": ("var(--accent)", 1.6, 0.85),
-    "reporting": ("var(--ink)", 1.1, 0.45),
-    "software": ("var(--muted)", 0.9, 0.35),
-    "technique": ("var(--muted)", 0.8, 0.22),
-}
+#: Groups in the "most connected" list.
+TOP_HUBS = 12
 
 GRAPH_STYLE = """
-main.solo { grid-column: 1 / -1; max-width: none; }
-.board { border: 1px solid var(--line-firm); border-radius: 4px; background: var(--panel);
-         margin-top: 1rem; overflow: hidden; touch-action: none; }
-svg { display: block; width: 100%; height: auto; cursor: grab; }
-svg.dragging { cursor: grabbing; }
-.edge { stroke-linecap: round; }
-.node circle { stroke: var(--bg); stroke-width: 1.5; fill: var(--muted); }
-.node text { font: 10px var(--mono); fill: var(--faint); text-anchor: middle; pointer-events: none; }
-.node.attack circle { fill: var(--accent); }
-.node:hover circle { stroke: var(--accent); stroke-width: 2.5; }
-.node:hover text { fill: var(--ink); }
-.node.dim { opacity: .12; }
-.edge.dim { opacity: .04; }
-.node.lit circle { stroke: var(--accent); stroke-width: 3; }
-.node.lit text { fill: var(--ink); font-weight: 600; }
-.legend { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: .8rem;
-          font: .78rem/1.6 var(--mono); color: var(--muted); }
-.legend label { display: flex; gap: .4rem; align-items: center; cursor: pointer; }
-.legend .swatch { width: 1.6rem; height: 0; border-top-width: 2px; border-top-style: solid; }
-#detail { margin-top: 1rem; min-height: 4rem; font: .85rem/1.7 var(--mono); }
-#detail .pair { font: 500 1rem/1.5 var(--sans); }
-#detail .ev { display: block; color: var(--muted); }
-#detail a { color: var(--ink); }
+main.solo { grid-column: 1 / -1; max-width: 62rem; }
+.pairs { list-style: none; padding: 0; margin: 1rem 0 0; }
+.pairs li { padding: .6rem 0; border-bottom: 1px solid var(--line); }
+.pairs .who { font: 500 1rem/1.5 var(--sans); }
+.pairs .who a { text-decoration: none; }
+.pairs .who a:hover { color: var(--accent); }
+.pairs .who .j { color: var(--faint); margin: 0 .45rem; }
+.pairs .gidtag { font: .72rem/1 var(--mono); color: var(--faint); margin-left: .3rem; }
+.pairs .ev { display: block; font: .78rem/1.7 var(--mono); }
+.pairs .ev.infrastructure { color: var(--accent); }
+.pairs .ev.reporting { color: var(--ink); }
+.pairs .ev.software, .pairs .ev.technique { color: var(--muted); }
+.pairs .look { float: right; font: .74rem/1.6 var(--mono); color: var(--faint);
+               background: none; border: 0; cursor: pointer; padding: 0; }
+.pairs .look:hover { color: var(--accent); }
+
+.ego { border: 1px solid var(--line-firm); border-radius: 4px; background: var(--panel);
+       margin-top: .8rem; }
+.ego svg { display: block; width: 100%; height: auto; }
+.ego .focus circle { fill: var(--accent); }
+.ego .peer circle { fill: var(--muted); }
+.ego g.n { cursor: pointer; }
+.ego g.n:hover circle { stroke: var(--accent); stroke-width: 2.5; }
+.ego g.n:hover text.name { fill: var(--accent); }
+.ego circle { stroke: var(--bg); stroke-width: 1.5; }
+.ego text.name { font: 12px var(--sans); fill: var(--ink); }
+.ego text.why { font: 9.5px var(--mono); fill: var(--faint); }
+.ego line { stroke-linecap: round; }
+.ego .empty { font: 13px var(--sans); fill: var(--muted); }
+.pick { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: 1rem; }
+.pick select, .pick input { background: var(--panel); color: inherit; border: 1px solid var(--line-firm);
+                            border-radius: 3px; padding: .45rem .6rem; font: .85rem var(--mono); }
+.hubs { list-style: none; padding: 0; margin: 1rem 0 0; columns: 2; column-gap: 2rem; }
+.hubs li { break-inside: avoid; padding: .25rem 0; font: .86rem/1.6 var(--mono); }
+.hubs .n { color: var(--faint); }
+@media (max-width: 44rem) { .hubs { columns: 1; } }
 """
 
 GRAPH_SCRIPT = """
 (function () {
-  var svg = document.getElementById('graph');
-  if (!svg) return;
-  var detail = document.getElementById('detail');
-  var box = { x: 0, y: 0, w: %(width)s, h: %(height)s };
+  var svg = document.getElementById('ego');
+  if (!svg || typeof GRAPH === 'undefined') return;
+  var picker = document.getElementById('focus');
+  var caption = document.getElementById('egocap');
 
-  function view() { svg.setAttribute('viewBox', box.x + ' ' + box.y + ' ' + box.w + ' ' + box.h); }
-
-  // Pan by dragging, zoom on wheel. Enough to read a dense corner without
-  // shipping a graph library to do it.
-  var drag = null;
-  svg.addEventListener('pointerdown', function (e) {
-    drag = { x: e.clientX, y: e.clientY };
-    svg.classList.add('dragging');
-    svg.setPointerCapture(e.pointerId);
-  });
-  svg.addEventListener('pointermove', function (e) {
-    if (!drag) return;
-    var scale = box.w / svg.clientWidth;
-    box.x -= (e.clientX - drag.x) * scale;
-    box.y -= (e.clientY - drag.y) * scale;
-    drag = { x: e.clientX, y: e.clientY };
-    view();
-  });
-  var stop = function () { drag = null; svg.classList.remove('dragging'); };
-  svg.addEventListener('pointerup', stop);
-  svg.addEventListener('pointercancel', stop);
-  svg.addEventListener('wheel', function (e) {
-    e.preventDefault();
-    var factor = e.deltaY > 0 ? 1.12 : 0.89;
-    var rect = svg.getBoundingClientRect();
-    var fx = box.x + ((e.clientX - rect.left) / rect.width) * box.w;
-    var fy = box.y + ((e.clientY - rect.top) / rect.height) * box.h;
-    box.x = fx - (fx - box.x) * factor;
-    box.y = fy - (fy - box.y) * factor;
-    box.w *= factor;
-    box.h *= factor;
-    view();
-  }, { passive: false });
-
-  document.getElementById('reset').addEventListener('click', function () {
-    box = { x: 0, y: 0, w: %(width)s, h: %(height)s };
-    view();
+  var byId = {};
+  GRAPH.nodes.forEach(function (n) { byId[n.slug] = n; });
+  var neighbours = {};
+  GRAPH.links.forEach(function (l) {
+    (neighbours[l.source] = neighbours[l.source] || []).push({ slug: l.target, evidence: l.evidence });
+    (neighbours[l.target] = neighbours[l.target] || []).push({ slug: l.source, evidence: l.evidence });
   });
 
-  var kinds = Array.prototype.slice.call(document.querySelectorAll('.legend input'));
-  var edges = Array.prototype.slice.call(svg.querySelectorAll('.edge'));
-  var nodes = Array.prototype.slice.call(svg.querySelectorAll('.node'));
-
-  function apply() {
-    var on = {};
-    kinds.forEach(function (k) { on[k.value] = k.checked; });
-    var live = {};
-    edges.forEach(function (edge) {
-      var visible = edge.dataset.kinds.split(' ').some(function (k) { return on[k]; });
-      edge.hidden = !visible;
-      if (visible) { live[edge.dataset.a] = live[edge.dataset.b] = true; }
-    });
-    nodes.forEach(function (n) { n.classList.toggle('dim', !live[n.dataset.slug]); });
-    document.getElementById('count').textContent =
-      edges.filter(function (e) { return !e.hidden; }).length.toLocaleString();
+  var COLOUR = {
+    infrastructure: 'var(--accent)', reporting: 'var(--ink)',
+    software: 'var(--muted)', technique: 'var(--muted)'
+  };
+  var WEIGHT = { infrastructure: 2.4, reporting: 1.6, software: 1.1, technique: 0.9 };
+  var ns = 'http://www.w3.org/2000/svg';
+  function make(tag, attrs, text) {
+    var el = document.createElementNS(ns, tag);
+    Object.keys(attrs).forEach(function (k) { el.setAttribute(k, attrs[k]); });
+    if (text !== undefined) { el.textContent = text; }
+    return el;
   }
-  kinds.forEach(function (k) { k.addEventListener('change', apply); });
 
-  var q = document.getElementById('q');
-  q.addEventListener('input', function () {
-    var needle = q.value.trim().toLowerCase();
-    var hit = null;
-    nodes.forEach(function (n) {
-      var match = needle && n.dataset.k.indexOf(needle) !== -1;
-      n.classList.toggle('lit', !!match);
-      if (match && !hit) { hit = n; }
+  function draw(slug) {
+    while (svg.firstChild) { svg.removeChild(svg.firstChild); }
+    var peers = (neighbours[slug] || []).slice();
+    // Strongest evidence nearest the top of the ring.
+    peers.sort(function (a, b) {
+      return (WEIGHT[b.evidence[0].kind] - WEIGHT[a.evidence[0].kind])
+        || (b.evidence[0].weight - a.evidence[0].weight);
     });
-    if (hit) {
-      // Centre on the first match rather than making the reader hunt for it.
-      var cx = +hit.dataset.x, cy = +hit.dataset.y;
-      box.x = cx - box.w / 2;
-      box.y = cy - box.h / 2;
-      view();
-    }
-  });
 
-  svg.addEventListener('click', function (e) {
-    var edge = e.target.closest('.edge');
-    if (edge) {
-      detail.innerHTML = edge.dataset.detail;
+    var W = 900;
+    // Height follows the ring, so a group with two neighbours does not get a
+    // screenful of empty panel.
+    var radius = Math.max(70, Math.min(300, 40 + peers.length * 13));
+    var H = peers.length ? radius * 2 + 90 : 150;
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    var cx = W / 2, cy = H / 2;
+
+    if (!peers.length) {
+      svg.appendChild(make('text', { x: cx, y: cy, 'text-anchor': 'middle', class: 'empty' },
+        byId[slug].label + ' has no recorded relationships.'));
+      caption.textContent = '';
       return;
     }
-    var node = e.target.closest('.node');
-    if (node) { location.href = 'by-group/' + node.dataset.slug + '.html'; }
+
+    peers.forEach(function (peer, i) {
+      var angle = (2 * Math.PI * i) / peers.length - Math.PI / 2;
+      var x = cx + radius * Math.cos(angle);
+      var y = cy + radius * Math.sin(angle);
+      var top = peer.evidence[0];
+
+      svg.appendChild(make('line', {
+        x1: cx, y1: cy, x2: x, y2: y,
+        stroke: COLOUR[top.kind], 'stroke-width': WEIGHT[top.kind],
+        opacity: top.kind === 'infrastructure' ? 0.85 : 0.4
+      }));
+
+      var g = make('g', { class: 'n peer', 'data-slug': peer.slug });
+      g.appendChild(make('circle', { cx: x, cy: y, r: 6 }));
+      // Labels flip side so they never run back across the drawing.
+      var right = Math.cos(angle) >= 0;
+      var name = make('text', {
+        x: x + (right ? 12 : -12), y: y + 4,
+        'text-anchor': right ? 'start' : 'end', class: 'name'
+      }, byId[peer.slug] ? byId[peer.slug].label : peer.slug);
+      g.appendChild(name);
+      g.appendChild(make('text', {
+        x: x + (right ? 12 : -12), y: y + 17,
+        'text-anchor': right ? 'start' : 'end', class: 'why'
+      }, peer.evidence.map(function (e) { return e.detail; }).join(' · ')));
+      svg.appendChild(g);
+    });
+
+    var focus = make('g', { class: 'n focus', 'data-slug': slug });
+    focus.appendChild(make('circle', { cx: cx, cy: cy, r: 11 }));
+    focus.appendChild(make('text', {
+      x: cx, y: cy - 20, 'text-anchor': 'middle', class: 'name'
+    }, byId[slug].label));
+    svg.appendChild(focus);
+
+    caption.textContent = peers.length + ' group' + (peers.length === 1 ? '' : 's')
+      + ' related to ' + byId[slug].label + '. Click one to centre it, or open its page from the list above.';
+  }
+
+  function focusOn(slug) {
+    if (!byId[slug]) return;
+    picker.value = slug;
+    draw(slug);
+    if (history.replaceState) { history.replaceState(null, '', '?g=' + encodeURIComponent(slug)); }
+  }
+
+  picker.addEventListener('change', function () { focusOn(picker.value); });
+  svg.addEventListener('click', function (e) {
+    var g = e.target.closest('g.n');
+    if (!g) return;
+    if (g.classList.contains('focus')) { location.href = 'by-group/' + g.dataset.slug + '.html'; }
+    else { focusOn(g.dataset.slug); }
   });
-  svg.addEventListener('mouseover', function (e) {
-    var edge = e.target.closest('.edge');
-    if (edge) { detail.innerHTML = edge.dataset.detail; }
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-focus]');
+    if (!btn) return;
+    focusOn(btn.dataset.focus);
+    var target = document.getElementById('neighbourhood');
+    if (target.scrollIntoView) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   });
 
-  view();
-  apply();
+  // Filtering the list.
+  var q = document.getElementById('q');
+  var kinds = Array.prototype.slice.call(document.querySelectorAll('.legend input'));
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.pairs li'));
+  rows.forEach(function (r) { r.dataset.k = r.textContent.toLowerCase(); });
+  function filter() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var on = {};
+    kinds.forEach(function (k) { on[k.value] = k.checked; });
+    var shown = 0;
+    rows.forEach(function (r) {
+      var hit = (!needle || r.dataset.k.indexOf(needle) !== -1)
+        && r.dataset.kinds.split(' ').some(function (k) { return on[k]; });
+      r.hidden = !hit;
+      if (hit) shown++;
+    });
+    document.getElementById('count').textContent = shown.toLocaleString();
+    document.getElementById('empty').hidden = shown > 0;
+  }
+  q.addEventListener('input', filter);
+  kinds.forEach(function (k) { k.addEventListener('change', filter); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)) {
+      e.preventDefault(); q.focus(); q.select();
+    }
+  });
+
+  var initial = /[?&]g=([^&]*)/.exec(location.search);
+  focusOn(initial && byId[decodeURIComponent(initial[1])] ? decodeURIComponent(initial[1]) : picker.value);
+  filter();
 })();
 """
 
 
-def layout(nodes: list[dict[str, Any]], links: list[dict[str, Any]]) -> dict[str, tuple[float, float]]:
-    """
-    Place the nodes with a deterministic force-directed pass.
+def _degrees(links: list[dict[str, Any]]) -> dict[str, int]:
+    degree: dict[str, int] = {}
+    for link in links:
+        degree[link["source"]] = degree.get(link["source"], 0) + 1
+        degree[link["target"]] = degree.get(link["target"], 0) + 1
+    return degree
 
-    Args:
-        nodes: Graph nodes, each with a ``slug``
-        links: Graph edges, referencing node slugs
 
-    Returns:
-        Slug to (x, y) inside the drawing area
-    """
-    count = len(nodes)
-    if count == 0:
-        return {}
-
-    # A circle in slug order, so the same feed always draws the same picture.
-    radius = min(WIDTH, HEIGHT) * 0.38
-    pos = {
-        node["slug"]: [
-            WIDTH / 2 + radius * math.cos(2 * math.pi * i / count),
-            HEIGHT / 2 + radius * math.sin(2 * math.pi * i / count),
-        ]
-        for i, node in enumerate(nodes)
-    }
-    slugs = list(pos)
-    ideal = math.sqrt(WIDTH * HEIGHT / count)
-    temperature = WIDTH / 8
-
-    for _ in range(ITERATIONS):
-        force = {slug: [0.0, 0.0] for slug in slugs}
-
-        for i, a in enumerate(slugs):
-            for b in slugs[i + 1 :]:
-                dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
-                distance = math.hypot(dx, dy) or 0.01
-                push = ideal * ideal / distance
-                ux, uy = dx / distance, dy / distance
-                force[a][0] += ux * push
-                force[a][1] += uy * push
-                force[b][0] -= ux * push
-                force[b][1] -= uy * push
-
-        for link in links:
-            a, b = link["source"], link["target"]
-            dx, dy = pos[a][0] - pos[b][0], pos[a][1] - pos[b][1]
-            distance = math.hypot(dx, dy) or 0.01
-            pull = distance * distance / ideal
-            ux, uy = dx / distance, dy / distance
-            force[a][0] -= ux * pull
-            force[a][1] -= uy * pull
-            force[b][0] += ux * pull
-            force[b][1] += uy * pull
-
-        for slug in slugs:
-            fx, fy = force[slug]
-            magnitude = math.hypot(fx, fy) or 0.01
-            step = min(magnitude, temperature)
-            pos[slug][0] = min(WIDTH - 40, max(40.0, pos[slug][0] + fx / magnitude * step))
-            pos[slug][1] = min(HEIGHT - 30, max(30.0, pos[slug][1] + fy / magnitude * step))
-
-        temperature *= 0.965
-
-    return {slug: (round(xy[0], 1), round(xy[1], 1)) for slug, xy in pos.items()}
+def _rank(link: dict[str, Any]) -> tuple[int, float]:
+    """Strongest evidence first, then by how much of it there is."""
+    top = link["evidence"][0]
+    return (TIERS[top["kind"]], -top["weight"])
 
 
 def render_graph_page(graph: dict[str, Any], generated: str) -> str:
     """
-    Render the relationship graph.
+    Render the relationships page.
 
     Args:
         graph: Nodes and links from :func:`apttrail.relations.to_graph`
         generated: Feed generation timestamp
 
     Returns:
-        A complete HTML document with the graph inlined as SVG
+        A complete HTML document
     """
     nodes, links = graph["nodes"], graph["links"]
-    places = layout(nodes, links)
     labels = {node["slug"]: node["label"] for node in nodes}
+    degree = _degrees(links)
+    ranked = sorted(links, key=_rank)
 
-    # Weakest evidence underneath, so a strong link is never hidden by a weak one.
-    ordered = sorted(links, key=lambda link: -TIERS[link["evidence"][0]["kind"]])
-    edges = []
-    for link in ordered:
+    rows = []
+    for link in ranked[:TOP_RELATIONSHIPS]:
         a, b = link["source"], link["target"]
-        if a not in places or b not in places:
-            continue
-        kinds = [item["kind"] for item in link["evidence"]]
-        colour, width, opacity = EVIDENCE_STYLE[kinds[0]]
-        detail = (
-            f'<span class=pair><a href="by-group/{esc(a)}.html">{esc(labels[a])}</a> '
-            f'&harr; <a href="by-group/{esc(b)}.html">{esc(labels[b])}</a></span>'
-            + "".join(
-                f'<span class=ev>{esc(item["kind"])} &mdash; {esc(item["detail"])}</span>' for item in link["evidence"]
-            )
+        kinds = " ".join(item["kind"] for item in link["evidence"])
+        evidence = "".join(
+            f'<span class="ev {esc(item["kind"])}">{esc(item["kind"])} &mdash; {esc(item["detail"])}</span>'
+            for item in link["evidence"]
         )
-        (x1, y1), (x2, y2) = places[a], places[b]
-        edges.append(
-            f'<line class=edge x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" '
-            f'stroke="{colour}" stroke-width="{width}" opacity="{opacity}" '
-            f'data-kinds="{esc(" ".join(kinds))}" data-a="{esc(a)}" data-b="{esc(b)}" '
-            f'data-detail="{esc(detail)}"><title>{esc(labels[a])} &harr; {esc(labels[b])}</title></line>'
+        rows.append(
+            f'<li data-kinds="{esc(kinds)}">'
+            f'<button class=look type=button data-focus="{esc(a)}">neighbourhood &rarr;</button>'
+            f'<div class=who><a href="by-group/{esc(a)}.html">{esc(labels[a])}</a>'
+            f'<span class=j>&harr;</span><a href="by-group/{esc(b)}.html">{esc(labels[b])}</a></div>'
+            f"{evidence}</li>"
         )
 
-    degree: dict[str, int] = {}
-    for link in links:
-        degree[link["source"]] = degree.get(link["source"], 0) + 1
-        degree[link["target"]] = degree.get(link["target"], 0) + 1
+    hubs = sorted(degree.items(), key=lambda kv: (-kv[1], kv[0]))[:TOP_HUBS]
+    hub_items = "".join(
+        f'<li><button class=look type=button data-focus="{esc(slug)}">{esc(labels[slug])}</button> '
+        f'<span class=n>{count} link{"s" if count != 1 else ""}</span></li>'
+        for slug, count in hubs
+    )
 
-    marks = []
-    for node in nodes:
-        slug = node["slug"]
-        x, y = places[slug]
-        # Size by how connected the group is, not by indicator count: this
-        # picture is about relationships.
-        size = 3.5 + math.sqrt(degree.get(slug, 1)) * 1.9
-        key = f"{slug} {node['label']} {node['attack_id'] or ''}".lower()
-        marks.append(
-            f'<g class="node{" attack" if node["attack_id"] else ""}" data-slug="{esc(slug)}" '
-            f'data-k="{esc(key)}" data-x="{x}" data-y="{y}">'
-            f'<circle cx="{x}" cy="{y}" r="{size:.1f}"><title>{esc(node["label"])} &mdash; '
-            f'{degree.get(slug, 0)} link{"s" if degree.get(slug, 0) != 1 else ""}</title></circle>'
-            f'<text x="{x}" y="{y - size - 4:.1f}">{esc(node["label"][:22])}</text></g>'
-        )
+    # Sorted by connectedness so the picker opens on something worth looking at.
+    options = "".join(
+        f'<option value="{esc(node["slug"])}">{esc(node["label"])} '
+        f'&mdash; {degree.get(node["slug"], 0)} link{"s" if degree.get(node["slug"], 0) != 1 else ""}</option>'
+        for node in sorted(nodes, key=lambda n: (-degree.get(n["slug"], 0), n["label"]))
+    )
 
-    legend = "".join(
-        f'<label><input type=checkbox value="{kind}" checked>'
-        f'<span class=swatch style="border-top-color:{EVIDENCE_STYLE[kind][0]}"></span>{kind}</label>'
-        for kind in TIERS
+    legend = "".join(f'<label><input type=checkbox value="{kind}" checked> {kind}</label>' for kind in TIERS)
+
+    # Only what the neighbourhood view needs, so the inlined payload stays small.
+    payload = json.dumps(
+        {
+            "nodes": [{"slug": n["slug"], "label": n["label"]} for n in nodes],
+            "links": links,
+        },
+        ensure_ascii=False,
+        separators=(",", ":"),
     )
 
     return f"""<!doctype html>
@@ -300,7 +302,7 @@ def render_graph_page(graph: dict[str, Any], generated: str) -> str:
 {head(
     "How the groups relate · APTtrail",
     f"{len(links):,} relationships between {len(nodes)} APT groups, from shared infrastructure, "
-    "shared reporting and shared tooling. Every edge names its evidence.",
+    "shared reporting and shared tooling. Every one names its evidence.",
     f"{SITE_URL}/graph.html",
 )}
 <style>{STYLE}{GRAPH_STYLE}</style>
@@ -312,32 +314,46 @@ def render_graph_page(graph: dict[str, Any], generated: str) -> str:
 
 <header class=masthead>
 <h1>How the groups relate</h1>
-<p class=lede>{len(links):,} relationships between {len(nodes)} groups. An edge means
-the sources have something in common &mdash; the same indicator, the same
+<p class=lede>{len(links):,} relationships between {len(nodes)} groups. A relationship
+means the sources have something in common &mdash; the same indicator, the same
 write-up, the same named tooling &mdash; <strong>not</strong> that the groups are
-one actor or work together. Click an edge to see exactly what it rests on.</p>
-
-<div class=tools id=tools>
-  <input type=search id=q placeholder="highlight a group" aria-label="Highlight a group">
-  <button type=button id=reset>reset view</button>
-  <span class=note><b id=count>{len(links)}</b> edges shown</span>
-</div>
-<div class=legend>{legend}</div>
+one actor or work together.</p>
 </header>
 
 <div class=grid>
 <main class=solo>
-<div class=board>
-<svg id=graph viewBox="0 0 {WIDTH:.0f} {HEIGHT:.0f}" role=img
-     aria-label="Force-directed graph of relationships between APT groups">
-{chr(10).join(edges)}
-{chr(10).join(marks)}
-</svg>
-</div>
-<div id=detail><span class=note>Hover or click an edge to see its evidence. Click a
-group to open its page. Drag to pan, scroll to zoom.</span></div>
 
-<h2>How an edge is decided</h2>
+<h2 id=strongest>Strongest relationships <span class=n>{len(links):,} total</span></h2>
+<p class=note>Ordered by how much the evidence supports a claim: shared
+infrastructure first, then shared reporting, then tooling and techniques.</p>
+<div class=tools id=tools>
+  <input type=search id=q placeholder="filter by group name  (press /)" aria-label="Filter relationships">
+  <span class=note><b id=count>{min(len(ranked), TOP_RELATIONSHIPS)}</b> shown</span>
+</div>
+<div class=legend>{legend}</div>
+<ul class=pairs>
+{"".join(rows)}
+</ul>
+<p class=note id=empty hidden>Nothing matches that filter.</p>
+<p class=note>Showing the {min(len(ranked), TOP_RELATIONSHIPS)} strongest of {len(links):,}.
+All of them, with their evidence, are in <a href="graph.json">graph.json</a>.</p>
+
+<h2 id=neighbourhood>One group's neighbourhood</h2>
+<p class=note>Everything related to a single group, which is the readable unit here
+&mdash; the full graph is one component of {len(nodes)} groups and would not be.</p>
+<div class=pick>
+  <label for=focus class=note>Centre on</label>
+  <select id=focus>{options}</select>
+</div>
+<div class=ego><svg id=ego role=img aria-label="Groups related to the selected group"></svg></div>
+<p class=note id=egocap></p>
+
+<h2 id=hubs>Most connected</h2>
+<p class=note>Not a ranking of importance &mdash; a group is here because a lot has
+been published about it that overlaps with something else.</p>
+<ul class=hubs>{hub_items}</ul>
+
+<h2>How a relationship is decided</h2>
 <p><strong>infrastructure</strong> &mdash; the same domain or address is attributed
 to both groups. The strongest signal here and a rare one: 268 of 154,910 values
 touch more than one group. Anything shared by eight or more groups is treated as
@@ -354,8 +370,8 @@ Only four pairs in the whole corpus clear the bar, and technique overlap reflect
 how much a group has been researched as much as what it does.</p>
 
 <p class=note>Attribution is inherited from Maltrail and MITRE ATT&amp;CK, not
-independently assessed, and an actor can only relate to another through what has
-been published about both. Absence of an edge is not evidence of anything.</p>
+independently assessed, and one actor can only relate to another through what has
+been published about both. Absence of a relationship is not evidence of anything.</p>
 
 <footer>
 <p>Generated {esc(generated)} &middot; rebuilt hourly &middot;
@@ -364,6 +380,7 @@ been published about both. Absence of an edge is not evidence of anything.</p>
 </main>
 </div>
 </div>
-<script>{GRAPH_SCRIPT % {"width": WIDTH, "height": HEIGHT}}</script>
+<script>var GRAPH={payload};</script>
+<script>{GRAPH_SCRIPT}</script>
 </html>
 """
