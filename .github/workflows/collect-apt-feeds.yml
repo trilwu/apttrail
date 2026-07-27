@@ -74,6 +74,22 @@ jobs:
         key: apttrail-timestamps-${{ steps.upstream.outputs.sha }}
         restore-keys: apttrail-timestamps-
 
+    # The changelog is a diff against the previous run, and the previous run's
+    # feed is a release asset rather than a commit - so a fresh checkout had
+    # nothing to compare against and every single run logged "no previous feed,
+    # skipping baseline run". The feature had never recorded one event. Pull
+    # last run's feed back down first.
+    - name: Restore the previous feed for the changelog diff
+      run: |
+        mkdir -p feeds
+        if curl -sfL -o feeds/apttrail_threat_feed.json \
+             "https://github.com/${GITHUB_REPOSITORY}/releases/download/latest/apttrail_threat_feed.json"; then
+          python -c "import json,sys; json.load(open('feeds/apttrail_threat_feed.json')); print('previous feed restored')" \
+            || { echo "previous feed unreadable, treating as first run"; rm -f feeds/apttrail_threat_feed.json; }
+        else
+          echo "no previous release yet, this run is the baseline"
+        fi
+
     - name: Collect APT indicators
       run: |
         pip install .
