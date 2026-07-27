@@ -223,3 +223,66 @@ class TestSuricataParserConstraints:
 
         assert "dns.query;" in rule_lines(content)[0]
         assert "nocase" in rule_lines(content)[0]
+
+
+class TestAlertVolume:
+    """
+    An implant beaconing every 30s is ~2,900 identical alerts per host per day.
+    Suppressing that is worth a lot - but only where suppression cannot also
+    hide a second, different indicator.
+    """
+
+    def rules(self, tmp_path, values, datasets=True):
+        apt = APTGroup(name="APT28", metadata=APTGroupMetadata(filename="apt_apt28.txt"))
+        for value, kind in values:
+            apt.add_indicator(Indicator(value=value, indicator_type=kind))
+        out = tmp_path / "feed.rules"
+        SuricataExporter(out, use_datasets=datasets).export({"APT28": apt}, FeedMetadata())
+        return out.read_text("utf-8")
+
+    def rule_for(self, text, proto):
+        return next(line for line in text.splitlines() if line.startswith(f"alert {proto} "))
+
+    def test_ip_rule_collapses_beaconing_without_hiding_a_second_c2(self, tmp_path):
+        # by_both keys on the src/dst pair: beaconing to one address collapses,
+        # a different address in the same dataset still alerts on its own.
+        text = self.rules(tmp_path, [("1.2.3.4", IndicatorType.IPV4), ("5.6.7.8", IndicatorType.IPV4)])
+
+        rule = self.rule_for(text, "ip")
+        assert "threshold:type limit, track by_both, count 1, seconds 3600" in rule
+
+    def test_http_rule_is_per_host_so_the_source_alone_is_enough(self, tmp_path):
+        text = self.rules(tmp_path, [("http://evil.example/a", IndicatorType.URL)])
+
+        assert "track by_src" in self.rule_for(text, "http")
+
+    def test_dns_dataset_rule_is_left_unthresholded_on_purpose(self, tmp_path):
+        # One rule covers the whole group's domain set and a query's
+        # destination is the resolver, so no track= key can tell one malicious
+        # domain from the next. Suppressing would drop indicators.
+        text = self.rules(tmp_path, [("a.example", IndicatorType.DOMAIN), ("b.example", IndicatorType.DOMAIN)])
+
+        assert "threshold:" not in self.rule_for(text, "dns")
+        assert "threshold:" not in self.rule_for(text, "tls")
+
+    def test_a_one_domain_rule_can_be_thresholded_because_it_hides_nothing(self, tmp_path):
+        text = self.rules(tmp_path, [("a.example", IndicatorType.DOMAIN)], datasets=False)
+
+        assert "track by_src" in self.rule_for(text, "dns")
+
+    def test_every_rule_still_has_something_for_the_prefilter(self, tmp_path):
+        # A rule with only pcre: and no content/dataset gives the multi-pattern
+        # matcher nothing to prefilter on, so it runs against every packet.
+        text = self.rules(
+            tmp_path,
+            [
+                ("a.example", IndicatorType.DOMAIN),
+                ("1.2.3.4", IndicatorType.IPV4),
+                ("http://evil.example/x", IndicatorType.URL),
+            ],
+        )
+
+        for line in text.splitlines():
+            if line.startswith("alert "):
+                assert "dataset:" in line or "content:" in line, line
+                assert "pcre:" not in line, line

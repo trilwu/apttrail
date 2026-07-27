@@ -13,6 +13,11 @@ rules that were actively harmful:
 - ``filemd5`` takes the *filename* of a hash list, not an inline hash, and the
   previous ``filemd5:!<hash>`` also negated the match. Hash rules now reference
   a sidecar list and are emitted only when hashes exist.
+
+Alert volume is the other half of "works in production". An implant beaconing
+every thirty seconds produces ~2,900 identical alerts per host per day, which
+buries everything else in the console. Suricata's ``threshold`` fixes that, but
+only where it costs nothing: see :data:`THRESHOLD` below.
 """
 
 import base64
@@ -23,6 +28,18 @@ from pathlib import Path
 
 from apttrail.exporters.base import BaseExporter
 from apttrail.models import APTGroup, FeedMetadata, Indicator, IndicatorType
+
+#: Collapse repeat alerts from one rule.
+#:
+#: ``by_both`` keys on the source *and destination* pair, so beaconing to a
+#: single C2 collapses to one alert an hour while a second, different C2 still
+#: alerts on its own. Plain ``by_src`` would hide it - which matters here
+#: because one dataset rule covers a whole group's address set.
+THRESHOLD_PAIR = "threshold:type limit, track by_both, count 1, seconds 3600"
+
+#: For rules that match exactly one indicator, the source alone is enough to
+#: key on: there is no second indicator for the rule to hide.
+THRESHOLD_SRC = "threshold:type limit, track by_src, count 1, seconds 3600"
 
 # Printable ASCII is safe inside a content: string once the three special
 # characters are escaped.
@@ -232,6 +249,14 @@ class SuricataExporter(BaseExporter):
         if self.use_datasets:
             name = f"apttrail-{self._slug(apt_name)}-domains"
             dataset = self._write_dataset(name, domains, "string")
+            # Deliberately unthresholded. One rule covers this group's whole
+            # domain set, and a DNS query's destination is the resolver, so
+            # neither by_src nor by_both distinguishes one malicious domain
+            # from the next. Suppressing here would mean a host that queried
+            # evil-one.com at 10:00 and evil-two.com at 10:05 only ever showed
+            # the first - losing an indicator to save a line of console. Rate
+            # limiting these belongs in the operator's threshold.config, where
+            # it can be decided against their own traffic.
             buffer.write(
                 f'alert dns any any -> any any (msg:"APTtrail {apt_name} - DNS query for known malicious domain"; '
                 f"dns.query; dataset:isset,{name},type string,load {dataset}; "
@@ -247,9 +272,10 @@ class SuricataExporter(BaseExporter):
         for domain in domains:
             # startswith+endswith pins the whole buffer, so neither
             # notevil.com nor evil.com.attacker.net matches evil.com.
+            # One rule per domain here, so the threshold hides nothing.
             buffer.write(
                 f'alert dns any any -> any any (msg:"APTtrail {apt_name} - DNS query for {escape_msg(domain)}"; '
-                f'dns.query; content:"{escape_content(domain)}"; nocase; startswith; endswith; '
+                f'dns.query; content:"{escape_content(domain)}"; nocase; startswith; endswith; {THRESHOLD_SRC}; '
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
 
@@ -268,7 +294,7 @@ class SuricataExporter(BaseExporter):
             dataset = self._write_dataset(name, addresses, "ip")
             buffer.write(
                 f'alert ip $HOME_NET any -> any any (msg:"APTtrail {apt_name} - traffic to known malicious IP"; '
-                f"ip.dst; dataset:isset,{name},type ip,load {dataset}; "
+                f"ip.dst; dataset:isset,{name},type ip,load {dataset}; {THRESHOLD_PAIR}; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
             return
@@ -276,7 +302,7 @@ class SuricataExporter(BaseExporter):
         for address in addresses:
             buffer.write(
                 f'alert ip $HOME_NET any -> {address} any (msg:"APTtrail {apt_name} - traffic to {escape_msg(address)}"; '
-                f"threshold:type limit, track by_src, count 1, seconds 3600; "
+                f"{THRESHOLD_SRC}; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
 
@@ -304,10 +330,12 @@ class SuricataExporter(BaseExporter):
             else:
                 described = host
 
+            # One rule, one host: keying the threshold on the source alone
+            # cannot hide a second indicator, because there is not one.
             body.write(
                 f"alert http $HOME_NET any -> $EXTERNAL_NET any "
                 f'(msg:"APTtrail {apt_name} - HTTP request to {escape_msg(described)}"; '
-                f"flow:established,to_server; {'; '.join(clauses)}; "
+                f"flow:established,to_server; {'; '.join(clauses)}; {THRESHOLD_SRC}; "
                 f"classtype:trojan-activity; sid:{self.next_sid()}; rev:1; metadata:{meta};)\n"
             )
             written += 1

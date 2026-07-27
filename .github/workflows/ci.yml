@@ -123,6 +123,30 @@ jobs:
           echo "::endgroup::"
         done
 
+    # Accepting a rule and being able to run it cheaply are different things. A
+    # rule with nothing for the multi-pattern matcher to prefilter on is
+    # evaluated against every packet, which is how a rule file that passes -T
+    # can still halve a sensor's throughput. Suricata reports this itself.
+    - name: Check every rule can be prefiltered
+      run: |
+        set -o pipefail
+        mkdir -p analysis
+        suricata --engine-analysis -c /etc/suricata/suricata.yaml \
+          -S rules-dataset/apttrail_sample.rules \
+          -l analysis \
+          --set "default-rule-path=${PWD}/rules-dataset"
+
+        report=analysis/rules_analysis.txt
+        total=$(grep -c '^== Sid' "$report" || true)
+        # Suricata names these explicitly when a rule has no prefilter to use.
+        weak=$(grep -ci 'No prefilter\|does not have a fast_pattern' "$report" || true)
+        echo "rules analysed: ${total}, without a prefilter: ${weak}"
+        if [ "${weak}" -gt 0 ]; then
+          grep -i -B4 'No prefilter\|does not have a fast_pattern' "$report" | head -40
+          echo "::error::${weak} rule(s) have nothing to prefilter on"
+          exit 1
+        fi
+
   # The README advertises a container image, so build it and check the thing
   # people actually depend on: that the ATT&CK table travels with the package.
   docker:
