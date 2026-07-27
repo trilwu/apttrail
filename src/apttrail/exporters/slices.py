@@ -33,6 +33,7 @@ from apttrail.exporters.group_pages import (
     split_url,
     write_group_page,
 )
+from apttrail.exporters.index_page import render_groups_page, render_index_page
 from apttrail.exporters.search_page import render_search_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
@@ -54,36 +55,6 @@ BANNER = "# APTtrail - {title}\n# {count} indicators | {url}\n# Generated {gener
 PROJECT_URL = "https://github.com/trilwu/apttrail"
 SITE_URL = "https://trilwu.github.io/apttrail"
 
-# The landing page shares the actor pages' tokens and base rules so the site
-# reads as one thing; only what is unique to a 314-row directory lives here.
-INDEX_STYLE = """
-h1 em { font-style: italic; color: var(--accent); }
-.masthead .lede { margin: 0 0 1.6rem; max-width: 40rem; }
-code { font: .88em var(--mono); color: var(--muted); }
-.groups { margin-top: .8rem; }
-.groups th { text-align: left; font: .68rem/1.4 var(--mono); letter-spacing: .09em;
-             text-transform: uppercase; color: var(--faint); font-weight: 400;
-             padding: 0 .8rem .4rem 0; border-bottom: 1px solid var(--line-firm); }
-.groups th[data-col] { cursor: pointer; user-select: none; }
-.groups th[data-col]:hover { color: var(--accent); }
-.groups th[aria-sort=ascending]::after { content: " \\2191"; color: var(--accent); }
-.groups th[aria-sort=descending]::after { content: " \\2193"; color: var(--accent); }
-.groups td { padding: .45rem .8rem .45rem 0; border-bottom: 1px solid var(--line);
-             vertical-align: baseline; }
-.groups td.gid { font: .84rem/1.5 var(--mono); white-space: nowrap; }
-.groups td.gid a { color: var(--accent); text-decoration: none; }
-.groups td .who { text-decoration: none; }
-.groups tr:hover td .who, .groups tr:hover td.gid a { color: var(--accent); }
-.groups td.n { text-align: right; font: .88rem/1.5 var(--mono); font-variant-numeric: tabular-nums; }
-.groups td.span { white-space: nowrap; font: .82rem/1.5 var(--mono); color: var(--muted);
-                  font-variant-numeric: tabular-nums; }
-.groups td.f { font: .78rem/1.5 var(--mono); white-space: nowrap; }
-.groups td.f a { color: var(--muted); text-decoration: none; }
-.groups td.f a:hover { color: var(--accent); }
-.groups .aka { font: .76rem/1.5 var(--mono); color: var(--faint); margin-top: .1rem; }
-.stale { color: var(--warn); }
-@media (max-width: 40rem) { .groups td.span, .groups th.span { display: none; } }
-"""
 
 #: Batches on the activity page. A fixed count rather than a fixed number of
 #: days: never empty in a quiet week, never unbounded in a busy one.
@@ -155,110 +126,6 @@ main.solo { grid-column: 1 / -1; max-width: 58rem; }
 .event .src .nosrc { color: var(--faint); font-style: italic; }
 """
 
-INDEX_SCRIPT = """
-(function () {
-  var el = document.getElementById('generated');
-  var out = document.getElementById('ago');
-  if (el && out) {
-    // generated_at is timezone-aware ("...+00:00"). Appending Z to that makes
-    // it unparseable, which is what shipped: the clock read "unknown" for
-    // every visitor. Only a naive stamp needs the suffix.
-    var raw = el.getAttribute('datetime');
-    var then = new Date(/(Z|[+-]\\d\\d:?\\d\\d)$/.test(raw) ? raw : raw + 'Z');
-    if (isNaN(then)) {
-      out.firstChild.textContent = 'unknown';
-    } else {
-      // Rendered client-side so the age is right whenever the page is opened,
-      // not whenever it was generated.
-      var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
-      out.firstChild.textContent = mins < 1 ? 'just now'
-        : mins < 60 ? mins + ' min ago'
-        : mins < 1440 ? Math.round(mins / 60) + ' h ago'
-        : Math.round(mins / 1440) + ' d ago';
-      if (mins > 180) { out.classList.add('stale'); }
-      el.textContent = then.toISOString().replace('T', ' ').replace('.000Z', '') + ' UTC';
-    }
-  }
-
-  var list = document.getElementById('grouplist');
-  var q = document.getElementById('q');
-  var tools = document.getElementById('tools');
-  var count = document.getElementById('shown');
-  if (!list || !q) return;
-  if (tools) tools.hidden = false;
-
-  // data-k carries every alias, including the ones the row does not print.
-  var rows = Array.prototype.slice.call(list.rows);
-  rows.forEach(function (r) {
-    if (!r.dataset.k) { r.dataset.k = r.textContent.toLowerCase(); }
-  });
-
-  var mapped = document.getElementById('mapped');
-  var active = document.getElementById('active');
-  var horizon = '';
-  if (active) {
-    var d = new Date();
-    d.setDate(d.getDate() - 90);
-    horizon = d.toISOString().slice(0, 10);
-  }
-
-  function apply() {
-    var needle = q.value.trim().toLowerCase();
-    var shown = 0;
-    rows.forEach(function (r) {
-      var hit = !needle || r.dataset.k.indexOf(needle) !== -1;
-      if (hit && mapped && mapped.checked) { hit = r.dataset.attack === '1'; }
-      if (hit && active && active.checked) { hit = (r.dataset.latest || '') >= horizon; }
-      r.hidden = !hit;
-      if (hit) shown++;
-    });
-    count.textContent = shown.toLocaleString();
-    var empty = document.getElementById('empty');
-    if (empty) { empty.hidden = shown > 0; }
-    if (history.replaceState) {
-      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
-    }
-  }
-  q.addEventListener('input', apply);
-  if (mapped) mapped.addEventListener('change', apply);
-  if (active) active.addEventListener('change', apply);
-
-  // Sorting. Rows carry data-sort on the cells that are not plain text, so
-  // "52,028" and "2017-2025" sort as a number and a date rather than as
-  // whatever their rendered form happens to collate to.
-  var head = list.parentNode.tHead;
-  if (head) {
-    var order = {};
-    head.addEventListener('click', function (e) {
-      var th = e.target.closest('th[data-col]');
-      if (!th) return;
-      var col = +th.dataset.col;
-      var dir = order[col] = order[col] === 'asc' ? 'desc' : 'asc';
-      var sign = dir === 'asc' ? 1 : -1;
-      Array.prototype.forEach.call(head.querySelectorAll('th[data-col]'), function (h) {
-        h.setAttribute('aria-sort', h === th ? (dir === 'asc' ? 'ascending' : 'descending') : 'none');
-      });
-      rows.slice().sort(function (a, b) {
-        var x = a.cells[col], y = b.cells[col];
-        var xv = x.dataset.sort, yv = y.dataset.sort;
-        if (xv !== undefined && yv !== undefined) { return sign * (Number(xv) - Number(yv)); }
-        return sign * x.textContent.trim().localeCompare(y.textContent.trim());
-      }).forEach(function (r) { list.appendChild(r); });
-    });
-  }
-
-  document.addEventListener('keydown', function (e) {
-    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
-    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
-    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
-  });
-
-  var initial = /[?&]q=([^&]*)/.exec(location.search);
-  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\\+/g, ' ')); }
-  apply();
-})();
-"""
-
 
 class SliceExporter:
     """Writes per-type and per-group slices under an output directory."""
@@ -270,6 +137,8 @@ class SliceExporter:
         """
         self.output_dir = Path(output_dir)
         self._labels: dict[str, str] = {}
+        self._stats: dict[str, Any] = {"indicators": 0, "sourced": 0, "dated": 0, "earliest": None, "relationships": 0}
+        self._sample: dict[str, Any] | None = None
 
     def export(self, apt_groups: dict[str, APTGroup], metadata: FeedMetadata) -> dict[str, int]:
         """
@@ -319,6 +188,11 @@ class SliceExporter:
             index.append(self._index_entry(slug, entry))
             activity.extend(self._activity_entries(slug, entry, timeline))
             written["by_group"] += 1
+
+        # Recomputed every build, so the landing page can never claim a
+        # coverage figure the feed has stopped supporting.
+        self._stats = self._feed_stats(merged, relations)
+        self._sample = self._worked_example(merged)
 
         self._write_index(index, metadata, written)
         self._write_activity(activity, metadata)
@@ -623,146 +497,91 @@ class SliceExporter:
         )
         self._write_html_index(payload)
 
+    @staticmethod
+    def _feed_stats(merged: dict[str, dict[str, Any]], relations: dict[str, list[dict[str, Any]]]) -> dict[str, Any]:
+        """
+        The counts the landing page makes claims from.
+
+        Computed over distinct values rather than per-group occurrences: an
+        indicator attributed to two actors is one indicator, and counting it
+        twice would inflate every percentage on the page.
+        """
+        sourced: set[str] = set()
+        dated: set[str] = set()
+        every: set[str] = set()
+        earliest = None
+
+        for entry in merged.values():
+            for values in entry["indicators"].values():
+                for value, record in values.items():
+                    every.add(value)
+                    if record.get("references"):
+                        sourced.add(value)
+                    seen = record.get("first_seen")
+                    if seen:
+                        dated.add(value)
+                        if earliest is None or seen < earliest:
+                            earliest = seen
+
+        return {
+            "indicators": len(every),
+            "sourced": len(sourced),
+            "dated": len(dated),
+            "earliest": earliest.date().isoformat() if earliest else None,
+            "relationships": sum(len(items) for items in relations.values()) // 2,
+        }
+
+    @staticmethod
+    def _worked_example(merged: dict[str, dict[str, Any]]) -> dict[str, Any] | None:
+        """
+        Pick a real indicator to show the landing page's example lookup with.
+
+        Deterministic, and drawn from the feed being built: a hardcoded example
+        would eventually describe something the feed no longer contains, which
+        is the one thing a page whose whole point is provenance cannot do.
+        """
+        best: tuple[str, str, dict[str, Any]] | None = None
+        for slug in sorted(merged):
+            entry = merged[slug]
+            if not entry.get("attack_id"):
+                continue
+            for value, record in sorted(entry["indicators"].get(IndicatorType.DOMAIN.value, {}).items()):
+                # Wants all three: a date, a source, and a short enough value
+                # that the rendered JSON does not wrap four times.
+                if record.get("first_seen") and record.get("references") and len(value) <= 24:
+                    best = (slug, value, record)
+                    break
+            if best:
+                break
+
+        if not best:
+            return None
+
+        slug, value, record = best
+        entry = merged[slug]
+        return {
+            "value": value,
+            "entry": {
+                "type": IndicatorType.DOMAIN.value,
+                "groups": sorted(entry["maltrail_groups"]),
+                "attack_ids": [entry["attack_id"]],
+                "first_seen": record["first_seen"].date().isoformat(),
+                "references": record["references"][:1],
+            },
+        }
+
     def _write_html_index(self, payload: dict[str, Any]) -> None:
         """
-        Write the landing page.
+        Write the landing page and the group directory.
 
-        This is the first thing a responder sees, and most of them arrive with
-        one of two errands: *I have a name, give me its indicators*, or *I have
-        an indicator, tell me whose it is*. Both are answered above the fold -
-        the second by a command they can copy, the first by a filter over every
-        group that matches on ATT&CK id, name and alias, because analysts are
-        handed vendor names like "Fancy Bear", not G-ids.
+        They used to be one file, in which the 314-row table was 87% of the
+        bytes and the reason to care about any of it was prose above the fold.
         """
-        totals = payload["totals"]
-        groups = sorted(payload["groups"], key=lambda g: -g["total"])
-
-        rows = "\n".join(self._index_row(g) for g in groups)
-
-        lists = " &middot; ".join(
-            f'<a href="by-type/{t.value}.txt">{t.value}.txt</a>'
-            for t in FLAT_TYPES
-            if (self.output_dir / "by-type" / f"{t.value}.txt").exists()
+        rows = "\n".join(self._index_row(g) for g in sorted(payload["groups"], key=lambda g: -g["total"]))
+        (self.output_dir / "groups.html").write_text(render_groups_page(payload, rows), encoding="utf-8", newline="\n")
+        (self.output_dir / "index.html").write_text(
+            render_index_page(payload, self._stats, self._sample), encoding="utf-8", newline="\n"
         )
-
-        generated = self._esc(payload["generated_at"])
-        coverage = round(100 * totals["maltrail_groups_mapped_to_attack"] / max(totals["maltrail_groups"], 1))
-
-        html = f"""<!doctype html>
-<html lang=en>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-{head(
-    "APTtrail · APT indicators with ATT&CK attribution",
-    f"{totals['indicators']:,} APT indicators across {totals['maltrail_groups']} groups, each carrying the actor "
-    f"it belongs to and its MITRE ATT&CK id. Static files on stable URLs, no API key.",
-    f"{SITE_URL}/",
-)}
-<style>{STYLE}{INDEX_STYLE}</style>
-<div class=wrap>
-<div class=topbar>
-  <span>APTtrail</span>
-  <a href="{PROJECT_URL}">source &amp; docs</a>
-</div>
-
-<header class=masthead>
-<h1>APT indicators, <em>attributed</em></h1>
-<p class=lede>Every indicator arrives tagged with the group it belongs to and,
-where MITRE tracks that group, its <code>Gxxxx</code> id. Plain files on stable
-URLs &mdash; no account, no API key, no rate limit.</p>
-
-<dl class=stats>
-<div><dt>Indicators</dt><dd>{totals["indicators"]:,}</dd></div>
-<div><dt>APT groups</dt><dd>{totals["maltrail_groups"]:,}</dd></div>
-<div><dt>ATT&amp;CK mapped</dt><dd>{totals["maltrail_groups_mapped_to_attack"]:,}
-  <small>{coverage}% &rarr; {totals["attack_groups"]} sets</small></dd></div>
-<div><dt>Updated</dt><dd id=ago>&hellip;
-  <small><time id=generated datetime="{generated}">{generated}</time></small></dd></div>
-</dl>
-</header>
-
-<div class=grid>
-<aside>
-<h3>Start here</h3>
-<nav><ul>
-  <li><a href="search.html">Search an indicator</a></li>
-  <li><a href="activity.html">Recent activity</a></li>
-  <li><a href="graph.html">How groups relate</a></li>
-  <li><a href="#groups">Browse by group</a></li>
-  <li><a href="#files">Whole-feed files</a></li>
-</ul></nav>
-
-<h3>Formats</h3>
-<p class=note>MISP feed, STIX 2.1 bundle, Suricata rules with datasets, Sigma,
-CSV and JSON. <a href="{PROJECT_URL}#per-tool-setup">All of them</a>.</p>
-</aside>
-
-<main>
-<h2 id=recent>Recent activity <span class=n>what moved</span></h2>
-<p>Every other view here is keyed on an actor, which only helps a reader who
-already has a name. <a href="activity.html">Recent activity</a> is the view for
-one who does not: the newest batches of indicators across every group, by day,
-each linked to the report that published it.</p>
-
-<h2 id=lookup>Look up one indicator <span class=n>an alert just fired</span></h2>
-<p><a href="search.html">Search it here</a> &mdash; the lookup runs in your
-browser, so nothing you paste is sent anywhere. Or build the URL yourself:
-indicators are sharded by <code>sha256</code> of their canonical form, and the
-reply carries the actor, its ATT&amp;CK id, when the indicator was first seen
-and the report it came from.</p>
-<pre><span class=c># what do you know about this domain?</span>
-IOC=evil.example
-shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)
-curl -s {SITE_URL}/by-indicator/$shard.json | jq --arg v "$IOC" '.[$v]'</pre>
-
-<h2 id=groups>By group <span class=n>{totals["slices"]:,} profiles</span></h2>
-<p class=note>Filter matches ATT&amp;CK id, name and alias &mdash; type
-<em>fancy bear</em> or <em>G0007</em>. <em>Seen</em> is the span of first-seen
-dates, recovered from upstream history reaching back to 2014.</p>
-<div class=tools id=tools hidden>
-  <input type=search id=q placeholder="filter groups &mdash; name, alias or G-id  (press /)" aria-label="Filter groups">
-  <label><input type=checkbox id=mapped> ATT&amp;CK only</label>
-  <label><input type=checkbox id=active> active 90d</label>
-  <span class=note><b id=shown>{totals["slices"]:,}</b> groups</span>
-</div>
-<table class=groups>
-<thead><tr><th data-col=0 aria-sort=none>ATT&amp;CK</th><th data-col=1 aria-sort=none>Group</th>
-<th class=n data-col=2 aria-sort=none>IOCs</th><th class=span data-col=3 aria-sort=none>Seen</th>
-<th>Files</th></tr></thead>
-<tbody id=grouplist>
-{rows}
-</tbody>
-</table>
-<p class=note id=empty hidden>No group matches. <em>Active 90d</em> uses the date an
-indicator entered Maltrail, so a long-quiet actor drops out even when its
-infrastructure is still listed.</p>
-
-<h2 id=files>Whole-feed files</h2>
-<p>Flat lists, one value per line, safe to point a blocklist at &mdash; with the
-caveat that these are historical indicators, not a live blocklist.</p>
-<p class=note>{lists} &middot; <a href="index.json">index.json</a> &middot;
-<a href="misp-feed/manifest.json">misp-feed/</a></p>
-<pre><span class=c># every domain APT28 has been seen using</span>
-curl -sL {SITE_URL}/by-group/G0007-domain.txt</pre>
-
-<footer>
-<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>;
-attribution from <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> and the
-<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a>, inherited rather
-than independently assessed. Historical indicators: treat a hit as a lead to
-triage, not proof of compromise.</p>
-<p>Rebuilt hourly &middot; <a href="{PROJECT_URL}">source</a></p>
-</footer>
-</main>
-</div>
-</div>
-<script>{INDEX_SCRIPT}</script>
-</html>
-"""
-        (self.output_dir / "index.html").write_text(html, encoding="utf-8", newline="\n")
-
-    #: Alternative names shown under a group. The rest stay searchable.
-    VISIBLE_ALIASES = 6
 
     def _write_activity(self, activity: list[dict[str, Any]], metadata: FeedMetadata) -> None:
         """
@@ -814,7 +633,7 @@ triage, not proof of compromise.</p>
     f"{SITE_URL}/activity.html",
 )}
 <link rel=alternate type="application/atom+xml" title="APTtrail recent activity" href="activity.xml">
-<style>{STYLE}{INDEX_STYLE}{ACTIVITY_STYLE}</style>
+<style>{STYLE}{ACTIVITY_STYLE}</style>
 <div class=wrap>
 <div class=topbar>
   <a href="index.html">&larr; APTtrail</a>
@@ -922,7 +741,9 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
         finds by searching for the actor's name.
         """
         day = metadata.generated_at.date().isoformat()
-        urls = [f"{SITE_URL}/", f"{SITE_URL}/activity.html"]
+        urls = [f"{SITE_URL}/"] + [
+            f"{SITE_URL}/{page}" for page in ("groups.html", "search.html", "activity.html", "graph.html")
+        ]
         urls += [f"{SITE_URL}/by-group/{slug}.html" for slug in slugs]
 
         body = "\n".join(f"  <url><loc>{self._xml(url)}</loc><lastmod>{day}</lastmod></url>" for url in urls)
@@ -975,6 +796,9 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
             f"<div class=src>{sources}</div>"
             "</div>"
         )
+
+    #: Alternative names shown under a group. The rest stay searchable.
+    VISIBLE_ALIASES = 6
 
     def _index_row(self, group: dict[str, Any]) -> str:
         """

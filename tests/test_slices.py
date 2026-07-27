@@ -168,12 +168,12 @@ class TestIndex:
         assert entry["counts"] == {"domain": 2, "ipv4": 1}
 
 
-class TestLandingPage:
+class TestGroupDirectory:
     """Most arrivals hold a vendor name, not an ATT&CK id."""
 
     @pytest.fixture
     def page(self, written):
-        return (written / "index.html").read_text("utf-8")
+        return (written / "groups.html").read_text("utf-8")
 
     def test_an_alias_that_is_not_printed_is_still_searchable(self, tmp_path):
         # APT28 has 24 aliases; printing them all would drown the table, but a
@@ -182,7 +182,7 @@ class TestLandingPage:
         apt = group("SOFACY", [("a.example", IndicatorType.DOMAIN)], attack_name="APT28", aliases=many)
         SliceExporter(tmp_path).export({"SOFACY": apt}, FeedMetadata())
 
-        page = (tmp_path / "index.html").read_text("utf-8")
+        page = (tmp_path / "groups.html").read_text("utf-8")
         row = page.split("<tbody id=grouplist>")[1]
         key = row.split('data-k="')[1].split('"')[0]
         printed = row.split("<div class=aka>")[1].split("</div>")[0]
@@ -211,7 +211,7 @@ class TestLandingPage:
         actor = (written / "by-group" / "G0007.html").read_text("utf-8")
 
         assert "--accent" in page and "--accent" in actor
-        assert "class=stats" in page and "class=stats" in actor
+        assert "--serif" in page and "--serif" in actor
 
     def test_the_filter_is_hidden_until_script_reveals_it(self, page):
         assert "id=tools hidden" in page
@@ -306,13 +306,13 @@ class TestLinks:
     """Text that looks clickable and is not reads as a broken page."""
 
     def test_the_group_name_and_id_both_open_the_profile(self, written):
-        page = (written / "index.html").read_text("utf-8")
+        page = (written / "groups.html").read_text("utf-8")
 
         assert '<td class=gid><a href="by-group/G0007.html">G0007</a></td>' in page
         assert '<a class=who href="by-group/G0007.html">APT28</a>' in page
 
     def test_an_unmapped_group_still_has_a_clickable_cell(self, written):
-        page = (written / "index.html").read_text("utf-8")
+        page = (written / "groups.html").read_text("utf-8")
 
         assert '<a href="by-group/UNMAPPED.html">&mdash;</a>' in page
 
@@ -458,3 +458,67 @@ class TestRelations:
         page = (written / "by-group" / "UNMAPPED.html").read_text("utf-8")
 
         assert "Related groups" not in page
+
+
+class TestLandingPage:
+    """
+    The old index was 87% a 314-row table, with the reason to care about any of
+    it as prose in front. The directory moved; the landing page argues.
+    """
+
+    @pytest.fixture
+    def site(self, tmp_path):
+        # Dated and sourced, so the page has something real to prove itself with.
+        apt = APTGroup(
+            name="APT28",
+            metadata=APTGroupMetadata(filename="apt_apt28.txt", attack_id="G0007", attack_name="APT28"),
+        )
+        apt.add_indicator(
+            Indicator(
+                value="evil.example",
+                indicator_type=IndicatorType.DOMAIN,
+                first_seen=datetime(2026, 3, 21, tzinfo=timezone.utc),
+                references=["https://vendor.test/report"],
+            )
+        )
+        SliceExporter(tmp_path).export({"APT28": apt}, FeedMetadata())
+        return tmp_path
+
+    @pytest.fixture
+    def page(self, site):
+        return (site / "index.html").read_text("utf-8")
+
+    def test_the_directory_is_no_longer_the_landing_page(self, page):
+        assert "<tbody id=grouplist>" not in page
+        assert 'href="groups.html"' in page
+
+    def test_it_leads_with_the_thing_that_is_different(self, page):
+        assert "whose" in page.split("</h1>")[0]
+
+    def test_it_proves_the_claim_with_a_real_lookup(self, page):
+        # A response body with a real report URL in it, not a description of one.
+        assert "class=proof" in page
+        assert "by-indicator" in page
+        assert "references" in page
+
+    def test_the_worked_example_is_an_indicator_the_feed_actually_holds(self, site, page):
+        # Hardcoding one would eventually describe something the feed dropped,
+        # which is the one thing a page about provenance cannot do.
+        shown = re.search(r"IOC=(\S+)", page).group(1)
+
+        listed = (site / "by-type" / "domain.txt").read_text("utf-8").splitlines()
+        assert shown in listed
+        assert "vendor.test/report" in page
+
+    def test_every_number_on_it_counts_the_same_things(self, page):
+        # The header said 155,190 and a value block said 154,910 once. On one
+        # page, that is just a reason not to believe either.
+        headline = re.search(r"<dt>Indicators</dt><dd>([\d,]+)</dd>", page).group(1)
+        detail = re.search(r"<b>([\d,]+) of ([\d,]+)</b>", page)
+
+        assert detail.group(2) == headline
+
+    def test_the_entry_points_are_reachable(self, page, site):
+        for target in ("search.html", "groups.html", "activity.html"):
+            assert f'href="{target}"' in page
+            assert (site / target).exists()

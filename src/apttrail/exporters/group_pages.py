@@ -1005,7 +1005,7 @@ def render(
 <style>{STYLE}</style>
 <div class=wrap>
 <div class=topbar>
-  <a href="../index.html">&larr; All groups</a>
+  <a href="../groups.html">&larr; All actors</a>
   <a href="../activity.html">Recent activity</a>
 </div>
 

@@ -161,11 +161,11 @@ describe('actor page', () => {
   });
 });
 
-describe('landing page', () => {
+describe('group directory', () => {
   let ctx;
   const rows = () => ctx.doc.querySelectorAll('#grouplist tr:not([hidden])');
   before(() => {
-    ctx = open('index.html');
+    ctx = open('groups.html');
   });
 
   test('an alias the row does not print is still searchable', () => {
@@ -199,8 +199,21 @@ describe('landing page', () => {
     toggle(ctx.doc.getElementById('mapped'), false);
   });
 
+});
+
+describe('landing page', () => {
+  let ctx;
+  before(() => {
+    ctx = open('index.html');
+  });
+
   test('freshness is rendered client-side', () => {
     assert.match(ctx.doc.getElementById('ago').textContent, /ago|just now/);
+  });
+
+  test('the directory is one click away, not the page itself', () => {
+    assert.equal(ctx.doc.getElementById('grouplist'), null);
+    assert.ok(ctx.doc.querySelector('a[href="groups.html"]'));
   });
 });
 

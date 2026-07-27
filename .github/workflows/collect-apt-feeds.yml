@@ -111,7 +111,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         mkdir -p pages
-        cp feeds/index.html feeds/index.json pages/
+        cp feeds/index.html feeds/index.json feeds/groups.html pages/
         # The feed-wide "what moved recently" view, for a reader who does not
         # already have an actor name to look up, plus its Atom feed - the
         # mechanism by which this gets checked daily rather than found once.
