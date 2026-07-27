@@ -134,8 +134,8 @@ class TestTimeline:
         assert "<td class=kind>domain</td>" not in page
 
     def test_type_totals_and_full_lists_are_still_reachable(self, page):
-        assert "domain 3" in page
-        assert "ipv4 1" in page
+        assert "<tr><td>domain</td><td class=n>3</td>" in page
+        assert "<tr><td>ipv4</td><td class=n>1</td>" in page
         assert 'href="G0007.json"' in page
         assert 'href="G0007-domain.txt"' in page
 
@@ -144,7 +144,7 @@ class TestTimeline:
         page = render("G0007", entry(indicators={"domain": many}), profile, "now")
 
         assert f"Showing the {MAX_ROWS:,} most recent of {MAX_ROWS + 50:,}" in page
-        assert f"and {50:,} more in this batch" in page
+        assert f"{50:,} more in this batch" in page
         assert 'href="G0007.json"' in page
 
     def test_an_at_or_before_date_is_not_presented_as_a_sighting(self, profile):
@@ -159,6 +159,81 @@ class TestTimeline:
         assert "may be older" in page
 
 
+class TestTriageHeader:
+    """The numbers a responder needs before deciding to read any further."""
+
+    def test_counts_indicators_and_distinct_reports(self, page):
+        assert "Indicators" in page and "Source reports" in page
+        assert ">2</dd>" in page  # two distinct reports across the batches
+
+    def test_shows_how_old_the_newest_indicator_is(self, page):
+        # "2026-03-21" alone does not answer "is this actor current?".
+        assert "Newest indicator" in page
+        assert "this year" in page
+        # And each batch carries its own age, so a 2019 entry reads as stale.
+        assert "7 yrs ago" in page
+
+    def test_activity_span_is_year_to_year(self, page):
+        assert "2019&ndash;2026" in page
+
+    def test_year_histogram_marks_recent_activity(self, page):
+        assert "class=spark" in page
+        assert 'title="2019: 1 indicators"' in page
+
+    def test_a_single_year_group_gets_no_histogram(self, profile):
+        one_year = {"domain": {"a.example": ioc(datetime(2026, 1, 1, tzinfo=timezone.utc))}}
+
+        page = render("G0007", entry(indicators=one_year), profile, "2026-07-27")
+
+        assert "<span" not in page.split("spark-axis")[0].split("class=spark")[-1]
+
+
+class TestPrincipalSources:
+    """A flat list of references says nothing about which one carries weight."""
+
+    def test_ranks_reports_by_how_many_indicators_they_brought(self, profile):
+        weighted = {
+            "domain": {
+                "a.example": ioc(datetime(2026, 3, 1, tzinfo=timezone.utc), references=["https://big.test/r"]),
+                "b.example": ioc(datetime(2026, 3, 1, tzinfo=timezone.utc), references=["https://big.test/r"]),
+                "c.example": ioc(datetime(2025, 1, 1, tzinfo=timezone.utc), references=["https://small.test/r"]),
+            }
+        }
+
+        page = render("G0007", entry(indicators=weighted), profile, "2026-07-27")
+        panel = page.split("id=reporting")[1].split("</ul>")[0]
+
+        assert panel.index("big.test") < panel.index("small.test")
+
+    def test_omitted_when_nothing_is_sourced(self, profile):
+        bare = {"domain": {"a.example": ioc(datetime(2026, 1, 1, tzinfo=timezone.utc))}}
+
+        page = render("G0007", entry(indicators=bare), profile, "2026-07-27")
+
+        assert "Principal sources" not in page
+
+
+class TestNoExternalDependencies:
+    """SOC networks block third-party origins and these pages get saved to disk."""
+
+    def test_nothing_is_fetched_from_another_origin(self, page):
+        body = page.split("<style>")[1]
+        assert "@import" not in body
+        assert "fonts.googleapis" not in page
+        assert "<link" not in page
+        assert "<script src" not in page
+
+    def test_the_page_is_readable_without_script(self, page):
+        without_script = page.split("<script>")[0]
+
+        assert "old.example" in without_script
+        assert "vendor.test" in without_script
+
+    def test_script_only_conveniences_start_hidden(self, page):
+        # The filter box is useless without script, so script reveals it.
+        assert "class=tools id=tools hidden" in page
+
+
 class TestPerIndicatorSource:
     """The report an indicator was filed under is what explains why it is here."""
 
@@ -171,8 +246,10 @@ class TestPerIndicatorSource:
         # with everything else at the bottom of the page.
         assert page.index("2026-write-up") < page.index("old.example")
 
-    def test_link_labels_drop_the_scheme(self, page):
-        assert ">vendor.test/2026-write-up<" in page
+    def test_link_labels_split_host_from_path(self, page):
+        # The host is what an analyst recognises; the path is context.
+        assert ">vendor.test</span>" in page
+        assert ">/2026-write-up</span>" in page
 
     def test_indicators_from_different_reports_are_separate_batches(self):
         same_day = {
@@ -187,7 +264,7 @@ class TestPerIndicatorSource:
         assert [b["references"] for b in batches] == [["https://two.test/b"], ["https://one.test/a"]]
 
     def test_a_batch_with_no_reference_says_so_rather_than_leaving_a_gap(self, page):
-        assert "No upstream reference for this batch" in page
+        assert "no upstream reference for this batch" in page
 
 
 class TestReferences:
