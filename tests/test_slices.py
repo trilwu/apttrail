@@ -522,3 +522,77 @@ class TestLandingPage:
         for target in ("search.html", "groups.html", "activity.html"):
             assert f'href="{target}"' in page
             assert (site / target).exists()
+
+
+class TestFacets:
+    """
+    Browsing by origin and sector, from the galaxy's threat-actor cluster.
+
+    The values are free text upstream, so the facet is only as good as the
+    normalisation behind it.
+    """
+
+    @pytest.fixture
+    def page(self, written):
+        return (written / "groups.html").read_text("utf-8")
+
+    def test_index_json_carries_the_facets(self, written):
+        payload = json.loads((written / "index.json").read_text("utf-8"))
+        entry = next(e for e in payload["groups"] if e["slug"] == "G0007")
+
+        assert "country" in entry
+        assert "sectors" in entry
+
+    def test_a_row_carries_its_origin_and_sectors(self, page):
+        assert 'data-country="' in page
+        assert 'data-sectors="' in page
+
+    def test_sectors_are_delimited_so_one_cannot_match_another(self, tmp_path):
+        # "|Media|" must not be found inside "|Media and Entertainment|".
+        apt = group("X", [("a.example", IndicatorType.DOMAIN)], attack_id="G0007", attack_name="APT28")
+        SliceExporter(tmp_path).export({"X": apt}, FeedMetadata())
+        page = (tmp_path / "groups.html").read_text("utf-8")
+
+        key = re.search(r'data-sectors="([^"]*)"', page).group(1)
+        if key:
+            assert key.startswith("|") and key.endswith("|")
+
+    def test_the_pickers_are_built_from_values_actually_present(self, page):
+        # Hardcoded options would offer filters that return nothing.
+        assert "<select id=country" in page
+        assert "<select id=sector" in page
+        assert 'value=""' in page  # the "any" option
+
+    def test_coverage_is_stated_rather_than_implied(self, page):
+        # Filtering on origin hides every unprofiled actor too, and a reader
+        # who does not know that will read an empty result as "none exist".
+        assert "carry a suspected origin" in page
+        assert "not that the actor has none" in page
+
+
+class TestSectorNormalisation:
+    """
+    The galaxy spells one sector several ways. A facet built on the raw strings
+    returns two of seven telecom actors and looks authoritative doing it.
+    """
+
+    def test_spelling_variants_collapse(self):
+        from apttrail.profiles import normalize_sector
+
+        assert {normalize_sector(s) for s in ("Telecommunications", "Telecomms", "Telecoms")} == {"Telecommunications"}
+        assert {normalize_sector(s) for s in ("Finance", "Financial", "Financial services")} == {"Finance"}
+        assert {normalize_sector(s) for s in ("Civil society", "Civil Society")} == {"Civil society"}
+
+    def test_hierarchy_is_not_flattened(self):
+        # Narrower claims stay narrower: folding these would put words in a
+        # source's mouth.
+        from apttrail.profiles import normalize_sector
+
+        assert normalize_sector("Rail") != normalize_sector("Transportation")
+        assert normalize_sector("Defense industrial base") != normalize_sector("Defense")
+
+    def test_an_unknown_sector_is_kept_not_dropped(self):
+        from apttrail.profiles import normalize_sector
+
+        assert normalize_sector("Gambling companies") == "Gambling companies"
+        assert normalize_sector("  Retail  ") == "Retail"

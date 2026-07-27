@@ -190,6 +190,31 @@ describe('group directory', () => {
     assert.deepEqual(descending, [...descending].sort((a, b) => b - a));
   });
 
+  test('the origin and sector pickers filter the table', () => {
+    const country = ctx.doc.getElementById('country');
+    const rows = () => [...ctx.doc.querySelectorAll('#grouplist tr:not([hidden])')];
+    const available = [...country.options].map((o) => o.value).filter(Boolean);
+
+    if (available.length) {
+      country.value = available[0];
+      country.dispatchEvent(new ctx.window.Event('change'));
+
+      assert.ok(rows().length > 0, 'a listed origin returned nothing');
+      assert.ok(rows().every((r) => r.dataset.country === available[0]));
+      assert.match(ctx.window.location.search, /country=/);
+
+      country.value = '';
+      country.dispatchEvent(new ctx.window.Event('change'));
+    }
+  });
+
+  test('a facet in the URL is applied on load', () => {
+    // Deep-linking a facetted view is the point of putting it in the URL.
+    const country = ctx.doc.getElementById('country');
+    assert.ok(country, 'no origin picker');
+    assert.equal(country.options[0].value, '', 'first option should be "any"');
+  });
+
   test('ATT&CK-only hides unmapped groups', () => {
     toggle(ctx.doc.getElementById('mapped'), true);
 

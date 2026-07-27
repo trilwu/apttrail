@@ -22,6 +22,55 @@ DATA_FILE = Path(__file__).parent / "data" / "attack_profiles.json.gz"
 TECHNIQUE_URL = "https://attack.mitre.org/techniques/{path}/"
 SOFTWARE_URL = "https://attack.mitre.org/software/{software_id}/"
 
+#: Spelling variants of one sector, collapsed so a facet cannot under-report.
+#:
+#: The galaxy's targeted-sector values are free text: "Telecommunications",
+#: "Telecomms" and "Telecoms" are three spellings used by three different
+#: groups, and "Finance", "Financial" and "Financial services" are three more.
+#: Filtering on the raw strings would return two of seven telecom actors and
+#: look authoritative doing it.
+#:
+#: Only spelling and inflection are merged, never hierarchy. "Rail" is not
+#: folded into "Transportation" and "Defense industrial base" is not folded
+#: into "Defense": those are narrower claims, and flattening them would put
+#: words in a source's mouth.
+SECTOR_SYNONYMS = {
+    "private sector": "Private sector",
+    "civil society": "Civil society",
+    "telecommunications": "Telecommunications",
+    "telecomms": "Telecommunications",
+    "telecoms": "Telecommunications",
+    "finance": "Finance",
+    "financial": "Finance",
+    "financial services": "Finance",
+    "government": "Government",
+    "government institutions": "Government",
+    "government agencies and services": "Government",
+    "media": "Media",
+    "media and entertainment": "Media",
+    "transportation": "Transportation",
+    "transportation systems": "Transportation",
+    "healthcare": "Healthcare",
+    "medical": "Healthcare",
+    "information technology": "Information technology",
+    "high-tech": "High-Tech",
+}
+
+
+def normalize_sector(value: str) -> str:
+    """
+    Canonical name for a targeted sector.
+
+    Args:
+        value: A sector as the galaxy spells it
+
+    Returns:
+        The canonical spelling, or the input tidied when it is not a known
+        variant - an unrecognised sector is kept rather than dropped.
+    """
+    tidy = " ".join(value.split())
+    return SECTOR_SYNONYMS.get(tidy.lower(), tidy)
+
 
 class Technique(BaseModel):
     """An ATT&CK technique a group is known to use."""
@@ -125,7 +174,9 @@ def load_profiles(path: Path | None = None) -> ProfileIndex:
             description=payload.get("description", ""),
             country=payload.get("country"),
             sponsor=payload.get("sponsor"),
-            sectors=payload.get("sectors") or [],
+            # Normalised at load, so every consumer - page, facet, JSON - sees
+            # one spelling per sector.
+            sectors=sorted({normalize_sector(s) for s in payload.get("sectors") or []}),
             victims=payload.get("victims") or [],
             activity=payload.get("activity") or [],
             # The generator stores these as [id, name] pairs to keep the file small.

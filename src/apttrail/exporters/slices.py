@@ -466,12 +466,19 @@ class SliceExporter:
 
     def _index_entry(self, slug: str, entry: dict[str, Any]) -> dict[str, Any]:
         counts = self._counts(entry)
+        # Suspected origin and targeting, so a client can facet on them without
+        # fetching 313 group files. Absent for the two thirds of actors ATT&CK
+        # does not profile; omitted rather than guessed.
+        profile = load_profiles().get(entry["attack_id"])
         return {
             "slug": slug,
             "maltrail_groups": sorted(entry["maltrail_groups"]),
             "attack_id": entry["attack_id"],
             "attack_name": entry["attack_name"],
             "aliases": sorted(entry["aliases"]),
+            "country": profile.country if profile else None,
+            "sponsor": profile.sponsor if profile else None,
+            "sectors": list(profile.sectors) if profile else [],
             "total": sum(counts.values()),
             "counts": counts,
             "first_seen_range": self._first_seen_range(entry),
@@ -860,11 +867,20 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
         span = group.get("first_seen_range") or {}
         latest = str(span.get("latest") or "")
 
+        # Facet keys. Sectors are wrapped in a delimiter the values cannot
+        # contain, so filtering on "Media" does not also match
+        # "Media and Entertainment" - the two are separate claims.
+        country = group.get("country") or ""
+        sectors = group.get("sectors") or []
+        sector_key = "|" + "|".join(sectors) + "|" if sectors else ""
+        origin = f'<span class=cc title="Suspected origin">{self._esc(country)}</span>' if country else ""
+
         return (
-            f'<tr data-k="{key}" data-attack="{1 if group["attack_id"] else 0}" data-latest="{self._esc(latest)}">'
+            f'<tr data-k="{key}" data-attack="{1 if group["attack_id"] else 0}" data-latest="{self._esc(latest)}"'
+            f' data-country="{self._esc(country)}" data-sectors="{self._esc(sector_key)}">'
             f'<td class=gid><a href="by-group/{slug}.html">'
             f'{self._esc(group["attack_id"]) if group["attack_id"] else "&mdash;"}</a></td>'
-            f'<td><a class=who href="by-group/{slug}.html">{self._esc(heading)}</a>{also}</td>'
+            f'<td><a class=who href="by-group/{slug}.html">{self._esc(heading)}</a>{origin}{also}</td>'
             f'<td class=n data-sort="{group["total"]}">{group["total"]:,}</td>'
             f'<td class=span data-sort="{latest.replace("-", "") or 0}">{self._span(group)}</td>'
             f'<td class=f>{" &middot; ".join(files)}</td>'

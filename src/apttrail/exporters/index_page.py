@@ -21,6 +21,7 @@ contains.
 """
 
 import json
+from collections import Counter
 from typing import Any
 
 from apttrail.exporters.group_pages import STYLE, head
@@ -90,6 +91,13 @@ code { font: .88em var(--mono); color: var(--muted); }
 .groups td.f a { color: var(--muted); text-decoration: none; }
 .groups td.f a:hover { color: var(--accent); }
 .groups .aka { font: .76rem/1.5 var(--mono); color: var(--faint); margin-top: .1rem; }
+/* Suspected origin, inline with the name so a facetted result explains itself. */
+.groups .cc { font: .68rem/1 var(--mono); letter-spacing: .06em; color: var(--faint);
+              border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .32rem;
+              margin-left: .45rem; vertical-align: .08em; }
+.tools select { background: var(--panel); color: inherit; border: 1px solid var(--line-firm);
+                border-radius: 2px; padding: .38rem .5rem; font: .8rem var(--mono); }
+.tools select:hover { border-color: var(--accent); }
 .stale { color: var(--warn); }
 @media (max-width: 40rem) { .groups td.span, .groups th.span { display: none; } }
 """
@@ -132,6 +140,8 @@ GROUPS_SCRIPT = """
 
   var mapped = document.getElementById('mapped');
   var active = document.getElementById('active');
+  var country = document.getElementById('country');
+  var sector = document.getElementById('sector');
   var horizon = '';
   if (active) {
     var d = new Date();
@@ -141,24 +151,36 @@ GROUPS_SCRIPT = """
 
   function apply() {
     var needle = q.value.trim().toLowerCase();
+    var cc = country ? country.value : '';
+    var sec = sector ? sector.value : '';
     var shown = 0;
     rows.forEach(function (r) {
       var hit = !needle || r.dataset.k.indexOf(needle) !== -1;
       if (hit && mapped && mapped.checked) { hit = r.dataset.attack === '1'; }
       if (hit && active && active.checked) { hit = (r.dataset.latest || '') >= horizon; }
+      if (hit && cc) { hit = r.dataset.country === cc; }
+      // Delimited both sides, so "Media" cannot match "Media and Entertainment".
+      if (hit && sec) { hit = (r.dataset.sectors || '').indexOf('|' + sec + '|') !== -1; }
       r.hidden = !hit;
       if (hit) shown++;
     });
     count.textContent = shown.toLocaleString();
     var empty = document.getElementById('empty');
     if (empty) { empty.hidden = shown > 0; }
+
     if (history.replaceState) {
-      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+      var qs = [];
+      if (needle) { qs.push('q=' + encodeURIComponent(needle)); }
+      if (cc) { qs.push('country=' + encodeURIComponent(cc)); }
+      if (sec) { qs.push('sector=' + encodeURIComponent(sec)); }
+      history.replaceState(null, '', qs.length ? '?' + qs.join('&') : location.pathname);
     }
   }
   q.addEventListener('input', apply);
   if (mapped) mapped.addEventListener('change', apply);
   if (active) active.addEventListener('change', apply);
+  if (country) country.addEventListener('change', apply);
+  if (sector) sector.addEventListener('change', apply);
 
   // Sorting. Rows carry data-sort on the cells that are not plain text, so
   // "52,028" and "2017-2025" sort as a number and a date rather than as
@@ -190,8 +212,14 @@ GROUPS_SCRIPT = """
     else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
   });
 
-  var initial = /[?&]q=([^&]*)/.exec(location.search);
-  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\\+/g, ' ')); }
+  function param(name) {
+    var m = new RegExp('[?&]' + name + '=([^&]*)').exec(location.search);
+    return m ? decodeURIComponent(m[1].replace(/\\+/g, ' ')) : '';
+  }
+  q.value = param('q');
+  // Set from the URL so a facetted view can be shared as a link.
+  if (country) { country.value = param('country'); }
+  if (sector) { sector.value = param('sector'); }
   apply();
 })();
 """
@@ -376,6 +404,41 @@ triage, not proof of compromise.</p>
 """
 
 
+def _facets(groups: list[dict[str, Any]]) -> tuple[str, str, int, int]:
+    """
+    Build the country and sector pickers from the values actually present.
+
+    Options are generated from the data rather than hardcoded, with a count on
+    each, so an empty result is never a surprise: a reader can see that only
+    five actors are attributed to KP before selecting it.
+
+    Returns:
+        The two ``<select>`` bodies, and how many actors carry each facet
+    """
+    countries: Counter[str] = Counter()
+    sectors: Counter[str] = Counter()
+    with_country = with_sector = 0
+
+    for group in groups:
+        if group.get("country"):
+            countries[group["country"]] += 1
+            with_country += 1
+        if group.get("sectors"):
+            with_sector += 1
+            for name in group["sectors"]:
+                sectors[name] += 1
+
+    country_options = "".join(
+        f'<option value="{_esc(code)}">{_esc(code)} &mdash; {count}</option>'
+        for code, count in sorted(countries.items(), key=lambda kv: (-kv[1], kv[0]))
+    )
+    sector_options = "".join(
+        f'<option value="{_esc(name)}">{_esc(name)} &mdash; {count}</option>'
+        for name, count in sorted(sectors.items(), key=lambda kv: (-kv[1], kv[0]))
+    )
+    return country_options, sector_options, with_country, with_sector
+
+
 def render_groups_page(payload: dict[str, Any], rows: str) -> str:
     """
     Render the group directory.
@@ -388,6 +451,8 @@ def render_groups_page(payload: dict[str, Any], rows: str) -> str:
         A complete HTML document
     """
     totals = payload["totals"]
+    country_options, sector_options, with_country, with_sector = _facets(payload["groups"])
+    actors = max(totals["slices"], 1)
     return f"""<!doctype html>
 <html lang=en>
 <meta charset=utf-8>
@@ -413,6 +478,14 @@ resolved onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets.</p>
 <div class=tools id=tools hidden>
   <input type=search id=q placeholder="name, alias or G-id &mdash; try &quot;fancy bear&quot;  (press /)"
          aria-label="Filter groups">
+  <select id=country aria-label="Filter by suspected origin">
+    <option value="">any origin</option>
+    {country_options}
+  </select>
+  <select id=sector aria-label="Filter by targeted sector">
+    <option value="">any sector</option>
+    {sector_options}
+  </select>
   <label><input type=checkbox id=mapped> ATT&amp;CK only</label>
   <label><input type=checkbox id=active> active 90d</label>
   <span class=note><b id=shown>{totals["slices"]:,}</b> groups</span>
@@ -424,6 +497,12 @@ resolved onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets.</p>
 <p class=note>The filter matches aliases the row does not print &mdash; searching
 <em>fancy bear</em> or <em>sofacy</em> finds APT28. <em>Seen</em> is the span of
 first-seen dates, recovered from upstream history reaching back to 2014.</p>
+<p class=note>Origin and sector come from the MISP galaxy's threat-actor cluster
+and only exist for actors ATT&amp;CK profiles: <b>{with_country}</b> of
+{totals["slices"]} actors carry a suspected origin ({round(100 * with_country / actors)}%)
+and <b>{with_sector}</b> a targeted sector. Filtering on either therefore hides
+every unprofiled actor, not just the ones that do not match &mdash; an absent
+origin means nobody published one, not that the actor has none.</p>
 <table class=groups>
 <thead><tr><th data-col=0 aria-sort=none>ATT&amp;CK</th><th data-col=1 aria-sort=none>Group</th>
 <th class=n data-col=2 aria-sort=none>IOCs</th><th class=span data-col=3 aria-sort=none>Seen</th>
