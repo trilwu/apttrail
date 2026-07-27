@@ -167,6 +167,49 @@ class TestIndex:
         assert entry["counts"] == {"domain": 2, "ipv4": 1}
 
 
+class TestLandingPage:
+    """Most arrivals hold a vendor name, not an ATT&CK id."""
+
+    @pytest.fixture
+    def page(self, written):
+        return (written / "index.html").read_text("utf-8")
+
+    def test_an_alias_that_is_not_printed_is_still_searchable(self, tmp_path):
+        # APT28 has 24 aliases; printing them all would drown the table, but a
+        # reader holding "Fancy Bear" must still find the row.
+        many = [f"alias-{i}" for i in range(12)] + ["fancy bear"]
+        apt = group("SOFACY", [("a.example", IndicatorType.DOMAIN)], attack_name="APT28", aliases=many)
+        SliceExporter(tmp_path).export({"SOFACY": apt}, FeedMetadata())
+
+        page = (tmp_path / "index.html").read_text("utf-8")
+        row = page.split("<tbody id=grouplist>")[1]
+        key = row.split('data-k="')[1].split('"')[0]
+        printed = row.split("<div class=aka>")[1].split("</div>")[0]
+
+        assert "fancy bear" in key
+        assert "fancy bear" not in printed  # it sorts past the six shown
+        assert "+7" in printed  # and the reader is told how many are hidden
+
+    def test_the_maltrail_name_is_shown_beside_the_attack_name(self, page):
+        # by-group files are keyed on one and headed by the other.
+        assert "APT28" in page
+        assert "Fancy Bear" in page
+
+    def test_nothing_is_fetched_from_another_origin(self, page):
+        assert "<link" not in page
+        assert "<script src" not in page
+        assert "googleapis" not in page
+
+    def test_it_uses_the_same_design_tokens_as_the_actor_pages(self, page, written):
+        actor = (written / "by-group" / "G0007.html").read_text("utf-8")
+
+        assert "--accent" in page and "--accent" in actor
+        assert "class=stats" in page and "class=stats" in actor
+
+    def test_the_filter_is_hidden_until_script_reveals_it(self, page):
+        assert "id=tools hidden" in page
+
+
 def test_export_is_idempotent(tmp_path, feed):
     exporter = SliceExporter(tmp_path)
     exporter.export(feed, FeedMetadata(generated_at=FeedMetadata().generated_at))

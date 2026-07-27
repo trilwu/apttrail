@@ -23,7 +23,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from apttrail.exporters.group_pages import build_timeline, write_group_page
+from apttrail.exporters.group_pages import STYLE, build_timeline, write_group_page
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
 
@@ -42,6 +42,77 @@ FLAT_TYPES = (
 BANNER = "# APTtrail - {title}\n# {count} indicators | {url}\n# Generated {generated}\n"
 PROJECT_URL = "https://github.com/trilwu/apttrail"
 SITE_URL = "https://trilwu.github.io/apttrail"
+
+# The landing page shares the actor pages' tokens and base rules so the site
+# reads as one thing; only what is unique to a 314-row directory lives here.
+INDEX_STYLE = """
+h1 em { font-style: italic; color: var(--accent); }
+.masthead .lede { margin: 0 0 1.6rem; max-width: 40rem; }
+code { font: .88em var(--mono); color: var(--muted); }
+.groups { margin-top: .8rem; }
+.groups th { text-align: left; font: .68rem/1.4 var(--mono); letter-spacing: .09em;
+             text-transform: uppercase; color: var(--faint); font-weight: 400;
+             padding: 0 .8rem .4rem 0; border-bottom: 1px solid var(--line-firm); }
+.groups td { padding: .45rem .8rem .45rem 0; border-bottom: 1px solid var(--line);
+             vertical-align: baseline; }
+.groups td.gid { font: .84rem/1.5 var(--mono); color: var(--accent); white-space: nowrap; }
+.groups td.n { text-align: right; font: .88rem/1.5 var(--mono); font-variant-numeric: tabular-nums; }
+.groups td.span { white-space: nowrap; font: .82rem/1.5 var(--mono); color: var(--muted);
+                  font-variant-numeric: tabular-nums; }
+.groups td.f { font: .78rem/1.5 var(--mono); white-space: nowrap; }
+.groups td.f a { color: var(--muted); text-decoration: none; }
+.groups td.f a:hover { color: var(--accent); }
+.groups .aka { font: .76rem/1.5 var(--mono); color: var(--faint); margin-top: .1rem; }
+.stale { color: var(--warn); }
+@media (max-width: 40rem) { .groups td.span, .groups th.span { display: none; } }
+"""
+
+INDEX_SCRIPT = """
+(function () {
+  var el = document.getElementById('generated');
+  var out = document.getElementById('ago');
+  if (el && out) {
+    var then = new Date(el.getAttribute('datetime') + (el.textContent.endsWith('Z') ? '' : 'Z'));
+    if (isNaN(then)) {
+      out.firstChild.textContent = 'unknown';
+    } else {
+      // Rendered client-side so the age is right whenever the page is opened,
+      // not whenever it was generated.
+      var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
+      out.firstChild.textContent = mins < 1 ? 'just now'
+        : mins < 60 ? mins + ' min ago'
+        : mins < 1440 ? Math.round(mins / 60) + ' h ago'
+        : Math.round(mins / 1440) + ' d ago';
+      if (mins > 180) { out.classList.add('stale'); }
+      el.textContent = then.toISOString().replace('T', ' ').replace('.000Z', '') + ' UTC';
+    }
+  }
+
+  var list = document.getElementById('grouplist');
+  var q = document.getElementById('q');
+  var tools = document.getElementById('tools');
+  var count = document.getElementById('shown');
+  if (!list || !q) return;
+  if (tools) tools.hidden = false;
+
+  // data-k carries every alias, including the ones the row does not print.
+  var rows = Array.prototype.slice.call(list.rows);
+  rows.forEach(function (r) {
+    if (!r.dataset.k) { r.dataset.k = r.textContent.toLowerCase(); }
+  });
+
+  q.addEventListener('input', function () {
+    var needle = q.value.trim().toLowerCase();
+    var shown = 0;
+    rows.forEach(function (r) {
+      var hit = !needle || r.dataset.k.indexOf(needle) !== -1;
+      r.hidden = !hit;
+      if (hit) shown++;
+    });
+    count.textContent = shown.toLocaleString();
+  });
+})();
+"""
 
 
 class SliceExporter:
@@ -309,122 +380,169 @@ class SliceExporter:
 
     def _write_html_index(self, payload: dict[str, Any]) -> None:
         """
-        Write a browsable landing page.
+        Write the landing page.
 
-        Served over GitHub Pages this is the first thing a responder sees, so
-        it answers the only two questions that matter on arrival: what is here,
-        and what is the URL for the actor I care about.
+        This is the first thing a responder sees, and most of them arrive with
+        one of two errands: *I have a name, give me its indicators*, or *I have
+        an indicator, tell me whose it is*. Both are answered above the fold -
+        the second by a command they can copy, the first by a filter over every
+        group that matches on ATT&CK id, name and alias, because analysts are
+        handed vendor names like "Fancy Bear", not G-ids.
         """
         totals = payload["totals"]
         groups = sorted(payload["groups"], key=lambda g: -g["total"])
 
-        rows = "\n".join(
-            "<tr>"
-            f"<td>{self._esc(g['attack_id'] or '')}</td>"
-            f"<td>{self._esc(g['attack_name'] or ', '.join(g['maltrail_groups']))}</td>"
-            f"<td class=n>{g['total']:,}</td>"
-            f"<td class=span>{self._span(g)}</td>"
-            f"<td><a href=\"by-group/{self._esc(g['slug'])}.html\">profile</a>"
-            f" &middot; <a href=\"by-group/{self._esc(g['slug'])}.json\">json</a>"
-            + (
-                f" · <a href=\"by-group/{self._esc(g['slug'])}-domain.txt\">domains</a>"
-                if g["counts"].get("domain")
-                else ""
-            )
-            + "</td></tr>"
-            for g in groups
-        )
+        rows = "\n".join(self._index_row(g) for g in groups)
 
-        lists = "\n".join(
-            f'<li><a href="by-type/{t.value}.txt">{t.value}.txt</a></li>'
+        lists = " &middot; ".join(
+            f'<a href="by-type/{t.value}.txt">{t.value}.txt</a>'
             for t in FLAT_TYPES
             if (self.output_dir / "by-type" / f"{t.value}.txt").exists()
         )
+
+        generated = self._esc(payload["generated_at"])
+        coverage = round(100 * totals["maltrail_groups_mapped_to_attack"] / max(totals["maltrail_groups"], 1))
 
         html = f"""<!doctype html>
 <html lang=en>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>APTtrail - APT indicators with ATT&amp;CK attribution</title>
-<style>
- :root {{ color-scheme: light dark; }}
- body {{ font: 15px/1.55 ui-sans-serif, system-ui, sans-serif; max-width: 60rem;
-        margin: 2rem auto; padding: 0 1rem; }}
- h1 {{ margin-bottom: .2rem; }}
- .sub {{ opacity: .75; margin-top: 0; }}
- code, pre {{ font-family: ui-monospace, monospace; font-size: .9em; }}
- pre {{ background: #8881; padding: .8rem; overflow-x: auto; border-radius: 6px; }}
- table {{ border-collapse: collapse; width: 100%; margin-top: .5rem; }}
- th, td {{ text-align: left; padding: .3rem .6rem; border-bottom: 1px solid #8883; }}
- td.n, th.n {{ text-align: right; font-variant-numeric: tabular-nums; }}
- td.span, th.span {{ white-space: nowrap; font-variant-numeric: tabular-nums; opacity: .8; }}
- ul {{ columns: 2; }}
- .freshness {{ border: 1px solid #8884; border-radius: 6px; padding: .6rem .8rem;
-              margin: 1rem 0; display: flex; gap: .6rem; flex-wrap: wrap;
-              align-items: baseline; }}
- .freshness b {{ font-size: 1.05rem; }}
- .stale {{ color: #b45309; }}
-</style>
-<h1>APTtrail</h1>
-<p class=sub>{totals["indicators"]:,} indicators &middot;
-{totals["maltrail_groups"]} APT groups &middot;
-{totals["maltrail_groups_mapped_to_attack"]} mapped onto {totals["attack_groups"]} MITRE ATT&amp;CK intrusion sets</p>
-
-<div class=freshness>
-  <b>Updated <span id=ago>&hellip;</span></b>
-  <span>&middot;</span>
-  <span><time id=generated datetime="{self._esc(payload["generated_at"])}">{self._esc(payload["generated_at"])}</time> UTC</span>
-  <span>&middot;</span>
-  <span>rebuilt hourly</span>
+<title>APTtrail &middot; APT indicators with ATT&amp;CK attribution</title>
+<meta name=description content="{totals["indicators"]:,} APT indicators, each carrying the group it belongs to and its MITRE ATT&amp;CK id. Static files, no API key.">
+<style>{STYLE}{INDEX_STYLE}</style>
+<div class=wrap>
+<div class=topbar>
+  <span>APTtrail</span>
+  <a href="{PROJECT_URL}">source &amp; docs</a>
 </div>
 
-<p>Every indicator carries the group it belongs to. Plain files, stable URLs,
-no API key. <a href="{PROJECT_URL}">Source and docs</a>.</p>
+<header class=masthead>
+<h1>APT indicators, <em>attributed</em></h1>
+<p class=lede>Every indicator arrives tagged with the group it belongs to and,
+where MITRE tracks that group, its <code>Gxxxx</code> id. Plain files on stable
+URLs &mdash; no account, no API key, no rate limit.</p>
 
-<pre>curl -sL {SITE_URL}/by-group/G0007-domain.txt</pre>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>{totals["indicators"]:,}</dd></div>
+<div><dt>APT groups</dt><dd>{totals["maltrail_groups"]:,}</dd></div>
+<div><dt>ATT&amp;CK mapped</dt><dd>{totals["maltrail_groups_mapped_to_attack"]:,}
+  <small>{coverage}% &rarr; {totals["attack_groups"]} sets</small></dd></div>
+<div><dt>Updated</dt><dd id=ago>&hellip;
+  <small><time id=generated datetime="{generated}">{generated}</time></small></dd></div>
+</dl>
+</header>
 
-<h2>Look up one indicator</h2>
-<p>Indicators are sharded by <code>sha256(value)</code>, so you can build the URL
-yourself. The reply carries the actor, its ATT&amp;CK id and when the indicator
-was first seen.</p>
-<pre>shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)
+<div class=grid>
+<aside>
+<h3>Start here</h3>
+<nav><ul>
+  <li><a href="#lookup">Look up one indicator</a></li>
+  <li><a href="#groups">Browse by group</a></li>
+  <li><a href="#files">Whole-feed files</a></li>
+</ul></nav>
+
+<h3>Formats</h3>
+<p class=note>MISP feed, STIX 2.1 bundle, Suricata rules with datasets, Sigma,
+CSV and JSON. <a href="{PROJECT_URL}#formats">All of them</a>.</p>
+</aside>
+
+<main>
+<h2 id=lookup>Look up one indicator <span class=n>an alert just fired</span></h2>
+<p>Indicators are sharded by <code>sha256(value)</code>, so the URL is
+computable offline. The reply carries the actor, its ATT&amp;CK id, when the
+indicator was first seen and the report it came from.</p>
+<pre><span class=c># what do you know about this domain?</span>
+IOC=evil.example
+shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)
 curl -s {SITE_URL}/by-indicator/$shard.json | jq --arg v "$IOC" '.[$v]'</pre>
 
-<h2>Full lists</h2>
-<ul>
-{lists}
-<li><a href="index.json">index.json</a></li>
-<li><a href="misp-feed/manifest.json">misp-feed/</a></li>
-</ul>
-
-<h2>By group</h2>
-<p class=sub>The <em>seen</em> column is the span of first-seen dates across a
-group's indicators, recovered from upstream history reaching back to 2014.</p>
-<table>
-<tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th class=span>Seen</th><th>Files</th></tr>
+<h2 id=groups>By group <span class=n>{totals["slices"]:,} profiles</span></h2>
+<p class=note>Filter matches ATT&amp;CK id, name and alias &mdash; type
+<em>fancy bear</em> or <em>G0007</em>. <em>Seen</em> is the span of first-seen
+dates, recovered from upstream history reaching back to 2014.</p>
+<div class=tools id=tools hidden>
+  <input type=search id=q placeholder="filter groups" aria-label="Filter groups">
+  <span class=note><b id=shown>{totals["slices"]:,}</b> groups</span>
+</div>
+<table class=groups>
+<thead><tr><th>ATT&amp;CK</th><th>Group</th><th class=n>IOCs</th><th class=span>Seen</th><th>Files</th></tr></thead>
+<tbody id=grouplist>
 {rows}
+</tbody>
 </table>
-<script>
-// Rendered client-side so the age is right whenever the page is opened,
-// not whenever it was generated.
-(function () {{
-  var el = document.getElementById('generated');
-  var out = document.getElementById('ago');
-  var then = new Date(el.getAttribute('datetime') + (el.textContent.endsWith('Z') ? '' : 'Z'));
-  if (isNaN(then)) {{ out.textContent = 'unknown'; return; }}
-  var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
-  var text = mins < 1 ? 'just now'
-    : mins < 60 ? mins + ' min ago'
-    : mins < 1440 ? Math.round(mins / 60) + ' h ago'
-    : Math.round(mins / 1440) + ' d ago';
-  out.textContent = text;
-  if (mins > 180) {{ out.parentElement.classList.add('stale'); }}
-  el.textContent = then.toISOString().replace('T', ' ').replace('.000Z', '');
-}})();
-</script>
+
+<h2 id=files>Whole-feed files</h2>
+<p>Flat lists, one value per line, safe to point a blocklist at &mdash; with the
+caveat that these are historical indicators, not a live blocklist.</p>
+<p class=note>{lists} &middot; <a href="index.json">index.json</a> &middot;
+<a href="misp-feed/manifest.json">misp-feed/</a></p>
+<pre><span class=c># every domain APT28 has been seen using</span>
+curl -sL {SITE_URL}/by-group/G0007-domain.txt</pre>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>;
+attribution from <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> and the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a>, inherited rather
+than independently assessed. Historical indicators: treat a hit as a lead to
+triage, not proof of compromise.</p>
+<p>Rebuilt hourly &middot; <a href="{PROJECT_URL}">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>{INDEX_SCRIPT}</script>
 </html>
 """
         (self.output_dir / "index.html").write_text(html, encoding="utf-8", newline="\n")
+
+    #: Alternative names shown under a group. The rest stay searchable.
+    VISIBLE_ALIASES = 6
+
+    def _index_row(self, group: dict[str, Any]) -> str:
+        """
+        One group row.
+
+        Two names matter and neither is the heading: the Maltrail group name,
+        because that is what the feed's own files are keyed on, and whichever
+        vendor alias the reader happens to be holding. Both are shown. The rest
+        of the aliases go into a search key rather than on screen - APT28 has 24
+        and a row of them would drown the table - so the filter still matches
+        "fancy bear" even though the row does not print it.
+        """
+        slug = self._esc(group["slug"])
+        heading = group["attack_name"] or ", ".join(group["maltrail_groups"])
+
+        taken = {heading.lower()}
+        sources = [n for n in group["maltrail_groups"] if n.lower() not in taken]
+        taken.update(n.lower() for n in sources)
+        aliases = [a for a in group["aliases"] if a.lower() not in taken]
+
+        shown = sources + aliases[: self.VISIBLE_ALIASES]
+        hidden = len(aliases) - len(aliases[: self.VISIBLE_ALIASES])
+        also = ""
+        if shown:
+            body = " &middot; ".join(self._esc(name) for name in shown)
+            if hidden:
+                body += f" &middot; +{hidden}"
+            also = f"<div class=aka>{body}</div>"
+
+        # Every name this actor is known by, so the filter matches on any of
+        # them without the table having to print them all.
+        key = self._esc(" ".join([slug, group["attack_id"] or "", heading, *sources, *aliases]).lower())
+
+        files = [f'<a href="by-group/{slug}.html">profile</a>', f'<a href="by-group/{slug}.json">json</a>']
+        if group["counts"].get("domain"):
+            files.append(f'<a href="by-group/{slug}-domain.txt">domains</a>')
+
+        return (
+            f'<tr data-k="{key}">'
+            f'<td class=gid>{self._esc(group["attack_id"] or "")}</td>'
+            f"<td>{self._esc(heading)}{also}</td>"
+            f'<td class=n>{group["total"]:,}</td>'
+            f"<td class=span>{self._span(group)}</td>"
+            f'<td class=f>{" &middot; ".join(files)}</td>'
+            "</tr>"
+        )
 
     @staticmethod
     def _span(group: dict[str, Any]) -> str:
