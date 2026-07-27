@@ -1,5 +1,6 @@
 """Actor profile page tests."""
 
+import re
 from datetime import datetime, timezone
 
 import pytest
@@ -267,11 +268,30 @@ class TestNoExternalDependencies:
     """SOC networks block third-party origins and these pages get saved to disk."""
 
     def test_nothing_is_fetched_from_another_origin(self, page):
-        body = page.split("<style>")[1]
-        assert "@import" not in body
-        assert "fonts.googleapis" not in page
-        assert "<link" not in page
+        # <link> itself is fine - canonical is metadata and the favicon is a
+        # data URI. What must not exist is a request to somewhere else.
+        assert "@import" not in page.split("<style>")[1]
+        assert "<link rel=stylesheet" not in page
         assert "<script src" not in page
+        assert "<img" not in page
+        for href in re.findall(r"<link[^>]*href=\"([^\"]+)\"", page):
+            assert href.startswith(("data:", "https://trilwu.github.io/")), href
+
+    def test_it_carries_a_link_preview(self, page):
+        # Pasted into Slack or a ticket, the site should not render as a bare URL.
+        assert 'property="og:title"' in page
+        assert 'property="og:description"' in page
+        assert 'content="summary"' in page
+        assert "rel=canonical" in page
+
+    def test_the_preview_summarises_the_actor_not_a_truncated_sentence(self, page):
+        summary = re.search(r'name=description content="([^"]+)"', page).group(1)
+
+        assert summary.startswith("4 indicators attributed to APT28 (G0007)")
+        assert "source reports" in summary
+
+    def test_the_favicon_is_self_contained(self, page):
+        assert 'rel=icon href="data:image/svg+xml,' in page
 
     def test_the_page_is_readable_without_script(self, page):
         without_script = page.split("<script>")[0]

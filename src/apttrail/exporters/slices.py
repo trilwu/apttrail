@@ -24,7 +24,14 @@ from itertools import groupby
 from pathlib import Path
 from typing import Any
 
-from apttrail.exporters.group_pages import STYLE, batch_anchor, build_timeline, split_url, write_group_page
+from apttrail.exporters.group_pages import (
+    STYLE,
+    batch_anchor,
+    build_timeline,
+    head,
+    split_url,
+    write_group_page,
+)
 from apttrail.models import APTGroup, FeedMetadata, IndicatorType
 from apttrail.profiles import load_profiles
 
@@ -78,6 +85,10 @@ code { font: .88em var(--mono); color: var(--muted); }
 #: Batches on the activity page. A fixed count rather than a fixed number of
 #: days: never empty in a quiet week, never unbounded in a busy one.
 ACTIVITY_BATCHES = 150
+
+#: Entries in the Atom feed. Fewer than the page carries: a reader checking
+#: daily wants what changed, not a month of backlog on first subscribe.
+ATOM_ENTRIES = 50
 
 ACTIVITY_SCRIPT = """
 (function () {
@@ -146,7 +157,11 @@ INDEX_SCRIPT = """
   var el = document.getElementById('generated');
   var out = document.getElementById('ago');
   if (el && out) {
-    var then = new Date(el.getAttribute('datetime') + (el.textContent.endsWith('Z') ? '' : 'Z'));
+    // generated_at is timezone-aware ("...+00:00"). Appending Z to that makes
+    // it unparseable, which is what shipped: the clock read "unknown" for
+    // every visitor. Only a naive stamp needs the suffix.
+    var raw = el.getAttribute('datetime');
+    var then = new Date(/(Z|[+-]\\d\\d:?\\d\\d)$/.test(raw) ? raw : raw + 'Z');
     if (isNaN(then)) {
       out.firstChild.textContent = 'unknown';
     } else {
@@ -294,6 +309,7 @@ class SliceExporter:
 
         self._write_index(index, metadata, written)
         self._write_activity(activity, metadata)
+        self._write_discovery([entry["slug"] for entry in index], metadata)
         return written
 
     @staticmethod
@@ -448,7 +464,42 @@ class SliceExporter:
             label = f"{entry['attack_id']} {entry['attack_name']}" if entry["attack_id"] else slug
             self._write_list(directory / f"{slug}-domain.txt", f"{label} domains", domains, generated)
 
+        self._write_navigator_layer(directory, slug, entry, profile)
         return timeline
+
+    def _write_navigator_layer(self, directory: Path, slug: str, entry: dict[str, Any], profile: Any | None) -> None:
+        """
+        Write an ATT&CK Navigator layer for the group.
+
+        Navigator is where a lot of detection engineers actually plan coverage,
+        and the techniques are already vendored here. Dropping a file they can
+        load directly beats making them copy ninety-five ids by hand.
+
+        Groups ATT&CK does not track get no layer: an empty one would be a file
+        that opens to nothing.
+        """
+        if not profile or not profile.techniques:
+            return
+
+        name = entry["attack_name"] or slug
+        layer = {
+            "name": f"{name} ({entry['attack_id']}) - APTtrail",
+            "description": (
+                f"Techniques attributed to {name} by MITRE ATT&CK, packaged by APTtrail. "
+                f"Indicators: {SITE_URL}/by-group/{slug}.json"
+            ),
+            "domain": "enterprise-attack",
+            "versions": {"layer": "4.5", "navigator": "5.1.0"},
+            "techniques": [{"techniqueID": t.id, "score": 1, "enabled": True} for t in profile.techniques],
+            "gradient": {"colors": ["#ffffff", "#e86f4a"], "minValue": 0, "maxValue": 1},
+            "legendItems": [{"label": f"Used by {name}", "color": "#e86f4a"}],
+            "hideDisabled": False,
+        }
+        (directory / f"{slug}-navigator.json").write_text(
+            json.dumps(layer, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
 
     @staticmethod
     def _activity_entries(slug: str, entry: dict[str, Any], timeline: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -568,8 +619,12 @@ class SliceExporter:
 <html lang=en>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>APTtrail &middot; APT indicators with ATT&amp;CK attribution</title>
-<meta name=description content="{totals["indicators"]:,} APT indicators, each carrying the group it belongs to and its MITRE ATT&amp;CK id. Static files, no API key.">
+{head(
+    "APTtrail · APT indicators with ATT&CK attribution",
+    f"{totals['indicators']:,} APT indicators across {totals['maltrail_groups']} groups, each carrying the actor "
+    f"it belongs to and its MITRE ATT&CK id. Static files on stable URLs, no API key.",
+    f"{SITE_URL}/",
+)}
 <style>{STYLE}{INDEX_STYLE}</style>
 <div class=wrap>
 <div class=topbar>
@@ -716,8 +771,13 @@ triage, not proof of compromise.</p>
 <html lang=en>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>Recent activity &middot; APTtrail</title>
-<meta name=description content="The most recent APT indicators added upstream, by day, each linked to the report that published it.">
+{head(
+    "Recent activity · APTtrail",
+    f"{indicators:,} APT indicators across {len(groups)} groups appeared upstream between "
+    f"{batches[-1]['date']} and {batches[0]['date']}, each dated and linked to the report that published it.",
+    f"{SITE_URL}/activity.html",
+)}
+<link rel=alternate type="application/atom+xml" title="APTtrail recent activity" href="activity.xml">
 <style>{STYLE}{INDEX_STYLE}{ACTIVITY_STYLE}</style>
 <div class=wrap>
 <div class=topbar>
@@ -769,6 +829,90 @@ Historical indicators: treat a hit as a lead to triage, not proof of compromise.
 </html>
 """
         (self.output_dir / "activity.html").write_text(html, encoding="utf-8", newline="\n")
+        self._write_activity_feed(batches, metadata)
+
+    def _write_activity_feed(self, batches: list[dict[str, Any]], metadata: FeedMetadata) -> None:
+        """
+        Write the activity page as Atom.
+
+        A page you have to remember to visit is a page nobody visits twice.
+        Analysts already live in feed readers and Slack RSS integrations, so
+        this is the mechanism by which the project gets checked daily rather
+        than found once.
+        """
+        generated = metadata.generated_at.isoformat()
+        entries = []
+        for batch in batches[:ATOM_ENTRIES]:
+            label = ", ".join(f"{count:,} {kind}" for kind, count in batch["counts"].items())
+            url = f"{SITE_URL}/by-group/{batch['slug']}.html#{batch['anchor']}"
+            sources = "".join(
+                f'&lt;li&gt;&lt;a href="{self._xml(url_)}"&gt;{self._xml(url_)}&lt;/a&gt;&lt;/li&gt;'
+                for url_ in batch["references"]
+            )
+            body = f"&lt;p&gt;{self._xml(label)} first seen upstream on {batch['date']}.&lt;/p&gt;"
+            if sources:
+                body += f"&lt;p&gt;Source:&lt;/p&gt;&lt;ul&gt;{sources}&lt;/ul&gt;"
+
+            entries.append(
+                "<entry>\n"
+                f"  <title>{self._xml(batch['group'])} &#183; {self._xml(label)}</title>\n"
+                f'  <link href="{self._xml(url)}"/>\n'
+                # A tag URI keyed on the stable anchor: a reader that has seen
+                # this batch will not show it again after the next rebuild.
+                f"  <id>tag:trilwu.github.io,2026:{self._xml(batch['slug'])}/{self._xml(batch['anchor'])}</id>\n"
+                f"  <updated>{batch['date']}T00:00:00Z</updated>\n"
+                f'  <content type="html">{body}</content>\n'
+                "</entry>"
+            )
+
+        feed = (
+            '<?xml version="1.0" encoding="utf-8"?>\n'
+            '<feed xmlns="http://www.w3.org/2005/Atom">\n'
+            "<title>APTtrail recent activity</title>\n"
+            f"<subtitle>APT indicators as they appear upstream, attributed and dated</subtitle>\n"
+            f'<link href="{SITE_URL}/activity.xml" rel="self"/>\n'
+            f'<link href="{SITE_URL}/activity.html"/>\n'
+            f"<id>tag:trilwu.github.io,2026:apttrail/activity</id>\n"
+            f"<updated>{generated}</updated>\n"
+            f"<author><name>APTtrail</name><uri>{PROJECT_URL}</uri></author>\n" + "\n".join(entries) + "\n</feed>\n"
+        )
+        (self.output_dir / "activity.xml").write_text(feed, encoding="utf-8", newline="\n")
+
+    def _write_discovery(self, slugs: list[str], metadata: FeedMetadata) -> None:
+        """
+        Write sitemap.xml and robots.txt.
+
+        314 actor pages that nothing points a crawler at are 314 pages nobody
+        finds by searching for the actor's name.
+        """
+        day = metadata.generated_at.date().isoformat()
+        urls = [f"{SITE_URL}/", f"{SITE_URL}/activity.html"]
+        urls += [f"{SITE_URL}/by-group/{slug}.html" for slug in slugs]
+
+        body = "\n".join(f"  <url><loc>{self._xml(url)}</loc><lastmod>{day}</lastmod></url>" for url in urls)
+        (self.output_dir / "sitemap.xml").write_text(
+            '<?xml version="1.0" encoding="utf-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "\n</urlset>\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        (self.output_dir / "robots.txt").write_text(
+            f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+
+    @staticmethod
+    def _xml(value: str) -> str:
+        """Escape a value for XML text or an attribute."""
+        return (
+            str(value)
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+            .replace("'", "&apos;")
+        )
 
     def _activity_row(self, row: dict[str, Any]) -> str:
         """One batch: which actor, how much, and what published it."""

@@ -123,6 +123,7 @@ class LookupExporter:
                             "attack_ids": [],
                             "first_seen": None,
                             "first_seen_precision": None,
+                            "references": [],
                         },
                     )
 
@@ -130,6 +131,12 @@ class LookupExporter:
                         entry["groups"].append(name)
                     if attack_id and attack_id not in entry["attack_ids"]:
                         entry["attack_ids"].append(attack_id)
+                    # The report that published this indicator. Without it the
+                    # lookup answers who and when but not why, which is the
+                    # question that decides whether a hit is worth escalating.
+                    for url in indicator.references:
+                        if url not in entry["references"]:
+                            entry["references"].append(url)
 
                     if indicator.first_seen:
                         seen = indicator.first_seen.date().isoformat()
@@ -143,5 +150,7 @@ class LookupExporter:
                 del entry["first_seen"]
             if not entry["first_seen_precision"]:
                 del entry["first_seen_precision"]
+            if not entry["references"]:
+                del entry["references"]
 
         return entries

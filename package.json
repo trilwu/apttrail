@@ -1,0 +1,12 @@
+{
+  "name": "apttrail-page-tests",
+  "private": true,
+  "description": "Browser-side tests for the generated pages. The Python suite cannot reach the inline script; this can.",
+  "scripts": {
+    "fixtures": "python scripts/render_fixture_pages.py build/fixtures",
+    "test": "node --test \"tests/js/**/*.test.mjs\""
+  },
+  "devDependencies": {
+    "jsdom": "^26.0.0"
+  }
+}

@@ -113,8 +113,11 @@ jobs:
         mkdir -p pages
         cp feeds/index.html feeds/index.json pages/
         # The feed-wide "what moved recently" view, for a reader who does not
-        # already have an actor name to look up.
-        cp feeds/activity.html feeds/activity.json pages/
+        # already have an actor name to look up, plus its Atom feed - the
+        # mechanism by which this gets checked daily rather than found once.
+        cp feeds/activity.html feeds/activity.json feeds/activity.xml pages/
+        # Crawlers have nothing pointing them at 314 actor pages otherwise.
+        cp feeds/sitemap.xml feeds/robots.txt pages/
         cp -r feeds/by-type feeds/by-group pages/
         # Served as a real MISP feed: manifest.json + one event per group.
         cp -r feeds/misp-feed pages/

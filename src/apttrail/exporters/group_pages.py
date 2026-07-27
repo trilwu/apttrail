@@ -37,6 +37,7 @@ import html
 from collections import Counter
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 from apttrail.profiles import ActorProfile
 
@@ -203,6 +204,10 @@ pre .c { color: var(--faint); }
 footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
          font-size: .82rem; color: var(--muted); }
 [hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
 """
 
 SCRIPT = """
@@ -324,6 +329,48 @@ SCRIPT = """
 def esc(value: Any) -> str:
     """Escape untrusted values for HTML."""
     return html.escape(str(value), quote=True)
+
+
+# A data URI, not a file: the no-external-request rule applies to the favicon
+# too, and this way a page saved to disk still carries its own mark.
+FAVICON = "data:image/svg+xml," + quote(
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">'
+    '<rect width="32" height="32" rx="6" fill="#0b0d11"/>'
+    '<path d="M11 7v18" stroke="#767d87" stroke-width="2"/>'
+    '<circle cx="11" cy="11" r="4" fill="#e86f4a"/>'
+    '<path d="M17 19h9M17 24h6" stroke="#767d87" stroke-width="2"/></svg>',
+    safe="",
+)
+
+
+def head(title: str, description: str, canonical: str) -> str:
+    """
+    The shared document head.
+
+    Link previews are how this gets shared: pasted into Slack or a ticket
+    without them, the site renders as a bare URL and reads as somebody's
+    scratch repo. og:image is deliberately absent - a card with no image
+    still renders as title and description everywhere, whereas a broken
+    image reference renders as a broken card.
+
+    Args:
+        title: Page title, already human-readable
+        description: One sentence, under ~160 characters
+        canonical: Absolute URL of this page
+
+    Returns:
+        The meta block, including a self-contained favicon
+    """
+    return f"""<title>{esc(title)}</title>
+<meta name=description content="{esc(description)}">
+<link rel=canonical href="{esc(canonical)}">
+<link rel=icon href="{FAVICON}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{esc(canonical)}">
+<meta name="twitter:card" content="summary">"""
 
 
 def build_timeline(entry: dict[str, Any]) -> list[dict[str, Any]]:
@@ -579,7 +626,7 @@ def _coverage(slug: str, entry: dict[str, Any]) -> str:
     return "<table class=coverage>\n" + "\n".join(rows) + "\n</table>"
 
 
-def _techniques(profile: ActorProfile | None) -> str:
+def _techniques(slug: str, profile: ActorProfile | None) -> str:
     """
     ATT&CK techniques as chips rather than a 95-row table.
 
@@ -592,6 +639,10 @@ def _techniques(profile: ActorProfile | None) -> str:
     chips = "".join(f'<li><a href="{esc(t.url)}"><b>{esc(t.id)}</b> {esc(t.name)}</a></li>' for t in profile.techniques)
     return (
         f"<h2 id=techniques>Techniques <span class=n>{len(profile.techniques)} ATT&amp;CK</span></h2>\n"
+        # Detection engineers plan coverage in Navigator, not by reading ids
+        # off a page and retyping them.
+        "<p class=note>Load in ATT&amp;CK Navigator: "
+        f'<a href="{esc(slug)}-navigator.json">{esc(slug)}-navigator.json</a></p>\n'
         f"<ul class=chips>{chips}</ul>"
     )
 
@@ -863,7 +914,7 @@ def render(
     # honest without asking the reader's browser to run anything.
     now = int(str(generated)[:4]) if str(generated)[:4].isdigit() else 0
 
-    techniques = _techniques(profile)
+    techniques = _techniques(slug, profile)
     software = _software(profile)
     reporting = _reporting(timeline)
     reading = _further_reading(slug, entry, profile)
@@ -880,16 +931,19 @@ def render(
         sections.append(("reading", "Further reading"))
 
     total = sum(len(values) for values in entry["indicators"].values())
-    description = (
-        esc(profile.description[:180]) if profile and profile.description else f"{total:,} indicators tracked."
-    )
+    # What a link preview shows: who the actor is and how much is held, not a
+    # truncated sentence of ATT&CK prose that stops mid-word.
+    reports = len({url for batch in timeline for url in batch["references"]})
+    summary = f"{total:,} indicators attributed to {title}"
+    if entry.get("attack_id"):
+        summary += f" ({entry['attack_id']})"
+    summary += f", from {reports:,} source reports, each dated and linked to the write-up that published it."
 
     return f"""<!doctype html>
 <html lang=en>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>{esc(title)} &middot; APTtrail</title>
-<meta name=description content="{description}">
+{head(f"{title} · APTtrail", summary, f"{SITE_URL}/by-group/{slug}.html")}
 <style>{STYLE}</style>
 <div class=wrap>
 <div class=topbar>

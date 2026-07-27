@@ -70,3 +70,7 @@ secrets.json
 # Only the append-only IOC changelog lives in git.
 feeds/*
 !feeds/changes/
+
+# Node is only here for the page tests.
+node_modules/
+build/

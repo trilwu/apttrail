@@ -8,6 +8,7 @@ on:
       - 'tests/**'
       - 'scripts/**'
       - 'pyproject.toml'
+      - 'package.json'
       - 'Dockerfile'
       - '.github/workflows/ci.yml'
   pull_request:
@@ -56,6 +57,35 @@ jobs:
   # assert on rule text; only Suricata can say whether it loads. A previous
   # release shipped rules with a negated file-hash match and an unescaped
   # quote, which is exactly what this catches.
+  # The Python suite checks what the generator writes; it cannot check what the
+  # inline script then does with it. Both of the last two page defects lived
+  # there - a defang rule emitting "hxxphttp://", and a freshness clock that
+  # read "unknown" for every visitor - and neither changed how the page looked.
+  pages:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '22'
+
+    - name: Install
+      run: |
+        pip install -e .
+        npm ci --no-audit --no-fund
+
+    - name: Render fixture pages
+      run: python scripts/render_fixture_pages.py build/fixtures
+
+    - name: Drive the pages
+      run: npm test
+
   suricata:
     runs-on: ubuntu-latest
     steps:

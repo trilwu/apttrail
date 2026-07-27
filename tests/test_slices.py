@@ -197,9 +197,15 @@ class TestLandingPage:
         assert "Fancy Bear" in page
 
     def test_nothing_is_fetched_from_another_origin(self, page):
-        assert "<link" not in page
+        assert "<link rel=stylesheet" not in page
         assert "<script src" not in page
         assert "googleapis" not in page
+        for href in re.findall(r'<link[^>]*href="([^"]+)"', page):
+            assert href.startswith(("data:", "https://trilwu.github.io/")), href
+
+    def test_it_carries_a_link_preview(self, page):
+        assert 'property="og:title"' in page
+        assert "rel=canonical" in page
 
     def test_it_uses_the_same_design_tokens_as_the_actor_pages(self, page, written):
         actor = (written / "by-group" / "G0007.html").read_text("utf-8")
@@ -359,7 +365,12 @@ class TestMergingByAttackId:
     def test_one_file_per_attack_id(self, collided):
         files = sorted(p.name for p in (collided / "by-group").iterdir())
 
-        assert files == ["G0040-domain.txt", "G0040.html", "G0040.json"]
+        assert files == [
+            "G0040-domain.txt",
+            "G0040-navigator.json",
+            "G0040.html",
+            "G0040.json",
+        ]
 
     def test_indicators_from_every_member_are_present(self, collided):
         payload = json.loads((collided / "by-group" / "G0040.json").read_text("utf-8"))
