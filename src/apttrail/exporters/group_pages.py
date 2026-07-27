@@ -58,6 +58,8 @@ SITE_URL = "https://trilwu.github.io/apttrail"
 ATTACK_GROUP_URL = "https://attack.mitre.org/groups/{group_id}/"
 MALTRAIL_URL = "https://github.com/stamparm/maltrail"
 MALTRAIL_TRAIL_URL = "https://github.com/stamparm/maltrail/blob/master/trails/static/malware/{filename}"
+#: Navigator loads a layer from ?layerURL; confirmed against MITRE's own README.
+NAVIGATOR_URL = "https://mitre-attack.github.io/attack-navigator/"
 
 STYLE = """
 :root {
@@ -70,6 +72,13 @@ STYLE = """
   --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
   --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
 }
 @media (prefers-color-scheme: light) {
   :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
@@ -77,7 +86,7 @@ STYLE = """
           --accent: #b8412a; --warn: #9a6b12; }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.6 var(--sans);
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
        -webkit-text-size-adjust: 100%; }
 .wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
 a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
@@ -86,7 +95,7 @@ h1, h2, h3 { font-weight: 500; }
 p { margin: 0 0 .9rem; }
 
 .topbar { display: flex; justify-content: space-between; align-items: baseline;
-          padding: 1.1rem 0; font: .78rem/1 var(--mono); letter-spacing: .08em;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
           text-transform: uppercase; color: var(--muted); }
 .topbar .brand { color: var(--faint); }
 
@@ -98,7 +107,7 @@ h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -
 h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
           color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
           padding: .32em .5em; text-decoration: none; white-space: nowrap; }
-.aka { font: .84rem/1.7 var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
        max-width: 62rem; word-spacing: .1em; }
 .aka b { color: var(--ink); font-weight: 500; }
 
@@ -106,59 +115,59 @@ h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
          gap: 1px; background: var(--line); border: 1px solid var(--line);
          margin: 0 0 1.5rem; }
 .stats div { background: var(--bg); padding: .7rem .9rem; }
-.stats dt { font: .68rem/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
             color: var(--faint); }
-.stats dd { margin: .15rem 0 0; font: 1.3rem/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
 .stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
 
 .spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
 .spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
               border-radius: 1px 1px 0 0; }
 .spark span.hot { background: var(--accent); }
-.spark-axis { display: flex; justify-content: space-between; font: .68rem/1 var(--mono);
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
               color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
 
 .grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
 @media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
-aside { position: sticky; top: 1.2rem; align-self: start; font-size: .88rem; }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
 @media (max-width: 64rem) { aside { position: static; } }
-aside h3, .panel h3 { font: .68rem/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
                       color: var(--faint); margin: 1.8rem 0 .5rem; }
 aside h3:first-child { margin-top: 0; }
 nav ul { list-style: none; margin: 0; padding: 0; }
 nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
 nav a:hover { color: var(--accent); }
 dl.facts { margin: 0; }
-dl.facts dt { font: .68rem/1.5 var(--mono); letter-spacing: .07em; text-transform: uppercase;
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
               color: var(--faint); margin-top: .7rem; }
 dl.facts dd { margin: .1rem 0 0; }
 
-main h2 { font: 400 1.5rem/1.2 var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
           padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
 main h2:first-child { margin-top: 0; }
 main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
-.lede { font: 1.05rem/1.75 var(--serif); max-width: 44rem; }
-.note { color: var(--muted); font-size: .86rem; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
 
 .chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
 .chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
-            font: .8rem/1.5 var(--mono); color: var(--muted); }
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
 .chips a { text-decoration: none; }
 .chips li b { color: var(--ink); font-weight: 500; }
 
 table { border-collapse: collapse; width: 100%; }
 .coverage { margin-top: .9rem; max-width: 34rem; }
-.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: .88rem/1.5 var(--mono); }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
 .coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
-.coverage td.f { text-align: right; font-size: .8rem; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
 
 .rank { margin: .9rem 0 0; padding: 0; list-style: none; }
-.rank li { margin: 0 0 .6rem; font: .84rem/1.6 var(--mono); }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
 .rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
-.rank .c { float: right; font: .78rem/1.6 var(--mono); color: var(--faint); }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
 
 .tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
-         font: .8rem/1 var(--mono); }
+         font: var(--t-small)/1 var(--mono); }
 .tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
         border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
 .tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
@@ -166,56 +175,59 @@ button { background: none; color: var(--muted); border: 1px solid var(--line-fir
          padding: .4rem .6rem; font: inherit; cursor: pointer; }
 button:hover { color: var(--accent); border-color: currentColor; }
 #types { margin-top: .5rem; }
-#types button { font: .78rem/1.5 var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
 #types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
 
 ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
-ol.timeline > li { position: relative; padding: 0 0 1.9rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
 ol.timeline > li:last-child { border-left-color: transparent; }
 ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
         width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
 ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
 .when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
-        font: .92rem/1.5 var(--mono); }
+        font: var(--t-body)/var(--lh-data) var(--mono); }
 .when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
-.when .approx { color: var(--warn); font-size: .8rem; border-bottom: 1px dotted currentColor; cursor: help; }
-.when .cnt { color: var(--faint); font-size: .8rem; }
-.when .ago { color: var(--faint); font-size: .8rem; margin-left: auto; }
-.src { margin: .3rem 0 0; font: .82rem/1.6 var(--mono); }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
 .src a { text-decoration: none; color: var(--muted); }
 .src a:hover .host { color: var(--accent); }
 .src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
 .src .path { color: var(--faint); }
 .src .nosrc { color: var(--faint); font-style: italic; }
 .iocs { margin-top: .5rem; }
-.iocs td { padding: .16rem .8rem .16rem 0; border-bottom: 1px solid var(--line);
-           font: .86rem/1.6 var(--mono); word-break: break-all; }
-.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: .76rem; white-space: nowrap;
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
                 text-align: right; padding-right: 1rem; }
-.batch-foot { margin: .35rem 0 0; font: .76rem/1.6 var(--mono); color: var(--faint); }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
 .batch-foot button { border: 0; padding: 0; color: var(--faint); }
 
 .refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
 @media (max-width: 52rem) { .refs { columns: 1; } }
-.refs li { break-inside: avoid; margin-bottom: .3rem; font: .8rem/1.5 var(--mono); }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
 .refs a { color: var(--muted); text-decoration: none; }
 .refs a:hover { color: var(--accent); }
 
 pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
-      padding: .7rem .8rem; overflow-x: auto; font: .78rem/1.7 var(--mono); margin: .5rem 0 0; }
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
 pre .c { color: var(--faint); }
 footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
-         font-size: .82rem; color: var(--muted); }
+         font-size: var(--t-small); color: var(--muted); }
 .related { list-style: none; padding: 0; margin: 1rem 0 0; }
 .related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
-.related a { font: 500 .98rem/1.5 var(--sans); text-decoration: none; }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
 .related a:hover { color: var(--accent); }
-.related .gidtag { font: .74rem/1 var(--mono); color: var(--faint); margin-left: .4rem; }
-.related .why { margin-top: .15rem; font: .78rem/1.7 var(--mono); color: var(--muted); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
 /* The evidence tiers are not equally strong, and the colour says which. */
 .related .ev.infrastructure { color: var(--accent); }
 .related .ev.reporting { color: var(--ink); }
 .related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
 [hidden] { display: none !important; }
 /* "/" and Escape make the keyboard a real path through this page, so the focus
    ring has to be ours rather than whatever the browser defaults to on a dark
@@ -467,9 +479,22 @@ def _ago(date: str | None, now: int) -> str:
     return "1 yr ago" if span == 1 else f"{span} yrs ago"
 
 
-def _tags(values: list[str], mark: bool = False) -> str:
-    body = "".join(f"<li>{'<b>' if mark else ''}{esc(v)}{'</b>' if mark else ''}</li>" for v in values)
-    return f"<ul class=chips>{body}</ul>"
+def _tags(values: list[str], mark: bool = False, facet: str | None = None) -> str:
+    """
+    A row of chips, optionally linked to the directory filtered on that value.
+
+    A reader who has just learned this actor targets Government wants the other
+    actors that do; without the link that is a dead end and a fresh search.
+    """
+    items = []
+    for value in values:
+        label = f"<b>{esc(value)}</b>" if mark else esc(value)
+        if facet:
+            href = f"../groups.html?{facet}={quote(value)}"
+            items.append(f'<li><a href="{esc(href)}">{label}</a></li>')
+        else:
+            items.append(f"<li>{label}</li>")
+    return f'<ul class=chips>{"".join(items)}</ul>'
 
 
 # --------------------------------------------------------------------------- #
@@ -568,15 +593,19 @@ def _rail(slug: str, entry: dict[str, Any], profile: ActorProfile | None, sectio
 
     rows: list[tuple[str, str]] = []
     if profile and profile.country:
-        origin = esc(profile.country)
+        # Both facets lead back to every other actor sharing them, which is the
+        # question a reader has the moment they read the answer.
+        origin = f'<a href="../groups.html?country={quote(profile.country)}">{esc(profile.country)}</a>'
         if profile.sponsor:
             origin += f"<br><span class=note>{esc(profile.sponsor)}</span>"
         rows.append(("Suspected origin", origin))
     if profile and profile.activity:
         rows.append(("Activity", ", ".join(esc(a) for a in profile.activity)))
     if profile and profile.sectors:
-        rows.append(("Targeted sectors", _tags(profile.sectors)))
+        rows.append(("Targeted sectors", _tags(profile.sectors, facet="sector")))
     if profile and profile.victims:
+        # Victims are not a facet - the directory has no such filter, and
+        # linking to one that does not exist is worse than not linking.
         rows.append(("Suspected victims", _tags(profile.victims[:24])))
 
     # The upstream file is the primary source; a reader checking our work
@@ -650,12 +679,24 @@ def _techniques(slug: str, profile: ActorProfile | None) -> str:
         return ""
 
     chips = "".join(f'<li><a href="{esc(t.url)}"><b>{esc(t.id)}</b> {esc(t.name)}</a></li>' for t in profile.techniques)
+
+    # Detection engineers plan coverage in Navigator, not by reading ids off a
+    # page and retyping them. Navigator fetches ?layerURL cross-origin, which
+    # works because Pages sends Access-Control-Allow-Origin: *.
+    #
+    # Linked rather than embedded on purpose: an <iframe> to
+    # mitre-attack.github.io is exactly the third-party request these pages
+    # refuse to make - SOC networks block it and a page saved to a ticket would
+    # render a dead grey box. A link degrades to "not now"; an iframe degrades
+    # to "broken".
+    layer = f"{SITE_URL}/by-group/{slug}-navigator.json"
+    navigator = f"{NAVIGATOR_URL}#layerURL={quote(layer, safe='')}"
+
     return (
         f"<h2 id=techniques>Techniques <span class=n>{len(profile.techniques)} ATT&amp;CK</span></h2>\n"
-        # Detection engineers plan coverage in Navigator, not by reading ids
-        # off a page and retyping them.
-        "<p class=note>Load in ATT&amp;CK Navigator: "
-        f'<a href="{esc(slug)}-navigator.json">{esc(slug)}-navigator.json</a></p>\n'
+        f'<p class=note><a class=cta href="{esc(navigator)}" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a>'
+        f' <span class=sep>or</span> <a href="{esc(slug)}-navigator.json">download the layer</a> '
+        f"({len(profile.techniques)} techniques, layer&nbsp;4.5)</p>\n"
         f"<ul class=chips>{chips}</ul>"
     )
 

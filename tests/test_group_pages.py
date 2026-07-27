@@ -398,3 +398,69 @@ def test_escapes_untrusted_reference_urls():
 
     assert "<script>alert(1)</script>" not in page
     assert "&quot;&gt;&lt;script&gt;" in page
+
+
+class TestFacetLinks:
+    """Reading that an actor is Russian raises "which others are", immediately."""
+
+    def test_origin_links_to_the_filtered_directory(self, page):
+        assert 'href="../groups.html?country=RU"' in page
+
+    def test_each_sector_links_to_its_own_filter(self, page):
+        assert 'href="../groups.html?sector=Government"' in page
+        assert 'href="../groups.html?sector=Military"' in page
+
+    def test_victims_are_not_linked_because_there_is_no_such_filter(self, page):
+        # Linking to a filter that does not exist is worse than not linking.
+        victims = page.split("Suspected victims")[1].split("</dd>")[0]
+        assert "groups.html?" not in victims
+
+    def test_a_sector_with_a_space_is_url_encoded(self, profile):
+        spaced = profile.model_copy(update={"sectors": ["Private sector"]})
+
+        page = render("G0007", entry(), spaced, "2026-07-27")
+
+        assert "sector=Private%20sector" in page
+
+
+class TestNavigator:
+    def test_it_links_straight_into_navigator_with_the_layer(self, page):
+        assert "mitre-attack.github.io/attack-navigator" in page
+        assert "layerURL=https%3A%2F%2Ftrilwu.github.io" in page
+
+    def test_the_raw_layer_is_still_downloadable(self, page):
+        assert 'href="G0007-navigator.json"' in page
+
+    def test_it_is_linked_not_embedded(self, page):
+        # An iframe to mitre-attack.github.io is exactly the third-party
+        # request these pages refuse: blocked on SOC networks, and a dead grey
+        # box in a page saved to a ticket. A link degrades to "not now".
+        assert "<iframe" not in page
+
+
+class TestTypeScale:
+    """
+    Fifteen sizes with eight of them between 12.2 and 15.7px read as noise
+    rather than hierarchy, and four labels sat at 10.9px.
+    """
+
+    def test_sizes_come_from_the_scale_not_from_ad_hoc_values(self, page):
+        style = page.split("<style>")[1].split("</style>")[0]
+        hardcoded = set(re.findall(r"(?:font:[^;]*?|font-size:\s*)([\d.]+)rem", style))
+
+        # Only the h1 clamp floor and the stat number are outside the scale.
+        assert hardcoded == {"2.1", "1.3"}
+
+    def test_nothing_is_smaller_than_the_floor(self, page):
+        style = page.split("<style>")[1].split("</style>")[0]
+        steps = re.findall(r"--t-[a-z]+: ([\d.]+)rem", style)
+
+        assert steps, "no scale defined"
+        # 12px is the readability threshold; .76rem is 12.16, which the browser
+        # reports as 12.2. Four labels used to sit at 10.9.
+        assert min(float(s) for s in steps) * 16 >= 12
+
+    def test_there_are_three_line_heights_not_eight(self, page):
+        style = page.split("<style>")[1].split("</style>")[0]
+
+        assert len(re.findall(r"--lh-[a-z]+:", style)) == 3
