@@ -143,3 +143,33 @@ class TestStability:
 
 def test_returns_the_event_count(tmp_path, feed):
     assert MISPFeedExporter(tmp_path).export(feed, FeedMetadata()) == 2
+
+
+class TestDirectoryPage:
+    """
+    MISP appends /manifest.json, so the bare feed URL returning 404 broke
+    nothing in the software - and blocked the pull request for a week, because
+    the first thing MISP's maintainer did was open the URL.
+    """
+
+    def test_the_feed_directory_serves_something(self, tmp_path, sample_apt_group, sample_metadata):
+        MISPFeedExporter(tmp_path).export({"TEST": sample_apt_group}, sample_metadata)
+
+        assert (tmp_path / "index.html").exists()
+
+    def test_it_explains_what_the_url_is_for(self, tmp_path, sample_apt_group, sample_metadata):
+        MISPFeedExporter(tmp_path).export({"TEST": sample_apt_group}, sample_metadata)
+        page = (tmp_path / "index.html").read_text("utf-8")
+
+        assert "MISP feed directory" in page
+        assert "Add Feed" in page
+        assert 'href="manifest.json"' in page
+        assert 'href="hashes.csv"' in page
+
+    def test_it_does_not_disturb_the_feed_itself(self, tmp_path, sample_apt_group, sample_metadata):
+        events = MISPFeedExporter(tmp_path).export({"TEST": sample_apt_group}, sample_metadata)
+        manifest = json.loads((tmp_path / "manifest.json").read_text("utf-8"))
+
+        # index.html is inert: the manifest still lists exactly the events.
+        assert len(manifest) == events
+        assert "index.html" not in manifest

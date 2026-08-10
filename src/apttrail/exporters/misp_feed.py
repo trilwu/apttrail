@@ -50,6 +50,10 @@ THREAT_LEVEL_MEDIUM = "2"
 ANALYSIS_COMPLETED = "2"
 
 
+SITE_URL = "https://trilwu.github.io/apttrail"
+PROJECT_URL = "https://github.com/trilwu/apttrail"
+
+
 class MISPFeedExporter:
     """Writes a MISP-compatible feed directory."""
 
@@ -130,8 +134,57 @@ class MISPFeedExporter:
             newline="\n",
         )
         self._write_hashes(hash_rows)
+        self._write_directory_page(len(manifest), metadata)
 
         return len(manifest)
+
+    def _write_directory_page(self, events: int, metadata: FeedMetadata) -> None:
+        """
+        Give the feed directory itself something to serve.
+
+        MISP never requests this URL - it appends ``/manifest.json`` (Feed.php)
+        - so the bare path returning 404 was harmless to the software and
+        actively harmful to the review: the first thing a maintainer does with
+        a feed URL is open it, and MISP's own lead reported the 404 on the
+        pull request. Static hosting serves index.html for a directory, so this
+        is all it takes to make the URL explain itself.
+        """
+        generated = metadata.generated_at.isoformat()
+        (self.output_dir / "index.html").write_text(
+            f"""<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APTtrail MISP feed</title>
+<style>
+ body {{ font: 15px/1.6 ui-sans-serif, system-ui, sans-serif; max-width: 44rem;
+        margin: 3rem auto; padding: 0 1.2rem; }}
+ code, pre {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em; }}
+ pre {{ background: #8881; padding: .8rem; border-radius: 4px; overflow-x: auto; }}
+ .muted {{ opacity: .75; }}
+</style>
+<h1>APTtrail MISP feed</h1>
+<p>This is a <strong>MISP feed directory</strong>, not a web page. Add the URL
+below in MISP under <em>Sync Actions &rarr; Feeds &rarr; Add Feed</em>, with
+input source <code>Network</code> and format <code>MISP Feed</code>:</p>
+<pre>{SITE_URL}/misp-feed</pre>
+<p>MISP appends <code>/manifest.json</code> itself. The parts, if you want to
+look directly:</p>
+<ul>
+  <li><a href="manifest.json">manifest.json</a> &mdash; {events:,} events, one per APT group</li>
+  <li><a href="hashes.csv">hashes.csv</a> &mdash; for correlation without pulling events</li>
+  <li><code>&lt;event-uuid&gt;.json</code> &mdash; one file per event, listed in the manifest</li>
+</ul>
+<p class=muted>Event and attribute UUIDs are deterministic, so re-fetching
+updates events in place rather than duplicating them. Generated {generated},
+rebuilt hourly.</p>
+<p><a href="{SITE_URL}/">APTtrail</a> &middot;
+<a href="{PROJECT_URL}">source</a></p>
+</html>
+""",
+            encoding="utf-8",
+            newline="\n",
+        )
 
     @staticmethod
     def _info(name: str, group: APTGroup) -> str:
