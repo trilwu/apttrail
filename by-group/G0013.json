@@ -1,0 +1,248 @@
+{
+  "aliases": [],
+  "attack_id": "G0013",
+  "attack_name": "APT30",
+  "attack_url": "https://attack.mitre.org/groups/G0013/",
+  "counts": {
+    "domain": 15,
+    "ipv4": 4,
+    "url": 1,
+    "url_path": 5
+  },
+  "first_seen": {
+    "domain": {
+      "appsecnic.com": "2019-09-22",
+      "aseanm.com": "2019-09-22",
+      "autoapec.com": "2019-09-22",
+      "bigfixtools.com": "2019-09-22",
+      "bluesixnine.com": "2019-09-22",
+      "cbkjdxf.com": "2019-09-22",
+      "creammemory.com": "2019-09-22",
+      "gordeneyes.com": "2020-04-23",
+      "iapfreecenter.com": "2019-09-22",
+      "kabadefender.com": "2020-04-23",
+      "km-nyc.com": "2019-09-22",
+      "km153.com": "2019-09-22",
+      "lisword.com": "2019-09-22",
+      "newpresses.com": "2019-09-22",
+      "techmicrost.com": "2020-06-19"
+    },
+    "ipv4": {
+      "103.233.10.152:3306": "2020-04-21",
+      "103.233.10.152:4433": "2020-04-23",
+      "103.233.10.152:8080": "2020-04-23",
+      "172.247.197.189:443": "2020-06-19"
+    },
+    "url": {
+      "http://103.233.10.152": "2020-04-23"
+    },
+    "url_path": {
+      "/ForZRLnk1z/": "2019-09-22",
+      "/ForZRLnk3z/": "2019-09-22",
+      "/Lnk1z/": "2019-09-22",
+      "/clntcmd.php": "2020-06-19",
+      "/clntsignin.php": "2020-06-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-09-22",
+    "latest": "2020-06-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "appsecnic.com",
+      "aseanm.com",
+      "autoapec.com",
+      "bigfixtools.com",
+      "bluesixnine.com",
+      "cbkjdxf.com",
+      "creammemory.com",
+      "gordeneyes.com",
+      "iapfreecenter.com",
+      "kabadefender.com",
+      "km-nyc.com",
+      "km153.com",
+      "lisword.com",
+      "newpresses.com",
+      "techmicrost.com"
+    ],
+    "ipv4": [
+      "103.233.10.152:3306",
+      "103.233.10.152:4433",
+      "103.233.10.152:8080",
+      "172.247.197.189:443"
+    ],
+    "url": [
+      "http://103.233.10.152"
+    ],
+    "url_path": [
+      "/ForZRLnk1z/",
+      "/ForZRLnk3z/",
+      "/Lnk1z/",
+      "/clntcmd.php",
+      "/clntsignin.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "30"
+  ],
+  "references": [
+    "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/05/20081935/rpt-apt30.pdf",
+    "https://twitter.com/3XS0/status/1253426730217291778 (# Lecna/BACKSPACE, NETEAGLE)",
+    "https://twitter.com/Vishnyak0v/status/1252495730486456321",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/eagle-eye-is-back-apt30/",
+    "https://www.virustotal.com/gui/ip-address/103.233.10.152/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "slug": "G0005"
+    }
+  ],
+  "slug": "G0013",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url_path": 2
+      },
+      "first_seen": "2020-06-19",
+      "indicators": {
+        "domain": [
+          "techmicrost.com"
+        ],
+        "ipv4": [
+          "172.247.197.189:443"
+        ],
+        "url_path": [
+          "/clntcmd.php",
+          "/clntsignin.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/3XS0/status/1253426730217291778 (# Lecna/BACKSPACE, NETEAGLE)",
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/eagle-eye-is-back-apt30/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2020-04-23",
+      "indicators": {
+        "ipv4": [
+          "103.233.10.152:4433",
+          "103.233.10.152:8080"
+        ],
+        "url": [
+          "http://103.233.10.152"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1252495730486456321",
+        "https://www.virustotal.com/gui/ip-address/103.233.10.152/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-04-23",
+      "indicators": {
+        "domain": [
+          "gordeneyes.com",
+          "kabadefender.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/3XS0/status/1253426730217291778 (# Lecna/BACKSPACE, NETEAGLE)",
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/eagle-eye-is-back-apt30/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-04-21",
+      "indicators": {
+        "ipv4": [
+          "103.233.10.152:3306"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1252495730486456321",
+        "https://www.virustotal.com/gui/ip-address/103.233.10.152/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2019-09-22",
+      "indicators": {
+        "domain": [
+          "appsecnic.com",
+          "aseanm.com",
+          "autoapec.com",
+          "bigfixtools.com",
+          "bluesixnine.com",
+          "cbkjdxf.com",
+          "creammemory.com",
+          "iapfreecenter.com",
+          "km-nyc.com",
+          "km153.com",
+          "lisword.com",
+          "newpresses.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2015/05/20081935/rpt-apt30.pdf"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2019-09-22",
+      "indicators": {
+        "url_path": [
+          "/ForZRLnk1z/",
+          "/ForZRLnk3z/",
+          "/Lnk1z/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/3XS0/status/1253426730217291778 (# Lecna/BACKSPACE, NETEAGLE)",
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/eagle-eye-is-back-apt30/"
+      ],
+      "total": 3
+    }
+  ]
+}

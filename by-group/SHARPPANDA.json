@@ -1,0 +1,397 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5,
+    "ipv4": 5,
+    "url": 8,
+    "url_path": 13
+  },
+  "first_seen": {
+    "domain": {
+      "office.oiqezet.com": "2022-01-24",
+      "oiqezet.com": "2022-01-24",
+      "openxmlformats.shop": "2023-12-29",
+      "schemas.openxmlformats.shop": "2023-12-29",
+      "template-content.azurecloudapp.workers.dev": "2023-07-23"
+    },
+    "ipv4": {
+      "107.148.165.151:443": "2021-06-03",
+      "13.236.189.80:8001": "2023-05-28",
+      "45.121.146.88:443": "2021-06-03",
+      "45.76.190.210:443": "2022-11-09",
+      "45.91.225.139:443": "2021-06-03"
+    },
+    "url": {
+      "http://103.213.247.48": "2022-06-16",
+      "http://107.148.165.151": "2021-06-03",
+      "http://139.180.137.73": "2023-01-05",
+      "http://139.180.138.49": "2022-10-21",
+      "http://38.54.31.43": "2024-06-24",
+      "http://45.121.146.88": "2021-05-20",
+      "http://45.76.190.210": "2022-11-09",
+      "http://45.91.225.139": "2021-06-03"
+    },
+    "url_path": {
+      "/2Onp0som.php": "2022-11-09",
+      "/G0AnyWhere_up.jsp": "2023-05-28",
+      "/IGxWyLQI/": "2022-11-09",
+      "/IGxWyLQI/2Onp0som.php": "2022-11-09",
+      "/IRg4hRs9/": "2022-10-21",
+      "/IRg4hRs9/j3kzZ9Yo.php": "2022-10-22",
+      "/IRg4hRs9/tzM1cuw5.png": "2022-10-21",
+      "/KJ8oqzlG.png": "2023-01-05",
+      "/WindowsTime/update.php?Data=": "2024-06-24",
+      "/YbZe6AQE/": "2023-01-05",
+      "/YbZe6AQE/KJ8oqzlG.png": "2023-01-05",
+      "/j3kzZ9Yo.php": "2022-10-22",
+      "/tzM1cuw5.png": "2022-10-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-05-20",
+    "latest": "2024-06-24"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "office.oiqezet.com",
+      "oiqezet.com",
+      "openxmlformats.shop",
+      "schemas.openxmlformats.shop",
+      "template-content.azurecloudapp.workers.dev"
+    ],
+    "ipv4": [
+      "107.148.165.151:443",
+      "13.236.189.80:8001",
+      "45.121.146.88:443",
+      "45.76.190.210:443",
+      "45.91.225.139:443"
+    ],
+    "url": [
+      "http://103.213.247.48",
+      "http://107.148.165.151",
+      "http://139.180.137.73",
+      "http://139.180.138.49",
+      "http://38.54.31.43",
+      "http://45.121.146.88",
+      "http://45.76.190.210",
+      "http://45.91.225.139"
+    ],
+    "url_path": [
+      "/2Onp0som.php",
+      "/G0AnyWhere_up.jsp",
+      "/IGxWyLQI/",
+      "/IGxWyLQI/2Onp0som.php",
+      "/IRg4hRs9/",
+      "/IRg4hRs9/j3kzZ9Yo.php",
+      "/IRg4hRs9/tzM1cuw5.png",
+      "/KJ8oqzlG.png",
+      "/WindowsTime/update.php?Data=",
+      "/YbZe6AQE/",
+      "/YbZe6AQE/KJ8oqzlG.png",
+      "/j3kzZ9Yo.php",
+      "/tzM1cuw5.png"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SHARPPANDA"
+  ],
+  "references": [
+    "https://blog.vincss.net/2021/05/re022-phan-1-phan-tich-nhanh-mau-ma-doc-gia-mao-cong-van-cua-uy-ban-kiem-tra-tw-VietNam.html",
+    "https://otx.alienvault.com/pulse/60b8bbf9744408d3a83062f7",
+    "https://research.checkpoint.com/2021/chinese-apt-group-targets-southeast-asian-government-with-previously-unknown-backdoor/",
+    "https://twitter.com/ShadowChasing1/status/1485514043679199233",
+    "https://twitter.com/StopMalvertisin/status/1583663484725694464",
+    "https://twitter.com/h2jazi/status/1537442234605244416",
+    "https://twitter.com/kienbigmummy/status/1612361272972185601",
+    "https://twitter.com/nao_sec/status/1485525023410757632",
+    "https://twitter.com/nao_sec/status/1583465428005040130",
+    "https://twitter.com/nao_sec/status/1611030643693195264",
+    "https://twitter.com/nao_sec/status/1662790230691450886",
+    "https://twitter.com/nao_sec/status/1682299350435901441",
+    "https://twitter.com/nao_sec/status/1740589856995303751",
+    "https://twitter.com/t3ft3lb/status/1590313981025349634",
+    "https://www.virustotal.com/gui/file/1a15a35065ec7c2217ca6a4354877e6a1de610861311174984232ba5ff749114/detection",
+    "https://www.virustotal.com/gui/file/21f173a347ed111ce67e4c0f2c0bd4ee34bb7ca765da03635ca5c0df394cd7e6/detection",
+    "https://www.virustotal.com/gui/file/32a0f6276fea9fe5ee2ffda461494a24a5b1f163a300bc8edd3b33c9c6cc2d17/detection",
+    "https://www.virustotal.com/gui/file/3b4b9f56d5bec5cf3cd3fd6b917d43b2ff8a0b1d22a00b577e8d2bcbb90f7418/detection",
+    "https://www.virustotal.com/gui/file/4747e6a62fee668593ceebf62f441032f7999e00a0dfd758ea5105c1feb72225/detection",
+    "https://www.virustotal.com/gui/file/6f66faf278b5e78992362060d6375dcc2006bcee29ccc19347db27a250f81bcd/detection",
+    "https://www.virustotal.com/gui/file/811a020b0f0bb31494f7fbe21893594cd44d90f77fcd1f257925c4ac5fabed43/detection",
+    "https://www.virustotal.com/gui/file/b023e2b398d552aacb2233a6e08b4734c205ab6abf5382ec31e6d5aa7c71c1cb/detection",
+    "https://www.virustotal.com/gui/file/ca7f297dc04acad2fab04d5dc2de9475aed4186805f6c237c10b8f56b384cf30/detection",
+    "https://www.virustotal.com/gui/file/cd24a44f2fcb9e8bbedee3ba9a2d1026272f1296a584f8832022eda57b98574c/detection",
+    "https://www.virustotal.com/gui/file/f2779c63373e33fdbd001f336df36b01b0360cd6787c1cd29a6524cc7bcf1ffb/detection",
+    "https://www.virustotal.com/gui/file/ff35cfed656c0cac5571beae7170a2fec007e75417c1d0c4fd7af4185759ec38/detection",
+    "https://x.com/t3ft3lb/status/1805172999236006066"
+  ],
+  "related": [],
+  "slug": "SHARPPANDA",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen": "2024-06-24",
+      "indicators": {
+        "url": [
+          "http://38.54.31.43"
+        ],
+        "url_path": [
+          "/WindowsTime/update.php?Data="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t3ft3lb/status/1805172999236006066",
+        "https://www.virustotal.com/gui/file/cd24a44f2fcb9e8bbedee3ba9a2d1026272f1296a584f8832022eda57b98574c/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-12-29",
+      "indicators": {
+        "domain": [
+          "openxmlformats.shop",
+          "schemas.openxmlformats.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1740589856995303751",
+        "https://www.virustotal.com/gui/file/ff35cfed656c0cac5571beae7170a2fec007e75417c1d0c4fd7af4185759ec38/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-07-23",
+      "indicators": {
+        "domain": [
+          "template-content.azurecloudapp.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1682299350435901441",
+        "https://www.virustotal.com/gui/file/3b4b9f56d5bec5cf3cd3fd6b917d43b2ff8a0b1d22a00b577e8d2bcbb90f7418/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url_path": 1
+      },
+      "first_seen": "2023-05-28",
+      "indicators": {
+        "ipv4": [
+          "13.236.189.80:8001"
+        ],
+        "url_path": [
+          "/G0AnyWhere_up.jsp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1662790230691450886",
+        "https://www.virustotal.com/gui/file/21f173a347ed111ce67e4c0f2c0bd4ee34bb7ca765da03635ca5c0df394cd7e6/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2023-01-05",
+      "indicators": {
+        "url": [
+          "http://139.180.137.73"
+        ],
+        "url_path": [
+          "/KJ8oqzlG.png",
+          "/YbZe6AQE/",
+          "/YbZe6AQE/KJ8oqzlG.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1611030643693195264",
+        "https://twitter.com/kienbigmummy/status/1612361272972185601",
+        "https://www.virustotal.com/gui/file/32a0f6276fea9fe5ee2ffda461494a24a5b1f163a300bc8edd3b33c9c6cc2d17/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2022-11-09",
+      "indicators": {
+        "ipv4": [
+          "45.76.190.210:443"
+        ],
+        "url": [
+          "http://45.76.190.210"
+        ],
+        "url_path": [
+          "/2Onp0som.php",
+          "/IGxWyLQI/",
+          "/IGxWyLQI/2Onp0som.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1590313981025349634",
+        "https://www.virustotal.com/gui/file/1a15a35065ec7c2217ca6a4354877e6a1de610861311174984232ba5ff749114/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2022-10-22",
+      "indicators": {
+        "url_path": [
+          "/IRg4hRs9/j3kzZ9Yo.php",
+          "/j3kzZ9Yo.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1583465428005040130",
+        "https://twitter.com/StopMalvertisin/status/1583663484725694464",
+        "https://www.virustotal.com/gui/file/ca7f297dc04acad2fab04d5dc2de9475aed4186805f6c237c10b8f56b384cf30/detection",
+        "https://www.virustotal.com/gui/file/f2779c63373e33fdbd001f336df36b01b0360cd6787c1cd29a6524cc7bcf1ffb/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2022-10-21",
+      "indicators": {
+        "url": [
+          "http://139.180.138.49"
+        ],
+        "url_path": [
+          "/IRg4hRs9/",
+          "/IRg4hRs9/tzM1cuw5.png",
+          "/tzM1cuw5.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1583465428005040130",
+        "https://twitter.com/StopMalvertisin/status/1583663484725694464",
+        "https://www.virustotal.com/gui/file/ca7f297dc04acad2fab04d5dc2de9475aed4186805f6c237c10b8f56b384cf30/detection",
+        "https://www.virustotal.com/gui/file/f2779c63373e33fdbd001f336df36b01b0360cd6787c1cd29a6524cc7bcf1ffb/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-06-16",
+      "indicators": {
+        "url": [
+          "http://103.213.247.48"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1537442234605244416",
+        "https://www.virustotal.com/gui/file/b023e2b398d552aacb2233a6e08b4734c205ab6abf5382ec31e6d5aa7c71c1cb/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-24",
+      "indicators": {
+        "domain": [
+          "office.oiqezet.com",
+          "oiqezet.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1485514043679199233",
+        "https://twitter.com/nao_sec/status/1485525023410757632",
+        "https://www.virustotal.com/gui/file/811a020b0f0bb31494f7fbe21893594cd44d90f77fcd1f257925c4ac5fabed43/detection",
+        "https://www.virustotal.com/gui/file/4747e6a62fee668593ceebf62f441032f7999e00a0dfd758ea5105c1feb72225/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url": 2
+      },
+      "first_seen": "2021-06-03",
+      "indicators": {
+        "ipv4": [
+          "107.148.165.151:443",
+          "45.121.146.88:443",
+          "45.91.225.139:443"
+        ],
+        "url": [
+          "http://107.148.165.151",
+          "http://45.91.225.139"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.vincss.net/2021/05/re022-phan-1-phan-tich-nhanh-mau-ma-doc-gia-mao-cong-van-cua-uy-ban-kiem-tra-tw-VietNam.html",
+        "https://research.checkpoint.com/2021/chinese-apt-group-targets-southeast-asian-government-with-previously-unknown-backdoor/",
+        "https://otx.alienvault.com/pulse/60b8bbf9744408d3a83062f7",
+        "https://www.virustotal.com/gui/file/6f66faf278b5e78992362060d6375dcc2006bcee29ccc19347db27a250f81bcd/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-05-20",
+      "indicators": {
+        "url": [
+          "http://45.121.146.88"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.vincss.net/2021/05/re022-phan-1-phan-tich-nhanh-mau-ma-doc-gia-mao-cong-van-cua-uy-ban-kiem-tra-tw-VietNam.html",
+        "https://research.checkpoint.com/2021/chinese-apt-group-targets-southeast-asian-government-with-previously-unknown-backdoor/",
+        "https://otx.alienvault.com/pulse/60b8bbf9744408d3a83062f7",
+        "https://www.virustotal.com/gui/file/6f66faf278b5e78992362060d6375dcc2006bcee29ccc19347db27a250f81bcd/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

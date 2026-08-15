@@ -1,0 +1,214 @@
+{
+  "aliases": [
+    "54bb47h",
+    "sabbath"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 21,
+    "ipv4": 5,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "4bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion": "2021-11-29",
+      "54bb47h.blog": "2022-01-09",
+      "54bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion": "2022-01-09",
+      "aequuira1aedeezais5i.probes.space": "2021-10-08",
+      "aimee0febai5phoht2ti.probes.website": "2021-10-08",
+      "cofeeloveers.com": "2021-11-29",
+      "datatransferdc.com": "2021-11-29",
+      "doratir.com": "2021-11-29",
+      "farhadl.com": "2021-11-29",
+      "frankir.com": "2021-11-29",
+      "gordonzon.com": "2021-11-29",
+      "greentuks.com": "2021-11-29",
+      "helpgoldr.com": "2021-11-29",
+      "jeithe7eijeefohch3qu.probes.site": "2021-10-08",
+      "markettc.biz": "2021-11-29",
+      "probes.site": "2021-11-29",
+      "probes.space": "2021-11-29",
+      "probes.website": "2021-11-29",
+      "securingyourpc.com": "2022-02-08",
+      "security4themasses.com": "2022-02-08",
+      "tinysidney.com": "2021-11-29"
+    },
+    "ipv4": {
+      "45.141.84.182:443": "2021-11-29",
+      "45.146.166.24:443": "2021-11-29",
+      "45.147.230.137:3001": "2021-11-29",
+      "45.147.230.221:2002": "2021-11-29",
+      "45.79.55.129:443": "2021-11-29"
+    },
+    "url": {
+      "http://45.79.55.129": "2021-11-29"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-10-08",
+    "latest": "2022-02-08"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "4bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion",
+      "54bb47h.blog",
+      "54bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion",
+      "aequuira1aedeezais5i.probes.space",
+      "aimee0febai5phoht2ti.probes.website",
+      "cofeeloveers.com",
+      "datatransferdc.com",
+      "doratir.com",
+      "farhadl.com",
+      "frankir.com",
+      "gordonzon.com",
+      "greentuks.com",
+      "helpgoldr.com",
+      "jeithe7eijeefohch3qu.probes.site",
+      "markettc.biz",
+      "probes.site",
+      "probes.space",
+      "probes.website",
+      "securingyourpc.com",
+      "security4themasses.com",
+      "tinysidney.com"
+    ],
+    "ipv4": [
+      "45.141.84.182:443",
+      "45.146.166.24:443",
+      "45.147.230.137:3001",
+      "45.147.230.221:2002",
+      "45.79.55.129:443"
+    ],
+    "url": [
+      "http://45.79.55.129"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2190"
+  ],
+  "references": [
+    "https://github.com/thetanz/ransomwatch/blob/main/docs/INDEX.md",
+    "https://twitter.com/th3_protoCOL/status/1490847701012869120",
+    "https://www.mandiant.com/resources/sabbath-ransomware-affiliate",
+    "https://www.virustotal.com/gui/file/79b47780382f54ca039ad248d8241e42a7ed6b1e4b75af836890e4e46c0f8737/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "VICESOCIETY"
+    }
+  ],
+  "slug": "UNC2190",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-02-08",
+      "indicators": {
+        "domain": [
+          "securingyourpc.com",
+          "security4themasses.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/th3_protoCOL/status/1490847701012869120"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-09",
+      "indicators": {
+        "domain": [
+          "54bb47h.blog",
+          "54bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/thetanz/ransomwatch/blob/main/docs/INDEX.md"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 14,
+        "ipv4": 5,
+        "url": 1
+      },
+      "first_seen": "2021-11-29",
+      "indicators": {
+        "domain": [
+          "4bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion",
+          "cofeeloveers.com",
+          "datatransferdc.com",
+          "doratir.com",
+          "farhadl.com",
+          "frankir.com",
+          "gordonzon.com",
+          "greentuks.com",
+          "helpgoldr.com",
+          "markettc.biz",
+          "probes.site",
+          "probes.space",
+          "probes.website",
+          "tinysidney.com"
+        ],
+        "ipv4": [
+          "45.141.84.182:443",
+          "45.146.166.24:443",
+          "45.147.230.137:3001",
+          "45.147.230.221:2002",
+          "45.79.55.129:443"
+        ],
+        "url": [
+          "http://45.79.55.129"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/sabbath-ransomware-affiliate",
+        "https://www.virustotal.com/gui/file/79b47780382f54ca039ad248d8241e42a7ed6b1e4b75af836890e4e46c0f8737/detection"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-10-08",
+      "indicators": {
+        "domain": [
+          "aequuira1aedeezais5i.probes.space",
+          "aimee0febai5phoht2ti.probes.website",
+          "jeithe7eijeefohch3qu.probes.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/sabbath-ransomware-affiliate",
+        "https://www.virustotal.com/gui/file/79b47780382f54ca039ad248d8241e42a7ed6b1e4b75af836890e4e46c0f8737/detection"
+      ],
+      "total": 3
+    }
+  ]
+}

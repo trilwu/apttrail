@@ -1,0 +1,139 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cea74b2c-61b5-5ce3-9e0f-356165b4cac8",
+        "value": "analytics-service.cloud"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f14a17e8-0bcd-58de-a58e-5ebb9f312371",
+        "value": "analytics-service.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e6cb895f-9ac7-5db6-8d31-b0881b5439cd",
+        "value": "blackcrocodile.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "72fa0da1-3b98-5784-8682-322d60bd8f81",
+        "value": "cdn-analytics.co"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "817cf9fd-baab-5b3b-9657-4df5e1938343",
+        "value": "cdn.jguery.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d2303d99-1450-519d-bcd8-ceae4c90386c",
+        "value": "cdnpakage.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "119aa84b-2901-5006-b660-d663603451e5",
+        "value": "fastanalizer.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "022e6852-3161-51d8-9989-6760f931b1c7",
+        "value": "fastanalytics.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fa755c42-c63b-5aa3-9af5-a9b636ccf2ab",
+        "value": "jquery-cdn.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "91e37fef-4a04-5d83-8b02-884d1271bfa8",
+        "value": "jquery-code-download.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c80fe01e-ef26-55e5-b66b-7b4570e7f9af",
+        "value": "jquery-stack.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3506c60a-33ff-57bd-bfe4-a8f99f44fb0e",
+        "value": "prostatistics.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1699902640",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "31c20494-3315-5e70-a05a-40d0701b473c",
+        "value": "updatenewnet.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:imperialkitten"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"CURIUM - G1012\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CURIUM (G1012) - Maltrail group IMPERIALKITTEN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c43fd725-c759-5fa0-88a8-8bf45076654f"
+  }
+}

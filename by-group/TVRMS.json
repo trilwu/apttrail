@@ -1,0 +1,77 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 8
+  },
+  "first_seen": {
+    "domain": {
+      "barinoh9.beget.tech": "2018-08-03",
+      "barinovbb.had.su": "2018-08-03",
+      "buhuchetooo.ru": "2018-08-03",
+      "document-buh.com": "2018-08-03",
+      "micorsoft.info": "2018-08-03",
+      "mts2015stm.myjino.ru": "2018-08-03",
+      "papaninili.temp.swtest.ru": "2018-08-03",
+      "rosatomgov.ru": "2018-08-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-03",
+    "latest": "2018-08-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "barinoh9.beget.tech",
+      "barinovbb.had.su",
+      "buhuchetooo.ru",
+      "document-buh.com",
+      "micorsoft.info",
+      "mts2015stm.myjino.ru",
+      "papaninili.temp.swtest.ru",
+      "rosatomgov.ru"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TVRMS"
+  ],
+  "references": [
+    "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/08/01075510/TV_RMS_IoC_eng.pdf",
+    "https://securelist.com/attacks-on-industrial-enterprises-using-rms-and-teamviewer/87104/"
+  ],
+  "related": [],
+  "slug": "TVRMS",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2018-08-03",
+      "indicators": {
+        "domain": [
+          "barinoh9.beget.tech",
+          "barinovbb.had.su",
+          "buhuchetooo.ru",
+          "document-buh.com",
+          "micorsoft.info",
+          "mts2015stm.myjino.ru",
+          "papaninili.temp.swtest.ru",
+          "rosatomgov.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/attacks-on-industrial-enterprises-using-rms-and-teamviewer/87104/",
+        "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/08/01075510/TV_RMS_IoC_eng.pdf"
+      ],
+      "total": 8
+    }
+  ]
+}

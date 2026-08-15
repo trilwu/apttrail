@@ -1,0 +1,77 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 2,
+    "url": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "84.38.134.56:1337": "2024-07-27",
+      "84.38.134.56:8080": "2024-07-27"
+    },
+    "url": {
+      "http://84.38.134.56": "2024-07-27"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-07-27",
+    "latest": "2024-07-27"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "84.38.134.56:1337",
+      "84.38.134.56:8080"
+    ],
+    "url": [
+      "http://84.38.134.56"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "45"
+  ],
+  "references": [
+    "https://cloud.google.com/blog/topics/threat-intelligence/apt45-north-korea-digital-military-machine",
+    "https://www.virustotal.com/gui/file/38f0f2d658e09c57fc78698482f2f638843eb53412d860fb3a99bb6f51025b07/detection",
+    "https://www.virustotal.com/gui/file/6ca3c2a6001f1149ff75ab46402dee40d97602bab0b43ac144ca70fbd2101404/detection",
+    "https://www.virustotal.com/gui/file/8aa6612c95c7cef49709596da43a0f8354f14d8c08128c4cb9b1f37e548f083b/detection",
+    "https://x.com/alphasoc/status/1816851184356888979"
+  ],
+  "related": [],
+  "slug": "45",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2024-07-27",
+      "indicators": {
+        "ipv4": [
+          "84.38.134.56:1337",
+          "84.38.134.56:8080"
+        ],
+        "url": [
+          "http://84.38.134.56"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/alphasoc/status/1816851184356888979",
+        "https://cloud.google.com/blog/topics/threat-intelligence/apt45-north-korea-digital-military-machine",
+        "https://www.virustotal.com/gui/file/8aa6612c95c7cef49709596da43a0f8354f14d8c08128c4cb9b1f37e548f083b/detection",
+        "https://www.virustotal.com/gui/file/6ca3c2a6001f1149ff75ab46402dee40d97602bab0b43ac144ca70fbd2101404/detection",
+        "https://www.virustotal.com/gui/file/38f0f2d658e09c57fc78698482f2f638843eb53412d860fb3a99bb6f51025b07/detection"
+      ],
+      "total": 3
+    }
+  ]
+}

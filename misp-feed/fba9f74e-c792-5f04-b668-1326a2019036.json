@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ccf497ff-824b-5f88-827b-b5023a9eb2de",
+        "value": "arab-chat.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1582813534",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "18025452-b26d-52e2-a7ce-919e3cae652e",
+        "value": "arab-download.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cbce7fa9-70a1-5bd6-ba8a-4d78066bfc44",
+        "value": "chat-messenger.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cba137d1-0bb8-5d0b-907e-b0b8825ef883",
+        "value": "chat-world.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "984e2066-685f-5c47-8d97-092da5a8e20b",
+        "value": "free-apps.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0b170c6f-d47b-597d-9afd-f37cdc95253d",
+        "value": "gserv.mobi"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "aa0b3d7d-5398-50db-b380-92e26299a3eb",
+        "value": "kikstore.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8fbadeea-5ed2-586b-990e-4b0e7831e1ee",
+        "value": "network-lab.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540902823",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ba394dcc-2a4e-5d6e-9840-a54ce7f6a9b7",
+        "value": "onlineclub.info"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:temptingcedar"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: TEMPTINGCEDAR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "fba9f74e-c792-5f04-b668-1326a2019036"
+  }
+}

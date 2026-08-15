@@ -1,0 +1,56 @@
+{
+  "name": "Ferocious Kitten (G0137) - APTtrail",
+  "description": "Techniques attributed to Ferocious Kitten by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0137.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1036.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Ferocious Kitten",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

@@ -1,0 +1,144 @@
+{
+  "aliases": [
+    "lidshift",
+    "lidshot",
+    "lightshift",
+    "plankwalk",
+    "sideshow",
+    "temp.hermit",
+    "touchshift",
+    "unc2970"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "url": 13
+  },
+  "first_seen": {
+    "url": {
+      "abba-servicios.mx/wordpress/wp-content/themes/config.php": "2023-03-14",
+      "ajayjangid.in/js/jquery/jquery.php": "2023-03-14",
+      "crickethighlights.today/wp-content/plugins/contact.php": "2023-03-14",
+      "doug.org/wp-includes/admin.php": "2023-03-14",
+      "fainstec.com/assets/js/jquery/jquery.php": "2023-03-14",
+      "keewoom.co.kr/prod_img/201409/prod.php": "2023-03-14",
+      "leadsblue.com/wp-content/wp-utility/index.php": "2022-11-06",
+      "mantis.quick.net.pl/library/securimage/index.php": "2023-03-14",
+      "olidhealth.com/wp-includes/php-compat/compat.php": "2022-11-25",
+      "ruscheltelefonia.com.br/public/php/index.php": "2023-03-14",
+      "sede.lamarinadevalencia.com/tablonEdictal/layout/contentLayout.jsp": "2023-03-14",
+      "toptradenews.com/wp-content/themes/themes.php": "2023-03-14",
+      "webinternal.anyplex.com/images/query_image.jsp": "2023-03-14"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-11-06",
+    "latest": "2023-03-14"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "abba-servicios.mx/wordpress/wp-content/themes/config.php",
+      "ajayjangid.in/js/jquery/jquery.php",
+      "crickethighlights.today/wp-content/plugins/contact.php",
+      "doug.org/wp-includes/admin.php",
+      "fainstec.com/assets/js/jquery/jquery.php",
+      "keewoom.co.kr/prod_img/201409/prod.php",
+      "leadsblue.com/wp-content/wp-utility/index.php",
+      "mantis.quick.net.pl/library/securimage/index.php",
+      "olidhealth.com/wp-includes/php-compat/compat.php",
+      "ruscheltelefonia.com.br/public/php/index.php",
+      "sede.lamarinadevalencia.com/tablonEdictal/layout/contentLayout.jsp",
+      "toptradenews.com/wp-content/themes/themes.php",
+      "webinternal.anyplex.com/images/query_image.jsp"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2970"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/640feb918ed0617c50fe21a3",
+    "https://www.mandiant.com/resources/blog/lightshift-and-lightshow"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0032"
+    }
+  ],
+  "slug": "UNC2970",
+  "timeline": [
+    {
+      "counts": {
+        "url": 11
+      },
+      "first_seen": "2023-03-14",
+      "indicators": {
+        "url": [
+          "abba-servicios.mx/wordpress/wp-content/themes/config.php",
+          "ajayjangid.in/js/jquery/jquery.php",
+          "crickethighlights.today/wp-content/plugins/contact.php",
+          "doug.org/wp-includes/admin.php",
+          "fainstec.com/assets/js/jquery/jquery.php",
+          "keewoom.co.kr/prod_img/201409/prod.php",
+          "mantis.quick.net.pl/library/securimage/index.php",
+          "ruscheltelefonia.com.br/public/php/index.php",
+          "sede.lamarinadevalencia.com/tablonEdictal/layout/contentLayout.jsp",
+          "toptradenews.com/wp-content/themes/themes.php",
+          "webinternal.anyplex.com/images/query_image.jsp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/lightshift-and-lightshow",
+        "https://otx.alienvault.com/pulse/640feb918ed0617c50fe21a3"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-11-25",
+      "indicators": {
+        "url": [
+          "olidhealth.com/wp-includes/php-compat/compat.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/lightshift-and-lightshow",
+        "https://otx.alienvault.com/pulse/640feb918ed0617c50fe21a3"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-11-06",
+      "indicators": {
+        "url": [
+          "leadsblue.com/wp-content/wp-utility/index.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/lightshift-and-lightshow",
+        "https://otx.alienvault.com/pulse/640feb918ed0617c50fe21a3"
+      ],
+      "total": 1
+    }
+  ]
+}

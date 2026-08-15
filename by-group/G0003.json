@@ -1,0 +1,96 @@
+{
+  "aliases": [],
+  "attack_id": "G0003",
+  "attack_name": "Cleaver",
+  "attack_url": "https://attack.mitre.org/groups/G0003/",
+  "counts": {
+    "domain": 15
+  },
+  "first_seen": {
+    "domain": {
+      "doosan-job.com": "2015-03-18",
+      "downloadsservers.com": "2015-03-18",
+      "drivercenterupdate.com": "2015-03-18",
+      "easyresumecreatorpro.com": "2015-03-18",
+      "googleproductupdate.net": "2015-03-18",
+      "microsoftmiddleast.com": "2015-03-18",
+      "microsoftserverupdate.com": "2015-03-18",
+      "microsoftwindowsresources.com": "2015-03-18",
+      "microsoftwindowsupdate.net": "2015-03-18",
+      "northropgrumman.net": "2015-03-18",
+      "teledyne-jobs.com": "2015-03-18",
+      "windowscentralupdate.com": "2015-03-18",
+      "windowssecurityupdate.com": "2015-03-18",
+      "windowsserverupdate.com": "2015-03-18",
+      "windowsupdateserver.com": "2015-03-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2015-03-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "doosan-job.com",
+      "downloadsservers.com",
+      "drivercenterupdate.com",
+      "easyresumecreatorpro.com",
+      "googleproductupdate.net",
+      "microsoftmiddleast.com",
+      "microsoftserverupdate.com",
+      "microsoftwindowsresources.com",
+      "microsoftwindowsupdate.net",
+      "northropgrumman.net",
+      "teledyne-jobs.com",
+      "windowscentralupdate.com",
+      "windowssecurityupdate.com",
+      "windowsserverupdate.com",
+      "windowsupdateserver.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CLEAVER"
+  ],
+  "references": [
+    "http://www.cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
+  ],
+  "related": [],
+  "slug": "G0003",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "doosan-job.com",
+          "downloadsservers.com",
+          "drivercenterupdate.com",
+          "easyresumecreatorpro.com",
+          "googleproductupdate.net",
+          "microsoftmiddleast.com",
+          "microsoftserverupdate.com",
+          "microsoftwindowsresources.com",
+          "microsoftwindowsupdate.net",
+          "northropgrumman.net",
+          "teledyne-jobs.com",
+          "windowscentralupdate.com",
+          "windowssecurityupdate.com",
+          "windowsserverupdate.com",
+          "windowsupdateserver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf"
+      ],
+      "total": 15
+    }
+  ]
+}

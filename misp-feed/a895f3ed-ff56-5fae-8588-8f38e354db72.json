@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1679598212",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cedb4d4a-d016-5d4e-bccc-010b0a1544e0",
+        "value": "ms-prod19-live.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1679598212",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "43a5a6e6-11b8-5073-9ea9-90df07ecbe71",
+        "value": "/rehjhj8785780923853/"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc3966"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC3966",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a895f3ed-ff56-5fae-8588-8f38e354db72"
+  }
+}

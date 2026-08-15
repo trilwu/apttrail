@@ -1,0 +1,60 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "45.148.120.23:91": "2023-10-28"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-10-28",
+    "latest": "2023-10-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "45.148.120.23:91"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GRAYLING"
+  ],
+  "references": [
+    "https://cybersecuritynews.com/apt-group-custom-malware/",
+    "https://otx.alienvault.com/pulse/65257b05864d3e1624233f65",
+    "https://otx.alienvault.com/pulse/65281d5afbb224d10c5f287e",
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/grayling-taiwan-cyber-attacks"
+  ],
+  "related": [],
+  "slug": "GRAYLING",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-10-28",
+      "indicators": {
+        "ipv4": [
+          "45.148.120.23:91"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/grayling-taiwan-cyber-attacks",
+        "https://cybersecuritynews.com/apt-group-custom-malware/",
+        "https://otx.alienvault.com/pulse/65257b05864d3e1624233f65",
+        "https://otx.alienvault.com/pulse/65281d5afbb224d10c5f287e"
+      ],
+      "total": 1
+    }
+  ]
+}

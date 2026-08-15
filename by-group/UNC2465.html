@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>UNC2465 · APTtrail</title>
+<meta name=description content="2,052 indicators attributed to UNC2465, from 13 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/UNC2465.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="UNC2465 · APTtrail">
+<meta property="og:description" content="2,052 indicators attributed to UNC2465, from 13 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/UNC2465.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>UNC2465</h1>
+<p class=aka><b>UNC2465</b> &middot; smokedham</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>2,052</dd></div>
+<div><dt>Source reports</dt><dd>13</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-08-14</dd></div>
+</dl>
+<div class=spark><span style="--h:10%" title="2024: 22 indicators"></span><span style="--h:0%" title="2025: 0 indicators"></span><span class=hot style="--h:100%" title="2026: 2,030 indicators"></span></div>
+<div class=spark-axis><span>2024</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_unc2465.txt">UNC2465</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/UNC2465.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/UNC2465-domain.txt</pre>
+<p class=note><a href="UNC2465.json">UNC2465.json</a> &middot; <a href="UNC2465-domain.txt">UNC2465-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>2,052 indicators</span></h2>
+<p class="lede note">No published description. This group is tracked by Maltrail from vendor reporting but is not named in MITRE ATT&amp;CK, so there is no curated profile to show.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>2,052</td><td class=f><a href="UNC2465-domain.txt">UNC2465-domain.txt</a></td></tr>
+</table>
+
+
+
+
+
+<h2 id=reporting>Principal sources <span class=n>13 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>1,857</span><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>1,857</span><a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>1,857</span><a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>1,857</span><a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>131</span><a href="https://research.cert.orangecyberdefense.com/smokedham/smoking_out_an_affiliate.pdf" rel="noopener nofollow"><span class=host>research.cert.orangecyberdefense.com</span><span class=path>/smokedham/smoking_out_an_affiliate.pdf</span></a><div class=bar style="--w:7%"></div></li>
+<li><span class=c>131</span><a href="https://github.com/cert-orangecyberdefense/cti/blob/main/smokedham/iocs" rel="noopener nofollow"><span class=host>github.com</span><span class=path>/cert-orangecyberdefense/cti/blob/main/s…</span></a><div class=bar style="--w:7%"></div></li>
+<li><span class=c>27</span><a href="https://medium.com/trac-labs/who-ordered-the-smokedham-backdoor-delicacies-in-the-wild-87f51e2e5bd2" rel="noopener nofollow"><span class=host>medium.com</span><span class=path>/trac-labs/who-ordered-the-smokedham-bac…</span></a><div class=bar style="--w:1%"></div></li>
+<li><span class=c>20</span><a href="https://x.com/g0njxa/status/2031034087801012435" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2031034087801012435</span></a><div class=bar style="--w:1%"></div></li>
+</ul>
+
+
+
+<h2 id=timeline>Timeline <span class=n>2,052 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>300</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 2,052</button></div>
+<p class=note>Showing the 300 most recent of 2,052. Complete: <a href="UNC2465.json">UNC2465.json</a>.</p>
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-08-14-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-14-a77f82"><time datetime="2026-08-14">2026-08-14</time></a> <span class=cnt>3 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>epunts.com</td></tr>
+<tr data-t="domain"><td class=val>vmtooles.com</td></tr>
+<tr data-t="domain"><td class=val>vmtoolses.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-13-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-13-a77f82"><time datetime="2026-08-13">2026-08-13</time></a> <span class=cnt>7 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bidscores.com</td></tr>
+<tr data-t="domain"><td class=val>felix.hunecke-boenen.de</td></tr>
+<tr data-t="domain"><td class=val>monarchschools.us</td></tr>
+<tr data-t="domain"><td class=val>nastwest.com</td></tr>
+<tr data-t="domain"><td class=val>rvtooks.com</td></tr>
+<tr data-t="domain"><td class=val>uspowerlotto.com</td></tr>
+<tr data-t="domain"><td class=val>uyasp.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-12-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-12-a77f82"><time datetime="2026-08-12">2026-08-12</time></a> <span class=cnt>7 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>abigailcross.com</td></tr>
+<tr data-t="domain"><td class=val>chainsawmills.com</td></tr>
+<tr data-t="domain"><td class=val>inter-es.it.com</td></tr>
+<tr data-t="domain"><td class=val>lgsh.it.com</td></tr>
+<tr data-t="domain"><td class=val>referringfacts.com</td></tr>
+<tr data-t="domain"><td class=val>uredema.com</td></tr>
+<tr data-t="domain"><td class=val>zenafox.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-08-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-08-a77f82"><time datetime="2026-08-08">2026-08-08</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>advipscaner.com</td></tr>
+<tr data-t="domain"><td class=val>euronics.it.com</td></tr>
+<tr data-t="domain"><td class=val>geva.it.com</td></tr>
+<tr data-t="domain"><td class=val>recmyfile.online</td></tr>
+<tr data-t="domain"><td class=val>rnotes.app</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-07-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-07-a77f82"><time datetime="2026-08-07">2026-08-07</time></a> <span class=cnt>8 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>advipscan.com</td></tr>
+<tr data-t="domain"><td class=val>amzslotplay.xyz</td></tr>
+<tr data-t="domain"><td class=val>frialerynetuha.com</td></tr>
+<tr data-t="domain"><td class=val>greenbase.it.com</td></tr>
+<tr data-t="domain"><td class=val>millpp.com</td></tr>
+<tr data-t="domain"><td class=val>musclebrite.com</td></tr>
+<tr data-t="domain"><td class=val>rvpro.app</td></tr>
+<tr data-t="domain"><td class=val>traviora.shop</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-06-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-06-a77f82"><time datetime="2026-08-06">2026-08-06</time></a> <span class=cnt>15 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>accessbs.us</td></tr>
+<tr data-t="domain"><td class=val>cooperativebamkcafe.com</td></tr>
+<tr data-t="domain"><td class=val>eurobaustoff.it.com</td></tr>
+<tr data-t="domain"><td class=val>eurodelkredere.it.com</td></tr>
+<tr data-t="domain"><td class=val>keycornthegoldkey.us</td></tr>
+<tr data-t="domain"><td class=val>kimimena.com</td></tr>
+<tr data-t="domain"><td class=val>recover-mefile.online</td></tr>
+<tr data-t="domain"><td class=val>reflectface.com</td></tr>
+<tr data-t="domain"><td class=val>rvtoo.app</td></tr>
+<tr data-t="domain"><td class=val>rvtoo.com</td></tr>
+<tr data-t="domain"><td class=val>signaturedfj.us</td></tr>
+<tr data-t="domain"><td class=val>signaturedj.us</td></tr>
+<tr data-t="domain"><td class=val>signatureje.us</td></tr>
+<tr data-t="domain"><td class=val>usbsv.com</td></tr>
+<tr data-t="domain"><td class=val>voyanest.shop</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-04-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-04-a77f82"><time datetime="2026-08-04">2026-08-04</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>iperiusremot.app</td></tr>
+<tr data-t="domain"><td class=val>iperiusremote.app</td></tr>
+<tr data-t="domain"><td class=val>iperiusremote.online</td></tr>
+<tr data-t="domain"><td class=val>jondoninc.com</td></tr>
+<tr data-t="domain"><td class=val>packagedwisdom.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-03-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-03-a77f82"><time datetime="2026-08-03">2026-08-03</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>fuer-sie-eg.it</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-01-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-08-01-a77f82"><time datetime="2026-08-01">2026-08-01</time></a> <span class=cnt>12 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>cooperativecollectivecafe.com</td></tr>
+<tr data-t="domain"><td class=val>cupertinoconstruction.com</td></tr>
+<tr data-t="domain"><td class=val>ede.it.com</td></tr>
+<tr data-t="domain"><td class=val>ek-retail.it.com</td></tr>
+<tr data-t="domain"><td class=val>pdf-gear.xn-customer-68f3.info</td></tr>
+<tr data-t="domain"><td class=val>pdf-gear.xn-customer-68f5.info</td></tr>
+<tr data-t="domain"><td class=val>sehopay.com</td></tr>
+<tr data-t="domain"><td class=val>shnopay.com</td></tr>
+<tr data-t="domain"><td class=val>signatureji.us</td></tr>
+<tr data-t="domain"><td class=val>snhopay.com</td></tr>
+<tr data-t="domain"><td class=val>xn-customer-68f3.info</td></tr>
+<tr data-t="domain"><td class=val>xn-customer-68f5.info</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-30-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-07-30-a77f82"><time datetime="2026-07-30">2026-07-30</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>benavivez.com</td></tr>
+<tr data-t="domain"><td class=val>cheoasanarnnda.com</td></tr>
+<tr data-t="domain"><td class=val>cresterero.com</td></tr>
+<tr data-t="domain"><td class=val>pdf-gear.xn-customer-68f2.info</td></tr>
+<tr data-t="domain"><td class=val>xn-customer-68f2.info</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-29-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-07-29-a77f82"><time datetime="2026-07-29">2026-07-29</time></a> <span class=cnt>3 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>arcyloriantech.com</td></tr>
+<tr data-t="domain"><td class=val>hunherbal.com</td></tr>
+<tr data-t="domain"><td class=val>urovitalmagyar.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-28-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-07-28-a77f82"><time datetime="2026-07-28">2026-07-28</time></a> <span class=cnt>34 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>afmo.it</td></tr>
+<tr data-t="domain"><td class=val>amf-capital.it</td></tr>
+<tr data-t="domain"><td class=val>arz-darmstadt.it.com</td></tr>
+<tr data-t="domain"><td class=val>arz-service.it</td></tr>
+<tr data-t="domain"><td class=val>astem.it.com</td></tr>
+<tr data-t="domain"><td class=val>avond.it.com</td></tr>
+<tr data-t="domain"><td class=val>back-europ.it.com</td></tr>
+<tr data-t="domain"><td class=val>baeko.it.com</td></tr>
+<tr data-t="domain"><td class=val>beauty-alliance.it.com</td></tr>
+<tr data-t="domain"><td class=val>bewidata.it.com</td></tr>
+<tr data-t="domain"><td class=val>coba-osnabrueck.it.com</td></tr>
+<tr data-t="domain"><td class=val>dentagen.it.com</td></tr>
+<tr data-t="domain"><td class=val>die6.it.com</td></tr>
+<tr data-t="domain"><td class=val>economiaazi.com</td></tr>
+<tr data-t="domain"><td class=val>hunativ.com</td></tr>
+<tr data-t="domain"><td class=val>inrvsa.com</td></tr>
+<tr data-t="domain"><td class=val>junglebet.website</td></tr>
+<tr data-t="domain"><td class=val>kertelssugiaho.com</td></tr>
+<tr data-t="domain"><td class=val>lleraedosimuba.com</td></tr>
+<tr data-t="domain"><td class=val>magyarurocare.com</td></tr>
+<tr data-t="domain"><td class=val>meshvariantech.com</td></tr>
+<tr data-t="domain"><td class=val>pannonuroguide.com</td></tr>
+<tr data-t="domain"><td class=val>pdf-gear.xn-customer-67f9.info</td></tr>
+<tr data-t="domain"><td class=val>resilientmindsetportal.com</td></tr>
+<tr data-t="domain"><td class=val>rocrestere.com</td></tr>
+<tr data-t="domain"><td class=val>signmes.world</td></tr>
+<tr data-t="domain"><td class=val>swarthmorepubliclibrary.us</td></tr>
+<tr data-t="domain"><td class=val>tokqy.top</td></tr>
+<tr data-t="domain"><td class=val>tolanielesokon.com</td></tr>
+<tr data-t="domain"><td class=val>tutto-chiaros.com</td></tr>
+<tr data-t="domain"><td class=val>webauthisecure.us</td></tr>
+<tr data-t="domain"><td class=val>westmiflightacademy.us</td></tr>
+<tr data-t="domain"><td class=val>xn-customer-67f9.info</td></tr>
+<tr data-t="domain"><td class=val>xyaraieabryade.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-22-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-07-22-a77f82"><time datetime="2026-07-22">2026-07-22</time></a> <span class=cnt>8 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>accoumtsclienntsarea.us</td></tr>
+<tr data-t="domain"><td class=val>autnhentcation.us</td></tr>
+<tr data-t="domain"><td class=val>danubiusgrowthlab.com</td></tr>
+<tr data-t="domain"><td class=val>fluxquantatech.com</td></tr>
+<tr data-t="domain"><td class=val>gis-arta.online</td></tr>
+<tr data-t="domain"><td class=val>infopiete.com</td></tr>
+<tr data-t="domain"><td class=val>pratica-mentes.com</td></tr>
+<tr data-t="domain"><td class=val>unispacetechsys.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-21-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-07-21-a77f82"><time datetime="2026-07-21">2026-07-21</time></a> <span class=cnt>96 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>10bet.space</td></tr>
+<tr data-t="domain"><td class=val>aiagentanalytics.com</td></tr>
+<tr data-t="domain"><td class=val>analizainvestitii-ro.com</td></tr>
+<tr data-t="domain"><td class=val>areacleintsacounts.us</td></tr>
+<tr data-t="domain"><td class=val>areaclienntsaccoumts.us</td></tr>
+<tr data-t="domain"><td class=val>aureliaromfund.com</td></tr>
+<tr data-t="domain"><td class=val>authorlzeacsess.us</td></tr>
+<tr data-t="domain"><td class=val>authorlzesitte.us</td></tr>
+<tr data-t="domain"><td class=val>autnhentlcation.us</td></tr>
+<tr data-t="domain"><td class=val>babmbach.com</td></tr>
+<tr data-t="domain"><td class=val>balatonvitalworks.com</td></tr>
+<tr data-t="domain"><td class=val>baptissa.com</td></tr>
+<tr data-t="domain"><td class=val>bespokecufflinkjournal.com</td></tr>
+<tr data-t="domain"><td class=val>bingbong.website</td></tr>
+<tr data-t="domain"><td class=val>bucurestivantage.com</td></tr>
+<tr data-t="domain"><td class=val>buletineconomic.com</td></tr>
+<tr data-t="domain"><td class=val>businessfundwell.com</td></tr>
+<tr data-t="domain"><td class=val>byteforgenova.com</td></tr>
+<tr data-t="domain"><td class=val>carpatiareport.com</td></tr>
+<tr data-t="domain"><td class=val>carvalhl.site</td></tr>
+<tr data-t="domain"><td class=val>cemteracsess.us</td></tr>
+<tr data-t="domain"><td class=val>cemtercliemt.us</td></tr>
+<tr data-t="domain"><td class=val>cemtersitte.us</td></tr>
+<tr data-t="domain"><td class=val>cemterweb.us</td></tr>
+<tr data-t="domain"><td class=val>cleintsareaacounts.us</td></tr>
+<tr data-t="domain"><td class=val>clienntsareaaccoumts.us</td></tr>
+<tr data-t="domain"><td class=val>cooperativecaffes.us</td></tr>
+<tr data-t="domain"><td class=val>cooperativecreatives.com</td></tr>
+<tr data-t="domain"><td class=val>cooperativecreatives.us</td></tr>
+<tr data-t="domain"><td class=val>cooperativecreativs.com</td></tr>
+<tr data-t="domain"><td class=val>craneservicepa.com</td></tr>
+<tr data-t="domain"><td class=val>cromwellstorage.com</td></tr>
+<tr data-t="domain"><td class=val>cystocarehungary.com</td></tr>
+<tr data-t="domain"><td class=val>danubereview.com</td></tr>
+<tr data-t="domain"><td class=val>dashbourd.us</td></tr>
+<tr data-t="domain"><td class=val>datatools26.org</td></tr>
+<tr data-t="domain"><td class=val>deltacasino.website</td></tr>
+<tr data-t="domain"><td class=val>egeszsegtippek-magazin.com</td></tr>
+<tr data-t="domain"><td class=val>estnews-ro.com</td></tr>
+<tr data-t="domain"><td class=val>feedlister.com</td></tr>
+<tr data-t="domain"><td class=val>fluxquantorian.com</td></tr>
+<tr data-t="domain"><td class=val>getxenow.com</td></tr>
+<tr data-t="domain"><td class=val>gyogynovenyvilag24.com</td></tr>
+<tr data-t="domain"><td class=val>gzlarza.com</td></tr>
+<tr data-t="domain"><td class=val>henriiues.space</td></tr>
+<tr data-t="domain"><td class=val>henriquee.com</td></tr>
+<tr data-t="domain"><td class=val>hirekazegeszsegrol.com</td></tr>
+<tr data-t="domain"><td class=val>hungarovitalcenter.com</td></tr>
+<tr data-t="domain"><td class=val>it-quotidiana.com</td></tr>
+<tr data-t="domain"><td class=val>jurnaleconomic.com</td></tr>
+<tr data-t="domain"><td class=val>karpatwellnesslab.com</td></tr>
+<tr data-t="domain"><td class=val>mail.aussierealestate.net.au</td></tr>
+<tr data-t="domain"><td class=val>meshcipherlab.com</td></tr>
+<tr data-t="domain"><td class=val>michiganfostercarecloset.us</td></tr>
+<tr data-t="domain"><td class=val>mioriticholdings.com</td></tr>
+<tr data-t="domain"><td class=val>monitorulcapitalului.com</td></tr>
+<tr data-t="domain"><td class=val>narz-avn.it</td></tr>
+<tr data-t="domain"><td class=val>nodequantforge.com</td></tr>
+<tr data-t="domain"><td class=val>observatorfinanciar-ro.com</td></tr>
+<tr data-t="domain"><td class=val>onlinenweb.us</td></tr>
+<tr data-t="domain"><td class=val>paradoxmellow.com</td></tr>
+<tr data-t="domain"><td class=val>parsoraviant.com</td></tr>
+<tr data-t="domain"><td class=val>pietezi.com</td></tr>
+<tr data-t="domain"><td class=val>pnhuby.top</td></tr>
+<tr data-t="domain"><td class=val>pontuscarpathia.com</td></tr>
+<tr data-t="domain"><td class=val>portaul.us</td></tr>
+<tr data-t="domain"><td class=val>quadrumgroup.com</td></tr>
+<tr data-t="domain"><td class=val>rerluke.com</td></tr>
+<tr data-t="domain"><td class=val>romterravest.com</td></tr>
+<tr data-t="domain"><td class=val>rvtenterprise.com</td></tr>
+<tr data-t="domain"><td class=val>rvtoolenterprise.com</td></tr>
+<tr data-t="domain"><td class=val>rvtop.app</td></tr>
+<tr data-t="domain"><td class=val>rvtoptools.app</td></tr>
+<tr data-t="domain"><td class=val>shhiller.com</td></tr>
+<tr data-t="domain"><td class=val>sign-ms.online</td></tr>
+<tr data-t="domain"><td class=val>signaturedg.us</td></tr>
+<tr data-t="domain"><td class=val>sinssay.com</td></tr>
+<tr data-t="domain"><td class=val>stiridininvestitii.com</td></tr>
+<tr data-t="domain"><td class=val>tokmu.top</td></tr>
+<tr data-t="domain"><td class=val>transilvanequity.com</td></tr>
+<tr data-t="domain"><td class=val>valahinvestcore.com</td></tr>
+<tr data-t="domain"><td class=val>verifica-facile.com</td></tr>
+<tr data-t="domain"><td class=val>vita-novas.com</td></tr>
+<tr data-t="domain"><td class=val>vivere-meglio.com</td></tr>
+<tr data-t="domain"><td class=val>vmenterprise.app</td></tr>
+<tr data-t="domain"><td class=val>vmoneenterprise.app</td></tr>
+<tr data-t="domain"><td class=val>vmw.enterprises</td></tr>
+<tr data-t="domain"><td class=val>vmwone.app</td></tr>
+<tr data-t="domain"><td class=val>vmwone.enterprises</td></tr>
+<tr data-t="domain"><td class=val>vmwoneenterprise.app</td></tr>
+<tr data-t="domain"><td class=val>webacncess.us</td></tr>
+<tr data-t="domain"><td class=val>webauthseciure.us</td></tr>
+<tr data-t="domain"><td class=val>webauthsecvre.us</td></tr>
+<tr data-t="domain"><td class=val>webauthseicure.us</td></tr>
+<tr data-t="domain"><td class=val>webnaccenss.us</td></tr>
+<tr data-t="domain"><td class=val>zopanews.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-20-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-20-a77f82"><time datetime="2026-06-20">2026-06-20</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>aipathstoday.com</td></tr>
+<tr data-t="domain"><td class=val>apps-and-grid-play.com</td></tr>
+<tr data-t="domain"><td class=val>bytevaranlabs.com</td></tr>
+<tr data-t="domain"><td class=val>deeporiumforge.com</td></tr>
+<tr data-t="domain"><td class=val>gridmellow.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-19-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-19-a77f82"><time datetime="2026-06-19">2026-06-19</time></a> <span class=cnt>6 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>arcoriumforge.com</td></tr>
+<tr data-t="domain"><td class=val>atlasgrous.it.com</td></tr>
+<tr data-t="domain"><td class=val>brisktangent.com</td></tr>
+<tr data-t="domain"><td class=val>buchanancapitalpartners.com</td></tr>
+<tr data-t="domain"><td class=val>neonreport.com</td></tr>
+<tr data-t="domain"><td class=val>schnellportals.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-18-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-18-a77f82"><time datetime="2026-06-18">2026-06-18</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>deepfluxorian.com</td></tr>
+<tr data-t="domain"><td class=val>oregonbathroomremodeling.com</td></tr>
+<tr data-t="domain"><td class=val>plays-to-fun-apps.com</td></tr>
+<tr data-t="domain"><td class=val>primhori.it.com</td></tr>
+<tr data-t="domain"><td class=val>tokke.top</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-17-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-17-a77f82"><time datetime="2026-06-17">2026-06-17</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>aiagentledger.com</td></tr>
+<tr data-t="domain"><td class=val>corlopt.it.com</td></tr>
+<tr data-t="domain"><td class=val>francefinhelp.com</td></tr>
+<tr data-t="domain"><td class=val>meshorialquant.com</td></tr>
+<tr data-t="domain"><td class=val>meshorianforge.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-16-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-16-a77f82"><time datetime="2026-06-16">2026-06-16</time></a> <span class=cnt>9 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>cipheriumlabs.com</td></tr>
+<tr data-t="domain"><td class=val>corden.it.com</td></tr>
+<tr data-t="domain"><td class=val>corevoryx.com</td></tr>
+<tr data-t="domain"><td class=val>nodequantixlab.com</td></tr>
+<tr data-t="domain"><td class=val>orangecountywaterheater.com</td></tr>
+<tr data-t="domain"><td class=val>pnohub.top</td></tr>
+<tr data-t="domain"><td class=val>unbiaseddaily.com</td></tr>
+<tr data-t="domain"><td class=val>verteglo.it.com</td></tr>
+<tr data-t="domain"><td class=val>willcountycriminaldefense.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-15-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-15-a77f82"><time datetime="2026-06-15">2026-06-15</time></a> <span class=cnt>5 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bayareafencecompany.com</td></tr>
+<tr data-t="domain"><td class=val>fluxiverianlabs.com</td></tr>
+<tr data-t="domain"><td class=val>parsoriumtech.com</td></tr>
+<tr data-t="domain"><td class=val>soliste.it.com</td></tr>
+<tr data-t="domain"><td class=val>texashardwoodfloor.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-09-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-09-a77f82"><time datetime="2026-06-09">2026-06-09</time></a> <span class=cnt>8 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bestgames-play.com</td></tr>
+<tr data-t="domain"><td class=val>creditanova.com</td></tr>
+<tr data-t="domain"><td class=val>crestpoints.it.com</td></tr>
+<tr data-t="domain"><td class=val>lorettostorage.com</td></tr>
+<tr data-t="domain"><td class=val>ocalatreeservices.com</td></tr>
+<tr data-t="domain"><td class=val>play-best-games.online</td></tr>
+<tr data-t="domain"><td class=val>sofort-gelds.com</td></tr>
+<tr data-t="domain"><td class=val>trailerflorida.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-08-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-08-a77f82"><time datetime="2026-06-08">2026-06-08</time></a> <span class=cnt>4 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>exosomegene.com</td></tr>
+<tr data-t="domain"><td class=val>finanziahubs.com</td></tr>
+<tr data-t="domain"><td class=val>meshoramor.com</td></tr>
+<tr data-t="domain"><td class=val>norseware.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-07-d1243a" class=hot>
+<div class=when><a class=date href="#b-2026-06-07-d1243a"><time datetime="2026-06-07">2026-06-07</time></a> <span class=cnt>30 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://research.cert.orangecyberdefense.com/smokedham/smoking_out_an_affiliate.pdf" rel="noopener nofollow"><span class=host>research.cert.orangecyberdefense.com</span><span class=path>/smokedham/smoking_out_an_affiliate.pdf</span></a> &middot; <a href="https://github.com/cert-orangecyberdefense/cti/blob/main/smokedham/iocs" rel="noopener nofollow"><span class=host>github.com</span><span class=path>/cert-orangecyberdefense/cti/blob/main/s…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>08f0.proxy-edge-c5f.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>178.159.43.206.sslip.io</td></tr>
+<tr data-t="domain"><td class=val>api.rvtoolacs.online</td></tr>
+<tr data-t="domain"><td class=val>app-server.comof72509.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>cdn-ae.azureedge.net</td></tr>
+<tr data-t="domain"><td class=val>cdn-app-software-3425.tech</td></tr>
+<tr data-t="domain"><td class=val>cdn-app-software-67423.store</td></tr>
+<tr data-t="domain"><td class=val>cdn-web-app-10.site</td></tr>
+<tr data-t="domain"><td class=val>cdn-web-app-10.tech</td></tr>
+<tr data-t="domain"><td class=val>comof72509.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>dash-server2.servertech02.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>dev.rvtoolacs.online</td></tr>
+<tr data-t="domain"><td class=val>devopstechnologies.site</td></tr>
+<tr data-t="domain"><td class=val>fastpanel116864.hostkey.in</td></tr>
+<tr data-t="domain"><td class=val>keystore-explorer.site</td></tr>
+<tr data-t="domain"><td class=val>moorabanco-ad.com</td></tr>
+<tr data-t="domain"><td class=val>moraabanco-ad.com</td></tr>
+<tr data-t="domain"><td class=val>morabanco-ad.com</td></tr>
+<tr data-t="domain"><td class=val>sejilod7488888.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>server-software-cdn.azureedge.net</td></tr>
+<tr data-t="domain"><td class=val>server-software.azureedge.net</td></tr>
+<tr data-t="domain"><td class=val>servertech02.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>soft-dns-999.tech</td></tr>
+<tr data-t="domain"><td class=val>soft-dns-999001.store</td></tr>
+<tr data-t="domain"><td class=val>soft-dns.sejilod7488888.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>sys-log-7qw.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>vm5042999.1nvme.had.wf</td></tr>
+<tr data-t="domain"><td class=val>white-salad-4c7f.sys-log-7qw.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>za-serverhub.online</td></tr>
+<tr data-t="domain"><td class=val>za.rvtoolvm.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-07-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-07-a77f82"><time datetime="2026-06-07">2026-06-07</time></a> <span class=cnt>7 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>capitalrios.com</td></tr>
+<tr data-t="domain"><td class=val>cashlatvia.com</td></tr>
+<tr data-t="domain"><td class=val>dexorith.com</td></tr>
+<tr data-t="domain"><td class=val>kalosintelligence.com</td></tr>
+<tr data-t="domain"><td class=val>nexovryn.com</td></tr>
+<tr data-t="domain"><td class=val>solventas360.com</td></tr>
+<tr data-t="domain"><td class=val>utahpoolsandspas.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-06-a77f82" class=hot>
+<div class=when><a class=date href="#b-2026-06-06-a77f82"><time datetime="2026-06-06">2026-06-06</time></a> <span class=cnt>16 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2010485906466394343</span></a> &middot; <a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/g0njxa/status/2027082406847709524</span></a> &middot; <a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/cbbe98e1b36eb68a7afe534c21055f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30427b6732fea64c2cdc0b40c19695…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>akaccessories.com</td></tr>
+<tr data-t="domain"><td class=val>apexvideoproduction.com</td></tr>
+<tr data-t="domain"><td class=val>deepcipherquanta.com</td></tr>
+<tr data-t="domain"><td class=val>exomegene.com</td></tr>
+<tr data-t="domain"><td class=val>jensenprinting.com</td></tr>
+<tr data-t="domain"><td class=val>mikestonegoldcard.com</td></tr>
+<tr data-t="domain"><td class=val>nexasforges.it.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button> &middot; 9 more in this batch, in the JSON</p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>13</span></h2>
+<ul class=refs>
+<li><a href="https://x.com/g0njxa/status/2031034087801012435" rel="noopener nofollow">x.com/g0njxa/status/2031034087801012435</a></li>
+<li><a href="https://x.com/g0njxa/status/2027082406847709524" rel="noopener nofollow">x.com/g0njxa/status/2027082406847709524</a></li>
+<li><a href="https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection" rel="noopener nofollow">virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695…</a></li>
+<li><a href="https://app.any.run/tasks/a9391be5-4e71-4a95-9072-477f8afd906f/" rel="noopener nofollow">app.any.run/tasks/a9391be5-4e71-4a95-9072-477f8afd9…</a></li>
+<li><a href="https://medium.com/trac-labs/who-ordered-the-smokedham-backdoor-delicacies-in-the-wild-87f51e2e5bd2" rel="noopener nofollow">medium.com/trac-labs/who-ordered-the-smokedham-bac…</a></li>
+<li><a href="https://x.com/goldenjackel12/status/2013877434421072187" rel="noopener nofollow">x.com/goldenjackel12/status/20138774344210721…</a></li>
+<li><a href="https://x.com/g0njxa/status/2010485906466394343" rel="noopener nofollow">x.com/g0njxa/status/2010485906466394343</a></li>
+<li><a href="https://www.virustotal.com/gui/file/3ebc0df2b92a39d1fb4491b7aaf6996425214ebe85e6243f443f1db087172f27/detection" rel="noopener nofollow">virustotal.com/gui/file/3ebc0df2b92a39d1fb4491b7aaf699…</a></li>
+<li><a href="https://gist.github.com/drb-ra/179e8e9beca45bc10feba97cf8c5c7b1" rel="noopener nofollow">gist.github.com/drb-ra/179e8e9beca45bc10feba97cf8c5c7b1</a></li>
+<li><a href="https://research.cert.orangecyberdefense.com/smokedham/smoking_out_an_affiliate.pdf" rel="noopener nofollow">research.cert.orangecyberdefense.com/smokedham/smoking_out_an_affiliate.pdf</a></li>
+<li><a href="https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection" rel="noopener nofollow">virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f…</a></li>
+<li><a href="https://x.com/SquiblydooBlog/status/1993311260512075967" rel="noopener nofollow">x.com/SquiblydooBlog/status/19933112605120759…</a></li>
+<li><a href="https://github.com/cert-orangecyberdefense/cti/blob/main/smokedham/iocs" rel="noopener nofollow">github.com/cert-orangecyberdefense/cti/blob/main/s…</a></li>
+</ul>
+
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

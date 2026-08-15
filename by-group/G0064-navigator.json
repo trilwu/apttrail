@@ -1,0 +1,181 @@
+{
+  "name": "APT33 (G0064) - APTtrail",
+  "description": "Techniques attributed to APT33 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0064.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1048.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1132.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1546.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1552.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1555",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1555.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1571",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1573.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by APT33",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

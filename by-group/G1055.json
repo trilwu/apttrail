@@ -1,0 +1,92 @@
+{
+  "aliases": [
+    "aa22-264a",
+    "banished kitten",
+    "homeland justice",
+    "karma",
+    "red sandstorm",
+    "storm-0842",
+    "void manticore"
+  ],
+  "attack_id": "G1055",
+  "attack_name": "VOID MANTICORE",
+  "attack_url": "https://attack.mitre.org/groups/G1055/",
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "screenai.online": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "screenai.online": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "screenai.online"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BANISHEDKITTEN"
+  ],
+  "references": [
+    "https://apt.etda.or.th/cgi-bin/showcard.cgi?g=HomeLand%20Justice",
+    "https://dreamgroup.com/blog-cti/",
+    "https://dreamgroup.com/wp-content/uploads/2025/08/Dream_CTI_Analysis_Malicious_Campaign_by_MOIS_Targeting_Diplomatic_Assets.pdf",
+    "https://www.picussecurity.com/resource/blog/cisa-alert-aa22-264a-iranian-homeland-justice-apt-groups-ttp",
+    "https://www.virustotal.com/gui/file/02ccc4271362b92a59e6851ac6d5d2c07182064a602906d7166fe2867cc662a5/detection",
+    "https://www.virustotal.com/gui/file/1883db6de22d98ed00f8719b11de5bf1d02fc206b89fedd6dd0df0e8d40c4c56/detection",
+    "https://www.virustotal.com/gui/file/1c16b271c0c4e277eb3d1a7795d4746ce80152f04827a4f3c5798aaf4d51f6a1/detection",
+    "https://www.virustotal.com/gui/file/2c92c7bf2d6574f9240032ec6adee738edddc2ba8d3207eb102eddf4ab963db0/detection",
+    "https://www.virustotal.com/gui/file/3ac8283916547c50501eed8e7c3a77f0ae8b009c7b72275be8726a5b6ae255e3/detection",
+    "https://www.virustotal.com/gui/file/3d6f69cc0330b302ddf4701bbc956b8fca683d1c1b3146768dcbce4a1a3932ca/detection",
+    "https://www.virustotal.com/gui/file/76fa8dca768b64aefedd85f7d0a33c2693b94bdb55f40ced7830561e48e39c75/detection",
+    "https://www.virustotal.com/gui/file/80e9105233f9d93df753a43291c2ab1a010375357db9327f9fe40d184f078c6b/detection",
+    "https://www.virustotal.com/gui/file/b2c52fde1301a3624a9ceb995f2de4112d57fcbc6a4695799aec15af4fa0a122/detection",
+    "https://www.virustotal.com/gui/file/f0ba41ce46e566f83db1ba3fc762fd9b394d12a01a9cef4ac279135e4c1c67a9/detection",
+    "https://x.com/ClearskySec/status/1960296933295104369"
+  ],
+  "related": [],
+  "slug": "G1055",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "screenai.online"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/ClearskySec/status/1960296933295104369",
+        "https://apt.etda.or.th/cgi-bin/showcard.cgi?g=HomeLand%20Justice",
+        "https://www.picussecurity.com/resource/blog/cisa-alert-aa22-264a-iranian-homeland-justice-apt-groups-ttp",
+        "https://dreamgroup.com/blog-cti/",
+        "https://dreamgroup.com/wp-content/uploads/2025/08/Dream_CTI_Analysis_Malicious_Campaign_by_MOIS_Targeting_Diplomatic_Assets.pdf",
+        "https://www.virustotal.com/gui/file/02ccc4271362b92a59e6851ac6d5d2c07182064a602906d7166fe2867cc662a5/detection",
+        "https://www.virustotal.com/gui/file/1883db6de22d98ed00f8719b11de5bf1d02fc206b89fedd6dd0df0e8d40c4c56/detection",
+        "https://www.virustotal.com/gui/file/1c16b271c0c4e277eb3d1a7795d4746ce80152f04827a4f3c5798aaf4d51f6a1/detection",
+        "https://www.virustotal.com/gui/file/2c92c7bf2d6574f9240032ec6adee738edddc2ba8d3207eb102eddf4ab963db0/detection",
+        "https://www.virustotal.com/gui/file/3ac8283916547c50501eed8e7c3a77f0ae8b009c7b72275be8726a5b6ae255e3/detection",
+        "https://www.virustotal.com/gui/file/3d6f69cc0330b302ddf4701bbc956b8fca683d1c1b3146768dcbce4a1a3932ca/detection",
+        "https://www.virustotal.com/gui/file/76fa8dca768b64aefedd85f7d0a33c2693b94bdb55f40ced7830561e48e39c75/detection",
+        "https://www.virustotal.com/gui/file/80e9105233f9d93df753a43291c2ab1a010375357db9327f9fe40d184f078c6b/detection",
+        "https://www.virustotal.com/gui/file/b2c52fde1301a3624a9ceb995f2de4112d57fcbc6a4695799aec15af4fa0a122/detection",
+        "https://www.virustotal.com/gui/file/f0ba41ce46e566f83db1ba3fc762fd9b394d12a01a9cef4ac279135e4c1c67a9/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

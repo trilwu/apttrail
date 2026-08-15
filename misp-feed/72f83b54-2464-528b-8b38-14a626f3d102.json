@@ -1,0 +1,243 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "702b4f2c-ce0e-51b6-affd-7432ce7a21cd",
+        "value": "146.70.86.6:1433"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "cdcd2436-9706-5fec-87a2-0231b785518c",
+        "value": "185.203.119.99:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "dcdcb57e-eb2e-5647-a7b9-2ebf54986e03",
+        "value": "185.244.129.216:5055"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9524a52e-9e83-5243-959a-0f83e680b7db",
+        "value": "185.244.129.216:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "3ed142e5-4cb5-5a4b-9980-35308156d367",
+        "value": "185.244.129.79:63047"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ae8daab6-b340-5fed-9e2a-79597eccb947",
+        "value": "195.166.100.23:5055"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "33a1c6bb-5209-5807-92cb-313c7c6799a9",
+        "value": "45.137.148.7:2121"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "820da9da-07c3-5bf1-b143-2fb60e3152c5",
+        "value": "45.80.148.119:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2cce73f7-71d0-5577-977d-4c83c890f429",
+        "value": "45.80.148.167:21"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "52718254-5768-5bcd-850f-903d84cc8e32",
+        "value": "45.80.148.167:5055"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "a0fa724d-e952-5af3-8e72-1030dd8f89f7",
+        "value": "45.80.148.186:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "3a74e385-e5f9-57dd-9b30-b94bbaaf5287",
+        "value": "45.80.149.108:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "a104129a-ab87-5261-b1e9-44450f737437",
+        "value": "45.80.149.154:1302"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "27b453f1-8d6d-5277-aa42-a7b12a2220e0",
+        "value": "45.80.149.154:21"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e69d04a4-b561-59a3-b389-014b2ae4360b",
+        "value": "45.80.149.22:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "4e70a780-db8d-5720-af53-c79cc3dcfa71",
+        "value": "45.80.149.68:63047"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6d849c6e-3e4d-5e85-a490-ba1748e85a47",
+        "value": "http://212.73.150.174"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "528e3dcd-a5f1-55af-8137-b598b1800154",
+        "value": "http://37.120.233.89"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "9dd31503-27b2-5c82-a9f2-98d81f173447",
+        "value": "http://45.80.149.71"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "89f9a8cb-b63b-5ef8-a0fc-0b7f7f35d027",
+        "value": "http://51.83.246.73"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1665592879",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "b2d3f0e1-70f3-5821-8690-6f800a2c65d1",
+        "value": "http://94.156.189.103"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "e0d02005-a928-5086-9a23-ee21c3db699e",
+        "value": "/IZJXKKqgAJ?g7Bh7t="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "9dbaa840-b0a9-5d3a-9fd4-991716d4a929",
+        "value": "/t2kmBOZdMn/"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "36c2ad63-b744-54ca-83dd-e9e4432927c8",
+        "value": "/t2kmBOZdMn/IZJXKKqgAJ?g7Bh7t="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "3ce4bde0-eeec-5cec-9a6d-ee08f4311c48",
+        "value": "/ui/chk?mactok="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684170019",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "9635d275-347e-544a-a16d-f25ef729f96e",
+        "value": "/ui/insrt?mactok="
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:polonium"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"POLONIUM - G1005\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: POLONIUM (G1005) - Maltrail group POLONIUM",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "72f83b54-2464-528b-8b38-14a626f3d102"
+  }
+}

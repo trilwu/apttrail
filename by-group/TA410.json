@@ -1,0 +1,220 @@
+{
+  "aliases": [
+    "FlowCloud",
+    "LookBack",
+    "LookingFrog",
+    "Witchetty"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 16,
+    "ipv4": 3,
+    "url": 4
+  },
+  "first_seen": {
+    "domain": {
+      "a.bigbluedc.com": "2022-09-30",
+      "asce.email": "2020-06-09",
+      "bigbluedc.com": "2022-09-30",
+      "cahe.microsofts.com": "2022-04-30",
+      "daveengineer.com": "2020-06-09",
+      "dlaxpcmghd.com": "2022-04-30",
+      "energysemi.com": "2020-06-09",
+      "eset-sync.com": "2022-04-30",
+      "ffca.caibi379.com": "2020-06-09",
+      "nsfwgo.com": "2022-04-30",
+      "powersafetraining.net": "2020-06-09",
+      "powersafetrainings.org": "2020-06-09",
+      "s.eset-sync.com": "2022-04-30",
+      "smtp.nsfwgo.com": "2022-04-30",
+      "translateupdate.com": "2022-04-30",
+      "update.translateupdate.com": "2022-04-30"
+    },
+    "ipv4": {
+      "103.139.2.93:1702": "2020-11-12",
+      "188.131.233.27:55555": "2020-06-09",
+      "188.131.233.27:55556": "2020-06-09"
+    },
+    "url": {
+      "http://161.82.181.4": "2022-04-30",
+      "http://43.254.216.104": "2022-04-30",
+      "http://43.254.219.153": "2022-04-30",
+      "http://45.124.115.103": "2022-04-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-06-09",
+    "latest": "2022-09-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "a.bigbluedc.com",
+      "asce.email",
+      "bigbluedc.com",
+      "cahe.microsofts.com",
+      "daveengineer.com",
+      "dlaxpcmghd.com",
+      "energysemi.com",
+      "eset-sync.com",
+      "ffca.caibi379.com",
+      "nsfwgo.com",
+      "powersafetraining.net",
+      "powersafetrainings.org",
+      "s.eset-sync.com",
+      "smtp.nsfwgo.com",
+      "translateupdate.com",
+      "update.translateupdate.com"
+    ],
+    "ipv4": [
+      "103.139.2.93:1702",
+      "188.131.233.27:55555",
+      "188.131.233.27:55556"
+    ],
+    "url": [
+      "http://161.82.181.4",
+      "http://43.254.216.104",
+      "http://43.254.219.153",
+      "http://45.124.115.103"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TA410"
+  ],
+  "references": [
+    "https://github.com/eset/malware-ioc/tree/master/ta410",
+    "https://otx.alienvault.com/pulse/5edf9678c760e3c7ca6fdf77",
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/witchetty-steganography-espionage",
+    "https://threatpost.com/espionage-group-utilities-spy-tool/156425/",
+    "https://twitter.com/AnonySecAgency/status/1316292983508013056",
+    "https://www.proofpoint.com/us/blog/threat-insight/ta410-group-behind-lookback-attacks-against-us-utilities-sector-returns-new",
+    "https://www.virustotal.com/gui/file/0ac8315ba368579850dfb334dbde9e418b60473c90c31334820c56b7f4ef43dc/detection",
+    "https://www.virustotal.com/gui/file/c88d0f7d623b2a2c066dd6b15597d1f4c44d89e7a8e660e28c3494f441826ea5/detection",
+    "https://www.virustotal.com/gui/file/ff72aba3dc218190bc40fec95ef569df3c3ecd4da5fb435ed889e24e94d2a222/detection",
+    "https://www.welivesecurity.com/2022/04/27/lookback-ta410-umbrella-cyberespionage-ttps-activity/"
+  ],
+  "related": [],
+  "slug": "TA410",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-09-30",
+      "indicators": {
+        "domain": [
+          "a.bigbluedc.com",
+          "bigbluedc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/witchetty-steganography-espionage"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "url": 4
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "domain": [
+          "cahe.microsofts.com",
+          "dlaxpcmghd.com",
+          "eset-sync.com",
+          "nsfwgo.com",
+          "s.eset-sync.com",
+          "smtp.nsfwgo.com",
+          "translateupdate.com",
+          "update.translateupdate.com"
+        ],
+        "url": [
+          "http://161.82.181.4",
+          "http://43.254.216.104",
+          "http://43.254.219.153",
+          "http://45.124.115.103"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/AnonySecAgency/status/1316292983508013056",
+        "https://www.welivesecurity.com/2022/04/27/lookback-ta410-umbrella-cyberespionage-ttps-activity/",
+        "https://github.com/eset/malware-ioc/tree/master/ta410",
+        "https://www.virustotal.com/gui/file/0ac8315ba368579850dfb334dbde9e418b60473c90c31334820c56b7f4ef43dc/detection",
+        "https://www.virustotal.com/gui/file/ff72aba3dc218190bc40fec95ef569df3c3ecd4da5fb435ed889e24e94d2a222/detection",
+        "https://www.virustotal.com/gui/file/c88d0f7d623b2a2c066dd6b15597d1f4c44d89e7a8e660e28c3494f441826ea5/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-11-12",
+      "indicators": {
+        "ipv4": [
+          "103.139.2.93:1702"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/AnonySecAgency/status/1316292983508013056",
+        "https://www.welivesecurity.com/2022/04/27/lookback-ta410-umbrella-cyberespionage-ttps-activity/",
+        "https://github.com/eset/malware-ioc/tree/master/ta410",
+        "https://www.virustotal.com/gui/file/0ac8315ba368579850dfb334dbde9e418b60473c90c31334820c56b7f4ef43dc/detection",
+        "https://www.virustotal.com/gui/file/ff72aba3dc218190bc40fec95ef569df3c3ecd4da5fb435ed889e24e94d2a222/detection",
+        "https://www.virustotal.com/gui/file/c88d0f7d623b2a2c066dd6b15597d1f4c44d89e7a8e660e28c3494f441826ea5/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2020-06-09",
+      "indicators": {
+        "domain": [
+          "asce.email",
+          "daveengineer.com",
+          "energysemi.com",
+          "ffca.caibi379.com",
+          "powersafetraining.net",
+          "powersafetrainings.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/ta410-group-behind-lookback-attacks-against-us-utilities-sector-returns-new",
+        "https://otx.alienvault.com/pulse/5edf9678c760e3c7ca6fdf77"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2020-06-09",
+      "indicators": {
+        "ipv4": [
+          "188.131.233.27:55555",
+          "188.131.233.27:55556"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatpost.com/espionage-group-utilities-spy-tool/156425/"
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1720793391",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e4dcdb5e-5340-59da-bb84-1e8137883598",
+        "value": "equitaligaiustizia.it"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1720793391",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5a509f17-6d2b-55f0-89a0-4d02f7d106cf",
+        "value": "meeting.equitaligaiustizia.it"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571489663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c2d95fd8-ee80-5f64-ad99-88687b83ec8c",
+        "value": "news.jusched.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1720793391",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "90d14fde-2a05-5e2f-bc61-f6a57b7778c3",
+        "value": "themicrosoftnow.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571489663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d5af3185-9fdc-5d47-8a08-dd6b9ad9346e",
+        "value": "translate.wordraference.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:17"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT17 - G0025\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT17 (G0025) - Maltrail group 17",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "24a43f8d-9f57-5de7-b32d-ddee90158b61"
+  }
+}

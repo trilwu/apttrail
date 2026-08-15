@@ -1,0 +1,367 @@
+{
+  "aliases": [],
+  "attack_id": "G0079",
+  "attack_name": "DarkHydrus",
+  "attack_url": "https://attack.mitre.org/groups/G0079/",
+  "counts": {
+    "domain": 68
+  },
+  "first_seen": {
+    "domain": {
+      "0ffice.com": "2018-07-28",
+      "0ffice365.agency": "2019-03-06",
+      "0ffice365.life": "2019-03-06",
+      "0ffice365.services": "2019-03-06",
+      "0ffiice.com": "2018-07-28",
+      "0nedrive.agency": "2019-03-06",
+      "0utl00k.net": "2018-07-28",
+      "0utlook.accountant": "2019-03-23",
+      "0utlook.bid": "2018-07-28",
+      "akadns.services": "2020-10-22",
+      "akamai.agency": "2019-03-06",
+      "akamaiedge.live": "2019-03-06",
+      "akamaiedge.services": "2019-03-06",
+      "akamaized.live": "2019-03-06",
+      "akdns.live": "2019-03-06",
+      "allexa.net": "2018-07-28",
+      "anyconnect.stream": "2018-07-28",
+      "asimov-win-microsoft.services": "2019-03-06",
+      "asisdns.space": "2022-06-05",
+      "asismdnu.asisdns.space": "2022-06-05",
+      "azureedge.today": "2019-03-06",
+      "bigip.stream": "2018-07-28",
+      "brit.ns.cloudfronts.services": "2019-03-06",
+      "britns.akadns.live": "2019-03-06",
+      "britns.akadns.services": "2019-03-06",
+      "cisc0.net": "2018-07-28",
+      "citriix.net": "2019-03-23",
+      "cloudfronts.services": "2020-10-22",
+      "corewindows.agency": "2019-03-06",
+      "data-microsoft.services": "2019-03-06",
+      "dns.cloudfronts.services": "2019-03-06",
+      "edgekey.live": "2019-03-06",
+      "fortiweb.download": "2018-07-28",
+      "gogle.co": "2019-03-06",
+      "iecvlist-microsoft.live": "2019-03-06",
+      "kaspersky.host": "2018-07-28",
+      "kaspersky.science": "2018-07-28",
+      "maccaffe.com": "2018-07-28",
+      "microsoftlab.ir": "2019-03-23",
+      "microsoftonline.agency": "2019-03-06",
+      "microsoftonline.host": "2020-10-22",
+      "microsoftonline.services": "2020-10-22",
+      "microtik.stream": "2018-07-28",
+      "micrrosoft.net": "2018-07-28",
+      "msdncss.com": "2018-07-28",
+      "msdnscripts.com": "2019-03-23",
+      "ns1.microsoftlab.ir": "2019-03-23",
+      "ns102.kaspersky.host": "2019-03-23",
+      "ns103.kaspersky.host": "2019-03-23",
+      "ns2.akadns.live": "2019-03-06",
+      "ns2.akadns.services": "2019-03-06",
+      "ns2.microsoftlab.ir": "2019-03-23",
+      "nsatc.agency": "2019-03-06",
+      "onecs-live.services": "2019-03-06",
+      "onedrive.agency": "2019-03-06",
+      "owa365.bid": "2018-07-28",
+      "phicdn.world": "2019-03-06",
+      "sharepoint.agency": "2019-03-06",
+      "skydrive.agency": "2019-03-06",
+      "skydrive.services": "2019-03-06",
+      "symanteclive.download": "2018-07-28",
+      "t-msedge.world": "2019-03-06",
+      "tbs1.microsoftonline.services": "2019-03-06",
+      "tbs2.microsoftonline.services": "2019-03-06",
+      "trafficmanager.live": "2020-10-22",
+      "tvs1.trafficmanager.live": "2019-03-06",
+      "tvs2.trafficmanager.live": "2019-03-06",
+      "windowsdefender.win": "2018-07-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-07-28",
+    "latest": "2022-06-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0ffice.com",
+      "0ffice365.agency",
+      "0ffice365.life",
+      "0ffice365.services",
+      "0ffiice.com",
+      "0nedrive.agency",
+      "0utl00k.net",
+      "0utlook.accountant",
+      "0utlook.bid",
+      "akadns.services",
+      "akamai.agency",
+      "akamaiedge.live",
+      "akamaiedge.services",
+      "akamaized.live",
+      "akdns.live",
+      "allexa.net",
+      "anyconnect.stream",
+      "asimov-win-microsoft.services",
+      "asisdns.space",
+      "asismdnu.asisdns.space",
+      "azureedge.today",
+      "bigip.stream",
+      "brit.ns.cloudfronts.services",
+      "britns.akadns.live",
+      "britns.akadns.services",
+      "cisc0.net",
+      "citriix.net",
+      "cloudfronts.services",
+      "corewindows.agency",
+      "data-microsoft.services",
+      "dns.cloudfronts.services",
+      "edgekey.live",
+      "fortiweb.download",
+      "gogle.co",
+      "iecvlist-microsoft.live",
+      "kaspersky.host",
+      "kaspersky.science",
+      "maccaffe.com",
+      "microsoftlab.ir",
+      "microsoftonline.agency",
+      "microsoftonline.host",
+      "microsoftonline.services",
+      "microtik.stream",
+      "micrrosoft.net",
+      "msdncss.com",
+      "msdnscripts.com",
+      "ns1.microsoftlab.ir",
+      "ns102.kaspersky.host",
+      "ns103.kaspersky.host",
+      "ns2.akadns.live",
+      "ns2.akadns.services",
+      "ns2.microsoftlab.ir",
+      "nsatc.agency",
+      "onecs-live.services",
+      "onedrive.agency",
+      "owa365.bid",
+      "phicdn.world",
+      "sharepoint.agency",
+      "skydrive.agency",
+      "skydrive.services",
+      "symanteclive.download",
+      "t-msedge.world",
+      "tbs1.microsoftonline.services",
+      "tbs2.microsoftonline.services",
+      "trafficmanager.live",
+      "tvs1.trafficmanager.live",
+      "tvs2.trafficmanager.live",
+      "windowsdefender.win"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DARKHYDRUS"
+  ],
+  "references": [
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)",
+    "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/",
+    "https://unit42.paloaltonetworks.com/darkhydrus-delivers-new-trojan-that-can-use-google-drive-for-c2-communications/",
+    "https://www.virustotal.com/gui/file/270ec2945fb976823e46d6fbb346fac46f585145ff05538846ab6cefc17064c8/detection",
+    "https://www.virustotal.com/gui/file/f81a5f0f97eb9782e425f1fde19a40f5f4c2516df6ed8e40baad68b1a9bd0a53/detection",
+    "https://www.virustotal.com/gui/ip-address/108.177.235.92/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "slug": "G0133"
+    }
+  ],
+  "slug": "G0079",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-05",
+      "indicators": {
+        "domain": [
+          "asisdns.space",
+          "asismdnu.asisdns.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/f81a5f0f97eb9782e425f1fde19a40f5f4c2516df6ed8e40baad68b1a9bd0a53/detection",
+        "https://www.virustotal.com/gui/file/270ec2945fb976823e46d6fbb346fac46f585145ff05538846ab6cefc17064c8/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-10-22",
+      "indicators": {
+        "domain": [
+          "akadns.services",
+          "cloudfronts.services",
+          "trafficmanager.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/darkhydrus-delivers-new-trojan-that-can-use-google-drive-for-c2-communications/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-10-22",
+      "indicators": {
+        "domain": [
+          "microsoftonline.host",
+          "microsoftonline.services"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/108.177.235.92/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-03-23",
+      "indicators": {
+        "domain": [
+          "ns1.microsoftlab.ir",
+          "ns102.kaspersky.host",
+          "ns103.kaspersky.host",
+          "ns2.microsoftlab.ir"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/darkhydrus-delivers-new-trojan-that-can-use-google-drive-for-c2-communications/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-03-23",
+      "indicators": {
+        "domain": [
+          "0utlook.accountant",
+          "citriix.net",
+          "microsoftlab.ir",
+          "msdnscripts.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 35
+      },
+      "first_seen": "2019-03-06",
+      "indicators": {
+        "domain": [
+          "0ffice365.agency",
+          "0ffice365.life",
+          "0ffice365.services",
+          "0nedrive.agency",
+          "akamai.agency",
+          "akamaiedge.live",
+          "akamaiedge.services",
+          "akamaized.live",
+          "akdns.live",
+          "asimov-win-microsoft.services",
+          "azureedge.today",
+          "brit.ns.cloudfronts.services",
+          "britns.akadns.live",
+          "britns.akadns.services",
+          "corewindows.agency",
+          "data-microsoft.services",
+          "dns.cloudfronts.services",
+          "edgekey.live",
+          "gogle.co",
+          "iecvlist-microsoft.live",
+          "microsoftonline.agency",
+          "ns2.akadns.live",
+          "ns2.akadns.services",
+          "nsatc.agency",
+          "onecs-live.services",
+          "onedrive.agency",
+          "phicdn.world",
+          "sharepoint.agency",
+          "skydrive.agency",
+          "skydrive.services",
+          "t-msedge.world",
+          "tbs1.microsoftonline.services",
+          "tbs2.microsoftonline.services",
+          "tvs1.trafficmanager.live",
+          "tvs2.trafficmanager.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/darkhydrus-delivers-new-trojan-that-can-use-google-drive-for-c2-communications/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)"
+      ],
+      "total": 35
+    },
+    {
+      "counts": {
+        "domain": 18
+      },
+      "first_seen": "2018-07-28",
+      "indicators": {
+        "domain": [
+          "0ffice.com",
+          "0ffiice.com",
+          "0utl00k.net",
+          "0utlook.bid",
+          "allexa.net",
+          "anyconnect.stream",
+          "bigip.stream",
+          "cisc0.net",
+          "fortiweb.download",
+          "kaspersky.host",
+          "kaspersky.science",
+          "maccaffe.com",
+          "microtik.stream",
+          "micrrosoft.net",
+          "msdncss.com",
+          "owa365.bid",
+          "symanteclive.download",
+          "windowsdefender.win"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/07/unit42-new-threat-actor-group-darkhydrus-targets-middle-east-government/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (DarkHydrus 2017 activity)"
+      ],
+      "total": 18
+    }
+  ]
+}

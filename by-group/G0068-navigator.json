@@ -1,0 +1,81 @@
+{
+  "name": "PLATINUM (G0068) - APTtrail",
+  "description": "Techniques attributed to PLATINUM by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0068.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by PLATINUM",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

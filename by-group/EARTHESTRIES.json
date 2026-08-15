@@ -1,0 +1,455 @@
+{
+  "aliases": [
+    "hemigate",
+    "krustyloader",
+    "trillclient",
+    "zingdoor"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 78,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "2261992.s3.amazonaws.com": "2024-02-03",
+      "acapros-app.s3-us-west-2.amazonaws.com": "2024-02-03",
+      "access.trhammer.com": "2023-09-03",
+      "ahha-asset.s3.ap-northeast-2.amazonaws.com": "2024-02-03",
+      "anynucleus.com": "2023-09-03",
+      "api.farstream.org": "2024-02-03",
+      "api.solveblemten.com": "2024-12-09",
+      "awsdns531.com": "2024-12-29",
+      "bbr-promo.s3.amazonaws.com": "2024-02-03",
+      "be-at-home.s3.ap-northeast-2.amazonaws.com": "2024-02-03",
+      "beansdeals-static.s3.amazonaws.com": "2024-02-03",
+      "bigtimeassets.s3.amazonaws.com": "2024-02-03",
+      "billing.clothworls.com": "2024-12-09",
+      "blog-app-system2.s3.amazonaws.com": "2024-02-03",
+      "breaknlinks.s3.amazonaws.com": "2024-02-03",
+      "c11r.awsdns531.com": "2024-12-29",
+      "cas04.awsdns531.com": "2024-12-29",
+      "cdn-6dd0035.oxcdntech.com": "2023-09-03",
+      "cdn-7a3d.vultr-dns.com": "2023-09-03",
+      "cdn181.awsdns531.com": "2024-12-29",
+      "cdn728a66b0.smartlinkcorp.net": "2023-09-03",
+      "check.sysupdates.org": "2024-02-03",
+      "cloudlibraries.global.ssl.fastly.net": "2023-09-03",
+      "credits.officesanalytics.com": "2024-12-29",
+      "dns2021.net": "2023-09-03",
+      "east.smartpisang.com": "2023-09-03",
+      "esh.hoovernamosong.com": "2024-12-09",
+      "farstream.org": "2024-02-03",
+      "globalnetzone.bcdn.net": "2024-12-29",
+      "helpdesk.stnekpro.com": "2024-12-09",
+      "imap.dateupdata.com": "2024-10-29",
+      "infraredsen.com": "2024-12-09",
+      "jasmine.lhousewares.com": "2024-12-09",
+      "jptomorrow.com": "2023-09-03",
+      "jttoday.net": "2023-09-03",
+      "keyplancorp.com": "2023-09-03",
+      "kia-almotores.s3.amazonaws.com": "2026-01-02",
+      "linkaircdn.com": "2023-09-03",
+      "llnw-dd.awsdns531.com": "2024-12-29",
+      "lyncidc.com": "2023-09-03",
+      "materialplies.com": "2024-12-09",
+      "microware-help.com": "2023-09-03",
+      "mncdntech.com": "2023-09-03",
+      "ms101.cloudshappen.com": "2023-09-03",
+      "music.farstream.org": "2024-02-03",
+      "news.colourtinctem.com": "2024-12-09",
+      "ntp.sysupdates.org": "2024-02-03",
+      "nx2.microware-help.com": "2023-09-03",
+      "officesanalytics.com": "2024-12-29",
+      "omnileadzdev.s3.amazonaws.com": "2026-01-02",
+      "oxcdntech.com": "2023-09-03",
+      "private.royalnas.com": "2024-12-09",
+      "publicdnsau.com": "2023-09-03",
+      "pulseathermakf.com": "2024-12-09",
+      "resource.officesanalytics.com": "2024-12-29",
+      "rthtrade.com": "2023-09-03",
+      "rtsafetech.com": "2023-07-30",
+      "rtsoftcorp.com": "2023-09-03",
+      "rtwebmaster.com": "2023-09-03",
+      "sentinelonepro.com": "2026-05-13",
+      "services.officesanalytics.com": "2024-12-29",
+      "shinas.global.ssl.fastly.net": "2023-09-03",
+      "soffice.officesanalytics.com": "2024-12-29",
+      "substantialeconomy.com": "2023-09-03",
+      "sysupdates.org": "2024-02-03",
+      "telcom.grishamarkovgf8936.workers.dev": "2024-12-09",
+      "trhammer.com": "2023-09-03",
+      "update.sysupdates.org": "2024-02-03",
+      "video.farstream.org": "2024-02-03",
+      "virusblocker.it.com": "2026-05-13",
+      "vpn114240349.softether.net": "2024-12-09",
+      "vpn305783366.softether.net": "2024-12-09",
+      "vpn487875652.softether.net": "2024-12-09",
+      "vpn943823465.softether.net": "2024-12-09",
+      "vultr-dns.com": "2023-09-03",
+      "web9a78bc52.trhammer.com": "2023-09-03",
+      "z7-tech.com": "2023-09-03",
+      "zmailssl3.global.ssl.fastly.net": "2023-09-03"
+    },
+    "ipv4": {
+      "103.159.133.205:443": "2023-09-03"
+    },
+    "url": {
+      "http://96.44.160.181": "2023-09-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "kia-almotores.s3.amazonaws.com": "at-or-before",
+      "omnileadzdev.s3.amazonaws.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-07-30",
+    "latest": "2026-05-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2261992.s3.amazonaws.com",
+      "acapros-app.s3-us-west-2.amazonaws.com",
+      "access.trhammer.com",
+      "ahha-asset.s3.ap-northeast-2.amazonaws.com",
+      "anynucleus.com",
+      "api.farstream.org",
+      "api.solveblemten.com",
+      "awsdns531.com",
+      "bbr-promo.s3.amazonaws.com",
+      "be-at-home.s3.ap-northeast-2.amazonaws.com",
+      "beansdeals-static.s3.amazonaws.com",
+      "bigtimeassets.s3.amazonaws.com",
+      "billing.clothworls.com",
+      "blog-app-system2.s3.amazonaws.com",
+      "breaknlinks.s3.amazonaws.com",
+      "c11r.awsdns531.com",
+      "cas04.awsdns531.com",
+      "cdn-6dd0035.oxcdntech.com",
+      "cdn-7a3d.vultr-dns.com",
+      "cdn181.awsdns531.com",
+      "cdn728a66b0.smartlinkcorp.net",
+      "check.sysupdates.org",
+      "cloudlibraries.global.ssl.fastly.net",
+      "credits.officesanalytics.com",
+      "dns2021.net",
+      "east.smartpisang.com",
+      "esh.hoovernamosong.com",
+      "farstream.org",
+      "globalnetzone.bcdn.net",
+      "helpdesk.stnekpro.com",
+      "imap.dateupdata.com",
+      "infraredsen.com",
+      "jasmine.lhousewares.com",
+      "jptomorrow.com",
+      "jttoday.net",
+      "keyplancorp.com",
+      "kia-almotores.s3.amazonaws.com",
+      "linkaircdn.com",
+      "llnw-dd.awsdns531.com",
+      "lyncidc.com",
+      "materialplies.com",
+      "microware-help.com",
+      "mncdntech.com",
+      "ms101.cloudshappen.com",
+      "music.farstream.org",
+      "news.colourtinctem.com",
+      "ntp.sysupdates.org",
+      "nx2.microware-help.com",
+      "officesanalytics.com",
+      "omnileadzdev.s3.amazonaws.com",
+      "oxcdntech.com",
+      "private.royalnas.com",
+      "publicdnsau.com",
+      "pulseathermakf.com",
+      "resource.officesanalytics.com",
+      "rthtrade.com",
+      "rtsafetech.com",
+      "rtsoftcorp.com",
+      "rtwebmaster.com",
+      "sentinelonepro.com",
+      "services.officesanalytics.com",
+      "shinas.global.ssl.fastly.net",
+      "soffice.officesanalytics.com",
+      "substantialeconomy.com",
+      "sysupdates.org",
+      "telcom.grishamarkovgf8936.workers.dev",
+      "trhammer.com",
+      "update.sysupdates.org",
+      "video.farstream.org",
+      "virusblocker.it.com",
+      "vpn114240349.softether.net",
+      "vpn305783366.softether.net",
+      "vpn487875652.softether.net",
+      "vpn943823465.softether.net",
+      "vultr-dns.com",
+      "web9a78bc52.trhammer.com",
+      "z7-tech.com",
+      "zmailssl3.global.ssl.fastly.net"
+    ],
+    "ipv4": [
+      "103.159.133.205:443"
+    ],
+    "url": [
+      "http://96.44.160.181"
+    ]
+  },
+  "last_modified": "2026-05-13T19:51:13+00:00",
+  "maltrail_groups": [
+    "EARTHESTRIES"
+  ],
+  "references": [
+    "https://businessinsights.bitdefender.com/famoussparrow-apt-targets-azerbaijani-oil-gas-industry",
+    "https://github.com/synacktiv/krustyloader-analysis",
+    "https://khonggianmang.vn/uploads/1_20241120_CV_APT_EARTHESTRIES_ce3a8ed572.PDF",
+    "https://www.security.com/threat-intelligence/toolshell-china-zingdoor",
+    "https://www.synacktiv.com/publications/krustyloader-rust-malware-linked-to-ivanti-connectsecure-compromises",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/h/earth-estries-targets-government-tech-for-cyberespionage/IOCs-earth-estries-targets-government-tech-for-cyberespionage.txt",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/k/earth-estries/IOC_list-EarthEstries.txt",
+    "https://www.trendmicro.com/en_us/research/23/h/earth-estries-targets-government-tech-for-cyberespionage.html",
+    "https://x.com/tdatwja/status/1873363875363688459"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1045"
+    }
+  ],
+  "slug": "EARTHESTRIES",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-05-13",
+      "indicators": {
+        "domain": [
+          "sentinelonepro.com",
+          "virusblocker.it.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://businessinsights.bitdefender.com/famoussparrow-apt-targets-azerbaijani-oil-gas-industry"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "kia-almotores.s3.amazonaws.com",
+          "omnileadzdev.s3.amazonaws.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.security.com/threat-intelligence/toolshell-china-zingdoor"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2024-12-29",
+      "indicators": {
+        "domain": [
+          "awsdns531.com",
+          "c11r.awsdns531.com",
+          "cas04.awsdns531.com",
+          "cdn181.awsdns531.com",
+          "credits.officesanalytics.com",
+          "globalnetzone.bcdn.net",
+          "llnw-dd.awsdns531.com",
+          "officesanalytics.com",
+          "resource.officesanalytics.com",
+          "services.officesanalytics.com",
+          "soffice.officesanalytics.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/tdatwja/status/1873363875363688459",
+        "https://khonggianmang.vn/uploads/1_20241120_CV_APT_EARTHESTRIES_ce3a8ed572.PDF"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2024-12-09",
+      "indicators": {
+        "domain": [
+          "api.solveblemten.com",
+          "billing.clothworls.com",
+          "esh.hoovernamosong.com",
+          "helpdesk.stnekpro.com",
+          "infraredsen.com",
+          "jasmine.lhousewares.com",
+          "materialplies.com",
+          "news.colourtinctem.com",
+          "private.royalnas.com",
+          "pulseathermakf.com",
+          "telcom.grishamarkovgf8936.workers.dev",
+          "vpn114240349.softether.net",
+          "vpn305783366.softether.net",
+          "vpn487875652.softether.net",
+          "vpn943823465.softether.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/k/earth-estries/IOC_list-EarthEstries.txt"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-10-29",
+      "indicators": {
+        "domain": [
+          "imap.dateupdata.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/k/earth-estries/IOC_list-EarthEstries.txt"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 17
+      },
+      "first_seen": "2024-02-03",
+      "indicators": {
+        "domain": [
+          "2261992.s3.amazonaws.com",
+          "acapros-app.s3-us-west-2.amazonaws.com",
+          "ahha-asset.s3.ap-northeast-2.amazonaws.com",
+          "api.farstream.org",
+          "bbr-promo.s3.amazonaws.com",
+          "be-at-home.s3.ap-northeast-2.amazonaws.com",
+          "beansdeals-static.s3.amazonaws.com",
+          "bigtimeassets.s3.amazonaws.com",
+          "blog-app-system2.s3.amazonaws.com",
+          "breaknlinks.s3.amazonaws.com",
+          "check.sysupdates.org",
+          "farstream.org",
+          "music.farstream.org",
+          "ntp.sysupdates.org",
+          "sysupdates.org",
+          "update.sysupdates.org",
+          "video.farstream.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.synacktiv.com/publications/krustyloader-rust-malware-linked-to-ivanti-connectsecure-compromises",
+        "https://github.com/synacktiv/krustyloader-analysis"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 29,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2023-09-03",
+      "indicators": {
+        "domain": [
+          "access.trhammer.com",
+          "anynucleus.com",
+          "cdn-6dd0035.oxcdntech.com",
+          "cdn-7a3d.vultr-dns.com",
+          "cdn728a66b0.smartlinkcorp.net",
+          "cloudlibraries.global.ssl.fastly.net",
+          "dns2021.net",
+          "east.smartpisang.com",
+          "jptomorrow.com",
+          "jttoday.net",
+          "keyplancorp.com",
+          "linkaircdn.com",
+          "lyncidc.com",
+          "microware-help.com",
+          "mncdntech.com",
+          "ms101.cloudshappen.com",
+          "nx2.microware-help.com",
+          "oxcdntech.com",
+          "publicdnsau.com",
+          "rthtrade.com",
+          "rtsoftcorp.com",
+          "rtwebmaster.com",
+          "shinas.global.ssl.fastly.net",
+          "substantialeconomy.com",
+          "trhammer.com",
+          "vultr-dns.com",
+          "web9a78bc52.trhammer.com",
+          "z7-tech.com",
+          "zmailssl3.global.ssl.fastly.net"
+        ],
+        "ipv4": [
+          "103.159.133.205:443"
+        ],
+        "url": [
+          "http://96.44.160.181"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/23/h/earth-estries-targets-government-tech-for-cyberespionage.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/h/earth-estries-targets-government-tech-for-cyberespionage/IOCs-earth-estries-targets-government-tech-for-cyberespionage.txt"
+      ],
+      "total": 31
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-07-30",
+      "indicators": {
+        "domain": [
+          "rtsafetech.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/23/h/earth-estries-targets-government-tech-for-cyberespionage.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/h/earth-estries-targets-government-tech-for-cyberespionage/IOCs-earth-estries-targets-government-tech-for-cyberespionage.txt"
+      ],
+      "total": 1
+    }
+  ]
+}

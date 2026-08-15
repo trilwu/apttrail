@@ -1,0 +1,96 @@
+{
+  "name": "BlackTech (G0098) - APTtrail",
+  "description": "Techniques attributed to BlackTech by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0098.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1021.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.004",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by BlackTech",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

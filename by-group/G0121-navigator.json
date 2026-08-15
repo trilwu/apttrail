@@ -1,0 +1,176 @@
+{
+  "name": "Sidewinder (G0121) - APTtrail",
+  "description": "Techniques attributed to Sidewinder by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0121.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1016",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1020",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.010",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1124",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1559.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Sidewinder",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

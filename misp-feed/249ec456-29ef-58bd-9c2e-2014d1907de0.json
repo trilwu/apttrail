@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1570264908",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "65b1cc23-9527-5394-b0cf-5976e972c7ec",
+        "value": "newyorkonlin.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570264908",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f7d94d3c-a5ef-54cb-addd-5ba1b74b12fe",
+        "value": "tibetcongress.oicp.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:shiqiang"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: SHIQIANG",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "249ec456-29ef-58bd-9c2e-2014d1907de0"
+  }
+}

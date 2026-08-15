@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1554879411",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "860c56dc-8f1c-5abb-8e4d-c8a9c1154c99",
+        "value": "rahasn.akamake.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1554879411",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "31f90665-94c4-555b-839b-f7071030c269",
+        "value": "rahasn.homewealth.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1554879411",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3fe52a4e-b85d-547e-99ba-6cf2e58c05c0",
+        "value": "rahasn.webhop.org"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:tajmahal"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: TAJMAHAL",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "944b01df-7e19-5d23-933b-3c48e859cde8"
+  }
+}

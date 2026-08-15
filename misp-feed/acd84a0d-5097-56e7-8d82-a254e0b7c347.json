@@ -1,0 +1,183 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1736778343",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "279c77ec-588c-58cf-807a-68a45a7b383d",
+        "value": "background-services.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3a687aaa-a064-53e7-8451-e43e0e828317",
+        "value": "diagnostic-resolver.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736778343",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3b8a6f9f-5cc1-58ce-a48e-ce0692c77766",
+        "value": "download-resourses.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736778343",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0622cddc-a814-5853-911c-098dabaa69dd",
+        "value": "energieecoinnov.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736778343",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "abec4706-869f-5852-8723-92ecd51d3b5c",
+        "value": "energieecotech.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721728347",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "27d7ce48-dd61-5525-84fd-ea26f16d36a1",
+        "value": "enrollmentdm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736778343",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4752613b-7059-58fc-ab4f-807ebaa7ea41",
+        "value": "lookup.ink"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "44a7a6dc-80ba-5bef-978c-fe371d1baa95",
+        "value": "ms-webdav-miniredir.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "850e909d-e8dd-5190-b744-ef23833f7959",
+        "value": "net-certificate.services"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721728347",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "abfb14ed-c88f-5806-a8b6-f85dc361347b",
+        "value": "trust-certificate.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736782410",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "3d0192d1-61f8-53c0-96ab-ba2937ffa756",
+        "value": "38.180.207.137:45323"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "5fedf188-cc26-5ddb-b41f-48280072240e",
+        "value": "http://139.99.126.38"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "0c2fd5ba-a2ef-511b-9066-27425e578fb0",
+        "value": "http://206.166.251.216"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736782410",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "e2e3a967-e120-5f31-8897-028ff3343245",
+        "value": "http://38.180.206.61"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736782410",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "9723b7f4-9e71-5865-ad9a-63b396790ae0",
+        "value": "http://38.180.207.137"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721728347",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "7a1168e1-ba8e-59c9-9133-06de1fa29aaa",
+        "value": "http://45.136.198.184"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721728347",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "17dd4433-9608-5fc9-81d1-58fa1cb388ba",
+        "value": "http://5.45.70.178"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "45feaa97-29ad-5910-8ff8-7c6203264d0d",
+        "value": "http://84.32.188.123"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684779313",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "99a2a5c8-efff-5f76-a697-61be9db47a68",
+        "value": "/hftqlbgtg.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:downex"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DOWNEX",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "acd84a0d-5097-56e7-8d82-a254e0b7c347"
+  }
+}

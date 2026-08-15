@@ -1,0 +1,413 @@
+{
+  "aliases": [
+    "fakem",
+    "fakemrat"
+  ],
+  "attack_id": "G0029",
+  "attack_name": "Scarlet Mimic",
+  "attack_url": "https://attack.mitre.org/groups/G0029/",
+  "counts": {
+    "domain": 79,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "aaa123.spdns.de": "2017-04-12",
+      "account.websurprisemail.com": "2017-04-12",
+      "accounts.yourturbe.org": "2017-04-12",
+      "addi.apple.cloudns.org": "2017-04-12",
+      "addnow.zapto.org": "2017-04-12",
+      "admin.spdns.org": "2017-04-12",
+      "alma.apple.cloudns.org": "2017-04-12",
+      "angleegg.ddns.us": "2021-01-05",
+      "angleegg.xxxy.info": "2021-01-05",
+      "apple.lenovositegroup.com": "2017-04-12",
+      "apple12.co.cc": "2021-06-19",
+      "apple12.crabdance.com": "2017-04-12",
+      "avira.suroot.com": "2021-06-19",
+      "bailee.alanna.cloudns.biz": "2017-04-12",
+      "bee.aoto.cloudns.org": "2017-04-12",
+      "bits.githubs.net": "2017-04-12",
+      "book.websurprisemail.com": "2017-04-12",
+      "clean.popqueen.cloudns.org": "2017-04-12",
+      "desk.websurprisemail.com": "2017-04-12",
+      "detail43.myfirewall.org": "2017-04-12",
+      "dolat.diyarpakzimin.com": "2017-04-12",
+      "dolat.websurprisemail.com": "2017-04-12",
+      "dolet.websurprisemail.com": "2017-04-12",
+      "economy.spdns.de": "2017-04-12",
+      "economy.spdns.eu": "2017-04-12",
+      "eemete.freetcp.com": "2017-04-12",
+      "email.googmail.org": "2017-04-12",
+      "endless.zapto.org": "2021-06-19",
+      "firefox.spdns.de": "2017-04-12",
+      "firewallupdate.firewall-gateway.net": "2017-04-12",
+      "fish.seafood.cloudns.org": "2017-04-12",
+      "freeavg.sites.net": "2021-06-19",
+      "freeavg.sytes.net": "2017-04-12",
+      "freeonline.3d-game.com": "2017-04-12",
+      "ftp112.lenta.cloudns.pw": "2017-04-12",
+      "github.ignorelist.com": "2017-04-12",
+      "googmail.com": "2021-06-19",
+      "googmail.org": "2021-01-05",
+      "gorlan.cloudns.pro": "2021-01-05",
+      "ibmcorp.slyip.com": "2017-04-12",
+      "intersecurity.firewall-gateway.com": "2017-04-12",
+      "islam.youtubesitegroup.com": "2017-04-12",
+      "kaspersky.firewall-gateway.net": "2017-04-12",
+      "kasperskysecurity.firewall-gateway.com": "2017-04-12",
+      "kissecurity.firewall-gateway.net": "2017-04-12",
+      "lemondtree.freetcp.com": "2017-04-12",
+      "liumingzhen.myftp.org": "2017-04-12",
+      "liumingzhen.zapto.org": "2017-04-12",
+      "mail.firewall-gateway.com": "2017-04-12",
+      "mareva.catherine.cloudns.us": "2017-04-12",
+      "mm.lenovositegroup.com": "2017-04-12",
+      "muslim.islamhood.net": "2017-04-12",
+      "n.popqueen.cloudns.org": "2017-04-12",
+      "news.firewall-gateway.com": "2017-04-12",
+      "news.googmail.org": "2017-04-12",
+      "oic-oci.3-a.net": "2017-04-12",
+      "opero.spdns.org": "2017-04-12",
+      "otcgk.border.cloudns.pw": "2017-04-12",
+      "p.klark.cloudns.in": "2017-04-12",
+      "polat.googmail.org": "2017-04-12",
+      "ppcc.vasilevich.cloudns.info": "2017-04-12",
+      "press.ufoneconference.com": "2017-04-12",
+      "qq.ufoneconference.com": "2017-04-12",
+      "qq.yourturbe.org": "2017-04-12",
+      "sisiow.slyip.com": "2017-04-12",
+      "sys.firewall-gateway.net": "2017-04-12",
+      "update.googmail.org": "2017-04-12",
+      "uprnd.flnet.org": "2017-04-12",
+      "uyghur.25u.com": "2024-11-30",
+      "uyghuri.mrface.com": "2024-11-30",
+      "video.googmail.org": "2017-04-12",
+      "vip.yahoo.cloudns.info": "2017-04-12",
+      "webmail.yourturbe.org": "2017-04-12",
+      "worldwildlife.effers.com": "2017-04-12",
+      "yourturbe.org": "2021-06-19",
+      "youturbe.co.cc": "2017-04-12",
+      "yycc.mrbonus.com": "2017-04-12",
+      "ziba.lenovositegroup.com": "2016-02-23",
+      "zjhao.dtdns.net": "2017-04-12"
+    },
+    "ipv4": {
+      "153.148.120.217:920": "2024-11-30",
+      "207.204.225.117": "2017-04-12"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2016-02-23",
+    "latest": "2024-11-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aaa123.spdns.de",
+      "account.websurprisemail.com",
+      "accounts.yourturbe.org",
+      "addi.apple.cloudns.org",
+      "addnow.zapto.org",
+      "admin.spdns.org",
+      "alma.apple.cloudns.org",
+      "angleegg.ddns.us",
+      "angleegg.xxxy.info",
+      "apple.lenovositegroup.com",
+      "apple12.co.cc",
+      "apple12.crabdance.com",
+      "avira.suroot.com",
+      "bailee.alanna.cloudns.biz",
+      "bee.aoto.cloudns.org",
+      "bits.githubs.net",
+      "book.websurprisemail.com",
+      "clean.popqueen.cloudns.org",
+      "desk.websurprisemail.com",
+      "detail43.myfirewall.org",
+      "dolat.diyarpakzimin.com",
+      "dolat.websurprisemail.com",
+      "dolet.websurprisemail.com",
+      "economy.spdns.de",
+      "economy.spdns.eu",
+      "eemete.freetcp.com",
+      "email.googmail.org",
+      "endless.zapto.org",
+      "firefox.spdns.de",
+      "firewallupdate.firewall-gateway.net",
+      "fish.seafood.cloudns.org",
+      "freeavg.sites.net",
+      "freeavg.sytes.net",
+      "freeonline.3d-game.com",
+      "ftp112.lenta.cloudns.pw",
+      "github.ignorelist.com",
+      "googmail.com",
+      "googmail.org",
+      "gorlan.cloudns.pro",
+      "ibmcorp.slyip.com",
+      "intersecurity.firewall-gateway.com",
+      "islam.youtubesitegroup.com",
+      "kaspersky.firewall-gateway.net",
+      "kasperskysecurity.firewall-gateway.com",
+      "kissecurity.firewall-gateway.net",
+      "lemondtree.freetcp.com",
+      "liumingzhen.myftp.org",
+      "liumingzhen.zapto.org",
+      "mail.firewall-gateway.com",
+      "mareva.catherine.cloudns.us",
+      "mm.lenovositegroup.com",
+      "muslim.islamhood.net",
+      "n.popqueen.cloudns.org",
+      "news.firewall-gateway.com",
+      "news.googmail.org",
+      "oic-oci.3-a.net",
+      "opero.spdns.org",
+      "otcgk.border.cloudns.pw",
+      "p.klark.cloudns.in",
+      "polat.googmail.org",
+      "ppcc.vasilevich.cloudns.info",
+      "press.ufoneconference.com",
+      "qq.ufoneconference.com",
+      "qq.yourturbe.org",
+      "sisiow.slyip.com",
+      "sys.firewall-gateway.net",
+      "update.googmail.org",
+      "uprnd.flnet.org",
+      "uyghur.25u.com",
+      "uyghuri.mrface.com",
+      "video.googmail.org",
+      "vip.yahoo.cloudns.info",
+      "webmail.yourturbe.org",
+      "worldwildlife.effers.com",
+      "yourturbe.org",
+      "youturbe.co.cc",
+      "yycc.mrbonus.com",
+      "ziba.lenovositegroup.com",
+      "zjhao.dtdns.net"
+    ],
+    "ipv4": [
+      "153.148.120.217:920",
+      "207.204.225.117"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SCARLETMIMIC"
+  ],
+  "references": [
+    "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/",
+    "https://github.com/kbandla/APTnotes/blob/master/2013/wp-fakem-rat.pdf",
+    "https://www.virustotal.com/gui/file/81f6b4d95e52ffe48aa39eb5b619893017db1b4600482574b082563bd9544934/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "BLACKGEAR"
+    }
+  ],
+  "slug": "G0029",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2024-11-30",
+      "indicators": {
+        "domain": [
+          "uyghur.25u.com",
+          "uyghuri.mrface.com"
+        ],
+        "ipv4": [
+          "153.148.120.217:920"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/81f6b4d95e52ffe48aa39eb5b619893017db1b4600482574b082563bd9544934/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2021-06-19",
+      "indicators": {
+        "domain": [
+          "apple12.co.cc",
+          "avira.suroot.com",
+          "endless.zapto.org",
+          "freeavg.sites.net",
+          "googmail.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/kbandla/APTnotes/blob/master/2013/wp-fakem-rat.pdf"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-19",
+      "indicators": {
+        "domain": [
+          "yourturbe.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-01-05",
+      "indicators": {
+        "domain": [
+          "angleegg.ddns.us",
+          "angleegg.xxxy.info",
+          "googmail.org",
+          "gorlan.cloudns.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 65,
+        "ipv4": 1
+      },
+      "first_seen": "2017-04-12",
+      "indicators": {
+        "domain": [
+          "aaa123.spdns.de",
+          "account.websurprisemail.com",
+          "accounts.yourturbe.org",
+          "addi.apple.cloudns.org",
+          "addnow.zapto.org",
+          "admin.spdns.org",
+          "alma.apple.cloudns.org",
+          "apple.lenovositegroup.com",
+          "apple12.crabdance.com",
+          "bailee.alanna.cloudns.biz",
+          "bee.aoto.cloudns.org",
+          "bits.githubs.net",
+          "book.websurprisemail.com",
+          "clean.popqueen.cloudns.org",
+          "desk.websurprisemail.com",
+          "detail43.myfirewall.org",
+          "dolat.diyarpakzimin.com",
+          "dolat.websurprisemail.com",
+          "dolet.websurprisemail.com",
+          "economy.spdns.de",
+          "economy.spdns.eu",
+          "eemete.freetcp.com",
+          "email.googmail.org",
+          "firefox.spdns.de",
+          "firewallupdate.firewall-gateway.net",
+          "fish.seafood.cloudns.org",
+          "freeavg.sytes.net",
+          "freeonline.3d-game.com",
+          "ftp112.lenta.cloudns.pw",
+          "github.ignorelist.com",
+          "ibmcorp.slyip.com",
+          "intersecurity.firewall-gateway.com",
+          "islam.youtubesitegroup.com",
+          "kaspersky.firewall-gateway.net",
+          "kasperskysecurity.firewall-gateway.com",
+          "kissecurity.firewall-gateway.net",
+          "lemondtree.freetcp.com",
+          "liumingzhen.myftp.org",
+          "liumingzhen.zapto.org",
+          "mail.firewall-gateway.com",
+          "mareva.catherine.cloudns.us",
+          "mm.lenovositegroup.com",
+          "muslim.islamhood.net",
+          "n.popqueen.cloudns.org",
+          "news.firewall-gateway.com",
+          "news.googmail.org",
+          "oic-oci.3-a.net",
+          "opero.spdns.org",
+          "otcgk.border.cloudns.pw",
+          "p.klark.cloudns.in",
+          "polat.googmail.org",
+          "ppcc.vasilevich.cloudns.info",
+          "press.ufoneconference.com",
+          "qq.ufoneconference.com",
+          "qq.yourturbe.org",
+          "sisiow.slyip.com",
+          "sys.firewall-gateway.net",
+          "update.googmail.org",
+          "uprnd.flnet.org",
+          "video.googmail.org",
+          "vip.yahoo.cloudns.info",
+          "webmail.yourturbe.org",
+          "worldwildlife.effers.com",
+          "youturbe.co.cc",
+          "yycc.mrbonus.com"
+        ],
+        "ipv4": [
+          "207.204.225.117"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+      ],
+      "total": 66
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-12",
+      "indicators": {
+        "domain": [
+          "zjhao.dtdns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/",
+        "https://github.com/kbandla/APTnotes/blob/master/2013/wp-fakem-rat.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "ziba.lenovositegroup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2016/01/scarlet-mimic-years-long-espionage-targets-minority-activists/"
+      ],
+      "total": 1
+    }
+  ]
+}

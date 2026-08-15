@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d010ed90-5645-59f6-b219-9472a9b5ed9c",
+        "value": "activequest.goautodial.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ccacc4d5-e82b-5c1b-a353-362a6eb58d34",
+        "value": "chat.thedresscodeapp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5bba7682-5eeb-56b0-800b-39e0dfd80b6f",
+        "value": "crm.cardabel.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c2f3d07a-155c-5936-8b4a-54905cd4d9e2",
+        "value": "data.vectorse.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2784e84a-abf3-58c1-88a2-bd1cb158f726",
+        "value": "engage.adaptqe.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6e939db1-f921-59e1-98df-e74e9e4ec948",
+        "value": "ops-ca.mioying.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b4fdcc53-8f38-53e7-b6c7-06845bd95868",
+        "value": "order.staging.photobookworldwide.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "27b211c9-7470-5292-99aa-fd05e2bcdbaf",
+        "value": "public.pusulait.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cf7f9b40-0d3e-5679-ad3a-66bbbdef31d2",
+        "value": "search.allaccountingcareers.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7652af2e-30bb-5c0b-8311-bebf577a88a8",
+        "value": "secure.poliigon.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697316450",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f870dae4-86cd-5a58-9cf9-587c49fc9156",
+        "value": "superapi-staging.mlmprotec.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:atlascross"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: ATLASCROSS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "681a4d0c-91b7-50a5-a043-9a6579037055"
+  }
+}

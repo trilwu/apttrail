@@ -1,0 +1,91 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c1682a60-eb8c-54c5-aa8f-de95f0a2a98f",
+        "value": "cloudflaread.quadrantbd.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1602c14e-8bc2-5bf3-831d-5059d5d7d938",
+        "value": "cloudsrm.gelatosg.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "89abd238-2563-5d9e-9933-192871af9a58",
+        "value": "freeprous.bakhell.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a8121627-ef49-575c-b55a-48f40c2f1419",
+        "value": "rscvmogt.taishanlaw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c597e2ea-07d2-5777-a1df-9dea73f66457",
+        "value": "showgyella.quadrantbd.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "441b4c79-bfda-5c0c-ab45-4bb980ea8a74",
+        "value": "smartclouds.gelatosg.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713256601",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "47a11f1e-836d-50b7-9784-7fe0d9e717ef",
+        "value": "suitsvm003.rchitecture.org"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:earthhundun"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"BlackTech - G0098\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BlackTech (G0098) - Maltrail group EARTHHUNDUN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "72782d95-b05d-5d6d-ab93-ab2bec388df7"
+  }
+}

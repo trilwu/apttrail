@@ -1,0 +1,31 @@
+{
+  "name": "Scarlet Mimic (G0029) - APTtrail",
+  "description": "Techniques attributed to Scarlet Mimic by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0029.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1036.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Scarlet Mimic",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

@@ -1,0 +1,87 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "187.109.15.2:443": "2022-03-30"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-03-30",
+    "latest": "2022-03-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "187.109.15.2:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC3535"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb",
+    "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC3500"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC961"
+    }
+  ],
+  "slug": "UNC3535",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-30",
+      "indicators": {
+        "ipv4": [
+          "187.109.15.2:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation",
+        "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb"
+      ],
+      "total": 1
+    }
+  ]
+}

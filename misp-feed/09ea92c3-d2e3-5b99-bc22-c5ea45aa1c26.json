@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1772651162",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "765380c5-8eb2-5267-93b1-4d64f2099236",
+        "value": "chain.mycoinexplorer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1772651162",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a3dba446-14d3-504e-9800-91a3a2847a38",
+        "value": "mycoinexplorer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1685554154",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "911e1d1a-48f9-5cdf-86f1-35ae91d7359e",
+        "value": "176.10.80.38:8843"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1685554154",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "856d3105-c2e3-5c37-9f88-62bedb06d2f6",
+        "value": "webhook.site/288a834b-fd92-4531-82a5-b41e907daa56"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1685554154",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6d475dba-3291-5535-b818-e90e4724e583",
+        "value": "webhook.site/2b733e31-70bb-4777-be4a-41a98f3559bf"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:darkpink"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DARKPINK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "09ea92c3-d2e3-5b99-bc22-c5ea45aa1c26"
+  }
+}

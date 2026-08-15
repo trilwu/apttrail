@@ -1,0 +1,46 @@
+{
+  "name": "Group5 (G0043) - APTtrail",
+  "description": "Techniques attributed to Group5 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0043.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Group5",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

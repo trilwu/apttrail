@@ -1,0 +1,671 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a8fe9c66-dc0e-5894-ab8c-be499bfc26e4",
+        "value": "2261992.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4ed2228c-e451-55c3-8212-e37747a759d8",
+        "value": "acapros-app.s3-us-west-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "79616c08-ceeb-565c-8403-8315e76507d4",
+        "value": "access.trhammer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d2b5ca2a-f810-5177-b28d-880dd482d2f0",
+        "value": "ahha-asset.s3.ap-northeast-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fe5a979e-b762-5622-909a-42d09f3e52d2",
+        "value": "anynucleus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6a09e456-bc0c-57a4-93f6-4fa491d49dcc",
+        "value": "api.farstream.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c97bd107-abea-54fa-ba21-cdc80e9b679c",
+        "value": "api.solveblemten.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "00fd256e-ef4c-58c5-b2ac-723962185726",
+        "value": "awsdns531.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "641fef8d-3229-50ab-8c18-1b3cd75a4f75",
+        "value": "bbr-promo.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "59ff2a62-fa4e-5d4a-b84c-55200f6ced8c",
+        "value": "be-at-home.s3.ap-northeast-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b42748e4-a616-5e72-b34e-b89757fb1fea",
+        "value": "beansdeals-static.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4075c9ae-c761-5c3c-8691-ff26dd247622",
+        "value": "bigtimeassets.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "892e3f5d-3495-5461-82f7-06a465b0aea1",
+        "value": "billing.clothworls.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7c47d942-d417-5486-8db7-e8b701bda2e1",
+        "value": "blog-app-system2.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "158ba04f-b9b8-57f4-8d52-49e491824475",
+        "value": "breaknlinks.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5e750db4-6e0f-54e1-876e-1046651e5688",
+        "value": "c11r.awsdns531.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d62eb971-4aab-592c-baee-c3697dc3dea1",
+        "value": "cas04.awsdns531.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dfa8e50e-e184-521f-86c8-dcf36c3b66bf",
+        "value": "cdn-6dd0035.oxcdntech.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a21028bd-7bac-5109-91f4-ebffef7de0ad",
+        "value": "cdn-7a3d.vultr-dns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0d409c5c-0eb8-5bf3-af8c-e047597616f1",
+        "value": "cdn181.awsdns531.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f299fcb0-1bec-513f-811c-c5af8f4e3eb6",
+        "value": "cdn728a66b0.smartlinkcorp.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c2f9a0c3-1b8d-56b8-9b2e-08641d761491",
+        "value": "check.sysupdates.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "45218e30-9460-5054-9a05-37a323130668",
+        "value": "cloudlibraries.global.ssl.fastly.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "adc12740-e634-5226-94df-c40eb8605542",
+        "value": "credits.officesanalytics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "35794406-0076-5746-9d06-21f5818971d7",
+        "value": "dns2021.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "deba523d-d31a-581c-a3ca-9081f28eeef9",
+        "value": "east.smartpisang.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1f75216a-68bd-55bb-89d1-90a93b4d1b46",
+        "value": "esh.hoovernamosong.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e83e9b17-c82a-5a3e-9e0c-280ecddcd4f1",
+        "value": "farstream.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "807d525d-344a-5f95-8541-0adf2389ff3a",
+        "value": "globalnetzone.bcdn.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ab10841a-065e-5a6d-aae8-37d0a3846493",
+        "value": "helpdesk.stnekpro.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730182560",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d5eb7078-d586-59dc-994b-746f4b043530",
+        "value": "imap.dateupdata.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733775362",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "70b24620-fb60-5724-8d2a-b45dc5501b7d",
+        "value": "infraredsen.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a28eae69-b740-5f0b-b3de-5f869021eca8",
+        "value": "jasmine.lhousewares.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a387147e-b352-5960-b8bd-ab5a1b0bffd2",
+        "value": "jptomorrow.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "55c0545f-27e8-54c9-904e-e393a69158e8",
+        "value": "jttoday.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3fd33abe-0076-5174-8a3f-3e65e110b430",
+        "value": "keyplancorp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ad51cf7d-cd61-5f33-8f83-e3668f6f207a",
+        "value": "kia-almotores.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3581dc50-cdaa-5637-a876-905af1090584",
+        "value": "linkaircdn.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "85ead901-4b0a-5dd2-a324-15cf89a96299",
+        "value": "llnw-dd.awsdns531.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "415dd6f8-884a-51ac-a70c-90b9f7bbbcde",
+        "value": "lyncidc.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fca1ec8d-5bc3-5760-8533-6d372ed97c84",
+        "value": "materialplies.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2dc8e6d6-95d9-5d8f-aca0-4cecca787b7f",
+        "value": "microware-help.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c0fcd2d2-02bd-5fde-b3a3-94149bf84ef8",
+        "value": "mncdntech.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "520ce20c-5ebe-5155-a488-281a1f8400cf",
+        "value": "ms101.cloudshappen.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4aa6ccc6-1780-58a1-9dc1-ef848f896753",
+        "value": "music.farstream.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ae18289e-1ed3-5c59-b5db-cb32b8650689",
+        "value": "news.colourtinctem.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "66a29e0b-116b-5834-a5fa-b680637afb39",
+        "value": "ntp.sysupdates.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c28969cf-679f-5b9c-b4de-4aed60c5720e",
+        "value": "nx2.microware-help.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b225142d-acc7-5040-b609-185b2f1b4d65",
+        "value": "officesanalytics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "778b153a-79a6-5a90-ab57-b6830ceca2db",
+        "value": "omnileadzdev.s3.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "125ce52c-8e84-59c6-b84b-793f351e6044",
+        "value": "oxcdntech.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "157d8b68-6597-5935-bebc-4d03ab429c15",
+        "value": "private.royalnas.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ac083261-0b75-519c-89e9-6e4d55444cf5",
+        "value": "publicdnsau.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "780b7617-d8b9-593b-a16c-ea2ffb5f126c",
+        "value": "pulseathermakf.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "10dc3d92-c9ab-509d-ac4e-f3ab489fcfb0",
+        "value": "resource.officesanalytics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "57214a17-496b-5712-838e-da72f635050a",
+        "value": "rthtrade.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690712412",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c5dce2d-0a19-5a46-8a20-0a73e5de2695",
+        "value": "rtsafetech.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c7b15632-8dd3-51a4-903c-5e263d982702",
+        "value": "rtsoftcorp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "288e7a69-f400-5c85-aef8-a64cb391dce3",
+        "value": "rtwebmaster.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1778701873",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "11d9a73b-86a7-57c8-ac67-3a5cc79f4f5e",
+        "value": "sentinelonepro.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b2856adb-a855-59d7-ac6d-9520c88d94d4",
+        "value": "services.officesanalytics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "abf53c40-15f3-52db-b97b-d82f9d616c63",
+        "value": "shinas.global.ssl.fastly.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1735489919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "33e0d417-c547-51f6-9743-3c9c6478f0e8",
+        "value": "soffice.officesanalytics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "72248484-3f9a-5130-bcd6-f86b8a3ddb00",
+        "value": "substantialeconomy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c424f82b-769d-5597-bc71-1ec5c7b7efed",
+        "value": "sysupdates.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "88cae2d0-66c9-50dd-8051-b2f877ff2ac7",
+        "value": "telcom.grishamarkovgf8936.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "db44d8e9-213b-5d78-99ef-63c1120f4299",
+        "value": "trhammer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bd0f4404-cac6-5438-a33e-c10663faa81a",
+        "value": "update.sysupdates.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1706953828",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "49eda3c4-71ca-5708-8666-650b365acd88",
+        "value": "video.farstream.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1778701873",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c3be6de-efc3-578e-8401-14ebe6b461f1",
+        "value": "virusblocker.it.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b3265eee-44ed-5b19-8d61-fe58962ee038",
+        "value": "vpn114240349.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cbe0672f-fdeb-5848-a995-711159d4b5e3",
+        "value": "vpn305783366.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "23691dc3-c6e7-5b2b-bc71-6e63be1ad78c",
+        "value": "vpn487875652.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733773903",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f9ac69e1-4312-570b-849f-9cc569a3271b",
+        "value": "vpn943823465.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4c62680b-a5eb-59c1-b16b-b9aa4c18a5ad",
+        "value": "vultr-dns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3cc3d135-0efb-5d9c-a97e-a1ee093a2565",
+        "value": "web9a78bc52.trhammer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0e4ccfb8-0bc0-5543-a0ae-436236e790a9",
+        "value": "z7-tech.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "30fe71e6-f869-54b7-a1c1-ef001830f33b",
+        "value": "zmailssl3.global.ssl.fastly.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5fd325d4-9892-5b1d-a049-faa47452b0b1",
+        "value": "103.159.133.205:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693744925",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8517d7f9-ca1f-536e-92ce-ea47ac54b9c4",
+        "value": "http://96.44.160.181"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:earthestries"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: EARTHESTRIES",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e9173855-ebe4-55a7-acc7-f01ae46c7d32"
+  }
+}

@@ -1,0 +1,1910 @@
+{
+  "aliases": [
+    "APT-LY-1007",
+    "CloudFall",
+    "CyrillicRAT",
+    "PowerShower"
+  ],
+  "attack_id": "G0100",
+  "attack_name": "Inception",
+  "attack_url": "https://attack.mitre.org/groups/G0100/",
+  "counts": {
+    "domain": 212,
+    "ipv4": 7,
+    "url": 7,
+    "url_path": 13
+  },
+  "first_seen": {
+    "domain": {
+      "2020-windows.com": "2020-11-21",
+      "3i.hilsabecks.net": "2026-06-16",
+      "56.msgntfsys.link": "2026-06-16",
+      "7h.ahmetgurses.net": "2026-06-16",
+      "advancestore.workers.dev": "2021-12-14",
+      "agent-group.org": "2023-04-14",
+      "ahmetgurses.net": "2026-06-16",
+      "aitoall.ru": "2026-06-16",
+      "api-help.com": "2022-12-09",
+      "api.office365online.workers.dev": "2021-12-14",
+      "apkcrypter.com": "2026-01-08",
+      "archive-downloader.com": "2023-01-25",
+      "arendelle.ru": "2026-06-16",
+      "asia.office365-cloud.workers.dev": "2021-12-14",
+      "avito-service.net": "2023-12-20",
+      "azureblog.info": "2020-11-21",
+      "becloud.website": "2023-01-26",
+      "billet-ru.net": "2026-01-08",
+      "blackberry-support.herokuapp.com": "2016-03-08",
+      "bot.fortune-wheel.ru": "2026-06-16",
+      "brexitimpact.com": "2020-11-21",
+      "bryksina.ru": "2026-06-16",
+      "checklicensekey.com": "2021-11-20",
+      "cityru-travel.org": "2026-01-08",
+      "cloud.archive-downloader.com": "2023-01-25",
+      "cloud.digitalstorage.workers.dev": "2021-12-14",
+      "comparelicense.com": "2022-12-09",
+      "connectcosmo.click": "2026-01-08",
+      "connectcosmo.online": "2026-01-08",
+      "content-protect.net": "2024-12-25",
+      "control-issue.net": "2024-12-25",
+      "copilotgptawer.cfd": "2026-01-08",
+      "cortanaupdater.info": "2022-12-21",
+      "cosmo-service.org": "2026-01-08",
+      "curly-waterfall-360d.fetrikekke531.workers.dev": "2021-12-14",
+      "dc-microsoft.workers.dev": "2021-12-14",
+      "desktoppreview.com": "2022-12-09",
+      "dezinsekciya-top.ru": "2026-06-16",
+      "digitalstorage.workers.dev": "2021-12-14",
+      "doc-fid.com": "2020-11-21",
+      "documents.publicserver.workers.dev": "2021-12-14",
+      "driver-key.com": "2022-12-09",
+      "driver-updated.com": "2022-12-09",
+      "driversolution.net": "2022-12-09",
+      "e-aks.uz": "2023-01-26",
+      "e-government-pk.com": "2020-11-21",
+      "e-govoffice.com": "2020-11-21",
+      "ecolines.es": "2016-03-08",
+      "elycleu.click": "2026-06-16",
+      "eu.microsoft-365.workers.dev": "2021-12-14",
+      "eurasia-research.org": "2021-02-20",
+      "exactsynchtime.ru": "2023-01-13",
+      "falling-haze-1812.jerkufetra754.workers.dev": "2021-12-14",
+      "falling-haze-1813.jerkufetra754.workers.dev": "2021-12-14",
+      "fatobara.com": "2022-05-24",
+      "fcauditsp.ru": "2026-06-16",
+      "fetrikekke531.workers.dev": "2021-12-14",
+      "flashsupport.org": "2026-01-08",
+      "fmsru.ru": "2025-01-21",
+      "fortune-wheel.ru": "2026-06-16",
+      "ftp.arendelle.ru": "2026-06-16",
+      "ftp.bryksina.ru": "2026-06-16",
+      "ftp.dezinsekciya-top.ru": "2026-06-16",
+      "ftp.wolrpg.ru": "2026-06-16",
+      "ftp.zhk-ambassador.ru": "2026-06-16",
+      "get-news-online.com": "2020-11-21",
+      "gettemplate.org": "2022-12-09",
+      "gimnazija.org": "2026-01-08",
+      "gmocloudhosting.com": "2020-11-21",
+      "gosportal.net": "2024-12-25",
+      "haarmannsi.cz": "2016-03-08",
+      "hilsabecks.net": "2026-06-16",
+      "host-tools.net": "2023-04-26",
+      "hostscontrol.com": "2026-01-08",
+      "http-updater.hs.vc": "2023-04-18",
+      "ieobil.asia": "2026-01-08",
+      "information-model.net": "2026-01-08",
+      "infovesty.ru": "2023-04-10",
+      "interior-gov.com": "2020-11-21",
+      "iphoneupdatecheck.com": "2020-11-21",
+      "iznews.net": "2026-01-08",
+      "jerkufetra754.workers.dev": "2021-12-14",
+      "kjzxpe.ru": "2026-06-16",
+      "live-media.org": "2020-11-21",
+      "liveinfo.org": "2020-11-21",
+      "log1inbox.com": "2020-11-21",
+      "mail.aitoall.ru": "2026-06-16",
+      "mail.arendelle.ru": "2026-06-16",
+      "mail.bryksina.ru": "2026-06-16",
+      "mail.dezinsekciya-top.ru": "2026-06-16",
+      "mail.msgntfsys.link": "2026-06-16",
+      "mail.wolrpg.ru": "2026-06-16",
+      "mail.zhk-ambassador.ru": "2026-06-16",
+      "managements.wireless-log.net": "2023-06-05",
+      "marketru.net": "2026-01-08",
+      "mcdrugs.com": "2026-01-08",
+      "medoaaustinsci.info": "2026-01-08",
+      "mehafon.com": "2024-12-25",
+      "micron-media.com": "2026-01-08",
+      "microsftupdetes.com": "2022-05-24",
+      "microsoft-365.workers.dev": "2021-12-14",
+      "microsoft-cloud.workers.dev": "2021-12-14",
+      "microsoftsample.com": "2022-12-09",
+      "mirconnect.info": "2024-12-25",
+      "mirror-exchange.com": "2022-05-24",
+      "mirror.advancestore.workers.dev": "2021-12-14",
+      "ms-check-new-update.com": "2020-11-21",
+      "ms-officeupdate.com": "2020-12-20",
+      "ms-officeupdate.org": "2021-03-02",
+      "ms-template.com": "2021-02-20",
+      "ms-update.org": "2021-02-10",
+      "msdocumentviever.com": "2021-12-10",
+      "msgntfsys.link": "2026-06-16",
+      "msk-gov.com": "2023-06-26",
+      "mskreg.net": "2026-01-08",
+      "msofficeupdate.com": "2020-11-18",
+      "msofficeupdate.org": "2020-11-21",
+      "msupdatecheck.com": "2020-11-21",
+      "mta1.medoaaustinsci.info": "2026-01-08",
+      "multipackage.net": "2026-01-08",
+      "mvecak.ru": "2026-06-16",
+      "mynewtemplate.com": "2022-12-09",
+      "nedvij-gel.ru": "2026-01-02",
+      "nefteparkstroy.ru": "2025-01-21",
+      "net-plugin.org": "2024-12-25",
+      "netserviceupdater.com": "2020-11-21",
+      "network-list.com": "2023-10-26",
+      "new-office.org": "2020-11-18",
+      "new-template.com": "2022-12-09",
+      "newoffice-template.com": "2019-11-21",
+      "newoffice-update.com": "2020-11-21",
+      "newupdate.org": "2020-11-21",
+      "office-confirm.com": "2024-12-25",
+      "office365-cloud.workers.dev": "2021-12-14",
+      "office365.dc-microsoft.workers.dev": "2021-12-14",
+      "office365.microsoft-cloud.workers.dev": "2021-12-14",
+      "office365online.workers.dev": "2021-12-14",
+      "officeupgrade.org": "2020-11-21",
+      "onesoftware.info": "2024-12-25",
+      "petronas-me.com": "2020-11-21",
+      "plug.repository.workers.dev": "2021-12-14",
+      "protocol-list.com": "2022-11-14",
+      "publicserver.workers.dev": "2021-12-14",
+      "rarnbler.com": "2020-11-21",
+      "refunmvd.sa.com": "2026-06-16",
+      "reload-config.com": "2022-12-09",
+      "remote-convert.com": "2022-11-25",
+      "repository.workers.dev": "2021-12-14",
+      "riamir.net": "2024-12-25",
+      "rneil.ru": "2020-11-21",
+      "roskomnadz.com": "2026-01-08",
+      "rostec.digital": "2022-05-24",
+      "rostvgroup.com": "2026-01-08",
+      "russiatimes.info": "2026-01-08",
+      "rzhd.org": "2026-01-08",
+      "safety-key.org": "2022-12-09",
+      "sanygroup.co.uk": "2016-03-08",
+      "sber-cloud.info": "2024-12-25",
+      "securemodem.com": "2026-01-08",
+      "servantcafe.com": "2026-01-08",
+      "serverop-parametrs.com": "2024-12-25",
+      "softcillection.com": "2023-09-26",
+      "solid-logit.com": "2026-01-08",
+      "srv3-serveup-ads.net": "2020-11-21",
+      "support-app.net": "2022-12-09",
+      "supportpanel.agent-group.org": "2023-04-14",
+      "sync-firewall.com": "2022-12-09",
+      "system-logs.com": "2022-12-09",
+      "technology-requests.net": "2022-12-09",
+      "teexgjvvhuab.webhop.me": "2023-04-18",
+      "telehraf.com": "2026-01-08",
+      "template-new.com": "2020-11-21",
+      "template-office.org": "2020-11-21",
+      "tls-login.com": "2020-11-21",
+      "transferpolicy.org": "2026-01-08",
+      "translate-news.net": "2022-12-09",
+      "triger-working.com": "2024-02-20",
+      "update-office.com": "2020-11-21",
+      "upgrade-office.com": "2020-11-21",
+      "upgrade-office.org": "2020-11-21",
+      "user-twitter.com": "2020-11-21",
+      "vds1.clinicsearchcasestudies.com": "2026-01-08",
+      "virustotall-360d.fetrikekke531.workers.dev": "2021-12-14",
+      "wall-audit.com": "2026-08-05",
+      "wall-comply.com": "2026-08-05",
+      "wall-consult.com": "2026-08-05",
+      "wall-cyber.com": "2026-08-05",
+      "wall-defend.com": "2026-08-05",
+      "wall-hq.com": "2026-08-05",
+      "wall-ops.com": "2026-08-05",
+      "wall-pentest.com": "2026-08-05",
+      "wall-redteam.com": "2026-08-05",
+      "wall-secure.com": "2026-08-05",
+      "wall-team.com": "2026-08-05",
+      "wallpaperex.com": "2026-08-05",
+      "weather-server.net": "2020-11-21",
+      "web-digest.com": "2022-12-09",
+      "web-digest.ru": "2026-08-05",
+      "web-privacy.net": "2024-12-25",
+      "web-telegrama.org": "2024-02-20",
+      "web-wathapp.com": "2024-12-25",
+      "webwaxhaw.com": "2026-08-05",
+      "windows-srv.com": "2023-02-22",
+      "windowsipdate.com": "2022-05-24",
+      "wireless-log.net": "2023-06-05",
+      "wolrpg.ru": "2026-06-16",
+      "yandesks.net": "2024-12-25",
+      "yandesktop.com": "2024-12-25",
+      "yandexbraveupdateinfo.net": "2023-05-24",
+      "yandisk.info": "2024-12-25",
+      "yarcoff.ru": "2026-06-16",
+      "zhk-ambassador.ru": "2026-06-16"
+    },
+    "ipv4": {
+      "168.100.11.142:443": "2022-05-24",
+      "185.252.147.12:443": "2023-04-10",
+      "185.252.147.12:5612": "2023-07-16",
+      "185.252.147.12:5800": "2023-07-16",
+      "194.190.153.182:443": "2026-06-16",
+      "5.252.179.45:55000": "2023-04-18",
+      "94.232.248.34:443": "2026-06-16"
+    },
+    "url": {
+      "http://139.60.161.74/appalcanedentrecentlyconvergenting.png": "2021-02-22",
+      "http://144.217.174.57": "2019-08-12",
+      "http://176.31.59.232": "2019-08-12",
+      "http://185.70.184.32/soarnegroidmeanalkydapresowntipslushing.png": "2021-02-25",
+      "http://217.182.9.185/appalcanedentrecentlyconvergenting.png": "2021-02-22",
+      "internationalcommoditiesllc.com/ic/": "2026-02-14",
+      "webdav.cloudme.com/bimm4276/CloudDrive/": "2019-08-12"
+    },
+    "url_path": {
+      "/?zboard_zboard.php?id=": "2023-04-26",
+      "/Access/acrydium/": "2022-11-25",
+      "/Access/acrydium/osteectomies": "2022-11-25",
+      "/appalcanedentrecentlyconvergenting.png": "2021-02-22",
+      "/azure6steeps4sneaker2wow5herpes0him6fawn9octree5": "2021-05-11",
+      "/dmvc.html/bopyrus40": "2026-01-02",
+      "/politic8stylist1stultification8sadomasochism2": "2021-02-18",
+      "/referential5refugee0douglas4modulate5trio7": "2021-02-24",
+      "/shab/haftarot/": "2022-11-14",
+      "/shab/haftarot/s": "2022-11-14",
+      "/soarnegroidmeanalkydapresowntipslushing.png": "2021-02-25",
+      "/validate7condom7rapids9simoom9": "2021-02-24",
+      "/veal3reveal0bask6goodby9gust6legitimate6wiliness1": "2021-02-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "nedvij-gel.ru": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {
+      "/dmvc.html/bopyrus40": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2016-03-08",
+    "latest": "2026-08-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2020-windows.com",
+      "3i.hilsabecks.net",
+      "56.msgntfsys.link",
+      "7h.ahmetgurses.net",
+      "advancestore.workers.dev",
+      "agent-group.org",
+      "ahmetgurses.net",
+      "aitoall.ru",
+      "api-help.com",
+      "api.office365online.workers.dev",
+      "apkcrypter.com",
+      "archive-downloader.com",
+      "arendelle.ru",
+      "asia.office365-cloud.workers.dev",
+      "avito-service.net",
+      "azureblog.info",
+      "becloud.website",
+      "billet-ru.net",
+      "blackberry-support.herokuapp.com",
+      "bot.fortune-wheel.ru",
+      "brexitimpact.com",
+      "bryksina.ru",
+      "checklicensekey.com",
+      "cityru-travel.org",
+      "cloud.archive-downloader.com",
+      "cloud.digitalstorage.workers.dev",
+      "comparelicense.com",
+      "connectcosmo.click",
+      "connectcosmo.online",
+      "content-protect.net",
+      "control-issue.net",
+      "copilotgptawer.cfd",
+      "cortanaupdater.info",
+      "cosmo-service.org",
+      "curly-waterfall-360d.fetrikekke531.workers.dev",
+      "dc-microsoft.workers.dev",
+      "desktoppreview.com",
+      "dezinsekciya-top.ru",
+      "digitalstorage.workers.dev",
+      "doc-fid.com",
+      "documents.publicserver.workers.dev",
+      "driver-key.com",
+      "driver-updated.com",
+      "driversolution.net",
+      "e-aks.uz",
+      "e-government-pk.com",
+      "e-govoffice.com",
+      "ecolines.es",
+      "elycleu.click",
+      "eu.microsoft-365.workers.dev",
+      "eurasia-research.org",
+      "exactsynchtime.ru",
+      "falling-haze-1812.jerkufetra754.workers.dev",
+      "falling-haze-1813.jerkufetra754.workers.dev",
+      "fatobara.com",
+      "fcauditsp.ru",
+      "fetrikekke531.workers.dev",
+      "flashsupport.org",
+      "fmsru.ru",
+      "fortune-wheel.ru",
+      "ftp.arendelle.ru",
+      "ftp.bryksina.ru",
+      "ftp.dezinsekciya-top.ru",
+      "ftp.wolrpg.ru",
+      "ftp.zhk-ambassador.ru",
+      "get-news-online.com",
+      "gettemplate.org",
+      "gimnazija.org",
+      "gmocloudhosting.com",
+      "gosportal.net",
+      "haarmannsi.cz",
+      "hilsabecks.net",
+      "host-tools.net",
+      "hostscontrol.com",
+      "http-updater.hs.vc",
+      "ieobil.asia",
+      "information-model.net",
+      "infovesty.ru",
+      "interior-gov.com",
+      "iphoneupdatecheck.com",
+      "iznews.net",
+      "jerkufetra754.workers.dev",
+      "kjzxpe.ru",
+      "live-media.org",
+      "liveinfo.org",
+      "log1inbox.com",
+      "mail.aitoall.ru",
+      "mail.arendelle.ru",
+      "mail.bryksina.ru",
+      "mail.dezinsekciya-top.ru",
+      "mail.msgntfsys.link",
+      "mail.wolrpg.ru",
+      "mail.zhk-ambassador.ru",
+      "managements.wireless-log.net",
+      "marketru.net",
+      "mcdrugs.com",
+      "medoaaustinsci.info",
+      "mehafon.com",
+      "micron-media.com",
+      "microsftupdetes.com",
+      "microsoft-365.workers.dev",
+      "microsoft-cloud.workers.dev",
+      "microsoftsample.com",
+      "mirconnect.info",
+      "mirror-exchange.com",
+      "mirror.advancestore.workers.dev",
+      "ms-check-new-update.com",
+      "ms-officeupdate.com",
+      "ms-officeupdate.org",
+      "ms-template.com",
+      "ms-update.org",
+      "msdocumentviever.com",
+      "msgntfsys.link",
+      "msk-gov.com",
+      "mskreg.net",
+      "msofficeupdate.com",
+      "msofficeupdate.org",
+      "msupdatecheck.com",
+      "mta1.medoaaustinsci.info",
+      "multipackage.net",
+      "mvecak.ru",
+      "mynewtemplate.com",
+      "nedvij-gel.ru",
+      "nefteparkstroy.ru",
+      "net-plugin.org",
+      "netserviceupdater.com",
+      "network-list.com",
+      "new-office.org",
+      "new-template.com",
+      "newoffice-template.com",
+      "newoffice-update.com",
+      "newupdate.org",
+      "office-confirm.com",
+      "office365-cloud.workers.dev",
+      "office365.dc-microsoft.workers.dev",
+      "office365.microsoft-cloud.workers.dev",
+      "office365online.workers.dev",
+      "officeupgrade.org",
+      "onesoftware.info",
+      "petronas-me.com",
+      "plug.repository.workers.dev",
+      "protocol-list.com",
+      "publicserver.workers.dev",
+      "rarnbler.com",
+      "refunmvd.sa.com",
+      "reload-config.com",
+      "remote-convert.com",
+      "repository.workers.dev",
+      "riamir.net",
+      "rneil.ru",
+      "roskomnadz.com",
+      "rostec.digital",
+      "rostvgroup.com",
+      "russiatimes.info",
+      "rzhd.org",
+      "safety-key.org",
+      "sanygroup.co.uk",
+      "sber-cloud.info",
+      "securemodem.com",
+      "servantcafe.com",
+      "serverop-parametrs.com",
+      "softcillection.com",
+      "solid-logit.com",
+      "srv3-serveup-ads.net",
+      "support-app.net",
+      "supportpanel.agent-group.org",
+      "sync-firewall.com",
+      "system-logs.com",
+      "technology-requests.net",
+      "teexgjvvhuab.webhop.me",
+      "telehraf.com",
+      "template-new.com",
+      "template-office.org",
+      "tls-login.com",
+      "transferpolicy.org",
+      "translate-news.net",
+      "triger-working.com",
+      "update-office.com",
+      "upgrade-office.com",
+      "upgrade-office.org",
+      "user-twitter.com",
+      "vds1.clinicsearchcasestudies.com",
+      "virustotall-360d.fetrikekke531.workers.dev",
+      "wall-audit.com",
+      "wall-comply.com",
+      "wall-consult.com",
+      "wall-cyber.com",
+      "wall-defend.com",
+      "wall-hq.com",
+      "wall-ops.com",
+      "wall-pentest.com",
+      "wall-redteam.com",
+      "wall-secure.com",
+      "wall-team.com",
+      "wallpaperex.com",
+      "weather-server.net",
+      "web-digest.com",
+      "web-digest.ru",
+      "web-privacy.net",
+      "web-telegrama.org",
+      "web-wathapp.com",
+      "webwaxhaw.com",
+      "windows-srv.com",
+      "windowsipdate.com",
+      "wireless-log.net",
+      "wolrpg.ru",
+      "yandesks.net",
+      "yandesktop.com",
+      "yandexbraveupdateinfo.net",
+      "yandisk.info",
+      "yarcoff.ru",
+      "zhk-ambassador.ru"
+    ],
+    "ipv4": [
+      "168.100.11.142:443",
+      "185.252.147.12:443",
+      "185.252.147.12:5612",
+      "185.252.147.12:5800",
+      "194.190.153.182:443",
+      "5.252.179.45:55000",
+      "94.232.248.34:443"
+    ],
+    "url": [
+      "http://139.60.161.74/appalcanedentrecentlyconvergenting.png",
+      "http://144.217.174.57",
+      "http://176.31.59.232",
+      "http://185.70.184.32/soarnegroidmeanalkydapresowntipslushing.png",
+      "http://217.182.9.185/appalcanedentrecentlyconvergenting.png",
+      "internationalcommoditiesllc.com/ic/",
+      "webdav.cloudme.com/bimm4276/CloudDrive/"
+    ],
+    "url_path": [
+      "/?zboard_zboard.php?id=",
+      "/Access/acrydium/",
+      "/Access/acrydium/osteectomies",
+      "/appalcanedentrecentlyconvergenting.png",
+      "/azure6steeps4sneaker2wow5herpes0him6fawn9octree5",
+      "/dmvc.html/bopyrus40",
+      "/politic8stylist1stultification8sadomasochism2",
+      "/referential5refugee0douglas4modulate5trio7",
+      "/shab/haftarot/",
+      "/shab/haftarot/s",
+      "/soarnegroidmeanalkydapresowntipslushing.png",
+      "/validate7condom7rapids9simoom9",
+      "/veal3reveal0bask6goodby9gust6legitimate6wiliness1"
+    ]
+  },
+  "last_modified": "2026-08-05T13:41:17+00:00",
+  "maltrail_groups": [
+    "CLOUDATLAS"
+  ],
+  "references": [
+    "https://app.any.run/tasks/094820ce-042b-435f-9ce2-2d65c539dafd/",
+    "https://app.any.run/tasks/f95a54b2-8a63-42f9-945e-80cb34d11b58",
+    "https://blog.malwarebytes.com/malwarebytes-news/2022/05/unknown-apt-group-has-targeted-russia-repeatedly-since-ukraine-invasion/",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-04-13-v10297/477",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-12-19-v10489/1221",
+    "https://mp-weixin-qq-com.translate.goog/s/bOJ88Zzk27ZaHShlYUCYgA?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp",
+    "https://otx.alienvault.com/pulse/5d5176f09f3f84634e1f0227",
+    "https://otx.alienvault.com/pulse/5fb8172cdb6535bd6935bfd6",
+    "https://research.checkpoint.com/2022/cloud-atlas-targets-entities-in-russia-and-belarus-amid-the-ongoing-war-in-ukraine/",
+    "https://securelist.com/cloud-atlas-attacks-with-new-backdoor-vbcloud/115103/",
+    "https://securelist.com/cloud-atlas-h1-2025-campaign/118517/",
+    "https://securelist.com/cloud-atlas-redoctober-apt-is-back-in-style/68083/",
+    "https://securelist.com/recent-cloud-atlas-activity/92016/",
+    "https://twitter.com/FF1565166422/status/1645252984643932160",
+    "https://twitter.com/RedDrip7/status/1613806512211910657",
+    "https://twitter.com/RedDrip7/status/1613806655418028034",
+    "https://twitter.com/RexorVc0/status/1651201212480466945",
+    "https://twitter.com/ShadowChasing1/status/1359127027438112773",
+    "https://twitter.com/ShadowChasing1/status/1362359220046192640",
+    "https://twitter.com/ShadowChasing1/status/1364435382683668484",
+    "https://twitter.com/ShadowChasing1/status/1364436330894135297",
+    "https://twitter.com/ShadowChasing1/status/1391788670349287425",
+    "https://twitter.com/ShadowChasing1/status/1468924565653159942",
+    "https://twitter.com/ShadowChasing1/status/1469145795723071492",
+    "https://twitter.com/StopMalvertisin/status/1648213776112717827",
+    "https://twitter.com/StopMalvertisin/status/1648213782957809666",
+    "https://twitter.com/StopMalvertisin/status/1676260222573375491",
+    "https://twitter.com/Vishnyak0v/status/1197402642651193345",
+    "https://twitter.com/felixaime/status/1601257303080308739",
+    "https://twitter.com/felixaime/status/1601257305294921728",
+    "https://twitter.com/h2jazi/status/1363918659534659587",
+    "https://twitter.com/h2jazi/status/1453748348964548617",
+    "https://twitter.com/h2jazi/status/1592158351475240962",
+    "https://twitter.com/h2jazi/status/1595787712996556800",
+    "https://twitter.com/h2jazi/status/1618347920792907777",
+    "https://twitter.com/jfslowik/status/1340352860274393088",
+    "https://twitter.com/jfslowik/status/1363255047929294853",
+    "https://twitter.com/k3yp0d/status/1618539713228574721",
+    "https://twitter.com/k3yp0d/status/1618541802675646464",
+    "https://twitter.com/kyleehmke/status/1359531943252140040",
+    "https://twitter.com/kyleehmke/status/1366796835541684224",
+    "https://twitter.com/kyleehmke/status/1628419317103460359",
+    "https://twitter.com/suyog41/status/1661254437216583683",
+    "https://twitter.com/suyog41/status/1673215056287285249",
+    "https://twitter.com/suyog41/status/1706618278066434180",
+    "https://twitter.com/t3ft3lb/status/1651154256294977537",
+    "https://twitter.com/t3ft3lb/status/1665686960764067840",
+    "https://twitter.com/t3ft3lb/status/1717545342294528309",
+    "https://twitter.com/t3ft3lb/status/1759849432936272143",
+    "https://www.bluecoat.com/documents/download/638d602b-70f4-4644-aaad-b80e1426aad4/d5c87163-e068-440f-b89e-e40b2f8d2088",
+    "https://www.domaintools.com/resources/blog/current-events-to-widespread-campaigns-pivoting-from-samples-to-identify",
+    "https://www.domaintools.com/resources/blog/the-continuous-conundrum-of-cloud-atlas",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt-cloud-atlas-unbroken-threat/",
+    "https://www.virustotal.com/gui/file/0b5b54f8cf6b994eeba9610c62c7fe83b58566a35cd71968d4ee5e2c5d102f23/detection",
+    "https://www.virustotal.com/gui/file/12c20f9dbdb8955f3f88e28dc10241f35659dbcd74dadc9a10ca1b508722d69a/detection",
+    "https://www.virustotal.com/gui/file/12f9dcdfea0520436e8c5749fbefedc7675e74b73c97a1bcaf1ecce64f12ed19/detection",
+    "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+    "https://www.virustotal.com/gui/file/141b2c01f4fb9326fc60690cf7d36a2b35b9cc9e1ee520c3470192a76c18cb74/detection",
+    "https://www.virustotal.com/gui/file/176b336f425bc15651672f96f70149873b10a3badfa040c8943bfe54955e043d/detection",
+    "https://www.virustotal.com/gui/file/186289754f499c26aa66f9305f792ae4a85a9b9946bc5b4dcbb9eeb1632709cd/detection",
+    "https://www.virustotal.com/gui/file/1b3a85d596d65e0101eeddd539cec587fec4ca3b7c08469712c3964f8202a39e/detection",
+    "https://www.virustotal.com/gui/file/1d03a3cd25fb95bc52f557df31100250768107bad146f1793785e8b630dee67c/detection",
+    "https://www.virustotal.com/gui/file/21ff553d752df93e10e45d0393eb097d5231346737e786ab8ad41324c299342a/detection",
+    "https://www.virustotal.com/gui/file/2600c984ac0571a72882cf12de449cde44cbf9cf42b365965e5b3fd3ceeb2d96/detection",
+    "https://www.virustotal.com/gui/file/268dfc61a97ec6af3655405b939d5057f0a2fe803b21b3ad439131bde8a43b1d/detection",
+    "https://www.virustotal.com/gui/file/283348e93ef616a130f3bdf313499c861c9d9f22929b795abc57a5ba5b1c508f/detection",
+    "https://www.virustotal.com/gui/file/2b2da38b62916c448235038f09c51f226d96087df531b9a508e272b9e87c909d/detection",
+    "https://www.virustotal.com/gui/file/309ba0a33ecf3e123bc3e539a5443b5b633a135c3fc44fd0941d520fee39afb1/detection",
+    "https://www.virustotal.com/gui/file/36cbd8eb24aa60809e67c85f17151b0783632949fb4a387b5e9035fc227221c0/detection",
+    "https://www.virustotal.com/gui/file/4011b1fff8c088fcb4ac4a05a5a156912162293bbda8147597a41e09725b3ebf/detection",
+    "https://www.virustotal.com/gui/file/439032cbee22ae75cce7e2340ca7ffe521dce3e18702ccd703cc5849dbf8954b/detection",
+    "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection",
+    "https://www.virustotal.com/gui/file/46c203cf15a4126f10b3933376215063fe385aba3be971d63fc4e7be34aaf171/detection",
+    "https://www.virustotal.com/gui/file/46e0f6fd0f25b1c52b4e27979c923fb5a83bd8798c2a5580a0933aed5047be65/detection",
+    "https://www.virustotal.com/gui/file/4aac08bbead6b3e3695f588e2c6d9ea738ff909aa3e38ddb6fdaf3546ee19139/detection",
+    "https://www.virustotal.com/gui/file/4b47793851c3844e5344e703618a3addfab2d3cb2b1debcd8682c423f7f6887b/detection",
+    "https://www.virustotal.com/gui/file/5af1214fc0ca056e266b2d093099a3562741122f32303d3be7105ce0c2183821/detection",
+    "https://www.virustotal.com/gui/file/60e9222f464cc99014a909ca4548cf38b20c7a5bbd80714dfd95ce89842be7db/detection",
+    "https://www.virustotal.com/gui/file/6501dd570761f2bd3eff4e3416baef57c2ff514b8dd35c9c80a37e2d489d714f/detection",
+    "https://www.virustotal.com/gui/file/668236000a483b1735b7f8e244ae867804ee20fbd18e07860d1764a30e3ba60d/detection",
+    "https://www.virustotal.com/gui/file/708c2eb5a979cbfa8e240679282a37835daafd37b30ecce722be28861996cf35/detection",
+    "https://www.virustotal.com/gui/file/8217e38b3dba43d88b397aa0de945eba2efa5884a98b127fd611e426091e56f5/detection",
+    "https://www.virustotal.com/gui/file/82f76dca581ccddac695170b0c9d4e278cc6a75dd8213d41505c775a6bec9675/detection",
+    "https://www.virustotal.com/gui/file/95cc7af0dbb0b927ab369621d62e87938b50e48f54779b10657681a0f70b8ac1/detection",
+    "https://www.virustotal.com/gui/file/97c1b67ca33790ff7656496b7511a80c1b3c2c116bce4278700be854bd5519c2/detection",
+    "https://www.virustotal.com/gui/file/9e23a08981ae336068905c771754f7ea26b19d3d978b1bd554a4202a165b3072/detection",
+    "https://www.virustotal.com/gui/file/9f8d3ee51af949ae15ca18c6fdd8e6f2d1c7970c8265bd5bb2bb2d92d358c04a/detection",
+    "https://www.virustotal.com/gui/file/a4ab42ae16cc044ecd5c0bd91cc13beded61ab848502c356691fb27c8b7cec61/detection",
+    "https://www.virustotal.com/gui/file/a9279ccd0bfc953a8acc4b134235902debe7f2b5cbb8aaf5a5549752c416e542/detection",
+    "https://www.virustotal.com/gui/file/ae2a3b4bc5c1c5b7419c9daa3e32e8896132b970ab3c46d059e1696896e86498/detection",
+    "https://www.virustotal.com/gui/file/b1a2eb532c461ff2faa4ec9edf44d2ef5678ee1a84a8779866ad64fa8b52065e/detection",
+    "https://www.virustotal.com/gui/file/b35bfe34db55545612322970b6bf775abf97c7f375609ce9da7292555f8bb037/detection",
+    "https://www.virustotal.com/gui/file/b4c0902a9fb29993bc7573d6e84547d0393c07e011f7b633f6ea3a67b96c6577/detection",
+    "https://www.virustotal.com/gui/file/b7ea9d1c42d4f5802ae473be09b03472ee9ddacad137d57539a5282a0ed90f2a/detection",
+    "https://www.virustotal.com/gui/file/ca95e8a8b6fb11b5129821f034b337b06cdf407fa9516619f3baed450ac1cf2d/detection",
+    "https://www.virustotal.com/gui/file/cbde42990e53f5af37e6f6a9fd14714333b45498978a7971610acb640ddd5541/detection",
+    "https://www.virustotal.com/gui/file/d1d602cd4aacef412d97640f3a030516a441300bd80dfaef383140f1998686a8/detection",
+    "https://www.virustotal.com/gui/file/d2b621ee0bda40eaa43f55e697d79cc36feba09a2027c2eb9437c910eb551558/detection",
+    "https://www.virustotal.com/gui/file/d54b1ddb6f3bc94d68e9eddebf0caf81f80563794a564ce687c5f8444acf0e60/detection",
+    "https://www.virustotal.com/gui/file/d911e17b3628471713adeac2c86ad429d4e873dacfa13a10ed9a316c49ed63b0/detection",
+    "https://www.virustotal.com/gui/file/dc1a0b4aa62729ec12c52ccdfb6011f87f38b5441e792b4ae06fe4b07ff8c7fe/detection",
+    "https://www.virustotal.com/gui/file/ddeb109a97e3689b63d4ee848d4c23b0646c8070badebcc852577be0b64c7397/detection",
+    "https://www.virustotal.com/gui/file/e3be669caa13562d293c4523251319b30ccc0d702c11e903233ac1c4e7bf94ec/detection",
+    "https://www.virustotal.com/gui/file/e3d2e6f8740bc5a510239af41e77a3e07eaf09f1aa5cda78558035399db3f971/detection",
+    "https://www.virustotal.com/gui/file/e49b6200b408e1fc2c3886805d4a1b1e5fcc43ac6efe71f803070927ef94a181/detection",
+    "https://www.virustotal.com/gui/file/e5b76a3ec4c9b0a42ec953022b5d64f61e7cd64f78ea0cb7170b7882ffb180b6/detection",
+    "https://www.virustotal.com/gui/file/e6448e92bc3cc8706a9429d93ea32b23c3eeebc7910d0e4c18e883c0104a6dc6/detection",
+    "https://www.virustotal.com/gui/file/f583523bba0a3c27e08ebb4404d74924b99537b01af5f35f43c44416f600079e/detection",
+    "https://www.virustotal.com/gui/file/fbb6d99412b83621dc8f5293d42ebc75546d9144cab5f43fddc40d3f0c61daac/detection",
+    "https://www.virustotal.com/gui/ip-address/146.19.143.25/relations",
+    "https://www.virustotal.com/gui/ip-address/185.117.91.175/relations",
+    "https://www.virustotal.com/gui/ip-address/185.143.221.7/relations",
+    "https://www.virustotal.com/gui/ip-address/188.120.249.17/relations",
+    "https://www.virustotal.com/gui/ip-address/192.153.57.83/relations",
+    "https://www.virustotal.com/gui/ip-address/192.254.79.69/relations",
+    "https://www.virustotal.com/gui/ip-address/45.151.62.98/relations",
+    "https://www.virustotal.com/gui/ip-address/5.101.66.135/relations",
+    "https://www.virustotal.com/gui/ip-address/91.210.104.54/relations",
+    "https://www.virustotal.com/gui/ip-address/95.215.108.187/relations",
+    "https://www.virustotal.com/gui/ip-address/95.217.82.125/relations",
+    "https://www.zscaler.com/blogs/security-research/cloudfall-targets-researchers-and-scientists-invited-international-military",
+    "https://x.com/BaoshengbinCumt/status/1871828767569789185",
+    "https://x.com/Des00464472/status/1881598731986034794",
+    "https://x.com/IdaNotPro/status/1937198405924667778",
+    "https://x.com/askardyuss/status/2066210696929452163",
+    "https://x.com/t3ft3lb/status/1938697172012470308",
+    "https://x.com/t3ft3lb/status/2022249576405864776"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0047"
+    }
+  ],
+  "slug": "G0100",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2026-08-05",
+      "indicators": {
+        "domain": [
+          "wall-audit.com",
+          "wall-comply.com",
+          "wall-consult.com",
+          "wall-cyber.com",
+          "wall-defend.com",
+          "wall-hq.com",
+          "wall-ops.com",
+          "wall-pentest.com",
+          "wall-redteam.com",
+          "wall-secure.com",
+          "wall-team.com",
+          "wallpaperex.com",
+          "web-digest.ru",
+          "webwaxhaw.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1601257303080308739",
+        "https://twitter.com/felixaime/status/1601257305294921728"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 32,
+        "ipv4": 2
+      },
+      "first_seen": "2026-06-16",
+      "indicators": {
+        "domain": [
+          "3i.hilsabecks.net",
+          "56.msgntfsys.link",
+          "7h.ahmetgurses.net",
+          "ahmetgurses.net",
+          "aitoall.ru",
+          "arendelle.ru",
+          "bot.fortune-wheel.ru",
+          "bryksina.ru",
+          "dezinsekciya-top.ru",
+          "elycleu.click",
+          "fcauditsp.ru",
+          "fortune-wheel.ru",
+          "ftp.arendelle.ru",
+          "ftp.bryksina.ru",
+          "ftp.dezinsekciya-top.ru",
+          "ftp.wolrpg.ru",
+          "ftp.zhk-ambassador.ru",
+          "hilsabecks.net",
+          "kjzxpe.ru",
+          "mail.aitoall.ru",
+          "mail.arendelle.ru",
+          "mail.bryksina.ru",
+          "mail.dezinsekciya-top.ru",
+          "mail.msgntfsys.link",
+          "mail.wolrpg.ru",
+          "mail.zhk-ambassador.ru",
+          "msgntfsys.link",
+          "mvecak.ru",
+          "refunmvd.sa.com",
+          "wolrpg.ru",
+          "yarcoff.ru",
+          "zhk-ambassador.ru"
+        ],
+        "ipv4": [
+          "194.190.153.182:443",
+          "94.232.248.34:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 34
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2026-02-14",
+      "indicators": {
+        "url": [
+          "internationalcommoditiesllc.com/ic/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t3ft3lb/status/2022249576405864776",
+        "https://www.virustotal.com/gui/file/46e0f6fd0f25b1c52b4e27979c923fb5a83bd8798c2a5580a0933aed5047be65/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 29
+      },
+      "first_seen": "2026-01-08",
+      "indicators": {
+        "domain": [
+          "apkcrypter.com",
+          "billet-ru.net",
+          "cityru-travel.org",
+          "connectcosmo.click",
+          "connectcosmo.online",
+          "copilotgptawer.cfd",
+          "cosmo-service.org",
+          "flashsupport.org",
+          "hostscontrol.com",
+          "ieobil.asia",
+          "information-model.net",
+          "iznews.net",
+          "marketru.net",
+          "mcdrugs.com",
+          "medoaaustinsci.info",
+          "micron-media.com",
+          "mskreg.net",
+          "mta1.medoaaustinsci.info",
+          "multipackage.net",
+          "roskomnadz.com",
+          "rostvgroup.com",
+          "russiatimes.info",
+          "rzhd.org",
+          "securemodem.com",
+          "servantcafe.com",
+          "solid-logit.com",
+          "telehraf.com",
+          "transferpolicy.org",
+          "vds1.clinicsearchcasestudies.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/cloud-atlas-h1-2025-campaign/118517/",
+        "https://www.virustotal.com/gui/ip-address/185.143.221.7/relations",
+        "https://www.virustotal.com/gui/ip-address/45.151.62.98/relations",
+        "https://www.virustotal.com/gui/ip-address/95.215.108.187/relations"
+      ],
+      "total": 29
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-08",
+      "indicators": {
+        "domain": [
+          "gimnazija.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t3ft3lb/status/1938697172012470308",
+        "https://app.any.run/tasks/f95a54b2-8a63-42f9-945e-80cb34d11b58",
+        "https://www.virustotal.com/gui/file/b7ea9d1c42d4f5802ae473be09b03472ee9ddacad137d57539a5282a0ed90f2a/detection",
+        "https://www.virustotal.com/gui/file/0b5b54f8cf6b994eeba9610c62c7fe83b58566a35cd71968d4ee5e2c5d102f23/detection",
+        "https://securelist.com/cloud-atlas-h1-2025-campaign/118517/",
+        "https://www.virustotal.com/gui/ip-address/185.143.221.7/relations",
+        "https://www.virustotal.com/gui/ip-address/45.151.62.98/relations",
+        "https://www.virustotal.com/gui/ip-address/95.215.108.187/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "url_path": [
+          "/dmvc.html/bopyrus40"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/t3ft3lb/status/1938697172012470308",
+        "https://app.any.run/tasks/f95a54b2-8a63-42f9-945e-80cb34d11b58",
+        "https://www.virustotal.com/gui/file/b7ea9d1c42d4f5802ae473be09b03472ee9ddacad137d57539a5282a0ed90f2a/detection",
+        "https://www.virustotal.com/gui/file/0b5b54f8cf6b994eeba9610c62c7fe83b58566a35cd71968d4ee5e2c5d102f23/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "nedvij-gel.ru"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/IdaNotPro/status/1937198405924667778",
+        "https://www.virustotal.com/gui/file/e6448e92bc3cc8706a9429d93ea32b23c3eeebc7910d0e4c18e883c0104a6dc6/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2025-01-21",
+      "indicators": {
+        "domain": [
+          "fmsru.ru",
+          "nefteparkstroy.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Des00464472/status/1881598731986034794",
+        "https://www.virustotal.com/gui/file/f583523bba0a3c27e08ebb4404d74924b99537b01af5f35f43c44416f600079e/detection",
+        "https://www.virustotal.com/gui/file/2b2da38b62916c448235038f09c51f226d96087df531b9a508e272b9e87c909d/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2024-12-25",
+      "indicators": {
+        "domain": [
+          "content-protect.net",
+          "control-issue.net",
+          "gosportal.net",
+          "mirconnect.info",
+          "net-plugin.org",
+          "office-confirm.com",
+          "onesoftware.info",
+          "riamir.net",
+          "sber-cloud.info",
+          "serverop-parametrs.com",
+          "web-privacy.net",
+          "web-wathapp.com",
+          "yandesks.net",
+          "yandesktop.com",
+          "yandisk.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/BaoshengbinCumt/status/1871828767569789185",
+        "https://securelist.com/cloud-atlas-attacks-with-new-backdoor-vbcloud/115103/"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-12-25",
+      "indicators": {
+        "domain": [
+          "mehafon.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/b35bfe34db55545612322970b6bf775abf97c7f375609ce9da7292555f8bb037/detection",
+        "https://www.virustotal.com/gui/file/268dfc61a97ec6af3655405b939d5057f0a2fe803b21b3ad439131bde8a43b1d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-02-20",
+      "indicators": {
+        "domain": [
+          "triger-working.com",
+          "web-telegrama.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1759849432936272143",
+        "https://www.virustotal.com/gui/ip-address/146.19.143.25/relations",
+        "https://www.virustotal.com/gui/ip-address/192.254.79.69/relations",
+        "https://app.any.run/tasks/094820ce-042b-435f-9ce2-2d65c539dafd/",
+        "https://www.virustotal.com/gui/file/5af1214fc0ca056e266b2d093099a3562741122f32303d3be7105ce0c2183821/detection",
+        "https://www.virustotal.com/gui/file/97c1b67ca33790ff7656496b7511a80c1b3c2c116bce4278700be854bd5519c2/detection",
+        "https://www.virustotal.com/gui/file/b4c0902a9fb29993bc7573d6e84547d0393c07e011f7b633f6ea3a67b96c6577/detection",
+        "https://www.virustotal.com/gui/file/d54b1ddb6f3bc94d68e9eddebf0caf81f80563794a564ce687c5f8444acf0e60/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-12-20",
+      "indicators": {
+        "domain": [
+          "avito-service.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-12-19-v10489/1221"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-10-26",
+      "indicators": {
+        "domain": [
+          "network-list.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1717545342294528309",
+        "https://www.virustotal.com/gui/ip-address/95.217.82.125/relations",
+        "https://www.virustotal.com/gui/file/e3d2e6f8740bc5a510239af41e77a3e07eaf09f1aa5cda78558035399db3f971/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-26",
+      "indicators": {
+        "domain": [
+          "softcillection.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1706618278066434180",
+        "https://www.virustotal.com/gui/ip-address/188.120.249.17/relations",
+        "https://www.virustotal.com/gui/file/fbb6d99412b83621dc8f5293d42ebc75546d9144cab5f43fddc40d3f0c61daac/detection",
+        "https://www.virustotal.com/gui/file/e3be669caa13562d293c4523251319b30ccc0d702c11e903233ac1c4e7bf94ec/detection",
+        "https://www.virustotal.com/gui/file/d2b621ee0bda40eaa43f55e697d79cc36feba09a2027c2eb9437c910eb551558/detection",
+        "https://www.virustotal.com/gui/file/4b47793851c3844e5344e703618a3addfab2d3cb2b1debcd8682c423f7f6887b/detection",
+        "https://www.virustotal.com/gui/file/2600c984ac0571a72882cf12de449cde44cbf9cf42b365965e5b3fd3ceeb2d96/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2023-07-16",
+      "indicators": {
+        "ipv4": [
+          "185.252.147.12:5612",
+          "185.252.147.12:5800"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/FF1565166422/status/1645252984643932160",
+        "https://twitter.com/StopMalvertisin/status/1676260222573375491",
+        "https://www.virustotal.com/gui/file/ae2a3b4bc5c1c5b7419c9daa3e32e8896132b970ab3c46d059e1696896e86498/detection",
+        "https://www.virustotal.com/gui/file/a9279ccd0bfc953a8acc4b134235902debe7f2b5cbb8aaf5a5549752c416e542/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-06-26",
+      "indicators": {
+        "domain": [
+          "msk-gov.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1673215056287285249",
+        "https://www.virustotal.com/gui/file/708c2eb5a979cbfa8e240679282a37835daafd37b30ecce722be28861996cf35/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-06-05",
+      "indicators": {
+        "domain": [
+          "managements.wireless-log.net",
+          "wireless-log.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1665686960764067840",
+        "https://www.virustotal.com/gui/file/a4ab42ae16cc044ecd5c0bd91cc13beded61ab848502c356691fb27c8b7cec61/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-05-24",
+      "indicators": {
+        "domain": [
+          "yandexbraveupdateinfo.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1661254437216583683",
+        "https://www.virustotal.com/gui/file/e49b6200b408e1fc2c3886805d4a1b1e5fcc43ac6efe71f803070927ef94a181/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2023-04-26",
+      "indicators": {
+        "domain": [
+          "host-tools.net"
+        ],
+        "url_path": [
+          "/?zboard_zboard.php?id="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1651154256294977537",
+        "https://www.virustotal.com/gui/file/95cc7af0dbb0b927ab369621d62e87938b50e48f54779b10657681a0f70b8ac1/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2023-04-18",
+      "indicators": {
+        "domain": [
+          "http-updater.hs.vc",
+          "teexgjvvhuab.webhop.me"
+        ],
+        "ipv4": [
+          "5.252.179.45:55000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1648213776112717827",
+        "https://twitter.com/StopMalvertisin/status/1648213782957809666",
+        "https://twitter.com/RexorVc0/status/1651201212480466945",
+        "https://mp-weixin-qq-com.translate.goog/s/bOJ88Zzk27ZaHShlYUCYgA?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp",
+        "https://www.virustotal.com/gui/file/4aac08bbead6b3e3695f588e2c6d9ea738ff909aa3e38ddb6fdaf3546ee19139/detection",
+        "https://www.virustotal.com/gui/file/1d03a3cd25fb95bc52f557df31100250768107bad146f1793785e8b630dee67c/detection",
+        "https://www.virustotal.com/gui/file/d1d602cd4aacef412d97640f3a030516a441300bd80dfaef383140f1998686a8/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-04-14",
+      "indicators": {
+        "domain": [
+          "agent-group.org",
+          "supportpanel.agent-group.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-04-13-v10297/477",
+        "https://www.virustotal.com/gui/file/dc1a0b4aa62729ec12c52ccdfb6011f87f38b5441e792b4ae06fe4b07ff8c7fe/detection",
+        "https://www.virustotal.com/gui/file/82f76dca581ccddac695170b0c9d4e278cc6a75dd8213d41505c775a6bec9675/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2023-04-10",
+      "indicators": {
+        "domain": [
+          "infovesty.ru"
+        ],
+        "ipv4": [
+          "185.252.147.12:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/FF1565166422/status/1645252984643932160",
+        "https://twitter.com/StopMalvertisin/status/1676260222573375491",
+        "https://www.virustotal.com/gui/file/ae2a3b4bc5c1c5b7419c9daa3e32e8896132b970ab3c46d059e1696896e86498/detection",
+        "https://www.virustotal.com/gui/file/a9279ccd0bfc953a8acc4b134235902debe7f2b5cbb8aaf5a5549752c416e542/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-02-22",
+      "indicators": {
+        "domain": [
+          "windows-srv.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1628419317103460359",
+        "https://www.virustotal.com/gui/ip-address/5.101.66.135/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-26",
+      "indicators": {
+        "domain": [
+          "becloud.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1618541802675646464",
+        "https://www.virustotal.com/gui/file/283348e93ef616a130f3bdf313499c861c9d9f22929b795abc57a5ba5b1c508f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-26",
+      "indicators": {
+        "domain": [
+          "e-aks.uz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1618539713228574721",
+        "https://www.virustotal.com/gui/file/ddeb109a97e3689b63d4ee848d4c23b0646c8070badebcc852577be0b64c7397/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-01-25",
+      "indicators": {
+        "domain": [
+          "archive-downloader.com",
+          "cloud.archive-downloader.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1618347920792907777",
+        "https://www.virustotal.com/gui/file/176b336f425bc15651672f96f70149873b10a3badfa040c8943bfe54955e043d/detection",
+        "https://www.virustotal.com/gui/file/6501dd570761f2bd3eff4e3416baef57c2ff514b8dd35c9c80a37e2d489d714f/detection",
+        "https://www.virustotal.com/gui/file/9f8d3ee51af949ae15ca18c6fdd8e6f2d1c7970c8265bd5bb2bb2d92d358c04a/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-13",
+      "indicators": {
+        "domain": [
+          "exactsynchtime.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1613806512211910657",
+        "https://twitter.com/RedDrip7/status/1613806655418028034",
+        "https://www.virustotal.com/gui/file/36cbd8eb24aa60809e67c85f17151b0783632949fb4a387b5e9035fc227221c0/detection",
+        "https://www.virustotal.com/gui/file/141b2c01f4fb9326fc60690cf7d36a2b35b9cc9e1ee520c3470192a76c18cb74/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-12-21",
+      "indicators": {
+        "domain": [
+          "cortanaupdater.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1613806512211910657",
+        "https://twitter.com/RedDrip7/status/1613806655418028034",
+        "https://www.virustotal.com/gui/file/36cbd8eb24aa60809e67c85f17151b0783632949fb4a387b5e9035fc227221c0/detection",
+        "https://www.virustotal.com/gui/file/141b2c01f4fb9326fc60690cf7d36a2b35b9cc9e1ee520c3470192a76c18cb74/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-12-09",
+      "indicators": {
+        "domain": [
+          "api-help.com",
+          "comparelicense.com",
+          "driver-updated.com",
+          "mynewtemplate.com",
+          "new-template.com",
+          "sync-firewall.com",
+          "system-logs.com",
+          "technology-requests.net",
+          "translate-news.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt-cloud-atlas-unbroken-threat/"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2022-12-09",
+      "indicators": {
+        "domain": [
+          "driver-key.com",
+          "microsoftsample.com",
+          "reload-config.com",
+          "safety-key.org",
+          "web-digest.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1601257303080308739",
+        "https://twitter.com/felixaime/status/1601257305294921728"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-12-09",
+      "indicators": {
+        "domain": [
+          "desktoppreview.com",
+          "driversolution.net",
+          "gettemplate.org",
+          "support-app.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2022/cloud-atlas-targets-entities-in-russia-and-belarus-amid-the-ongoing-war-in-ukraine/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 2
+      },
+      "first_seen": "2022-11-25",
+      "indicators": {
+        "domain": [
+          "remote-convert.com"
+        ],
+        "url_path": [
+          "/Access/acrydium/",
+          "/Access/acrydium/osteectomies"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1595787712996556800",
+        "https://www.virustotal.com/gui/file/186289754f499c26aa66f9305f792ae4a85a9b9946bc5b4dcbb9eeb1632709cd/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 2
+      },
+      "first_seen": "2022-11-14",
+      "indicators": {
+        "domain": [
+          "protocol-list.com"
+        ],
+        "url_path": [
+          "/shab/haftarot/",
+          "/shab/haftarot/s"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1592158351475240962",
+        "https://www.virustotal.com/gui/file/b1a2eb532c461ff2faa4ec9edf44d2ef5678ee1a84a8779866ad64fa8b52065e/detection",
+        "https://www.virustotal.com/gui/file/8217e38b3dba43d88b397aa0de945eba2efa5884a98b127fd611e426091e56f5/detection",
+        "https://www.virustotal.com/gui/file/1b3a85d596d65e0101eeddd539cec587fec4ca3b7c08469712c3964f8202a39e/detection",
+        "https://www.virustotal.com/gui/file/12f9dcdfea0520436e8c5749fbefedc7675e74b73c97a1bcaf1ecce64f12ed19/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 1
+      },
+      "first_seen": "2022-05-24",
+      "indicators": {
+        "domain": [
+          "fatobara.com",
+          "microsftupdetes.com",
+          "mirror-exchange.com",
+          "rostec.digital",
+          "windowsipdate.com"
+        ],
+        "ipv4": [
+          "168.100.11.142:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/malwarebytes-news/2022/05/unknown-apt-group-has-targeted-russia-repeatedly-since-ukraine-invasion/",
+        "https://www.virustotal.com/gui/ip-address/192.153.57.83/relations",
+        "https://www.virustotal.com/gui/ip-address/91.210.104.54/relations",
+        "https://www.virustotal.com/gui/file/12c20f9dbdb8955f3f88e28dc10241f35659dbcd74dadc9a10ca1b508722d69a/detection",
+        "https://www.virustotal.com/gui/file/cbde42990e53f5af37e6f6a9fd14714333b45498978a7971610acb640ddd5541/detection",
+        "https://www.virustotal.com/gui/file/ca95e8a8b6fb11b5129821f034b337b06cdf407fa9516619f3baed450ac1cf2d/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2021-12-14",
+      "indicators": {
+        "domain": [
+          "advancestore.workers.dev",
+          "api.office365online.workers.dev",
+          "asia.office365-cloud.workers.dev",
+          "cloud.digitalstorage.workers.dev",
+          "curly-waterfall-360d.fetrikekke531.workers.dev",
+          "dc-microsoft.workers.dev",
+          "digitalstorage.workers.dev",
+          "documents.publicserver.workers.dev",
+          "eu.microsoft-365.workers.dev",
+          "falling-haze-1812.jerkufetra754.workers.dev",
+          "falling-haze-1813.jerkufetra754.workers.dev",
+          "fetrikekke531.workers.dev",
+          "jerkufetra754.workers.dev",
+          "microsoft-365.workers.dev",
+          "microsoft-cloud.workers.dev",
+          "mirror.advancestore.workers.dev",
+          "office365-cloud.workers.dev",
+          "office365.dc-microsoft.workers.dev",
+          "office365.microsoft-cloud.workers.dev",
+          "office365online.workers.dev",
+          "plug.repository.workers.dev",
+          "publicserver.workers.dev",
+          "repository.workers.dev",
+          "virustotall-360d.fetrikekke531.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/cloudfall-targets-researchers-and-scientists-invited-international-military",
+        "https://www.virustotal.com/gui/file/d911e17b3628471713adeac2c86ad429d4e873dacfa13a10ed9a316c49ed63b0/detection"
+      ],
+      "total": 24
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-10",
+      "indicators": {
+        "domain": [
+          "msdocumentviever.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1469145795723071492",
+        "https://twitter.com/ShadowChasing1/status/1468924565653159942",
+        "https://www.virustotal.com/gui/ip-address/185.117.91.175/relations",
+        "https://www.virustotal.com/gui/file/309ba0a33ecf3e123bc3e539a5443b5b633a135c3fc44fd0941d520fee39afb1/detection",
+        "https://www.virustotal.com/gui/file/60e9222f464cc99014a909ca4548cf38b20c7a5bbd80714dfd95ce89842be7db/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-11-20",
+      "indicators": {
+        "domain": [
+          "checklicensekey.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1453748348964548617",
+        "https://www.virustotal.com/gui/file/9e23a08981ae336068905c771754f7ea26b19d3d978b1bd554a4202a165b3072/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-05-11",
+      "indicators": {
+        "url_path": [
+          "/azure6steeps4sneaker2wow5herpes0him6fawn9octree5"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-02",
+      "indicators": {
+        "domain": [
+          "ms-officeupdate.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1366796835541684224"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-25",
+      "indicators": {
+        "url_path": [
+          "/soarnegroidmeanalkydapresowntipslushing.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-02-25",
+      "indicators": {
+        "url": [
+          "http://185.70.184.32/soarnegroidmeanalkydapresowntipslushing.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.domaintools.com/resources/blog/the-continuous-conundrum-of-cloud-atlas"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-24",
+      "indicators": {
+        "url_path": [
+          "/validate7condom7rapids9simoom9"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1364436330894135297",
+        "https://www.virustotal.com/gui/file/4011b1fff8c088fcb4ac4a05a5a156912162293bbda8147597a41e09725b3ebf/detection",
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-24",
+      "indicators": {
+        "url_path": [
+          "/referential5refugee0douglas4modulate5trio7"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1364435382683668484",
+        "https://www.virustotal.com/gui/file/439032cbee22ae75cce7e2340ca7ffe521dce3e18702ccd703cc5849dbf8954b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-22",
+      "indicators": {
+        "url_path": [
+          "/appalcanedentrecentlyconvergenting.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-02-22",
+      "indicators": {
+        "url": [
+          "http://139.60.161.74/appalcanedentrecentlyconvergenting.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1363918659534659587",
+        "https://www.virustotal.com/gui/file/668236000a483b1735b7f8e244ae867804ee20fbd18e07860d1764a30e3ba60d/detection",
+        "https://www.domaintools.com/resources/blog/the-continuous-conundrum-of-cloud-atlas"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-02-22",
+      "indicators": {
+        "url": [
+          "http://217.182.9.185/appalcanedentrecentlyconvergenting.png"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1363918659534659587",
+        "https://www.virustotal.com/gui/file/668236000a483b1735b7f8e244ae867804ee20fbd18e07860d1764a30e3ba60d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-02-20",
+      "indicators": {
+        "domain": [
+          "eurasia-research.org",
+          "ms-template.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/jfslowik/status/1363255047929294853"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-19",
+      "indicators": {
+        "url_path": [
+          "/veal3reveal0bask6goodby9gust6legitimate6wiliness1"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-18",
+      "indicators": {
+        "url_path": [
+          "/politic8stylist1stultification8sadomasochism2"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2066210696929452163",
+        "https://www.virustotal.com/gui/file/1402053d6edb096b59b8df3b81d56d5a30e6577f9022ef9b5dae910f328d0401/detection",
+        "https://www.virustotal.com/gui/file/4661735db0f33dd567d29b2a056a967bb3762f831eb3678b27c4ffb06dbb8ec1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-10",
+      "indicators": {
+        "domain": [
+          "ms-update.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1359531943252140040",
+        "https://twitter.com/ShadowChasing1/status/1362359220046192640",
+        "https://www.virustotal.com/gui/file/46c203cf15a4126f10b3933376215063fe385aba3be971d63fc4e7be34aaf171/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-20",
+      "indicators": {
+        "domain": [
+          "ms-officeupdate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/jfslowik/status/1340352860274393088",
+        "https://twitter.com/ShadowChasing1/status/1359127027438112773",
+        "https://www.virustotal.com/gui/file/21ff553d752df93e10e45d0393eb097d5231346737e786ab8ad41324c299342a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 32
+      },
+      "first_seen": "2020-11-21",
+      "indicators": {
+        "domain": [
+          "2020-windows.com",
+          "azureblog.info",
+          "brexitimpact.com",
+          "doc-fid.com",
+          "e-government-pk.com",
+          "e-govoffice.com",
+          "get-news-online.com",
+          "gmocloudhosting.com",
+          "interior-gov.com",
+          "iphoneupdatecheck.com",
+          "live-media.org",
+          "liveinfo.org",
+          "log1inbox.com",
+          "ms-check-new-update.com",
+          "msofficeupdate.org",
+          "msupdatecheck.com",
+          "netserviceupdater.com",
+          "newoffice-update.com",
+          "newupdate.org",
+          "officeupgrade.org",
+          "petronas-me.com",
+          "rarnbler.com",
+          "rneil.ru",
+          "srv3-serveup-ads.net",
+          "template-new.com",
+          "template-office.org",
+          "tls-login.com",
+          "update-office.com",
+          "upgrade-office.com",
+          "upgrade-office.org",
+          "user-twitter.com",
+          "weather-server.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1391788670349287425",
+        "https://www.domaintools.com/resources/blog/current-events-to-widespread-campaigns-pivoting-from-samples-to-identify",
+        "https://otx.alienvault.com/pulse/5fb8172cdb6535bd6935bfd6",
+        "https://www.virustotal.com/gui/file/e5b76a3ec4c9b0a42ec953022b5d64f61e7cd64f78ea0cb7170b7882ffb180b6/detection"
+      ],
+      "total": 32
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-11-18",
+      "indicators": {
+        "domain": [
+          "msofficeupdate.com",
+          "new-office.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1391788670349287425",
+        "https://www.domaintools.com/resources/blog/current-events-to-widespread-campaigns-pivoting-from-samples-to-identify",
+        "https://otx.alienvault.com/pulse/5fb8172cdb6535bd6935bfd6",
+        "https://www.virustotal.com/gui/file/e5b76a3ec4c9b0a42ec953022b5d64f61e7cd64f78ea0cb7170b7882ffb180b6/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-11-21",
+      "indicators": {
+        "domain": [
+          "newoffice-template.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1197402642651193345",
+        "https://twitter.com/ShadowChasing1/status/1391788670349287425",
+        "https://www.domaintools.com/resources/blog/current-events-to-widespread-campaigns-pivoting-from-samples-to-identify",
+        "https://otx.alienvault.com/pulse/5fb8172cdb6535bd6935bfd6",
+        "https://www.virustotal.com/gui/file/e5b76a3ec4c9b0a42ec953022b5d64f61e7cd64f78ea0cb7170b7882ffb180b6/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2019-08-12",
+      "indicators": {
+        "url": [
+          "http://144.217.174.57",
+          "http://176.31.59.232"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/recent-cloud-atlas-activity/92016/",
+        "https://otx.alienvault.com/pulse/5d5176f09f3f84634e1f0227"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-08-12",
+      "indicators": {
+        "url": [
+          "webdav.cloudme.com/bimm4276/CloudDrive/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/cloud-atlas-redoctober-apt-is-back-in-style/68083/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2016-03-08",
+      "indicators": {
+        "domain": [
+          "blackberry-support.herokuapp.com",
+          "ecolines.es",
+          "haarmannsi.cz",
+          "sanygroup.co.uk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bluecoat.com/documents/download/638d602b-70f4-4644-aaad-b80e1426aad4/d5c87163-e068-440f-b89e-e40b2f8d2088"
+      ],
+      "total": 4
+    }
+  ]
+}

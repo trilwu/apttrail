@@ -1,0 +1,39 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1698519063",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "b7daa8bd-74e5-5a80-a5a9-46460cbe9570",
+        "value": "45.148.120.23:91"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:grayling"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GRAYLING",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "3d7039e4-78af-58ed-8c0b-6d557d2d8700"
+  }
+}

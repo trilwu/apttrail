@@ -1,0 +1,50 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "dukehole.me": "2015-03-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2015-03-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "dukehole.me"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "COSMICDUKE"
+  ],
+  "references": [],
+  "related": [],
+  "slug": "COSMICDUKE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "dukehole.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [],
+      "total": 1
+    }
+  ]
+}

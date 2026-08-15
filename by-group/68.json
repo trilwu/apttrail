@@ -1,0 +1,60 @@
+{
+  "aliases": [
+    "apt-c-68",
+    "apt-q-15"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "softwarediskservice.com": "2024-02-28",
+      "star.softwarediskservice.com": "2024-02-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-02-28",
+    "latest": "2024-02-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "softwarediskservice.com",
+      "star.softwarediskservice.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "68"
+  ],
+  "references": [
+    "https://twitter.com/Timele9527"
+  ],
+  "related": [],
+  "slug": "68",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-02-28",
+      "indicators": {
+        "domain": [
+          "softwarediskservice.com",
+          "star.softwarediskservice.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527"
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "253cb86c-460f-59f2-9cb3-e2479ad6d007",
+        "value": "bashalalassad1sea.noip.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1b9fb4c1-7925-5f09-8089-57bc8979a316",
+        "value": "bbbb4.noip.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "eed0ae02-9efb-578e-a353-6e107157d01f",
+        "value": "chatsecurelite.uk.to"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b192c409-a79a-5819-b34d-6abc1012d1f8",
+        "value": "chatsecurelite.us.to"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ebde15f-4ed9-57e3-946f-37518d490115",
+        "value": "telegram.strangled.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "365dcd47-efca-5f98-8133-39ed6e044bbb",
+        "value": "telgram.strangled.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:goldenrat"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOLDENRAT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "62a3b202-f606-5b05-90ea-506c8d61d699"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "aliases": [
+    "black owl",
+    "brockendoor",
+    "hoody hyena",
+    "lifting zmiy",
+    "zeronetkit"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 10,
+    "ipv4": 2,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "easybussy.space": "2026-01-02",
+      "icecoldwind.online": "2026-01-02",
+      "invuln.xyz": "2026-01-02",
+      "lizzardsnails.online": "2026-01-02",
+      "mgutu-vf.ru": "2026-01-02",
+      "railradman.site": "2026-01-02",
+      "tributarieshand.online": "2026-02-05",
+      "urbantvpn.online": "2026-01-02",
+      "wholewell.online": "2026-01-02",
+      "yandecx.site": "2026-02-05"
+    },
+    "ipv4": {
+      "213.165.60.118:22": "2026-01-02",
+      "213.165.60.118:22:443": "2026-01-02"
+    },
+    "url": {
+      "http://213.165.60.118": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "easybussy.space": "at-or-before",
+      "icecoldwind.online": "at-or-before",
+      "invuln.xyz": "at-or-before",
+      "lizzardsnails.online": "at-or-before",
+      "mgutu-vf.ru": "at-or-before",
+      "railradman.site": "at-or-before",
+      "urbantvpn.online": "at-or-before",
+      "wholewell.online": "at-or-before"
+    },
+    "ipv4": {
+      "213.165.60.118:22": "at-or-before",
+      "213.165.60.118:22:443": "at-or-before"
+    },
+    "url": {
+      "http://213.165.60.118": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-02-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "easybussy.space",
+      "icecoldwind.online",
+      "invuln.xyz",
+      "lizzardsnails.online",
+      "mgutu-vf.ru",
+      "railradman.site",
+      "tributarieshand.online",
+      "urbantvpn.online",
+      "wholewell.online",
+      "yandecx.site"
+    ],
+    "ipv4": [
+      "213.165.60.118:22",
+      "213.165.60.118:22:443"
+    ],
+    "url": [
+      "http://213.165.60.118"
+    ]
+  },
+  "last_modified": "2026-02-05T15:29:51+00:00",
+  "maltrail_groups": [
+    "BOTEAM"
+  ],
+  "references": [
+    "https://github.com/t3ft3lb/2026-100DaysofYARA/blob/main/day_36.yara",
+    "https://securelist.ru/bo-team-upgrades-brockendoor-and-zeronetkit-backdoors/113536",
+    "https://www.virustotal.com/gui/file/10d0114dba15bf9b19b7ef5f03fbbeae236daa78ceae7a362d12c66cb708d4a5/detection",
+    "https://www.virustotal.com/gui/file/a41e7083e6c53c02dc2e92dcfd830f32c4da5cca77cff11b0d258836b8216a40/detection",
+    "https://www.virustotal.com/gui/file/aeef89818b2212a0b7154eaad28183120ae2a7b90a553b5f4354cd1d7a010598/detection",
+    "https://x.com/t3ft3lb/status/2019430700685181250"
+  ],
+  "related": [],
+  "slug": "BOTEAM",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-02-05",
+      "indicators": {
+        "domain": [
+          "tributarieshand.online",
+          "yandecx.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t3ft3lb/status/2019430700685181250",
+        "https://securelist.ru/bo-team-upgrades-brockendoor-and-zeronetkit-backdoors/113536",
+        "https://github.com/t3ft3lb/2026-100DaysofYARA/blob/main/day_36.yara",
+        "https://www.virustotal.com/gui/file/10d0114dba15bf9b19b7ef5f03fbbeae236daa78ceae7a362d12c66cb708d4a5/detection",
+        "https://www.virustotal.com/gui/file/a41e7083e6c53c02dc2e92dcfd830f32c4da5cca77cff11b0d258836b8216a40/detection",
+        "https://www.virustotal.com/gui/file/aeef89818b2212a0b7154eaad28183120ae2a7b90a553b5f4354cd1d7a010598/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "easybussy.space",
+          "icecoldwind.online",
+          "invuln.xyz",
+          "lizzardsnails.online",
+          "mgutu-vf.ru",
+          "railradman.site",
+          "urbantvpn.online",
+          "wholewell.online"
+        ],
+        "ipv4": [
+          "213.165.60.118:22",
+          "213.165.60.118:22:443"
+        ],
+        "url": [
+          "http://213.165.60.118"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/t3ft3lb/status/2019430700685181250",
+        "https://securelist.ru/bo-team-upgrades-brockendoor-and-zeronetkit-backdoors/113536",
+        "https://github.com/t3ft3lb/2026-100DaysofYARA/blob/main/day_36.yara",
+        "https://www.virustotal.com/gui/file/10d0114dba15bf9b19b7ef5f03fbbeae236daa78ceae7a362d12c66cb708d4a5/detection",
+        "https://www.virustotal.com/gui/file/a41e7083e6c53c02dc2e92dcfd830f32c4da5cca77cff11b0d258836b8216a40/detection",
+        "https://www.virustotal.com/gui/file/aeef89818b2212a0b7154eaad28183120ae2a7b90a553b5f4354cd1d7a010598/detection"
+      ],
+      "total": 11
+    }
+  ]
+}

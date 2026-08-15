@@ -1,0 +1,91 @@
+{
+  "name": "Silent Librarian (G0122) - APTtrail",
+  "description": "Techniques attributed to Silent Librarian by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0122.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1594",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.005",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Silent Librarian",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

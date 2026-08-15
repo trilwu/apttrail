@@ -1,0 +1,425 @@
+{
+  "aliases": [
+    "taxoff",
+    "team46"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 49
+  },
+  "first_seen": {
+    "domain": {
+      "2025primakovreadings.info": "2026-01-02",
+      "ads-stream-api-v2.global.ssl.fastly.net": "2026-01-02",
+      "advertnow.org": "2024-05-07",
+      "adverty.info": "2024-05-07",
+      "browser-time-stats.global.ssl.fastly.net": "2026-01-02",
+      "bus-pod-tenant.global.ssl.fastly.net": "2026-01-02",
+      "clip-rdp-api.global.ssl.fastly.net": "2026-01-02",
+      "common-rdp-front.global.ssl.fastly.net": "2026-01-02",
+      "corptravel.org": "2024-05-07",
+      "cybers46.team": "2026-01-02",
+      "cybers4646.my.id": "2026-01-02",
+      "e-library.wiki": "2026-01-02",
+      "elibrary.wiki": "2026-01-02",
+      "fast-telemetry-api.global.ssl.fastly.net": "2026-01-02",
+      "feedstream.info": "2024-05-07",
+      "front-static-api.global.ssl.fastly.net": "2026-01-02",
+      "futurebull.live": "2026-01-02",
+      "futurebull.net": "2026-01-02",
+      "globaloneai.com": "2026-01-02",
+      "infosecteam.info": "2024-04-22",
+      "kant300.kantiana.info": "2024-05-07",
+      "kantiana.info": "2024-05-07",
+      "kpmedia.city": "2026-01-16",
+      "main-front-api.global.ssl.fastly.net": "2026-01-02",
+      "mediaoprosso.ru": "2026-02-13",
+      "mil-by.info": "2026-01-02",
+      "moscow.corptravel.org": "2024-05-07",
+      "ms-appdata-fonts.global.ssl.fastly.net": "2026-01-02",
+      "ms-appdata-main.global.ssl.fastly.net": "2026-01-02",
+      "ms-appdata-query.global.ssl.fastly.net": "2026-01-02",
+      "mstn-ru.com": "2026-01-16",
+      "passport.yandeks.info": "2024-05-07",
+      "peerflix.net": "2026-01-16",
+      "perf-service-clients2.global.ssl.fastly.net": "2026-01-02",
+      "planitprima.digital": "2026-02-16",
+      "planitprima.info": "2026-02-13",
+      "planitprima.tech": "2026-02-13",
+      "primakovreadings.info": "2026-01-02",
+      "primakovreadings2025.info": "2026-01-02",
+      "rabotnik.today": "2024-04-22",
+      "rdp-api-front.global.ssl.fastly.net": "2026-01-02",
+      "rdp-query-api.global.ssl.fastly.net": "2026-01-02",
+      "rdp-statistics-api.global.ssl.fastly.net": "2026-01-02",
+      "srv480138.hstgr.cloud": "2024-04-21",
+      "srv484118.hstgr.cloud": "2024-04-21",
+      "status-portal-api.global.ssl.fastly.net": "2026-01-02",
+      "svobody.org": "2026-01-16",
+      "ulitsa.svobody.org": "2024-05-07",
+      "yandeks.info": "2024-05-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "2025primakovreadings.info": "at-or-before",
+      "ads-stream-api-v2.global.ssl.fastly.net": "at-or-before",
+      "browser-time-stats.global.ssl.fastly.net": "at-or-before",
+      "bus-pod-tenant.global.ssl.fastly.net": "at-or-before",
+      "clip-rdp-api.global.ssl.fastly.net": "at-or-before",
+      "common-rdp-front.global.ssl.fastly.net": "at-or-before",
+      "cybers46.team": "at-or-before",
+      "cybers4646.my.id": "at-or-before",
+      "e-library.wiki": "at-or-before",
+      "elibrary.wiki": "at-or-before",
+      "fast-telemetry-api.global.ssl.fastly.net": "at-or-before",
+      "front-static-api.global.ssl.fastly.net": "at-or-before",
+      "futurebull.live": "at-or-before",
+      "futurebull.net": "at-or-before",
+      "globaloneai.com": "at-or-before",
+      "main-front-api.global.ssl.fastly.net": "at-or-before",
+      "mil-by.info": "at-or-before",
+      "ms-appdata-fonts.global.ssl.fastly.net": "at-or-before",
+      "ms-appdata-main.global.ssl.fastly.net": "at-or-before",
+      "ms-appdata-query.global.ssl.fastly.net": "at-or-before",
+      "perf-service-clients2.global.ssl.fastly.net": "at-or-before",
+      "primakovreadings.info": "at-or-before",
+      "primakovreadings2025.info": "at-or-before",
+      "rdp-api-front.global.ssl.fastly.net": "at-or-before",
+      "rdp-query-api.global.ssl.fastly.net": "at-or-before",
+      "rdp-statistics-api.global.ssl.fastly.net": "at-or-before",
+      "status-portal-api.global.ssl.fastly.net": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2024-04-21",
+    "latest": "2026-02-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2025primakovreadings.info",
+      "ads-stream-api-v2.global.ssl.fastly.net",
+      "advertnow.org",
+      "adverty.info",
+      "browser-time-stats.global.ssl.fastly.net",
+      "bus-pod-tenant.global.ssl.fastly.net",
+      "clip-rdp-api.global.ssl.fastly.net",
+      "common-rdp-front.global.ssl.fastly.net",
+      "corptravel.org",
+      "cybers46.team",
+      "cybers4646.my.id",
+      "e-library.wiki",
+      "elibrary.wiki",
+      "fast-telemetry-api.global.ssl.fastly.net",
+      "feedstream.info",
+      "front-static-api.global.ssl.fastly.net",
+      "futurebull.live",
+      "futurebull.net",
+      "globaloneai.com",
+      "infosecteam.info",
+      "kant300.kantiana.info",
+      "kantiana.info",
+      "kpmedia.city",
+      "main-front-api.global.ssl.fastly.net",
+      "mediaoprosso.ru",
+      "mil-by.info",
+      "moscow.corptravel.org",
+      "ms-appdata-fonts.global.ssl.fastly.net",
+      "ms-appdata-main.global.ssl.fastly.net",
+      "ms-appdata-query.global.ssl.fastly.net",
+      "mstn-ru.com",
+      "passport.yandeks.info",
+      "peerflix.net",
+      "perf-service-clients2.global.ssl.fastly.net",
+      "planitprima.digital",
+      "planitprima.info",
+      "planitprima.tech",
+      "primakovreadings.info",
+      "primakovreadings2025.info",
+      "rabotnik.today",
+      "rdp-api-front.global.ssl.fastly.net",
+      "rdp-query-api.global.ssl.fastly.net",
+      "rdp-statistics-api.global.ssl.fastly.net",
+      "srv480138.hstgr.cloud",
+      "srv484118.hstgr.cloud",
+      "status-portal-api.global.ssl.fastly.net",
+      "svobody.org",
+      "ulitsa.svobody.org",
+      "yandeks.info"
+    ]
+  },
+  "last_modified": "2026-02-16T05:49:56+00:00",
+  "maltrail_groups": [
+    "FORUMTROLL"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=Future%20Bull&type=raw&ref_id=41bde129bf6#tab=host_pairs (# 2025-06-18)",
+    "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/team46-and-taxoff-two-sides-of-the-same-coin",
+    "https://habr.com/ru/companies/pt/articles/841176/",
+    "https://securelist.com/operation-forumtroll-new-targeted-campaign/118492/",
+    "https://securelist.com/operation-forumtroll/115989/",
+    "https://twitter.com/k3yp0d/status/1782068601534517624",
+    "https://twitter.com/k3yp0d/status/1782082055905690092",
+    "https://twitter.com/k3yp0d/status/1787851479421772047",
+    "https://twitter.com/k3yp0d/status/1787852438591910201",
+    "https://www.virustotal.com/gui/file/387252ca8e89f7c3daceb48ab1279dfe597a9043095624a485aa5820b3c446b9/detection",
+    "https://www.virustotal.com/gui/file/608009b402c00bb8ef65cc8d805e1522ddf1632c7479be05244ebd38483e22df/detection",
+    "https://www.virustotal.com/gui/file/736abfe5541b4175ff013b442a673b8387209e324e3e343a628838f3e428e526/detection",
+    "https://www.virustotal.com/gui/file/823d625481fe8b0299850e9758e43b717b6874d42e0112f1b8281bcefedadd31/detection",
+    "https://www.virustotal.com/gui/file/896934c20fecc7f76a6db3ddd62750be70acd3a8305325bb1e2c7929ef0cb963/detection",
+    "https://www.virustotal.com/gui/file/bada45186ac6a13e2d5dbe0633ea1584f6fa6463986a5fb304cc6d9eb04ed676/detection",
+    "https://www.virustotal.com/gui/ip-address/188.40.151.88/relations",
+    "https://www.virustotal.com/gui/ip-address/45.11.181.96/relations",
+    "https://x.com/blackorbird/status/1935254424789860703",
+    "https://x.com/blackorbird/status/2001300384737083890"
+  ],
+  "related": [],
+  "slug": "FORUMTROLL",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-02-16",
+      "indicators": {
+        "domain": [
+          "planitprima.digital"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1787851479421772047",
+        "https://twitter.com/k3yp0d/status/1787852438591910201",
+        "https://www.virustotal.com/gui/file/387252ca8e89f7c3daceb48ab1279dfe597a9043095624a485aa5820b3c446b9/detection",
+        "https://www.virustotal.com/gui/file/608009b402c00bb8ef65cc8d805e1522ddf1632c7479be05244ebd38483e22df/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-02-13",
+      "indicators": {
+        "domain": [
+          "mediaoprosso.ru",
+          "planitprima.info",
+          "planitprima.tech"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1787851479421772047",
+        "https://twitter.com/k3yp0d/status/1787852438591910201",
+        "https://www.virustotal.com/gui/file/387252ca8e89f7c3daceb48ab1279dfe597a9043095624a485aa5820b3c446b9/detection",
+        "https://www.virustotal.com/gui/file/608009b402c00bb8ef65cc8d805e1522ddf1632c7479be05244ebd38483e22df/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-01-16",
+      "indicators": {
+        "domain": [
+          "kpmedia.city",
+          "mstn-ru.com",
+          "peerflix.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1782082055905690092",
+        "https://x.com/blackorbird/status/1935254424789860703",
+        "https://twitter.com/k3yp0d/status/1782068601534517624",
+        "https://securelist.com/operation-forumtroll/115989/",
+        "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/team46-and-taxoff-two-sides-of-the-same-coin",
+        "https://habr.com/ru/companies/pt/articles/841176/",
+        "https://app.validin.com/detail?find=Future%20Bull&type=raw&ref_id=41bde129bf6#tab=host_pairs (# 2025-06-18)",
+        "https://www.virustotal.com/gui/ip-address/188.40.151.88/relations",
+        "https://www.virustotal.com/gui/file/bada45186ac6a13e2d5dbe0633ea1584f6fa6463986a5fb304cc6d9eb04ed676/detection",
+        "https://www.virustotal.com/gui/file/736abfe5541b4175ff013b442a673b8387209e324e3e343a628838f3e428e526/detection",
+        "https://www.virustotal.com/gui/file/896934c20fecc7f76a6db3ddd62750be70acd3a8305325bb1e2c7929ef0cb963/detection",
+        "https://www.virustotal.com/gui/file/823d625481fe8b0299850e9758e43b717b6874d42e0112f1b8281bcefedadd31/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-16",
+      "indicators": {
+        "domain": [
+          "svobody.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1787851479421772047",
+        "https://twitter.com/k3yp0d/status/1787852438591910201",
+        "https://www.virustotal.com/gui/file/387252ca8e89f7c3daceb48ab1279dfe597a9043095624a485aa5820b3c446b9/detection",
+        "https://www.virustotal.com/gui/file/608009b402c00bb8ef65cc8d805e1522ddf1632c7479be05244ebd38483e22df/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 22
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "2025primakovreadings.info",
+          "ads-stream-api-v2.global.ssl.fastly.net",
+          "browser-time-stats.global.ssl.fastly.net",
+          "clip-rdp-api.global.ssl.fastly.net",
+          "common-rdp-front.global.ssl.fastly.net",
+          "cybers46.team",
+          "cybers4646.my.id",
+          "fast-telemetry-api.global.ssl.fastly.net",
+          "front-static-api.global.ssl.fastly.net",
+          "futurebull.live",
+          "futurebull.net",
+          "globaloneai.com",
+          "main-front-api.global.ssl.fastly.net",
+          "mil-by.info",
+          "ms-appdata-fonts.global.ssl.fastly.net",
+          "ms-appdata-main.global.ssl.fastly.net",
+          "ms-appdata-query.global.ssl.fastly.net",
+          "primakovreadings.info",
+          "primakovreadings2025.info",
+          "rdp-api-front.global.ssl.fastly.net",
+          "rdp-query-api.global.ssl.fastly.net",
+          "rdp-statistics-api.global.ssl.fastly.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1782082055905690092",
+        "https://x.com/blackorbird/status/1935254424789860703",
+        "https://twitter.com/k3yp0d/status/1782068601534517624",
+        "https://securelist.com/operation-forumtroll/115989/",
+        "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/team46-and-taxoff-two-sides-of-the-same-coin",
+        "https://habr.com/ru/companies/pt/articles/841176/",
+        "https://app.validin.com/detail?find=Future%20Bull&type=raw&ref_id=41bde129bf6#tab=host_pairs (# 2025-06-18)",
+        "https://www.virustotal.com/gui/ip-address/188.40.151.88/relations",
+        "https://www.virustotal.com/gui/file/bada45186ac6a13e2d5dbe0633ea1584f6fa6463986a5fb304cc6d9eb04ed676/detection",
+        "https://www.virustotal.com/gui/file/736abfe5541b4175ff013b442a673b8387209e324e3e343a628838f3e428e526/detection",
+        "https://www.virustotal.com/gui/file/896934c20fecc7f76a6db3ddd62750be70acd3a8305325bb1e2c7929ef0cb963/detection",
+        "https://www.virustotal.com/gui/file/823d625481fe8b0299850e9758e43b717b6874d42e0112f1b8281bcefedadd31/detection"
+      ],
+      "total": 22
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "bus-pod-tenant.global.ssl.fastly.net",
+          "e-library.wiki",
+          "elibrary.wiki",
+          "perf-service-clients2.global.ssl.fastly.net",
+          "status-portal-api.global.ssl.fastly.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/2001300384737083890",
+        "https://www.virustotal.com/gui/ip-address/45.11.181.96/relations",
+        "https://securelist.com/operation-forumtroll-new-targeted-campaign/118492/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2024-05-07",
+      "indicators": {
+        "domain": [
+          "advertnow.org",
+          "adverty.info",
+          "corptravel.org",
+          "feedstream.info",
+          "kant300.kantiana.info",
+          "kantiana.info",
+          "moscow.corptravel.org",
+          "passport.yandeks.info",
+          "ulitsa.svobody.org",
+          "yandeks.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1787851479421772047",
+        "https://twitter.com/k3yp0d/status/1787852438591910201",
+        "https://www.virustotal.com/gui/file/387252ca8e89f7c3daceb48ab1279dfe597a9043095624a485aa5820b3c446b9/detection",
+        "https://www.virustotal.com/gui/file/608009b402c00bb8ef65cc8d805e1522ddf1632c7479be05244ebd38483e22df/detection"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-04-22",
+      "indicators": {
+        "domain": [
+          "infosecteam.info",
+          "rabotnik.today"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1782082055905690092",
+        "https://x.com/blackorbird/status/1935254424789860703",
+        "https://twitter.com/k3yp0d/status/1782068601534517624",
+        "https://securelist.com/operation-forumtroll/115989/",
+        "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/team46-and-taxoff-two-sides-of-the-same-coin",
+        "https://habr.com/ru/companies/pt/articles/841176/",
+        "https://app.validin.com/detail?find=Future%20Bull&type=raw&ref_id=41bde129bf6#tab=host_pairs (# 2025-06-18)",
+        "https://www.virustotal.com/gui/ip-address/188.40.151.88/relations",
+        "https://www.virustotal.com/gui/file/bada45186ac6a13e2d5dbe0633ea1584f6fa6463986a5fb304cc6d9eb04ed676/detection",
+        "https://www.virustotal.com/gui/file/736abfe5541b4175ff013b442a673b8387209e324e3e343a628838f3e428e526/detection",
+        "https://www.virustotal.com/gui/file/896934c20fecc7f76a6db3ddd62750be70acd3a8305325bb1e2c7929ef0cb963/detection",
+        "https://www.virustotal.com/gui/file/823d625481fe8b0299850e9758e43b717b6874d42e0112f1b8281bcefedadd31/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-04-21",
+      "indicators": {
+        "domain": [
+          "srv480138.hstgr.cloud",
+          "srv484118.hstgr.cloud"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1782082055905690092",
+        "https://x.com/blackorbird/status/1935254424789860703",
+        "https://twitter.com/k3yp0d/status/1782068601534517624",
+        "https://securelist.com/operation-forumtroll/115989/",
+        "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/team46-and-taxoff-two-sides-of-the-same-coin",
+        "https://habr.com/ru/companies/pt/articles/841176/",
+        "https://app.validin.com/detail?find=Future%20Bull&type=raw&ref_id=41bde129bf6#tab=host_pairs (# 2025-06-18)",
+        "https://www.virustotal.com/gui/ip-address/188.40.151.88/relations",
+        "https://www.virustotal.com/gui/file/bada45186ac6a13e2d5dbe0633ea1584f6fa6463986a5fb304cc6d9eb04ed676/detection",
+        "https://www.virustotal.com/gui/file/736abfe5541b4175ff013b442a673b8387209e324e3e343a628838f3e428e526/detection",
+        "https://www.virustotal.com/gui/file/896934c20fecc7f76a6db3ddd62750be70acd3a8305325bb1e2c7929ef0cb963/detection",
+        "https://www.virustotal.com/gui/file/823d625481fe8b0299850e9758e43b717b6874d42e0112f1b8281bcefedadd31/detection"
+      ],
+      "total": 2
+    }
+  ]
+}

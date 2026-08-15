@@ -1,0 +1,39 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1658172481",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "83c1cd2c-700c-5e9f-88ce-ba0dfa002475",
+        "value": "http://188.241.58.68"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:poisonneedles"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: POISONNEEDLES",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "3d3d1f17-9c2f-5e68-8317-cddf43d0ae4f"
+  }
+}

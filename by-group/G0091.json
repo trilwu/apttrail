@@ -1,0 +1,287 @@
+{
+  "aliases": [],
+  "attack_id": "G0091",
+  "attack_name": "Silence",
+  "attack_url": "https://attack.mitre.org/groups/G0091/",
+  "counts": {
+    "domain": 48,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "1bmank.ru": "2019-11-20",
+      "1m-lombard.ru": "2019-11-20",
+      "1m6ank.ru": "2019-11-20",
+      "1mbabk.ru": "2019-11-20",
+      "1mbakn.ru": "2019-11-20",
+      "1mbamk.ru": "2019-11-20",
+      "1mbanc.ru": "2019-11-20",
+      "1mbanck.ru": "2019-11-20",
+      "1mbang.ru": "2019-11-20",
+      "1mbanj.ru": "2019-11-20",
+      "1mbank.biz": "2019-11-20",
+      "1mbank.info": "2019-11-20",
+      "1mbank.me": "2019-11-20",
+      "1mbank.net": "2019-11-20",
+      "1mbank.online": "2019-11-20",
+      "1mbank.su": "2019-11-20",
+      "1mbankru.ru": "2019-11-20",
+      "1mbanl.ru": "2019-11-20",
+      "1mbnak.ru": "2019-11-20",
+      "1mbonk.ru": "2019-11-20",
+      "1mbsnk.ru": "2019-11-20",
+      "1mbunk.ru": "2019-11-20",
+      "1mcredit.ru": "2019-11-20",
+      "1mliked.ru": "2019-11-20",
+      "1mnank.ru": "2019-11-20",
+      "1mvank.ru": "2019-11-20",
+      "1mvklad.ru": "2019-11-20",
+      "1nnbank.ru": "2019-11-20",
+      "abp.ru": "2019-11-20",
+      "bankrebres.ru": "2019-08-21",
+      "basch.eu": "2019-08-21",
+      "cardisprom.ru": "2019-08-21",
+      "counterstat.club": "2019-08-21",
+      "counterstat.pw": "2019-08-21",
+      "fpbank.ru": "2019-08-21",
+      "itablex.com": "2019-08-21",
+      "maybank.ru": "2019-11-20",
+      "mobilecommerzbank.com": "2019-08-21",
+      "morefin.ru": "2019-11-20",
+      "odinmbank.ru": "2019-11-20",
+      "onembank.ru": "2019-11-20",
+      "pharmk.group": "2019-08-21",
+      "xn--1---7cdbdjx3ajbffshlvpuz.xn--p1ai": "2019-11-20",
+      "xn--1--8kcadhu0aibfergltoty.xn--p1ai": "2019-11-20",
+      "xn--1-8sbc1bhi.xn--p1ai": "2019-11-20",
+      "xn--1-8sbydbel6b.xn--p1ai": "2019-11-20",
+      "xn--80absjpcg.com": "2019-11-20",
+      "zaometallniva.ru": "2019-08-21"
+    },
+    "ipv4": {
+      "185.20.187.89:443": "2020-12-22"
+    },
+    "url": {
+      "http://185.20.187.89": "2020-12-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-08-21",
+    "latest": "2020-12-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "1bmank.ru",
+      "1m-lombard.ru",
+      "1m6ank.ru",
+      "1mbabk.ru",
+      "1mbakn.ru",
+      "1mbamk.ru",
+      "1mbanc.ru",
+      "1mbanck.ru",
+      "1mbang.ru",
+      "1mbanj.ru",
+      "1mbank.biz",
+      "1mbank.info",
+      "1mbank.me",
+      "1mbank.net",
+      "1mbank.online",
+      "1mbank.su",
+      "1mbankru.ru",
+      "1mbanl.ru",
+      "1mbnak.ru",
+      "1mbonk.ru",
+      "1mbsnk.ru",
+      "1mbunk.ru",
+      "1mcredit.ru",
+      "1mliked.ru",
+      "1mnank.ru",
+      "1mvank.ru",
+      "1mvklad.ru",
+      "1nnbank.ru",
+      "abp.ru",
+      "bankrebres.ru",
+      "basch.eu",
+      "cardisprom.ru",
+      "counterstat.club",
+      "counterstat.pw",
+      "fpbank.ru",
+      "itablex.com",
+      "maybank.ru",
+      "mobilecommerzbank.com",
+      "morefin.ru",
+      "odinmbank.ru",
+      "onembank.ru",
+      "pharmk.group",
+      "xn--1---7cdbdjx3ajbffshlvpuz.xn--p1ai",
+      "xn--1--8kcadhu0aibfergltoty.xn--p1ai",
+      "xn--1-8sbc1bhi.xn--p1ai",
+      "xn--1-8sbydbel6b.xn--p1ai",
+      "xn--80absjpcg.com",
+      "zaometallniva.ru"
+    ],
+    "ipv4": [
+      "185.20.187.89:443"
+    ],
+    "url": [
+      "http://185.20.187.89"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SILENCE"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5d5d6e09e5809a8cb83bcea1",
+    "https://twitter.com/Bank_Security/status/1148120505838424065",
+    "https://www.group-ib.com/media/silence-apt/",
+    "https://www.group-ib.com/resources/threat-research/silence_2.0.going_global.pdf",
+    "https://www.virustotal.com/gui/file/3b84b2948b95c291986b793e1d8e935792c298ee6b5bdd05b4d908738bf40156/detection",
+    "https://www.virustotal.com/gui/file/d2134c83bd8fa18306ad6ca0a8fa08471f717ba3a0f81eb06a46ef4890c9cb01/detection",
+    "https://www.virustotal.com/gui/ip-address/193.232.180.65/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares Winexe",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares SDelete",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0016"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares SDelete",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0034"
+    }
+  ],
+  "slug": "G0091",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2020-12-22",
+      "indicators": {
+        "ipv4": [
+          "185.20.187.89:443"
+        ],
+        "url": [
+          "http://185.20.187.89"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Bank_Security/status/1148120505838424065",
+        "https://www.group-ib.com/media/silence-apt/",
+        "https://www.virustotal.com/gui/file/3b84b2948b95c291986b793e1d8e935792c298ee6b5bdd05b4d908738bf40156/detection",
+        "https://www.virustotal.com/gui/file/d2134c83bd8fa18306ad6ca0a8fa08471f717ba3a0f81eb06a46ef4890c9cb01/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 38
+      },
+      "first_seen": "2019-11-20",
+      "indicators": {
+        "domain": [
+          "1bmank.ru",
+          "1m-lombard.ru",
+          "1m6ank.ru",
+          "1mbabk.ru",
+          "1mbakn.ru",
+          "1mbamk.ru",
+          "1mbanc.ru",
+          "1mbanck.ru",
+          "1mbang.ru",
+          "1mbanj.ru",
+          "1mbank.biz",
+          "1mbank.info",
+          "1mbank.me",
+          "1mbank.net",
+          "1mbank.online",
+          "1mbank.su",
+          "1mbankru.ru",
+          "1mbanl.ru",
+          "1mbnak.ru",
+          "1mbonk.ru",
+          "1mbsnk.ru",
+          "1mbunk.ru",
+          "1mcredit.ru",
+          "1mliked.ru",
+          "1mnank.ru",
+          "1mvank.ru",
+          "1mvklad.ru",
+          "1nnbank.ru",
+          "abp.ru",
+          "maybank.ru",
+          "morefin.ru",
+          "odinmbank.ru",
+          "onembank.ru",
+          "xn--1---7cdbdjx3ajbffshlvpuz.xn--p1ai",
+          "xn--1--8kcadhu0aibfergltoty.xn--p1ai",
+          "xn--1-8sbc1bhi.xn--p1ai",
+          "xn--1-8sbydbel6b.xn--p1ai",
+          "xn--80absjpcg.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/193.232.180.65/relations"
+      ],
+      "total": 38
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-08-21",
+      "indicators": {
+        "domain": [
+          "bankrebres.ru",
+          "basch.eu",
+          "cardisprom.ru",
+          "counterstat.club",
+          "counterstat.pw",
+          "fpbank.ru",
+          "itablex.com",
+          "mobilecommerzbank.com",
+          "pharmk.group",
+          "zaometallniva.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.group-ib.com/resources/threat-research/silence_2.0.going_global.pdf",
+        "https://otx.alienvault.com/pulse/5d5d6e09e5809a8cb83bcea1"
+      ],
+      "total": 10
+    }
+  ]
+}

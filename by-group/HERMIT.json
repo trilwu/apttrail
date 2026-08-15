@@ -1,0 +1,205 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 13,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "071790.000webhostapp.com": "2019-03-08",
+      "881.000webhostapp.com": "2019-03-08",
+      "a7788.1apps.com": "2019-03-08",
+      "alabamaok0515.1apps.com": "2019-05-16",
+      "attach10132.1apps.com": "2019-03-08",
+      "charley-online.com": "2019-05-15",
+      "clean.1apps.com": "2019-05-26",
+      "fighiting1013.org": "2019-05-16",
+      "filer1.1apps.com": "2019-03-08",
+      "filer2.1apps.com": "2019-05-26",
+      "hanbosston.000webhostapp.com": "2019-03-08",
+      "s8877.1apps.com": "2019-03-08",
+      "tgbabcrfv.1apps.com": "2019-05-16"
+    },
+    "ipv4": {
+      "103.249.31.159:7777": "2019-05-26",
+      "5.252.198.93:7337": "2019-05-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-03-08",
+    "latest": "2019-05-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "071790.000webhostapp.com",
+      "881.000webhostapp.com",
+      "a7788.1apps.com",
+      "alabamaok0515.1apps.com",
+      "attach10132.1apps.com",
+      "charley-online.com",
+      "clean.1apps.com",
+      "fighiting1013.org",
+      "filer1.1apps.com",
+      "filer2.1apps.com",
+      "hanbosston.000webhostapp.com",
+      "s8877.1apps.com",
+      "tgbabcrfv.1apps.com"
+    ],
+    "ipv4": [
+      "103.249.31.159:7777",
+      "5.252.198.93:7337"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HERMIT"
+  ],
+  "references": [
+    "https://s.tencent.com/research/report/613.html",
+    "https://s.tencent.com/research/report/727.html"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "7 shared indicators",
+          "kind": "infrastructure",
+          "weight": 7.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "HERMIT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2019-05-26",
+      "indicators": {
+        "domain": [
+          "clean.1apps.com"
+        ],
+        "ipv4": [
+          "5.252.198.93:7337"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/727.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2019-05-26",
+      "indicators": {
+        "domain": [
+          "filer2.1apps.com"
+        ],
+        "ipv4": [
+          "103.249.31.159:7777"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/613.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-05-16",
+      "indicators": {
+        "domain": [
+          "alabamaok0515.1apps.com",
+          "fighiting1013.org",
+          "tgbabcrfv.1apps.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/727.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-15",
+      "indicators": {
+        "domain": [
+          "charley-online.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/727.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-03-08",
+      "indicators": {
+        "domain": [
+          "071790.000webhostapp.com",
+          "881.000webhostapp.com",
+          "a7788.1apps.com",
+          "attach10132.1apps.com",
+          "hanbosston.000webhostapp.com",
+          "s8877.1apps.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/727.html"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-08",
+      "indicators": {
+        "domain": [
+          "filer1.1apps.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s.tencent.com/research/report/613.html"
+      ],
+      "total": 1
+    }
+  ]
+}

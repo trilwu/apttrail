@@ -1,0 +1,159 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ce5a9b70-a2d5-5723-92a9-bcf4048ea7b9",
+        "value": "add-signal-group.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a7aa0fa0-9c6f-55da-9b01-68927a04ffaa",
+        "value": "add-signal-groups.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b88f3479-d6db-5a13-957a-cf152840a436",
+        "value": "group-signal.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a3c64dbc-fd55-5b48-a1b9-c1ebaf043797",
+        "value": "group-signal.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a492dcbf-5ebd-5fd0-bec4-28520c89304c",
+        "value": "groups-signal.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "00c5a317-e8ac-5551-ad2a-8cba157904c2",
+        "value": "signal-device-off.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fd4c223b-ac28-5582-8174-47f2b674baea",
+        "value": "signal-group-add.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0cd04ecc-3532-5d26-a062-3525781b63c5",
+        "value": "signal-group.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "213e521b-c7ba-531f-8031-c71777cd4c21",
+        "value": "signal-group.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a48be058-f7c3-5ff2-a9e6-a79a57716dbe",
+        "value": "signal-groups-add.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2d3dd50b-a0a0-5184-9435-3add3222be70",
+        "value": "signal-groups.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0ceb0ecf-9479-5923-94cc-9cbf834787f0",
+        "value": "signal-groups.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ddf88fce-627e-55aa-b014-3ef1200c9448",
+        "value": "signal-security.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "42856bce-4726-5303-ac47-f979dad8cea5",
+        "value": "signal-security.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6fae968a-4998-518c-90a2-24e21d4f1935",
+        "value": "signalgroup.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a8b76548-94d3-5e1d-8c07-7e20df53322a",
+        "value": "signals-group.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc5792"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC5792",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "7b026ec1-a47b-590b-8c5b-e0c9891d7b4d"
+  }
+}

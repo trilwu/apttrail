@@ -1,0 +1,152 @@
+{
+  "aliases": [
+    "m00nlight"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9,
+    "ipv4": 8
+  },
+  "first_seen": {
+    "domain": {
+      "aa.zxcss.com": "2023-02-16",
+      "ff.m00nlight.top": "2023-02-16",
+      "fk.m00nlight.top": "2023-02-16",
+      "lt.yxavkb.xyz": "2023-09-05",
+      "m00nlight.top": "2023-02-16",
+      "mod.m00nlight.top": "2023-02-16",
+      "sk1.m00nlight.top": "2023-02-16",
+      "yxavkb.xyz": "2023-09-05",
+      "zxcss.com": "2023-02-16"
+    },
+    "ipv4": {
+      "103.118.42.208:8080": "2023-02-18",
+      "175.24.32.228:8888": "2023-02-18",
+      "45.136.186.175:443": "2023-02-16",
+      "45.93.28.103:8080": "2023-02-16",
+      "45.93.31.75:7777": "2023-02-16",
+      "91.217.139.117:8001": "2023-02-18",
+      "91.217.139.117:8080": "2023-02-18",
+      "91.217.139.117:8443": "2023-02-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-02-16",
+    "latest": "2023-09-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aa.zxcss.com",
+      "ff.m00nlight.top",
+      "fk.m00nlight.top",
+      "lt.yxavkb.xyz",
+      "m00nlight.top",
+      "mod.m00nlight.top",
+      "sk1.m00nlight.top",
+      "yxavkb.xyz",
+      "zxcss.com"
+    ],
+    "ipv4": [
+      "103.118.42.208:8080",
+      "175.24.32.228:8888",
+      "45.136.186.175:443",
+      "45.93.28.103:8080",
+      "45.93.31.75:7777",
+      "91.217.139.117:8001",
+      "91.217.139.117:8080",
+      "91.217.139.117:8443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DALBIT"
+  ],
+  "references": [
+    "https://1275.ru/ioc/1401/dalbit-m00nlight-apt-iocs/ (Russian)",
+    "https://asec.ahnlab.com/en/47455/",
+    "https://asec.ahnlab.com/ko/56715/",
+    "https://otx.alienvault.com/pulse/63ed0da62aae6e8426eeb9ce",
+    "https://www.virustotal.com/gui/file/af1d3ce6dcec8c320f7985f8e073076879c609e908484a162605eed001df7d27/detection"
+  ],
+  "related": [],
+  "slug": "DALBIT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-09-05",
+      "indicators": {
+        "domain": [
+          "lt.yxavkb.xyz",
+          "yxavkb.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec.ahnlab.com/ko/56715/",
+        "https://www.virustotal.com/gui/file/af1d3ce6dcec8c320f7985f8e073076879c609e908484a162605eed001df7d27/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 5
+      },
+      "first_seen": "2023-02-18",
+      "indicators": {
+        "ipv4": [
+          "103.118.42.208:8080",
+          "175.24.32.228:8888",
+          "91.217.139.117:8001",
+          "91.217.139.117:8080",
+          "91.217.139.117:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://1275.ru/ioc/1401/dalbit-m00nlight-apt-iocs/ (Russian)",
+        "https://asec.ahnlab.com/en/47455/",
+        "https://otx.alienvault.com/pulse/63ed0da62aae6e8426eeb9ce"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 7,
+        "ipv4": 3
+      },
+      "first_seen": "2023-02-16",
+      "indicators": {
+        "domain": [
+          "aa.zxcss.com",
+          "ff.m00nlight.top",
+          "fk.m00nlight.top",
+          "m00nlight.top",
+          "mod.m00nlight.top",
+          "sk1.m00nlight.top",
+          "zxcss.com"
+        ],
+        "ipv4": [
+          "45.136.186.175:443",
+          "45.93.28.103:8080",
+          "45.93.31.75:7777"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://1275.ru/ioc/1401/dalbit-m00nlight-apt-iocs/ (Russian)",
+        "https://asec.ahnlab.com/en/47455/",
+        "https://otx.alienvault.com/pulse/63ed0da62aae6e8426eeb9ce"
+      ],
+      "total": 10
+    }
+  ]
+}

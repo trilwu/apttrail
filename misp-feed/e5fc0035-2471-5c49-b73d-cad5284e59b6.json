@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1559654587",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "db3ac641-9322-5ff8-bdc1-e93f54f2c7a3",
+        "value": "cloud.yourdocument.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1559654587",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2c35bbdf-dcf6-55bf-8134-e11febbc73c9",
+        "value": "swift-fraud.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:blueprint"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BLUEPRINT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e5fc0035-2471-5c49-b73d-cad5284e59b6"
+  }
+}

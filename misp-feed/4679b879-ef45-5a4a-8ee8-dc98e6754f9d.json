@@ -1,0 +1,99 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1651341811",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c070ca06-4ea6-5217-9422-ae2e57502ba6",
+        "value": "bluedragon.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1651341811",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9da8cb40-76cb-5b00-a317-7df2cab48173",
+        "value": "cyancow.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728043084",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d5ccb157-2e06-5805-85d5-7f9e905b5f9a",
+        "value": "phpick.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1651341811",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6aa4167e-d99f-503f-b40b-d14de7883b5c",
+        "value": "semiconductboard.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1651341811",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bac3c004-2a10-542e-a14a-751d0d20d008",
+        "value": "tecnojournals.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728043084",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a44fcb59-62c0-5f05-9f51-7bbf2b87ca5c",
+        "value": "trollbydefault.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728043084",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6a9df166-a903-5cba-ae4a-f986d13a5e3f",
+        "value": "216.120.201.112:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728043084",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "95e9ccbd-ae3a-51c2-b892-f426b3f2eaa8",
+        "value": "51.81.168.157:443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:stonefly"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Andariel - G0138\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Andariel (G0138) - Maltrail group STONEFLY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "4679b879-ef45-5a4a-8ee8-dc98e6754f9d"
+  }
+}

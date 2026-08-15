@@ -1,0 +1,167 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0d62a994-3ffc-5f67-8624-c5d577b19abb",
+        "value": "aa.zxcss.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8aed61c6-ab2b-5dc3-86f2-bd4aff93ab10",
+        "value": "ff.m00nlight.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "73706443-4d0e-5468-8340-aec3f24b05cc",
+        "value": "fk.m00nlight.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693909284",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "37d8f9e4-7f22-5624-b3f2-74b451ab33f1",
+        "value": "lt.yxavkb.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5bf8e531-7e5e-5fb2-9146-d083ff3dcbed",
+        "value": "m00nlight.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5f4574d6-c010-5858-b04b-c3ecaaca4ae7",
+        "value": "mod.m00nlight.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7a8c41df-be7e-5d60-b285-d58bdc6acab9",
+        "value": "sk1.m00nlight.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1693909284",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "442cd62a-e655-5419-86c3-315d461c9451",
+        "value": "yxavkb.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2db5c920-cd9e-5c7e-9d72-88cb494555d0",
+        "value": "zxcss.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676722188",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "b84e90c8-4019-5b32-afe6-9e498cbc4d12",
+        "value": "103.118.42.208:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676722188",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "0b46f8e5-1193-5cc5-a8bf-6aeee3658778",
+        "value": "175.24.32.228:8888"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "294a8d33-cb7c-5f9e-b47a-5ae57a8769f4",
+        "value": "45.136.186.175:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "4145d9b2-8b27-58b7-a2b0-071f5415fbb8",
+        "value": "45.93.28.103:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676579985",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "bf4d69fb-2b67-5187-9e55-bc65cd93d675",
+        "value": "45.93.31.75:7777"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676722188",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "61f31496-465f-5f28-b0f5-58758ea11b37",
+        "value": "91.217.139.117:8001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676722188",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "72eccede-9a5e-54b1-9532-4befd5fc7746",
+        "value": "91.217.139.117:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1676722188",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "7ab2bc54-5d77-577c-a08a-1ee95a88fb02",
+        "value": "91.217.139.117:8443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:dalbit"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DALBIT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "7d03c5ba-16eb-5aef-af85-4b7498e0dbc7"
+  }
+}

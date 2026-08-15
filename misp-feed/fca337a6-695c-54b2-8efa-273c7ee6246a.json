@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1776966593",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e3ca1769-ca53-51c8-934e-af051687e4cf",
+        "value": "cloudfront-021.s3.us-west-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776966593",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "eb643250-a21f-5f50-a05e-ce381fb6a3a8",
+        "value": "sad4w7h913-b4a57f9c36eb.herokuapp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776966593",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6fed6ef5-3385-50cb-885e-26424716e225",
+        "value": "service-page-11369-28315-outlook.s3.us-west-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776966593",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "72ce2d9b-2e5e-5788-abee-d102265989ad",
+        "value": "service-page-18968-2419-outlook.s3.us-west-2.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776966593",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dccd372a-f448-555b-a533-adfbcaffcedc",
+        "value": "service-page-25144-30466-outlook.s3.us-west-2.amazonaws.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc6692"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC6692",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "fca337a6-695c-54b2-8efa-273c7ee6246a"
+  }
+}

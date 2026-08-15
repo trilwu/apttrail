@@ -1,0 +1,143 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ac303d61-8968-55a6-84d7-373ba22a0761",
+        "value": "juanjuan.cesy.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690261683",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1c74f493-f713-5b83-9cec-ed03d1422c31",
+        "value": "milfbate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690261683",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d91e9264-0508-52ad-98ef-d81ea31dc74a",
+        "value": "nimdsrt.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864597",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "120b0717-52e2-5c2a-b2ff-4048174b3357",
+        "value": "rammenale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "8363391d-6175-55a5-bbd9-ff20cd6702c5",
+        "value": "103.187.26.174:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c1bbb700-110e-5e43-b948-bd81cfa1dd9a",
+        "value": "103.187.26.175:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ff4c711f-3907-5ce9-855b-7b0508f316b2",
+        "value": "103.187.26.176:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "fd1f39ee-8821-5d9e-84f7-75f273eea499",
+        "value": "103.187.26.177:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1728694800",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "17bb4eb1-47e4-56f5-8e0e-1e3251848fe2",
+        "value": "203.174.87.18:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731667460",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8a659998-fe20-584c-aa3f-13a1947154f8",
+        "value": "http://104.168.169.138"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731667460",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "f1f0db82-ec2b-5117-bbdf-6735095307d7",
+        "value": "http://192.236.209.113"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690261683",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "de926cb5-ef03-561d-817f-8976b95eb189",
+        "value": "http://192.67.255.191"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690261683",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4c11c86f-01da-5db2-85eb-5681a02af8ce",
+        "value": "http://23.254.225.177"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1690261683",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "1ea3d11b-55f4-5ad3-b40a-ca4ac563fdbe",
+        "value": "http://51.210.235.46"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:60"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: 60",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "336534de-1003-5ad3-b4be-3b700f7dce3f"
+  }
+}

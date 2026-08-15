@@ -1,0 +1,73 @@
+{
+  "aliases": [
+    "mysterysnail"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "ddspadus.com": "2022-03-13",
+      "http.ddspadus.com": "2022-03-13",
+      "hxxp.ddspadus.com": "2022-03-13",
+      "ipv6.ddspadus.com": "2022-03-13",
+      "nhttp.ddspadus.com": "2022-03-13",
+      "ttp.ddspadus.com": "2022-03-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-03-13",
+    "latest": "2022-03-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ddspadus.com",
+      "http.ddspadus.com",
+      "hxxp.ddspadus.com",
+      "ipv6.ddspadus.com",
+      "nhttp.ddspadus.com",
+      "ttp.ddspadus.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "IRONHUSKY"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/6166cbbeaa321dca2a453f97",
+    "https://securelist.com/mysterysnail-attacks-with-windows-zero-day/104509/"
+  ],
+  "related": [],
+  "slug": "IRONHUSKY",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-03-13",
+      "indicators": {
+        "domain": [
+          "ddspadus.com",
+          "http.ddspadus.com",
+          "hxxp.ddspadus.com",
+          "ipv6.ddspadus.com",
+          "nhttp.ddspadus.com",
+          "ttp.ddspadus.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/mysterysnail-attacks-with-windows-zero-day/104509/",
+        "https://otx.alienvault.com/pulse/6166cbbeaa321dca2a453f97"
+      ],
+      "total": 6
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1776973854",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "38347bab-ea5c-59d9-89d2-a7b8fc4d3631",
+        "value": "43.231.113.50:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776973854",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "bdba96e7-78d9-50ad-9571-77abddea25e2",
+        "value": "43.231.113.50:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1776973854",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "c85ae54e-9452-5d11-bb59-b8761924c80c",
+        "value": "http://43.231.113.50"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:gopherwhisper"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOPHERWHISPER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "1bce8584-c472-5353-bcef-dbca26362d26"
+  }
+}

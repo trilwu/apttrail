@@ -1,0 +1,223 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e81bd1b8-f0a6-50f4-b98e-af0dec484ad0",
+        "value": "115-126-98-204.hkt.cc"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "37d88972-31dc-5b0b-a9c3-f6c5bc549b53",
+        "value": "118-99-6-202.hkt.cc"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a2480a08-b3a1-5c57-b540-4f2466f53623",
+        "value": "centos-yum.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9a29fb18-75f2-5fa8-9fb7-479f5a6e7d6d",
+        "value": "microsoft-setting.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711746188",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ade7d529-7807-57a5-89eb-9f151841e506",
+        "value": "microsoft-settings.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1710793978",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "025887c6-aeb1-535d-afb5-68c8661d3ec4",
+        "value": "security-microsoft.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1710793978",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1fec844f-15f4-54ee-be49-b658cdc3e783",
+        "value": "server-microsoft.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c3670a79-3212-5318-9c74-81aa495ed10d",
+        "value": "update.centos-yum.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cc1fc9fd-7cee-5c0e-b249-16c28211f2d8",
+        "value": "update.microsoft-setting.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711746188",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "feddfe65-9924-513c-b2e4-a958eb70d661",
+        "value": "update.microsoft-settings.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1710793978",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "33fa2216-b76c-556d-80d9-1c99df4d95ae",
+        "value": "update.windows.server-microsoft.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1710793978",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3beafe46-823c-514b-bb7c-97973bab468e",
+        "value": "windows.server-microsoft.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "671f6d5b-9209-57a0-9805-fab407299cb4",
+        "value": "115.126.98.204:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c4106d00-39a3-5c2d-be59-5958fe56fc74",
+        "value": "118.107.221.43:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "b1c20007-443d-5b1b-8e38-1a1b9bbe3852",
+        "value": "118.107.221.43:5000"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e2596880-74b6-5ead-ae8e-70e8158060f1",
+        "value": "118.107.221.43:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "659b3be0-1cc6-5e06-b41b-ee9f62d22122",
+        "value": "118.99.6.202:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697010930",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "fdb74b7e-b4a8-5127-b782-2421f5070182",
+        "value": "199.231.211.19:30612"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697010930",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c4cd1f14-5a66-5303-85fa-bf247e8e3db8",
+        "value": "199.231.211.19:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "70f70bbc-ec3b-5113-8c06-72f16b95c4a4",
+        "value": "http://115.126.98.204"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4214ef96-e0cc-5720-bdc7-ca24af0dcd15",
+        "value": "http://118.99.6.202"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6af8d61f-2098-5719-87cb-992a1757c463",
+        "value": "http://23.106.122.46"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "30a4af63-a1a3-52d9-87d5-1c661c8b614d",
+        "value": "http://23.106.122.5"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696958373",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "51857676-f2db-5e44-80c0-db7243fdca75",
+        "value": "http://23.106.123.166"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:earthkrahang"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: EARTHKRAHANG",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "05b9563d-2d5f-5ef5-8a6a-3aa97dcc9a32"
+  }
+}

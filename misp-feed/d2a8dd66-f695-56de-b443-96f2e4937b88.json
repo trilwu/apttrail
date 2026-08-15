@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "f52f8f19-36ba-5ad5-b7a7-d95ac0291f9c",
+        "value": "139.59.89.238:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e0cc5190-fcba-53c8-b9c8-230634e4d16b",
+        "value": "167.172.177.158:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "07859ac5-0bb2-581c-8205-73f30ea4dac4",
+        "value": "172.105.42.64:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "8d283a7c-c69b-55a2-947a-d603a9d3835d",
+        "value": "68.183.79.77:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "11f4496e-a79e-5169-a286-2f4ada87f717",
+        "value": "http://139.59.89.238"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "2ae57763-ae88-5d1b-ada0-64ebb136ef89",
+        "value": "http://167.172.177.158"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "76baef8b-882f-5905-bd67-d51bece24e9f",
+        "value": "http://172.105.42.64"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650144605",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "625b97f5-2aa7-59be-8de6-04fae93d11cc",
+        "value": "http://68.183.79.77"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:indra"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: INDRA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "d2a8dd66-f695-56de-b443-96f2e4937b88"
+  }
+}

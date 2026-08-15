@@ -1,0 +1,118 @@
+{
+  "aliases": [
+    "apt-c-17",
+    "apt17",
+    "blackcoffee",
+    "deputy dog"
+  ],
+  "attack_id": "G0025",
+  "attack_name": "APT17",
+  "attack_url": "https://attack.mitre.org/groups/G0025/",
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "equitaligaiustizia.it": "2024-07-12",
+      "meeting.equitaligaiustizia.it": "2024-07-12",
+      "news.jusched.net": "2019-10-19",
+      "themicrosoftnow.com": "2024-07-12",
+      "translate.wordraference.com": "2019-10-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-19",
+    "latest": "2024-07-12"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "equitaligaiustizia.it",
+      "meeting.equitaligaiustizia.it",
+      "news.jusched.net",
+      "themicrosoftnow.com",
+      "translate.wordraference.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "17"
+  ],
+  "references": [
+    "https://github.com/fireeye/iocs/blob/master/APT17/7b9e87c5-b619-4a13-b862-0145614d359a.ioc",
+    "https://www.fireeye.com/blog/threat-research/2015/05/hiding_in_plain_sigh.html",
+    "https://www.tgsoft.it/news/news_archivio.asp?id=1557&lang=eng",
+    "https://www.virustotal.com/gui/file/28808164363d221ceb9cc48f7d9dbff8ba3fc5c562f5bea9fa3176df5dd7a41e/detection",
+    "https://www.virustotal.com/gui/file/caeca1933efcd9ff28ac81663a304ee17bbcb8091d3f9450a62c291fec973af5/detection",
+    "https://www.virustotal.com/gui/file/de19e0163af15585c305f845b90262aee3c2bdf037f9fc733d3f1b379d00edd0/detection",
+    "https://x.com/VirITeXplorer/status/1811743669579370989"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares BLACKCOFFEE",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares BLACKCOFFEE",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "G0025",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-07-12",
+      "indicators": {
+        "domain": [
+          "equitaligaiustizia.it",
+          "meeting.equitaligaiustizia.it",
+          "themicrosoftnow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/VirITeXplorer/status/1811743669579370989",
+        "https://www.tgsoft.it/news/news_archivio.asp?id=1557&lang=eng",
+        "https://www.virustotal.com/gui/file/28808164363d221ceb9cc48f7d9dbff8ba3fc5c562f5bea9fa3176df5dd7a41e/detection",
+        "https://www.virustotal.com/gui/file/caeca1933efcd9ff28ac81663a304ee17bbcb8091d3f9450a62c291fec973af5/detection",
+        "https://www.virustotal.com/gui/file/de19e0163af15585c305f845b90262aee3c2bdf037f9fc733d3f1b379d00edd0/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-19",
+      "indicators": {
+        "domain": [
+          "news.jusched.net",
+          "translate.wordraference.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2015/05/hiding_in_plain_sigh.html",
+        "https://github.com/fireeye/iocs/blob/master/APT17/7b9e87c5-b619-4a13-b862-0145614d359a.ioc"
+      ],
+      "total": 2
+    }
+  ]
+}

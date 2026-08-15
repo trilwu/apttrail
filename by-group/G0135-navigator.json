@@ -1,0 +1,101 @@
+{
+  "name": "BackdoorDiplomacy (G0135) - APTtrail",
+  "description": "Techniques attributed to BackdoorDiplomacy by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0135.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1027",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1120",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by BackdoorDiplomacy",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

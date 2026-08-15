@@ -1,0 +1,355 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 48,
+    "ipv4": 3
+  },
+  "first_seen": {
+    "domain": {
+      "1.test.3322.org.cn": "2016-03-08",
+      "123ewqasdcxz.xicp.net": "2016-03-08",
+      "2.test.3322.org.cn": "2016-03-08",
+      "3.test.3322.org.cn": "2016-03-08",
+      "4.test.3322.org.cn": "2016-03-08",
+      "airjaldinet.ml": "2020-04-01",
+      "antmoving.online": "2019-09-24",
+      "beemail.online": "2019-09-24",
+      "bf.mk": "2019-09-24",
+      "browserservice.zzux.com": "2020-04-01",
+      "client-user-id.com": "2019-10-08",
+      "cta-tibet.com": "2020-12-04",
+      "ctmail.dns-dns.com": "2020-04-01",
+      "dalailama.online": "2020-12-04",
+      "designer.dynamic-dns.net": "2020-04-01",
+      "energy-mail.org": "2019-09-24",
+      "getadobeflashdownloader.proxydns.com": "2020-04-01",
+      "gmail.isooncloud.com": "2019-09-24",
+      "gmailapp.me": "2019-09-24",
+      "hoop-america.oicp.net": "2016-03-08",
+      "hotmal1.com": "2019-11-05",
+      "hy.micrsofts.com": "2019-11-05",
+      "in-tibet.net": "2020-12-04",
+      "install.ddns.info": "2020-04-01",
+      "ip.micrsofts.com": "2019-11-05",
+      "izelense.com": "2019-09-24",
+      "loginwebmailnic.dynssl.com": "2020-04-01",
+      "ly.micorsofts.net": "2019-11-05",
+      "mail-tibet.net": "2020-12-04",
+      "mailanalysis.services": "2019-09-24",
+      "mailcontactanalysis.online": "2019-09-24",
+      "mailnotes.online": "2019-09-24",
+      "micorsofts.net": "2019-11-05",
+      "micrsofts.com": "2019-11-05",
+      "mon7am.000webhostapp.com": "2019-09-24",
+      "mon7am.tk": "2019-09-24",
+      "msap.services": "2019-09-03",
+      "news.cmitcsubs.tk": "2019-09-24",
+      "polarismail.services": "2019-09-24",
+      "rf.mk": "2019-09-24",
+      "root20system20macosxdriver.serveusers.com": "2020-04-01",
+      "roots.dynamic-dns.net": "2020-04-01",
+      "tibet-office.com": "2020-05-22",
+      "tibetoffice.in": "2020-12-04",
+      "ubntrooters.serveuser.com": "2020-04-01",
+      "walkingnote.online": "2019-09-24",
+      "windows-report.com": "2020-04-01",
+      "xdx.hotmal1.com": "2019-11-05"
+    },
+    "ipv4": {
+      "43.251.16.87:5000": "2019-09-24",
+      "45.76.149.154:5000": "2019-09-24",
+      "66.42.58.59:9078": "2019-09-24"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2016-03-08",
+    "latest": "2020-12-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "1.test.3322.org.cn",
+      "123ewqasdcxz.xicp.net",
+      "2.test.3322.org.cn",
+      "3.test.3322.org.cn",
+      "4.test.3322.org.cn",
+      "airjaldinet.ml",
+      "antmoving.online",
+      "beemail.online",
+      "bf.mk",
+      "browserservice.zzux.com",
+      "client-user-id.com",
+      "cta-tibet.com",
+      "ctmail.dns-dns.com",
+      "dalailama.online",
+      "designer.dynamic-dns.net",
+      "energy-mail.org",
+      "getadobeflashdownloader.proxydns.com",
+      "gmail.isooncloud.com",
+      "gmailapp.me",
+      "hoop-america.oicp.net",
+      "hotmal1.com",
+      "hy.micrsofts.com",
+      "in-tibet.net",
+      "install.ddns.info",
+      "ip.micrsofts.com",
+      "izelense.com",
+      "loginwebmailnic.dynssl.com",
+      "ly.micorsofts.net",
+      "mail-tibet.net",
+      "mailanalysis.services",
+      "mailcontactanalysis.online",
+      "mailnotes.online",
+      "micorsofts.net",
+      "micrsofts.com",
+      "mon7am.000webhostapp.com",
+      "mon7am.tk",
+      "msap.services",
+      "news.cmitcsubs.tk",
+      "polarismail.services",
+      "rf.mk",
+      "root20system20macosxdriver.serveusers.com",
+      "roots.dynamic-dns.net",
+      "tibet-office.com",
+      "tibetoffice.in",
+      "ubntrooters.serveuser.com",
+      "walkingnote.online",
+      "windows-report.com",
+      "xdx.hotmal1.com"
+    ],
+    "ipv4": [
+      "43.251.16.87:5000",
+      "45.76.149.154:5000",
+      "66.42.58.59:9078"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TIBET"
+  ],
+  "references": [
+    "https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/",
+    "https://github.com/citizenlab/malware-indicators/blob/master/201909_MissingLink/iocs.csv",
+    "https://otx.alienvault.com/pulse/5d89e04cea5c55ee87a6aa05",
+    "https://otx.alienvault.com/pulse/5d9c9101d569bf434dbc9385",
+    "https://otx.alienvault.com/pulse/5e83635bf1c0d9b195569252",
+    "https://otx.alienvault.com/pulse/5e84c248adbbd69f8c569252",
+    "https://otx.alienvault.com/pulse/5fca9086207f00c7222c0c87",
+    "https://securelist.com/holy-water-ongoing-targeted-water-holing-attack-in-asia/96311/",
+    "https://securelist.com/new-uyghur-and-tibetan-themed-attacks-using-pdf-exploits/35465/",
+    "https://twitter.com/craiu/status/1176437943369703424",
+    "https://www.alienvault.com/blogs/labs-research/latest-adobe-pdf-exploit-used-to-target-uyghur-and-tibetan-activists",
+    "https://www.alienvault.com/open-threat-exchange/blog/cve-2012-0158-tibet-targeted-attacks-and-so-on",
+    "https://www.recordedfuture.com/messagemanifold-malware-spearphishing-campaigns/",
+    "https://www.virustotal.com/gui/file/0d2ee9ade24163613772fdda201af985d852ab506e3d3e7f07fb3fa8b0853560/detection",
+    "https://www.volexity.com/blog/2020/03/31/storm-cloud-unleashed-tibetan-community-focus-of-highly-targeted-fake-flash-campaign/ (Storm Cloud)"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0067"
+    }
+  ],
+  "slug": "TIBET",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2020-12-04",
+      "indicators": {
+        "domain": [
+          "cta-tibet.com",
+          "dalailama.online",
+          "in-tibet.net",
+          "mail-tibet.net",
+          "tibetoffice.in"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/messagemanifold-malware-spearphishing-campaigns/",
+        "https://otx.alienvault.com/pulse/5fca9086207f00c7222c0c87"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-22",
+      "indicators": {
+        "domain": [
+          "tibet-office.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/messagemanifold-malware-spearphishing-campaigns/",
+        "https://otx.alienvault.com/pulse/5fca9086207f00c7222c0c87"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2020-04-01",
+      "indicators": {
+        "domain": [
+          "airjaldinet.ml",
+          "browserservice.zzux.com",
+          "ctmail.dns-dns.com",
+          "designer.dynamic-dns.net",
+          "getadobeflashdownloader.proxydns.com",
+          "install.ddns.info",
+          "loginwebmailnic.dynssl.com",
+          "root20system20macosxdriver.serveusers.com",
+          "roots.dynamic-dns.net",
+          "ubntrooters.serveuser.com",
+          "windows-report.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2020/03/31/storm-cloud-unleashed-tibetan-community-focus-of-highly-targeted-fake-flash-campaign/ (Storm Cloud)",
+        "https://otx.alienvault.com/pulse/5e84c248adbbd69f8c569252"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-11-05",
+      "indicators": {
+        "domain": [
+          "hotmal1.com",
+          "hy.micrsofts.com",
+          "ip.micrsofts.com",
+          "ly.micorsofts.net",
+          "micorsofts.net",
+          "micrsofts.com",
+          "xdx.hotmal1.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/new-uyghur-and-tibetan-themed-attacks-using-pdf-exploits/35465/",
+        "https://www.alienvault.com/blogs/labs-research/latest-adobe-pdf-exploit-used-to-target-uyghur-and-tibetan-activists"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-08",
+      "indicators": {
+        "domain": [
+          "client-user-id.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5d9c9101d569bf434dbc9385"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 16,
+        "ipv4": 3
+      },
+      "first_seen": "2019-09-24",
+      "indicators": {
+        "domain": [
+          "antmoving.online",
+          "beemail.online",
+          "bf.mk",
+          "energy-mail.org",
+          "gmail.isooncloud.com",
+          "gmailapp.me",
+          "izelense.com",
+          "mailanalysis.services",
+          "mailcontactanalysis.online",
+          "mailnotes.online",
+          "mon7am.000webhostapp.com",
+          "mon7am.tk",
+          "news.cmitcsubs.tk",
+          "polarismail.services",
+          "rf.mk",
+          "walkingnote.online"
+        ],
+        "ipv4": [
+          "43.251.16.87:5000",
+          "45.76.149.154:5000",
+          "66.42.58.59:9078"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/0d2ee9ade24163613772fdda201af985d852ab506e3d3e7f07fb3fa8b0853560/detection",
+        "https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/",
+        "https://github.com/citizenlab/malware-indicators/blob/master/201909_MissingLink/iocs.csv",
+        "https://twitter.com/craiu/status/1176437943369703424",
+        "https://otx.alienvault.com/pulse/5d89e04cea5c55ee87a6aa05"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-03",
+      "indicators": {
+        "domain": [
+          "msap.services"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/0d2ee9ade24163613772fdda201af985d852ab506e3d3e7f07fb3fa8b0853560/detection",
+        "https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/",
+        "https://github.com/citizenlab/malware-indicators/blob/master/201909_MissingLink/iocs.csv",
+        "https://twitter.com/craiu/status/1176437943369703424",
+        "https://otx.alienvault.com/pulse/5d89e04cea5c55ee87a6aa05"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2016-03-08",
+      "indicators": {
+        "domain": [
+          "1.test.3322.org.cn",
+          "123ewqasdcxz.xicp.net",
+          "2.test.3322.org.cn",
+          "3.test.3322.org.cn",
+          "4.test.3322.org.cn",
+          "hoop-america.oicp.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.alienvault.com/open-threat-exchange/blog/cve-2012-0158-tibet-targeted-attacks-and-so-on"
+      ],
+      "total": 6
+    }
+  ]
+}

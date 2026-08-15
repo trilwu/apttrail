@@ -1,0 +1,66 @@
+{
+  "aliases": [],
+  "attack_id": "G0041",
+  "attack_name": "Strider",
+  "attack_url": "https://attack.mitre.org/groups/G0041/",
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "bikessport.com": "2017-04-13",
+      "flowershop22.110mb.com": "2017-04-13",
+      "myhomemusic.com": "2017-04-13",
+      "rapidcomments.com": "2017-04-13",
+      "wildhorses.awardspace.info": "2017-04-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-13",
+    "latest": "2017-04-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bikessport.com",
+      "flowershop22.110mb.com",
+      "myhomemusic.com",
+      "rapidcomments.com",
+      "wildhorses.awardspace.info"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SAURON"
+  ],
+  "references": [
+    "https://securelist.com/files/2016/07/The-ProjectSauron-APT_IOCs_KL.pdf"
+  ],
+  "related": [],
+  "slug": "G0041",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2017-04-13",
+      "indicators": {
+        "domain": [
+          "bikessport.com",
+          "flowershop22.110mb.com",
+          "myhomemusic.com",
+          "rapidcomments.com",
+          "wildhorses.awardspace.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/files/2016/07/The-ProjectSauron-APT_IOCs_KL.pdf"
+      ],
+      "total": 5
+    }
+  ]
+}

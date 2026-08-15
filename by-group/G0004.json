@@ -1,0 +1,1205 @@
+{
+  "aliases": [
+    "Ke3chang",
+    "Mirage",
+    "Playful Dragon",
+    "Royal APT",
+    "Vixen Panda",
+    "apt15"
+  ],
+  "attack_id": "G0004",
+  "attack_name": "Ke3chang",
+  "attack_url": "https://attack.mitre.org/groups/G0004/",
+  "counts": {
+    "domain": 172,
+    "ipv4": 36,
+    "url": 1,
+    "url_path": 11
+  },
+  "first_seen": {
+    "domain": {
+      "6006.secpert.com": "2020-07-06",
+      "6006.upupdate.cn": "2020-07-06",
+      "789aa654.top": "2023-12-25",
+      "adobeonline.net": "2024-03-25",
+      "adoptewer.com": "2023-09-25",
+      "allshell.net": "2017-04-14",
+      "allwhatsapp.net": "2023-09-25",
+      "amote-366.vicp.cc": "2020-07-06",
+      "anar.gleeze.com": "2026-01-02",
+      "android.apps.us.to": "2020-07-06",
+      "androidapps.duia.in": "2020-07-06",
+      "androidapps.fvk.cc": "2020-07-06",
+      "androidapps.home.hn.org": "2020-07-06",
+      "androidapps.jetos.com": "2020-07-06",
+      "androidapps.linkpc.net": "2020-07-06",
+      "androidapps.myfirewall.org": "2020-07-06",
+      "androidapps.nerdpol.ovh": "2020-07-06",
+      "androidapps.npff.co": "2020-07-06",
+      "androidapps.nsupdate.info": "2020-07-06",
+      "androidapps.spdns.eu": "2020-07-06",
+      "androidapps.spdns.org": "2020-07-06",
+      "androidapps.tempors.com": "2020-07-06",
+      "androidsapps.ml": "2020-07-06",
+      "andspurs.com": "2018-03-14",
+      "api--telegram.ru": "2024-01-09",
+      "api.telegram5.org": "2023-11-03",
+      "api.telegramrc.com": "2023-11-03",
+      "app.telegramrc.com": "2023-11-03",
+      "attoo1s.com": "2017-04-14",
+      "babyedu-online.com": "2020-07-06",
+      "battle.com.tw": "2017-04-14",
+      "beltsymd.org": "2023-08-20",
+      "bhvghg.com": "2023-09-25",
+      "buy.babytoy-online.com": "2019-07-18",
+      "buy.healthcare-internet.com": "2018-10-29",
+      "cavanic9.net": "2018-03-14",
+      "cdngoogle.com": "2017-04-14",
+      "center.nmsvillage.com": "2019-07-18",
+      "centrozhlan.com": "2020-04-03",
+      "chart.healthcare-internet.com": "2019-07-18",
+      "cisco-inc.net": "2017-04-14",
+      "coco.wikaba.com": "2020-07-06",
+      "comeflxyr.com": "2023-09-25",
+      "compatsec.com": "2019-07-18",
+      "control.mimepanel.org": "2019-07-18",
+      "cookedu-online.com": "2020-07-06",
+      "cv.livehams.com": "2019-07-18",
+      "cyclophilit.com": "2023-08-20",
+      "cyprus-villas.org": "2023-08-20",
+      "daily.huntereim.com": "2019-07-18",
+      "diablo-iii.mobi": "2017-04-14",
+      "dnsapp.info": "2018-03-14",
+      "down.telegramxo.com": "2023-11-03",
+      "dream.zepotac.com": "2019-07-18",
+      "dsmanfacture.privatedns.org": "2019-07-18",
+      "dyname.europemis.com": "2019-07-18",
+      "englishedu-online.com": "2020-07-06",
+      "everydayinfo.top": "2023-09-25",
+      "fgttgvh.com": "2023-09-25",
+      "finance.globaleducat.com": "2019-07-18",
+      "flygram.org": "2023-08-30",
+      "flygram.orgproxy1.signalplus.org": "2023-09-25",
+      "forcan.hausblow.com": "2019-07-18",
+      "fufijxgkg.com": "2023-09-25",
+      "gefacebook.com": "2017-04-14",
+      "ggl.whoscaller.net": "2023-09-25",
+      "gheyret.com": "2026-01-02",
+      "gheyret.net": "2026-01-02",
+      "goback.strangled.net": "2020-01-14",
+      "goldplusapp.net": "2023-09-25",
+      "googleanalyseservice.net": "2020-07-06",
+      "googlemapsoftware.com": "2017-04-14",
+      "googlleservice.com": "2020-07-06",
+      "graphicdata.net": "2023-09-25",
+      "grek.freetaxbar.com": "2019-07-18",
+      "halimatoudi.com": "2019-09-18",
+      "heartsys.dnsapi.info": "2020-07-06",
+      "ignitetibet.net": "2023-09-25",
+      "in7n.com": "2023-09-25",
+      "info.audioexp.com": "2019-07-18",
+      "inicializacion.com": "2019-07-18",
+      "item.amazonout.com": "2019-07-18",
+      "items.babytoy-online.com": "2019-07-18",
+      "items.burgermap.org": "2019-07-18",
+      "jindjjdtc.com": "2023-09-25",
+      "jkapp88.top": "2023-12-25",
+      "joke.upupdate.cn": "2020-07-06",
+      "k1-ai-jk.789aa654.top": "2023-12-25",
+      "k3-ai-jk.jkapp88.top": "2023-12-25",
+      "kasparsky.net": "2017-04-14",
+      "kmcuft.com": "2023-09-25",
+      "kocrmicrosoft.com": "2017-04-14",
+      "log.autocount.org": "2018-03-14",
+      "login.allionhealth.com": "2019-07-18",
+      "memozilla.org": "2019-04-17",
+      "menorustru.com": "2019-07-18",
+      "menu.thehuguardian.com": "2020-05-22",
+      "micakiz.wikaba.org": "2018-03-14",
+      "microsoft.org.tw": "2017-04-14",
+      "microsoftdomainadmin.com": "2017-04-14",
+      "microsoftsp3.com": "2017-04-14",
+      "microsoftupdate.ws": "2017-04-14",
+      "misiones.soportesisco.com": "2019-07-18",
+      "mremote.biz": "2017-04-14",
+      "msftncsl.com": "2017-04-14",
+      "msnupdate.bz": "2017-04-14",
+      "newflow.babytoy-online.com": "2019-07-18",
+      "news.memozilla.org": "2018-03-14",
+      "nortonservice.net": "2020-07-06",
+      "o21q.com": "2023-09-25",
+      "officescan.biz": "2017-04-14",
+      "omarwhatsapp.org": "2023-09-25",
+      "oprea.biz": "2017-04-14",
+      "orgproxy1.signalplus.org": "2023-09-25",
+      "perusmartcity.com": "2023-08-20",
+      "phpyahoo.mrbasic.com": "2020-07-06",
+      "powershell.com.tw": "2017-04-14",
+      "press.premlist.com": "2019-07-18",
+      "promise.miniaturizate.org": "2019-07-18",
+      "rain.nmsvillage.com": "2019-07-18",
+      "ridingduck.com": "2018-03-14",
+      "run.linodepower.com": "2018-03-14",
+      "s101.secpert.com": "2020-07-06",
+      "s2.upupdate.cn": "2020-07-06",
+      "signalplus.org": "2023-08-30",
+      "singa.linodepower.com": "2018-03-14",
+      "softwareupdatevmware.com": "2017-04-14",
+      "square-enix.us": "2017-04-14",
+      "ss903.w3.ezua.com": "2020-07-06",
+      "ss904.w3.ezua.com": "2020-07-06",
+      "store.ufmsecret.org": "2019-07-18",
+      "support.slovakmaps.com": "2019-07-18",
+      "symantecupdate.net": "2020-07-06",
+      "sz.secpert.com": "2020-07-06",
+      "telegram5.org": "2023-11-03",
+      "telegramrc.com": "2023-11-03",
+      "telegramxo.com": "2023-11-03",
+      "tengri.ooguy.com": "2026-01-02",
+      "tgpc.telegramrc.com": "2023-11-03",
+      "thehuguardian.com": "2020-05-22",
+      "thetubeplus.com": "2023-09-25",
+      "tibetone.org": "2023-09-25",
+      "tick.ondemand-sport.com": "2019-09-19",
+      "tinmf.org": "2023-09-25",
+      "translate.europemis.com": "2019-07-18",
+      "tree.ddns.us": "2020-07-06",
+      "tryhrwserf.com": "2023-09-25",
+      "tubevideoplus.org": "2023-09-25",
+      "turknews-online.com": "2020-07-06",
+      "turkyedu-online.com": "2020-07-06",
+      "uheyret.com": "2026-01-02",
+      "umare.zyns.com": "2020-07-06",
+      "upcv.inciohali.com": "2019-07-18",
+      "upd.whoscaller.net": "2023-09-25",
+      "updatamicrosoft.com": "2017-04-14",
+      "update.adobeonline.net": "2024-03-25",
+      "updateadobeappscom.adobeonline.net": "2024-03-25",
+      "uyghurdict.com": "2023-09-25",
+      "uyghurinfo.net": "2023-09-25",
+      "verisims.com": "2023-08-20",
+      "video.memozilla.org": "2018-03-14",
+      "view.beleimprensa.org": "2019-07-18",
+      "vipapkdownload.com": "2020-07-06",
+      "vipappdownload.com": "2020-07-06",
+      "wanar.gleeze.com": "2026-01-02",
+      "wephone.top": "2020-07-06",
+      "whoscaller.net": "2023-09-25",
+      "wind.deltimesweb.com": "2019-07-18",
+      "windowsnine.net": "2017-04-14",
+      "www1.sanpaulostat.com": "2019-07-18",
+      "youtube.dynamicdns.org.uk": "2020-07-06",
+      "zipcodeterm.com": "2018-03-14"
+    },
+    "ipv4": {
+      "103.27.186.156:443": "2023-08-31",
+      "103.27.186.195:443": "2023-08-31",
+      "106.75.99.101:8989": "2023-01-20",
+      "123.60.31.114:7005": "2023-01-20",
+      "142.132.131.28:10433": "2023-09-25",
+      "142.132.131.28:10434": "2023-09-25",
+      "142.132.131.28:10435": "2023-09-25",
+      "142.132.131.28:3251": "2023-09-25",
+      "148.251.87.245:4432": "2023-08-30",
+      "148.251.87.247:10433": "2023-09-25",
+      "148.251.87.247:10434": "2023-09-25",
+      "148.251.87.247:10435": "2023-09-25",
+      "148.251.87.247:3251": "2023-09-25",
+      "154.202.59.169:443": "2023-08-31",
+      "154.212.147.129:443": "2023-12-25",
+      "172.104.143.75:443": "2023-01-20",
+      "172.104.143.75:8000": "2023-01-19",
+      "185.239.227.14:3023": "2023-08-30",
+      "195.154.60.3:10433": "2023-09-25",
+      "195.154.60.3:10434": "2023-09-25",
+      "195.154.60.3:10435": "2023-09-25",
+      "195.154.60.3:3251": "2023-09-25",
+      "217.163.29.84:7011": "2023-08-30",
+      "23.88.28.222:4432": "2023-09-25",
+      "45.133.238.92:6023": "2023-08-30",
+      "45.154.12.132:4332": "2023-08-30",
+      "45.154.12.151:443": "2023-08-31",
+      "45.154.12.202:443": "2023-08-31",
+      "45.63.89.238:1011": "2023-08-30",
+      "62.210.28.116:2011": "2023-08-30",
+      "62.210.30.158:10433": "2023-09-25",
+      "62.210.30.158:10434": "2023-09-25",
+      "62.210.30.158:10435": "2023-09-25",
+      "62.210.30.158:3251": "2023-09-25",
+      "92.118.189.164:443": "2023-08-31",
+      "95.216.187.21:6656": "2023-09-25"
+    },
+    "url": {
+      "http://172.104.143.75": "2023-01-20"
+    },
+    "url_path": {
+      "/airliners.aspx?para=": "2019-09-19",
+      "/cc/adr/mobi": "2023-11-03",
+      "/cc/info/rep": "2023-11-03",
+      "/dutchops.aspx?yf=": "2019-09-19",
+      "/feeyo.aspx?who=": "2019-09-19",
+      "/iTunes.aspx?e1=": "2019-09-19",
+      "/paidai.aspx?e1=": "2019-09-19",
+      "/playlist.aspx?yf=": "2019-09-19",
+      "/pprune.aspx?yf=": "2019-09-19",
+      "/shopmall.aspx?e1=": "2019-09-19",
+      "/wikipedia.aspx?content=": "2019-09-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "anar.gleeze.com": "at-or-before",
+      "gheyret.com": "at-or-before",
+      "gheyret.net": "at-or-before",
+      "tengri.ooguy.com": "at-or-before",
+      "uheyret.com": "at-or-before",
+      "wanar.gleeze.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-14",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "6006.secpert.com",
+      "6006.upupdate.cn",
+      "789aa654.top",
+      "adobeonline.net",
+      "adoptewer.com",
+      "allshell.net",
+      "allwhatsapp.net",
+      "amote-366.vicp.cc",
+      "anar.gleeze.com",
+      "android.apps.us.to",
+      "androidapps.duia.in",
+      "androidapps.fvk.cc",
+      "androidapps.home.hn.org",
+      "androidapps.jetos.com",
+      "androidapps.linkpc.net",
+      "androidapps.myfirewall.org",
+      "androidapps.nerdpol.ovh",
+      "androidapps.npff.co",
+      "androidapps.nsupdate.info",
+      "androidapps.spdns.eu",
+      "androidapps.spdns.org",
+      "androidapps.tempors.com",
+      "androidsapps.ml",
+      "andspurs.com",
+      "api--telegram.ru",
+      "api.telegram5.org",
+      "api.telegramrc.com",
+      "app.telegramrc.com",
+      "attoo1s.com",
+      "babyedu-online.com",
+      "battle.com.tw",
+      "beltsymd.org",
+      "bhvghg.com",
+      "buy.babytoy-online.com",
+      "buy.healthcare-internet.com",
+      "cavanic9.net",
+      "cdngoogle.com",
+      "center.nmsvillage.com",
+      "centrozhlan.com",
+      "chart.healthcare-internet.com",
+      "cisco-inc.net",
+      "coco.wikaba.com",
+      "comeflxyr.com",
+      "compatsec.com",
+      "control.mimepanel.org",
+      "cookedu-online.com",
+      "cv.livehams.com",
+      "cyclophilit.com",
+      "cyprus-villas.org",
+      "daily.huntereim.com",
+      "diablo-iii.mobi",
+      "dnsapp.info",
+      "down.telegramxo.com",
+      "dream.zepotac.com",
+      "dsmanfacture.privatedns.org",
+      "dyname.europemis.com",
+      "englishedu-online.com",
+      "everydayinfo.top",
+      "fgttgvh.com",
+      "finance.globaleducat.com",
+      "flygram.org",
+      "flygram.orgproxy1.signalplus.org",
+      "forcan.hausblow.com",
+      "fufijxgkg.com",
+      "gefacebook.com",
+      "ggl.whoscaller.net",
+      "gheyret.com",
+      "gheyret.net",
+      "goback.strangled.net",
+      "goldplusapp.net",
+      "googleanalyseservice.net",
+      "googlemapsoftware.com",
+      "googlleservice.com",
+      "graphicdata.net",
+      "grek.freetaxbar.com",
+      "halimatoudi.com",
+      "heartsys.dnsapi.info",
+      "ignitetibet.net",
+      "in7n.com",
+      "info.audioexp.com",
+      "inicializacion.com",
+      "item.amazonout.com",
+      "items.babytoy-online.com",
+      "items.burgermap.org",
+      "jindjjdtc.com",
+      "jkapp88.top",
+      "joke.upupdate.cn",
+      "k1-ai-jk.789aa654.top",
+      "k3-ai-jk.jkapp88.top",
+      "kasparsky.net",
+      "kmcuft.com",
+      "kocrmicrosoft.com",
+      "log.autocount.org",
+      "login.allionhealth.com",
+      "memozilla.org",
+      "menorustru.com",
+      "menu.thehuguardian.com",
+      "micakiz.wikaba.org",
+      "microsoft.org.tw",
+      "microsoftdomainadmin.com",
+      "microsoftsp3.com",
+      "microsoftupdate.ws",
+      "misiones.soportesisco.com",
+      "mremote.biz",
+      "msftncsl.com",
+      "msnupdate.bz",
+      "newflow.babytoy-online.com",
+      "news.memozilla.org",
+      "nortonservice.net",
+      "o21q.com",
+      "officescan.biz",
+      "omarwhatsapp.org",
+      "oprea.biz",
+      "orgproxy1.signalplus.org",
+      "perusmartcity.com",
+      "phpyahoo.mrbasic.com",
+      "powershell.com.tw",
+      "press.premlist.com",
+      "promise.miniaturizate.org",
+      "rain.nmsvillage.com",
+      "ridingduck.com",
+      "run.linodepower.com",
+      "s101.secpert.com",
+      "s2.upupdate.cn",
+      "signalplus.org",
+      "singa.linodepower.com",
+      "softwareupdatevmware.com",
+      "square-enix.us",
+      "ss903.w3.ezua.com",
+      "ss904.w3.ezua.com",
+      "store.ufmsecret.org",
+      "support.slovakmaps.com",
+      "symantecupdate.net",
+      "sz.secpert.com",
+      "telegram5.org",
+      "telegramrc.com",
+      "telegramxo.com",
+      "tengri.ooguy.com",
+      "tgpc.telegramrc.com",
+      "thehuguardian.com",
+      "thetubeplus.com",
+      "tibetone.org",
+      "tick.ondemand-sport.com",
+      "tinmf.org",
+      "translate.europemis.com",
+      "tree.ddns.us",
+      "tryhrwserf.com",
+      "tubevideoplus.org",
+      "turknews-online.com",
+      "turkyedu-online.com",
+      "uheyret.com",
+      "umare.zyns.com",
+      "upcv.inciohali.com",
+      "upd.whoscaller.net",
+      "updatamicrosoft.com",
+      "update.adobeonline.net",
+      "updateadobeappscom.adobeonline.net",
+      "uyghurdict.com",
+      "uyghurinfo.net",
+      "verisims.com",
+      "video.memozilla.org",
+      "view.beleimprensa.org",
+      "vipapkdownload.com",
+      "vipappdownload.com",
+      "wanar.gleeze.com",
+      "wephone.top",
+      "whoscaller.net",
+      "wind.deltimesweb.com",
+      "windowsnine.net",
+      "www1.sanpaulostat.com",
+      "youtube.dynamicdns.org.uk",
+      "zipcodeterm.com"
+    ],
+    "ipv4": [
+      "103.27.186.156:443",
+      "103.27.186.195:443",
+      "106.75.99.101:8989",
+      "123.60.31.114:7005",
+      "142.132.131.28:10433",
+      "142.132.131.28:10434",
+      "142.132.131.28:10435",
+      "142.132.131.28:3251",
+      "148.251.87.245:4432",
+      "148.251.87.247:10433",
+      "148.251.87.247:10434",
+      "148.251.87.247:10435",
+      "148.251.87.247:3251",
+      "154.202.59.169:443",
+      "154.212.147.129:443",
+      "172.104.143.75:443",
+      "172.104.143.75:8000",
+      "185.239.227.14:3023",
+      "195.154.60.3:10433",
+      "195.154.60.3:10434",
+      "195.154.60.3:10435",
+      "195.154.60.3:3251",
+      "217.163.29.84:7011",
+      "23.88.28.222:4432",
+      "45.133.238.92:6023",
+      "45.154.12.132:4332",
+      "45.154.12.151:443",
+      "45.154.12.202:443",
+      "45.63.89.238:1011",
+      "62.210.28.116:2011",
+      "62.210.30.158:10433",
+      "62.210.30.158:10434",
+      "62.210.30.158:10435",
+      "62.210.30.158:3251",
+      "92.118.189.164:443",
+      "95.216.187.21:6656"
+    ],
+    "url": [
+      "http://172.104.143.75"
+    ],
+    "url_path": [
+      "/airliners.aspx?para=",
+      "/cc/adr/mobi",
+      "/cc/info/rep",
+      "/dutchops.aspx?yf=",
+      "/feeyo.aspx?who=",
+      "/iTunes.aspx?e1=",
+      "/paidai.aspx?e1=",
+      "/playlist.aspx?yf=",
+      "/pprune.aspx?yf=",
+      "/shopmall.aspx?e1=",
+      "/wikipedia.aspx?content="
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GREF",
+    "KE3CHANG"
+  ],
+  "references": [
+    "https://app.any.run/tasks/8d777de7-d51d-4c97-8e91-d0e54461fc2b/",
+    "https://blog.lookout.com/multiyear-surveillance-campaigns-discovered-targeting-uyghurs",
+    "https://citizenlab.ca/2025/04/uyghur-language-software-hijacked-to-deliver-malware/",
+    "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2024-03-25-Timeline-for-misake-by-Playful-Taurus.txt",
+    "https://github.com/volexity/threat-intel/blob/main/2023/2023-09-22%20EvilBamboo/indicators/iocs.csv",
+    "https://otx.alienvault.com/pulse/5d3040c20c143e436cc113d8",
+    "https://otx.alienvault.com/pulse/5ec7f55daebc94b5857d69f1",
+    "https://otx.alienvault.com/pulse/5efca5ec3da9c1ceace695fc",
+    "https://otx.alienvault.com/pulse/6492f2af01c58203dd0bcd3b",
+    "https://pastebin.com/qdDymcuy)",
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/flea-backdoor-microsoft-graph-apt15",
+    "https://threatfox.abuse.ch/browse/tag/BadBazaar/",
+    "https://tria.ge/231005-2xj7jshg69",
+    "https://tria.ge/231103-l385vsfh7v",
+    "https://tria.ge/231103-nfveasbe23",
+    "https://tria.ge/240109-rhyraacacq/behavioral1",
+    "https://twitter.com/MeltX0R/status/1174069208709312512",
+    "https://twitter.com/MeltX0R/status/1174442212412809216",
+    "https://twitter.com/VK_Intel/status/976977927072985088",
+    "https://twitter.com/in_threat/status/735472063247421440",
+    "https://twitter.com/malwrhunterteam/status/1616138902938746882",
+    "https://twitter.com/malwrhunterteam/status/1616438178055094275",
+    "https://twitter.com/naumovax/status/172042145649913054",
+    "https://twitter.com/naumovax/status/1744741775661756421",
+    "https://www.fireeye.com/blog/threat-research/2014/09/forced-to-adapt-xslcmd-backdoor-now-on-os-x.html",
+    "https://www.intezer.com/blog/research/the-evolution-of-apt15s-codebase-2020/",
+    "https://www.intezer.com/miragefox-apt15-resurfaces-with-new-tools-based-on-old-ones/",
+    "https://www.lookout.com/documents/threat-reports/us/lookout-uyghur-malware-tr-us.pdf",
+    "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-royaldns/",
+    "https://www.virustotal.com/gui/domain/edit.centrozhlan.com/relations",
+    "https://www.virustotal.com/gui/file/0fea799ce00c7d6f26ccb52a2ecbe6b9605cfb9910f2a309a841caedf3b102d7/detection",
+    "https://www.virustotal.com/gui/file/100bb87b7dc3455b2aaef93753a44d3b149b1f68b0c21a9607da45b16412a9ba/detection",
+    "https://www.virustotal.com/gui/file/1caf33e5cb45de1d3616bda85bea6c4d915365eb7444c8d7c56cebd12b69d105/detection",
+    "https://www.virustotal.com/gui/file/29f2616dc26a02216d8e17a52cc6938fd130c2feffa6e08143432ed0941fdde7/detection",
+    "https://www.virustotal.com/gui/file/45bcc4da58aacc018a36eb8a0b3125dcae84b3a2313513153614f3a6a55b0f7b/detection",
+    "https://www.virustotal.com/gui/file/64ef2b23808484c9310408f7b530af6b71b5101a1e757cd6f6f70052858b35bc/detection",
+    "https://www.virustotal.com/gui/file/689f121c4a7309644c37141742abed0f111b6fa60632c54002a5ce898af36397/community",
+    "https://www.virustotal.com/gui/file/94a87dadeaac24bbc26c85d032b86a45cfd131516666e8e5d888f78986d1e993/detection",
+    "https://www.virustotal.com/gui/file/b5db7cfe22de56d292c83ea9ffa25f28d1e126d16b14cb3734b7396dcf5a6e0c/detection",
+    "https://www.virustotal.com/gui/file/bdb84b702752c4065fa36f7c6f7038eed2bfda6d09c32d69512896077b66c097/detection",
+    "https://www.virustotal.com/gui/file/bfb44ed70b5096b9884245af952b979241811e49ec96d1463bd9384c360e484e/detection",
+    "https://www.virustotal.com/gui/file/f7132750db2a8ca8eb9e9e5a32377aa506395d02bacbb918f835041f5f035c4c/detection",
+    "https://www.virustotal.com/gui/file/f86420f5a92a39d92beef7279f219da3efad85dfb64fad06809d8add6dc451df/detection",
+    "https://www.virustotal.com/gui/ip-address/45.154.12.132/relations",
+    "https://www.volexity.com/blog/2023/09/22/evilbamboo-targets-mobile-devices-in-multi-year-campaign/",
+    "https://www.welivesecurity.com/2019/07/18/okrum-ke3chang-targets-diplomatic-missions/",
+    "https://www.welivesecurity.com/en/eset-research/badbazaar-espionage-tool-targets-android-users-trojanized-signal-telegram-apps/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "G0004",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "anar.gleeze.com",
+          "gheyret.com",
+          "gheyret.net",
+          "tengri.ooguy.com",
+          "uheyret.com",
+          "wanar.gleeze.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://citizenlab.ca/2025/04/uyghur-language-software-hijacked-to-deliver-malware/",
+        "https://www.virustotal.com/gui/file/94a87dadeaac24bbc26c85d032b86a45cfd131516666e8e5d888f78986d1e993/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-03-25",
+      "indicators": {
+        "domain": [
+          "adobeonline.net",
+          "update.adobeonline.net",
+          "updateadobeappscom.adobeonline.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2024-03-25-Timeline-for-misake-by-Playful-Taurus.txt",
+        "https://www.virustotal.com/gui/file/bfb44ed70b5096b9884245af952b979241811e49ec96d1463bd9384c360e484e/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-01-09",
+      "indicators": {
+        "domain": [
+          "api--telegram.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/naumovax/status/1744741775661756421",
+        "https://tria.ge/240109-rhyraacacq/behavioral1",
+        "https://www.virustotal.com/gui/file/bdb84b702752c4065fa36f7c6f7038eed2bfda6d09c32d69512896077b66c097/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1
+      },
+      "first_seen": "2023-12-25",
+      "indicators": {
+        "domain": [
+          "789aa654.top",
+          "jkapp88.top",
+          "k1-ai-jk.789aa654.top",
+          "k3-ai-jk.jkapp88.top"
+        ],
+        "ipv4": [
+          "154.212.147.129:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/tag/BadBazaar/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "url_path": 2
+      },
+      "first_seen": "2023-11-03",
+      "indicators": {
+        "domain": [
+          "api.telegram5.org",
+          "api.telegramrc.com",
+          "app.telegramrc.com",
+          "down.telegramxo.com",
+          "telegram5.org",
+          "telegramrc.com",
+          "telegramxo.com",
+          "tgpc.telegramrc.com"
+        ],
+        "url_path": [
+          "/cc/adr/mobi",
+          "/cc/info/rep"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/naumovax/status/172042145649913054",
+        "https://tria.ge/231103-l385vsfh7v",
+        "https://tria.ge/231103-nfveasbe23",
+        "https://tria.ge/231005-2xj7jshg69",
+        "https://www.virustotal.com/gui/file/f86420f5a92a39d92beef7279f219da3efad85dfb64fad06809d8add6dc451df/detection"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 27,
+        "ipv4": 18
+      },
+      "first_seen": "2023-09-25",
+      "indicators": {
+        "domain": [
+          "adoptewer.com",
+          "allwhatsapp.net",
+          "bhvghg.com",
+          "comeflxyr.com",
+          "everydayinfo.top",
+          "fgttgvh.com",
+          "flygram.orgproxy1.signalplus.org",
+          "fufijxgkg.com",
+          "ggl.whoscaller.net",
+          "goldplusapp.net",
+          "graphicdata.net",
+          "ignitetibet.net",
+          "in7n.com",
+          "jindjjdtc.com",
+          "kmcuft.com",
+          "o21q.com",
+          "omarwhatsapp.org",
+          "orgproxy1.signalplus.org",
+          "thetubeplus.com",
+          "tibetone.org",
+          "tinmf.org",
+          "tryhrwserf.com",
+          "tubevideoplus.org",
+          "upd.whoscaller.net",
+          "uyghurdict.com",
+          "uyghurinfo.net",
+          "whoscaller.net"
+        ],
+        "ipv4": [
+          "142.132.131.28:10433",
+          "142.132.131.28:10434",
+          "142.132.131.28:10435",
+          "142.132.131.28:3251",
+          "148.251.87.247:10433",
+          "148.251.87.247:10434",
+          "148.251.87.247:10435",
+          "148.251.87.247:3251",
+          "195.154.60.3:10433",
+          "195.154.60.3:10434",
+          "195.154.60.3:10435",
+          "195.154.60.3:3251",
+          "23.88.28.222:4432",
+          "62.210.30.158:10433",
+          "62.210.30.158:10434",
+          "62.210.30.158:10435",
+          "62.210.30.158:3251",
+          "95.216.187.21:6656"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2023/09/22/evilbamboo-targets-mobile-devices-in-multi-year-campaign/",
+        "https://github.com/volexity/threat-intel/blob/main/2023/2023-09-22%20EvilBamboo/indicators/iocs.csv",
+        "https://www.virustotal.com/gui/file/0fea799ce00c7d6f26ccb52a2ecbe6b9605cfb9910f2a309a841caedf3b102d7/detection",
+        "https://www.virustotal.com/gui/file/1caf33e5cb45de1d3616bda85bea6c4d915365eb7444c8d7c56cebd12b69d105/detection",
+        "https://www.virustotal.com/gui/file/f7132750db2a8ca8eb9e9e5a32377aa506395d02bacbb918f835041f5f035c4c/detection",
+        "https://www.virustotal.com/gui/ip-address/45.154.12.132/relations"
+      ],
+      "total": 45
+    },
+    {
+      "counts": {
+        "ipv4": 6
+      },
+      "first_seen": "2023-08-31",
+      "indicators": {
+        "ipv4": [
+          "103.27.186.156:443",
+          "103.27.186.195:443",
+          "154.202.59.169:443",
+          "45.154.12.151:443",
+          "45.154.12.202:443",
+          "92.118.189.164:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/tag/BadBazaar/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 7
+      },
+      "first_seen": "2023-08-30",
+      "indicators": {
+        "domain": [
+          "flygram.org",
+          "signalplus.org"
+        ],
+        "ipv4": [
+          "148.251.87.245:4432",
+          "185.239.227.14:3023",
+          "217.163.29.84:7011",
+          "45.133.238.92:6023",
+          "45.154.12.132:4332",
+          "45.63.89.238:1011",
+          "62.210.28.116:2011"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/badbazaar-espionage-tool-targets-android-users-trojanized-signal-telegram-apps/"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2023-08-20",
+      "indicators": {
+        "domain": [
+          "beltsymd.org",
+          "cyclophilit.com",
+          "cyprus-villas.org",
+          "perusmartcity.com",
+          "verisims.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/flea-backdoor-microsoft-graph-apt15",
+        "https://otx.alienvault.com/pulse/6492f2af01c58203dd0bcd3b"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2023-01-20",
+      "indicators": {
+        "ipv4": [
+          "172.104.143.75:443"
+        ],
+        "url": [
+          "http://172.104.143.75"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1616138902938746882",
+        "https://www.virustotal.com/gui/file/29f2616dc26a02216d8e17a52cc6938fd130c2feffa6e08143432ed0941fdde7/detection",
+        "https://www.virustotal.com/gui/file/100bb87b7dc3455b2aaef93753a44d3b149b1f68b0c21a9607da45b16412a9ba/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-01-20",
+      "indicators": {
+        "ipv4": [
+          "106.75.99.101:8989"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1616438178055094275",
+        "https://www.virustotal.com/gui/file/64ef2b23808484c9310408f7b530af6b71b5101a1e757cd6f6f70052858b35bc/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-01-20",
+      "indicators": {
+        "ipv4": [
+          "123.60.31.114:7005"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1616438178055094275",
+        "https://www.virustotal.com/gui/file/45bcc4da58aacc018a36eb8a0b3125dcae84b3a2313513153614f3a6a55b0f7b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-01-19",
+      "indicators": {
+        "ipv4": [
+          "172.104.143.75:8000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1616138902938746882",
+        "https://www.virustotal.com/gui/file/29f2616dc26a02216d8e17a52cc6938fd130c2feffa6e08143432ed0941fdde7/detection",
+        "https://www.virustotal.com/gui/file/100bb87b7dc3455b2aaef93753a44d3b149b1f68b0c21a9607da45b16412a9ba/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 41
+      },
+      "first_seen": "2020-07-06",
+      "indicators": {
+        "domain": [
+          "6006.secpert.com",
+          "6006.upupdate.cn",
+          "amote-366.vicp.cc",
+          "android.apps.us.to",
+          "androidapps.duia.in",
+          "androidapps.fvk.cc",
+          "androidapps.home.hn.org",
+          "androidapps.jetos.com",
+          "androidapps.linkpc.net",
+          "androidapps.myfirewall.org",
+          "androidapps.nerdpol.ovh",
+          "androidapps.npff.co",
+          "androidapps.nsupdate.info",
+          "androidapps.spdns.eu",
+          "androidapps.spdns.org",
+          "androidapps.tempors.com",
+          "androidsapps.ml",
+          "babyedu-online.com",
+          "coco.wikaba.com",
+          "cookedu-online.com",
+          "englishedu-online.com",
+          "googleanalyseservice.net",
+          "googlleservice.com",
+          "heartsys.dnsapi.info",
+          "joke.upupdate.cn",
+          "nortonservice.net",
+          "phpyahoo.mrbasic.com",
+          "s101.secpert.com",
+          "s2.upupdate.cn",
+          "ss903.w3.ezua.com",
+          "ss904.w3.ezua.com",
+          "symantecupdate.net",
+          "sz.secpert.com",
+          "tree.ddns.us",
+          "turknews-online.com",
+          "turkyedu-online.com",
+          "umare.zyns.com",
+          "vipapkdownload.com",
+          "vipappdownload.com",
+          "wephone.top",
+          "youtube.dynamicdns.org.uk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.lookout.com/multiyear-surveillance-campaigns-discovered-targeting-uyghurs",
+        "https://www.lookout.com/documents/threat-reports/us/lookout-uyghur-malware-tr-us.pdf",
+        "https://otx.alienvault.com/pulse/5efca5ec3da9c1ceace695fc"
+      ],
+      "total": 41
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-05-22",
+      "indicators": {
+        "domain": [
+          "menu.thehuguardian.com",
+          "thehuguardian.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.intezer.com/blog/research/the-evolution-of-apt15s-codebase-2020/",
+        "https://otx.alienvault.com/pulse/5ec7f55daebc94b5857d69f1"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-04-03",
+      "indicators": {
+        "domain": [
+          "centrozhlan.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/domain/edit.centrozhlan.com/relations",
+        "https://www.virustotal.com/gui/file/689f121c4a7309644c37141742abed0f111b6fa60632c54002a5ce898af36397/community"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-14",
+      "indicators": {
+        "domain": [
+          "goback.strangled.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/in_threat/status/735472063247421440"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 9
+      },
+      "first_seen": "2019-09-19",
+      "indicators": {
+        "url_path": [
+          "/airliners.aspx?para=",
+          "/dutchops.aspx?yf=",
+          "/feeyo.aspx?who=",
+          "/iTunes.aspx?e1=",
+          "/paidai.aspx?e1=",
+          "/playlist.aspx?yf=",
+          "/pprune.aspx?yf=",
+          "/shopmall.aspx?e1=",
+          "/wikipedia.aspx?content="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://pastebin.com/qdDymcuy)"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-19",
+      "indicators": {
+        "domain": [
+          "tick.ondemand-sport.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MeltX0R/status/1174442212412809216",
+        "https://app.any.run/tasks/8d777de7-d51d-4c97-8e91-d0e54461fc2b/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-18",
+      "indicators": {
+        "domain": [
+          "halimatoudi.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MeltX0R/status/1174069208709312512",
+        "https://www.virustotal.com/gui/file/b5db7cfe22de56d292c83ea9ffa25f28d1e126d16b14cb3734b7396dcf5a6e0c/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 32
+      },
+      "first_seen": "2019-07-18",
+      "indicators": {
+        "domain": [
+          "buy.babytoy-online.com",
+          "center.nmsvillage.com",
+          "chart.healthcare-internet.com",
+          "compatsec.com",
+          "control.mimepanel.org",
+          "cv.livehams.com",
+          "daily.huntereim.com",
+          "dream.zepotac.com",
+          "dsmanfacture.privatedns.org",
+          "dyname.europemis.com",
+          "finance.globaleducat.com",
+          "forcan.hausblow.com",
+          "grek.freetaxbar.com",
+          "info.audioexp.com",
+          "inicializacion.com",
+          "item.amazonout.com",
+          "items.babytoy-online.com",
+          "items.burgermap.org",
+          "login.allionhealth.com",
+          "menorustru.com",
+          "misiones.soportesisco.com",
+          "newflow.babytoy-online.com",
+          "press.premlist.com",
+          "promise.miniaturizate.org",
+          "rain.nmsvillage.com",
+          "store.ufmsecret.org",
+          "support.slovakmaps.com",
+          "translate.europemis.com",
+          "upcv.inciohali.com",
+          "view.beleimprensa.org",
+          "wind.deltimesweb.com",
+          "www1.sanpaulostat.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/07/18/okrum-ke3chang-targets-diplomatic-missions/",
+        "https://otx.alienvault.com/pulse/5d3040c20c143e436cc113d8"
+      ],
+      "total": 32
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-17",
+      "indicators": {
+        "domain": [
+          "memozilla.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-royaldns/",
+        "https://twitter.com/VK_Intel/status/976977927072985088"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "buy.healthcare-internet.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.intezer.com/miragefox-apt15-resurfaces-with-new-tools-based-on-old-ones/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2018-03-14",
+      "indicators": {
+        "domain": [
+          "andspurs.com",
+          "cavanic9.net",
+          "dnsapp.info",
+          "log.autocount.org",
+          "micakiz.wikaba.org",
+          "news.memozilla.org",
+          "ridingduck.com",
+          "run.linodepower.com",
+          "singa.linodepower.com",
+          "video.memozilla.org",
+          "zipcodeterm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/march/apt15-is-alive-and-strong-an-analysis-of-royalcli-and-royaldns/",
+        "https://twitter.com/VK_Intel/status/976977927072985088"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2017-04-14",
+      "indicators": {
+        "domain": [
+          "allshell.net",
+          "attoo1s.com",
+          "battle.com.tw",
+          "cdngoogle.com",
+          "cisco-inc.net",
+          "diablo-iii.mobi",
+          "gefacebook.com",
+          "googlemapsoftware.com",
+          "kasparsky.net",
+          "kocrmicrosoft.com",
+          "microsoft.org.tw",
+          "microsoftdomainadmin.com",
+          "microsoftsp3.com",
+          "microsoftupdate.ws",
+          "mremote.biz",
+          "msftncsl.com",
+          "msnupdate.bz",
+          "officescan.biz",
+          "oprea.biz",
+          "powershell.com.tw",
+          "softwareupdatevmware.com",
+          "square-enix.us",
+          "updatamicrosoft.com",
+          "windowsnine.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2014/09/forced-to-adapt-xslcmd-backdoor-now-on-os-x.html"
+      ],
+      "total": 24
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1771426814",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "078ce8dc-7422-55a3-8cf2-28fb5d8ed695",
+        "value": "beaconbeagle.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426814",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0eb8ac08-5803-5566-90ff-d48f9dc5f43a",
+        "value": "ftp.beaconbeagle.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426814",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "528455c2-9c29-51c0-95f8-a4e21fee3cda",
+        "value": "ftp.minimedusa.lol"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426814",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ace5d630-b2db-58d0-804d-ceffbd2fff72",
+        "value": "minimedusa.lol"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a7f38a0a-abea-5c59-bda8-aa8edb804b3d",
+        "value": "q7zemy6zc7ptaeks.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673531889",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ff0aacc8-3137-502e-ba81-2cff6e870dbc",
+        "value": "tom56gaz6poh13f28.myftp.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0fb67a57-925d-5010-912d-bfd450700f2a",
+        "value": "v9agm8uwtjmz.sytes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426707",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8b5f000b-e424-5be1-b129-a7a2b11c21b6",
+        "value": "witha.name"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426707",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ffac765c-e84a-525a-8867-559e9a258c8b",
+        "value": "withanamemwesdvodfhthjq25a5a3uas24cpgoa7qm6gchcerzpis6qd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673531889",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "276e90ad-2793-5428-81cf-c189596363b6",
+        "value": "zig35m48zur14nel40.myftp.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "a3b2eb1e-d13d-566f-ac5c-04ab67129d9d",
+        "value": "109.107.181.130:4200"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "19da5cfe-0d2a-5b38-a9f0-e288a83bbed4",
+        "value": "109.107.181.130:5001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ab45aa4f-b11d-507c-ae93-57be8c943c05",
+        "value": "109.107.184.11:27017"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "de98d589-7d81-53d5-8f63-fd913b89162c",
+        "value": "161.35.199.2:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "f52d9dba-dbad-5bb8-96e9-c05b50e2d5cd",
+        "value": "161.35.199.2:5001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "472c278d-f8a8-5a19-8b57-015553923fea",
+        "value": "185.173.37.220:5672"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "30d4bcf9-222e-5be0-925e-2c05add9af9a",
+        "value": "185.173.37.220:6379"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e177fb5a-cc3f-5b93-95a1-9e407997b571",
+        "value": "31.13.195.87:9100"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "0bcb0975-6ead-52be-a3f1-cac74c02edeb",
+        "value": "77.91.66.85:5000"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "699ba0d1-0d72-5092-8888-c3f43d8c53ec",
+        "value": "77.91.66.85:5005"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "66a57771-c3cb-51c7-90a2-0a48f39ed659",
+        "value": "87.121.52.9:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e6826011-81b0-5701-b838-d303bf73f63a",
+        "value": "87.121.52.9:5001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "f7140361-40d9-5d6f-bb85-30f3bed20842",
+        "value": "91.142.79.201:5051"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9b1a11cd-fa97-550e-8655-1b6374c778c3",
+        "value": "91.142.79.201:9100"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "627b2f97-aa29-5a29-931f-a86e21fbec0d",
+        "value": "94.140.114.239:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "b9443c93-32ae-5515-84fe-1637e330b51b",
+        "value": "94.140.114.239:5001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ebeb480f-eabe-5397-9792-c1e2d3b84a62",
+        "value": "94.140.115.129:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5392e0fd-03e2-5578-af2f-7f36b71a4ac3",
+        "value": "94.140.115.129:5001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "829cb048-fb07-5c1d-b567-d5006096ce8c",
+        "value": "http://161.35.199.2"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771426707",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "91aa8999-0f5d-573f-ba77-262539105c59",
+        "value": "http://168.119.241.4"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1675108716",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "088b2e9e-1c7d-5586-8d50-35555ef84944",
+        "value": "http://212.73.134.208"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674840089",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "7c6e7711-0cfa-5684-ad95-a172637b4d4e",
+        "value": "http://31.13.195.87"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "02728103-388a-5fff-b15b-50465be94b24",
+        "value": "http://87.121.52.9"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1681923054",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "08cdac12-e5eb-55be-a628-2da8055fe19e",
+        "value": "http://94.140.114.239"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1678620410",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "b66a11bb-76ba-5206-9b50-68a8c0ea02ea",
+        "value": "http://94.140.115.129"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "ab4f538d-16f0-512e-a47f-b3513739e92f",
+        "value": "/27bff71b-42c0-4a47-ba39-04c83f2f40bb/update?id="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "de885ab2-4856-5103-922a-e4b075d43322",
+        "value": "/bcaa8752-51ff-4e35-8ef9-4aefbf42b482/update?id="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457531",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "9eaeca7f-b88d-5347-abaa-9326220580f1",
+        "value": "/d380f816-7412-400a-9b64-78e35dd51f6e/update?id="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "f3dc2fae-ff03-5628-b917-56e7625c3652",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/AdminService.exe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "aae07abd-03cb-52a0-94ed-823512df8454",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/BAebY2lBT7ee.exe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "6053daad-d515-5600-90a0-50406f8b2ce3",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/Q7yheyG7.exe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "0c34dbee-5502-5395-b686-45dba7dbae9a",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/XuS1qxZa.exe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "2ac58863-491c-5cba-82d1-b8678c86780a",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/afVAcUJTvDvM.exe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "4658cee0-6043-55e2-a84e-07d9903c6666",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/update?id="
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1673457709",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "3d4068fa-bca5-5abe-8224-9bd06ff76f23",
+        "value": "/fb82275d-6255-4463-8261-ef65d439b83b/xLZ6auza.exe"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:noname05716"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: NONAME05716",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "34463ed6-69b4-5fbf-8c5f-b8124e8ef1a9"
+  }
+}

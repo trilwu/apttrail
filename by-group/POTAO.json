@@ -1,0 +1,69 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "camprainbowgold.ru": "2017-04-07",
+      "mntexpress.com": "2017-04-07",
+      "poolwaterslide2011.ru": "2017-04-07",
+      "truecryptrussia.ru": "2017-04-07",
+      "worldairpost.com": "2017-04-07",
+      "worldairpost.net": "2017-04-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-07",
+    "latest": "2017-04-07"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "camprainbowgold.ru",
+      "mntexpress.com",
+      "poolwaterslide2011.ru",
+      "truecryptrussia.ru",
+      "worldairpost.com",
+      "worldairpost.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "POTAO"
+  ],
+  "references": [
+    "https://github.com/eset/malware-ioc/tree/master/potao"
+  ],
+  "related": [],
+  "slug": "POTAO",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2017-04-07",
+      "indicators": {
+        "domain": [
+          "camprainbowgold.ru",
+          "mntexpress.com",
+          "poolwaterslide2011.ru",
+          "truecryptrussia.ru",
+          "worldairpost.com",
+          "worldairpost.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/potao"
+      ],
+      "total": 6
+    }
+  ]
+}

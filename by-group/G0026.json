@@ -1,0 +1,175 @@
+{
+  "aliases": [],
+  "attack_id": "G0026",
+  "attack_name": "APT18",
+  "attack_url": "https://attack.mitre.org/groups/G0026/",
+  "counts": {
+    "domain": 14,
+    "ipv4": 1,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "128.er1620.com": "2019-10-19",
+      "223-25-233-248.revdns.8toinfinity.com.sg": "2019-10-19",
+      "admin.er1620.com": "2019-10-19",
+      "exp0day.com": "2019-10-19",
+      "ftp.exp0day.com": "2019-10-19",
+      "gmail.bkz88.com": "2019-10-19",
+      "good.myftp.org": "2015-03-18",
+      "hello.mjw.bz": "2019-10-19",
+      "info.imly.org": "2019-10-19",
+      "login.3bz.org": "2019-10-19",
+      "logo.mjw.bz": "2019-10-19",
+      "suck.er1620.com": "2019-10-19",
+      "test.3bz.org": "2019-10-19",
+      "zip.redirectme.net": "2015-03-18"
+    },
+    "ipv4": {
+      "223.25.233.248:8080": "2019-10-19"
+    },
+    "url": {
+      "http://137.175.4.132": "2019-10-19",
+      "http://223.25.233.248": "2019-10-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2019-10-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "128.er1620.com",
+      "223-25-233-248.revdns.8toinfinity.com.sg",
+      "admin.er1620.com",
+      "exp0day.com",
+      "ftp.exp0day.com",
+      "gmail.bkz88.com",
+      "good.myftp.org",
+      "hello.mjw.bz",
+      "info.imly.org",
+      "login.3bz.org",
+      "logo.mjw.bz",
+      "suck.er1620.com",
+      "test.3bz.org",
+      "zip.redirectme.net"
+    ],
+    "ipv4": [
+      "223.25.233.248:8080"
+    ],
+    "url": [
+      "http://137.175.4.132",
+      "http://223.25.233.248"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "18"
+  ],
+  "references": [
+    "https://github.com/fireeye/iocs/blob/master/APT18/0ae061d7-c624-4a84-8adf-00281b97797b.ioc",
+    "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html (# APT18's campaign)",
+    "https://www.virustotal.com/gui/ip-address/137.175.4.132/relations",
+    "https://www.virustotal.com/gui/ip-address/223.25.233.248/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares HTTPBrowser",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0045"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0060"
+    }
+  ],
+  "slug": "G0026",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 12,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen": "2019-10-19",
+      "indicators": {
+        "domain": [
+          "128.er1620.com",
+          "223-25-233-248.revdns.8toinfinity.com.sg",
+          "admin.er1620.com",
+          "exp0day.com",
+          "ftp.exp0day.com",
+          "gmail.bkz88.com",
+          "hello.mjw.bz",
+          "info.imly.org",
+          "login.3bz.org",
+          "logo.mjw.bz",
+          "suck.er1620.com",
+          "test.3bz.org"
+        ],
+        "ipv4": [
+          "223.25.233.248:8080"
+        ],
+        "url": [
+          "http://137.175.4.132",
+          "http://223.25.233.248"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html (# APT18's campaign)",
+        "https://github.com/fireeye/iocs/blob/master/APT18/0ae061d7-c624-4a84-8adf-00281b97797b.ioc",
+        "https://www.virustotal.com/gui/ip-address/137.175.4.132/relations",
+        "https://www.virustotal.com/gui/ip-address/223.25.233.248/relations"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "good.myftp.org",
+          "zip.redirectme.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html (# APT18's campaign)",
+        "https://github.com/fireeye/iocs/blob/master/APT18/0ae061d7-c624-4a84-8adf-00281b97797b.ioc",
+        "https://www.virustotal.com/gui/ip-address/137.175.4.132/relations",
+        "https://www.virustotal.com/gui/ip-address/223.25.233.248/relations"
+      ],
+      "total": 2
+    }
+  ]
+}

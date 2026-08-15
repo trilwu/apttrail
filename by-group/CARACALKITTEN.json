@@ -1,0 +1,74 @@
+{
+  "aliases": [
+    "apt-q-58"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "65.109.157.77:42474": "2023-10-13"
+    },
+    "url": {
+      "http://65.109.157.77": "2023-10-13"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-10-13",
+    "latest": "2023-10-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "65.109.157.77:42474"
+    ],
+    "url": [
+      "http://65.109.157.77"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CARACALKITTEN"
+  ],
+  "references": [
+    "https://twitter.com/RexorVc0/status/1712725980924518898",
+    "https://www.ctfiot.com/138538.html (Chinese)",
+    "https://www.virustotal.com/gui/file/5e43da767e68650d424d3aca15d0e9790cb90f3806a86a7b06a0ddf9a55c353e/detection",
+    "https://www.virustotal.com/gui/file/6123a20afabb209bc7d191acb1cc42de5225d49627de72c49bd86bf9e5c33b85/detection"
+  ],
+  "related": [],
+  "slug": "CARACALKITTEN",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2023-10-13",
+      "indicators": {
+        "ipv4": [
+          "65.109.157.77:42474"
+        ],
+        "url": [
+          "http://65.109.157.77"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RexorVc0/status/1712725980924518898",
+        "https://www.ctfiot.com/138538.html (Chinese)",
+        "https://www.virustotal.com/gui/file/5e43da767e68650d424d3aca15d0e9790cb90f3806a86a7b06a0ddf9a55c353e/detection",
+        "https://www.virustotal.com/gui/file/6123a20afabb209bc7d191acb1cc42de5225d49627de72c49bd86bf9e5c33b85/detection"
+      ],
+      "total": 2
+    }
+  ]
+}

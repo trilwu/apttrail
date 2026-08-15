@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>UNC2596 · APTtrail</title>
+<meta name=description content="111 indicators attributed to UNC2596, from 42 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/UNC2596.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="UNC2596 · APTtrail">
+<meta property="og:description" content="111 indicators attributed to UNC2596, from 42 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/UNC2596.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>UNC2596</h1>
+<p class=aka><b>UNC2596</b> &middot; CVE-2023-36884 &middot; dustyhammock &middot; meltingclaw &middot; romcom &middot; rustyclaw &middot; shadyhammock &middot; singlecamper &middot; snipbot &middot; uat-5647</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>111</dd></div>
+<div><dt>Source reports</dt><dd>42</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-01-02</dd></div>
+</dl>
+<div class=spark><span style="--h:54%" title="2022: 15 indicators"></span><span style="--h:100%" title="2023: 52 indicators"></span><span style="--h:88%" title="2024: 40 indicators"></span><span style="--h:0%" title="2025: 0 indicators"></span><span class=hot style="--h:28%" title="2026: 4 indicators"></span></div>
+<div class=spark-axis><span>2022</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_unc2596.txt">UNC2596</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/UNC2596.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/UNC2596-domain.txt</pre>
+<p class=note><a href="UNC2596.json">UNC2596.json</a> &middot; <a href="UNC2596-domain.txt">UNC2596-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>111 indicators</span></h2>
+<p class="lede note">No published description. This group is tracked by Maltrail from vendor reporting but is not named in MITRE ATT&amp;CK, so there is no curated profile to show.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>76</td><td class=f><a href="UNC2596-domain.txt">UNC2596-domain.txt</a></td></tr>
+<tr><td>ipv4</td><td class=n>16</td><td class=f><a href="UNC2596.json">UNC2596.json</a></td></tr>
+<tr><td>url_path</td><td class=n>16</td><td class=f><a href="UNC2596.json">UNC2596.json</a></td></tr>
+<tr><td>url</td><td class=n>3</td><td class=f><a href="UNC2596.json">UNC2596.json</a></td></tr>
+</table>
+
+
+
+
+
+<h2 id=reporting>Principal sources <span class=n>42 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>22</span><a href="https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Joseliyo_Jstnk/status/16758035904626851…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://twitter.com/suyog41/status/1692424324874211646" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/suyog41/status/1692424324874211646</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://twitter.com/blackorbird/status/1694622415006105954" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/blackorbird/status/1694622415006105954</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit" rel="noopener nofollow"><span class=host>blogs.blackberry.com</span><span class=path>/en/2023/07/romcom-targets-ukraine-nato-…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers" rel="noopener nofollow"><span class=host>explore.avertium.com</span><span class=path>/resource/two-microsoft-zero-day-vulnera…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://cert.gov.ua/article/5077168 (# UAC-0168)" rel="noopener nofollow"><span class=host>cert.gov.ua</span><span class=path>/article/5077168 (# UAC-0168)</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://www.virustotal.com/gui/ip-address/213.139.204.173/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/213.139.204.173/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>22</span><a href="https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/3a3138c5add59d2172ad33bc6761f2…</span></a><div class=bar style="--w:100%"></div></li>
+</ul>
+
+
+
+<h2 id=timeline>Timeline <span class=n>111 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>111</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 76</button><button type=button data-type="url_path" aria-pressed=false>url_path 16</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 16</button><button type=button data-type="url" aria-pressed=false>url 3</button></div>
+
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-01-02-70648b" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-70648b"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>4 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability/" rel="noopener nofollow"><span class=host>welivesecurity.com</span><span class=path>/en/eset-research/update-winrar-tools-no…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>campanole.com</td></tr>
+<tr data-t="domain"><td class=val>gohazeldale.com</td></tr>
+<tr data-t="domain"><td class=val>melamorri.com</td></tr>
+<tr data-t="domain"><td class=val>srlaptop.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-12-23-3866f7">
+<div class=when><a class=date href="#b-2024-12-23-3866f7"><time datetime="2024-12-23">2024-12-23</time></a> <span class=cnt>1 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://community.emergingthreats.net/t/ruleset-update-summary-2024-11-26-v10753/2171" rel="noopener nofollow"><span class=host>community.emergingthreats.net</span><span class=path>/t/ruleset-update-summary-2024-11-26-v10…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>1drv.us.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-11-27-2cfddb">
+<div class=when><a class=date href="#b-2024-11-27-2cfddb"><time datetime="2024-11-27">2024-11-27</time></a> <span class=cnt>8 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://www.welivesecurity.com/en/eset-research/romcom-exploits-firefox-and-windows-zero-days-in-the-wild/" rel="noopener nofollow"><span class=host>welivesecurity.com</span><span class=path>/en/eset-research/romcom-exploits-firefo…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>correctiv.sbs</td></tr>
+<tr data-t="domain"><td class=val>cwise.store</td></tr>
+<tr data-t="domain"><td class=val>devolredir.com</td></tr>
+<tr data-t="domain"><td class=val>economistjournal.cloud</td></tr>
+<tr data-t="domain"><td class=val>journalctd.live</td></tr>
+<tr data-t="domain"><td class=val>redirconnectwise.cloud</td></tr>
+<tr data-t="domain"><td class=val>redircorrectiv.com</td></tr>
+<tr data-t="domain"><td class=val>redjournal.cloud</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-10-18-1be693">
+<div class=when><a class=date href="#b-2024-10-18-1be693"><time datetime="2024-10-18">2024-10-18</time></a> <span class=cnt>10 domain, 2 url_path</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://blog.talosintelligence.com/uat-5647-romcom/" rel="noopener nofollow"><span class=host>blog.talosintelligence.com</span><span class=path>/uat-5647-romcom</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>adbefnts.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>adcreative.pictures</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>apisolving.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>copdaemi.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>creativeadb.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>devhubs.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dnsresolver.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pos-st.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>store-images.org</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wirelesszone.top</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/ipns/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-09-24-0a1926">
+<div class=when><a class=date href="#b-2024-09-24-0a1926"><time datetime="2024-09-24">2024-09-24</time></a> <span class=cnt>19 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://unit42.paloaltonetworks.com/snipbot-romcom-malware-variant/" rel="noopener nofollow"><span class=host>unit42.paloaltonetworks.com</span><span class=path>/snipbot-romcom-malware-variant</span></a> &middot; <a href="https://app.validin.com/detail?find=185.225.74.94&amp;type=ip4&amp;ref_id=65ec9bcbe4c#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=185.225.74.94&amp;type=ip4&amp;ref_…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>1drv.fileshare.direct</td></tr>
+<tr data-t="domain"><td class=val>adobe.cloudcreative.digital</td></tr>
+<tr data-t="domain"><td class=val>certifysop.com</td></tr>
+<tr data-t="domain"><td class=val>cethernet.com</td></tr>
+<tr data-t="domain"><td class=val>cloudcreative.digital</td></tr>
+<tr data-t="domain"><td class=val>dns-msn.com</td></tr>
+<tr data-t="domain"><td class=val>docstorage.link</td></tr>
+<tr data-t="domain"><td class=val>drv2ms.com</td></tr>
+<tr data-t="domain"><td class=val>drvmcprotect.com</td></tr>
+<tr data-t="domain"><td class=val>fastshare.click</td></tr>
+<tr data-t="domain"><td class=val>fileshare.direct</td></tr>
+<tr data-t="domain"><td class=val>ilogicflow.com</td></tr>
+<tr data-t="domain"><td class=val>linedrv.com</td></tr>
+<tr data-t="domain"><td class=val>mcprotect.cloud</td></tr>
+<tr data-t="domain"><td class=val>olminx.com</td></tr>
+<tr data-t="domain"><td class=val>publicshare.link</td></tr>
+<tr data-t="domain"><td class=val>sitepanel.top</td></tr>
+<tr data-t="domain"><td class=val>webtimeapi.com</td></tr>
+<tr data-t="domain"><td class=val>xeontime.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-11-07-2b42eb">
+<div class=when><a class=date href="#b-2023-11-07-2b42eb"><time datetime="2023-11-07">2023-11-07</time></a> <span class=cnt>3 ipv4, 1 url, 2 url_path</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/DmitriyMelikov/status/1721991958464205142" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/DmitriyMelikov/status/17219919584642051…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/201.174.21.202/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/201.174.21.202/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/b9ea82bd961210c69cf1141321be7378629e49b84102479d2e476c60e1c00a3f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/b9ea82bd961210c69cf1141321be73…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/b595ed2252d82bbfea276d40615c4a2bf580a1da4a6892c47361fdb3f9299204/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/b595ed2252d82bbfea276d40615c4a…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>201.174.21.202:137</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>201.174.21.202:139</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>201.174.21.202:445</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://201.174.21.202</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/abc/filename111111111111.url</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/filename111111111111.url</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-10-16-5fb98a">
+<div class=when><a class=date href="#b-2023-10-16-5fb98a"><time datetime="2023-10-16">2023-10-16</time></a> <span class=cnt>7 domain</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/TLP_R3D/status/1705917480844120192" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1705917480844120192</span></a> &middot; <a href="https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/en_us/research/23/j/void-rabisu-targets…</span></a> &middot; <a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/content/dam/trendmicro/global/en/resear…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/185.250.150.204/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/185.250.150.204/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/45.137.155.163/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.137.155.163/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>budgetnews.org</td></tr>
+<tr data-t="domain"><td class=val>kayakahead.net</td></tr>
+<tr data-t="domain"><td class=val>mctelemetryzone.com</td></tr>
+<tr data-t="domain"><td class=val>pap-cut.com</td></tr>
+<tr data-t="domain"><td class=val>redditanalytics.pm</td></tr>
+<tr data-t="domain"><td class=val>speedymarker.com</td></tr>
+<tr data-t="domain"><td class=val>wplsummit.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-09-24-5fb98a">
+<div class=when><a class=date href="#b-2023-09-24-5fb98a"><time datetime="2023-09-24">2023-09-24</time></a> <span class=cnt>3 domain</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/TLP_R3D/status/1705917480844120192" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1705917480844120192</span></a> &middot; <a href="https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/en_us/research/23/j/void-rabisu-targets…</span></a> &middot; <a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/content/dam/trendmicro/global/en/resear…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/185.250.150.204/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/185.250.150.204/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/45.137.155.163/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.137.155.163/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>digitalsolutionstime.com</td></tr>
+<tr data-t="domain"><td class=val>netstaticsinformation.com</td></tr>
+<tr data-t="domain"><td class=val>wirelessvezion.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-08-24-fa1d83">
+<div class=when><a class=date href="#b-2023-08-24-fa1d83"><time datetime="2023-08-24">2023-08-24</time></a> <span class=cnt>4 domain</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Joseliyo_Jstnk/status/16758035904626851…</span></a> &middot; <a href="https://twitter.com/suyog41/status/1692424324874211646" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/suyog41/status/1692424324874211646</span></a> &middot; <a href="https://twitter.com/blackorbird/status/1694622415006105954" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/blackorbird/status/1694622415006105954</span></a> &middot; <a href="https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit" rel="noopener nofollow"><span class=host>blogs.blackberry.com</span><span class=path>/en/2023/07/romcom-targets-ukraine-nato-…</span></a> &middot; <a href="https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers" rel="noopener nofollow"><span class=host>explore.avertium.com</span><span class=path>/resource/two-microsoft-zero-day-vulnera…</span></a> &middot; <a href="https://cert.gov.ua/article/5077168 (# UAC-0168)" rel="noopener nofollow"><span class=host>cert.gov.ua</span><span class=path>/article/5077168 (# UAC-0168)</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/213.139.204.173/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/213.139.204.173/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/3a3138c5add59d2172ad33bc6761f2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a61b2eafcf39715031357df6b01e85…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ddf15e9ed54d18960c28fb9a058662…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/6dc514b4b2090ddc852fc6ea62da09…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>altimata.org</td></tr>
+<tr data-t="domain"><td class=val>bentaxworld.com</td></tr>
+<tr data-t="domain"><td class=val>dashboard.penofach.com</td></tr>
+<tr data-t="domain"><td class=val>penofach.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-08-18-fa1d83">
+<div class=when><a class=date href="#b-2023-08-18-fa1d83"><time datetime="2023-08-18">2023-08-18</time></a> <span class=cnt>6 url_path</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Joseliyo_Jstnk/status/16758035904626851…</span></a> &middot; <a href="https://twitter.com/suyog41/status/1692424324874211646" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/suyog41/status/1692424324874211646</span></a> &middot; <a href="https://twitter.com/blackorbird/status/1694622415006105954" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/blackorbird/status/1694622415006105954</span></a> &middot; <a href="https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit" rel="noopener nofollow"><span class=host>blogs.blackberry.com</span><span class=path>/en/2023/07/romcom-targets-ukraine-nato-…</span></a> &middot; <a href="https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers" rel="noopener nofollow"><span class=host>explore.avertium.com</span><span class=path>/resource/two-microsoft-zero-day-vulnera…</span></a> &middot; <a href="https://cert.gov.ua/article/5077168 (# UAC-0168)" rel="noopener nofollow"><span class=host>cert.gov.ua</span><span class=path>/article/5077168 (# UAC-0168)</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/213.139.204.173/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/213.139.204.173/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/3a3138c5add59d2172ad33bc6761f2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a61b2eafcf39715031357df6b01e85…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ddf15e9ed54d18960c28fb9a058662…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/6dc514b4b2090ddc852fc6ea62da09…</span></a></p>
+<table class=iocs>
+<tr data-t="url_path"><td class=val>/MSHTML_C7</td></tr>
+<tr data-t="url_path"><td class=val>/MSHTML_C7/RFile.asp</td></tr>
+<tr data-t="url_path"><td class=val>/MSHTML_C7/start.xml</td></tr>
+<tr data-t="url_path"><td class=val>/MSHTML_C7/zip_k1.asp</td></tr>
+<tr data-t="url_path"><td class=val>/MSHTML_C7/zip_k2.asp</td></tr>
+<tr data-t="url_path"><td class=val>/MSHTML_C7/zip_k3.asp</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-07-05-fa1d83">
+<div class=when><a class=date href="#b-2023-07-05-fa1d83"><time datetime="2023-07-05">2023-07-05</time></a> <span class=cnt>2 domain, 5 ipv4, 2 url, 3 url_path</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Joseliyo_Jstnk/status/16758035904626851…</span></a> &middot; <a href="https://twitter.com/suyog41/status/1692424324874211646" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/suyog41/status/1692424324874211646</span></a> &middot; <a href="https://twitter.com/blackorbird/status/1694622415006105954" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/blackorbird/status/1694622415006105954</span></a> &middot; <a href="https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit" rel="noopener nofollow"><span class=host>blogs.blackberry.com</span><span class=path>/en/2023/07/romcom-targets-ukraine-nato-…</span></a> &middot; <a href="https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers" rel="noopener nofollow"><span class=host>explore.avertium.com</span><span class=path>/resource/two-microsoft-zero-day-vulnera…</span></a> &middot; <a href="https://cert.gov.ua/article/5077168 (# UAC-0168)" rel="noopener nofollow"><span class=host>cert.gov.ua</span><span class=path>/article/5077168 (# UAC-0168)</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/213.139.204.173/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/213.139.204.173/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/3a3138c5add59d2172ad33bc6761f2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a61b2eafcf39715031357df6b01e85…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ddf15e9ed54d18960c28fb9a058662…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/6dc514b4b2090ddc852fc6ea62da09…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>finformservice.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ukrainianworldcongress.info</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.234.239.26:137</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.234.239.26:139</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.234.239.26:445</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>109.105.198.145:8080</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.21.27.250:8080</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://104.234.239.26</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://74.50.94.156</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/mds/D--------------------------</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/mds/O--------------------------</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/mds/s--------------------------</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-05-10-383032">
+<div class=when><a class=date href="#b-2023-05-10-383032"><time datetime="2023-05-10">2023-05-10</time></a> <span class=cnt>1 ipv4</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/TLP_R3D/status/1655687889391431680" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655687889391431680</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1655844785075224576" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655844785075224576</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1656270702700273666" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1656270702700273666</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655840102638137347" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655840102638137347</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655841493934800896" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655841493934800896</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/104.234.10.207/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/104.234.10.207/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c118895776e75eaa291d2a5f54f1de…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/1308146f161ed60c86532dd2d2de8d…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a5dae9b7ff88276f699eece44eb4b1…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>15.235.203.250:444</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-05-09-383032">
+<div class=when><a class=date href="#b-2023-05-09-383032"><time datetime="2023-05-09">2023-05-09</time></a> <span class=cnt>2 domain, 3 ipv4</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/TLP_R3D/status/1655687889391431680" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655687889391431680</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1655844785075224576" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655844785075224576</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1656270702700273666" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1656270702700273666</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655840102638137347" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655840102638137347</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655841493934800896" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655841493934800896</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/104.234.10.207/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/104.234.10.207/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c118895776e75eaa291d2a5f54f1de…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/1308146f161ed60c86532dd2d2de8d…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a5dae9b7ff88276f699eece44eb4b1…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>rdp-devolutions.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>startleague.net</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>2.57.90.16:7931</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>217.195.153.39:7931</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>46.246.98.15:7931</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-05-08-383032">
+<div class=when><a class=date href="#b-2023-05-08-383032"><time datetime="2023-05-08">2023-05-08</time></a> <span class=cnt>2 domain, 1 ipv4, 3 url_path</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/TLP_R3D/status/1655687889391431680" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655687889391431680</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1655844785075224576" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1655844785075224576</span></a> &middot; <a href="https://twitter.com/TLP_R3D/status/1656270702700273666" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/TLP_R3D/status/1656270702700273666</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655840102638137347" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655840102638137347</span></a> &middot; <a href="https://twitter.com/k3yp0d/status/1655841493934800896" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/k3yp0d/status/1655841493934800896</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/104.234.10.207/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/104.234.10.207/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c118895776e75eaa291d2a5f54f1de…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/1308146f161ed60c86532dd2d2de8d…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a5dae9b7ff88276f699eece44eb4b1…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>postnordpakker.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wexonlake.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.234.10.207:7931</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/itrdd/kcrs/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/itrdd/kcrs/file1.txt</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/itrdd/kcrs/file2.txt</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-01-02-e39fc9">
+<div class=when><a class=date href="#b-2023-01-02-e39fc9"><time datetime="2023-01-02">2023-01-02</time></a> <span class=cnt>2 domain</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://www.proofpoint.com/us/daily-ruleset-update-summary-20221104" rel="noopener nofollow"><span class=host>proofpoint.com</span><span class=path>/us/daily-ruleset-update-summary-20221104</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>keepas.org</td></tr>
+<tr data-t="domain"><td class=val>you-supported.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-11-03-946e33">
+<div class=when><a class=date href="#b-2022-11-03-946e33"><time datetime="2022-11-03">2022-11-03</time></a> <span class=cnt>1 domain</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/Unit42_Intel/status/1588199843981402114" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Unit42_Intel/status/1588199843981402114</span></a> &middot; <a href="https://twitter.com/malware_traffic/status/1588211727891570688" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malware_traffic/status/1588211727891570…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>wveeam.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-10-22-204cc3">
+<div class=when><a class=date href="#b-2022-10-22-204cc3"><time datetime="2022-10-22">2022-10-22</time></a> <span class=cnt>9 domain, 3 ipv4</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://cert.gov.ua/article/2394117 (Ukrainian)" rel="noopener nofollow"><span class=host>cert.gov.ua</span><span class=path>/article/2394117 (Ukrainian)</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c149474f97140c3381bda3ad2451f253e08e7ad4be76a68ac3a6f15bc4bd4e63/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c149474f97140c3381bda3ad2451f2…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>4qzm.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>advanced-ip-scaner.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>advanced-ip-scanners.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>aspx.io</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gov.mil.ua.aspx.io</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mil.ua.aspx.io</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mill.co.ua</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>notfiled.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ua.aspx.io</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>185.56.137.104:4444</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>69.49.231.103:4444</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>69.49.245.55:4444</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-08-14-73bb65">
+<div class=when><a class=date href="#b-2022-08-14-73bb65"><time datetime="2022-08-14">2022-08-14</time></a> <span class=cnt>2 domain</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://unit42.paloaltonetworks.com/cuba-ransomware-tropical-scorpius/" rel="noopener nofollow"><span class=host>unit42.paloaltonetworks.com</span><span class=path>/cuba-ransomware-tropical-scorpius</span></a> &middot; <a href="https://otx.alienvault.com/pulse/62f36c89909d6b719ba8d340" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/62f36c89909d6b719ba8d340</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>combinedresidency.org</td></tr>
+<tr data-t="domain"><td class=val>optasko.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>42</span></h2>
+<ul class=refs>
+<li><a href="https://twitter.com/blackorbird/status/1694622415006105954" rel="noopener nofollow">twitter.com/blackorbird/status/1694622415006105954</a></li>
+<li><a href="https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection" rel="noopener nofollow">virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8d…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection" rel="noopener nofollow">virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da09…</a></li>
+<li><a href="https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability/" rel="noopener nofollow">welivesecurity.com/en/eset-research/update-winrar-tools-no…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection" rel="noopener nofollow">virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/201.174.21.202/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/201.174.21.202/relations</a></li>
+<li><a href="https://twitter.com/TLP_R3D/status/1655687889391431680" rel="noopener nofollow">twitter.com/TLP_R3D/status/1655687889391431680</a></li>
+<li><a href="https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers" rel="noopener nofollow">explore.avertium.com/resource/two-microsoft-zero-day-vulnera…</a></li>
+<li><a href="https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit" rel="noopener nofollow">blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-…</a></li>
+<li><a href="https://twitter.com/Unit42_Intel/status/1588199843981402114" rel="noopener nofollow">twitter.com/Unit42_Intel/status/1588199843981402114</a></li>
+<li><a href="https://twitter.com/TLP_R3D/status/1705917480844120192" rel="noopener nofollow">twitter.com/TLP_R3D/status/1705917480844120192</a></li>
+<li><a href="https://app.validin.com/detail?find=185.225.74.94&amp;type=ip4&amp;ref_id=65ec9bcbe4c#tab=resolutions" rel="noopener nofollow">app.validin.com/detail?find=185.225.74.94&amp;type=ip4&amp;ref_…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/185.250.150.204/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/185.250.150.204/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/213.139.204.173/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/213.139.204.173/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/45.137.155.163/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/45.137.155.163/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/104.234.10.207/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/104.234.10.207/relations</a></li>
+<li><a href="https://twitter.com/k3yp0d/status/1655840102638137347" rel="noopener nofollow">twitter.com/k3yp0d/status/1655840102638137347</a></li>
+<li><a href="https://www.virustotal.com/gui/file/b9ea82bd961210c69cf1141321be7378629e49b84102479d2e476c60e1c00a3f/detection" rel="noopener nofollow">virustotal.com/gui/file/b9ea82bd961210c69cf1141321be73…</a></li>
+<li><a href="https://community.emergingthreats.net/t/ruleset-update-summary-2024-11-26-v10753/2171" rel="noopener nofollow">community.emergingthreats.net/t/ruleset-update-summary-2024-11-26-v10…</a></li>
+<li><a href="https://twitter.com/malware_traffic/status/1588211727891570688" rel="noopener nofollow">twitter.com/malware_traffic/status/1588211727891570…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection" rel="noopener nofollow">virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85…</a></li>
+<li><a href="https://blog.talosintelligence.com/uat-5647-romcom/" rel="noopener nofollow">blog.talosintelligence.com/uat-5647-romcom</a></li>
+<li><a href="https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html" rel="noopener nofollow">trendmicro.com/en_us/research/23/j/void-rabisu-targets…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/62f36c89909d6b719ba8d340" rel="noopener nofollow">otx.alienvault.com/pulse/62f36c89909d6b719ba8d340</a></li>
+<li><a href="https://www.virustotal.com/gui/file/b595ed2252d82bbfea276d40615c4a2bf580a1da4a6892c47361fdb3f9299204/detection" rel="noopener nofollow">virustotal.com/gui/file/b595ed2252d82bbfea276d40615c4a…</a></li>
+<li><a href="https://twitter.com/TLP_R3D/status/1655844785075224576" rel="noopener nofollow">twitter.com/TLP_R3D/status/1655844785075224576</a></li>
+<li><a href="https://cert.gov.ua/article/2394117 (Ukrainian)" rel="noopener nofollow">cert.gov.ua/article/2394117 (Ukrainian)</a></li>
+<li><a href="https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection" rel="noopener nofollow">virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de…</a></li>
+<li><a href="https://cert.gov.ua/article/5077168 (# UAC-0168)" rel="noopener nofollow">cert.gov.ua/article/5077168 (# UAC-0168)</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/snipbot-romcom-malware-variant/" rel="noopener nofollow">unit42.paloaltonetworks.com/snipbot-romcom-malware-variant</a></li>
+<li><a href="https://twitter.com/TLP_R3D/status/1656270702700273666" rel="noopener nofollow">twitter.com/TLP_R3D/status/1656270702700273666</a></li>
+<li><a href="https://www.proofpoint.com/us/daily-ruleset-update-summary-20221104" rel="noopener nofollow">proofpoint.com/us/daily-ruleset-update-summary-20221104</a></li>
+<li><a href="https://twitter.com/DmitriyMelikov/status/1721991958464205142" rel="noopener nofollow">twitter.com/DmitriyMelikov/status/17219919584642051…</a></li>
+<li><a href="https://www.welivesecurity.com/en/eset-research/romcom-exploits-firefox-and-windows-zero-days-in-the-wild/" rel="noopener nofollow">welivesecurity.com/en/eset-research/romcom-exploits-firefo…</a></li>
+<li><a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt" rel="noopener nofollow">trendmicro.com/content/dam/trendmicro/global/en/resear…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection" rel="noopener nofollow">virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b1…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection" rel="noopener nofollow">virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2…</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/cuba-ransomware-tropical-scorpius/" rel="noopener nofollow">unit42.paloaltonetworks.com/cuba-ransomware-tropical-scorpius</a></li>
+<li><a href="https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185" rel="noopener nofollow">twitter.com/Joseliyo_Jstnk/status/16758035904626851…</a></li>
+<li><a href="https://twitter.com/k3yp0d/status/1655841493934800896" rel="noopener nofollow">twitter.com/k3yp0d/status/1655841493934800896</a></li>
+</ul>
+<p class=note>2 more, and the report behind every indicator, in <a href="UNC2596.json">UNC2596.json</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

@@ -1,0 +1,289 @@
+{
+  "aliases": [
+    "snowlight",
+    "vshell"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 36,
+    "ipv4": 6,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "9oogle.net": "2026-05-12",
+      "apib.googlespays.com": "2026-01-02",
+      "bootstrapcdn.fun": "2026-01-02",
+      "btt.evil.gooogleasia.com": "2026-01-02",
+      "c1oudf1are.com": "2026-01-02",
+      "chmobank.com": "2026-01-02",
+      "goo9le.net": "2026-05-12",
+      "googlespays.com": "2026-01-02",
+      "goole-app.com": "2026-05-12",
+      "https.sex666vr.com": "2026-01-02",
+      "huionepay.me": "2026-01-02",
+      "jajal.goo9le.net": "2026-05-12",
+      "javaw.virustotal.xyz": "2026-01-02",
+      "ks.evil.gooogleasia.com": "2026-01-02",
+      "l1.mo1vip.org": "2026-05-12",
+      "l1.topayapp.org": "2026-04-06",
+      "lin.c1oudf1are.com": "2026-01-02",
+      "lin.huionepay.me": "2026-01-02",
+      "lin.telegrams.icu": "2026-01-02",
+      "mcafeecdn.xyz": "2026-01-02",
+      "mo1vip.org": "2026-05-12",
+      "mtls.sex666vr.com": "2026-01-02",
+      "samsungcdn.com": "2026-01-02",
+      "start.bootstrapcdn.fun": "2026-01-02",
+      "telegrams.icu": "2026-01-02",
+      "topayapp.org": "2026-04-06",
+      "virustotal.xyz": "2026-01-02",
+      "vs.gooogleasia.com": "2026-01-02",
+      "w1.topayapp.org": "2026-04-06",
+      "wg.gooogleasia.com": "2026-01-02",
+      "ws.9oogle.net": "2026-05-12",
+      "ws.goo9le.net": "2026-05-12",
+      "ws.goole-app.com": "2026-05-12",
+      "ws.mo1vip.org": "2026-05-12",
+      "ws.z2s.us": "2026-05-12",
+      "z2s.us": "2026-05-12"
+    },
+    "ipv4": {
+      "124.221.120.25:2222": "2026-01-02",
+      "5.199.166.4:8080": "2026-05-12",
+      "5.199.166.4:8443": "2026-05-12",
+      "5.199.166.4:8880": "2026-05-12",
+      "84.32.22.130:65512": "2026-05-09",
+      "84.32.22.130:8848": "2026-04-06"
+    },
+    "url": {
+      "http://5.199.166.4": "2026-05-12"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "apib.googlespays.com": "at-or-before",
+      "bootstrapcdn.fun": "at-or-before",
+      "btt.evil.gooogleasia.com": "at-or-before",
+      "c1oudf1are.com": "at-or-before",
+      "chmobank.com": "at-or-before",
+      "googlespays.com": "at-or-before",
+      "https.sex666vr.com": "at-or-before",
+      "huionepay.me": "at-or-before",
+      "javaw.virustotal.xyz": "at-or-before",
+      "ks.evil.gooogleasia.com": "at-or-before",
+      "lin.c1oudf1are.com": "at-or-before",
+      "lin.huionepay.me": "at-or-before",
+      "lin.telegrams.icu": "at-or-before",
+      "mcafeecdn.xyz": "at-or-before",
+      "mtls.sex666vr.com": "at-or-before",
+      "samsungcdn.com": "at-or-before",
+      "start.bootstrapcdn.fun": "at-or-before",
+      "telegrams.icu": "at-or-before",
+      "virustotal.xyz": "at-or-before",
+      "vs.gooogleasia.com": "at-or-before",
+      "wg.gooogleasia.com": "at-or-before"
+    },
+    "ipv4": {
+      "124.221.120.25:2222": "at-or-before"
+    },
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-05-12"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "9oogle.net",
+      "apib.googlespays.com",
+      "bootstrapcdn.fun",
+      "btt.evil.gooogleasia.com",
+      "c1oudf1are.com",
+      "chmobank.com",
+      "goo9le.net",
+      "googlespays.com",
+      "goole-app.com",
+      "https.sex666vr.com",
+      "huionepay.me",
+      "jajal.goo9le.net",
+      "javaw.virustotal.xyz",
+      "ks.evil.gooogleasia.com",
+      "l1.mo1vip.org",
+      "l1.topayapp.org",
+      "lin.c1oudf1are.com",
+      "lin.huionepay.me",
+      "lin.telegrams.icu",
+      "mcafeecdn.xyz",
+      "mo1vip.org",
+      "mtls.sex666vr.com",
+      "samsungcdn.com",
+      "start.bootstrapcdn.fun",
+      "telegrams.icu",
+      "topayapp.org",
+      "virustotal.xyz",
+      "vs.gooogleasia.com",
+      "w1.topayapp.org",
+      "wg.gooogleasia.com",
+      "ws.9oogle.net",
+      "ws.goo9le.net",
+      "ws.goole-app.com",
+      "ws.mo1vip.org",
+      "ws.z2s.us",
+      "z2s.us"
+    ],
+    "ipv4": [
+      "124.221.120.25:2222",
+      "5.199.166.4:8080",
+      "5.199.166.4:8443",
+      "5.199.166.4:8880",
+      "84.32.22.130:65512",
+      "84.32.22.130:8848"
+    ],
+    "url": [
+      "http://5.199.166.4"
+    ]
+  },
+  "last_modified": "2026-05-12T10:07:01+00:00",
+  "maltrail_groups": [
+    "UNC5174"
+  ],
+  "references": [
+    "https://sysdig.com/blog/unc5174-chinese-threat-actor-vshell/",
+    "https://www.virustotal.com/gui/file/44c3885cb5ae32059e201fd3f5b87738d5e88706d1fbcf30798883c3498f9eb1/detection",
+    "https://www.virustotal.com/gui/file/7cbcf84de28d4bc3b21773babe730c8cc57e91dfd8b561d0dc338ea7f6f0423f/detection",
+    "https://www.virustotal.com/gui/file/8225ced200725fcce20ce365c4bafc391df92eaf9476b5fe7c0c11c76c83866f/detection",
+    "https://www.virustotal.com/gui/file/a78188a50f25e9b28f52c297dc4137c81f8da60d1a1422735378f1416a36bc92/detection",
+    "https://x.com/malwrhunterteam/status/1925919454099054740",
+    "https://x.com/nahamike01/status/2041035954950230099",
+    "https://x.com/nahamike01/status/2054046181211426947",
+    "https://x.com/smica83/status/2052693305176015087"
+  ],
+  "related": [],
+  "slug": "UNC5174",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 12,
+        "ipv4": 3,
+        "url": 1
+      },
+      "first_seen": "2026-05-12",
+      "indicators": {
+        "domain": [
+          "9oogle.net",
+          "goo9le.net",
+          "goole-app.com",
+          "jajal.goo9le.net",
+          "l1.mo1vip.org",
+          "mo1vip.org",
+          "ws.9oogle.net",
+          "ws.goo9le.net",
+          "ws.goole-app.com",
+          "ws.mo1vip.org",
+          "ws.z2s.us",
+          "z2s.us"
+        ],
+        "ipv4": [
+          "5.199.166.4:8080",
+          "5.199.166.4:8443",
+          "5.199.166.4:8880"
+        ],
+        "url": [
+          "http://5.199.166.4"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/nahamike01/status/2054046181211426947"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-05-09",
+      "indicators": {
+        "ipv4": [
+          "84.32.22.130:65512"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/smica83/status/2052693305176015087",
+        "https://www.virustotal.com/gui/file/a78188a50f25e9b28f52c297dc4137c81f8da60d1a1422735378f1416a36bc92/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 1
+      },
+      "first_seen": "2026-04-06",
+      "indicators": {
+        "domain": [
+          "l1.topayapp.org",
+          "topayapp.org",
+          "w1.topayapp.org"
+        ],
+        "ipv4": [
+          "84.32.22.130:8848"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/nahamike01/status/2041035954950230099",
+        "https://www.virustotal.com/gui/file/44c3885cb5ae32059e201fd3f5b87738d5e88706d1fbcf30798883c3498f9eb1/detection",
+        "https://www.virustotal.com/gui/file/8225ced200725fcce20ce365c4bafc391df92eaf9476b5fe7c0c11c76c83866f/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 21,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "apib.googlespays.com",
+          "bootstrapcdn.fun",
+          "btt.evil.gooogleasia.com",
+          "c1oudf1are.com",
+          "chmobank.com",
+          "googlespays.com",
+          "https.sex666vr.com",
+          "huionepay.me",
+          "javaw.virustotal.xyz",
+          "ks.evil.gooogleasia.com",
+          "lin.c1oudf1are.com",
+          "lin.huionepay.me",
+          "lin.telegrams.icu",
+          "mcafeecdn.xyz",
+          "mtls.sex666vr.com",
+          "samsungcdn.com",
+          "start.bootstrapcdn.fun",
+          "telegrams.icu",
+          "virustotal.xyz",
+          "vs.gooogleasia.com",
+          "wg.gooogleasia.com"
+        ],
+        "ipv4": [
+          "124.221.120.25:2222"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1925919454099054740",
+        "https://sysdig.com/blog/unc5174-chinese-threat-actor-vshell/",
+        "https://www.virustotal.com/gui/file/7cbcf84de28d4bc3b21773babe730c8cc57e91dfd8b561d0dc338ea7f6f0423f/detection"
+      ],
+      "total": 22
+    }
+  ]
+}

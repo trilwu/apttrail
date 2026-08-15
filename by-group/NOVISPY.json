@@ -1,0 +1,64 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "185.86.148.174:443": "2024-12-17"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-12-17",
+    "latest": "2024-12-17"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "185.86.148.174:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NOVISPY"
+  ],
+  "references": [
+    "https://www.amnesty.org/en/latest/news/2024/12/serbia-authorities-using-spyware-and-cellebrite-forensic-extraction-tools-to-hack-journalists-and-activists/",
+    "https://www.virustotal.com/gui/file/54ee2c4f3e2396b6f92def135d68abd35d63ca7f9c304633a36f705ba4728cb7/detection",
+    "https://www.virustotal.com/gui/file/d55e492d5fce87898e065572a5553d1ac1389cd12bf3d28cabc1218cb29780af/detection",
+    "https://www.virustotal.com/gui/ip-address/185.86.148.174/relations",
+    "https://x.com/amnesty/status/1868604055708143655",
+    "https://x.com/smica83/status/1868657766451322961"
+  ],
+  "related": [],
+  "slug": "NOVISPY",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-17",
+      "indicators": {
+        "ipv4": [
+          "185.86.148.174:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/amnesty/status/1868604055708143655",
+        "https://x.com/smica83/status/1868657766451322961",
+        "https://www.amnesty.org/en/latest/news/2024/12/serbia-authorities-using-spyware-and-cellebrite-forensic-extraction-tools-to-hack-journalists-and-activists/",
+        "https://www.virustotal.com/gui/ip-address/185.86.148.174/relations",
+        "https://www.virustotal.com/gui/file/d55e492d5fce87898e065572a5553d1ac1389cd12bf3d28cabc1218cb29780af/detection",
+        "https://www.virustotal.com/gui/file/54ee2c4f3e2396b6f92def135d68abd35d63ca7f9c304633a36f705ba4728cb7/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

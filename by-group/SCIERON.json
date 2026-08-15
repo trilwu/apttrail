@@ -1,0 +1,399 @@
+{
+  "aliases": [
+    "HeaderTip",
+    "cosmicbeetle",
+    "scarab",
+    "spacecolon"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 55,
+    "ipv4": 1,
+    "url": 3
+  },
+  "first_seen": {
+    "domain": {
+      "Markshell.etowns.net": "2015-03-18",
+      "akamaicdnup.com": "2023-08-23",
+      "apple.dynamic-dns.net": "2015-03-18",
+      "autocar.ServeUser.com": "2015-03-18",
+      "autocar.suroot.com": "2022-10-29",
+      "b.688.org": "2023-08-23",
+      "blackblog.chatnook.com": "2015-03-18",
+      "bulldog.toh.info": "2015-03-18",
+      "cdnupdate.net": "2023-08-23",
+      "cew58e.xxxy.info": "2015-03-18",
+      "coastnews.darktech.org": "2015-03-18",
+      "d.piii.net": "2023-08-23",
+      "d1lhk2kflvant7.cloudfront.net": "2023-05-31",
+      "demon.4irc.com": "2015-03-18",
+      "dynamic.ddns.mobi": "2015-03-18",
+      "ebook.port25.biz": "2022-03-22",
+      "expert.4irc.com": "2015-03-18",
+      "football.mrbasic.com": "2015-03-18",
+      "gjjb.flnet.org": "2015-03-18",
+      "imirnov.ddns.info": "2015-03-18",
+      "jingnan88.chatnook.com": "2015-03-18",
+      "lehnjb.epac.to": "2015-03-18",
+      "lockbitblog.info": "2024-09-10",
+      "logoff.25u.com": "2015-03-18",
+      "logoff.ddns.info": "2015-03-18",
+      "ls910329.my03.com": "2015-03-18",
+      "mailru.25u.com": "2015-03-18",
+      "mert.my03.com": "2022-03-21",
+      "mydear.ddns.info": "2015-03-18",
+      "nazgul.zyns.com": "2015-03-18",
+      "ndcinformation.acmetoy.com": "2016-02-23",
+      "newdyndns.scieron.com": "2015-03-18",
+      "newoutlook.darktech.org": "2015-03-18",
+      "photocard.4irc.com": "2015-03-18",
+      "pricetag.deaftone.com": "2015-03-18",
+      "product2020.mrbasic.com": "2022-03-21",
+      "rubberduck.gotgeeks.com": "2015-03-18",
+      "service.authorizeddns.net": "2016-02-23",
+      "shutdown.25u.com": "2015-03-18",
+      "sorry.ns2.name": "2015-03-18",
+      "ss.688.org": "2023-08-23",
+      "sskill.b0ne.com": "2015-03-18",
+      "sys.688.org": "2023-08-23",
+      "text-First.flnet.org": "2015-03-18",
+      "text-first.trickip.org": "2016-02-23",
+      "u.cbu.net": "2023-08-23",
+      "u.piii.net": "2023-08-23",
+      "up.awiki.org": "2023-08-23",
+      "up.vctel.com": "2024-09-10",
+      "update.cbu.net": "2023-08-23",
+      "update.inet2.org": "2023-08-23",
+      "us.notfound.my.id": "2024-01-01",
+      "uudog.4pu.com": "2015-03-18",
+      "will-smith.dtdns.net": "2015-03-18",
+      "yellowblog.flnet.org": "2015-03-18"
+    },
+    "ipv4": {
+      "104.155.198.25:8080": "2022-03-22"
+    },
+    "url": {
+      "http://103.61.225.186": "2024-01-01",
+      "http://154.61.74.33": "2024-01-01",
+      "http://24.144.120.189": "2024-01-01"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2024-09-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "Markshell.etowns.net",
+      "akamaicdnup.com",
+      "apple.dynamic-dns.net",
+      "autocar.ServeUser.com",
+      "autocar.suroot.com",
+      "b.688.org",
+      "blackblog.chatnook.com",
+      "bulldog.toh.info",
+      "cdnupdate.net",
+      "cew58e.xxxy.info",
+      "coastnews.darktech.org",
+      "d.piii.net",
+      "d1lhk2kflvant7.cloudfront.net",
+      "demon.4irc.com",
+      "dynamic.ddns.mobi",
+      "ebook.port25.biz",
+      "expert.4irc.com",
+      "football.mrbasic.com",
+      "gjjb.flnet.org",
+      "imirnov.ddns.info",
+      "jingnan88.chatnook.com",
+      "lehnjb.epac.to",
+      "lockbitblog.info",
+      "logoff.25u.com",
+      "logoff.ddns.info",
+      "ls910329.my03.com",
+      "mailru.25u.com",
+      "mert.my03.com",
+      "mydear.ddns.info",
+      "nazgul.zyns.com",
+      "ndcinformation.acmetoy.com",
+      "newdyndns.scieron.com",
+      "newoutlook.darktech.org",
+      "photocard.4irc.com",
+      "pricetag.deaftone.com",
+      "product2020.mrbasic.com",
+      "rubberduck.gotgeeks.com",
+      "service.authorizeddns.net",
+      "shutdown.25u.com",
+      "sorry.ns2.name",
+      "ss.688.org",
+      "sskill.b0ne.com",
+      "sys.688.org",
+      "text-First.flnet.org",
+      "text-first.trickip.org",
+      "u.cbu.net",
+      "u.piii.net",
+      "up.awiki.org",
+      "up.vctel.com",
+      "update.cbu.net",
+      "update.inet2.org",
+      "us.notfound.my.id",
+      "uudog.4pu.com",
+      "will-smith.dtdns.net",
+      "yellowblog.flnet.org"
+    ],
+    "ipv4": [
+      "104.155.198.25:8080"
+    ],
+    "url": [
+      "http://103.61.225.186",
+      "http://154.61.74.33",
+      "http://24.144.120.189"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SCIERON"
+  ],
+  "references": [
+    "http://www.symantec.com/content/en/us/enterprise/media/security_response/docs/Scarab_IOCs_January_2015.txt",
+    "https://cert.gov.ua/article/38097 (Ukrainian)",
+    "https://github.com/eset/malware-ioc/tree/master/cosmicbeetle",
+    "https://otx.alienvault.com/pulse/64e62628ed1119d03d3db75a",
+    "https://threatfox.abuse.ch/browse/malware/win.scarab_ransom/ (# 2024-01-01)",
+    "https://twitter.com/aRtAGGI/status/1506010831221248002",
+    "https://twitter.com/fstenv/status/1505915405562482696",
+    "https://twitter.com/h2jazi/status/1505887653111209994",
+    "https://twitter.com/jaydinbas/status/1663916211975987201",
+    "https://www.virustotal.com/gui/file/6bcb972bbd526433d9ad733eb7acfec2bc2e35686e9491a380fd5f7a09bf3276/detection",
+    "https://www.virustotal.com/gui/file/71c87103296e5ccc2ff34316668a7e6142a64faddd6c61150025a23764c7905a/detection",
+    "https://www.virustotal.com/gui/file/7239cac92aaf6bbbbf4e657bc65a385e495a67a15aa6bbad0e25f23407a77ba9/detection",
+    "https://www.virustotal.com/gui/file/cb611e5e85c3f730116630d47ec136d15c1b5f6a98a69b05d2262fcb1d7629d9/detection",
+    "https://www.virustotal.com/gui/file/f33f012efbd536bae89ded0b45271b4c7d75f7f23eebbe7b36f18ad13217e0ac/detection",
+    "https://www.welivesecurity.com/en/eset-research/cosmicbeetle-steps-up-probation-period-ransomhub/",
+    "https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/ (# Scarab, SpaceColon, CosmicBeetle)"
+  ],
+  "related": [],
+  "slug": "SCIERON",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-09-10",
+      "indicators": {
+        "domain": [
+          "lockbitblog.info",
+          "up.vctel.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/cosmicbeetle-steps-up-probation-period-ransomhub/",
+        "https://github.com/eset/malware-ioc/tree/master/cosmicbeetle"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 3
+      },
+      "first_seen": "2024-01-01",
+      "indicators": {
+        "domain": [
+          "us.notfound.my.id"
+        ],
+        "url": [
+          "http://103.61.225.186",
+          "http://154.61.74.33",
+          "http://24.144.120.189"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/malware/win.scarab_ransom/ (# 2024-01-01)"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2023-08-23",
+      "indicators": {
+        "domain": [
+          "akamaicdnup.com",
+          "b.688.org",
+          "cdnupdate.net",
+          "d.piii.net",
+          "ss.688.org",
+          "sys.688.org",
+          "u.cbu.net",
+          "u.piii.net",
+          "up.awiki.org",
+          "update.cbu.net",
+          "update.inet2.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/scarabs-colon-izing-vulnerable-servers/ (# Scarab, SpaceColon, CosmicBeetle)",
+        "https://otx.alienvault.com/pulse/64e62628ed1119d03d3db75a",
+        "https://www.virustotal.com/gui/file/f33f012efbd536bae89ded0b45271b4c7d75f7f23eebbe7b36f18ad13217e0ac/detection"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-05-31",
+      "indicators": {
+        "domain": [
+          "d1lhk2kflvant7.cloudfront.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/jaydinbas/status/1663916211975987201",
+        "https://www.virustotal.com/gui/file/71c87103296e5ccc2ff34316668a7e6142a64faddd6c61150025a23764c7905a/detection",
+        "https://www.virustotal.com/gui/file/cb611e5e85c3f730116630d47ec136d15c1b5f6a98a69b05d2262fcb1d7629d9/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-10-29",
+      "indicators": {
+        "domain": [
+          "autocar.suroot.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/6bcb972bbd526433d9ad733eb7acfec2bc2e35686e9491a380fd5f7a09bf3276/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-22",
+      "indicators": {
+        "domain": [
+          "ebook.port25.biz"
+        ],
+        "ipv4": [
+          "104.155.198.25:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1505887653111209994",
+        "https://twitter.com/fstenv/status/1505915405562482696",
+        "https://twitter.com/aRtAGGI/status/1506010831221248002",
+        "https://cert.gov.ua/article/38097 (Ukrainian)",
+        "https://www.virustotal.com/gui/file/7239cac92aaf6bbbbf4e657bc65a385e495a67a15aa6bbad0e25f23407a77ba9/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-21",
+      "indicators": {
+        "domain": [
+          "mert.my03.com",
+          "product2020.mrbasic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1505887653111209994",
+        "https://twitter.com/fstenv/status/1505915405562482696",
+        "https://twitter.com/aRtAGGI/status/1506010831221248002",
+        "https://cert.gov.ua/article/38097 (Ukrainian)",
+        "https://www.virustotal.com/gui/file/7239cac92aaf6bbbbf4e657bc65a385e495a67a15aa6bbad0e25f23407a77ba9/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "ndcinformation.acmetoy.com",
+          "service.authorizeddns.net",
+          "text-first.trickip.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.symantec.com/content/en/us/enterprise/media/security_response/docs/Scarab_IOCs_January_2015.txt"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 33
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "Markshell.etowns.net",
+          "apple.dynamic-dns.net",
+          "autocar.ServeUser.com",
+          "blackblog.chatnook.com",
+          "bulldog.toh.info",
+          "cew58e.xxxy.info",
+          "coastnews.darktech.org",
+          "demon.4irc.com",
+          "dynamic.ddns.mobi",
+          "expert.4irc.com",
+          "football.mrbasic.com",
+          "gjjb.flnet.org",
+          "imirnov.ddns.info",
+          "jingnan88.chatnook.com",
+          "lehnjb.epac.to",
+          "logoff.25u.com",
+          "logoff.ddns.info",
+          "ls910329.my03.com",
+          "mailru.25u.com",
+          "mydear.ddns.info",
+          "nazgul.zyns.com",
+          "newdyndns.scieron.com",
+          "newoutlook.darktech.org",
+          "photocard.4irc.com",
+          "pricetag.deaftone.com",
+          "rubberduck.gotgeeks.com",
+          "shutdown.25u.com",
+          "sorry.ns2.name",
+          "sskill.b0ne.com",
+          "text-First.flnet.org",
+          "uudog.4pu.com",
+          "will-smith.dtdns.net",
+          "yellowblog.flnet.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.symantec.com/content/en/us/enterprise/media/security_response/docs/Scarab_IOCs_January_2015.txt"
+      ],
+      "total": 33
+    }
+  ]
+}

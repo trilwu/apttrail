@@ -1,0 +1,3829 @@
+{
+  "aliases": [
+    "Red Eyes",
+    "RokRAT",
+    "TA-RedAnt",
+    "Temp.Reaper",
+    "Thallium",
+    "Venus 121",
+    "apt-c-37",
+    "apt37",
+    "birdcall",
+    "footwine",
+    "geumseong121",
+    "group123",
+    "inkysquid",
+    "narwhalrat",
+    "redeyes",
+    "scarcruft",
+    "ta406",
+    "thumbsbd"
+  ],
+  "attack_id": "G0067",
+  "attack_name": "APT37",
+  "attack_url": "https://attack.mitre.org/groups/G0067/",
+  "counts": {
+    "domain": 436,
+    "ipv4": 2,
+    "url": 47,
+    "url_path": 9
+  },
+  "first_seen": {
+    "domain": {
+      "0member-services.hol.es": "2021-11-19",
+      "1006ieudneu.atwebpages.com": "2021-11-19",
+      "1980food.co.kr": "2026-05-05",
+      "1995ieudneu.atwebpages.com": "2021-11-19",
+      "account.drive-google-com.tk": "2023-09-07",
+      "account.gommask.online": "2024-06-24",
+      "accounts-youtube.drive-google-com.tk": "2023-09-07",
+      "acddesigns.com.au": "2019-05-13",
+      "acl-medias.fr": "2022-04-04",
+      "acount-pro.club": "2021-11-19",
+      "acount-pro.live": "2021-11-19",
+      "adamnews.for.ug": "2019-09-11",
+      "admin.mobonad.com": "2024-10-21",
+      "admin.primgs.lol": "2026-01-02",
+      "ahnlab.check.pe.hu": "2021-05-12",
+      "ahooc.com": "2019-09-03",
+      "alireza.traderfree.online": "2024-01-23",
+      "anlysis-info.xyz": "2021-11-19",
+      "annstyle.ru": "2021-12-06",
+      "anyportals.com": "2018-09-05",
+      "api.jquery.services": "2022-01-22",
+      "app-wallet.com": "2019-08-28",
+      "app.cleanos.online": "2026-01-02",
+      "asia-studies.net": "2020-11-23",
+      "attachdown.000webhostapp.com": "2021-11-19",
+      "attachdownload.000webhostapp.com": "2021-11-19",
+      "attachdownload.99on.com": "2021-11-19",
+      "atusay.lat": "2023-07-18",
+      "bajut.pro": "2023-08-25",
+      "bellissues.live": "2024-01-23",
+      "benefitinfo.live": "2024-01-23",
+      "benefitinfo.pro": "2024-01-23",
+      "benefiturl.pro": "2024-01-23",
+      "bian0151.cafe24.com": "2023-08-12",
+      "bigfilemail.net": "2022-01-13",
+      "bignaver.com": "2020-11-12",
+      "bigwnet.com": "2019-12-31",
+      "bitwoll.com": "2019-12-31",
+      "blockochain.info": "2020-01-16",
+      "btcaes2.duckdns.org": "2019-09-11",
+      "busyday.atwebpages.com": "2020-10-06",
+      "buttyfly.000webhostapp.com": "2019-05-13",
+      "careagency.online": "2024-01-23",
+      "carnegieinsider.com": "2021-11-19",
+      "cdns.jquery.services": "2022-01-22",
+      "cerebrovascular.net": "2022-05-09",
+      "cexrout.com": "2019-12-31",
+      "cgalim.com": "2018-10-29",
+      "change-pw.com": "2019-08-31",
+      "checkprofie.com": "2019-12-31",
+      "cheth.lol": "2023-10-18",
+      "christinadudley.com": "2022-04-04",
+      "cleanos.online": "2026-01-02",
+      "clonesec.us": "2021-11-19",
+      "cloudnaver.com": "2020-10-27",
+      "cloudocument.com": "2021-11-19",
+      "cloudsecurityservice.net": "2020-10-13",
+      "cloudwebappservice.com": "2019-12-31",
+      "cndsoft.co.kr": "2026-05-05",
+      "colorncopy.co.kr": "2026-05-05",
+      "com-change.pw": "2020-01-15",
+      "com-serviceround.info": "2019-12-31",
+      "conference.outlook-offices.com": "2022-11-01",
+      "cra-receivenow.online": "2024-01-23",
+      "crareceive.site": "2024-01-23",
+      "crilts.cfd": "2023-08-12",
+      "crwellfood.com": "2026-06-25",
+      "ctquast.com": "2019-12-31",
+      "da3da3.duckdns.org": "2019-09-11",
+      "daehoat.com": "2026-06-25",
+      "dailycloudservice.com": "2020-11-12",
+      "dailynk.us": "2022-04-21",
+      "darklights.store": "2026-01-02",
+      "dataviewering.com": "2019-12-31",
+      "daum-protect.com": "2020-11-12",
+      "daum-store.com": "2023-05-01",
+      "daum.sytes.net": "2021-06-13",
+      "daumhelp.net": "2021-11-19",
+      "dauurn.net": "2019-12-31",
+      "day-post.com": "2019-12-31",
+      "deioncube.biz": "2021-11-19",
+      "delivernaver.com": "2020-11-12",
+      "delivers-security.com": "2020-11-12",
+      "delivers-security.net": "2020-11-12",
+      "depositurl.co": "2024-01-23",
+      "depositurl.lat": "2024-01-23",
+      "dialy-post.com": "2019-12-31",
+      "diplomatictraining.com": "2021-11-19",
+      "direct.traderfree.online": "2024-01-23",
+      "dns-update.club": "2018-09-05",
+      "dnsservice.esy.es": "2021-11-19",
+      "doc-view.work": "2019-08-21",
+      "document-package.online": "2021-11-19",
+      "documentpackage.space": "2021-11-19",
+      "documentpackages.link": "2021-11-19",
+      "documentpackages.online": "2021-11-19",
+      "documentpackages.space": "2021-11-19",
+      "documentpackages.store": "2021-11-19",
+      "documentserver.site": "2020-12-02",
+      "documentviewingcom.com": "2019-12-31",
+      "docx1.b4a.app": "2023-05-01",
+      "dounn.net": "2019-09-03",
+      "dovvn-mail.com": "2019-09-03",
+      "down-drive.me": "2021-03-14",
+      "down-error.com": "2019-08-31",
+      "download-apks.com": "2021-11-19",
+      "download-live.com": "2021-11-19",
+      "downloader-hanmail.net": "2019-07-12",
+      "drimby.top": "2023-08-12",
+      "drive-google-com.tk": "2023-09-07",
+      "drivecheckingcom.com": "2019-12-31",
+      "drog-service.com": "2019-09-03",
+      "ebpp.airport.kr": "2023-11-08",
+      "elearning.or.kr": "2023-03-05",
+      "emailnaver.com": "2021-11-19",
+      "emailru.99on.com": "2021-11-19",
+      "ems.nps.or.kr": "2024-03-25",
+      "encodingmail.com": "2019-12-31",
+      "enolja.com": "2021-06-13",
+      "factorgpu.com": "2021-01-25",
+      "faguo.namecentless.top": "2024-01-23",
+      "fd-com.fr": "2022-04-04",
+      "fe01.co.kr": "2026-06-25",
+      "file-sharing.tibet-office.com": "2022-11-01",
+      "file.outlook-offices.com": "2022-11-01",
+      "filedownloadserve.com": "2024-11-04",
+      "files-download.net": "2019-08-31",
+      "files-downloader.net": "2020-01-16",
+      "filinvestment.com": "2019-12-31",
+      "firefox-plug.c1.biz": "2020-01-16",
+      "fixcool.net": "2019-12-31",
+      "foldershareing.com": "2019-12-31",
+      "forex.traderfree.online": "2024-01-23",
+      "free-xmlformat.com": "2022-12-08",
+      "gallery.jquery.services": "2022-01-22",
+      "giath.xyz": "2023-08-25",
+      "globalcloudservices.org": "2021-11-19",
+      "gmail.drive-google-com.tk": "2023-09-07",
+      "golangapis.com": "2019-12-31",
+      "gommask.online": "2024-06-24",
+      "gooapi.online": "2021-11-19",
+      "goodmarket.or.kr": "2023-11-29",
+      "google-acount.com": "2021-11-19",
+      "goolg-e.com": "2021-11-19",
+      "goolge.space": "2021-11-19",
+      "govermentweb.site": "2021-11-19",
+      "graphwin.com": "2020-01-15",
+      "greenulz.com": "2021-01-25",
+      "grip-cdns.space": "2026-01-02",
+      "grnaeil.com": "2019-08-31",
+      "groceryrebate.online": "2024-01-23",
+      "groceryrebate.site": "2024-01-23",
+      "gstaticstorage.com": "2019-09-03",
+      "gstcreceive.online": "2024-01-23",
+      "hakproperty.com": "2018-10-29",
+      "hanrnaii.net": "2019-08-31",
+      "help-master.online": "2021-11-19",
+      "help-naver.site": "2021-11-19",
+      "help-secure.info": "2021-11-19",
+      "helpnaver.com": "2019-12-31",
+      "helpnaver.host": "2021-11-19",
+      "helpnaver.link": "2021-11-19",
+      "helpnaver.online": "2021-11-19",
+      "helpnaver.site": "2021-11-19",
+      "hightkdhe.store": "2026-02-27",
+      "hl.namecentless.top": "2024-01-23",
+      "homeatedke.store": "2026-02-27",
+      "honess.fun": "2023-10-18",
+      "host.sharingdocument.one": "2024-06-03",
+      "hotrnall.com": "2019-12-31",
+      "hpronto-login.com": "2021-11-19",
+      "hpserver.online": "2018-09-05",
+      "http-accounts.maingoogie.com": "2024-09-30",
+      "https-accounts.maingoogie.com": "2024-09-30",
+      "iblcor.cafe24.com": "2021-12-06",
+      "iinaver.com": "2019-12-31",
+      "image.jquery.services": "2022-01-22",
+      "imagedownloadsupport.com": "2025-02-04",
+      "imap-login.com": "2019-09-03",
+      "img.darklights.store": "2026-01-02",
+      "img.mobonad.com": "2024-10-21",
+      "img.monderhouse.space": "2026-01-02",
+      "img.responsive.pstatic.autos": "2026-01-02",
+      "img.smartnords.site": "2026-01-02",
+      "img.socialteams.store": "2026-01-02",
+      "img.worksongo.store": "2026-01-02",
+      "inbox-yahoo.com": "2019-09-03",
+      "influencer.jvproduccionessv.com": "2022-04-04",
+      "instantreceive.org": "2024-01-23",
+      "israanews.zz.com.ve": "2019-09-11",
+      "itamaraty.net": "2020-11-23",
+      "japanroom.com": "2026-04-14",
+      "jlrandsons.co.uk": "2026-01-02",
+      "jquery.services": "2022-01-22",
+      "js.ad4949.co.kr": "2024-10-19",
+      "js5950.cafe24.com": "2021-12-04",
+      "jutise.fun": "2023-08-08",
+      "kakaofilestorage.com": "2024-11-04",
+      "kjdnc.gp114.net": "2021-12-04",
+      "klsa.onlinewebshop.net": "2021-02-18",
+      "kmbr1.nitesbr1.org": "2018-10-02",
+      "knowledgeofworld.org": "2021-11-19",
+      "koryogroup.1apps.com": "2021-11-19",
+      "kswebdesign.eu": "2022-04-04",
+      "labimy.ink": "2023-08-12",
+      "lawwell.co.kr": "2026-05-05",
+      "lh-logins.com": "2019-12-31",
+      "lh-logs.com": "2019-09-03",
+      "li.namecentless.top": "2024-01-23",
+      "lin.namecentless.top": "2024-01-23",
+      "link.b4a.app": "2023-05-01",
+      "lit-peak-25706.herokuapp.com": "2022-04-26",
+      "lnfo-master.com": "2020-01-15",
+      "login-protect.club": "2021-11-19",
+      "login-protect.online": "2021-11-19",
+      "login-sec.com": "2019-09-03",
+      "login-use.com": "2019-09-03",
+      "login.drive-google-com.tk": "2023-09-07",
+      "lookyes.c1.biz": "2020-01-16",
+      "mai1.info": "2019-12-31",
+      "mail-down.com": "2019-09-03",
+      "mail-master.online": "2021-11-19",
+      "mail.apm.co.kr": "2022-04-04",
+      "mail.dailynk.us": "2022-04-21",
+      "mail.summitz.com": "2022-04-04",
+      "mailattachmentimageurlxyz.site": "2025-02-04",
+      "main.dailynk.us": "2022-04-21",
+      "maingoogie.com": "2019-12-31",
+      "maingoogle.com": "2019-12-31",
+      "martnews.aba.ae": "2019-11-28",
+      "matmiho.com": "2019-09-03",
+      "microsoft-pro.host": "2021-11-19",
+      "microsoft-pro.live": "2021-11-19",
+      "microsoft-pro.site": "2021-11-19",
+      "microsoft-pro.space": "2021-11-19",
+      "mid-service.com": "2021-11-19",
+      "mid-service.org": "2021-11-19",
+      "midsecurity.org": "2020-11-12",
+      "mihomat.com": "2019-12-31",
+      "mmksba.dyndns.org": "2019-08-09",
+      "mmksba.simple-url.com": "2019-09-11",
+      "mobile-analytics-d0558.web.app": "2021-07-17",
+      "mobonad.com": "2024-10-21",
+      "module.jquery.services": "2022-01-22",
+      "mofa.outlook-offices.com": "2022-11-01",
+      "mofako.com": "2019-12-31",
+      "monderhouse.space": "2026-01-02",
+      "ms-office.services": "2022-12-08",
+      "ms-offices.com": "2022-11-01",
+      "mslove.mypressonline.com": "2019-11-28",
+      "mumbai-m.site": "2018-09-05",
+      "myethrvvallet.com": "2021-11-19",
+      "mysoftazure.com": "2021-11-19",
+      "naerver.com": "2019-08-31",
+      "namecentless.top": "2024-01-23",
+      "nate-download.com": "2023-05-01",
+      "natwpersonal-online.com": "2019-12-31",
+      "navarar.com": "2024-11-04",
+      "naver-file.com": "2023-05-01",
+      "naver-storage.com": "2023-05-01",
+      "naver.servemp3.com": "2021-06-13",
+      "navercorp.ru": "2023-09-01",
+      "naverhelp.com": "2021-11-19",
+      "navermain.com": "2021-11-19",
+      "naversecurity.us": "2020-12-28",
+      "navuor.com": "2019-12-31",
+      "nds1.outlook-offices.com": "2022-11-01",
+      "nicnaver.com": "2021-11-19",
+      "nid-login.com": "2019-12-31",
+      "nid-naver.servehttp.com": "2021-06-13",
+      "nid-naver.servepics.com": "2021-05-12",
+      "nidlogon.com": "2019-12-31",
+      "nidnaver.host": "2021-11-19",
+      "nidnaver.press": "2021-11-19",
+      "nidnaver.site": "2021-11-19",
+      "nidnaver.store": "2021-11-19",
+      "nobuay.ink": "2023-08-14",
+      "noreply-cc.online": "2021-11-19",
+      "noreply-goolge.com": "2021-11-19",
+      "noreply-sec.online": "2021-11-19",
+      "noreply-yahoo.com": "2021-11-19",
+      "north-korea.medianewsonline.com": "2021-11-19",
+      "novel21.co.kr": "2026-06-25",
+      "oaass-torrent.com": "2019-12-13",
+      "oaass.co.kr": "2022-04-04",
+      "oebil.lat": "2023-08-25",
+      "office.phonectrl.com": "2022-11-01",
+      "office356-us.org": "2020-01-15",
+      "office365-us.org": "2019-12-31",
+      "online-manual.c1.biz": "2021-11-19",
+      "openxmlformat.org": "2022-12-08",
+      "outlook-offices.com": "2020-05-22",
+      "padosori.co.kr": "2019-04-02",
+      "philion.store": "2026-02-27",
+      "phlogin.com": "2019-09-03",
+      "phonectrl.com": "2020-05-22",
+      "pieceview.club": "2019-12-31",
+      "planar-progress.000webhostapp.com": "2019-05-13",
+      "plifty.lat": "2023-10-18",
+      "pmoae.com": "2018-09-05",
+      "pokijhgcfsdfghnj.mywebcommunity.org": "2026-01-02",
+      "ppangz.mom": "2023-07-20",
+      "primgs.lol": "2026-01-02",
+      "proattachfile.com": "2021-11-19",
+      "pronto-login.info": "2021-03-26",
+      "proxycheker.pro": "2018-09-05",
+      "pstatic.autos": "2026-01-02",
+      "pw-change.com": "2019-12-31",
+      "qweasdzxc.mygamesonline.org": "2026-01-02",
+      "rabadaun.com": "2022-04-04",
+      "reader.cash": "2019-12-31",
+      "receive.bio": "2024-01-23",
+      "receiveinstant.online": "2024-01-23",
+      "rentsubsidy.help": "2024-01-23",
+      "rentsubsidy.online": "2024-01-23",
+      "resetpolicy.com": "2020-11-12",
+      "resetprofile.com": "2020-10-27",
+      "responsive.pstatic.autos": "2026-01-02",
+      "reviewer.mobi": "2019-12-31",
+      "rfa.news": "2021-11-19",
+      "rnaii.com": "2019-08-31",
+      "rnail-inbox.com": "2019-08-31",
+      "rnail-suport.site": "2021-11-19",
+      "rnailm.com": "2019-08-31",
+      "rneail.com": "2019-08-31",
+      "rnicrosoft.com": "2019-12-31",
+      "romanovawillkillyou.c1.biz": "2021-07-30",
+      "samd1.duckdns.org": "2019-09-11",
+      "samd2.duckdns.org": "2019-09-11",
+      "sec-live.com": "2019-09-03",
+      "secrityprocessing.com": "2019-12-31",
+      "secureaction.ru": "2021-11-19",
+      "securelevel.site": "2021-11-19",
+      "securitedmode.com": "2019-12-31",
+      "security-acount.info": "2020-01-15",
+      "security-delivers.com": "2020-11-12",
+      "security-lnfo.com": "2020-01-15",
+      "security-nid.space": "2021-11-19",
+      "security-pro.me": "2021-11-19",
+      "security-pro.online": "2021-11-19",
+      "securitycounci1report.org": "2020-11-12",
+      "securitydownload.99on.com": "2021-11-19",
+      "securityforcastreport.com": "2021-11-19",
+      "securitysettings.info": "2021-11-19",
+      "securytingmail.com": "2019-12-31",
+      "sejonghaeun.com": "2026-05-05",
+      "seoulhobi.biz": "2019-04-17",
+      "servicenaver.com": "2020-11-12",
+      "servicenidnaver.com": "2020-10-27",
+      "set-login.com": "2019-09-03",
+      "sgibn.cam": "2023-10-18",
+      "sharefiles-betterbusinessbureau-upload.com": "2023-04-14",
+      "sharefiles-betterbusinessbureau-us1.com": "2023-04-14",
+      "sharingdocument.one": "2024-06-03",
+      "shate.namecentless.top": "2024-01-23",
+      "shoru.net": "2023-02-27",
+      "show.grip-cdns.space": "2026-01-02",
+      "silverlog.hol.es": "2021-11-19",
+      "simple.kswebdesign.eu": "2022-04-04",
+      "sinoforecast.com": "2021-11-19",
+      "sklims.lat": "2024-03-25",
+      "slider.jquery.services": "2022-01-22",
+      "smartnords.site": "2026-01-02",
+      "smtper.org": "2019-12-31",
+      "socialteams.store": "2026-01-02",
+      "softfilemanage.com": "2021-11-19",
+      "softlay-ware.c1.biz": "2021-11-19",
+      "sorry.duckdns.org": "2019-09-11",
+      "sqgame.com.cn": "2026-05-05",
+      "ssidnaver.com": "2021-11-19",
+      "ssl-gstatic.drive-google-com.tk": "2023-09-07",
+      "stategov.biz": "2021-11-19",
+      "stjohns-burscough.org": "2019-05-13",
+      "stock.jquery.services": "2022-01-22",
+      "storage.jquery.services": "2022-01-22",
+      "successgoo.com": "2022-04-04",
+      "support-info.network": "2021-11-19",
+      "svg.jquery.services": "2022-01-22",
+      "swr.co.kr": "2026-05-05",
+      "sync.appchecks.rr.nu": "2016-09-27",
+      "table.jquery.services": "2022-01-22",
+      "takemetoyouheart.c1.biz": "2021-07-29",
+      "taketodjnfnei898.c1.biz": "2021-11-19",
+      "taketodjnfnei898.ueuo.com": "2021-07-29",
+      "template-openxml.com": "2022-12-08",
+      "tes.namecentless.top": "2024-01-23",
+      "tes1.namecentless.top": "2024-01-23",
+      "tes2.namecentless.top": "2024-01-23",
+      "tes3.namecentless.top": "2024-01-23",
+      "tes4.namecentless.top": "2024-01-23",
+      "tibet-office.com": "2020-05-22",
+      "tinyurlinstant.co": "2024-01-23",
+      "tksrpdl.atwebpages.com": "2021-08-04",
+      "tosals.ink": "2023-07-18",
+      "traderfree.online": "2024-01-23",
+      "treeview.jquery.services": "2022-01-22",
+      "ttt.namecentless.top": "2024-01-23",
+      "u13448720.ct.sendgrid.net": "2021-11-19",
+      "u19402039.ct.sendgrid.net": "2021-11-19",
+      "u7747409.ct.sendgrid.net": "2021-11-19",
+      "u8253848.ct.sendgrid.net": "2021-11-19",
+      "u9810308.ct.sendgrid.net": "2021-11-19",
+      "ui.jquery.services": "2022-01-22",
+      "unosa.org": "2021-11-19",
+      "uploader10klg.disk.yandex.net": "2026-01-02",
+      "uploader1j.disk.yandex.net": "2024-12-07",
+      "uploader77j.disk.yandex.net": "2024-12-07",
+      "upsrv.16mb.com": "2019-09-02",
+      "urbiusla.homes": "2024-03-25",
+      "urldepost.co": "2024-01-23",
+      "usrchecking.com": "2019-12-31",
+      "verifyca.online": "2024-01-23",
+      "vhostnetwork.com": "2022-04-04",
+      "visiononline.store": "2024-01-23",
+      "vmi810830.contaboserver.net": "2023-08-12",
+      "voakorea.news": "2021-11-19",
+      "voakoreas.com": "2021-11-19",
+      "voipgoogle.com": "2021-11-19",
+      "vpsino.org": "2021-11-19",
+      "vscode-plug.c1.biz": "2021-11-19",
+      "wallet-vahoo.com": "2019-09-03",
+      "webhoptest.webhop.info": "2019-09-11",
+      "webmail-googie.com": "2020-01-16",
+      "webmail-gooqle.com": "2020-01-16",
+      "webofknowledg.com": "2021-03-31",
+      "wersdfxcv.mygamesonline.org": "2026-01-02",
+      "win10-ms.c1.biz": "2020-01-16",
+      "word-template.net": "2022-12-08",
+      "work3.b4a.app": "2022-01-13",
+      "worksongo.store": "2026-01-02",
+      "xfindphoneloc.com": "2020-11-12",
+      "xiazai.sqgame.com.cn": "2026-05-05",
+      "xn--mcrosoft-online-hic.com": "2021-11-19",
+      "yalnoo.com": "2019-12-31",
+      "youngs.dgweb.kr": "2019-04-29",
+      "yrnall.com": "2019-09-03"
+    },
+    "ipv4": {
+      "144.172.106.66:8080": "2026-02-27",
+      "208.85.16.88:5555": "2024-09-19"
+    },
+    "url": {
+      "ableinfo.co.kr/member/": "2023-08-12",
+      "artmuseums.or.kr/swfupload/fla/1.jpg": "2019-10-28",
+      "attiferstudio.com/install.bak/sony/": "2023-03-17",
+      "casaabadia.es/wp-content/uploads/2018/06/null/": "2019-10-28",
+      "clovery-shapes.000webhostapp.com/defcon/": "2023-03-17",
+      "daily.alltop.asia/blog/article/d2.php": "2026-01-02",
+      "daily.alltop.asia/blog/article/del2.php": "2026-01-02",
+      "daily.alltop.asia/blog/article/up2.php": "2026-01-02",
+      "dailynk.com/wp-includes/js/jquery/jquery-migrate.min.js": "2022-01-22",
+      "dailynk.com/wp-includes/js/jquery/jquery.min.js": "2022-01-22",
+      "darvishkhan.net/wp-content/uploads/2017/06/update3.dat": "2019-08-02",
+      "darvishkhan.net/wp-content/uploads/2017/06/update6.dat": "2019-08-02",
+      "djsm.co.kr/js/20170805.hwp": "2021-11-29",
+      "doseoul.com/bbs/data/hnc/update.php": "2021-11-29",
+      "fjtlephare.fr/wp-content/uploads/2018/05/null/": "2019-10-28",
+      "frog.smtper.co/frog/": "2021-01-03",
+      "haeundaejugong.com/data/jugong/do.php": "2021-11-29",
+      "haeundaejugong.com/editor/chinotto/do.php": "2021-11-29",
+      "hk-law.co.kr/data/file/joomla/": "2023-03-17",
+      "hnkoaa.co.kr/files/2023/12/01/win.php": "2026-01-02",
+      "http://128.199.133.121": "2023-05-28",
+      "http://141.105.65.165": "2023-03-17",
+      "http://172.93.181.249": "2023-06-02",
+      "http://185.176.43.106": "2022-07-30",
+      "http://208.85.16.88": "2024-09-19",
+      "http://72.21.245.117": "2019-11-28",
+      "http://75.119.136.207": "2023-08-12",
+      "hz11.cn/jquery-ui-1.10.4/tests/unit/widget/doc/pu.php": "2020-12-30",
+      "jdwanxiang.com/win/shenti/": "2023-03-17",
+      "kjdnc.gp114.net/data/log/do.php": "2021-11-29",
+      "koaagj.co.kr/files/2014/12/fix/": "2023-03-17",
+      "kumdo.org/admin/cont/do.php": "2021-11-29",
+      "luminix.kr/bbs/data/proc/proc.php": "2021-11-29",
+      "luminix.openhaja.com/bbs/data/proc1/proc.php": "2021-11-29",
+      "mini.gomlab.com/player/html/toast/toast_KR_N.html": "2024-10-19",
+      "park.smtper.co/frogstock/": "2021-01-03",
+      "price365.co.kr/abbi/head0.jpg": "2019-08-02",
+      "price365.co.kr/abbi/json/openssl.php": "2019-08-02",
+      "price365.co.kr/abbi/tail0.jpg": "2019-08-02",
+      "ri-guard.com/download/temp/cn-var/": "2023-03-17",
+      "shacc.kr/skin/product/mid.xn--php": "2023-03-10",
+      "teishin.org/img/Updater.zip": "2023-09-19",
+      "teishin.org/treasury/resources/admin/wp-admin/attack.php": "2023-09-19",
+      "teishin.org/treasury/wp_asist.php": "2023-09-19",
+      "yangak.com/data/cheditor4/pro/": "2023-03-23",
+      "yangak.com/data/cheditor4/pro/mid.php": "2023-03-23",
+      "yangak.com/data/cheditor4/pro/temp/7.html": "2023-03-22"
+    },
+    "url_path": {
+      "/_controller/admin/upload_sec/down.php": "2019-04-02",
+      "/bbs/data/cjdc/proc.php": "2023-02-10",
+      "/bbs/data/comb/price.php": "2023-02-10",
+      "/bbs/pu.php?do=upload": "2021-12-31",
+      "/checksync/v2/": "2016-09-27",
+      "/ct/data/icon/files/goal.php": "2019-04-02",
+      "/mjifi": "2023-07-20",
+      "/skin15/include/bin/forlab.php": "2019-04-02",
+      "/skin15/include/bin/home.php": "2019-04-29"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "admin.primgs.lol": "at-or-before",
+      "app.cleanos.online": "at-or-before",
+      "cleanos.online": "at-or-before",
+      "darklights.store": "at-or-before",
+      "grip-cdns.space": "at-or-before",
+      "img.darklights.store": "at-or-before",
+      "img.monderhouse.space": "at-or-before",
+      "img.responsive.pstatic.autos": "at-or-before",
+      "img.smartnords.site": "at-or-before",
+      "img.socialteams.store": "at-or-before",
+      "img.worksongo.store": "at-or-before",
+      "jlrandsons.co.uk": "at-or-before",
+      "monderhouse.space": "at-or-before",
+      "pokijhgcfsdfghnj.mywebcommunity.org": "at-or-before",
+      "primgs.lol": "at-or-before",
+      "pstatic.autos": "at-or-before",
+      "qweasdzxc.mygamesonline.org": "at-or-before",
+      "responsive.pstatic.autos": "at-or-before",
+      "show.grip-cdns.space": "at-or-before",
+      "smartnords.site": "at-or-before",
+      "socialteams.store": "at-or-before",
+      "uploader10klg.disk.yandex.net": "at-or-before",
+      "wersdfxcv.mygamesonline.org": "at-or-before",
+      "worksongo.store": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {
+      "daily.alltop.asia/blog/article/d2.php": "at-or-before",
+      "daily.alltop.asia/blog/article/del2.php": "at-or-before",
+      "daily.alltop.asia/blog/article/up2.php": "at-or-before",
+      "hnkoaa.co.kr/files/2023/12/01/win.php": "at-or-before"
+    },
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2016-09-27",
+    "latest": "2026-06-25"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0member-services.hol.es",
+      "1006ieudneu.atwebpages.com",
+      "1980food.co.kr",
+      "1995ieudneu.atwebpages.com",
+      "account.drive-google-com.tk",
+      "account.gommask.online",
+      "accounts-youtube.drive-google-com.tk",
+      "acddesigns.com.au",
+      "acl-medias.fr",
+      "acount-pro.club",
+      "acount-pro.live",
+      "adamnews.for.ug",
+      "admin.mobonad.com",
+      "admin.primgs.lol",
+      "ahnlab.check.pe.hu",
+      "ahooc.com",
+      "alireza.traderfree.online",
+      "anlysis-info.xyz",
+      "annstyle.ru",
+      "anyportals.com",
+      "api.jquery.services",
+      "app-wallet.com",
+      "app.cleanos.online",
+      "asia-studies.net",
+      "attachdown.000webhostapp.com",
+      "attachdownload.000webhostapp.com",
+      "attachdownload.99on.com",
+      "atusay.lat",
+      "bajut.pro",
+      "bellissues.live",
+      "benefitinfo.live",
+      "benefitinfo.pro",
+      "benefiturl.pro",
+      "bian0151.cafe24.com",
+      "bigfilemail.net",
+      "bignaver.com",
+      "bigwnet.com",
+      "bitwoll.com",
+      "blockochain.info",
+      "btcaes2.duckdns.org",
+      "busyday.atwebpages.com",
+      "buttyfly.000webhostapp.com",
+      "careagency.online",
+      "carnegieinsider.com",
+      "cdns.jquery.services",
+      "cerebrovascular.net",
+      "cexrout.com",
+      "cgalim.com",
+      "change-pw.com",
+      "checkprofie.com",
+      "cheth.lol",
+      "christinadudley.com",
+      "cleanos.online",
+      "clonesec.us",
+      "cloudnaver.com",
+      "cloudocument.com",
+      "cloudsecurityservice.net",
+      "cloudwebappservice.com",
+      "cndsoft.co.kr",
+      "colorncopy.co.kr",
+      "com-change.pw",
+      "com-serviceround.info",
+      "conference.outlook-offices.com",
+      "cra-receivenow.online",
+      "crareceive.site",
+      "crilts.cfd",
+      "crwellfood.com",
+      "ctquast.com",
+      "da3da3.duckdns.org",
+      "daehoat.com",
+      "dailycloudservice.com",
+      "dailynk.us",
+      "darklights.store",
+      "dataviewering.com",
+      "daum-protect.com",
+      "daum-store.com",
+      "daum.sytes.net",
+      "daumhelp.net",
+      "dauurn.net",
+      "day-post.com",
+      "deioncube.biz",
+      "delivernaver.com",
+      "delivers-security.com",
+      "delivers-security.net",
+      "depositurl.co",
+      "depositurl.lat",
+      "dialy-post.com",
+      "diplomatictraining.com",
+      "direct.traderfree.online",
+      "dns-update.club",
+      "dnsservice.esy.es",
+      "doc-view.work",
+      "document-package.online",
+      "documentpackage.space",
+      "documentpackages.link",
+      "documentpackages.online",
+      "documentpackages.space",
+      "documentpackages.store",
+      "documentserver.site",
+      "documentviewingcom.com",
+      "docx1.b4a.app",
+      "dounn.net",
+      "dovvn-mail.com",
+      "down-drive.me",
+      "down-error.com",
+      "download-apks.com",
+      "download-live.com",
+      "downloader-hanmail.net",
+      "drimby.top",
+      "drive-google-com.tk",
+      "drivecheckingcom.com",
+      "drog-service.com",
+      "ebpp.airport.kr",
+      "elearning.or.kr",
+      "emailnaver.com",
+      "emailru.99on.com",
+      "ems.nps.or.kr",
+      "encodingmail.com",
+      "enolja.com",
+      "factorgpu.com",
+      "faguo.namecentless.top",
+      "fd-com.fr",
+      "fe01.co.kr",
+      "file-sharing.tibet-office.com",
+      "file.outlook-offices.com",
+      "filedownloadserve.com",
+      "files-download.net",
+      "files-downloader.net",
+      "filinvestment.com",
+      "firefox-plug.c1.biz",
+      "fixcool.net",
+      "foldershareing.com",
+      "forex.traderfree.online",
+      "free-xmlformat.com",
+      "gallery.jquery.services",
+      "giath.xyz",
+      "globalcloudservices.org",
+      "gmail.drive-google-com.tk",
+      "golangapis.com",
+      "gommask.online",
+      "gooapi.online",
+      "goodmarket.or.kr",
+      "google-acount.com",
+      "goolg-e.com",
+      "goolge.space",
+      "govermentweb.site",
+      "graphwin.com",
+      "greenulz.com",
+      "grip-cdns.space",
+      "grnaeil.com",
+      "groceryrebate.online",
+      "groceryrebate.site",
+      "gstaticstorage.com",
+      "gstcreceive.online",
+      "hakproperty.com",
+      "hanrnaii.net",
+      "help-master.online",
+      "help-naver.site",
+      "help-secure.info",
+      "helpnaver.com",
+      "helpnaver.host",
+      "helpnaver.link",
+      "helpnaver.online",
+      "helpnaver.site",
+      "hightkdhe.store",
+      "hl.namecentless.top",
+      "homeatedke.store",
+      "honess.fun",
+      "host.sharingdocument.one",
+      "hotrnall.com",
+      "hpronto-login.com",
+      "hpserver.online",
+      "http-accounts.maingoogie.com",
+      "https-accounts.maingoogie.com",
+      "iblcor.cafe24.com",
+      "iinaver.com",
+      "image.jquery.services",
+      "imagedownloadsupport.com",
+      "imap-login.com",
+      "img.darklights.store",
+      "img.mobonad.com",
+      "img.monderhouse.space",
+      "img.responsive.pstatic.autos",
+      "img.smartnords.site",
+      "img.socialteams.store",
+      "img.worksongo.store",
+      "inbox-yahoo.com",
+      "influencer.jvproduccionessv.com",
+      "instantreceive.org",
+      "israanews.zz.com.ve",
+      "itamaraty.net",
+      "japanroom.com",
+      "jlrandsons.co.uk",
+      "jquery.services",
+      "js.ad4949.co.kr",
+      "js5950.cafe24.com",
+      "jutise.fun",
+      "kakaofilestorage.com",
+      "kjdnc.gp114.net",
+      "klsa.onlinewebshop.net",
+      "kmbr1.nitesbr1.org",
+      "knowledgeofworld.org",
+      "koryogroup.1apps.com",
+      "kswebdesign.eu",
+      "labimy.ink",
+      "lawwell.co.kr",
+      "lh-logins.com",
+      "lh-logs.com",
+      "li.namecentless.top",
+      "lin.namecentless.top",
+      "link.b4a.app",
+      "lit-peak-25706.herokuapp.com",
+      "lnfo-master.com",
+      "login-protect.club",
+      "login-protect.online",
+      "login-sec.com",
+      "login-use.com",
+      "login.drive-google-com.tk",
+      "lookyes.c1.biz",
+      "mai1.info",
+      "mail-down.com",
+      "mail-master.online",
+      "mail.apm.co.kr",
+      "mail.dailynk.us",
+      "mail.summitz.com",
+      "mailattachmentimageurlxyz.site",
+      "main.dailynk.us",
+      "maingoogie.com",
+      "maingoogle.com",
+      "martnews.aba.ae",
+      "matmiho.com",
+      "microsoft-pro.host",
+      "microsoft-pro.live",
+      "microsoft-pro.site",
+      "microsoft-pro.space",
+      "mid-service.com",
+      "mid-service.org",
+      "midsecurity.org",
+      "mihomat.com",
+      "mmksba.dyndns.org",
+      "mmksba.simple-url.com",
+      "mobile-analytics-d0558.web.app",
+      "mobonad.com",
+      "module.jquery.services",
+      "mofa.outlook-offices.com",
+      "mofako.com",
+      "monderhouse.space",
+      "ms-office.services",
+      "ms-offices.com",
+      "mslove.mypressonline.com",
+      "mumbai-m.site",
+      "myethrvvallet.com",
+      "mysoftazure.com",
+      "naerver.com",
+      "namecentless.top",
+      "nate-download.com",
+      "natwpersonal-online.com",
+      "navarar.com",
+      "naver-file.com",
+      "naver-storage.com",
+      "naver.servemp3.com",
+      "navercorp.ru",
+      "naverhelp.com",
+      "navermain.com",
+      "naversecurity.us",
+      "navuor.com",
+      "nds1.outlook-offices.com",
+      "nicnaver.com",
+      "nid-login.com",
+      "nid-naver.servehttp.com",
+      "nid-naver.servepics.com",
+      "nidlogon.com",
+      "nidnaver.host",
+      "nidnaver.press",
+      "nidnaver.site",
+      "nidnaver.store",
+      "nobuay.ink",
+      "noreply-cc.online",
+      "noreply-goolge.com",
+      "noreply-sec.online",
+      "noreply-yahoo.com",
+      "north-korea.medianewsonline.com",
+      "novel21.co.kr",
+      "oaass-torrent.com",
+      "oaass.co.kr",
+      "oebil.lat",
+      "office.phonectrl.com",
+      "office356-us.org",
+      "office365-us.org",
+      "online-manual.c1.biz",
+      "openxmlformat.org",
+      "outlook-offices.com",
+      "padosori.co.kr",
+      "philion.store",
+      "phlogin.com",
+      "phonectrl.com",
+      "pieceview.club",
+      "planar-progress.000webhostapp.com",
+      "plifty.lat",
+      "pmoae.com",
+      "pokijhgcfsdfghnj.mywebcommunity.org",
+      "ppangz.mom",
+      "primgs.lol",
+      "proattachfile.com",
+      "pronto-login.info",
+      "proxycheker.pro",
+      "pstatic.autos",
+      "pw-change.com",
+      "qweasdzxc.mygamesonline.org",
+      "rabadaun.com",
+      "reader.cash",
+      "receive.bio",
+      "receiveinstant.online",
+      "rentsubsidy.help",
+      "rentsubsidy.online",
+      "resetpolicy.com",
+      "resetprofile.com",
+      "responsive.pstatic.autos",
+      "reviewer.mobi",
+      "rfa.news",
+      "rnaii.com",
+      "rnail-inbox.com",
+      "rnail-suport.site",
+      "rnailm.com",
+      "rneail.com",
+      "rnicrosoft.com",
+      "romanovawillkillyou.c1.biz",
+      "samd1.duckdns.org",
+      "samd2.duckdns.org",
+      "sec-live.com",
+      "secrityprocessing.com",
+      "secureaction.ru",
+      "securelevel.site",
+      "securitedmode.com",
+      "security-acount.info",
+      "security-delivers.com",
+      "security-lnfo.com",
+      "security-nid.space",
+      "security-pro.me",
+      "security-pro.online",
+      "securitycounci1report.org",
+      "securitydownload.99on.com",
+      "securityforcastreport.com",
+      "securitysettings.info",
+      "securytingmail.com",
+      "sejonghaeun.com",
+      "seoulhobi.biz",
+      "servicenaver.com",
+      "servicenidnaver.com",
+      "set-login.com",
+      "sgibn.cam",
+      "sharefiles-betterbusinessbureau-upload.com",
+      "sharefiles-betterbusinessbureau-us1.com",
+      "sharingdocument.one",
+      "shate.namecentless.top",
+      "shoru.net",
+      "show.grip-cdns.space",
+      "silverlog.hol.es",
+      "simple.kswebdesign.eu",
+      "sinoforecast.com",
+      "sklims.lat",
+      "slider.jquery.services",
+      "smartnords.site",
+      "smtper.org",
+      "socialteams.store",
+      "softfilemanage.com",
+      "softlay-ware.c1.biz",
+      "sorry.duckdns.org",
+      "sqgame.com.cn",
+      "ssidnaver.com",
+      "ssl-gstatic.drive-google-com.tk",
+      "stategov.biz",
+      "stjohns-burscough.org",
+      "stock.jquery.services",
+      "storage.jquery.services",
+      "successgoo.com",
+      "support-info.network",
+      "svg.jquery.services",
+      "swr.co.kr",
+      "sync.appchecks.rr.nu",
+      "table.jquery.services",
+      "takemetoyouheart.c1.biz",
+      "taketodjnfnei898.c1.biz",
+      "taketodjnfnei898.ueuo.com",
+      "template-openxml.com",
+      "tes.namecentless.top",
+      "tes1.namecentless.top",
+      "tes2.namecentless.top",
+      "tes3.namecentless.top",
+      "tes4.namecentless.top",
+      "tibet-office.com",
+      "tinyurlinstant.co",
+      "tksrpdl.atwebpages.com",
+      "tosals.ink",
+      "traderfree.online",
+      "treeview.jquery.services",
+      "ttt.namecentless.top",
+      "u13448720.ct.sendgrid.net",
+      "u19402039.ct.sendgrid.net",
+      "u7747409.ct.sendgrid.net",
+      "u8253848.ct.sendgrid.net",
+      "u9810308.ct.sendgrid.net",
+      "ui.jquery.services",
+      "unosa.org",
+      "uploader10klg.disk.yandex.net",
+      "uploader1j.disk.yandex.net",
+      "uploader77j.disk.yandex.net",
+      "upsrv.16mb.com",
+      "urbiusla.homes",
+      "urldepost.co",
+      "usrchecking.com",
+      "verifyca.online",
+      "vhostnetwork.com",
+      "visiononline.store",
+      "vmi810830.contaboserver.net",
+      "voakorea.news",
+      "voakoreas.com",
+      "voipgoogle.com",
+      "vpsino.org",
+      "vscode-plug.c1.biz",
+      "wallet-vahoo.com",
+      "webhoptest.webhop.info",
+      "webmail-googie.com",
+      "webmail-gooqle.com",
+      "webofknowledg.com",
+      "wersdfxcv.mygamesonline.org",
+      "win10-ms.c1.biz",
+      "word-template.net",
+      "work3.b4a.app",
+      "worksongo.store",
+      "xfindphoneloc.com",
+      "xiazai.sqgame.com.cn",
+      "xn--mcrosoft-online-hic.com",
+      "yalnoo.com",
+      "youngs.dgweb.kr",
+      "yrnall.com"
+    ],
+    "ipv4": [
+      "144.172.106.66:8080",
+      "208.85.16.88:5555"
+    ],
+    "url": [
+      "ableinfo.co.kr/member/",
+      "artmuseums.or.kr/swfupload/fla/1.jpg",
+      "attiferstudio.com/install.bak/sony/",
+      "casaabadia.es/wp-content/uploads/2018/06/null/",
+      "clovery-shapes.000webhostapp.com/defcon/",
+      "daily.alltop.asia/blog/article/d2.php",
+      "daily.alltop.asia/blog/article/del2.php",
+      "daily.alltop.asia/blog/article/up2.php",
+      "dailynk.com/wp-includes/js/jquery/jquery-migrate.min.js",
+      "dailynk.com/wp-includes/js/jquery/jquery.min.js",
+      "darvishkhan.net/wp-content/uploads/2017/06/update3.dat",
+      "darvishkhan.net/wp-content/uploads/2017/06/update6.dat",
+      "djsm.co.kr/js/20170805.hwp",
+      "doseoul.com/bbs/data/hnc/update.php",
+      "fjtlephare.fr/wp-content/uploads/2018/05/null/",
+      "frog.smtper.co/frog/",
+      "haeundaejugong.com/data/jugong/do.php",
+      "haeundaejugong.com/editor/chinotto/do.php",
+      "hk-law.co.kr/data/file/joomla/",
+      "hnkoaa.co.kr/files/2023/12/01/win.php",
+      "http://128.199.133.121",
+      "http://141.105.65.165",
+      "http://172.93.181.249",
+      "http://185.176.43.106",
+      "http://208.85.16.88",
+      "http://72.21.245.117",
+      "http://75.119.136.207",
+      "hz11.cn/jquery-ui-1.10.4/tests/unit/widget/doc/pu.php",
+      "jdwanxiang.com/win/shenti/",
+      "kjdnc.gp114.net/data/log/do.php",
+      "koaagj.co.kr/files/2014/12/fix/",
+      "kumdo.org/admin/cont/do.php",
+      "luminix.kr/bbs/data/proc/proc.php",
+      "luminix.openhaja.com/bbs/data/proc1/proc.php",
+      "mini.gomlab.com/player/html/toast/toast_KR_N.html",
+      "park.smtper.co/frogstock/",
+      "price365.co.kr/abbi/head0.jpg",
+      "price365.co.kr/abbi/json/openssl.php",
+      "price365.co.kr/abbi/tail0.jpg",
+      "ri-guard.com/download/temp/cn-var/",
+      "shacc.kr/skin/product/mid.xn--php",
+      "teishin.org/img/Updater.zip",
+      "teishin.org/treasury/resources/admin/wp-admin/attack.php",
+      "teishin.org/treasury/wp_asist.php",
+      "yangak.com/data/cheditor4/pro/",
+      "yangak.com/data/cheditor4/pro/mid.php",
+      "yangak.com/data/cheditor4/pro/temp/7.html"
+    ],
+    "url_path": [
+      "/_controller/admin/upload_sec/down.php",
+      "/bbs/data/cjdc/proc.php",
+      "/bbs/data/comb/price.php",
+      "/bbs/pu.php?do=upload",
+      "/checksync/v2/",
+      "/ct/data/icon/files/goal.php",
+      "/mjifi",
+      "/skin15/include/bin/forlab.php",
+      "/skin15/include/bin/home.php"
+    ]
+  },
+  "last_modified": "2026-06-25T08:59:51+00:00",
+  "maltrail_groups": [
+    "37",
+    "REAPER"
+  ],
+  "references": [
+    "http://blogs.360.cn/post/analysis-of-apt-c-37.html",
+    "https://0xthreatintel.medium.com/apt37-targets-journalists-security-researchers-4d18c559767c",
+    "https://asec-ahnlab-com.translate.goog/ko/48764/?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp",
+    "https://asec.ahnlab.com/en/48063/",
+    "https://asec.ahnlab.com/ko/89116/",
+    "https://blog.alyac.co.kr/2226 (Korean)",
+    "https://blog.alyac.co.kr/2281 (Korean)",
+    "https://blog.alyac.co.kr/2453 (Korean)",
+    "https://blog.alyac.co.kr/3489 (Korean)",
+    "https://blog.alyac.co.kr/3536 (Korean)",
+    "https://blog.google/threat-analysis-group/internet-explorer-0-day-exploited-by-north-korean-actor-apt37/",
+    "https://blog.sekoia.io/peeking-at-reaper-surveillance-operations-against-north-korea-defectors/",
+    "https://blog.talosintelligence.com/2018/04/fake-av-investigation-unearths-kevdroid.html",
+    "https://blogs.microsoft.com/on-the-issues/2019/12/30/microsoft-court-action-against-nation-state-cybercrime/",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-05-01-v10312/521",
+    "https://fortiguard.com/resources/threat-brief/2019/08/09/fortiguard-threat-intelligence-brief-august-09-2019",
+    "https://github.com/Cisco-Talos/IOCs/blob/main/2023/11/new-sugargh0st-rat.txt",
+    "https://github.com/Cisco-Talos/IOCs/blob/main/2024/06/sneakychef-sugargh0st-rat.txt",
+    "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv",
+    "https://github.com/blackorbird/APT_REPORT/blob/master/group123/ScarCruft%20(APT37)%20active%20in%20South%20Korea.pdf",
+    "https://github.com/blackorbird/APT_REPORT/blob/master/kimsuky/20231016_threat_inteligence_report_DarkHorse.pdf",
+    "https://github.com/eset/malware-ioc/tree/master/scarcruft#urls",
+    "https://lists.emergingthreats.net/pipermail/emerging-sigs/2022-April/030646.html",
+    "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+    "https://medium.com/s2wblog/unmasking-cve-2024-38178-the-silent-threat-of-windows-scripting-engine-91ad954dbf83",
+    "https://medium.com/s2wlab/matryoshka-variant-of-rokrat-apt37-scarcruft-69774ea7bf48",
+    "https://mp.weixin.qq.com/s/Wnb-r7SWbGGN-XuQ8fW_jw",
+    "https://mp.weixin.qq.com/s/pIdyesArvoXaD-lLYVvXiw",
+    "https://otx.alienvault.com/pulse/5d4456d289603cc548ddbc92",
+    "https://otx.alienvault.com/pulse/5d7916e3f619df83fd65778e",
+    "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+    "https://otx.alienvault.com/pulse/5e206c7aef589acc3f96cb79",
+    "https://otx.alienvault.com/pulse/5ec7ff4ec67d6aca23b7c350",
+    "https://otx.alienvault.com/pulse/60eeb8b1f8a87529ba8d6d8c",
+    "https://otx.alienvault.com/pulse/610a5db8cefc6068865ae665",
+    "https://otx.alienvault.com/pulse/611ce45950765f93f688ba00",
+    "https://otx.alienvault.com/pulse/61978976fed1a4a1794586e7",
+    "https://otx.alienvault.com/pulse/6261887e15fc527fe850e657",
+    "https://otx.alienvault.com/pulse/62e127f6ae973b499899ff9b",
+    "https://otx.alienvault.com/pulse/63f67cceee1cc80ed9497ecf",
+    "https://otx.alienvault.com/pulse/6408a4922f014d07a51f1f77",
+    "https://pastebin.com/ScaPd18W",
+    "https://researchcenter.paloaltonetworks.com/2018/04/unit42-reaper-groups-updated-mobile-arsenal/",
+    "https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/",
+    "https://securelist.com/scarcruft-surveilling-north-korean-defectors-and-human-rights-activists/105074/",
+    "https://securityonline.info/north-korean-hackers-exploit-zero-day-flaw-cve-2024-38178-in-operation-code-on-toast/",
+    "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report_-The-ink-stained-trail-of-GOLDBACKDOOR.pdf",
+    "https://ti.qianxin.com/blog/articles/anatomy-of-moonLight-attack-on-the-middle-east/ (Chinese)",
+    "https://twitter.com/C0ryInTheHous3/status/1364275034638942210",
+    "https://twitter.com/QW5kcmV3/status/1033495729258606597",
+    "https://twitter.com/ShadowChasing1/status/1344266120413384705",
+    "https://twitter.com/ShadowChasing1/status/1529451994532167682",
+    "https://twitter.com/StopMalvertisin/status/1662733487768739842",
+    "https://twitter.com/StopMalvertisin/status/1690399427255758848",
+    "https://twitter.com/StopMalvertisin/status/1690399430405734400",
+    "https://twitter.com/StopMalvertisin/status/1690422578509479936",
+    "https://twitter.com/StopMalvertisin/status/1722227919634981372",
+    "https://twitter.com/Timele9527/status/1600690222685032448",
+    "https://twitter.com/blackorbird/status/1112904229495042049",
+    "https://twitter.com/blackorbird/status/1188726162928758784",
+    "https://twitter.com/blackorbird/status/1694912623299674230",
+    "https://twitter.com/blackorbird/status/1714576304279032023",
+    "https://twitter.com/cyberwar_15/status/1122692430262706178",
+    "https://twitter.com/cyberwar_15/status/1313379907926335489 (Korean)",
+    "https://twitter.com/cyberwar_15/status/1362413268472655877",
+    "https://twitter.com/cyberwar_15/status/1392459596069961734",
+    "https://twitter.com/cyberwar_15/status/1392469490592411651",
+    "https://twitter.com/cyberwar_15/status/1392488563309105155",
+    "https://twitter.com/cyberwar_15/status/1422376991907450886",
+    "https://twitter.com/cyberwar_15/status/1481430358629707776",
+    "https://twitter.com/cyberwar_15/status/1528619208183287809",
+    "https://twitter.com/fmc_nan/status/1638528180947668993",
+    "https://twitter.com/fmc_nan/status/1664179152331866112",
+    "https://twitter.com/fmc_nan/status/1729428966967271693",
+    "https://twitter.com/h2jazi/status/1681122432000618499",
+    "https://twitter.com/h2jazi/status/1688977725279600648",
+    "https://twitter.com/h2jazi/status/1699821987361702229",
+    "https://twitter.com/jfslowik/status/1212097943550873600",
+    "https://twitter.com/kyleehmke/status/1212119523077349378",
+    "https://twitter.com/kyleehmke/status/1217486993871056899",
+    "https://twitter.com/malwrhunterteam/status/1510919695423184896",
+    "https://twitter.com/malwrhunterteam/status/1523754342402052097",
+    "https://twitter.com/malwrhunterteam/status/1638661235146104832",
+    "https://twitter.com/malwrhunterteam/status/1646612420683526146",
+    "https://twitter.com/malwrhunterteam/status/1681595936991064064",
+    "https://twitter.com/midnight_comms/status/1467886870226952199",
+    "https://twitter.com/midnight_comms/status/1467887093561053188",
+    "https://twitter.com/navSi16/status/1066296138498629637",
+    "https://twitter.com/suyog41/status/1691027132254986240",
+    "https://twitter.com/suyog41/status/1697536913610314016",
+    "https://twitter.com/suyog41/status/1704025925187473638",
+    "https://twitter.com/suyog41/status/1704098124762132790",
+    "https://twitter.com/suyog41/status/1772149859698524630",
+    "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+    "https://www.boannews.com/media/view.asp?idx=99543 (Korean)",
+    "https://www.cib.gov.tw/News/BulletinDetail/8294",
+    "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html",
+    "https://www.genians.co.kr/blog/threat_intelligence/apt37_recon",
+    "https://www.genians.co.kr/blog/threat_intelligence/k-messenger",
+    "https://www.genians.co.kr/en/blog/threat_intelligence/narwhalrat",
+    "https://www.genians.co.kr/en/blog/threat_intelligence/pretexting",
+    "https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-threat-insight-paper-triple-threat-N-Korea-aligned-TA406-steals-scams-spies.pdf",
+    "https://www.proofpoint.com/us/blog/threat-insight/ta406-pivots-front",
+    "https://www.sentinelone.com/labs/a-glimpse-into-future-scarcruft-campaigns-attackers-gather-strategic-intelligence-and-target-cybersecurity-professionals/",
+    "https://www.seqrite.com/blog/operation-hankook-phantom-north-korean-apt37-targeting-south-korea/",
+    "https://www.symantec.com/security_response/writeup.jsp?docid=2016-063014-0934-99&tabid=2",
+    "https://www.virustotal.com/gui/file/012063e0b7b4f7f3ce50574797112f95492772a9b75fc3d0934a91cc60faa240/detection",
+    "https://www.virustotal.com/gui/file/01e7405ddd5545ffb4a57040acc4b6f8b8a5cc328fa8172e1800a1cb49bdf15c/detection",
+    "https://www.virustotal.com/gui/file/02489e283a347299152394ca9ef82812808501ab8a5b458bebc5a658644d2799/detection",
+    "https://www.virustotal.com/gui/file/0675443b6438e3a7e910d591aaefcf616a65e55856aa0aea58305f23035818f8/detection",
+    "https://www.virustotal.com/gui/file/1136ba6837a18a39b430cd8d2a7ff276dbaddf813060c47725c7c629dbab7ce5/detection",
+    "https://www.virustotal.com/gui/file/133359336ed60b94e9cd500fb518a72fe8711c4a8f8fc83ef2cc242173d8cb96/detection",
+    "https://www.virustotal.com/gui/file/194354cae93878dc3ba6ca2f71b70452ea0f1ac9d62f95431e5d3483b4f83074/detection",
+    "https://www.virustotal.com/gui/file/1f3d808d89ea6c78d0fb0ff7e7d4be2115d231289c8dabd1663c4ffa19c56c26/detection",
+    "https://www.virustotal.com/gui/file/2222f1d7ccd05655f0492769bc54ec016679d59da258affa9b8686021fada59d/detection",
+    "https://www.virustotal.com/gui/file/2ede67e3953d9d8519f450c6be70f2b8f4826e17b2b5f43fa1144a3a5d15973f/detection",
+    "https://www.virustotal.com/gui/file/3a68d6bceb126fa26fa3549ccc8ac15d33066929152e628ae03edda4a1f42eae/detection",
+    "https://www.virustotal.com/gui/file/3ecb8632582982f5ea4cef6b32ac468bd43c61896b5de57416c8100f8ab90102/detection",
+    "https://www.virustotal.com/gui/file/3f3d492fe284569abb0ee60595e63ca5220ca8206c62df2a1f0ccfb8b9060405/detection",
+    "https://www.virustotal.com/gui/file/40cb1016a2d962482f40f1ce712403fbd8e23ce3d24b08241a6d5102306ecbc0/detection",
+    "https://www.virustotal.com/gui/file/41d9b6d8cf0fff85bf35327d4b94db629cd9f754c487672911b7f701fe8c5539/detection",
+    "https://www.virustotal.com/gui/file/4f2617a971b9c78c8b215d6cb65525ff56f0633a3bcd381695a19efe08156a04/detection",
+    "https://www.virustotal.com/gui/file/5071a29f42689c6d83de6fc16bbc6272b50ff06a53c721f34b0d94a29112bba6/detection",
+    "https://www.virustotal.com/gui/file/6a2d984ef3fa0de9b9feb5f558381201e6dff42ef5efe4867fb24e47c6a2aade/detection",
+    "https://www.virustotal.com/gui/file/7387d00194adf8a8f15e12e191bfaa8dbd6c7af227ddc14d7fec742b30adc245/detection",
+    "https://www.virustotal.com/gui/file/738a31e7a0d96fe1b0ad6778db39425160835a80ac33ce8a84f26b71c00c26b9/detection",
+    "https://www.virustotal.com/gui/file/7820bc1aa19ed61d035a2b7efb315ddb8b73cdf4df6ca41c365ce60ec160e713/detection",
+    "https://www.virustotal.com/gui/file/7c87451261dfce64fda987eb395694b5330fd958466c46c931440cd9dc227505/detection",
+    "https://www.virustotal.com/gui/file/7dd84cc7d8271a88063ce1ff1f1abe74c8e5b33301cb957b951161e6fe1b73fc/detection",
+    "https://www.virustotal.com/gui/file/81973e40fdb988d38342c901f334c402dd08cf4372ca8cffe038b62dade30e19/detection",
+    "https://www.virustotal.com/gui/file/926a947ea2b59d3e9a5a6875b4de2bd071b15260370f4da5e2a60ece3517a32f/detection",
+    "https://www.virustotal.com/gui/file/9d0807210b0615870545a18ab8eae8cecf324e89ab8d3b39a461d45cab9ef957/detection",
+    "https://www.virustotal.com/gui/file/9d58a6920db59a06e513cf077597a8e1848892ad2cf0ec9e3de8fd677efbfedd/detection",
+    "https://www.virustotal.com/gui/file/a8b8a92d170029885d4e7763675f10eb172150f8503592677cadedc392edccf4/detection",
+    "https://www.virustotal.com/gui/file/af5fb99d3ff18bc625fb63f792ed7cd955171ab509c2f8e7c7ee44515e09cebf/detection",
+    "https://www.virustotal.com/gui/file/b31b89e646de6e9c5cbe21798e0157fef4d8e612d181085377348c974540760a/detection",
+    "https://www.virustotal.com/gui/file/c26746a7a3e474e2c4915b4e05042a0ca53c195ac32f440bda73382008519793/detection",
+    "https://www.virustotal.com/gui/file/c61c679eec1c1b43bbd01727fdfb6a69b11485931eb8569e6b20ada30bfe84af/detection",
+    "https://www.virustotal.com/gui/file/ce1a5653444eb9902dd98365b1e2fd1bfee4ceb4e8d6746078d557bbaa764fe7/detection",
+    "https://www.virustotal.com/gui/file/d0775ec420a4938cbf1b2e9432677e08fcfbde6f424a8f7289e57e31f9334b74/detection",
+    "https://www.virustotal.com/gui/file/d42ef12b6b40c1e3d0132a4be8954bb44d4019b7b82061651604895feb3ab016/detection",
+    "https://www.virustotal.com/gui/file/d8d86b15e68889bf76b3cf8e335f43afe0287b9b20aeb18b136b90a516695989/detection",
+    "https://www.virustotal.com/gui/file/d9e3eba6067eec0aa32214b2a9811f4b579b66b34fe4e5bff4d754102dffdb91/detection",
+    "https://www.virustotal.com/gui/file/e27467f7fdfa721e917384542ce10cc6108dfd78df14e23872cf8df916e0b8c6/detection",
+    "https://www.virustotal.com/gui/file/e4ff04fe1aa1f28a993ac57cac277cd1e4bd8777d57644eb9e22d891194a90bf/detection",
+    "https://www.virustotal.com/gui/file/e6091e6bf8135e09f46b6a230873a6cacc6f7fc2fa4d8c3d5899b210eed1a5a9/detection",
+    "https://www.virustotal.com/gui/file/eb21cf8e6f64340216e9c326fb58956d5408d6f2c0c5126ff8af9a4aac39e1a2/detection",
+    "https://www.virustotal.com/gui/file/ee08d70c66ce95755b6936d59290eca71ebacce3efeae075e1454bb0f577a5d7/detection",
+    "https://www.virustotal.com/gui/file/f5e46e18facc6f8fde6658b96dcd379b82cc6ae2e676fb47f08cbeccd307b1b4/detection",
+    "https://www.virustotal.com/gui/file/facb0525447439cb402c1808e5a3a2436b887f8aa01af63201b1ca5350bee34e/detection",
+    "https://www.virustotal.com/gui/file/fb55f221a1c382eaaea943c9c4c3bc35f512f0ae515d9f33693bff9ccd1b7483/detection",
+    "https://www.virustotal.com/gui/file/fcfb0398eb0216332bb3ce25e5e353e59a2f7af84e0b96fa04b65666276f5785/detection",
+    "https://www.virustotal.com/gui/file/fd25c643565fdd42bb9a9af7d965b2dcfd80a889b50526abc5e9a4fd1bab6542/detection",
+    "https://www.virustotal.com/gui/ip-address/194.165.16.93/relations",
+    "https://www.virustotal.com/gui/ip-address/23.106.160.32/relations",
+    "https://www.virustotal.com/gui/ip-address/84.32.131.214/relations",
+    "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/",
+    "https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/",
+    "https://www.zscaler.com/blogs/security-research/apt37-adds-new-capabilities-air-gapped-networks",
+    "https://www.zscaler.com/blogs/security-research/apt37-targets-windows-rust-backdoor-and-python-loader",
+    "https://x.com/Cyberteam008/status/1940265872402403341",
+    "https://x.com/JAMESWT_MHT/status/1836784273191297442",
+    "https://x.com/JAMESWT_MHT/status/1836847390638362767",
+    "https://x.com/JangPr0/status/1793945744577364344",
+    "https://x.com/SwitHak/status/1922259600113328605",
+    "https://x.com/TIntel2255/status/1840825662925652152",
+    "https://x.com/Threatlabz/status/1965060646405574786",
+    "https://x.com/blackorbird/status/1846828667718234555",
+    "https://x.com/blackorbird/status/1886245222923091975",
+    "https://x.com/byrne_emmy12099/status/1864880849277325376",
+    "https://x.com/byrne_emmy12099/status/1951675987198173489",
+    "https://x.com/k3yp0d/status/1848277967387963582",
+    "https://x.com/lazarusholic/status/1947650364825866590",
+    "https://x.com/malwrhunterteam/status/1814396386521260519",
+    "https://x.com/rst_cloud/status/2069838671763640509",
+    "https://x.com/suyog41/status/1995767452786196839",
+    "https://x.com/the_yellow_fall/status/1846484897495699929",
+    "https://x.com/volrant136/status/1944429848807530870"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "31 shared indicators",
+          "kind": "infrastructure",
+          "weight": 31.0
+        }
+      ],
+      "slug": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "5 shared indicators",
+          "kind": "infrastructure",
+          "weight": 5.0
+        },
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "slug": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "TIBET"
+    }
+  ],
+  "slug": "G0067",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-06-25",
+      "indicators": {
+        "domain": [
+          "crwellfood.com",
+          "daehoat.com",
+          "fe01.co.kr",
+          "novel21.co.kr"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/rst_cloud/status/2069838671763640509",
+        "https://www.genians.co.kr/en/blog/threat_intelligence/narwhalrat"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2026-05-05",
+      "indicators": {
+        "domain": [
+          "1980food.co.kr",
+          "cndsoft.co.kr",
+          "colorncopy.co.kr",
+          "lawwell.co.kr",
+          "sejonghaeun.com",
+          "sqgame.com.cn",
+          "swr.co.kr",
+          "xiazai.sqgame.com.cn"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack/",
+        "https://github.com/eset/malware-ioc/tree/master/scarcruft#urls"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-04-14",
+      "indicators": {
+        "domain": [
+          "japanroom.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.genians.co.kr/en/blog/threat_intelligence/pretexting",
+        "https://www.virustotal.com/gui/file/3ecb8632582982f5ea4cef6b32ac468bd43c61896b5de57416c8100f8ab90102/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 1
+      },
+      "first_seen": "2026-02-27",
+      "indicators": {
+        "domain": [
+          "hightkdhe.store",
+          "homeatedke.store",
+          "philion.store"
+        ],
+        "ipv4": [
+          "144.172.106.66:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/apt37-adds-new-capabilities-air-gapped-networks",
+        "https://www.virustotal.com/gui/file/a8b8a92d170029885d4e7763675f10eb172150f8503592677cadedc392edccf4/detection",
+        "https://www.virustotal.com/gui/file/c61c679eec1c1b43bbd01727fdfb6a69b11485931eb8569e6b20ada30bfe84af/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "admin.primgs.lol",
+          "grip-cdns.space",
+          "img.responsive.pstatic.autos",
+          "img.smartnords.site",
+          "img.worksongo.store",
+          "primgs.lol",
+          "pstatic.autos",
+          "responsive.pstatic.autos",
+          "show.grip-cdns.space",
+          "smartnords.site",
+          "worksongo.store"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Cyberteam008/status/1940265872402403341"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "app.cleanos.online",
+          "cleanos.online",
+          "darklights.store",
+          "img.darklights.store",
+          "img.monderhouse.space",
+          "img.socialteams.store",
+          "monderhouse.space",
+          "socialteams.store"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/volrant136/status/1944429848807530870"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "url": [
+          "daily.alltop.asia/blog/article/d2.php",
+          "daily.alltop.asia/blog/article/del2.php",
+          "daily.alltop.asia/blog/article/up2.php"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/byrne_emmy12099/status/1951675987198173489",
+        "https://www.seqrite.com/blog/operation-hankook-phantom-north-korean-apt37-targeting-south-korea/",
+        "https://www.virustotal.com/gui/file/d8d86b15e68889bf76b3cf8e335f43afe0287b9b20aeb18b136b90a516695989/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "pokijhgcfsdfghnj.mywebcommunity.org",
+          "qweasdzxc.mygamesonline.org",
+          "wersdfxcv.mygamesonline.org"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/SwitHak/status/1922259600113328605",
+        "https://www.proofpoint.com/us/blog/threat-insight/ta406-pivots-front"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "jlrandsons.co.uk"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/suyog41/status/1995767452786196839",
+        "https://www.virustotal.com/gui/file/4f2617a971b9c78c8b215d6cb65525ff56f0633a3bcd381695a19efe08156a04/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "uploader10klg.disk.yandex.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/lazarusholic/status/1947650364825866590",
+        "https://asec.ahnlab.com/ko/89116/",
+        "https://www.virustotal.com/gui/file/e27467f7fdfa721e917384542ce10cc6108dfd78df14e23872cf8df916e0b8c6/detection",
+        "https://www.virustotal.com/gui/file/41d9b6d8cf0fff85bf35327d4b94db629cd9f754c487672911b7f701fe8c5539/detection",
+        "https://www.virustotal.com/gui/file/6a2d984ef3fa0de9b9feb5f558381201e6dff42ef5efe4867fb24e47c6a2aade/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "url": [
+          "hnkoaa.co.kr/files/2023/12/01/win.php"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Threatlabz/status/1965060646405574786",
+        "https://www.zscaler.com/blogs/security-research/apt37-targets-windows-rust-backdoor-and-python-loader",
+        "https://www.virustotal.com/gui/file/738a31e7a0d96fe1b0ad6778db39425160835a80ac33ce8a84f26b71c00c26b9/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2025-02-04",
+      "indicators": {
+        "domain": [
+          "imagedownloadsupport.com",
+          "mailattachmentimageurlxyz.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1886245222923091975",
+        "https://www.genians.co.kr/blog/threat_intelligence/k-messenger"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-12-07",
+      "indicators": {
+        "domain": [
+          "uploader1j.disk.yandex.net",
+          "uploader77j.disk.yandex.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/byrne_emmy12099/status/1864880849277325376",
+        "https://www.virustotal.com/gui/file/d9e3eba6067eec0aa32214b2a9811f4b579b66b34fe4e5bff4d754102dffdb91/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-11-04",
+      "indicators": {
+        "domain": [
+          "filedownloadserve.com",
+          "kakaofilestorage.com",
+          "navarar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.genians.co.kr/blog/threat_intelligence/apt37_recon"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-10-21",
+      "indicators": {
+        "domain": [
+          "admin.mobonad.com",
+          "img.mobonad.com",
+          "mobonad.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/the_yellow_fall/status/1846484897495699929",
+        "https://x.com/k3yp0d/status/1848277967387963582",
+        "https://www.virustotal.com/gui/ip-address/84.32.131.214/relations",
+        "https://securityonline.info/north-korean-hackers-exploit-zero-day-flaw-cve-2024-38178-in-operation-code-on-toast/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen": "2024-10-19",
+      "indicators": {
+        "domain": [
+          "js.ad4949.co.kr"
+        ],
+        "url": [
+          "mini.gomlab.com/player/html/toast/toast_KR_N.html"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1846828667718234555",
+        "https://medium.com/s2wblog/unmasking-cve-2024-38178-the-silent-threat-of-windows-scripting-engine-91ad954dbf83"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-09-30",
+      "indicators": {
+        "domain": [
+          "http-accounts.maingoogie.com",
+          "https-accounts.maingoogie.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2024-09-19",
+      "indicators": {
+        "ipv4": [
+          "208.85.16.88:5555"
+        ],
+        "url": [
+          "http://208.85.16.88"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/JAMESWT_MHT/status/1836784273191297442",
+        "https://x.com/JAMESWT_MHT/status/1836847390638362767",
+        "https://www.virustotal.com/gui/file/9d0807210b0615870545a18ab8eae8cecf324e89ab8d3b39a461d45cab9ef957/detection",
+        "https://www.virustotal.com/gui/file/133359336ed60b94e9cd500fb518a72fe8711c4a8f8fc83ef2cc242173d8cb96/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-06-24",
+      "indicators": {
+        "domain": [
+          "account.gommask.online",
+          "gommask.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1699821987361702229",
+        "https://x.com/malwrhunterteam/status/1814396386521260519",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2023/11/new-sugargh0st-rat.txt",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2024/06/sneakychef-sugargh0st-rat.txt",
+        "https://www.virustotal.com/gui/file/7c87451261dfce64fda987eb395694b5330fd958466c46c931440cd9dc227505/detection",
+        "https://www.virustotal.com/gui/file/d0775ec420a4938cbf1b2e9432677e08fcfbde6f424a8f7289e57e31f9334b74/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-06-03",
+      "indicators": {
+        "domain": [
+          "host.sharingdocument.one",
+          "sharingdocument.one"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/JangPr0/status/1793945744577364344",
+        "https://www.virustotal.com/gui/file/2222f1d7ccd05655f0492769bc54ec016679d59da258affa9b8686021fada59d/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-03-25",
+      "indicators": {
+        "domain": [
+          "ems.nps.or.kr",
+          "sklims.lat"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1772149859698524630",
+        "https://www.virustotal.com/gui/file/fb55f221a1c382eaaea943c9c4c3bc35f512f0ae515d9f33693bff9ccd1b7483/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-03-25",
+      "indicators": {
+        "domain": [
+          "urbiusla.homes"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/2ede67e3953d9d8519f450c6be70f2b8f4826e17b2b5f43fa1144a3a5d15973f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 37
+      },
+      "first_seen": "2024-01-23",
+      "indicators": {
+        "domain": [
+          "alireza.traderfree.online",
+          "bellissues.live",
+          "benefitinfo.live",
+          "benefitinfo.pro",
+          "benefiturl.pro",
+          "careagency.online",
+          "cra-receivenow.online",
+          "crareceive.site",
+          "depositurl.co",
+          "depositurl.lat",
+          "direct.traderfree.online",
+          "faguo.namecentless.top",
+          "forex.traderfree.online",
+          "groceryrebate.online",
+          "groceryrebate.site",
+          "gstcreceive.online",
+          "hl.namecentless.top",
+          "instantreceive.org",
+          "li.namecentless.top",
+          "lin.namecentless.top",
+          "namecentless.top",
+          "receive.bio",
+          "receiveinstant.online",
+          "rentsubsidy.help",
+          "rentsubsidy.online",
+          "shate.namecentless.top",
+          "tes.namecentless.top",
+          "tes1.namecentless.top",
+          "tes2.namecentless.top",
+          "tes3.namecentless.top",
+          "tes4.namecentless.top",
+          "tinyurlinstant.co",
+          "traderfree.online",
+          "ttt.namecentless.top",
+          "urldepost.co",
+          "verifyca.online",
+          "visiononline.store"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/a-glimpse-into-future-scarcruft-campaigns-attackers-gather-strategic-intelligence-and-target-cybersecurity-professionals/"
+      ],
+      "total": 37
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-11-29",
+      "indicators": {
+        "domain": [
+          "goodmarket.or.kr"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/fmc_nan/status/1729428966967271693",
+        "https://www.virustotal.com/gui/file/194354cae93878dc3ba6ca2f71b70452ea0f1ac9d62f95431e5d3483b4f83074/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-11-08",
+      "indicators": {
+        "domain": [
+          "ebpp.airport.kr"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1722227919634981372",
+        "https://www.virustotal.com/gui/file/7387d00194adf8a8f15e12e191bfaa8dbd6c7af227ddc14d7fec742b30adc245/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-10-18",
+      "indicators": {
+        "domain": [
+          "cheth.lol",
+          "honess.fun",
+          "plifty.lat",
+          "sgibn.cam"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1714576304279032023",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/kimsuky/20231016_threat_inteligence_report_DarkHorse.pdf"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2023-09-19",
+      "indicators": {
+        "url": [
+          "teishin.org/img/Updater.zip",
+          "teishin.org/treasury/resources/admin/wp-admin/attack.php",
+          "teishin.org/treasury/wp_asist.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1704025925187473638",
+        "https://twitter.com/suyog41/status/1704098124762132790",
+        "https://www.virustotal.com/gui/file/02489e283a347299152394ca9ef82812808501ab8a5b458bebc5a658644d2799/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2023-09-07",
+      "indicators": {
+        "domain": [
+          "account.drive-google-com.tk",
+          "accounts-youtube.drive-google-com.tk",
+          "drive-google-com.tk",
+          "gmail.drive-google-com.tk",
+          "login.drive-google-com.tk",
+          "ssl-gstatic.drive-google-com.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1699821987361702229",
+        "https://x.com/malwrhunterteam/status/1814396386521260519",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2023/11/new-sugargh0st-rat.txt",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2024/06/sneakychef-sugargh0st-rat.txt",
+        "https://www.virustotal.com/gui/file/7c87451261dfce64fda987eb395694b5330fd958466c46c931440cd9dc227505/detection",
+        "https://www.virustotal.com/gui/file/d0775ec420a4938cbf1b2e9432677e08fcfbde6f424a8f7289e57e31f9334b74/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-01",
+      "indicators": {
+        "domain": [
+          "navercorp.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1697536913610314016",
+        "https://www.virustotal.com/gui/file/b31b89e646de6e9c5cbe21798e0157fef4d8e612d181085377348c974540760a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-08-25",
+      "indicators": {
+        "domain": [
+          "bajut.pro",
+          "giath.xyz",
+          "oebil.lat"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1694912623299674230",
+        "https://mp.weixin.qq.com/s/pIdyesArvoXaD-lLYVvXiw"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-14",
+      "indicators": {
+        "domain": [
+          "nobuay.ink"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/suyog41/status/1691027132254986240",
+        "https://www.virustotal.com/gui/file/ee08d70c66ce95755b6936d59290eca71ebacce3efeae075e1454bb0f577a5d7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 2
+      },
+      "first_seen": "2023-08-12",
+      "indicators": {
+        "domain": [
+          "bian0151.cafe24.com",
+          "vmi810830.contaboserver.net"
+        ],
+        "url": [
+          "ableinfo.co.kr/member/",
+          "http://75.119.136.207"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1690422578509479936",
+        "https://www.virustotal.com/gui/file/7dd84cc7d8271a88063ce1ff1f1abe74c8e5b33301cb957b951161e6fe1b73fc/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-08-12",
+      "indicators": {
+        "domain": [
+          "crilts.cfd",
+          "labimy.ink"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1690399430405734400",
+        "https://www.virustotal.com/gui/file/f5e46e18facc6f8fde6658b96dcd379b82cc6ae2e676fb47f08cbeccd307b1b4/detection",
+        "https://www.virustotal.com/gui/file/fcfb0398eb0216332bb3ce25e5e353e59a2f7af84e0b96fa04b65666276f5785/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-12",
+      "indicators": {
+        "domain": [
+          "drimby.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1690399427255758848",
+        "https://www.virustotal.com/gui/file/5071a29f42689c6d83de6fc16bbc6272b50ff06a53c721f34b0d94a29112bba6/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-08",
+      "indicators": {
+        "domain": [
+          "jutise.fun"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1688977725279600648",
+        "https://www.virustotal.com/gui/file/d42ef12b6b40c1e3d0132a4be8954bb44d4019b7b82061651604895feb3ab016/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2023-07-20",
+      "indicators": {
+        "domain": [
+          "ppangz.mom"
+        ],
+        "url_path": [
+          "/mjifi"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1681595936991064064",
+        "https://www.virustotal.com/gui/file/eb21cf8e6f64340216e9c326fb58956d5408d6f2c0c5126ff8af9a4aac39e1a2/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-07-18",
+      "indicators": {
+        "domain": [
+          "atusay.lat",
+          "tosals.ink"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1681122432000618499",
+        "https://www.virustotal.com/gui/file/012063e0b7b4f7f3ce50574797112f95492772a9b75fc3d0934a91cc60faa240/detection",
+        "https://www.virustotal.com/gui/file/01e7405ddd5545ffb4a57040acc4b6f8b8a5cc328fa8172e1800a1cb49bdf15c/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-06-02",
+      "indicators": {
+        "url": [
+          "http://172.93.181.249"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/fmc_nan/status/1664179152331866112",
+        "https://www.virustotal.com/gui/file/c26746a7a3e474e2c4915b4e05042a0ca53c195ac32f440bda73382008519793/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-05-28",
+      "indicators": {
+        "url": [
+          "http://128.199.133.121"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1662733487768739842"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2023-05-01",
+      "indicators": {
+        "domain": [
+          "daum-store.com",
+          "docx1.b4a.app",
+          "link.b4a.app",
+          "nate-download.com",
+          "naver-file.com",
+          "naver-storage.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-05-01-v10312/521"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-04-14",
+      "indicators": {
+        "domain": [
+          "sharefiles-betterbusinessbureau-upload.com",
+          "sharefiles-betterbusinessbureau-us1.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1646612420683526146",
+        "https://www.virustotal.com/gui/ip-address/194.165.16.93/relations",
+        "https://www.virustotal.com/gui/file/1f3d808d89ea6c78d0fb0ff7e7d4be2115d231289c8dabd1663c4ffa19c56c26/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2023-03-23",
+      "indicators": {
+        "url": [
+          "yangak.com/data/cheditor4/pro/",
+          "yangak.com/data/cheditor4/pro/mid.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/fmc_nan/status/1638528180947668993",
+        "https://twitter.com/malwrhunterteam/status/1638661235146104832",
+        "https://www.virustotal.com/gui/file/40cb1016a2d962482f40f1ce712403fbd8e23ce3d24b08241a6d5102306ecbc0/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-03-22",
+      "indicators": {
+        "url": [
+          "yangak.com/data/cheditor4/pro/temp/7.html"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/fmc_nan/status/1638528180947668993",
+        "https://twitter.com/malwrhunterteam/status/1638661235146104832",
+        "https://www.virustotal.com/gui/file/40cb1016a2d962482f40f1ce712403fbd8e23ce3d24b08241a6d5102306ecbc0/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 7
+      },
+      "first_seen": "2023-03-17",
+      "indicators": {
+        "url": [
+          "attiferstudio.com/install.bak/sony/",
+          "clovery-shapes.000webhostapp.com/defcon/",
+          "hk-law.co.kr/data/file/joomla/",
+          "http://141.105.65.165",
+          "jdwanxiang.com/win/shenti/",
+          "koaagj.co.kr/files/2014/12/fix/",
+          "ri-guard.com/download/temp/cn-var/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.sekoia.io/peeking-at-reaper-surveillance-operations-against-north-korea-defectors/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-03-10",
+      "indicators": {
+        "url": [
+          "shacc.kr/skin/product/mid.xn--php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec-ahnlab-com.translate.goog/ko/48764/?_x_tr_sl=auto&_x_tr_tl=es&_x_tr_hl=en&_x_tr_pto=wapp",
+        "https://otx.alienvault.com/pulse/6408a4922f014d07a51f1f77"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-03-05",
+      "indicators": {
+        "domain": [
+          "elearning.or.kr"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec.ahnlab.com/en/48063/",
+        "https://otx.alienvault.com/pulse/63f67cceee1cc80ed9497ecf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-02-27",
+      "indicators": {
+        "domain": [
+          "shoru.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/blackorbird/APT_REPORT/blob/master/kimsuky/20231016_threat_inteligence_report_DarkHorse.pdf",
+        "https://www.virustotal.com/gui/file/fd25c643565fdd42bb9a9af7d965b2dcfd80a889b50526abc5e9a4fd1bab6542/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2023-02-10",
+      "indicators": {
+        "url_path": [
+          "/bbs/data/cjdc/proc.php",
+          "/bbs/data/comb/price.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/blackorbird/APT_REPORT/blob/master/group123/ScarCruft%20(APT37)%20active%20in%20South%20Korea.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2022-12-08",
+      "indicators": {
+        "domain": [
+          "free-xmlformat.com",
+          "ms-office.services",
+          "openxmlformat.org",
+          "template-openxml.com",
+          "word-template.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527/status/1600690222685032448",
+        "https://blog.google/threat-analysis-group/internet-explorer-0-day-exploited-by-north-korean-actor-apt37/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-11-01",
+      "indicators": {
+        "domain": [
+          "conference.outlook-offices.com",
+          "file-sharing.tibet-office.com",
+          "file.outlook-offices.com",
+          "mofa.outlook-offices.com",
+          "nds1.outlook-offices.com",
+          "office.phonectrl.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cib.gov.tw/News/BulletinDetail/8294",
+        "https://otx.alienvault.com/pulse/5ec7ff4ec67d6aca23b7c350",
+        "https://www.virustotal.com/gui/file/926a947ea2b59d3e9a5a6875b4de2bd071b15260370f4da5e2a60ece3517a32f/detection",
+        "https://www.virustotal.com/gui/file/af5fb99d3ff18bc625fb63f792ed7cd955171ab509c2f8e7c7ee44515e09cebf/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-01",
+      "indicators": {
+        "domain": [
+          "ms-offices.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527/status/1600690222685032448",
+        "https://blog.google/threat-analysis-group/internet-explorer-0-day-exploited-by-north-korean-actor-apt37/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-07-30",
+      "indicators": {
+        "url": [
+          "http://185.176.43.106"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/62e127f6ae973b499899ff9b",
+        "https://www.virustotal.com/gui/file/0675443b6438e3a7e910d591aaefcf616a65e55856aa0aea58305f23035818f8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-09",
+      "indicators": {
+        "domain": [
+          "cerebrovascular.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1523754342402052097",
+        "https://www.virustotal.com/gui/file/ce1a5653444eb9902dd98365b1e2fd1bfee4ceb4e8d6746078d557bbaa764fe7/detection",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/kimsuky/20231016_threat_inteligence_report_DarkHorse.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "lit-peak-25706.herokuapp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report_-The-ink-stained-trail-of-GOLDBACKDOOR.pdf",
+        "https://lists.emergingthreats.net/pipermail/emerging-sigs/2022-April/030646.html",
+        "https://otx.alienvault.com/pulse/6261887e15fc527fe850e657"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-04-21",
+      "indicators": {
+        "domain": [
+          "dailynk.us",
+          "mail.dailynk.us",
+          "main.dailynk.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://stairwell.com/wp-content/uploads/2022/04/Stairwell-threat-report_-The-ink-stained-trail-of-GOLDBACKDOOR.pdf",
+        "https://lists.emergingthreats.net/pipermail/emerging-sigs/2022-April/030646.html",
+        "https://otx.alienvault.com/pulse/6261887e15fc527fe850e657"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "domain": [
+          "acl-medias.fr",
+          "christinadudley.com",
+          "fd-com.fr",
+          "influencer.jvproduccionessv.com",
+          "kswebdesign.eu",
+          "mail.apm.co.kr",
+          "mail.summitz.com",
+          "oaass.co.kr",
+          "rabadaun.com",
+          "simple.kswebdesign.eu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-threat-insight-paper-triple-threat-N-Korea-aligned-TA406-steals-scams-spies.pdf",
+        "https://otx.alienvault.com/pulse/61978976fed1a4a1794586e7"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "domain": [
+          "successgoo.com",
+          "vhostnetwork.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1510919695423184896",
+        "https://www.virustotal.com/gui/file/e6091e6bf8135e09f46b6a230873a6cacc6f7fc2fa4d8c3d5899b210eed1a5a9/detection",
+        "https://www.virustotal.com/gui/file/e4ff04fe1aa1f28a993ac57cac277cd1e4bd8777d57644eb9e22d891194a90bf/detection",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/kimsuky/20231016_threat_inteligence_report_DarkHorse.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 13,
+        "url": 2
+      },
+      "first_seen": "2022-01-22",
+      "indicators": {
+        "domain": [
+          "api.jquery.services",
+          "cdns.jquery.services",
+          "gallery.jquery.services",
+          "image.jquery.services",
+          "jquery.services",
+          "module.jquery.services",
+          "slider.jquery.services",
+          "stock.jquery.services",
+          "storage.jquery.services",
+          "svg.jquery.services",
+          "table.jquery.services",
+          "treeview.jquery.services",
+          "ui.jquery.services"
+        ],
+        "url": [
+          "dailynk.com/wp-includes/js/jquery/jquery-migrate.min.js",
+          "dailynk.com/wp-includes/js/jquery/jquery.min.js"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits/",
+        "https://otx.alienvault.com/pulse/611ce45950765f93f688ba00"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-13",
+      "indicators": {
+        "domain": [
+          "bigfilemail.net",
+          "work3.b4a.app"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1481430358629707776",
+        "https://twitter.com/cyberwar_15/status/1528619208183287809",
+        "https://twitter.com/ShadowChasing1/status/1529451994532167682"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-12-31",
+      "indicators": {
+        "url_path": [
+          "/bbs/pu.php?do=upload"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/facb0525447439cb402c1808e5a3a2436b887f8aa01af63201b1ca5350bee34e/detection",
+        "https://www.virustotal.com/gui/file/81973e40fdb988d38342c901f334c402dd08cf4372ca8cffe038b62dade30e19/detection",
+        "https://www.virustotal.com/gui/file/3a68d6bceb126fa26fa3549ccc8ac15d33066929152e628ae03edda4a1f42eae/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-06",
+      "indicators": {
+        "domain": [
+          "iblcor.cafe24.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/midnight_comms/status/1467887093561053188",
+        "https://www.virustotal.com/gui/file/facb0525447439cb402c1808e5a3a2436b887f8aa01af63201b1ca5350bee34e/detection",
+        "https://www.virustotal.com/gui/file/81973e40fdb988d38342c901f334c402dd08cf4372ca8cffe038b62dade30e19/detection",
+        "https://www.virustotal.com/gui/file/3a68d6bceb126fa26fa3549ccc8ac15d33066929152e628ae03edda4a1f42eae/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-06",
+      "indicators": {
+        "domain": [
+          "annstyle.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/midnight_comms/status/1467886870226952199",
+        "https://www.virustotal.com/gui/file/3f3d492fe284569abb0ee60595e63ca5220ca8206c62df2a1f0ccfb8b9060405/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-04",
+      "indicators": {
+        "domain": [
+          "js5950.cafe24.com",
+          "kjdnc.gp114.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://0xthreatintel.medium.com/apt37-targets-journalists-security-researchers-4d18c559767c"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 8
+      },
+      "first_seen": "2021-11-29",
+      "indicators": {
+        "url": [
+          "djsm.co.kr/js/20170805.hwp",
+          "doseoul.com/bbs/data/hnc/update.php",
+          "haeundaejugong.com/data/jugong/do.php",
+          "haeundaejugong.com/editor/chinotto/do.php",
+          "kjdnc.gp114.net/data/log/do.php",
+          "kumdo.org/admin/cont/do.php",
+          "luminix.kr/bbs/data/proc/proc.php",
+          "luminix.openhaja.com/bbs/data/proc1/proc.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/scarcruft-surveilling-north-korean-defectors-and-human-rights-activists/105074/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 96
+      },
+      "first_seen": "2021-11-19",
+      "indicators": {
+        "domain": [
+          "0member-services.hol.es",
+          "1006ieudneu.atwebpages.com",
+          "1995ieudneu.atwebpages.com",
+          "acount-pro.club",
+          "acount-pro.live",
+          "anlysis-info.xyz",
+          "attachdown.000webhostapp.com",
+          "attachdownload.000webhostapp.com",
+          "attachdownload.99on.com",
+          "carnegieinsider.com",
+          "clonesec.us",
+          "cloudocument.com",
+          "daumhelp.net",
+          "deioncube.biz",
+          "diplomatictraining.com",
+          "dnsservice.esy.es",
+          "document-package.online",
+          "documentpackage.space",
+          "documentpackages.link",
+          "documentpackages.online",
+          "documentpackages.space",
+          "documentpackages.store",
+          "download-apks.com",
+          "download-live.com",
+          "emailnaver.com",
+          "emailru.99on.com",
+          "globalcloudservices.org",
+          "gooapi.online",
+          "google-acount.com",
+          "goolg-e.com",
+          "goolge.space",
+          "govermentweb.site",
+          "help-master.online",
+          "help-naver.site",
+          "help-secure.info",
+          "helpnaver.host",
+          "helpnaver.link",
+          "helpnaver.online",
+          "helpnaver.site",
+          "hpronto-login.com",
+          "knowledgeofworld.org",
+          "koryogroup.1apps.com",
+          "login-protect.club",
+          "login-protect.online",
+          "mail-master.online",
+          "microsoft-pro.host",
+          "microsoft-pro.live",
+          "microsoft-pro.site",
+          "microsoft-pro.space",
+          "mid-service.com",
+          "mid-service.org",
+          "myethrvvallet.com",
+          "mysoftazure.com",
+          "naverhelp.com",
+          "navermain.com",
+          "nicnaver.com",
+          "nidnaver.host",
+          "nidnaver.press",
+          "nidnaver.site",
+          "nidnaver.store",
+          "noreply-cc.online",
+          "noreply-goolge.com",
+          "noreply-sec.online",
+          "noreply-yahoo.com",
+          "north-korea.medianewsonline.com",
+          "online-manual.c1.biz",
+          "proattachfile.com",
+          "rfa.news",
+          "rnail-suport.site",
+          "secureaction.ru",
+          "securelevel.site",
+          "security-nid.space",
+          "security-pro.me",
+          "security-pro.online",
+          "securityforcastreport.com",
+          "securitysettings.info",
+          "silverlog.hol.es",
+          "sinoforecast.com",
+          "softfilemanage.com",
+          "softlay-ware.c1.biz",
+          "ssidnaver.com",
+          "stategov.biz",
+          "support-info.network",
+          "taketodjnfnei898.c1.biz",
+          "u13448720.ct.sendgrid.net",
+          "u19402039.ct.sendgrid.net",
+          "u7747409.ct.sendgrid.net",
+          "u8253848.ct.sendgrid.net",
+          "u9810308.ct.sendgrid.net",
+          "unosa.org",
+          "voakorea.news",
+          "voakoreas.com",
+          "voipgoogle.com",
+          "vpsino.org",
+          "vscode-plug.c1.biz",
+          "xn--mcrosoft-online-hic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 96
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-11-19",
+      "indicators": {
+        "domain": [
+          "securitydownload.99on.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv",
+        "https://www.proofpoint.com/sites/default/files/threat-reports/pfpt-us-tr-threat-insight-paper-triple-threat-N-Korea-aligned-TA406-steals-scams-spies.pdf",
+        "https://otx.alienvault.com/pulse/61978976fed1a4a1794586e7"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-08-04",
+      "indicators": {
+        "domain": [
+          "tksrpdl.atwebpages.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1422376991907450886",
+        "https://www.boannews.com/media/view.asp?idx=99543 (Korean)",
+        "https://otx.alienvault.com/pulse/610a5db8cefc6068865ae665"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-07-30",
+      "indicators": {
+        "domain": [
+          "romanovawillkillyou.c1.biz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-07-29",
+      "indicators": {
+        "domain": [
+          "takemetoyouheart.c1.biz",
+          "taketodjnfnei898.ueuo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-07-17",
+      "indicators": {
+        "domain": [
+          "mobile-analytics-d0558.web.app"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/s2wlab/matryoshka-variant-of-rokrat-apt37-scarcruft-69774ea7bf48",
+        "https://otx.alienvault.com/pulse/60eeb8b1f8a87529ba8d6d8c"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-06-13",
+      "indicators": {
+        "domain": [
+          "daum.sytes.net",
+          "enolja.com",
+          "naver.servemp3.com",
+          "nid-naver.servehttp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1392469490592411651"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-12",
+      "indicators": {
+        "domain": [
+          "ahnlab.check.pe.hu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1392488563309105155",
+        "https://www.virustotal.com/gui/file/1136ba6837a18a39b430cd8d2a7ff276dbaddf813060c47725c7c629dbab7ce5/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-12",
+      "indicators": {
+        "domain": [
+          "nid-naver.servepics.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1392459596069961734"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-31",
+      "indicators": {
+        "domain": [
+          "webofknowledg.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-26",
+      "indicators": {
+        "domain": [
+          "pronto-login.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-14",
+      "indicators": {
+        "domain": [
+          "down-drive.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/C0ryInTheHous3/status/1364275034638942210"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-18",
+      "indicators": {
+        "domain": [
+          "klsa.onlinewebshop.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1362413268472655877"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-01-25",
+      "indicators": {
+        "domain": [
+          "factorgpu.com",
+          "greenulz.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.alyac.co.kr/3536 (Korean)",
+        "https://www.virustotal.com/gui/ip-address/23.106.160.32/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2021-01-03",
+      "indicators": {
+        "url": [
+          "frog.smtper.co/frog/",
+          "park.smtper.co/frogstock/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.alyac.co.kr/3489 (Korean)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-12-30",
+      "indicators": {
+        "url": [
+          "hz11.cn/jquery-ui-1.10.4/tests/unit/widget/doc/pu.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1344266120413384705",
+        "https://www.virustotal.com/gui/file/7820bc1aa19ed61d035a2b7efb315ddb8b73cdf4df6ca41c365ce60ec160e713/detection",
+        "https://www.virustotal.com/gui/file/9d58a6920db59a06e513cf077597a8e1848892ad2cf0ec9e3de8fd677efbfedd/detection",
+        "https://securelist.com/scarcruft-surveilling-north-korean-defectors-and-human-rights-activists/105074/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-28",
+      "indicators": {
+        "domain": [
+          "naversecurity.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-02",
+      "indicators": {
+        "domain": [
+          "documentserver.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-11-23",
+      "indicators": {
+        "domain": [
+          "asia-studies.net",
+          "itamaraty.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2020-11-12",
+      "indicators": {
+        "domain": [
+          "bignaver.com",
+          "dailycloudservice.com",
+          "daum-protect.com",
+          "delivernaver.com",
+          "delivers-security.com",
+          "delivers-security.net",
+          "midsecurity.org",
+          "resetpolicy.com",
+          "security-delivers.com",
+          "securitycounci1report.org",
+          "servicenaver.com",
+          "xfindphoneloc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-10-27",
+      "indicators": {
+        "domain": [
+          "cloudnaver.com",
+          "resetprofile.com",
+          "servicenidnaver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-13",
+      "indicators": {
+        "domain": [
+          "cloudsecurityservice.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-06",
+      "indicators": {
+        "domain": [
+          "busyday.atwebpages.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1313379907926335489 (Korean)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-05-22",
+      "indicators": {
+        "domain": [
+          "outlook-offices.com",
+          "phonectrl.com",
+          "tibet-office.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cib.gov.tw/News/BulletinDetail/8294",
+        "https://otx.alienvault.com/pulse/5ec7ff4ec67d6aca23b7c350",
+        "https://www.virustotal.com/gui/file/926a947ea2b59d3e9a5a6875b4de2bd071b15260370f4da5e2a60ece3517a32f/detection",
+        "https://www.virustotal.com/gui/file/af5fb99d3ff18bc625fb63f792ed7cd955171ab509c2f8e7c7ee44515e09cebf/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-01-16",
+      "indicators": {
+        "domain": [
+          "blockochain.info",
+          "files-downloader.net",
+          "webmail-googie.com",
+          "webmail-gooqle.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5e206c7aef589acc3f96cb79",
+        "https://blogs.microsoft.com/on-the-issues/2019/12/30/microsoft-court-action-against-nation-state-cybercrime/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-01-16",
+      "indicators": {
+        "domain": [
+          "firefox-plug.c1.biz",
+          "lookyes.c1.biz",
+          "win10-ms.c1.biz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-01-15",
+      "indicators": {
+        "domain": [
+          "com-change.pw",
+          "graphwin.com",
+          "office356-us.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-15",
+      "indicators": {
+        "domain": [
+          "security-lnfo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-15",
+      "indicators": {
+        "domain": [
+          "security-acount.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1217486993871056899",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-15",
+      "indicators": {
+        "domain": [
+          "lnfo-master.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1212119523077349378",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 42
+      },
+      "first_seen": "2019-12-31",
+      "indicators": {
+        "domain": [
+          "bigwnet.com",
+          "bitwoll.com",
+          "cexrout.com",
+          "checkprofie.com",
+          "cloudwebappservice.com",
+          "com-serviceround.info",
+          "ctquast.com",
+          "dataviewering.com",
+          "dauurn.net",
+          "day-post.com",
+          "dialy-post.com",
+          "documentviewingcom.com",
+          "drivecheckingcom.com",
+          "encodingmail.com",
+          "filinvestment.com",
+          "fixcool.net",
+          "foldershareing.com",
+          "golangapis.com",
+          "helpnaver.com",
+          "hotrnall.com",
+          "iinaver.com",
+          "lh-logins.com",
+          "mai1.info",
+          "maingoogie.com",
+          "maingoogle.com",
+          "mihomat.com",
+          "mofako.com",
+          "natwpersonal-online.com",
+          "navuor.com",
+          "nid-login.com",
+          "nidlogon.com",
+          "office365-us.org",
+          "pieceview.club",
+          "reader.cash",
+          "reviewer.mobi",
+          "rnicrosoft.com",
+          "secrityprocessing.com",
+          "securitedmode.com",
+          "securytingmail.com",
+          "smtper.org",
+          "usrchecking.com",
+          "yalnoo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 42
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-31",
+      "indicators": {
+        "domain": [
+          "pw-change.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-13",
+      "indicators": {
+        "domain": [
+          "oaass-torrent.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2019-11-28",
+      "indicators": {
+        "domain": [
+          "martnews.aba.ae",
+          "mslove.mypressonline.com"
+        ],
+        "url": [
+          "http://72.21.245.117"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.qianxin.com/blog/articles/anatomy-of-moonLight-attack-on-the-middle-east/ (Chinese)"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2019-10-28",
+      "indicators": {
+        "url": [
+          "artmuseums.or.kr/swfupload/fla/1.jpg",
+          "casaabadia.es/wp-content/uploads/2018/06/null/",
+          "fjtlephare.fr/wp-content/uploads/2018/05/null/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1188726162928758784",
+        "https://mp.weixin.qq.com/s/Wnb-r7SWbGGN-XuQ8fW_jw"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2019-09-11",
+      "indicators": {
+        "domain": [
+          "adamnews.for.ug",
+          "btcaes2.duckdns.org",
+          "da3da3.duckdns.org",
+          "israanews.zz.com.ve",
+          "mmksba.simple-url.com",
+          "samd1.duckdns.org",
+          "samd2.duckdns.org",
+          "sorry.duckdns.org",
+          "webhoptest.webhop.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blogs.360.cn/post/analysis-of-apt-c-37.html",
+        "https://otx.alienvault.com/pulse/5d7916e3f619df83fd65778e"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 17
+      },
+      "first_seen": "2019-09-03",
+      "indicators": {
+        "domain": [
+          "ahooc.com",
+          "dounn.net",
+          "dovvn-mail.com",
+          "drog-service.com",
+          "gstaticstorage.com",
+          "imap-login.com",
+          "inbox-yahoo.com",
+          "lh-logs.com",
+          "login-sec.com",
+          "login-use.com",
+          "mail-down.com",
+          "matmiho.com",
+          "phlogin.com",
+          "sec-live.com",
+          "set-login.com",
+          "wallet-vahoo.com",
+          "yrnall.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-02",
+      "indicators": {
+        "domain": [
+          "upsrv.16mb.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-08-31",
+      "indicators": {
+        "domain": [
+          "change-pw.com",
+          "down-error.com",
+          "rnaii.com",
+          "rnailm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-08-31",
+      "indicators": {
+        "domain": [
+          "files-download.net",
+          "grnaeil.com",
+          "hanrnaii.net",
+          "naerver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-08-31",
+      "indicators": {
+        "domain": [
+          "rnail-inbox.com",
+          "rneail.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-28",
+      "indicators": {
+        "domain": [
+          "app-wallet.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-21",
+      "indicators": {
+        "domain": [
+          "doc-view.work"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-09",
+      "indicators": {
+        "domain": [
+          "mmksba.dyndns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blogs.360.cn/post/analysis-of-apt-c-37.html",
+        "https://otx.alienvault.com/pulse/5d7916e3f619df83fd65778e"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 5
+      },
+      "first_seen": "2019-08-02",
+      "indicators": {
+        "url": [
+          "darvishkhan.net/wp-content/uploads/2017/06/update3.dat",
+          "darvishkhan.net/wp-content/uploads/2017/06/update6.dat",
+          "price365.co.kr/abbi/head0.jpg",
+          "price365.co.kr/abbi/json/openssl.php",
+          "price365.co.kr/abbi/tail0.jpg"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5d4456d289603cc548ddbc92",
+        "https://blog.alyac.co.kr/2453 (Korean)",
+        "https://fortiguard.com/resources/threat-brief/2019/08/09/fortiguard-threat-intelligence-brief-august-09-2019"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-12",
+      "indicators": {
+        "domain": [
+          "downloader-hanmail.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-05-13",
+      "indicators": {
+        "domain": [
+          "acddesigns.com.au",
+          "buttyfly.000webhostapp.com",
+          "planar-progress.000webhostapp.com",
+          "stjohns-burscough.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2019-04-29",
+      "indicators": {
+        "domain": [
+          "youngs.dgweb.kr"
+        ],
+        "url_path": [
+          "/skin15/include/bin/home.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberwar_15/status/1122692430262706178",
+        "https://blog.alyac.co.kr/2281 (Korean)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-17",
+      "indicators": {
+        "domain": [
+          "seoulhobi.biz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bloomberglaw.com/document/public/subdoc/X67FPNDOUBV9VOPS35A4864BFIU",
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/apt37",
+        "https://twitter.com/jfslowik/status/1212097943550873600",
+        "https://x.com/TIntel2255/status/1840825662925652152",
+        "https://otx.alienvault.com/pulse/5e0b9895c5ed003a85210202 (# Thallium)",
+        "https://pastebin.com/ScaPd18W",
+        "https://github.com/EmergingThreats/threatresearch/blob/master/ta406/ta406_ioclist.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2019-04-02",
+      "indicators": {
+        "domain": [
+          "padosori.co.kr"
+        ],
+        "url_path": [
+          "/_controller/admin/upload_sec/down.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/navSi16/status/1066296138498629637"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2019-04-02",
+      "indicators": {
+        "url_path": [
+          "/ct/data/icon/files/goal.php",
+          "/skin15/include/bin/forlab.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1112904229495042049",
+        "https://blog.alyac.co.kr/2226 (Korean)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "cgalim.com",
+          "hakproperty.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/04/fake-av-investigation-unearths-kevdroid.html",
+        "https://researchcenter.paloaltonetworks.com/2018/04/unit42-reaper-groups-updated-mobile-arsenal/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-10-02",
+      "indicators": {
+        "domain": [
+          "kmbr1.nitesbr1.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2018-09-05",
+      "indicators": {
+        "domain": [
+          "anyportals.com",
+          "dns-update.club",
+          "hpserver.online",
+          "mumbai-m.site",
+          "proxycheker.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-05",
+      "indicators": {
+        "domain": [
+          "pmoae.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/QW5kcmV3/status/1033495729258606597"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2016-09-27",
+      "indicators": {
+        "domain": [
+          "sync.appchecks.rr.nu"
+        ],
+        "url_path": [
+          "/checksync/v2/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2016-063014-0934-99&tabid=2"
+      ],
+      "total": 2
+    }
+  ]
+}

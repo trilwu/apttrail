@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1730193955",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2a4782c8-ef6c-5138-b64e-6083356eada6",
+        "value": "civildefense.com.ua"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730193955",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5fc3c34b-ce61-54c1-b0ab-f2ef412fb796",
+        "value": "fu-laravel.onrender.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730193955",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "56a3d329-3391-5e2a-a1e0-ef019b16cf0b",
+        "value": "h315225216.nichost.ru"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc5812"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC5812",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "51e75132-e66e-57f4-8f59-fbd2e190e9e2"
+  }
+}

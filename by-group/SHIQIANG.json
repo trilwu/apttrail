@@ -1,0 +1,59 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "newyorkonlin.com": "2019-10-05",
+      "tibetcongress.oicp.net": "2019-10-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-05",
+    "latest": "2019-10-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "newyorkonlin.com",
+      "tibetcongress.oicp.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SHIQIANG"
+  ],
+  "references": [
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2014/2014-05-03-stolen-certificates-shiqiang-gang/stolen-certificates-shiqiang-gang.csv",
+    "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/stolen-certificates-shiqiang-gang/"
+  ],
+  "related": [],
+  "slug": "SHIQIANG",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-05",
+      "indicators": {
+        "domain": [
+          "newyorkonlin.com",
+          "tibetcongress.oicp.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/stolen-certificates-shiqiang-gang/",
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2014/2014-05-03-stolen-certificates-shiqiang-gang/stolen-certificates-shiqiang-gang.csv"
+      ],
+      "total": 2
+    }
+  ]
+}

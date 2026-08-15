@@ -1,0 +1,155 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1600252558",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fceb144e-8aac-52df-bdc2-3cbc3dd7ecf2",
+        "value": "bbs.donkeyhaws.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4e602f57-2ee4-5adf-b3e9-5a14f2363ae3",
+        "value": "biosnews.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f96ffc0c-cf2e-5ad3-b7a7-96930f03871b",
+        "value": "busserh.mancely.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1733004407",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1c76251d-8bfb-535e-9307-f7d73cdaa638",
+        "value": "donkeyhaws.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3d324927-6a7f-59bc-abc4-f17b132b6f89",
+        "value": "ghostale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1600252558",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "56aeec0f-4cb7-51a5-97cc-25a8291fb995",
+        "value": "http.donkeyhaws.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1600252558",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2a8f4f56-55f5-58e2-866f-6d86c72200e0",
+        "value": "https.osakaintec.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "68e53b52-bb47-547f-b093-0f180165fe77",
+        "value": "jpaols.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cc0e3f1a-1ad0-511c-a1ab-818386c914b7",
+        "value": "moafee.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b8f60c12-e0a0-58b8-aa0c-8e907214c7ac",
+        "value": "ndbssh.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1600252558",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ab060672-f13b-560e-b8a9-cb52a1e65677",
+        "value": "php.marbletemps.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dc944e66-8526-560c-b11e-0c93ac18da17",
+        "value": "pktmedia.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "802bc3ea-e44b-543e-852e-0af138db5db5",
+        "value": "skyppee.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1526042264",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "79c4c2b0-65de-500f-8f95-1d73f0db2a9a",
+        "value": "ycbackap.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1600252558",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "5e54ea3e-e169-5417-91b5-cd354b36c52b",
+        "value": "/XpXpXp"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:dragonok"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"DragonOK - G0017\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DragonOK (G0017) - Maltrail group DRAGONOK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "db269b5c-faf8-5dd1-af31-f46dbad4269f"
+  }
+}

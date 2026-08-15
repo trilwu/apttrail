@@ -1,0 +1,101 @@
+{
+  "name": "Tonto Team (G0131) - APTtrail",
+  "description": "Techniques attributed to Tonto Team by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0131.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1069.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1090.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1135",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1210",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Tonto Team",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

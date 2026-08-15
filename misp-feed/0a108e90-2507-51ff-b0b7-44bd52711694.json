@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d422a4e6-c0e7-5932-9e86-09214cb4a0b5",
+        "value": "wellfitplan.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2917d849-48c4-517a-ae0e-404b300f65d2",
+        "value": "178.159.94.8:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ab241f35-c413-5fd7-8c6c-b955db5628f1",
+        "value": "77.239.125.41:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "cec50845-64f7-575f-b7a0-7ef67a8b5682",
+        "value": "77.239.125.41:8443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8b3c549b-e38b-5c18-9471-8b40b01775db",
+        "value": "http://178.159.94.8"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:noisybear"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: NOISYBEAR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "0a108e90-2507-51ff-b0b7-44bd52711694"
+  }
+}

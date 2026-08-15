@@ -1,0 +1,311 @@
+{
+  "name": "Threat Group-3390 (G0027) - APTtrail",
+  "description": "Techniques attributed to Threat Group-3390 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0027.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1012",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1016",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.015",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1030",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055.012",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1087.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1195.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1210",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1548.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1555.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.001",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Threat Group-3390",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

@@ -1,0 +1,108 @@
+{
+  "aliases": [
+    "crimson collective"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 7,
+    "url": 4
+  },
+  "first_seen": {
+    "ipv4": {
+      "195.201.175.210:443": "2026-01-02",
+      "3.215.23.185:3000": "2026-01-02",
+      "3.215.23.185:8082": "2026-01-02",
+      "45.148.10.141:443": "2026-01-02",
+      "45.148.10.141:8080": "2026-01-02",
+      "5.9.108.250:22": "2026-01-02",
+      "5.9.108.250:443": "2026-01-02"
+    },
+    "url": {
+      "http://195.201.175.210": "2026-01-02",
+      "http://3.215.23.185": "2026-01-02",
+      "http://45.148.10.141": "2026-01-02",
+      "http://5.9.108.250": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {
+      "195.201.175.210:443": "at-or-before",
+      "3.215.23.185:3000": "at-or-before",
+      "3.215.23.185:8082": "at-or-before",
+      "45.148.10.141:443": "at-or-before",
+      "45.148.10.141:8080": "at-or-before",
+      "5.9.108.250:22": "at-or-before",
+      "5.9.108.250:443": "at-or-before"
+    },
+    "url": {
+      "http://195.201.175.210": "at-or-before",
+      "http://3.215.23.185": "at-or-before",
+      "http://45.148.10.141": "at-or-before",
+      "http://5.9.108.250": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "195.201.175.210:443",
+      "3.215.23.185:3000",
+      "3.215.23.185:8082",
+      "45.148.10.141:443",
+      "45.148.10.141:8080",
+      "5.9.108.250:22",
+      "5.9.108.250:443"
+    ],
+    "url": [
+      "http://195.201.175.210",
+      "http://3.215.23.185",
+      "http://45.148.10.141",
+      "http://5.9.108.250"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CRIMSONCOLLECTIVE"
+  ],
+  "references": [
+    "https://www.rapid7.com/blog/post/tr-crimson-collective-a-new-threat-group-observed-operating-in-the-cloud/"
+  ],
+  "related": [],
+  "slug": "CRIMSONCOLLECTIVE",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 7,
+        "url": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "195.201.175.210:443",
+          "3.215.23.185:3000",
+          "3.215.23.185:8082",
+          "45.148.10.141:443",
+          "45.148.10.141:8080",
+          "5.9.108.250:22",
+          "5.9.108.250:443"
+        ],
+        "url": [
+          "http://195.201.175.210",
+          "http://3.215.23.185",
+          "http://45.148.10.141",
+          "http://5.9.108.250"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.rapid7.com/blog/post/tr-crimson-collective-a-new-threat-group-observed-operating-in-the-cloud/"
+      ],
+      "total": 11
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1674589471",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "66d32001-e4f5-5aab-8dce-e9e30a2453c5",
+        "value": "149.28.193.216:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648663132",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6cd3e6d4-365c-58f8-92ce-858b6a7124d2",
+        "value": "149.28.200.140:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "507e17e3-a1b4-5eab-b94d-4bc8fdd8fc08",
+        "value": "149.28.207.120:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "52fe4601-7bb6-509d-9917-afda6690bd1f",
+        "value": "195.123.240.183:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "63ca44f2-fa2f-5775-99a3-3c8c540b8788",
+        "value": "40.76.20.11:21"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "1ee969c2-8223-544b-9ecf-1754f1d157ba",
+        "value": "64.190.113.185:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6dd198f0-2c15-5cd9-92cd-be3a7557959e",
+        "value": "67.205.135.147:53"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674589471",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "76d64af0-ad32-5562-b03f-9fba67c52b37",
+        "value": "http://149.28.193.216"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648663132",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "7c0af178-0576-5647-9ff0-272853dacec4",
+        "value": "http://149.28.200.140"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "80a30076-1055-5cb4-9dd2-68622f152539",
+        "value": "http://149.28.207.120"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "2f234abe-3d39-551c-bdc1-d1c6c4a173ab",
+        "value": "http://195.123.240.183"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697308326",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8078a394-cfa2-53b5-bf9e-b4918121e53b",
+        "value": "http://64.190.113.185"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:goldmelody"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOLDMELODY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "9ae0beb3-4246-5b85-b020-c2cbf12baf01"
+  }
+}

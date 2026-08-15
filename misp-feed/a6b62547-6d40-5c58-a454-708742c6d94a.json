@@ -1,0 +1,67 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1540809757",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8b7f6ad0-84fd-5c18-971b-cc1a6d6fc449",
+        "value": "barsupport.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540809757",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "91290a15-0c8d-5a00-9b3d-fd46904a826a",
+        "value": "coldflys.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540809757",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12c82796-e450-59c0-aa80-b27f667a0f79",
+        "value": "forskys.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540809757",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ed6c8199-88a3-5777-bca6-18dc71755c95",
+        "value": "shoterup.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:irn2"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"OilRig - G0049\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: OilRig (G0049) - Maltrail group IRN2",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a6b62547-6d40-5c58-a454-708742c6d94a"
+  }
+}

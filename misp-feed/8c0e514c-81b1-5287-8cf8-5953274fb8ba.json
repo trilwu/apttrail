@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1700081963",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "87734fd0-014c-51f1-b9a6-391e6d3edcab",
+        "value": "147.78.149.201:9090"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1700081963",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "24e20e95-2fb5-5e88-a329-4627e0ef83f3",
+        "value": "162.19.71.175:7443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:onyxsleet"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Andariel - G0138\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Andariel (G0138) - Maltrail group ONYXSLEET",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "8c0e514c-81b1-5287-8cf8-5953274fb8ba"
+  }
+}

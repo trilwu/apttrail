@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6219943e-ce73-5a2a-935a-b62aa74a51a4",
+        "value": "active-microsoft.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05876b2f-da3e-5f1f-8344-9902768a9618",
+        "value": "cdn.ofo.ac"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e1d8cc78-b5d0-514b-9b7c-09a567ac409a",
+        "value": "cdn.stream-amazon.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ba63e84-4e1b-5a33-bd01-a95777c7f149",
+        "value": "githubassets.akamaixed.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05b08bed-2170-5910-8f49-29b15f07e808",
+        "value": "gobay.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dd8af99e-d03c-5107-8e2f-f887872452ba",
+        "value": "ms-f7-sites-prod-cdn.akamaixed.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f9c496a9-9450-5c90-81c3-469226d7554f",
+        "value": "ms-g9-sites-prod-cdn.akamaixed.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "29ac9caa-02c4-5aaf-98fd-13f5803c0f18",
+        "value": "ofo.ac"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a31e0881-c316-5c8f-9fa8-a53f8d17d683",
+        "value": "tjj.active-microsoft.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "de16c892-7708-58fc-8449-088369442008",
+        "value": "103.151.28.11:8090"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692773397",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "df0b48b4-9495-59df-87bb-41afc0c90411",
+        "value": "111.231.100.228:8888"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:carderbee"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CARDERBEE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "89db080d-c63e-5882-bc5f-a56cc82fc35e"
+  }
+}

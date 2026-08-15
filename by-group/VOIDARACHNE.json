@@ -1,0 +1,110 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 19
+  },
+  "first_seen": {
+    "domain": {
+      "103.214.146.34new.webcamcn.xyz": "2024-06-19",
+      "103.214.147.101.webcamcn.xyz": "2024-06-19",
+      "103.214.147.14.webcamcn.xyz": "2024-06-19",
+      "11.webcamcn.xyz": "2024-06-19",
+      "11new.webcamcn.xyz": "2024-06-19",
+      "156.248.54.11.webcamcn.xyz": "2024-06-19",
+      "156.248.54.11new.webcamcn.xyz": "2024-06-19",
+      "248.54.11.webcamcn.xyz": "2024-06-19",
+      "248.54.11new.webcamcn.xyz": "2024-06-19",
+      "54.11.webcamcn.xyz": "2024-06-19",
+      "54.11new.webcamcn.xyz": "2024-06-19",
+      "98.159.98.114.webcamcn.xyz": "2024-06-19",
+      "hm.webcamcn.xyz": "2024-06-19",
+      "hm2.webcamcn.xyz": "2024-06-19",
+      "hm3.webcamcn.xyz": "2024-06-19",
+      "hm4.webcamcn.xyz": "2024-06-19",
+      "hm6.webcamcn.xyz": "2024-06-19",
+      "hm9.webcamcn.xyz": "2024-06-19",
+      "webcamcn.xyz": "2024-06-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-06-19",
+    "latest": "2024-06-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "103.214.146.34new.webcamcn.xyz",
+      "103.214.147.101.webcamcn.xyz",
+      "103.214.147.14.webcamcn.xyz",
+      "11.webcamcn.xyz",
+      "11new.webcamcn.xyz",
+      "156.248.54.11.webcamcn.xyz",
+      "156.248.54.11new.webcamcn.xyz",
+      "248.54.11.webcamcn.xyz",
+      "248.54.11new.webcamcn.xyz",
+      "54.11.webcamcn.xyz",
+      "54.11new.webcamcn.xyz",
+      "98.159.98.114.webcamcn.xyz",
+      "hm.webcamcn.xyz",
+      "hm2.webcamcn.xyz",
+      "hm3.webcamcn.xyz",
+      "hm4.webcamcn.xyz",
+      "hm6.webcamcn.xyz",
+      "hm9.webcamcn.xyz",
+      "webcamcn.xyz"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "VOIDARACHNE"
+  ],
+  "references": [
+    "https://www.trendmicro.com/en_us/research/24/f/behind-the-great-wall-void-arachne-targets-chinese-speaking-user.html",
+    "https://www.virustotal.com/gui/file/73c2de45f32cc334fe0a33850cf569fd6a692fcce7f9f9336038c92c41d5e2c4/detection"
+  ],
+  "related": [],
+  "slug": "VOIDARACHNE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2024-06-19",
+      "indicators": {
+        "domain": [
+          "103.214.146.34new.webcamcn.xyz",
+          "103.214.147.101.webcamcn.xyz",
+          "103.214.147.14.webcamcn.xyz",
+          "11.webcamcn.xyz",
+          "11new.webcamcn.xyz",
+          "156.248.54.11.webcamcn.xyz",
+          "156.248.54.11new.webcamcn.xyz",
+          "248.54.11.webcamcn.xyz",
+          "248.54.11new.webcamcn.xyz",
+          "54.11.webcamcn.xyz",
+          "54.11new.webcamcn.xyz",
+          "98.159.98.114.webcamcn.xyz",
+          "hm.webcamcn.xyz",
+          "hm2.webcamcn.xyz",
+          "hm3.webcamcn.xyz",
+          "hm4.webcamcn.xyz",
+          "hm6.webcamcn.xyz",
+          "hm9.webcamcn.xyz",
+          "webcamcn.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/24/f/behind-the-great-wall-void-arachne-targets-chinese-speaking-user.html",
+        "https://www.virustotal.com/gui/file/73c2de45f32cc334fe0a33850cf569fd6a692fcce7f9f9336038c92c41d5e2c4/detection"
+      ],
+      "total": 19
+    }
+  ]
+}

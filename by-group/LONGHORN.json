@@ -1,0 +1,95 @@
+{
+  "aliases": [
+    "apt-c-39",
+    "coloredlamberts",
+    "lambert",
+    "longhorn",
+    "plexor"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "ipv4": 3
+  },
+  "first_seen": {
+    "domain": {
+      "cdn.fmlstatic.com": "2021-05-02",
+      "financasdebrasil.com": "2021-05-02",
+      "fmlstatic.com": "2021-05-02",
+      "uaefinance.org": "2021-05-02"
+    },
+    "ipv4": {
+      "103.242.119.71:443": "2021-05-02",
+      "120.50.38.187:443": "2021-05-02",
+      "161.5.6.206:3128": "2021-05-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-05-02",
+    "latest": "2021-05-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cdn.fmlstatic.com",
+      "financasdebrasil.com",
+      "fmlstatic.com",
+      "uaefinance.org"
+    ],
+    "ipv4": [
+      "103.242.119.71:443",
+      "120.50.38.187:443",
+      "161.5.6.206:3128"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "LONGHORN"
+  ],
+  "references": [
+    "https://malpedia.caad.fkie.fraunhofer.de/actor/longhorn",
+    "https://securelist.com/unraveling-the-lamberts-toolkit/77990/",
+    "https://www.virustotal.com/gui/file/94c9400a7c092d39b053b98d3fb9b241ebd40d820894fa0aaf806d5f813eba06/detection",
+    "https://www.virustotal.com/gui/file/b8734ada49e290d12a5a178a67e5ae45e1e3348e54a1f57ef4cdb92ff8c84086/detection",
+    "https://www.virustotal.com/gui/ip-address/82.141.230.145/relations"
+  ],
+  "related": [],
+  "slug": "LONGHORN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 3
+      },
+      "first_seen": "2021-05-02",
+      "indicators": {
+        "domain": [
+          "cdn.fmlstatic.com",
+          "financasdebrasil.com",
+          "fmlstatic.com",
+          "uaefinance.org"
+        ],
+        "ipv4": [
+          "103.242.119.71:443",
+          "120.50.38.187:443",
+          "161.5.6.206:3128"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://malpedia.caad.fkie.fraunhofer.de/actor/longhorn",
+        "https://securelist.com/unraveling-the-lamberts-toolkit/77990/",
+        "https://www.virustotal.com/gui/ip-address/82.141.230.145/relations",
+        "https://www.virustotal.com/gui/file/94c9400a7c092d39b053b98d3fb9b241ebd40d820894fa0aaf806d5f813eba06/detection",
+        "https://www.virustotal.com/gui/file/b8734ada49e290d12a5a178a67e5ae45e1e3348e54a1f57ef4cdb92ff8c84086/detection"
+      ],
+      "total": 7
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "aliases": [
+    "SPAREPART",
+    "STOWAWAY"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "56nk4qmwxcdd72yiaro7bxixvgf5awgmmzpodub7phmfsqylezu2tsid.onion.moe": "2022-12-16",
+      "cdnworld.org": "2022-12-16",
+      "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.moe": "2022-12-16",
+      "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.ws": "2022-12-16"
+    },
+    "ipv4": {
+      "193.142.30.166:443": "2022-12-16",
+      "91.205.230.66:8443": "2022-12-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-12-16",
+    "latest": "2022-12-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "56nk4qmwxcdd72yiaro7bxixvgf5awgmmzpodub7phmfsqylezu2tsid.onion.moe",
+      "cdnworld.org",
+      "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.moe",
+      "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.ws"
+    ],
+    "ipv4": [
+      "193.142.30.166:443",
+      "91.205.230.66:8443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4166"
+  ],
+  "references": [
+    "https://www.mandiant.com/resources/blog/trojanized-windows-installers-ukrainian-government"
+  ],
+  "related": [],
+  "slug": "UNC4166",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 2
+      },
+      "first_seen": "2022-12-16",
+      "indicators": {
+        "domain": [
+          "56nk4qmwxcdd72yiaro7bxixvgf5awgmmzpodub7phmfsqylezu2tsid.onion.moe",
+          "cdnworld.org",
+          "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.moe",
+          "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.ws"
+        ],
+        "ipv4": [
+          "193.142.30.166:443",
+          "91.205.230.66:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/trojanized-windows-installers-ukrainian-government"
+      ],
+      "total": 6
+    }
+  ]
+}

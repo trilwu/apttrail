@@ -1,0 +1,91 @@
+{
+  "name": "Dark Caracal (G0070) - APTtrail",
+  "description": "Techniques attributed to Dark Caracal by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0070.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1437.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Dark Caracal",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

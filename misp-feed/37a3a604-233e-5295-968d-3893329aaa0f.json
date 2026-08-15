@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c551913-fb0a-5d5a-b576-5612c9858a6e",
+        "value": "bkmail.blogdns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fa355a99-7ae7-5d91-8af1-1fd11ed3de84",
+        "value": "debain.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "073119f4-2f01-5bd1-81a2-3a7150e52e4f",
+        "value": "linuxdns.sytes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "56c3791f-3bc4-5152-be78-f7d43788f93f",
+        "value": "news.nhknews.hk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "40a97f30-0a62-53b7-8453-ecec2ae3a815",
+        "value": "sswmail.gotdns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c518c496-24f8-508a-b174-01eec64c01eb",
+        "value": "sswwmail.gotdns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8551d20b-288a-5412-a8dd-425dfc0238fd",
+        "value": "sysnc.sytes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e4d406b6-b70a-5f32-803f-18a017081448",
+        "value": "systeminfothai.gotdns.ch"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f70ae6a6-79b7-53bb-9503-7f91427a1caa",
+        "value": "thailandbbs.ddns.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9a21eb74-bd32-5d06-8be8-311a71bb86a3",
+        "value": "ubuntudns.sytes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492161700",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1b89a22e-1aa9-5d95-bdc4-db2b41157923",
+        "value": "web12.nhknews.hk"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:bookworm"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BOOKWORM",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "37a3a604-233e-5295-968d-3893329aaa0f"
+  }
+}

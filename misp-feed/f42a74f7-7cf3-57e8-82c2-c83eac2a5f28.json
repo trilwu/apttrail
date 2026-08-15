@@ -1,0 +1,39 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "bbd3ee10-c5af-54a3-a275-41b2e6920d69",
+        "value": "jpic.gov.sy/css/images/_cgi/"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:casper"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CASPER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f42a74f7-7cf3-57e8-82c2-c83eac2a5f28"
+  }
+}

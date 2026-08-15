@@ -1,0 +1,58 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "hezi-rash.ct.ws": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "hezi-rash.ct.ws": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "hezi-rash.ct.ws"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HEZIRASH"
+  ],
+  "references": [
+    "https://blog.checkpoint.com/research/hezi-rash-rising-kurdish-hacktivist-group-targets-global-sites/",
+    "https://e.cyberint.com/hubfs/Hezi%20Rash%20Report%20-%20OCT.pdf"
+  ],
+  "related": [],
+  "slug": "HEZIRASH",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "hezi-rash.ct.ws"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://blog.checkpoint.com/research/hezi-rash-rising-kurdish-hacktivist-group-targets-global-sites/",
+        "https://e.cyberint.com/hubfs/Hezi%20Rash%20Report%20-%20OCT.pdf"
+      ],
+      "total": 1
+    }
+  ]
+}

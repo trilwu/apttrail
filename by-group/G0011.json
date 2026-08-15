@@ -1,0 +1,170 @@
+{
+  "aliases": [
+    "apt-5",
+    "apt5",
+    "pittypanda",
+    "ptiger",
+    "ptrat"
+  ],
+  "attack_id": "G0011",
+  "attack_name": "PittyTiger",
+  "attack_url": "https://attack.mitre.org/groups/G0011/",
+  "counts": {
+    "domain": 16
+  },
+  "first_seen": {
+    "domain": {
+      "acers.com.tw": "2021-12-30",
+      "avstore.com.tw": "2019-10-05",
+      "dopodo.com.tw": "2021-12-30",
+      "foxcom.com.tw": "2021-12-30",
+      "helosaf.com.tw": "2021-12-30",
+      "killerhost.skypetm.com.tw": "2021-12-30",
+      "kimoo.com.tw": "2021-12-30",
+      "lightening.com.tw": "2021-12-30",
+      "newb02.skypetm.com.tw": "2021-12-31",
+      "paccfic.com": "2021-12-30",
+      "seed01.com.tw": "2021-12-30",
+      "skypetm.com.tw": "2019-10-05",
+      "stareastnet.com.tw": "2021-12-30",
+      "symantecs.com.tw": "2021-12-30",
+      "trendmicro.org.tw": "2021-12-30",
+      "trendmicroup.com": "2021-12-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-05",
+    "latest": "2021-12-31"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "acers.com.tw",
+      "avstore.com.tw",
+      "dopodo.com.tw",
+      "foxcom.com.tw",
+      "helosaf.com.tw",
+      "killerhost.skypetm.com.tw",
+      "kimoo.com.tw",
+      "lightening.com.tw",
+      "newb02.skypetm.com.tw",
+      "paccfic.com",
+      "seed01.com.tw",
+      "skypetm.com.tw",
+      "stareastnet.com.tw",
+      "symantecs.com.tw",
+      "trendmicro.org.tw",
+      "trendmicroup.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PITTYTIGER"
+  ],
+  "references": [
+    "https://apt.thaicert.or.th/cgi-bin/showcard.cgi?g=PittyTiger%2C%20Pitty%20Panda",
+    "https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/APT/pitty_tiger.profile",
+    "https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2014/2014.07.11.Pitty_Tiger/Pitty_Tiger_Final_Report.pdf",
+    "https://www.virustotal.com/gui/file/388d46cd5bed2c08c2bd90fa0cec35c90f9e4728579d639cce9ace75a20990be/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    }
+  ],
+  "slug": "G0011",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-31",
+      "indicators": {
+        "domain": [
+          "newb02.skypetm.com.tw"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://apt.thaicert.or.th/cgi-bin/showcard.cgi?g=PittyTiger%2C%20Pitty%20Panda",
+        "https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2014/2014.07.11.Pitty_Tiger/Pitty_Tiger_Final_Report.pdf",
+        "https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/APT/pitty_tiger.profile"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2021-12-30",
+      "indicators": {
+        "domain": [
+          "acers.com.tw",
+          "dopodo.com.tw",
+          "foxcom.com.tw",
+          "helosaf.com.tw",
+          "kimoo.com.tw",
+          "lightening.com.tw",
+          "paccfic.com",
+          "seed01.com.tw",
+          "stareastnet.com.tw",
+          "symantecs.com.tw",
+          "trendmicro.org.tw",
+          "trendmicroup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://apt.thaicert.or.th/cgi-bin/showcard.cgi?g=PittyTiger%2C%20Pitty%20Panda",
+        "https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2014/2014.07.11.Pitty_Tiger/Pitty_Tiger_Final_Report.pdf",
+        "https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/APT/pitty_tiger.profile"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-30",
+      "indicators": {
+        "domain": [
+          "killerhost.skypetm.com.tw"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/388d46cd5bed2c08c2bd90fa0cec35c90f9e4728579d639cce9ace75a20990be/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-05",
+      "indicators": {
+        "domain": [
+          "avstore.com.tw",
+          "skypetm.com.tw"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://apt.thaicert.or.th/cgi-bin/showcard.cgi?g=PittyTiger%2C%20Pitty%20Panda",
+        "https://paper.seebug.org/papers/APT/APT_CyberCriminal_Campagin/2014/2014.07.11.Pitty_Tiger/Pitty_Tiger_Final_Report.pdf",
+        "https://github.com/rsmudge/Malleable-C2-Profiles/blob/master/APT/pitty_tiger.profile"
+      ],
+      "total": 2
+    }
+  ]
+}

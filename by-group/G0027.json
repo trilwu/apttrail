@@ -1,0 +1,1880 @@
+{
+  "aliases": [
+    "apt 27",
+    "apt27",
+    "bronze union",
+    "cycldek",
+    "emissary panda",
+    "goblin panda",
+    "group 35",
+    "iron tiger",
+    "luckymouse",
+    "temp.hippo",
+    "tg-3390",
+    "threat group 3390",
+    "ziptoken"
+  ],
+  "attack_id": "G0027",
+  "attack_name": "Threat Group-3390",
+  "attack_url": "https://attack.mitre.org/groups/G0027/",
+  "counts": {
+    "domain": 255,
+    "ipv4": 21,
+    "url": 15
+  },
+  "first_seen": {
+    "domain": {
+      "24h.tinthethaoi.com": "2020-06-03",
+      "265g.site": "2020-07-22",
+      "36106g.com": "2018-09-04",
+      "88tech.me": "2023-03-05",
+      "activity.maacson.com": "2019-03-23",
+      "adobesys.com": "2020-12-27",
+      "aibeichen.cn": "2019-05-29",
+      "amazonawsgarages.com": "2022-12-14",
+      "american.blackcmd.com": "2018-09-12",
+      "analyaze.s3amazonbucket.com": "2022-12-14",
+      "analysis.windowstearns.com": "2022-12-14",
+      "api.apigmail.com": "2018-09-12",
+      "api.youkesdt.asia": "2023-04-26",
+      "apigmail.com": "2018-09-12",
+      "atlas-sian.net": "2023-03-05",
+      "awvsf7esh.dellrescue.com": "2019-09-21",
+      "backup.darkhero.org": "2018-09-12",
+      "bbs.maacson.com": "2019-03-23",
+      "bbs.sonypsps.com": "2018-08-08",
+      "bel.updatawindows.com": "2018-09-12",
+      "binary.update-onlines.org": "2018-09-12",
+      "blackcmd.com": "2018-09-12",
+      "buy.teamviewsoft.com": "2021-12-29",
+      "castle.blackcmd.com": "2018-09-12",
+      "cat.toonganuh.com": "2018-09-04",
+      "cdn.laokpl.com": "2020-06-03",
+      "center.veryssl.org": "2022-08-19",
+      "centuriosa.info": "2018-10-29",
+      "chatsecure.uk.to": "2019-10-18",
+      "chatsecurelite.uk.to": "2018-10-23",
+      "chatsecurelite.us.to": "2018-10-23",
+      "chinhsech.com": "2020-06-03",
+      "chototem.com": "2020-06-03",
+      "chrome-upgrade.com": "2020-12-09",
+      "ckvyk.com": "2020-08-24",
+      "ckvyk.net": "2020-08-24",
+      "cloud.cutepaty.com": "2021-04-06",
+      "cloudservicesdevc.tk": "2023-04-26",
+      "coco.sodexoa.com": "2018-09-04",
+      "conglyan.com": "2020-06-03",
+      "cooodkord.com": "2020-06-03",
+      "cophieu.dcsvnqvmn.com": "2020-06-03",
+      "coreders.com": "2020-06-03",
+      "cornm100.io": "2022-12-14",
+      "ctcb.blackcmd.com": "2018-09-12",
+      "cutepaty.com": "2021-04-06",
+      "cv3sa.gicp.net": "2018-09-04",
+      "daikynguyen21.com": "2020-06-03",
+      "dangquanwatch.com": "2020-06-03",
+      "darkhero.org": "2018-09-12",
+      "dataanalyticsclub.com": "2022-10-05",
+      "datacache.cloudservicesdevc.tk": "2023-04-26",
+      "dav.local-test.com": "2018-09-12",
+      "dcsvnqvmn.com": "2020-06-03",
+      "dev.gitlabs.me": "2023-03-05",
+      "dev.local-test.com": "2018-09-12",
+      "diendanlichsu.com": "2020-06-03",
+      "dll.pzchao.com": "2018-10-29",
+      "dn.dulichbiendao.org": "2018-09-04",
+      "dns.itbaydns.com": "2019-03-23",
+      "dongaruou.com": "2020-06-03",
+      "dongnain.com": "2020-06-03",
+      "down.pzchao.com": "2018-10-29",
+      "dulichculao.com": "2018-09-04",
+      "encryptit.qc.to": "2019-10-18",
+      "fasterwall.com": "2019-03-23",
+      "files.amazonawsgarages.com": "2022-12-14",
+      "ftp.google-ana1ytics.com": "2018-09-12",
+      "ga.blackcmd.com": "2018-09-12",
+      "gateway.vietbaotinmoi.com": "2018-09-04",
+      "ggfnv.com": "2020-08-24",
+      "giaitrinuoc.com": "2021-04-06",
+      "giaoxuchuson.com": "2020-06-03",
+      "gitlabs.me": "2023-03-05",
+      "gj.wxb2568.cn": "2020-07-22",
+      "google-ana1ytics.com": "2018-09-12",
+      "google-updata.tk": "2018-08-08",
+      "govmn.tk": "2019-03-23",
+      "halong.dulichculao.com": "2018-09-04",
+      "hanghoa.trenduang.com": "2020-06-03",
+      "hcm.vietbaonam.com": "2020-06-03",
+      "hcmuafgh.com": "2020-06-03",
+      "helpdesk.blackcmd.com": "2018-09-12",
+      "helpdesk.csc-na.com": "2018-09-12",
+      "helpdesk.hotmail-onlines.com": "2018-09-12",
+      "helpdesk.lnip.org": "2018-09-12",
+      "hn.dulichbiendao.org": "2018-09-04",
+      "hotmail-onlines.com": "2018-09-12",
+      "hotmailcontact.net": "2018-09-12",
+      "i1mc.xyz": "2022-04-08",
+      "images.webprogobest.com": "2020-06-03",
+      "info.coreders.com": "2020-06-03",
+      "jgkgv.net": "2020-08-24",
+      "jiqun.i1mc.xyz": "2022-04-08",
+      "jira.atlas-sian.net": "2023-03-05",
+      "jkncj.com": "2020-08-24",
+      "jobs.hotmail-onlines.com": "2018-09-12",
+      "justufogame.com": "2018-09-12",
+      "khinhte.chinhsech.com": "2020-06-03",
+      "kinhte.chototem.com": "2020-06-03",
+      "kinhtevanhoa.com": "2020-06-03",
+      "kmbk8.hicp.net": "2018-09-04",
+      "language.wikaba.com": "2019-02-27",
+      "laokpl.com": "2020-06-03",
+      "laomoodwin.com": "2020-06-03",
+      "laovoanew.com": "2020-06-03",
+      "lat.conglyan.com": "2020-06-03",
+      "laxness-lab.com": "2018-09-12",
+      "linux.updatelive-oline.com": "2022-08-19",
+      "livehelp100services.com": "2022-12-14",
+      "livehelpl00service.com": "2022-12-14",
+      "livelyhellp.chat": "2022-12-14",
+      "lnip.org": "2018-09-12",
+      "local-test.com": "2018-09-12",
+      "login.dangquanwatch.com": "2020-06-03",
+      "login.diendanlichsu.com": "2020-06-03",
+      "login.giaoxuchuson.com": "2020-06-03",
+      "login.hansoftupdate.com": "2018-09-12",
+      "login.thanhnienthegioi.com": "2020-06-03",
+      "login.vietnamfar.com": "2020-06-03",
+      "long.update-onlines.org": "2018-09-12",
+      "longlong.update-onlines.org": "2018-09-12",
+      "longshadow.dyndns.org": "2018-09-12",
+      "longshadow.update-onlines.org": "2018-09-12",
+      "longykcai.update-onlines.org": "2018-09-12",
+      "lostself.update-onlines.org": "2018-09-12",
+      "luan.conglyan.com": "2020-06-03",
+      "maacson.com": "2019-03-23",
+      "mac.navydocument.com": "2018-09-12",
+      "mail.csc-na.com": "2018-09-12",
+      "mantech.updatawindows.com": "2018-09-12",
+      "max.cornm100.io": "2022-12-14",
+      "micr0soft.org": "2018-09-12",
+      "microlynconline.com": "2020-12-09",
+      "microsoft-outlook.org": "2018-09-12",
+      "mildupdate.com": "2019-02-27",
+      "ministop14.com": "2020-06-03",
+      "motivation.neighboring.site": "2020-03-19",
+      "mtc.navydocument.com": "2018-09-12",
+      "mtc.update-onlines.org": "2018-09-12",
+      "mychau.dongnain.com": "2020-06-03",
+      "myvandyke.net": "2023-03-05",
+      "navydocument.com": "2018-09-12",
+      "new.sggpnews.com": "2018-09-04",
+      "news.cooodkord.com": "2020-06-03",
+      "news.hotmail-onlines.com": "2018-09-12",
+      "news.trungtamwtoa.com": "2020-06-03",
+      "nghiencuu.onetotechnologys.com": "2020-06-03",
+      "nhantai.xmeyeugh.com": "2020-06-03",
+      "ntp-server.asia": "2022-08-19",
+      "oa.88tech.me": "2023-03-05",
+      "oa.myvandyke.net": "2023-03-05",
+      "oac.3322.org": "2018-09-12",
+      "ocean.apigmail.com": "2018-09-12",
+      "ocean.local-test.com": "2018-09-12",
+      "onetotechnologys.com": "2020-06-03",
+      "order.myvandyke.net": "2023-03-05",
+      "pchomeserver.com": "2018-09-12",
+      "phong.giaitrinuoc.com": "2021-04-06",
+      "phongay.com": "2021-04-06",
+      "privatehd.us.to": "2019-10-18",
+      "quocphong.ministop14.com": "2020-06-03",
+      "rat.pzchao.com": "2018-10-29",
+      "registre.organiccrap.com": "2018-09-12",
+      "s.livelyhellp.chat": "2022-12-14",
+      "s3amazonbucket.com": "2022-12-14",
+      "sd123.eicp.net": "2018-09-04",
+      "security.pomsys.org": "2018-09-12",
+      "service.livehelpl00service.com": "2022-12-14",
+      "services.darkhero.org": "2018-09-12",
+      "services.livehelp100services.com": "2022-12-14",
+      "settings-win.dyndns-office.com": "2021-04-11",
+      "sex17.us.to": "2019-10-18",
+      "sgl.updatawindows.com": "2018-09-12",
+      "shadow.update-onlines.org": "2018-09-12",
+      "skylineqaz.crabdance.com": "2019-01-08",
+      "solution.instanthq.com": "2019-02-27",
+      "sonoco.blackcmd.com": "2018-09-12",
+      "static.fasterwall.com": "2019-03-23",
+      "static.phongay.com": "2021-04-06",
+      "support.teamviewsoft.com": "2021-12-29",
+      "tajikstantravel.dynamic-dns.net": "2019-06-04",
+      "tdjsyqty0takah2x.gitoos.com": "2019-10-04",
+      "teamviewsoft.com": "2021-12-29",
+      "tele.zyns.com": "2019-01-08",
+      "test.local-test.com": "2018-09-12",
+      "test.logmastre.com": "2018-09-12",
+      "thanhnien.vietnannnet.com": "2020-06-03",
+      "thanhnienthegioi.com": "2020-06-03",
+      "thegioi.kinhtevanhoa.com": "2020-06-03",
+      "thoitiet.yrindovn.com": "2020-06-03",
+      "thoitietdulich.com": "2020-06-03",
+      "time.ntp-server.asia": "2022-08-19",
+      "time1.ntp-server.asia": "2022-08-19",
+      "tinmoi.thoitietdulich.com": "2020-06-03",
+      "tinmoi.vieclamthemde.com": "2020-06-03",
+      "tinthethaoi.com": "2020-06-03",
+      "tintuc.daikynguyen21.com": "2020-06-03",
+      "toiyeuvn.dongaruou.com": "2020-06-03",
+      "toonganuh.com": "2018-09-04",
+      "trenduang.com": "2020-06-03",
+      "trprivates.com": "2019-02-27",
+      "trungtamwtoa.com": "2020-06-03",
+      "trust.veryssl.org": "2022-08-19",
+      "unix.s3amazonbucket.com": "2026-01-02",
+      "up.gtalklite.com": "2018-09-12",
+      "up.pzchao.com": "2018-10-29",
+      "updatawindows.com": "2018-09-12",
+      "update-onlines.org": "2018-09-12",
+      "update.deepsoftupdate.com": "2018-09-12",
+      "update.fasterwall.com": "2021-12-29",
+      "update.hancominc.com": "2018-09-12",
+      "update.iaacstudio.com": "2018-08-08",
+      "update.micr0soft.org": "2018-09-12",
+      "update.pchomeserver.com": "2018-09-12",
+      "updatelive-oline.com": "2022-08-19",
+      "urs.blackcmd.com": "2018-09-12",
+      "uzwatersource.dynamic-dns.net": "2019-01-08",
+      "vegispaceshop.org": "2020-12-09",
+      "vieclamthemde.com": "2020-06-03",
+      "vietbaonam.com": "2020-06-03",
+      "vietnamfar.com": "2020-06-03",
+      "vietnannnet.com": "2020-06-03",
+      "wang.darkhero.org": "2018-09-12",
+      "web.hcmuafgh.com": "2019-05-02",
+      "web.laomoodwin.com": "2020-06-03",
+      "web.laovoanew.com": "2020-06-03",
+      "web.thoitietvietnam.org": "2018-09-04",
+      "webprogobest.com": "2020-06-03",
+      "webs.local-test.com": "2018-09-12",
+      "wh0am1.itbaydns.com": "2018-08-08",
+      "windows-updata.tk": "2018-08-08",
+      "windows.updatelive-oline.com": "2022-08-19",
+      "windowstearns.com": "2022-10-06",
+      "word.apigmail.com": "2018-09-12",
+      "wordpress.blackcmd.com": "2018-09-12",
+      "working.blackcmd.com": "2018-09-12",
+      "working.darkhero.org": "2018-09-12",
+      "working.hotmail-onlines.com": "2018-09-12",
+      "wouderfulu.impresstravel.ga": "2018-09-04",
+      "www.google-ana1ytics.com": "2018-09-12",
+      "www.trendmicro-update.org": "2018-09-12",
+      "www.update-onlines.org": "2018-09-12",
+      "x.apigmail.com": "2018-09-12",
+      "xmeyeugh.com": "2020-06-03",
+      "ybupdate.me": "2023-03-05",
+      "ykcai.update-onlines.org": "2018-09-12",
+      "ykcailostself.dyndns-free.com": "2018-09-12",
+      "ykcainobody.dyndns.org": "2018-09-12",
+      "yofeopxuuehixwmj.redhatupdater.com": "2019-09-21",
+      "youkesdt.asia": "2023-04-26",
+      "yrindovn.com": "2020-06-03",
+      "zj.blackcmd.com": "2018-09-12",
+      "zll855.gicp.net": "2018-10-29",
+      "zll855.no-ip.info": "2018-10-29"
+    },
+    "ipv4": {
+      "103.243.26.213:8000": "2026-01-02",
+      "103.79.77.200:443": "2022-01-26",
+      "104.168.211.246:443": "2022-08-19",
+      "104.168.236.46:443": "2022-01-26",
+      "115.214.104.26:81": "2019-05-29",
+      "139.180.216.65:443": "2022-08-19",
+      "154.93.7.99:8090": "2023-09-04",
+      "185.12.45.134:443": "2019-06-04",
+      "27.124.26.136:1943": "2020-07-22",
+      "27.124.26.136:59486": "2020-07-22",
+      "35.187.148.253:443": "2021-04-11",
+      "35.220.135.85:443": "2021-04-11",
+      "38.54.119.239:443": "2023-09-04",
+      "45.142.214.193:443": "2022-08-19",
+      "45.32.33.17:443": "2023-02-14",
+      "45.77.250.141:443": "2022-08-19",
+      "47.75.49.32:443": "2021-04-11",
+      "80.92.206.158:443": "2022-08-19",
+      "85.204.74.143:443": "2021-04-11",
+      "87.98.190.184:443": "2022-01-26",
+      "89.35.178.105:443": "2021-04-11"
+    },
+    "url": {
+      "http://103.253.25.73": "2020-06-03",
+      "http://103.75.190.28": "2018-09-10",
+      "http://104.168.211.246": "2022-08-19",
+      "http://104.168.236.46": "2022-10-05",
+      "http://139.180.208.225/ajax": "2020-07-26",
+      "http://139.180.216.65": "2022-08-19",
+      "http://192.167.4.10": "2019-05-29",
+      "http://213.109.87.58": "2018-09-10",
+      "http://23.224.61.12": "2023-10-06",
+      "http://38.54.119.239": "2023-09-04",
+      "http://43.242.75.228": "2019-05-29",
+      "http://45.142.214.193": "2022-08-19",
+      "http://45.32.33.17": "2023-10-06",
+      "http://45.77.250.141": "2022-08-19",
+      "http://80.92.206.158": "2022-08-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "unix.s3amazonbucket.com": "at-or-before"
+    },
+    "ipv4": {
+      "103.243.26.213:8000": "at-or-before"
+    },
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-08",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "24h.tinthethaoi.com",
+      "265g.site",
+      "36106g.com",
+      "88tech.me",
+      "activity.maacson.com",
+      "adobesys.com",
+      "aibeichen.cn",
+      "amazonawsgarages.com",
+      "american.blackcmd.com",
+      "analyaze.s3amazonbucket.com",
+      "analysis.windowstearns.com",
+      "api.apigmail.com",
+      "api.youkesdt.asia",
+      "apigmail.com",
+      "atlas-sian.net",
+      "awvsf7esh.dellrescue.com",
+      "backup.darkhero.org",
+      "bbs.maacson.com",
+      "bbs.sonypsps.com",
+      "bel.updatawindows.com",
+      "binary.update-onlines.org",
+      "blackcmd.com",
+      "buy.teamviewsoft.com",
+      "castle.blackcmd.com",
+      "cat.toonganuh.com",
+      "cdn.laokpl.com",
+      "center.veryssl.org",
+      "centuriosa.info",
+      "chatsecure.uk.to",
+      "chatsecurelite.uk.to",
+      "chatsecurelite.us.to",
+      "chinhsech.com",
+      "chototem.com",
+      "chrome-upgrade.com",
+      "ckvyk.com",
+      "ckvyk.net",
+      "cloud.cutepaty.com",
+      "cloudservicesdevc.tk",
+      "coco.sodexoa.com",
+      "conglyan.com",
+      "cooodkord.com",
+      "cophieu.dcsvnqvmn.com",
+      "coreders.com",
+      "cornm100.io",
+      "ctcb.blackcmd.com",
+      "cutepaty.com",
+      "cv3sa.gicp.net",
+      "daikynguyen21.com",
+      "dangquanwatch.com",
+      "darkhero.org",
+      "dataanalyticsclub.com",
+      "datacache.cloudservicesdevc.tk",
+      "dav.local-test.com",
+      "dcsvnqvmn.com",
+      "dev.gitlabs.me",
+      "dev.local-test.com",
+      "diendanlichsu.com",
+      "dll.pzchao.com",
+      "dn.dulichbiendao.org",
+      "dns.itbaydns.com",
+      "dongaruou.com",
+      "dongnain.com",
+      "down.pzchao.com",
+      "dulichculao.com",
+      "encryptit.qc.to",
+      "fasterwall.com",
+      "files.amazonawsgarages.com",
+      "ftp.google-ana1ytics.com",
+      "ga.blackcmd.com",
+      "gateway.vietbaotinmoi.com",
+      "ggfnv.com",
+      "giaitrinuoc.com",
+      "giaoxuchuson.com",
+      "gitlabs.me",
+      "gj.wxb2568.cn",
+      "google-ana1ytics.com",
+      "google-updata.tk",
+      "govmn.tk",
+      "halong.dulichculao.com",
+      "hanghoa.trenduang.com",
+      "hcm.vietbaonam.com",
+      "hcmuafgh.com",
+      "helpdesk.blackcmd.com",
+      "helpdesk.csc-na.com",
+      "helpdesk.hotmail-onlines.com",
+      "helpdesk.lnip.org",
+      "hn.dulichbiendao.org",
+      "hotmail-onlines.com",
+      "hotmailcontact.net",
+      "i1mc.xyz",
+      "images.webprogobest.com",
+      "info.coreders.com",
+      "jgkgv.net",
+      "jiqun.i1mc.xyz",
+      "jira.atlas-sian.net",
+      "jkncj.com",
+      "jobs.hotmail-onlines.com",
+      "justufogame.com",
+      "khinhte.chinhsech.com",
+      "kinhte.chototem.com",
+      "kinhtevanhoa.com",
+      "kmbk8.hicp.net",
+      "language.wikaba.com",
+      "laokpl.com",
+      "laomoodwin.com",
+      "laovoanew.com",
+      "lat.conglyan.com",
+      "laxness-lab.com",
+      "linux.updatelive-oline.com",
+      "livehelp100services.com",
+      "livehelpl00service.com",
+      "livelyhellp.chat",
+      "lnip.org",
+      "local-test.com",
+      "login.dangquanwatch.com",
+      "login.diendanlichsu.com",
+      "login.giaoxuchuson.com",
+      "login.hansoftupdate.com",
+      "login.thanhnienthegioi.com",
+      "login.vietnamfar.com",
+      "long.update-onlines.org",
+      "longlong.update-onlines.org",
+      "longshadow.dyndns.org",
+      "longshadow.update-onlines.org",
+      "longykcai.update-onlines.org",
+      "lostself.update-onlines.org",
+      "luan.conglyan.com",
+      "maacson.com",
+      "mac.navydocument.com",
+      "mail.csc-na.com",
+      "mantech.updatawindows.com",
+      "max.cornm100.io",
+      "micr0soft.org",
+      "microlynconline.com",
+      "microsoft-outlook.org",
+      "mildupdate.com",
+      "ministop14.com",
+      "motivation.neighboring.site",
+      "mtc.navydocument.com",
+      "mtc.update-onlines.org",
+      "mychau.dongnain.com",
+      "myvandyke.net",
+      "navydocument.com",
+      "new.sggpnews.com",
+      "news.cooodkord.com",
+      "news.hotmail-onlines.com",
+      "news.trungtamwtoa.com",
+      "nghiencuu.onetotechnologys.com",
+      "nhantai.xmeyeugh.com",
+      "ntp-server.asia",
+      "oa.88tech.me",
+      "oa.myvandyke.net",
+      "oac.3322.org",
+      "ocean.apigmail.com",
+      "ocean.local-test.com",
+      "onetotechnologys.com",
+      "order.myvandyke.net",
+      "pchomeserver.com",
+      "phong.giaitrinuoc.com",
+      "phongay.com",
+      "privatehd.us.to",
+      "quocphong.ministop14.com",
+      "rat.pzchao.com",
+      "registre.organiccrap.com",
+      "s.livelyhellp.chat",
+      "s3amazonbucket.com",
+      "sd123.eicp.net",
+      "security.pomsys.org",
+      "service.livehelpl00service.com",
+      "services.darkhero.org",
+      "services.livehelp100services.com",
+      "settings-win.dyndns-office.com",
+      "sex17.us.to",
+      "sgl.updatawindows.com",
+      "shadow.update-onlines.org",
+      "skylineqaz.crabdance.com",
+      "solution.instanthq.com",
+      "sonoco.blackcmd.com",
+      "static.fasterwall.com",
+      "static.phongay.com",
+      "support.teamviewsoft.com",
+      "tajikstantravel.dynamic-dns.net",
+      "tdjsyqty0takah2x.gitoos.com",
+      "teamviewsoft.com",
+      "tele.zyns.com",
+      "test.local-test.com",
+      "test.logmastre.com",
+      "thanhnien.vietnannnet.com",
+      "thanhnienthegioi.com",
+      "thegioi.kinhtevanhoa.com",
+      "thoitiet.yrindovn.com",
+      "thoitietdulich.com",
+      "time.ntp-server.asia",
+      "time1.ntp-server.asia",
+      "tinmoi.thoitietdulich.com",
+      "tinmoi.vieclamthemde.com",
+      "tinthethaoi.com",
+      "tintuc.daikynguyen21.com",
+      "toiyeuvn.dongaruou.com",
+      "toonganuh.com",
+      "trenduang.com",
+      "trprivates.com",
+      "trungtamwtoa.com",
+      "trust.veryssl.org",
+      "unix.s3amazonbucket.com",
+      "up.gtalklite.com",
+      "up.pzchao.com",
+      "updatawindows.com",
+      "update-onlines.org",
+      "update.deepsoftupdate.com",
+      "update.fasterwall.com",
+      "update.hancominc.com",
+      "update.iaacstudio.com",
+      "update.micr0soft.org",
+      "update.pchomeserver.com",
+      "updatelive-oline.com",
+      "urs.blackcmd.com",
+      "uzwatersource.dynamic-dns.net",
+      "vegispaceshop.org",
+      "vieclamthemde.com",
+      "vietbaonam.com",
+      "vietnamfar.com",
+      "vietnannnet.com",
+      "wang.darkhero.org",
+      "web.hcmuafgh.com",
+      "web.laomoodwin.com",
+      "web.laovoanew.com",
+      "web.thoitietvietnam.org",
+      "webprogobest.com",
+      "webs.local-test.com",
+      "wh0am1.itbaydns.com",
+      "windows-updata.tk",
+      "windows.updatelive-oline.com",
+      "windowstearns.com",
+      "word.apigmail.com",
+      "wordpress.blackcmd.com",
+      "working.blackcmd.com",
+      "working.darkhero.org",
+      "working.hotmail-onlines.com",
+      "wouderfulu.impresstravel.ga",
+      "www.google-ana1ytics.com",
+      "www.trendmicro-update.org",
+      "www.update-onlines.org",
+      "x.apigmail.com",
+      "xmeyeugh.com",
+      "ybupdate.me",
+      "ykcai.update-onlines.org",
+      "ykcailostself.dyndns-free.com",
+      "ykcainobody.dyndns.org",
+      "yofeopxuuehixwmj.redhatupdater.com",
+      "youkesdt.asia",
+      "yrindovn.com",
+      "zj.blackcmd.com",
+      "zll855.gicp.net",
+      "zll855.no-ip.info"
+    ],
+    "ipv4": [
+      "103.243.26.213:8000",
+      "103.79.77.200:443",
+      "104.168.211.246:443",
+      "104.168.236.46:443",
+      "115.214.104.26:81",
+      "139.180.216.65:443",
+      "154.93.7.99:8090",
+      "185.12.45.134:443",
+      "27.124.26.136:1943",
+      "27.124.26.136:59486",
+      "35.187.148.253:443",
+      "35.220.135.85:443",
+      "38.54.119.239:443",
+      "45.142.214.193:443",
+      "45.32.33.17:443",
+      "45.77.250.141:443",
+      "47.75.49.32:443",
+      "80.92.206.158:443",
+      "85.204.74.143:443",
+      "87.98.190.184:443",
+      "89.35.178.105:443"
+    ],
+    "url": [
+      "http://103.253.25.73",
+      "http://103.75.190.28",
+      "http://104.168.211.246",
+      "http://104.168.236.46",
+      "http://139.180.208.225/ajax",
+      "http://139.180.216.65",
+      "http://192.167.4.10",
+      "http://213.109.87.58",
+      "http://23.224.61.12",
+      "http://38.54.119.239",
+      "http://43.242.75.228",
+      "http://45.142.214.193",
+      "http://45.32.33.17",
+      "http://45.77.250.141",
+      "http://80.92.206.158"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "27",
+    "IRONTIGER"
+  ],
+  "references": [
+    "http://www.secureworks.com/cyber-threat-intelligence/threats/threat-group-3390-targets-organizations-for-cyberespionage/",
+    "https://app.any.run/tasks/949f2624-505c-4f10-a304-1671492f9a22/",
+    "https://blog.eclecticiq.com/chinese-state-sponsored-cyber-espionage-activity-targeting-semiconductor-industry-in-east-asia",
+    "https://blogs.quickheal.com/apt-27-like-newcore-rat-virut-exploiting-mysql-targeted-attacks-enterprise/",
+    "https://cofense.com/blog/open-source-gh0st-rat-still-haunting-inboxes-15-years-after-release/",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-06-21: EmissaryPanda waterhole in Mongolia's president and parliament websites)",
+    "https://labs.bitdefender.com/wp-content/uploads/downloads/operation-pzchao-inside-a-highly-specialized-espionage-infrastructure/",
+    "https://marcoramilli.com/2020/03/19/is-apt27-abusing-covid-19-to-attack-people/",
+    "https://medium.com/@Sebdraven/gobelin-panda-against-the-bears-1f462d00e3a4",
+    "https://medium.com/@Sebdraven/goblin-panda-changes-the-dropper-and-reused-the-old-infrastructure-a35915f3e37a",
+    "https://medium.com/@Sebdraven/goblin-panda-continues-to-target-vietnam-bc2f0f56dcd6",
+    "https://medium.com/@Sebdraven/malicious-document-targets-vietnamese-officials-acb3b9d8b80a",
+    "https://medium.com/@Sebdraven/rtf-royal-road-drops-a-new-backdoor-mfc-and-links-with-goblin-panda-90db06f80611",
+    "https://meltx0r.github.io/tech/2019/09/19/emissary-panda-apt.html",
+    "https://otx.alienvault.com/pulse/5ccabe9589bea41847a35a0f",
+    "https://otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1",
+    "https://otx.alienvault.com/pulse/5e734d45158714422bc4e774",
+    "https://otx.alienvault.com/pulse/5f43f48c0712b9c5245d4824",
+    "https://otx.alienvault.com/pulse/5fd1090b830e4fba81b06cef",
+    "https://otx.alienvault.com/pulse/606dd51193fe95bf9552902e",
+    "https://otx.alienvault.com/pulse/607094697706cc521d0f0788",
+    "https://otx.alienvault.com/pulse/6399f1943fb578ccb093a7b7",
+    "https://otx.alienvault.com/pulse/63ff5a60ca3dccd68551ba17",
+    "https://otx.alienvault.com/pulse/6448506f7a10b2c157ec8fc4",
+    "https://securelist.com/cycldek-bridging-the-air-gap/97157/",
+    "https://securelist.com/luckymouse-ndisproxy-driver/87914/",
+    "https://securelist.com/the-leap-of-a-cycldek-related-threat-actor/101243/",
+    "https://securelist.ru/luckymouse-hits-national-data-center/90213/",
+    "https://twitter.com/BushidoToken/status/1577605361930063876",
+    "https://twitter.com/JAMESWT_MHT/status/1476105632751267840",
+    "https://twitter.com/MeltX0R/status/1175309376493629440",
+    "https://twitter.com/MeltX0R/status/1179800013150527488",
+    "https://twitter.com/Vishnyak0v/status/1287308019336990720 (# HyperBro backdoor)",
+    "https://twitter.com/_marklech_/status/1268138088167018498",
+    "https://twitter.com/autumn_good_35/status/1486296569641340930",
+    "https://twitter.com/felixaime/status/1698741466619838510",
+    "https://twitter.com/pancak3lullz/status/1286021877375303682",
+    "https://twitter.com/pancak3lullz/status/1286027620740726785",
+    "https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/",
+    "https://www.secureworks.com/research/a-peek-into-bronze-unions-toolbox",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/h/iron-tiger-compromises-chat-application-mimi,-targets-windows,-mac,-and-linux-users/IOCs-IronTiger-compromises-chat-application-mimi-targets-windows-mac-linux-users.txt",
+    "https://www.trendmicro.com/en_us/research/21/d/iron-tiger-apt-updates-toolkit-with-evolved-sysupdate-malware-va.html",
+    "https://www.trendmicro.com/en_us/research/22/h/irontiger-compromises-chat-app-Mimi-targets-windows-mac-linux-users.html",
+    "https://www.trendmicro.com/en_us/research/22/l/probing-weaponized-chat-applications-abused-in-supply-chain-atta.html",
+    "https://www.trendmicro.com/en_us/research/23/c/iron-tiger-sysupdate-adds-linux-targeting.html",
+    "https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf (German)",
+    "https://www.virustotal.com/graph/embed/gdc80667c54cc46cba1038b34efa40a737bb9468fc9f34febb618e19227758d81",
+    "https://www.virustotal.com/gui/file/051400edf4aae2a1041743c1b12740a9e03cf51b6f9491e7e08138640dcd0db6/detection",
+    "https://www.virustotal.com/gui/file/074edd82af9bbfd98dd0da167f3712cf5cb3569f66bf308bd5f44b50634ac065/detection",
+    "https://www.virustotal.com/gui/file/07aa739fa4942cfd68d4a075568456797f11ae34db5cd56f88d80185bc1d7a29/detection",
+    "https://www.virustotal.com/gui/file/094f0713e788800496344035e388efce5bb176102ecb705443de0045ae6c2dfc/detection",
+    "https://www.virustotal.com/gui/file/12e1f50d7c9cf546c90545588bc369fa90e03f2370883e7befd87e4d50ebf0df/detection",
+    "https://www.virustotal.com/gui/file/29741e60dca8a68021be35525a6b46533d6da1735c8cd91281bc244c89810860/detection",
+    "https://www.virustotal.com/gui/file/3443bb895444c1c7fa0beab54f93a79083cd2b5f09dfb4889d7d31fcf00a6330/detection",
+    "https://www.virustotal.com/gui/file/36fad80a5f328f487b20a3f5fc5f1902d50cbb1bd9167c44b66929a1288fc6f4/detection",
+    "https://www.virustotal.com/gui/file/6784171c7bfabec50350f3a9042df871f4c2ec635133fa000ffa7079a3f2908a/detection",
+    "https://www.virustotal.com/gui/file/6e3c3045bb9d0db4817ad0441ee3c95b8fe3e087388d1ceefb9ebbd2608aef16/detection",
+    "https://www.virustotal.com/gui/file/7201e604359019b484f6a6ac4d8cba55e413df36e46b90af1e4de6718613fa0a/detection",
+    "https://www.virustotal.com/gui/file/788bd34d3c5d12b9767f8ac5587f1970597c47fb06713a6070d430a593bb4945/detection",
+    "https://www.virustotal.com/gui/file/96e38c55174bf287fe0c21a4d8fa633a252d526bc57cd1b042c473816edb0fbf/detection",
+    "https://www.virustotal.com/gui/file/99cc8ee3a385c767e25ebaf2dcaefdc8c091150c1a7dadbda6b08356c34bb889/detection",
+    "https://www.virustotal.com/gui/file/9dcf1501177b898785315d1f3024cd8371da1c77401c0075aa2421bd5b056740/detection",
+    "https://www.virustotal.com/gui/file/9f7f7b98342621e106def4e55e98fc10c99fbf7e785257e603ded5cef7b099fb/detection",
+    "https://www.virustotal.com/gui/file/ce226bd1f53819d6654caf04a7bb4141479f01f9225ac6fba49248920e57cb25/detection",
+    "https://www.virustotal.com/gui/file/db4497090a94d0189aa3c3f4fcee30d5381453ec5aa38962e2ca971074b74e8b/detection",
+    "https://www.virustotal.com/gui/file/ee66ebcbe872def8373a4e5ea23f14181ea04759ea83f01d2e8ff45d60c65e51/detection",
+    "https://www.virustotal.com/gui/ip-address/8.219.76.37/relations",
+    "https://www.virustotal.com/gui/ip-address/91.218.113.17/relations",
+    "https://x.com/TuringAlex/status/1977626210609049683",
+    "https://x.com/skocherhan/status/1942043295292481785"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "slug": "ICEFOG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "slug": "REDFOXTROT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "UNC215"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "GOLDENRAT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ZxShell, ASPXSpy, pwdump and 1 more",
+          "kind": "software",
+          "weight": 1.093
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, ASPXSpy, pwdump",
+          "kind": "software",
+          "weight": 0.7
+        }
+      ],
+      "slug": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares RCSession, China Chopper",
+          "kind": "software",
+          "weight": 0.643
+        }
+      ],
+      "slug": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares HTTPBrowser",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0026"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, gsecdump",
+          "kind": "software",
+          "weight": 0.45
+        }
+      ],
+      "slug": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares gsecdump, pwdump",
+          "kind": "software",
+          "weight": 0.4
+        }
+      ],
+      "slug": "G0006"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "slug": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "slug": "G0125"
+    }
+  ],
+  "slug": "G0027",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "103.243.26.213:8000"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/skocherhan/status/1942043295292481785"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "unix.s3amazonbucket.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/TuringAlex/status/1977626210609049683",
+        "https://www.trendmicro.com/en_us/research/22/l/probing-weaponized-chat-applications-abused-in-supply-chain-atta.html",
+        "https://www.virustotal.com/gui/ip-address/8.219.76.37/relations",
+        "https://www.virustotal.com/gui/file/db4497090a94d0189aa3c3f4fcee30d5381453ec5aa38962e2ca971074b74e8b/detection",
+        "https://otx.alienvault.com/pulse/6399f1943fb578ccb093a7b7"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2023-10-06",
+      "indicators": {
+        "url": [
+          "http://23.224.61.12",
+          "http://45.32.33.17"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.eclecticiq.com/chinese-state-sponsored-cyber-espionage-activity-targeting-semiconductor-industry-in-east-asia",
+        "https://www.virustotal.com/gui/file/ce226bd1f53819d6654caf04a7bb4141479f01f9225ac6fba49248920e57cb25/detection",
+        "https://www.virustotal.com/gui/file/29741e60dca8a68021be35525a6b46533d6da1735c8cd91281bc244c89810860/detection",
+        "https://www.virustotal.com/gui/file/7201e604359019b484f6a6ac4d8cba55e413df36e46b90af1e4de6718613fa0a/detection",
+        "https://www.virustotal.com/gui/file/6e3c3045bb9d0db4817ad0441ee3c95b8fe3e087388d1ceefb9ebbd2608aef16/detection",
+        "https://www.virustotal.com/gui/file/3443bb895444c1c7fa0beab54f93a79083cd2b5f09dfb4889d7d31fcf00a6330/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2023-09-04",
+      "indicators": {
+        "ipv4": [
+          "154.93.7.99:8090",
+          "38.54.119.239:443"
+        ],
+        "url": [
+          "http://38.54.119.239"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1698741466619838510",
+        "https://www.virustotal.com/gui/file/12e1f50d7c9cf546c90545588bc369fa90e03f2370883e7befd87e4d50ebf0df/detection",
+        "https://www.virustotal.com/gui/file/ee66ebcbe872def8373a4e5ea23f14181ea04759ea83f01d2e8ff45d60c65e51/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-04-26",
+      "indicators": {
+        "domain": [
+          "api.youkesdt.asia",
+          "cloudservicesdevc.tk",
+          "datacache.cloudservicesdevc.tk",
+          "youkesdt.asia"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cofense.com/blog/open-source-gh0st-rat-still-haunting-inboxes-15-years-after-release/",
+        "https://otx.alienvault.com/pulse/6448506f7a10b2c157ec8fc4"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2023-03-05",
+      "indicators": {
+        "domain": [
+          "88tech.me",
+          "atlas-sian.net",
+          "dev.gitlabs.me",
+          "gitlabs.me",
+          "jira.atlas-sian.net",
+          "myvandyke.net",
+          "oa.88tech.me",
+          "oa.myvandyke.net",
+          "order.myvandyke.net",
+          "ybupdate.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/23/c/iron-tiger-sysupdate-adds-linux-targeting.html",
+        "https://otx.alienvault.com/pulse/63ff5a60ca3dccd68551ba17"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-02-14",
+      "indicators": {
+        "ipv4": [
+          "45.32.33.17:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.eclecticiq.com/chinese-state-sponsored-cyber-espionage-activity-targeting-semiconductor-industry-in-east-asia",
+        "https://www.virustotal.com/gui/file/ce226bd1f53819d6654caf04a7bb4141479f01f9225ac6fba49248920e57cb25/detection",
+        "https://www.virustotal.com/gui/file/29741e60dca8a68021be35525a6b46533d6da1735c8cd91281bc244c89810860/detection",
+        "https://www.virustotal.com/gui/file/7201e604359019b484f6a6ac4d8cba55e413df36e46b90af1e4de6718613fa0a/detection",
+        "https://www.virustotal.com/gui/file/6e3c3045bb9d0db4817ad0441ee3c95b8fe3e087388d1ceefb9ebbd2608aef16/detection",
+        "https://www.virustotal.com/gui/file/3443bb895444c1c7fa0beab54f93a79083cd2b5f09dfb4889d7d31fcf00a6330/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 13
+      },
+      "first_seen": "2022-12-14",
+      "indicators": {
+        "domain": [
+          "amazonawsgarages.com",
+          "analyaze.s3amazonbucket.com",
+          "analysis.windowstearns.com",
+          "cornm100.io",
+          "files.amazonawsgarages.com",
+          "livehelp100services.com",
+          "livehelpl00service.com",
+          "livelyhellp.chat",
+          "max.cornm100.io",
+          "s.livelyhellp.chat",
+          "s3amazonbucket.com",
+          "service.livehelpl00service.com",
+          "services.livehelp100services.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TuringAlex/status/1977626210609049683",
+        "https://www.trendmicro.com/en_us/research/22/l/probing-weaponized-chat-applications-abused-in-supply-chain-atta.html",
+        "https://www.virustotal.com/gui/ip-address/8.219.76.37/relations",
+        "https://www.virustotal.com/gui/file/db4497090a94d0189aa3c3f4fcee30d5381453ec5aa38962e2ca971074b74e8b/detection",
+        "https://otx.alienvault.com/pulse/6399f1943fb578ccb093a7b7"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-10-06",
+      "indicators": {
+        "domain": [
+          "windowstearns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TuringAlex/status/1977626210609049683",
+        "https://www.trendmicro.com/en_us/research/22/l/probing-weaponized-chat-applications-abused-in-supply-chain-atta.html",
+        "https://www.virustotal.com/gui/ip-address/8.219.76.37/relations",
+        "https://www.virustotal.com/gui/file/db4497090a94d0189aa3c3f4fcee30d5381453ec5aa38962e2ca971074b74e8b/detection",
+        "https://otx.alienvault.com/pulse/6399f1943fb578ccb093a7b7"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen": "2022-10-05",
+      "indicators": {
+        "domain": [
+          "dataanalyticsclub.com"
+        ],
+        "url": [
+          "http://104.168.236.46"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BushidoToken/status/1577605361930063876",
+        "https://www.trendmicro.com/en_us/research/22/h/irontiger-compromises-chat-app-Mimi-targets-windows-mac-linux-users.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/h/iron-tiger-compromises-chat-application-mimi,-targets-windows,-mac,-and-linux-users/IOCs-IronTiger-compromises-chat-application-mimi-targets-windows-mac-linux-users.txt",
+        "https://www.virustotal.com/graph/embed/gdc80667c54cc46cba1038b34efa40a737bb9468fc9f34febb618e19227758d81",
+        "https://www.virustotal.com/gui/file/07aa739fa4942cfd68d4a075568456797f11ae34db5cd56f88d80185bc1d7a29/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 5,
+        "url": 5
+      },
+      "first_seen": "2022-08-19",
+      "indicators": {
+        "domain": [
+          "center.veryssl.org",
+          "linux.updatelive-oline.com",
+          "ntp-server.asia",
+          "time.ntp-server.asia",
+          "time1.ntp-server.asia",
+          "trust.veryssl.org",
+          "updatelive-oline.com",
+          "windows.updatelive-oline.com"
+        ],
+        "ipv4": [
+          "104.168.211.246:443",
+          "139.180.216.65:443",
+          "45.142.214.193:443",
+          "45.77.250.141:443",
+          "80.92.206.158:443"
+        ],
+        "url": [
+          "http://104.168.211.246",
+          "http://139.180.216.65",
+          "http://45.142.214.193",
+          "http://45.77.250.141",
+          "http://80.92.206.158"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BushidoToken/status/1577605361930063876",
+        "https://www.trendmicro.com/en_us/research/22/h/irontiger-compromises-chat-app-Mimi-targets-windows-mac-linux-users.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/h/iron-tiger-compromises-chat-application-mimi,-targets-windows,-mac,-and-linux-users/IOCs-IronTiger-compromises-chat-application-mimi-targets-windows-mac-linux-users.txt",
+        "https://www.virustotal.com/graph/embed/gdc80667c54cc46cba1038b34efa40a737bb9468fc9f34febb618e19227758d81",
+        "https://www.virustotal.com/gui/file/07aa739fa4942cfd68d4a075568456797f11ae34db5cd56f88d80185bc1d7a29/detection"
+      ],
+      "total": 18
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-08",
+      "indicators": {
+        "domain": [
+          "i1mc.xyz",
+          "jiqun.i1mc.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/074edd82af9bbfd98dd0da167f3712cf5cb3569f66bf308bd5f44b50634ac065/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 3
+      },
+      "first_seen": "2022-01-26",
+      "indicators": {
+        "ipv4": [
+          "103.79.77.200:443",
+          "104.168.236.46:443",
+          "87.98.190.184:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/autumn_good_35/status/1486296569641340930",
+        "https://www.verfassungsschutz.de/SharedDocs/publikationen/DE/cyberabwehr/2022-01-bfv-cyber-brief.pdf (German)"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-12-29",
+      "indicators": {
+        "domain": [
+          "buy.teamviewsoft.com",
+          "support.teamviewsoft.com",
+          "teamviewsoft.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/051400edf4aae2a1041743c1b12740a9e03cf51b6f9491e7e08138640dcd0db6/detection",
+        "https://www.virustotal.com/gui/file/094f0713e788800496344035e388efce5bb176102ecb705443de0045ae6c2dfc/detection",
+        "https://www.virustotal.com/gui/file/6784171c7bfabec50350f3a9042df871f4c2ec635133fa000ffa7079a3f2908a/detection",
+        "https://www.virustotal.com/gui/file/9dcf1501177b898785315d1f3024cd8371da1c77401c0075aa2421bd5b056740/detection",
+        "https://www.virustotal.com/gui/file/9f7f7b98342621e106def4e55e98fc10c99fbf7e785257e603ded5cef7b099fb/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-29",
+      "indicators": {
+        "domain": [
+          "update.fasterwall.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/JAMESWT_MHT/status/1476105632751267840",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-06-21: EmissaryPanda waterhole in Mongolia's president and parliament websites)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 5
+      },
+      "first_seen": "2021-04-11",
+      "indicators": {
+        "domain": [
+          "settings-win.dyndns-office.com"
+        ],
+        "ipv4": [
+          "35.187.148.253:443",
+          "35.220.135.85:443",
+          "47.75.49.32:443",
+          "85.204.74.143:443",
+          "89.35.178.105:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/21/d/iron-tiger-apt-updates-toolkit-with-evolved-sysupdate-malware-va.html",
+        "https://otx.alienvault.com/pulse/607094697706cc521d0f0788"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2021-04-06",
+      "indicators": {
+        "domain": [
+          "cloud.cutepaty.com",
+          "cutepaty.com",
+          "giaitrinuoc.com",
+          "phong.giaitrinuoc.com",
+          "phongay.com",
+          "static.phongay.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/the-leap-of-a-cycldek-related-threat-actor/101243/",
+        "https://otx.alienvault.com/pulse/606dd51193fe95bf9552902e"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "domain": [
+          "adobesys.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/99cc8ee3a385c767e25ebaf2dcaefdc8c091150c1a7dadbda6b08356c34bb889/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-12-09",
+      "indicators": {
+        "domain": [
+          "chrome-upgrade.com",
+          "microlynconline.com",
+          "vegispaceshop.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5fd1090b830e4fba81b06cef"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2020-08-24",
+      "indicators": {
+        "domain": [
+          "ckvyk.com",
+          "ckvyk.net",
+          "ggfnv.com",
+          "jgkgv.net",
+          "jkncj.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/rtf-royal-road-drops-a-new-backdoor-mfc-and-links-with-goblin-panda-90db06f80611",
+        "https://otx.alienvault.com/pulse/5f43f48c0712b9c5245d4824",
+        "https://www.virustotal.com/gui/ip-address/91.218.113.17/relations"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-07-26",
+      "indicators": {
+        "url": [
+          "http://139.180.208.225/ajax"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1287308019336990720 (# HyperBro backdoor)",
+        "https://www.virustotal.com/gui/file/36fad80a5f328f487b20a3f5fc5f1902d50cbb1bd9167c44b66929a1288fc6f4/detection",
+        "https://www.virustotal.com/gui/file/788bd34d3c5d12b9767f8ac5587f1970597c47fb06713a6070d430a593bb4945/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 2
+      },
+      "first_seen": "2020-07-22",
+      "indicators": {
+        "domain": [
+          "265g.site",
+          "gj.wxb2568.cn"
+        ],
+        "ipv4": [
+          "27.124.26.136:1943",
+          "27.124.26.136:59486"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/pancak3lullz/status/1286021877375303682",
+        "https://twitter.com/pancak3lullz/status/1286027620740726785",
+        "https://app.any.run/tasks/949f2624-505c-4f10-a304-1671492f9a22/",
+        "https://www.virustotal.com/gui/file/96e38c55174bf287fe0c21a4d8fa633a252d526bc57cd1b042c473816edb0fbf/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 62,
+        "url": 1
+      },
+      "first_seen": "2020-06-03",
+      "indicators": {
+        "domain": [
+          "24h.tinthethaoi.com",
+          "cdn.laokpl.com",
+          "chinhsech.com",
+          "chototem.com",
+          "conglyan.com",
+          "cooodkord.com",
+          "cophieu.dcsvnqvmn.com",
+          "coreders.com",
+          "daikynguyen21.com",
+          "dangquanwatch.com",
+          "dcsvnqvmn.com",
+          "diendanlichsu.com",
+          "dongaruou.com",
+          "dongnain.com",
+          "giaoxuchuson.com",
+          "hanghoa.trenduang.com",
+          "hcm.vietbaonam.com",
+          "hcmuafgh.com",
+          "images.webprogobest.com",
+          "info.coreders.com",
+          "khinhte.chinhsech.com",
+          "kinhte.chototem.com",
+          "kinhtevanhoa.com",
+          "laokpl.com",
+          "laomoodwin.com",
+          "laovoanew.com",
+          "lat.conglyan.com",
+          "login.dangquanwatch.com",
+          "login.diendanlichsu.com",
+          "login.giaoxuchuson.com",
+          "login.thanhnienthegioi.com",
+          "login.vietnamfar.com",
+          "luan.conglyan.com",
+          "ministop14.com",
+          "mychau.dongnain.com",
+          "news.cooodkord.com",
+          "news.trungtamwtoa.com",
+          "nghiencuu.onetotechnologys.com",
+          "nhantai.xmeyeugh.com",
+          "onetotechnologys.com",
+          "quocphong.ministop14.com",
+          "thanhnien.vietnannnet.com",
+          "thanhnienthegioi.com",
+          "thegioi.kinhtevanhoa.com",
+          "thoitiet.yrindovn.com",
+          "thoitietdulich.com",
+          "tinmoi.thoitietdulich.com",
+          "tinmoi.vieclamthemde.com",
+          "tinthethaoi.com",
+          "tintuc.daikynguyen21.com",
+          "toiyeuvn.dongaruou.com",
+          "trenduang.com",
+          "trungtamwtoa.com",
+          "vieclamthemde.com",
+          "vietbaonam.com",
+          "vietnamfar.com",
+          "vietnannnet.com",
+          "web.laomoodwin.com",
+          "web.laovoanew.com",
+          "webprogobest.com",
+          "xmeyeugh.com",
+          "yrindovn.com"
+        ],
+        "url": [
+          "http://103.253.25.73"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/_marklech_/status/1268138088167018498",
+        "https://securelist.com/cycldek-bridging-the-air-gap/97157/"
+      ],
+      "total": 63
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-03-19",
+      "indicators": {
+        "domain": [
+          "motivation.neighboring.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://marcoramilli.com/2020/03/19/is-apt27-abusing-covid-19-to-attack-people/",
+        "https://otx.alienvault.com/pulse/5e734d45158714422bc4e774"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-10-18",
+      "indicators": {
+        "domain": [
+          "chatsecure.uk.to",
+          "encryptit.qc.to",
+          "privatehd.us.to",
+          "sex17.us.to"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-04",
+      "indicators": {
+        "domain": [
+          "tdjsyqty0takah2x.gitoos.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MeltX0R/status/1179800013150527488"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-09-21",
+      "indicators": {
+        "domain": [
+          "awvsf7esh.dellrescue.com",
+          "yofeopxuuehixwmj.redhatupdater.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MeltX0R/status/1175309376493629440",
+        "https://meltx0r.github.io/tech/2019/09/19/emissary-panda-apt.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "ipv4": [
+          "185.12.45.134:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "tajikstantravel.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/goblin-panda-changes-the-dropper-and-reused-the-old-infrastructure-a35915f3e37a"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen": "2019-05-29",
+      "indicators": {
+        "domain": [
+          "aibeichen.cn"
+        ],
+        "ipv4": [
+          "115.214.104.26:81"
+        ],
+        "url": [
+          "http://192.167.4.10",
+          "http://43.242.75.228"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogs.quickheal.com/apt-27-like-newcore-rat-virut-exploiting-mysql-targeted-attacks-enterprise/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-02",
+      "indicators": {
+        "domain": [
+          "web.hcmuafgh.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/goblin-panda-continues-to-target-vietnam-bc2f0f56dcd6",
+        "https://otx.alienvault.com/pulse/5ccabe9589bea41847a35a0f",
+        "https://twitter.com/_marklech_/status/1268138088167018498",
+        "https://securelist.com/cycldek-bridging-the-air-gap/97157/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-03-23",
+      "indicators": {
+        "domain": [
+          "activity.maacson.com",
+          "bbs.maacson.com",
+          "dns.itbaydns.com",
+          "fasterwall.com",
+          "govmn.tk",
+          "maacson.com",
+          "static.fasterwall.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/JAMESWT_MHT/status/1476105632751267840",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-06-21: EmissaryPanda waterhole in Mongolia's president and parliament websites)"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-02-27",
+      "indicators": {
+        "domain": [
+          "language.wikaba.com",
+          "solution.instanthq.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/research/a-peek-into-bronze-unions-toolbox",
+        "https://twitter.com/MeltX0R/status/1175309376493629440",
+        "https://meltx0r.github.io/tech/2019/09/19/emissary-panda-apt.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-02-27",
+      "indicators": {
+        "domain": [
+          "mildupdate.com",
+          "trprivates.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/research/a-peek-into-bronze-unions-toolbox"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-01-08",
+      "indicators": {
+        "domain": [
+          "skylineqaz.crabdance.com",
+          "tele.zyns.com",
+          "uzwatersource.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/goblin-panda-changes-the-dropper-and-reused-the-old-infrastructure-a35915f3e37a"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "centuriosa.info",
+          "dll.pzchao.com",
+          "down.pzchao.com",
+          "rat.pzchao.com",
+          "up.pzchao.com",
+          "zll855.gicp.net",
+          "zll855.no-ip.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://labs.bitdefender.com/wp-content/uploads/downloads/operation-pzchao-inside-a-highly-specialized-espionage-infrastructure/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-10-23",
+      "indicators": {
+        "domain": [
+          "chatsecurelite.uk.to",
+          "chatsecurelite.us.to"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5da9dc215c51c8a86a2d19f1"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 77
+      },
+      "first_seen": "2018-09-12",
+      "indicators": {
+        "domain": [
+          "american.blackcmd.com",
+          "api.apigmail.com",
+          "apigmail.com",
+          "backup.darkhero.org",
+          "bel.updatawindows.com",
+          "binary.update-onlines.org",
+          "blackcmd.com",
+          "castle.blackcmd.com",
+          "ctcb.blackcmd.com",
+          "darkhero.org",
+          "dav.local-test.com",
+          "dev.local-test.com",
+          "ftp.google-ana1ytics.com",
+          "ga.blackcmd.com",
+          "google-ana1ytics.com",
+          "helpdesk.blackcmd.com",
+          "helpdesk.csc-na.com",
+          "helpdesk.hotmail-onlines.com",
+          "helpdesk.lnip.org",
+          "hotmail-onlines.com",
+          "hotmailcontact.net",
+          "jobs.hotmail-onlines.com",
+          "justufogame.com",
+          "laxness-lab.com",
+          "lnip.org",
+          "local-test.com",
+          "login.hansoftupdate.com",
+          "long.update-onlines.org",
+          "longlong.update-onlines.org",
+          "longshadow.dyndns.org",
+          "longshadow.update-onlines.org",
+          "longykcai.update-onlines.org",
+          "lostself.update-onlines.org",
+          "mac.navydocument.com",
+          "mail.csc-na.com",
+          "mantech.updatawindows.com",
+          "micr0soft.org",
+          "microsoft-outlook.org",
+          "mtc.navydocument.com",
+          "mtc.update-onlines.org",
+          "navydocument.com",
+          "news.hotmail-onlines.com",
+          "oac.3322.org",
+          "ocean.apigmail.com",
+          "ocean.local-test.com",
+          "pchomeserver.com",
+          "registre.organiccrap.com",
+          "security.pomsys.org",
+          "services.darkhero.org",
+          "sgl.updatawindows.com",
+          "shadow.update-onlines.org",
+          "sonoco.blackcmd.com",
+          "test.local-test.com",
+          "test.logmastre.com",
+          "up.gtalklite.com",
+          "updatawindows.com",
+          "update-onlines.org",
+          "update.deepsoftupdate.com",
+          "update.hancominc.com",
+          "update.micr0soft.org",
+          "update.pchomeserver.com",
+          "urs.blackcmd.com",
+          "wang.darkhero.org",
+          "webs.local-test.com",
+          "word.apigmail.com",
+          "wordpress.blackcmd.com",
+          "working.blackcmd.com",
+          "working.darkhero.org",
+          "working.hotmail-onlines.com",
+          "www.google-ana1ytics.com",
+          "www.trendmicro-update.org",
+          "www.update-onlines.org",
+          "x.apigmail.com",
+          "ykcai.update-onlines.org",
+          "ykcailostself.dyndns-free.com",
+          "ykcainobody.dyndns.org",
+          "zj.blackcmd.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.secureworks.com/cyber-threat-intelligence/threats/threat-group-3390-targets-organizations-for-cyberespionage/"
+      ],
+      "total": 77
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2018-09-10",
+      "indicators": {
+        "url": [
+          "http://103.75.190.28",
+          "http://213.109.87.58"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/luckymouse-ndisproxy-driver/87914/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2018-09-04",
+      "indicators": {
+        "domain": [
+          "cat.toonganuh.com",
+          "coco.sodexoa.com",
+          "dn.dulichbiendao.org",
+          "dulichculao.com",
+          "gateway.vietbaotinmoi.com",
+          "halong.dulichculao.com",
+          "hn.dulichbiendao.org",
+          "new.sggpnews.com",
+          "toonganuh.com",
+          "web.thoitietvietnam.org",
+          "wouderfulu.impresstravel.ga"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/malicious-document-targets-vietnamese-officials-acb3b9d8b80a"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-09-04",
+      "indicators": {
+        "domain": [
+          "36106g.com",
+          "cv3sa.gicp.net",
+          "sd123.eicp.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/gobelin-panda-against-the-bears-1f462d00e3a4"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-04",
+      "indicators": {
+        "domain": [
+          "kmbk8.hicp.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/gobelin-panda-against-the-bears-1f462d00e3a4",
+        "https://medium.com/@Sebdraven/rtf-royal-road-drops-a-new-backdoor-mfc-and-links-with-goblin-panda-90db06f80611",
+        "https://otx.alienvault.com/pulse/5f43f48c0712b9c5245d4824",
+        "https://www.virustotal.com/gui/ip-address/91.218.113.17/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2018-08-08",
+      "indicators": {
+        "domain": [
+          "bbs.sonypsps.com",
+          "google-updata.tk",
+          "update.iaacstudio.com",
+          "windows-updata.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.ru/luckymouse-hits-national-data-center/90213/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-08-08",
+      "indicators": {
+        "domain": [
+          "wh0am1.itbaydns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.ru/luckymouse-hits-national-data-center/90213/",
+        "https://twitter.com/JAMESWT_MHT/status/1476105632751267840",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-06-21: EmissaryPanda waterhole in Mongolia's president and parliament websites)"
+      ],
+      "total": 1
+    }
+  ]
+}

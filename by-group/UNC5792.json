@@ -1,0 +1,139 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 16
+  },
+  "first_seen": {
+    "domain": {
+      "add-signal-group.com": "2026-01-02",
+      "add-signal-groups.com": "2026-01-02",
+      "group-signal.com": "2026-01-02",
+      "group-signal.tech": "2026-01-02",
+      "groups-signal.site": "2026-01-02",
+      "signal-device-off.online": "2026-01-02",
+      "signal-group-add.com": "2026-01-02",
+      "signal-group.site": "2026-01-02",
+      "signal-group.tech": "2026-01-02",
+      "signal-groups-add.com": "2026-01-02",
+      "signal-groups.site": "2026-01-02",
+      "signal-groups.tech": "2026-01-02",
+      "signal-security.online": "2026-01-02",
+      "signal-security.site": "2026-01-02",
+      "signalgroup.site": "2026-01-02",
+      "signals-group.com": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "add-signal-group.com": "at-or-before",
+      "add-signal-groups.com": "at-or-before",
+      "group-signal.com": "at-or-before",
+      "group-signal.tech": "at-or-before",
+      "groups-signal.site": "at-or-before",
+      "signal-device-off.online": "at-or-before",
+      "signal-group-add.com": "at-or-before",
+      "signal-group.site": "at-or-before",
+      "signal-group.tech": "at-or-before",
+      "signal-groups-add.com": "at-or-before",
+      "signal-groups.site": "at-or-before",
+      "signal-groups.tech": "at-or-before",
+      "signal-security.online": "at-or-before",
+      "signal-security.site": "at-or-before",
+      "signalgroup.site": "at-or-before",
+      "signals-group.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "add-signal-group.com",
+      "add-signal-groups.com",
+      "group-signal.com",
+      "group-signal.tech",
+      "groups-signal.site",
+      "signal-device-off.online",
+      "signal-group-add.com",
+      "signal-group.site",
+      "signal-group.tech",
+      "signal-groups-add.com",
+      "signal-groups.site",
+      "signal-groups.tech",
+      "signal-security.online",
+      "signal-security.site",
+      "signalgroup.site",
+      "signals-group.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC5792"
+  ],
+  "references": [
+    "https://cloud.google.com/blog/topics/threat-intelligence/russia-targeting-signal-messenger",
+    "https://x.com/TLP_R3D/status/1892221224094445666"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC4221"
+    }
+  ],
+  "slug": "UNC5792",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "add-signal-group.com",
+          "add-signal-groups.com",
+          "group-signal.com",
+          "group-signal.tech",
+          "groups-signal.site",
+          "signal-device-off.online",
+          "signal-group-add.com",
+          "signal-group.site",
+          "signal-group.tech",
+          "signal-groups-add.com",
+          "signal-groups.site",
+          "signal-groups.tech",
+          "signal-security.online",
+          "signal-security.site",
+          "signalgroup.site",
+          "signals-group.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/TLP_R3D/status/1892221224094445666",
+        "https://cloud.google.com/blog/topics/threat-intelligence/russia-targeting-signal-messenger"
+      ],
+      "total": 16
+    }
+  ]
+}

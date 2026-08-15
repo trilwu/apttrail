@@ -1,0 +1,7920 @@
+{
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "groups": [
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 94
+      },
+      "first_seen_range": {
+        "earliest": "2023-05-06",
+        "latest": "2023-05-06"
+      },
+      "maltrail_groups": [
+        "1877TEAM"
+      ],
+      "sectors": [],
+      "slug": "1877TEAM",
+      "sponsor": null,
+      "total": 94
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-07-27",
+        "latest": "2024-07-27"
+      },
+      "maltrail_groups": [
+        "45"
+      ],
+      "sectors": [],
+      "slug": "45",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "apt-c-48"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6,
+        "ipv4": 1,
+        "url_path": 3
+      },
+      "first_seen_range": {
+        "earliest": "2024-11-26",
+        "latest": "2026-06-19"
+      },
+      "maltrail_groups": [
+        "48"
+      ],
+      "sectors": [],
+      "slug": "48",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [
+        "apt-c-60",
+        "apt-q-12",
+        "spyglace"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "ipv4": 5,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-25",
+        "latest": "2024-11-15"
+      },
+      "maltrail_groups": [
+        "60"
+      ],
+      "sectors": [],
+      "slug": "60",
+      "sponsor": null,
+      "total": 14
+    },
+    {
+      "aliases": [
+        "apt-c-68",
+        "apt-q-15"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2024-02-28",
+        "latest": "2024-02-28"
+      },
+      "maltrail_groups": [
+        "68"
+      ],
+      "sectors": [],
+      "slug": "68",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "eraleig ransomware"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11
+      },
+      "first_seen_range": {
+        "earliest": "2024-04-24",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "73"
+      ],
+      "sectors": [],
+      "slug": "73",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "whiteelephant"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 73,
+        "ipv4": 16,
+        "url": 7
+      },
+      "first_seen_range": {
+        "earliest": "2016-02-24",
+        "latest": "2024-09-13"
+      },
+      "maltrail_groups": [
+        "APPIN"
+      ],
+      "sectors": [],
+      "slug": "APPIN",
+      "sponsor": null,
+      "total": 96
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-14",
+        "latest": "2023-10-14"
+      },
+      "maltrail_groups": [
+        "ATLASCROSS"
+      ],
+      "sectors": [],
+      "slug": "ATLASCROSS",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2016-02-23",
+        "latest": "2016-02-23"
+      },
+      "maltrail_groups": [
+        "BABAR"
+      ],
+      "sectors": [],
+      "slug": "BABAR",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5,
+        "url": 1,
+        "url_path": 4
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-01",
+        "latest": "2022-03-02"
+      },
+      "maltrail_groups": [
+        "BABYSHARK"
+      ],
+      "sectors": [],
+      "slug": "BABYSHARK",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 27,
+        "ipv4": 2,
+        "url": 5,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2021-04-02",
+        "latest": "2026-05-01"
+      },
+      "maltrail_groups": [
+        "BADMAGIC"
+      ],
+      "sectors": [],
+      "slug": "BADMAGIC",
+      "sponsor": null,
+      "total": 35
+    },
+    {
+      "aliases": [
+        "vampirebot"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 21,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-11-26",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BATSHADOW"
+      ],
+      "sectors": [],
+      "slug": "BATSHADOW",
+      "sponsor": null,
+      "total": 22
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 121
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-12",
+        "latest": "2020-08-16"
+      },
+      "maltrail_groups": [
+        "BLACKGEAR"
+      ],
+      "sectors": [],
+      "slug": "BLACKGEAR",
+      "sponsor": null,
+      "total": 121
+    },
+    {
+      "aliases": [
+        "laret",
+        "pinar"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 6
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BLADEDFELINE"
+      ],
+      "sectors": [],
+      "slug": "BLADEDFELINE",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BLOODYWOLF"
+      ],
+      "sectors": [],
+      "slug": "BLOODYWOLF",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-06-04",
+        "latest": "2019-06-04"
+      },
+      "maltrail_groups": [
+        "BLUEPRINT"
+      ],
+      "sectors": [],
+      "slug": "BLUEPRINT",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2017-04-14"
+      },
+      "maltrail_groups": [
+        "BOOKWORM"
+      ],
+      "sectors": [],
+      "slug": "BOOKWORM",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "black owl",
+        "brockendoor",
+        "hoody hyena",
+        "lifting zmiy",
+        "zeronetkit"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 10,
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-02-05"
+      },
+      "maltrail_groups": [
+        "BOTEAM"
+      ],
+      "sectors": [],
+      "slug": "BOTEAM",
+      "sponsor": null,
+      "total": 13
+    },
+    {
+      "aliases": [
+        "UAC-0008"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 24,
+        "url": 4,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-06",
+        "latest": "2022-02-21"
+      },
+      "maltrail_groups": [
+        "BUHTRAP"
+      ],
+      "sectors": [],
+      "slug": "BUHTRAP",
+      "sponsor": null,
+      "total": 29
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 30,
+        "ipv4": 3,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-31",
+        "latest": "2022-04-26"
+      },
+      "maltrail_groups": [
+        "CALYPSO"
+      ],
+      "sectors": [],
+      "slug": "CALYPSO",
+      "sponsor": null,
+      "total": 38
+    },
+    {
+      "aliases": [
+        "apt-q-58"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-13",
+        "latest": "2023-10-13"
+      },
+      "maltrail_groups": [
+        "CARACALKITTEN"
+      ],
+      "sectors": [],
+      "slug": "CARACALKITTEN",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2023-08-23",
+        "latest": "2023-08-23"
+      },
+      "maltrail_groups": [
+        "CARDERBEE"
+      ],
+      "sectors": [],
+      "slug": "CARDERBEE",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 32
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2022-01-01"
+      },
+      "maltrail_groups": [
+        "CARETO"
+      ],
+      "sectors": [],
+      "slug": "CARETO",
+      "sponsor": null,
+      "total": 32
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2015-03-18"
+      },
+      "maltrail_groups": [
+        "CASPER"
+      ],
+      "sectors": [],
+      "slug": "CASPER",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "cav3rn"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2026-07-06",
+        "latest": "2026-07-06"
+      },
+      "maltrail_groups": [
+        "CAVERNMANTICORE"
+      ],
+      "sectors": [],
+      "slug": "CAVERNMANTICORE",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 15,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-22",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "CDT"
+      ],
+      "sectors": [],
+      "slug": "CDT",
+      "sponsor": null,
+      "total": 16
+    },
+    {
+      "aliases": [
+        "camofei"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 59,
+        "ipv4": 2,
+        "url": 2,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2020-05-04",
+        "latest": "2023-08-20"
+      },
+      "maltrail_groups": [
+        "CHAMELGANG"
+      ],
+      "sectors": [],
+      "slug": "CHAMELGANG",
+      "sponsor": null,
+      "total": 64
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-05-20",
+        "latest": "2023-05-20"
+      },
+      "maltrail_groups": [
+        "CLOUDWIZARD"
+      ],
+      "sectors": [],
+      "slug": "CLOUDWIZARD",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 105
+      },
+      "first_seen_range": {
+        "earliest": "2024-08-14",
+        "latest": "2024-10-16"
+      },
+      "maltrail_groups": [
+        "COLDWASTREL"
+      ],
+      "sectors": [],
+      "slug": "COLDWASTREL",
+      "sponsor": null,
+      "total": 105
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2015-03-18"
+      },
+      "maltrail_groups": [
+        "COSMICDUKE"
+      ],
+      "sectors": [],
+      "slug": "COSMICDUKE",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "crimson collective"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 7,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "CRIMSONCOLLECTIVE"
+      ],
+      "sectors": [],
+      "slug": "CRIMSONCOLLECTIVE",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "iocontrol"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-12-13",
+        "latest": "2024-12-13"
+      },
+      "maltrail_groups": [
+        "CYBERAV3NGERS"
+      ],
+      "sectors": [],
+      "slug": "CYBERAV3NGERS",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 15,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-21",
+        "latest": "2018-09-21"
+      },
+      "maltrail_groups": [
+        "CYBERBIT"
+      ],
+      "sectors": [],
+      "slug": "CYBERBIT",
+      "sponsor": null,
+      "total": 16
+    },
+    {
+      "aliases": [
+        "m00nlight"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9,
+        "ipv4": 8
+      },
+      "first_seen_range": {
+        "earliest": "2023-02-16",
+        "latest": "2023-09-05"
+      },
+      "maltrail_groups": [
+        "DALBIT"
+      ],
+      "sectors": [],
+      "slug": "DALBIT",
+      "sponsor": null,
+      "total": 17
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2023-05-31",
+        "latest": "2026-03-04"
+      },
+      "maltrail_groups": [
+        "DARKPINK"
+      ],
+      "sectors": [],
+      "slug": "DARKPINK",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "matadoor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 51,
+        "url_path": 3
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-07",
+        "latest": "2023-10-07"
+      },
+      "maltrail_groups": [
+        "DARKRIVER"
+      ],
+      "sectors": [],
+      "slug": "DARKRIVER",
+      "sponsor": null,
+      "total": 54
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-09-25",
+        "latest": "2019-09-25"
+      },
+      "maltrail_groups": [
+        "DEADLYKISS"
+      ],
+      "sectors": [],
+      "slug": "DEADLYKISS",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 519
+      },
+      "first_seen_range": {
+        "earliest": "2018-12-11",
+        "latest": "2022-07-17"
+      },
+      "maltrail_groups": [
+        "DNSPIONAGE"
+      ],
+      "sectors": [],
+      "slug": "DNSPIONAGE",
+      "sponsor": null,
+      "total": 519
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-04-16",
+        "latest": "2019-04-16"
+      },
+      "maltrail_groups": [
+        "DOCLESS"
+      ],
+      "sectors": [],
+      "slug": "DOCLESS",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "BlackGuard",
+        "cherryspy",
+        "hatvibe"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 10,
+        "ipv4": 1,
+        "url": 7,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-05-22",
+        "latest": "2025-01-13"
+      },
+      "maltrail_groups": [
+        "DOWNEX"
+      ],
+      "sectors": [],
+      "slug": "DOWNEX",
+      "sponsor": null,
+      "total": 19
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "url": 8
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-16",
+        "latest": "2022-06-16"
+      },
+      "maltrail_groups": [
+        "DRIFTINGCLOUD"
+      ],
+      "sectors": [],
+      "slug": "DRIFTINGCLOUD",
+      "sponsor": null,
+      "total": 12
+    },
+    {
+      "aliases": [
+        "CR4T"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2024-04-24",
+        "latest": "2024-04-24"
+      },
+      "maltrail_groups": [
+        "DUNEQUIXOTE"
+      ],
+      "sectors": [],
+      "slug": "DUNEQUIXOTE",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [
+        "ghostform",
+        "splitdrop",
+        "twintalk",
+        "twintask"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 36,
+        "ipv4": 4,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2026-03-02",
+        "latest": "2026-03-04"
+      },
+      "maltrail_groups": [
+        "DUSTSPECTER"
+      ],
+      "sectors": [],
+      "slug": "DUSTSPECTER",
+      "sponsor": null,
+      "total": 44
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 55,
+        "ipv4": 3
+      },
+      "first_seen_range": {
+        "earliest": "2020-02-18",
+        "latest": "2024-09-29"
+      },
+      "maltrail_groups": [
+        "EARTHBERBEROKA"
+      ],
+      "sectors": [],
+      "slug": "EARTHBERBEROKA",
+      "sponsor": null,
+      "total": 58
+    },
+    {
+      "aliases": [
+        "hemigate",
+        "krustyloader",
+        "trillclient",
+        "zingdoor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 78,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-30",
+        "latest": "2026-05-13"
+      },
+      "maltrail_groups": [
+        "EARTHESTRIES"
+      ],
+      "sectors": [],
+      "slug": "EARTHESTRIES",
+      "sponsor": null,
+      "total": 80
+    },
+    {
+      "aliases": [
+        "dinodas",
+        "dinodasrat",
+        "linodas",
+        "linodasrat"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 12,
+        "ipv4": 7,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-10",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "EARTHKRAHANG"
+      ],
+      "sectors": [],
+      "slug": "EARTHKRAHANG",
+      "sponsor": null,
+      "total": 24
+    },
+    {
+      "aliases": [
+        "dmloader",
+        "dunloader",
+        "frpc",
+        "icmpinger",
+        "kmlog",
+        "krnrat",
+        "ladon",
+        "moriya",
+        "nbtscan",
+        "odriz",
+        "simpoboxspy",
+        "tesdat",
+        "wmihacker"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "ipv4": 7,
+        "url": 7
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "EARTHKURMA"
+      ],
+      "sectors": [],
+      "slug": "EARTHKURMA",
+      "sponsor": null,
+      "total": 18
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4
+      },
+      "first_seen_range": {
+        "earliest": "2021-01-05",
+        "latest": "2021-01-05"
+      },
+      "maltrail_groups": [
+        "EARTHWENDIGO"
+      ],
+      "sectors": [],
+      "slug": "EARTHWENDIGO",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-16",
+        "latest": "2022-04-16"
+      },
+      "maltrail_groups": [
+        "EGOMANIAC"
+      ],
+      "sectors": [],
+      "slug": "EGOMANIAC",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 112
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2016-02-23"
+      },
+      "maltrail_groups": [
+        "EQUATIONGROUP"
+      ],
+      "sectors": [],
+      "slug": "EQUATIONGROUP",
+      "sponsor": null,
+      "total": 112
+    },
+    {
+      "aliases": [
+        "evapiks",
+        "finteam"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2019-01-30",
+        "latest": "2019-04-24"
+      },
+      "maltrail_groups": [
+        "EVAPIKS"
+      ],
+      "sectors": [],
+      "slug": "EVAPIKS",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-31",
+        "latest": "2018-08-31"
+      },
+      "maltrail_groups": [
+        "EZQ"
+      ],
+      "sectors": [],
+      "slug": "EZQ",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 13,
+        "ipv4": 1,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-21",
+        "latest": "2022-06-03"
+      },
+      "maltrail_groups": [
+        "FAMILIARFEELING"
+      ],
+      "sectors": [],
+      "slug": "FAMILIARFEELING",
+      "sponsor": null,
+      "total": 15
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11,
+        "ipv4": 10,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2022-04-04"
+      },
+      "maltrail_groups": [
+        "FINFISHER"
+      ],
+      "sectors": [],
+      "slug": "FINFISHER",
+      "sponsor": null,
+      "total": 23
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2023-08-25",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "FLAXTYPHOON"
+      ],
+      "sectors": [],
+      "slug": "FLAXTYPHOON",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2024-03-28",
+        "latest": "2024-03-28"
+      },
+      "maltrail_groups": [
+        "FLIGHTNIGHT"
+      ],
+      "sectors": [],
+      "slug": "FLIGHTNIGHT",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "cookbox"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2024-02-26",
+        "latest": "2024-05-31"
+      },
+      "maltrail_groups": [
+        "FLYINGYETI"
+      ],
+      "sectors": [],
+      "slug": "FLYINGYETI",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "taxoff",
+        "team46"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 49
+      },
+      "first_seen_range": {
+        "earliest": "2024-04-21",
+        "latest": "2026-02-16"
+      },
+      "maltrail_groups": [
+        "FORUMTROLL"
+      ],
+      "sectors": [],
+      "slug": "FORUMTROLL",
+      "sponsor": null,
+      "total": 49
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0003",
+      "attack_name": "Cleaver",
+      "country": "IR",
+      "counts": {
+        "domain": 15
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2015-03-18"
+      },
+      "maltrail_groups": [
+        "CLEAVER"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0003",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 15
+    },
+    {
+      "aliases": [
+        "Ke3chang",
+        "Mirage",
+        "Playful Dragon",
+        "Royal APT",
+        "Vixen Panda",
+        "apt15"
+      ],
+      "attack_id": "G0004",
+      "attack_name": "Ke3chang",
+      "country": "CN",
+      "counts": {
+        "domain": 172,
+        "ipv4": 36,
+        "url": 1,
+        "url_path": 11
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "GREF",
+        "KE3CHANG"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G0004",
+      "sponsor": "China",
+      "total": 220
+    },
+    {
+      "aliases": [
+        "apt-c-12",
+        "apt12",
+        "bluemushroom",
+        "dnscalc",
+        "dyncalc",
+        "ixeshe"
+      ],
+      "attack_id": "G0005",
+      "attack_name": "APT12",
+      "country": "CN",
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url": 10
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-19",
+        "latest": "2020-02-13"
+      },
+      "maltrail_groups": [
+        "12"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0005",
+      "sponsor": "China",
+      "total": 13
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0006",
+      "attack_name": "APT1",
+      "country": "CN",
+      "counts": {
+        "domain": 2099
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2022-04-10"
+      },
+      "maltrail_groups": [
+        "COMMENTCREW"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0006",
+      "sponsor": "China",
+      "total": 2099
+    },
+    {
+      "aliases": [
+        "KTA007",
+        "SNAKEMACKEREL",
+        "STRONTIUM",
+        "TG-4127",
+        "UAC-0001",
+        "UAC-0028",
+        "ZimReaper",
+        "apt-c-20",
+        "apt28",
+        "beardshell",
+        "fancy bear",
+        "gonepostal",
+        "group 74",
+        "lamehug",
+        "pawn storm",
+        "sednit",
+        "sofacy",
+        "ta422",
+        "ta426",
+        "threat troup-4127",
+        "tsar team",
+        "zebrocy"
+      ],
+      "attack_id": "G0007",
+      "attack_name": "APT28",
+      "country": "RU",
+      "counts": {
+        "domain": 1431,
+        "ipv4": 240,
+        "url": 144,
+        "url_path": 79
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2026-04-08"
+      },
+      "maltrail_groups": [
+        "SOFACY"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0007",
+      "sponsor": "Russian Federation",
+      "total": 1894
+    },
+    {
+      "aliases": [
+        "apolloshadow",
+        "atg26",
+        "blue python",
+        "kazuar",
+        "kopiluwak",
+        "kypton",
+        "quietcanary",
+        "snake",
+        "stockstay",
+        "storm-0156",
+        "uroburos",
+        "venomous bear",
+        "wainscot",
+        "waterbug",
+        "whitebear",
+        "wraith"
+      ],
+      "attack_id": "G0010",
+      "attack_name": "Turla",
+      "country": "RU",
+      "counts": {
+        "domain": 225,
+        "ipv4": 18,
+        "url": 77,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2026-06-26"
+      },
+      "maltrail_groups": [
+        "TURLA",
+        "UNC4210"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0010",
+      "sponsor": "Russian Federation",
+      "total": 325
+    },
+    {
+      "aliases": [
+        "apt-5",
+        "apt5",
+        "pittypanda",
+        "ptiger",
+        "ptrat"
+      ],
+      "attack_id": "G0011",
+      "attack_name": "PittyTiger",
+      "country": null,
+      "counts": {
+        "domain": 16
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-05",
+        "latest": "2021-12-31"
+      },
+      "maltrail_groups": [
+        "PITTYTIGER"
+      ],
+      "sectors": [],
+      "slug": "G0011",
+      "sponsor": null,
+      "total": 16
+    },
+    {
+      "aliases": [
+        "apt-c-06",
+        "apt06",
+        "thinmon"
+      ],
+      "attack_id": "G0012",
+      "attack_name": "Darkhotel",
+      "country": "KR",
+      "counts": {
+        "domain": 314,
+        "ipv4": 3,
+        "url": 2,
+        "url_path": 7
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2024-06-17"
+      },
+      "maltrail_groups": [
+        "DARKHOTEL"
+      ],
+      "sectors": [
+        "Private sector"
+      ],
+      "slug": "G0012",
+      "sponsor": "Korea (Republic of)",
+      "total": 326
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0013",
+      "attack_name": "APT30",
+      "country": "CN",
+      "counts": {
+        "domain": 15,
+        "ipv4": 4,
+        "url": 1,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2019-09-22",
+        "latest": "2020-06-19"
+      },
+      "maltrail_groups": [
+        "30"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G0013",
+      "sponsor": "China",
+      "total": 25
+    },
+    {
+      "aliases": [
+        "APT29",
+        "BlueBravo",
+        "CloudDuke",
+        "CosmicDuke",
+        "Cozy Bear",
+        "CozyDuke",
+        "GeminiDuke",
+        "HammerDuke",
+        "Midnight Blizzard",
+        "MiniDuke",
+        "NOBELIUM",
+        "OnionDuke",
+        "PinchDuke",
+        "SeaDuke",
+        "SilverFish",
+        "SoreFang",
+        "The Dukes",
+        "WellMail",
+        "WellMess",
+        "captivecrunch",
+        "chocoshell",
+        "cloaked ursa",
+        "cozylarch",
+        "dark halo",
+        "earth koshchei",
+        "goldfinder",
+        "goldmax",
+        "icecap",
+        "raindrop",
+        "sibot",
+        "solorigate",
+        "stellarparticle",
+        "storm-2945",
+        "sunburst",
+        "sunshuttle",
+        "supernova",
+        "teardrop"
+      ],
+      "attack_id": "G0016",
+      "attack_name": "APT29",
+      "country": "RU",
+      "counts": {
+        "domain": 935,
+        "ipv4": 39,
+        "url": 105,
+        "url_path": 9
+      },
+      "first_seen_range": {
+        "earliest": "2015-10-23",
+        "latest": "2026-08-02"
+      },
+      "maltrail_groups": [
+        "DUKE",
+        "UNC2452"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0016",
+      "sponsor": "Russian Federation",
+      "total": 1088
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0017",
+      "attack_name": "DragonOK",
+      "country": "CN",
+      "counts": {
+        "domain": 14,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-13",
+        "latest": "2024-11-30"
+      },
+      "maltrail_groups": [
+        "DRAGONOK"
+      ],
+      "sectors": [
+        "Private sector"
+      ],
+      "slug": "G0017",
+      "sponsor": "China",
+      "total": 15
+    },
+    {
+      "aliases": [
+        "deadringer"
+      ],
+      "attack_id": "G0019",
+      "attack_name": "Naikon",
+      "country": "CN",
+      "counts": {
+        "domain": 63,
+        "ipv4": 21
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2023-11-12"
+      },
+      "maltrail_groups": [
+        "NAIKON"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0019",
+      "sponsor": "China",
+      "total": 84
+    },
+    {
+      "aliases": [
+        "apt-c-3",
+        "apt3",
+        "ups"
+      ],
+      "attack_id": "G0022",
+      "attack_name": "APT3",
+      "country": "CN",
+      "counts": {
+        "domain": 10
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-27",
+        "latest": "2019-10-19"
+      },
+      "maltrail_groups": [
+        "GOTHICPANDA"
+      ],
+      "sectors": [
+        "Private sector"
+      ],
+      "slug": "G0022",
+      "sponsor": "China",
+      "total": 10
+    },
+    {
+      "aliases": [
+        "msupdater"
+      ],
+      "attack_id": "G0024",
+      "attack_name": "Putter Panda",
+      "country": "CN",
+      "counts": {
+        "domain": 5,
+        "url": 3,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-10",
+        "latest": "2022-04-10"
+      },
+      "maltrail_groups": [
+        "PUTTERPANDA"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0024",
+      "sponsor": "China",
+      "total": 10
+    },
+    {
+      "aliases": [
+        "apt-c-17",
+        "apt17",
+        "blackcoffee",
+        "deputy dog"
+      ],
+      "attack_id": "G0025",
+      "attack_name": "APT17",
+      "country": "CN",
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-19",
+        "latest": "2024-07-12"
+      },
+      "maltrail_groups": [
+        "17"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0025",
+      "sponsor": "China",
+      "total": 5
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0026",
+      "attack_name": "APT18",
+      "country": "CN",
+      "counts": {
+        "domain": 14,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2019-10-19"
+      },
+      "maltrail_groups": [
+        "18"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0026",
+      "sponsor": "China",
+      "total": 17
+    },
+    {
+      "aliases": [
+        "apt 27",
+        "apt27",
+        "bronze union",
+        "cycldek",
+        "emissary panda",
+        "goblin panda",
+        "group 35",
+        "iron tiger",
+        "luckymouse",
+        "temp.hippo",
+        "tg-3390",
+        "threat group 3390",
+        "ziptoken"
+      ],
+      "attack_id": "G0027",
+      "attack_name": "Threat Group-3390",
+      "country": "CN",
+      "counts": {
+        "domain": 255,
+        "ipv4": 21,
+        "url": 15
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-08",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "27",
+        "IRONTIGER"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0027",
+      "sponsor": "Unknown",
+      "total": 291
+    },
+    {
+      "aliases": [
+        "fakem",
+        "fakemrat"
+      ],
+      "attack_id": "G0029",
+      "attack_name": "Scarlet Mimic",
+      "country": "CN",
+      "counts": {
+        "domain": 79,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2016-02-23",
+        "latest": "2024-11-30"
+      },
+      "maltrail_groups": [
+        "SCARLETMIMIC"
+      ],
+      "sectors": [],
+      "slug": "G0029",
+      "sponsor": null,
+      "total": 81
+    },
+    {
+      "aliases": [
+        "chrysalis",
+        "hacked notepad++",
+        "warbird"
+      ],
+      "attack_id": "G0030",
+      "attack_name": "Lotus Blossom",
+      "country": "CN",
+      "counts": {
+        "domain": 51,
+        "ipv4": 5,
+        "url": 3,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2015-10-20",
+        "latest": "2026-02-04"
+      },
+      "maltrail_groups": [
+        "LOTUSBLOSSOM"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0030",
+      "sponsor": "China",
+      "total": 60
+    },
+    {
+      "aliases": [
+        "akdoortea",
+        "alluring pisces",
+        "applejeus",
+        "appleworm",
+        "apt-c-26",
+        "apt-q-1",
+        "beavertail",
+        "bureau-1121",
+        "chainveil",
+        "citrine sleet",
+        "cl-sta-0240",
+        "cl-sta-240",
+        "covellite",
+        "dangerous passwords",
+        "dark seoul",
+        "deaddrop",
+        "deceptivedevelopment",
+        "dev#popper",
+        "diamond sleet",
+        "diamondsleet",
+        "famous chollima",
+        "gleaming pisces",
+        "golangghost",
+        "group-77",
+        "guardians of peace",
+        "gwisin gang",
+        "hastati group",
+        "hexeval loader",
+        "hidden cobra",
+        "invisibleferret",
+        "jade sleet",
+        "jumpy pisces",
+        "labyrinth chollima",
+        "manuscrypt",
+        "moonstone sleet",
+        "newromanic cyberarmy team",
+        "nickel academy",
+        "nickel tapestry",
+        "operation darkseoul",
+        "operation ghostsecret",
+        "operation troy",
+        "ottercookie",
+        "pebbledash",
+        "pondrat",
+        "poolrat",
+        "postnaptea",
+        "promptmink",
+        "pukchong",
+        "purple bravo",
+        "purplebravo",
+        "pychollima",
+        "pylangghost",
+        "ref9135",
+        "remotepeloader",
+        "remoteperat",
+        "romeogolf",
+        "scoringmathtea",
+        "sectora01",
+        "slow pisces",
+        "stardust",
+        "stoatwaffle",
+        "storm-1877",
+        "tenacious pungsan",
+        "themeforestrat",
+        "tradertraitor",
+        "tropidoor",
+        "unc4736",
+        "unc5267",
+        "unc5342",
+        "unit-121",
+        "void dokkaebi",
+        "wagemole",
+        "waterplum",
+        "weaselstore",
+        "whois hacking team",
+        "xorindex loader",
+        "zinc"
+      ],
+      "attack_id": "G0032",
+      "attack_name": "Lazarus Group",
+      "country": "KP",
+      "counts": {
+        "domain": 3853,
+        "ipv4": 866,
+        "url": 630,
+        "url_path": 98
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-12",
+        "latest": "2026-08-11"
+      },
+      "maltrail_groups": [
+        "LAZARUS"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0032",
+      "sponsor": "Korea (Democratic People's Republic of)",
+      "total": 5447
+    },
+    {
+      "aliases": [
+        "KALAMBUR backdoor",
+        "apt44",
+        "blackenergy",
+        "iron viking",
+        "quedagh",
+        "seashell blizzard",
+        "temp.noble",
+        "uac-0082",
+        "uac-0145",
+        "voodoo bear"
+      ],
+      "attack_id": "G0034",
+      "attack_name": "Sandworm Team",
+      "country": "RU",
+      "counts": {
+        "domain": 342,
+        "ipv4": 395,
+        "url": 58,
+        "url_path": 16
+      },
+      "first_seen_range": {
+        "earliest": "2016-02-24",
+        "latest": "2026-08-10"
+      },
+      "maltrail_groups": [
+        "SANDWORM",
+        "TELEBOTS"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0034",
+      "sponsor": "Russian Federation",
+      "total": 811
+    },
+    {
+      "aliases": [
+        "crouching yeti",
+        "dragonfly",
+        "iron liberty",
+        "tg-4192"
+      ],
+      "attack_id": "G0035",
+      "attack_name": "Dragonfly",
+      "country": "RU",
+      "counts": {
+        "domain": 5,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-11-15",
+        "latest": "2020-04-14"
+      },
+      "maltrail_groups": [
+        "ENERGETICBEAR"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0035",
+      "sponsor": "Russian Federation",
+      "total": 7
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0038",
+      "attack_name": "Stealth Falcon",
+      "country": "AE",
+      "counts": {
+        "domain": 96
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "FRUITYARMOR",
+        "STEALTHFALCON"
+      ],
+      "sectors": [
+        "Civil society"
+      ],
+      "slug": "G0038",
+      "sponsor": "United Arab Emirates",
+      "total": 96
+    },
+    {
+      "aliases": [
+        "GEOShell",
+        "apachestealer",
+        "apt-c-09",
+        "apt-c-35",
+        "backconfig",
+        "chinastrats",
+        "confucius",
+        "donot",
+        "droppingelephant",
+        "monsoon",
+        "neon",
+        "patchwork",
+        "protego",
+        "protegorat",
+        "quilted tiger",
+        "sarit",
+        "sloppylemming",
+        "sneepy",
+        "stealjob",
+        "streamspy",
+        "viceroy tiger",
+        "zinc emerson"
+      ],
+      "attack_id": "G0040",
+      "attack_name": "Patchwork",
+      "country": "IN",
+      "counts": {
+        "domain": 1442,
+        "ipv4": 106,
+        "url": 54,
+        "url_path": 643
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-25",
+        "latest": "2026-08-11"
+      },
+      "maltrail_groups": [
+        "DONOT",
+        "HANGOVER",
+        "PATCHWORK"
+      ],
+      "sectors": [
+        "Military",
+        "Private sector"
+      ],
+      "slug": "G0040",
+      "sponsor": "India",
+      "total": 2245
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0041",
+      "attack_name": "Strider",
+      "country": "US",
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-13",
+        "latest": "2017-04-13"
+      },
+      "maltrail_groups": [
+        "SAURON"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0041",
+      "sponsor": "United States",
+      "total": 5
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0043",
+      "attack_name": "Group5",
+      "country": null,
+      "counts": {
+        "domain": 4
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-22",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "GROUP5"
+      ],
+      "sectors": [],
+      "slug": "G0043",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [
+        "apt10",
+        "earth kasha",
+        "gallium",
+        "noopldr",
+        "stone panda"
+      ],
+      "attack_id": "G0045",
+      "attack_name": "menuPass",
+      "country": "CN",
+      "counts": {
+        "domain": 1487,
+        "ipv4": 11,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "HOGFISH",
+        "MENUPASS"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0045",
+      "sponsor": "China",
+      "total": 1500
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0046",
+      "attack_name": "FIN7",
+      "country": "RU",
+      "counts": {
+        "domain": 16,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2020-06-25",
+        "latest": "2022-03-30"
+      },
+      "maltrail_groups": [
+        "CARBONSPIDER"
+      ],
+      "sectors": [],
+      "slug": "G0046",
+      "sponsor": null,
+      "total": 17
+    },
+    {
+      "aliases": [
+        "actinium",
+        "apt-c-53",
+        "armageddon",
+        "bluealpha",
+        "gamaload",
+        "gamawiper",
+        "gammadrop",
+        "gammaload",
+        "gammasteel",
+        "glowsand",
+        "glowspark",
+        "hive0051",
+        "litterdrifter",
+        "primitive bear",
+        "pterodo",
+        "pterodograph",
+        "pteroeffigy",
+        "pterographin",
+        "pterolnk",
+        "pteroodd",
+        "pterostew",
+        "shuckworm"
+      ],
+      "attack_id": "G0047",
+      "attack_name": "Gamaredon Group",
+      "country": "RU",
+      "counts": {
+        "domain": 60677,
+        "ipv4": 37,
+        "url": 397,
+        "url_path": 1869
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-18",
+        "latest": "2026-06-25"
+      },
+      "maltrail_groups": [
+        "GAMAREDON",
+        "GAMAREDON-1"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G0047",
+      "sponsor": null,
+      "total": 62980
+    },
+    {
+      "aliases": [
+        "apt34",
+        "greenbug",
+        "helixkitten",
+        "oilrig",
+        "spearal",
+        "veaty"
+      ],
+      "attack_id": "G0049",
+      "attack_name": "OilRig",
+      "country": "IR",
+      "counts": {
+        "domain": 220,
+        "ipv4": 42,
+        "url": 6,
+        "url_path": 3
+      },
+      "first_seen_range": {
+        "earliest": "2017-03-31",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "IRN2",
+        "OILRIG"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0049",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 271
+    },
+    {
+      "aliases": [
+        "SectorF01",
+        "apt-c-00",
+        "apt-c-32",
+        "apt32",
+        "oceanlotus",
+        "phantomlance",
+        "rotajakiro",
+        "spectralviper",
+        "timitator group"
+      ],
+      "attack_id": "G0050",
+      "attack_name": "APT32",
+      "country": "VN",
+      "counts": {
+        "domain": 501,
+        "ipv4": 27,
+        "url": 13,
+        "url_path": 6
+      },
+      "first_seen_range": {
+        "earliest": "2017-06-29",
+        "latest": "2026-07-25"
+      },
+      "maltrail_groups": [
+        "OCEANLOTUS"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0050",
+      "sponsor": "Vietnam",
+      "total": 547
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0052",
+      "attack_name": "CopyKittens",
+      "country": "IR",
+      "counts": {
+        "domain": 34
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-12",
+        "latest": "2017-04-12"
+      },
+      "maltrail_groups": [
+        "COPYKITTENS"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0052",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 34
+    },
+    {
+      "aliases": [
+        "apt-c-41",
+        "promethium",
+        "strongpity"
+      ],
+      "attack_id": "G0056",
+      "attack_name": "PROMETHIUM",
+      "country": "TR",
+      "counts": {
+        "domain": 78,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-13",
+        "latest": "2024-12-06"
+      },
+      "maltrail_groups": [
+        "STRONGPITY"
+      ],
+      "sectors": [],
+      "slug": "G0056",
+      "sponsor": null,
+      "total": 79
+    },
+    {
+      "aliases": [
+        "ajax security team",
+        "apt-c-51",
+        "apt35",
+        "apt42",
+        "bellaciao",
+        "charmingcypress",
+        "educated manticore",
+        "emennet pasargad",
+        "great rift",
+        "greencharlie",
+        "iranian dream job",
+        "magichound",
+        "miragekitten",
+        "nemesiskitten",
+        "nimbus manticore",
+        "phosphorus",
+        "plaid rain",
+        "screening serpens",
+        "smoke sandstorm",
+        "smudgedserpent",
+        "snailresin",
+        "subtle snail",
+        "subtlesnail",
+        "ta453",
+        "ta455",
+        "tunnelvision",
+        "unc1549",
+        "unc4453",
+        "unc788",
+        "wezrat"
+      ],
+      "attack_id": "G0058",
+      "attack_name": "Charming Kitten",
+      "country": "IR",
+      "counts": {
+        "domain": 2258,
+        "ipv4": 107,
+        "url": 25,
+        "url_path": 16
+      },
+      "first_seen_range": {
+        "earliest": "2016-03-09",
+        "latest": "2026-07-29"
+      },
+      "maltrail_groups": [
+        "CHARMINGKITTEN"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0058",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 2406
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0060",
+      "attack_name": "BRONZE BUTLER",
+      "country": "CN",
+      "counts": {
+        "domain": 19,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-19",
+        "latest": "2023-03-14"
+      },
+      "maltrail_groups": [
+        "REDBALDKNIGHT",
+        "TICK"
+      ],
+      "sectors": [
+        "Private sector"
+      ],
+      "slug": "G0060",
+      "sponsor": "China",
+      "total": 23
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0064",
+      "attack_name": "APT33",
+      "country": "IR",
+      "counts": {
+        "domain": 99,
+        "ipv4": 1,
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2017-03-24",
+        "latest": "2024-02-20"
+      },
+      "maltrail_groups": [
+        "33"
+      ],
+      "sectors": [
+        "Private sector"
+      ],
+      "slug": "G0064",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 102
+    },
+    {
+      "aliases": [
+        "apt-c-40",
+        "apt40",
+        "leviathan",
+        "mudcarp",
+        "periscope"
+      ],
+      "attack_id": "G0065",
+      "attack_name": "Leviathan",
+      "country": "CN",
+      "counts": {
+        "domain": 62,
+        "url": 7,
+        "url_path": 4
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-14",
+        "latest": "2022-08-30"
+      },
+      "maltrail_groups": [
+        "MUDCARP",
+        "TEMPPERISCOPE"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0065",
+      "sponsor": "China",
+      "total": 73
+    },
+    {
+      "aliases": [
+        "Red Eyes",
+        "RokRAT",
+        "TA-RedAnt",
+        "Temp.Reaper",
+        "Thallium",
+        "Venus 121",
+        "apt-c-37",
+        "apt37",
+        "birdcall",
+        "footwine",
+        "geumseong121",
+        "group123",
+        "inkysquid",
+        "narwhalrat",
+        "redeyes",
+        "scarcruft",
+        "ta406",
+        "thumbsbd"
+      ],
+      "attack_id": "G0067",
+      "attack_name": "APT37",
+      "country": "KP",
+      "counts": {
+        "domain": 436,
+        "ipv4": 2,
+        "url": 47,
+        "url_path": 9
+      },
+      "first_seen_range": {
+        "earliest": "2016-09-27",
+        "latest": "2026-06-25"
+      },
+      "maltrail_groups": [
+        "37",
+        "REAPER"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0067",
+      "sponsor": "Korea (Democratic People's Republic of)",
+      "total": 494
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0068",
+      "attack_name": "PLATINUM",
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-06-07",
+        "latest": "2019-11-08"
+      },
+      "maltrail_groups": [
+        "PLATINUM"
+      ],
+      "sectors": [],
+      "slug": "G0068",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "BoggySerpens",
+        "COBALT ULSTER (# https://malpedia.caad.fkie.fraunhofer.de/actor/muddywater)",
+        "MERCURY",
+        "Seedworm",
+        "Static Kitten",
+        "TA450",
+        "TEMP.Zagros",
+        "Toneshell",
+        "UDPGangster",
+        "kalim",
+        "lightphoenix",
+        "unc3313",
+        "unc5667"
+      ],
+      "attack_id": "G0069",
+      "attack_name": "MuddyWater",
+      "country": "IR",
+      "counts": {
+        "domain": 15253,
+        "ipv4": 107,
+        "url": 286,
+        "url_path": 38
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-12",
+        "latest": "2026-08-13"
+      },
+      "maltrail_groups": [
+        "MUDDYWATER"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G0069",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 15684
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0070",
+      "attack_name": "Dark Caracal",
+      "country": "LB",
+      "counts": {
+        "domain": 35,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-08-02",
+        "latest": "2024-08-02"
+      },
+      "maltrail_groups": [
+        "DARKCARACAL"
+      ],
+      "sectors": [],
+      "slug": "G0070",
+      "sponsor": null,
+      "total": 36
+    },
+    {
+      "aliases": [
+        "apt19",
+        "c0d0so0",
+        "codoso",
+        "codoso team",
+        "deep panda",
+        "sunshop group"
+      ],
+      "attack_id": "G0073",
+      "attack_name": "APT19",
+      "country": "CN",
+      "counts": {
+        "domain": 57,
+        "ipv4": 2,
+        "url": 8,
+        "url_path": 4
+      },
+      "first_seen_range": {
+        "earliest": "2015-10-20",
+        "latest": "2026-02-19"
+      },
+      "maltrail_groups": [
+        "CODOSO"
+      ],
+      "sectors": [
+        "Military",
+        "Private sector"
+      ],
+      "slug": "G0073",
+      "sponsor": "China",
+      "total": 71
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0075",
+      "attack_name": "Rancor",
+      "country": "CN",
+      "counts": {
+        "domain": 18,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-05-14",
+        "latest": "2019-12-18"
+      },
+      "maltrail_groups": [
+        "RANCOR"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government"
+      ],
+      "slug": "G0075",
+      "sponsor": "China",
+      "total": 21
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0077",
+      "attack_name": "Leafminer",
+      "country": null,
+      "counts": {
+        "domain": 7
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-07",
+        "latest": "2018-08-07"
+      },
+      "maltrail_groups": [
+        "LEAFMINER"
+      ],
+      "sectors": [],
+      "slug": "G0077",
+      "sponsor": null,
+      "total": 7
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0078",
+      "attack_name": "Gorgon Group",
+      "country": null,
+      "counts": {
+        "domain": 44,
+        "ipv4": 1,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2019-06-19",
+        "latest": "2022-06-07"
+      },
+      "maltrail_groups": [
+        "GORGON"
+      ],
+      "sectors": [],
+      "slug": "G0078",
+      "sponsor": null,
+      "total": 48
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0079",
+      "attack_name": "DarkHydrus",
+      "country": null,
+      "counts": {
+        "domain": 68
+      },
+      "first_seen_range": {
+        "earliest": "2018-07-28",
+        "latest": "2022-06-05"
+      },
+      "maltrail_groups": [
+        "DARKHYDRUS"
+      ],
+      "sectors": [],
+      "slug": "G0079",
+      "sponsor": null,
+      "total": 68
+    },
+    {
+      "aliases": [
+        "AirdViper",
+        "DNSep",
+        "apt-c-23",
+        "apt23",
+        "famoussparrow",
+        "ironhusky",
+        "keyboy",
+        "micropsia",
+        "nccTrojan",
+        "phantomnet",
+        "pierogi",
+        "pirate panda",
+        "piratepanda",
+        "portdoor",
+        "smanager",
+        "tropic trooper",
+        "usbferry"
+      ],
+      "attack_id": "G0081",
+      "attack_name": "Tropic Trooper",
+      "country": "CN",
+      "counts": {
+        "domain": 745,
+        "ipv4": 47,
+        "url": 9,
+        "url_path": 43
+      },
+      "first_seen_range": {
+        "earliest": "2017-03-30",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "23",
+        "KEYBOY",
+        "TA428"
+      ],
+      "sectors": [],
+      "slug": "G0081",
+      "sponsor": null,
+      "total": 844
+    },
+    {
+      "aliases": [
+        "CoreKit",
+        "NimDoor",
+        "RTV4",
+        "cageychameleon",
+        "cryptocore",
+        "cryptomimic",
+        "netchk",
+        "ta444",
+        "unc1069",
+        "upl/tlgrm",
+        "wslink"
+      ],
+      "attack_id": "G0082",
+      "attack_name": "APT38",
+      "country": "KP",
+      "counts": {
+        "domain": 2058,
+        "ipv4": 43,
+        "url": 7,
+        "url_path": 7
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-23",
+        "latest": "2026-07-25"
+      },
+      "maltrail_groups": [
+        "38",
+        "BLUENOROFF"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0082",
+      "sponsor": "Korea (Democratic People's Republic of)",
+      "total": 2115
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0084",
+      "attack_name": "Gallmaker",
+      "country": null,
+      "counts": {
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-18",
+        "latest": "2018-10-18"
+      },
+      "maltrail_groups": [
+        "GALLMAKER"
+      ],
+      "sectors": [],
+      "slug": "G0084",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "babyshark",
+        "kimjongrat"
+      ],
+      "attack_id": "G0086",
+      "attack_name": "Stolen Pencil",
+      "country": null,
+      "counts": {
+        "domain": 15,
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-12-06",
+        "latest": "2019-04-26"
+      },
+      "maltrail_groups": [
+        "STOLENPENCIL"
+      ],
+      "sectors": [],
+      "slug": "G0086",
+      "sponsor": null,
+      "total": 17
+    },
+    {
+      "aliases": [
+        "apt39",
+        "chafer",
+        "itg07"
+      ],
+      "attack_id": "G0087",
+      "attack_name": "APT39",
+      "country": "IR",
+      "counts": {
+        "domain": 68,
+        "url": 10
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-28",
+        "latest": "2021-10-08"
+      },
+      "maltrail_groups": [
+        "CHAFER"
+      ],
+      "sectors": [],
+      "slug": "G0087",
+      "sponsor": null,
+      "total": 78
+    },
+    {
+      "aliases": [
+        "ashenlepus",
+        "ashenloader",
+        "ashenorchestrator",
+        "ashenstager",
+        "ashtag"
+      ],
+      "attack_id": "G0090",
+      "attack_name": "WIRTE",
+      "country": "PS",
+      "counts": {
+        "domain": 82,
+        "ipv4": 6,
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "WIRTE"
+      ],
+      "sectors": [],
+      "slug": "G0090",
+      "sponsor": null,
+      "total": 90
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0091",
+      "attack_name": "Silence",
+      "country": null,
+      "counts": {
+        "domain": 48,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-08-21",
+        "latest": "2020-12-22"
+      },
+      "maltrail_groups": [
+        "SILENCE"
+      ],
+      "sectors": [],
+      "slug": "G0091",
+      "sponsor": null,
+      "total": 50
+    },
+    {
+      "aliases": [
+        "APT-C-55",
+        "Black Banshee",
+        "HancomAgent",
+        "HttpTroy",
+        "Larva-25004",
+        "RftRAT",
+        "UAT-5394",
+        "Velvet Chollima",
+        "archipelago",
+        "blindingcan",
+        "comebacker",
+        "emerald sleet",
+        "endclientrat",
+        "kimjongrat",
+        "kospy",
+        "moonpeak",
+        "pebbledash",
+        "sparkling pisces",
+        "springtail",
+        "ta427",
+        "unc3782"
+      ],
+      "attack_id": "G0094",
+      "attack_name": "Kimsuky",
+      "country": "KP",
+      "counts": {
+        "domain": 25342,
+        "ipv4": 94,
+        "url": 344,
+        "url_path": 109
+      },
+      "first_seen_range": {
+        "earliest": "2019-02-04",
+        "latest": "2026-08-15"
+      },
+      "maltrail_groups": [
+        "KIMSUKY"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0094",
+      "sponsor": "Korea (Democratic People's Republic of)",
+      "total": 25889
+    },
+    {
+      "aliases": [
+        "apt-c-43",
+        "apt43"
+      ],
+      "attack_id": "G0095",
+      "attack_name": "Machete",
+      "country": null,
+      "counts": {
+        "domain": 34,
+        "ipv4": 2,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-08-05",
+        "latest": "2024-12-19"
+      },
+      "maltrail_groups": [
+        "MACHETE"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G0095",
+      "sponsor": "Unknown",
+      "total": 38
+    },
+    {
+      "aliases": [
+        "AXIOMATICASYMPTOTE",
+        "RedEcho",
+        "apt-c-41",
+        "apt41",
+        "bamboloader",
+        "double dragon",
+        "eagerbee",
+        "earth baku",
+        "earth baxia",
+        "geardoor",
+        "lowkey",
+        "monikerloader",
+        "shadowhammer",
+        "shadowpad",
+        "silver dragon",
+        "silverscreen",
+        "sshcmd",
+        "ta415",
+        "toughprogress",
+        "voldemort",
+        "xianggang"
+      ],
+      "attack_id": "G0096",
+      "attack_name": "APT41",
+      "country": "CN",
+      "counts": {
+        "domain": 541,
+        "ipv4": 2784,
+        "url": 201
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-14",
+        "latest": "2026-07-10"
+      },
+      "maltrail_groups": [
+        "BARIUM",
+        "WICKEDPANDA"
+      ],
+      "sectors": [
+        "Automotive",
+        "Business",
+        "Cryptocurrency",
+        "Education",
+        "Energy",
+        "Finance",
+        "Healthcare",
+        "High-Tech",
+        "Intergovernmental",
+        "Media",
+        "Pharmaceuticals",
+        "Private sector",
+        "Retail",
+        "Services",
+        "Telecommunications",
+        "Travel"
+      ],
+      "slug": "G0096",
+      "sponsor": "People's Republic of China",
+      "total": 3526
+    },
+    {
+      "aliases": [
+        "apt-c-50"
+      ],
+      "attack_id": "G0097",
+      "attack_name": "Bouncing Golf",
+      "country": "IR",
+      "counts": {
+        "domain": 23,
+        "ipv4": 1,
+        "url": 5,
+        "url_path": 13
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-10",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "DOMESTICKITTEN"
+      ],
+      "sectors": [],
+      "slug": "G0097",
+      "sponsor": null,
+      "total": 42
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0098",
+      "attack_name": "BlackTech",
+      "country": "CN",
+      "counts": {
+        "domain": 52,
+        "ipv4": 5,
+        "url": 3,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BLACKTECH",
+        "EARTHHUNDUN"
+      ],
+      "sectors": [],
+      "slug": "G0098",
+      "sponsor": null,
+      "total": 62
+    },
+    {
+      "aliases": [
+        "aguilaciega",
+        "apt-c-36",
+        "apt-q-98",
+        "apt36",
+        "blind eagle",
+        "blotchyquasar",
+        "tag-144"
+      ],
+      "attack_id": "G0099",
+      "attack_name": "APT-C-36",
+      "country": null,
+      "counts": {
+        "domain": 64,
+        "ipv4": 20,
+        "url": 9,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-29",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BLINDEAGLE"
+      ],
+      "sectors": [
+        "Finance",
+        "Government",
+        "Manufacturing",
+        "Petroleum",
+        "Private sector"
+      ],
+      "slug": "G0099",
+      "sponsor": null,
+      "total": 95
+    },
+    {
+      "aliases": [
+        "APT-LY-1007",
+        "CloudFall",
+        "CyrillicRAT",
+        "PowerShower"
+      ],
+      "attack_id": "G0100",
+      "attack_name": "Inception",
+      "country": "RU",
+      "counts": {
+        "domain": 212,
+        "ipv4": 7,
+        "url": 7,
+        "url_path": 13
+      },
+      "first_seen_range": {
+        "earliest": "2016-03-08",
+        "latest": "2026-08-05"
+      },
+      "maltrail_groups": [
+        "CLOUDATLAS"
+      ],
+      "sectors": [
+        "Government",
+        "Private sector"
+      ],
+      "slug": "G0100",
+      "sponsor": "Russian Federation",
+      "total": 239
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0112",
+      "attack_name": "Windshift",
+      "country": null,
+      "counts": {
+        "domain": 186,
+        "ipv4": 14,
+        "url": 2,
+        "url_path": 8
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-14",
+        "latest": "2026-06-26"
+      },
+      "maltrail_groups": [
+        "BAHAMUT",
+        "WINDSHIFT"
+      ],
+      "sectors": [],
+      "slug": "G0112",
+      "sponsor": null,
+      "total": 210
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0120",
+      "attack_name": "Evilnum",
+      "country": null,
+      "counts": {
+        "domain": 167,
+        "ipv4": 4,
+        "url": 15
+      },
+      "first_seen_range": {
+        "earliest": "2020-07-22",
+        "latest": "2022-12-08"
+      },
+      "maltrail_groups": [
+        "DEATHSTALKER"
+      ],
+      "sectors": [],
+      "slug": "G0120",
+      "sponsor": null,
+      "total": 186
+    },
+    {
+      "aliases": [
+        "GroupA21",
+        "apt-04",
+        "apt-c-24",
+        "apt-q-39",
+        "apt-q-42",
+        "babyelephant",
+        "ghostchat",
+        "hardcore nationalist",
+        "nh2",
+        "rattlesnake",
+        "sloppylemming",
+        "ta399"
+      ],
+      "attack_id": "G0121",
+      "attack_name": "Sidewinder",
+      "country": "IN",
+      "counts": {
+        "domain": 3683,
+        "ipv4": 51,
+        "url": 41,
+        "url_path": 37
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-29",
+        "latest": "2026-08-14"
+      },
+      "maltrail_groups": [
+        "SIDEWINDER"
+      ],
+      "sectors": [
+        "Government",
+        "Military",
+        "Private sector"
+      ],
+      "slug": "G0121",
+      "sponsor": "India",
+      "total": 3812
+    },
+    {
+      "aliases": [
+        "cobalt dickens",
+        "mabna institute",
+        "silent librarian",
+        "ta407"
+      ],
+      "attack_id": "G0122",
+      "attack_name": "Silent Librarian",
+      "country": "IR",
+      "counts": {
+        "domain": 836
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-28",
+        "latest": "2024-01-29"
+      },
+      "maltrail_groups": [
+        "COBALTDICKENS"
+      ],
+      "sectors": [],
+      "slug": "G0122",
+      "sponsor": null,
+      "total": 836
+    },
+    {
+      "aliases": [
+        "DeftTorero",
+        "LebaneseCedar",
+        "VolatileCedar"
+      ],
+      "attack_id": "G0123",
+      "attack_name": "Volatile Cedar",
+      "country": "LB",
+      "counts": {
+        "domain": 7,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2015-10-20",
+        "latest": "2022-10-03"
+      },
+      "maltrail_groups": [
+        "VOLATILECEDAR"
+      ],
+      "sectors": [],
+      "slug": "G0123",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [
+        "Hade ransomware",
+        "TimosaraHackerTerm"
+      ],
+      "attack_id": "G0125",
+      "attack_name": "HAFNIUM",
+      "country": "CN",
+      "counts": {
+        "domain": 16,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2021-03-09",
+        "latest": "2022-01-09"
+      },
+      "maltrail_groups": [
+        "HAFNIUM"
+      ],
+      "sectors": [],
+      "slug": "G0125",
+      "sponsor": null,
+      "total": 17
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0126",
+      "attack_name": "Higaisa",
+      "country": "KR",
+      "counts": {
+        "domain": 13,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2020-05-31",
+        "latest": "2024-09-16"
+      },
+      "maltrail_groups": [
+        "HIGAISA"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G0126",
+      "sponsor": "Korea (Republic of)",
+      "total": 15
+    },
+    {
+      "aliases": [
+        "apt-31",
+        "bronze vinewood",
+        "zirconium"
+      ],
+      "attack_id": "G0128",
+      "attack_name": "ZIRCONIUM",
+      "country": "CN",
+      "counts": {
+        "domain": 24,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-05-18",
+        "latest": "2022-08-05"
+      },
+      "maltrail_groups": [
+        "JUDGMENTPANDA"
+      ],
+      "sectors": [],
+      "slug": "G0128",
+      "sponsor": null,
+      "total": 25
+    },
+    {
+      "aliases": [
+        "BASIN",
+        "Earth Preta",
+        "HoneyMyte",
+        "MQsTTang",
+        "Red Lich",
+        "RedDelta",
+        "Stately Taurus",
+        "TEMP.Hex",
+        "Twill Typhoon",
+        "UNC6384",
+        "UTG-Q-011",
+        "Yokai",
+        "ceranakeeper",
+        "fdmtp backdoor",
+        "hive0154",
+        "lotuslite",
+        "minirecon",
+        "pubload",
+        "toneshell",
+        "zohomurk"
+      ],
+      "attack_id": "G0129",
+      "attack_name": "Mustang Panda",
+      "country": "CN",
+      "counts": {
+        "domain": 319,
+        "ipv4": 149,
+        "url": 53,
+        "url_path": 19
+      },
+      "first_seen_range": {
+        "earliest": "2019-08-20",
+        "latest": "2026-07-07"
+      },
+      "maltrail_groups": [
+        "CAMARODRAGON",
+        "LUMINOUSMOTH",
+        "MUSTANGPANDA",
+        "TA416"
+      ],
+      "sectors": [
+        "Civil society"
+      ],
+      "slug": "G0129",
+      "sponsor": "China",
+      "total": 540
+    },
+    {
+      "aliases": [
+        "bisonal",
+        "tonto",
+        "tontoteam"
+      ],
+      "attack_id": "G0131",
+      "attack_name": "Tonto Team",
+      "country": "CN",
+      "counts": {
+        "domain": 232,
+        "ipv4": 5,
+        "url": 4,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-02",
+        "latest": "2023-09-20"
+      },
+      "maltrail_groups": [
+        "BISONAL"
+      ],
+      "sectors": [
+        "Government",
+        "Military",
+        "Private sector"
+      ],
+      "slug": "G0131",
+      "sponsor": "China",
+      "total": 246
+    },
+    {
+      "aliases": [
+        "Dustsquad",
+        "Nomadic Octopus",
+        "Octopus",
+        "Paperbug"
+      ],
+      "attack_id": "G0133",
+      "attack_name": "Nomadic Octopus",
+      "country": "RU",
+      "counts": {
+        "domain": 15,
+        "url": 11,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-19",
+        "latest": "2023-04-28"
+      },
+      "maltrail_groups": [
+        "DUSTSQUAD"
+      ],
+      "sectors": [],
+      "slug": "G0133",
+      "sponsor": null,
+      "total": 27
+    },
+    {
+      "aliases": [
+        "G0134",
+        "actionrat",
+        "apt-c-56",
+        "apt36",
+        "crimsonrat",
+        "curlbackrat",
+        "deskrat",
+        "drat",
+        "elizarat",
+        "falseflag",
+        "fetarat",
+        "getarat",
+        "hackeraic2agent",
+        "mythic leopard",
+        "patchcord",
+        "reverserat",
+        "scarimson",
+        "seedoor",
+        "sheetcord",
+        "sidecopy",
+        "sindoor",
+        "tag-140"
+      ],
+      "attack_id": "G0134",
+      "attack_name": "Transparent Tribe",
+      "country": "PK",
+      "counts": {
+        "domain": 6637,
+        "ipv4": 857,
+        "url": 163,
+        "url_path": 174
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2026-08-13"
+      },
+      "maltrail_groups": [
+        "TRANSPARENTTRIBE"
+      ],
+      "sectors": [
+        "Civil society",
+        "Government",
+        "Military"
+      ],
+      "slug": "G0134",
+      "sponsor": "Pakistan",
+      "total": 7831
+    },
+    {
+      "aliases": [
+        "BackdoorDiplomacy",
+        "Quarian",
+        "Turian"
+      ],
+      "attack_id": "G0135",
+      "attack_name": "BackdoorDiplomacy",
+      "country": null,
+      "counts": {
+        "domain": 67
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-05",
+        "latest": "2023-01-18"
+      },
+      "maltrail_groups": [
+        "QUARIAN"
+      ],
+      "sectors": [
+        "Government",
+        "Telecommunications"
+      ],
+      "slug": "G0135",
+      "sponsor": null,
+      "total": 67
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0136",
+      "attack_name": "IndigoZebra",
+      "country": "CN",
+      "counts": {
+        "domain": 25
+      },
+      "first_seen_range": {
+        "earliest": "2021-05-27",
+        "latest": "2021-07-01"
+      },
+      "maltrail_groups": [
+        "INDIGOZEBRA"
+      ],
+      "sectors": [],
+      "slug": "G0136",
+      "sponsor": null,
+      "total": 25
+    },
+    {
+      "aliases": [
+        "MarkiRAT"
+      ],
+      "attack_id": "G0137",
+      "attack_name": "Ferocious Kitten",
+      "country": "IR",
+      "counts": {
+        "domain": 32,
+        "url_path": 4
+      },
+      "first_seen_range": {
+        "earliest": "2021-06-21",
+        "latest": "2026-02-03"
+      },
+      "maltrail_groups": [
+        "FEROCIOUSKITTEN"
+      ],
+      "sectors": [],
+      "slug": "G0137",
+      "sponsor": null,
+      "total": 36
+    },
+    {
+      "aliases": [
+        "apt-45",
+        "apt45",
+        "onyx sleet",
+        "silent chollima"
+      ],
+      "attack_id": "G0138",
+      "attack_name": "Andariel",
+      "country": "KP",
+      "counts": {
+        "domain": 6,
+        "ipv4": 4
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-30",
+        "latest": "2024-10-04"
+      },
+      "maltrail_groups": [
+        "ONYXSLEET",
+        "STONEFLY"
+      ],
+      "sectors": [],
+      "slug": "G0138",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [],
+      "attack_id": "G0140",
+      "attack_name": "LazyScripter",
+      "country": null,
+      "counts": {
+        "domain": 18,
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-12-14",
+        "latest": "2022-03-10"
+      },
+      "maltrail_groups": [
+        "LAZYSCRIPTER"
+      ],
+      "sectors": [],
+      "slug": "G0140",
+      "sponsor": null,
+      "total": 21
+    },
+    {
+      "aliases": [
+        "danbot",
+        "hexane",
+        "lyceum"
+      ],
+      "attack_id": "G1001",
+      "attack_name": "HEXANE",
+      "country": "IR",
+      "counts": {
+        "domain": 45,
+        "ipv4": 7
+      },
+      "first_seen_range": {
+        "earliest": "2019-08-27",
+        "latest": "2022-08-29"
+      },
+      "maltrail_groups": [
+        "LYCEUM"
+      ],
+      "sectors": [
+        "Defense",
+        "Education",
+        "Energy",
+        "Government",
+        "High-Tech",
+        "Military",
+        "Telecommunications"
+      ],
+      "slug": "G1001",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 52
+    },
+    {
+      "aliases": [
+        "AlmondRAT",
+        "BDarkRAT",
+        "Hazy Tiger",
+        "KugelBlitz",
+        "MiyaRAT",
+        "MuuyDownloader",
+        "ORPCBackdoor",
+        "Orange Yali",
+        "WSCSPL",
+        "apt-c-08",
+        "apt-k-47",
+        "apt-q-37",
+        "apt-q-41",
+        "artradownloader",
+        "asyncshell",
+        "chmghost",
+        "kiwistealer",
+        "manlinghua",
+        "mysterious elephant",
+        "splinter",
+        "stomexfiltrator",
+        "ta397",
+        "turtlepower",
+        "ung0002"
+      ],
+      "attack_id": "G1002",
+      "attack_name": "BITTER",
+      "country": "IN",
+      "counts": {
+        "domain": 466,
+        "ipv4": 79,
+        "url": 24,
+        "url_path": 102
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-29",
+        "latest": "2026-08-13"
+      },
+      "maltrail_groups": [
+        "BITTER"
+      ],
+      "sectors": [],
+      "slug": "G1002",
+      "sponsor": null,
+      "total": 671
+    },
+    {
+      "aliases": [],
+      "attack_id": "G1003",
+      "attack_name": "Ember Bear",
+      "country": "RU",
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-13",
+        "latest": "2023-07-13"
+      },
+      "maltrail_groups": [
+        "CADETBLIZZARD"
+      ],
+      "sectors": [],
+      "slug": "G1003",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": "G1005",
+      "attack_name": "POLONIUM",
+      "country": "LB",
+      "counts": {
+        "ipv4": 16,
+        "url": 5,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2022-10-12",
+        "latest": "2023-05-15"
+      },
+      "maltrail_groups": [
+        "POLONIUM"
+      ],
+      "sectors": [
+        "Civil society",
+        "Critical manufacturing",
+        "Defense",
+        "Defense industrial base",
+        "Finance",
+        "Food and agriculture",
+        "Government",
+        "Healthcare",
+        "Information technology",
+        "Military",
+        "NGOs",
+        "Pharmaceuticals",
+        "Transportation"
+      ],
+      "slug": "G1005",
+      "sponsor": "Lebanon",
+      "total": 26
+    },
+    {
+      "aliases": [
+        "tag-22"
+      ],
+      "attack_id": "G1006",
+      "attack_name": "Earth Lusca",
+      "country": "CN",
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2021-07-17",
+        "latest": "2021-07-17"
+      },
+      "maltrail_groups": [
+        "TAG22"
+      ],
+      "sectors": [
+        "Covid-19 research organizations",
+        "Cryptocurrency",
+        "Education",
+        "Gambling companies",
+        "Government",
+        "Healthcare",
+        "Media",
+        "Pro-democracy and human rights political organizations",
+        "Religious organization",
+        "Telecommunications"
+      ],
+      "slug": "G1006",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "Heyoka",
+        "Mongall",
+        "UNC94"
+      ],
+      "attack_id": "G1007",
+      "attack_name": "Aoqin Dragon",
+      "country": "CN",
+      "counts": {
+        "domain": 107,
+        "ipv4": 4,
+        "url": 3,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-09",
+        "latest": "2024-11-30"
+      },
+      "maltrail_groups": [
+        "AOQINDRAGON"
+      ],
+      "sectors": [
+        "Education",
+        "Government",
+        "Telecommunications"
+      ],
+      "slug": "G1007",
+      "sponsor": null,
+      "total": 115
+    },
+    {
+      "aliases": [
+        "IMAPLoader",
+        "crimson sandstorm",
+        "imperial kitten",
+        "ta456",
+        "yellow liderc"
+      ],
+      "attack_id": "G1012",
+      "attack_name": "CURIUM",
+      "country": "IR",
+      "counts": {
+        "domain": 198,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2019-09-18",
+        "latest": "2023-11-13"
+      },
+      "maltrail_groups": [
+        "IMPERIALKITTEN",
+        "TORTOISESHELL"
+      ],
+      "sectors": [
+        "Civil society",
+        "Defense",
+        "Energy",
+        "Finance",
+        "Government",
+        "Healthcare",
+        "High-Tech",
+        "Legal",
+        "Media",
+        "Military",
+        "NGOs",
+        "Pharmaceuticals",
+        "Rail",
+        "Telecommunications",
+        "Transportation"
+      ],
+      "slug": "G1012",
+      "sponsor": "Iran (Islamic Republic of)",
+      "total": 202
+    },
+    {
+      "aliases": [],
+      "attack_id": "G1019",
+      "attack_name": "MoustachedBouncer",
+      "country": "BY",
+      "counts": {
+        "domain": 5,
+        "ipv4": 6
+      },
+      "first_seen_range": {
+        "earliest": "2023-08-10",
+        "latest": "2023-08-10"
+      },
+      "maltrail_groups": [
+        "MOUSTACHEDBOUNCER"
+      ],
+      "sectors": [
+        "Government"
+      ],
+      "slug": "G1019",
+      "sponsor": "Belarus",
+      "total": 11
+    },
+    {
+      "aliases": [],
+      "attack_id": "G1022",
+      "attack_name": "ToddyCat",
+      "country": null,
+      "counts": {
+        "domain": 29,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-21",
+        "latest": "2023-10-28"
+      },
+      "maltrail_groups": [
+        "TODDYCAT"
+      ],
+      "sectors": [
+        "Government",
+        "Military"
+      ],
+      "slug": "G1022",
+      "sponsor": null,
+      "total": 31
+    },
+    {
+      "aliases": [
+        "apt-c-5"
+      ],
+      "attack_id": "G1023",
+      "attack_name": "APT5",
+      "country": "CN",
+      "counts": {
+        "domain": 41,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-10",
+        "latest": "2022-04-10"
+      },
+      "maltrail_groups": [
+        "5"
+      ],
+      "sectors": [],
+      "slug": "G1023",
+      "sponsor": null,
+      "total": 42
+    },
+    {
+      "aliases": [
+        "arid gopher",
+        "arid viper",
+        "spyc23"
+      ],
+      "attack_id": "G1028",
+      "attack_name": "APT-C-23",
+      "country": "PS",
+      "counts": {
+        "domain": 103,
+        "ipv4": 6,
+        "url": 2,
+        "url_path": 69
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2024-06-13"
+      },
+      "maltrail_groups": [
+        "ARIDVIPER",
+        "DESERTFALCON"
+      ],
+      "sectors": [
+        "Civil society",
+        "Defense",
+        "Education",
+        "Energy",
+        "Finance",
+        "Government",
+        "High-Tech",
+        "Legal",
+        "Media",
+        "Military",
+        "NGOs",
+        "Telecommunications",
+        "Transportation"
+      ],
+      "slug": "G1028",
+      "sponsor": "Palestine",
+      "total": 180
+    },
+    {
+      "aliases": [
+        "baitswitch",
+        "calisto",
+        "coldcopy",
+        "darksword",
+        "lostkeys",
+        "mayberobot",
+        "simplefix",
+        "ta446",
+        "unc3707",
+        "yesrobot"
+      ],
+      "attack_id": "G1033",
+      "attack_name": "Star Blizzard",
+      "country": "RU",
+      "counts": {
+        "domain": 469,
+        "ipv4": 3,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-30",
+        "latest": "2026-03-28"
+      },
+      "maltrail_groups": [
+        "COLDRIVER"
+      ],
+      "sectors": [],
+      "slug": "G1033",
+      "sponsor": null,
+      "total": 475
+    },
+    {
+      "aliases": [
+        "Bronze Highland",
+        "Daggerfly"
+      ],
+      "attack_id": "G1034",
+      "attack_name": "Daggerfly",
+      "country": "CN",
+      "counts": {
+        "domain": 3,
+        "ipv4": 11
+      },
+      "first_seen_range": {
+        "earliest": "2020-07-07",
+        "latest": "2025-02-08"
+      },
+      "maltrail_groups": [
+        "EVASIVEPANDA"
+      ],
+      "sectors": [],
+      "slug": "G1034",
+      "sponsor": null,
+      "total": 14
+    },
+    {
+      "aliases": [
+        "sharpshooter",
+        "ta473"
+      ],
+      "attack_id": "G1035",
+      "attack_name": "Winter Vivern",
+      "country": "RU",
+      "counts": {
+        "domain": 16,
+        "url": 5,
+        "url_path": 17
+      },
+      "first_seen_range": {
+        "earliest": "2018-12-19",
+        "latest": "2023-10-31"
+      },
+      "maltrail_groups": [
+        "WINTERVIVERN"
+      ],
+      "sectors": [],
+      "slug": "G1035",
+      "sponsor": null,
+      "total": 38
+    },
+    {
+      "aliases": [
+        "earthkapre",
+        "goldblade",
+        "redcurl",
+        "redloader",
+        "redwolf"
+      ],
+      "attack_id": "G1039",
+      "attack_name": "RedCurl",
+      "country": null,
+      "counts": {
+        "domain": 58,
+        "ipv4": 2,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2023-09-08",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "REDWOLF"
+      ],
+      "sectors": [],
+      "slug": "G1039",
+      "sponsor": null,
+      "total": 65
+    },
+    {
+      "aliases": [
+        "snappytcp"
+      ],
+      "attack_id": "G1041",
+      "attack_name": "Sea Turtle",
+      "country": "TR",
+      "counts": {
+        "domain": 35,
+        "ipv4": 1,
+        "url": 13,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2023-12-08",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "MARBLEDDUST",
+        "TEALKURMA"
+      ],
+      "sectors": [],
+      "slug": "G1041",
+      "sponsor": null,
+      "total": 51
+    },
+    {
+      "aliases": [
+        "entryshell",
+        "sparrowdoor",
+        "xiangoop"
+      ],
+      "attack_id": "G1045",
+      "attack_name": "Salt Typhoon",
+      "country": "CN",
+      "counts": {
+        "domain": 14,
+        "ipv4": 15
+      },
+      "first_seen_range": {
+        "earliest": "2021-10-26",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "GHOSTEMPEROR"
+      ],
+      "sectors": [],
+      "slug": "G1045",
+      "sponsor": null,
+      "total": 29
+    },
+    {
+      "aliases": [
+        "castletap",
+        "mopsled",
+        "redpenguin",
+        "riflespine",
+        "tinyshell"
+      ],
+      "attack_id": "G1048",
+      "attack_name": "UNC3886",
+      "country": "CN",
+      "counts": {
+        "ipv4": 10
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC3886"
+      ],
+      "sectors": [],
+      "slug": "G1048",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [
+        "lodeinfo",
+        "mirrorstealer"
+      ],
+      "attack_id": "G1054",
+      "attack_name": "MirrorFace",
+      "country": "CN",
+      "counts": {
+        "domain": 2,
+        "ipv4": 17,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2022-12-15",
+        "latest": "2024-12-01"
+      },
+      "maltrail_groups": [
+        "MIRRORFACE"
+      ],
+      "sectors": [],
+      "slug": "G1054",
+      "sponsor": null,
+      "total": 22
+    },
+    {
+      "aliases": [
+        "aa22-264a",
+        "banished kitten",
+        "homeland justice",
+        "karma",
+        "red sandstorm",
+        "storm-0842",
+        "void manticore"
+      ],
+      "attack_id": "G1055",
+      "attack_name": "VOID MANTICORE",
+      "country": "IR",
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "BANISHEDKITTEN"
+      ],
+      "sectors": [],
+      "slug": "G1055",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "ta402"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 257,
+        "ipv4": 2,
+        "url": 4,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2023-12-16"
+      },
+      "maltrail_groups": [
+        "GAZA"
+      ],
+      "sectors": [],
+      "slug": "GAZA",
+      "sponsor": null,
+      "total": 264
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-22",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "GLASSES"
+      ],
+      "sectors": [],
+      "slug": "GLASSES",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "brave prince",
+        "ghost419",
+        "gold dragon"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 13,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-06-10",
+        "latest": "2024-10-30"
+      },
+      "maltrail_groups": [
+        "GOLDDRAGON"
+      ],
+      "sectors": [],
+      "slug": "GOLDDRAGON",
+      "sponsor": null,
+      "total": 15
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-03-19",
+        "latest": "2019-03-19"
+      },
+      "maltrail_groups": [
+        "GOLDENBIRD"
+      ],
+      "sectors": [],
+      "slug": "GOLDENBIRD",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1,
+        "url": 38
+      },
+      "first_seen_range": {
+        "earliest": "2023-08-20",
+        "latest": "2024-10-12"
+      },
+      "maltrail_groups": [
+        "GOLDENJACKAL"
+      ],
+      "sectors": [],
+      "slug": "GOLDENJACKAL",
+      "sponsor": null,
+      "total": 39
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-23",
+        "latest": "2018-10-23"
+      },
+      "maltrail_groups": [
+        "GOLDENRAT"
+      ],
+      "sectors": [],
+      "slug": "GOLDENRAT",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "AUDITUNNEL",
+        "IHS Back-Connect backdoor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 7,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-30",
+        "latest": "2023-10-14"
+      },
+      "maltrail_groups": [
+        "GOLDMELODY"
+      ],
+      "sectors": [],
+      "slug": "GOLDMELODY",
+      "sponsor": null,
+      "total": 12
+    },
+    {
+      "aliases": [
+        "apt-c-27",
+        "goldmouse"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 5
+      },
+      "first_seen_range": {
+        "earliest": "2019-03-27",
+        "latest": "2019-04-20"
+      },
+      "maltrail_groups": [
+        "GOLDMOUSE"
+      ],
+      "sectors": [],
+      "slug": "GOLDMOUSE",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "boxoffriends",
+        "compactgopher",
+        "laxgopher",
+        "ratgopher",
+        "sslordoor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-04-23",
+        "latest": "2026-04-23"
+      },
+      "maltrail_groups": [
+        "GOPHERWHISPER"
+      ],
+      "sectors": [],
+      "slug": "GOPHERWHISPER",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-28",
+        "latest": "2023-10-28"
+      },
+      "maltrail_groups": [
+        "GRAYLING"
+      ],
+      "sectors": [],
+      "slug": "GRAYLING",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "apt-c-01",
+        "poison ivy"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 183,
+        "ipv4": 4,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-02-27",
+        "latest": "2025-02-05"
+      },
+      "maltrail_groups": [
+        "GREENSPOT"
+      ],
+      "sectors": [],
+      "slug": "GREENSPOT",
+      "sponsor": null,
+      "total": 189
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 4,
+        "url": 2,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-17",
+        "latest": "2018-10-17"
+      },
+      "maltrail_groups": [
+        "GREYENERGY"
+      ],
+      "sectors": [],
+      "slug": "GREYENERGY",
+      "sponsor": null,
+      "total": 7
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 7,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-07",
+        "latest": "2020-11-11"
+      },
+      "maltrail_groups": [
+        "GROUNDBAIT"
+      ],
+      "sectors": [],
+      "slug": "GROUNDBAIT",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 27
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-05",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "HACKINGTEAM"
+      ],
+      "sectors": [],
+      "slug": "HACKINGTEAM",
+      "sponsor": null,
+      "total": 27
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 36
+      },
+      "first_seen_range": {
+        "earliest": "2023-04-14",
+        "latest": "2024-05-23"
+      },
+      "maltrail_groups": [
+        "HELLHOUNDS"
+      ],
+      "sectors": [],
+      "slug": "HELLHOUNDS",
+      "sponsor": null,
+      "total": 36
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 13,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-03-08",
+        "latest": "2019-05-26"
+      },
+      "maltrail_groups": [
+        "HERMIT"
+      ],
+      "sectors": [],
+      "slug": "HERMIT",
+      "sponsor": null,
+      "total": 15
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "HEZIRASH"
+      ],
+      "sectors": [],
+      "slug": "HEZIRASH",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 49,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-01-08",
+        "latest": "2019-08-04"
+      },
+      "maltrail_groups": [
+        "ICEFOG"
+      ],
+      "sectors": [],
+      "slug": "ICEFOG",
+      "sponsor": null,
+      "total": 50
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5,
+        "ipv4": 1,
+        "url": 18
+      },
+      "first_seen_range": {
+        "earliest": "2024-10-17",
+        "latest": "2024-10-19"
+      },
+      "maltrail_groups": [
+        "ICEPEONY"
+      ],
+      "sectors": [],
+      "slug": "ICEPEONY",
+      "sponsor": null,
+      "total": 24
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 4,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-16",
+        "latest": "2022-04-16"
+      },
+      "maltrail_groups": [
+        "INDRA"
+      ],
+      "sectors": [],
+      "slug": "INDRA",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-03-13"
+      },
+      "maltrail_groups": [
+        "INEDIBLEOCHOTENSE"
+      ],
+      "sectors": [],
+      "slug": "INEDIBLEOCHOTENSE",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "foudre",
+        "infy"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 263
+      },
+      "first_seen_range": {
+        "earliest": "2020-10-25",
+        "latest": "2026-02-07"
+      },
+      "maltrail_groups": [
+        "INFY"
+      ],
+      "sectors": [],
+      "slug": "INFY",
+      "sponsor": null,
+      "total": 263
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 28
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-30",
+        "latest": "2018-10-23"
+      },
+      "maltrail_groups": [
+        "INNAPUT"
+      ],
+      "sectors": [],
+      "slug": "INNAPUT",
+      "sponsor": null,
+      "total": 28
+    },
+    {
+      "aliases": [
+        "mysterysnail"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-13",
+        "latest": "2022-03-13"
+      },
+      "maltrail_groups": [
+        "IRONHUSKY"
+      ],
+      "sectors": [],
+      "slug": "IRONHUSKY",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "i-soon"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 13,
+        "ipv4": 5,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "ISOON"
+      ],
+      "sectors": [],
+      "slug": "ISOON",
+      "sponsor": null,
+      "total": 23
+    },
+    {
+      "aliases": [
+        "KnuckleTouch",
+        "WrongSens"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 5,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2024-04-17",
+        "latest": "2024-04-17"
+      },
+      "maltrail_groups": [
+        "KAPEKA"
+      ],
+      "sectors": [],
+      "slug": "KAPEKA",
+      "sponsor": null,
+      "total": 7
+    },
+    {
+      "aliases": [
+        "Karakurt Lair",
+        "Karakurt Team"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11,
+        "ipv4": 4
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-02",
+        "latest": "2024-11-16"
+      },
+      "maltrail_groups": [
+        "KARAKURT"
+      ],
+      "sectors": [],
+      "slug": "KARAKURT",
+      "sponsor": null,
+      "total": 15
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2023-09-22",
+        "latest": "2023-12-17"
+      },
+      "maltrail_groups": [
+        "KASABLANKA"
+      ],
+      "sectors": [],
+      "slug": "KASABLANKA",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "apt-k-un3"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 576,
+        "ipv4": 5,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-09-09",
+        "latest": "2026-07-09"
+      },
+      "maltrail_groups": [
+        "KUN3"
+      ],
+      "sectors": [],
+      "slug": "KUN3",
+      "sponsor": null,
+      "total": 582
+    },
+    {
+      "aliases": [
+        "rare werewolf"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 310,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-12-21",
+        "latest": "2026-06-25"
+      },
+      "maltrail_groups": [
+        "LIBRARIANGHOULS"
+      ],
+      "sectors": [],
+      "slug": "LIBRARIANGHOULS",
+      "sponsor": null,
+      "total": 311
+    },
+    {
+      "aliases": [
+        "apt-c-39",
+        "coloredlamberts",
+        "lambert",
+        "longhorn",
+        "plexor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "ipv4": 3
+      },
+      "first_seen_range": {
+        "earliest": "2021-05-02",
+        "latest": "2021-05-02"
+      },
+      "maltrail_groups": [
+        "LONGHORN"
+      ],
+      "sectors": [],
+      "slug": "LONGHORN",
+      "sponsor": null,
+      "total": 7
+    },
+    {
+      "aliases": [
+        "nosydoor",
+        "nosydownloader",
+        "nosyhistorian"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "LONGNOSEDGOBLIN"
+      ],
+      "sectors": [],
+      "slug": "LONGNOSEDGOBLIN",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "exilerat",
+        "luckycat",
+        "sepulcher",
+        "shadownet",
+        "ta413"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 56,
+        "ipv4": 8,
+        "url": 1,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2022-09-27"
+      },
+      "maltrail_groups": [
+        "LUCKYCAT"
+      ],
+      "sectors": [],
+      "slug": "LUCKYCAT",
+      "sponsor": null,
+      "total": 67
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2021-10-08",
+        "latest": "2021-10-08"
+      },
+      "maltrail_groups": [
+        "MALKAMAK"
+      ],
+      "sectors": [],
+      "slug": "MALKAMAK",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "Dark Basin"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 462
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-30",
+        "latest": "2023-11-15"
+      },
+      "maltrail_groups": [
+        "MERCENARYAMANDA"
+      ],
+      "sectors": [],
+      "slug": "MERCENARYAMANDA",
+      "sponsor": null,
+      "total": 462
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 134
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-12",
+        "latest": "2020-01-09"
+      },
+      "maltrail_groups": [
+        "MIDDLEEAST"
+      ],
+      "sectors": [],
+      "slug": "MIDDLEEAST",
+      "sponsor": null,
+      "total": 134
+    },
+    {
+      "aliases": [
+        "apt-unk2"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 40
+      },
+      "first_seen_range": {
+        "earliest": "2024-10-10",
+        "latest": "2024-10-10"
+      },
+      "maltrail_groups": [
+        "MIDDLEFLOOR"
+      ],
+      "sectors": [],
+      "slug": "MIDDLEFLOOR",
+      "sponsor": null,
+      "total": 40
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2019-06-16"
+      },
+      "maltrail_groups": [
+        "MINIDUKE"
+      ],
+      "sectors": [],
+      "slug": "MINIDUKE",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 19,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-07-16",
+        "latest": "2022-02-10"
+      },
+      "maltrail_groups": [
+        "MODIFIEDELEPHANT"
+      ],
+      "sectors": [],
+      "slug": "MODIFIEDELEPHANT",
+      "sponsor": null,
+      "total": 21
+    },
+    {
+      "aliases": [
+        "CAPI backdoor"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "MOTORBEACON"
+      ],
+      "sectors": [],
+      "slug": "MOTORBEACON",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4
+      },
+      "first_seen_range": {
+        "earliest": "2022-08-19",
+        "latest": "2022-08-19"
+      },
+      "maltrail_groups": [
+        "MURENSHARK"
+      ],
+      "sectors": [],
+      "slug": "MURENSHARK",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 45
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2017-04-18"
+      },
+      "maltrail_groups": [
+        "NETTRAVELER"
+      ],
+      "sectors": [],
+      "slug": "NETTRAVELER",
+      "sponsor": null,
+      "total": 45
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2017-03-24",
+        "latest": "2017-04-18"
+      },
+      "maltrail_groups": [
+        "NEWSBEEF"
+      ],
+      "sectors": [],
+      "slug": "NEWSBEEF",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2023-01-23",
+        "latest": "2023-02-09"
+      },
+      "maltrail_groups": [
+        "NEWSPENGUIN"
+      ],
+      "sectors": [],
+      "slug": "NEWSPENGUIN",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "APT-Q-95"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 31
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "NIGHTEAGLE"
+      ],
+      "sectors": [],
+      "slug": "NIGHTEAGLE",
+      "sponsor": null,
+      "total": 31
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "ipv4": 3,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "NOISYBEAR"
+      ],
+      "sectors": [],
+      "slug": "NOISYBEAR",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "bobik",
+        "ddosia",
+        "killnet"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 10,
+        "ipv4": 18,
+        "url": 7,
+        "url_path": 10
+      },
+      "first_seen_range": {
+        "earliest": "2023-01-11",
+        "latest": "2026-02-18"
+      },
+      "maltrail_groups": [
+        "NONAME05716"
+      ],
+      "sectors": [],
+      "slug": "NONAME05716",
+      "sponsor": null,
+      "total": 45
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-12-17",
+        "latest": "2024-12-17"
+      },
+      "maltrail_groups": [
+        "NOVISPY"
+      ],
+      "sectors": [],
+      "slug": "NOVISPY",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "dimanorat",
+        "donnect",
+        "obstinate mogwai",
+        "trochilusrat"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 31,
+        "ipv4": 45,
+        "url": 44
+      },
+      "first_seen_range": {
+        "earliest": "2024-10-12",
+        "latest": "2024-10-12"
+      },
+      "maltrail_groups": [
+        "OBSMOGWAI"
+      ],
+      "sectors": [],
+      "slug": "OBSMOGWAI",
+      "sponsor": null,
+      "total": 120
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 28
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-15",
+        "latest": "2023-07-15"
+      },
+      "maltrail_groups": [
+        "OILALPHA"
+      ],
+      "sectors": [],
+      "slug": "OILALPHA",
+      "sponsor": null,
+      "total": 28
+    },
+    {
+      "aliases": [
+        "bluebottle",
+        "commonraven",
+        "desktop group"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 74,
+        "ipv4": 3,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2022-11-06",
+        "latest": "2023-01-06"
+      },
+      "maltrail_groups": [
+        "OPERA1ER"
+      ],
+      "sectors": [],
+      "slug": "OPERA1ER",
+      "sponsor": null,
+      "total": 81
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 12
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-22",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "PACKRAT"
+      ],
+      "sectors": [],
+      "slug": "PACKRAT",
+      "sponsor": null,
+      "total": 12
+    },
+    {
+      "aliases": [
+        "echogather",
+        "goffee"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 89,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-08-02"
+      },
+      "maltrail_groups": [
+        "PAPERWEREWOLF"
+      ],
+      "sectors": [],
+      "slug": "PAPERWEREWOLF",
+      "sponsor": null,
+      "total": 93
+    },
+    {
+      "aliases": [
+        "bigpretzel",
+        "graphite spyware"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 18,
+        "ipv4": 17
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "PARAGON"
+      ],
+      "sectors": [],
+      "slug": "PARAGON",
+      "sponsor": null,
+      "total": 35
+    },
+    {
+      "aliases": [
+        "magalenha"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1,
+        "url": 19
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-24",
+        "latest": "2023-07-24"
+      },
+      "maltrail_groups": [
+        "PEEPINGTITLE"
+      ],
+      "sectors": [],
+      "slug": "PEEPINGTITLE",
+      "sponsor": null,
+      "total": 20
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1523,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-12",
+        "latest": "2023-11-15"
+      },
+      "maltrail_groups": [
+        "PEGASUS"
+      ],
+      "sectors": [],
+      "slug": "PEGASUS",
+      "sponsor": null,
+      "total": 1524
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 58
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-13",
+        "latest": "2023-09-25"
+      },
+      "maltrail_groups": [
+        "PKPLUG"
+      ],
+      "sectors": [],
+      "slug": "PKPLUG",
+      "sponsor": null,
+      "total": 58
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-07-18",
+        "latest": "2022-07-18"
+      },
+      "maltrail_groups": [
+        "POISONNEEDLES"
+      ],
+      "sectors": [],
+      "slug": "POISONNEEDLES",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "RedControle",
+        "StickyKeys"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 201,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-11-18",
+        "latest": "2019-11-18"
+      },
+      "maltrail_groups": [
+        "POKINGTHEBEAR"
+      ],
+      "sectors": [],
+      "slug": "POKINGTHEBEAR",
+      "sponsor": null,
+      "total": 203
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-07",
+        "latest": "2017-04-07"
+      },
+      "maltrail_groups": [
+        "POTAO"
+      ],
+      "sectors": [],
+      "slug": "POTAO",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "CVE-2023-41991",
+        "CVE-2023-41992",
+        "CVE-2023-41993",
+        "Cytrox Predator"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 127
+      },
+      "first_seen_range": {
+        "earliest": "2023-09-22",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "PREDATOR"
+      ],
+      "sectors": [],
+      "slug": "PREDATOR",
+      "sponsor": null,
+      "total": 127
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-31",
+        "latest": "2026-02-17"
+      },
+      "maltrail_groups": [
+        "PUNISHINGOWL"
+      ],
+      "sectors": [],
+      "slug": "PUNISHINGOWL",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "goreshell"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "PURPLEHAZE"
+      ],
+      "sectors": [],
+      "slug": "PURPLEHAZE",
+      "sponsor": null,
+      "total": 12
+    },
+    {
+      "aliases": [
+        "operation run",
+        "utg-q-015"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 7,
+        "ipv4": 5,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "Q015"
+      ],
+      "sectors": [],
+      "slug": "Q015",
+      "sponsor": null,
+      "total": 14
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 10,
+        "ipv4": 8,
+        "url": 13,
+        "url_path": 17
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-29",
+        "latest": "2026-01-05"
+      },
+      "maltrail_groups": [
+        "Q12"
+      ],
+      "sectors": [],
+      "slug": "Q12",
+      "sponsor": null,
+      "total": 48
+    },
+    {
+      "aliases": [
+        "apt-q-27",
+        "dragon breath",
+        "golden eye dog"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 23,
+        "ipv4": 5,
+        "url": 1,
+        "url_path": 5
+      },
+      "first_seen_range": {
+        "earliest": "2023-05-07",
+        "latest": "2026-06-16"
+      },
+      "maltrail_groups": [
+        "Q27"
+      ],
+      "sectors": [],
+      "slug": "Q27",
+      "sponsor": null,
+      "total": 34
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 35
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-06",
+        "latest": "2017-04-12"
+      },
+      "maltrail_groups": [
+        "QUASAR"
+      ],
+      "sectors": [],
+      "slug": "QUASAR",
+      "sponsor": null,
+      "total": 35
+    },
+    {
+      "aliases": [
+        "cargotalon",
+        "eaglet implant",
+        "headmare",
+        "phantomc2",
+        "phantomcore",
+        "phantomocx",
+        "phantomproxylite",
+        "phantomremote",
+        "ung0901"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 660,
+        "ipv4": 44,
+        "url": 43,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-09-05",
+        "latest": "2026-08-12"
+      },
+      "maltrail_groups": [
+        "RAINBOWHYENA"
+      ],
+      "sectors": [],
+      "slug": "RAINBOWHYENA",
+      "sponsor": null,
+      "total": 748
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 19
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-29",
+        "latest": "2020-09-26"
+      },
+      "maltrail_groups": [
+        "RAMPANTKITTEN"
+      ],
+      "sectors": [],
+      "slug": "RAMPANTKITTEN",
+      "sponsor": null,
+      "total": 19
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 144,
+        "ipv4": 4
+      },
+      "first_seen_range": {
+        "earliest": "2019-01-08",
+        "latest": "2025-01-24"
+      },
+      "maltrail_groups": [
+        "REDFOXTROT"
+      ],
+      "sectors": [],
+      "slug": "REDFOXTROT",
+      "sponsor": null,
+      "total": 148
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11
+      },
+      "first_seen_range": {
+        "earliest": "2024-09-18",
+        "latest": "2024-09-18"
+      },
+      "maltrail_groups": [
+        "REDJULIETT"
+      ],
+      "sectors": [],
+      "slug": "REDJULIETT",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "leslieloader",
+        "storm-2077"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "REDNOVEMBER"
+      ],
+      "sectors": [],
+      "slug": "REDNOVEMBER",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 59
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2015-03-18"
+      },
+      "maltrail_groups": [
+        "REDOCTOBER"
+      ],
+      "sectors": [],
+      "slug": "REDOCTOBER",
+      "sponsor": null,
+      "total": 59
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-22",
+        "latest": "2018-09-22"
+      },
+      "maltrail_groups": [
+        "RNEXUS"
+      ],
+      "sectors": [],
+      "slug": "RNEXUS",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 8
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-22",
+        "latest": "2019-05-02"
+      },
+      "maltrail_groups": [
+        "ROCKETMAN"
+      ],
+      "sectors": [],
+      "slug": "ROCKETMAN",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2023-10-20",
+        "latest": "2024-01-03"
+      },
+      "maltrail_groups": [
+        "RUSTICWEB"
+      ],
+      "sectors": [],
+      "slug": "RUSTICWEB",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2021-01-16",
+        "latest": "2021-01-16"
+      },
+      "maltrail_groups": [
+        "SAGUARO"
+      ],
+      "sectors": [],
+      "slug": "SAGUARO",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4
+      },
+      "first_seen_range": {
+        "earliest": "2023-09-21",
+        "latest": "2023-09-21"
+      },
+      "maltrail_groups": [
+        "SANDMAN"
+      ],
+      "sectors": [],
+      "slug": "SANDMAN",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 6
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-13",
+        "latest": "2018-09-13"
+      },
+      "maltrail_groups": [
+        "SCANBOX"
+      ],
+      "sectors": [],
+      "slug": "SCANBOX",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "HeaderTip",
+        "cosmicbeetle",
+        "scarab",
+        "spacecolon"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 55,
+        "ipv4": 1,
+        "url": 3
+      },
+      "first_seen_range": {
+        "earliest": "2015-03-18",
+        "latest": "2024-09-10"
+      },
+      "maltrail_groups": [
+        "SCIERON"
+      ],
+      "sectors": [],
+      "slug": "SCIERON",
+      "sponsor": null,
+      "total": 59
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 20
+      },
+      "first_seen_range": {
+        "earliest": "2022-06-13",
+        "latest": "2022-06-13"
+      },
+      "maltrail_groups": [
+        "SEAFLOWER"
+      ],
+      "sectors": [],
+      "slug": "SEAFLOWER",
+      "sponsor": null,
+      "total": 20
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 31,
+        "url_path": 4
+      },
+      "first_seen_range": {
+        "earliest": "2019-02-04",
+        "latest": "2019-03-22"
+      },
+      "maltrail_groups": [
+        "SECTORA05"
+      ],
+      "sectors": [],
+      "slug": "SECTORA05",
+      "sponsor": null,
+      "total": 35
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 10
+      },
+      "first_seen_range": {
+        "earliest": "2017-02-17",
+        "latest": "2019-10-05"
+      },
+      "maltrail_groups": [
+        "SHAMOON"
+      ],
+      "sectors": [],
+      "slug": "SHAMOON",
+      "sponsor": null,
+      "total": 10
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5,
+        "ipv4": 5,
+        "url": 8,
+        "url_path": 13
+      },
+      "first_seen_range": {
+        "earliest": "2021-05-20",
+        "latest": "2024-06-24"
+      },
+      "maltrail_groups": [
+        "SHARPPANDA"
+      ],
+      "sectors": [],
+      "slug": "SHARPPANDA",
+      "sponsor": null,
+      "total": 31
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-10-05",
+        "latest": "2019-10-05"
+      },
+      "maltrail_groups": [
+        "SHIQIANG"
+      ],
+      "sectors": [],
+      "slug": "SHIQIANG",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2020-03-03",
+        "latest": "2020-03-03"
+      },
+      "maltrail_groups": [
+        "SILENCERLION"
+      ],
+      "sectors": [],
+      "slug": "SILENCERLION",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [
+        "hydra saiga",
+        "shadowsilk"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 251,
+        "ipv4": 23,
+        "url": 9,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2025-01-12",
+        "latest": "2026-06-22"
+      },
+      "maltrail_groups": [
+        "SILENTLYNX"
+      ],
+      "sectors": [],
+      "slug": "SILENTLYNX",
+      "sponsor": null,
+      "total": 284
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2019-02-05",
+        "latest": "2019-02-05"
+      },
+      "maltrail_groups": [
+        "SIMBAA"
+      ],
+      "sectors": [],
+      "slug": "SIMBAA",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "vortex werewolf"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 11,
+        "ipv4": 7
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-04-21"
+      },
+      "maltrail_groups": [
+        "SKYCLOAK"
+      ],
+      "sectors": [],
+      "slug": "SKYCLOAK",
+      "sponsor": null,
+      "total": 18
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 8
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-13",
+        "latest": "2017-04-13"
+      },
+      "maltrail_groups": [
+        "SNOWMAN"
+      ],
+      "sectors": [],
+      "slug": "SNOWMAN",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [
+        "SPECTR",
+        "Vermin",
+        "firmachagent"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 27,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2018-07-25",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "SOBAKEN"
+      ],
+      "sectors": [],
+      "slug": "SOBAKEN",
+      "sponsor": null,
+      "total": 32
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 79,
+        "ipv4": 13,
+        "url": 5
+      },
+      "first_seen_range": {
+        "earliest": "2019-07-04",
+        "latest": "2022-05-18"
+      },
+      "maltrail_groups": [
+        "SPACEPIRATES"
+      ],
+      "sectors": [],
+      "slug": "SPACEPIRATES",
+      "sponsor": null,
+      "total": 97
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2017-03-24",
+        "latest": "2017-03-24"
+      },
+      "maltrail_groups": [
+        "STONEDRILL"
+      ],
+      "sectors": [],
+      "slug": "STONEDRILL",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "MyRTUs"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2
+      },
+      "first_seen_range": {
+        "earliest": "2016-02-23",
+        "latest": "2016-02-23"
+      },
+      "maltrail_groups": [
+        "STUXNET"
+      ],
+      "sectors": [],
+      "slug": "STUXNET",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2,
+        "url": 9
+      },
+      "first_seen_range": {
+        "earliest": "2019-09-23",
+        "latest": "2019-11-14"
+      },
+      "maltrail_groups": [
+        "TA2101"
+      ],
+      "sectors": [],
+      "slug": "TA2101",
+      "sponsor": null,
+      "total": 11
+    },
+    {
+      "aliases": [
+        "ABCloader",
+        "ABCsync",
+        "Actor240524"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-08-08",
+        "latest": "2024-08-08"
+      },
+      "maltrail_groups": [
+        "TA240524"
+      ],
+      "sectors": [],
+      "slug": "TA240524",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "FlowCloud",
+        "LookBack",
+        "LookingFrog",
+        "Witchetty"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 16,
+        "ipv4": 3,
+        "url": 4
+      },
+      "first_seen_range": {
+        "earliest": "2020-06-09",
+        "latest": "2022-09-30"
+      },
+      "maltrail_groups": [
+        "TA410"
+      ],
+      "sectors": [],
+      "slug": "TA410",
+      "sponsor": null,
+      "total": 23
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2020-02-03",
+        "latest": "2020-02-03"
+      },
+      "maltrail_groups": [
+        "TA555"
+      ],
+      "sectors": [],
+      "slug": "TA555",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "uat-5918",
+        "uat-7237"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "TA5918"
+      ],
+      "sectors": [],
+      "slug": "TA5918",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "UIDAI"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2022-04-16",
+        "latest": "2022-04-16"
+      },
+      "maltrail_groups": [
+        "TAG28"
+      ],
+      "sectors": [],
+      "slug": "TAG28",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2019-04-10",
+        "latest": "2019-04-10"
+      },
+      "maltrail_groups": [
+        "TAJMAHAL"
+      ],
+      "sectors": [],
+      "slug": "TAJMAHAL",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 9
+      },
+      "first_seen_range": {
+        "earliest": "2018-10-30",
+        "latest": "2020-02-27"
+      },
+      "maltrail_groups": [
+        "TEMPTINGCEDAR"
+      ],
+      "sectors": [],
+      "slug": "TEMPTINGCEDAR",
+      "sponsor": null,
+      "total": 9
+    },
+    {
+      "aliases": [
+        "apt-c-61",
+        "apt-q-122"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 18
+      },
+      "first_seen_range": {
+        "earliest": "2021-07-16",
+        "latest": "2023-03-05"
+      },
+      "maltrail_groups": [
+        "TENGYUNSNAKE"
+      ],
+      "sectors": [],
+      "slug": "TENGYUNSNAKE",
+      "sponsor": null,
+      "total": 18
+    },
+    {
+      "aliases": [
+        "darknights",
+        "dknife",
+        "spellbinder",
+        "wizardnet"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "ipv4": 13,
+        "url": 10
+      },
+      "first_seen_range": {
+        "earliest": "2026-02-06",
+        "latest": "2026-02-10"
+      },
+      "maltrail_groups": [
+        "THEWIZARDS"
+      ],
+      "sectors": [],
+      "slug": "THEWIZARDS",
+      "sponsor": null,
+      "total": 27
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 48,
+        "ipv4": 3
+      },
+      "first_seen_range": {
+        "earliest": "2016-03-08",
+        "latest": "2020-12-04"
+      },
+      "maltrail_groups": [
+        "TIBET"
+      ],
+      "sectors": [],
+      "slug": "TIBET",
+      "sponsor": null,
+      "total": 51
+    },
+    {
+      "aliases": [
+        "clntend",
+        "cxclnt",
+        "tidrone"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 21,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-09-12",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "TIDRONE"
+      ],
+      "sectors": [],
+      "slug": "TIDRONE",
+      "sponsor": null,
+      "total": 22
+    },
+    {
+      "aliases": [
+        "oldgremlin",
+        "tinyfluff"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 26,
+        "ipv4": 2,
+        "url": 11
+      },
+      "first_seen_range": {
+        "earliest": "2020-05-18",
+        "latest": "2022-09-05"
+      },
+      "maltrail_groups": [
+        "TINYSCOUTS"
+      ],
+      "sectors": [],
+      "slug": "TINYSCOUTS",
+      "sponsor": null,
+      "total": 39
+    },
+    {
+      "aliases": [
+        "angry spark"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 18,
+        "url_path": 12
+      },
+      "first_seen_range": {
+        "earliest": "2023-06-01",
+        "latest": "2026-07-29"
+      },
+      "maltrail_groups": [
+        "TRIANGULATION"
+      ],
+      "sectors": [],
+      "slug": "TRIANGULATION",
+      "sponsor": null,
+      "total": 30
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 8
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-03",
+        "latest": "2018-08-03"
+      },
+      "maltrail_groups": [
+        "TVRMS"
+      ],
+      "sectors": [],
+      "slug": "TVRMS",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-23",
+        "latest": "2022-05-20"
+      },
+      "maltrail_groups": [
+        "TWISTEDPANDA"
+      ],
+      "sectors": [],
+      "slug": "TWISTEDPANDA",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "Ghostwriter",
+        "HALFSHELL",
+        "Influence Activity",
+        "PUSHCHA",
+        "RADIOSTAR",
+        "Storm-0257",
+        "TA445",
+        "UAC-0057",
+        "UAC-0100",
+        "UNC1151",
+        "VIDEOKILLER",
+        "WhiteLynx",
+        "frostyneighbor",
+        "oysterblues",
+        "oysterfresh",
+        "oystershuck",
+        "picassoloader"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 605,
+        "ipv4": 5,
+        "url": 4,
+        "url_path": 6
+      },
+      "first_seen_range": {
+        "earliest": "2020-02-22",
+        "latest": "2026-05-27"
+      },
+      "maltrail_groups": [
+        "UNC1151"
+      ],
+      "sectors": [],
+      "slug": "UNC1151",
+      "sponsor": null,
+      "total": 620
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 9,
+        "url": 9
+      },
+      "first_seen_range": {
+        "earliest": "2021-04-11",
+        "latest": "2022-01-08"
+      },
+      "maltrail_groups": [
+        "UNC215"
+      ],
+      "sectors": [],
+      "slug": "UNC215",
+      "sponsor": null,
+      "total": 18
+    },
+    {
+      "aliases": [
+        "54bb47h",
+        "sabbath"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 21,
+        "ipv4": 5,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2021-10-08",
+        "latest": "2022-02-08"
+      },
+      "maltrail_groups": [
+        "UNC2190"
+      ],
+      "sectors": [],
+      "slug": "UNC2190",
+      "sponsor": null,
+      "total": 27
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4
+      },
+      "first_seen_range": {
+        "earliest": "2021-04-30",
+        "latest": "2021-04-30"
+      },
+      "maltrail_groups": [
+        "UNC2447"
+      ],
+      "sectors": [],
+      "slug": "UNC2447",
+      "sponsor": null,
+      "total": 4
+    },
+    {
+      "aliases": [
+        "smokedham"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 2052
+      },
+      "first_seen_range": {
+        "earliest": "2024-11-25",
+        "latest": "2026-08-14"
+      },
+      "maltrail_groups": [
+        "UNC2465"
+      ],
+      "sectors": [],
+      "slug": "UNC2465",
+      "sponsor": null,
+      "total": 2052
+    },
+    {
+      "aliases": [
+        "doubleback",
+        "doubledrag",
+        "doubledrop"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 54
+      },
+      "first_seen_range": {
+        "earliest": "2021-05-07",
+        "latest": "2022-06-28"
+      },
+      "maltrail_groups": [
+        "UNC2529"
+      ],
+      "sectors": [],
+      "slug": "UNC2529",
+      "sponsor": null,
+      "total": 54
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-02-18",
+        "latest": "2023-02-18"
+      },
+      "maltrail_groups": [
+        "UNC2565"
+      ],
+      "sectors": [],
+      "slug": "UNC2565",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "CVE-2023-36884",
+        "dustyhammock",
+        "meltingclaw",
+        "romcom",
+        "rustyclaw",
+        "shadyhammock",
+        "singlecamper",
+        "snipbot",
+        "uat-5647"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 76,
+        "ipv4": 16,
+        "url": 3,
+        "url_path": 16
+      },
+      "first_seen_range": {
+        "earliest": "2022-08-14",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC2596"
+      ],
+      "sectors": [],
+      "slug": "UNC2596",
+      "sponsor": null,
+      "total": 111
+    },
+    {
+      "aliases": [
+        "gridtide"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 211,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-02-25",
+        "latest": "2026-02-25"
+      },
+      "maltrail_groups": [
+        "UNC2814"
+      ],
+      "sectors": [],
+      "slug": "UNC2814",
+      "sponsor": null,
+      "total": 212
+    },
+    {
+      "aliases": [
+        "lidshift",
+        "lidshot",
+        "lightshift",
+        "plankwalk",
+        "sideshow",
+        "temp.hermit",
+        "touchshift",
+        "unc2970"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "url": 13
+      },
+      "first_seen_range": {
+        "earliest": "2022-11-06",
+        "latest": "2023-03-14"
+      },
+      "maltrail_groups": [
+        "UNC2970"
+      ],
+      "sectors": [],
+      "slug": "UNC2970",
+      "sponsor": null,
+      "total": 13
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "ipv4": 5,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-30",
+        "latest": "2022-03-30"
+      },
+      "maltrail_groups": [
+        "UNC3500"
+      ],
+      "sectors": [],
+      "slug": "UNC3500",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-30",
+        "latest": "2022-03-30"
+      },
+      "maltrail_groups": [
+        "UNC3535"
+      ],
+      "sectors": [],
+      "slug": "UNC3535",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 32,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2022-08-18",
+        "latest": "2022-08-18"
+      },
+      "maltrail_groups": [
+        "UNC3890"
+      ],
+      "sectors": [],
+      "slug": "UNC3890",
+      "sponsor": null,
+      "total": 35
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-03-23",
+        "latest": "2023-03-23"
+      },
+      "maltrail_groups": [
+        "UNC3966"
+      ],
+      "sectors": [],
+      "slug": "UNC3966",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "ghostweaver"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2025-02-15",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC4108"
+      ],
+      "sectors": [],
+      "slug": "UNC4108",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [
+        "SPAREPART",
+        "STOWAWAY"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 4,
+        "ipv4": 2
+      },
+      "first_seen_range": {
+        "earliest": "2022-12-16",
+        "latest": "2022-12-16"
+      },
+      "maltrail_groups": [
+        "UNC4166"
+      ],
+      "sectors": [],
+      "slug": "UNC4166",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "bluehaze",
+        "darkdew",
+        "mistcloak"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-11-28",
+        "latest": "2022-11-28"
+      },
+      "maltrail_groups": [
+        "UNC4191"
+      ],
+      "sectors": [],
+      "slug": "UNC4191",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 95,
+        "ipv4": 1
+      },
+      "first_seen_range": {
+        "earliest": "2024-12-11",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC4221"
+      ],
+      "sectors": [],
+      "slug": "UNC4221",
+      "sponsor": null,
+      "total": 96
+    },
+    {
+      "aliases": [
+        "ridile"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 16,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2023-04-05",
+        "latest": "2023-05-06"
+      },
+      "maltrail_groups": [
+        "UNC4553"
+      ],
+      "sectors": [],
+      "slug": "UNC4553",
+      "sponsor": null,
+      "total": 18
+    },
+    {
+      "aliases": [
+        "SALTWATER",
+        "SEASIDE",
+        "SEASPY"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 48,
+        "ipv4": 104
+      },
+      "first_seen_range": {
+        "earliest": "2023-06-17",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC4841"
+      ],
+      "sectors": [],
+      "slug": "UNC4841",
+      "sponsor": null,
+      "total": 152
+    },
+    {
+      "aliases": [
+        "JumpCloud"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 28
+      },
+      "first_seen_range": {
+        "earliest": "2023-07-20",
+        "latest": "2023-08-07"
+      },
+      "maltrail_groups": [
+        "UNC4899"
+      ],
+      "sectors": [],
+      "slug": "UNC4899",
+      "sponsor": null,
+      "total": 28
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 16,
+        "url": 6,
+        "url_path": 3
+      },
+      "first_seen_range": {
+        "earliest": "2023-03-20",
+        "latest": "2024-02-03"
+      },
+      "maltrail_groups": [
+        "UNC4990"
+      ],
+      "sectors": [],
+      "slug": "UNC4990",
+      "sponsor": null,
+      "total": 25
+    },
+    {
+      "aliases": [
+        "snowlight",
+        "vshell"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 36,
+        "ipv4": 6,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-05-12"
+      },
+      "maltrail_groups": [
+        "UNC5174"
+      ],
+      "sectors": [],
+      "slug": "UNC5174",
+      "sponsor": null,
+      "total": 43
+    },
+    {
+      "aliases": [
+        "uta0178",
+        "verdantbamboo",
+        "warppanda"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 39,
+        "ipv4": 6,
+        "url": 26,
+        "url_path": 7
+      },
+      "first_seen_range": {
+        "earliest": "2024-01-12",
+        "latest": "2026-06-05"
+      },
+      "maltrail_groups": [
+        "UNC5221"
+      ],
+      "sectors": [],
+      "slug": "UNC5221",
+      "sponsor": null,
+      "total": 78
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 48,
+        "url": 48
+      },
+      "first_seen_range": {
+        "earliest": "2024-06-15",
+        "latest": "2024-06-15"
+      },
+      "maltrail_groups": [
+        "UNC5537"
+      ],
+      "sectors": [],
+      "slug": "UNC5537",
+      "sponsor": null,
+      "total": 96
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 16
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC5792"
+      ],
+      "sectors": [],
+      "slug": "UNC5792",
+      "sponsor": null,
+      "total": 16
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 3
+      },
+      "first_seen_range": {
+        "earliest": "2024-10-29",
+        "latest": "2024-10-29"
+      },
+      "maltrail_groups": [
+        "UNC5812"
+      ],
+      "sectors": [],
+      "slug": "UNC5812",
+      "sponsor": null,
+      "total": 3
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 141
+      },
+      "first_seen_range": {
+        "earliest": "2025-01-08",
+        "latest": "2025-01-08"
+      },
+      "maltrail_groups": [
+        "UNC5952"
+      ],
+      "sectors": [],
+      "slug": "UNC5952",
+      "sponsor": null,
+      "total": 141
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "UNC6293"
+      ],
+      "sectors": [],
+      "slug": "UNC6293",
+      "sponsor": null,
+      "total": 2
+    },
+    {
+      "aliases": [
+        "darksword"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 26
+      },
+      "first_seen_range": {
+        "earliest": "2026-03-18",
+        "latest": "2026-06-20"
+      },
+      "maltrail_groups": [
+        "UNC6353"
+      ],
+      "sectors": [],
+      "slug": "UNC6353",
+      "sponsor": null,
+      "total": 26
+    },
+    {
+      "aliases": [
+        "coruna",
+        "plasmagrid"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 8592,
+        "ipv4": 5,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2026-03-03",
+        "latest": "2026-08-06"
+      },
+      "maltrail_groups": [
+        "UNC6691"
+      ],
+      "sectors": [],
+      "slug": "UNC6691",
+      "sponsor": null,
+      "total": 8599
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 602
+      },
+      "first_seen_range": {
+        "earliest": "2026-08-08",
+        "latest": "2026-08-13"
+      },
+      "maltrail_groups": [
+        "UNC6691-1"
+      ],
+      "sectors": [],
+      "slug": "UNC6691-1",
+      "sponsor": null,
+      "total": 602
+    },
+    {
+      "aliases": [
+        "snowbelt",
+        "snowglaze"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2026-04-23",
+        "latest": "2026-04-23"
+      },
+      "maltrail_groups": [
+        "UNC6692"
+      ],
+      "sectors": [],
+      "slug": "UNC6692",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "ipv4": 9,
+        "url": 8
+      },
+      "first_seen_range": {
+        "earliest": "2022-03-16",
+        "latest": "2022-03-30"
+      },
+      "maltrail_groups": [
+        "UNC961"
+      ],
+      "sectors": [],
+      "slug": "UNC961",
+      "sponsor": null,
+      "total": 17
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1240,
+        "ipv4": 144,
+        "url": 133,
+        "url_path": 24
+      },
+      "first_seen_range": {
+        "earliest": "2018-08-30",
+        "latest": "2026-07-20"
+      },
+      "maltrail_groups": [
+        "UNCLASSIFIED"
+      ],
+      "sectors": [],
+      "slug": "UNCLASSIFIED",
+      "sponsor": null,
+      "total": 1541
+    },
+    {
+      "aliases": [
+        "unfading sea haze"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 41,
+        "ipv4": 22,
+        "url": 2
+      },
+      "first_seen_range": {
+        "earliest": "2024-05-29",
+        "latest": "2024-11-30"
+      },
+      "maltrail_groups": [
+        "USH"
+      ],
+      "sectors": [],
+      "slug": "USH",
+      "sponsor": null,
+      "total": 65
+    },
+    {
+      "aliases": [
+        "APT-Q-43",
+        "VajraSpy"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2022-01-14",
+        "latest": "2022-03-31"
+      },
+      "maltrail_groups": [
+        "VAJRAELEPH"
+      ],
+      "sectors": [],
+      "slug": "VAJRAELEPH",
+      "sponsor": null,
+      "total": 6
+    },
+    {
+      "aliases": [
+        "goldenchickens",
+        "moreeggs",
+        "revc2",
+        "terracryptor",
+        "terraloader",
+        "terrastealer",
+        "terrastealerv2",
+        "venomlnk",
+        "venomloader"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 49,
+        "ipv4": 9,
+        "url": 6,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2019-02-25",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "VENOMSPIDER"
+      ],
+      "sectors": [],
+      "slug": "VENOMSPIDER",
+      "sponsor": null,
+      "total": 66
+    },
+    {
+      "aliases": [
+        "Chily",
+        "PolyVice",
+        "RedAlert",
+        "SunnyDay"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 8
+      },
+      "first_seen_range": {
+        "earliest": "2022-01-09",
+        "latest": "2022-12-30"
+      },
+      "maltrail_groups": [
+        "VICESOCIETY"
+      ],
+      "sectors": [],
+      "slug": "VICESOCIETY",
+      "sponsor": null,
+      "total": 8
+    },
+    {
+      "aliases": [
+        "byeby",
+        "microcin",
+        "mikroceen",
+        "vicious panda"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 55,
+        "ipv4": 2,
+        "url": 1,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2020-03-12",
+        "latest": "2024-02-22"
+      },
+      "maltrail_groups": [
+        "VICIOUSPANDA"
+      ],
+      "sectors": [],
+      "slug": "VICIOUSPANDA",
+      "sponsor": null,
+      "total": 60
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 19
+      },
+      "first_seen_range": {
+        "earliest": "2024-06-19",
+        "latest": "2024-06-19"
+      },
+      "maltrail_groups": [
+        "VOIDARACHNE"
+      ],
+      "sectors": [],
+      "slug": "VOIDARACHNE",
+      "sponsor": null,
+      "total": 19
+    },
+    {
+      "aliases": [
+        "laundry bear",
+        "pluggyape",
+        "ta-488",
+        "ta488",
+        "uac-0190",
+        "void blizzard"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 41,
+        "ipv4": 4,
+        "url": 1
+      },
+      "first_seen_range": {
+        "earliest": "2026-01-02",
+        "latest": "2026-01-13"
+      },
+      "maltrail_groups": [
+        "VOIDBLIZZARD"
+      ],
+      "sectors": [],
+      "slug": "VOIDBLIZZARD",
+      "sponsor": null,
+      "total": 46
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 5
+      },
+      "first_seen_range": {
+        "earliest": "2017-04-18",
+        "latest": "2017-04-18"
+      },
+      "maltrail_groups": [
+        "WEAKESTLINK"
+      ],
+      "sectors": [],
+      "slug": "WEAKESTLINK",
+      "sponsor": null,
+      "total": 5
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 7
+      },
+      "first_seen_range": {
+        "earliest": "2018-09-04",
+        "latest": "2018-09-04"
+      },
+      "maltrail_groups": [
+        "WEBKY"
+      ],
+      "sectors": [],
+      "slug": "WEBKY",
+      "sponsor": null,
+      "total": 7
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 1
+      },
+      "first_seen_range": {
+        "earliest": "2018-11-15",
+        "latest": "2018-11-15"
+      },
+      "maltrail_groups": [
+        "WHITECOMPANY"
+      ],
+      "sectors": [],
+      "slug": "WHITECOMPANY",
+      "sponsor": null,
+      "total": 1
+    },
+    {
+      "aliases": [
+        "apt-c-59",
+        "apt-q-11",
+        "shadowtiger"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 25,
+        "ipv4": 4,
+        "url": 5,
+        "url_path": 2
+      },
+      "first_seen_range": {
+        "earliest": "2022-01-13",
+        "latest": "2022-07-21"
+      },
+      "maltrail_groups": [
+        "WUQIONGDONG"
+      ],
+      "sectors": [],
+      "slug": "WUQIONGDONG",
+      "sponsor": null,
+      "total": 36
+    },
+    {
+      "aliases": [
+        "xdigo"
+      ],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 93,
+        "url_path": 1
+      },
+      "first_seen_range": {
+        "earliest": "2020-10-02",
+        "latest": "2026-01-02"
+      },
+      "maltrail_groups": [
+        "XDSPY"
+      ],
+      "sectors": [],
+      "slug": "XDSPY",
+      "sponsor": null,
+      "total": 94
+    },
+    {
+      "aliases": [],
+      "attack_id": null,
+      "attack_name": null,
+      "country": null,
+      "counts": {
+        "domain": 7
+      },
+      "first_seen_range": {
+        "earliest": "2019-06-04",
+        "latest": "2020-07-20"
+      },
+      "maltrail_groups": [
+        "XPATH"
+      ],
+      "sectors": [],
+      "slug": "XPATH",
+      "sponsor": null,
+      "total": 7
+    }
+  ],
+  "project": "https://github.com/trilwu/apttrail",
+  "totals": {
+    "attack_groups": 97,
+    "by_type_files": 4,
+    "indicators": 172903,
+    "maltrail_groups": 340,
+    "maltrail_groups_mapped_to_attack": 124,
+    "slices": 313
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "aliases": [],
+  "attack_id": "G1003",
+  "attack_name": "Ember Bear",
+  "attack_url": "https://attack.mitre.org/groups/G1003/",
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "justiceua.org": "2023-07-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-07-13",
+    "latest": "2023-07-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "justiceua.org"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CADETBLIZZARD"
+  ],
+  "references": [
+    "https://explore.avertium.com/resource/threat-actor-profile-cadet-blizzard",
+    "https://www.virustotal.com/gui/file/20215acd064c02e5aa6ae3996b53f5313c3f13625a63da1d3795c992ea730191/detection",
+    "https://www.virustotal.com/gui/file/23d6611a730bed886cc3b4ce6780a7b5439b01ddf6706ba120ed3ebeb3b1c478/detection",
+    "https://www.virustotal.com/gui/file/3e4bb8089657fef9b8e84d9e17fd0d7740853c4c0487081dacc4f22359bade5c/detection",
+    "https://www.virustotal.com/gui/file/3fe9214b33ead5c7d1f80af469593638b9e1e5f5730a7d3ba2f96b6b555514d4/detection",
+    "https://www.virustotal.com/gui/file/7fedaf0dec060e40cbdf4ec6d0fbfc427593ad5503ad0abaf6b943405863c897/detection",
+    "https://www.virustotal.com/gui/ip-address/179.43.187.33/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares BloodHound, reGeorg",
+          "kind": "software",
+          "weight": 0.833
+        }
+      ],
+      "slug": "G0016"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares reGeorg, Responder",
+          "kind": "software",
+          "weight": 0.667
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Rclone, CrackMapExec",
+          "kind": "software",
+          "weight": 0.533
+        }
+      ],
+      "slug": "G0069"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares P.A.S. Webshell",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Responder",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0032"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Rclone",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0090"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0140"
+    }
+  ],
+  "slug": "G1003",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-07-13",
+      "indicators": {
+        "domain": [
+          "justiceua.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://explore.avertium.com/resource/threat-actor-profile-cadet-blizzard",
+        "https://www.virustotal.com/gui/ip-address/179.43.187.33/detection",
+        "https://www.virustotal.com/gui/file/20215acd064c02e5aa6ae3996b53f5313c3f13625a63da1d3795c992ea730191/detection",
+        "https://www.virustotal.com/gui/file/23d6611a730bed886cc3b4ce6780a7b5439b01ddf6706ba120ed3ebeb3b1c478/detection",
+        "https://www.virustotal.com/gui/file/3e4bb8089657fef9b8e84d9e17fd0d7740853c4c0487081dacc4f22359bade5c/detection",
+        "https://www.virustotal.com/gui/file/3fe9214b33ead5c7d1f80af469593638b9e1e5f5730a7d3ba2f96b6b555514d4/detection",
+        "https://www.virustotal.com/gui/file/7fedaf0dec060e40cbdf4ec6d0fbfc427593ad5503ad0abaf6b943405863c897/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

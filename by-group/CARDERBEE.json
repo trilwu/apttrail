@@ -1,0 +1,93 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "active-microsoft.com": "2023-08-23",
+      "cdn.ofo.ac": "2023-08-23",
+      "cdn.stream-amazon.com": "2023-08-23",
+      "githubassets.akamaixed.net": "2023-08-23",
+      "gobay.info": "2023-08-23",
+      "ms-f7-sites-prod-cdn.akamaixed.net": "2023-08-23",
+      "ms-g9-sites-prod-cdn.akamaixed.net": "2023-08-23",
+      "ofo.ac": "2023-08-23",
+      "tjj.active-microsoft.com": "2023-08-23"
+    },
+    "ipv4": {
+      "103.151.28.11:8090": "2023-08-23",
+      "111.231.100.228:8888": "2023-08-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-08-23",
+    "latest": "2023-08-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "active-microsoft.com",
+      "cdn.ofo.ac",
+      "cdn.stream-amazon.com",
+      "githubassets.akamaixed.net",
+      "gobay.info",
+      "ms-f7-sites-prod-cdn.akamaixed.net",
+      "ms-g9-sites-prod-cdn.akamaixed.net",
+      "ofo.ac",
+      "tjj.active-microsoft.com"
+    ],
+    "ipv4": [
+      "103.151.28.11:8090",
+      "111.231.100.228:8888"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CARDERBEE"
+  ],
+  "references": [
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/carderbee-software-supply-chain-certificate-abuse"
+  ],
+  "related": [],
+  "slug": "CARDERBEE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9,
+        "ipv4": 2
+      },
+      "first_seen": "2023-08-23",
+      "indicators": {
+        "domain": [
+          "active-microsoft.com",
+          "cdn.ofo.ac",
+          "cdn.stream-amazon.com",
+          "githubassets.akamaixed.net",
+          "gobay.info",
+          "ms-f7-sites-prod-cdn.akamaixed.net",
+          "ms-g9-sites-prod-cdn.akamaixed.net",
+          "ofo.ac",
+          "tjj.active-microsoft.com"
+        ],
+        "ipv4": [
+          "103.151.28.11:8090",
+          "111.231.100.228:8888"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/carderbee-software-supply-chain-certificate-abuse"
+      ],
+      "total": 11
+    }
+  ]
+}

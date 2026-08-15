@@ -1,0 +1,163 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b522d589-4a97-5a1f-adf0-7083d8f7e97d",
+        "value": "acers.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570266206",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "70888e0c-b41c-57ad-8e95-610a208f76ba",
+        "value": "avstore.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0f6631c7-44cc-5e10-9391-77798487c651",
+        "value": "dopodo.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "246c7995-946c-55be-a828-c969347d530b",
+        "value": "foxcom.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "48ca862c-32ac-544a-92e7-dbad4fae4689",
+        "value": "helosaf.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ed90984f-8cca-53ba-90c2-995fd79de71a",
+        "value": "killerhost.skypetm.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a4bd0724-19d4-5b13-a73d-b0ed3bbc5e12",
+        "value": "kimoo.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "76e71cb2-5a50-54a2-a0c3-6f295acffba9",
+        "value": "lightening.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640963435",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c908ceeb-a38c-540d-8347-73cfce94a4d3",
+        "value": "newb02.skypetm.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "14589018-23a1-5a65-97f0-f3c4f05b5afa",
+        "value": "paccfic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5cfd0a2b-b4bc-562e-b0d8-268f086814a6",
+        "value": "seed01.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570266206",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a34f858c-371d-59ea-9800-7fc0695f3c15",
+        "value": "skypetm.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a5fd7aaa-b8c9-5cc9-8884-c755fa07fb3d",
+        "value": "stareastnet.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4622ddda-5855-5ae2-b775-6a79068866a6",
+        "value": "symantecs.com.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2eed8670-b0a8-5116-a4a4-b62540cf96eb",
+        "value": "trendmicro.org.tw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1640868085",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5a68dd51-50f8-54c7-b930-0870ce1694fb",
+        "value": "trendmicroup.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:pittytiger"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"PittyTiger - G0011\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: PittyTiger (G0011) - Maltrail group PITTYTIGER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "6cca0853-8110-539e-b11d-9682093fdbff"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "name": "ToddyCat (G1022) - APTtrail",
+  "description": "Techniques attributed to ToddyCat by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1022.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1069.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1087.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1095",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1680",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by ToddyCat",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

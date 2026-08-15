@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1684565275",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f068d3a1-df19-5921-b7ee-d8cbfd4eefde",
+        "value": "cremessage.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1684565275",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "592b2eac-5893-584c-92bc-d7f626cf01ea",
+        "value": "m.cremessage.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:camarodragon"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Mustang Panda - G0129\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Mustang Panda (G0129) - Maltrail group CAMARODRAGON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "1f72c62f-fd40-5419-88a6-eb4bf05d2836"
+  }
+}

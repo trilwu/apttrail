@@ -1,0 +1,62 @@
+{
+  "aliases": [],
+  "attack_id": "G0084",
+  "attack_name": "Gallmaker",
+  "attack_url": "https://attack.mitre.org/groups/G0084/",
+  "counts": {
+    "url": 3
+  },
+  "first_seen": {
+    "url": {
+      "111.90.149.99/o2": "2018-10-18",
+      "94.140.116.124/o2": "2018-10-18",
+      "94.140.116.231/o2": "2018-10-18"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-18",
+    "latest": "2018-10-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "111.90.149.99/o2",
+      "94.140.116.124/o2",
+      "94.140.116.231/o2"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GALLMAKER"
+  ],
+  "references": [
+    "https://securityaffairs.co/wordpress/77041/apt/gallmaker-apt-emerges.html",
+    "https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group"
+  ],
+  "related": [],
+  "slug": "G0084",
+  "timeline": [
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2018-10-18",
+      "indicators": {
+        "url": [
+          "111.90.149.99/o2",
+          "94.140.116.124/o2",
+          "94.140.116.231/o2"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/blogs/threat-intelligence/gallmaker-attack-group",
+        "https://securityaffairs.co/wordpress/77041/apt/gallmaker-apt-emerges.html"
+      ],
+      "total": 3
+    }
+  ]
+}

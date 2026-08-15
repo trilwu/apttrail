@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1553663160",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e77ac23a-65e2-5d83-b545-85fa065932e9",
+        "value": "82.137.255.56:1740"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1553663160",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "8561b70b-5e59-530f-b687-a8624161c836",
+        "value": "82.137.255.56:1921"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1555778072",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "cdd7c883-213b-5745-8c2d-97e6a2948319",
+        "value": "82.137.255.56:1940"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1553663160",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ca595f15-3826-5bc5-a867-0f8f08d780b5",
+        "value": "82.137.255.56:1994"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1555778072",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "010187ef-3aa7-56d5-9139-d9a36894683f",
+        "value": "82.137.255.56:5602"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:goldmouse"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOLDMOUSE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "ac945f41-561b-5e13-9236-69ab9a0793e7"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "aliases": [],
+  "attack_id": "G0052",
+  "attack_name": "CopyKittens",
+  "attack_url": "https://attack.mitre.org/groups/G0052/",
+  "counts": {
+    "domain": 34
+  },
+  "first_seen": {
+    "domain": {
+      "alhadath.mobi": "2017-04-12",
+      "big-windowss.com": "2017-04-12",
+      "cacheupdate14.com": "2017-04-12",
+      "fbstatic-a.space": "2017-04-12",
+      "fbstatic-a.xyz": "2017-04-12",
+      "fbstatic-akamaihd.com": "2017-04-12",
+      "gmailtagmanager.com": "2017-04-12",
+      "haaretz-news.com": "2017-04-12",
+      "haaretz.link": "2017-04-12",
+      "heartax.info": "2017-04-12",
+      "kernel4windows.in": "2017-04-12",
+      "micro-windows.in": "2017-04-12",
+      "mswordupdate15.com": "2017-04-12",
+      "mswordupdate16.com": "2017-04-12",
+      "mswordupdate17.com": "2017-04-12",
+      "mywindows24.in": "2017-04-12",
+      "patch7-windows.com": "2017-04-12",
+      "patch8-windows.com": "2017-04-12",
+      "patchthiswindows.com": "2017-04-12",
+      "walla.link": "2017-04-12",
+      "wethearservice.com": "2017-04-12",
+      "wheatherserviceapi.info": "2017-04-12",
+      "windowkernel.com": "2017-04-12",
+      "windows-10patch.in": "2017-04-12",
+      "windows-drive20.com": "2017-04-12",
+      "windows-india.in": "2017-04-12",
+      "windows-kernel.in": "2017-04-12",
+      "windows-my50.com": "2017-04-12",
+      "windows24-kernel.in": "2017-04-12",
+      "windowskernel.in": "2017-04-12",
+      "windowskernel14.com": "2017-04-12",
+      "windowslayer.in": "2017-04-12",
+      "windowssup.in": "2017-04-12",
+      "windowsupup.com": "2017-04-12"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-12",
+    "latest": "2017-04-12"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "alhadath.mobi",
+      "big-windowss.com",
+      "cacheupdate14.com",
+      "fbstatic-a.space",
+      "fbstatic-a.xyz",
+      "fbstatic-akamaihd.com",
+      "gmailtagmanager.com",
+      "haaretz-news.com",
+      "haaretz.link",
+      "heartax.info",
+      "kernel4windows.in",
+      "micro-windows.in",
+      "mswordupdate15.com",
+      "mswordupdate16.com",
+      "mswordupdate17.com",
+      "mywindows24.in",
+      "patch7-windows.com",
+      "patch8-windows.com",
+      "patchthiswindows.com",
+      "walla.link",
+      "wethearservice.com",
+      "wheatherserviceapi.info",
+      "windowkernel.com",
+      "windows-10patch.in",
+      "windows-drive20.com",
+      "windows-india.in",
+      "windows-kernel.in",
+      "windows-my50.com",
+      "windows24-kernel.in",
+      "windowskernel.in",
+      "windowskernel14.com",
+      "windowslayer.in",
+      "windowssup.in",
+      "windowsupup.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "COPYKITTENS"
+  ],
+  "references": [
+    "https://s3-eu-west-1.amazonaws.com/minervaresearchpublic/CopyKittens/CopyKittens.pdf"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "25 shared indicators",
+          "kind": "infrastructure",
+          "weight": 25.0
+        }
+      ],
+      "slug": "MIDDLEEAST"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0007"
+    }
+  ],
+  "slug": "G0052",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 34
+      },
+      "first_seen": "2017-04-12",
+      "indicators": {
+        "domain": [
+          "alhadath.mobi",
+          "big-windowss.com",
+          "cacheupdate14.com",
+          "fbstatic-a.space",
+          "fbstatic-a.xyz",
+          "fbstatic-akamaihd.com",
+          "gmailtagmanager.com",
+          "haaretz-news.com",
+          "haaretz.link",
+          "heartax.info",
+          "kernel4windows.in",
+          "micro-windows.in",
+          "mswordupdate15.com",
+          "mswordupdate16.com",
+          "mswordupdate17.com",
+          "mywindows24.in",
+          "patch7-windows.com",
+          "patch8-windows.com",
+          "patchthiswindows.com",
+          "walla.link",
+          "wethearservice.com",
+          "wheatherserviceapi.info",
+          "windowkernel.com",
+          "windows-10patch.in",
+          "windows-drive20.com",
+          "windows-india.in",
+          "windows-kernel.in",
+          "windows-my50.com",
+          "windows24-kernel.in",
+          "windowskernel.in",
+          "windowskernel14.com",
+          "windowslayer.in",
+          "windowssup.in",
+          "windowsupup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s3-eu-west-1.amazonaws.com/minervaresearchpublic/CopyKittens/CopyKittens.pdf"
+      ],
+      "total": 34
+    }
+  ]
+}

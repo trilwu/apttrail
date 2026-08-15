@@ -1,0 +1,173 @@
+{
+  "aliases": [
+    "eraleig ransomware"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11
+  },
+  "first_seen": {
+    "domain": {
+      "bashe4aec32kr6zbifwd5x6xgjsmhg4tbowrbx4pneqhc5mqooyifpid.onion": "2024-11-16",
+      "basheqtvzqwz4vp6ks5lm2ocq7i6tozqgf6vjcasj4ezmsy4bkpshhyd.onion": "2024-11-16",
+      "basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion": "2026-01-02",
+      "eraleignews.com": "2024-04-24",
+      "fleqwmg7xnanypt5km2m75l72q7nlcvlp2m4sdmgjxorsn6tb3zyp3qd.onion": "2024-11-16",
+      "ns1.eraleignews.com": "2024-04-24",
+      "ns2.eraleignews.com": "2024-04-24",
+      "ns3.eraleignews.com": "2024-04-24",
+      "ns4.eraleignews.com": "2024-04-24",
+      "qcgv5tfer4f46ns6ohh72zeyyh5uavoiybypzpt3lmwk5ecyqykptgqd.onion": "2024-04-24",
+      "wn6vonooq6fggjdgyocp7bioykmfjket7sbp47cwhgubvowwd7ws5pyd.onion": "2024-11-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2024-04-24",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bashe4aec32kr6zbifwd5x6xgjsmhg4tbowrbx4pneqhc5mqooyifpid.onion",
+      "basheqtvzqwz4vp6ks5lm2ocq7i6tozqgf6vjcasj4ezmsy4bkpshhyd.onion",
+      "basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion",
+      "eraleignews.com",
+      "fleqwmg7xnanypt5km2m75l72q7nlcvlp2m4sdmgjxorsn6tb3zyp3qd.onion",
+      "ns1.eraleignews.com",
+      "ns2.eraleignews.com",
+      "ns3.eraleignews.com",
+      "ns4.eraleignews.com",
+      "qcgv5tfer4f46ns6ohh72zeyyh5uavoiybypzpt3lmwk5ecyqykptgqd.onion",
+      "wn6vonooq6fggjdgyocp7bioykmfjket7sbp47cwhgubvowwd7ws5pyd.onion"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "73"
+  ],
+  "references": [
+    "https://github.com/marktsec/Ransomware_Official_Domains#apt73",
+    "https://rakeshkrish.medium.com/apt73-eraleig-news-unveiling-new-ransomware-group-55aec3e873ff",
+    "https://twitter.com/AlvieriD/status/1782471876897394839",
+    "https://twitter.com/karol_paciorek/status/1783071332583780594",
+    "https://www.thedfirspot.com/general-8-1",
+    "https://www.virustotal.com/gui/ip-address/176.97.75.205/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "KARAKURT"
+    }
+  ],
+  "slug": "73",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://twitter.com/AlvieriD/status/1782471876897394839",
+        "https://twitter.com/karol_paciorek/status/1783071332583780594",
+        "https://rakeshkrish.medium.com/apt73-eraleig-news-unveiling-new-ransomware-group-55aec3e873ff",
+        "https://www.virustotal.com/gui/ip-address/176.97.75.205/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-11-16",
+      "indicators": {
+        "domain": [
+          "bashe4aec32kr6zbifwd5x6xgjsmhg4tbowrbx4pneqhc5mqooyifpid.onion",
+          "basheqtvzqwz4vp6ks5lm2ocq7i6tozqgf6vjcasj4ezmsy4bkpshhyd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/AlvieriD/status/1782471876897394839",
+        "https://twitter.com/karol_paciorek/status/1783071332583780594",
+        "https://rakeshkrish.medium.com/apt73-eraleig-news-unveiling-new-ransomware-group-55aec3e873ff",
+        "https://www.virustotal.com/gui/ip-address/176.97.75.205/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-11-16",
+      "indicators": {
+        "domain": [
+          "fleqwmg7xnanypt5km2m75l72q7nlcvlp2m4sdmgjxorsn6tb3zyp3qd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.thedfirspot.com/general-8-1"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-11-16",
+      "indicators": {
+        "domain": [
+          "wn6vonooq6fggjdgyocp7bioykmfjket7sbp47cwhgubvowwd7ws5pyd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/marktsec/Ransomware_Official_Domains#apt73"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2024-04-24",
+      "indicators": {
+        "domain": [
+          "eraleignews.com",
+          "ns1.eraleignews.com",
+          "ns2.eraleignews.com",
+          "ns3.eraleignews.com",
+          "ns4.eraleignews.com",
+          "qcgv5tfer4f46ns6ohh72zeyyh5uavoiybypzpt3lmwk5ecyqykptgqd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/AlvieriD/status/1782471876897394839",
+        "https://twitter.com/karol_paciorek/status/1783071332583780594",
+        "https://rakeshkrish.medium.com/apt73-eraleig-news-unveiling-new-ransomware-group-55aec3e873ff",
+        "https://www.virustotal.com/gui/ip-address/176.97.75.205/detection"
+      ],
+      "total": 6
+    }
+  ]
+}

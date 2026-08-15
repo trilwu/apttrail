@@ -1,0 +1,160 @@
+{
+  "aliases": [
+    "dmloader",
+    "dunloader",
+    "frpc",
+    "icmpinger",
+    "kmlog",
+    "krnrat",
+    "ladon",
+    "moriya",
+    "nbtscan",
+    "odriz",
+    "simpoboxspy",
+    "tesdat",
+    "wmihacker"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "ipv4": 7,
+    "url": 7
+  },
+  "first_seen": {
+    "domain": {
+      "dfsg3gfsga.space": "2026-01-02",
+      "igtsadlb2ra.pw": "2026-01-02",
+      "ihyvcs5t.pw": "2026-01-02",
+      "vidsec.cc": "2026-01-02"
+    },
+    "ipv4": {
+      "103.238.214.88:443": "2026-01-02",
+      "149.28.147.63:443": "2026-01-02",
+      "166.88.194.53:443": "2026-01-02",
+      "185.239.225.106:443": "2026-01-02",
+      "38.147.191.103:443": "2026-01-02",
+      "38.60.199.225:443": "2026-01-02",
+      "45.77.250.21:443": "2026-01-02"
+    },
+    "url": {
+      "http://103.238.214.88": "2026-01-02",
+      "http://149.28.147.63": "2026-01-02",
+      "http://166.88.194.53": "2026-01-02",
+      "http://185.239.225.106": "2026-01-02",
+      "http://38.147.191.103": "2026-01-02",
+      "http://38.60.199.225": "2026-01-02",
+      "http://45.77.250.21": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "dfsg3gfsga.space": "at-or-before",
+      "igtsadlb2ra.pw": "at-or-before",
+      "ihyvcs5t.pw": "at-or-before",
+      "vidsec.cc": "at-or-before"
+    },
+    "ipv4": {
+      "103.238.214.88:443": "at-or-before",
+      "149.28.147.63:443": "at-or-before",
+      "166.88.194.53:443": "at-or-before",
+      "185.239.225.106:443": "at-or-before",
+      "38.147.191.103:443": "at-or-before",
+      "38.60.199.225:443": "at-or-before",
+      "45.77.250.21:443": "at-or-before"
+    },
+    "url": {
+      "http://103.238.214.88": "at-or-before",
+      "http://149.28.147.63": "at-or-before",
+      "http://166.88.194.53": "at-or-before",
+      "http://185.239.225.106": "at-or-before",
+      "http://38.147.191.103": "at-or-before",
+      "http://38.60.199.225": "at-or-before",
+      "http://45.77.250.21": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "dfsg3gfsga.space",
+      "igtsadlb2ra.pw",
+      "ihyvcs5t.pw",
+      "vidsec.cc"
+    ],
+    "ipv4": [
+      "103.238.214.88:443",
+      "149.28.147.63:443",
+      "166.88.194.53:443",
+      "185.239.225.106:443",
+      "38.147.191.103:443",
+      "38.60.199.225:443",
+      "45.77.250.21:443"
+    ],
+    "url": [
+      "http://103.238.214.88",
+      "http://149.28.147.63",
+      "http://166.88.194.53",
+      "http://185.239.225.106",
+      "http://38.147.191.103",
+      "http://38.60.199.225",
+      "http://45.77.250.21"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "EARTHKURMA"
+  ],
+  "references": [
+    "https://documents.trendmicro.com/assets/txt/EarthKurma-IOCssVJ3RcK.txt",
+    "https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html"
+  ],
+  "related": [],
+  "slug": "EARTHKURMA",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 7,
+        "url": 7
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "dfsg3gfsga.space",
+          "igtsadlb2ra.pw",
+          "ihyvcs5t.pw",
+          "vidsec.cc"
+        ],
+        "ipv4": [
+          "103.238.214.88:443",
+          "149.28.147.63:443",
+          "166.88.194.53:443",
+          "185.239.225.106:443",
+          "38.147.191.103:443",
+          "38.60.199.225:443",
+          "45.77.250.21:443"
+        ],
+        "url": [
+          "http://103.238.214.88",
+          "http://149.28.147.63",
+          "http://166.88.194.53",
+          "http://185.239.225.106",
+          "http://38.147.191.103",
+          "http://38.60.199.225",
+          "http://45.77.250.21"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/25/d/earth-kurma-apt-campaign.html",
+        "https://documents.trendmicro.com/assets/txt/EarthKurma-IOCssVJ3RcK.txt"
+      ],
+      "total": 18
+    }
+  ]
+}

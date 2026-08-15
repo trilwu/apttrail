@@ -1,0 +1,165 @@
+{
+  "aliases": [],
+  "attack_id": "G0136",
+  "attack_name": "IndigoZebra",
+  "attack_url": "https://attack.mitre.org/groups/G0136/",
+  "counts": {
+    "domain": 25
+  },
+  "first_seen": {
+    "domain": {
+      "2019mfa.com": "2021-07-01",
+      "6z98os.id597.link": "2021-07-01",
+      "cdn.muincxoil.com": "2021-07-01",
+      "google-upgrade.com": "2021-07-01",
+      "help.2019mfa.com": "2021-07-01",
+      "hwyigd.laccessal.org": "2021-07-01",
+      "ictdp.com": "2021-07-01",
+      "id597.link": "2021-07-01",
+      "index.google-upgrade.com": "2021-07-01",
+      "infodocs.kginfocom.com": "2021-05-27",
+      "kginfocom.com": "2021-05-27",
+      "laccessal.org": "2021-07-01",
+      "m.usascd.com": "2021-07-01",
+      "mahallafond.com": "2021-07-01",
+      "mfa-uz.com": "2021-07-01",
+      "mofa.ungov.org": "2021-07-01",
+      "muincxoil.com": "2021-07-01",
+      "ns01-mfa.ungov.org": "2021-07-01",
+      "ousync.kginfocom.com": "2021-05-27",
+      "post.mfa-uz.com": "2021-07-01",
+      "tm.2019mfa.com": "2021-07-01",
+      "ungov.org": "2021-07-01",
+      "update.ictdp.com": "2021-07-01",
+      "usascd.com": "2021-07-01",
+      "uslugi.mahallafond.com": "2021-07-01"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-05-27",
+    "latest": "2021-07-01"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2019mfa.com",
+      "6z98os.id597.link",
+      "cdn.muincxoil.com",
+      "google-upgrade.com",
+      "help.2019mfa.com",
+      "hwyigd.laccessal.org",
+      "ictdp.com",
+      "id597.link",
+      "index.google-upgrade.com",
+      "infodocs.kginfocom.com",
+      "kginfocom.com",
+      "laccessal.org",
+      "m.usascd.com",
+      "mahallafond.com",
+      "mfa-uz.com",
+      "mofa.ungov.org",
+      "muincxoil.com",
+      "ns01-mfa.ungov.org",
+      "ousync.kginfocom.com",
+      "post.mfa-uz.com",
+      "tm.2019mfa.com",
+      "ungov.org",
+      "update.ictdp.com",
+      "usascd.com",
+      "uslugi.mahallafond.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "INDIGOZEBRA"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/60ddbf90b3211a60e87da15f",
+    "https://research.checkpoint.com/2021/indigozebra-apt-continues-to-attack-central-asia-with-evolving-tools/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "44% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.444
+        }
+      ],
+      "slug": "G0137"
+    }
+  ],
+  "slug": "G0136",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 22
+      },
+      "first_seen": "2021-07-01",
+      "indicators": {
+        "domain": [
+          "2019mfa.com",
+          "6z98os.id597.link",
+          "cdn.muincxoil.com",
+          "google-upgrade.com",
+          "help.2019mfa.com",
+          "hwyigd.laccessal.org",
+          "ictdp.com",
+          "id597.link",
+          "index.google-upgrade.com",
+          "laccessal.org",
+          "m.usascd.com",
+          "mahallafond.com",
+          "mfa-uz.com",
+          "mofa.ungov.org",
+          "muincxoil.com",
+          "ns01-mfa.ungov.org",
+          "post.mfa-uz.com",
+          "tm.2019mfa.com",
+          "ungov.org",
+          "update.ictdp.com",
+          "usascd.com",
+          "uslugi.mahallafond.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2021/indigozebra-apt-continues-to-attack-central-asia-with-evolving-tools/",
+        "https://otx.alienvault.com/pulse/60ddbf90b3211a60e87da15f"
+      ],
+      "total": 22
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-05-27",
+      "indicators": {
+        "domain": [
+          "infodocs.kginfocom.com",
+          "kginfocom.com",
+          "ousync.kginfocom.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2021/indigozebra-apt-continues-to-attack-central-asia-with-evolving-tools/",
+        "https://otx.alienvault.com/pulse/60ddbf90b3211a60e87da15f"
+      ],
+      "total": 3
+    }
+  ]
+}

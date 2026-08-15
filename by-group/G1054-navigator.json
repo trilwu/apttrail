@@ -1,0 +1,241 @@
+{
+  "name": "MirrorFace (G1054) - APTtrail",
+  "description": "Techniques attributed to MirrorFace by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1054.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1016",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1018",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.008",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1048.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1087.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1221",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1482",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1553.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1556.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1574.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1591",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1614.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686.003",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by MirrorFace",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

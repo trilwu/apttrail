@@ -1,0 +1,87 @@
+{
+  "aliases": [
+    "tag-22"
+  ],
+  "attack_id": "G1006",
+  "attack_name": "Earth Lusca",
+  "attack_url": "https://attack.mitre.org/groups/G1006/",
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "microsoftd.tk": "2021-07-17",
+      "wikimedia.vip": "2021-07-17",
+      "windowshostnamehost.club": "2021-07-17"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-07-17",
+    "latest": "2021-07-17"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "microsoftd.tk",
+      "wikimedia.vip",
+      "windowshostnamehost.club"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TAG22"
+  ],
+  "references": [
+    "https://github.com/Insikt-Group/Research/blob/master/Chinese%20APT%20TAG-22%20Targets%20Asian%20Countries",
+    "https://otx.alienvault.com/pulse/60e81a24e8d59fbc73500085",
+    "https://www.recordedfuture.com/chinese-group-tag-22-targets-nepal-philippines-taiwan/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares Winnti for Linux, ShadowPad",
+          "kind": "software",
+          "weight": 0.667
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Nltest",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G1054"
+    }
+  ],
+  "slug": "G1006",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-07-17",
+      "indicators": {
+        "domain": [
+          "microsoftd.tk",
+          "wikimedia.vip",
+          "windowshostnamehost.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/chinese-group-tag-22-targets-nepal-philippines-taiwan/",
+        "https://github.com/Insikt-Group/Research/blob/master/Chinese%20APT%20TAG-22%20Targets%20Asian%20Countries",
+        "https://otx.alienvault.com/pulse/60e81a24e8d59fbc73500085"
+      ],
+      "total": 3
+    }
+  ]
+}

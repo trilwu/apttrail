@@ -1,0 +1,87 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1595259882",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5827bccd-e49c-59ac-840a-025eb6b4ef71",
+        "value": "dns03.cainformations.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595259882",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "343f8a86-dbe6-5ed4-a9c9-a758267ed7ad",
+        "value": "kkkfaster.jumpingcrab.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1559645097",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fccbffcc-30f4-5b58-9e5a-d2c51aa81ab5",
+        "value": "nicodonald.accesscam.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595259882",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "220f3502-be65-558a-b4ca-464422013f17",
+        "value": "pneword.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1572550208",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "49e5d22a-1b0b-5006-888b-4e89636a4e4d",
+        "value": "sultris.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1572550208",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "02d324c5-02dd-5963-ac4e-4b67157b6340",
+        "value": "tv.teldcomtv.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595259882",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2acfe2fd-547c-5322-a02b-f13a5c502511",
+        "value": "v.nnncity.xyz"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:xpath"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: XPATH",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "cf23238c-76cc-52ff-a06c-ae2f8fca88c1"
+  }
+}

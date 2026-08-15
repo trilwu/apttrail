@@ -1,0 +1,305 @@
+{
+  "aliases": [
+    "snappytcp"
+  ],
+  "attack_id": "G1041",
+  "attack_name": "Sea Turtle",
+  "attack_url": "https://attack.mitre.org/groups/G1041/",
+  "counts": {
+    "domain": 35,
+    "ipv4": 1,
+    "url": 13,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "23be.xtechsupport.org": "2024-01-12",
+      "ai-connector.goldchekin.com": "2024-01-12",
+      "ai-connector.splendor.org": "2024-01-12",
+      "ai-connector.splendos.org": "2024-01-12",
+      "al-marsad.co": "2023-12-08",
+      "alarabiyaa.online": "2024-01-12",
+      "alhurra.online": "2023-12-08",
+      "anfturkce.news": "2023-12-08",
+      "api.wordinfos.com": "2026-01-02",
+      "aws.systemctl.network": "2023-12-08",
+      "boord.info": "2024-01-09",
+      "caglayandergisi.net": "2024-01-12",
+      "cn.sslname.com": "2024-01-12",
+      "dhcp.systemctl.network": "2023-12-08",
+      "eth0.secrsys.net": "2023-12-08",
+      "exp-al-marsad.co": "2024-01-12",
+      "forward.boord.info": "2024-01-09",
+      "infohaber.net": "2024-01-12",
+      "lo0.systemctl.network": "2023-12-08",
+      "loading-website.net": "2024-01-12",
+      "netssh.net": "2024-01-12",
+      "nmcbcd.live": "2023-12-08",
+      "nuceciwan.news": "2024-01-12",
+      "querryfiles.com": "2023-12-08",
+      "secrsys.net": "2023-12-08",
+      "serverssl.net": "2024-01-12",
+      "solhaber.info": "2024-01-12",
+      "solhaber.news": "2024-01-12",
+      "systemctl.network": "2023-12-08",
+      "ud.ybcd.tech": "2023-12-08",
+      "update.qnetau.net": "2024-01-12",
+      "upt.mcsoft.org": "2023-12-08",
+      "wordinfos.com": "2026-01-02",
+      "xtechsupport.org": "2024-01-12",
+      "ybcd.tech": "2023-12-08"
+    },
+    "ipv4": {
+      "62.115.255.163:61265": "2024-01-09"
+    },
+    "url": {
+      "http://108.61.103.186": "2023-12-08",
+      "http://146.190.28.83": "2023-12-08",
+      "http://168.100.10.187": "2023-12-08",
+      "http://168.100.8.245": "2023-12-08",
+      "http://168.100.9.203": "2023-12-08",
+      "http://193.34.167.245": "2024-01-09",
+      "http://199.247.29.25": "2023-12-08",
+      "http://31.13.195.52": "2023-12-08",
+      "http://31.214.157.230": "2023-12-08",
+      "http://45.80.148.172": "2023-12-08",
+      "http://88.119.171.248": "2023-12-08",
+      "http://93.115.22.212": "2023-12-08",
+      "http://95.179.176.250": "2023-12-08"
+    },
+    "url_path": {
+      "/c00n/connn.c": "2024-01-09",
+      "/c00n/socat": "2024-01-09"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "api.wordinfos.com": "at-or-before",
+      "wordinfos.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-12-08",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "23be.xtechsupport.org",
+      "ai-connector.goldchekin.com",
+      "ai-connector.splendor.org",
+      "ai-connector.splendos.org",
+      "al-marsad.co",
+      "alarabiyaa.online",
+      "alhurra.online",
+      "anfturkce.news",
+      "api.wordinfos.com",
+      "aws.systemctl.network",
+      "boord.info",
+      "caglayandergisi.net",
+      "cn.sslname.com",
+      "dhcp.systemctl.network",
+      "eth0.secrsys.net",
+      "exp-al-marsad.co",
+      "forward.boord.info",
+      "infohaber.net",
+      "lo0.systemctl.network",
+      "loading-website.net",
+      "netssh.net",
+      "nmcbcd.live",
+      "nuceciwan.news",
+      "querryfiles.com",
+      "secrsys.net",
+      "serverssl.net",
+      "solhaber.info",
+      "solhaber.news",
+      "systemctl.network",
+      "ud.ybcd.tech",
+      "update.qnetau.net",
+      "upt.mcsoft.org",
+      "wordinfos.com",
+      "xtechsupport.org",
+      "ybcd.tech"
+    ],
+    "ipv4": [
+      "62.115.255.163:61265"
+    ],
+    "url": [
+      "http://108.61.103.186",
+      "http://146.190.28.83",
+      "http://168.100.10.187",
+      "http://168.100.8.245",
+      "http://168.100.9.203",
+      "http://193.34.167.245",
+      "http://199.247.29.25",
+      "http://31.13.195.52",
+      "http://31.214.157.230",
+      "http://45.80.148.172",
+      "http://88.119.171.248",
+      "http://93.115.22.212",
+      "http://95.179.176.250"
+    ],
+    "url_path": [
+      "/c00n/connn.c",
+      "/c00n/socat"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MARBLEDDUST",
+    "TEALKURMA"
+  ],
+  "references": [
+    "https://blog.strikeready.com/blog/pivoting-through-a-sea-of-indicators-to-spot-turtles/",
+    "https://blog.talosintelligence.com/seaturtle/",
+    "https://otx.alienvault.com/pulse/65a0740fefe93d8593b812af",
+    "https://www.huntandhackett.com/blog/turkish-espionage-campaigns",
+    "https://www.microsoft.com/en-us/security/blog/2025/05/12/marbled-dust-leverages-zero-day-in-output-messenger-for-regional-espionage/",
+    "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/tortoise-and-malwahare.html",
+    "https://www.virustotal.com/gui/file/d7164daf135404a0f0851ffe126a0a0afe17d7f1e68717617feb9cfc3deea89c/detection"
+  ],
+  "related": [],
+  "slug": "G1041",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "api.wordinfos.com",
+          "wordinfos.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2025/05/12/marbled-dust-leverages-zero-day-in-output-messenger-for-regional-espionage/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 17
+      },
+      "first_seen": "2024-01-12",
+      "indicators": {
+        "domain": [
+          "23be.xtechsupport.org",
+          "ai-connector.goldchekin.com",
+          "ai-connector.splendor.org",
+          "ai-connector.splendos.org",
+          "alarabiyaa.online",
+          "caglayandergisi.net",
+          "cn.sslname.com",
+          "exp-al-marsad.co",
+          "infohaber.net",
+          "loading-website.net",
+          "netssh.net",
+          "nuceciwan.news",
+          "serverssl.net",
+          "solhaber.info",
+          "solhaber.news",
+          "update.qnetau.net",
+          "xtechsupport.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.strikeready.com/blog/pivoting-through-a-sea-of-indicators-to-spot-turtles/",
+        "https://otx.alienvault.com/pulse/65a0740fefe93d8593b812af"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1,
+        "url_path": 2
+      },
+      "first_seen": "2024-01-09",
+      "indicators": {
+        "domain": [
+          "boord.info",
+          "forward.boord.info"
+        ],
+        "url": [
+          "http://193.34.167.245"
+        ],
+        "url_path": [
+          "/c00n/connn.c",
+          "/c00n/socat"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.huntandhackett.com/blog/turkish-espionage-campaigns"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-01-09",
+      "indicators": {
+        "ipv4": [
+          "62.115.255.163:61265"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/d7164daf135404a0f0851ffe126a0a0afe17d7f1e68717617feb9cfc3deea89c/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 14,
+        "url": 12
+      },
+      "first_seen": "2023-12-08",
+      "indicators": {
+        "domain": [
+          "al-marsad.co",
+          "alhurra.online",
+          "anfturkce.news",
+          "aws.systemctl.network",
+          "dhcp.systemctl.network",
+          "eth0.secrsys.net",
+          "lo0.systemctl.network",
+          "nmcbcd.live",
+          "querryfiles.com",
+          "secrsys.net",
+          "systemctl.network",
+          "ud.ybcd.tech",
+          "upt.mcsoft.org",
+          "ybcd.tech"
+        ],
+        "url": [
+          "http://108.61.103.186",
+          "http://146.190.28.83",
+          "http://168.100.10.187",
+          "http://168.100.8.245",
+          "http://168.100.9.203",
+          "http://199.247.29.25",
+          "http://31.13.195.52",
+          "http://31.214.157.230",
+          "http://45.80.148.172",
+          "http://88.119.171.248",
+          "http://93.115.22.212",
+          "http://95.179.176.250"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/tortoise-and-malwahare.html",
+        "https://blog.talosintelligence.com/seaturtle/"
+      ],
+      "total": 26
+    }
+  ]
+}

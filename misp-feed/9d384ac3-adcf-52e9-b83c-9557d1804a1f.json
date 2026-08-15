@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1539968836",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "a3e9d05f-bb81-5342-b151-fbed686cc2a2",
+        "value": "adc-home.com/28732.html"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540045041",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "80965669-ae63-5299-a7ae-62d443134b9b",
+        "value": "oonumaboat.com/cx/index.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:redbaldknight"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"BRONZE BUTLER - G0060\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BRONZE BUTLER (G0060) - Maltrail group REDBALDKNIGHT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "9d384ac3-adcf-52e9-b83c-9557d1804a1f"
+  }
+}

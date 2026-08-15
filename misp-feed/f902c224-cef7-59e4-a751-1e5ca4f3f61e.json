@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1708935663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12bf63e4-1fbc-528b-9f9d-eb92bbc99e95",
+        "value": "array.myftp.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1708935663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "511583c8-8368-566a-92fe-3d7647a4f08a",
+        "value": "bom02.gotdns.ch"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1717155362",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52c99d16-2609-5cd3-bd0a-c7533cbb768e",
+        "value": "postdock.serveftp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1717155362",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3a640b93-59fc-577b-a798-0a74c2ba6a35",
+        "value": "worker-polished-union-f396.vqu89698.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1708935663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b194246e-6986-5ebd-b3b0-548dc60ee9d6",
+        "value": "worker-test-6f41.idv64828.workers.dev"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:flyingyeti"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: FLYINGYETI",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f902c224-cef7-59e4-a751-1e5ca4f3f61e"
+  }
+}

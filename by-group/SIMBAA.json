@@ -1,0 +1,65 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "firebasebox.com": "2019-02-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-02-05",
+    "latest": "2019-02-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "firebasebox.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SIMBAA"
+  ],
+  "references": [
+    "https://www.malcrawler.com/team-simbaa-targets-indian-government-using-united-nations-military-observers-themed-malware-nicked-named-keeoil/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0134"
+    }
+  ],
+  "slug": "SIMBAA",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-02-05",
+      "indicators": {
+        "domain": [
+          "firebasebox.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.malcrawler.com/team-simbaa-targets-indian-government-using-united-nations-military-observers-themed-malware-nicked-named-keeoil/"
+      ],
+      "total": 1
+    }
+  ]
+}

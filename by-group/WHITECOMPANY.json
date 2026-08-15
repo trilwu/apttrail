@@ -1,0 +1,56 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "userz.ignorelist.com": "2018-11-15"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-11-15",
+    "latest": "2018-11-15"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "userz.ignorelist.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "WHITECOMPANY"
+  ],
+  "references": [
+    "https://threatvector.cylance.com/en_us/home/the-white-company-inside-the-operation-shaheen-espionage-campaign.html",
+    "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf"
+  ],
+  "related": [],
+  "slug": "WHITECOMPANY",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-11-15",
+      "indicators": {
+        "domain": [
+          "userz.ignorelist.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatvector.cylance.com/en_us/home/the-white-company-inside-the-operation-shaheen-espionage-campaign.html",
+        "https://www.cylance.com/content/dam/cylance-web/en-us/resources/knowledge-center/resource-library/reports/WhiteCompanyOperationShaheenReport.pdf"
+      ],
+      "total": 1
+    }
+  ]
+}

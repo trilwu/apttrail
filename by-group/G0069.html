@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>MuddyWater · APTtrail</title>
+<meta name=description content="15,684 indicators attributed to MuddyWater (G0069), from 233 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0069.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="MuddyWater · APTtrail">
+<meta property="og:description" content="15,684 indicators attributed to MuddyWater (G0069), from 233 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0069.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>MuddyWater <a class=gid href="https://attack.mitre.org/groups/G0069/">G0069</a></h1>
+<p class=aka><b>MUDDYWATER</b> &middot; BoggySerpens &middot; COBALT ULSTER (# https://malpedia.caad.fkie.fraunhofer.de/actor/muddywater) &middot; MERCURY &middot; Seedworm &middot; Static Kitten &middot; TA450 &middot; TEMP.Zagros &middot; Toneshell &middot; UDPGangster &middot; kalim &middot; lightphoenix &middot; unc3313 &middot; unc5667</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>15,684</dd></div>
+<div><dt>Source reports</dt><dd>233</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-08-13</dd></div>
+</dl>
+<div class=spark><span style="--h:4%" title="2018: 29 indicators"></span><span style="--h:6%" title="2019: 60 indicators"></span><span style="--h:11%" title="2020: 191 indicators"></span><span style="--h:3%" title="2021: 14 indicators"></span><span style="--h:5%" title="2022: 37 indicators"></span><span style="--h:8%" title="2023: 97 indicators"></span><span style="--h:9%" title="2024: 110 indicators"></span><span style="--h:0%" title="2025: 0 indicators"></span><span class=hot style="--h:100%" title="2026: 15,146 indicators"></span></div>
+<div class=spark-axis><span>2018</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=IR">IR</a><br><span class=note>Iran (Islamic Republic of)</span></dd>
+<dt>Activity</dt><dd>Espionage</dd>
+<dt>Targeted sectors</dt><dd><ul class=chips><li><a href="../groups.html?sector=Government">Government</a></li></ul></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>Georgia</li><li>India</li><li>Iraq</li><li>Israel</li><li>Pakistan</li><li>Saudi Arabia</li><li>Turkey</li><li>United Arab Emirates</li><li>United States</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_muddywater.txt">MUDDYWATER</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0069.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0069-domain.txt</pre>
+<p class=note><a href="G0069.json">G0069.json</a> &middot; <a href="G0069-domain.txt">G0069-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>15,684 indicators</span></h2>
+<p class=lede>MuddyWater is a cyber espionage group assessed to be a subordinate element within Iran&#x27;s Ministry of Intelligence and Security (MOIS). Since at least 2017, MuddyWater has targeted a range of government and private organizations across sectors, including telecommunications, local government, finance, defense, and oil and natural gas organizations, in the Middle East (specifically the UAE and Saudi Arabia), Asia, Africa, Europe, and North America. MuddyWater has reused domains dating back to October 2025, and has a preference for NameCheap and Hosterdaddy Private Limited (AS136557). In late 2025 and early 2026, MuddyWater used commercial satellite internet (i.e., Starlink) for command and control (C2) communication.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>15,253</td><td class=f><a href="G0069-domain.txt">G0069-domain.txt</a></td></tr>
+<tr><td>url</td><td class=n>286</td><td class=f><a href="G0069.json">G0069.json</a></td></tr>
+<tr><td>ipv4</td><td class=n>107</td><td class=f><a href="G0069.json">G0069.json</a></td></tr>
+<tr><td>url_path</td><td class=n>38</td><td class=f><a href="G0069.json">G0069.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>68 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0069-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0069-navigator.json">download the layer</a> (68 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1003/001/"><b>T1003.001</b> LSASS Memory</a></li><li><a href="https://attack.mitre.org/techniques/T1003/004/"><b>T1003.004</b> LSA Secrets</a></li><li><a href="https://attack.mitre.org/techniques/T1003/005/"><b>T1003.005</b> Cached Domain Credentials</a></li><li><a href="https://attack.mitre.org/techniques/T1016/"><b>T1016</b> System Network Configuration Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1027/003/"><b>T1027.003</b> Steganography</a></li><li><a href="https://attack.mitre.org/techniques/T1027/004/"><b>T1027.004</b> Compile After Delivery</a></li><li><a href="https://attack.mitre.org/techniques/T1027/010/"><b>T1027.010</b> Command Obfuscation</a></li><li><a href="https://attack.mitre.org/techniques/T1033/"><b>T1033</b> System Owner/User Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1036/005/"><b>T1036.005</b> Match Legitimate Resource Name or Location</a></li><li><a href="https://attack.mitre.org/techniques/T1041/"><b>T1041</b> Exfiltration Over C2 Channel</a></li><li><a href="https://attack.mitre.org/techniques/T1047/"><b>T1047</b> Windows Management Instrumentation</a></li><li><a href="https://attack.mitre.org/techniques/T1049/"><b>T1049</b> System Network Connections Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1057/"><b>T1057</b> Process Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/003/"><b>T1059.003</b> Windows Command Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/005/"><b>T1059.005</b> Visual Basic</a></li><li><a href="https://attack.mitre.org/techniques/T1059/006/"><b>T1059.006</b> Python</a></li><li><a href="https://attack.mitre.org/techniques/T1059/007/"><b>T1059.007</b> JavaScript</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1074/001/"><b>T1074.001</b> Local Data Staging</a></li><li><a href="https://attack.mitre.org/techniques/T1082/"><b>T1082</b> System Information Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1083/"><b>T1083</b> File and Directory Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1087/002/"><b>T1087.002</b> Domain Account</a></li><li><a href="https://attack.mitre.org/techniques/T1090/"><b>T1090</b> Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1090/002/"><b>T1090.002</b> External Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1102/002/"><b>T1102.002</b> Bidirectional Communication</a></li><li><a href="https://attack.mitre.org/techniques/T1104/"><b>T1104</b> Multi-Stage Channels</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1113/"><b>T1113</b> Screen Capture</a></li><li><a href="https://attack.mitre.org/techniques/T1132/001/"><b>T1132.001</b> Standard Encoding</a></li><li><a href="https://attack.mitre.org/techniques/T1137/001/"><b>T1137.001</b> Office Template Macros</a></li><li><a href="https://attack.mitre.org/techniques/T1140/"><b>T1140</b> Deobfuscate/Decode Files or Information</a></li><li><a href="https://attack.mitre.org/techniques/T1190/"><b>T1190</b> Exploit Public-Facing Application</a></li><li><a href="https://attack.mitre.org/techniques/T1203/"><b>T1203</b> Exploitation for Client Execution</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1204/002/"><b>T1204.002</b> Malicious File</a></li><li><a href="https://attack.mitre.org/techniques/T1204/004/"><b>T1204.004</b> Malicious Copy and Paste</a></li><li><a href="https://attack.mitre.org/techniques/T1210/"><b>T1210</b> Exploitation of Remote Services</a></li><li><a href="https://attack.mitre.org/techniques/T1218/003/"><b>T1218.003</b> CMSTP</a></li><li><a href="https://attack.mitre.org/techniques/T1218/005/"><b>T1218.005</b> Mshta</a></li><li><a href="https://attack.mitre.org/techniques/T1218/011/"><b>T1218.011</b> Rundll32</a></li><li><a href="https://attack.mitre.org/techniques/T1219/002/"><b>T1219.002</b> Remote Desktop Software</a></li><li><a href="https://attack.mitre.org/techniques/T1518/"><b>T1518</b> Software Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1518/001/"><b>T1518.001</b> Security Software Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1534/"><b>T1534</b> Internal Spearphishing</a></li><li><a href="https://attack.mitre.org/techniques/T1547/001/"><b>T1547.001</b> Registry Run Keys / Startup Folder</a></li><li><a href="https://attack.mitre.org/techniques/T1548/002/"><b>T1548.002</b> Bypass User Account Control</a></li><li><a href="https://attack.mitre.org/techniques/T1552/001/"><b>T1552.001</b> Credentials In Files</a></li><li><a href="https://attack.mitre.org/techniques/T1555/"><b>T1555</b> Credentials from Password Stores</a></li><li><a href="https://attack.mitre.org/techniques/T1555/003/"><b>T1555.003</b> Credentials from Web Browsers</a></li><li><a href="https://attack.mitre.org/techniques/T1559/001/"><b>T1559.001</b> Component Object Model</a></li><li><a href="https://attack.mitre.org/techniques/T1559/002/"><b>T1559.002</b> Dynamic Data Exchange</a></li><li><a href="https://attack.mitre.org/techniques/T1560/001/"><b>T1560.001</b> Archive via Utility</a></li><li><a href="https://attack.mitre.org/techniques/T1566/"><b>T1566</b> Phishing</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1566/002/"><b>T1566.002</b> Spearphishing Link</a></li><li><a href="https://attack.mitre.org/techniques/T1567/002/"><b>T1567.002</b> Exfiltration to Cloud Storage</a></li><li><a href="https://attack.mitre.org/techniques/T1571/"><b>T1571</b> Non-Standard Port</a></li><li><a href="https://attack.mitre.org/techniques/T1573/001/"><b>T1573.001</b> Symmetric Cryptography</a></li><li><a href="https://attack.mitre.org/techniques/T1574/001/"><b>T1574.001</b> DLL</a></li><li><a href="https://attack.mitre.org/techniques/T1583/001/"><b>T1583.001</b> Domains</a></li><li><a href="https://attack.mitre.org/techniques/T1583/006/"><b>T1583.006</b> Web Services</a></li><li><a href="https://attack.mitre.org/techniques/T1588/001/"><b>T1588.001</b> Malware</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li><li><a href="https://attack.mitre.org/techniques/T1590/004/"><b>T1590.004</b> Network Topology</a></li><li><a href="https://attack.mitre.org/techniques/T1684/001/"><b>T1684.001</b> Impersonation</a></li><li><a href="https://attack.mitre.org/techniques/T1685/"><b>T1685</b> Disable or Modify Tools</a></li></ul>
+
+<h2 id=software>Software <span class=n>21</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0002/"><b>Mimikatz</b></a></li><li><a href="https://attack.mitre.org/software/S0194/"><b>PowerSploit</b></a></li><li><a href="https://attack.mitre.org/software/S0223/"><b>POWERSTATS</b></a></li><li><a href="https://attack.mitre.org/software/S0250/"><b>Koadic</b></a></li><li><a href="https://attack.mitre.org/software/S0349/"><b>LaZagne</b></a></li><li><a href="https://attack.mitre.org/software/S0363/"><b>Empire</b></a></li><li><a href="https://attack.mitre.org/software/S0450/"><b>SHARPSTATS</b></a></li><li><a href="https://attack.mitre.org/software/S0488/"><b>CrackMapExec</b></a></li><li><a href="https://attack.mitre.org/software/S0591/"><b>ConnectWise</b></a></li><li><a href="https://attack.mitre.org/software/S0592/"><b>RemoteUtilities</b></a></li><li><a href="https://attack.mitre.org/software/S0594/"><b>Out1</b></a></li><li><a href="https://attack.mitre.org/software/S1035/"><b>Small Sieve</b></a></li><li><a href="https://attack.mitre.org/software/S1037/"><b>STARWHALE</b></a></li><li><a href="https://attack.mitre.org/software/S1040/"><b>Rclone</b></a></li><li><a href="https://attack.mitre.org/software/S1046/"><b>PowGoop</b></a></li><li><a href="https://attack.mitre.org/software/S1047/"><b>Mori</b></a></li><li><a href="https://attack.mitre.org/software/S1243/"><b>DCHSpy</b></a></li><li><a href="https://attack.mitre.org/software/S9032/"><b>MuddyViper</b></a></li><li><a href="https://attack.mitre.org/software/S9033/"><b>Fooder</b></a></li><li><a href="https://attack.mitre.org/software/S9034/"><b>Tsundere Botnet</b></a></li><li><a href="https://attack.mitre.org/software/S9036/"><b>LP-Notes</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>233 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>10,536</span><a href="https://www.security.com/threat-intelligence/iran-seedworm-electronics" rel="noopener nofollow"><span class=host>security.com</span><span class=path>/threat-intelligence/iran-seedworm-elect…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>10,536</span><a href="https://www.virustotal.com/gui/ip-address/192.124.216.133/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/192.124.216.133/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>10,536</span><a href="https://www.virustotal.com/gui/ip-address/217.71.204.197/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/217.71.204.197/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>10,536</span><a href="https://www.virustotal.com/gui/ip-address/57.129.117.19/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/57.129.117.19/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>5,321</span><a href="https://x.com/phatomcandle/status/2079989870622298451" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/phatomcandle/status/2079989870622298451</span></a><div class=bar style="--w:51%"></div></li>
+<li><span class=c>145</span><a href="https://twitter.com/xiaocaiccc/status/1249586935275778048" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/xiaocaiccc/status/1249586935275778048</span></a><div class=bar style="--w:1%"></div></li>
+<li><span class=c>145</span><a href="https://www.virustotal.com/gui/file/bf696397784b22f8e891dd0627dce731f288d14d4791ac5d0a906bc1cbe10de6/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/bf696397784b22f8e891dd0627dce7…</span></a><div class=bar style="--w:1%"></div></li>
+<li><span class=c>29</span><a href="https://www.deepinstinct.com/blog/muddyc2go-latest-c2-framework-used-by-iranian-apt-muddywater-spotted-in-israel" rel="noopener nofollow"><span class=host>deepinstinct.com</span><span class=path>/blog/muddyc2go-latest-c2-framework-used…</span></a><div class=bar style="--w:0%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>2</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="G1003.html">Ember Bear</a> <span class=gidtag>G1003</span><div class=why><span class="ev software">shares Rclone, CrackMapExec</span></div></li><li><a href="G0090.html">WIRTE</a> <span class=gidtag>G0090</span><div class=why><span class="ev software">shares Rclone</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>15,684 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>300</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 15,253</button><button type=button data-type="url" aria-pressed=false>url 286</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 107</button><button type=button data-type="url_path" aria-pressed=false>url_path 38</button></div>
+<p class=note>Showing the 300 most recent of 15,684. Complete: <a href="G0069.json">G0069.json</a>.</p>
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-08-13-7946d8" class=hot>
+<div class=when><a class=date href="#b-2026-08-13-7946d8"><time datetime="2026-08-13">2026-08-13</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/phatomcandle/status/2079989870622298451" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/phatomcandle/status/2079989870622298451</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>sharpview.mypi.co</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-12-7946d8" class=hot>
+<div class=when><a class=date href="#b-2026-08-12-7946d8"><time datetime="2026-08-12">2026-08-12</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/phatomcandle/status/2079989870622298451" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/phatomcandle/status/2079989870622298451</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>equaldrone489.mypi.co</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-10-7946d8" class=hot>
+<div class=when><a class=date href="#b-2026-08-10-7946d8"><time datetime="2026-08-10">2026-08-10</time></a> <span class=cnt>8 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/phatomcandle/status/2079989870622298451" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/phatomcandle/status/2079989870622298451</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>blackshape.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>deeplimit443.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>equaldigit44.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>goodwagon.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>logicshade862.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>majorruler.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>oxideflask.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>scalecore.mypi.co</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-04-769eb7" class=hot>
+<div class=when><a class=date href="#b-2026-08-04-769eb7"><time datetime="2026-08-04">2026-08-04</time></a> <span class=cnt>1,932 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.security.com/threat-intelligence/iran-seedworm-electronics" rel="noopener nofollow"><span class=host>security.com</span><span class=path>/threat-intelligence/iran-seedworm-elect…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/192.124.216.133/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/192.124.216.133/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/217.71.204.197/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/217.71.204.197/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/57.129.117.19/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/57.129.117.19/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>1509736.xyz</td></tr>
+<tr data-t="domain"><td class=val>192-124-216-133.cprapid.com</td></tr>
+<tr data-t="domain"><td class=val>208471.xyz</td></tr>
+<tr data-t="domain"><td class=val>2317840.xyz</td></tr>
+<tr data-t="domain"><td class=val>235718.xyz</td></tr>
+<tr data-t="domain"><td class=val>330587.xyz</td></tr>
+<tr data-t="domain"><td class=val>4107582.xyz</td></tr>
+<tr data-t="domain"><td class=val>5712038.xyz</td></tr>
+<tr data-t="domain"><td class=val>615782.xyz</td></tr>
+<tr data-t="domain"><td class=val>647193.xyz</td></tr>
+<tr data-t="domain"><td class=val>672806.xyz</td></tr>
+<tr data-t="domain"><td class=val>728451.xyz</td></tr>
+<tr data-t="domain"><td class=val>7564928.xyz</td></tr>
+<tr data-t="domain"><td class=val>7614309.xyz</td></tr>
+<tr data-t="domain"><td class=val>7639201.xyz</td></tr>
+<tr data-t="domain"><td class=val>8734510.xyz</td></tr>
+<tr data-t="domain"><td class=val>8942763.xyz</td></tr>
+<tr data-t="domain"><td class=val>896240.xyz</td></tr>
+<tr data-t="domain"><td class=val>907351.xyz</td></tr>
+<tr data-t="domain"><td class=val>9823501.xyz</td></tr>
+<tr data-t="domain"><td class=val>abjwar.sa.com</td></tr>
+<tr data-t="domain"><td class=val>adfxzzz.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>admin.buyalenovo.com</td></tr>
+<tr data-t="domain"><td class=val>advdser.shop</td></tr>
+<tr data-t="domain"><td class=val>aecbxzbc.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aedfxxv.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aefrgrgs.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aeren.pw</td></tr>
+<tr data-t="domain"><td class=val>aerivon.sa.com</td></tr>
+<tr data-t="domain"><td class=val>aerrxcc.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aet4.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aexbn.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>afstmood.sa.com</td></tr>
+<tr data-t="domain"><td class=val>ahndmna.sa.com</td></tr>
+<tr data-t="domain"><td class=val>akishahin.za.com</td></tr>
+<tr data-t="domain"><td class=val>aldhahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alisahhin.za.com</td></tr>
+<tr data-t="domain"><td class=val>alisnahin.za.com</td></tr>
+<tr data-t="domain"><td class=val>alistahin.za.com</td></tr>
+<tr data-t="domain"><td class=val>aloshahin.za.com</td></tr>
+<tr data-t="domain"><td class=val>alphaplaza.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>alramiqw.sa.com</td></tr>
+<tr data-t="domain"><td class=val>alsbahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alsgahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshabin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshahkn.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshahon.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshanin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshshin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alshzhin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alsihahin.za.com</td></tr>
+<tr data-t="domain"><td class=val>alsnahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>alstahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>amberfaith.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>amberlaser.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>amberplace.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>ancdtaer.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>applunar.space</td></tr>
+<tr data-t="domain"><td class=val>apshahin.ru.com</td></tr>
+<tr data-t="domain"><td class=val>aqualotus.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aquasugar.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aquawater.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aservbt.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>askend.pw</td></tr>
+<tr data-t="domain"><td class=val>astuteifwave.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>astutelunar.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>astuteofsave35.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>astuteonsoft352.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>astuterack192.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>astuteskill273.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>asxzcxx.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>aueenoas.sa.com</td></tr>
+<tr data-t="domain"><td class=val>axbjytr.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>axcbrt.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>ayfkfdyty.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>azur.surf</td></tr>
+<tr data-t="domain"><td class=val>azurefruit167.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>azuremedia.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bafd.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bandeeo.sa.com</td></tr>
+<tr data-t="domain"><td class=val>bandizoo.sa.com</td></tr>
+<tr data-t="domain"><td class=val>barvoioha.za.com</td></tr>
+<tr data-t="domain"><td class=val>barvoioma.za.com</td></tr>
+<tr data-t="domain"><td class=val>barvoipna.za.com</td></tr>
+<tr data-t="domain"><td class=val>barvooina.za.com</td></tr>
+<tr data-t="domain"><td class=val>barvpiona.za.com</td></tr>
+<tr data-t="domain"><td class=val>basicpart.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>basicspine.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>basictrace.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>basket.qpon</td></tr>
+<tr data-t="domain"><td class=val>bayso.store</td></tr>
+<tr data-t="domain"><td class=val>bchtjj.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bdgdr.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>benndlva.za.com</td></tr>
+<tr data-t="domain"><td class=val>benpfit.pw</td></tr>
+<tr data-t="domain"><td class=val>bgcvh.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>biotrona.digital</td></tr>
+<tr data-t="domain"><td class=val>birchhar.icu</td></tr>
+<tr data-t="domain"><td class=val>bjfdsdwa.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bjybn.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bkopatiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bkuyuii.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bkyffuty.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blackmark.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blanktrack.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blazecraft564.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blazeentry.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blazemedia.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bluebyaxis.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blueflask775.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>blueshell.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bluetryspiral.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bmfkorea.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmipatiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmooatiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopagiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopaitks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopatoks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopatuks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopayiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopqtiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopstiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmoptaiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmopztiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bmrklrea.za.com</td></tr>
+<tr data-t="domain"><td class=val>bnhyy.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bnjkioer.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bnopatiks.za.com</td></tr>
+<tr data-t="domain"><td class=val>bnrtvc.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bnry6.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>boldflare817.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>boldplate.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>boorato.sa.com</td></tr>
+<tr data-t="domain"><td class=val>boostpulse.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>boouras.ru.com</td></tr>
+<tr data-t="domain"><td class=val>borakosa.ru.com</td></tr>
+<tr data-t="domain"><td class=val>boreyas.sa.com</td></tr>
+<tr data-t="domain"><td class=val>bourati.za.com</td></tr>
+<tr data-t="domain"><td class=val>bqrvoiona.za.com</td></tr>
+<tr data-t="domain"><td class=val>brainstom.shop</td></tr>
+<tr data-t="domain"><td class=val>bravealltime.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bravebay.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bravepaytruck.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bravetoview.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bravoiona.za.com</td></tr>
+<tr data-t="domain"><td class=val>breezay.surf</td></tr>
+<tr data-t="domain"><td class=val>bridke.cyou</td></tr>
+<tr data-t="domain"><td class=val>brieam.online</td></tr>
+<tr data-t="domain"><td class=val>brightlink.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>brightport316.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>brighttable686.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>briskcheck70.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>briskgrain.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>briskstore.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>briskteam.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>brnageza.sa.com</td></tr>
+<tr data-t="domain"><td class=val>btnagezq.sa.com</td></tr>
+<tr data-t="domain"><td class=val>btnaheza.sa.com</td></tr>
+<tr data-t="domain"><td class=val>btnaneza.sa.com</td></tr>
+<tr data-t="domain"><td class=val>buni.pw</td></tr>
+<tr data-t="domain"><td class=val>buplder.store</td></tr>
+<tr data-t="domain"><td class=val>bvchdtft.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bvcnjtdrt.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bxfshrst.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>bynageza.sa.com</td></tr>
+<tr data-t="domain"><td class=val>c0luselephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cabrmano.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cadmiies.click</td></tr>
+<tr data-t="domain"><td class=val>calmdrill.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>calmnospot.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>candeeo.sa.com</td></tr>
+<tr data-t="domain"><td class=val>candeio.sa.com</td></tr>
+<tr data-t="domain"><td class=val>candizoo.sa.com</td></tr>
+<tr data-t="domain"><td class=val>candteko.za.com</td></tr>
+<tr data-t="domain"><td class=val>cawateoa.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cblocker.ru.com</td></tr>
+<tr data-t="domain"><td class=val>ccblocker.ru.com</td></tr>
+<tr data-t="domain"><td class=val>ccxblocker.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cdblocker.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cdxblocker.sa.com</td></tr>
+<tr data-t="domain"><td class=val>ceagth.space</td></tr>
+<tr data-t="domain"><td class=val>cegaasmore.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cenomgg.za.com</td></tr>
+<tr data-t="domain"><td class=val>cfetavae.click</td></tr>
+<tr data-t="domain"><td class=val>chasedemo.online</td></tr>
+<tr data-t="domain"><td class=val>chauter.pw</td></tr>
+<tr data-t="domain"><td class=val>chgtd.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>chiefengine.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>chiefgaze591.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>chiefpanel124.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>chimastoz.click</td></tr>
+<tr data-t="domain"><td class=val>choire.store</td></tr>
+<tr data-t="domain"><td class=val>civicdish.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>civicrack.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>civilpixel.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>civilquota.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>civilrobot319.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>cleverbase92.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>clevercode.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>clevermake.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>cleverstaff.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>cleverthesync828.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>clipify.pw</td></tr>
+<tr data-t="domain"><td class=val>clluselephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>clpuselephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cluselephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cluselephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cn45n.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>cndhtt.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coalninethread.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>commog.space</td></tr>
+<tr data-t="domain"><td class=val>constrct.sbs</td></tr>
+<tr data-t="domain"><td class=val>cooleagle.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coolgamma853.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coolgleam846.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coolonroot.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>cooltower.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coqtume.online</td></tr>
+<tr data-t="domain"><td class=val>coralindex677.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>coralscreen.mypi.co</td></tr>
+<tr data-t="domain"><td class=val>correlaton.cyou</td></tr>
+<tr data-t="domain"><td class=val>coset.surf</td></tr>
+<tr data-t="domain"><td class=val>costgme.shop</td></tr>
+<tr data-t="domain"><td class=val>cottbu.online</td></tr>
+<tr data-t="domain"><td class=val>couitry.qpon</td></tr>
+<tr data-t="domain"><td class=val>cpl7selephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpl7selephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplhselephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpljselephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cplkselephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplkselephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cplselephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cplselephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplsuelephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluaelephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluelephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluelephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplus3lephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplusdlephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluseelphant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluseephant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluseephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cplusel3phant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cplusel3phant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cplusel4phant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluseldphant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluseldphant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cplusele0hant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselehant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselehpant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselelhant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepahnt.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepgant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepgant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephabt.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephaht.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephajt.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephamt.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan5.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan5.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan6.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephan6.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephanf.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephanf.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephang.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephang.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephanh.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephany.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephnt.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephxnt.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephznt.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselephznt.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepjant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepphant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepuant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepuant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepuant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepyant.ru.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselepyant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselfphant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cplusellephant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselpehant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselpehant.za.com</td></tr>
+<tr data-t="domain"><td class=val>cpluselphant.sa.com</td></tr>
+<tr data-t="domain"><td class=val>creatvie.cfd</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button> &middot; 1,642 more in this batch, in the JSON</p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>248</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G0069" rel="noopener nofollow">attack.mitre.org/groups/G0069</a></li>
+<li><a href="https://blog.cloudflare.com/2026-threat-report/" rel="noopener nofollow">blog.cloudflare.com/2026-threat-report</a></li>
+<li><a href="https://blog.talosintelligence.com/2022/01/iranian-apt-muddywater-targets-turkey.html" rel="noopener nofollow">blog.talosintelligence.com/2022/01/iranian-apt-muddywater-targets-…</a></li>
+<li><a href="https://falconfeeds.io/blogs/the-digital-redoubt-irans-national-information-network-cyber-conflict" rel="noopener nofollow">falconfeeds.io/blogs/the-digital-redoubt-irans-nationa…</a></li>
+<li><a href="https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters" rel="noopener nofollow">hunt.io/blog/iranian-apt-infrastructure-state-a…</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide" rel="noopener nofollow">learn.microsoft.com/en-us/microsoft-365/security/intelligen…</a></li>
+<li><a href="https://reaqta.com/2017/11/muddywater-apt-targeting-middle-east/" rel="noopener nofollow">reaqta.com/2017/11/muddywater-apt-targeting-middle…</a></li>
+<li><a href="https://researchcenter.paloaltonetworks.com/2017/11/unit42-muddying-the-water-targeted-attacks-in-the-middle-east/" rel="noopener nofollow">researchcenter.paloaltonetworks.com/2017/11/unit42-muddying-the-water-targe…</a></li>
+<li><a href="https://www.anomali.com/blog/probable-iranian-cyber-actors-static-kitten-conducting-cyberespionage-campaign-targeting-uae-and-kuwait-government-agencies" rel="noopener nofollow">anomali.com/blog/probable-iranian-cyber-actors-stat…</a></li>
+<li><a href="https://www.cisa.gov/uscert/ncas/alerts/aa22-055a" rel="noopener nofollow">cisa.gov/uscert/ncas/alerts/aa22-055a</a></li>
+<li><a href="https://www.clearskysec.com/wp-content/uploads/2018/11/MuddyWater-Operations-in-Lebanon-and-Oman.pdf" rel="noopener nofollow">clearskysec.com/wp-content/uploads/2018/11/MuddyWater-O…</a></li>
+<li><a href="https://www.clearskysec.com/wp-content/uploads/2019/06/Clearsky-Iranian-APT-group-%E2%80%98MuddyWater%E2%80%99-Adds-Exploits-to-Their-Arsenal.pdf" rel="noopener nofollow">clearskysec.com/wp-content/uploads/2019/06/Clearsky-Ira…</a></li>
+<li><a href="https://www.cybercom.mil/Media/News/Article/2897570/iranian-intel-cyber-suite-of-malware-uses-open-source-tools/" rel="noopener nofollow">cybercom.mil/Media/News/Article/2897570/iranian-inte…</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2018/03/iranian-threat-group-updates-ttps-in-spear-phishing-campaign.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2018/03/iranian-th…</a></li>
+<li><a href="https://www.proofpoint.com/us/blog/threat-insight/around-world-90-days-state-sponsored-actors-try-clickfix" rel="noopener nofollow">proofpoint.com/us/blog/threat-insight/around-world-90-…</a></li>
+<li><a href="https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta450-uses-embedded-links-pdf-attachments-latest-campaign" rel="noopener nofollow">proofpoint.com/us/blog/threat-insight/security-brief-t…</a></li>
+<li><a href="https://www.security.com/threat-intelligence/iran-cyber-threat-activity-us" rel="noopener nofollow">security.com/threat-intelligence/iran-cyber-threat-a…</a></li>
+<li><a href="https://www.symantec.com/blogs/threat-intelligence/seedworm-espionage-group" rel="noopener nofollow">symantec.com/blogs/threat-intelligence/seedworm-espi…</a></li>
+<li><a href="https://www.trendmicro.com/en_us/research/21/c/earth-vetala---muddywater-continues-to-target-organizations-in-t.html" rel="noopener nofollow">trendmicro.com/en_us/research/21/c/earth-vetala---mudd…</a></li>
+<li><a href="https://www.welivesecurity.com/en/eset-research/muddywater-snakes-riverbank/" rel="noopener nofollow">welivesecurity.com/en/eset-research/muddywater-snakes-rive…</a></li>
+<li><a href="https://x.com/k3yp0d/status/1808479675808731632" rel="noopener nofollow">x.com/k3yp0d/status/1808479675808731632</a></li>
+<li><a href="https://www.virustotal.com/gui/file/ffbcafc28eb2e83603479882a17f04c4df0a9a2cbe952724c4279fc347906df0/detection" rel="noopener nofollow">virustotal.com/gui/file/ffbcafc28eb2e83603479882a17f04…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5c939fbb22017040b7e47be4/" rel="noopener nofollow">otx.alienvault.com/pulse/5c939fbb22017040b7e47be4</a></li>
+<li><a href="https://twitter.com/MichalKoczwara/status/1790072660984029583" rel="noopener nofollow">twitter.com/MichalKoczwara/status/17900726609840295…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/bf696397784b22f8e891dd0627dce731f288d14d4791ac5d0a906bc1cbe10de6/detection" rel="noopener nofollow">virustotal.com/gui/file/bf696397784b22f8e891dd0627dce7…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5dd691c33a60512b0675ee35" rel="noopener nofollow">otx.alienvault.com/pulse/5dd691c33a60512b0675ee35</a></li>
+<li><a href="https://aws.amazon.com/cn/blogs/security/new-amazon-threat-intelligence-findings-nation-state-actors-bridging-cyber-and-kinetic-warfare/" rel="noopener nofollow">aws.amazon.com/cn/blogs/security/new-amazon-threat-int…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/7863a1d2d90b2b739663843f977876640a10760896e74f15655fbbefa444ccc2/detection" rel="noopener nofollow">virustotal.com/gui/file/7863a1d2d90b2b739663843f977876…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/8ab83a870b4015ecba44502697d5c078466db2d6cc355c03f0d72f9cb2d57961/detection" rel="noopener nofollow">virustotal.com/gui/file/8ab83a870b4015ecba44502697d5c0…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/cab75e26febd111dd5483666c215bb6b56059f806f83384f864c51ceddd0b1cf/detection" rel="noopener nofollow">virustotal.com/gui/file/cab75e26febd111dd5483666c215bb…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5fb6cd8f40663e290766fdff" rel="noopener nofollow">otx.alienvault.com/pulse/5fb6cd8f40663e290766fdff</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/194.4.50.133/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/194.4.50.133/relations</a></li>
+<li><a href="https://news.sophos.com/en-us/2024/11/20/sophos-mdr-blocks-and-tracks-activity-from-probable-iranian-state-actor-muddywater/" rel="noopener nofollow">news.sophos.com/en-us/2024/11/20/sophos-mdr-blocks-and-…</a></li>
+<li><a href="https://x.com/MalGamy12/status/1990764630625698158" rel="noopener nofollow">x.com/MalGamy12/status/1990764630625698158</a></li>
+<li><a href="https://x.com/k3yp0d/status/1825168139169964466" rel="noopener nofollow">x.com/k3yp0d/status/1825168139169964466</a></li>
+<li><a href="https://twitter.com/Timele9527/status/1134291981176152064" rel="noopener nofollow">twitter.com/Timele9527/status/1134291981176152064</a></li>
+<li><a href="https://www.virustotal.com/gui/file/94278fa01900fdbfb58d2e373895c045c69c01915edc5349cd6f3e5b7130c472/detection" rel="noopener nofollow">virustotal.com/gui/file/94278fa01900fdbfb58d2e373895c0…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/4e8a2b592ed90ed13eb604ea2c29bfb3fbc771c799b3615ac84267b85dd26d1c/detection" rel="noopener nofollow">virustotal.com/gui/file/4e8a2b592ed90ed13eb604ea2c29bf…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5caf93777439561cb57d0e2c" rel="noopener nofollow">otx.alienvault.com/pulse/5caf93777439561cb57d0e2c</a></li>
+<li><a href="https://twitter.com/ShadowChasing1/status/1329247256122322944" rel="noopener nofollow">twitter.com/ShadowChasing1/status/13292472561223229…</a></li>
+</ul>
+<p class=note>208 more, and the report behind every indicator, in <a href="G0069.json">G0069.json</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

@@ -1,0 +1,135 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6057133a-176a-5a7f-a0ca-8ef5a2054d43",
+        "value": "easybussy.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "728b7006-4d44-5717-9f8f-52337f731bdc",
+        "value": "icecoldwind.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "585445cd-ae00-5b88-9bf5-36b4a2a5f9ac",
+        "value": "invuln.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "28dc6bff-2d4c-5d74-871c-cbe98ed82ad9",
+        "value": "lizzardsnails.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6901fc7a-b3c0-5bc7-a0ef-510821c8e79e",
+        "value": "mgutu-vf.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a4bd3690-2ed4-531b-bbe6-ce65f1dfba08",
+        "value": "railradman.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1770305391",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ca786d5-72cd-5038-b7d6-d9a15871d641",
+        "value": "tributarieshand.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d1177b50-ad2b-5aa2-a15b-9aa36aa2cbae",
+        "value": "urbantvpn.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4c3a1cc1-9fa0-5f44-b3eb-f4c444106885",
+        "value": "wholewell.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1770305391",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "992d31c3-7760-5cd2-b8bb-36a434fa0db2",
+        "value": "yandecx.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5cb4cfbe-de51-5762-8bc3-918adb385dd5",
+        "value": "213.165.60.118:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "43d37fc8-318a-5458-84bc-47bbdcfe495c",
+        "value": "213.165.60.118:22:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "e3c1590a-9ab8-5348-aca3-32bfb0ac266d",
+        "value": "http://213.165.60.118"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:boteam"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BOTEAM",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "b98b39f4-dc68-5061-ae1f-ae2178cf5e0c"
+  }
+}

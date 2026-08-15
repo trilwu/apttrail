@@ -1,0 +1,2970 @@
+{
+  "aliases": [
+    "Ghostwriter",
+    "HALFSHELL",
+    "Influence Activity",
+    "PUSHCHA",
+    "RADIOSTAR",
+    "Storm-0257",
+    "TA445",
+    "UAC-0057",
+    "UAC-0100",
+    "UNC1151",
+    "VIDEOKILLER",
+    "WhiteLynx",
+    "frostyneighbor",
+    "oysterblues",
+    "oysterfresh",
+    "oystershuck",
+    "picassoloader"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 605,
+    "ipv4": 5,
+    "url": 4,
+    "url_path": 6
+  },
+  "first_seen": {
+    "domain": {
+      "a1si.icu": "2026-05-27",
+      "a3ufz.xsjdsb.icu": "2026-05-27",
+      "account-inbox.online": "2021-04-28",
+      "account-login.top": "2023-01-03",
+      "account-noreply.space": "2023-01-03",
+      "account-passports.top": "2023-01-03",
+      "account.no-replay-notification.ga": "2022-01-15",
+      "accounts-facebook.com-pastas.top": "2022-07-20",
+      "accounts-gmail.com-check.online": "2023-01-03",
+      "accounts-gmail.com-login.space": "2023-01-03",
+      "accounts-gmail.com-pastas.top": "2022-07-20",
+      "accounts-group.com-pastas.top": "2022-07-20",
+      "accounts-inbox.ml": "2021-04-28",
+      "accounts-login.top": "2023-01-03",
+      "accounts-mail.site": "2023-01-03",
+      "accounts-passport.top": "2023-01-03",
+      "accounts-secure.com-firewall.online": "2023-01-03",
+      "accounts-support.com-account.website": "2022-01-15",
+      "accounts-support.net-account.space": "2022-01-15",
+      "accounts-telekom.online": "2021-04-28",
+      "accounts-ukr.net-account.space": "2022-01-15",
+      "accounts-ukr.net-verification.online": "2022-01-15",
+      "accounts-verification.net-account.space": "2022-01-15",
+      "accounts-verify.space": "2023-01-03",
+      "accounts.safe-mail.space": "2023-01-03",
+      "accounts.secure-ua.site": "2023-01-03",
+      "accounts.secure-ua.website": "2022-03-08",
+      "accounts.verify-email.space": "2023-01-03",
+      "accountsverify.top": "2022-05-04",
+      "acount-pasport.site": "2023-01-03",
+      "acount-passport.site": "2023-01-03",
+      "acounts.net-verification.online": "2022-01-15",
+      "advancedaisolutionsforeveryone.a1si.icu": "2026-05-27",
+      "aff-gos.top": "2022-07-22",
+      "agelessinvesting.xyz": "2026-01-02",
+      "ais-gos.top": "2022-05-15",
+      "akademia-mil.space": "2022-02-26",
+      "alertapp.icu": "2026-05-27",
+      "alerteddatalistsclients.alertapp.icu": "2026-05-27",
+      "alexavegas.icu": "2026-05-14",
+      "algsat.icu": "2026-05-14",
+      "all-ukraine.top": "2022-07-22",
+      "alls-gos.top": "2022-07-22",
+      "americandeliriumsociety.shop": "2026-01-02",
+      "ams-gos.top": "2022-10-24",
+      "ao-opros.top": "2022-05-15",
+      "api.passport-yandex.ru": "2022-01-15",
+      "aplikacje.ron-mil.space": "2022-03-02",
+      "attachment-storage-asset-static.needbinding.icu": "2026-05-14",
+      "authorization-inbox.site": "2022-02-26",
+      "awa-opros.top": "2022-05-15",
+      "aws-opros.top": "2022-07-22",
+      "backstagemerch.shop": "2024-07-24",
+      "beez-gos.top": "2022-07-22",
+      "bel-oprosov.top": "2022-10-24",
+      "belaru-opros.top": "2022-10-24",
+      "bell-gos.club": "2022-10-24",
+      "besh-opros.top": "2022-07-22",
+      "best-seller.lavanille.buzz": "2026-05-14",
+      "bezpieczenstwo-danych.website": "2023-01-03",
+      "bezpieczenstwo.wp-pl.eu": "2022-01-15",
+      "bhwbehb.wecwe.com": "2023-01-03",
+      "big-uah.club": "2022-09-09",
+      "bigmir-net.site": "2022-02-26",
+      "bigmir.space": "2022-02-25",
+      "bild-gos.club": "2022-10-24",
+      "bind-gos.cc": "2022-10-24",
+      "biz-gos.top": "2022-10-24",
+      "blic-opros.top": "2022-07-22",
+      "bokinteria.pl-kontrola-bezpieczenstwa.space": "2023-01-03",
+      "bokinteria.weryfikacja-konta.pw": "2023-01-03",
+      "book-happy.needbinding.icu": "2026-05-14",
+      "boom-gos.club": "2022-10-24",
+      "bourns.space": "2023-06-16",
+      "bryndonovan.shop": "2024-07-26",
+      "bui-gos.top": "2022-07-22",
+      "canada-deposit-gst.com": "2022-02-26",
+      "canada-gst-deposit.com": "2022-02-26",
+      "carpetmarker.pw": "2023-07-15",
+      "cgdirector.icu": "2026-05-27",
+      "chaptercheats.shop": "2024-07-26",
+      "cheap-gos.club": "2022-10-24",
+      "chis-gos.top": "2022-08-30",
+      "ci-uah.xyz": "2022-10-24",
+      "clairedeco.shop": "2024-07-26",
+      "cloud-security.ggpht.ml": "2020-02-22",
+      "com-account.website": "2021-04-28",
+      "com-firewall.online": "2023-01-03",
+      "com-login.space": "2023-01-03",
+      "com-pastas.top": "2022-07-20",
+      "com-validate.site": "2021-05-13",
+      "com-validation.top": "2022-05-04",
+      "com-verificate.top": "2023-01-03",
+      "com-verification.online": "2023-01-03",
+      "com-verification.top": "2022-05-04",
+      "com-verify.site": "2021-05-13",
+      "command-email.online": "2022-02-26",
+      "compensatia.top": "2022-10-24",
+      "compensation-ukr.com": "2022-07-20",
+      "compensations-ukrain.bar": "2022-07-20",
+      "compensationukr.com": "2022-07-20",
+      "confirm.acount-pasport.site": "2023-01-03",
+      "confirm.id-bigmir.site": "2023-01-03",
+      "connecticutchildrens.shop": "2024-07-26",
+      "content.google-com.online": "2022-01-15",
+      "cookie-firewall.com-login.space": "2023-01-03",
+      "cookingwithbooks.shop": "2026-01-02",
+      "credentials-telekom.online": "2021-04-28",
+      "creditals-email.space": "2022-02-25",
+      "creditals-mirohost.space": "2022-03-05",
+      "croasian-connection.com": "2022-03-02",
+      "csp.google-com.online": "2022-01-15",
+      "curseforge.icu": "2026-01-02",
+      "dc-f87c0aa063b8.ron-mil-pl.space": "2022-01-15",
+      "del-gos.top": "2022-07-22",
+      "demo000.space": "2022-03-02",
+      "demo001.space": "2022-03-02",
+      "demo002.space": "2022-03-02",
+      "demo003.space": "2022-03-02",
+      "demo004.space": "2022-03-02",
+      "demo005.space": "2022-03-02",
+      "demo006.space": "2022-03-02",
+      "demo007.space": "2022-03-02",
+      "demo008.space": "2022-03-02",
+      "demo009.space": "2022-03-02",
+      "dentyfikacja-uzytkownika.space": "2023-01-03",
+      "departament-bezpieczenstwa.space": "2023-01-03",
+      "dess-opros.top": "2022-10-24",
+      "disneyfoodblog.shop": "2024-07-26",
+      "dopomog-uah.top": "2022-10-24",
+      "dopomog-ukr.top": "2022-10-24",
+      "drive.google-com.online": "2022-01-15",
+      "ds-opros.top": "2022-07-22",
+      "dzial-bezpieczenstwa.space": "2023-01-03",
+      "e.mail.ru.net-accounts-mail.ru": "2022-01-15",
+      "eartheclipse.shop": "2024-07-26",
+      "easiestnewsfromourpointofview.algsat.icu": "2026-05-14",
+      "ec-compensation.xyz": "2022-08-30",
+      "edopomogaonline.yolasite.com": "2022-08-30",
+      "email-verify.top": "2022-05-04",
+      "empoweringparents.shop": "2024-07-24",
+      "emsun-mobile.online": "2022-03-02",
+      "erinekenney.com": "2022-08-30",
+      "eti-opros.top": "2022-05-15",
+      "eu-opros.top": "2022-05-15",
+      "europadonnaireland.org": "2022-07-20",
+      "ev-gos.top": "2022-05-15",
+      "ever-gos.top": "2022-10-24",
+      "everything-everywhere.at.ply.gg": "2023-07-15",
+      "everythingandthedog.shop": "2026-01-02",
+      "ew-gos.top": "2022-05-15",
+      "exprentis.com": "2023-01-03",
+      "facebook.com-account.website": "2022-01-15",
+      "facebook.com-validation.top": "2022-05-04",
+      "fad-gos.top": "2022-07-22",
+      "fam-gos.top": "2022-07-22",
+      "farm-opros.top": "2022-10-24",
+      "faw-opros.top": "2022-07-22",
+      "fc.google-com.online": "2022-01-15",
+      "fear-gos.top": "2022-10-24",
+      "filial-ukr.top": "2022-10-24",
+      "financial-gst-canada.com": "2022-02-26",
+      "fiw-gos.top": "2022-07-22",
+      "foampartyhats.shop": "2024-07-26",
+      "fonts.google-com.online": "2022-01-15",
+      "for-gos.top": "2022-05-15",
+      "fori-opros.top": "2022-05-15",
+      "foundpomoshi.com": "2022-07-20",
+      "frivol.space": "2023-07-15",
+      "funwithme.pw": "2023-09-01",
+      "fuz-opros.top": "2022-10-24",
+      "gen-gos.top": "2022-10-24",
+      "ggpht.ml": "2020-02-22",
+      "gh-opros.top": "2022-07-22",
+      "gigs-gos.top": "2022-10-24",
+      "gmx.net-account.online": "2022-01-15",
+      "good-opros.top": "2022-10-24",
+      "google-com.online": "2021-04-28",
+      "google.accounts.verify.no-reply.space": "2023-01-03",
+      "google.com-account.website": "2022-01-15",
+      "google.com-firewall.online": "2023-01-03",
+      "google.verifyprofiles.space": "2023-01-03",
+      "gos-kiev.top": "2022-10-24",
+      "gov-ua.net": "2022-03-14",
+      "gov-ukraine.club": "2022-09-09",
+      "green-gos.club": "2022-10-24",
+      "group-rambler.site": "2023-01-03",
+      "grupa-mailowa.weryfikacja-konta.link": "2023-01-03",
+      "grupa-pocztowa.online": "2023-01-03",
+      "gst-canada-gov.com": "2022-02-26",
+      "hardingtwominuterule.com": "2022-08-30",
+      "helpzzfound.site": "2022-07-20",
+      "hinesafar.sardk.icu": "2026-05-14",
+      "hssenglish.pw": "2023-07-15",
+      "i-ua.ml": "2023-01-03",
+      "i-ua.space": "2023-01-03",
+      "i.ua-login.top": "2023-01-03",
+      "i.ua-passport.online": "2022-01-15",
+      "i.ua-passport.site": "2023-01-03",
+      "i.ua-passport.space": "2022-02-25",
+      "i.ua-passport.top": "2022-03-08",
+      "iat.com.ua": "2023-01-03",
+      "id-bigmir.site": "2023-01-03",
+      "id-mail.site": "2023-01-03",
+      "id.bigmir.space": "2022-02-25",
+      "id.verify-mail.space": "2023-01-03",
+      "identyfikacja-uzytkownika.link": "2023-01-03",
+      "idsso.ukroboronprom-com.site": "2022-01-15",
+      "ifo-jupyter.natter.icu": "2026-05-14",
+      "ikitas.shop": "2024-07-26",
+      "ili-gos.top": "2022-10-24",
+      "inbox-admin.site": "2021-04-28",
+      "ind-gos.top": "2022-10-24",
+      "interia-pl.site": "2021-04-28",
+      "interia-pl.website": "2021-04-28",
+      "interia.pl-identyfikacja-uzytkownika.pw": "2023-01-03",
+      "interia.poczta-mailowa.top": "2023-01-03",
+      "interia.site": "2022-07-20",
+      "interia.weryfikacja-poczty.space": "2023-01-03",
+      "interia.weryfikacja-uzytkownika.site": "2023-01-03",
+      "interii.konto-verify.space": "2023-01-03",
+      "inv-gos.top": "2022-10-24",
+      "it-opros.top": "2022-10-24",
+      "jackbenimblekids.shop": "2024-07-26",
+      "je-gos.top": "2022-07-22",
+      "jel-gos.top": "2022-05-15",
+      "jez-ukr.top": "2022-10-24",
+      "jo-opros.top": "2022-05-15",
+      "junior-gos.club": "2022-10-24",
+      "kebhana.site": "2023-07-15",
+      "kel-gos.top": "2022-07-22",
+      "kemda.eu": "2023-01-03",
+      "kingarthurbaking.shop": "2024-07-26",
+      "kitchengardenseeds.icu": "2026-01-02",
+      "kog-opros.top": "2022-07-22",
+      "kohhd.com": "2022-07-20",
+      "kom-gos.top": "2022-07-22",
+      "kon-opros.top": "2022-07-22",
+      "kont-gos.top": "2022-10-24",
+      "konto-onet.site": "2023-01-03",
+      "konto-verify.space": "2022-02-26",
+      "konto.onet-pl.online": "2022-01-15",
+      "konto.weryfikacja-uzytkownika.link": "2023-01-03",
+      "konto.weryfikacja-uzytkownika.online": "2023-01-03",
+      "konto.weryfikacja-uzytkownika.pw": "2023-01-03",
+      "kontrola-bezpieczenstwa.link": "2023-01-03",
+      "kontrola-bezpieczenstwa.pw": "2023-01-03",
+      "kontrola-bezpieczenstwa.site": "2023-01-03",
+      "kontrola-bezpieczenstwa.top": "2023-01-03",
+      "kontrola-bezpieczenstwa.walidacja-uzytkownika.pw": "2023-01-03",
+      "kontrola-konta.online": "2023-01-03",
+      "kontrola-mailowa.top": "2023-01-03",
+      "kontrola-poczty.link": "2023-01-03",
+      "kontrola-poczty.pw": "2023-01-03",
+      "kontrola-poczty.site": "2022-03-05",
+      "kontrola-poczty.space": "2022-02-26",
+      "kontrola-poczty.top": "2022-07-20",
+      "korrespondentnet.webflow.io": "2022-08-30",
+      "krebas.lt": "2023-01-03",
+      "kurioworld.cf": "2023-01-03",
+      "kurioworld.gq": "2023-08-29",
+      "lansdownecentre.shop": "2024-07-26",
+      "lauramcinerney.shop": "2024-07-24",
+      "lavanille.buzz": "2026-05-14",
+      "lin-gos.top": "2022-10-24",
+      "lnk.ukr-compens.xyz": "2022-08-30",
+      "login-inbox.online": "2021-04-28",
+      "login-mail.online": "2021-04-28",
+      "login-telekom.online": "2021-04-28",
+      "login-verification.top": "2022-03-30",
+      "login-verify.online": "2021-04-28",
+      "login-verify.top": "2022-03-30",
+      "login.creditals-email.space": "2022-03-08",
+      "login.meta-ua.top": "2023-01-03",
+      "login.passport-verify.top": "2023-01-03",
+      "login.verification-email.space": "2023-01-03",
+      "login.verify-mail.space": "2023-01-03",
+      "logowanie-pl.site": "2021-04-28",
+      "logowanie.identyfikacja-uzytkownika.link": "2023-01-03",
+      "logowanie.kontrola-poczty.link": "2023-01-03",
+      "los-gos.top": "2022-10-24",
+      "lt-facebook.com-verification.top": "2022-05-04",
+      "lt-meta.com-verification.top": "2022-05-04",
+      "lt-microsoftgroup.serure-email.online": "2022-05-04",
+      "mail-profiles.space": "2023-01-03",
+      "mail.mil-gov.space": "2023-01-03",
+      "mail.passport-yandex.ru": "2022-01-15",
+      "mail.ru.net-accounts-mail.ru": "2022-01-15",
+      "mail.secured-auth.cf": "2022-01-15",
+      "medicalnewstoday.shop": "2024-07-26",
+      "medpagetoday.icu": "2026-01-02",
+      "meta-l.space": "2023-04-19",
+      "meta-log.site": "2023-01-03",
+      "meta-ua.online": "2021-04-28",
+      "meta-ua.space": "2022-02-25",
+      "meta-ua.top": "2023-01-03",
+      "mickeymousegamesdealer.alexavegas.icu": "2026-05-14",
+      "microsoft.com-account.website": "2022-01-15",
+      "microsoftonline.email-verify.top": "2022-05-04",
+      "mil-gov.space": "2022-02-25",
+      "mil-secure.site": "2021-05-27",
+      "mingxing.pw": "2023-07-15",
+      "mirohost-creditals.space": "2022-02-26",
+      "mirohost.online": "2022-03-05",
+      "mirohost.site": "2022-02-26",
+      "mirrohost.space": "2022-02-25",
+      "mod-mil.online": "2022-03-05",
+      "mod-mil.site": "2022-03-05",
+      "moonlightmixes.shop": "2024-07-26",
+      "mygraphbook.com": "2022-08-30",
+      "myua-compensations.xyz": "2022-08-30",
+      "nama-belakang.nebao.icu": "2026-05-14",
+      "natter.icu": "2026-05-14",
+      "nebao.icu": "2026-05-14",
+      "needbinding.icu": "2026-05-14",
+      "nes-gos.top": "2022-07-22",
+      "net-account.online": "2021-04-28",
+      "net-account.space": "2021-04-28",
+      "net-accounts-mail.ru": "2021-04-28",
+      "net-support.site": "2021-04-28",
+      "net-verification.online": "2021-04-28",
+      "net-verify.site": "2021-04-28",
+      "net-verify.website": "2021-04-28",
+      "net.ru-passport.online": "2022-01-15",
+      "nis-opros.top": "2022-07-22",
+      "no-replay-notification.ga": "2021-04-28",
+      "no-replay.space": "2023-01-03",
+      "no-reply.accounts-verify.space": "2023-01-03",
+      "no-reply.space": "2023-01-03",
+      "no-reply.verifyprofiles.space": "2023-01-03",
+      "noreply.accountsverify.top": "2022-05-04",
+      "nowar00.site": "2022-03-02",
+      "nowar22.site": "2022-03-02",
+      "nowar44.site": "2022-03-02",
+      "nowar66.site": "2022-03-02",
+      "nowar88.site": "2022-03-02",
+      "nuo-gos.top": "2022-07-22",
+      "off.ukr-compens.xyz": "2022-08-30",
+      "officevibe.pw": "2023-09-01",
+      "offs-opros.top": "2022-07-22",
+      "okonto.kontrola-bezpieczenstwa.pw": "2023-01-03",
+      "okonto.kontrola-poczty.pw": "2023-01-03",
+      "omp-gos.top": "2022-07-22",
+      "onet-pl.online": "2021-04-28",
+      "onlinereactivation-service.com": "2022-02-26",
+      "oon24opros.yolasite.com": "2022-08-30",
+      "op-pl.site": "2021-05-06",
+      "passport-log.online": "2023-04-19",
+      "passport-login.top": "2023-01-03",
+      "passport-ua.site": "2023-04-19",
+      "passport-verify.top": "2023-01-03",
+      "passport-yandex.ru": "2021-04-28",
+      "passport.command-email.online": "2022-02-26",
+      "passport.i-ua.space": "2023-01-03",
+      "passport.inbox.lt.accounts-inbox.ml": "2022-01-15",
+      "passport.inbox.lv.accounts-inbox.ml": "2022-01-15",
+      "passport.login-verify.top": "2023-01-03",
+      "passport.meta-log.site": "2023-01-03",
+      "passport.meta-ua.top": "2023-01-03",
+      "passport.secure-ua.pw": "2023-01-03",
+      "passport.secure-ua.space": "2023-01-03",
+      "passportlogin.top": "2023-01-03",
+      "pay.uacompensation.xyz": "2022-07-20",
+      "pay.ukr-compens.xyz": "2022-08-30",
+      "payeurope.top": "2022-10-24",
+      "payform.top": "2022-10-24",
+      "paysys.top": "2022-10-24",
+      "peer-gos.top": "2022-07-20",
+      "pen-gos.top": "2022-07-22",
+      "penandthepad.shop": "2024-07-26",
+      "pesthacks.icu": "2026-01-02",
+      "petapixel.fun": "2024-07-26",
+      "physio-pedia.shop": "2024-07-26",
+      "pigglywigglystores.shop": "2026-01-02",
+      "pis.kontrola-bezpieczenstwa.site": "2023-01-03",
+      "pl-identyfikacja-uzytkownika.pw": "2023-01-03",
+      "pl-kontrola-bezpieczenstwa.space": "2023-01-03",
+      "plklll.site": "2023-01-03",
+      "poczta-mailowa.top": "2023-01-03",
+      "poczta.bezpieczenstwo-danych.website": "2023-01-03",
+      "poczta.departament-bezpieczenstwa.space": "2023-01-03",
+      "poczta.identyfikacja-uzytkownika.space": "2023-01-03",
+      "poczta.interia-pl.site": "2022-01-15",
+      "poczta.kontrola-bezpieczenstwa.link": "2023-01-03",
+      "poczta.kontrola-bezpieczenstwa.top": "2023-01-03",
+      "poczta.kontrola-konta.online": "2023-01-03",
+      "poczta.kontrola-mailowa.top": "2023-01-03",
+      "poczta.ron-mil-pl.site": "2022-01-15",
+      "poczta.ron-mil-pl.space": "2022-01-15",
+      "poczta.safe-onet.space": "2023-01-03",
+      "poczta.sprawdzanie-zabezpieczen.space": "2023-01-03",
+      "poczta.walidacja-konta.site": "2023-01-03",
+      "poczta.walidacja-uzytkownika.pw": "2023-01-03",
+      "poczta.weryfikacja-okonto.online": "2023-01-03",
+      "poczta.weryfikacja-okonto.site": "2023-01-03",
+      "poczta.wp-agreements.online": "2022-01-15",
+      "poczta.wp-firewall.website": "2023-01-03",
+      "poczta.wp-pl-potwierdz-dostep.site": "2022-01-15",
+      "poczta.wp-pl.eu": "2022-01-15",
+      "poland-survey.top": "2022-10-24",
+      "pollsk-surv.top": "2022-10-24",
+      "polsk-pay.top": "2022-10-24",
+      "polsk-surv.top": "2022-07-22",
+      "pomoc.sprawdzanie-zabezpieczen.space": "2023-01-03",
+      "pomoc.weryfikacja-okonto.online": "2023-01-03",
+      "poslugi-online.top": "2022-10-24",
+      "poslugi-ukr.top": "2022-10-24",
+      "post.mil-gov.space": "2022-03-08",
+      "post.verify-mail.space": "2023-01-03",
+      "postmilgov.ua-login.site": "2022-01-15",
+      "potwierdzenia.net-support.site": "2022-01-15",
+      "potwierdzenie.konto-onet.site": "2023-01-03",
+      "potwierdzenie.wp-pl.eu": "2022-01-15",
+      "pro-gos.top": "2022-08-30",
+      "productionsamplesoftheyear.cgdirector.icu": "2026-05-27",
+      "profiles-login.top": "2023-01-03",
+      "promo-opros.top": "2022-07-22",
+      "pub-gos.top": "2022-10-24",
+      "punandjokes.icu": "2026-01-02",
+      "rambler-profile.site": "2022-03-08",
+      "rambler.account-noreply.space": "2023-01-03",
+      "rb-vopros.top": "2022-10-24",
+      "rbi-opros.top": "2022-10-24",
+      "rbj-survey.top": "2022-10-24",
+      "rbq-opros.top": "2022-10-24",
+      "rbs-opros.top": "2022-10-24",
+      "rbt-opros.top": "2022-10-24",
+      "ren-gos.top": "2022-07-22",
+      "rivierafamily.com": "2022-07-20",
+      "ron-mil-pl.site": "2021-04-28",
+      "ron-mil-pl.space": "2021-04-28",
+      "ron-mil.space": "2022-02-26",
+      "rtrrsfgsfg.site": "2023-01-03",
+      "ru-passport.online": "2021-04-28",
+      "ru.net-accounts-mail.ru": "2022-01-15",
+      "rustyquill.top": "2026-01-02",
+      "rwegfwfe.site": "2023-01-03",
+      "safe-mail.space": "2023-01-03",
+      "safe-onet.online": "2022-07-20",
+      "safe-onet.space": "2023-01-03",
+      "sardk.icu": "2026-05-14",
+      "sciencealert.shop": "2026-01-02",
+      "sdfavavvvv.site": "2023-01-03",
+      "secure-firewall.site": "2021-06-11",
+      "secure-ua.pw": "2023-01-03",
+      "secure-ua.site": "2023-01-03",
+      "secure-ua.space": "2022-03-05",
+      "secure-ua.top": "2022-03-30",
+      "secure-ua.website": "2022-03-08",
+      "secured-auth.cf": "2022-01-15",
+      "security.passportlogin.top": "2023-01-03",
+      "sellmyhousequickly.website": "2023-07-15",
+      "semanticscholar.shop": "2024-07-26",
+      "serure-email.online": "2022-05-04",
+      "service.kontrola-poczty.space": "2023-01-03",
+      "shinesafar.sardk.icu": "2026-05-14",
+      "shpsale.ukroboronprom.online": "2022-01-15",
+      "sign-in-inbox.site": "2022-02-26",
+      "signin-telekom.online": "2021-04-28",
+      "simplifymedia.pw": "2023-07-15",
+      "sio-gos.top": "2022-10-24",
+      "socis.cf": "2022-01-15",
+      "sprawdzanie-konta.space": "2022-02-26",
+      "sprawdzanie-zabezpieczen.space": "2023-01-03",
+      "state-uah.top": "2022-10-24",
+      "stopwar11.site": "2022-03-02",
+      "stopwar33.site": "2022-03-02",
+      "stopwar55.site": "2022-03-02",
+      "stopwar77.site": "2022-03-02",
+      "stopwar99.site": "2022-03-02",
+      "subo-ukr.top": "2022-10-24",
+      "sweetgeorgiayarns.online": "2026-01-02",
+      "system-pocztowy.space": "2023-01-03",
+      "system.walidacja-konta.link": "2023-01-03",
+      "system.walidacja-konta.pw": "2023-01-03",
+      "tas-gos.top": "2022-05-15",
+      "taskandpurpose.icu": "2026-01-02",
+      "tax-compensation.xyz": "2022-08-30",
+      "tax-compenses.xyz": "2022-08-30",
+      "taysbb.ru": "2023-01-03",
+      "tense-gos.top": "2022-05-15",
+      "ti-opros.top": "2022-10-24",
+      "tio-gos.top": "2022-05-15",
+      "tk99.gq": "2022-01-15",
+      "top-opros.top": "2022-05-15",
+      "topibuzz.space": "2023-09-01",
+      "trust-gos.top": "2022-10-24",
+      "turbo-gos.top": "2022-07-22",
+      "tvasahi.online": "2022-03-08",
+      "twisterplussize.shop": "2024-07-26",
+      "ua-agreements.online": "2021-04-28",
+      "ua-compens.top": "2022-08-30",
+      "ua-compensation.top": "2022-08-30",
+      "ua-compensations.xyz": "2022-08-30",
+      "ua-compenses.top": "2022-08-30",
+      "ua-email.press": "2022-03-02",
+      "ua-login.site": "2021-04-28",
+      "ua-login.top": "2022-03-30",
+      "ua-opros.top": "2022-07-22",
+      "ua-passport.online": "2021-04-28",
+      "ua-passport.site": "2022-02-26",
+      "ua-passport.space": "2022-02-25",
+      "ua-passport.top": "2022-03-08",
+      "ua-taxes-compens.xyz": "2022-08-30",
+      "uabayrakua.com": "2022-08-30",
+      "uacompensation.xyz": "2022-07-20",
+      "uadop.webflow.io": "2022-08-30",
+      "uah-sitez.top": "2022-10-24",
+      "uam-compensation.xyz": "2022-08-30",
+      "uatax-compens.xyz": "2022-08-30",
+      "uatax-compenses.xyz": "2022-08-30",
+      "ubsbha.ru": "2023-01-03",
+      "ui-opros.top": "2022-05-15",
+      "ukr-compens.top": "2022-10-24",
+      "ukr-compens.xyz": "2022-08-30",
+      "ukr-dopomog.top": "2022-10-24",
+      "ukr-service.top": "2022-07-22",
+      "ukr-siter.top": "2022-07-22",
+      "ukr-uslugi.top": "2022-10-24",
+      "ukr.account-login.top": "2023-01-03",
+      "ukrahelpforall.ucraft.site": "2022-08-30",
+      "ukrainebayra.com": "2022-08-30",
+      "ukrainecenter.yolasite.com": "2022-08-30",
+      "ukroboronprom-com.site": "2021-04-28",
+      "ukroboronprom.online": "2021-04-28",
+      "uni-gos.top": "2022-07-22",
+      "us-news.online": "2022-03-02",
+      "usluga.kontrola-poczty.top": "2023-01-03",
+      "utahsadventurefamily.shop": "2024-07-26",
+      "uz-gos.top": "2022-05-15",
+      "veirfy-ua.space": "2023-01-03",
+      "verification-email.space": "2022-03-05",
+      "verify-email.space": "2022-02-25",
+      "verify-mail.space": "2022-02-25",
+      "verify-ua.online": "2021-04-28",
+      "verify-ua.site": "2021-04-28",
+      "verify-ua.space": "2021-05-06",
+      "verify.account-inbox.online": "2022-01-15",
+      "verify.account-login.top": "2023-01-03",
+      "verify.accounts-login.top": "2023-01-03",
+      "verify.accounts-mail.site": "2023-01-03",
+      "verify.accounts-passport.top": "2023-01-03",
+      "verify.acount-passport.site": "2023-01-03",
+      "verify.group-rambler.site": "2023-01-03",
+      "verify.login-mail.online": "2022-01-15",
+      "verify.login-telekom.online": "2022-01-15",
+      "verify.mail-profiles.space": "2023-01-03",
+      "verify.no-replay.space": "2023-01-03",
+      "verify.passport-login.top": "2023-01-03",
+      "verify.passportlogin.top": "2023-01-03",
+      "verify.profiles-login.top": "2023-01-03",
+      "verify.rambler-profile.site": "2022-03-08",
+      "verify.signin-telekom.online": "2022-01-15",
+      "verifyprofiles.space": "2023-01-03",
+      "vilni-ludi.ukroboronprom.online": "2022-01-15",
+      "vuxner.com": "2022-03-14",
+      "walidacja-konta.link": "2023-01-03",
+      "walidacja-konta.pw": "2023-01-03",
+      "walidacja-konta.site": "2023-01-03",
+      "walidacja-konta.space": "2022-07-20",
+      "walidacja-poczty.space": "2022-02-26",
+      "walidacja-uzytkownika.pw": "2023-01-03",
+      "walidacja-uzytkownika.space": "2022-02-26",
+      "walidacja-uzytkownika.website": "2022-02-26",
+      "weavesilk.space": "2024-07-26",
+      "web-camera.live": "2022-03-02",
+      "webmail.login-verify.online": "2022-01-15",
+      "webmail.meta-ua.online": "2022-01-15",
+      "wers-gos.top": "2022-05-15",
+      "weryfikacja-konta.link": "2023-01-03",
+      "weryfikacja-konta.pw": "2023-01-03",
+      "weryfikacja-konta.space": "2022-02-26",
+      "weryfikacja-okonto.online": "2023-01-03",
+      "weryfikacja-okonto.site": "2023-01-03",
+      "weryfikacja-poczty.space": "2022-02-26",
+      "weryfikacja-uzytkownika.link": "2023-01-03",
+      "weryfikacja-uzytkownika.online": "2023-01-03",
+      "weryfikacja-uzytkownika.pw": "2023-01-03",
+      "weryfikacja-uzytkownika.site": "2022-07-20",
+      "weryfikacja-uzytkownika.top": "2022-07-20",
+      "weryfikacja-uzytkownika.website": "2022-02-26",
+      "weryfikacja.system-pocztowy.space": "2023-01-03",
+      "wi-opros.top": "2022-05-15",
+      "windacarmelita.pw": "2023-08-31",
+      "wirelessequixtranscan247.com": "2022-02-26",
+      "wirtualna.grupa-pocztowa.online": "2023-01-03",
+      "wm-gos.top": "2022-05-15",
+      "wojskowa.akademia-mil.space": "2023-01-03",
+      "wordrow.website": "2023-07-15",
+      "world-opros.top": "2022-05-15",
+      "wp-agreements.online": "2021-04-28",
+      "wp-firewall.website": "2023-01-03",
+      "wp-pl-potwierdz-dostep.site": "2021-04-28",
+      "wp-pl.eu": "2021-04-28",
+      "ws-gos.top": "2022-05-15",
+      "wuzhenfestival.site": "2023-07-15",
+      "xbeta.online": "2022-03-07",
+      "xsjdsb.icu": "2026-05-27",
+      "yandex.ru-passport.online": "2022-01-15",
+      "ye-gos.top": "2022-05-15",
+      "yes-uah.top": "2022-10-24",
+      "yi-gos.top": "2022-05-15",
+      "yotsubasociety.website": "2023-06-16",
+      "zashita.ukroboronprom.online": "2022-01-15",
+      "zelensky-official.top": "2022-10-24"
+    },
+    "ipv4": {
+      "109.237.111.251:8880": "2022-03-08",
+      "185.175.158.27:8443": "2022-03-07",
+      "88.99.104.179:1985": "2022-01-15",
+      "88.99.132.118:1985": "2020-06-14",
+      "91.142.77.157:8880": "2022-03-08"
+    },
+    "url": {
+      "http://157.230.104.79": "2022-03-05",
+      "http://45.61.137.231": "2022-03-05",
+      "http://84.32.188.141": "2022-02-26",
+      "http://84.32.188.96": "2022-02-28"
+    },
+    "url_path": {
+      "/update/microsoft_corp": "2022-01-15",
+      "/update/microsoft_corpsh": "2020-06-14",
+      "/update/microsoft_corpshd": "2020-06-14",
+      "/update/microsoft_crp": "2022-01-15",
+      "/update/microsoft_crpn": "2022-01-15",
+      "/win_update/upgrade": "2022-01-15"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "agelessinvesting.xyz": "at-or-before",
+      "americandeliriumsociety.shop": "at-or-before",
+      "cookingwithbooks.shop": "at-or-before",
+      "curseforge.icu": "at-or-before",
+      "everythingandthedog.shop": "at-or-before",
+      "kitchengardenseeds.icu": "at-or-before",
+      "medpagetoday.icu": "at-or-before",
+      "pesthacks.icu": "at-or-before",
+      "pigglywigglystores.shop": "at-or-before",
+      "punandjokes.icu": "at-or-before",
+      "rustyquill.top": "at-or-before",
+      "sciencealert.shop": "at-or-before",
+      "sweetgeorgiayarns.online": "at-or-before",
+      "taskandpurpose.icu": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-02-22",
+    "latest": "2026-05-27"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "a1si.icu",
+      "a3ufz.xsjdsb.icu",
+      "account-inbox.online",
+      "account-login.top",
+      "account-noreply.space",
+      "account-passports.top",
+      "account.no-replay-notification.ga",
+      "accounts-facebook.com-pastas.top",
+      "accounts-gmail.com-check.online",
+      "accounts-gmail.com-login.space",
+      "accounts-gmail.com-pastas.top",
+      "accounts-group.com-pastas.top",
+      "accounts-inbox.ml",
+      "accounts-login.top",
+      "accounts-mail.site",
+      "accounts-passport.top",
+      "accounts-secure.com-firewall.online",
+      "accounts-support.com-account.website",
+      "accounts-support.net-account.space",
+      "accounts-telekom.online",
+      "accounts-ukr.net-account.space",
+      "accounts-ukr.net-verification.online",
+      "accounts-verification.net-account.space",
+      "accounts-verify.space",
+      "accounts.safe-mail.space",
+      "accounts.secure-ua.site",
+      "accounts.secure-ua.website",
+      "accounts.verify-email.space",
+      "accountsverify.top",
+      "acount-pasport.site",
+      "acount-passport.site",
+      "acounts.net-verification.online",
+      "advancedaisolutionsforeveryone.a1si.icu",
+      "aff-gos.top",
+      "agelessinvesting.xyz",
+      "ais-gos.top",
+      "akademia-mil.space",
+      "alertapp.icu",
+      "alerteddatalistsclients.alertapp.icu",
+      "alexavegas.icu",
+      "algsat.icu",
+      "all-ukraine.top",
+      "alls-gos.top",
+      "americandeliriumsociety.shop",
+      "ams-gos.top",
+      "ao-opros.top",
+      "api.passport-yandex.ru",
+      "aplikacje.ron-mil.space",
+      "attachment-storage-asset-static.needbinding.icu",
+      "authorization-inbox.site",
+      "awa-opros.top",
+      "aws-opros.top",
+      "backstagemerch.shop",
+      "beez-gos.top",
+      "bel-oprosov.top",
+      "belaru-opros.top",
+      "bell-gos.club",
+      "besh-opros.top",
+      "best-seller.lavanille.buzz",
+      "bezpieczenstwo-danych.website",
+      "bezpieczenstwo.wp-pl.eu",
+      "bhwbehb.wecwe.com",
+      "big-uah.club",
+      "bigmir-net.site",
+      "bigmir.space",
+      "bild-gos.club",
+      "bind-gos.cc",
+      "biz-gos.top",
+      "blic-opros.top",
+      "bokinteria.pl-kontrola-bezpieczenstwa.space",
+      "bokinteria.weryfikacja-konta.pw",
+      "book-happy.needbinding.icu",
+      "boom-gos.club",
+      "bourns.space",
+      "bryndonovan.shop",
+      "bui-gos.top",
+      "canada-deposit-gst.com",
+      "canada-gst-deposit.com",
+      "carpetmarker.pw",
+      "cgdirector.icu",
+      "chaptercheats.shop",
+      "cheap-gos.club",
+      "chis-gos.top",
+      "ci-uah.xyz",
+      "clairedeco.shop",
+      "cloud-security.ggpht.ml",
+      "com-account.website",
+      "com-firewall.online",
+      "com-login.space",
+      "com-pastas.top",
+      "com-validate.site",
+      "com-validation.top",
+      "com-verificate.top",
+      "com-verification.online",
+      "com-verification.top",
+      "com-verify.site",
+      "command-email.online",
+      "compensatia.top",
+      "compensation-ukr.com",
+      "compensations-ukrain.bar",
+      "compensationukr.com",
+      "confirm.acount-pasport.site",
+      "confirm.id-bigmir.site",
+      "connecticutchildrens.shop",
+      "content.google-com.online",
+      "cookie-firewall.com-login.space",
+      "cookingwithbooks.shop",
+      "credentials-telekom.online",
+      "creditals-email.space",
+      "creditals-mirohost.space",
+      "croasian-connection.com",
+      "csp.google-com.online",
+      "curseforge.icu",
+      "dc-f87c0aa063b8.ron-mil-pl.space",
+      "del-gos.top",
+      "demo000.space",
+      "demo001.space",
+      "demo002.space",
+      "demo003.space",
+      "demo004.space",
+      "demo005.space",
+      "demo006.space",
+      "demo007.space",
+      "demo008.space",
+      "demo009.space",
+      "dentyfikacja-uzytkownika.space",
+      "departament-bezpieczenstwa.space",
+      "dess-opros.top",
+      "disneyfoodblog.shop",
+      "dopomog-uah.top",
+      "dopomog-ukr.top",
+      "drive.google-com.online",
+      "ds-opros.top",
+      "dzial-bezpieczenstwa.space",
+      "e.mail.ru.net-accounts-mail.ru",
+      "eartheclipse.shop",
+      "easiestnewsfromourpointofview.algsat.icu",
+      "ec-compensation.xyz",
+      "edopomogaonline.yolasite.com",
+      "email-verify.top",
+      "empoweringparents.shop",
+      "emsun-mobile.online",
+      "erinekenney.com",
+      "eti-opros.top",
+      "eu-opros.top",
+      "europadonnaireland.org",
+      "ev-gos.top",
+      "ever-gos.top",
+      "everything-everywhere.at.ply.gg",
+      "everythingandthedog.shop",
+      "ew-gos.top",
+      "exprentis.com",
+      "facebook.com-account.website",
+      "facebook.com-validation.top",
+      "fad-gos.top",
+      "fam-gos.top",
+      "farm-opros.top",
+      "faw-opros.top",
+      "fc.google-com.online",
+      "fear-gos.top",
+      "filial-ukr.top",
+      "financial-gst-canada.com",
+      "fiw-gos.top",
+      "foampartyhats.shop",
+      "fonts.google-com.online",
+      "for-gos.top",
+      "fori-opros.top",
+      "foundpomoshi.com",
+      "frivol.space",
+      "funwithme.pw",
+      "fuz-opros.top",
+      "gen-gos.top",
+      "ggpht.ml",
+      "gh-opros.top",
+      "gigs-gos.top",
+      "gmx.net-account.online",
+      "good-opros.top",
+      "google-com.online",
+      "google.accounts.verify.no-reply.space",
+      "google.com-account.website",
+      "google.com-firewall.online",
+      "google.verifyprofiles.space",
+      "gos-kiev.top",
+      "gov-ua.net",
+      "gov-ukraine.club",
+      "green-gos.club",
+      "group-rambler.site",
+      "grupa-mailowa.weryfikacja-konta.link",
+      "grupa-pocztowa.online",
+      "gst-canada-gov.com",
+      "hardingtwominuterule.com",
+      "helpzzfound.site",
+      "hinesafar.sardk.icu",
+      "hssenglish.pw",
+      "i-ua.ml",
+      "i-ua.space",
+      "i.ua-login.top",
+      "i.ua-passport.online",
+      "i.ua-passport.site",
+      "i.ua-passport.space",
+      "i.ua-passport.top",
+      "iat.com.ua",
+      "id-bigmir.site",
+      "id-mail.site",
+      "id.bigmir.space",
+      "id.verify-mail.space",
+      "identyfikacja-uzytkownika.link",
+      "idsso.ukroboronprom-com.site",
+      "ifo-jupyter.natter.icu",
+      "ikitas.shop",
+      "ili-gos.top",
+      "inbox-admin.site",
+      "ind-gos.top",
+      "interia-pl.site",
+      "interia-pl.website",
+      "interia.pl-identyfikacja-uzytkownika.pw",
+      "interia.poczta-mailowa.top",
+      "interia.site",
+      "interia.weryfikacja-poczty.space",
+      "interia.weryfikacja-uzytkownika.site",
+      "interii.konto-verify.space",
+      "inv-gos.top",
+      "it-opros.top",
+      "jackbenimblekids.shop",
+      "je-gos.top",
+      "jel-gos.top",
+      "jez-ukr.top",
+      "jo-opros.top",
+      "junior-gos.club",
+      "kebhana.site",
+      "kel-gos.top",
+      "kemda.eu",
+      "kingarthurbaking.shop",
+      "kitchengardenseeds.icu",
+      "kog-opros.top",
+      "kohhd.com",
+      "kom-gos.top",
+      "kon-opros.top",
+      "kont-gos.top",
+      "konto-onet.site",
+      "konto-verify.space",
+      "konto.onet-pl.online",
+      "konto.weryfikacja-uzytkownika.link",
+      "konto.weryfikacja-uzytkownika.online",
+      "konto.weryfikacja-uzytkownika.pw",
+      "kontrola-bezpieczenstwa.link",
+      "kontrola-bezpieczenstwa.pw",
+      "kontrola-bezpieczenstwa.site",
+      "kontrola-bezpieczenstwa.top",
+      "kontrola-bezpieczenstwa.walidacja-uzytkownika.pw",
+      "kontrola-konta.online",
+      "kontrola-mailowa.top",
+      "kontrola-poczty.link",
+      "kontrola-poczty.pw",
+      "kontrola-poczty.site",
+      "kontrola-poczty.space",
+      "kontrola-poczty.top",
+      "korrespondentnet.webflow.io",
+      "krebas.lt",
+      "kurioworld.cf",
+      "kurioworld.gq",
+      "lansdownecentre.shop",
+      "lauramcinerney.shop",
+      "lavanille.buzz",
+      "lin-gos.top",
+      "lnk.ukr-compens.xyz",
+      "login-inbox.online",
+      "login-mail.online",
+      "login-telekom.online",
+      "login-verification.top",
+      "login-verify.online",
+      "login-verify.top",
+      "login.creditals-email.space",
+      "login.meta-ua.top",
+      "login.passport-verify.top",
+      "login.verification-email.space",
+      "login.verify-mail.space",
+      "logowanie-pl.site",
+      "logowanie.identyfikacja-uzytkownika.link",
+      "logowanie.kontrola-poczty.link",
+      "los-gos.top",
+      "lt-facebook.com-verification.top",
+      "lt-meta.com-verification.top",
+      "lt-microsoftgroup.serure-email.online",
+      "mail-profiles.space",
+      "mail.mil-gov.space",
+      "mail.passport-yandex.ru",
+      "mail.ru.net-accounts-mail.ru",
+      "mail.secured-auth.cf",
+      "medicalnewstoday.shop",
+      "medpagetoday.icu",
+      "meta-l.space",
+      "meta-log.site",
+      "meta-ua.online",
+      "meta-ua.space",
+      "meta-ua.top",
+      "mickeymousegamesdealer.alexavegas.icu",
+      "microsoft.com-account.website",
+      "microsoftonline.email-verify.top",
+      "mil-gov.space",
+      "mil-secure.site",
+      "mingxing.pw",
+      "mirohost-creditals.space",
+      "mirohost.online",
+      "mirohost.site",
+      "mirrohost.space",
+      "mod-mil.online",
+      "mod-mil.site",
+      "moonlightmixes.shop",
+      "mygraphbook.com",
+      "myua-compensations.xyz",
+      "nama-belakang.nebao.icu",
+      "natter.icu",
+      "nebao.icu",
+      "needbinding.icu",
+      "nes-gos.top",
+      "net-account.online",
+      "net-account.space",
+      "net-accounts-mail.ru",
+      "net-support.site",
+      "net-verification.online",
+      "net-verify.site",
+      "net-verify.website",
+      "net.ru-passport.online",
+      "nis-opros.top",
+      "no-replay-notification.ga",
+      "no-replay.space",
+      "no-reply.accounts-verify.space",
+      "no-reply.space",
+      "no-reply.verifyprofiles.space",
+      "noreply.accountsverify.top",
+      "nowar00.site",
+      "nowar22.site",
+      "nowar44.site",
+      "nowar66.site",
+      "nowar88.site",
+      "nuo-gos.top",
+      "off.ukr-compens.xyz",
+      "officevibe.pw",
+      "offs-opros.top",
+      "okonto.kontrola-bezpieczenstwa.pw",
+      "okonto.kontrola-poczty.pw",
+      "omp-gos.top",
+      "onet-pl.online",
+      "onlinereactivation-service.com",
+      "oon24opros.yolasite.com",
+      "op-pl.site",
+      "passport-log.online",
+      "passport-login.top",
+      "passport-ua.site",
+      "passport-verify.top",
+      "passport-yandex.ru",
+      "passport.command-email.online",
+      "passport.i-ua.space",
+      "passport.inbox.lt.accounts-inbox.ml",
+      "passport.inbox.lv.accounts-inbox.ml",
+      "passport.login-verify.top",
+      "passport.meta-log.site",
+      "passport.meta-ua.top",
+      "passport.secure-ua.pw",
+      "passport.secure-ua.space",
+      "passportlogin.top",
+      "pay.uacompensation.xyz",
+      "pay.ukr-compens.xyz",
+      "payeurope.top",
+      "payform.top",
+      "paysys.top",
+      "peer-gos.top",
+      "pen-gos.top",
+      "penandthepad.shop",
+      "pesthacks.icu",
+      "petapixel.fun",
+      "physio-pedia.shop",
+      "pigglywigglystores.shop",
+      "pis.kontrola-bezpieczenstwa.site",
+      "pl-identyfikacja-uzytkownika.pw",
+      "pl-kontrola-bezpieczenstwa.space",
+      "plklll.site",
+      "poczta-mailowa.top",
+      "poczta.bezpieczenstwo-danych.website",
+      "poczta.departament-bezpieczenstwa.space",
+      "poczta.identyfikacja-uzytkownika.space",
+      "poczta.interia-pl.site",
+      "poczta.kontrola-bezpieczenstwa.link",
+      "poczta.kontrola-bezpieczenstwa.top",
+      "poczta.kontrola-konta.online",
+      "poczta.kontrola-mailowa.top",
+      "poczta.ron-mil-pl.site",
+      "poczta.ron-mil-pl.space",
+      "poczta.safe-onet.space",
+      "poczta.sprawdzanie-zabezpieczen.space",
+      "poczta.walidacja-konta.site",
+      "poczta.walidacja-uzytkownika.pw",
+      "poczta.weryfikacja-okonto.online",
+      "poczta.weryfikacja-okonto.site",
+      "poczta.wp-agreements.online",
+      "poczta.wp-firewall.website",
+      "poczta.wp-pl-potwierdz-dostep.site",
+      "poczta.wp-pl.eu",
+      "poland-survey.top",
+      "pollsk-surv.top",
+      "polsk-pay.top",
+      "polsk-surv.top",
+      "pomoc.sprawdzanie-zabezpieczen.space",
+      "pomoc.weryfikacja-okonto.online",
+      "poslugi-online.top",
+      "poslugi-ukr.top",
+      "post.mil-gov.space",
+      "post.verify-mail.space",
+      "postmilgov.ua-login.site",
+      "potwierdzenia.net-support.site",
+      "potwierdzenie.konto-onet.site",
+      "potwierdzenie.wp-pl.eu",
+      "pro-gos.top",
+      "productionsamplesoftheyear.cgdirector.icu",
+      "profiles-login.top",
+      "promo-opros.top",
+      "pub-gos.top",
+      "punandjokes.icu",
+      "rambler-profile.site",
+      "rambler.account-noreply.space",
+      "rb-vopros.top",
+      "rbi-opros.top",
+      "rbj-survey.top",
+      "rbq-opros.top",
+      "rbs-opros.top",
+      "rbt-opros.top",
+      "ren-gos.top",
+      "rivierafamily.com",
+      "ron-mil-pl.site",
+      "ron-mil-pl.space",
+      "ron-mil.space",
+      "rtrrsfgsfg.site",
+      "ru-passport.online",
+      "ru.net-accounts-mail.ru",
+      "rustyquill.top",
+      "rwegfwfe.site",
+      "safe-mail.space",
+      "safe-onet.online",
+      "safe-onet.space",
+      "sardk.icu",
+      "sciencealert.shop",
+      "sdfavavvvv.site",
+      "secure-firewall.site",
+      "secure-ua.pw",
+      "secure-ua.site",
+      "secure-ua.space",
+      "secure-ua.top",
+      "secure-ua.website",
+      "secured-auth.cf",
+      "security.passportlogin.top",
+      "sellmyhousequickly.website",
+      "semanticscholar.shop",
+      "serure-email.online",
+      "service.kontrola-poczty.space",
+      "shinesafar.sardk.icu",
+      "shpsale.ukroboronprom.online",
+      "sign-in-inbox.site",
+      "signin-telekom.online",
+      "simplifymedia.pw",
+      "sio-gos.top",
+      "socis.cf",
+      "sprawdzanie-konta.space",
+      "sprawdzanie-zabezpieczen.space",
+      "state-uah.top",
+      "stopwar11.site",
+      "stopwar33.site",
+      "stopwar55.site",
+      "stopwar77.site",
+      "stopwar99.site",
+      "subo-ukr.top",
+      "sweetgeorgiayarns.online",
+      "system-pocztowy.space",
+      "system.walidacja-konta.link",
+      "system.walidacja-konta.pw",
+      "tas-gos.top",
+      "taskandpurpose.icu",
+      "tax-compensation.xyz",
+      "tax-compenses.xyz",
+      "taysbb.ru",
+      "tense-gos.top",
+      "ti-opros.top",
+      "tio-gos.top",
+      "tk99.gq",
+      "top-opros.top",
+      "topibuzz.space",
+      "trust-gos.top",
+      "turbo-gos.top",
+      "tvasahi.online",
+      "twisterplussize.shop",
+      "ua-agreements.online",
+      "ua-compens.top",
+      "ua-compensation.top",
+      "ua-compensations.xyz",
+      "ua-compenses.top",
+      "ua-email.press",
+      "ua-login.site",
+      "ua-login.top",
+      "ua-opros.top",
+      "ua-passport.online",
+      "ua-passport.site",
+      "ua-passport.space",
+      "ua-passport.top",
+      "ua-taxes-compens.xyz",
+      "uabayrakua.com",
+      "uacompensation.xyz",
+      "uadop.webflow.io",
+      "uah-sitez.top",
+      "uam-compensation.xyz",
+      "uatax-compens.xyz",
+      "uatax-compenses.xyz",
+      "ubsbha.ru",
+      "ui-opros.top",
+      "ukr-compens.top",
+      "ukr-compens.xyz",
+      "ukr-dopomog.top",
+      "ukr-service.top",
+      "ukr-siter.top",
+      "ukr-uslugi.top",
+      "ukr.account-login.top",
+      "ukrahelpforall.ucraft.site",
+      "ukrainebayra.com",
+      "ukrainecenter.yolasite.com",
+      "ukroboronprom-com.site",
+      "ukroboronprom.online",
+      "uni-gos.top",
+      "us-news.online",
+      "usluga.kontrola-poczty.top",
+      "utahsadventurefamily.shop",
+      "uz-gos.top",
+      "veirfy-ua.space",
+      "verification-email.space",
+      "verify-email.space",
+      "verify-mail.space",
+      "verify-ua.online",
+      "verify-ua.site",
+      "verify-ua.space",
+      "verify.account-inbox.online",
+      "verify.account-login.top",
+      "verify.accounts-login.top",
+      "verify.accounts-mail.site",
+      "verify.accounts-passport.top",
+      "verify.acount-passport.site",
+      "verify.group-rambler.site",
+      "verify.login-mail.online",
+      "verify.login-telekom.online",
+      "verify.mail-profiles.space",
+      "verify.no-replay.space",
+      "verify.passport-login.top",
+      "verify.passportlogin.top",
+      "verify.profiles-login.top",
+      "verify.rambler-profile.site",
+      "verify.signin-telekom.online",
+      "verifyprofiles.space",
+      "vilni-ludi.ukroboronprom.online",
+      "vuxner.com",
+      "walidacja-konta.link",
+      "walidacja-konta.pw",
+      "walidacja-konta.site",
+      "walidacja-konta.space",
+      "walidacja-poczty.space",
+      "walidacja-uzytkownika.pw",
+      "walidacja-uzytkownika.space",
+      "walidacja-uzytkownika.website",
+      "weavesilk.space",
+      "web-camera.live",
+      "webmail.login-verify.online",
+      "webmail.meta-ua.online",
+      "wers-gos.top",
+      "weryfikacja-konta.link",
+      "weryfikacja-konta.pw",
+      "weryfikacja-konta.space",
+      "weryfikacja-okonto.online",
+      "weryfikacja-okonto.site",
+      "weryfikacja-poczty.space",
+      "weryfikacja-uzytkownika.link",
+      "weryfikacja-uzytkownika.online",
+      "weryfikacja-uzytkownika.pw",
+      "weryfikacja-uzytkownika.site",
+      "weryfikacja-uzytkownika.top",
+      "weryfikacja-uzytkownika.website",
+      "weryfikacja.system-pocztowy.space",
+      "wi-opros.top",
+      "windacarmelita.pw",
+      "wirelessequixtranscan247.com",
+      "wirtualna.grupa-pocztowa.online",
+      "wm-gos.top",
+      "wojskowa.akademia-mil.space",
+      "wordrow.website",
+      "world-opros.top",
+      "wp-agreements.online",
+      "wp-firewall.website",
+      "wp-pl-potwierdz-dostep.site",
+      "wp-pl.eu",
+      "ws-gos.top",
+      "wuzhenfestival.site",
+      "xbeta.online",
+      "xsjdsb.icu",
+      "yandex.ru-passport.online",
+      "ye-gos.top",
+      "yes-uah.top",
+      "yi-gos.top",
+      "yotsubasociety.website",
+      "zashita.ukroboronprom.online",
+      "zelensky-official.top"
+    ],
+    "ipv4": [
+      "109.237.111.251:8880",
+      "185.175.158.27:8443",
+      "88.99.104.179:1985",
+      "88.99.132.118:1985",
+      "91.142.77.157:8880"
+    ],
+    "url": [
+      "http://157.230.104.79",
+      "http://45.61.137.231",
+      "http://84.32.188.141",
+      "http://84.32.188.96"
+    ],
+    "url_path": [
+      "/update/microsoft_corp",
+      "/update/microsoft_corpsh",
+      "/update/microsoft_corpshd",
+      "/update/microsoft_crp",
+      "/update/microsoft_crpn",
+      "/win_update/upgrade"
+    ]
+  },
+  "last_modified": "2026-05-27T09:05:05+00:00",
+  "maltrail_groups": [
+    "UNC1151"
+  ],
+  "references": [
+    "https://app.any.run/tasks/4d96f03e-317e-498d-a9d7-e2d719a70b5b/",
+    "https://app.any.run/tasks/844d5358-bf5d-4a4a-89b2-d3bf06df79e3/",
+    "https://app.validin.com/axon?type=dom&zone_filter=pw&limit=100000&find=ns1.gigaregister.com",
+    "https://blog.google/threat-analysis-group/continued-cyber-activity-in-eastern-europe-observed-by-tag/",
+    "https://blog.google/threat-analysis-group/tracking-cyber-activity-eastern-europe/",
+    "https://blog.google/threat-analysis-group/ukraine-remains-russias-biggest-cyber-focus-in-2023/",
+    "https://blog.google/threat-analysis-group/update-threat-landscape-ukraine/",
+    "https://blog.talosintelligence.com/malicious-campaigns-target-entities-in-ukraine-poland/",
+    "https://cert.gov.ua/article/1545776 (Ukrainian)",
+    "https://cert.gov.ua/article/37626 (Ukrainian)",
+    "https://cert.gov.ua/article/40263 (Ukrainian)",
+    "https://cert.gov.ua/article/4905718 (Ukrainian)",
+    "https://cert.gov.ua/article/5661411 (# UAC-0057)",
+    "https://cert.gov.ua/article/6280159",
+    "https://cert.gov.ua/article/6315762",
+    "https://cert.gov.ua/article/761668 (# UAC-0100)",
+    "https://cert.pl/posts/2022/07/techniki-unc1151/",
+    "https://community.riskiq.com/article/e3a7ceea/description",
+    "https://content.fireeye.com/web-assets/rpt-unc1151-ghostwriter-update",
+    "https://github.com/HarfangLab/iocs/blob/main/TRR250801/trr250801_iocs.txt",
+    "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-12-08-White-Lynx-uses-CAPTCHA-macros.txt",
+    "https://github.com/prodaft/malware-ioc/tree/master/UNC1151",
+    "https://github.com/stamparm/maltrail/pull/9325/commits/9feaaeddd717efdf2d6dab8b51d17cc5dd6157b6",
+    "https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland/",
+    "https://otx.alienvault.com/pulse/6089a10aa27c23fdd4ee928e",
+    "https://otx.alienvault.com/pulse/621cce4e2752128dbfe537ed",
+    "https://otx.alienvault.com/pulse/621f7303abae83b8f3814de0",
+    "https://otx.alienvault.com/pulse/622f3ca087e68a2746132fc8",
+    "https://otx.alienvault.com/pulse/6272996039678903e0b73dd5",
+    "https://otx.alienvault.com/pulse/64403596d7a47d80451657c3",
+    "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2023/07/malicious-campaigns-target-entities-in-ukraine-poland.txt",
+    "https://threatfox.abuse.ch/browse/tag/UNC1151/",
+    "https://ti.qianxin.com/blog/articles/Analysis-of-attack-activities-of-suspected-aptorganization-unc1151-against-ukraine-and-other-countries/",
+    "https://tria.ge/260513-m7anjahw5v/behavioral1",
+    "https://twitter.com/Arkbird_SOLG/status/1497602147084644362",
+    "https://twitter.com/JAMESWT_MHT/status/1501197380225490949",
+    "https://twitter.com/James_inthe_box/status/1231247315672809473",
+    "https://twitter.com/StopMalvertisin/status/1697175561339306308",
+    "https://twitter.com/bread08/status/1497200607282798601",
+    "https://twitter.com/cybercdh/status/1497486233743863812",
+    "https://twitter.com/h2jazi/status/1500607147989684224",
+    "https://twitter.com/idclickthat/status/1567889191333158912",
+    "https://twitter.com/jaimeblascob/status/1497258705984835591",
+    "https://twitter.com/kyleehmke/status/1390243290826563591",
+    "https://twitter.com/kyleehmke/status/1390368185455677440",
+    "https://twitter.com/kyleehmke/status/1392825232826802181",
+    "https://twitter.com/kyleehmke/status/1397746852213186561",
+    "https://twitter.com/kyleehmke/status/1403278668445720579",
+    "https://twitter.com/sekoia_io/status/1497239319295279106",
+    "https://twitter.com/siedlmarpl/status/971593279224537088",
+    "https://twitter.com/threatinsight/status/1497355737844133895",
+    "https://twitter.com/threatinsight/status/1497355994543779844",
+    "https://www.fireeye.com/blog/threat-research/2021/04/espionage-group-unc1151-likely-conducts-ghostwriter-influence-activity.html",
+    "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/unc1151-ghostwriter-update-report.pdf",
+    "https://www.hybrid-analysis.com/sample/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5?environmentId=100",
+    "https://www.proofpoint.com/us/blog/threat-insight/asylum-ambuscade-state-actor-uses-compromised-private-ukrainian-military-emails",
+    "https://www.sentinelone.com/labs/ghostwriter-new-campaign-targets-ukrainian-government-and-belarusian-opposition/",
+    "https://www.virustotal.com/gui/collection/2aa6b36a717be8bc49f7925434ca40f3ecb9f628414b491da3e985677508ca08/iocs",
+    "https://www.virustotal.com/gui/file/02d15669996853594424e5e7f957e12b2042b7775535bd2160953b4e84bb61cd/detection",
+    "https://www.virustotal.com/gui/file/146df172a08f3b8bec4d5e2f3ac552af28ac2e17f682712f135e7c94c28263c8/detection",
+    "https://www.virustotal.com/gui/file/2cde8de330a874020340f2110bd1fd013fab7e93ef884c9006a646b49b567a75/detection",
+    "https://www.virustotal.com/gui/file/31d765deae26fb5cb506635754c700c57f9bd0fc643a622dc0911c42bf93d18f/detection",
+    "https://www.virustotal.com/gui/file/35d1e819d2ac2535f0aa9e2294570135f37519386872c415e326146e931b8fb9/detection",
+    "https://www.virustotal.com/gui/file/3b701eac4e3a73aec109120c97102c17edf88a20d1883dd5eef6db60d52b8d92/detection",
+    "https://www.virustotal.com/gui/file/7f0511b09b1ab3a64c8827dd8af017acbf7d2688db31a5d98fea8a5029a89d56/detection",
+    "https://www.virustotal.com/gui/file/a7b7a7bfc7d0a41436596795bf7da8b9b9ed571e592b5b4770b70271d4fcadff/detection",
+    "https://www.virustotal.com/gui/file/d7ce7d6de1aa23c9f54a11a84238ec07281745e4ba67ad1b548c71cc18158891/detection",
+    "https://www.virustotal.com/gui/file/de270380565fcf45aa6a18091fd75f0bbe22993ae6d7f225f1b088d06efe68d7/detection",
+    "https://www.virustotal.com/gui/file/f3d8c34443457d32de3c2687619037015e12bd2222c0e457e8c79fda2906d424/detection",
+    "https://www.virustotal.com/gui/file/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5/detection",
+    "https://www.virustotal.com/gui/ip-address/159.65.18.143/relations",
+    "https://www.virustotal.com/gui/ip-address/185.175.158.27/relations",
+    "https://www.virustotal.com/gui/ip-address/208.91.197.91/relations",
+    "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations",
+    "https://www.virustotal.com/gui/ip-address/62.3.12.123/relations",
+    "https://www.virustotal.com/gui/ip-address/84.32.188.141/relations",
+    "https://www.virustotal.com/gui/ip-address/84.32.188.80/relations",
+    "https://www.virustotal.com/gui/ip-address/94.131.108.109/relations",
+    "https://www.welivesecurity.com/en/eset-research/frostyneighbor-fresh-mischief-digital-shenanigans/",
+    "https://x.com/BushidoToken/status/1816766449102225854",
+    "https://x.com/malwrhunterteam/status/1909235735850279070",
+    "https://x.com/malwrhunterteam/status/1909280553821741451",
+    "https://x.com/malwrhunterteam/status/2054858213439250469",
+    "https://x.com/smica83/status/2054518692298273011"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 reports cite both",
+          "kind": "reporting",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0010"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G1033"
+    }
+  ],
+  "slug": "UNC1151",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2026-05-27",
+      "indicators": {
+        "domain": [
+          "a1si.icu",
+          "a3ufz.xsjdsb.icu",
+          "advancedaisolutionsforeveryone.a1si.icu",
+          "alertapp.icu",
+          "alerteddatalistsclients.alertapp.icu",
+          "cgdirector.icu",
+          "productionsamplesoftheyear.cgdirector.icu",
+          "xsjdsb.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6315762"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2026-05-14",
+      "indicators": {
+        "domain": [
+          "alexavegas.icu",
+          "algsat.icu",
+          "attachment-storage-asset-static.needbinding.icu",
+          "best-seller.lavanille.buzz",
+          "book-happy.needbinding.icu",
+          "easiestnewsfromourpointofview.algsat.icu",
+          "hinesafar.sardk.icu",
+          "ifo-jupyter.natter.icu",
+          "lavanille.buzz",
+          "mickeymousegamesdealer.alexavegas.icu",
+          "nama-belakang.nebao.icu",
+          "natter.icu",
+          "nebao.icu",
+          "needbinding.icu",
+          "sardk.icu",
+          "shinesafar.sardk.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/smica83/status/2054518692298273011",
+        "https://x.com/malwrhunterteam/status/2054858213439250469",
+        "https://www.welivesecurity.com/en/eset-research/frostyneighbor-fresh-mischief-digital-shenanigans/",
+        "https://tria.ge/260513-m7anjahw5v/behavioral1"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "curseforge.icu",
+          "kitchengardenseeds.icu",
+          "medpagetoday.icu",
+          "pesthacks.icu",
+          "punandjokes.icu",
+          "sweetgeorgiayarns.online",
+          "taskandpurpose.icu"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland/",
+        "https://github.com/HarfangLab/iocs/blob/main/TRR250801/trr250801_iocs.txt"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "americandeliriumsociety.shop",
+          "cookingwithbooks.shop",
+          "everythingandthedog.shop",
+          "pigglywigglystores.shop",
+          "sciencealert.shop"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.sentinelone.com/labs/ghostwriter-new-campaign-targets-ukrainian-government-and-belarusian-opposition/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "rustyquill.top"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1909235735850279070",
+        "https://x.com/malwrhunterteam/status/1909280553821741451",
+        "https://www.virustotal.com/gui/file/146df172a08f3b8bec4d5e2f3ac552af28ac2e17f682712f135e7c94c28263c8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "agelessinvesting.xyz"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-12-08-White-Lynx-uses-CAPTCHA-macros.txt"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2024-07-26",
+      "indicators": {
+        "domain": [
+          "bryndonovan.shop",
+          "chaptercheats.shop",
+          "clairedeco.shop",
+          "connecticutchildrens.shop",
+          "disneyfoodblog.shop",
+          "eartheclipse.shop",
+          "foampartyhats.shop",
+          "ikitas.shop",
+          "jackbenimblekids.shop",
+          "kingarthurbaking.shop",
+          "lansdownecentre.shop",
+          "medicalnewstoday.shop",
+          "moonlightmixes.shop",
+          "penandthepad.shop",
+          "petapixel.fun",
+          "physio-pedia.shop",
+          "semanticscholar.shop",
+          "twisterplussize.shop",
+          "utahsadventurefamily.shop",
+          "weavesilk.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/BushidoToken/status/1816766449102225854",
+        "https://www.virustotal.com/gui/collection/2aa6b36a717be8bc49f7925434ca40f3ecb9f628414b491da3e985677508ca08/iocs"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-07-24",
+      "indicators": {
+        "domain": [
+          "backstagemerch.shop",
+          "empoweringparents.shop",
+          "lauramcinerney.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6280159",
+        "https://www.virustotal.com/gui/file/02d15669996853594424e5e7f957e12b2042b7775535bd2160953b4e84bb61cd/detection",
+        "https://www.virustotal.com/gui/file/2cde8de330a874020340f2110bd1fd013fab7e93ef884c9006a646b49b567a75/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-09-01",
+      "indicators": {
+        "domain": [
+          "funwithme.pw",
+          "officevibe.pw",
+          "topibuzz.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1697175561339306308",
+        "https://cert.gov.ua/article/5661411 (# UAC-0057)",
+        "https://app.validin.com/axon?type=dom&zone_filter=pw&limit=100000&find=ns1.gigaregister.com",
+        "https://www.virustotal.com/gui/ip-address/62.3.12.123/relations",
+        "https://www.virustotal.com/gui/file/f3d8c34443457d32de3c2687619037015e12bd2222c0e457e8c79fda2906d424/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-31",
+      "indicators": {
+        "domain": [
+          "windacarmelita.pw"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1697175561339306308",
+        "https://cert.gov.ua/article/5661411 (# UAC-0057)",
+        "https://app.validin.com/axon?type=dom&zone_filter=pw&limit=100000&find=ns1.gigaregister.com",
+        "https://www.virustotal.com/gui/ip-address/62.3.12.123/relations",
+        "https://www.virustotal.com/gui/file/f3d8c34443457d32de3c2687619037015e12bd2222c0e457e8c79fda2906d424/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-29",
+      "indicators": {
+        "domain": [
+          "kurioworld.gq"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/tag/UNC1151/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2023-07-15",
+      "indicators": {
+        "domain": [
+          "carpetmarker.pw",
+          "everything-everywhere.at.ply.gg",
+          "frivol.space",
+          "hssenglish.pw",
+          "kebhana.site",
+          "mingxing.pw",
+          "sellmyhousequickly.website",
+          "simplifymedia.pw",
+          "wordrow.website",
+          "wuzhenfestival.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/malicious-campaigns-target-entities-in-ukraine-poland/",
+        "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2023/07/malicious-campaigns-target-entities-in-ukraine-poland.txt",
+        "https://www.virustotal.com/gui/ip-address/94.131.108.109/relations"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-06-16",
+      "indicators": {
+        "domain": [
+          "bourns.space",
+          "yotsubasociety.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/4905718 (Ukrainian)",
+        "https://www.virustotal.com/gui/file/35d1e819d2ac2535f0aa9e2294570135f37519386872c415e326146e931b8fb9/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-04-19",
+      "indicators": {
+        "domain": [
+          "meta-l.space",
+          "passport-log.online",
+          "passport-ua.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.google/threat-analysis-group/ukraine-remains-russias-biggest-cyber-focus-in-2023/",
+        "https://otx.alienvault.com/pulse/64403596d7a47d80451657c3"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 160
+      },
+      "first_seen": "2023-01-03",
+      "indicators": {
+        "domain": [
+          "account-login.top",
+          "account-noreply.space",
+          "account-passports.top",
+          "accounts-gmail.com-check.online",
+          "accounts-gmail.com-login.space",
+          "accounts-login.top",
+          "accounts-mail.site",
+          "accounts-passport.top",
+          "accounts-secure.com-firewall.online",
+          "accounts-verify.space",
+          "accounts.safe-mail.space",
+          "accounts.secure-ua.site",
+          "accounts.verify-email.space",
+          "acount-pasport.site",
+          "acount-passport.site",
+          "bezpieczenstwo-danych.website",
+          "bhwbehb.wecwe.com",
+          "bokinteria.pl-kontrola-bezpieczenstwa.space",
+          "bokinteria.weryfikacja-konta.pw",
+          "com-firewall.online",
+          "com-login.space",
+          "com-verificate.top",
+          "com-verification.online",
+          "confirm.acount-pasport.site",
+          "confirm.id-bigmir.site",
+          "cookie-firewall.com-login.space",
+          "dentyfikacja-uzytkownika.space",
+          "departament-bezpieczenstwa.space",
+          "dzial-bezpieczenstwa.space",
+          "exprentis.com",
+          "google.accounts.verify.no-reply.space",
+          "google.com-firewall.online",
+          "google.verifyprofiles.space",
+          "group-rambler.site",
+          "grupa-mailowa.weryfikacja-konta.link",
+          "grupa-pocztowa.online",
+          "i-ua.ml",
+          "i-ua.space",
+          "i.ua-login.top",
+          "i.ua-passport.site",
+          "iat.com.ua",
+          "id-bigmir.site",
+          "id-mail.site",
+          "id.verify-mail.space",
+          "identyfikacja-uzytkownika.link",
+          "interia.pl-identyfikacja-uzytkownika.pw",
+          "interia.poczta-mailowa.top",
+          "interia.weryfikacja-poczty.space",
+          "interia.weryfikacja-uzytkownika.site",
+          "interii.konto-verify.space",
+          "kemda.eu",
+          "konto-onet.site",
+          "konto.weryfikacja-uzytkownika.link",
+          "konto.weryfikacja-uzytkownika.online",
+          "konto.weryfikacja-uzytkownika.pw",
+          "kontrola-bezpieczenstwa.link",
+          "kontrola-bezpieczenstwa.pw",
+          "kontrola-bezpieczenstwa.site",
+          "kontrola-bezpieczenstwa.top",
+          "kontrola-bezpieczenstwa.walidacja-uzytkownika.pw",
+          "kontrola-konta.online",
+          "kontrola-mailowa.top",
+          "kontrola-poczty.link",
+          "kontrola-poczty.pw",
+          "krebas.lt",
+          "login.meta-ua.top",
+          "login.passport-verify.top",
+          "login.verification-email.space",
+          "login.verify-mail.space",
+          "logowanie.identyfikacja-uzytkownika.link",
+          "logowanie.kontrola-poczty.link",
+          "mail-profiles.space",
+          "mail.mil-gov.space",
+          "meta-log.site",
+          "meta-ua.top",
+          "no-replay.space",
+          "no-reply.accounts-verify.space",
+          "no-reply.space",
+          "no-reply.verifyprofiles.space",
+          "okonto.kontrola-bezpieczenstwa.pw",
+          "okonto.kontrola-poczty.pw",
+          "passport-login.top",
+          "passport-verify.top",
+          "passport.i-ua.space",
+          "passport.login-verify.top",
+          "passport.meta-log.site",
+          "passport.meta-ua.top",
+          "passport.secure-ua.pw",
+          "passport.secure-ua.space",
+          "passportlogin.top",
+          "pis.kontrola-bezpieczenstwa.site",
+          "pl-identyfikacja-uzytkownika.pw",
+          "pl-kontrola-bezpieczenstwa.space",
+          "plklll.site",
+          "poczta-mailowa.top",
+          "poczta.bezpieczenstwo-danych.website",
+          "poczta.departament-bezpieczenstwa.space",
+          "poczta.identyfikacja-uzytkownika.space",
+          "poczta.kontrola-bezpieczenstwa.link",
+          "poczta.kontrola-bezpieczenstwa.top",
+          "poczta.kontrola-konta.online",
+          "poczta.kontrola-mailowa.top",
+          "poczta.safe-onet.space",
+          "poczta.sprawdzanie-zabezpieczen.space",
+          "poczta.walidacja-konta.site",
+          "poczta.walidacja-uzytkownika.pw",
+          "poczta.weryfikacja-okonto.online",
+          "poczta.weryfikacja-okonto.site",
+          "poczta.wp-firewall.website",
+          "pomoc.sprawdzanie-zabezpieczen.space",
+          "pomoc.weryfikacja-okonto.online",
+          "post.verify-mail.space",
+          "potwierdzenie.konto-onet.site",
+          "profiles-login.top",
+          "rambler.account-noreply.space",
+          "rtrrsfgsfg.site",
+          "rwegfwfe.site",
+          "safe-mail.space",
+          "safe-onet.space",
+          "sdfavavvvv.site",
+          "secure-ua.pw",
+          "secure-ua.site",
+          "security.passportlogin.top",
+          "service.kontrola-poczty.space",
+          "sprawdzanie-zabezpieczen.space",
+          "system-pocztowy.space",
+          "system.walidacja-konta.link",
+          "system.walidacja-konta.pw",
+          "taysbb.ru",
+          "ubsbha.ru",
+          "ukr.account-login.top",
+          "usluga.kontrola-poczty.top",
+          "veirfy-ua.space",
+          "verify.account-login.top",
+          "verify.accounts-login.top",
+          "verify.accounts-mail.site",
+          "verify.accounts-passport.top",
+          "verify.acount-passport.site",
+          "verify.group-rambler.site",
+          "verify.mail-profiles.space",
+          "verify.no-replay.space",
+          "verify.passport-login.top",
+          "verify.passportlogin.top",
+          "verify.profiles-login.top",
+          "verifyprofiles.space",
+          "walidacja-konta.link",
+          "walidacja-konta.pw",
+          "walidacja-konta.site",
+          "walidacja-uzytkownika.pw",
+          "weryfikacja-konta.link",
+          "weryfikacja-konta.pw",
+          "weryfikacja-okonto.online",
+          "weryfikacja-okonto.site",
+          "weryfikacja-uzytkownika.link",
+          "weryfikacja-uzytkownika.online",
+          "weryfikacja-uzytkownika.pw",
+          "weryfikacja.system-pocztowy.space",
+          "wirtualna.grupa-pocztowa.online",
+          "wojskowa.akademia-mil.space",
+          "wp-firewall.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/prodaft/malware-ioc/tree/master/UNC1151"
+      ],
+      "total": 160
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-03",
+      "indicators": {
+        "domain": [
+          "kurioworld.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/prodaft/malware-ioc/tree/master/UNC1151",
+        "https://threatfox.abuse.ch/browse/tag/UNC1151/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 59
+      },
+      "first_seen": "2022-10-24",
+      "indicators": {
+        "domain": [
+          "ams-gos.top",
+          "bel-oprosov.top",
+          "belaru-opros.top",
+          "bell-gos.club",
+          "bild-gos.club",
+          "bind-gos.cc",
+          "biz-gos.top",
+          "boom-gos.club",
+          "cheap-gos.club",
+          "ci-uah.xyz",
+          "compensatia.top",
+          "dess-opros.top",
+          "dopomog-uah.top",
+          "dopomog-ukr.top",
+          "ever-gos.top",
+          "farm-opros.top",
+          "fear-gos.top",
+          "filial-ukr.top",
+          "fuz-opros.top",
+          "gen-gos.top",
+          "gigs-gos.top",
+          "good-opros.top",
+          "gos-kiev.top",
+          "green-gos.club",
+          "ili-gos.top",
+          "ind-gos.top",
+          "inv-gos.top",
+          "it-opros.top",
+          "jez-ukr.top",
+          "junior-gos.club",
+          "kont-gos.top",
+          "lin-gos.top",
+          "los-gos.top",
+          "payeurope.top",
+          "payform.top",
+          "paysys.top",
+          "poland-survey.top",
+          "pollsk-surv.top",
+          "polsk-pay.top",
+          "poslugi-online.top",
+          "poslugi-ukr.top",
+          "pub-gos.top",
+          "rb-vopros.top",
+          "rbi-opros.top",
+          "rbj-survey.top",
+          "rbq-opros.top",
+          "rbs-opros.top",
+          "rbt-opros.top",
+          "sio-gos.top",
+          "state-uah.top",
+          "subo-ukr.top",
+          "ti-opros.top",
+          "trust-gos.top",
+          "uah-sitez.top",
+          "ukr-compens.top",
+          "ukr-dopomog.top",
+          "ukr-uslugi.top",
+          "yes-uah.top",
+          "zelensky-official.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations"
+      ],
+      "total": 59
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-09-09",
+      "indicators": {
+        "domain": [
+          "big-uah.club",
+          "gov-ukraine.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations",
+        "https://twitter.com/idclickthat/status/1567889191333158912"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 27
+      },
+      "first_seen": "2022-08-30",
+      "indicators": {
+        "domain": [
+          "ec-compensation.xyz",
+          "edopomogaonline.yolasite.com",
+          "erinekenney.com",
+          "hardingtwominuterule.com",
+          "korrespondentnet.webflow.io",
+          "lnk.ukr-compens.xyz",
+          "mygraphbook.com",
+          "myua-compensations.xyz",
+          "off.ukr-compens.xyz",
+          "oon24opros.yolasite.com",
+          "pay.ukr-compens.xyz",
+          "tax-compensation.xyz",
+          "tax-compenses.xyz",
+          "ua-compens.top",
+          "ua-compensation.top",
+          "ua-compensations.xyz",
+          "ua-compenses.top",
+          "ua-taxes-compens.xyz",
+          "uabayrakua.com",
+          "uadop.webflow.io",
+          "uam-compensation.xyz",
+          "uatax-compens.xyz",
+          "uatax-compenses.xyz",
+          "ukr-compens.xyz",
+          "ukrahelpforall.ucraft.site",
+          "ukrainebayra.com",
+          "ukrainecenter.yolasite.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/1545776 (Ukrainian)"
+      ],
+      "total": 27
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-08-30",
+      "indicators": {
+        "domain": [
+          "chis-gos.top",
+          "pro-gos.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations",
+        "https://cert.gov.ua/article/1545776 (Ukrainian)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 34
+      },
+      "first_seen": "2022-07-22",
+      "indicators": {
+        "domain": [
+          "aff-gos.top",
+          "all-ukraine.top",
+          "alls-gos.top",
+          "aws-opros.top",
+          "beez-gos.top",
+          "besh-opros.top",
+          "blic-opros.top",
+          "bui-gos.top",
+          "del-gos.top",
+          "ds-opros.top",
+          "fad-gos.top",
+          "fam-gos.top",
+          "faw-opros.top",
+          "fiw-gos.top",
+          "gh-opros.top",
+          "je-gos.top",
+          "kel-gos.top",
+          "kog-opros.top",
+          "kom-gos.top",
+          "kon-opros.top",
+          "nes-gos.top",
+          "nis-opros.top",
+          "nuo-gos.top",
+          "offs-opros.top",
+          "omp-gos.top",
+          "pen-gos.top",
+          "polsk-surv.top",
+          "promo-opros.top",
+          "ren-gos.top",
+          "turbo-gos.top",
+          "ua-opros.top",
+          "ukr-service.top",
+          "ukr-siter.top",
+          "uni-gos.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations"
+      ],
+      "total": 34
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2022-07-20",
+      "indicators": {
+        "domain": [
+          "compensation-ukr.com",
+          "compensations-ukrain.bar",
+          "compensationukr.com",
+          "europadonnaireland.org",
+          "foundpomoshi.com",
+          "helpzzfound.site",
+          "kohhd.com",
+          "pay.uacompensation.xyz",
+          "rivierafamily.com",
+          "uacompensation.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/761668 (# UAC-0100)"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-07-20",
+      "indicators": {
+        "domain": [
+          "interia.site",
+          "kontrola-poczty.top",
+          "safe-onet.online",
+          "walidacja-konta.space",
+          "weryfikacja-uzytkownika.site",
+          "weryfikacja-uzytkownika.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.pl/posts/2022/07/techniki-unc1151/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-07-20",
+      "indicators": {
+        "domain": [
+          "accounts-facebook.com-pastas.top",
+          "accounts-gmail.com-pastas.top",
+          "accounts-group.com-pastas.top",
+          "com-pastas.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.google/threat-analysis-group/continued-cyber-activity-in-eastern-europe-observed-by-tag/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-20",
+      "indicators": {
+        "domain": [
+          "peer-gos.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/761668 (# UAC-0100)",
+        "https://www.virustotal.com/gui/ip-address/46.23.109.83/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2022-05-15",
+      "indicators": {
+        "domain": [
+          "ais-gos.top",
+          "ao-opros.top",
+          "awa-opros.top",
+          "eti-opros.top",
+          "eu-opros.top",
+          "ev-gos.top",
+          "ew-gos.top",
+          "for-gos.top",
+          "fori-opros.top",
+          "jel-gos.top",
+          "jo-opros.top",
+          "tas-gos.top",
+          "tense-gos.top",
+          "tio-gos.top",
+          "top-opros.top",
+          "ui-opros.top",
+          "uz-gos.top",
+          "wers-gos.top",
+          "wi-opros.top",
+          "wm-gos.top",
+          "world-opros.top",
+          "ws-gos.top",
+          "ye-gos.top",
+          "yi-gos.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/40263 (Ukrainian)",
+        "https://www.virustotal.com/gui/ip-address/159.65.18.143/relations"
+      ],
+      "total": 24
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2022-05-04",
+      "indicators": {
+        "domain": [
+          "accountsverify.top",
+          "com-validation.top",
+          "com-verification.top",
+          "email-verify.top",
+          "facebook.com-validation.top",
+          "lt-facebook.com-verification.top",
+          "lt-meta.com-verification.top",
+          "lt-microsoftgroup.serure-email.online",
+          "microsoftonline.email-verify.top",
+          "noreply.accountsverify.top",
+          "serure-email.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/6272996039678903e0b73dd5"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-03-30",
+      "indicators": {
+        "domain": [
+          "login-verification.top",
+          "login-verify.top",
+          "secure-ua.top",
+          "ua-login.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.google/threat-analysis-group/tracking-cyber-activity-eastern-europe/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-14",
+      "indicators": {
+        "domain": [
+          "gov-ua.net",
+          "vuxner.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.qianxin.com/blog/articles/Analysis-of-attack-activities-of-suspected-aptorganization-unc1151-against-ukraine-and-other-countries/",
+        "https://otx.alienvault.com/pulse/622f3ca087e68a2746132fc8"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2022-03-08",
+      "indicators": {
+        "domain": [
+          "accounts.secure-ua.website",
+          "i.ua-passport.top",
+          "login.creditals-email.space",
+          "post.mil-gov.space",
+          "rambler-profile.site",
+          "secure-ua.website",
+          "ua-passport.top",
+          "verify.rambler-profile.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.google/threat-analysis-group/update-threat-landscape-ukraine/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "first_seen": "2022-03-08",
+      "indicators": {
+        "domain": [
+          "tvasahi.online"
+        ],
+        "ipv4": [
+          "109.237.111.251:8880",
+          "91.142.77.157:8880"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/JAMESWT_MHT/status/1501197380225490949",
+        "https://app.any.run/tasks/4d96f03e-317e-498d-a9d7-e2d719a70b5b/",
+        "https://www.virustotal.com/gui/file/a7b7a7bfc7d0a41436596795bf7da8b9b9ed571e592b5b4770b70271d4fcadff/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-07",
+      "indicators": {
+        "domain": [
+          "xbeta.online"
+        ],
+        "ipv4": [
+          "185.175.158.27:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/37626 (Ukrainian)",
+        "https://twitter.com/h2jazi/status/1500607147989684224",
+        "https://www.virustotal.com/gui/ip-address/185.175.158.27/relations",
+        "https://www.virustotal.com/gui/file/7f0511b09b1ab3a64c8827dd8af017acbf7d2688db31a5d98fea8a5029a89d56/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2022-03-05",
+      "indicators": {
+        "domain": [
+          "creditals-mirohost.space",
+          "kontrola-poczty.site",
+          "mirohost.online",
+          "mod-mil.online",
+          "mod-mil.site",
+          "secure-ua.space",
+          "verification-email.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.riskiq.com/article/e3a7ceea/description",
+        "https://otx.alienvault.com/pulse/621cce4e2752128dbfe537ed"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2022-03-05",
+      "indicators": {
+        "url": [
+          "http://157.230.104.79",
+          "http://45.61.137.231"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/asylum-ambuscade-state-actor-uses-compromised-private-ukrainian-military-emails",
+        "https://otx.alienvault.com/pulse/621f7303abae83b8f3814de0",
+        "https://www.virustotal.com/gui/file/de270380565fcf45aa6a18091fd75f0bbe22993ae6d7f225f1b088d06efe68d7/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 25
+      },
+      "first_seen": "2022-03-02",
+      "indicators": {
+        "domain": [
+          "croasian-connection.com",
+          "demo000.space",
+          "demo001.space",
+          "demo002.space",
+          "demo003.space",
+          "demo004.space",
+          "demo005.space",
+          "demo006.space",
+          "demo007.space",
+          "demo008.space",
+          "demo009.space",
+          "emsun-mobile.online",
+          "nowar00.site",
+          "nowar22.site",
+          "nowar44.site",
+          "nowar66.site",
+          "nowar88.site",
+          "stopwar11.site",
+          "stopwar33.site",
+          "stopwar55.site",
+          "stopwar77.site",
+          "stopwar99.site",
+          "ua-email.press",
+          "us-news.online",
+          "web-camera.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/208.91.197.91/relations"
+      ],
+      "total": 25
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-02",
+      "indicators": {
+        "domain": [
+          "aplikacje.ron-mil.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Arkbird_SOLG/status/1497602147084644362",
+        "https://twitter.com/threatinsight/status/1497355737844133895",
+        "https://twitter.com/threatinsight/status/1497355994543779844",
+        "https://twitter.com/cybercdh/status/1497486233743863812",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.80/relations",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.141/relations",
+        "https://www.virustotal.com/gui/file/d7ce7d6de1aa23c9f54a11a84238ec07281745e4ba67ad1b548c71cc18158891/detection",
+        "https://www.virustotal.com/gui/file/31d765deae26fb5cb506635754c700c57f9bd0fc643a622dc0911c42bf93d18f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-02-28",
+      "indicators": {
+        "url": [
+          "http://84.32.188.96"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Arkbird_SOLG/status/1497602147084644362",
+        "https://twitter.com/threatinsight/status/1497355737844133895",
+        "https://twitter.com/threatinsight/status/1497355994543779844",
+        "https://twitter.com/cybercdh/status/1497486233743863812",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.80/relations",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.141/relations",
+        "https://www.virustotal.com/gui/file/d7ce7d6de1aa23c9f54a11a84238ec07281745e4ba67ad1b548c71cc18158891/detection",
+        "https://www.virustotal.com/gui/file/31d765deae26fb5cb506635754c700c57f9bd0fc643a622dc0911c42bf93d18f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 18
+      },
+      "first_seen": "2022-02-26",
+      "indicators": {
+        "domain": [
+          "akademia-mil.space",
+          "authorization-inbox.site",
+          "bigmir-net.site",
+          "command-email.online",
+          "konto-verify.space",
+          "kontrola-poczty.space",
+          "mirohost-creditals.space",
+          "mirohost.site",
+          "passport.command-email.online",
+          "ron-mil.space",
+          "sign-in-inbox.site",
+          "sprawdzanie-konta.space",
+          "ua-passport.site",
+          "walidacja-poczty.space",
+          "walidacja-uzytkownika.website",
+          "weryfikacja-konta.space",
+          "weryfikacja-poczty.space",
+          "weryfikacja-uzytkownika.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/jaimeblascob/status/1497258705984835591"
+      ],
+      "total": 18
+    },
+    {
+      "counts": {
+        "domain": 6,
+        "url": 1
+      },
+      "first_seen": "2022-02-26",
+      "indicators": {
+        "domain": [
+          "canada-deposit-gst.com",
+          "canada-gst-deposit.com",
+          "financial-gst-canada.com",
+          "gst-canada-gov.com",
+          "onlinereactivation-service.com",
+          "wirelessequixtranscan247.com"
+        ],
+        "url": [
+          "http://84.32.188.141"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Arkbird_SOLG/status/1497602147084644362",
+        "https://twitter.com/threatinsight/status/1497355737844133895",
+        "https://twitter.com/threatinsight/status/1497355994543779844",
+        "https://twitter.com/cybercdh/status/1497486233743863812",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.80/relations",
+        "https://www.virustotal.com/gui/ip-address/84.32.188.141/relations",
+        "https://www.virustotal.com/gui/file/d7ce7d6de1aa23c9f54a11a84238ec07281745e4ba67ad1b548c71cc18158891/detection",
+        "https://www.virustotal.com/gui/file/31d765deae26fb5cb506635754c700c57f9bd0fc643a622dc0911c42bf93d18f/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-02-26",
+      "indicators": {
+        "domain": [
+          "walidacja-uzytkownika.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/jaimeblascob/status/1497258705984835591",
+        "https://cert.pl/posts/2022/07/techniki-unc1151/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-02-25",
+      "indicators": {
+        "domain": [
+          "creditals-email.space",
+          "meta-ua.space",
+          "mil-gov.space",
+          "mirrohost.space",
+          "verify-email.space",
+          "verify-mail.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/sekoia_io/status/1497239319295279106"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-02-25",
+      "indicators": {
+        "domain": [
+          "bigmir.space",
+          "i.ua-passport.space",
+          "id.bigmir.space",
+          "ua-passport.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/bread08/status/1497200607282798601"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 50
+      },
+      "first_seen": "2022-01-15",
+      "indicators": {
+        "domain": [
+          "account.no-replay-notification.ga",
+          "accounts-support.com-account.website",
+          "accounts-support.net-account.space",
+          "accounts-ukr.net-account.space",
+          "accounts-ukr.net-verification.online",
+          "accounts-verification.net-account.space",
+          "acounts.net-verification.online",
+          "api.passport-yandex.ru",
+          "bezpieczenstwo.wp-pl.eu",
+          "content.google-com.online",
+          "csp.google-com.online",
+          "dc-f87c0aa063b8.ron-mil-pl.space",
+          "drive.google-com.online",
+          "e.mail.ru.net-accounts-mail.ru",
+          "facebook.com-account.website",
+          "fc.google-com.online",
+          "fonts.google-com.online",
+          "gmx.net-account.online",
+          "google.com-account.website",
+          "i.ua-passport.online",
+          "idsso.ukroboronprom-com.site",
+          "konto.onet-pl.online",
+          "mail.passport-yandex.ru",
+          "mail.ru.net-accounts-mail.ru",
+          "mail.secured-auth.cf",
+          "microsoft.com-account.website",
+          "net.ru-passport.online",
+          "passport.inbox.lt.accounts-inbox.ml",
+          "passport.inbox.lv.accounts-inbox.ml",
+          "poczta.interia-pl.site",
+          "poczta.ron-mil-pl.site",
+          "poczta.ron-mil-pl.space",
+          "poczta.wp-agreements.online",
+          "poczta.wp-pl-potwierdz-dostep.site",
+          "poczta.wp-pl.eu",
+          "postmilgov.ua-login.site",
+          "potwierdzenia.net-support.site",
+          "potwierdzenie.wp-pl.eu",
+          "ru.net-accounts-mail.ru",
+          "secured-auth.cf",
+          "shpsale.ukroboronprom.online",
+          "verify.account-inbox.online",
+          "verify.login-mail.online",
+          "verify.login-telekom.online",
+          "verify.signin-telekom.online",
+          "vilni-ludi.ukroboronprom.online",
+          "webmail.login-verify.online",
+          "webmail.meta-ua.online",
+          "yandex.ru-passport.online",
+          "zashita.ukroboronprom.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://content.fireeye.com/web-assets/rpt-unc1151-ghostwriter-update",
+        "https://www.fireeye.com/blog/threat-research/2021/04/espionage-group-unc1151-likely-conducts-ghostwriter-influence-activity.html",
+        "https://otx.alienvault.com/pulse/6089a10aa27c23fdd4ee928e"
+      ],
+      "total": 50
+    },
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2022-01-15",
+      "indicators": {
+        "url_path": [
+          "/update/microsoft_corp",
+          "/update/microsoft_crp",
+          "/update/microsoft_crpn",
+          "/win_update/upgrade"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6315762"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-15",
+      "indicators": {
+        "domain": [
+          "socis.cf",
+          "tk99.gq"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1231247315672809473",
+        "https://www.virustotal.com/gui/file/3b701eac4e3a73aec109120c97102c17edf88a20d1883dd5eef6db60d52b8d92/detection",
+        "https://app.any.run/tasks/844d5358-bf5d-4a4a-89b2-d3bf06df79e3/",
+        "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/unc1151-ghostwriter-update-report.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-01-15",
+      "indicators": {
+        "ipv4": [
+          "88.99.104.179:1985"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/siedlmarpl/status/971593279224537088",
+        "https://www.hybrid-analysis.com/sample/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5?environmentId=100",
+        "https://www.virustotal.com/gui/file/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5/detection",
+        "https://github.com/stamparm/maltrail/pull/9325/commits/9feaaeddd717efdf2d6dab8b51d17cc5dd6157b6",
+        "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/unc1151-ghostwriter-update-report.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-11",
+      "indicators": {
+        "domain": [
+          "secure-firewall.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1403278668445720579"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-27",
+      "indicators": {
+        "domain": [
+          "mil-secure.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1397746852213186561"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-05-13",
+      "indicators": {
+        "domain": [
+          "com-validate.site",
+          "com-verify.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1392825232826802181"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-06",
+      "indicators": {
+        "domain": [
+          "verify-ua.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1390368185455677440"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-06",
+      "indicators": {
+        "domain": [
+          "op-pl.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1390243290826563591"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 39
+      },
+      "first_seen": "2021-04-28",
+      "indicators": {
+        "domain": [
+          "account-inbox.online",
+          "accounts-inbox.ml",
+          "accounts-telekom.online",
+          "com-account.website",
+          "credentials-telekom.online",
+          "google-com.online",
+          "inbox-admin.site",
+          "interia-pl.site",
+          "interia-pl.website",
+          "login-inbox.online",
+          "login-mail.online",
+          "login-telekom.online",
+          "login-verify.online",
+          "logowanie-pl.site",
+          "meta-ua.online",
+          "net-account.online",
+          "net-account.space",
+          "net-accounts-mail.ru",
+          "net-support.site",
+          "net-verification.online",
+          "net-verify.site",
+          "net-verify.website",
+          "no-replay-notification.ga",
+          "onet-pl.online",
+          "passport-yandex.ru",
+          "ron-mil-pl.site",
+          "ron-mil-pl.space",
+          "ru-passport.online",
+          "signin-telekom.online",
+          "ua-agreements.online",
+          "ua-login.site",
+          "ua-passport.online",
+          "ukroboronprom-com.site",
+          "ukroboronprom.online",
+          "verify-ua.online",
+          "verify-ua.site",
+          "wp-agreements.online",
+          "wp-pl-potwierdz-dostep.site",
+          "wp-pl.eu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://content.fireeye.com/web-assets/rpt-unc1151-ghostwriter-update",
+        "https://www.fireeye.com/blog/threat-research/2021/04/espionage-group-unc1151-likely-conducts-ghostwriter-influence-activity.html",
+        "https://otx.alienvault.com/pulse/6089a10aa27c23fdd4ee928e"
+      ],
+      "total": 39
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2020-06-14",
+      "indicators": {
+        "url_path": [
+          "/update/microsoft_corpsh",
+          "/update/microsoft_corpshd"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6315762"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-06-14",
+      "indicators": {
+        "ipv4": [
+          "88.99.132.118:1985"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/siedlmarpl/status/971593279224537088",
+        "https://www.hybrid-analysis.com/sample/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5?environmentId=100",
+        "https://www.virustotal.com/gui/file/fa48cd1fd8aab4a43e9ff1f7985c549040389036a03f9117f675d8737e1b34b5/detection",
+        "https://github.com/stamparm/maltrail/pull/9325/commits/9feaaeddd717efdf2d6dab8b51d17cc5dd6157b6",
+        "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/unc1151-ghostwriter-update-report.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-02-22",
+      "indicators": {
+        "domain": [
+          "cloud-security.ggpht.ml",
+          "ggpht.ml"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1231247315672809473",
+        "https://www.virustotal.com/gui/file/3b701eac4e3a73aec109120c97102c17edf88a20d1883dd5eef6db60d52b8d92/detection",
+        "https://app.any.run/tasks/844d5358-bf5d-4a4a-89b2-d3bf06df79e3/",
+        "https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/unc1151-ghostwriter-update-report.pdf"
+      ],
+      "total": 2
+    }
+  ]
+}

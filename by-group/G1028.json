@@ -1,0 +1,1214 @@
+{
+  "aliases": [
+    "arid gopher",
+    "arid viper",
+    "spyc23"
+  ],
+  "attack_id": "G1028",
+  "attack_name": "APT-C-23",
+  "attack_url": "https://attack.mitre.org/groups/G1028/",
+  "counts": {
+    "domain": 103,
+    "ipv4": 6,
+    "url": 2,
+    "url_path": 69
+  },
+  "first_seen": {
+    "domain": {
+      "abuhmaid.net": "2015-03-18",
+      "accountforuser.website": "2018-09-25",
+      "acs-group.net": "2023-11-06",
+      "advtravel.info": "2015-03-18",
+      "ahmedfaiez.info": "2015-03-18",
+      "almoshell.website": "2024-06-13",
+      "alwaysgoodidea.com": "2024-06-13",
+      "analyticsandroid.com": "2024-06-13",
+      "androcity.com": "2015-03-18",
+      "angela-bishop.com": "2022-06-17",
+      "anime-con.net": "2023-11-06",
+      "baldwin-gonzalez.live": "2020-12-15",
+      "benyallen.club": "2020-12-15",
+      "blogging-host.info": "2015-03-18",
+      "chad-jessie.info": "2020-12-15",
+      "chloe-boreman.com": "2023-04-04",
+      "cooperron.me": "2022-02-05",
+      "crashstoreplayer.website": "2024-06-13",
+      "cricket-live.net": "2023-11-06",
+      "criston-cole.com": "2023-04-04",
+      "dabliardogame.com": "2024-06-13",
+      "deangelomcnay.news": "2022-02-05",
+      "delooyp.com": "2023-09-19",
+      "dslam.net": "2023-11-06",
+      "earlahenry.com": "2022-02-05",
+      "elsilvercloud.com": "2024-06-13",
+      "escanor.live": "2020-12-15",
+      "facebook-emoticons.bitblogoo.com": "2015-03-18",
+      "flushupate.com": "2015-03-18",
+      "flushupdate.com": "2015-03-18",
+      "fpupdate.info": "2015-03-18",
+      "gameservicesplay.com": "2024-06-13",
+      "gmesc.com": "2023-11-06",
+      "godeutalk.com": "2024-06-13",
+      "grace-fraser.site": "2022-03-22",
+      "gsstar.net": "2023-11-06",
+      "haroldramsey.icu": "2023-10-31",
+      "im-inter.net": "2023-11-06",
+      "ineltdriver.com": "2015-03-18",
+      "ineltdriver.info": "2015-03-18",
+      "it-franch-result.info": "2023-11-06",
+      "iwork-sys.com": "2015-03-18",
+      "izocraft.com": "2023-10-01",
+      "jaime-martinez.info": "2020-12-15",
+      "jasondixon.net": "2023-11-06",
+      "jolia-16e7b.appspot.com": "2023-11-07",
+      "judystevenson.info": "2020-11-18",
+      "jumpstartmail.com": "2023-04-04",
+      "katesacker.club": "2018-09-25",
+      "krasil-anthony.icu": "2020-10-20",
+      "labeepuzz.com": "2024-06-13",
+      "leaf-japan.net": "2023-11-06",
+      "lightroom-61eb2.firebaseio.com": "2023-10-31",
+      "linkedim.in": "2015-03-18",
+      "linksis.info": "2015-03-18",
+      "liptona.net": "2015-03-18",
+      "london-sport.ne": "2023-11-06",
+      "lrxzklwmzxe.com": "2023-11-06",
+      "luis-dubuque.in": "2023-10-31",
+      "mediahitech.com": "2015-03-18",
+      "mediahitech.info": "2015-03-18",
+      "mixedwork.com": "2015-03-18",
+      "mozelllittel.com": "2022-03-22",
+      "nauss-lab.com": "2015-03-18",
+      "nice-mobiles.com": "2015-03-18",
+      "nicoledotson.icu": "2020-02-13",
+      "nortirchats.com": "2024-06-13",
+      "officeappslive.site": "2019-03-29",
+      "orientflags.com": "2024-06-13",
+      "palcivilreg.com": "2024-06-13",
+      "pam-beesly.site": "2022-02-04",
+      "pariberychat.com": "2024-06-13",
+      "paydayloansnew.com": "2023-04-04",
+      "picture-world.info": "2023-04-04",
+      "plmedgroup.com": "2015-03-18",
+      "porthopeminorhockey.net": "2023-09-21",
+      "proj-2bedf.firebaseio.com": "2024-06-13",
+      "proj-54ca0.firebaseio.com": "2024-06-13",
+      "proj-95dae.firebaseio.com": "2024-06-13",
+      "proj3-1e67a.firebaseio.com": "2024-06-13",
+      "project44-5ebbd.firebaseio.com": "2024-06-13",
+      "pstcmedia.com": "2015-03-18",
+      "rashonal.appspot.com": "2023-11-07",
+      "renatchat.com": "2024-06-13",
+      "rnacgroup.com": "2023-04-04",
+      "robert-keegan.life": "2020-12-15",
+      "rviedofree.com": "2019-03-29",
+      "salimafia.net": "2023-04-04",
+      "samwinchester.club": "2019-03-27",
+      "seomoi.net": "2023-04-04",
+      "skippedtestinapp.firebaseio.com": "2023-10-31",
+      "sknzy-mysl.vip": "2022-06-02",
+      "soft-utils.com": "2023-04-04",
+      "sports-et-loisirs.net": "2023-11-06",
+      "storgemydata.website": "2019-03-29",
+      "swsan-lina-soso.info": "2022-11-14",
+      "tatsumifoughtogre.club": "2020-12-15",
+      "tierrastein.live": "2021-12-07",
+      "tophatauc.com": "2023-11-06",
+      "tvgate.rocks": "2015-03-18",
+      "ultraversion.com": "2024-06-13",
+      "yellwo-473d0.appspot.com": "2023-11-07",
+      "zakaria-chotzen.info": "2022-10-11"
+    },
+    "ipv4": {
+      "213.184.123.144:8080": "2020-12-15",
+      "5.181.23.41:8000": "2023-09-21",
+      "5.181.23.41:8888": "2023-09-21",
+      "91.199.147.84:8080": "2023-10-01",
+      "91.199.147.84:8888": "2023-10-01",
+      "91.219.150.123:42530": "2023-10-01"
+    },
+    "url": {
+      "http://5.182.39.44": "2023-04-04",
+      "http://91.199.147.84": "2023-10-01"
+    },
+    "url_path": {
+      "/A2FwXHQqrQ2hvDc/": "2022-10-11",
+      "/A2FwXHQqrQ2hvDc/QgaYCarsQS/": "2022-10-11",
+      "/A2FwXHQqrQ2hvDc/QgaYCarsQS/LaVfcCBwHi/": "2022-10-11",
+      "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/": "2022-10-11",
+      "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/oznLJOjxRn/": "2022-10-11",
+      "/AJLUK9BI48/": "2023-04-04",
+      "/AJLUK9BI48/0L6W3CSBMC": "2023-04-04",
+      "/Ct2azbEP57LtWgmK/": "2022-02-05",
+      "/Ct2azbEP57LtWgmK/lWaPwemAJ3LPFmDH/": "2022-02-05",
+      "/DWL1RucGSj/": "2023-04-04",
+      "/DWL1RucGSj/4wwA7S8jQv": "2023-04-04",
+      "/GbrHoIfRqtE69hH/": "2022-02-05",
+      "/IURTIER3BNV4ER/": "2023-04-04",
+      "/IURTIER3BNV4ER/AJLUK9BI48/0L6W3CSBMC": "2023-04-04",
+      "/IURTIER3BNV4ER/DWL1RucGSj/4wwA7S8jQv": "2023-04-04",
+      "/KY1hNeVvrE1XCrKP/": "2022-01-10",
+      "/LaVfcCBwHi/": "2022-10-11",
+      "/QgaYCarsQS/": "2022-10-11",
+      "/QgaYCarsQS/LaVfcCBwHi/": "2022-11-14",
+      "/X2EYSWlzSZgSUME210Zv/": "2022-02-05",
+      "/X2EYSWlzSZgSUME210Zv/YPPV6kFl2PwwF0TEVHMy/": "2022-02-05",
+      "/YPPV6kFl2PwwF0TEVHMy/": "2022-02-05",
+      "/ZCgbo9EVhYMA8PX": "2022-02-05",
+      "/ajgwpwtgwz/": "2023-10-01",
+      "/bu5EmpJE7DUfzZD": "2022-02-05",
+      "/cdkpwwchvjjy/": "2023-09-19",
+      "/cmsnvbyawttf/": "2023-04-04",
+      "/cvmfiojusjku/": "2023-09-21",
+      "/dad5/": "2019-03-29",
+      "/ddtkdnjhaqvujgv/": "2023-09-21",
+      "/ddtkdnjhaqvujgv/cvmfiojusjku/": "2023-09-21",
+      "/esuzmwmrtajj/": "2023-04-04",
+      "/esuzmwmrtajj/cmsnvbyawttf/mkxnhqwdywbu": "2023-04-04",
+      "/gmsvmzxrrrlt/": "2023-09-19",
+      "/hx3FByTR5o3zNZYD/": "2022-02-05",
+      "/hx3FByTR5o3zNZYD/sYkaiHz0Mse13C79dy1I/": "2022-02-05",
+      "/ihxjkoflibjv/": "2023-09-19",
+      "/ittkkcoehbpgsxvol/": "2023-10-01",
+      "/ittkkcoehbpgsxvol/txizybbupgqwa/": "2023-10-01",
+      "/ittkkcoehbpgsxvol/txizybbupgqwa/ajgwpwtgwz/": "2023-10-01",
+      "/jqfhpgbwhx/": "2023-09-21",
+      "/kRD5K9t35c78cjLV/": "2022-06-17",
+      "/kRyMLhAIuQ/": "2022-10-11",
+      "/lWaPwemAJ3LPFmDH/": "2022-02-05",
+      "/lahmrxjlpvvn/": "2023-09-19",
+      "/lwbheruavqogbr/": "2023-09-19",
+      "/mkxnhqwdywbu": "2023-04-04",
+      "/myucfibwza/": "2023-09-21",
+      "/oznLJOjxRn/": "2022-10-11",
+      "/qWIlIdKf2buIH0k/": "2022-02-05",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/": "2022-02-05",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/ZCgbo9EVhYMA8PX": "2022-02-05",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/bu5EmpJE7DUfzZD": "2022-02-05",
+      "/sYkaiHz0Mse13C79dy1I/": "2022-02-05",
+      "/sami": "2019-03-29",
+      "/sfuxmiibif/": "2020-12-15",
+      "/txizybbupgqwa/": "2023-10-01",
+      "/txizybbupgqwa/ajgwpwtgwz/": "2023-10-01",
+      "/um2NxySaF4L5mSYE/": "2022-01-10",
+      "/um2NxySaF4L5mSYE/KY1hNeVvrE1XCrKP/": "2022-01-10",
+      "/uohmgcvzhl/": "2023-09-21",
+      "/yMdp2RPagaQcZYtr/": "2022-06-17",
+      "/yMdp2RPagaQcZYtr/kRD5K9t35c78cjLV/": "2022-06-17",
+      "/ymdfckhiqjerxsww/": "2023-09-19",
+      "/ymdfckhiqjerxsww/lwbheruavqogbr/": "2023-09-19",
+      "/zoailloaze/": "2020-12-15",
+      "/zoailloaze/sfuxmiibif/": "2020-12-15",
+      "/zoailloaze/sfuxmiibif/hortense1": "2020-12-15",
+      "/zoailloaze/sfuxmiibif/qprbudls": "2020-12-15"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2024-06-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "abuhmaid.net",
+      "accountforuser.website",
+      "acs-group.net",
+      "advtravel.info",
+      "ahmedfaiez.info",
+      "almoshell.website",
+      "alwaysgoodidea.com",
+      "analyticsandroid.com",
+      "androcity.com",
+      "angela-bishop.com",
+      "anime-con.net",
+      "baldwin-gonzalez.live",
+      "benyallen.club",
+      "blogging-host.info",
+      "chad-jessie.info",
+      "chloe-boreman.com",
+      "cooperron.me",
+      "crashstoreplayer.website",
+      "cricket-live.net",
+      "criston-cole.com",
+      "dabliardogame.com",
+      "deangelomcnay.news",
+      "delooyp.com",
+      "dslam.net",
+      "earlahenry.com",
+      "elsilvercloud.com",
+      "escanor.live",
+      "facebook-emoticons.bitblogoo.com",
+      "flushupate.com",
+      "flushupdate.com",
+      "fpupdate.info",
+      "gameservicesplay.com",
+      "gmesc.com",
+      "godeutalk.com",
+      "grace-fraser.site",
+      "gsstar.net",
+      "haroldramsey.icu",
+      "im-inter.net",
+      "ineltdriver.com",
+      "ineltdriver.info",
+      "it-franch-result.info",
+      "iwork-sys.com",
+      "izocraft.com",
+      "jaime-martinez.info",
+      "jasondixon.net",
+      "jolia-16e7b.appspot.com",
+      "judystevenson.info",
+      "jumpstartmail.com",
+      "katesacker.club",
+      "krasil-anthony.icu",
+      "labeepuzz.com",
+      "leaf-japan.net",
+      "lightroom-61eb2.firebaseio.com",
+      "linkedim.in",
+      "linksis.info",
+      "liptona.net",
+      "london-sport.ne",
+      "lrxzklwmzxe.com",
+      "luis-dubuque.in",
+      "mediahitech.com",
+      "mediahitech.info",
+      "mixedwork.com",
+      "mozelllittel.com",
+      "nauss-lab.com",
+      "nice-mobiles.com",
+      "nicoledotson.icu",
+      "nortirchats.com",
+      "officeappslive.site",
+      "orientflags.com",
+      "palcivilreg.com",
+      "pam-beesly.site",
+      "pariberychat.com",
+      "paydayloansnew.com",
+      "picture-world.info",
+      "plmedgroup.com",
+      "porthopeminorhockey.net",
+      "proj-2bedf.firebaseio.com",
+      "proj-54ca0.firebaseio.com",
+      "proj-95dae.firebaseio.com",
+      "proj3-1e67a.firebaseio.com",
+      "project44-5ebbd.firebaseio.com",
+      "pstcmedia.com",
+      "rashonal.appspot.com",
+      "renatchat.com",
+      "rnacgroup.com",
+      "robert-keegan.life",
+      "rviedofree.com",
+      "salimafia.net",
+      "samwinchester.club",
+      "seomoi.net",
+      "skippedtestinapp.firebaseio.com",
+      "sknzy-mysl.vip",
+      "soft-utils.com",
+      "sports-et-loisirs.net",
+      "storgemydata.website",
+      "swsan-lina-soso.info",
+      "tatsumifoughtogre.club",
+      "tierrastein.live",
+      "tophatauc.com",
+      "tvgate.rocks",
+      "ultraversion.com",
+      "yellwo-473d0.appspot.com",
+      "zakaria-chotzen.info"
+    ],
+    "ipv4": [
+      "213.184.123.144:8080",
+      "5.181.23.41:8000",
+      "5.181.23.41:8888",
+      "91.199.147.84:8080",
+      "91.199.147.84:8888",
+      "91.219.150.123:42530"
+    ],
+    "url": [
+      "http://5.182.39.44",
+      "http://91.199.147.84"
+    ],
+    "url_path": [
+      "/A2FwXHQqrQ2hvDc/",
+      "/A2FwXHQqrQ2hvDc/QgaYCarsQS/",
+      "/A2FwXHQqrQ2hvDc/QgaYCarsQS/LaVfcCBwHi/",
+      "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/",
+      "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/oznLJOjxRn/",
+      "/AJLUK9BI48/",
+      "/AJLUK9BI48/0L6W3CSBMC",
+      "/Ct2azbEP57LtWgmK/",
+      "/Ct2azbEP57LtWgmK/lWaPwemAJ3LPFmDH/",
+      "/DWL1RucGSj/",
+      "/DWL1RucGSj/4wwA7S8jQv",
+      "/GbrHoIfRqtE69hH/",
+      "/IURTIER3BNV4ER/",
+      "/IURTIER3BNV4ER/AJLUK9BI48/0L6W3CSBMC",
+      "/IURTIER3BNV4ER/DWL1RucGSj/4wwA7S8jQv",
+      "/KY1hNeVvrE1XCrKP/",
+      "/LaVfcCBwHi/",
+      "/QgaYCarsQS/",
+      "/QgaYCarsQS/LaVfcCBwHi/",
+      "/X2EYSWlzSZgSUME210Zv/",
+      "/X2EYSWlzSZgSUME210Zv/YPPV6kFl2PwwF0TEVHMy/",
+      "/YPPV6kFl2PwwF0TEVHMy/",
+      "/ZCgbo9EVhYMA8PX",
+      "/ajgwpwtgwz/",
+      "/bu5EmpJE7DUfzZD",
+      "/cdkpwwchvjjy/",
+      "/cmsnvbyawttf/",
+      "/cvmfiojusjku/",
+      "/dad5/",
+      "/ddtkdnjhaqvujgv/",
+      "/ddtkdnjhaqvujgv/cvmfiojusjku/",
+      "/esuzmwmrtajj/",
+      "/esuzmwmrtajj/cmsnvbyawttf/mkxnhqwdywbu",
+      "/gmsvmzxrrrlt/",
+      "/hx3FByTR5o3zNZYD/",
+      "/hx3FByTR5o3zNZYD/sYkaiHz0Mse13C79dy1I/",
+      "/ihxjkoflibjv/",
+      "/ittkkcoehbpgsxvol/",
+      "/ittkkcoehbpgsxvol/txizybbupgqwa/",
+      "/ittkkcoehbpgsxvol/txizybbupgqwa/ajgwpwtgwz/",
+      "/jqfhpgbwhx/",
+      "/kRD5K9t35c78cjLV/",
+      "/kRyMLhAIuQ/",
+      "/lWaPwemAJ3LPFmDH/",
+      "/lahmrxjlpvvn/",
+      "/lwbheruavqogbr/",
+      "/mkxnhqwdywbu",
+      "/myucfibwza/",
+      "/oznLJOjxRn/",
+      "/qWIlIdKf2buIH0k/",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/ZCgbo9EVhYMA8PX",
+      "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/bu5EmpJE7DUfzZD",
+      "/sYkaiHz0Mse13C79dy1I/",
+      "/sami",
+      "/sfuxmiibif/",
+      "/txizybbupgqwa/",
+      "/txizybbupgqwa/ajgwpwtgwz/",
+      "/um2NxySaF4L5mSYE/",
+      "/um2NxySaF4L5mSYE/KY1hNeVvrE1XCrKP/",
+      "/uohmgcvzhl/",
+      "/yMdp2RPagaQcZYtr/",
+      "/yMdp2RPagaQcZYtr/kRD5K9t35c78cjLV/",
+      "/ymdfckhiqjerxsww/",
+      "/ymdfckhiqjerxsww/lwbheruavqogbr/",
+      "/zoailloaze/",
+      "/zoailloaze/sfuxmiibif/",
+      "/zoailloaze/sfuxmiibif/hortense1",
+      "/zoailloaze/sfuxmiibif/qprbudls"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ARIDVIPER",
+    "DESERTFALCON"
+  ],
+  "references": [
+    "http://blog.talosintelligence.com/2022/02/arid-viper-targets-palestine.html",
+    "http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-arid-viper.pdf",
+    "https://blog.talosintelligence.com/arid-viper-mobile-spyware/",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-14: Arid Viper and VIRTUALNOTE)",
+    "https://securelist.com/files/2015/02/The-Desert-Falcons-targeted-attacks.pdf",
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/mantis-palestinian-attacks",
+    "https://threatfox.abuse.ch/browse/tag/AridViper/",
+    "https://twitter.com/ClearskySec/status/946364079630897152",
+    "https://twitter.com/ClearskySec/status/965985346222723072",
+    "https://twitter.com/Jup1a/status/1579751269828562945",
+    "https://twitter.com/RedDrip7/status/1592040235340541953",
+    "https://twitter.com/ShadowChasing1/status/1537698377714253825",
+    "https://twitter.com/cyberintproject/status/950930433595924480",
+    "https://twitter.com/eyalsela/status/883243599705645056",
+    "https://twitter.com/eyalsela/status/927211526406266881",
+    "https://twitter.com/h2jazi/status/1532388531141808129",
+    "https://twitter.com/k3yp0d/status/1468294182829760519",
+    "https://twitter.com/k3yp0d/status/1704053585036615861",
+    "https://twitter.com/k3yp0d/status/1704818412864594156",
+    "https://twitter.com/k3yp0d/status/1708357733471195192",
+    "https://unit42.paloaltonetworks.com/pymicropsia/",
+    "https://www.deepinstinct.com/blog/arid-gopher-the-newest-micropsia-malware-variant",
+    "https://www.sentinelone.com/labs/arid-viper-apts-nest-of-spyc23-malware-continues-to-target-android-devices/ (# spyc23)",
+    "https://www.virustotal.com/gui/file/247bebcb221ba87b9198aa8f4102b4239e63bc2bf4bb97554c96a586b8c66007/detection",
+    "https://www.virustotal.com/gui/file/36037040711231986f7509a2aa2af74b33022defac4669fb0eb14beba7caff39/detection",
+    "https://www.virustotal.com/gui/file/375340a79168cd4ccf7846db469ab1eb17f7824076b7032ff7780f80a0e7ecca/detection",
+    "https://www.virustotal.com/gui/file/80cff71a7f13a2e83b948ed218ab6ffd27f309680cf96c3c2e0e67b8dc857bdb/detection",
+    "https://www.virustotal.com/gui/file/8994ecf78913be242d1246637c34341bc381ede2c22bf2f585a4c241a5ef7b49/detection",
+    "https://www.virustotal.com/gui/file/af87a91c71b3cca1184b4b1250cacec041430264d0f8ac56bde3a6b1173e84a2/detection",
+    "https://www.virustotal.com/gui/file/c1c5c4153fea7871e735cabaffaf64722235a374b890017ffbe2074ac0b11fe1/detection",
+    "https://www.virustotal.com/gui/file/f75314cafb6f523492451b7e3543538b0629cf3d6ba8c53ce689a9c639469ae8/detection",
+    "https://www.virustotal.com/gui/file/fa98139b94cc56890af27e6dd02deb4da64b930e801492a966e0f13103808e2f/detection",
+    "https://www.virustotal.com/gui/ip-address/45.144.29.251/relations",
+    "https://www.welivesecurity.com/en/eset-research/arid-viper-poisons-android-apps-with-aridspy/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "10 shared indicators",
+          "kind": "infrastructure",
+          "weight": 10.0
+        }
+      ],
+      "slug": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "GAZA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0040"
+    }
+  ],
+  "slug": "G1028",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2024-06-13",
+      "indicators": {
+        "domain": [
+          "almoshell.website",
+          "alwaysgoodidea.com",
+          "analyticsandroid.com",
+          "crashstoreplayer.website",
+          "dabliardogame.com",
+          "elsilvercloud.com",
+          "gameservicesplay.com",
+          "godeutalk.com",
+          "labeepuzz.com",
+          "nortirchats.com",
+          "orientflags.com",
+          "palcivilreg.com",
+          "pariberychat.com",
+          "proj-2bedf.firebaseio.com",
+          "proj-54ca0.firebaseio.com",
+          "proj-95dae.firebaseio.com",
+          "proj3-1e67a.firebaseio.com",
+          "project44-5ebbd.firebaseio.com",
+          "renatchat.com",
+          "ultraversion.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/arid-viper-poisons-android-apps-with-aridspy/"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-11-07",
+      "indicators": {
+        "domain": [
+          "jolia-16e7b.appspot.com",
+          "rashonal.appspot.com",
+          "yellwo-473d0.appspot.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/arid-viper-apts-nest-of-spyc23-malware-continues-to-target-android-devices/ (# spyc23)"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2023-11-06",
+      "indicators": {
+        "domain": [
+          "acs-group.net",
+          "anime-con.net",
+          "cricket-live.net",
+          "dslam.net",
+          "gmesc.com",
+          "gsstar.net",
+          "im-inter.net",
+          "it-franch-result.info",
+          "jasondixon.net",
+          "leaf-japan.net",
+          "london-sport.ne",
+          "lrxzklwmzxe.com",
+          "sports-et-loisirs.net",
+          "tophatauc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/tag/AridViper/"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-10-31",
+      "indicators": {
+        "domain": [
+          "haroldramsey.icu",
+          "lightroom-61eb2.firebaseio.com",
+          "luis-dubuque.in",
+          "skippedtestinapp.firebaseio.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/arid-viper-mobile-spyware/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 3,
+        "url": 1,
+        "url_path": 6
+      },
+      "first_seen": "2023-10-01",
+      "indicators": {
+        "domain": [
+          "izocraft.com"
+        ],
+        "ipv4": [
+          "91.199.147.84:8080",
+          "91.199.147.84:8888",
+          "91.219.150.123:42530"
+        ],
+        "url": [
+          "http://91.199.147.84"
+        ],
+        "url_path": [
+          "/ajgwpwtgwz/",
+          "/ittkkcoehbpgsxvol/",
+          "/ittkkcoehbpgsxvol/txizybbupgqwa/",
+          "/ittkkcoehbpgsxvol/txizybbupgqwa/ajgwpwtgwz/",
+          "/txizybbupgqwa/",
+          "/txizybbupgqwa/ajgwpwtgwz/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1708357733471195192",
+        "https://www.virustotal.com/gui/file/af87a91c71b3cca1184b4b1250cacec041430264d0f8ac56bde3a6b1173e84a2/detection"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 2,
+        "url_path": 6
+      },
+      "first_seen": "2023-09-21",
+      "indicators": {
+        "domain": [
+          "porthopeminorhockey.net"
+        ],
+        "ipv4": [
+          "5.181.23.41:8000",
+          "5.181.23.41:8888"
+        ],
+        "url_path": [
+          "/cvmfiojusjku/",
+          "/ddtkdnjhaqvujgv/",
+          "/ddtkdnjhaqvujgv/cvmfiojusjku/",
+          "/jqfhpgbwhx/",
+          "/myucfibwza/",
+          "/uohmgcvzhl/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1704818412864594156",
+        "https://www.virustotal.com/gui/file/fa98139b94cc56890af27e6dd02deb4da64b930e801492a966e0f13103808e2f/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 7
+      },
+      "first_seen": "2023-09-19",
+      "indicators": {
+        "domain": [
+          "delooyp.com"
+        ],
+        "url_path": [
+          "/cdkpwwchvjjy/",
+          "/gmsvmzxrrrlt/",
+          "/ihxjkoflibjv/",
+          "/lahmrxjlpvvn/",
+          "/lwbheruavqogbr/",
+          "/ymdfckhiqjerxsww/",
+          "/ymdfckhiqjerxsww/lwbheruavqogbr/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1704053585036615861",
+        "https://www.virustotal.com/gui/ip-address/45.144.29.251/relations",
+        "https://www.virustotal.com/gui/file/c1c5c4153fea7871e735cabaffaf64722235a374b890017ffbe2074ac0b11fe1/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 9,
+        "url": 1,
+        "url_path": 11
+      },
+      "first_seen": "2023-04-04",
+      "indicators": {
+        "domain": [
+          "chloe-boreman.com",
+          "criston-cole.com",
+          "jumpstartmail.com",
+          "paydayloansnew.com",
+          "picture-world.info",
+          "rnacgroup.com",
+          "salimafia.net",
+          "seomoi.net",
+          "soft-utils.com"
+        ],
+        "url": [
+          "http://5.182.39.44"
+        ],
+        "url_path": [
+          "/AJLUK9BI48/",
+          "/AJLUK9BI48/0L6W3CSBMC",
+          "/DWL1RucGSj/",
+          "/DWL1RucGSj/4wwA7S8jQv",
+          "/IURTIER3BNV4ER/",
+          "/IURTIER3BNV4ER/AJLUK9BI48/0L6W3CSBMC",
+          "/IURTIER3BNV4ER/DWL1RucGSj/4wwA7S8jQv",
+          "/cmsnvbyawttf/",
+          "/esuzmwmrtajj/",
+          "/esuzmwmrtajj/cmsnvbyawttf/mkxnhqwdywbu",
+          "/mkxnhqwdywbu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/mantis-palestinian-attacks"
+      ],
+      "total": 21
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2022-11-14",
+      "indicators": {
+        "domain": [
+          "swsan-lina-soso.info"
+        ],
+        "url_path": [
+          "/QgaYCarsQS/LaVfcCBwHi/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1592040235340541953",
+        "https://www.virustotal.com/gui/file/36037040711231986f7509a2aa2af74b33022defac4669fb0eb14beba7caff39/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 5
+      },
+      "first_seen": "2022-10-11",
+      "indicators": {
+        "url_path": [
+          "/A2FwXHQqrQ2hvDc/",
+          "/A2FwXHQqrQ2hvDc/QgaYCarsQS/",
+          "/A2FwXHQqrQ2hvDc/QgaYCarsQS/LaVfcCBwHi/",
+          "/LaVfcCBwHi/",
+          "/QgaYCarsQS/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Jup1a/status/1579751269828562945",
+        "https://www.virustotal.com/gui/file/247bebcb221ba87b9198aa8f4102b4239e63bc2bf4bb97554c96a586b8c66007/detection",
+        "https://twitter.com/RedDrip7/status/1592040235340541953",
+        "https://www.virustotal.com/gui/file/36037040711231986f7509a2aa2af74b33022defac4669fb0eb14beba7caff39/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 4
+      },
+      "first_seen": "2022-10-11",
+      "indicators": {
+        "domain": [
+          "zakaria-chotzen.info"
+        ],
+        "url_path": [
+          "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/",
+          "/A2FwXHQqrQ2hvDc/kRyMLhAIuQ/oznLJOjxRn/",
+          "/kRyMLhAIuQ/",
+          "/oznLJOjxRn/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Jup1a/status/1579751269828562945",
+        "https://www.virustotal.com/gui/file/247bebcb221ba87b9198aa8f4102b4239e63bc2bf4bb97554c96a586b8c66007/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 3
+      },
+      "first_seen": "2022-06-17",
+      "indicators": {
+        "domain": [
+          "angela-bishop.com"
+        ],
+        "url_path": [
+          "/kRD5K9t35c78cjLV/",
+          "/yMdp2RPagaQcZYtr/",
+          "/yMdp2RPagaQcZYtr/kRD5K9t35c78cjLV/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1537698377714253825",
+        "https://www.virustotal.com/gui/file/8994ecf78913be242d1246637c34341bc381ede2c22bf2f585a4c241a5ef7b49/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-02",
+      "indicators": {
+        "domain": [
+          "sknzy-mysl.vip"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1532388531141808129",
+        "https://www.virustotal.com/gui/file/80cff71a7f13a2e83b948ed218ab6ffd27f309680cf96c3c2e0e67b8dc857bdb/detection",
+        "https://www.virustotal.com/gui/file/f75314cafb6f523492451b7e3543538b0629cf3d6ba8c53ce689a9c639469ae8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-22",
+      "indicators": {
+        "domain": [
+          "grace-fraser.site",
+          "mozelllittel.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.deepinstinct.com/blog/arid-gopher-the-newest-micropsia-malware-variant"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "url_path": 16
+      },
+      "first_seen": "2022-02-05",
+      "indicators": {
+        "domain": [
+          "cooperron.me",
+          "deangelomcnay.news",
+          "earlahenry.com"
+        ],
+        "url_path": [
+          "/Ct2azbEP57LtWgmK/",
+          "/Ct2azbEP57LtWgmK/lWaPwemAJ3LPFmDH/",
+          "/GbrHoIfRqtE69hH/",
+          "/X2EYSWlzSZgSUME210Zv/",
+          "/X2EYSWlzSZgSUME210Zv/YPPV6kFl2PwwF0TEVHMy/",
+          "/YPPV6kFl2PwwF0TEVHMy/",
+          "/ZCgbo9EVhYMA8PX",
+          "/bu5EmpJE7DUfzZD",
+          "/hx3FByTR5o3zNZYD/",
+          "/hx3FByTR5o3zNZYD/sYkaiHz0Mse13C79dy1I/",
+          "/lWaPwemAJ3LPFmDH/",
+          "/qWIlIdKf2buIH0k/",
+          "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/",
+          "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/ZCgbo9EVhYMA8PX",
+          "/qWIlIdKf2buIH0k/GbrHoIfRqtE69hH/bu5EmpJE7DUfzZD",
+          "/sYkaiHz0Mse13C79dy1I/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blog.talosintelligence.com/2022/02/arid-viper-targets-palestine.html"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-02-04",
+      "indicators": {
+        "domain": [
+          "pam-beesly.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.deepinstinct.com/blog/arid-gopher-the-newest-micropsia-malware-variant"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2022-01-10",
+      "indicators": {
+        "url_path": [
+          "/KY1hNeVvrE1XCrKP/",
+          "/um2NxySaF4L5mSYE/",
+          "/um2NxySaF4L5mSYE/KY1hNeVvrE1XCrKP/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blog.talosintelligence.com/2022/02/arid-viper-targets-palestine.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-07",
+      "indicators": {
+        "domain": [
+          "tierrastein.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1468294182829760519",
+        "https://www.virustotal.com/gui/file/375340a79168cd4ccf7846db469ab1eb17f7824076b7032ff7780f80a0e7ecca/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7,
+        "url_path": 5
+      },
+      "first_seen": "2020-12-15",
+      "indicators": {
+        "domain": [
+          "baldwin-gonzalez.live",
+          "benyallen.club",
+          "chad-jessie.info",
+          "escanor.live",
+          "jaime-martinez.info",
+          "robert-keegan.life",
+          "tatsumifoughtogre.club"
+        ],
+        "url_path": [
+          "/sfuxmiibif/",
+          "/zoailloaze/",
+          "/zoailloaze/sfuxmiibif/",
+          "/zoailloaze/sfuxmiibif/hortense1",
+          "/zoailloaze/sfuxmiibif/qprbudls"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pymicropsia/"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-12-15",
+      "indicators": {
+        "ipv4": [
+          "213.184.123.144:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/eyalsela/status/883243599705645056"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-18",
+      "indicators": {
+        "domain": [
+          "judystevenson.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pymicropsia/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-20",
+      "indicators": {
+        "domain": [
+          "krasil-anthony.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pymicropsia/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-13",
+      "indicators": {
+        "domain": [
+          "nicoledotson.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pymicropsia/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "rviedofree.com"
+        ],
+        "url_path": [
+          "/dad5/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/eyalsela/status/927211526406266881"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "url_path": [
+          "/sami"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/eyalsela/status/883243599705645056"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "officeappslive.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyberintproject/status/950930433595924480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "storgemydata.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-14: Arid Viper and VIRTUALNOTE)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "domain": [
+          "samwinchester.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pymicropsia/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-25",
+      "indicators": {
+        "domain": [
+          "katesacker.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/965985346222723072"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-25",
+      "indicators": {
+        "domain": [
+          "accountforuser.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/946364079630897152"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "abuhmaid.net",
+          "advtravel.info",
+          "androcity.com",
+          "blogging-host.info",
+          "facebook-emoticons.bitblogoo.com",
+          "fpupdate.info",
+          "ineltdriver.com",
+          "iwork-sys.com",
+          "linkedim.in",
+          "linksis.info",
+          "liptona.net",
+          "mediahitech.info",
+          "nauss-lab.com",
+          "nice-mobiles.com",
+          "tvgate.rocks"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/files/2015/02/The-Desert-Falcons-targeted-attacks.pdf"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "ahmedfaiez.info",
+          "flushupate.com",
+          "flushupdate.com",
+          "mixedwork.com",
+          "plmedgroup.com",
+          "pstcmedia.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/files/2015/02/The-Desert-Falcons-targeted-attacks.pdf",
+        "http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-arid-viper.pdf"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "ineltdriver.info",
+          "mediahitech.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.trendmicro.com/cloud-content/us/pdfs/security-intelligence/white-papers/wp-operation-arid-viper.pdf"
+      ],
+      "total": 2
+    }
+  ]
+}

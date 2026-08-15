@@ -1,0 +1,308 @@
+{
+  "aliases": [
+    "MarkiRAT"
+  ],
+  "attack_id": "G0137",
+  "attack_name": "Ferocious Kitten",
+  "attack_url": "https://attack.mitre.org/groups/G0137/",
+  "counts": {
+    "domain": 32,
+    "url_path": 4
+  },
+  "first_seen": {
+    "domain": {
+      "accountes.google.comesignt.website": "2026-02-03",
+      "accounts.google.comisignin.online": "2026-02-03",
+      "aparat.com-view.space": "2021-06-21",
+      "com-accounts.website": "2026-02-03",
+      "com-signin.site": "2026-02-03",
+      "com-view.org": "2021-06-21",
+      "com-view.space": "2021-06-21",
+      "come-signin.quest": "2026-02-03",
+      "comesignt.website": "2026-02-03",
+      "comi-site.website": "2026-02-03",
+      "comisignin.online": "2026-02-03",
+      "comuk.space": "2022-05-25",
+      "google.comisignin.online": "2026-02-03",
+      "khabarfarsi.com-view.org": "2021-06-21",
+      "microcaft.xyz": "2021-09-07",
+      "microsoft.com-view.space": "2021-06-23",
+      "microsoft.come-site.website": "2026-02-03",
+      "microsoft.comi-site.website": "2026-02-03",
+      "microsoft.comuk.space": "2022-05-25",
+      "microsoft.microcaft.xyz": "2021-09-07",
+      "microsoft.unupdate.ml": "2021-06-23",
+      "microsoft.unupload.xyz": "2021-06-23",
+      "microsoft.updatei.com": "2021-06-23",
+      "min.come-site.website": "2026-02-03",
+      "min.comi-site.website": "2026-02-03",
+      "ns1.com-accounts.website": "2026-02-03",
+      "ns1.com-signin.site": "2026-02-03",
+      "ns2.com-accounts.website": "2026-02-03",
+      "ns2.com-signin.site": "2026-02-03",
+      "unupdate.ml": "2021-06-23",
+      "unupload.xyz": "2021-06-23",
+      "updatei.com": "2021-06-21"
+    },
+    "url_path": {
+      "/ech/client.php?u=": "2021-06-21",
+      "/ech/echo.php?req=rr&u=": "2021-06-21",
+      "/ech/rite.php": "2021-06-21",
+      "/up/uploadx.php?=u=": "2021-06-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-06-21",
+    "latest": "2026-02-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "accountes.google.comesignt.website",
+      "accounts.google.comisignin.online",
+      "aparat.com-view.space",
+      "com-accounts.website",
+      "com-signin.site",
+      "com-view.org",
+      "com-view.space",
+      "come-signin.quest",
+      "comesignt.website",
+      "comi-site.website",
+      "comisignin.online",
+      "comuk.space",
+      "google.comisignin.online",
+      "khabarfarsi.com-view.org",
+      "microcaft.xyz",
+      "microsoft.com-view.space",
+      "microsoft.come-site.website",
+      "microsoft.comi-site.website",
+      "microsoft.comuk.space",
+      "microsoft.microcaft.xyz",
+      "microsoft.unupdate.ml",
+      "microsoft.unupload.xyz",
+      "microsoft.updatei.com",
+      "min.come-site.website",
+      "min.comi-site.website",
+      "ns1.com-accounts.website",
+      "ns1.com-signin.site",
+      "ns2.com-accounts.website",
+      "ns2.com-signin.site",
+      "unupdate.ml",
+      "unupload.xyz",
+      "updatei.com"
+    ],
+    "url_path": [
+      "/ech/client.php?u=",
+      "/ech/echo.php?req=rr&u=",
+      "/ech/rite.php",
+      "/up/uploadx.php?=u="
+    ]
+  },
+  "last_modified": "2026-02-03T15:47:10+00:00",
+  "maltrail_groups": [
+    "FEROCIOUSKITTEN"
+  ],
+  "references": [
+    "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+    "https://twitter.com/360CoreSec/status/1407604585896632323",
+    "https://twitter.com/360CoreSec/status/1407653661816201226",
+    "https://twitter.com/360CoreSec/status/1435077875703562242",
+    "https://www.virustotal.com/gui/file/361524fb3d40dd2f275ee7aa4f40fccfe21f0552cd36ec38f48fbf7e50e66810/detection",
+    "https://www.virustotal.com/gui/file/400eb6a94810323a1fc5f8ab31c682fe765aaec2cc61b37c31d719c7e45c9a6c/detection",
+    "https://www.virustotal.com/gui/file/51a6686b8c5ec7c610637398f3de43589f4e9fcbe8bcc0245343c5454d3b91de/detection",
+    "https://www.virustotal.com/gui/file/5d69c23a226a5ad1068bb77b174cb8d00aa774c277e32824024f0d2fb21de1d9/detection",
+    "https://www.virustotal.com/gui/file/66dcd98c6b310f4429890821e609d48cc6395a6be15ffe5a121ec68b7a8f7402/detection",
+    "https://www.virustotal.com/gui/file/99eb211ea131834d93e25ba0c1066e37d5583f7694c51611337e1c44b60b7fa5/detection",
+    "https://www.virustotal.com/gui/file/9a38069efc55a19d50d26d300948b9095ab72538acbf4ed427ed5a77060aa259/behavior/Microsoft%20Sysinternals",
+    "https://www.virustotal.com/gui/file/b0d85647a0715e84a569fc79f6df3b9b82bac11e388948b767b4dbc7c721af47/detection",
+    "https://www.virustotal.com/gui/file/be984ef82521f1618edda34fd9d1738b543c0db9613536068eead736b822aff1/detection",
+    "https://www.virustotal.com/gui/file/dd54da85e23ca2117ad962934cf1cefcdc24011780326e38dc48946da9bb84ec/detection",
+    "https://www.virustotal.com/gui/file/e53e265edcec04cdfb0db35139796944e867d49872e536d148af313e0b019ed7/detection",
+    "https://x.com/malwrhunterteam/status/2016245674635923855",
+    "https://x.com/malwrhunterteam/status/2016252181825946026",
+    "https://x.com/skocherhan/status/2016456574731010546"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "44% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.444
+        }
+      ],
+      "slug": "G0136"
+    }
+  ],
+  "slug": "G0137",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 17
+      },
+      "first_seen": "2026-02-03",
+      "indicators": {
+        "domain": [
+          "accountes.google.comesignt.website",
+          "accounts.google.comisignin.online",
+          "com-accounts.website",
+          "com-signin.site",
+          "come-signin.quest",
+          "comesignt.website",
+          "comi-site.website",
+          "comisignin.online",
+          "google.comisignin.online",
+          "microsoft.come-site.website",
+          "microsoft.comi-site.website",
+          "min.come-site.website",
+          "min.comi-site.website",
+          "ns1.com-accounts.website",
+          "ns1.com-signin.site",
+          "ns2.com-accounts.website",
+          "ns2.com-signin.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2016245674635923855",
+        "https://x.com/malwrhunterteam/status/2016252181825946026",
+        "https://x.com/skocherhan/status/2016456574731010546",
+        "https://www.virustotal.com/gui/file/400eb6a94810323a1fc5f8ab31c682fe765aaec2cc61b37c31d719c7e45c9a6c/detection",
+        "https://www.virustotal.com/gui/file/66dcd98c6b310f4429890821e609d48cc6395a6be15ffe5a121ec68b7a8f7402/detection",
+        "https://www.virustotal.com/gui/file/51a6686b8c5ec7c610637398f3de43589f4e9fcbe8bcc0245343c5454d3b91de/detection"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-25",
+      "indicators": {
+        "domain": [
+          "comuk.space",
+          "microsoft.comuk.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360CoreSec/status/1407604585896632323",
+        "https://twitter.com/360CoreSec/status/1407653661816201226",
+        "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+        "https://www.virustotal.com/gui/file/5d69c23a226a5ad1068bb77b174cb8d00aa774c277e32824024f0d2fb21de1d9/detection",
+        "https://www.virustotal.com/gui/file/dd54da85e23ca2117ad962934cf1cefcdc24011780326e38dc48946da9bb84ec/detection",
+        "https://www.virustotal.com/gui/file/be984ef82521f1618edda34fd9d1738b543c0db9613536068eead736b822aff1/detection",
+        "https://www.virustotal.com/gui/file/361524fb3d40dd2f275ee7aa4f40fccfe21f0552cd36ec38f48fbf7e50e66810/detection",
+        "https://www.virustotal.com/gui/file/e53e265edcec04cdfb0db35139796944e867d49872e536d148af313e0b019ed7/detection",
+        "https://www.virustotal.com/gui/file/99eb211ea131834d93e25ba0c1066e37d5583f7694c51611337e1c44b60b7fa5/detection",
+        "https://www.virustotal.com/gui/file/9a38069efc55a19d50d26d300948b9095ab72538acbf4ed427ed5a77060aa259/behavior/Microsoft%20Sysinternals"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-09-07",
+      "indicators": {
+        "domain": [
+          "microcaft.xyz",
+          "microsoft.microcaft.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360CoreSec/status/1435077875703562242",
+        "https://www.virustotal.com/gui/file/b0d85647a0715e84a569fc79f6df3b9b82bac11e388948b767b4dbc7c721af47/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2021-06-23",
+      "indicators": {
+        "domain": [
+          "microsoft.com-view.space",
+          "microsoft.unupdate.ml",
+          "microsoft.unupload.xyz",
+          "microsoft.updatei.com",
+          "unupdate.ml",
+          "unupload.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360CoreSec/status/1407604585896632323",
+        "https://twitter.com/360CoreSec/status/1407653661816201226",
+        "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+        "https://www.virustotal.com/gui/file/5d69c23a226a5ad1068bb77b174cb8d00aa774c277e32824024f0d2fb21de1d9/detection",
+        "https://www.virustotal.com/gui/file/dd54da85e23ca2117ad962934cf1cefcdc24011780326e38dc48946da9bb84ec/detection",
+        "https://www.virustotal.com/gui/file/be984ef82521f1618edda34fd9d1738b543c0db9613536068eead736b822aff1/detection",
+        "https://www.virustotal.com/gui/file/361524fb3d40dd2f275ee7aa4f40fccfe21f0552cd36ec38f48fbf7e50e66810/detection",
+        "https://www.virustotal.com/gui/file/e53e265edcec04cdfb0db35139796944e867d49872e536d148af313e0b019ed7/detection",
+        "https://www.virustotal.com/gui/file/99eb211ea131834d93e25ba0c1066e37d5583f7694c51611337e1c44b60b7fa5/detection",
+        "https://www.virustotal.com/gui/file/9a38069efc55a19d50d26d300948b9095ab72538acbf4ed427ed5a77060aa259/behavior/Microsoft%20Sysinternals"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2021-06-21",
+      "indicators": {
+        "domain": [
+          "aparat.com-view.space",
+          "com-view.org",
+          "com-view.space",
+          "khabarfarsi.com-view.org",
+          "updatei.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360CoreSec/status/1407604585896632323",
+        "https://twitter.com/360CoreSec/status/1407653661816201226",
+        "https://securelist.com/ferocious-kitten-6-years-of-covert-surveillance-in-iran/102806/",
+        "https://www.virustotal.com/gui/file/5d69c23a226a5ad1068bb77b174cb8d00aa774c277e32824024f0d2fb21de1d9/detection",
+        "https://www.virustotal.com/gui/file/dd54da85e23ca2117ad962934cf1cefcdc24011780326e38dc48946da9bb84ec/detection",
+        "https://www.virustotal.com/gui/file/be984ef82521f1618edda34fd9d1738b543c0db9613536068eead736b822aff1/detection",
+        "https://www.virustotal.com/gui/file/361524fb3d40dd2f275ee7aa4f40fccfe21f0552cd36ec38f48fbf7e50e66810/detection",
+        "https://www.virustotal.com/gui/file/e53e265edcec04cdfb0db35139796944e867d49872e536d148af313e0b019ed7/detection",
+        "https://www.virustotal.com/gui/file/99eb211ea131834d93e25ba0c1066e37d5583f7694c51611337e1c44b60b7fa5/detection",
+        "https://www.virustotal.com/gui/file/9a38069efc55a19d50d26d300948b9095ab72538acbf4ed427ed5a77060aa259/behavior/Microsoft%20Sysinternals"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2021-06-21",
+      "indicators": {
+        "url_path": [
+          "/ech/client.php?u=",
+          "/ech/echo.php?req=rr&u=",
+          "/ech/rite.php",
+          "/up/uploadx.php?=u="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2016245674635923855",
+        "https://x.com/malwrhunterteam/status/2016252181825946026",
+        "https://x.com/skocherhan/status/2016456574731010546",
+        "https://www.virustotal.com/gui/file/400eb6a94810323a1fc5f8ab31c682fe765aaec2cc61b37c31d719c7e45c9a6c/detection",
+        "https://www.virustotal.com/gui/file/66dcd98c6b310f4429890821e609d48cc6395a6be15ffe5a121ec68b7a8f7402/detection",
+        "https://www.virustotal.com/gui/file/51a6686b8c5ec7c610637398f3de43589f4e9fcbe8bcc0245343c5454d3b91de/detection"
+      ],
+      "total": 4
+    }
+  ]
+}

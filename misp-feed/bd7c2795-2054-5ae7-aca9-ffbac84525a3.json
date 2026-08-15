@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bac0b54b-4009-5c60-a2e9-871d58f52b57",
+        "value": "carprlce.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9b0edaef-c8d2-5739-bf2d-897a68c45458",
+        "value": "91.223.75.96:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "001e7a07-b9e4-5e12-8a0d-b4efdf1526d8",
+        "value": "91.223.75.96:9999"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:motorbeacon"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: MOTORBEACON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "bd7c2795-2054-5ae7-aca9-ffbac84525a3"
+  }
+}

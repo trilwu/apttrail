@@ -1,0 +1,61 @@
+{
+  "name": "POLONIUM (G1005) - APTtrail",
+  "description": "Techniques attributed to POLONIUM by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1005.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1102.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by POLONIUM",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

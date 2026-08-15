@@ -1,0 +1,2982 @@
+{
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "links": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0056",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "10 shared indicators",
+          "kind": "infrastructure",
+          "weight": 10.0
+        }
+      ],
+      "source": "G0081",
+      "target": "G1028"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "source": "G0067",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "FINFISHER",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0081",
+      "target": "GAZA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0081",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "EARTHESTRIES",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 reports cite both",
+          "kind": "reporting",
+          "weight": 4.0
+        }
+      ],
+      "source": "G0058",
+      "target": "G0081"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0081",
+      "target": "VICIOUSPANDA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0081",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ShadowPad, BITSAdmin",
+          "kind": "software",
+          "weight": 0.31
+        }
+      ],
+      "source": "G0081",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "31 shared indicators",
+          "kind": "infrastructure",
+          "weight": 31.0
+        }
+      ],
+      "source": "G0067",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "5 shared indicators",
+          "kind": "infrastructure",
+          "weight": 5.0
+        },
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0049",
+      "target": "G0067"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0067",
+      "target": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0067",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0067",
+      "target": "TIBET"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G1028",
+      "target": "GAZA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G1028"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "11 shared indicators",
+          "kind": "infrastructure",
+          "weight": 11.0
+        }
+      ],
+      "source": "GAZA",
+      "target": "QUASAR"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "GAZA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        },
+        {
+          "detail": "shares reGeorg, Tor",
+          "kind": "software",
+          "weight": 0.667
+        }
+      ],
+      "source": "G0007",
+      "target": "G0016"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0038"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0007",
+      "target": "MERCENARYAMANDA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0064"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0058"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "G0052"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "MIDDLEEAST"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "INNAPUT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0007",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 reports cite both",
+          "kind": "reporting",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0007",
+      "target": "UNC1151"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "CARETO",
+      "target": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0007",
+      "target": "SAGUARO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares reGeorg, Responder",
+          "kind": "software",
+          "weight": 0.667
+        }
+      ],
+      "source": "G0007",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Winexe",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0007",
+      "target": "G0091"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Responder",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0007",
+      "target": "G0032"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Tor",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0007",
+      "target": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Wevtutil",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0007",
+      "target": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Wevtutil",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0007",
+      "target": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "7 shared indicators",
+          "kind": "infrastructure",
+          "weight": 7.0
+        }
+      ],
+      "source": "HERMIT",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0099",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0006",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "GOLDDRAGON",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0094",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0011",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0082",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        },
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0096",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0049",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0087",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0075",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "SPACEPIRATES",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G1002",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0134",
+      "target": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "EARTHESTRIES",
+      "target": "G1045"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "source": "G0027",
+      "target": "ICEFOG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "source": "G0027",
+      "target": "REDFOXTROT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0027",
+      "target": "UNC215"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0027",
+      "target": "GOLDENRAT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ZxShell, ASPXSpy, pwdump and 1 more",
+          "kind": "software",
+          "weight": 1.093
+        }
+      ],
+      "source": "G0027",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, ASPXSpy, pwdump",
+          "kind": "software",
+          "weight": 0.7
+        }
+      ],
+      "source": "G0027",
+      "target": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares RCSession, China Chopper",
+          "kind": "software",
+          "weight": 0.643
+        }
+      ],
+      "source": "G0027",
+      "target": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares HTTPBrowser",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0026",
+      "target": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, gsecdump",
+          "kind": "software",
+          "weight": 0.45
+        }
+      ],
+      "source": "G0027",
+      "target": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares gsecdump, pwdump",
+          "kind": "software",
+          "weight": 0.4
+        }
+      ],
+      "source": "G0006",
+      "target": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "source": "G0027",
+      "target": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "source": "G0027",
+      "target": "G0125"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "12 shared indicators",
+          "kind": "infrastructure",
+          "weight": 12.0
+        }
+      ],
+      "source": "ICEFOG",
+      "target": "REDFOXTROT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "ICEFOG",
+      "target": "XPATH"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "REDFOXTROT",
+      "target": "SPACEPIRATES"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "REDFOXTROT",
+      "target": "XPATH"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0064",
+      "target": "STONEDRILL"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0064",
+      "target": "SHAMOON"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares AutoIt backdoor",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0040",
+      "target": "G0064"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0034",
+      "target": "G0064"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares NanoCore",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0043",
+      "target": "G0064"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares NanoCore",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0064",
+      "target": "G0078"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0064",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0058",
+      "target": "SHAMOON"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "8 shared indicators",
+          "kind": "infrastructure",
+          "weight": 8.0
+        }
+      ],
+      "source": "G0094",
+      "target": "SECTORA05"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0094",
+      "target": "HERMIT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "BABYSHARK",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0086",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0047",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0094",
+      "target": "G0121"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0022",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0060",
+      "target": "G0094"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "7 shared indicators",
+          "kind": "infrastructure",
+          "weight": 7.0
+        }
+      ],
+      "source": "G0049",
+      "target": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0049",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ftp, Systeminfo",
+          "kind": "software",
+          "weight": 0.367
+        }
+      ],
+      "source": "G0019",
+      "target": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Systeminfo, Reg",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0010",
+      "target": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0049",
+      "target": "G0140"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0049",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0010",
+      "target": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "DNSPIONAGE",
+      "target": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, pwdump, ftp",
+          "kind": "software",
+          "weight": 0.65
+        }
+      ],
+      "source": "G0087",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "56 shared indicators",
+          "kind": "infrastructure",
+          "weight": 56.0
+        },
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        },
+        {
+          "detail": "shares HOPLIGHT, ECCENTRICBANDWAGON",
+          "kind": "software",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G0082"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0032",
+      "target": "UNC2970"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G0121"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G0138"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "CARETO",
+      "target": "G0032"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0032",
+      "target": "G0097"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Responder",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0032",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0082"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares KillDisk",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0034",
+      "target": "G0082"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares DarkComet",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0082",
+      "target": "G0134"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0134"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        },
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        },
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0058"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "6 reports cite both",
+          "kind": "reporting",
+          "weight": 6.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0121"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0112"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0040",
+      "target": "G0097"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0112",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "8 reports cite both",
+          "kind": "reporting",
+          "weight": 8.0
+        }
+      ],
+      "source": "G0121",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G1002",
+      "target": "VENOMSPIDER"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0050",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0097",
+      "target": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0096",
+      "target": "SPACEPIRATES"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0096",
+      "target": "XPATH"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0004",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0019",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0096",
+      "target": "UNC3500"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0096",
+      "target": "UNC3535"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0096",
+      "target": "UNC961"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0096",
+      "target": "THEWIZARDS"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0047",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Derusbi, BLACKCOFFEE, China Chopper and 1 more",
+          "kind": "software",
+          "weight": 1.119
+        }
+      ],
+      "source": "G0065",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Winnti for Linux, ShadowPad",
+          "kind": "software",
+          "weight": 0.667
+        }
+      ],
+      "source": "G0096",
+      "target": "G1006"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares MOPSLED",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0096",
+      "target": "G1048"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "source": "G0096",
+      "target": "G0125"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares BLACKCOFFEE",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0025",
+      "target": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ShadowPad, China Chopper",
+          "kind": "software",
+          "weight": 0.31
+        }
+      ],
+      "source": "G0096",
+      "target": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "CALYPSO",
+      "target": "XPATH"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "BLACKGEAR",
+      "target": "G0029"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "source": "G0078",
+      "target": "G0099"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "source": "G0099",
+      "target": "G0140"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0129",
+      "target": "PKPLUG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0050",
+      "target": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Wevtutil",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0129",
+      "target": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "GREENSPOT",
+      "target": "PKPLUG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "source": "G0050",
+      "target": "G0136"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0050",
+      "target": "G0097"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Arp",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0010",
+      "target": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0010",
+      "target": "UNC1151"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0010",
+      "target": "G1033"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares nbtstat",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0010",
+      "target": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0047",
+      "target": "G0100"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        },
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0047",
+      "target": "TINYSCOUTS"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "25 shared indicators",
+          "kind": "infrastructure",
+          "weight": 25.0
+        }
+      ],
+      "source": "G0052",
+      "target": "MIDDLEEAST"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        },
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0121",
+      "target": "G0134"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0134",
+      "target": "SIMBAA"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares BloodHound, reGeorg",
+          "kind": "software",
+          "weight": 0.833
+        }
+      ],
+      "source": "G0016",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares SDelete",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0016",
+      "target": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Tor",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0016",
+      "target": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares SDelete",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0016",
+      "target": "G0091"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "FAMILIARFEELING",
+      "target": "LUCKYCAT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "source": "GOLDMELODY",
+      "target": "UNC961"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "UNC3500",
+      "target": "UNC961"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "UNC3535",
+      "target": "UNC961"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "UNC3966",
+      "target": "UNC961"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "44% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.444
+        }
+      ],
+      "source": "G0136",
+      "target": "G0137"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0090",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0095",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0121",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0034",
+      "target": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Rclone",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0069",
+      "target": "G0090"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Rclone",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0090",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "43% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.429
+        }
+      ],
+      "source": "G0075",
+      "target": "G0095"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0034",
+      "target": "UNC4221"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0034",
+      "target": "UNC5792"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares P.A.S. Webshell",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0034",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares SDelete",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0034",
+      "target": "G0091"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G0095",
+      "target": "G0121"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "G0121",
+      "target": "MODIFIEDELEPHANT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "73",
+      "target": "KARAKURT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "UNC3500",
+      "target": "UNC3535"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "CARETO",
+      "target": "G0097"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "CARETO",
+      "target": "SAGUARO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "COLDWASTREL",
+      "target": "G1033"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "G1033",
+      "target": "UNC1151"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "UNC4221",
+      "target": "UNC5792"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "source": "UNC2190",
+      "target": "VICESOCIETY"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "source": "UNC6691",
+      "target": "UNC6691-1"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares at, Windows Credential Editor",
+          "kind": "software",
+          "weight": 0.75
+        }
+      ],
+      "source": "G0060",
+      "target": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares BLACKCOFFEE",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0025",
+      "target": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Rclone, CrackMapExec",
+          "kind": "software",
+          "weight": 0.533
+        }
+      ],
+      "source": "G0069",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0140",
+      "target": "G1003"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares UPPERCUT",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0045",
+      "target": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Nltest",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G1006",
+      "target": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0022",
+      "target": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares gsecdump, ShadowPad",
+          "kind": "software",
+          "weight": 0.367
+        }
+      ],
+      "source": "G0060",
+      "target": "G0131"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0026",
+      "target": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0045",
+      "target": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "source": "G0026",
+      "target": "G0045"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares NanoCore, njRAT",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "source": "G0043",
+      "target": "G0078"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "source": "G0078",
+      "target": "G0140"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "source": "G0005",
+      "target": "G0013"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "source": "G0079",
+      "target": "G0133"
+    }
+  ],
+  "nodes": [
+    {
+      "attack_id": null,
+      "indicators": 11,
+      "label": "73",
+      "slug": "73"
+    },
+    {
+      "attack_id": null,
+      "indicators": 10,
+      "label": "BABYSHARK",
+      "slug": "BABYSHARK"
+    },
+    {
+      "attack_id": null,
+      "indicators": 121,
+      "label": "BLACKGEAR",
+      "slug": "BLACKGEAR"
+    },
+    {
+      "attack_id": null,
+      "indicators": 38,
+      "label": "CALYPSO",
+      "slug": "CALYPSO"
+    },
+    {
+      "attack_id": null,
+      "indicators": 32,
+      "label": "CARETO",
+      "slug": "CARETO"
+    },
+    {
+      "attack_id": null,
+      "indicators": 105,
+      "label": "COLDWASTREL",
+      "slug": "COLDWASTREL"
+    },
+    {
+      "attack_id": null,
+      "indicators": 519,
+      "label": "DNSPIONAGE",
+      "slug": "DNSPIONAGE"
+    },
+    {
+      "attack_id": null,
+      "indicators": 80,
+      "label": "EARTHESTRIES",
+      "slug": "EARTHESTRIES"
+    },
+    {
+      "attack_id": null,
+      "indicators": 15,
+      "label": "FAMILIARFEELING",
+      "slug": "FAMILIARFEELING"
+    },
+    {
+      "attack_id": null,
+      "indicators": 23,
+      "label": "FINFISHER",
+      "slug": "FINFISHER"
+    },
+    {
+      "attack_id": "G0004",
+      "indicators": 220,
+      "label": "Ke3chang",
+      "slug": "G0004"
+    },
+    {
+      "attack_id": "G0005",
+      "indicators": 13,
+      "label": "APT12",
+      "slug": "G0005"
+    },
+    {
+      "attack_id": "G0006",
+      "indicators": 2099,
+      "label": "APT1",
+      "slug": "G0006"
+    },
+    {
+      "attack_id": "G0007",
+      "indicators": 1894,
+      "label": "APT28",
+      "slug": "G0007"
+    },
+    {
+      "attack_id": "G0010",
+      "indicators": 325,
+      "label": "Turla",
+      "slug": "G0010"
+    },
+    {
+      "attack_id": "G0011",
+      "indicators": 16,
+      "label": "PittyTiger",
+      "slug": "G0011"
+    },
+    {
+      "attack_id": "G0013",
+      "indicators": 25,
+      "label": "APT30",
+      "slug": "G0013"
+    },
+    {
+      "attack_id": "G0016",
+      "indicators": 1088,
+      "label": "APT29",
+      "slug": "G0016"
+    },
+    {
+      "attack_id": "G0019",
+      "indicators": 84,
+      "label": "Naikon",
+      "slug": "G0019"
+    },
+    {
+      "attack_id": "G0022",
+      "indicators": 10,
+      "label": "APT3",
+      "slug": "G0022"
+    },
+    {
+      "attack_id": "G0025",
+      "indicators": 5,
+      "label": "APT17",
+      "slug": "G0025"
+    },
+    {
+      "attack_id": "G0026",
+      "indicators": 17,
+      "label": "APT18",
+      "slug": "G0026"
+    },
+    {
+      "attack_id": "G0027",
+      "indicators": 291,
+      "label": "Threat Group-3390",
+      "slug": "G0027"
+    },
+    {
+      "attack_id": "G0029",
+      "indicators": 81,
+      "label": "Scarlet Mimic",
+      "slug": "G0029"
+    },
+    {
+      "attack_id": "G0032",
+      "indicators": 5447,
+      "label": "Lazarus Group",
+      "slug": "G0032"
+    },
+    {
+      "attack_id": "G0034",
+      "indicators": 811,
+      "label": "Sandworm Team",
+      "slug": "G0034"
+    },
+    {
+      "attack_id": "G0038",
+      "indicators": 96,
+      "label": "Stealth Falcon",
+      "slug": "G0038"
+    },
+    {
+      "attack_id": "G0040",
+      "indicators": 2245,
+      "label": "Patchwork",
+      "slug": "G0040"
+    },
+    {
+      "attack_id": "G0043",
+      "indicators": 4,
+      "label": "Group5",
+      "slug": "G0043"
+    },
+    {
+      "attack_id": "G0045",
+      "indicators": 1500,
+      "label": "menuPass",
+      "slug": "G0045"
+    },
+    {
+      "attack_id": "G0047",
+      "indicators": 62980,
+      "label": "Gamaredon Group",
+      "slug": "G0047"
+    },
+    {
+      "attack_id": "G0049",
+      "indicators": 271,
+      "label": "OilRig",
+      "slug": "G0049"
+    },
+    {
+      "attack_id": "G0050",
+      "indicators": 547,
+      "label": "APT32",
+      "slug": "G0050"
+    },
+    {
+      "attack_id": "G0052",
+      "indicators": 34,
+      "label": "CopyKittens",
+      "slug": "G0052"
+    },
+    {
+      "attack_id": "G0056",
+      "indicators": 79,
+      "label": "PROMETHIUM",
+      "slug": "G0056"
+    },
+    {
+      "attack_id": "G0058",
+      "indicators": 2406,
+      "label": "Charming Kitten",
+      "slug": "G0058"
+    },
+    {
+      "attack_id": "G0060",
+      "indicators": 23,
+      "label": "BRONZE BUTLER",
+      "slug": "G0060"
+    },
+    {
+      "attack_id": "G0064",
+      "indicators": 102,
+      "label": "APT33",
+      "slug": "G0064"
+    },
+    {
+      "attack_id": "G0065",
+      "indicators": 73,
+      "label": "Leviathan",
+      "slug": "G0065"
+    },
+    {
+      "attack_id": "G0067",
+      "indicators": 494,
+      "label": "APT37",
+      "slug": "G0067"
+    },
+    {
+      "attack_id": "G0069",
+      "indicators": 15684,
+      "label": "MuddyWater",
+      "slug": "G0069"
+    },
+    {
+      "attack_id": "G0075",
+      "indicators": 21,
+      "label": "Rancor",
+      "slug": "G0075"
+    },
+    {
+      "attack_id": "G0078",
+      "indicators": 48,
+      "label": "Gorgon Group",
+      "slug": "G0078"
+    },
+    {
+      "attack_id": "G0079",
+      "indicators": 68,
+      "label": "DarkHydrus",
+      "slug": "G0079"
+    },
+    {
+      "attack_id": "G0081",
+      "indicators": 844,
+      "label": "Tropic Trooper",
+      "slug": "G0081"
+    },
+    {
+      "attack_id": "G0082",
+      "indicators": 2115,
+      "label": "APT38",
+      "slug": "G0082"
+    },
+    {
+      "attack_id": "G0086",
+      "indicators": 17,
+      "label": "Stolen Pencil",
+      "slug": "G0086"
+    },
+    {
+      "attack_id": "G0087",
+      "indicators": 78,
+      "label": "APT39",
+      "slug": "G0087"
+    },
+    {
+      "attack_id": "G0090",
+      "indicators": 90,
+      "label": "WIRTE",
+      "slug": "G0090"
+    },
+    {
+      "attack_id": "G0091",
+      "indicators": 50,
+      "label": "Silence",
+      "slug": "G0091"
+    },
+    {
+      "attack_id": "G0094",
+      "indicators": 25889,
+      "label": "Kimsuky",
+      "slug": "G0094"
+    },
+    {
+      "attack_id": "G0095",
+      "indicators": 38,
+      "label": "Machete",
+      "slug": "G0095"
+    },
+    {
+      "attack_id": "G0096",
+      "indicators": 3526,
+      "label": "APT41",
+      "slug": "G0096"
+    },
+    {
+      "attack_id": "G0097",
+      "indicators": 42,
+      "label": "Bouncing Golf",
+      "slug": "G0097"
+    },
+    {
+      "attack_id": "G0099",
+      "indicators": 95,
+      "label": "APT-C-36",
+      "slug": "G0099"
+    },
+    {
+      "attack_id": "G0100",
+      "indicators": 239,
+      "label": "Inception",
+      "slug": "G0100"
+    },
+    {
+      "attack_id": "G0112",
+      "indicators": 210,
+      "label": "Windshift",
+      "slug": "G0112"
+    },
+    {
+      "attack_id": "G0121",
+      "indicators": 3812,
+      "label": "Sidewinder",
+      "slug": "G0121"
+    },
+    {
+      "attack_id": "G0125",
+      "indicators": 17,
+      "label": "HAFNIUM",
+      "slug": "G0125"
+    },
+    {
+      "attack_id": "G0129",
+      "indicators": 540,
+      "label": "Mustang Panda",
+      "slug": "G0129"
+    },
+    {
+      "attack_id": "G0131",
+      "indicators": 246,
+      "label": "Tonto Team",
+      "slug": "G0131"
+    },
+    {
+      "attack_id": "G0133",
+      "indicators": 27,
+      "label": "Nomadic Octopus",
+      "slug": "G0133"
+    },
+    {
+      "attack_id": "G0134",
+      "indicators": 7831,
+      "label": "Transparent Tribe",
+      "slug": "G0134"
+    },
+    {
+      "attack_id": "G0136",
+      "indicators": 25,
+      "label": "IndigoZebra",
+      "slug": "G0136"
+    },
+    {
+      "attack_id": "G0137",
+      "indicators": 36,
+      "label": "Ferocious Kitten",
+      "slug": "G0137"
+    },
+    {
+      "attack_id": "G0138",
+      "indicators": 10,
+      "label": "Andariel",
+      "slug": "G0138"
+    },
+    {
+      "attack_id": "G0140",
+      "indicators": 21,
+      "label": "LazyScripter",
+      "slug": "G0140"
+    },
+    {
+      "attack_id": "G1001",
+      "indicators": 52,
+      "label": "HEXANE",
+      "slug": "G1001"
+    },
+    {
+      "attack_id": "G1002",
+      "indicators": 671,
+      "label": "BITTER",
+      "slug": "G1002"
+    },
+    {
+      "attack_id": "G1003",
+      "indicators": 1,
+      "label": "Ember Bear",
+      "slug": "G1003"
+    },
+    {
+      "attack_id": "G1006",
+      "indicators": 3,
+      "label": "Earth Lusca",
+      "slug": "G1006"
+    },
+    {
+      "attack_id": "G1028",
+      "indicators": 180,
+      "label": "APT-C-23",
+      "slug": "G1028"
+    },
+    {
+      "attack_id": "G1033",
+      "indicators": 475,
+      "label": "Star Blizzard",
+      "slug": "G1033"
+    },
+    {
+      "attack_id": "G1045",
+      "indicators": 29,
+      "label": "Salt Typhoon",
+      "slug": "G1045"
+    },
+    {
+      "attack_id": "G1048",
+      "indicators": 10,
+      "label": "UNC3886",
+      "slug": "G1048"
+    },
+    {
+      "attack_id": "G1054",
+      "indicators": 22,
+      "label": "MirrorFace",
+      "slug": "G1054"
+    },
+    {
+      "attack_id": null,
+      "indicators": 264,
+      "label": "GAZA",
+      "slug": "GAZA"
+    },
+    {
+      "attack_id": null,
+      "indicators": 15,
+      "label": "GOLDDRAGON",
+      "slug": "GOLDDRAGON"
+    },
+    {
+      "attack_id": null,
+      "indicators": 6,
+      "label": "GOLDENRAT",
+      "slug": "GOLDENRAT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 12,
+      "label": "GOLDMELODY",
+      "slug": "GOLDMELODY"
+    },
+    {
+      "attack_id": null,
+      "indicators": 189,
+      "label": "GREENSPOT",
+      "slug": "GREENSPOT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 15,
+      "label": "HERMIT",
+      "slug": "HERMIT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 50,
+      "label": "ICEFOG",
+      "slug": "ICEFOG"
+    },
+    {
+      "attack_id": null,
+      "indicators": 28,
+      "label": "INNAPUT",
+      "slug": "INNAPUT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 15,
+      "label": "KARAKURT",
+      "slug": "KARAKURT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 67,
+      "label": "LUCKYCAT",
+      "slug": "LUCKYCAT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 462,
+      "label": "MERCENARYAMANDA",
+      "slug": "MERCENARYAMANDA"
+    },
+    {
+      "attack_id": null,
+      "indicators": 134,
+      "label": "MIDDLEEAST",
+      "slug": "MIDDLEEAST"
+    },
+    {
+      "attack_id": null,
+      "indicators": 21,
+      "label": "MODIFIEDELEPHANT",
+      "slug": "MODIFIEDELEPHANT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 58,
+      "label": "PKPLUG",
+      "slug": "PKPLUG"
+    },
+    {
+      "attack_id": null,
+      "indicators": 35,
+      "label": "QUASAR",
+      "slug": "QUASAR"
+    },
+    {
+      "attack_id": null,
+      "indicators": 148,
+      "label": "REDFOXTROT",
+      "slug": "REDFOXTROT"
+    },
+    {
+      "attack_id": null,
+      "indicators": 1,
+      "label": "SAGUARO",
+      "slug": "SAGUARO"
+    },
+    {
+      "attack_id": null,
+      "indicators": 35,
+      "label": "SECTORA05",
+      "slug": "SECTORA05"
+    },
+    {
+      "attack_id": null,
+      "indicators": 10,
+      "label": "SHAMOON",
+      "slug": "SHAMOON"
+    },
+    {
+      "attack_id": null,
+      "indicators": 1,
+      "label": "SIMBAA",
+      "slug": "SIMBAA"
+    },
+    {
+      "attack_id": null,
+      "indicators": 97,
+      "label": "SPACEPIRATES",
+      "slug": "SPACEPIRATES"
+    },
+    {
+      "attack_id": null,
+      "indicators": 2,
+      "label": "STONEDRILL",
+      "slug": "STONEDRILL"
+    },
+    {
+      "attack_id": null,
+      "indicators": 27,
+      "label": "THEWIZARDS",
+      "slug": "THEWIZARDS"
+    },
+    {
+      "attack_id": null,
+      "indicators": 51,
+      "label": "TIBET",
+      "slug": "TIBET"
+    },
+    {
+      "attack_id": null,
+      "indicators": 39,
+      "label": "TINYSCOUTS",
+      "slug": "TINYSCOUTS"
+    },
+    {
+      "attack_id": null,
+      "indicators": 620,
+      "label": "UNC1151",
+      "slug": "UNC1151"
+    },
+    {
+      "attack_id": null,
+      "indicators": 18,
+      "label": "UNC215",
+      "slug": "UNC215"
+    },
+    {
+      "attack_id": null,
+      "indicators": 27,
+      "label": "UNC2190",
+      "slug": "UNC2190"
+    },
+    {
+      "attack_id": null,
+      "indicators": 13,
+      "label": "UNC2970",
+      "slug": "UNC2970"
+    },
+    {
+      "attack_id": null,
+      "indicators": 8,
+      "label": "UNC3500",
+      "slug": "UNC3500"
+    },
+    {
+      "attack_id": null,
+      "indicators": 1,
+      "label": "UNC3535",
+      "slug": "UNC3535"
+    },
+    {
+      "attack_id": null,
+      "indicators": 2,
+      "label": "UNC3966",
+      "slug": "UNC3966"
+    },
+    {
+      "attack_id": null,
+      "indicators": 96,
+      "label": "UNC4221",
+      "slug": "UNC4221"
+    },
+    {
+      "attack_id": null,
+      "indicators": 16,
+      "label": "UNC5792",
+      "slug": "UNC5792"
+    },
+    {
+      "attack_id": null,
+      "indicators": 8599,
+      "label": "UNC6691",
+      "slug": "UNC6691"
+    },
+    {
+      "attack_id": null,
+      "indicators": 602,
+      "label": "UNC6691-1",
+      "slug": "UNC6691-1"
+    },
+    {
+      "attack_id": null,
+      "indicators": 17,
+      "label": "UNC961",
+      "slug": "UNC961"
+    },
+    {
+      "attack_id": null,
+      "indicators": 1541,
+      "label": "UNCLASSIFIED",
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "attack_id": null,
+      "indicators": 66,
+      "label": "VENOMSPIDER",
+      "slug": "VENOMSPIDER"
+    },
+    {
+      "attack_id": null,
+      "indicators": 8,
+      "label": "VICESOCIETY",
+      "slug": "VICESOCIETY"
+    },
+    {
+      "attack_id": null,
+      "indicators": 60,
+      "label": "VICIOUSPANDA",
+      "slug": "VICIOUSPANDA"
+    },
+    {
+      "attack_id": null,
+      "indicators": 7,
+      "label": "XPATH",
+      "slug": "XPATH"
+    }
+  ]
+}

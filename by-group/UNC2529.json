@@ -1,0 +1,294 @@
+{
+  "aliases": [
+    "doubleback",
+    "doubledrag",
+    "doubledrop"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 54
+  },
+  "first_seen": {
+    "domain": {
+      "adupla.net": "2021-05-07",
+      "aibemarle.com": "2021-05-07",
+      "arcadiabay.org": "2022-06-28",
+      "austinheisey.com": "2021-06-03",
+      "bestcake.ca": "2022-06-03",
+      "bestwalletforbitcoin.com": "2021-05-07",
+      "bitcoinsacks.com": "2021-05-07",
+      "bonushelp.com": "2022-06-03",
+      "ceylonbungalows.net": "2021-05-07",
+      "chandol.com": "2021-05-07",
+      "clanvisits.com": "2021-05-07",
+      "closetdeal.com": "2021-05-07",
+      "daldhillon.com": "2021-05-07",
+      "desmoncreative.com": "2021-05-07",
+      "digitalagencyleeds.com": "2021-05-07",
+      "erbilmarriott.com": "2021-05-07",
+      "ethernetpedia.com": "2021-05-07",
+      "farmpork.com": "2021-05-07",
+      "fileamazon.com": "2021-05-07",
+      "gamesaccommodationscotland.com": "2021-05-07",
+      "gemralph.com": "2021-05-07",
+      "greathabibgroup.com": "2021-05-07",
+      "greeklife242.com": "2022-06-03",
+      "infomarketx.com": "2021-05-07",
+      "isjustlunch.com": "2021-05-07",
+      "jagunconsult.com": "2021-05-07",
+      "khodaycontrolsystem.com": "2021-05-07",
+      "klikbets.net": "2021-05-07",
+      "lasartoria.net": "2021-05-07",
+      "logicmyass.com": "2021-05-07",
+      "lottoangels.com": "2021-05-07",
+      "mangoldsengers.com": "2021-05-07",
+      "maninashop.com": "2021-05-07",
+      "oconeeveteransmemorial.com": "2021-05-07",
+      "onceprojects.com": "2021-05-07",
+      "p-leh.com": "2021-05-07",
+      "scottishhandcraft.com": "2021-05-07",
+      "seathisons.com": "2021-05-07",
+      "simcardhosting.com": "2021-05-07",
+      "skysatcam.com": "2021-05-07",
+      "smartnhappy.com": "2021-05-07",
+      "stayzarentals.com": "2021-05-07",
+      "stepearn.com": "2021-05-07",
+      "sugarmummylove.com": "2021-05-07",
+      "techooze.com": "2021-05-07",
+      "tigertigerbeads.com": "2021-05-07",
+      "totallyhealth-wealth.com": "2021-05-07",
+      "touristboardaccommodation.com": "2021-05-07",
+      "towncenterhotel.com": "2021-05-07",
+      "towncentrehotel.com": "2021-05-07",
+      "towncentrehotels.com": "2021-05-07",
+      "uaeworkpermit.com": "2021-05-07",
+      "vacuumcleanerpartsstore.com": "2021-05-07",
+      "zmrtu.com": "2021-05-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-05-07",
+    "latest": "2022-06-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adupla.net",
+      "aibemarle.com",
+      "arcadiabay.org",
+      "austinheisey.com",
+      "bestcake.ca",
+      "bestwalletforbitcoin.com",
+      "bitcoinsacks.com",
+      "bonushelp.com",
+      "ceylonbungalows.net",
+      "chandol.com",
+      "clanvisits.com",
+      "closetdeal.com",
+      "daldhillon.com",
+      "desmoncreative.com",
+      "digitalagencyleeds.com",
+      "erbilmarriott.com",
+      "ethernetpedia.com",
+      "farmpork.com",
+      "fileamazon.com",
+      "gamesaccommodationscotland.com",
+      "gemralph.com",
+      "greathabibgroup.com",
+      "greeklife242.com",
+      "infomarketx.com",
+      "isjustlunch.com",
+      "jagunconsult.com",
+      "khodaycontrolsystem.com",
+      "klikbets.net",
+      "lasartoria.net",
+      "logicmyass.com",
+      "lottoangels.com",
+      "mangoldsengers.com",
+      "maninashop.com",
+      "oconeeveteransmemorial.com",
+      "onceprojects.com",
+      "p-leh.com",
+      "scottishhandcraft.com",
+      "seathisons.com",
+      "simcardhosting.com",
+      "skysatcam.com",
+      "smartnhappy.com",
+      "stayzarentals.com",
+      "stepearn.com",
+      "sugarmummylove.com",
+      "techooze.com",
+      "tigertigerbeads.com",
+      "totallyhealth-wealth.com",
+      "touristboardaccommodation.com",
+      "towncenterhotel.com",
+      "towncentrehotel.com",
+      "towncentrehotels.com",
+      "uaeworkpermit.com",
+      "vacuumcleanerpartsstore.com",
+      "zmrtu.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2529"
+  ],
+  "references": [
+    "https://tria.ge/210601-fpxsgwd8p2",
+    "https://tria.ge/220602-yjvvcabad9/behavioral4",
+    "https://twitter.com/ffforward/status/1399781513907015689",
+    "https://twitter.com/k3dg3/status/1532454383631450115",
+    "https://twitter.com/nahamike01/status/1541340866232561666",
+    "https://twitter.com/nahamike01/status/1541341716736638983",
+    "https://twitter.com/peterkruse/status/1532636219665940480",
+    "https://www.fireeye.com/blog/threat-research/2021/05/unc2529-triple-double-trifecta-phishing-campaign.html",
+    "https://www.virustotal.com/gui/file/692ad829cb6c9788998acb106ea4d8311e432c866d082ac3cc117166ac50080d/detection"
+  ],
+  "related": [],
+  "slug": "UNC2529",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-28",
+      "indicators": {
+        "domain": [
+          "arcadiabay.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3dg3/status/1532454383631450115",
+        "https://twitter.com/nahamike01/status/1541340866232561666",
+        "https://twitter.com/nahamike01/status/1541341716736638983",
+        "https://tria.ge/220602-yjvvcabad9/behavioral4",
+        "https://www.virustotal.com/gui/file/692ad829cb6c9788998acb106ea4d8311e432c866d082ac3cc117166ac50080d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-03",
+      "indicators": {
+        "domain": [
+          "bonushelp.com",
+          "greeklife242.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1532636219665940480"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-03",
+      "indicators": {
+        "domain": [
+          "bestcake.ca"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3dg3/status/1532454383631450115",
+        "https://twitter.com/nahamike01/status/1541340866232561666",
+        "https://twitter.com/nahamike01/status/1541341716736638983",
+        "https://tria.ge/220602-yjvvcabad9/behavioral4",
+        "https://www.virustotal.com/gui/file/692ad829cb6c9788998acb106ea4d8311e432c866d082ac3cc117166ac50080d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-03",
+      "indicators": {
+        "domain": [
+          "austinheisey.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ffforward/status/1399781513907015689",
+        "https://tria.ge/210601-fpxsgwd8p2"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 49
+      },
+      "first_seen": "2021-05-07",
+      "indicators": {
+        "domain": [
+          "adupla.net",
+          "aibemarle.com",
+          "bestwalletforbitcoin.com",
+          "bitcoinsacks.com",
+          "ceylonbungalows.net",
+          "chandol.com",
+          "clanvisits.com",
+          "closetdeal.com",
+          "daldhillon.com",
+          "desmoncreative.com",
+          "digitalagencyleeds.com",
+          "erbilmarriott.com",
+          "ethernetpedia.com",
+          "farmpork.com",
+          "fileamazon.com",
+          "gamesaccommodationscotland.com",
+          "gemralph.com",
+          "greathabibgroup.com",
+          "infomarketx.com",
+          "isjustlunch.com",
+          "jagunconsult.com",
+          "khodaycontrolsystem.com",
+          "klikbets.net",
+          "lasartoria.net",
+          "logicmyass.com",
+          "lottoangels.com",
+          "mangoldsengers.com",
+          "maninashop.com",
+          "oconeeveteransmemorial.com",
+          "onceprojects.com",
+          "p-leh.com",
+          "scottishhandcraft.com",
+          "seathisons.com",
+          "simcardhosting.com",
+          "skysatcam.com",
+          "smartnhappy.com",
+          "stayzarentals.com",
+          "stepearn.com",
+          "sugarmummylove.com",
+          "techooze.com",
+          "tigertigerbeads.com",
+          "totallyhealth-wealth.com",
+          "touristboardaccommodation.com",
+          "towncenterhotel.com",
+          "towncentrehotel.com",
+          "towncentrehotels.com",
+          "uaeworkpermit.com",
+          "vacuumcleanerpartsstore.com",
+          "zmrtu.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2021/05/unc2529-triple-double-trifecta-phishing-campaign.html"
+      ],
+      "total": 49
+    }
+  ]
+}

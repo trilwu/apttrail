@@ -1,0 +1,127 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a4dc0856-48c7-5da9-9729-7be00b34a8b9",
+        "value": "conhost.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "95042b70-5994-56ec-9531-c8b9699b7f0a",
+        "value": "daynews.sytes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "56cc121d-5e7b-5456-956e-e20502cfa137",
+        "value": "deyrep24.ddns.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bdec6723-104b-5a1f-b290-b90b83aaa793",
+        "value": "dllhost.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "83fc2f13-fb82-50e5-8ce7-64db58c75471",
+        "value": "lolinha.no-ip.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "762e1c25-67e8-5a14-9d5c-be210ab95fc3",
+        "value": "ruley.no-ip.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "576062ff-4160-583e-b9ae-dd4c1e36b8a5",
+        "value": "taskmgr.redirectme.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2f2fa8b9-b0cb-5f03-a370-87e550d9ed90",
+        "value": "taskmgr.serveftp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "24eca702-3f4b-5eff-8e56-8909f4c0cfdd",
+        "value": "taskmgr.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ff12301-f793-5b8a-9385-04d63f388077",
+        "value": "wjwj.no-ip.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fe6537f5-d0e3-5a24-8574-5e94942c20c0",
+        "value": "wjwjwj.no-ip.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537598227",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c5e8622c-2ca5-5398-8ae2-13048cc5e4b0",
+        "value": "wjwjwjwj.no-ip.org"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:packrat"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: PACKRAT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a668ff63-1906-5c2d-b4f0-5a6acabaabe7"
+  }
+}

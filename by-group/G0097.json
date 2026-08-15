@@ -1,0 +1,518 @@
+{
+  "aliases": [
+    "apt-c-50"
+  ],
+  "attack_id": "G0097",
+  "attack_name": "Bouncing Golf",
+  "attack_url": "https://attack.mitre.org/groups/G0097/",
+  "counts": {
+    "domain": 23,
+    "ipv4": 1,
+    "url": 5,
+    "url_path": 13
+  },
+  "first_seen": {
+    "domain": {
+      "androidsecurityupdate.com": "2026-01-02",
+      "androidsystemsupdate.com": "2026-01-02",
+      "androidsystemswebview.com": "2021-01-25",
+      "appsoftupdate.com": "2019-10-09",
+      "arzdigitals.com": "2024-02-03",
+      "firmwaresystemupdate.com": "2018-09-10",
+      "georgethompson.space": "2018-09-10",
+      "googleassisstants.com": "2021-01-25",
+      "googleservicesforar.com": "2021-01-25",
+      "googleupdateservicese.com": "2026-01-02",
+      "googlextabv.com": "2022-01-01",
+      "lohefeshordeh.net": "2019-10-09",
+      "newportschoolupdateserver.com": "2022-01-01",
+      "ns1.googleassisstants.com": "2024-02-03",
+      "ns2.googleassisstants.com": "2024-02-03",
+      "padre914.com": "2022-01-01",
+      "ronaldlubbers.site": "2018-09-10",
+      "sarayemaghale.hami24.net": "2022-10-20",
+      "stevenwentz.com": "2018-09-10",
+      "systemdriverupdate.com": "2020-04-21",
+      "ychatonline.net": "2019-10-09",
+      "ydownyload.net": "2020-04-21",
+      "ynewnow.net": "2020-04-21"
+    },
+    "ipv4": {
+      "198.50.220.44:80": "2019-10-09"
+    },
+    "url": {
+      "http://162.248.247.172": "2018-09-10",
+      "http://190.2.144.140": "2018-09-10",
+      "http://190.2.145.145": "2018-09-10",
+      "http://46.4.143.130": "2019-10-09",
+      "http://89.38.98.49": "2018-09-10"
+    },
+    "url_path": {
+      "/farahv2.apk": "2022-10-29",
+      "/hass/answer.php": "2020-12-19",
+      "/hass/get-function.php": "2020-12-19",
+      "/hass/upload-log.php": "2020-12-19",
+      "/mmh/gt-func.php": "2022-10-29",
+      "/mmh/lg-upld.php": "2022-10-29",
+      "/mmh/on-answ.php": "2022-10-29",
+      "/msd/gt-func.php": "2022-10-20",
+      "/msd/lg-upld.php": "2022-10-20",
+      "/msd/on-answ.php": "2022-10-20",
+      "/negahdarigiahanv2.apk": "2022-10-29",
+      "/ostadshajarianv5.apk": "2022-10-29",
+      "/sarayemaghale.apk": "2022-10-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "androidsecurityupdate.com": "at-or-before",
+      "androidsystemsupdate.com": "at-or-before",
+      "googleupdateservicese.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-10",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "androidsecurityupdate.com",
+      "androidsystemsupdate.com",
+      "androidsystemswebview.com",
+      "appsoftupdate.com",
+      "arzdigitals.com",
+      "firmwaresystemupdate.com",
+      "georgethompson.space",
+      "googleassisstants.com",
+      "googleservicesforar.com",
+      "googleupdateservicese.com",
+      "googlextabv.com",
+      "lohefeshordeh.net",
+      "newportschoolupdateserver.com",
+      "ns1.googleassisstants.com",
+      "ns2.googleassisstants.com",
+      "padre914.com",
+      "ronaldlubbers.site",
+      "sarayemaghale.hami24.net",
+      "stevenwentz.com",
+      "systemdriverupdate.com",
+      "ychatonline.net",
+      "ydownyload.net",
+      "ynewnow.net"
+    ],
+    "ipv4": [
+      "198.50.220.44:80"
+    ],
+    "url": [
+      "http://162.248.247.172",
+      "http://190.2.144.140",
+      "http://190.2.145.145",
+      "http://46.4.143.130",
+      "http://89.38.98.49"
+    ],
+    "url_path": [
+      "/farahv2.apk",
+      "/hass/answer.php",
+      "/hass/get-function.php",
+      "/hass/upload-log.php",
+      "/mmh/gt-func.php",
+      "/mmh/lg-upld.php",
+      "/mmh/on-answ.php",
+      "/msd/gt-func.php",
+      "/msd/lg-upld.php",
+      "/msd/on-answ.php",
+      "/negahdarigiahanv2.apk",
+      "/ostadshajarianv5.apk",
+      "/sarayemaghale.apk"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DOMESTICKITTEN"
+  ],
+  "references": [
+    "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Lazarus.json",
+    "https://mp.weixin.qq.com/s/yaLC8gs-U92X6WnYzuuQ7w",
+    "https://otx.alienvault.com/pulse/5d9db01cc5328d4649e0594c",
+    "https://research.checkpoint.com/domestic-kitten-an-iranian-surveillance-operation/",
+    "https://twitter.com/blackorbird/status/1181868468620017665 (# Cyrus Attack)",
+    "https://twitter.com/felixaime/status/1353622368913133569",
+    "https://twitter.com/malwrhunterteam/status/1340344596698677250",
+    "https://twitter.com/malwrhunterteam/status/1753545424508440994",
+    "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf",
+    "https://www.virustotal.com/gui/file/0d09d5e46e779d796a8d295043e5bbd90ac43705fa7ff7953faa5d8370840f93/detection",
+    "https://www.virustotal.com/gui/file/3c273166c5221614198a7bbe0ed8ed0738ca4b62321a8d44a43fa7353a9f7d70/detection",
+    "https://www.virustotal.com/gui/file/5e87acd4f1eca03e68df275b69bd0f79d328b29318abf25ae1e8ba6f238b34af/detection",
+    "https://www.virustotal.com/gui/file/679355b0f689d745eb6943ed3aa821615122a648f02f7a557aa99e0007834085/detection",
+    "https://www.virustotal.com/gui/file/a7edd5586ac6cd64eaa1d3fd19077b3cb9232f13514d86ea315a4e2f501ee14b/detection",
+    "https://www.virustotal.com/gui/file/bd7779e6100e07b3eae67bfcdc53f1f08468651240229e284cca60e2b953496b/detection",
+    "https://www.virustotal.com/gui/file/fcd0be3ff03bd5bfe725c63e274218342b209b55b4e8bd762d9a9891e781bcf1/detection",
+    "https://www.virustotal.com/gui/ip-address/62.112.8.199/relations",
+    "https://www.virustotal.com/gui/ip-address/62.112.8.244/relations",
+    "https://www.virustotal.com/gui/ip-address/62.112.8.60/relations",
+    "https://www.welivesecurity.com/2022/10/20/domestic-kitten-campaign-spying-iranian-citizens-furball-malware/",
+    "https://x.com/ThreatBookLabs/status/2003261920439091378"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0040"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "CARETO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0032"
+    }
+  ],
+  "slug": "G0097",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "androidsecurityupdate.com",
+          "androidsystemsupdate.com",
+          "googleupdateservicese.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/2003261920439091378"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-02-03",
+      "indicators": {
+        "domain": [
+          "arzdigitals.com",
+          "ns1.googleassisstants.com",
+          "ns2.googleassisstants.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1353622368913133569",
+        "https://twitter.com/malwrhunterteam/status/1753545424508440994",
+        "https://www.virustotal.com/gui/file/3c273166c5221614198a7bbe0ed8ed0738ca4b62321a8d44a43fa7353a9f7d70/detection",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.199/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.244/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.60/relations",
+        "https://www.virustotal.com/gui/file/0d09d5e46e779d796a8d295043e5bbd90ac43705fa7ff7953faa5d8370840f93/detection",
+        "https://www.virustotal.com/gui/file/fcd0be3ff03bd5bfe725c63e274218342b209b55b4e8bd762d9a9891e781bcf1/detection",
+        "https://www.virustotal.com/gui/file/5e87acd4f1eca03e68df275b69bd0f79d328b29318abf25ae1e8ba6f238b34af/detection",
+        "https://www.virustotal.com/gui/file/679355b0f689d745eb6943ed3aa821615122a648f02f7a557aa99e0007834085/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2022-10-29",
+      "indicators": {
+        "url_path": [
+          "/farahv2.apk",
+          "/negahdarigiahanv2.apk",
+          "/ostadshajarianv5.apk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/2003261920439091378"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2022-10-29",
+      "indicators": {
+        "url_path": [
+          "/mmh/gt-func.php",
+          "/mmh/lg-upld.php",
+          "/mmh/on-answ.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1353622368913133569",
+        "https://twitter.com/malwrhunterteam/status/1753545424508440994",
+        "https://www.virustotal.com/gui/file/3c273166c5221614198a7bbe0ed8ed0738ca4b62321a8d44a43fa7353a9f7d70/detection",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.199/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.244/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.60/relations",
+        "https://www.virustotal.com/gui/file/0d09d5e46e779d796a8d295043e5bbd90ac43705fa7ff7953faa5d8370840f93/detection",
+        "https://www.virustotal.com/gui/file/fcd0be3ff03bd5bfe725c63e274218342b209b55b4e8bd762d9a9891e781bcf1/detection",
+        "https://www.virustotal.com/gui/file/5e87acd4f1eca03e68df275b69bd0f79d328b29318abf25ae1e8ba6f238b34af/detection",
+        "https://www.virustotal.com/gui/file/679355b0f689d745eb6943ed3aa821615122a648f02f7a557aa99e0007834085/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2022-10-20",
+      "indicators": {
+        "url_path": [
+          "/msd/gt-func.php",
+          "/msd/lg-upld.php",
+          "/msd/on-answ.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1353622368913133569",
+        "https://twitter.com/malwrhunterteam/status/1753545424508440994",
+        "https://www.virustotal.com/gui/file/3c273166c5221614198a7bbe0ed8ed0738ca4b62321a8d44a43fa7353a9f7d70/detection",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.199/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.244/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.60/relations",
+        "https://www.virustotal.com/gui/file/0d09d5e46e779d796a8d295043e5bbd90ac43705fa7ff7953faa5d8370840f93/detection",
+        "https://www.virustotal.com/gui/file/fcd0be3ff03bd5bfe725c63e274218342b209b55b4e8bd762d9a9891e781bcf1/detection",
+        "https://www.virustotal.com/gui/file/5e87acd4f1eca03e68df275b69bd0f79d328b29318abf25ae1e8ba6f238b34af/detection",
+        "https://www.virustotal.com/gui/file/679355b0f689d745eb6943ed3aa821615122a648f02f7a557aa99e0007834085/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2022-10-20",
+      "indicators": {
+        "url_path": [
+          "/sarayemaghale.apk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/2003261920439091378"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-10-20",
+      "indicators": {
+        "domain": [
+          "sarayemaghale.hami24.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2022/10/20/domestic-kitten-campaign-spying-iranian-citizens-furball-malware/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-01",
+      "indicators": {
+        "domain": [
+          "googlextabv.com",
+          "newportschoolupdateserver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Lazarus.json"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-01",
+      "indicators": {
+        "domain": [
+          "padre914.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/a7edd5586ac6cd64eaa1d3fd19077b3cb9232f13514d86ea315a4e2f501ee14b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-01-25",
+      "indicators": {
+        "domain": [
+          "androidsystemswebview.com",
+          "googleassisstants.com",
+          "googleservicesforar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1353622368913133569",
+        "https://twitter.com/malwrhunterteam/status/1753545424508440994",
+        "https://www.virustotal.com/gui/file/3c273166c5221614198a7bbe0ed8ed0738ca4b62321a8d44a43fa7353a9f7d70/detection",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.199/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.244/relations",
+        "https://www.virustotal.com/gui/ip-address/62.112.8.60/relations",
+        "https://www.virustotal.com/gui/file/0d09d5e46e779d796a8d295043e5bbd90ac43705fa7ff7953faa5d8370840f93/detection",
+        "https://www.virustotal.com/gui/file/fcd0be3ff03bd5bfe725c63e274218342b209b55b4e8bd762d9a9891e781bcf1/detection",
+        "https://www.virustotal.com/gui/file/5e87acd4f1eca03e68df275b69bd0f79d328b29318abf25ae1e8ba6f238b34af/detection",
+        "https://www.virustotal.com/gui/file/679355b0f689d745eb6943ed3aa821615122a648f02f7a557aa99e0007834085/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2020-12-19",
+      "indicators": {
+        "url_path": [
+          "/hass/answer.php",
+          "/hass/get-function.php",
+          "/hass/upload-log.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/domestic-kitten-an-iranian-surveillance-operation/",
+        "https://twitter.com/malwrhunterteam/status/1340344596698677250",
+        "https://www.virustotal.com/gui/file/bd7779e6100e07b3eae67bfcdc53f1f08468651240229e284cca60e2b953496b/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-04-21",
+      "indicators": {
+        "domain": [
+          "systemdriverupdate.com",
+          "ydownyload.net",
+          "ynewnow.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2019-10-09",
+      "indicators": {
+        "domain": [
+          "appsoftupdate.com",
+          "lohefeshordeh.net",
+          "ychatonline.net"
+        ],
+        "ipv4": [
+          "198.50.220.44:80"
+        ],
+        "url": [
+          "http://46.4.143.130"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1181868468620017665 (# Cyrus Attack)",
+        "https://mp.weixin.qq.com/s/yaLC8gs-U92X6WnYzuuQ7w",
+        "https://otx.alienvault.com/pulse/5d9db01cc5328d4649e0594c"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "url": 4
+      },
+      "first_seen": "2018-09-10",
+      "indicators": {
+        "domain": [
+          "firmwaresystemupdate.com",
+          "georgethompson.space",
+          "ronaldlubbers.site",
+          "stevenwentz.com"
+        ],
+        "url": [
+          "http://162.248.247.172",
+          "http://190.2.144.140",
+          "http://190.2.145.145",
+          "http://89.38.98.49"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/domestic-kitten-an-iranian-surveillance-operation/",
+        "https://twitter.com/malwrhunterteam/status/1340344596698677250",
+        "https://www.virustotal.com/gui/file/bd7779e6100e07b3eae67bfcdc53f1f08468651240229e284cca60e2b953496b/detection"
+      ],
+      "total": 8
+    }
+  ]
+}

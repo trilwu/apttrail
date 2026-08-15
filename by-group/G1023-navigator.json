@@ -1,0 +1,171 @@
+{
+  "name": "APT5 (G1023) - APTtrail",
+  "description": "Techniques attributed to APT5 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1023.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1098.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1136.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1554",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1654",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by APT5",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

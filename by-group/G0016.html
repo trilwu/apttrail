@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APT29 · APTtrail</title>
+<meta name=description content="1,088 indicators attributed to APT29 (G0016), from 150 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0016.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="APT29 · APTtrail">
+<meta property="og:description" content="1,088 indicators attributed to APT29 (G0016), from 150 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0016.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>APT29 <a class=gid href="https://attack.mitre.org/groups/G0016/">G0016</a></h1>
+<p class=aka><b>DUKE</b> &middot; <b>UNC2452</b> &middot; APT29 &middot; BlueBravo &middot; CloudDuke &middot; CosmicDuke &middot; Cozy Bear &middot; CozyDuke &middot; GeminiDuke &middot; HammerDuke &middot; Midnight Blizzard &middot; MiniDuke &middot; NOBELIUM &middot; OnionDuke &middot; PinchDuke &middot; SeaDuke &middot; SilverFish &middot; SoreFang &middot; The Dukes &middot; WellMail &middot; WellMess &middot; captivecrunch &middot; chocoshell &middot; cloaked ursa &middot; cozylarch &middot; dark halo &middot; earth koshchei &middot; goldfinder &middot; goldmax &middot; icecap &middot; raindrop &middot; sibot &middot; solorigate &middot; stellarparticle &middot; storm-2945 &middot; sunburst &middot; sunshuttle &middot; supernova &middot; teardrop</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>1,088</dd></div>
+<div><dt>Source reports</dt><dd>150</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-08-02</dd></div>
+</dl>
+<div class=spark><span style="--h:15%" title="2015: 15 indicators"></span><span style="--h:0%" title="2016: 0 indicators"></span><span style="--h:0%" title="2017: 0 indicators"></span><span style="--h:4%" title="2018: 1 indicators"></span><span style="--h:17%" title="2019: 20 indicators"></span><span style="--h:37%" title="2020: 94 indicators"></span><span style="--h:52%" title="2021: 180 indicators"></span><span style="--h:20%" title="2022: 28 indicators"></span><span style="--h:24%" title="2023: 38 indicators"></span><span style="--h:100%" title="2024: 674 indicators"></span><span class=hot style="--h:7%" title="2025: 3 indicators"></span><span class=hot style="--h:23%" title="2026: 35 indicators"></span></div>
+<div class=spark-axis><span>2015</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=RU">RU</a><br><span class=note>Russian Federation</span></dd>
+<dt>Activity</dt><dd>Espionage</dd>
+<dt>Targeted sectors</dt><dd><ul class=chips><li><a href="../groups.html?sector=Government">Government</a></li><li><a href="../groups.html?sector=Private%20sector">Private sector</a></li></ul></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>Belgium</li><li>Brazil</li><li>China</li><li>Georgia</li><li>Germany</li><li>India</li><li>Japan</li><li>Kazakhstan</li><li>Mexico</li><li>New Zealand</li><li>Portugal</li><li>Romania</li><li>South Korea</li><li>Turkey</li><li>Ukraine</li><li>United States</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_duke.txt">DUKE</a> &middot; <a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_unc2452.txt">UNC2452</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0016.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0016-domain.txt</pre>
+<p class=note><a href="G0016.json">G0016.json</a> &middot; <a href="G0016-domain.txt">G0016-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>1,088 indicators</span></h2>
+<p class=lede>APT29 is threat group that has been attributed to Russia&#x27;s Foreign Intelligence Service (SVR). They have operated since at least 2008, often targeting government networks in Europe and NATO member countries, research institutes, and think tanks. APT29 reportedly compromised the Democratic National Committee starting in the summer of 2015. In April 2021, the US and UK governments attributed the SolarWinds Compromise to the SVR; public statements included citations to APT29, Cozy Bear, and The Dukes. Industry reporting also referred to the actors involved in this campaign as UNC2452, NOBELIUM, StellarParticle, Dark Halo, and SolarStorm.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>935</td><td class=f><a href="G0016-domain.txt">G0016-domain.txt</a></td></tr>
+<tr><td>url</td><td class=n>105</td><td class=f><a href="G0016.json">G0016.json</a></td></tr>
+<tr><td>ipv4</td><td class=n>39</td><td class=f><a href="G0016.json">G0016.json</a></td></tr>
+<tr><td>url_path</td><td class=n>9</td><td class=f><a href="G0016.json">G0016.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>66 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0016-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0016-navigator.json">download the layer</a> (66 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1003/002/"><b>T1003.002</b> Security Account Manager</a></li><li><a href="https://attack.mitre.org/techniques/T1003/004/"><b>T1003.004</b> LSA Secrets</a></li><li><a href="https://attack.mitre.org/techniques/T1005/"><b>T1005</b> Data from Local System</a></li><li><a href="https://attack.mitre.org/techniques/T1016/001/"><b>T1016.001</b> Internet Connection Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1021/007/"><b>T1021.007</b> Cloud Services</a></li><li><a href="https://attack.mitre.org/techniques/T1027/001/"><b>T1027.001</b> Binary Padding</a></li><li><a href="https://attack.mitre.org/techniques/T1027/002/"><b>T1027.002</b> Software Packing</a></li><li><a href="https://attack.mitre.org/techniques/T1027/006/"><b>T1027.006</b> HTML Smuggling</a></li><li><a href="https://attack.mitre.org/techniques/T1036/005/"><b>T1036.005</b> Match Legitimate Resource Name or Location</a></li><li><a href="https://attack.mitre.org/techniques/T1037/"><b>T1037</b> Boot or Logon Initialization Scripts</a></li><li><a href="https://attack.mitre.org/techniques/T1037/004/"><b>T1037.004</b> RC Scripts</a></li><li><a href="https://attack.mitre.org/techniques/T1047/"><b>T1047</b> Windows Management Instrumentation</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/006/"><b>T1059.006</b> Python</a></li><li><a href="https://attack.mitre.org/techniques/T1059/009/"><b>T1059.009</b> Cloud API</a></li><li><a href="https://attack.mitre.org/techniques/T1068/"><b>T1068</b> Exploitation for Privilege Escalation</a></li><li><a href="https://attack.mitre.org/techniques/T1070/004/"><b>T1070.004</b> File Deletion</a></li><li><a href="https://attack.mitre.org/techniques/T1070/006/"><b>T1070.006</b> Timestomp</a></li><li><a href="https://attack.mitre.org/techniques/T1078/"><b>T1078</b> Valid Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1078/003/"><b>T1078.003</b> Local Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1078/004/"><b>T1078.004</b> Cloud Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1087/004/"><b>T1087.004</b> Cloud Account</a></li><li><a href="https://attack.mitre.org/techniques/T1090/002/"><b>T1090.002</b> External Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1090/003/"><b>T1090.003</b> Multi-hop Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1090/004/"><b>T1090.004</b> Domain Fronting</a></li><li><a href="https://attack.mitre.org/techniques/T1098/002/"><b>T1098.002</b> Additional Email Delegate Permissions</a></li><li><a href="https://attack.mitre.org/techniques/T1098/005/"><b>T1098.005</b> Device Registration</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1110/001/"><b>T1110.001</b> Password Guessing</a></li><li><a href="https://attack.mitre.org/techniques/T1110/003/"><b>T1110.003</b> Password Spraying</a></li><li><a href="https://attack.mitre.org/techniques/T1114/002/"><b>T1114.002</b> Remote Email Collection</a></li><li><a href="https://attack.mitre.org/techniques/T1133/"><b>T1133</b> External Remote Services</a></li><li><a href="https://attack.mitre.org/techniques/T1136/003/"><b>T1136.003</b> Cloud Account</a></li><li><a href="https://attack.mitre.org/techniques/T1190/"><b>T1190</b> Exploit Public-Facing Application</a></li><li><a href="https://attack.mitre.org/techniques/T1199/"><b>T1199</b> Trusted Relationship</a></li><li><a href="https://attack.mitre.org/techniques/T1203/"><b>T1203</b> Exploitation for Client Execution</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1204/002/"><b>T1204.002</b> Malicious File</a></li><li><a href="https://attack.mitre.org/techniques/T1218/005/"><b>T1218.005</b> Mshta</a></li><li><a href="https://attack.mitre.org/techniques/T1505/003/"><b>T1505.003</b> Web Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1528/"><b>T1528</b> Steal Application Access Token</a></li><li><a href="https://attack.mitre.org/techniques/T1546/003/"><b>T1546.003</b> Windows Management Instrumentation Event Subscription</a></li><li><a href="https://attack.mitre.org/techniques/T1546/008/"><b>T1546.008</b> Accessibility Features</a></li><li><a href="https://attack.mitre.org/techniques/T1547/001/"><b>T1547.001</b> Registry Run Keys / Startup Folder</a></li><li><a href="https://attack.mitre.org/techniques/T1548/002/"><b>T1548.002</b> Bypass User Account Control</a></li><li><a href="https://attack.mitre.org/techniques/T1550/003/"><b>T1550.003</b> Pass the Ticket</a></li><li><a href="https://attack.mitre.org/techniques/T1553/005/"><b>T1553.005</b> Mark-of-the-Web Bypass</a></li><li><a href="https://attack.mitre.org/techniques/T1556/007/"><b>T1556.007</b> Hybrid Identity</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1566/002/"><b>T1566.002</b> Spearphishing Link</a></li><li><a href="https://attack.mitre.org/techniques/T1566/003/"><b>T1566.003</b> Spearphishing via Service</a></li><li><a href="https://attack.mitre.org/techniques/T1568/"><b>T1568</b> Dynamic Resolution</a></li><li><a href="https://attack.mitre.org/techniques/T1573/"><b>T1573</b> Encrypted Channel</a></li><li><a href="https://attack.mitre.org/techniques/T1583/006/"><b>T1583.006</b> Web Services</a></li><li><a href="https://attack.mitre.org/techniques/T1586/002/"><b>T1586.002</b> Email Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1586/003/"><b>T1586.003</b> Cloud Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1587/001/"><b>T1587.001</b> Malware</a></li><li><a href="https://attack.mitre.org/techniques/T1587/003/"><b>T1587.003</b> Digital Certificates</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li><li><a href="https://attack.mitre.org/techniques/T1595/002/"><b>T1595.002</b> Vulnerability Scanning</a></li><li><a href="https://attack.mitre.org/techniques/T1621/"><b>T1621</b> Multi-Factor Authentication Request Generation</a></li><li><a href="https://attack.mitre.org/techniques/T1649/"><b>T1649</b> Steal or Forge Authentication Certificates</a></li><li><a href="https://attack.mitre.org/techniques/T1651/"><b>T1651</b> Cloud Administration Command</a></li><li><a href="https://attack.mitre.org/techniques/T1665/"><b>T1665</b> Hide Infrastructure</a></li><li><a href="https://attack.mitre.org/techniques/T1685/002/"><b>T1685.002</b> Disable or Modify Cloud Log</a></li></ul>
+
+<h2 id=software>Software <span class=n>49</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0002/"><b>Mimikatz</b></a></li><li><a href="https://attack.mitre.org/software/S0029/"><b>PsExec</b></a></li><li><a href="https://attack.mitre.org/software/S0037/"><b>HAMMERTOSS</b></a></li><li><a href="https://attack.mitre.org/software/S0039/"><b>Net</b></a></li><li><a href="https://attack.mitre.org/software/S0046/"><b>CozyCar</b></a></li><li><a href="https://attack.mitre.org/software/S0048/"><b>PinchDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0049/"><b>GeminiDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0050/"><b>CosmicDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0051/"><b>MiniDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0052/"><b>OnionDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0053/"><b>SeaDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0054/"><b>CloudDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0057/"><b>Tasklist</b></a></li><li><a href="https://attack.mitre.org/software/S0096/"><b>Systeminfo</b></a></li><li><a href="https://attack.mitre.org/software/S0100/"><b>ipconfig</b></a></li><li><a href="https://attack.mitre.org/software/S0139/"><b>PowerDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0150/"><b>POSHSPY</b></a></li><li><a href="https://attack.mitre.org/software/S0154/"><b>Cobalt Strike</b></a></li><li><a href="https://attack.mitre.org/software/S0175/"><b>meek</b></a></li><li><a href="https://attack.mitre.org/software/S0183/"><b>Tor</b></a></li><li><a href="https://attack.mitre.org/software/S0195/"><b>SDelete</b></a></li><li><a href="https://attack.mitre.org/software/S0357/"><b>Impacket</b></a></li><li><a href="https://attack.mitre.org/software/S0511/"><b>RegDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0512/"><b>FatDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0513/"><b>LiteDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0514/"><b>WellMess</b></a></li><li><a href="https://attack.mitre.org/software/S0515/"><b>WellMail</b></a></li><li><a href="https://attack.mitre.org/software/S0516/"><b>SoreFang</b></a></li><li><a href="https://attack.mitre.org/software/S0518/"><b>PolyglotDuke</b></a></li><li><a href="https://attack.mitre.org/software/S0521/"><b>BloodHound</b></a></li><li><a href="https://attack.mitre.org/software/S0552/"><b>AdFind</b></a></li><li><a href="https://attack.mitre.org/software/S0559/"><b>SUNBURST</b></a></li><li><a href="https://attack.mitre.org/software/S0560/"><b>TEARDROP</b></a></li><li><a href="https://attack.mitre.org/software/S0562/"><b>SUNSPOT</b></a></li><li><a href="https://attack.mitre.org/software/S0565/"><b>Raindrop</b></a></li><li><a href="https://attack.mitre.org/software/S0588/"><b>GoldMax</b></a></li><li><a href="https://attack.mitre.org/software/S0589/"><b>Sibot</b></a></li><li><a href="https://attack.mitre.org/software/S0597/"><b>GoldFinder</b></a></li><li><a href="https://attack.mitre.org/software/S0633/"><b>Sliver</b></a></li><li><a href="https://attack.mitre.org/software/S0634/"><b>EnvyScout</b></a></li><li><a href="https://attack.mitre.org/software/S0635/"><b>BoomBox</b></a></li><li><a href="https://attack.mitre.org/software/S0636/"><b>VaporRage</b></a></li><li><a href="https://attack.mitre.org/software/S0637/"><b>NativeZone</b></a></li><li><a href="https://attack.mitre.org/software/S0661/"><b>FoggyWeb</b></a></li><li><a href="https://attack.mitre.org/software/S0677/"><b>AADInternals</b></a></li><li><a href="https://attack.mitre.org/software/S0682/"><b>TrailBlazer</b></a></li><li><a href="https://attack.mitre.org/software/S0684/"><b>ROADTools</b></a></li><li><a href="https://attack.mitre.org/software/S1084/"><b>QUIETEXIT</b></a></li><li><a href="https://attack.mitre.org/software/S1187/"><b>reGeorg</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>150 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>333</span><a href="https://x.com/blackorbird/status/1849713901807518125" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/blackorbird/status/1849713901807518125</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://x.com/MichalKoczwara/status/1849738432823644297" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/MichalKoczwara/status/18497384328236442…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://www.virustotal.com/gui/ip-address/162.252.175.146/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/162.252.175.146/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://app.validin.com/detail?find=151.236.16.138&amp;type=ip4&amp;ref_id=7e3792beeb8#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=151.236.16.138&amp;type=ip4&amp;ref…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://app.validin.com/detail?find=151.236.16.149&amp;type=ip4&amp;ref_id=d53e5a59923#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=151.236.16.149&amp;type=ip4&amp;ref…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://app.validin.com/detail?find=151.236.16.193&amp;type=ip4&amp;ref_id=d53e5a59923#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=151.236.16.193&amp;type=ip4&amp;ref…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://app.validin.com/detail?find=151.236.16.22&amp;type=ip4&amp;ref_id=9a0b40a1dad#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=151.236.16.22&amp;type=ip4&amp;ref_…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>333</span><a href="https://app.validin.com/detail?find=151.236.16.220&amp;type=ip4&amp;ref_id=d53e5a59923#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=151.236.16.220&amp;type=ip4&amp;ref…</span></a><div class=bar style="--w:100%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>5</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="G0007.html">APT28</a> <span class=gidtag>G0007</span><div class=why><span class="ev infrastructure">3 shared indicators</span> &middot; <span class="ev software">shares reGeorg, Tor</span></div></li><li><a href="G1003.html">Ember Bear</a> <span class=gidtag>G1003</span><div class=why><span class="ev software">shares BloodHound, reGeorg</span></div></li><li><a href="G0034.html">Sandworm Team</a> <span class=gidtag>G0034</span><div class=why><span class="ev software">shares SDelete</span></div></li><li><a href="G0065.html">Leviathan</a> <span class=gidtag>G0065</span><div class=why><span class="ev software">shares Tor</span></div></li><li><a href="G0091.html">Silence</a> <span class=gidtag>G0091</span><div class=why><span class="ev software">shares SDelete</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>1,088 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>300</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 935</button><button type=button data-type="url" aria-pressed=false>url 105</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 39</button><button type=button data-type="url_path" aria-pressed=false>url_path 9</button></div>
+<p class=note>Showing the 300 most recent of 1,088. Complete: <a href="G0016.json">G0016.json</a>.</p>
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-08-02-68056f" class=hot>
+<div class=when><a class=date href="#b-2026-08-02-68056f"><time datetime="2026-08-02">2026-08-02</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/LloydLabs/status/2083594247547068883" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/LloydLabs/status/2083594247547068883</span></a> &middot; <a href="https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/" rel="noopener nofollow"><span class=host>microsoft.com</span><span class=path>/en-us/security/blog/2026/07/31/captivec…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>statistic-g.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-08-01-68056f" class=hot>
+<div class=when><a class=date href="#b-2026-08-01-68056f"><time datetime="2026-08-01">2026-08-01</time></a> <span class=cnt>5 domain, 14 ipv4, 1 url_path</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/LloydLabs/status/2083594247547068883" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/LloydLabs/status/2083594247547068883</span></a> &middot; <a href="https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/" rel="noopener nofollow"><span class=host>microsoft.com</span><span class=path>/en-us/security/blog/2026/07/31/captivec…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>m365-owa.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ms365-device.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ms365-live.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>my-invite.org</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>owa-ms365.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.194.159.150:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>107.189.26.194:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>138.197.202.81:3000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>138.68.160.124:3000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>165.22.146.161:3000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>213.145.86.112:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>216.126.224.95:3000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>31.172.83.142:4000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>31.57.243.154:2000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>31.57.243.154:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>38.146.28.132:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>38.146.28.75:4000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>38.146.28.75:8443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>84.200.154.162:4000</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/t/pixel.gif?m=</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-06-69c4c7" class=hot>
+<div class=when><a class=date href="#b-2026-01-06-69c4c7"><time datetime="2026-01-06">2026-01-06</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/BlinkzSec/status/2008479066635039174" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/BlinkzSec/status/2008479066635039174</span></a> &middot; <a href="https://x.com/banthisguy9349/status/2008490747134439456" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/banthisguy9349/status/20084907471344394…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>rheinemetall.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-5c9ec4" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-5c9ec4"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>10 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://research.checkpoint.com/2025/apt29-phishing-campaign/" rel="noopener nofollow"><span class=host>research.checkpoint.com</span><span class=path>/2025/apt29-phishing-campaign</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bakenhof.com</td></tr>
+<tr data-t="domain"><td class=val>bravecup.com</td></tr>
+<tr data-t="domain"><td class=val>info.ophibre.com</td></tr>
+<tr data-t="domain"><td class=val>mail.bakenhof.com</td></tr>
+<tr data-t="domain"><td class=val>mail.bravecup.com</td></tr>
+<tr data-t="domain"><td class=val>mail.ophibre.com</td></tr>
+<tr data-t="domain"><td class=val>mail.silry.com</td></tr>
+<tr data-t="domain"><td class=val>mx.ophibre.com</td></tr>
+<tr data-t="domain"><td class=val>ophibre.com</td></tr>
+<tr data-t="domain"><td class=val>silry.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-1509e9" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-1509e9"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>3 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://aws.amazon.com/ru/blogs/security/amazon-disrupts-watering-hole-campaign-by-russias-apt29/" rel="noopener nofollow"><span class=host>aws.amazon.com</span><span class=path>/ru/blogs/security/amazon-disrupts-water…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>cloudflare.redirectpartners.com</td></tr>
+<tr data-t="domain"><td class=val>findcloudflare.com</td></tr>
+<tr data-t="domain"><td class=val>redirectpartners.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2025-02-07-1ce01e" class=hot>
+<div class=when><a class=date href="#b-2025-02-07-1ce01e"><time datetime="2025-02-07">2025-02-07</time></a> <span class=cnt>2 domain, 1 ipv4</span><span class=ago>1 yr ago</span></div>
+<p class=src><a href="https://x.com/ShanHolo/status/1887817002649047162" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/ShanHolo/status/1887817002649047162</span></a> &middot; <a href="https://app.validin.com/detail?find=185.243.99.17&amp;type=ip4&amp;ref_id=27436e81e5c#tab=resolutions" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?find=185.243.99.17&amp;type=ip4&amp;ref_…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/1916af4debbeaa0ee688c95d2d9d25196bd5765bad5c7a9c1ed7e934e6ffb9ba/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/1916af4debbeaa0ee688c95d2d9d25…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/7cfb5e14c49ed3c9425ae995a2f7f260c564d552a29c5bdeb3665769e687cce5/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/7cfb5e14c49ed3c9425ae995a2f7f2…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ukrtelcom.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ukrtelecom.eu</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>185.243.99.17:3389</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-12-21-7f6474">
+<div class=when><a class=date href="#b-2024-12-21-7f6474"><time datetime="2024-12-21">2024-12-21</time></a> <span class=cnt>1 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/blackorbird/status/1868948019854643666" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/blackorbird/status/1868948019854643666</span></a> &middot; <a href="https://www.trendmicro.com/en_no/research/24/l/earth-koshchei.html" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/en_no/research/24/l/earth-koshchei.html</span></a> &middot; <a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/l/earth-koshchei/IOClist-EarthKoshchei.txt" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/content/dam/trendmicro/global/en/resear…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>police-gov.cloud</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-12-17-7f6474">
+<div class=when><a class=date href="#b-2024-12-17-7f6474"><time datetime="2024-12-17">2024-12-17</time></a> <span class=cnt>61 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/blackorbird/status/1868948019854643666" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/blackorbird/status/1868948019854643666</span></a> &middot; <a href="https://www.trendmicro.com/en_no/research/24/l/earth-koshchei.html" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/en_no/research/24/l/earth-koshchei.html</span></a> &middot; <a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/l/earth-koshchei/IOClist-EarthKoshchei.txt" rel="noopener nofollow"><span class=host>trendmicro.com</span><span class=path>/content/dam/trendmicro/global/en/resear…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>aeinc.solutions</td></tr>
+<tr data-t="domain"><td class=val>albrightstonebridge.cloud</td></tr>
+<tr data-t="domain"><td class=val>amazonmeeting.cloud</td></tr>
+<tr data-t="domain"><td class=val>americanprogress.cloud</td></tr>
+<tr data-t="domain"><td class=val>aspeninstitute.cloud</td></tr>
+<tr data-t="domain"><td class=val>awsmeetings.online</td></tr>
+<tr data-t="domain"><td class=val>c-r.services</td></tr>
+<tr data-t="domain"><td class=val>capgemini.services</td></tr>
+<tr data-t="domain"><td class=val>cepa.solutions</td></tr>
+<tr data-t="domain"><td class=val>citoc.cloud</td></tr>
+<tr data-t="domain"><td class=val>clari.cloud</td></tr>
+<tr data-t="domain"><td class=val>clearancejobs.cloud</td></tr>
+<tr data-t="domain"><td class=val>cnas.zone</td></tr>
+<tr data-t="domain"><td class=val>cwinc.cloud</td></tr>
+<tr data-t="domain"><td class=val>defence-au.cloud</td></tr>
+<tr data-t="domain"><td class=val>democracyendowment.cloud</td></tr>
+<tr data-t="domain"><td class=val>ecfr.cloud</td></tr>
+<tr data-t="domain"><td class=val>europa-eu.cloud</td></tr>
+<tr data-t="domain"><td class=val>exclaimer.solutions</td></tr>
+<tr data-t="domain"><td class=val>foreignpolicy.cloud</td></tr>
+<tr data-t="domain"><td class=val>freedomhouse.cloud</td></tr>
+<tr data-t="domain"><td class=val>gc-cloud.ca</td></tr>
+<tr data-t="domain"><td class=val>go-conference.cloud</td></tr>
+<tr data-t="domain"><td class=val>go-jp.cloud</td></tr>
+<tr data-t="domain"><td class=val>go-meet-up.com</td></tr>
+<tr data-t="domain"><td class=val>go-meet.pro</td></tr>
+<tr data-t="domain"><td class=val>go-meeting.cloud</td></tr>
+<tr data-t="domain"><td class=val>googlemeet.zone</td></tr>
+<tr data-t="domain"><td class=val>heritagecloud.org</td></tr>
+<tr data-t="domain"><td class=val>justice.technology</td></tr>
+<tr data-t="domain"><td class=val>mapn-ro.cloud</td></tr>
+<tr data-t="domain"><td class=val>mod-cloud.uk</td></tr>
+<tr data-t="domain"><td class=val>morh-hr.cloud</td></tr>
+<tr data-t="domain"><td class=val>mvep-hr.cloud</td></tr>
+<tr data-t="domain"><td class=val>ncsc.solutions</td></tr>
+<tr data-t="domain"><td class=val>ndu.solutions</td></tr>
+<tr data-t="domain"><td class=val>nrcc.cloud</td></tr>
+<tr data-t="domain"><td class=val>opensocietyfoundations.cloud</td></tr>
+<tr data-t="domain"><td class=val>prio.zone</td></tr>
+<tr data-t="domain"><td class=val>pulsesecure.cloud</td></tr>
+<tr data-t="domain"><td class=val>rrt.solutions</td></tr>
+<tr data-t="domain"><td class=val>rubrik.zone</td></tr>
+<tr data-t="domain"><td class=val>s3-aws.global</td></tr>
+<tr data-t="domain"><td class=val>s3-us.navy</td></tr>
+<tr data-t="domain"><td class=val>saiccloud.us</td></tr>
+<tr data-t="domain"><td class=val>shicloud.online</td></tr>
+<tr data-t="domain"><td class=val>sipacolumbia.us</td></tr>
+<tr data-t="domain"><td class=val>skykick.solutions</td></tr>
+<tr data-t="domain"><td class=val>softcat.cloud</td></tr>
+<tr data-t="domain"><td class=val>ssi-gouv-fr.cloud</td></tr>
+<tr data-t="domain"><td class=val>trustifi.cloud</td></tr>
+<tr data-t="domain"><td class=val>us-army.cloud</td></tr>
+<tr data-t="domain"><td class=val>veeam.solutions</td></tr>
+<tr data-t="domain"><td class=val>zixcorp.cloud</td></tr>
+<tr data-t="domain"><td class=val>zoom-meeting.cloud</td></tr>
+<tr data-t="domain"><td class=val>zoom-meeting.live</td></tr>
+<tr data-t="domain"><td class=val>zoom-meeting.pro</td></tr>
+<tr data-t="domain"><td class=val>zoom-meeting.today</td></tr>
+<tr data-t="domain"><td class=val>zoom-meetings.cloud</td></tr>
+<tr data-t="domain"><td class=val>zoommeeting.today</td></tr>
+<tr data-t="domain"><td class=val>zoommeeting.zone</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-10-30-42da08">
+<div class=when><a class=date href="#b-2024-10-30-42da08"><time datetime="2024-10-30">2024-10-30</time></a> <span class=cnt>270 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/" rel="noopener nofollow"><span class=host>microsoft.com</span><span class=path>/en-us/security/blog/2024/10/29/midnight…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>ap-northeast-1-aws.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>ap-northeast-1-aws.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>ca-central-1.gov-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>ca-central-1.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>ca-west-1.aws-ukraine.cloud</td></tr>
+<tr data-t="domain"><td class=val>ca-west-1.ukrtelecom.cloud</td></tr>
+<tr data-t="domain"><td class=val>central-2-aws.ua-mil.cloud</td></tr>
+<tr data-t="domain"><td class=val>central-2-aws.ua-sec.cloud</td></tr>
+<tr data-t="domain"><td class=val>central-2-aws.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>central-2-aws.ukrtelecom.cloud</td></tr>
+<tr data-t="domain"><td class=val>dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.gov-trust.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.ncfta.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.presidencia-pt.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1-aws.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.s3-nato.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-1.ua-sec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.aws-ukraine.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.presidencia-pt.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.ua-mil.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-central-2-aws.ukrtelecom.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.gov-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.ua-sec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-east-1-aws.ukrtelecom.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.ncfta.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.presidencia-pt.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.gov-trust.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.gov-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.gv-at.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.ncfta.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-north-1.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.admin-ch.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.gov-trust.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-1-aws.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.mil-pt.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.ncfta.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.s3-nato.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2-aws.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.s3-nato.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.ua-sec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-south-2.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.aws-ukraine.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.gov-trust.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.mindef-nl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.mzv-cz.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.ua-energy.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-southeast-1-aws.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.aws-ukraine.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.gov-trust.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.gov-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.quirinale.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.s3-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.s3-nato.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.ua-sec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1-aws.ukrainesec.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.aws-ukraine.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.mil-be.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.mil-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.minbuza.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.msz-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.mzv-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.regeringskansliet-se.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.s3-de.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.s3-esa.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.s3-ua.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.ua-gov.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-1.ukrtelecom.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.amazonsolutions.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.dep-no.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.difesa-it.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.gov-pl.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.gov-sk.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.gv-at.cloud</td></tr>
+<tr data-t="domain"><td class=val>eu-west-2-aws.mil-be.cloud</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button> &middot; 70 more in this batch, in the JSON</p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>169</span></h2>
+<ul class=refs>
+<li><a href="http://www.secureworks.com/research/threat-profiles/iron-hemlock" rel="noopener nofollow">secureworks.com/research/threat-profiles/iron-hemlock</a></li>
+<li><a href="https://attack.mitre.org/groups/G0016" rel="noopener nofollow">attack.mitre.org/groups/G0016</a></li>
+<li><a href="https://labs.sentinelone.com/noblebaron-new-poisoned-installers-could-be-used-in-supply-chain-attacks/" rel="noopener nofollow">labs.sentinelone.com/noblebaron-new-poisoned-installers-coul…</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide" rel="noopener nofollow">learn.microsoft.com/en-us/microsoft-365/security/intelligen…</a></li>
+<li><a href="https://media.defense.gov/2021/Apr/15/2002621240/-1/-1/0/CSA_SVR_TARGETS_US_ALLIES_UOO13234021.PDF/CSA_SVR_TARGETS_US_ALLIES_UOO13234021.PDF" rel="noopener nofollow">media.defense.gov/2021/Apr/15/2002621240/-1/-1/0/CSA_SVR_…</a></li>
+<li><a href="https://msrc-blog.microsoft.com/2021/06/25/new-nobelium-activity/" rel="noopener nofollow">msrc-blog.microsoft.com/2021/06/25/new-nobelium-activity</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/solarstorm-supply-chain-attack-timeline/" rel="noopener nofollow">unit42.paloaltonetworks.com/solarstorm-supply-chain-attack-timeline</a></li>
+<li><a href="https://www.crowdstrike.com/blog/bears-midst-intrusion-democratic-national-committee/" rel="noopener nofollow">crowdstrike.com/blog/bears-midst-intrusion-democratic-n…</a></li>
+<li><a href="https://www.crowdstrike.com/blog/observations-from-the-stellarparticle-campaign/" rel="noopener nofollow">crowdstrike.com/blog/observations-from-the-stellarparti…</a></li>
+<li><a href="https://www.crowdstrike.com/blog/sunspot-malware-technical-analysis/" rel="noopener nofollow">crowdstrike.com/blog/sunspot-malware-technical-analysis</a></li>
+<li><a href="https://www.f-secure.com/documents/996508/1030745/dukes_whitepaper.pdf" rel="noopener nofollow">f-secure.com/documents/996508/1030745/dukes_whitepap…</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2018/11/not-so-cozy-an-uncomfortable-examination-of-a-suspected-apt29-phishing-campaign.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2018/11/not-so-coz…</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2020/12/evasive-at…</a></li>
+<li><a href="https://www.gov.uk/government/news/russia-uk-and-us-expose-global-campaigns-of-malign-activity-by-russian-intelligence-services" rel="noopener nofollow">gov.uk/government/news/russia-uk-and-us-expose…</a></li>
+<li><a href="https://www.gov.uk/government/news/russia-uk-exposes-russian-involvement-in-solarwinds-cyber-compromise" rel="noopener nofollow">gov.uk/government/news/russia-uk-exposes-russi…</a></li>
+<li><a href="https://www.mandiant.com/resources/blog/unc3524-eye-spy-email" rel="noopener nofollow">mandiant.com/resources/blog/unc3524-eye-spy-email</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2018/12/03/analysis-of-cyberattack-on-u-s-think-tanks-non-profits-public-sector-by-unidentified-attackers/" rel="noopener nofollow">microsoft.com/security/blog/2018/12/03/analysis-of-cy…</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2021/03/04/goldmax-goldfinder-sibot-analyzing-nobelium-malware/" rel="noopener nofollow">microsoft.com/security/blog/2021/03/04/goldmax-goldfi…</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/" rel="noopener nofollow">microsoft.com/security/blog/2021/05/27/new-sophistica…</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/" rel="noopener nofollow">microsoft.com/security/blog/2021/05/28/breaking-down-…</a></li>
+<li><a href="https://www.ncsc.gov.uk/files/Advisory-APT29-targets-COVID-19-vaccine-development-V1-1.pdf" rel="noopener nofollow">ncsc.gov.uk/files/Advisory-APT29-targets-COVID-19-v…</a></li>
+<li><a href="https://www.ncsc.gov.uk/files/Advisory-further-TTPs-associated-with-SVR-cyber-actors.pdf" rel="noopener nofollow">ncsc.gov.uk/files/Advisory-further-TTPs-associated-…</a></li>
+<li><a href="https://www.ncsc.gov.uk/news/uk-and-us-call-out-russia-for-solarwinds-compromise" rel="noopener nofollow">ncsc.gov.uk/news/uk-and-us-call-out-russia-for-sola…</a></li>
+<li><a href="https://www.pwc.co.uk/issues/cyber-security-services/insights/cleaning-up-after-wellmess.html" rel="noopener nofollow">pwc.co.uk/issues/cyber-security-services/insights…</a></li>
+<li><a href="https://www.pwc.co.uk/issues/cyber-security-services/insights/wellmess-analysis-command-control.html" rel="noopener nofollow">pwc.co.uk/issues/cyber-security-services/insights…</a></li>
+<li><a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supply-chain-attack-solarwinds" rel="noopener nofollow">symantec-enterprise-blogs.security.com/blogs/threat-intelligence/sunburst-supp…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/ebfe9cc39dfdc1d1abe7fd4b1e248b16238234c5261610456de0317c2045555d/detection" rel="noopener nofollow">virustotal.com/gui/file/ebfe9cc39dfdc1d1abe7fd4b1e248b…</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1714986809229251067" rel="noopener nofollow">twitter.com/h2jazi/status/1714986809229251067</a></li>
+<li><a href="https://otx.alienvault.com/pulse/6007149a5ff246c7c18229c1" rel="noopener nofollow">otx.alienvault.com/pulse/6007149a5ff246c7c18229c1</a></li>
+<li><a href="https://www.virustotal.com/gui/file/f39dc0dfd43477d65c1380a7cff89296ad72bfa7fc3afcfd8e294f195632030e/detection" rel="noopener nofollow">virustotal.com/gui/file/f39dc0dfd43477d65c1380a7cff892…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/657a2c924ea0e3e9e95e9433" rel="noopener nofollow">otx.alienvault.com/pulse/657a2c924ea0e3e9e95e9433</a></li>
+<li><a href="https://app.validin.com/detail?type=ip&amp;find=2.58.201.112#tab=resolutions" rel="noopener nofollow">app.validin.com/detail?type=ip&amp;find=2.58.201.112#tab=re…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/85e72976b9448295034a8d4c26462b8f1ebe1ca0a4e4b897c7f2404d0de948c2/detection" rel="noopener nofollow">virustotal.com/gui/file/85e72976b9448295034a8d4c26462b…</a></li>
+<li><a href="https://twitter.com/ShadowChasing1/status/1288403929462530049" rel="noopener nofollow">twitter.com/ShadowChasing1/status/12884039294625300…</a></li>
+<li><a href="https://app.validin.com/detail?find=45.141.58.30&amp;type=ip4&amp;ref_id=2f7b7741b82#tab=resolutions" rel="noopener nofollow">app.validin.com/detail?find=45.141.58.30&amp;type=ip4&amp;ref_i…</a></li>
+<li><a href="https://x.com/ShanHolo/status/1887817002649047162" rel="noopener nofollow">x.com/ShanHolo/status/1887817002649047162</a></li>
+<li><a href="https://www.virustotal.com/gui/file/34e7482d689429745dd3866caf5ddd5de52a179db7068f6b545ff51542abb76c/detection" rel="noopener nofollow">virustotal.com/gui/file/34e7482d689429745dd3866caf5ddd…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/4875a9c4af3044db281c5dc02e5386c77f331e3b92e5ae79ff9961d8cd1f7c4f/detection" rel="noopener nofollow">virustotal.com/gui/file/4875a9c4af3044db281c5dc02e5386…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/7cfb5e14c49ed3c9425ae995a2f7f260c564d552a29c5bdeb3665769e687cce5/detection" rel="noopener nofollow">virustotal.com/gui/file/7cfb5e14c49ed3c9425ae995a2f7f2…</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2021/03/sunshuttle-second-stage-backdoor-targeting-us-based-entity.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2021/03/sunshuttle…</a></li>
+</ul>
+<p class=note>129 more, and the report behind every indicator, in <a href="G0016.json">G0016.json</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

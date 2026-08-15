@@ -1,0 +1,179 @@
+{
+  "aliases": [
+    "apt-c-60",
+    "apt-q-12",
+    "spyglace"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "ipv4": 5,
+    "url": 5
+  },
+  "first_seen": {
+    "domain": {
+      "juanjuan.cesy.top": "2024-10-12",
+      "milfbate.com": "2023-07-25",
+      "nimdsrt.com": "2023-07-25",
+      "rammenale.com": "2024-08-28"
+    },
+    "ipv4": {
+      "103.187.26.174:443": "2024-10-12",
+      "103.187.26.175:443": "2024-10-12",
+      "103.187.26.176:443": "2024-10-12",
+      "103.187.26.177:443": "2024-10-12",
+      "203.174.87.18:443": "2024-10-12"
+    },
+    "url": {
+      "http://104.168.169.138": "2024-11-15",
+      "http://192.236.209.113": "2024-11-15",
+      "http://192.67.255.191": "2023-07-25",
+      "http://23.254.225.177": "2023-07-25",
+      "http://51.210.235.46": "2023-07-25"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-07-25",
+    "latest": "2024-11-15"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "juanjuan.cesy.top",
+      "milfbate.com",
+      "nimdsrt.com",
+      "rammenale.com"
+    ],
+    "ipv4": [
+      "103.187.26.174:443",
+      "103.187.26.175:443",
+      "103.187.26.176:443",
+      "103.187.26.177:443",
+      "203.174.87.18:443"
+    ],
+    "url": [
+      "http://104.168.169.138",
+      "http://192.236.209.113",
+      "http://192.67.255.191",
+      "http://23.254.225.177",
+      "http://51.210.235.46"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "60"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=WIN-9M19PDUO1OV&type=raw#tab=host_pairs_v2",
+    "https://app.validin.com/detail?find=WIN-R92OFI6ANNT&type=raw#tab=host_pairs_v2",
+    "https://app.validin.com/detail?find=WIN-S5H0DDH257T&type=raw#tab=host_pairs_v2",
+    "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/darkhotel-a-cluster-of-groups-united-by-common-techniques",
+    "https://threatbook.io/blog/Military-Topics-in-Focus:-APT-C-60-Threat-Continues-to-be-Exposed",
+    "https://www.virustotal.com/gui/file/4b74d5e09bca4898a782e938a8f9889b9ebadf8b0f14368bca90d9d0e68da472/detection",
+    "https://www.virustotal.com/gui/file/861911e953e6fd0a015b3a91a7528a388a535c83f4b9a5cf7366b8209d2f00c3/detection",
+    "https://www.virustotal.com/gui/file/b62c9168fcde444dbc3be1593e80747929dcf1a49cc6305b49456d68d0c49e71/detection",
+    "https://www.virustotal.com/gui/file/d0c554c836f955997316acf30b5039b52e5c9a8b127a5f33107314a481663b5e/detection",
+    "https://www.virustotal.com/gui/ip-address/162.222.215.164/relations",
+    "https://www.welivesecurity.com/en/eset-research/analysis-of-two-arbitrary-code-execution-vulnerabilities-affecting-wps-office/",
+    "https://x.com/blackorbird/status/1843929280415490335"
+  ],
+  "related": [],
+  "slug": "60",
+  "timeline": [
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2024-11-15",
+      "indicators": {
+        "url": [
+          "http://104.168.169.138",
+          "http://192.236.209.113"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://global.ptsecurity.com/analytics/pt-esc-threat-intelligence/darkhotel-a-cluster-of-groups-united-by-common-techniques"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 5
+      },
+      "first_seen": "2024-10-12",
+      "indicators": {
+        "domain": [
+          "juanjuan.cesy.top"
+        ],
+        "ipv4": [
+          "103.187.26.174:443",
+          "103.187.26.175:443",
+          "103.187.26.176:443",
+          "103.187.26.177:443",
+          "203.174.87.18:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1843929280415490335",
+        "https://app.validin.com/detail?find=WIN-S5H0DDH257T&type=raw#tab=host_pairs_v2",
+        "https://app.validin.com/detail?find=WIN-R92OFI6ANNT&type=raw#tab=host_pairs_v2",
+        "https://app.validin.com/detail?find=WIN-9M19PDUO1OV&type=raw#tab=host_pairs_v2"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-28",
+      "indicators": {
+        "domain": [
+          "rammenale.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/analysis-of-two-arbitrary-code-execution-vulnerabilities-affecting-wps-office/",
+        "https://www.virustotal.com/gui/file/d0c554c836f955997316acf30b5039b52e5c9a8b127a5f33107314a481663b5e/detection",
+        "https://www.virustotal.com/gui/file/b62c9168fcde444dbc3be1593e80747929dcf1a49cc6305b49456d68d0c49e71/detection",
+        "https://www.virustotal.com/gui/file/861911e953e6fd0a015b3a91a7528a388a535c83f4b9a5cf7366b8209d2f00c3/detection",
+        "https://www.virustotal.com/gui/file/4b74d5e09bca4898a782e938a8f9889b9ebadf8b0f14368bca90d9d0e68da472/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 3
+      },
+      "first_seen": "2023-07-25",
+      "indicators": {
+        "domain": [
+          "milfbate.com",
+          "nimdsrt.com"
+        ],
+        "url": [
+          "http://192.67.255.191",
+          "http://23.254.225.177",
+          "http://51.210.235.46"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatbook.io/blog/Military-Topics-in-Focus:-APT-C-60-Threat-Continues-to-be-Exposed",
+        "https://www.virustotal.com/gui/ip-address/162.222.215.164/relations"
+      ],
+      "total": 5
+    }
+  ]
+}

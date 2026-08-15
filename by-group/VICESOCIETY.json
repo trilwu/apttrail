@@ -1,0 +1,112 @@
+{
+  "aliases": [
+    "Chily",
+    "PolyVice",
+    "RedAlert",
+    "SunnyDay"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 8
+  },
+  "first_seen": {
+    "domain": {
+      "4hzyuotli6maqa4u.onion": "2022-01-09",
+      "fuckcisanet5nzv4d766izugxhnqqgiyllzfynyb4whzbqhzjojbn7id.onion": "2022-12-30",
+      "fuckfbrlvtibsdw5rxtfjxtog6dfgpz62ewoc2rpor2s6zd5nog4zxad.onion": "2022-12-30",
+      "ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion": "2022-12-30",
+      "vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion": "2022-01-09",
+      "vsocietyjynbgmz4n4lietzmqrg2tab4roxwd2c2btufdwxi6v2pptyd.onion": "2022-12-30",
+      "wjdgz3btk257obba7aekowz7ylm33zb6hu4aetxc3bypfajixzvx4iad.onion": "2022-12-30",
+      "wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion": "2022-12-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-01-09",
+    "latest": "2022-12-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "4hzyuotli6maqa4u.onion",
+      "fuckcisanet5nzv4d766izugxhnqqgiyllzfynyb4whzbqhzjojbn7id.onion",
+      "fuckfbrlvtibsdw5rxtfjxtog6dfgpz62ewoc2rpor2s6zd5nog4zxad.onion",
+      "ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion",
+      "vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion",
+      "vsocietyjynbgmz4n4lietzmqrg2tab4roxwd2c2btufdwxi6v2pptyd.onion",
+      "wjdgz3btk257obba7aekowz7ylm33zb6hu4aetxc3bypfajixzvx4iad.onion",
+      "wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "VICESOCIETY"
+  ],
+  "references": [
+    "https://github.com/thetanz/ransomwatch/blob/main/docs/INDEX.md",
+    "https://otx.alienvault.com/pulse/63a4c9b50dcac2e63387b4f9",
+    "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNC2190"
+    }
+  ],
+  "slug": "VICESOCIETY",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-12-30",
+      "indicators": {
+        "domain": [
+          "fuckcisanet5nzv4d766izugxhnqqgiyllzfynyb4whzbqhzjojbn7id.onion",
+          "fuckfbrlvtibsdw5rxtfjxtog6dfgpz62ewoc2rpor2s6zd5nog4zxad.onion",
+          "ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion",
+          "vsocietyjynbgmz4n4lietzmqrg2tab4roxwd2c2btufdwxi6v2pptyd.onion",
+          "wjdgz3btk257obba7aekowz7ylm33zb6hu4aetxc3bypfajixzvx4iad.onion",
+          "wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/",
+        "https://github.com/thetanz/ransomwatch/blob/main/docs/INDEX.md",
+        "https://otx.alienvault.com/pulse/63a4c9b50dcac2e63387b4f9"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-09",
+      "indicators": {
+        "domain": [
+          "4hzyuotli6maqa4u.onion",
+          "vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/custom-branded-ransomware-the-vice-society-group-and-the-threat-of-outsourced-development/",
+        "https://github.com/thetanz/ransomwatch/blob/main/docs/INDEX.md",
+        "https://otx.alienvault.com/pulse/63a4c9b50dcac2e63387b4f9"
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,4987 @@
+{
+  "aliases": [
+    "cobalt dickens",
+    "mabna institute",
+    "silent librarian",
+    "ta407"
+  ],
+  "attack_id": "G0122",
+  "attack_name": "Silent Librarian",
+  "attack_url": "https://attack.mitre.org/groups/G0122/",
+  "counts": {
+    "domain": 836
+  },
+  "first_seen": {
+    "domain": {
+      "12st.me": "2022-07-05",
+      "12xb.me": "2022-07-05",
+      "1edu.in": "2019-09-11",
+      "1ezpro.xyz": "2022-06-01",
+      "1r3o.me": "2022-07-05",
+      "28ag.me": "2022-07-05",
+      "32ex.me": "2022-07-05",
+      "33qa.me": "2022-07-05",
+      "67vr.me": "2022-07-05",
+      "67yt.me": "2022-07-05",
+      "ac.uk.libte.me": "2022-04-23",
+      "aclib.me": "2022-05-17",
+      "acuk.me": "2022-06-29",
+      "adfs.goucher.adui.me": "2022-06-21",
+      "adfs.goucher.elru.me": "2022-06-21",
+      "adfs.goucher.pdlu.me": "2022-06-30",
+      "adfs.goucher.unde.me": "2022-06-30",
+      "adfs.lincoln.ac.uk.itlib.me": "2020-10-14",
+      "adui.me": "2022-06-21",
+      "aill.cf": "2019-09-11",
+      "aill.nl": "2019-09-11",
+      "allib.me": "2022-05-03",
+      "anvc.me": "2018-08-28",
+      "aroe.me": "2020-10-14",
+      "asoec.me": "2021-09-16",
+      "atll.tk": "2019-10-14",
+      "atna.cf": "2019-09-11",
+      "atti.cf": "2019-09-11",
+      "auth.bath.ac.uk.ctit.cf": "2020-12-18",
+      "auth.bath.ac.uk.ctit.tk": "2020-11-26",
+      "auth.bath.ac.uk.ncev.me": "2021-04-19",
+      "auth.bath.ac.uk.titt.ml": "2020-11-26",
+      "auth.bath.ac.uk.ukns.me": "2021-04-17",
+      "auth.bath.ac.uk.ztit.cf": "2020-12-18",
+      "auth.miamioh.eduo.me": "2022-06-05",
+      "avne.me": "2021-09-16",
+      "azll.cf": "2019-09-11",
+      "azll.tk": "2019-10-14",
+      "azlll.cf": "2019-09-11",
+      "aztt.tk": "2019-09-11",
+      "balamand.edu.lb.ezlibin.com": "2024-01-29",
+      "bath.ac.uk.ncev.me": "2021-04-19",
+      "bcfk.me": "2022-07-05",
+      "bdhw.me": "2022-07-05",
+      "bib.mdh.se.ezlibin.com": "2024-01-29",
+      "bib.mdh.se.libinpro.xyz": "2024-01-29",
+      "bidi.uam.mx.logezpro.xyz": "2022-01-03",
+      "blackboard.gcal.crev.me": "2020-10-14",
+      "blackboard.stonybrook.ernn.me": "2020-10-14",
+      "blackboard.stonybrook.nrni.me": "2020-10-14",
+      "blackboard.usc.caer.me": "2020-10-16",
+      "blibo.ga": "2019-09-11",
+      "bolton.ac.rnuk.me": "2022-07-16",
+      "bolton.ac.rvuk.me": "2022-07-16",
+      "bolton.ac.uk.libte.me": "2022-04-23",
+      "bolton.ac.uk.rulk.me": "2022-07-16",
+      "bradley.eulib.me": "2022-07-03",
+      "bradley.ledu.me": "2022-07-23",
+      "bradley.lible.me": "2022-07-03",
+      "bradley.rvedu.me": "2022-07-23",
+      "bradley.ulibe.me": "2022-07-03",
+      "bradley.zedu.me": "2022-07-23",
+      "c23e.me": "2022-07-05",
+      "caer.me": "2020-10-16",
+      "canm.me": "2020-10-14",
+      "canvas.bham.vueu.me": "2020-10-12",
+      "canvas.sydney.sunu.me": "2020-12-07",
+      "canvas.ucdavis.snnu.me": "2020-12-18",
+      "cardiff.ac.erlib.me": "2022-07-22",
+      "cardiff.ac.plib.me": "2022-07-22",
+      "cardiff.acuk.me": "2022-06-29",
+      "cas.conncoll.ebui.me": "2022-06-21",
+      "cas.csufresno.eduir.me": "2022-05-31",
+      "cas.fsu.edu.libg.ml": "2021-07-11",
+      "cas.lcc.edu.llrn.me": "2022-07-07",
+      "cas.lcc.llrn.me": "2022-07-07",
+      "cas.thm.de.itlib.me": "2020-10-04",
+      "cas.thm.de.servisedesk.me": "2020-10-04",
+      "catalogue.londonmet.ac.uk.cnlib.me": "2022-05-09",
+      "cave.gq": "2019-09-11",
+      "ccli.cf": "2019-09-11",
+      "cedu.me": "2022-06-29",
+      "cett.cf": "2020-12-18",
+      "ciff.login.nerb.me": "2022-06-30",
+      "cill.ml": "2019-09-11",
+      "clll.cf": "2019-10-14",
+      "clll.nl": "2019-09-11",
+      "clll.tk": "2019-09-11",
+      "cllt.cf": "2019-10-14",
+      "cllt.tk": "2019-10-14",
+      "cnen.cf": "2019-09-11",
+      "cnlib.me": "2022-05-09",
+      "cnma.cf": "2019-09-11",
+      "cnna.me": "2022-06-07",
+      "cntt.cf": "2019-09-11",
+      "comn.me": "2022-07-01",
+      "conncoll.ebui.me": "2022-06-21",
+      "cornn.me": "2022-07-01",
+      "cqgp.me": "2022-07-05",
+      "crev.me": "2020-10-14",
+      "crir.me": "2020-10-14",
+      "crll.tk": "2019-09-11",
+      "csll.cf": "2019-09-11",
+      "ctit.cf": "2020-11-26",
+      "ctit.tk": "2020-11-26",
+      "ctll.tk": "2019-09-11",
+      "cuhk.edu.hk.itlf.cf": "2020-12-07",
+      "cuvl.me": "2022-07-05",
+      "cvnc.ga": "2019-09-11",
+      "cvos.me": "2021-09-16",
+      "cvrr.me": "2020-10-14",
+      "cvve.cf": "2019-09-11",
+      "cx71.me": "2022-07-05",
+      "cxam.me": "2022-07-05",
+      "cynf.me": "2022-07-05",
+      "czll.tk": "2019-09-11",
+      "cztt.tk": "2019-09-11",
+      "d2a7.me": "2022-07-05",
+      "d39j.me": "2022-07-05",
+      "dbck.me": "2022-07-05",
+      "dboc.me": "2022-07-05",
+      "dhfb.me": "2022-07-05",
+      "do78.me": "2022-07-05",
+      "dwfa.me": "2022-07-05",
+      "e-library.me": "2019-09-11",
+      "ealu.me": "2022-06-22",
+      "ease.ed.ac.riue.me": "2022-05-27",
+      "ease.ed.ac.rnlib.me": "2022-07-22",
+      "ease.ed.ac.slib.me": "2022-07-22",
+      "ease.ed.ac.unisr.me": "2022-05-22",
+      "ease.ed.rnlib.me": "2022-07-22",
+      "ease.ed.slib.me": "2022-07-22",
+      "eaun.me": "2022-05-29",
+      "ebookfafa.com": "2018-08-28",
+      "ebui.me": "2022-06-08",
+      "ecdu.me": "2022-06-06",
+      "ecdv.me": "2021-09-16",
+      "edadfed.ed.ac.uk.ucnv.me": "2021-04-17",
+      "edadfed.ed.ac.ukns.me": "2021-04-17",
+      "edcu.me": "2021-11-25",
+      "ediu.me": "2022-06-05",
+      "ediun.me": "2020-12-07",
+      "edliu.me": "2020-12-07",
+      "edll.me": "2022-06-30",
+      "edlv.me": "2022-07-16",
+      "edmh.me": "2022-07-05",
+      "edou.me": "2022-06-30",
+      "edu.ilino.me": "2022-04-26",
+      "edu.jo.ezlibin.com": "2024-01-29",
+      "edu.jo.libinpro.xyz": "2024-01-29",
+      "edu.lb.ezlibin.com": "2024-01-29",
+      "edu.lb.libinpro.xyz": "2024-01-29",
+      "edu.libg.ml": "2021-07-11",
+      "edu.llrn.me": "2022-07-07",
+      "edu.oine.me": "2022-04-26",
+      "edu.ostin.me": "2022-04-26",
+      "edu.sg.libinpro.xyz": "2024-01-29",
+      "edu.tr.ezlibin.com": "2024-01-29",
+      "eduin.me": "2020-12-07",
+      "eduir.me": "2022-05-31",
+      "edunm.me": "2020-12-07",
+      "eduo.me": "2022-06-05",
+      "eduri.me": "2022-05-29",
+      "eduv.icu": "2018-08-28",
+      "eduv.me": "2022-06-05",
+      "eill.cf": "2019-09-11",
+      "eill.ga": "2019-09-11",
+      "eill.nl": "2019-09-11",
+      "eis.gvsu.edu.thespacebulls.info": "2022-01-09",
+      "ejna.me": "2022-07-05",
+      "elbu.me": "2022-06-21",
+      "elearn.cuhk.caer.me": "2020-10-16",
+      "elia.sub.eaun.me": "2022-05-29",
+      "elibproxy.anu.ac.ke.logezpro.xyz": "2022-02-14",
+      "elll.cf": "2019-09-11",
+      "elou.me": "2022-06-25",
+      "elru.me": "2022-06-21",
+      "enlib.me": "2022-05-09",
+      "eolv.me": "2022-07-16",
+      "erdu.me": "2022-06-05",
+      "erlib.me": "2022-07-22",
+      "ernn.me": "2020-10-14",
+      "ersta.me": "2021-09-16",
+      "erta.ca": "2019-09-11",
+      "etll.cf": "2019-09-11",
+      "etrlib.me": "2022-04-30",
+      "euca.cf": "2019-09-11",
+      "euce.in": "2019-09-11",
+      "euin.me": "2022-05-29",
+      "eulib.me": "2022-07-03",
+      "euve.tk": "2019-10-14",
+      "ez.liblogin.com": "2024-01-29",
+      "ezlibin.com": "2024-01-29",
+      "ezll.tk": "2019-09-11",
+      "ezp.isikun.edu.tr.libezpro.xyz": "2021-10-18",
+      "ezp.twu.edu.logezpro.xyz": "2022-01-03",
+      "ezp2.imu.edu.my.liblog.info": "2021-06-03",
+      "ezpa.library.ualberta.allib.me": "2022-05-03",
+      "ezpa.library.ualberta.enlib.me": "2022-05-09",
+      "ezplog.in": "2019-09-11",
+      "ezpro.fa.ru.lib4login.com": "2022-10-17",
+      "ezpro.libinpro.xyz": "2024-01-29",
+      "ezproxy.fhstp.ac.at.libraryezlogin.com": "2022-08-31",
+      "ezproxy.hkr.se.liblog.info": "2021-01-18",
+      "ezproxy.hkr.se.liblogin.com": "2024-01-29",
+      "ezproxy.lau.edu.lb.zezpro.xyz": "2022-03-09",
+      "ezproxy.mef.edu.tr.ezlibin.com": "2024-01-29",
+      "ezproxy.mef.edu.tr.logezpro.xyz": "2021-12-28",
+      "ezproxy.tk": "2019-09-11",
+      "ezproxy.ug.edu.gh.liblogin.com": "2024-01-29",
+      "ezproxy.um.edu.my.liblog.info": "2021-06-03",
+      "ezproxy.uniroma1.rnit.me": "2022-06-30",
+      "ezproxy.uniroma1.ruit.me": "2022-07-13",
+      "ezproxy.uniroma1.rvit.me": "2022-07-13",
+      "ezproxy.uniroma1.urnit.me": "2022-07-13",
+      "ezproxy.uniroma1.uvit.me": "2022-06-30",
+      "ezproxy.vid.no.liblog.info": "2021-06-11",
+      "ezproxy.yu.edu.jo.liblog.info": "2021-06-10",
+      "ezproxy2.hkr.se.liblog.info": "2021-09-16",
+      "ezproxy2.hkr.se.zezpro.xyz": "2022-03-14",
+      "ezproxy3.hkr.se.liblogin.com": "2024-01-29",
+      "ezsecureaccess.balamand.edu.lb.ezlibin.com": "2024-01-29",
+      "eztt.tk": "2019-09-11",
+      "fdqk.me": "2022-07-05",
+      "fgds.me": "2022-07-05",
+      "fill.cf": "2019-09-11",
+      "find.shef.ac.uk.uion.me": "2022-05-22",
+      "find.sheffield.uion.me": "2022-05-22",
+      "flil.cf": "2019-09-11",
+      "flll.cf": "2019-09-11",
+      "fqmu.me": "2022-07-05",
+      "fsw.cedu.me": "2022-06-29",
+      "fsw.eduv.me": "2022-06-05",
+      "fsw.uedu.me": "2022-06-29",
+      "fvne.me": "2022-07-05",
+      "gajr.me": "2022-07-05",
+      "gboe.me": "2022-07-05",
+      "geuy.me": "2022-07-05",
+      "glpk.me": "2022-07-05",
+      "goucher.adui.me": "2022-06-21",
+      "goucher.elru.me": "2022-06-21",
+      "goucher.pdlu.me": "2022-06-30",
+      "goucher.unde.me": "2022-06-30",
+      "gujv.me": "2022-07-05",
+      "hemid.me": "2022-06-28",
+      "hiof.no.liblog.info": "2021-06-03",
+      "hzse.me": "2022-07-05",
+      "id.quicklaunch.urio.me": "2022-06-25",
+      "idcheck2.qmul.ac.uk.sftt.cf": "2020-10-14",
+      "identity.uoguelph.libun.me": "2022-07-18",
+      "identity.uoguelph.rnedu.me": "2022-07-18",
+      "idp.bolton.ac.rnuk.me": "2022-07-16",
+      "idp.bolton.ac.rvuk.me": "2022-07-16",
+      "idp.bolton.ac.uk.ilino.me": "2022-04-30",
+      "idp.bolton.ac.uk.libte.me": "2022-04-23",
+      "idp.bolton.ac.uk.rulk.me": "2022-07-16",
+      "idp.csu.oedu.me": "2022-06-25",
+      "idp.it.su.se.mosc.me": "2021-09-16",
+      "idp.it.su.se.oucv.me": "2021-09-16",
+      "idp.it.su.se.ucno.me": "2021-09-16",
+      "idp3.it.gu.se.itlf.cf": "2020-10-04",
+      "idpz.utorauth.utoronto.ca.itlf.cf": "2020-10-14",
+      "iell.tk": "2019-09-11",
+      "iftl.tk": "2020-10-04",
+      "ilias.uni-marburg.edunm.me": "2020-12-07",
+      "ilino.me": "2022-04-26",
+      "ill.pro": "2019-09-11",
+      "illl.cf": "2019-09-11",
+      "ills.cf": "2019-09-11",
+      "innsida.ntnu.snnu.me": "2020-12-18",
+      "innsida.ntnu.srrn.me": "2021-01-19",
+      "instructure.cnna.me": "2022-06-07",
+      "instructure.kiue.me": "2022-06-07",
+      "ip8h.me": "2022-07-05",
+      "iqtw.me": "2022-07-05",
+      "isavr.me": "2021-09-16",
+      "ithenticate.zezpro.xyz": "2022-03-09",
+      "itlf.cf": "2020-10-04",
+      "itlib.me": "2020-10-04",
+      "itll.tk": "2019-10-14",
+      "iull.tk": "2019-09-11",
+      "iwdz.me": "2022-07-05",
+      "izll.tk": "2019-09-11",
+      "jfg5.me": "2022-07-05",
+      "jfmn.me": "2022-07-05",
+      "jhbn.me": "2018-08-28",
+      "jiuf.me": "2022-07-05",
+      "jlll.cf": "2019-09-11",
+      "jo.ezlibin.com": "2024-01-29",
+      "jo.libinpro.xyz": "2024-01-29",
+      "kdpn.me": "2022-07-05",
+      "kenli.nbu.bg.logezpro.xyz": "2022-02-14",
+      "ki.instructure.cnna.me": "2022-06-07",
+      "ki.instructure.kiue.me": "2022-06-07",
+      "kiue.me": "2022-06-07",
+      "kqxt.me": "2022-07-05",
+      "kxli.me": "2022-07-05",
+      "l5oj.me": "2022-07-05",
+      "lau.edu.lb.libinpro.xyz": "2024-01-29",
+      "lb.ezlibin.com": "2024-01-29",
+      "lb.libinpro.xyz": "2024-01-29",
+      "lcc.llrn.me": "2022-07-07",
+      "learn.polyu.sncu.me": "2020-12-07",
+      "learn.snnu.me": "2020-12-07",
+      "ledu.me": "2022-07-23",
+      "lett.cf": "2019-09-11",
+      "lezpro.xyz": "2021-11-23",
+      "lgyw.me": "2022-07-05",
+      "li.ezlibin.com": "2024-01-29",
+      "lib-service.com": "2018-08-28",
+      "lib1.bid": "2019-09-11",
+      "lib1.pw": "2019-09-11",
+      "lib4login.com": "2022-10-17",
+      "liba.gq": "2019-09-11",
+      "libb.ga": "2019-09-11",
+      "libdo.cf": "2019-10-14",
+      "libe.cf": "2019-10-14",
+      "libe.ga": "2019-09-11",
+      "libe.ml": "2019-09-11",
+      "libet.me": "2022-04-30",
+      "libezpro.xyz": "2021-10-18",
+      "libf.ga": "2019-09-11",
+      "libg.cf": "2019-09-11",
+      "libg.ga": "2019-09-11",
+      "libg.gq": "2019-09-11",
+      "libg.ml": "2021-07-11",
+      "libg.tk": "2019-09-11",
+      "libinpro.xyz": "2024-01-29",
+      "libip.me": "2022-05-19",
+      "libit.me": "2020-10-13",
+      "libk.ga": "2019-09-11",
+      "lible.me": "2022-07-03",
+      "libloan.xyz": "2019-09-11",
+      "liblog.info": "2021-01-18",
+      "liblogin.com": "2024-01-29",
+      "liblogin.xyz": "2022-05-04",
+      "libm.ga": "2019-09-11",
+      "libmi.me": "2022-05-19",
+      "libn.gq": "2019-10-14",
+      "libnicinfo.xyz": "2019-09-11",
+      "libproxy.library.unt.edu.itlib.me": "2020-10-14",
+      "libproxy.umflint.edu.ilino.me": "2022-04-26",
+      "libproxy.umflint.edu.oine.me": "2022-04-26",
+      "libproxy.umflint.edu.ostin.me": "2022-04-26",
+      "libproxy.unm.eduin.me": "2020-12-07",
+      "libra.libinpro.xyz": "2024-01-29",
+      "librar.libinpro.xyz": "2024-01-29",
+      "library.acu.edu.au.libit.me": "2020-10-13",
+      "library.adelaide.crev.me": "2020-10-14",
+      "library.gju.edu.jo.lib4login.com": "2022-10-17",
+      "library.gju.edu.jo.logezpro.xyz": "2021-12-22",
+      "library.sutd.edu.sg.liblogin.xyz": "2022-05-04",
+      "library.zuj.edu.jo.libinpro.xyz": "2024-01-29",
+      "library1.zuj.edu.jo.ezlibin.com": "2024-01-29",
+      "library1.zuj.edu.jo.libinpro.xyz": "2024-01-29",
+      "library2.ramapo.ecdu.me": "2022-06-06",
+      "library2.ramapo.pndu.me": "2022-06-30",
+      "library2.ramapo.rcedu.me": "2022-06-30",
+      "library2.zuj.edu.jo.libinpro.xyz": "2024-01-29",
+      "libraryezlogin.com": "2022-08-31",
+      "librarylog.in": "2019-09-11",
+      "libraryme.ir": "2019-09-11",
+      "librarysso.vu.cvrr.me": "2020-10-14",
+      "librm.me": "2020-12-07",
+      "librt.ml": "2019-10-14",
+      "libsi.me": "2022-05-19",
+      "libsu.me": "2022-05-19",
+      "libt.ga": "2019-09-11",
+      "libt.ml": "2019-09-11",
+      "libte.me": "2022-04-23",
+      "libu.gq": "2019-09-11",
+      "libun.me": "2022-07-18",
+      "libv.ml": "2019-09-11",
+      "libver.ml": "2019-09-11",
+      "libw.gq": "2019-10-14",
+      "lill.gq": "2019-09-11",
+      "lill.pro": "2019-09-11",
+      "liucat.lib.liu.ealu.me": "2022-06-22",
+      "liucat.lib.liu.edu.llibs.me": "2022-05-19",
+      "liucat.lib.liu.nedu.me": "2022-06-25",
+      "liucat.lib.liu.ollu.me": "2022-06-25",
+      "llbt.tk": "2019-09-11",
+      "llib.cf": "2019-09-11",
+      "llib.ga": "2019-09-11",
+      "llibs.me": "2022-05-19",
+      "llic.cf": "2019-09-11",
+      "llic.tk": "2019-09-11",
+      "llif.cf": "2019-10-14",
+      "llii.cf": "2019-09-11",
+      "llii.xyz": "2019-09-11",
+      "llil.cf": "2019-09-11",
+      "llil.nl": "2019-09-11",
+      "llit.cf": "2019-09-11",
+      "llit.site": "2019-09-11",
+      "lliv.nl": "2019-09-11",
+      "lliv.tk": "2019-09-11",
+      "lliz.cf": "2019-10-14",
+      "lllf.nl": "2019-09-11",
+      "llli.cf": "2019-10-14",
+      "llli.nl": "2019-09-11",
+      "lllib.cf": "2019-09-11",
+      "lllt.cf": "2019-10-14",
+      "llrn.me": "2022-07-07",
+      "llse.cf": "2019-09-11",
+      "lmpt.me": "2022-07-05",
+      "lms.latrobe.aroe.me": "2020-10-14",
+      "lms.unb.sncu.me": "2020-12-07",
+      "logezpro.xyz": "2021-12-22",
+      "login.bradley.ledu.me": "2022-07-23",
+      "login.bradley.rvedu.me": "2022-07-23",
+      "login.bradley.zedu.me": "2022-07-23",
+      "login.cardiff.ac.erlib.me": "2022-07-22",
+      "login.cardiff.ac.plib.me": "2022-07-22",
+      "login.cardiff.acuk.me": "2022-06-29",
+      "login.datubazes.lanet.lv.liblog.info": "2021-06-30",
+      "login.e.bibl.liu.se.ctit.tk": "2020-11-26",
+      "login.e.bibl.liu.se.titt.ga": "2020-12-07",
+      "login.ezproxy.uniroma1.olit.me": "2022-06-22",
+      "login.ezproxy.uniroma1.rnit.me": "2022-06-30",
+      "login.ezproxy.uniroma1.ruit.me": "2022-07-13",
+      "login.ezproxy.uniroma1.rvit.me": "2022-07-13",
+      "login.ezproxy.uniroma1.unnit.me": "2022-06-22",
+      "login.ezproxy.uniroma1.urnit.me": "2022-07-13",
+      "login.ezproxy.uniroma1.uvit.me": "2022-06-30",
+      "login.ezproxy.uwc.ac.za.lezpro.xyz": "2021-11-23",
+      "login.ezproxy.uws.edu.au.vitt.ga": "2020-12-18",
+      "login.ezsecureaccess.balamand.edu.lb.ezlibin.com": "2024-01-29",
+      "login.iit.edu.aclib.me": "2022-05-17",
+      "login.ki.se.asoec.me": "2021-09-16",
+      "login.ki.se.ecdv.me": "2021-09-16",
+      "login.ki.se.ersta.me": "2021-09-16",
+      "login.ki.se.iftl.tk": "2020-10-04",
+      "login.ki.se.isavr.me": "2021-09-16",
+      "login.ki.se.nfas.me": "2021-12-02",
+      "login.ki.se.nvfr.me": "2021-09-16",
+      "login.ki.se.rsia.me": "2021-09-16",
+      "login.ki.se.tacvp.me": "2021-09-16",
+      "login.ki.se.tcnd.me": "2021-09-16",
+      "login.libezp.utar.edu.my.liblog.info": "2021-06-07",
+      "login.libezp2.utar.edu.my.liblog.info": "2021-06-03",
+      "login.libproxy.kcl.ac.uk.itlt.tk": "2020-10-14",
+      "login.libproxy.umflint.edu.ilino.me": "2022-04-26",
+      "login.libproxy.umflint.edu.oine.me": "2022-04-26",
+      "login.libproxy.umflint.edu.ostin.me": "2022-04-26",
+      "login.manchester.ac.uk.ctit.tk": "2020-11-26",
+      "login.microsoftonline.comn.me": "2022-07-01",
+      "login.microsoftonline.cornn.me": "2022-07-01",
+      "login.microsoftonline.edlv.me": "2022-07-16",
+      "login.microsoftonline.elbu.me": "2022-06-21",
+      "login.microsoftonline.enlib.me": "2022-05-09",
+      "login.microsoftonline.eolv.me": "2022-07-16",
+      "login.microsoftonline.ilino.me": "2022-04-30",
+      "login.microsoftonline.libte.me": "2022-04-23",
+      "login.microsoftonline.nelib.me": "2022-04-30",
+      "login.microsoftonline.otlib.me": "2022-05-03",
+      "login.microsoftonline.redur.me": "2022-07-16",
+      "login.microsoftonline.rvcon.me": "2022-07-16",
+      "login.microsoftonline.srlib.me": "2022-05-11",
+      "login.microsoftonline.strlib.me": "2022-04-30",
+      "login.microsoftonline.ulca.me": "2022-07-16",
+      "login.microsoftonline.urca.me": "2022-07-18",
+      "login.nerb.me": "2022-06-30",
+      "login.openathens.ebui.me": "2022-06-08",
+      "login.openathens.euin.me": "2022-06-22",
+      "login.openathens.net.libip.me": "2022-05-19",
+      "login.openathens.net.libmi.me": "2022-05-19",
+      "login.openathens.net.libsi.me": "2022-05-19",
+      "login.pcc.ediu.me": "2022-06-05",
+      "login.proxy.bib.uottawa.ca.cvos.me": "2021-09-16",
+      "login.proxy1.dom1.nhtv.nl.liblog.info": "2021-01-20",
+      "login.proxy1.lib.uwo.ca.sftt.cf": "2020-10-14",
+      "login.proxy1.lib.uwo.ca.sirlib.me": "2022-05-01",
+      "login.simsrad.net.ocs.mq.edu.au.vitt.ga": "2020-12-18",
+      "login.svproxy.svcc.reun.me": "2022-07-07",
+      "login.svproxy.svcc.urnd.me": "2022-07-09",
+      "login.uleth.ca.ulib.me": "2022-04-30",
+      "login.wccnet.eduri.me": "2022-05-29",
+      "login1.ep.bib.mdh.se.lib4login.com": "2022-10-17",
+      "login1.ep.bib.mdh.se.liblog.info": "2021-09-16",
+      "login1.ep.bib.mdh.se.logezpro.xyz": "2021-12-27",
+      "login1pro.xyz": "2022-05-05",
+      "logon.bradley.eulib.me": "2022-07-03",
+      "logon.bradley.ledu.me": "2022-07-23",
+      "logon.bradley.lible.me": "2022-07-03",
+      "logon.bradley.rvedu.me": "2022-07-23",
+      "logon.bradley.ulibe.me": "2022-07-03",
+      "logon.bradley.zedu.me": "2022-07-23",
+      "lproxy.nymc.edu.libg.ml": "2021-07-11",
+      "lrie.me": "2022-05-27",
+      "lu7b.me": "2022-07-05",
+      "lzll.cf": "2019-09-11",
+      "mail.library.zuj.edu.jo.libinpro.xyz": "2024-01-29",
+      "mail.mdh.se.libinpro.xyz": "2024-01-29",
+      "mail.proxy.mau.se.libinpro.xyz": "2024-01-29",
+      "mail.proxy1.mau.se.libinpro.xyz": "2024-01-29",
+      "mau.se.ezlibin.com": "2024-01-29",
+      "mau.se.libinpro.xyz": "2024-01-29",
+      "mdh.se.ezlibin.com": "2024-01-29",
+      "mdh.se.libinpro.xyz": "2024-01-29",
+      "mef.edu.tr.ezlibin.com": "2024-01-29",
+      "megaservers.ir": "2021-09-16",
+      "mgyr.me": "2022-07-05",
+      "miamioh.eduo.me": "2022-06-05",
+      "microsoftonline.comn.me": "2022-07-01",
+      "microsoftonline.cornn.me": "2022-07-01",
+      "microsoftonline.edlv.me": "2022-07-16",
+      "microsoftonline.elbu.me": "2022-06-21",
+      "microsoftonline.eolv.me": "2022-07-16",
+      "microsoftonline.libte.me": "2022-04-23",
+      "microsoftonline.redur.me": "2022-07-16",
+      "microsoftonline.rvcon.me": "2022-07-16",
+      "microsoftonline.ulca.me": "2022-07-16",
+      "microsoftonline.urca.me": "2022-07-18",
+      "milngavie.cent.gla.ac.uk.titt.gq": "2020-12-07",
+      "mlib.cf": "2019-09-11",
+      "mlibo.ml": "2019-09-11",
+      "monucp.u-cergy.sunu.me": "2020-12-07",
+      "moodle.uni-ulm.caer.me": "2020-10-16",
+      "moodle.uni-ulm.de.librm.me": "2020-12-07",
+      "mosc.me": "2021-09-16",
+      "mxig.me": "2022-07-05",
+      "mylibrary.bu.ulibr.xyz": "2020-12-18",
+      "mylibrary.ebu.ulibr.xyz": "2020-12-18",
+      "namidp.services.uu.nl.itlib.me": "2020-10-14",
+      "ncbv.me": "2022-07-03",
+      "ncce.cf": "2019-10-14",
+      "ncev.me": "2021-04-19",
+      "ncll.tk": "2019-09-11",
+      "ncnc.cf": "2019-09-11",
+      "nctt.tk": "2019-09-11",
+      "ndmb.me": "2022-07-05",
+      "ndu.edu.lb.ezlibin.com": "2024-01-29",
+      "necr.ga": "2019-09-11",
+      "nedu.me": "2022-06-25",
+      "nelib.me": "2022-04-30",
+      "neptune.ndu.edu.lb.ezlibin.com": "2024-01-29",
+      "neptune.ndu.edu.lb.liblog.info": "2021-09-16",
+      "neptune.ndu.edu.lb.liblogin.com": "2024-01-29",
+      "neptune.ndu.edu.lb.logezpro.xyz": "2022-02-09",
+      "neptune.ndu.edu.lb.zezpro.xyz": "2022-06-01",
+      "nerb.me": "2022-06-30",
+      "newcatalog.library.cornell.ulibc.xyz": "2021-11-05",
+      "nfas.me": "2021-12-02",
+      "nicn.gq": "2019-09-11",
+      "nika.ga": "2019-09-11",
+      "nimc.cf": "2018-08-28",
+      "nimc.ga": "2019-09-11",
+      "nimc.ml": "2019-09-11",
+      "ninu.me": "2020-10-05",
+      "njit.erdu.me": "2022-06-05",
+      "nlib.ml": "2019-10-14",
+      "nlll.cf": "2019-09-11",
+      "nlll.tk": "2019-10-14",
+      "nrni.me": "2020-10-14",
+      "nsae.ml": "2019-09-11",
+      "ntil.cf": "2019-10-14",
+      "ntll.cf": "2019-10-14",
+      "ntll.tk": "2019-09-11",
+      "ntulearn.ntu.ninu.me": "2020-10-05",
+      "nuec.cf": "2019-09-11",
+      "nuec.ml": "2019-09-11",
+      "nvfr.me": "2021-09-16",
+      "nyit.ent.sirsi.net.libsu.me": "2022-05-19",
+      "nz89.me": "2022-07-05",
+      "oedu.me": "2022-06-25",
+      "oine.me": "2022-04-26",
+      "ole.bris.crir.me": "2020-10-14",
+      "olit.me": "2022-06-22",
+      "ollu.me": "2022-06-25",
+      "omhw.me": "2022-07-05",
+      "omth.me": "2022-07-05",
+      "onesearch.library.rice.ulibc.xyz": "2021-11-05",
+      "onesearch.library.wwu.edu.ulibr.xyz": "2020-12-18",
+      "onhj.me": "2022-07-05",
+      "onic.me": "2022-05-27",
+      "openathens.ebui.me": "2022-06-08",
+      "openathens.euin.me": "2022-06-22",
+      "opir.me": "2022-05-29",
+      "oskicatp.berkeley.edu.ncev.me": "2021-04-19",
+      "ostin.me": "2022-04-26",
+      "otlib.me": "2022-05-03",
+      "oucv.me": "2021-09-16",
+      "owl.uwo.vueu.me": "2020-10-12",
+      "pcc.ediu.me": "2022-06-05",
+      "pdlu.me": "2022-06-30",
+      "plib.me": "2022-07-22",
+      "pndu.me": "2022-06-30",
+      "proxy.libinpro.xyz": "2024-01-29",
+      "proxy.mau.se.ezlibin.com": "2024-01-29",
+      "proxy.mau.se.libinpro.xyz": "2024-01-29",
+      "proxy.mau.se.liblogin.com": "2024-01-29",
+      "proxy.mau.se.logezpro.xyz": "2022-01-26",
+      "proxy1.mau.se.libinpro.xyz": "2024-01-29",
+      "proxy2.mau.se.liblogin.com": "2024-01-29",
+      "proxylogin.nus.edu.sg.cett.cf": "2020-12-18",
+      "proxylogin.nus.edu.sg.vitl.ml": "2020-12-18",
+      "psut.idm.oclc.org.liblog.info": "2021-09-16",
+      "pveq.me": "2022-07-05",
+      "q.utoronto.vrev.me": "2020-12-07",
+      "q5sl.me": "2022-07-05",
+      "qlma.me": "2022-07-05",
+      "quicklaunch.urio.me": "2022-06-25",
+      "ramapo.ecdu.me": "2022-06-06",
+      "ramapo.pndu.me": "2022-06-30",
+      "ramapo.rcedu.me": "2022-06-30",
+      "raven.cam.ac.uk.iftl.tk": "2020-10-04",
+      "rcedu.me": "2022-06-30",
+      "redur.me": "2022-07-16",
+      "reun.me": "2022-07-07",
+      "rill.cf": "2019-09-11",
+      "riue.me": "2022-05-27",
+      "rlib.me": "2022-05-12",
+      "rnedu.me": "2022-07-18",
+      "rnit.me": "2022-06-30",
+      "rnlib.me": "2022-07-22",
+      "rnuk.me": "2022-07-16",
+      "rnva.cf": "2019-09-11",
+      "rp6h.me": "2022-07-05",
+      "rps.hva.nl.liblog.info": "2021-01-19",
+      "rres.me": "2020-10-14",
+      "rsia.me": "2021-09-16",
+      "rtll.tk": "2019-09-11",
+      "ruit.me": "2022-07-13",
+      "rulk.me": "2022-07-16",
+      "rvcon.me": "2022-07-16",
+      "rvedu.me": "2022-07-23",
+      "rvgh.me": "2022-07-05",
+      "rvit.me": "2022-07-13",
+      "rvna.cf": "2019-10-14",
+      "rvuk.me": "2022-07-16",
+      "rwpb.me": "2022-07-05",
+      "rwzx.me": "2022-07-05",
+      "rxsn.me": "2022-07-05",
+      "savantaz.cf": "2019-09-11",
+      "sctt.cf": "2019-09-11",
+      "se.ezlibin.com": "2024-01-29",
+      "se.libinpro.xyz": "2024-01-29",
+      "servisedesk.me": "2020-10-04",
+      "sftt.cf": "2020-10-14",
+      "sg.libinpro.xyz": "2024-01-29",
+      "shib-idp.ucl.ac.uk.trtt.tk": "2020-11-26",
+      "shib-idp.ucl.ac.uk.vctt.cf": "2020-12-07",
+      "shib.dur.ac.uk.stit.cf": "2020-12-07",
+      "shib.towson.edu.thespacebulls.info": "2022-01-09",
+      "shib.york.ac.uk.iftl.tk": "2020-10-04",
+      "shibboleth.link": "2019-09-11",
+      "shibboleth.mcgill.ca.iftl.tk": "2020-10-04",
+      "shibboleth.mcgill.edliu.me": "2020-12-07",
+      "shibboleth.mcgill.nlib.ml": "2021-01-20",
+      "shibboleth3.liv.ac.uk.sitl.tk": "2020-12-18",
+      "sierra-sso.aut.caer.me": "2020-10-16",
+      "signon.adelaide.edu.au.itlib.me": "2020-10-14",
+      "sirlib.me": "2022-05-01",
+      "sitl.tk": "2019-09-11",
+      "sitt.cf": "2019-10-14",
+      "slib.me": "2022-07-22",
+      "slli.cf": "2019-09-11",
+      "sncu.me": "2020-12-07",
+      "snnu.me": "2020-12-07",
+      "srlib.me": "2022-05-11",
+      "srrn.me": "2021-01-19",
+      "srtteam.ir": "2021-09-16",
+      "ssll.cf": "2019-10-14",
+      "sso.acu.edu.au.itlib.me": "2020-10-12",
+      "sso.fsw.cedu.me": "2022-06-29",
+      "sso.fsw.eduv.me": "2022-06-05",
+      "sso.fsw.uedu.me": "2022-06-29",
+      "sso.id.kent.ac.uk.iftl.tk": "2020-10-04",
+      "sso.oakland.opir.me": "2022-05-29",
+      "sso.ub.edu.libezpro.xyz": "2021-10-20",
+      "sso.vu.lrie.me": "2022-05-27",
+      "sso2.identity.uoguelph.enlib.me": "2022-05-09",
+      "sso2.identity.uoguelph.libun.me": "2022-07-18",
+      "sso2.identity.uoguelph.rnedu.me": "2022-07-18",
+      "sso2.identity.uoguelph.uolib.me": "2022-05-03",
+      "ssologin.exeter.ac.uk.etrlib.me": "2022-04-30",
+      "ssologin.exeter.ac.uk.libet.me": "2022-04-30",
+      "stit.cf": "2020-12-07",
+      "stll.tk": "2019-09-11",
+      "strlib.me": "2022-04-30",
+      "sts.cuhk.edu.hk.itlf.cf": "2020-12-07",
+      "sts.sydney.ediun.me": "2020-12-07",
+      "sunu.me": "2020-12-07",
+      "sutd.edu.sg.libinpro.xyz": "2024-01-29",
+      "svcc.reun.me": "2022-07-07",
+      "svcc.urnd.me": "2022-07-09",
+      "svproxy.svcc.reun.me": "2022-07-07",
+      "svproxy.svcc.urnd.me": "2022-07-09",
+      "swoc.me": "2021-09-16",
+      "t12u.me": "2022-07-05",
+      "tacvp.me": "2021-09-16",
+      "tarcez.tarc.edu.my.liblog.info": "2021-06-07",
+      "tasav.me": "2021-09-16",
+      "tcnd.me": "2021-09-16",
+      "test.elou.me": "2022-06-25",
+      "testlib.cnlib.me": "2022-05-09",
+      "testlib.enlib.me": "2022-05-09",
+      "thespacebulls.info": "2022-01-09",
+      "till.cf": "2019-09-11",
+      "titt.cf": "2019-09-11",
+      "titt.ga": "2020-12-07",
+      "titt.gq": "2020-12-07",
+      "titt.ml": "2020-11-26",
+      "tlit.cf": "2019-10-14",
+      "tlll.cf": "2019-09-11",
+      "tlll.tk": "2019-10-14",
+      "tlvd.me": "2022-07-05",
+      "towson.edu.thespacebulls.info": "2022-01-09",
+      "tr.ezlibin.com": "2024-01-29",
+      "trtt.tk": "2020-11-26",
+      "tsll.cf": "2019-09-11",
+      "ttil.nl": "2019-09-11",
+      "ttit.cf": "2019-10-14",
+      "ttll.cf": "2019-10-14",
+      "tumx.me": "2022-07-05",
+      "twrb.me": "2022-07-05",
+      "ua5v.me": "2022-07-05",
+      "ucno.me": "2021-09-16",
+      "ucnv.me": "2021-04-17",
+      "udun.me": "2021-11-25",
+      "uedu.me": "2022-06-29",
+      "uieg.me": "2022-07-05",
+      "uill.cf": "2019-09-11",
+      "uion.me": "2022-05-22",
+      "uitt.tk": "2019-09-11",
+      "uk.libte.me": "2022-04-23",
+      "ukns.me": "2021-04-17",
+      "ulca.me": "2022-07-16",
+      "ulib.me": "2022-04-30",
+      "ulibc.xyz": "2021-11-05",
+      "ulibe.me": "2022-07-03",
+      "ulibe.ml": "2019-09-11",
+      "ulibr.ga": "2019-09-11",
+      "ulibr.xyz": "2020-12-18",
+      "ulll.cf": "2019-09-11",
+      "ulll.tk": "2019-09-11",
+      "umflint.edu.ilino.me": "2022-04-26",
+      "umflint.edu.oine.me": "2022-04-26",
+      "umflint.edu.ostin.me": "2022-04-26",
+      "umlib.ml": "2019-09-11",
+      "umll.tk": "2019-09-11",
+      "umpb.me": "2022-07-05",
+      "uncr.me": "2018-08-28",
+      "unde.me": "2022-06-30",
+      "uni-lb.com": "2019-09-11",
+      "unie.ga": "2018-08-28",
+      "unie.gq": "2019-09-11",
+      "unie.ml": "2018-08-28",
+      "unin.icu": "2018-08-28",
+      "unip.cf": "2018-08-28",
+      "unip.ga": "2019-09-11",
+      "unip.gq": "2018-08-28",
+      "unip.ml": "2019-09-11",
+      "unir.cf": "2018-08-28",
+      "unir.ga": "2019-09-11",
+      "unir.gq": "2018-08-28",
+      "unir.ml": "2018-08-28",
+      "uniroma1.rnit.me": "2022-06-30",
+      "uniroma1.ruit.me": "2022-07-13",
+      "uniroma1.rvit.me": "2022-07-13",
+      "uniroma1.urnit.me": "2022-07-13",
+      "uniroma1.uvit.me": "2022-06-30",
+      "unisr.me": "2022-05-22",
+      "unisv.xyz": "2018-08-28",
+      "univ.red": "2018-08-28",
+      "unll.tk": "2019-09-11",
+      "unnit.me": "2022-06-22",
+      "untc.ir": "2019-09-11",
+      "untc.me": "2018-08-28",
+      "untf.me": "2018-08-28",
+      "unts.me": "2018-08-28",
+      "unvc.me": "2018-08-28",
+      "uoguelph.libun.me": "2022-07-18",
+      "uoguelph.rnedu.me": "2022-07-18",
+      "uolib.me": "2022-05-03",
+      "uon.okta.com.vitt.ga": "2020-12-18",
+      "urca.me": "2022-07-18",
+      "urio.me": "2022-06-25",
+      "urnd.me": "2022-07-09",
+      "urnit.me": "2022-07-13",
+      "utll.tk": "2019-09-11",
+      "uu.blackboard.rres.me": "2020-10-14",
+      "uvit.me": "2022-06-30",
+      "uwrd.me": "2022-07-05",
+      "uxcz.me": "2022-07-05",
+      "vbel.me": "2022-07-05",
+      "vctt.cf": "2020-12-07",
+      "venc.cf": "2019-10-14",
+      "visc.cf": "2019-10-14",
+      "vitl.ml": "2020-12-18",
+      "vitt.ga": "2020-12-18",
+      "vjwk.me": "2022-07-05",
+      "vle.cam.ac.uk.canm.me": "2020-10-14",
+      "vrev.me": "2020-12-07",
+      "vsre.cf": "2019-09-11",
+      "vtll.cf": "2019-09-11",
+      "vueu.me": "2020-10-12",
+      "wa13.me": "2022-07-05",
+      "wdkz.me": "2022-07-05",
+      "web2lib.info": "2019-09-11",
+      "webauth.njit.erdu.me": "2022-06-05",
+      "weblogin.bu.edu.llib.me": "2022-05-17",
+      "weblogon.ltu.se.ztit.cf": "2020-12-18",
+      "wghi.me": "2022-07-05",
+      "wl6g.me": "2022-07-05",
+      "wo2k.me": "2022-07-05",
+      "wxpi.me": "2022-07-05",
+      "wygo.me": "2022-07-05",
+      "x27i.me": "2022-07-05",
+      "xdor.me": "2022-07-05",
+      "xdry.me": "2022-07-05",
+      "xe91.me": "2022-07-05",
+      "xezpro.xyz": "2022-06-01",
+      "xfaj.me": "2022-07-05",
+      "xgqf.me": "2022-07-05",
+      "xill.cf": "2019-10-14",
+      "xill.tk": "2019-09-11",
+      "xrig.me": "2022-07-05",
+      "xuoe.me": "2022-07-05",
+      "xzat.me": "2022-07-05",
+      "y1rk.me": "2022-07-05",
+      "yc22.me": "2022-07-05",
+      "yqik.me": "2022-07-05",
+      "za78.me": "2022-07-05",
+      "zedu.me": "2022-07-23",
+      "zedviros.ir": "2019-09-11",
+      "zeyg.me": "2022-07-05",
+      "zezpro.xyz": "2022-03-09",
+      "zill.cf": "2019-09-11",
+      "zjhb.me": "2022-07-05",
+      "zkvb.me": "2022-07-05",
+      "zlll.tk": "2019-10-14",
+      "ztit.cf": "2020-11-26",
+      "zuj.edu.jo.ezlibin.com": "2024-01-29",
+      "zuj.edu.jo.libinpro.xyz": "2024-01-29",
+      "zvwb.me": "2022-07-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-28",
+    "latest": "2024-01-29"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "12st.me",
+      "12xb.me",
+      "1edu.in",
+      "1ezpro.xyz",
+      "1r3o.me",
+      "28ag.me",
+      "32ex.me",
+      "33qa.me",
+      "67vr.me",
+      "67yt.me",
+      "ac.uk.libte.me",
+      "aclib.me",
+      "acuk.me",
+      "adfs.goucher.adui.me",
+      "adfs.goucher.elru.me",
+      "adfs.goucher.pdlu.me",
+      "adfs.goucher.unde.me",
+      "adfs.lincoln.ac.uk.itlib.me",
+      "adui.me",
+      "aill.cf",
+      "aill.nl",
+      "allib.me",
+      "anvc.me",
+      "aroe.me",
+      "asoec.me",
+      "atll.tk",
+      "atna.cf",
+      "atti.cf",
+      "auth.bath.ac.uk.ctit.cf",
+      "auth.bath.ac.uk.ctit.tk",
+      "auth.bath.ac.uk.ncev.me",
+      "auth.bath.ac.uk.titt.ml",
+      "auth.bath.ac.uk.ukns.me",
+      "auth.bath.ac.uk.ztit.cf",
+      "auth.miamioh.eduo.me",
+      "avne.me",
+      "azll.cf",
+      "azll.tk",
+      "azlll.cf",
+      "aztt.tk",
+      "balamand.edu.lb.ezlibin.com",
+      "bath.ac.uk.ncev.me",
+      "bcfk.me",
+      "bdhw.me",
+      "bib.mdh.se.ezlibin.com",
+      "bib.mdh.se.libinpro.xyz",
+      "bidi.uam.mx.logezpro.xyz",
+      "blackboard.gcal.crev.me",
+      "blackboard.stonybrook.ernn.me",
+      "blackboard.stonybrook.nrni.me",
+      "blackboard.usc.caer.me",
+      "blibo.ga",
+      "bolton.ac.rnuk.me",
+      "bolton.ac.rvuk.me",
+      "bolton.ac.uk.libte.me",
+      "bolton.ac.uk.rulk.me",
+      "bradley.eulib.me",
+      "bradley.ledu.me",
+      "bradley.lible.me",
+      "bradley.rvedu.me",
+      "bradley.ulibe.me",
+      "bradley.zedu.me",
+      "c23e.me",
+      "caer.me",
+      "canm.me",
+      "canvas.bham.vueu.me",
+      "canvas.sydney.sunu.me",
+      "canvas.ucdavis.snnu.me",
+      "cardiff.ac.erlib.me",
+      "cardiff.ac.plib.me",
+      "cardiff.acuk.me",
+      "cas.conncoll.ebui.me",
+      "cas.csufresno.eduir.me",
+      "cas.fsu.edu.libg.ml",
+      "cas.lcc.edu.llrn.me",
+      "cas.lcc.llrn.me",
+      "cas.thm.de.itlib.me",
+      "cas.thm.de.servisedesk.me",
+      "catalogue.londonmet.ac.uk.cnlib.me",
+      "cave.gq",
+      "ccli.cf",
+      "cedu.me",
+      "cett.cf",
+      "ciff.login.nerb.me",
+      "cill.ml",
+      "clll.cf",
+      "clll.nl",
+      "clll.tk",
+      "cllt.cf",
+      "cllt.tk",
+      "cnen.cf",
+      "cnlib.me",
+      "cnma.cf",
+      "cnna.me",
+      "cntt.cf",
+      "comn.me",
+      "conncoll.ebui.me",
+      "cornn.me",
+      "cqgp.me",
+      "crev.me",
+      "crir.me",
+      "crll.tk",
+      "csll.cf",
+      "ctit.cf",
+      "ctit.tk",
+      "ctll.tk",
+      "cuhk.edu.hk.itlf.cf",
+      "cuvl.me",
+      "cvnc.ga",
+      "cvos.me",
+      "cvrr.me",
+      "cvve.cf",
+      "cx71.me",
+      "cxam.me",
+      "cynf.me",
+      "czll.tk",
+      "cztt.tk",
+      "d2a7.me",
+      "d39j.me",
+      "dbck.me",
+      "dboc.me",
+      "dhfb.me",
+      "do78.me",
+      "dwfa.me",
+      "e-library.me",
+      "ealu.me",
+      "ease.ed.ac.riue.me",
+      "ease.ed.ac.rnlib.me",
+      "ease.ed.ac.slib.me",
+      "ease.ed.ac.unisr.me",
+      "ease.ed.rnlib.me",
+      "ease.ed.slib.me",
+      "eaun.me",
+      "ebookfafa.com",
+      "ebui.me",
+      "ecdu.me",
+      "ecdv.me",
+      "edadfed.ed.ac.uk.ucnv.me",
+      "edadfed.ed.ac.ukns.me",
+      "edcu.me",
+      "ediu.me",
+      "ediun.me",
+      "edliu.me",
+      "edll.me",
+      "edlv.me",
+      "edmh.me",
+      "edou.me",
+      "edu.ilino.me",
+      "edu.jo.ezlibin.com",
+      "edu.jo.libinpro.xyz",
+      "edu.lb.ezlibin.com",
+      "edu.lb.libinpro.xyz",
+      "edu.libg.ml",
+      "edu.llrn.me",
+      "edu.oine.me",
+      "edu.ostin.me",
+      "edu.sg.libinpro.xyz",
+      "edu.tr.ezlibin.com",
+      "eduin.me",
+      "eduir.me",
+      "edunm.me",
+      "eduo.me",
+      "eduri.me",
+      "eduv.icu",
+      "eduv.me",
+      "eill.cf",
+      "eill.ga",
+      "eill.nl",
+      "eis.gvsu.edu.thespacebulls.info",
+      "ejna.me",
+      "elbu.me",
+      "elearn.cuhk.caer.me",
+      "elia.sub.eaun.me",
+      "elibproxy.anu.ac.ke.logezpro.xyz",
+      "elll.cf",
+      "elou.me",
+      "elru.me",
+      "enlib.me",
+      "eolv.me",
+      "erdu.me",
+      "erlib.me",
+      "ernn.me",
+      "ersta.me",
+      "erta.ca",
+      "etll.cf",
+      "etrlib.me",
+      "euca.cf",
+      "euce.in",
+      "euin.me",
+      "eulib.me",
+      "euve.tk",
+      "ez.liblogin.com",
+      "ezlibin.com",
+      "ezll.tk",
+      "ezp.isikun.edu.tr.libezpro.xyz",
+      "ezp.twu.edu.logezpro.xyz",
+      "ezp2.imu.edu.my.liblog.info",
+      "ezpa.library.ualberta.allib.me",
+      "ezpa.library.ualberta.enlib.me",
+      "ezplog.in",
+      "ezpro.fa.ru.lib4login.com",
+      "ezpro.libinpro.xyz",
+      "ezproxy.fhstp.ac.at.libraryezlogin.com",
+      "ezproxy.hkr.se.liblog.info",
+      "ezproxy.hkr.se.liblogin.com",
+      "ezproxy.lau.edu.lb.zezpro.xyz",
+      "ezproxy.mef.edu.tr.ezlibin.com",
+      "ezproxy.mef.edu.tr.logezpro.xyz",
+      "ezproxy.tk",
+      "ezproxy.ug.edu.gh.liblogin.com",
+      "ezproxy.um.edu.my.liblog.info",
+      "ezproxy.uniroma1.rnit.me",
+      "ezproxy.uniroma1.ruit.me",
+      "ezproxy.uniroma1.rvit.me",
+      "ezproxy.uniroma1.urnit.me",
+      "ezproxy.uniroma1.uvit.me",
+      "ezproxy.vid.no.liblog.info",
+      "ezproxy.yu.edu.jo.liblog.info",
+      "ezproxy2.hkr.se.liblog.info",
+      "ezproxy2.hkr.se.zezpro.xyz",
+      "ezproxy3.hkr.se.liblogin.com",
+      "ezsecureaccess.balamand.edu.lb.ezlibin.com",
+      "eztt.tk",
+      "fdqk.me",
+      "fgds.me",
+      "fill.cf",
+      "find.shef.ac.uk.uion.me",
+      "find.sheffield.uion.me",
+      "flil.cf",
+      "flll.cf",
+      "fqmu.me",
+      "fsw.cedu.me",
+      "fsw.eduv.me",
+      "fsw.uedu.me",
+      "fvne.me",
+      "gajr.me",
+      "gboe.me",
+      "geuy.me",
+      "glpk.me",
+      "goucher.adui.me",
+      "goucher.elru.me",
+      "goucher.pdlu.me",
+      "goucher.unde.me",
+      "gujv.me",
+      "hemid.me",
+      "hiof.no.liblog.info",
+      "hzse.me",
+      "id.quicklaunch.urio.me",
+      "idcheck2.qmul.ac.uk.sftt.cf",
+      "identity.uoguelph.libun.me",
+      "identity.uoguelph.rnedu.me",
+      "idp.bolton.ac.rnuk.me",
+      "idp.bolton.ac.rvuk.me",
+      "idp.bolton.ac.uk.ilino.me",
+      "idp.bolton.ac.uk.libte.me",
+      "idp.bolton.ac.uk.rulk.me",
+      "idp.csu.oedu.me",
+      "idp.it.su.se.mosc.me",
+      "idp.it.su.se.oucv.me",
+      "idp.it.su.se.ucno.me",
+      "idp3.it.gu.se.itlf.cf",
+      "idpz.utorauth.utoronto.ca.itlf.cf",
+      "iell.tk",
+      "iftl.tk",
+      "ilias.uni-marburg.edunm.me",
+      "ilino.me",
+      "ill.pro",
+      "illl.cf",
+      "ills.cf",
+      "innsida.ntnu.snnu.me",
+      "innsida.ntnu.srrn.me",
+      "instructure.cnna.me",
+      "instructure.kiue.me",
+      "ip8h.me",
+      "iqtw.me",
+      "isavr.me",
+      "ithenticate.zezpro.xyz",
+      "itlf.cf",
+      "itlib.me",
+      "itll.tk",
+      "iull.tk",
+      "iwdz.me",
+      "izll.tk",
+      "jfg5.me",
+      "jfmn.me",
+      "jhbn.me",
+      "jiuf.me",
+      "jlll.cf",
+      "jo.ezlibin.com",
+      "jo.libinpro.xyz",
+      "kdpn.me",
+      "kenli.nbu.bg.logezpro.xyz",
+      "ki.instructure.cnna.me",
+      "ki.instructure.kiue.me",
+      "kiue.me",
+      "kqxt.me",
+      "kxli.me",
+      "l5oj.me",
+      "lau.edu.lb.libinpro.xyz",
+      "lb.ezlibin.com",
+      "lb.libinpro.xyz",
+      "lcc.llrn.me",
+      "learn.polyu.sncu.me",
+      "learn.snnu.me",
+      "ledu.me",
+      "lett.cf",
+      "lezpro.xyz",
+      "lgyw.me",
+      "li.ezlibin.com",
+      "lib-service.com",
+      "lib1.bid",
+      "lib1.pw",
+      "lib4login.com",
+      "liba.gq",
+      "libb.ga",
+      "libdo.cf",
+      "libe.cf",
+      "libe.ga",
+      "libe.ml",
+      "libet.me",
+      "libezpro.xyz",
+      "libf.ga",
+      "libg.cf",
+      "libg.ga",
+      "libg.gq",
+      "libg.ml",
+      "libg.tk",
+      "libinpro.xyz",
+      "libip.me",
+      "libit.me",
+      "libk.ga",
+      "lible.me",
+      "libloan.xyz",
+      "liblog.info",
+      "liblogin.com",
+      "liblogin.xyz",
+      "libm.ga",
+      "libmi.me",
+      "libn.gq",
+      "libnicinfo.xyz",
+      "libproxy.library.unt.edu.itlib.me",
+      "libproxy.umflint.edu.ilino.me",
+      "libproxy.umflint.edu.oine.me",
+      "libproxy.umflint.edu.ostin.me",
+      "libproxy.unm.eduin.me",
+      "libra.libinpro.xyz",
+      "librar.libinpro.xyz",
+      "library.acu.edu.au.libit.me",
+      "library.adelaide.crev.me",
+      "library.gju.edu.jo.lib4login.com",
+      "library.gju.edu.jo.logezpro.xyz",
+      "library.sutd.edu.sg.liblogin.xyz",
+      "library.zuj.edu.jo.libinpro.xyz",
+      "library1.zuj.edu.jo.ezlibin.com",
+      "library1.zuj.edu.jo.libinpro.xyz",
+      "library2.ramapo.ecdu.me",
+      "library2.ramapo.pndu.me",
+      "library2.ramapo.rcedu.me",
+      "library2.zuj.edu.jo.libinpro.xyz",
+      "libraryezlogin.com",
+      "librarylog.in",
+      "libraryme.ir",
+      "librarysso.vu.cvrr.me",
+      "librm.me",
+      "librt.ml",
+      "libsi.me",
+      "libsu.me",
+      "libt.ga",
+      "libt.ml",
+      "libte.me",
+      "libu.gq",
+      "libun.me",
+      "libv.ml",
+      "libver.ml",
+      "libw.gq",
+      "lill.gq",
+      "lill.pro",
+      "liucat.lib.liu.ealu.me",
+      "liucat.lib.liu.edu.llibs.me",
+      "liucat.lib.liu.nedu.me",
+      "liucat.lib.liu.ollu.me",
+      "llbt.tk",
+      "llib.cf",
+      "llib.ga",
+      "llibs.me",
+      "llic.cf",
+      "llic.tk",
+      "llif.cf",
+      "llii.cf",
+      "llii.xyz",
+      "llil.cf",
+      "llil.nl",
+      "llit.cf",
+      "llit.site",
+      "lliv.nl",
+      "lliv.tk",
+      "lliz.cf",
+      "lllf.nl",
+      "llli.cf",
+      "llli.nl",
+      "lllib.cf",
+      "lllt.cf",
+      "llrn.me",
+      "llse.cf",
+      "lmpt.me",
+      "lms.latrobe.aroe.me",
+      "lms.unb.sncu.me",
+      "logezpro.xyz",
+      "login.bradley.ledu.me",
+      "login.bradley.rvedu.me",
+      "login.bradley.zedu.me",
+      "login.cardiff.ac.erlib.me",
+      "login.cardiff.ac.plib.me",
+      "login.cardiff.acuk.me",
+      "login.datubazes.lanet.lv.liblog.info",
+      "login.e.bibl.liu.se.ctit.tk",
+      "login.e.bibl.liu.se.titt.ga",
+      "login.ezproxy.uniroma1.olit.me",
+      "login.ezproxy.uniroma1.rnit.me",
+      "login.ezproxy.uniroma1.ruit.me",
+      "login.ezproxy.uniroma1.rvit.me",
+      "login.ezproxy.uniroma1.unnit.me",
+      "login.ezproxy.uniroma1.urnit.me",
+      "login.ezproxy.uniroma1.uvit.me",
+      "login.ezproxy.uwc.ac.za.lezpro.xyz",
+      "login.ezproxy.uws.edu.au.vitt.ga",
+      "login.ezsecureaccess.balamand.edu.lb.ezlibin.com",
+      "login.iit.edu.aclib.me",
+      "login.ki.se.asoec.me",
+      "login.ki.se.ecdv.me",
+      "login.ki.se.ersta.me",
+      "login.ki.se.iftl.tk",
+      "login.ki.se.isavr.me",
+      "login.ki.se.nfas.me",
+      "login.ki.se.nvfr.me",
+      "login.ki.se.rsia.me",
+      "login.ki.se.tacvp.me",
+      "login.ki.se.tcnd.me",
+      "login.libezp.utar.edu.my.liblog.info",
+      "login.libezp2.utar.edu.my.liblog.info",
+      "login.libproxy.kcl.ac.uk.itlt.tk",
+      "login.libproxy.umflint.edu.ilino.me",
+      "login.libproxy.umflint.edu.oine.me",
+      "login.libproxy.umflint.edu.ostin.me",
+      "login.manchester.ac.uk.ctit.tk",
+      "login.microsoftonline.comn.me",
+      "login.microsoftonline.cornn.me",
+      "login.microsoftonline.edlv.me",
+      "login.microsoftonline.elbu.me",
+      "login.microsoftonline.enlib.me",
+      "login.microsoftonline.eolv.me",
+      "login.microsoftonline.ilino.me",
+      "login.microsoftonline.libte.me",
+      "login.microsoftonline.nelib.me",
+      "login.microsoftonline.otlib.me",
+      "login.microsoftonline.redur.me",
+      "login.microsoftonline.rvcon.me",
+      "login.microsoftonline.srlib.me",
+      "login.microsoftonline.strlib.me",
+      "login.microsoftonline.ulca.me",
+      "login.microsoftonline.urca.me",
+      "login.nerb.me",
+      "login.openathens.ebui.me",
+      "login.openathens.euin.me",
+      "login.openathens.net.libip.me",
+      "login.openathens.net.libmi.me",
+      "login.openathens.net.libsi.me",
+      "login.pcc.ediu.me",
+      "login.proxy.bib.uottawa.ca.cvos.me",
+      "login.proxy1.dom1.nhtv.nl.liblog.info",
+      "login.proxy1.lib.uwo.ca.sftt.cf",
+      "login.proxy1.lib.uwo.ca.sirlib.me",
+      "login.simsrad.net.ocs.mq.edu.au.vitt.ga",
+      "login.svproxy.svcc.reun.me",
+      "login.svproxy.svcc.urnd.me",
+      "login.uleth.ca.ulib.me",
+      "login.wccnet.eduri.me",
+      "login1.ep.bib.mdh.se.lib4login.com",
+      "login1.ep.bib.mdh.se.liblog.info",
+      "login1.ep.bib.mdh.se.logezpro.xyz",
+      "login1pro.xyz",
+      "logon.bradley.eulib.me",
+      "logon.bradley.ledu.me",
+      "logon.bradley.lible.me",
+      "logon.bradley.rvedu.me",
+      "logon.bradley.ulibe.me",
+      "logon.bradley.zedu.me",
+      "lproxy.nymc.edu.libg.ml",
+      "lrie.me",
+      "lu7b.me",
+      "lzll.cf",
+      "mail.library.zuj.edu.jo.libinpro.xyz",
+      "mail.mdh.se.libinpro.xyz",
+      "mail.proxy.mau.se.libinpro.xyz",
+      "mail.proxy1.mau.se.libinpro.xyz",
+      "mau.se.ezlibin.com",
+      "mau.se.libinpro.xyz",
+      "mdh.se.ezlibin.com",
+      "mdh.se.libinpro.xyz",
+      "mef.edu.tr.ezlibin.com",
+      "megaservers.ir",
+      "mgyr.me",
+      "miamioh.eduo.me",
+      "microsoftonline.comn.me",
+      "microsoftonline.cornn.me",
+      "microsoftonline.edlv.me",
+      "microsoftonline.elbu.me",
+      "microsoftonline.eolv.me",
+      "microsoftonline.libte.me",
+      "microsoftonline.redur.me",
+      "microsoftonline.rvcon.me",
+      "microsoftonline.ulca.me",
+      "microsoftonline.urca.me",
+      "milngavie.cent.gla.ac.uk.titt.gq",
+      "mlib.cf",
+      "mlibo.ml",
+      "monucp.u-cergy.sunu.me",
+      "moodle.uni-ulm.caer.me",
+      "moodle.uni-ulm.de.librm.me",
+      "mosc.me",
+      "mxig.me",
+      "mylibrary.bu.ulibr.xyz",
+      "mylibrary.ebu.ulibr.xyz",
+      "namidp.services.uu.nl.itlib.me",
+      "ncbv.me",
+      "ncce.cf",
+      "ncev.me",
+      "ncll.tk",
+      "ncnc.cf",
+      "nctt.tk",
+      "ndmb.me",
+      "ndu.edu.lb.ezlibin.com",
+      "necr.ga",
+      "nedu.me",
+      "nelib.me",
+      "neptune.ndu.edu.lb.ezlibin.com",
+      "neptune.ndu.edu.lb.liblog.info",
+      "neptune.ndu.edu.lb.liblogin.com",
+      "neptune.ndu.edu.lb.logezpro.xyz",
+      "neptune.ndu.edu.lb.zezpro.xyz",
+      "nerb.me",
+      "newcatalog.library.cornell.ulibc.xyz",
+      "nfas.me",
+      "nicn.gq",
+      "nika.ga",
+      "nimc.cf",
+      "nimc.ga",
+      "nimc.ml",
+      "ninu.me",
+      "njit.erdu.me",
+      "nlib.ml",
+      "nlll.cf",
+      "nlll.tk",
+      "nrni.me",
+      "nsae.ml",
+      "ntil.cf",
+      "ntll.cf",
+      "ntll.tk",
+      "ntulearn.ntu.ninu.me",
+      "nuec.cf",
+      "nuec.ml",
+      "nvfr.me",
+      "nyit.ent.sirsi.net.libsu.me",
+      "nz89.me",
+      "oedu.me",
+      "oine.me",
+      "ole.bris.crir.me",
+      "olit.me",
+      "ollu.me",
+      "omhw.me",
+      "omth.me",
+      "onesearch.library.rice.ulibc.xyz",
+      "onesearch.library.wwu.edu.ulibr.xyz",
+      "onhj.me",
+      "onic.me",
+      "openathens.ebui.me",
+      "openathens.euin.me",
+      "opir.me",
+      "oskicatp.berkeley.edu.ncev.me",
+      "ostin.me",
+      "otlib.me",
+      "oucv.me",
+      "owl.uwo.vueu.me",
+      "pcc.ediu.me",
+      "pdlu.me",
+      "plib.me",
+      "pndu.me",
+      "proxy.libinpro.xyz",
+      "proxy.mau.se.ezlibin.com",
+      "proxy.mau.se.libinpro.xyz",
+      "proxy.mau.se.liblogin.com",
+      "proxy.mau.se.logezpro.xyz",
+      "proxy1.mau.se.libinpro.xyz",
+      "proxy2.mau.se.liblogin.com",
+      "proxylogin.nus.edu.sg.cett.cf",
+      "proxylogin.nus.edu.sg.vitl.ml",
+      "psut.idm.oclc.org.liblog.info",
+      "pveq.me",
+      "q.utoronto.vrev.me",
+      "q5sl.me",
+      "qlma.me",
+      "quicklaunch.urio.me",
+      "ramapo.ecdu.me",
+      "ramapo.pndu.me",
+      "ramapo.rcedu.me",
+      "raven.cam.ac.uk.iftl.tk",
+      "rcedu.me",
+      "redur.me",
+      "reun.me",
+      "rill.cf",
+      "riue.me",
+      "rlib.me",
+      "rnedu.me",
+      "rnit.me",
+      "rnlib.me",
+      "rnuk.me",
+      "rnva.cf",
+      "rp6h.me",
+      "rps.hva.nl.liblog.info",
+      "rres.me",
+      "rsia.me",
+      "rtll.tk",
+      "ruit.me",
+      "rulk.me",
+      "rvcon.me",
+      "rvedu.me",
+      "rvgh.me",
+      "rvit.me",
+      "rvna.cf",
+      "rvuk.me",
+      "rwpb.me",
+      "rwzx.me",
+      "rxsn.me",
+      "savantaz.cf",
+      "sctt.cf",
+      "se.ezlibin.com",
+      "se.libinpro.xyz",
+      "servisedesk.me",
+      "sftt.cf",
+      "sg.libinpro.xyz",
+      "shib-idp.ucl.ac.uk.trtt.tk",
+      "shib-idp.ucl.ac.uk.vctt.cf",
+      "shib.dur.ac.uk.stit.cf",
+      "shib.towson.edu.thespacebulls.info",
+      "shib.york.ac.uk.iftl.tk",
+      "shibboleth.link",
+      "shibboleth.mcgill.ca.iftl.tk",
+      "shibboleth.mcgill.edliu.me",
+      "shibboleth.mcgill.nlib.ml",
+      "shibboleth3.liv.ac.uk.sitl.tk",
+      "sierra-sso.aut.caer.me",
+      "signon.adelaide.edu.au.itlib.me",
+      "sirlib.me",
+      "sitl.tk",
+      "sitt.cf",
+      "slib.me",
+      "slli.cf",
+      "sncu.me",
+      "snnu.me",
+      "srlib.me",
+      "srrn.me",
+      "srtteam.ir",
+      "ssll.cf",
+      "sso.acu.edu.au.itlib.me",
+      "sso.fsw.cedu.me",
+      "sso.fsw.eduv.me",
+      "sso.fsw.uedu.me",
+      "sso.id.kent.ac.uk.iftl.tk",
+      "sso.oakland.opir.me",
+      "sso.ub.edu.libezpro.xyz",
+      "sso.vu.lrie.me",
+      "sso2.identity.uoguelph.enlib.me",
+      "sso2.identity.uoguelph.libun.me",
+      "sso2.identity.uoguelph.rnedu.me",
+      "sso2.identity.uoguelph.uolib.me",
+      "ssologin.exeter.ac.uk.etrlib.me",
+      "ssologin.exeter.ac.uk.libet.me",
+      "stit.cf",
+      "stll.tk",
+      "strlib.me",
+      "sts.cuhk.edu.hk.itlf.cf",
+      "sts.sydney.ediun.me",
+      "sunu.me",
+      "sutd.edu.sg.libinpro.xyz",
+      "svcc.reun.me",
+      "svcc.urnd.me",
+      "svproxy.svcc.reun.me",
+      "svproxy.svcc.urnd.me",
+      "swoc.me",
+      "t12u.me",
+      "tacvp.me",
+      "tarcez.tarc.edu.my.liblog.info",
+      "tasav.me",
+      "tcnd.me",
+      "test.elou.me",
+      "testlib.cnlib.me",
+      "testlib.enlib.me",
+      "thespacebulls.info",
+      "till.cf",
+      "titt.cf",
+      "titt.ga",
+      "titt.gq",
+      "titt.ml",
+      "tlit.cf",
+      "tlll.cf",
+      "tlll.tk",
+      "tlvd.me",
+      "towson.edu.thespacebulls.info",
+      "tr.ezlibin.com",
+      "trtt.tk",
+      "tsll.cf",
+      "ttil.nl",
+      "ttit.cf",
+      "ttll.cf",
+      "tumx.me",
+      "twrb.me",
+      "ua5v.me",
+      "ucno.me",
+      "ucnv.me",
+      "udun.me",
+      "uedu.me",
+      "uieg.me",
+      "uill.cf",
+      "uion.me",
+      "uitt.tk",
+      "uk.libte.me",
+      "ukns.me",
+      "ulca.me",
+      "ulib.me",
+      "ulibc.xyz",
+      "ulibe.me",
+      "ulibe.ml",
+      "ulibr.ga",
+      "ulibr.xyz",
+      "ulll.cf",
+      "ulll.tk",
+      "umflint.edu.ilino.me",
+      "umflint.edu.oine.me",
+      "umflint.edu.ostin.me",
+      "umlib.ml",
+      "umll.tk",
+      "umpb.me",
+      "uncr.me",
+      "unde.me",
+      "uni-lb.com",
+      "unie.ga",
+      "unie.gq",
+      "unie.ml",
+      "unin.icu",
+      "unip.cf",
+      "unip.ga",
+      "unip.gq",
+      "unip.ml",
+      "unir.cf",
+      "unir.ga",
+      "unir.gq",
+      "unir.ml",
+      "uniroma1.rnit.me",
+      "uniroma1.ruit.me",
+      "uniroma1.rvit.me",
+      "uniroma1.urnit.me",
+      "uniroma1.uvit.me",
+      "unisr.me",
+      "unisv.xyz",
+      "univ.red",
+      "unll.tk",
+      "unnit.me",
+      "untc.ir",
+      "untc.me",
+      "untf.me",
+      "unts.me",
+      "unvc.me",
+      "uoguelph.libun.me",
+      "uoguelph.rnedu.me",
+      "uolib.me",
+      "uon.okta.com.vitt.ga",
+      "urca.me",
+      "urio.me",
+      "urnd.me",
+      "urnit.me",
+      "utll.tk",
+      "uu.blackboard.rres.me",
+      "uvit.me",
+      "uwrd.me",
+      "uxcz.me",
+      "vbel.me",
+      "vctt.cf",
+      "venc.cf",
+      "visc.cf",
+      "vitl.ml",
+      "vitt.ga",
+      "vjwk.me",
+      "vle.cam.ac.uk.canm.me",
+      "vrev.me",
+      "vsre.cf",
+      "vtll.cf",
+      "vueu.me",
+      "wa13.me",
+      "wdkz.me",
+      "web2lib.info",
+      "webauth.njit.erdu.me",
+      "weblogin.bu.edu.llib.me",
+      "weblogon.ltu.se.ztit.cf",
+      "wghi.me",
+      "wl6g.me",
+      "wo2k.me",
+      "wxpi.me",
+      "wygo.me",
+      "x27i.me",
+      "xdor.me",
+      "xdry.me",
+      "xe91.me",
+      "xezpro.xyz",
+      "xfaj.me",
+      "xgqf.me",
+      "xill.cf",
+      "xill.tk",
+      "xrig.me",
+      "xuoe.me",
+      "xzat.me",
+      "y1rk.me",
+      "yc22.me",
+      "yqik.me",
+      "za78.me",
+      "zedu.me",
+      "zedviros.ir",
+      "zeyg.me",
+      "zezpro.xyz",
+      "zill.cf",
+      "zjhb.me",
+      "zkvb.me",
+      "zlll.tk",
+      "ztit.cf",
+      "zuj.edu.jo.ezlibin.com",
+      "zuj.edu.jo.libinpro.xyz",
+      "zvwb.me"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "COBALTDICKENS"
+  ],
+  "references": [
+    "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/",
+    "https://otx.alienvault.com/pulse/5d78eaf37b37c503fb07d45a",
+    "https://otx.alienvault.com/pulse/5da4a7ab756627fcce84efcc",
+    "https://twitter.com/ShadowChasing1/status/1315855394506330113",
+    "https://twitter.com/TeamDreier/status/1318072706068320256",
+    "https://twitter.com/TeamDreier/status/1318073179621986311",
+    "https://twitter.com/TeamDreier/status/1318073712621608960",
+    "https://twitter.com/TeamDreier/status/1319219638966849536",
+    "https://twitter.com/TeamDreier/status/1319284609612312576",
+    "https://twitter.com/TeamDreier/status/1319501314079031297",
+    "https://twitter.com/TeamDreier/status/1320068459934482438",
+    "https://twitter.com/TeamDreier/status/1320295132164390912",
+    "https://twitter.com/TeamDreier/status/1320475288996880387",
+    "https://twitter.com/TeamDreier/status/1320654814750138377",
+    "https://twitter.com/TeamDreier/status/1320993672566050817",
+    "https://twitter.com/TeamDreier/status/1321197043784843267",
+    "https://twitter.com/TeamDreier/status/1321725647153233920",
+    "https://twitter.com/TeamDreier/status/1322301000963805184",
+    "https://twitter.com/TeamDreier/status/1322431397257191424",
+    "https://twitter.com/TeamDreier/status/1329822320471515143",
+    "https://twitter.com/TeamDreier/status/1331940216811233288",
+    "https://twitter.com/TeamDreier/status/1331941213184856065",
+    "https://twitter.com/TeamDreier/status/1332964881537114115",
+    "https://twitter.com/TeamDreier/status/1335877271593377792",
+    "https://twitter.com/TeamDreier/status/1336251373097267202",
+    "https://twitter.com/TeamDreier/status/1336273839148441602",
+    "https://twitter.com/TeamDreier/status/1337664630219550722",
+    "https://twitter.com/TeamDreier/status/1338977587977129992",
+    "https://twitter.com/TeamDreier/status/1338979116855554056",
+    "https://twitter.com/TeamDreier/status/1339231776900853760",
+    "https://twitter.com/TeamDreier/status/1351094101341515777",
+    "https://twitter.com/TeamDreier/status/1351465253641596932",
+    "https://twitter.com/TeamDreier/status/1351479481668661249",
+    "https://twitter.com/TeamDreier/status/1351797305926676480",
+    "https://twitter.com/TeamDreier/status/1351960402503098368",
+    "https://twitter.com/TeamDreier/status/1383377868114206722",
+    "https://twitter.com/TeamDreier/status/1383436461974835212",
+    "https://twitter.com/TeamDreier/status/1384079500737011714",
+    "https://twitter.com/TeamDreier/status/1384092560281391108",
+    "https://twitter.com/TeamDreier/status/1400360529579941889",
+    "https://twitter.com/TeamDreier/status/1401790878092611587",
+    "https://twitter.com/TeamDreier/status/1401807769880215553",
+    "https://twitter.com/TeamDreier/status/1402918680846114816",
+    "https://twitter.com/TeamDreier/status/1403275407420440577",
+    "https://twitter.com/TeamDreier/status/1410141072920125447",
+    "https://twitter.com/TeamDreier/status/1414126424525578243",
+    "https://twitter.com/TeamDreier/status/1423548509224058883",
+    "https://twitter.com/TeamDreier/status/1432274952284221446",
+    "https://twitter.com/TeamDreier/status/1432956757689647105",
+    "https://twitter.com/TeamDreier/status/1433325012623269890",
+    "https://twitter.com/TeamDreier/status/1435161539422654464",
+    "https://twitter.com/TeamDreier/status/1437783760603389960",
+    "https://twitter.com/TeamDreier/status/1437793434287345675",
+    "https://twitter.com/TeamDreier/status/1438015417600053250",
+    "https://twitter.com/TeamDreier/status/1438117675868241921",
+    "https://twitter.com/TeamDreier/status/1438241771935371271",
+    "https://twitter.com/TeamDreier/status/1438410098620223488",
+    "https://twitter.com/TeamDreier/status/1450008147293245447",
+    "https://twitter.com/TeamDreier/status/1450747167090556928",
+    "https://twitter.com/TeamDreier/status/1456519641229107201",
+    "https://twitter.com/TeamDreier/status/1456646709329727489",
+    "https://twitter.com/TeamDreier/status/1463068783485009920",
+    "https://twitter.com/TeamDreier/status/1463860492900970503",
+    "https://twitter.com/TeamDreier/status/1466475837235027970",
+    "https://twitter.com/TeamDreier/status/1473598462553952258",
+    "https://twitter.com/TeamDreier/status/1475412283421601795",
+    "https://twitter.com/TeamDreier/status/1475765012199354368",
+    "https://twitter.com/TeamDreier/status/1478117520708149254",
+    "https://twitter.com/TeamDreier/status/1480289542565515267",
+    "https://twitter.com/TeamDreier/status/1486250419730984963",
+    "https://twitter.com/TeamDreier/status/1491346120681078784",
+    "https://twitter.com/TeamDreier/status/1493135702091079760",
+    "https://twitter.com/TeamDreier/status/1501486600517210112",
+    "https://twitter.com/TeamDreier/status/1503296891433410564",
+    "https://twitter.com/TeamDreier/status/1517783469828542464",
+    "https://twitter.com/TeamDreier/status/1517784173964107777",
+    "https://twitter.com/TeamDreier/status/1518842981175996416",
+    "https://twitter.com/TeamDreier/status/1519621500919291904",
+    "https://twitter.com/TeamDreier/status/1520795328403935233",
+    "https://twitter.com/TeamDreier/status/1521373266799214593",
+    "https://twitter.com/TeamDreier/status/1521760194849656833",
+    "https://twitter.com/TeamDreier/status/1522239764723863553",
+    "https://twitter.com/TeamDreier/status/1523553694867804161",
+    "https://twitter.com/TeamDreier/status/1523721652059602944",
+    "https://twitter.com/TeamDreier/status/1524611293205999617",
+    "https://twitter.com/TeamDreier/status/1526316357683499008",
+    "https://twitter.com/TeamDreier/status/1527308905889472515",
+    "https://twitter.com/TeamDreier/status/1527368158687834114",
+    "https://twitter.com/TeamDreier/status/1528348685708447745",
+    "https://twitter.com/TeamDreier/status/1530123942165348353",
+    "https://twitter.com/TeamDreier/status/1530910329462464512",
+    "https://twitter.com/TeamDreier/status/1531013356781555712",
+    "https://twitter.com/TeamDreier/status/1533368559702839296",
+    "https://twitter.com/TeamDreier/status/1533370504354091008",
+    "https://twitter.com/TeamDreier/status/1533526839997734914",
+    "https://twitter.com/TeamDreier/status/1533671590587768832",
+    "https://twitter.com/TeamDreier/status/1534192063402614784",
+    "https://twitter.com/TeamDreier/status/1534391270197628928",
+    "https://twitter.com/TeamDreier/status/1539332031095644160",
+    "https://twitter.com/TeamDreier/status/1539579783335579649",
+    "https://twitter.com/TeamDreier/status/1539613715716313091",
+    "https://twitter.com/TeamDreier/status/1539698078038589440",
+    "https://twitter.com/TeamDreier/status/1540465491596267520",
+    "https://twitter.com/TeamDreier/status/1540466652554346498",
+    "https://twitter.com/TeamDreier/status/1540791986827010052",
+    "https://twitter.com/TeamDreier/status/1541750405943775232",
+    "https://twitter.com/TeamDreier/status/1542155689631617025",
+    "https://twitter.com/TeamDreier/status/1542241300111564800",
+    "https://twitter.com/TeamDreier/status/1542532506070794244",
+    "https://twitter.com/TeamDreier/status/1542616491861983237",
+    "https://twitter.com/TeamDreier/status/1542953972973068294",
+    "https://twitter.com/TeamDreier/status/1543460845467930625",
+    "https://twitter.com/TeamDreier/status/1543463124417781761",
+    "https://twitter.com/TeamDreier/status/1543515353866723332",
+    "https://twitter.com/TeamDreier/status/1544801657149689857",
+    "https://twitter.com/TeamDreier/status/1547211813703585793",
+    "https://twitter.com/TeamDreier/status/1548362809238466561",
+    "https://twitter.com/TeamDreier/status/1548769825350107136",
+    "https://twitter.com/TeamDreier/status/1550501403440848897",
+    "https://twitter.com/TeamDreier/status/1550716056154537986",
+    "https://twitter.com/TeamDreier/status/1564899016575524865",
+    "https://twitter.com/TeamDreier/status/1582087294106107904",
+    "https://twitter.com/TeamDreier/status/1751931807648366669",
+    "https://twitter.com/ViriBack/status/1317216042263941120",
+    "https://twitter.com/andsyn1/status/1319744139303571457",
+    "https://twitter.com/andsyn1/status/1320315221253259265",
+    "https://twitter.com/andsyn1/status/1331321796226846721",
+    "https://twitter.com/cybershtuff/status/1315574181493444613",
+    "https://twitter.com/peterkruse/status/1312819332318146561",
+    "https://twitter.com/peterkruse/status/1312826103388667904",
+    "https://twitter.com/peterkruse/status/1313029599048208386",
+    "https://twitter.com/peterkruse/status/1315556534546558977",
+    "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+    "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+    "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+    "https://www.virustotal.com/gui/ip-address/104.152.168.47/relations",
+    "https://www.virustotal.com/gui/ip-address/104.21.19.105/relations",
+    "https://www.virustotal.com/gui/ip-address/136.243.52.8/relations",
+    "https://www.virustotal.com/gui/ip-address/157.90.120.120/relations",
+    "https://www.virustotal.com/gui/ip-address/172.67.171.15/relations",
+    "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations",
+    "https://www.virustotal.com/gui/ip-address/185.51.201.112/relations",
+    "https://www.virustotal.com/gui/ip-address/185.51.202.228/relations",
+    "https://www.virustotal.com/gui/ip-address/194.87.23.7/relations",
+    "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations",
+    "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations",
+    "https://www.virustotal.com/gui/ip-address/5.9.154.209/relations",
+    "https://www.virustotal.com/gui/ip-address/77.238.110.158/relations",
+    "https://www.virustotal.com/gui/ip-address/88.135.39.148/relations"
+  ],
+  "related": [],
+  "slug": "G0122",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 57
+      },
+      "first_seen": "2024-01-29",
+      "indicators": {
+        "domain": [
+          "balamand.edu.lb.ezlibin.com",
+          "bib.mdh.se.ezlibin.com",
+          "bib.mdh.se.libinpro.xyz",
+          "edu.jo.ezlibin.com",
+          "edu.jo.libinpro.xyz",
+          "edu.lb.ezlibin.com",
+          "edu.lb.libinpro.xyz",
+          "edu.sg.libinpro.xyz",
+          "edu.tr.ezlibin.com",
+          "ez.liblogin.com",
+          "ezlibin.com",
+          "ezpro.libinpro.xyz",
+          "ezproxy.hkr.se.liblogin.com",
+          "ezproxy.mef.edu.tr.ezlibin.com",
+          "ezproxy.ug.edu.gh.liblogin.com",
+          "ezproxy3.hkr.se.liblogin.com",
+          "ezsecureaccess.balamand.edu.lb.ezlibin.com",
+          "jo.ezlibin.com",
+          "jo.libinpro.xyz",
+          "lau.edu.lb.libinpro.xyz",
+          "lb.ezlibin.com",
+          "lb.libinpro.xyz",
+          "li.ezlibin.com",
+          "libinpro.xyz",
+          "liblogin.com",
+          "libra.libinpro.xyz",
+          "librar.libinpro.xyz",
+          "library.zuj.edu.jo.libinpro.xyz",
+          "library1.zuj.edu.jo.ezlibin.com",
+          "library1.zuj.edu.jo.libinpro.xyz",
+          "library2.zuj.edu.jo.libinpro.xyz",
+          "login.ezsecureaccess.balamand.edu.lb.ezlibin.com",
+          "mail.library.zuj.edu.jo.libinpro.xyz",
+          "mail.mdh.se.libinpro.xyz",
+          "mail.proxy.mau.se.libinpro.xyz",
+          "mail.proxy1.mau.se.libinpro.xyz",
+          "mau.se.ezlibin.com",
+          "mau.se.libinpro.xyz",
+          "mdh.se.ezlibin.com",
+          "mdh.se.libinpro.xyz",
+          "mef.edu.tr.ezlibin.com",
+          "ndu.edu.lb.ezlibin.com",
+          "neptune.ndu.edu.lb.ezlibin.com",
+          "neptune.ndu.edu.lb.liblogin.com",
+          "proxy.libinpro.xyz",
+          "proxy.mau.se.ezlibin.com",
+          "proxy.mau.se.libinpro.xyz",
+          "proxy.mau.se.liblogin.com",
+          "proxy1.mau.se.libinpro.xyz",
+          "proxy2.mau.se.liblogin.com",
+          "se.ezlibin.com",
+          "se.libinpro.xyz",
+          "sg.libinpro.xyz",
+          "sutd.edu.sg.libinpro.xyz",
+          "tr.ezlibin.com",
+          "zuj.edu.jo.ezlibin.com",
+          "zuj.edu.jo.libinpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1751931807648366669"
+      ],
+      "total": 57
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-10-17",
+      "indicators": {
+        "domain": [
+          "ezpro.fa.ru.lib4login.com",
+          "lib4login.com",
+          "library.gju.edu.jo.lib4login.com",
+          "login1.ep.bib.mdh.se.lib4login.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1582087294106107904",
+        "https://www.virustotal.com/gui/ip-address/88.135.39.148/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-08-31",
+      "indicators": {
+        "domain": [
+          "ezproxy.fhstp.ac.at.libraryezlogin.com",
+          "libraryezlogin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1564899016575524865",
+        "https://www.virustotal.com/gui/ip-address/5.9.154.209/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2022-07-23",
+      "indicators": {
+        "domain": [
+          "bradley.ledu.me",
+          "bradley.rvedu.me",
+          "bradley.zedu.me",
+          "ledu.me",
+          "login.bradley.ledu.me",
+          "login.bradley.rvedu.me",
+          "login.bradley.zedu.me",
+          "logon.bradley.ledu.me",
+          "logon.bradley.rvedu.me",
+          "logon.bradley.zedu.me",
+          "rvedu.me",
+          "zedu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1550716056154537986"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2022-07-22",
+      "indicators": {
+        "domain": [
+          "cardiff.ac.erlib.me",
+          "cardiff.ac.plib.me",
+          "ease.ed.ac.rnlib.me",
+          "ease.ed.ac.slib.me",
+          "ease.ed.rnlib.me",
+          "ease.ed.slib.me",
+          "erlib.me",
+          "login.cardiff.ac.erlib.me",
+          "login.cardiff.ac.plib.me",
+          "plib.me",
+          "rnlib.me",
+          "slib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1550501403440848897"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "domain": [
+          "identity.uoguelph.libun.me",
+          "libun.me",
+          "sso2.identity.uoguelph.libun.me",
+          "uoguelph.libun.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542616491861983237",
+        "https://twitter.com/TeamDreier/status/1548769825350107136",
+        "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "domain": [
+          "identity.uoguelph.rnedu.me",
+          "rnedu.me",
+          "sso2.identity.uoguelph.rnedu.me",
+          "uoguelph.rnedu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542532506070794244",
+        "https://twitter.com/TeamDreier/status/1548362809238466561",
+        "https://www.virustotal.com/gui/ip-address/185.51.202.228/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "domain": [
+          "login.microsoftonline.urca.me",
+          "microsoftonline.urca.me",
+          "urca.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-07-16",
+      "indicators": {
+        "domain": [
+          "bolton.ac.rvuk.me",
+          "edlv.me",
+          "idp.bolton.ac.rvuk.me",
+          "login.microsoftonline.edlv.me",
+          "login.microsoftonline.ulca.me",
+          "microsoftonline.edlv.me",
+          "microsoftonline.ulca.me",
+          "rvuk.me",
+          "ulca.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542616491861983237",
+        "https://twitter.com/TeamDreier/status/1548769825350107136",
+        "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-07-16",
+      "indicators": {
+        "domain": [
+          "bolton.ac.uk.rulk.me",
+          "eolv.me",
+          "idp.bolton.ac.uk.rulk.me",
+          "login.microsoftonline.eolv.me",
+          "login.microsoftonline.rvcon.me",
+          "microsoftonline.eolv.me",
+          "microsoftonline.rvcon.me",
+          "rulk.me",
+          "rvcon.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542532506070794244",
+        "https://twitter.com/TeamDreier/status/1548362809238466561",
+        "https://www.virustotal.com/gui/ip-address/185.51.202.228/relations"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-07-16",
+      "indicators": {
+        "domain": [
+          "bolton.ac.rnuk.me",
+          "idp.bolton.ac.rnuk.me",
+          "login.microsoftonline.redur.me",
+          "microsoftonline.redur.me",
+          "redur.me",
+          "rnuk.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2022-07-13",
+      "indicators": {
+        "domain": [
+          "ezproxy.uniroma1.ruit.me",
+          "ezproxy.uniroma1.rvit.me",
+          "ezproxy.uniroma1.urnit.me",
+          "login.ezproxy.uniroma1.ruit.me",
+          "login.ezproxy.uniroma1.rvit.me",
+          "login.ezproxy.uniroma1.urnit.me",
+          "ruit.me",
+          "rvit.me",
+          "uniroma1.ruit.me",
+          "uniroma1.rvit.me",
+          "uniroma1.urnit.me",
+          "urnit.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1547211813703585793"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-07-09",
+      "indicators": {
+        "domain": [
+          "login.svproxy.svcc.urnd.me",
+          "svcc.urnd.me",
+          "svproxy.svcc.urnd.me",
+          "urnd.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-07-07",
+      "indicators": {
+        "domain": [
+          "cas.lcc.edu.llrn.me",
+          "cas.lcc.llrn.me",
+          "edu.llrn.me",
+          "lcc.llrn.me",
+          "llrn.me",
+          "login.svproxy.svcc.reun.me",
+          "reun.me",
+          "svcc.reun.me",
+          "svproxy.svcc.reun.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1544801657149689857"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 98
+      },
+      "first_seen": "2022-07-05",
+      "indicators": {
+        "domain": [
+          "12st.me",
+          "12xb.me",
+          "1r3o.me",
+          "28ag.me",
+          "32ex.me",
+          "33qa.me",
+          "67vr.me",
+          "67yt.me",
+          "bcfk.me",
+          "bdhw.me",
+          "c23e.me",
+          "cqgp.me",
+          "cuvl.me",
+          "cx71.me",
+          "cxam.me",
+          "cynf.me",
+          "d2a7.me",
+          "d39j.me",
+          "dbck.me",
+          "dboc.me",
+          "dhfb.me",
+          "do78.me",
+          "dwfa.me",
+          "edmh.me",
+          "ejna.me",
+          "fdqk.me",
+          "fgds.me",
+          "fqmu.me",
+          "fvne.me",
+          "gajr.me",
+          "gboe.me",
+          "geuy.me",
+          "glpk.me",
+          "gujv.me",
+          "hzse.me",
+          "ip8h.me",
+          "iqtw.me",
+          "iwdz.me",
+          "jfg5.me",
+          "jfmn.me",
+          "jiuf.me",
+          "kdpn.me",
+          "kqxt.me",
+          "kxli.me",
+          "l5oj.me",
+          "lgyw.me",
+          "lmpt.me",
+          "lu7b.me",
+          "mgyr.me",
+          "mxig.me",
+          "ndmb.me",
+          "nz89.me",
+          "omhw.me",
+          "omth.me",
+          "onhj.me",
+          "pveq.me",
+          "q5sl.me",
+          "qlma.me",
+          "rp6h.me",
+          "rvgh.me",
+          "rwpb.me",
+          "rwzx.me",
+          "rxsn.me",
+          "t12u.me",
+          "tlvd.me",
+          "tumx.me",
+          "twrb.me",
+          "ua5v.me",
+          "uieg.me",
+          "umpb.me",
+          "uwrd.me",
+          "uxcz.me",
+          "vbel.me",
+          "vjwk.me",
+          "wa13.me",
+          "wdkz.me",
+          "wghi.me",
+          "wl6g.me",
+          "wo2k.me",
+          "wxpi.me",
+          "wygo.me",
+          "x27i.me",
+          "xdor.me",
+          "xdry.me",
+          "xe91.me",
+          "xfaj.me",
+          "xgqf.me",
+          "xrig.me",
+          "xuoe.me",
+          "xzat.me",
+          "y1rk.me",
+          "yc22.me",
+          "yqik.me",
+          "za78.me",
+          "zeyg.me",
+          "zjhb.me",
+          "zkvb.me",
+          "zvwb.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/172.67.171.15/relations"
+      ],
+      "total": 98
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-07-03",
+      "indicators": {
+        "domain": [
+          "bradley.eulib.me",
+          "eulib.me",
+          "logon.bradley.eulib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1543515353866723332"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-07-03",
+      "indicators": {
+        "domain": [
+          "bradley.ulibe.me",
+          "logon.bradley.ulibe.me",
+          "ulibe.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1543463124417781761"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-07-03",
+      "indicators": {
+        "domain": [
+          "bradley.lible.me",
+          "lible.me",
+          "logon.bradley.lible.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1543460845467930625"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-03",
+      "indicators": {
+        "domain": [
+          "ncbv.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/104.21.19.105/relations",
+        "https://www.virustotal.com/gui/ip-address/172.67.171.15/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-07-01",
+      "indicators": {
+        "domain": [
+          "comn.me",
+          "cornn.me",
+          "login.microsoftonline.comn.me",
+          "login.microsoftonline.cornn.me",
+          "microsoftonline.comn.me",
+          "microsoftonline.cornn.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542953972973068294"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2022-06-30",
+      "indicators": {
+        "domain": [
+          "ciff.login.nerb.me",
+          "edll.me",
+          "ezproxy.uniroma1.rnit.me",
+          "ezproxy.uniroma1.uvit.me",
+          "login.ezproxy.uniroma1.rnit.me",
+          "login.ezproxy.uniroma1.uvit.me",
+          "login.nerb.me",
+          "nerb.me",
+          "rnit.me",
+          "uniroma1.rnit.me",
+          "uniroma1.uvit.me",
+          "uvit.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542532506070794244",
+        "https://twitter.com/TeamDreier/status/1548362809238466561",
+        "https://www.virustotal.com/gui/ip-address/185.51.202.228/relations"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2022-06-30",
+      "indicators": {
+        "domain": [
+          "edou.me",
+          "library2.ramapo.pndu.me",
+          "library2.ramapo.rcedu.me",
+          "pndu.me",
+          "ramapo.pndu.me",
+          "ramapo.rcedu.me",
+          "rcedu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542241300111564800",
+        "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-06-30",
+      "indicators": {
+        "domain": [
+          "adfs.goucher.pdlu.me",
+          "adfs.goucher.unde.me",
+          "goucher.pdlu.me",
+          "goucher.unde.me",
+          "pdlu.me",
+          "unde.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542616491861983237",
+        "https://twitter.com/TeamDreier/status/1548769825350107136",
+        "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-06-29",
+      "indicators": {
+        "domain": [
+          "cedu.me",
+          "fsw.cedu.me",
+          "fsw.uedu.me",
+          "sso.fsw.cedu.me",
+          "sso.fsw.uedu.me",
+          "uedu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534391270197628928",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-29",
+      "indicators": {
+        "domain": [
+          "acuk.me",
+          "cardiff.acuk.me",
+          "login.cardiff.acuk.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1542155689631617025",
+        "https://www.virustotal.com/gui/ip-address/185.18.212.117/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-28",
+      "indicators": {
+        "domain": [
+          "hemid.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1541750405943775232"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "domain": [
+          "liucat.lib.liu.nedu.me",
+          "liucat.lib.liu.ollu.me",
+          "nedu.me",
+          "ollu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1540791986827010052"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "domain": [
+          "elou.me",
+          "idp.csu.oedu.me",
+          "oedu.me",
+          "test.elou.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1540465491596267520",
+        "https://twitter.com/TeamDreier/status/1540466652554346498"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "domain": [
+          "id.quicklaunch.urio.me",
+          "quicklaunch.urio.me",
+          "urio.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534391270197628928",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-22",
+      "indicators": {
+        "domain": [
+          "ealu.me",
+          "liucat.lib.liu.ealu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1539698078038589440"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-22",
+      "indicators": {
+        "domain": [
+          "login.ezproxy.uniroma1.unnit.me",
+          "unnit.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1539613715716313091"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-22",
+      "indicators": {
+        "domain": [
+          "login.openathens.euin.me",
+          "openathens.euin.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1539579783335579649"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-22",
+      "indicators": {
+        "domain": [
+          "login.ezproxy.uniroma1.olit.me",
+          "olit.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534391270197628928",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-06-21",
+      "indicators": {
+        "domain": [
+          "adfs.goucher.adui.me",
+          "adfs.goucher.elru.me",
+          "adui.me",
+          "elbu.me",
+          "elru.me",
+          "goucher.adui.me",
+          "goucher.elru.me",
+          "login.microsoftonline.elbu.me",
+          "microsoftonline.elbu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1539332031095644160"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-06-21",
+      "indicators": {
+        "domain": [
+          "cas.conncoll.ebui.me",
+          "conncoll.ebui.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534391270197628928",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-08",
+      "indicators": {
+        "domain": [
+          "ebui.me",
+          "login.openathens.ebui.me",
+          "openathens.ebui.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534391270197628928",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-06-07",
+      "indicators": {
+        "domain": [
+          "cnna.me",
+          "instructure.cnna.me",
+          "instructure.kiue.me",
+          "ki.instructure.cnna.me",
+          "ki.instructure.kiue.me",
+          "kiue.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1534192063402614784"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-06",
+      "indicators": {
+        "domain": [
+          "ecdu.me",
+          "library2.ramapo.ecdu.me",
+          "ramapo.ecdu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1533671590587768832",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-06-05",
+      "indicators": {
+        "domain": [
+          "eduv.me",
+          "erdu.me",
+          "fsw.eduv.me",
+          "njit.erdu.me",
+          "sso.fsw.eduv.me",
+          "webauth.njit.erdu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1533526839997734914",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-05",
+      "indicators": {
+        "domain": [
+          "ediu.me",
+          "login.pcc.ediu.me",
+          "pcc.ediu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1533370504354091008",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations",
+        "https://twitter.com/TeamDreier/status/1534391270197628928"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-05",
+      "indicators": {
+        "domain": [
+          "auth.miamioh.eduo.me",
+          "eduo.me",
+          "miamioh.eduo.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1533368559702839296",
+        "https://www.virustotal.com/gui/ip-address/195.110.38.176/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-06-01",
+      "indicators": {
+        "domain": [
+          "1ezpro.xyz",
+          "neptune.ndu.edu.lb.zezpro.xyz",
+          "xezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/136.243.52.8/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-31",
+      "indicators": {
+        "domain": [
+          "cas.csufresno.eduir.me",
+          "eduir.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1531013356781555712"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-05-29",
+      "indicators": {
+        "domain": [
+          "eduri.me",
+          "login.wccnet.eduri.me",
+          "sso.oakland.opir.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1530910329462464512"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-29",
+      "indicators": {
+        "domain": [
+          "eaun.me",
+          "elia.sub.eaun.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1528348685708447745",
+        "https://www.virustotal.com/gui/ip-address/194.87.23.7/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-29",
+      "indicators": {
+        "domain": [
+          "opir.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1530910329462464512",
+        "https://twitter.com/TeamDreier/status/1531013356781555712"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-29",
+      "indicators": {
+        "domain": [
+          "euin.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1530123942165348353",
+        "https://www.virustotal.com/gui/ip-address/77.238.110.158/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2022-05-27",
+      "indicators": {
+        "domain": [
+          "ease.ed.ac.riue.me",
+          "lrie.me",
+          "onic.me",
+          "riue.me",
+          "sso.vu.lrie.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1530123942165348353",
+        "https://www.virustotal.com/gui/ip-address/77.238.110.158/relations"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2022-05-22",
+      "indicators": {
+        "domain": [
+          "ease.ed.ac.unisr.me",
+          "find.shef.ac.uk.uion.me",
+          "find.sheffield.uion.me",
+          "uion.me",
+          "unisr.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1528348685708447745",
+        "https://www.virustotal.com/gui/ip-address/194.87.23.7/relations"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-05-19",
+      "indicators": {
+        "domain": [
+          "libip.me",
+          "libsi.me",
+          "login.openathens.net.libip.me",
+          "login.openathens.net.libsi.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1527308905889472515"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-05-19",
+      "indicators": {
+        "domain": [
+          "libmi.me",
+          "libsu.me",
+          "login.openathens.net.libmi.me",
+          "nyit.ent.sirsi.net.libsu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-19",
+      "indicators": {
+        "domain": [
+          "liucat.lib.liu.edu.llibs.me",
+          "llibs.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1527368158687834114"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-05-17",
+      "indicators": {
+        "domain": [
+          "aclib.me",
+          "login.iit.edu.aclib.me",
+          "weblogin.bu.edu.llib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1526316357683499008"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-12",
+      "indicators": {
+        "domain": [
+          "rlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1523553694867804161",
+        "https://twitter.com/TeamDreier/status/1523721652059602944",
+        "https://twitter.com/TeamDreier/status/1524611293205999617"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-11",
+      "indicators": {
+        "domain": [
+          "login.microsoftonline.srlib.me",
+          "srlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2022-05-09",
+      "indicators": {
+        "domain": [
+          "catalogue.londonmet.ac.uk.cnlib.me",
+          "cnlib.me",
+          "enlib.me",
+          "ezpa.library.ualberta.enlib.me",
+          "login.microsoftonline.enlib.me",
+          "sso2.identity.uoguelph.enlib.me",
+          "testlib.cnlib.me",
+          "testlib.enlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1523553694867804161",
+        "https://twitter.com/TeamDreier/status/1523721652059602944",
+        "https://twitter.com/TeamDreier/status/1524611293205999617"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-05",
+      "indicators": {
+        "domain": [
+          "login1pro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1522239764723863553"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-04",
+      "indicators": {
+        "domain": [
+          "liblogin.xyz",
+          "library.sutd.edu.sg.liblogin.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1521760194849656833",
+        "https://www.virustotal.com/gui/ip-address/157.90.120.120/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-05-03",
+      "indicators": {
+        "domain": [
+          "allib.me",
+          "ezpa.library.ualberta.allib.me",
+          "login.microsoftonline.otlib.me",
+          "otlib.me",
+          "sso2.identity.uoguelph.uolib.me",
+          "uolib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-01",
+      "indicators": {
+        "domain": [
+          "login.proxy1.lib.uwo.ca.sirlib.me",
+          "sirlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "domain": [
+          "etrlib.me",
+          "idp.bolton.ac.uk.ilino.me",
+          "libet.me",
+          "login.microsoftonline.ilino.me",
+          "login.microsoftonline.nelib.me",
+          "login.microsoftonline.strlib.me",
+          "login.uleth.ca.ulib.me",
+          "nelib.me",
+          "ssologin.exeter.ac.uk.etrlib.me",
+          "ssologin.exeter.ac.uk.libet.me",
+          "strlib.me",
+          "ulib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "edu.ilino.me",
+          "edu.oine.me",
+          "edu.ostin.me",
+          "libproxy.umflint.edu.ilino.me",
+          "libproxy.umflint.edu.oine.me",
+          "libproxy.umflint.edu.ostin.me",
+          "umflint.edu.ilino.me",
+          "umflint.edu.oine.me",
+          "umflint.edu.ostin.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1518842981175996416"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "ilino.me",
+          "login.libproxy.umflint.edu.ilino.me",
+          "login.libproxy.umflint.edu.oine.me",
+          "login.libproxy.umflint.edu.ostin.me",
+          "oine.me",
+          "ostin.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1518842981175996416",
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-04-23",
+      "indicators": {
+        "domain": [
+          "ac.uk.libte.me",
+          "bolton.ac.uk.libte.me",
+          "uk.libte.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1517783469828542464"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-23",
+      "indicators": {
+        "domain": [
+          "libte.me",
+          "login.microsoftonline.libte.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1517784173964107777",
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-23",
+      "indicators": {
+        "domain": [
+          "microsoftonline.libte.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1517784173964107777"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-23",
+      "indicators": {
+        "domain": [
+          "idp.bolton.ac.uk.libte.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1517783469828542464",
+        "https://twitter.com/TeamDreier/status/1519621500919291904",
+        "https://twitter.com/TeamDreier/status/1520795328403935233",
+        "https://twitter.com/TeamDreier/status/1521373266799214593",
+        "https://www.virustotal.com/gui/ip-address/213.108.241.238/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-14",
+      "indicators": {
+        "domain": [
+          "ezproxy2.hkr.se.zezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1503296891433410564"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-03-09",
+      "indicators": {
+        "domain": [
+          "ezproxy.lau.edu.lb.zezpro.xyz",
+          "ithenticate.zezpro.xyz",
+          "zezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1501486600517210112"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-02-14",
+      "indicators": {
+        "domain": [
+          "elibproxy.anu.ac.ke.logezpro.xyz",
+          "kenli.nbu.bg.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1493135702091079760"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-02-09",
+      "indicators": {
+        "domain": [
+          "neptune.ndu.edu.lb.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1491346120681078784"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-26",
+      "indicators": {
+        "domain": [
+          "proxy.mau.se.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1486250419730984963"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-01-09",
+      "indicators": {
+        "domain": [
+          "eis.gvsu.edu.thespacebulls.info",
+          "shib.towson.edu.thespacebulls.info",
+          "thespacebulls.info",
+          "towson.edu.thespacebulls.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1480289542565515267"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-03",
+      "indicators": {
+        "domain": [
+          "bidi.uam.mx.logezpro.xyz",
+          "ezp.twu.edu.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1478117520708149254"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-28",
+      "indicators": {
+        "domain": [
+          "ezproxy.mef.edu.tr.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1475765012199354368"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-27",
+      "indicators": {
+        "domain": [
+          "login1.ep.bib.mdh.se.logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1475412283421601795"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-22",
+      "indicators": {
+        "domain": [
+          "library.gju.edu.jo.logezpro.xyz",
+          "logezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1473598462553952258"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-02",
+      "indicators": {
+        "domain": [
+          "login.ki.se.nfas.me",
+          "nfas.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1466475837235027970"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-11-25",
+      "indicators": {
+        "domain": [
+          "edcu.me",
+          "udun.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1463860492900970503"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-11-23",
+      "indicators": {
+        "domain": [
+          "lezpro.xyz",
+          "login.ezproxy.uwc.ac.za.lezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1463068783485009920"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-11-05",
+      "indicators": {
+        "domain": [
+          "newcatalog.library.cornell.ulibc.xyz",
+          "onesearch.library.rice.ulibc.xyz",
+          "ulibc.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1456646709329727489",
+        "https://twitter.com/TeamDreier/status/1456519641229107201"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-10-20",
+      "indicators": {
+        "domain": [
+          "sso.ub.edu.libezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1450008147293245447",
+        "https://twitter.com/TeamDreier/status/1450747167090556928"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-10-18",
+      "indicators": {
+        "domain": [
+          "ezp.isikun.edu.tr.libezpro.xyz",
+          "libezpro.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1450008147293245447",
+        "https://twitter.com/TeamDreier/status/1450747167090556928"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "ersta.me",
+          "isavr.me",
+          "login.ki.se.ersta.me",
+          "login.ki.se.isavr.me",
+          "login.ki.se.nvfr.me",
+          "login.ki.se.tacvp.me",
+          "nvfr.me",
+          "tacvp.me",
+          "tasav.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438410098620223488"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "asoec.me",
+          "login.ki.se.asoec.me",
+          "login.ki.se.rsia.me",
+          "login.ki.se.tcnd.me",
+          "rsia.me",
+          "tcnd.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438241771935371271"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "avne.me",
+          "idp.it.su.se.oucv.me",
+          "idp.it.su.se.ucno.me",
+          "oucv.me",
+          "swoc.me",
+          "ucno.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438015417600053250"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "ezproxy2.hkr.se.liblog.info",
+          "login1.ep.bib.mdh.se.liblog.info",
+          "neptune.ndu.edu.lb.liblog.info",
+          "psut.idm.oclc.org.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1435161539422654464",
+        "https://twitter.com/TeamDreier/status/1433325012623269890",
+        "https://twitter.com/TeamDreier/status/1432956757689647105",
+        "https://twitter.com/TeamDreier/status/1432274952284221446"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "ecdv.me",
+          "login.ki.se.ecdv.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438241771935371271",
+        "https://twitter.com/TeamDreier/status/1438117675868241921"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "idp.it.su.se.mosc.me",
+          "mosc.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438015417600053250",
+        "https://twitter.com/TeamDreier/status/1437783760603389960"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "megaservers.ir",
+          "srtteam.ir"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1423548509224058883"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "cvos.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1438015417600053250",
+        "https://twitter.com/TeamDreier/status/1437793434287345675"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-09-16",
+      "indicators": {
+        "domain": [
+          "login.proxy.bib.uottawa.ca.cvos.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1437793434287345675"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-07-11",
+      "indicators": {
+        "domain": [
+          "cas.fsu.edu.libg.ml",
+          "edu.libg.ml",
+          "libg.ml",
+          "lproxy.nymc.edu.libg.ml"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1414126424525578243"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-30",
+      "indicators": {
+        "domain": [
+          "login.datubazes.lanet.lv.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1410141072920125447"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-11",
+      "indicators": {
+        "domain": [
+          "ezproxy.vid.no.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1403275407420440577"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-10",
+      "indicators": {
+        "domain": [
+          "ezproxy.yu.edu.jo.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1402918680846114816"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-07",
+      "indicators": {
+        "domain": [
+          "login.libezp.utar.edu.my.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1401807769880215553"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-07",
+      "indicators": {
+        "domain": [
+          "tarcez.tarc.edu.my.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1401790878092611587"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-06-03",
+      "indicators": {
+        "domain": [
+          "ezp2.imu.edu.my.liblog.info",
+          "ezproxy.um.edu.my.liblog.info",
+          "hiof.no.liblog.info",
+          "login.libezp2.utar.edu.my.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1400360529579941889",
+        "https://www.virustotal.com/gui/ip-address/185.51.201.112/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-04-19",
+      "indicators": {
+        "domain": [
+          "auth.bath.ac.uk.ncev.me",
+          "bath.ac.uk.ncev.me",
+          "ncev.me",
+          "oskicatp.berkeley.edu.ncev.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1384079500737011714",
+        "https://twitter.com/TeamDreier/status/1384092560281391108"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-04-17",
+      "indicators": {
+        "domain": [
+          "edadfed.ed.ac.uk.ucnv.me",
+          "edadfed.ed.ac.ukns.me",
+          "ucnv.me",
+          "ukns.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1383377868114206722"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-04-17",
+      "indicators": {
+        "domain": [
+          "auth.bath.ac.uk.ukns.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1383436461974835212"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-20",
+      "indicators": {
+        "domain": [
+          "shibboleth.mcgill.nlib.ml"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351960402503098368"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-20",
+      "indicators": {
+        "domain": [
+          "login.proxy1.dom1.nhtv.nl.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351479481668661249",
+        "https://twitter.com/TeamDreier/status/1351797305926676480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-01-19",
+      "indicators": {
+        "domain": [
+          "innsida.ntnu.srrn.me",
+          "srrn.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351465253641596932"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-19",
+      "indicators": {
+        "domain": [
+          "rps.hva.nl.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351479481668661249",
+        "https://twitter.com/TeamDreier/status/1351797305926676480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-18",
+      "indicators": {
+        "domain": [
+          "liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351094101341515777",
+        "https://twitter.com/TeamDreier/status/1400360529579941889",
+        "https://www.virustotal.com/gui/ip-address/185.51.201.112/relations",
+        "https://twitter.com/TeamDreier/status/1435161539422654464",
+        "https://twitter.com/TeamDreier/status/1433325012623269890",
+        "https://twitter.com/TeamDreier/status/1432956757689647105",
+        "https://twitter.com/TeamDreier/status/1432274952284221446"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-18",
+      "indicators": {
+        "domain": [
+          "ezproxy.hkr.se.liblog.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1351094101341515777"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "mylibrary.bu.ulibr.xyz",
+          "mylibrary.ebu.ulibr.xyz",
+          "onesearch.library.wwu.edu.ulibr.xyz",
+          "ulibr.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1338977587977129992",
+        "https://twitter.com/TeamDreier/status/1338979116855554056",
+        "https://twitter.com/TeamDreier/status/1339231776900853760"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "login.ezproxy.uws.edu.au.vitt.ga",
+          "login.simsrad.net.ocs.mq.edu.au.vitt.ga",
+          "uon.okta.com.vitt.ga",
+          "vitt.ga"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1337664630219550722"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "cett.cf",
+          "proxylogin.nus.edu.sg.cett.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1336273839148441602"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "proxylogin.nus.edu.sg.vitl.ml",
+          "vitl.ml"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1336251373097267202"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "auth.bath.ac.uk.ctit.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/andsyn1/status/1331321796226846721"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "shibboleth3.liv.ac.uk.sitl.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1332964881537114115"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "auth.bath.ac.uk.ztit.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1329822320471515143"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "canvas.ucdavis.snnu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1322431397257191424"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "innsida.ntnu.snnu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1322301000963805184"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-18",
+      "indicators": {
+        "domain": [
+          "weblogon.ltu.se.ztit.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1321725647153233920"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "edliu.me",
+          "eduin.me",
+          "edunm.me",
+          "ilias.uni-marburg.edunm.me",
+          "libproxy.unm.eduin.me",
+          "shibboleth.mcgill.edliu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/andsyn1/status/1320315221253259265",
+        "https://twitter.com/TeamDreier/status/1320295132164390912",
+        "https://twitter.com/andsyn1/status/1319744139303571457"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "cuhk.edu.hk.itlf.cf",
+          "shib.dur.ac.uk.stit.cf",
+          "stit.cf",
+          "sts.cuhk.edu.hk.itlf.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1319284609612312576",
+        "https://twitter.com/TeamDreier/status/1318073712621608960"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "canvas.sydney.sunu.me",
+          "monucp.u-cergy.sunu.me",
+          "sunu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1320068459934482438",
+        "https://twitter.com/TeamDreier/status/1319219638966849536"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "learn.polyu.sncu.me",
+          "lms.unb.sncu.me",
+          "sncu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1319501314079031297",
+        "https://twitter.com/TeamDreier/status/1319219638966849536"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "milngavie.cent.gla.ac.uk.titt.gq",
+          "titt.gq"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1335877271593377792"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "login.e.bibl.liu.se.titt.ga",
+          "titt.ga"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1321197043784843267"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "ediun.me",
+          "sts.sydney.ediun.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1320993672566050817"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "shib-idp.ucl.ac.uk.vctt.cf",
+          "vctt.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1320654814750138377"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "learn.snnu.me",
+          "snnu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1320475288996880387"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "librm.me",
+          "moodle.uni-ulm.de.librm.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1318073179621986311"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-07",
+      "indicators": {
+        "domain": [
+          "q.utoronto.vrev.me",
+          "vrev.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1318072706068320256"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2020-11-26",
+      "indicators": {
+        "domain": [
+          "auth.bath.ac.uk.ctit.tk",
+          "auth.bath.ac.uk.titt.ml",
+          "ctit.cf",
+          "ctit.tk",
+          "login.e.bibl.liu.se.ctit.tk",
+          "login.manchester.ac.uk.ctit.tk",
+          "shib-idp.ucl.ac.uk.trtt.tk",
+          "titt.ml",
+          "trtt.tk",
+          "ztit.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TeamDreier/status/1331940216811233288",
+        "https://twitter.com/TeamDreier/status/1331941213184856065"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2020-10-16",
+      "indicators": {
+        "domain": [
+          "blackboard.usc.caer.me",
+          "caer.me",
+          "elearn.cuhk.caer.me",
+          "moodle.uni-ulm.caer.me",
+          "sierra-sso.aut.caer.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ViriBack/status/1317216042263941120"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 26
+      },
+      "first_seen": "2020-10-14",
+      "indicators": {
+        "domain": [
+          "adfs.lincoln.ac.uk.itlib.me",
+          "aroe.me",
+          "blackboard.gcal.crev.me",
+          "blackboard.stonybrook.ernn.me",
+          "blackboard.stonybrook.nrni.me",
+          "canm.me",
+          "crev.me",
+          "crir.me",
+          "cvrr.me",
+          "ernn.me",
+          "idcheck2.qmul.ac.uk.sftt.cf",
+          "idpz.utorauth.utoronto.ca.itlf.cf",
+          "libproxy.library.unt.edu.itlib.me",
+          "library.adelaide.crev.me",
+          "librarysso.vu.cvrr.me",
+          "lms.latrobe.aroe.me",
+          "login.libproxy.kcl.ac.uk.itlt.tk",
+          "login.proxy1.lib.uwo.ca.sftt.cf",
+          "namidp.services.uu.nl.itlib.me",
+          "nrni.me",
+          "ole.bris.crir.me",
+          "rres.me",
+          "sftt.cf",
+          "signon.adelaide.edu.au.itlib.me",
+          "uu.blackboard.rres.me",
+          "vle.cam.ac.uk.canm.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/"
+      ],
+      "total": 26
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-10-13",
+      "indicators": {
+        "domain": [
+          "libit.me",
+          "library.acu.edu.au.libit.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1315855394506330113"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-10-12",
+      "indicators": {
+        "domain": [
+          "canvas.bham.vueu.me",
+          "owl.uwo.vueu.me",
+          "vueu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cybershtuff/status/1315574181493444613"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-12",
+      "indicators": {
+        "domain": [
+          "sso.acu.edu.au.itlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312826103388667904",
+        "https://www.virustotal.com/gui/ip-address/104.152.168.47/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-05",
+      "indicators": {
+        "domain": [
+          "ntulearn.ntu.ninu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1313029599048208386",
+        "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-05",
+      "indicators": {
+        "domain": [
+          "ninu.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1313029599048208386"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2020-10-04",
+      "indicators": {
+        "domain": [
+          "idp3.it.gu.se.itlf.cf",
+          "login.ki.se.iftl.tk",
+          "raven.cam.ac.uk.iftl.tk",
+          "shib.york.ac.uk.iftl.tk",
+          "shibboleth.mcgill.ca.iftl.tk",
+          "sso.id.kent.ac.uk.iftl.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312826103388667904",
+        "https://www.virustotal.com/gui/ip-address/104.152.168.47/relations",
+        "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-10-04",
+      "indicators": {
+        "domain": [
+          "cas.thm.de.servisedesk.me",
+          "itlib.me",
+          "servisedesk.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312819332318146561",
+        "https://twitter.com/peterkruse/status/1315556534546558977"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-04",
+      "indicators": {
+        "domain": [
+          "itlf.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312826103388667904",
+        "https://www.virustotal.com/gui/ip-address/104.152.168.47/relations",
+        "https://twitter.com/TeamDreier/status/1319284609612312576",
+        "https://twitter.com/TeamDreier/status/1318073712621608960"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-04",
+      "indicators": {
+        "domain": [
+          "iftl.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312826103388667904",
+        "https://www.virustotal.com/gui/ip-address/104.152.168.47/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-04",
+      "indicators": {
+        "domain": [
+          "cas.thm.de.itlib.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/peterkruse/status/1312819332318146561",
+        "https://twitter.com/peterkruse/status/1315556534546558977",
+        "https://blog.malwarebytes.com/malwarebytes-news/2020/10/silent-librarian-apt-phishing-attack/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 32
+      },
+      "first_seen": "2019-10-14",
+      "indicators": {
+        "domain": [
+          "atll.tk",
+          "azll.tk",
+          "clll.cf",
+          "cllt.cf",
+          "cllt.tk",
+          "euve.tk",
+          "itll.tk",
+          "libdo.cf",
+          "libe.cf",
+          "libn.gq",
+          "librt.ml",
+          "libw.gq",
+          "llif.cf",
+          "lliz.cf",
+          "llli.cf",
+          "lllt.cf",
+          "ncce.cf",
+          "nlib.ml",
+          "nlll.tk",
+          "ntil.cf",
+          "ntll.cf",
+          "rvna.cf",
+          "sitt.cf",
+          "ssll.cf",
+          "tlit.cf",
+          "tlll.tk",
+          "ttit.cf",
+          "ttll.cf",
+          "venc.cf",
+          "visc.cf",
+          "xill.cf",
+          "zlll.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+        "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+        "https://otx.alienvault.com/pulse/5d78eaf37b37c503fb07d45a",
+        "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+        "https://otx.alienvault.com/pulse/5da4a7ab756627fcce84efcc"
+      ],
+      "total": 32
+    },
+    {
+      "counts": {
+        "domain": 141
+      },
+      "first_seen": "2019-09-11",
+      "indicators": {
+        "domain": [
+          "1edu.in",
+          "aill.cf",
+          "aill.nl",
+          "atna.cf",
+          "atti.cf",
+          "azll.cf",
+          "azlll.cf",
+          "aztt.tk",
+          "blibo.ga",
+          "cave.gq",
+          "ccli.cf",
+          "cill.ml",
+          "clll.nl",
+          "clll.tk",
+          "cnen.cf",
+          "cnma.cf",
+          "cntt.cf",
+          "crll.tk",
+          "csll.cf",
+          "ctll.tk",
+          "cvnc.ga",
+          "cvve.cf",
+          "czll.tk",
+          "cztt.tk",
+          "e-library.me",
+          "eill.cf",
+          "eill.ga",
+          "eill.nl",
+          "elll.cf",
+          "erta.ca",
+          "etll.cf",
+          "euca.cf",
+          "euce.in",
+          "ezll.tk",
+          "ezplog.in",
+          "ezproxy.tk",
+          "eztt.tk",
+          "fill.cf",
+          "flil.cf",
+          "flll.cf",
+          "iell.tk",
+          "ill.pro",
+          "illl.cf",
+          "ills.cf",
+          "iull.tk",
+          "izll.tk",
+          "jlll.cf",
+          "lett.cf",
+          "lib1.bid",
+          "lib1.pw",
+          "liba.gq",
+          "libb.ga",
+          "libe.ga",
+          "libe.ml",
+          "libf.ga",
+          "libg.cf",
+          "libg.ga",
+          "libg.gq",
+          "libg.tk",
+          "libk.ga",
+          "libloan.xyz",
+          "libm.ga",
+          "libnicinfo.xyz",
+          "librarylog.in",
+          "libraryme.ir",
+          "libt.ga",
+          "libt.ml",
+          "libu.gq",
+          "libv.ml",
+          "libver.ml",
+          "lill.gq",
+          "lill.pro",
+          "llbt.tk",
+          "llib.cf",
+          "llib.ga",
+          "llic.cf",
+          "llic.tk",
+          "llii.cf",
+          "llii.xyz",
+          "llil.cf",
+          "llil.nl",
+          "llit.cf",
+          "llit.site",
+          "lliv.nl",
+          "lliv.tk",
+          "lllf.nl",
+          "llli.nl",
+          "lllib.cf",
+          "llse.cf",
+          "lzll.cf",
+          "mlib.cf",
+          "mlibo.ml",
+          "ncll.tk",
+          "ncnc.cf",
+          "nctt.tk",
+          "necr.ga",
+          "nicn.gq",
+          "nika.ga",
+          "nimc.ga",
+          "nimc.ml",
+          "nlll.cf",
+          "nsae.ml",
+          "ntll.tk",
+          "nuec.cf",
+          "nuec.ml",
+          "rill.cf",
+          "rnva.cf",
+          "rtll.tk",
+          "savantaz.cf",
+          "sctt.cf",
+          "shibboleth.link",
+          "sitl.tk",
+          "slli.cf",
+          "stll.tk",
+          "till.cf",
+          "titt.cf",
+          "tlll.cf",
+          "tsll.cf",
+          "ttil.nl",
+          "uill.cf",
+          "uitt.tk",
+          "ulibe.ml",
+          "ulibr.ga",
+          "ulll.cf",
+          "ulll.tk",
+          "umlib.ml",
+          "umll.tk",
+          "uni-lb.com",
+          "unie.gq",
+          "unip.ga",
+          "unip.ml",
+          "unir.ga",
+          "unll.tk",
+          "untc.ir",
+          "utll.tk",
+          "vsre.cf",
+          "vtll.cf",
+          "web2lib.info",
+          "xill.tk",
+          "zedviros.ir",
+          "zill.cf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+        "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+        "https://otx.alienvault.com/pulse/5d78eaf37b37c503fb07d45a",
+        "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+        "https://otx.alienvault.com/pulse/5da4a7ab756627fcce84efcc"
+      ],
+      "total": 141
+    },
+    {
+      "counts": {
+        "domain": 21
+      },
+      "first_seen": "2018-08-28",
+      "indicators": {
+        "domain": [
+          "anvc.me",
+          "ebookfafa.com",
+          "eduv.icu",
+          "jhbn.me",
+          "lib-service.com",
+          "nimc.cf",
+          "uncr.me",
+          "unie.ga",
+          "unie.ml",
+          "unin.icu",
+          "unip.cf",
+          "unip.gq",
+          "unir.cf",
+          "unir.gq",
+          "unir.ml",
+          "unisv.xyz",
+          "univ.red",
+          "untc.me",
+          "untf.me",
+          "unts.me",
+          "unvc.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/blog/back-to-school-cobalt-dickens-targets-universities",
+        "https://www.secureworks.com/blog/cobalt-dickens-goes-back-to-school-again",
+        "https://otx.alienvault.com/pulse/5d78eaf37b37c503fb07d45a",
+        "https://www.proofpoint.com/us/threat-insight/post/threat-actor-profile-ta407-silent-librarian",
+        "https://otx.alienvault.com/pulse/5da4a7ab756627fcce84efcc"
+      ],
+      "total": 21
+    }
+  ]
+}

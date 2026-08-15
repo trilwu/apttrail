@@ -1,0 +1,819 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 144,
+    "ipv4": 4
+  },
+  "first_seen": {
+    "domain": {
+      "adobesupport.net": "2021-06-18",
+      "adtl.mywire.org": "2021-06-18",
+      "anywheres.run.place": "2025-01-24",
+      "appinfo.camdvr.org": "2021-06-18",
+      "appsupport.my-router.de": "2025-01-24",
+      "appupdate.firewall-gateway.de": "2025-01-24",
+      "appupdate.my-router.de": "2025-01-24",
+      "aries.epac.to": "2019-06-04",
+      "bbsaili.camdvr.org": "2024-04-19",
+      "billing.epac.to": "2021-06-18",
+      "capture.kozow.com": "2019-07-10",
+      "cheapnews.online": "2024-07-10",
+      "chock.mywire.org": "2021-06-18",
+      "ciscoteam.ignorelist.com": "2024-04-19",
+      "coreldraw.kozow.com": "2021-06-18",
+      "czconnections.ddns.info": "2021-06-18",
+      "darkpapa.chickenkiller.com": "2022-04-16",
+      "dhsg123.jkub.com": "2022-04-16",
+      "drdo.dumb1.com": "2021-06-18",
+      "drdo.mypop3.net": "2021-06-18",
+      "dsgf.chickenkiller.com": "2021-06-18",
+      "elienceso.kozow.com": "2021-06-18",
+      "exat.dnset.com": "2021-06-18",
+      "exat.zyns.com": "2021-06-18",
+      "execserver.giize.com": "2021-06-18",
+      "exujjat.xxuz.com": "2021-06-18",
+      "fashget.theworkpc.com": "2021-06-18",
+      "fivenum.mooo.com": "2021-06-18",
+      "foreverlove.zzux.com": "2021-06-18",
+      "forum.camdvr.org": "2021-06-18",
+      "ftp.isronrsc.giize.com": "2024-04-19",
+      "fukebutt.zzux.com": "2021-06-18",
+      "googiao.top": "2024-07-03",
+      "googleupdate.myz.info": "2021-06-18",
+      "gov4us.online": "2024-07-03",
+      "gulistan.wikaba.com": "2021-06-18",
+      "hcl.sexidude.com": "2021-06-18",
+      "holyshit.dynamic-dns.net": "2022-12-30",
+      "honoroftajik.dynamic-dns.net": "2019-06-04",
+      "hostmail1.com": "2021-06-18",
+      "https.dnset.com": "2021-06-18",
+      "https.ikwb.com": "2019-06-04",
+      "https.otzo.com": "2021-06-18",
+      "https.vizvaz.com": "2021-06-18",
+      "inbsnl.ddns.info": "2021-06-18",
+      "inbsnl.ddns.ms": "2021-06-18",
+      "indiabs.nl": "2024-12-30",
+      "indiabsnl.com": "2024-04-19",
+      "indiabsnl.in": "2024-04-19",
+      "indiabsnl.net": "2024-12-30",
+      "indiaeducation.mefound.com": "2021-06-18",
+      "indian.mefound.com": "2021-06-18",
+      "indianmail.zyns.com": "2021-06-18",
+      "indiavoice.site": "2024-07-03",
+      "isronrsc.giize.com": "2024-04-19",
+      "isrosdsc.camdvr.org": "2024-04-19",
+      "itsupport.firewall-gateway.net": "2021-06-18",
+      "jiocircle.site": "2024-07-24",
+      "jpgdowngaussip.ddns.info": "2021-06-18",
+      "kastygost.compress.to": "2019-01-08",
+      "kazcell.info": "2024-07-10",
+      "kazinfo.net": "2024-07-10",
+      "kaznews.shop": "2024-07-10",
+      "kaztelecom.shop": "2024-07-03",
+      "kelimelerdunyasi.org": "2021-06-18",
+      "koreckaccord01.zzux.com": "2021-06-18",
+      "kz-news.site": "2024-07-03",
+      "laugh.toh.info": "2019-06-04",
+      "lexuz.dns05.com": "2021-06-18",
+      "lexuz.x24hr.com": "2021-06-18",
+      "linkedin.organiccrap.com": "2021-06-18",
+      "locker.camdvr.org": "2021-06-18",
+      "login.kozow.com": "2021-06-18",
+      "logonfaker.longmusic.com": "2021-06-18",
+      "macfee.webredirect.org": "2021-06-18",
+      "macfeesyn.ns01.info": "2021-06-18",
+      "macfeeupdate.ddns.info": "2021-06-18",
+      "mail.indiabsnl.com": "2024-04-19",
+      "mail.indiabsnl.in": "2024-04-19",
+      "mall.mywire.org": "2021-06-18",
+      "manual.gleeze.com": "2021-06-18",
+      "manuals.wikaba.com": "2021-06-18",
+      "menus.giize.com": "2021-06-18",
+      "menus.kozow.com": "2021-06-18",
+      "mfedownload.freetcp.com": "2021-06-18",
+      "mfeupdate.ddns.info": "2021-06-18",
+      "mfeupload.freetcp.com": "2021-06-18",
+      "miche.justdied.com": "2021-06-18",
+      "mobai.moshen.xyz": "2022-12-30",
+      "moshen.xyz": "2022-12-30",
+      "msgsober.xxuz.com": "2021-06-18",
+      "msn.dnsnet.com": "2021-06-18",
+      "ncell.app": "2024-07-29",
+      "newseason.online": "2024-07-29",
+      "newsforname.site": "2024-07-03",
+      "newtelecom.shop": "2024-07-10",
+      "nicodonald.accesscam.org": "2019-06-04",
+      "niteast.strangled.net": "2019-06-04",
+      "notice.theworkpc.com": "2021-06-18",
+      "nproccshow.zyns.com": "2021-06-18",
+      "nur-tv.shop": "2024-07-10",
+      "nurkaz.shop": "2024-07-03",
+      "otc.toythieves.com": "2021-06-18",
+      "pisces.zzux.com": "2021-06-18",
+      "prace.gleeze.com": "2021-06-18",
+      "pracute.camdvr.org": "2021-06-18",
+      "protondiscover.com": "2024-07-10",
+      "queryinfo.mrbonus.com": "2021-06-18",
+      "quickheal.firewall-gateway.net": "2021-06-18",
+      "randomanalyze.freetcp.com": "2021-06-18",
+      "rastelcs.kozow.com": "2021-06-18",
+      "rci.ddns.info": "2021-06-18",
+      "redhatboy.dynamic-dns.net": "2021-06-18",
+      "scorpio.zzux.com": "2021-06-18",
+      "secindia.mywire.org": "2021-06-18",
+      "secssl.ooguy.com": "2021-06-18",
+      "secssl.theworkpc.com": "2021-06-18",
+      "secupdate.kozow.com": "2021-06-18",
+      "skylineline.crabdance.com": "2021-06-18",
+      "skylineqaz.crabdance.com": "2019-01-08",
+      "smcupdate.mooo.com": "2021-06-18",
+      "srcrail.kozow.com": "2021-06-18",
+      "stratejibilimi.com": "2021-06-18",
+      "sts.isronrsc.giize.com": "2024-04-19",
+      "sunway2.chickenkiller.com": "2021-06-18",
+      "superkelimeler.com": "2021-06-18",
+      "supports.casacam.net": "2021-06-18",
+      "supports.gleeze.com": "2021-06-18",
+      "sysman.ddnsgeek.com": "2021-06-18",
+      "sysmantec.firewall-gateway.net": "2021-06-18",
+      "sysmantec.organiccrap.com": "2021-06-18",
+      "tajikstantravel.dynamic-dns.net": "2019-06-04",
+      "tele.zyns.com": "2019-01-08",
+      "thinkv.dynamic-dns.net": "2021-06-18",
+      "thinkv.epac.to": "2021-06-18",
+      "trand.mefound.com": "2021-06-18",
+      "trendiis.sixth.biz": "2019-06-04",
+      "updateinfo.kozow.com": "2021-06-18",
+      "uzwatersource.dynamic-dns.net": "2019-01-08",
+      "water.xxuz.com": "2021-06-18",
+      "wawaqq.ddns.info": "2021-06-18",
+      "whitepages.dynamic-dns.net": "2021-06-18",
+      "wsliversourcecor.epac.to": "2021-06-18",
+      "yatedo.organiccrap.com": "2021-06-18"
+    },
+    "ipv4": {
+      "135.181.243.34:8080": "2025-01-24",
+      "164.132.27.225:8080": "2025-01-24",
+      "192.51.188.47:443": "2025-01-24",
+      "194.126.202.217:443": "2025-01-24"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-01-08",
+    "latest": "2025-01-24"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adobesupport.net",
+      "adtl.mywire.org",
+      "anywheres.run.place",
+      "appinfo.camdvr.org",
+      "appsupport.my-router.de",
+      "appupdate.firewall-gateway.de",
+      "appupdate.my-router.de",
+      "aries.epac.to",
+      "bbsaili.camdvr.org",
+      "billing.epac.to",
+      "capture.kozow.com",
+      "cheapnews.online",
+      "chock.mywire.org",
+      "ciscoteam.ignorelist.com",
+      "coreldraw.kozow.com",
+      "czconnections.ddns.info",
+      "darkpapa.chickenkiller.com",
+      "dhsg123.jkub.com",
+      "drdo.dumb1.com",
+      "drdo.mypop3.net",
+      "dsgf.chickenkiller.com",
+      "elienceso.kozow.com",
+      "exat.dnset.com",
+      "exat.zyns.com",
+      "execserver.giize.com",
+      "exujjat.xxuz.com",
+      "fashget.theworkpc.com",
+      "fivenum.mooo.com",
+      "foreverlove.zzux.com",
+      "forum.camdvr.org",
+      "ftp.isronrsc.giize.com",
+      "fukebutt.zzux.com",
+      "googiao.top",
+      "googleupdate.myz.info",
+      "gov4us.online",
+      "gulistan.wikaba.com",
+      "hcl.sexidude.com",
+      "holyshit.dynamic-dns.net",
+      "honoroftajik.dynamic-dns.net",
+      "hostmail1.com",
+      "https.dnset.com",
+      "https.ikwb.com",
+      "https.otzo.com",
+      "https.vizvaz.com",
+      "inbsnl.ddns.info",
+      "inbsnl.ddns.ms",
+      "indiabs.nl",
+      "indiabsnl.com",
+      "indiabsnl.in",
+      "indiabsnl.net",
+      "indiaeducation.mefound.com",
+      "indian.mefound.com",
+      "indianmail.zyns.com",
+      "indiavoice.site",
+      "isronrsc.giize.com",
+      "isrosdsc.camdvr.org",
+      "itsupport.firewall-gateway.net",
+      "jiocircle.site",
+      "jpgdowngaussip.ddns.info",
+      "kastygost.compress.to",
+      "kazcell.info",
+      "kazinfo.net",
+      "kaznews.shop",
+      "kaztelecom.shop",
+      "kelimelerdunyasi.org",
+      "koreckaccord01.zzux.com",
+      "kz-news.site",
+      "laugh.toh.info",
+      "lexuz.dns05.com",
+      "lexuz.x24hr.com",
+      "linkedin.organiccrap.com",
+      "locker.camdvr.org",
+      "login.kozow.com",
+      "logonfaker.longmusic.com",
+      "macfee.webredirect.org",
+      "macfeesyn.ns01.info",
+      "macfeeupdate.ddns.info",
+      "mail.indiabsnl.com",
+      "mail.indiabsnl.in",
+      "mall.mywire.org",
+      "manual.gleeze.com",
+      "manuals.wikaba.com",
+      "menus.giize.com",
+      "menus.kozow.com",
+      "mfedownload.freetcp.com",
+      "mfeupdate.ddns.info",
+      "mfeupload.freetcp.com",
+      "miche.justdied.com",
+      "mobai.moshen.xyz",
+      "moshen.xyz",
+      "msgsober.xxuz.com",
+      "msn.dnsnet.com",
+      "ncell.app",
+      "newseason.online",
+      "newsforname.site",
+      "newtelecom.shop",
+      "nicodonald.accesscam.org",
+      "niteast.strangled.net",
+      "notice.theworkpc.com",
+      "nproccshow.zyns.com",
+      "nur-tv.shop",
+      "nurkaz.shop",
+      "otc.toythieves.com",
+      "pisces.zzux.com",
+      "prace.gleeze.com",
+      "pracute.camdvr.org",
+      "protondiscover.com",
+      "queryinfo.mrbonus.com",
+      "quickheal.firewall-gateway.net",
+      "randomanalyze.freetcp.com",
+      "rastelcs.kozow.com",
+      "rci.ddns.info",
+      "redhatboy.dynamic-dns.net",
+      "scorpio.zzux.com",
+      "secindia.mywire.org",
+      "secssl.ooguy.com",
+      "secssl.theworkpc.com",
+      "secupdate.kozow.com",
+      "skylineline.crabdance.com",
+      "skylineqaz.crabdance.com",
+      "smcupdate.mooo.com",
+      "srcrail.kozow.com",
+      "stratejibilimi.com",
+      "sts.isronrsc.giize.com",
+      "sunway2.chickenkiller.com",
+      "superkelimeler.com",
+      "supports.casacam.net",
+      "supports.gleeze.com",
+      "sysman.ddnsgeek.com",
+      "sysmantec.firewall-gateway.net",
+      "sysmantec.organiccrap.com",
+      "tajikstantravel.dynamic-dns.net",
+      "tele.zyns.com",
+      "thinkv.dynamic-dns.net",
+      "thinkv.epac.to",
+      "trand.mefound.com",
+      "trendiis.sixth.biz",
+      "updateinfo.kozow.com",
+      "uzwatersource.dynamic-dns.net",
+      "water.xxuz.com",
+      "wawaqq.ddns.info",
+      "whitepages.dynamic-dns.net",
+      "wsliversourcecor.epac.to",
+      "yatedo.organiccrap.com"
+    ],
+    "ipv4": [
+      "135.181.243.34:8080",
+      "164.132.27.225:8080",
+      "192.51.188.47:443",
+      "194.126.202.217:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "REDFOXTROT"
+  ],
+  "references": [
+    "https://github.com/Insikt-Group/Research/blob/master/RedFoxtrot%20June%202021",
+    "https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf",
+    "https://otx.alienvault.com/pulse/60cc709013f5498fe7e60120",
+    "https://otx.alienvault.com/pulse/61544024e496818edcda5f98",
+    "https://twitter.com/Cyberteam008/status/1781204417481679199",
+    "https://www.recordedfuture.com/chinese-apt-groups-target-afghan-telecommunications-firm/",
+    "https://www.virustotal.com/gui/file/00efd6ece111a99e1aea36636baba3fdf2f021eb8c9cdef84350c78654d5c99c/detection",
+    "https://www.virustotal.com/gui/file/44538a8b50c093cf17c6fbd799a51a39bac9a5f6fe8081e3f6d169a298a54a6f/detection",
+    "https://www.virustotal.com/gui/file/8571f53a54efaf13ab5a1eabe1f33eb5d489cac32f23581c090db28577de5efe/detection",
+    "https://www.virustotal.com/gui/file/8a3e3de44128ae2abada62c68f1e9f21468fb5103aa52f8320c8e1ea6a13dcd1/detection",
+    "https://www.virustotal.com/gui/file/e4fe0bd698d7d4b346f2a77440f99157388f796a98e0fe26b2448f074b38428a/detection",
+    "https://www.virustotal.com/gui/file/ed34d7d905f4169ea14e27410028b6b34cb1b55342638649670ccb1994332c35/detection",
+    "https://www.virustotal.com/gui/file/fd03a2d1c9ece4db62da7b4f8ca0f70c896a9b5370afdbc799092ea491892fdc/detection",
+    "https://www.virustotal.com/gui/ip-address/103.218.240.213/relations",
+    "https://www.virustotal.com/gui/ip-address/103.45.68.125/relations",
+    "https://www.virustotal.com/gui/ip-address/139.84.168.246/relations",
+    "https://www.virustotal.com/gui/ip-address/144.91.66.12/relations",
+    "https://www.virustotal.com/gui/ip-address/154.26.153.129/relations",
+    "https://www.virustotal.com/gui/ip-address/165.22.211.185/relations",
+    "https://www.virustotal.com/gui/ip-address/167.179.105.81/relations",
+    "https://www.virustotal.com/gui/ip-address/192.236.195.253/relations",
+    "https://www.virustotal.com/gui/ip-address/193.124.93.153/relations",
+    "https://www.virustotal.com/gui/ip-address/23.227.196.31/relations",
+    "https://www.virustotal.com/gui/ip-address/5.188.228.165/relations",
+    "https://www.virustotal.com/gui/ip-address/64.227.184.126/relations",
+    "https://x.com/Cyberteam008/status/1808321922087936030",
+    "https://x.com/Cyberteam008/status/1817738163387023520",
+    "https://x.com/Cyberteam008/status/1873548744593232365",
+    "https://x.com/Cyberteam008/status/1882654346804080880"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "12 shared indicators",
+          "kind": "infrastructure",
+          "weight": 12.0
+        }
+      ],
+      "slug": "ICEFOG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "SPACEPIRATES"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "XPATH"
+    }
+  ],
+  "slug": "REDFOXTROT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 4
+      },
+      "first_seen": "2025-01-24",
+      "indicators": {
+        "domain": [
+          "anywheres.run.place",
+          "appsupport.my-router.de",
+          "appupdate.firewall-gateway.de",
+          "appupdate.my-router.de"
+        ],
+        "ipv4": [
+          "135.181.243.34:8080",
+          "164.132.27.225:8080",
+          "192.51.188.47:443",
+          "194.126.202.217:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1882654346804080880",
+        "https://www.virustotal.com/gui/file/8571f53a54efaf13ab5a1eabe1f33eb5d489cac32f23581c090db28577de5efe/detection",
+        "https://www.virustotal.com/gui/file/fd03a2d1c9ece4db62da7b4f8ca0f70c896a9b5370afdbc799092ea491892fdc/detection",
+        "https://www.virustotal.com/gui/file/44538a8b50c093cf17c6fbd799a51a39bac9a5f6fe8081e3f6d169a298a54a6f/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-12-30",
+      "indicators": {
+        "domain": [
+          "indiabs.nl",
+          "indiabsnl.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1873548744593232365",
+        "https://www.virustotal.com/gui/ip-address/139.84.168.246/relations",
+        "https://www.virustotal.com/gui/ip-address/64.227.184.126/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-07-29",
+      "indicators": {
+        "domain": [
+          "ncell.app"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1817738163387023520",
+        "https://www.virustotal.com/gui/ip-address/23.227.196.31/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-07-29",
+      "indicators": {
+        "domain": [
+          "newseason.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1808321922087936030",
+        "https://www.virustotal.com/gui/ip-address/103.218.240.213/relations",
+        "https://www.virustotal.com/gui/ip-address/103.45.68.125/relations",
+        "https://www.virustotal.com/gui/ip-address/144.91.66.12/relations",
+        "https://www.virustotal.com/gui/ip-address/154.26.153.129/relations",
+        "https://www.virustotal.com/gui/ip-address/167.179.105.81/relations",
+        "https://www.virustotal.com/gui/ip-address/192.236.195.253/relations",
+        "https://www.virustotal.com/gui/ip-address/193.124.93.153/relations",
+        "https://www.virustotal.com/gui/file/e4fe0bd698d7d4b346f2a77440f99157388f796a98e0fe26b2448f074b38428a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-07-24",
+      "indicators": {
+        "domain": [
+          "jiocircle.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1808321922087936030",
+        "https://www.virustotal.com/gui/ip-address/103.218.240.213/relations",
+        "https://www.virustotal.com/gui/ip-address/103.45.68.125/relations",
+        "https://www.virustotal.com/gui/ip-address/144.91.66.12/relations",
+        "https://www.virustotal.com/gui/ip-address/154.26.153.129/relations",
+        "https://www.virustotal.com/gui/ip-address/167.179.105.81/relations",
+        "https://www.virustotal.com/gui/ip-address/192.236.195.253/relations",
+        "https://www.virustotal.com/gui/ip-address/193.124.93.153/relations",
+        "https://www.virustotal.com/gui/file/e4fe0bd698d7d4b346f2a77440f99157388f796a98e0fe26b2448f074b38428a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2024-07-10",
+      "indicators": {
+        "domain": [
+          "cheapnews.online",
+          "kazcell.info",
+          "kazinfo.net",
+          "kaznews.shop",
+          "newtelecom.shop",
+          "nur-tv.shop",
+          "protondiscover.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1808321922087936030",
+        "https://www.virustotal.com/gui/ip-address/103.218.240.213/relations",
+        "https://www.virustotal.com/gui/ip-address/103.45.68.125/relations",
+        "https://www.virustotal.com/gui/ip-address/144.91.66.12/relations",
+        "https://www.virustotal.com/gui/ip-address/154.26.153.129/relations",
+        "https://www.virustotal.com/gui/ip-address/167.179.105.81/relations",
+        "https://www.virustotal.com/gui/ip-address/192.236.195.253/relations",
+        "https://www.virustotal.com/gui/ip-address/193.124.93.153/relations",
+        "https://www.virustotal.com/gui/file/e4fe0bd698d7d4b346f2a77440f99157388f796a98e0fe26b2448f074b38428a/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2024-07-03",
+      "indicators": {
+        "domain": [
+          "googiao.top",
+          "gov4us.online",
+          "indiavoice.site",
+          "kaztelecom.shop",
+          "kz-news.site",
+          "newsforname.site",
+          "nurkaz.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1808321922087936030",
+        "https://www.virustotal.com/gui/ip-address/103.218.240.213/relations",
+        "https://www.virustotal.com/gui/ip-address/103.45.68.125/relations",
+        "https://www.virustotal.com/gui/ip-address/144.91.66.12/relations",
+        "https://www.virustotal.com/gui/ip-address/154.26.153.129/relations",
+        "https://www.virustotal.com/gui/ip-address/167.179.105.81/relations",
+        "https://www.virustotal.com/gui/ip-address/192.236.195.253/relations",
+        "https://www.virustotal.com/gui/ip-address/193.124.93.153/relations",
+        "https://www.virustotal.com/gui/file/e4fe0bd698d7d4b346f2a77440f99157388f796a98e0fe26b2448f074b38428a/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2024-04-19",
+      "indicators": {
+        "domain": [
+          "bbsaili.camdvr.org",
+          "ciscoteam.ignorelist.com",
+          "ftp.isronrsc.giize.com",
+          "indiabsnl.com",
+          "indiabsnl.in",
+          "isronrsc.giize.com",
+          "isrosdsc.camdvr.org",
+          "mail.indiabsnl.com",
+          "mail.indiabsnl.in",
+          "sts.isronrsc.giize.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Cyberteam008/status/1781204417481679199",
+        "https://www.virustotal.com/gui/ip-address/165.22.211.185/relations",
+        "https://www.virustotal.com/gui/ip-address/5.188.228.165/relations",
+        "https://www.virustotal.com/gui/file/ed34d7d905f4169ea14e27410028b6b34cb1b55342638649670ccb1994332c35/detection"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-12-30",
+      "indicators": {
+        "domain": [
+          "holyshit.dynamic-dns.net",
+          "mobai.moshen.xyz",
+          "moshen.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/00efd6ece111a99e1aea36636baba3fdf2f021eb8c9cdef84350c78654d5c99c/detection",
+        "https://www.virustotal.com/gui/file/8a3e3de44128ae2abada62c68f1e9f21468fb5103aa52f8320c8e1ea6a13dcd1/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-16",
+      "indicators": {
+        "domain": [
+          "darkpapa.chickenkiller.com",
+          "dhsg123.jkub.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/chinese-apt-groups-target-afghan-telecommunications-firm/",
+        "https://otx.alienvault.com/pulse/61544024e496818edcda5f98"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 93
+      },
+      "first_seen": "2021-06-18",
+      "indicators": {
+        "domain": [
+          "adobesupport.net",
+          "adtl.mywire.org",
+          "appinfo.camdvr.org",
+          "billing.epac.to",
+          "chock.mywire.org",
+          "coreldraw.kozow.com",
+          "czconnections.ddns.info",
+          "drdo.dumb1.com",
+          "drdo.mypop3.net",
+          "dsgf.chickenkiller.com",
+          "elienceso.kozow.com",
+          "exat.dnset.com",
+          "exat.zyns.com",
+          "execserver.giize.com",
+          "exujjat.xxuz.com",
+          "fashget.theworkpc.com",
+          "fivenum.mooo.com",
+          "foreverlove.zzux.com",
+          "forum.camdvr.org",
+          "fukebutt.zzux.com",
+          "googleupdate.myz.info",
+          "gulistan.wikaba.com",
+          "hcl.sexidude.com",
+          "hostmail1.com",
+          "https.dnset.com",
+          "https.otzo.com",
+          "https.vizvaz.com",
+          "inbsnl.ddns.info",
+          "inbsnl.ddns.ms",
+          "indiaeducation.mefound.com",
+          "indian.mefound.com",
+          "indianmail.zyns.com",
+          "itsupport.firewall-gateway.net",
+          "jpgdowngaussip.ddns.info",
+          "kelimelerdunyasi.org",
+          "koreckaccord01.zzux.com",
+          "lexuz.dns05.com",
+          "lexuz.x24hr.com",
+          "linkedin.organiccrap.com",
+          "locker.camdvr.org",
+          "login.kozow.com",
+          "logonfaker.longmusic.com",
+          "macfee.webredirect.org",
+          "macfeesyn.ns01.info",
+          "macfeeupdate.ddns.info",
+          "mall.mywire.org",
+          "manual.gleeze.com",
+          "manuals.wikaba.com",
+          "menus.giize.com",
+          "menus.kozow.com",
+          "mfedownload.freetcp.com",
+          "mfeupdate.ddns.info",
+          "mfeupload.freetcp.com",
+          "miche.justdied.com",
+          "msgsober.xxuz.com",
+          "msn.dnsnet.com",
+          "notice.theworkpc.com",
+          "nproccshow.zyns.com",
+          "otc.toythieves.com",
+          "pisces.zzux.com",
+          "prace.gleeze.com",
+          "pracute.camdvr.org",
+          "queryinfo.mrbonus.com",
+          "quickheal.firewall-gateway.net",
+          "randomanalyze.freetcp.com",
+          "rastelcs.kozow.com",
+          "rci.ddns.info",
+          "redhatboy.dynamic-dns.net",
+          "scorpio.zzux.com",
+          "secindia.mywire.org",
+          "secssl.ooguy.com",
+          "secssl.theworkpc.com",
+          "secupdate.kozow.com",
+          "skylineline.crabdance.com",
+          "smcupdate.mooo.com",
+          "srcrail.kozow.com",
+          "stratejibilimi.com",
+          "sunway2.chickenkiller.com",
+          "superkelimeler.com",
+          "supports.casacam.net",
+          "supports.gleeze.com",
+          "sysman.ddnsgeek.com",
+          "sysmantec.firewall-gateway.net",
+          "sysmantec.organiccrap.com",
+          "thinkv.dynamic-dns.net",
+          "thinkv.epac.to",
+          "trand.mefound.com",
+          "updateinfo.kozow.com",
+          "water.xxuz.com",
+          "wawaqq.ddns.info",
+          "whitepages.dynamic-dns.net",
+          "wsliversourcecor.epac.to",
+          "yatedo.organiccrap.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf",
+        "https://github.com/Insikt-Group/Research/blob/master/RedFoxtrot%20June%202021",
+        "https://otx.alienvault.com/pulse/60cc709013f5498fe7e60120"
+      ],
+      "total": 93
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-10",
+      "indicators": {
+        "domain": [
+          "capture.kozow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf",
+        "https://github.com/Insikt-Group/Research/blob/master/RedFoxtrot%20June%202021",
+        "https://otx.alienvault.com/pulse/60cc709013f5498fe7e60120"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "aries.epac.to",
+          "honoroftajik.dynamic-dns.net",
+          "https.ikwb.com",
+          "laugh.toh.info",
+          "nicodonald.accesscam.org",
+          "niteast.strangled.net",
+          "tajikstantravel.dynamic-dns.net",
+          "trendiis.sixth.biz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf",
+        "https://github.com/Insikt-Group/Research/blob/master/RedFoxtrot%20June%202021",
+        "https://otx.alienvault.com/pulse/60cc709013f5498fe7e60120"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-01-08",
+      "indicators": {
+        "domain": [
+          "kastygost.compress.to",
+          "skylineqaz.crabdance.com",
+          "tele.zyns.com",
+          "uzwatersource.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2021-0616.pdf",
+        "https://github.com/Insikt-Group/Research/blob/master/RedFoxtrot%20June%202021",
+        "https://otx.alienvault.com/pulse/60cc709013f5498fe7e60120"
+      ],
+      "total": 4
+    }
+  ]
+}

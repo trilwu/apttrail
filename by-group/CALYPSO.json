@@ -1,0 +1,326 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 30,
+    "ipv4": 3,
+    "url": 5
+  },
+  "first_seen": {
+    "domain": {
+      "aztecoo.com": "2021-03-31",
+      "blog.globnewsline.com": "2022-04-26",
+      "clark.l8t.net": "2022-04-26",
+      "dealsgle.com": "2019-10-31",
+      "draconess.com": "2021-03-31",
+      "etheraval.com": "2022-04-26",
+      "globnewsline.com": "2021-12-01",
+      "krgod.qqm8.com": "2019-10-31",
+      "mail.globnewsline.com": "2021-12-01",
+      "mail.sultris.com": "2022-04-26",
+      "membrig.com": "2021-03-31",
+      "pop3.wordmoss.com": "2022-04-26",
+      "prowesoo.com": "2021-03-31",
+      "r01.etheraval.com": "2019-10-31",
+      "rawfuns.com": "2021-03-31",
+      "rosyfund.com": "2021-03-31",
+      "streleases.com": "2022-04-26",
+      "sultris.com": "2019-10-31",
+      "surfanny.com": "2022-04-26",
+      "tc.streleases.com": "2019-10-31",
+      "teldcomtv.com": "2022-04-26",
+      "tv.teldcomtv.com": "2019-10-31",
+      "usergetacss.com": "2022-04-26",
+      "uv.usergetacss.com": "2020-05-26",
+      "waxgon.com": "2021-03-31",
+      "webmail.surfanny.com": "2022-04-26",
+      "wordmoss.com": "2022-04-26",
+      "yolkish.com": "2021-03-31",
+      "youtubemail.club": "2022-04-26",
+      "zmail.wordmoss.com": "2022-04-26"
+    },
+    "ipv4": {
+      "103.224.82.47:321": "2019-10-31",
+      "103.224.82.47:445": "2019-10-31",
+      "46.105.227.110:7003": "2019-10-31"
+    },
+    "url": {
+      "http://23.227.207.137": "2019-10-31",
+      "http://36.44.74.47": "2019-10-31",
+      "http://45.63.114.127": "2019-10-31",
+      "http://45.63.96.120": "2019-10-31",
+      "http://46.166.129.241": "2019-10-31"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-31",
+    "latest": "2022-04-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aztecoo.com",
+      "blog.globnewsline.com",
+      "clark.l8t.net",
+      "dealsgle.com",
+      "draconess.com",
+      "etheraval.com",
+      "globnewsline.com",
+      "krgod.qqm8.com",
+      "mail.globnewsline.com",
+      "mail.sultris.com",
+      "membrig.com",
+      "pop3.wordmoss.com",
+      "prowesoo.com",
+      "r01.etheraval.com",
+      "rawfuns.com",
+      "rosyfund.com",
+      "streleases.com",
+      "sultris.com",
+      "surfanny.com",
+      "tc.streleases.com",
+      "teldcomtv.com",
+      "tv.teldcomtv.com",
+      "usergetacss.com",
+      "uv.usergetacss.com",
+      "waxgon.com",
+      "webmail.surfanny.com",
+      "wordmoss.com",
+      "yolkish.com",
+      "youtubemail.club",
+      "zmail.wordmoss.com"
+    ],
+    "ipv4": [
+      "103.224.82.47:321",
+      "103.224.82.47:445",
+      "46.105.227.110:7003"
+    ],
+    "url": [
+      "http://23.227.207.137",
+      "http://36.44.74.47",
+      "http://45.63.114.127",
+      "http://45.63.96.120",
+      "http://46.166.129.241"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CALYPSO"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/60638f7aff63f9956797e899",
+    "https://otx.alienvault.com/pulse/6267dbe17cdc91a784b256d6",
+    "https://st.drweb.com/static/new-www/news/2022/march/telecom_research_en.pdf",
+    "https://twitter.com/TI_ESC/status/1264843775232421888",
+    "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/calypso-apt-2019-eng.pdf",
+    "https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/",
+    "https://www.recordedfuture.com/chinese-group-calypso-exploiting-microsoft-exchange/",
+    "https://www.virustotal.com/gui/file/a32b3e0f9b0daaaea6ddda9875f463ff100a28005eb66a03c0308a1820787fce/detection",
+    "https://www.virustotal.com/gui/file/aea4d3d01ab9a564ca12af0d1a8b5eecb381a409b30b3ac8fee13f85f8e8db24/detection",
+    "https://www.virustotal.com/gui/ip-address/46.105.227.110/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "XPATH"
+    }
+  ],
+  "slug": "CALYPSO",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "blog.globnewsline.com",
+          "clark.l8t.net",
+          "mail.sultris.com",
+          "pop3.wordmoss.com",
+          "surfanny.com",
+          "webmail.surfanny.com",
+          "wordmoss.com",
+          "youtubemail.club",
+          "zmail.wordmoss.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://st.drweb.com/static/new-www/news/2022/march/telecom_research_en.pdf",
+        "https://otx.alienvault.com/pulse/6267dbe17cdc91a784b256d6"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "etheraval.com",
+          "streleases.com",
+          "teldcomtv.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/",
+        "https://www.virustotal.com/gui/ip-address/46.105.227.110/relations",
+        "https://www.virustotal.com/gui/file/a32b3e0f9b0daaaea6ddda9875f463ff100a28005eb66a03c0308a1820787fce/detection",
+        "https://www.virustotal.com/gui/file/aea4d3d01ab9a564ca12af0d1a8b5eecb381a409b30b3ac8fee13f85f8e8db24/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-26",
+      "indicators": {
+        "domain": [
+          "usergetacss.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TI_ESC/status/1264843775232421888",
+        "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/calypso-apt-2019-eng.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-01",
+      "indicators": {
+        "domain": [
+          "globnewsline.com",
+          "mail.globnewsline.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://st.drweb.com/static/new-www/news/2022/march/telecom_research_en.pdf",
+        "https://otx.alienvault.com/pulse/6267dbe17cdc91a784b256d6"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2021-03-31",
+      "indicators": {
+        "domain": [
+          "aztecoo.com",
+          "draconess.com",
+          "membrig.com",
+          "prowesoo.com",
+          "rawfuns.com",
+          "rosyfund.com",
+          "waxgon.com",
+          "yolkish.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/chinese-group-calypso-exploiting-microsoft-exchange/",
+        "https://otx.alienvault.com/pulse/60638f7aff63f9956797e899"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-26",
+      "indicators": {
+        "domain": [
+          "uv.usergetacss.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TI_ESC/status/1264843775232421888",
+        "https://www.ptsecurity.com/upload/corporate/ww-en/analytics/calypso-apt-2019-eng.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 3,
+        "url": 5
+      },
+      "first_seen": "2019-10-31",
+      "indicators": {
+        "domain": [
+          "dealsgle.com",
+          "krgod.qqm8.com",
+          "r01.etheraval.com",
+          "tc.streleases.com",
+          "tv.teldcomtv.com"
+        ],
+        "ipv4": [
+          "103.224.82.47:321",
+          "103.224.82.47:445",
+          "46.105.227.110:7003"
+        ],
+        "url": [
+          "http://23.227.207.137",
+          "http://36.44.74.47",
+          "http://45.63.114.127",
+          "http://45.63.96.120",
+          "http://46.166.129.241"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/",
+        "https://www.virustotal.com/gui/ip-address/46.105.227.110/relations",
+        "https://www.virustotal.com/gui/file/a32b3e0f9b0daaaea6ddda9875f463ff100a28005eb66a03c0308a1820787fce/detection",
+        "https://www.virustotal.com/gui/file/aea4d3d01ab9a564ca12af0d1a8b5eecb381a409b30b3ac8fee13f85f8e8db24/detection"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-31",
+      "indicators": {
+        "domain": [
+          "sultris.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/calypso-apt-2019/",
+        "https://www.virustotal.com/gui/ip-address/46.105.227.110/relations",
+        "https://www.virustotal.com/gui/file/a32b3e0f9b0daaaea6ddda9875f463ff100a28005eb66a03c0308a1820787fce/detection",
+        "https://www.virustotal.com/gui/file/aea4d3d01ab9a564ca12af0d1a8b5eecb381a409b30b3ac8fee13f85f8e8db24/detection",
+        "https://www.recordedfuture.com/chinese-group-calypso-exploiting-microsoft-exchange/",
+        "https://otx.alienvault.com/pulse/60638f7aff63f9956797e899",
+        "https://st.drweb.com/static/new-www/news/2022/march/telecom_research_en.pdf",
+        "https://otx.alienvault.com/pulse/6267dbe17cdc91a784b256d6"
+      ],
+      "total": 1
+    }
+  ]
+}

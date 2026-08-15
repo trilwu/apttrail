@@ -1,0 +1,555 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "664ed2ca-1ddc-5929-85b4-a6ea21454ff1",
+        "value": "alphastoned.pro"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "610ef025-27ea-59f4-8b82-d61ecddc9e30",
+        "value": "amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4d42739e-f926-51b9-a065-8f46f11b4f60",
+        "value": "app-ins-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e49c0f77-655e-577e-82d3-646ed69da24e",
+        "value": "app-ins-002.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bbf6eca1-290f-5a63-9163-2ae58ed8a4af",
+        "value": "app-l01.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "888968c5-df1c-5ee6-a224-3f7bb3657f04",
+        "value": "app-l03.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d1a985b8-ca06-5652-96aa-afb14f700492",
+        "value": "app-l03.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696172939",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d282fc2b-af73-56aa-90fa-324ee41248c3",
+        "value": "app-l07.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c49b3369-2305-5183-ac51-a1192d52dfdf",
+        "value": "automatinghrservices.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "01405870-2fb0-57fe-9c60-c44a08a5a166",
+        "value": "bora.teracloud.jp"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "13b081aa-bedc-5808-b999-8ad6e8ffa5a0",
+        "value": "buyhighroad.scienceontheweb.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2b3c1170-f41e-5be9-90bf-5ef414eb7695",
+        "value": "cdn.wgroadcdn.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fc92bc09-5973-5e72-a2ad-ade8d2694ccd",
+        "value": "clever.forcloudnetworks.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694208066",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f8f20f2e-194c-5927-a27b-1884e07cad85",
+        "value": "cloud-01.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "537a94db-8ca1-5389-9db2-2ab87cd7a28f",
+        "value": "community.rmobileappdevelopment.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7b4ccead-b842-50d4-98a8-b980ed43df39",
+        "value": "ctrl1.sm.advhost.co.uk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "04cda8b9-dd73-53a9-b23e-c166863c56ad",
+        "value": "cvsend.resumeexpert.cloud"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f911bd50-5def-5d89-9dcd-9ee469c18a97",
+        "value": "datascience.iotconnectivity.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ef6f84fa-f949-54bf-89b4-df741bde2018",
+        "value": "dav.automatinghrservices.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3e5e46cf-a1ad-51cb-9413-1078f2b6f9e7",
+        "value": "dav.cloud-01.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2008641d-8fc1-5931-9c9c-1d8a55188a5d",
+        "value": "dav.linkedin-cloud-manager.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1e7d488f-5c8e-5b78-b193-1c7f742cbbf5",
+        "value": "eap.byethost10.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "019b37d1-3509-5efe-a22b-55481bd845fb",
+        "value": "earthmart.c1.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1707294718",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b494a4c9-2c84-5670-82c8-51d13baaab87",
+        "value": "fiona.forcloudnetworks.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "60dd1fc5-4d9b-506f-8e70-ef941a37d408",
+        "value": "forcloudnetworks.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7a4724a3-286a-5b54-827a-c432e4f96b4f",
+        "value": "hfn-c-001.cc.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7ee9e295-5e17-5917-957b-50f4d20576b1",
+        "value": "hwsrv-1048332.hostwindsdns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5b2f1440-f9d8-5391-97dc-4adae535c2a1",
+        "value": "ksg-c-001.cc.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "628d7ee2-54c3-59cd-959f-f36b39c91f3e",
+        "value": "ksg-c-002.cc.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "86598183-db74-54c8-b4fe-c7686f039622",
+        "value": "ktr-cn-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "49bf68fb-6c10-5705-ad61-cffde95ea667",
+        "value": "ktr-cn-002.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c5d363c7-0e8e-5a7e-b556-33740ea1d9cd",
+        "value": "l-dn-01.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8871eedb-3488-52bf-9dc9-20bfc288d109",
+        "value": "l-dn-02.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "54bb4188-452f-5466-a42b-62779ac3ce18",
+        "value": "l3-dn-01.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "887980d5-604d-50d7-bfd6-d58356635cbe",
+        "value": "l4-dn-01.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "83127e01-819c-51fb-8f97-442d71c2779b",
+        "value": "l7-dn-01.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694208066",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b2b77cb8-c13b-5140-bc05-c9b234a536f6",
+        "value": "linkedin-cloud-manager.servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "938533cc-a19c-52e7-932c-11443d1c06ad",
+        "value": "live.airemoteplant.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "74549b28-42f0-5d66-8958-fcaa5e62a8e4",
+        "value": "live.itsmartuniverse.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "813bfdc8-ba12-5e97-81c7-9d9423adddea",
+        "value": "m-dn-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "de6c55d5-20cb-524f-a98f-f0544f1495e7",
+        "value": "m-dn-002.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "78c09e0b-90a5-544c-9098-bb6e3ab30f49",
+        "value": "mainsts-01.cn.alphastoned.pro"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c8e67ad0-de34-5c71-99b4-b1ec62b9d8e0",
+        "value": "mia.nl.tab.digital"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "69ecbaab-93f3-57ea-991e-dc9ffff979b5",
+        "value": "msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7d3dccc9-fd3f-5d42-8921-b5653aa3fa7b",
+        "value": "mtk-cn-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "134b7907-d6f1-5be3-8296-9d0756dc5f79",
+        "value": "mtk-cn-002.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d2aaaeab-670a-511c-9f4c-d7703d864e19",
+        "value": "quiet.msftlivecloudsrv.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "503fd7a0-751e-533b-a502-dcc3486ea257",
+        "value": "rl-cn-s-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "31036d71-b40b-5108-bce5-7a39a40f97a4",
+        "value": "servicehost.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739795762",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ee301da-09eb-525b-ad61-d550655518df",
+        "value": "sm.vbigdatasolutions.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "664a504d-60e2-544b-98d5-6f9f8f7f9575",
+        "value": "ss-cn-001.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e704d896-a20e-511e-bc58-1752c4562bed",
+        "value": "ss-cn-002.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4f25bef4-ea0e-52ce-a4ef-25ecff73b7a6",
+        "value": "sup.wgsphere.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2c598baf-8830-523b-9027-fe9e2464fbb1",
+        "value": "tdnmouse.atspace.eu"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1694207996",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ec8092c0-dc07-50ab-bbda-b9589fe234c5",
+        "value": "test.amscloudhost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696586290",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6dd1a236-a9fd-5218-a98c-ff4832c8d5e0",
+        "value": "trur-c-001.cc.msftcloud.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "72e8ed83-c870-5946-a09d-26749a41bf63",
+        "value": "wgroadcdn.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12856772-46a1-5d9f-9e32-fdd2970f1bc1",
+        "value": "wgsphere.workers.dev"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "747c44f1-8556-54fa-9abe-920bb8bd08c4",
+        "value": "188.130.207.253:10310"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1736494294",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ee3bf041-e49a-5fcf-a582-78288bf0ef49",
+        "value": "193.176.158.30:40141"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1707294772",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "06610264-5a48-5f1b-ad90-d4c61eb3d43a",
+        "value": "/ldn20_seek"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696172939",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "4e6ec0ed-71a9-564b-9b99-61257f5640f8",
+        "value": "/ldn21_amazon"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1707294772",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "d8189118-d0d4-56d9-b429-7c90248c7af0",
+        "value": "/ldn22_samsung"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1696590141",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "193a908b-8231-5ce3-8614-7adf6efdc3dd",
+        "value": "/ldn23_samsung"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1707294772",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "180eaec9-aa13-57ce-92aa-d362b5e8ad0b",
+        "value": "/ldn25_cv_au"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:redwolf"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"RedCurl - G1039\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: RedCurl (G1039) - Maltrail group REDWOLF",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "7f5546a0-3946-5c56-804a-221e34bdce5f"
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "aliases": [
+    "uta0178",
+    "verdantbamboo",
+    "warppanda"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 39,
+    "ipv4": 6,
+    "url": 26,
+    "url_path": 7
+  },
+  "first_seen": {
+    "domain": {
+      "172-235-56-113.plesk.page": "2026-06-05",
+      "abbeglasses.s3.amazonaws.com": "2026-01-02",
+      "abode-dashboard-media.s3.ap-south-1.amazonaws.com": "2024-06-15",
+      "api.d-n-s.name": "2024-01-22",
+      "archivevalley-media.s3.amazonaws.com": "2024-06-15",
+      "azdatastore.workers.dev": "2026-06-05",
+      "barannclinic.com": "2026-06-05",
+      "bititer.org": "2026-06-05",
+      "blooming.s3.amazonaws.com": "2024-06-15",
+      "calixcloudinfo.com": "2026-06-05",
+      "catcher.requestcatcher.com": "2024-01-22",
+      "clickcom.click": "2024-01-22",
+      "clicko.click": "2024-02-03",
+      "devs.calixcloudinfo.com": "2026-06-05",
+      "duorhytm.fun": "2024-01-22",
+      "faoith.com": "2026-06-05",
+      "fconnect.s3.amazonaws.com": "2026-01-02",
+      "fiveworkscorp.com": "2026-06-05",
+      "gpoaccess.com": "2024-01-12",
+      "kitfloor.org": "2026-06-05",
+      "line-api.com": "2024-01-22",
+      "msazure.azdatastore.workers.dev": "2026-06-05",
+      "natsupport.net": "2026-06-05",
+      "openrbf.s3.amazonaws.com": "2026-01-02",
+      "performanceviewtools.com": "2026-06-05",
+      "psecure.pro": "2024-01-22",
+      "safe.rocks": "2024-01-22",
+      "secure-cama.com": "2024-01-22",
+      "service.systemsvcs.com": "2026-06-05",
+      "shapefiles.fews.net.s3.amazonaws.com": "2024-06-15",
+      "symantke.com": "2024-01-12",
+      "systemsvcs.com": "2026-06-05",
+      "telemetry.psecure.pro": "2024-01-22",
+      "the-mentor.s3.amazonaws.com": "2026-01-02",
+      "tkshopqd.s3.amazonaws.com": "2026-01-02",
+      "tnegadge.s3.amazonaws.com": "2026-01-02",
+      "trkbucket.s3.amazonaws.com": "2026-01-02",
+      "webb-institute.com": "2024-01-12",
+      "winfoacacorp.com": "2026-06-05"
+    },
+    "ipv4": {
+      "146.0.228.66:1080": "2024-01-22",
+      "146.0.228.66:8111": "2024-01-22",
+      "45.227.255.213:30303": "2024-01-22",
+      "66.42.68.120:443": "2024-01-22",
+      "8.137.112.245:8001": "2024-01-22",
+      "81.2.216.78:29742": "2024-01-24"
+    },
+    "url": {
+      "areekaweb.com/js/chat.php": "2024-01-22",
+      "cpanel.netbar.org/assets/js/xml.php": "2024-01-22",
+      "dcgems.net/plugins/authentication/auth.php": "2024-01-22",
+      "ehangmun.com/board/selectbox/xml.php": "2024-01-22",
+      "entraide-internationale.fr/IMG/xml.php": "2024-01-22",
+      "http://152.32.128.64": "2024-01-22",
+      "http://154.223.17.218": "2024-01-22",
+      "http://159.65.130.146": "2024-01-22",
+      "http://173.220.106.166": "2024-01-12",
+      "http://173.53.43.7": "2024-01-12",
+      "http://206.189.208.156": "2024-01-12",
+      "http://35.201.216.249": "2024-01-22",
+      "http://47.207.9.89": "2024-01-12",
+      "http://50.213.208.89": "2024-01-12",
+      "http://50.215.39.49": "2024-01-12",
+      "http://50.243.177.161": "2024-01-12",
+      "http://64.24.179.210": "2024-01-12",
+      "http://71.127.149.194": "2024-01-12",
+      "http://73.128.178.221": "2024-01-12",
+      "http://75.145.224.109": "2024-01-12",
+      "http://75.145.243.85": "2024-01-12",
+      "http://89.23.107.155": "2024-01-22",
+      "http://91.92.254.14": "2024-01-22",
+      "http://98.160.48.170": "2024-01-12",
+      "miltonhouse.nl/assets/js/xml.php": "2024-01-22",
+      "nssa.gov.mm/temp/get.php": "2024-09-05"
+    },
+    "url_path": {
+      "/T7cNxSSK4d/": "2024-01-24",
+      "/T7cNxSSK4d/lib": "2024-01-24",
+      "/T7cNxSSK4d/upd.sh": "2024-01-24",
+      "/dG7n47d7Gz/": "2024-01-24",
+      "/dG7n47d7Gz/lib": "2024-01-24",
+      "/dG7n47d7Gz/upd.sh": "2024-01-24",
+      "/lastauthserverused.js": "2024-09-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "abbeglasses.s3.amazonaws.com": "at-or-before",
+      "fconnect.s3.amazonaws.com": "at-or-before",
+      "openrbf.s3.amazonaws.com": "at-or-before",
+      "the-mentor.s3.amazonaws.com": "at-or-before",
+      "tkshopqd.s3.amazonaws.com": "at-or-before",
+      "tnegadge.s3.amazonaws.com": "at-or-before",
+      "trkbucket.s3.amazonaws.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-01-12",
+    "latest": "2026-06-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "172-235-56-113.plesk.page",
+      "abbeglasses.s3.amazonaws.com",
+      "abode-dashboard-media.s3.ap-south-1.amazonaws.com",
+      "api.d-n-s.name",
+      "archivevalley-media.s3.amazonaws.com",
+      "azdatastore.workers.dev",
+      "barannclinic.com",
+      "bititer.org",
+      "blooming.s3.amazonaws.com",
+      "calixcloudinfo.com",
+      "catcher.requestcatcher.com",
+      "clickcom.click",
+      "clicko.click",
+      "devs.calixcloudinfo.com",
+      "duorhytm.fun",
+      "faoith.com",
+      "fconnect.s3.amazonaws.com",
+      "fiveworkscorp.com",
+      "gpoaccess.com",
+      "kitfloor.org",
+      "line-api.com",
+      "msazure.azdatastore.workers.dev",
+      "natsupport.net",
+      "openrbf.s3.amazonaws.com",
+      "performanceviewtools.com",
+      "psecure.pro",
+      "safe.rocks",
+      "secure-cama.com",
+      "service.systemsvcs.com",
+      "shapefiles.fews.net.s3.amazonaws.com",
+      "symantke.com",
+      "systemsvcs.com",
+      "telemetry.psecure.pro",
+      "the-mentor.s3.amazonaws.com",
+      "tkshopqd.s3.amazonaws.com",
+      "tnegadge.s3.amazonaws.com",
+      "trkbucket.s3.amazonaws.com",
+      "webb-institute.com",
+      "winfoacacorp.com"
+    ],
+    "ipv4": [
+      "146.0.228.66:1080",
+      "146.0.228.66:8111",
+      "45.227.255.213:30303",
+      "66.42.68.120:443",
+      "8.137.112.245:8001",
+      "81.2.216.78:29742"
+    ],
+    "url": [
+      "areekaweb.com/js/chat.php",
+      "cpanel.netbar.org/assets/js/xml.php",
+      "dcgems.net/plugins/authentication/auth.php",
+      "ehangmun.com/board/selectbox/xml.php",
+      "entraide-internationale.fr/IMG/xml.php",
+      "http://152.32.128.64",
+      "http://154.223.17.218",
+      "http://159.65.130.146",
+      "http://173.220.106.166",
+      "http://173.53.43.7",
+      "http://206.189.208.156",
+      "http://35.201.216.249",
+      "http://47.207.9.89",
+      "http://50.213.208.89",
+      "http://50.215.39.49",
+      "http://50.243.177.161",
+      "http://64.24.179.210",
+      "http://71.127.149.194",
+      "http://73.128.178.221",
+      "http://75.145.224.109",
+      "http://75.145.243.85",
+      "http://89.23.107.155",
+      "http://91.92.254.14",
+      "http://98.160.48.170",
+      "miltonhouse.nl/assets/js/xml.php",
+      "nssa.gov.mm/temp/get.php"
+    ],
+    "url_path": [
+      "/T7cNxSSK4d/",
+      "/T7cNxSSK4d/lib",
+      "/T7cNxSSK4d/upd.sh",
+      "/dG7n47d7Gz/",
+      "/dG7n47d7Gz/lib",
+      "/dG7n47d7Gz/upd.sh",
+      "/lastauthserverused.js"
+    ]
+  },
+  "last_modified": "2026-06-05T22:22:43+00:00",
+  "maltrail_groups": [
+    "UNC5221"
+  ],
+  "references": [
+    "https://blog.eclecticiq.com/china-nexus-threat-actor-actively-exploiting-ivanti-endpoint-manager-mobile-cve-2025-4428-vulnerability",
+    "https://cloud.google.com/blog/topics/threat-intelligence/investigating-ivanti-zero-day-exploitation/",
+    "https://github.com/Gi7w0rm/MalwareConfigLists/blob/main/Ivanti_Connect_Secure_backdoors.txt",
+    "https://github.com/HarfangLab/iocs/blob/main/iv_lastauthserverused_js/20240122_lastauthserverused_js.txt",
+    "https://github.com/SEKOIA-IO/Community/blob/main/IOCs/CVE-2023-46805_CVE-2024-21887/Ivanti_iocs_20240124.csv",
+    "https://github.com/volexity/threat-intel/blob/main/2024/2024-01-18%20Ivanti%20Connect%20Secure%20pt3/indicators/iocs.csv",
+    "https://github.com/volexity/threat-intel/blob/main/2026/2026-06-04%20VerdantBamboo/iocs.csv",
+    "https://otx.alienvault.com/pulse/65aa779d249935925e76fe93",
+    "https://twitter.com/JusticeRage/status/1749466349309501570",
+    "https://twitter.com/felixaime/status/1749454051601776979",
+    "https://www.mandiant.com/resources/blog/investigating-ivanti-zero-day-exploitation",
+    "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day",
+    "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day (# LIGHTWIRE, WIREFIRE)",
+    "https://www.virustotal.com/gui/file/1662268ef5e797a480c963d8899d70112aa186f28780311ca5aabac0e54c074b/detection",
+    "https://www.virustotal.com/gui/file/6a24558987bbdb6dafc81948abeb9115ec686385594bb0a51fa1cbe4a5f9a98e/detection",
+    "https://www.virustotal.com/gui/file/bebf615de9018e36e2acca7dfa3ff17e5c921c1e5c0f438dc7ba1247f2b1b246/detection",
+    "https://www.volexity.com/blog/2024/01/10/active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn/",
+    "https://www.volexity.com/blog/2024/01/18/ivanti-connect-secure-vpn-exploitation-new-observations/",
+    "https://www.volexity.com/blog/2026/06/04/verdantbamboo-just-another-brickstorm-in-the-firewall/",
+    "https://x.com/WhichbufferArda/status/1925210805793955889",
+    "https://x.com/blackorbird/status/2062934926392275391"
+  ],
+  "related": [],
+  "slug": "UNC5221",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2026-06-05",
+      "indicators": {
+        "domain": [
+          "172-235-56-113.plesk.page",
+          "azdatastore.workers.dev",
+          "barannclinic.com",
+          "bititer.org",
+          "calixcloudinfo.com",
+          "devs.calixcloudinfo.com",
+          "faoith.com",
+          "fiveworkscorp.com",
+          "kitfloor.org",
+          "msazure.azdatastore.workers.dev",
+          "natsupport.net",
+          "performanceviewtools.com",
+          "service.systemsvcs.com",
+          "systemsvcs.com",
+          "winfoacacorp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/2062934926392275391",
+        "https://www.volexity.com/blog/2026/06/04/verdantbamboo-just-another-brickstorm-in-the-firewall/",
+        "https://github.com/volexity/threat-intel/blob/main/2026/2026-06-04%20VerdantBamboo/iocs.csv"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "abbeglasses.s3.amazonaws.com",
+          "fconnect.s3.amazonaws.com",
+          "openrbf.s3.amazonaws.com",
+          "the-mentor.s3.amazonaws.com",
+          "tkshopqd.s3.amazonaws.com",
+          "tnegadge.s3.amazonaws.com",
+          "trkbucket.s3.amazonaws.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/WhichbufferArda/status/1925210805793955889",
+        "https://blog.eclecticiq.com/china-nexus-threat-actor-actively-exploiting-ivanti-endpoint-manager-mobile-cve-2025-4428-vulnerability"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen": "2024-09-05",
+      "indicators": {
+        "url": [
+          "nssa.gov.mm/temp/get.php"
+        ],
+        "url_path": [
+          "/lastauthserverused.js"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/investigating-ivanti-zero-day-exploitation/",
+        "https://github.com/HarfangLab/iocs/blob/main/iv_lastauthserverused_js/20240122_lastauthserverused_js.txt"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-06-15",
+      "indicators": {
+        "domain": [
+          "abode-dashboard-media.s3.ap-south-1.amazonaws.com",
+          "archivevalley-media.s3.amazonaws.com",
+          "blooming.s3.amazonaws.com",
+          "shapefiles.fews.net.s3.amazonaws.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2024/01/18/ivanti-connect-secure-vpn-exploitation-new-observations/",
+        "https://otx.alienvault.com/pulse/65aa779d249935925e76fe93",
+        "https://github.com/volexity/threat-intel/blob/main/2024/2024-01-18%20Ivanti%20Connect%20Secure%20pt3/indicators/iocs.csv"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-02-03",
+      "indicators": {
+        "domain": [
+          "clicko.click"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/investigating-ivanti-zero-day-exploitation"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url_path": 6
+      },
+      "first_seen": "2024-01-24",
+      "indicators": {
+        "ipv4": [
+          "81.2.216.78:29742"
+        ],
+        "url_path": [
+          "/T7cNxSSK4d/",
+          "/T7cNxSSK4d/lib",
+          "/T7cNxSSK4d/upd.sh",
+          "/dG7n47d7Gz/",
+          "/dG7n47d7Gz/lib",
+          "/dG7n47d7Gz/upd.sh"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/SEKOIA-IO/Community/blob/main/IOCs/CVE-2023-46805_CVE-2024-21887/Ivanti_iocs_20240124.csv",
+        "https://www.virustotal.com/gui/file/1662268ef5e797a480c963d8899d70112aa186f28780311ca5aabac0e54c074b/detection",
+        "https://www.virustotal.com/gui/file/6a24558987bbdb6dafc81948abeb9115ec686385594bb0a51fa1cbe4a5f9a98e/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 4,
+        "url": 11
+      },
+      "first_seen": "2024-01-22",
+      "indicators": {
+        "domain": [
+          "api.d-n-s.name",
+          "catcher.requestcatcher.com",
+          "duorhytm.fun",
+          "safe.rocks",
+          "secure-cama.com"
+        ],
+        "ipv4": [
+          "146.0.228.66:1080",
+          "146.0.228.66:8111",
+          "66.42.68.120:443",
+          "8.137.112.245:8001"
+        ],
+        "url": [
+          "areekaweb.com/js/chat.php",
+          "cpanel.netbar.org/assets/js/xml.php",
+          "dcgems.net/plugins/authentication/auth.php",
+          "ehangmun.com/board/selectbox/xml.php",
+          "entraide-internationale.fr/IMG/xml.php",
+          "http://152.32.128.64",
+          "http://159.65.130.146",
+          "http://35.201.216.249",
+          "http://89.23.107.155",
+          "http://91.92.254.14",
+          "miltonhouse.nl/assets/js/xml.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day (# LIGHTWIRE, WIREFIRE)",
+        "https://github.com/Gi7w0rm/MalwareConfigLists/blob/main/Ivanti_Connect_Secure_backdoors.txt",
+        "https://www.virustotal.com/gui/file/bebf615de9018e36e2acca7dfa3ff17e5c921c1e5c0f438dc7ba1247f2b1b246/detection"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2024-01-22",
+      "indicators": {
+        "domain": [
+          "clickcom.click",
+          "line-api.com"
+        ],
+        "ipv4": [
+          "45.227.255.213:30303"
+        ],
+        "url": [
+          "http://154.223.17.218"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/JusticeRage/status/1749466349309501570"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-01-22",
+      "indicators": {
+        "domain": [
+          "psecure.pro",
+          "telemetry.psecure.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1749454051601776979"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "url": 13
+      },
+      "first_seen": "2024-01-12",
+      "indicators": {
+        "domain": [
+          "gpoaccess.com",
+          "symantke.com",
+          "webb-institute.com"
+        ],
+        "url": [
+          "http://173.220.106.166",
+          "http://173.53.43.7",
+          "http://206.189.208.156",
+          "http://47.207.9.89",
+          "http://50.213.208.89",
+          "http://50.215.39.49",
+          "http://50.243.177.161",
+          "http://64.24.179.210",
+          "http://71.127.149.194",
+          "http://73.128.178.221",
+          "http://75.145.224.109",
+          "http://75.145.243.85",
+          "http://98.160.48.170"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2024/01/10/active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn/",
+        "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day"
+      ],
+      "total": 16
+    }
+  ]
+}

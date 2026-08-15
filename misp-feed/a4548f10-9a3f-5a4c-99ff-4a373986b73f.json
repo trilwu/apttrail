@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9123aee2-8293-5ff7-a13d-a6f538e2fbe8",
+        "value": "com-securitysettingpage.tk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "733b21bd-d9d1-5e66-bbd4-5af2e00db430",
+        "value": "id4242.ga"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "eca95a9f-ade2-55be-a212-25e33cdce409",
+        "value": "id833.ga"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8afe0ecc-be18-5aa1-90d3-a677341de947",
+        "value": "id834.ga"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05dd8cad-fdcf-5dd0-beba-1d013aeeece6",
+        "value": "id9954.gq"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537589843",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5d8f669d-a136-54ae-944e-ddc6aceab0af",
+        "value": "mail-google-login.blogspot.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:rnexus"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: RNEXUS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a4548f10-9a3f-5a4c-99ff-4a373986b73f"
+  }
+}

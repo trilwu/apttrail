@@ -1,0 +1,98 @@
+{
+  "aliases": [
+    "KnuckleTouch",
+    "WrongSens"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 5,
+    "url": 2
+  },
+  "first_seen": {
+    "ipv4": {
+      "185.38.150.8:443": "2024-04-17",
+      "185.38.150.8:49736": "2024-04-17",
+      "88.80.148.65:443": "2024-04-17",
+      "88.80.148.65:49713": "2024-04-17",
+      "88.80.148.65:49714": "2024-04-17"
+    },
+    "url": {
+      "http://185.38.150.8": "2024-04-17",
+      "http://88.80.148.65": "2024-04-17"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-04-17",
+    "latest": "2024-04-17"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "185.38.150.8:443",
+      "185.38.150.8:49736",
+      "88.80.148.65:443",
+      "88.80.148.65:49713",
+      "88.80.148.65:49714"
+    ],
+    "url": [
+      "http://185.38.150.8",
+      "http://88.80.148.65"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "KAPEKA"
+  ],
+  "references": [
+    "https://labs.withsecure.com/publications/kapeka",
+    "https://twitter.com/WithSecure/status/1780510629394080165",
+    "https://twitter.com/smica83/status/1780518564341977501",
+    "https://www.joesandbox.com/analysis/1427251#iocs",
+    "https://www.joesandbox.com/analysis/1427252#iocs",
+    "https://www.virustotal.com/gui/file/272cfaebf22e0f6a34c0a93b7c9c5b67c725947ba0f17e60ed67dbf6e1602043/detection",
+    "https://www.virustotal.com/gui/file/bd07fb1e9b4768e7202de6cc454c78c6891270af02085c51fce5539db1386c3f/detection",
+    "https://www.virustotal.com/gui/file/f30b9f6e913798ca52154c88725ee262a7bf92fe7caac1ae2e5147e457b9b08a/detection"
+  ],
+  "related": [],
+  "slug": "KAPEKA",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 5,
+        "url": 2
+      },
+      "first_seen": "2024-04-17",
+      "indicators": {
+        "ipv4": [
+          "185.38.150.8:443",
+          "185.38.150.8:49736",
+          "88.80.148.65:443",
+          "88.80.148.65:49713",
+          "88.80.148.65:49714"
+        ],
+        "url": [
+          "http://185.38.150.8",
+          "http://88.80.148.65"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/WithSecure/status/1780510629394080165",
+        "https://twitter.com/smica83/status/1780518564341977501",
+        "https://labs.withsecure.com/publications/kapeka",
+        "https://www.joesandbox.com/analysis/1427252#iocs",
+        "https://www.joesandbox.com/analysis/1427251#iocs",
+        "https://www.virustotal.com/gui/file/f30b9f6e913798ca52154c88725ee262a7bf92fe7caac1ae2e5147e457b9b08a/detection",
+        "https://www.virustotal.com/gui/file/bd07fb1e9b4768e7202de6cc454c78c6891270af02085c51fce5539db1386c3f/detection",
+        "https://www.virustotal.com/gui/file/272cfaebf22e0f6a34c0a93b7c9c5b67c725947ba0f17e60ed67dbf6e1602043/detection"
+      ],
+      "total": 7
+    }
+  ]
+}

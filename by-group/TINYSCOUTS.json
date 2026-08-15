@@ -1,0 +1,492 @@
+{
+  "aliases": [
+    "oldgremlin",
+    "tinyfluff"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 26,
+    "ipv4": 2,
+    "url": 11
+  },
+  "first_seen": {
+    "domain": {
+      "a3c65c.org": "2022-04-14",
+      "broken-poetry-de86.nscimupf.workers.dev": "2020-09-27",
+      "calm-night-6067.bhrcaoqf.workers.dev": "2020-09-27",
+      "ccdn.microsoftdocs.workers.dev": "2020-09-02",
+      "curly-sound-d93e.ygrhxogxiogc.workers.dev": "2020-07-04",
+      "eccbc8.com": "2022-04-14",
+      "hello.tyvbxdobr0.workers.dev": "2020-08-21",
+      "ksdkpwpfrtyvbxdobr1.tiyvbxdobr1.workers.dev": "2020-09-27",
+      "ksdkpwprtyvbxdobr0.tyvbxdobr0.workers.dev": "2020-09-27",
+      "late-salad-2839.yriqwzjskbbg.workers.dev": "2020-08-21",
+      "mirfinance.org": "2022-04-14",
+      "noisy-cell-7d07.poecdjusb.workers.dev": "2020-09-27",
+      "ns1.a3c65c.org": "2022-04-14",
+      "ns1.eccbc8.com": "2022-04-14",
+      "ns2.a3c65c.org": "2022-04-14",
+      "ns2.eccbc8.com": "2022-04-14",
+      "ns3.a3c65c.org": "2022-04-14",
+      "ns3.eccbc8.com": "2022-04-14",
+      "ns4.a3c65c.org": "2022-04-14",
+      "ns4.eccbc8.com": "2022-04-14",
+      "odd-thunder-c853.tkbizulvc.workers.dev": "2020-08-21",
+      "old-mud-23cb.tkbizulvc.workers.dev": "2020-07-04",
+      "rbcholding.press": "2020-09-27",
+      "rough-grass-45e9.poecdjusb.workers.dev": "2020-05-18",
+      "wispy-fire-1da3.nscimupf.workers.dev": "2020-09-27",
+      "wispy-surf-fabd.bhrcaoqf.workers.dev": "2020-09-27"
+    },
+    "ipv4": {
+      "161.35.41.9:53:53": "2022-04-14",
+      "46.101.113.161:53": "2022-04-14"
+    },
+    "url": {
+      "http://136.244.67.59": "2020-09-27",
+      "http://159.65.198.79": "2022-09-05",
+      "http://161.35.41.9": "2022-04-14",
+      "http://164.92.205.182": "2022-07-28",
+      "http://192.248.165.254": "2020-08-13",
+      "http://192.248.176.138": "2022-03-25",
+      "http://45.32.147.46": "2022-08-24",
+      "http://45.61.138.170": "2020-07-04",
+      "http://46.101.113.161": "2022-04-14",
+      "http://5.181.156.84": "2020-09-27",
+      "http://95.179.252.217": "2020-09-27"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-05-18",
+    "latest": "2022-09-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "a3c65c.org",
+      "broken-poetry-de86.nscimupf.workers.dev",
+      "calm-night-6067.bhrcaoqf.workers.dev",
+      "ccdn.microsoftdocs.workers.dev",
+      "curly-sound-d93e.ygrhxogxiogc.workers.dev",
+      "eccbc8.com",
+      "hello.tyvbxdobr0.workers.dev",
+      "ksdkpwpfrtyvbxdobr1.tiyvbxdobr1.workers.dev",
+      "ksdkpwprtyvbxdobr0.tyvbxdobr0.workers.dev",
+      "late-salad-2839.yriqwzjskbbg.workers.dev",
+      "mirfinance.org",
+      "noisy-cell-7d07.poecdjusb.workers.dev",
+      "ns1.a3c65c.org",
+      "ns1.eccbc8.com",
+      "ns2.a3c65c.org",
+      "ns2.eccbc8.com",
+      "ns3.a3c65c.org",
+      "ns3.eccbc8.com",
+      "ns4.a3c65c.org",
+      "ns4.eccbc8.com",
+      "odd-thunder-c853.tkbizulvc.workers.dev",
+      "old-mud-23cb.tkbizulvc.workers.dev",
+      "rbcholding.press",
+      "rough-grass-45e9.poecdjusb.workers.dev",
+      "wispy-fire-1da3.nscimupf.workers.dev",
+      "wispy-surf-fabd.bhrcaoqf.workers.dev"
+    ],
+    "ipv4": [
+      "161.35.41.9:53:53",
+      "46.101.113.161:53"
+    ],
+    "url": [
+      "http://136.244.67.59",
+      "http://159.65.198.79",
+      "http://161.35.41.9",
+      "http://164.92.205.182",
+      "http://192.248.165.254",
+      "http://192.248.176.138",
+      "http://45.32.147.46",
+      "http://45.61.138.170",
+      "http://46.101.113.161",
+      "http://5.181.156.84",
+      "http://95.179.252.217"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TINYSCOUTS"
+  ],
+  "references": [
+    "https://app.any.run/tasks/f21e3a4f-b734-4285-96b4-d2f274e19413/",
+    "https://blog.group-ib.com/oldgremlin_comeback",
+    "https://otx.alienvault.com/pulse/5f6ccbe362057a239425fc18",
+    "https://rt-solar.ru/events/news/1915/ (Russian)",
+    "https://twitter.com/ShadowChasing1/status/1293834710703996928",
+    "https://twitter.com/ShadowChasing1/status/1552595370961944576",
+    "https://twitter.com/ShadowChasing1/status/1562242596789170177",
+    "https://twitter.com/ShadowChasing1/status/1566699481768542208",
+    "https://twitter.com/Vishnyak0v/status/1296696059264196608",
+    "https://twitter.com/_re_fox/status/1301143311391109120",
+    "https://twitter.com/k3yp0d/status/1552619518777868288",
+    "https://www.group-ib.com/blog/oldgremlin",
+    "https://www.securitylab.ru/blog/company/solarsecurity/349248.php (Russian)",
+    "https://www.virustotal.com/gui/file/076b9fac004cc230dec755809994595d75a8720bf57b90819158e549a25ff102/detection",
+    "https://www.virustotal.com/gui/file/095989e0b524af5e8cae7ac1b9c9018c0d7b5078691f129752c185535c975e68/detection",
+    "https://www.virustotal.com/gui/file/0a0889330501ee52ca5fe2b2f41fbcad7d26afce8bc430c7fe274e6ebe64c680/detection",
+    "https://www.virustotal.com/gui/file/0d6af4ebf5db891483091b2029a94a338907580191750c95f586440d32c1c533/detection",
+    "https://www.virustotal.com/gui/file/207cb54af358203cb7811202ef84e8dca523634951ddd5d7da101799136d4a5e/detection",
+    "https://www.virustotal.com/gui/file/23cfbb0bf1e110a79678f45c29897e6090b660d3df420bbb916fc3f1bc12eead/detection",
+    "https://www.virustotal.com/gui/file/268953af63bad4895dd06c024fd1ec2af2c134623a0e100e26894e4d6bab741e/detection",
+    "https://www.virustotal.com/gui/file/2df544ea3d70cde13fb66db5b82f1cf03fb1c53e7c7af95acafef5d98852b5a8/detection",
+    "https://www.virustotal.com/gui/file/49ee0b0d3dc11891d98a0ce31e2b91b2b5ded55e1ff9ae7cc1a4116b9acddebd/detection",
+    "https://www.virustotal.com/gui/file/5b229e1a2a86f59258d007385cf167760c3bb3377de41cf69c9ead4256c4fc45/detection",
+    "https://www.virustotal.com/gui/file/6269fd417f93e7c0d7cab576b35dc3b6f6a58c0f04e75533bad84987c228f0e6/detection",
+    "https://www.virustotal.com/gui/file/65267892a81d5e6c38c12d808623314ed9798156f3c24df2e8e906394fd51396/detection",
+    "https://www.virustotal.com/gui/file/75fa551eec71d6d8b9817266813715c2bbb7a537005587f9f1e0d058a05febc6/detection",
+    "https://www.virustotal.com/gui/file/9e6861c43efafcf3733d697ad91cd656e32702c46432f71e75ee26711c6dd953/detection",
+    "https://www.virustotal.com/gui/file/a77edbac6349f42a4220b91fdd9eef7b1bd964e14a9151a543abfecba4195925/detection",
+    "https://www.virustotal.com/gui/file/c598aa9156c5d1bacbdd7a4038c3cfe086611af1417b3a2e890c672eb199045e/detection",
+    "https://www.virustotal.com/gui/file/c6a2d72497aba7889a34f8805a859f6717b53d4959c6ec067d87de8103f91fe7/detection",
+    "https://www.virustotal.com/gui/file/e7d2deba4fccbea79ffa209ebe0ce49f98aecfb340c8d6ec3ea1773cb12cb07e/detection",
+    "https://www.virustotal.com/gui/file/f36305e01515b73607f0f8941d9093fabe1b7a7e3f90c18f137403a0f016cdff/detection",
+    "https://www.virustotal.com/gui/file/fb92611e3260e372be7799d17dd03109f5d0882efa3838923787ca8e16e31e06/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        },
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0047"
+    }
+  ],
+  "slug": "TINYSCOUTS",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-09-05",
+      "indicators": {
+        "url": [
+          "http://159.65.198.79"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1566699481768542208",
+        "https://www.virustotal.com/gui/file/9e6861c43efafcf3733d697ad91cd656e32702c46432f71e75ee26711c6dd953/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-08-24",
+      "indicators": {
+        "url": [
+          "http://45.32.147.46"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1562242596789170177",
+        "https://www.virustotal.com/gui/file/49ee0b0d3dc11891d98a0ce31e2b91b2b5ded55e1ff9ae7cc1a4116b9acddebd/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-07-28",
+      "indicators": {
+        "url": [
+          "http://164.92.205.182"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1552595370961944576",
+        "https://twitter.com/k3yp0d/status/1552619518777868288",
+        "https://www.virustotal.com/gui/file/fb92611e3260e372be7799d17dd03109f5d0882efa3838923787ca8e16e31e06/detection",
+        "https://www.virustotal.com/gui/file/5b229e1a2a86f59258d007385cf167760c3bb3377de41cf69c9ead4256c4fc45/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 11,
+        "ipv4": 2,
+        "url": 2
+      },
+      "first_seen": "2022-04-14",
+      "indicators": {
+        "domain": [
+          "a3c65c.org",
+          "eccbc8.com",
+          "mirfinance.org",
+          "ns1.a3c65c.org",
+          "ns1.eccbc8.com",
+          "ns2.a3c65c.org",
+          "ns2.eccbc8.com",
+          "ns3.a3c65c.org",
+          "ns3.eccbc8.com",
+          "ns4.a3c65c.org",
+          "ns4.eccbc8.com"
+        ],
+        "ipv4": [
+          "161.35.41.9:53:53",
+          "46.101.113.161:53"
+        ],
+        "url": [
+          "http://161.35.41.9",
+          "http://46.101.113.161"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.group-ib.com/oldgremlin_comeback",
+        "https://www.virustotal.com/gui/file/f36305e01515b73607f0f8941d9093fabe1b7a7e3f90c18f137403a0f016cdff/detection",
+        "https://www.virustotal.com/gui/file/0a0889330501ee52ca5fe2b2f41fbcad7d26afce8bc430c7fe274e6ebe64c680/detection"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-03-25",
+      "indicators": {
+        "url": [
+          "http://192.248.176.138"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.group-ib.com/oldgremlin_comeback",
+        "https://www.virustotal.com/gui/file/f36305e01515b73607f0f8941d9093fabe1b7a7e3f90c18f137403a0f016cdff/detection",
+        "https://www.virustotal.com/gui/file/0a0889330501ee52ca5fe2b2f41fbcad7d26afce8bc430c7fe274e6ebe64c680/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "url": 3
+      },
+      "first_seen": "2020-09-27",
+      "indicators": {
+        "domain": [
+          "broken-poetry-de86.nscimupf.workers.dev",
+          "calm-night-6067.bhrcaoqf.workers.dev",
+          "ksdkpwpfrtyvbxdobr1.tiyvbxdobr1.workers.dev",
+          "ksdkpwprtyvbxdobr0.tyvbxdobr0.workers.dev",
+          "noisy-cell-7d07.poecdjusb.workers.dev",
+          "rbcholding.press",
+          "wispy-fire-1da3.nscimupf.workers.dev",
+          "wispy-surf-fabd.bhrcaoqf.workers.dev"
+        ],
+        "url": [
+          "http://136.244.67.59",
+          "http://5.181.156.84",
+          "http://95.179.252.217"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.group-ib.com/blog/oldgremlin",
+        "https://otx.alienvault.com/pulse/5f6ccbe362057a239425fc18"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-09-02",
+      "indicators": {
+        "domain": [
+          "ccdn.microsoftdocs.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/_re_fox/status/1301143311391109120",
+        "https://app.any.run/tasks/f21e3a4f-b734-4285-96b4-d2f274e19413/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-08-21",
+      "indicators": {
+        "domain": [
+          "late-salad-2839.yriqwzjskbbg.workers.dev",
+          "odd-thunder-c853.tkbizulvc.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://rt-solar.ru/events/news/1915/ (Russian)",
+        "https://www.securitylab.ru/blog/company/solarsecurity/349248.php (Russian)",
+        "https://twitter.com/ShadowChasing1/status/1293834710703996928",
+        "https://twitter.com/Vishnyak0v/status/1296696059264196608",
+        "https://www.virustotal.com/gui/file/076b9fac004cc230dec755809994595d75a8720bf57b90819158e549a25ff102/detection",
+        "https://www.virustotal.com/gui/file/095989e0b524af5e8cae7ac1b9c9018c0d7b5078691f129752c185535c975e68/detection",
+        "https://www.virustotal.com/gui/file/0d6af4ebf5db891483091b2029a94a338907580191750c95f586440d32c1c533/detection",
+        "https://www.virustotal.com/gui/file/207cb54af358203cb7811202ef84e8dca523634951ddd5d7da101799136d4a5e/detection",
+        "https://www.virustotal.com/gui/file/23cfbb0bf1e110a79678f45c29897e6090b660d3df420bbb916fc3f1bc12eead/detection",
+        "https://www.virustotal.com/gui/file/268953af63bad4895dd06c024fd1ec2af2c134623a0e100e26894e4d6bab741e/detection",
+        "https://www.virustotal.com/gui/file/2df544ea3d70cde13fb66db5b82f1cf03fb1c53e7c7af95acafef5d98852b5a8/detection",
+        "https://www.virustotal.com/gui/file/6269fd417f93e7c0d7cab576b35dc3b6f6a58c0f04e75533bad84987c228f0e6/detection",
+        "https://www.virustotal.com/gui/file/65267892a81d5e6c38c12d808623314ed9798156f3c24df2e8e906394fd51396/detection",
+        "https://www.virustotal.com/gui/file/75fa551eec71d6d8b9817266813715c2bbb7a537005587f9f1e0d058a05febc6/detection",
+        "https://www.virustotal.com/gui/file/a77edbac6349f42a4220b91fdd9eef7b1bd964e14a9151a543abfecba4195925/detection",
+        "https://www.virustotal.com/gui/file/c598aa9156c5d1bacbdd7a4038c3cfe086611af1417b3a2e890c672eb199045e/detection",
+        "https://www.virustotal.com/gui/file/c6a2d72497aba7889a34f8805a859f6717b53d4959c6ec067d87de8103f91fe7/detection",
+        "https://www.virustotal.com/gui/file/e7d2deba4fccbea79ffa209ebe0ce49f98aecfb340c8d6ec3ea1773cb12cb07e/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-21",
+      "indicators": {
+        "domain": [
+          "hello.tyvbxdobr0.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://rt-solar.ru/events/news/1915/ (Russian)",
+        "https://www.securitylab.ru/blog/company/solarsecurity/349248.php (Russian)",
+        "https://twitter.com/ShadowChasing1/status/1293834710703996928",
+        "https://twitter.com/Vishnyak0v/status/1296696059264196608",
+        "https://www.virustotal.com/gui/file/076b9fac004cc230dec755809994595d75a8720bf57b90819158e549a25ff102/detection",
+        "https://www.virustotal.com/gui/file/095989e0b524af5e8cae7ac1b9c9018c0d7b5078691f129752c185535c975e68/detection",
+        "https://www.virustotal.com/gui/file/0d6af4ebf5db891483091b2029a94a338907580191750c95f586440d32c1c533/detection",
+        "https://www.virustotal.com/gui/file/207cb54af358203cb7811202ef84e8dca523634951ddd5d7da101799136d4a5e/detection",
+        "https://www.virustotal.com/gui/file/23cfbb0bf1e110a79678f45c29897e6090b660d3df420bbb916fc3f1bc12eead/detection",
+        "https://www.virustotal.com/gui/file/268953af63bad4895dd06c024fd1ec2af2c134623a0e100e26894e4d6bab741e/detection",
+        "https://www.virustotal.com/gui/file/2df544ea3d70cde13fb66db5b82f1cf03fb1c53e7c7af95acafef5d98852b5a8/detection",
+        "https://www.virustotal.com/gui/file/6269fd417f93e7c0d7cab576b35dc3b6f6a58c0f04e75533bad84987c228f0e6/detection",
+        "https://www.virustotal.com/gui/file/65267892a81d5e6c38c12d808623314ed9798156f3c24df2e8e906394fd51396/detection",
+        "https://www.virustotal.com/gui/file/75fa551eec71d6d8b9817266813715c2bbb7a537005587f9f1e0d058a05febc6/detection",
+        "https://www.virustotal.com/gui/file/a77edbac6349f42a4220b91fdd9eef7b1bd964e14a9151a543abfecba4195925/detection",
+        "https://www.virustotal.com/gui/file/c598aa9156c5d1bacbdd7a4038c3cfe086611af1417b3a2e890c672eb199045e/detection",
+        "https://www.virustotal.com/gui/file/c6a2d72497aba7889a34f8805a859f6717b53d4959c6ec067d87de8103f91fe7/detection",
+        "https://www.virustotal.com/gui/file/e7d2deba4fccbea79ffa209ebe0ce49f98aecfb340c8d6ec3ea1773cb12cb07e/detection",
+        "https://www.group-ib.com/blog/oldgremlin",
+        "https://otx.alienvault.com/pulse/5f6ccbe362057a239425fc18"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "url": [
+          "http://192.248.165.254"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://rt-solar.ru/events/news/1915/ (Russian)",
+        "https://www.securitylab.ru/blog/company/solarsecurity/349248.php (Russian)",
+        "https://twitter.com/ShadowChasing1/status/1293834710703996928",
+        "https://twitter.com/Vishnyak0v/status/1296696059264196608",
+        "https://www.virustotal.com/gui/file/076b9fac004cc230dec755809994595d75a8720bf57b90819158e549a25ff102/detection",
+        "https://www.virustotal.com/gui/file/095989e0b524af5e8cae7ac1b9c9018c0d7b5078691f129752c185535c975e68/detection",
+        "https://www.virustotal.com/gui/file/0d6af4ebf5db891483091b2029a94a338907580191750c95f586440d32c1c533/detection",
+        "https://www.virustotal.com/gui/file/207cb54af358203cb7811202ef84e8dca523634951ddd5d7da101799136d4a5e/detection",
+        "https://www.virustotal.com/gui/file/23cfbb0bf1e110a79678f45c29897e6090b660d3df420bbb916fc3f1bc12eead/detection",
+        "https://www.virustotal.com/gui/file/268953af63bad4895dd06c024fd1ec2af2c134623a0e100e26894e4d6bab741e/detection",
+        "https://www.virustotal.com/gui/file/2df544ea3d70cde13fb66db5b82f1cf03fb1c53e7c7af95acafef5d98852b5a8/detection",
+        "https://www.virustotal.com/gui/file/6269fd417f93e7c0d7cab576b35dc3b6f6a58c0f04e75533bad84987c228f0e6/detection",
+        "https://www.virustotal.com/gui/file/65267892a81d5e6c38c12d808623314ed9798156f3c24df2e8e906394fd51396/detection",
+        "https://www.virustotal.com/gui/file/75fa551eec71d6d8b9817266813715c2bbb7a537005587f9f1e0d058a05febc6/detection",
+        "https://www.virustotal.com/gui/file/a77edbac6349f42a4220b91fdd9eef7b1bd964e14a9151a543abfecba4195925/detection",
+        "https://www.virustotal.com/gui/file/c598aa9156c5d1bacbdd7a4038c3cfe086611af1417b3a2e890c672eb199045e/detection",
+        "https://www.virustotal.com/gui/file/c6a2d72497aba7889a34f8805a859f6717b53d4959c6ec067d87de8103f91fe7/detection",
+        "https://www.virustotal.com/gui/file/e7d2deba4fccbea79ffa209ebe0ce49f98aecfb340c8d6ec3ea1773cb12cb07e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2020-07-04",
+      "indicators": {
+        "domain": [
+          "curly-sound-d93e.ygrhxogxiogc.workers.dev",
+          "old-mud-23cb.tkbizulvc.workers.dev"
+        ],
+        "url": [
+          "http://45.61.138.170"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://rt-solar.ru/events/news/1915/ (Russian)",
+        "https://www.securitylab.ru/blog/company/solarsecurity/349248.php (Russian)",
+        "https://twitter.com/ShadowChasing1/status/1293834710703996928",
+        "https://twitter.com/Vishnyak0v/status/1296696059264196608",
+        "https://www.virustotal.com/gui/file/076b9fac004cc230dec755809994595d75a8720bf57b90819158e549a25ff102/detection",
+        "https://www.virustotal.com/gui/file/095989e0b524af5e8cae7ac1b9c9018c0d7b5078691f129752c185535c975e68/detection",
+        "https://www.virustotal.com/gui/file/0d6af4ebf5db891483091b2029a94a338907580191750c95f586440d32c1c533/detection",
+        "https://www.virustotal.com/gui/file/207cb54af358203cb7811202ef84e8dca523634951ddd5d7da101799136d4a5e/detection",
+        "https://www.virustotal.com/gui/file/23cfbb0bf1e110a79678f45c29897e6090b660d3df420bbb916fc3f1bc12eead/detection",
+        "https://www.virustotal.com/gui/file/268953af63bad4895dd06c024fd1ec2af2c134623a0e100e26894e4d6bab741e/detection",
+        "https://www.virustotal.com/gui/file/2df544ea3d70cde13fb66db5b82f1cf03fb1c53e7c7af95acafef5d98852b5a8/detection",
+        "https://www.virustotal.com/gui/file/6269fd417f93e7c0d7cab576b35dc3b6f6a58c0f04e75533bad84987c228f0e6/detection",
+        "https://www.virustotal.com/gui/file/65267892a81d5e6c38c12d808623314ed9798156f3c24df2e8e906394fd51396/detection",
+        "https://www.virustotal.com/gui/file/75fa551eec71d6d8b9817266813715c2bbb7a537005587f9f1e0d058a05febc6/detection",
+        "https://www.virustotal.com/gui/file/a77edbac6349f42a4220b91fdd9eef7b1bd964e14a9151a543abfecba4195925/detection",
+        "https://www.virustotal.com/gui/file/c598aa9156c5d1bacbdd7a4038c3cfe086611af1417b3a2e890c672eb199045e/detection",
+        "https://www.virustotal.com/gui/file/c6a2d72497aba7889a34f8805a859f6717b53d4959c6ec067d87de8103f91fe7/detection",
+        "https://www.virustotal.com/gui/file/e7d2deba4fccbea79ffa209ebe0ce49f98aecfb340c8d6ec3ea1773cb12cb07e/detection",
+        "https://www.group-ib.com/blog/oldgremlin",
+        "https://otx.alienvault.com/pulse/5f6ccbe362057a239425fc18"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-18",
+      "indicators": {
+        "domain": [
+          "rough-grass-45e9.poecdjusb.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.group-ib.com/blog/oldgremlin",
+        "https://otx.alienvault.com/pulse/5f6ccbe362057a239425fc18"
+      ],
+      "total": 1
+    }
+  ]
+}

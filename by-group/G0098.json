@@ -1,0 +1,690 @@
+{
+  "aliases": [],
+  "attack_id": "G0098",
+  "attack_name": "BlackTech",
+  "attack_url": "https://attack.mitre.org/groups/G0098/",
+  "counts": {
+    "domain": 52,
+    "ipv4": 5,
+    "url": 3,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "activate.linkblackclover.com": "2024-08-25",
+      "adobeupdate.serveusers.com": "2026-01-02",
+      "amazon.panasocin.com": "2018-10-24",
+      "centos.onthewifi.com": "2021-12-05",
+      "centos1.chinabrands.xyz": "2023-10-01",
+      "centos2.chinabrands.xyz": "2023-10-01",
+      "centosupdate.dynamic-dns.net": "2021-10-09",
+      "centosupdates.com": "2021-10-09",
+      "centrosupdate.proxydns.com": "2021-10-09",
+      "cloudflaread.quadrantbd.com": "2024-04-16",
+      "cloudsrm.gelatosg.com": "2024-04-16",
+      "config.zapto.org": "2021-12-30",
+      "csp.fortinetline.com": "2026-01-02",
+      "em.totalpople.info": "2018-09-15",
+      "evergo.dnset.com": "2026-01-02",
+      "fibtec.jkub.com": "2026-01-02",
+      "fortinetline.com": "2026-01-02",
+      "freeprous.bakhell.com": "2024-04-16",
+      "gstrap.jkub.com": "2018-09-15",
+      "harb.bbsindex.com": "2020-05-24",
+      "herace.https443.org": "2026-01-02",
+      "idonotknow.lflinkup.com": "2026-01-02",
+      "idonotknow.lflinkup.net": "2026-01-02",
+      "idonotknow.serveusers.com": "2026-01-02",
+      "inkeslive.com": "2021-10-09",
+      "linuxhome.jkub.com": "2026-01-02",
+      "macfee-update.serveftp.com": "2021-12-30",
+      "microsoftonline.com.authorizeddns.net": "2021-12-30",
+      "microsoftvm.net": "2026-01-02",
+      "ns1001.centosupdates.com": "2023-10-11",
+      "office.panasocin.com": "2018-09-15",
+      "okinawas.ssl443.org": "2018-09-14",
+      "org.misecure.com": "2021-12-30",
+      "panasocin.com": "2019-06-10",
+      "portal.fortinetline.com": "2026-01-02",
+      "portal.microsoftvm.net": "2026-01-02",
+      "redhatstate.hopto.org": "2021-12-05",
+      "rscvmogt.taishanlaw.com": "2024-04-16",
+      "rutentw.com": "2021-10-09",
+      "securitycenter.kozow.com": "2026-01-02",
+      "showgyella.quadrantbd.com": "2024-04-16",
+      "smartclouds.gelatosg.com": "2024-04-16",
+      "suitsvm003.rchitecture.org": "2024-04-16",
+      "systeminfo.centosupdates.com": "2021-12-03",
+      "totalpople.info": "2021-10-09",
+      "update.centosupdates.com": "2021-10-09",
+      "update.panasocin.com": "2019-10-23",
+      "updates.centosupdates.com": "2023-10-11",
+      "web2008.rutentw.com": "2021-02-09",
+      "wg1.inkeslive.com": "2021-02-09",
+      "woc.yasonbin.info": "2018-09-15",
+      "yasonbin.info": "2021-10-09"
+    },
+    "ipv4": {
+      "122.116.205.124:443": "2026-01-02",
+      "172.104.109.217:8080": "2022-01-13",
+      "212.115.54.194:443": "2026-01-02",
+      "223.200.120.73:443": "2026-01-02",
+      "61.216.119.56:443": "2026-01-02"
+    },
+    "url": {
+      "http://107.191.61.40": "2021-12-30",
+      "http://139.162.87.180": "2021-12-30",
+      "http://172.104.109.217": "2021-12-05"
+    },
+    "url_path": {
+      "/index.htmld?flag=": "2021-12-30",
+      "/index.htmld?flagpro=": "2021-12-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "adobeupdate.serveusers.com": "at-or-before",
+      "csp.fortinetline.com": "at-or-before",
+      "evergo.dnset.com": "at-or-before",
+      "fibtec.jkub.com": "at-or-before",
+      "fortinetline.com": "at-or-before",
+      "herace.https443.org": "at-or-before",
+      "idonotknow.lflinkup.com": "at-or-before",
+      "idonotknow.lflinkup.net": "at-or-before",
+      "idonotknow.serveusers.com": "at-or-before",
+      "linuxhome.jkub.com": "at-or-before",
+      "microsoftvm.net": "at-or-before",
+      "portal.fortinetline.com": "at-or-before",
+      "portal.microsoftvm.net": "at-or-before",
+      "securitycenter.kozow.com": "at-or-before"
+    },
+    "ipv4": {
+      "122.116.205.124:443": "at-or-before",
+      "212.115.54.194:443": "at-or-before",
+      "223.200.120.73:443": "at-or-before",
+      "61.216.119.56:443": "at-or-before"
+    },
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-14",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "activate.linkblackclover.com",
+      "adobeupdate.serveusers.com",
+      "amazon.panasocin.com",
+      "centos.onthewifi.com",
+      "centos1.chinabrands.xyz",
+      "centos2.chinabrands.xyz",
+      "centosupdate.dynamic-dns.net",
+      "centosupdates.com",
+      "centrosupdate.proxydns.com",
+      "cloudflaread.quadrantbd.com",
+      "cloudsrm.gelatosg.com",
+      "config.zapto.org",
+      "csp.fortinetline.com",
+      "em.totalpople.info",
+      "evergo.dnset.com",
+      "fibtec.jkub.com",
+      "fortinetline.com",
+      "freeprous.bakhell.com",
+      "gstrap.jkub.com",
+      "harb.bbsindex.com",
+      "herace.https443.org",
+      "idonotknow.lflinkup.com",
+      "idonotknow.lflinkup.net",
+      "idonotknow.serveusers.com",
+      "inkeslive.com",
+      "linuxhome.jkub.com",
+      "macfee-update.serveftp.com",
+      "microsoftonline.com.authorizeddns.net",
+      "microsoftvm.net",
+      "ns1001.centosupdates.com",
+      "office.panasocin.com",
+      "okinawas.ssl443.org",
+      "org.misecure.com",
+      "panasocin.com",
+      "portal.fortinetline.com",
+      "portal.microsoftvm.net",
+      "redhatstate.hopto.org",
+      "rscvmogt.taishanlaw.com",
+      "rutentw.com",
+      "securitycenter.kozow.com",
+      "showgyella.quadrantbd.com",
+      "smartclouds.gelatosg.com",
+      "suitsvm003.rchitecture.org",
+      "systeminfo.centosupdates.com",
+      "totalpople.info",
+      "update.centosupdates.com",
+      "update.panasocin.com",
+      "updates.centosupdates.com",
+      "web2008.rutentw.com",
+      "wg1.inkeslive.com",
+      "woc.yasonbin.info",
+      "yasonbin.info"
+    ],
+    "ipv4": [
+      "122.116.205.124:443",
+      "172.104.109.217:8080",
+      "212.115.54.194:443",
+      "223.200.120.73:443",
+      "61.216.119.56:443"
+    ],
+    "url": [
+      "http://107.191.61.40",
+      "http://139.162.87.180",
+      "http://172.104.109.217"
+    ],
+    "url_path": [
+      "/index.htmld?flag=",
+      "/index.htmld?flagpro="
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BLACKTECH",
+    "EARTHHUNDUN"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=212.115.54.194&type=ip4&ref_id=fd9bbd3c264#tab=resolutions (# 2025-03-01)",
+    "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html",
+    "https://dmpdump.github.io/posts/Kivars/",
+    "https://insight-jp.nttsecurity.com/post/102h7vx/blacktechflagpro (Japanese)",
+    "https://otx.alienvault.com/pulse/5db0438c08e53c4d7931e3f4",
+    "https://twitter.com/8th_grey_owl/status/1262047338006065155",
+    "https://twitter.com/BushidoToken/status/1446602218170376199",
+    "https://twitter.com/nahamike01/status/1467499135171710977",
+    "https://twitter.com/nao_sec/status/1446277006690119681",
+    "https://unit42.paloaltonetworks.com/bendybear-shellcode-blacktech/",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/d/cyberespionage-group-earth-hundun%27s-continuous-refinement-of-waterbear-and-deuterbear/ioc-earth-hundun.txt",
+    "https://www.trendmicro.com/en_ca/research/24/d/earth-hundun-waterbear-deuterbear.html",
+    "https://www.virustotal.com/gui/file/0931feef56951022c1559db77e5f01191a208ffb06f0a6f77597ba17b722de03/detection",
+    "https://www.virustotal.com/gui/file/1286aa5c73cf2c8058c52271869a5727d71ca5bd4dd0854be970d2a25cb52bf8/detection",
+    "https://www.virustotal.com/gui/file/1e1e4500b5102b130dcc6bc2ca5feffd8c9f3426ad4b596543b84fc1edb09f5f/detection",
+    "https://www.virustotal.com/gui/file/358bc9f08b34d9323bbca6eeb23f19ad38d51c98ac81dbf91ebd482921f67ca4/detection",
+    "https://www.virustotal.com/gui/file/54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b/detection",
+    "https://www.virustotal.com/gui/file/655ca39beb2413803af099879401e6d634942a169d2f57eb30f96154a78b2ad5/detection",
+    "https://www.virustotal.com/gui/file/77680fb906476f0d84e15d5032f09108fdef8933bcad0b941c9f375fedd0b2c9/detection",
+    "https://www.virustotal.com/gui/file/8c3df0e4d7ff0578d143785342a8033fb6e76ce9f61c2ea14c402f45a76ab118/detection",
+    "https://www.virustotal.com/gui/file/a653ae9e9906c0e5a5b5ba6330e10c9bb6b42e71abd6e80198eaa1386ea03cfb/detection",
+    "https://www.virustotal.com/gui/file/ba27ae12e6f3c2c87fd2478072dfa2747d368a507c69cd90b653c9e707254a1d/detection",
+    "https://www.virustotal.com/gui/file/c2b23689ca1c57f7b7b0c2fd95bfef326d6a22c15089d35d31119b104978038b/detection",
+    "https://www.virustotal.com/gui/file/da500cacff75e224bd8ed0375463c7c7004a8b2f7c2dee4a21ea24cba938f09a/detection",
+    "https://www.virustotal.com/gui/file/e197c583f57e6c560b576278233e3ab050e38aa9424a5d95b172de66f9cfe970/detection",
+    "https://www.virustotal.com/gui/file/e81255ff6e0ed937603748c1442ce9d6588decf6922537037cf3f1a7369a8876/detection",
+    "https://www.virustotal.com/gui/ip-address/103.195.150.181/relations",
+    "https://www.virustotal.com/gui/ip-address/111.253.195.162/relations",
+    "https://www.virustotal.com/gui/ip-address/111.253.211.105/relations",
+    "https://www.virustotal.com/gui/ip-address/122.116.205.124/relations",
+    "https://www.virustotal.com/gui/ip-address/45.32.23.140/relations",
+    "https://www.virustotal.com/gui/ip-address/45.32.61.175/relations",
+    "https://www.virustotal.com/gui/ip-address/45.76.184.227/relations",
+    "https://www.virustotal.com/gui/ip-address/5.181.80.111/relations",
+    "https://www.welivesecurity.com/2018/07/09/certificates-stolen-taiwanese-tech-companies-plead-malware-campaign/",
+    "https://x.com/G60930953/status/1895820902400737444",
+    "https://x.com/TuringAlex/status/1827706865259843983",
+    "https://x.com/malwrhunterteam/status/1893295404575297665",
+    "https://x.com/mopisec/status/1982643509812498846"
+  ],
+  "related": [],
+  "slug": "G0098",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "adobeupdate.serveusers.com",
+          "evergo.dnset.com",
+          "fibtec.jkub.com",
+          "herace.https443.org",
+          "idonotknow.lflinkup.com",
+          "idonotknow.lflinkup.net",
+          "idonotknow.serveusers.com",
+          "linuxhome.jkub.com",
+          "securitycenter.kozow.com"
+        ],
+        "ipv4": [
+          "212.115.54.194:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1893295404575297665",
+        "https://x.com/G60930953/status/1895820902400737444",
+        "https://dmpdump.github.io/posts/Kivars/",
+        "https://app.validin.com/detail?find=212.115.54.194&type=ip4&ref_id=fd9bbd3c264#tab=resolutions (# 2025-03-01)",
+        "https://www.virustotal.com/gui/file/0931feef56951022c1559db77e5f01191a208ffb06f0a6f77597ba17b722de03/detection",
+        "https://www.virustotal.com/gui/file/1286aa5c73cf2c8058c52271869a5727d71ca5bd4dd0854be970d2a25cb52bf8/detection"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "csp.fortinetline.com",
+          "fortinetline.com",
+          "microsoftvm.net",
+          "portal.fortinetline.com",
+          "portal.microsoftvm.net"
+        ],
+        "ipv4": [
+          "122.116.205.124:443",
+          "223.200.120.73:443",
+          "61.216.119.56:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/mopisec/status/1982643509812498846",
+        "https://www.virustotal.com/gui/ip-address/122.116.205.124/relations",
+        "https://www.virustotal.com/gui/file/a653ae9e9906c0e5a5b5ba6330e10c9bb6b42e71abd6e80198eaa1386ea03cfb/detection",
+        "https://www.virustotal.com/gui/file/da500cacff75e224bd8ed0375463c7c7004a8b2f7c2dee4a21ea24cba938f09a/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-25",
+      "indicators": {
+        "domain": [
+          "activate.linkblackclover.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TuringAlex/status/1827706865259843983",
+        "https://www.virustotal.com/gui/ip-address/111.253.195.162/relations",
+        "https://www.virustotal.com/gui/ip-address/111.253.211.105/relations",
+        "https://www.virustotal.com/gui/file/1e1e4500b5102b130dcc6bc2ca5feffd8c9f3426ad4b596543b84fc1edb09f5f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2024-04-16",
+      "indicators": {
+        "domain": [
+          "cloudflaread.quadrantbd.com",
+          "cloudsrm.gelatosg.com",
+          "freeprous.bakhell.com",
+          "rscvmogt.taishanlaw.com",
+          "showgyella.quadrantbd.com",
+          "smartclouds.gelatosg.com",
+          "suitsvm003.rchitecture.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_ca/research/24/d/earth-hundun-waterbear-deuterbear.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/d/cyberespionage-group-earth-hundun%27s-continuous-refinement-of-waterbear-and-deuterbear/ioc-earth-hundun.txt"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-10-11",
+      "indicators": {
+        "domain": [
+          "ns1001.centosupdates.com",
+          "updates.centosupdates.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BushidoToken/status/1446602218170376199",
+        "https://www.virustotal.com/gui/ip-address/45.32.61.175/relations",
+        "https://www.virustotal.com/gui/file/358bc9f08b34d9323bbca6eeb23f19ad38d51c98ac81dbf91ebd482921f67ca4/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-10-01",
+      "indicators": {
+        "domain": [
+          "centos1.chinabrands.xyz",
+          "centos2.chinabrands.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/5.181.80.111/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-01-13",
+      "indicators": {
+        "ipv4": [
+          "172.104.109.217:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1446277006690119681",
+        "https://insight-jp.nttsecurity.com/post/102h7vx/blacktechflagpro (Japanese)",
+        "https://www.virustotal.com/gui/ip-address/45.32.23.140/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.184.227/relations",
+        "https://www.virustotal.com/gui/file/54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b/detection",
+        "https://www.virustotal.com/gui/file/ba27ae12e6f3c2c87fd2478072dfa2747d368a507c69cd90b653c9e707254a1d/detection",
+        "https://www.virustotal.com/gui/file/655ca39beb2413803af099879401e6d634942a169d2f57eb30f96154a78b2ad5/detection",
+        "https://www.virustotal.com/gui/file/e197c583f57e6c560b576278233e3ab050e38aa9424a5d95b172de66f9cfe970/detection",
+        "https://www.virustotal.com/gui/file/77680fb906476f0d84e15d5032f09108fdef8933bcad0b941c9f375fedd0b2c9/detection",
+        "https://www.virustotal.com/gui/file/e81255ff6e0ed937603748c1442ce9d6588decf6922537037cf3f1a7369a8876/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "url": 2,
+        "url_path": 2
+      },
+      "first_seen": "2021-12-30",
+      "indicators": {
+        "domain": [
+          "config.zapto.org",
+          "macfee-update.serveftp.com",
+          "microsoftonline.com.authorizeddns.net",
+          "org.misecure.com"
+        ],
+        "url": [
+          "http://107.191.61.40",
+          "http://139.162.87.180"
+        ],
+        "url_path": [
+          "/index.htmld?flag=",
+          "/index.htmld?flagpro="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1446277006690119681",
+        "https://insight-jp.nttsecurity.com/post/102h7vx/blacktechflagpro (Japanese)",
+        "https://www.virustotal.com/gui/ip-address/45.32.23.140/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.184.227/relations",
+        "https://www.virustotal.com/gui/file/54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b/detection",
+        "https://www.virustotal.com/gui/file/ba27ae12e6f3c2c87fd2478072dfa2747d368a507c69cd90b653c9e707254a1d/detection",
+        "https://www.virustotal.com/gui/file/655ca39beb2413803af099879401e6d634942a169d2f57eb30f96154a78b2ad5/detection",
+        "https://www.virustotal.com/gui/file/e197c583f57e6c560b576278233e3ab050e38aa9424a5d95b172de66f9cfe970/detection",
+        "https://www.virustotal.com/gui/file/77680fb906476f0d84e15d5032f09108fdef8933bcad0b941c9f375fedd0b2c9/detection",
+        "https://www.virustotal.com/gui/file/e81255ff6e0ed937603748c1442ce9d6588decf6922537037cf3f1a7369a8876/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-05",
+      "indicators": {
+        "domain": [
+          "centos.onthewifi.com",
+          "redhatstate.hopto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nahamike01/status/1467499135171710977",
+        "https://www.virustotal.com/gui/ip-address/103.195.150.181/relations",
+        "https://www.virustotal.com/gui/file/c2b23689ca1c57f7b7b0c2fd95bfef326d6a22c15089d35d31119b104978038b/detection",
+        "https://www.virustotal.com/gui/file/8c3df0e4d7ff0578d143785342a8033fb6e76ce9f61c2ea14c402f45a76ab118/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-12-05",
+      "indicators": {
+        "url": [
+          "http://172.104.109.217"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1446277006690119681",
+        "https://insight-jp.nttsecurity.com/post/102h7vx/blacktechflagpro (Japanese)",
+        "https://www.virustotal.com/gui/ip-address/45.32.23.140/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.184.227/relations",
+        "https://www.virustotal.com/gui/file/54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b/detection",
+        "https://www.virustotal.com/gui/file/ba27ae12e6f3c2c87fd2478072dfa2747d368a507c69cd90b653c9e707254a1d/detection",
+        "https://www.virustotal.com/gui/file/655ca39beb2413803af099879401e6d634942a169d2f57eb30f96154a78b2ad5/detection",
+        "https://www.virustotal.com/gui/file/e197c583f57e6c560b576278233e3ab050e38aa9424a5d95b172de66f9cfe970/detection",
+        "https://www.virustotal.com/gui/file/77680fb906476f0d84e15d5032f09108fdef8933bcad0b941c9f375fedd0b2c9/detection",
+        "https://www.virustotal.com/gui/file/e81255ff6e0ed937603748c1442ce9d6588decf6922537037cf3f1a7369a8876/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-12-03",
+      "indicators": {
+        "domain": [
+          "systeminfo.centosupdates.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BushidoToken/status/1446602218170376199",
+        "https://www.virustotal.com/gui/ip-address/45.32.61.175/relations",
+        "https://www.virustotal.com/gui/file/358bc9f08b34d9323bbca6eeb23f19ad38d51c98ac81dbf91ebd482921f67ca4/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-10-09",
+      "indicators": {
+        "domain": [
+          "centosupdate.dynamic-dns.net",
+          "centosupdates.com",
+          "centrosupdate.proxydns.com",
+          "update.centosupdates.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BushidoToken/status/1446602218170376199",
+        "https://www.virustotal.com/gui/ip-address/45.32.61.175/relations",
+        "https://www.virustotal.com/gui/file/358bc9f08b34d9323bbca6eeb23f19ad38d51c98ac81dbf91ebd482921f67ca4/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-10-09",
+      "indicators": {
+        "domain": [
+          "inkeslive.com",
+          "rutentw.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/bendybear-shellcode-blacktech/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-10-09",
+      "indicators": {
+        "domain": [
+          "totalpople.info",
+          "yasonbin.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-02-09",
+      "indicators": {
+        "domain": [
+          "web2008.rutentw.com",
+          "wg1.inkeslive.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/bendybear-shellcode-blacktech/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-24",
+      "indicators": {
+        "domain": [
+          "harb.bbsindex.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/8th_grey_owl/status/1262047338006065155"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-23",
+      "indicators": {
+        "domain": [
+          "update.panasocin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5db0438c08e53c4d7931e3f4"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-10",
+      "indicators": {
+        "domain": [
+          "panasocin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-10-24",
+      "indicators": {
+        "domain": [
+          "amazon.panasocin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2018/07/09/certificates-stolen-taiwanese-tech-companies-plead-malware-campaign/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "em.totalpople.info",
+          "gstrap.jkub.com",
+          "woc.yasonbin.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "office.panasocin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html",
+        "https://www.welivesecurity.com/2018/07/09/certificates-stolen-taiwanese-tech-companies-plead-malware-campaign/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-14",
+      "indicators": {
+        "domain": [
+          "okinawas.ssl443.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2018/07/09/certificates-stolen-taiwanese-tech-companies-plead-malware-campaign/"
+      ],
+      "total": 1
+    }
+  ]
+}

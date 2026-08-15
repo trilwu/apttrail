@@ -1,0 +1,166 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 27
+  },
+  "first_seen": {
+    "domain": {
+      "androidgplay.us.to": "2018-09-22",
+      "ar-24.com": "2018-09-22",
+      "bijiaexhibition.com": "2018-09-22",
+      "boardingpasstohome.com": "2018-09-22",
+      "cdc-asia.org": "2018-09-22",
+      "droidlatestnews.com": "2018-09-22",
+      "enjoyyourandroid.com": "2018-09-22",
+      "facebook-update.info": "2018-09-22",
+      "free.dramakorea.asia": "2018-09-22",
+      "getnewandroid.com": "2018-09-22",
+      "hulahope.mooo.com": "2018-09-22",
+      "link.sexyhub.co": "2018-09-22",
+      "mytelkomsel.co": "2018-09-22",
+      "mywealthpop.com": "2018-09-22",
+      "nkpro.lalanews.net": "2018-09-22",
+      "pantheon.tobban.com": "2018-09-22",
+      "people.dohabayt.com": "2018-09-05",
+      "play-mob.org": "2018-09-22",
+      "publiczone.now.im": "2018-09-22",
+      "rcs-demo.hackingteam.it": "2018-09-22",
+      "reflect.dalnet.ca": "2018-09-22",
+      "samsung-update.net": "2018-09-22",
+      "secure.anyurl.org": "2018-09-22",
+      "shrook.mooo.com": "2018-09-22",
+      "telegram-apps.org": "2018-09-22",
+      "update.indoorapps.com": "2018-09-22",
+      "video.sexyhub.co": "2018-09-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-05",
+    "latest": "2018-09-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "androidgplay.us.to",
+      "ar-24.com",
+      "bijiaexhibition.com",
+      "boardingpasstohome.com",
+      "cdc-asia.org",
+      "droidlatestnews.com",
+      "enjoyyourandroid.com",
+      "facebook-update.info",
+      "free.dramakorea.asia",
+      "getnewandroid.com",
+      "hulahope.mooo.com",
+      "link.sexyhub.co",
+      "mytelkomsel.co",
+      "mywealthpop.com",
+      "nkpro.lalanews.net",
+      "pantheon.tobban.com",
+      "people.dohabayt.com",
+      "play-mob.org",
+      "publiczone.now.im",
+      "rcs-demo.hackingteam.it",
+      "reflect.dalnet.ca",
+      "samsung-update.net",
+      "secure.anyurl.org",
+      "shrook.mooo.com",
+      "telegram-apps.org",
+      "update.indoorapps.com",
+      "video.sexyhub.co"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HACKINGTEAM"
+  ],
+  "references": [
+    "http://reddittt.com/post/8pcl6a/",
+    "https://citizenlab.ca/2012/10/backdoors-are-forever-hacking-team-and-the-targeting-of-dissent/",
+    "https://citizenlab.ca/2015/08/what-we-know-about-the-south-korea-niss-use-of-hacking-teams-rcs/",
+    "https://itw01.com/FOCQDE4.html"
+  ],
+  "related": [],
+  "slug": "HACKINGTEAM",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "androidgplay.us.to",
+          "bijiaexhibition.com",
+          "boardingpasstohome.com",
+          "cdc-asia.org",
+          "droidlatestnews.com",
+          "enjoyyourandroid.com",
+          "facebook-update.info",
+          "free.dramakorea.asia",
+          "getnewandroid.com",
+          "hulahope.mooo.com",
+          "link.sexyhub.co",
+          "mytelkomsel.co",
+          "mywealthpop.com",
+          "nkpro.lalanews.net",
+          "pantheon.tobban.com",
+          "play-mob.org",
+          "publiczone.now.im",
+          "reflect.dalnet.ca",
+          "samsung-update.net",
+          "secure.anyurl.org",
+          "shrook.mooo.com",
+          "telegram-apps.org",
+          "update.indoorapps.com",
+          "video.sexyhub.co"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2015/08/what-we-know-about-the-south-korea-niss-use-of-hacking-teams-rcs/"
+      ],
+      "total": 24
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "ar-24.com",
+          "rcs-demo.hackingteam.it"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2012/10/backdoors-are-forever-hacking-team-and-the-targeting-of-dissent/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-05",
+      "indicators": {
+        "domain": [
+          "people.dohabayt.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://itw01.com/FOCQDE4.html",
+        "http://reddittt.com/post/8pcl6a/"
+      ],
+      "total": 1
+    }
+  ]
+}

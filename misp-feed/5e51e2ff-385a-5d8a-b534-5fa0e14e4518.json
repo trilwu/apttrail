@@ -1,0 +1,75 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0cf0be36-22ad-5ca2-95cc-6a42d2019a4a",
+        "value": "bikessport.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "aafa575c-5530-5ae4-87ee-307257f94745",
+        "value": "flowershop22.110mb.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cedd59cc-8ce4-5d04-bcc9-237e10298f4e",
+        "value": "myhomemusic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4b7600e6-418b-50a3-a53f-429bca06145d",
+        "value": "rapidcomments.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a7dfa9c7-f3a7-55d2-90a0-7efe83e9c438",
+        "value": "wildhorses.awardspace.info"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:sauron"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Strider - G0041\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Strider (G0041) - Maltrail group SAURON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5e51e2ff-385a-5d8a-b534-5fa0e14e4518"
+  }
+}

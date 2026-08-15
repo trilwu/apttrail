@@ -1,0 +1,64 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "cdn.dosya.web.tr": "2020-03-03",
+      "ludo.ezyro.com": "2020-03-03",
+      "samsung.apps.linkpc.net": "2020-03-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-03-03",
+    "latest": "2020-03-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cdn.dosya.web.tr",
+      "ludo.ezyro.com",
+      "samsung.apps.linkpc.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SILENCERLION"
+  ],
+  "references": [
+    "https://mp.weixin.qq.com/s/UlTX4M8SzwhjI74tFKg_YA",
+    "https://otx.alienvault.com/pulse/5e5d704d5f2e6994e9fcb8b3",
+    "https://twitter.com/reddrip7/status/1233779793537056768"
+  ],
+  "related": [],
+  "slug": "SILENCERLION",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-03-03",
+      "indicators": {
+        "domain": [
+          "cdn.dosya.web.tr",
+          "ludo.ezyro.com",
+          "samsung.apps.linkpc.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/reddrip7/status/1233779793537056768",
+        "https://mp.weixin.qq.com/s/UlTX4M8SzwhjI74tFKg_YA",
+        "https://otx.alienvault.com/pulse/5e5d704d5f2e6994e9fcb8b3"
+      ],
+      "total": 3
+    }
+  ]
+}

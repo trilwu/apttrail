@@ -1,0 +1,4043 @@
+{
+  "aliases": [
+    "BASIN",
+    "Earth Preta",
+    "HoneyMyte",
+    "MQsTTang",
+    "Red Lich",
+    "RedDelta",
+    "Stately Taurus",
+    "TEMP.Hex",
+    "Twill Typhoon",
+    "UNC6384",
+    "UTG-Q-011",
+    "Yokai",
+    "ceranakeeper",
+    "fdmtp backdoor",
+    "hive0154",
+    "lotuslite",
+    "minirecon",
+    "pubload",
+    "toneshell",
+    "zohomurk"
+  ],
+  "attack_id": "G0129",
+  "attack_name": "Mustang Panda",
+  "attack_url": "https://attack.mitre.org/groups/G0129/",
+  "counts": {
+    "domain": 319,
+    "ipv4": 149,
+    "url": 53,
+    "url_path": 19
+  },
+  "first_seen": {
+    "domain": {
+      "21-ninety.com": "2026-06-23",
+      "247up.org": "2019-08-21",
+      "3012965.securefastserver.com": "2026-06-23",
+      "3784f20bb00.com": "2026-06-23",
+      "7daydai1y.com": "2021-07-17",
+      "9521182.com": "2026-06-23",
+      "aadcdn.msauth.document-invoiceviewer.online": "2026-01-02",
+      "aadcdn.msauth.document-viewer.xyz": "2026-01-02",
+      "aadcdn.msauth.documentpdfviewer.xyz": "2026-01-02",
+      "account.live.document-invoiceviewer.online": "2026-01-02",
+      "account.live.document-viewer.xyz": "2026-01-02",
+      "account.live.office-docs.online": "2026-01-02",
+      "accounts.documentpdfviewer.xyz": "2026-01-02",
+      "accounts.hmailevma5.documentpdfviewer.xyz": "2026-01-02",
+      "adobephotostage.com": "2019-10-08",
+      "ai.nerdnooks.com": "2024-04-06",
+      "aihkstore.com": "2024-09-09",
+      "airdndvn.com": "2019-10-08",
+      "aliyunconsole.com": "2026-01-02",
+      "api.document-invoiceviewer.online": "2026-01-02",
+      "api.document-viewer.xyz": "2026-01-02",
+      "api.office-docs.online": "2026-01-02",
+      "apple-net.com": "2019-08-20",
+      "attd.z23.web.core.windows.net": "2026-06-25",
+      "b.document-viewer.xyz": "2026-01-02",
+      "b83928922.questincc.com": "2026-06-23",
+      "b8pjmgd6.com": "2026-01-02",
+      "babyafrosapparel.com": "2026-06-23",
+      "back.vlvlvlvl.site": "2024-05-30",
+      "backups.muathye.com": "2026-06-23",
+      "bcller.com": "2024-09-09",
+      "blogdirve.com": "2023-01-05",
+      "bonuscave.com": "2024-03-09",
+      "buyonebuy.top": "2021-03-16",
+      "c7p949983.silveradeearyray.com": "2026-06-23",
+      "cabsecnow.com": "2020-07-29",
+      "calendargbmechanical.cam": "2026-06-23",
+      "calendarthomastecs.cam": "2026-06-23",
+      "calendercongress.cam": "2026-06-23",
+      "calendercongress.com": "2026-06-23",
+      "careerhuawei.net": "2021-03-16",
+      "cdn.update.huaweiyuncdn.com": "2021-03-16",
+      "cdn1.update.huaweiyuncdn.com": "2021-03-16",
+      "cdn7s65.z13.web.core.windows.net": "2024-08-01",
+      "concreteinportland.com": "2026-06-23",
+      "conflictaslesson.com": "2024-09-12",
+      "connectmvasalu.cam": "2026-06-23",
+      "constructionferryfences.cam": "2026-06-23",
+      "coolboxpc.com": "2022-03-23",
+      "couldinstallup.com": "2026-07-01",
+      "cremessage.com": "2023-05-20",
+      "csp.document-invoiceviewer.online": "2026-01-02",
+      "csp.document-viewer.xyz": "2026-01-02",
+      "csp.documentpdfviewer.xyz": "2026-01-02",
+      "csp.office-docs.online": "2026-01-02",
+      "d32tpl7xt7175h.cloudfront.net": "2026-01-02",
+      "daydreamdew.net": "2024-04-06",
+      "deleted.tripadviso.online": "2024-05-30",
+      "dest-working.com": "2026-01-02",
+      "destroy2013.com": "2020-06-03",
+      "devlyrics.com": "2026-02-25",
+      "devlyrics.github.io": "2026-02-25",
+      "dl6yfsl.com": "2024-10-02",
+      "dljmp2p.com": "2024-10-02",
+      "document-invoiceviewer.online": "2026-01-02",
+      "document-viewer.xyz": "2026-01-02",
+      "documentinvoice-viewer.top": "2026-01-02",
+      "documentpdfviewer.xyz": "2026-01-02",
+      "dodefoh.com": "2022-04-17",
+      "download.flach.cn": "2021-03-16",
+      "download.hilifimyanmar.com": "2022-06-02",
+      "drive.babyafrosapparel.com": "2026-06-23",
+      "editor.gleeze.com": "2026-04-21",
+      "electrictulsa.com": "2024-03-09",
+      "em2in.johnsimde.xyz": "2024-02-22",
+      "estmongolia.com": "2023-07-25",
+      "events.api.document-invoiceviewer.online": "2026-01-02",
+      "events.api.document-viewer.xyz": "2026-01-02",
+      "events.api.office-docs.online": "2026-01-02",
+      "ferryfences.cam": "2026-06-23",
+      "ferryfencesconstruc.cam": "2026-06-23",
+      "ferryfencesconstruction.cam": "2026-06-23",
+      "fil76v6shar604bbdoc0o.com": "2026-06-23",
+      "fileclub.modaestilo.net": "2026-06-23",
+      "files.document-invoiceviewer.online": "2026-01-02",
+      "files.document-viewer.xyz": "2026-01-02",
+      "files.documentpdfviewer.xyz": "2026-01-02",
+      "files.office-docs.online": "2026-01-02",
+      "files.office3-docviewer.com": "2026-01-02",
+      "files.riddhiman.shop": "2026-06-23",
+      "filesdownld.z13.web.core.windows.net": "2026-04-06",
+      "fileshare.babyafrosapparel.com": "2026-06-23",
+      "fileshare.gorollerskate.com": "2026-06-23",
+      "filestoretome.z23.web.core.windows.net": "2026-04-06",
+      "filevault.soundit.co": "2026-06-23",
+      "fitehook.com": "2020-06-03",
+      "fjke5oe.com": "2026-01-02",
+      "flach.cn": "2020-10-14",
+      "flash-update.buyonebuy.top": "2021-03-16",
+      "flowise.document-viewer.xyz": "2026-01-02",
+      "forexdualsystem.com": "2019-12-30",
+      "formainservercheap.com": "2024-11-18",
+      "forum.flach.cn": "2021-03-16",
+      "gclm.name": "2026-01-02",
+      "getfiledown.com": "2024-03-09",
+      "getfilefox.com": "2024-03-09",
+      "ggrdl4.com": "2026-01-02",
+      "gm4rys.com": "2026-01-02",
+      "goclamdep.net": "2024-09-12",
+      "gooledives.z48.web.core.windows.net": "2026-04-06",
+      "gorollerskate.com": "2026-06-23",
+      "gui.document-invoiceviewer.online": "2026-01-02",
+      "gui.documentpdfviewer.xyz": "2026-01-02",
+      "gui.office-docs.online": "2026-01-02",
+      "haberciinternational.com": "2026-01-02",
+      "hb3788263.questincc.com": "2026-06-23",
+      "hbsanews.com": "2026-01-02",
+      "hidusi.com": "2022-03-11",
+      "hilifimyanmar.com": "2022-06-02",
+      "hmailevma5.documentpdfviewer.xyz": "2026-01-02",
+      "holtconstruction.cam": "2026-06-23",
+      "holtlogistics.cam": "2026-06-23",
+      "hostareas.com": "2020-07-29",
+      "hr.careerhuawei.net": "2021-03-16",
+      "huaweiyuncdn.com": "2021-03-16",
+      "hydrationroom.cam": "2026-06-23",
+      "i5y3dl.com": "2026-01-02",
+      "iamc2c2.com": "2024-03-09",
+      "icloud-cdn.net": "2026-05-15",
+      "images.kiidcloud.com": "2024-03-09",
+      "images.markplay.net": "2024-03-09",
+      "images.myanmarnewsonline.org": "2022-06-02",
+      "img1.document-invoiceviewer.online": "2026-01-02",
+      "img1.documentpdfviewer.xyz": "2026-01-02",
+      "img1.office-docs.online": "2026-01-02",
+      "img6.document-invoiceviewer.online": "2026-01-02",
+      "img6.document-viewer.xyz": "2026-01-02",
+      "img6.documentpdfviewer.xyz": "2026-01-02",
+      "img6.office-docs.online": "2026-01-02",
+      "info.careerhuawei.net": "2021-03-16",
+      "info.flach.cn": "2021-03-16",
+      "infoadmin.update.huaweiyuncdn.com": "2021-03-16",
+      "infosecvn.com": "2019-10-08",
+      "inly5sf.com": "2024-10-02",
+      "iot.johnsimde.xyz": "2024-02-22",
+      "ipsoftwarelabs.com": "2019-12-30",
+      "irrawddy.com": "2021-07-17",
+      "ivibers.com": "2023-12-11",
+      "jcswcd.com": "2023-05-10",
+      "jk319201923.lectrosonic.com": "2026-06-23",
+      "johnsimde.xyz": "2024-02-22",
+      "joxinu.com": "2022-03-11",
+      "jpkinki.com": "2026-01-02",
+      "jsquerys.net": "2020-07-29",
+      "kantolocalfinance.com": "2026-06-23",
+      "kuhkhjvmjh.com": "2026-07-01",
+      "kxmmcdmnb.online": "2024-08-30",
+      "lameers.com": "2020-02-11",
+      "lectrosonic.com": "2026-06-23",
+      "lionforcesystems.com": "2019-12-30",
+      "live.document-invoiceviewer.online": "2026-01-02",
+      "live.document-viewer.xyz": "2026-01-02",
+      "live.documentpdfviewer.xyz": "2026-01-02",
+      "live.office-docs.online": "2026-01-02",
+      "lm663772881.questincc.com": "2026-06-23",
+      "locvnpt.com": "2022-03-23",
+      "login-us.document-viewer.xyz": "2026-01-02",
+      "login.document-invoiceviewer.online": "2026-01-02",
+      "login.document-viewer.xyz": "2026-01-02",
+      "login.documentpdfviewer.xyz": "2026-01-02",
+      "login.live.document-invoiceviewer.online": "2026-01-02",
+      "login.live.documentpdfviewer.xyz": "2026-01-02",
+      "login.live.office-docs.online": "2026-01-02",
+      "login.office-docs.online": "2026-01-02",
+      "logincdn.document-invoiceviewer.online": "2026-01-02",
+      "logincdn.documentpdfviewer.xyz": "2026-01-02",
+      "logincdn.office-docs.online": "2026-01-02",
+      "lokjopppkuimlpo.shop": "2024-09-12",
+      "lyjxq3.com": "2024-10-26",
+      "m.cremessage.com": "2023-05-20",
+      "m.flach.cn": "2021-03-16",
+      "m365.office-docs.online": "2026-01-02",
+      "macuwuf.com": "2022-04-17",
+      "mail.kantolocalfinance.com": "2026-06-23",
+      "mail.nexushighcargo.com": "2026-06-23",
+      "mail.oceancertsurveyors.com": "2026-06-23",
+      "markplay.net": "2024-03-09",
+      "mashupdatabase.com": "2023-01-05",
+      "mediadomainservice.org": "2019-08-21",
+      "mediareleaseupdates.com": "2026-01-02",
+      "meet.schedulethomastecs.cam": "2026-06-23",
+      "meetviberapi.com": "2024-03-09",
+      "meetvibersapi.com": "2023-12-11",
+      "mega.vlvlvlvl.site": "2024-05-30",
+      "miandfish.store": "2020-07-02",
+      "microsite-manager.com": "2023-01-05",
+      "midasconsilium.com": "2023-03-14",
+      "militarytc.com": "2024-01-26",
+      "miscrosaft.com": "2020-07-29",
+      "mmtimes.net": "2021-07-17",
+      "mmtimes.org": "2021-07-17",
+      "mobile.flach.cn": "2021-03-16",
+      "modaestilo.net": "2026-06-23",
+      "mongolianshipregistrar.com": "2023-07-25",
+      "mopfi-ferd.com": "2021-07-17",
+      "msauth.document-invoiceviewer.online": "2026-01-02",
+      "msauth.document-viewer.xyz": "2026-01-02",
+      "msauth.documentpdfviewer.xyz": "2026-01-02",
+      "myaccount.documentpdfviewer.xyz": "2026-01-02",
+      "myaccount.hmailevma5.documentpdfviewer.xyz": "2026-01-02",
+      "myanmarclouddrive.ru": "2026-01-02",
+      "myanmarfreedomwork.org": "2024-02-22",
+      "myanmarnewsonline.org": "2022-06-02",
+      "mydownfile.z11.web.core.windows.net": "2026-01-02",
+      "mydownload.z29.web.core.windows.net": "2026-06-25",
+      "mydownloadfile.z7.web.core.windows.net": "2026-06-25",
+      "myfile.tokyobighub.com": "2026-06-23",
+      "nerdnooks.com": "2024-04-06",
+      "news.comsnews.com": "2024-03-09",
+      "newsmailnet.com": "2023-08-24",
+      "next.calendarthomastecs.cam": "2026-06-23",
+      "next.connectmvasalu.cam": "2026-06-23",
+      "next.schedulethomastecs.cam": "2026-06-23",
+      "next.schthomastecs.cam": "2026-06-23",
+      "nexthomastecs.cam": "2026-06-23",
+      "nexushighcargo.com": "2026-06-23",
+      "nx39489933.ltapprel.com": "2026-06-23",
+      "oceancertsurveyors.com": "2026-06-23",
+      "offerbox.pro": "2026-06-23",
+      "office-docs.online": "2026-01-02",
+      "office.document-invoiceviewer.online": "2026-01-02",
+      "office.document-viewer.xyz": "2026-01-02",
+      "office.documentpdfviewer.xyz": "2026-01-02",
+      "office.office-docs.online": "2026-01-02",
+      "office3-docviewer.com": "2026-01-02",
+      "officeproduces.com": "2019-10-08",
+      "openai-cheapagent.com": "2024-11-19",
+      "openservername.com": "2024-01-18",
+      "oshibadrive.com": "2019-12-30",
+      "pass.romexperts.com": "2026-06-23",
+      "payment.tripadviso.online": "2024-05-30",
+      "pdf.document-viewer.xyz": "2026-01-02",
+      "pdf.documentpdfviewer.xyz": "2026-01-02",
+      "portal.document-invoiceviewer.online": "2026-01-02",
+      "portal.document-viewer.xyz": "2026-01-02",
+      "portal.office-docs.online": "2026-01-02",
+      "preperlanguageserver.com": "2024-11-18",
+      "president-office.gov.mm": "2022-05-05",
+      "profile-keybord.com": "2026-01-02",
+      "pumpamed.com": "2026-06-23",
+      "qa.flowise.document-viewer.xyz": "2026-01-02",
+      "qlv838393942.watchefswant.com": "2026-06-23",
+      "reloadsite.z13.web.core.windows.net": "2026-04-06",
+      "renewyourclicks.org": "2019-08-21",
+      "renxinguo.com": "2026-01-02",
+      "resources.babyafrosapparel.com": "2026-06-23",
+      "rewards.roshan.af": "2024-02-22",
+      "riddhiman.shop": "2026-06-23",
+      "romexperts.com": "2026-06-23",
+      "rt47588343.lectrosonic.com": "2026-06-23",
+      "sa2il.johnsimde.xyz": "2024-02-22",
+      "sajjadsmziranir.iransmz.tech": "2026-01-02",
+      "schedule.thomastecs.cam": "2026-06-23",
+      "scheduleferryfences.cam": "2026-06-23",
+      "schedulethomastecs.cam": "2026-06-23",
+      "schthomastecs.cam": "2026-06-23",
+      "sclickvpn.com": "2026-01-02",
+      "secondomoma.com": "2026-06-23",
+      "share.office-docs.online": "2026-01-02",
+      "shreyaninfotech.com": "2024-05-30",
+      "silveradeearyray.com": "2026-06-23",
+      "siteup-365.org": "2019-08-21",
+      "smz4.iransmz.tech": "2026-01-02",
+      "snova-tech.com": "2022-03-23",
+      "srv1.blackberrygame.com": "2024-12-02",
+      "sso.document-invoiceviewer.online": "2026-01-02",
+      "stlfast.com": "2026-06-23",
+      "strust.club": "2019-12-30",
+      "svchosts.com": "2019-12-30",
+      "svrhosts.com": "2019-12-30",
+      "syncnovaall.com": "2026-07-01",
+      "systeminfor.com": "2020-06-15",
+      "taiwallace.pserver.space": "2024-02-22",
+      "tasensors.com": "2026-01-02",
+      "terminal.flach.cn": "2021-03-16",
+      "thesiamworks.com": "2026-07-01",
+      "thisistestc2.com": "2024-03-09",
+      "thomastecs.cam": "2026-06-23",
+      "tokyobighub.com": "2026-06-23",
+      "toptipvideo.com": "2024-10-02",
+      "tripadviso.online": "2024-05-30",
+      "unassigned.172-81-60-97.spryt.net": "2026-04-21",
+      "update.babyafrosapparel.com": "2026-06-23",
+      "update.careerhuawei.net": "2021-03-16",
+      "update.fjke5oe.com": "2026-01-02",
+      "update.flach.cn": "2021-03-16",
+      "update.hilifimyanmar.com": "2022-06-02",
+      "update.huaweiyuncdn.com": "2021-03-16",
+      "update.olk4.com": "2019-10-08",
+      "updatecatalogs.com": "2021-07-17",
+      "upespr.com": "2022-03-08",
+      "urmsec.com": "2022-03-23",
+      "uvfr4ep.com": "2023-09-25",
+      "vie3490gy23777bnufil8903456bil623000r789sit986uhhh.com": "2026-06-23",
+      "vietnam.zing.photos": "2020-03-19",
+      "viksend.vikkify.com": "2026-06-23",
+      "vlvlvlvl.site": "2024-05-30",
+      "wbemsystem.com": "2019-10-08",
+      "web.bonuscave.com": "2024-03-09",
+      "web.daydreamdew.net": "2024-04-06",
+      "webmail.documentpdfviewer.xyz": "2026-01-02",
+      "webmail.mmtimes.net": "2021-07-17",
+      "widgets.babyafrosapparel.com": "2026-06-23",
+      "yahoo-cdn.it.com": "2026-05-15",
+      "yahoorealtors.com": "2019-10-08",
+      "yg7488392.lectrosonic.com": "2026-06-23",
+      "ynsins.com": "2024-09-09",
+      "zimbra.page": "2026-01-02",
+      "zyber-i.com": "2022-02-28"
+    },
+    "ipv4": {
+      "102.211.234.105:443": "2026-07-07",
+      "103.107.104.19:33182": "2022-03-23",
+      "103.107.104.19:33255": "2022-03-23",
+      "103.107.104.19:443": "2022-03-08",
+      "103.107.104.37:443": "2024-03-09",
+      "103.107.104.61:443": "2026-01-02",
+      "103.107.104.61:8088": "2026-01-02",
+      "103.13.31.75:443": "2026-01-02",
+      "103.15.28.145:6666": "2022-05-05",
+      "103.15.29.17:443": "2024-09-09",
+      "103.159.132.80:443": "2024-01-26",
+      "103.175.50.32:443": "2026-07-07",
+      "103.192.226.46:443": "2022-07-18",
+      "103.200.97.189:110": "2021-01-27",
+      "103.200.97.189:965": "2021-01-27",
+      "103.245.164.154:443": "2026-07-07",
+      "103.247.19.204:443": "2026-07-07",
+      "103.249.84.137:443": "2024-01-26",
+      "103.27.109.157:443": "2024-03-13",
+      "103.56.18.101:443": "2026-01-02",
+      "103.56.18.101:53": "2026-01-02",
+      "103.56.53.120:8080": "2022-03-23",
+      "103.79.120.70:443": "2026-01-02",
+      "103.79.120.70:8088": "2026-01-02",
+      "103.79.120.71:443": "2026-01-02",
+      "103.79.120.71:8088": "2026-01-02",
+      "103.79.120.73:443": "2026-01-02",
+      "103.79.120.73:8088": "2026-01-02",
+      "103.79.120.74:443": "2026-01-02",
+      "103.79.120.74:8088": "2026-01-02",
+      "103.79.120.81:443": "2026-01-02",
+      "103.79.120.81:8088": "2026-01-02",
+      "103.79.120.85:443": "2026-01-02",
+      "103.79.120.89:443": "2026-01-02",
+      "103.79.77.181:443": "2026-04-21",
+      "104.194.154.150:443": "2024-07-12",
+      "107.155.56.87:443": "2024-09-24",
+      "107.155.56.87:53": "2026-01-02",
+      "107.167.64.4:443": "2022-03-08",
+      "107.181.160.16:443": "2022-10-18",
+      "110.42.64.64:24680": "2022-05-05",
+      "123.253.32.15:443": "2024-01-26",
+      "136.0.141.189:443": "2026-01-02",
+      "136.0.141.189:5000": "2026-01-02",
+      "136.0.141.189:8088": "2026-01-02",
+      "139.180.192.163:443": "2026-01-02",
+      "139.180.192.163:8088": "2026-01-02",
+      "139.180.217.142:5000": "2024-02-22",
+      "139.59.46.88:443": "2024-03-27",
+      "139.59.46.88:8080": "2024-03-27",
+      "139.59.46.88:8443": "2024-03-27",
+      "139.59.46.88:9443": "2024-03-27",
+      "146.70.149.186:443": "2024-12-02",
+      "146.70.149.36:443": "2024-04-06",
+      "146.70.29.229:443": "2026-01-02",
+      "146.70.29.241:443": "2026-07-07",
+      "149.104.11.29:443": "2024-03-09",
+      "149.104.12.64:443": "2024-03-09",
+      "149.28.156.153:443": "2020-02-16",
+      "152.32.130.139:443": "2026-01-02",
+      "152.32.130.139:5000": "2026-01-02",
+      "154.196.139.38:443": "2026-07-07",
+      "154.204.26.120:22": "2022-06-02",
+      "154.204.26.120:443": "2022-03-23",
+      "154.204.27.130:443": "2022-03-23",
+      "154.204.27.181:110": "2022-03-23",
+      "154.223.58.142:20807": "2026-05-15",
+      "154.223.58.142:20811": "2026-05-15",
+      "154.90.32.88:443": "2024-09-09",
+      "155.94.200.206:5008": "2022-03-21",
+      "155.94.200.211:5008": "2022-03-24",
+      "155.94.200.212:443": "2022-03-24",
+      "159.138.84.217:81": "2021-03-16",
+      "166.88.2.90:443": "2026-01-02",
+      "172.81.60.97:3389": "2026-01-09",
+      "172.81.60.97:443": "2026-01-09",
+      "173.199.71.152:443": "2026-01-02",
+      "173.199.71.152:8443": "2026-01-02",
+      "176.97.117.5:443": "2026-07-07",
+      "18.163.112.181:443": "2024-09-09",
+      "185.140.12.224:443": "2026-01-02",
+      "185.239.226.17:110": "2021-01-27",
+      "185.239.226.17:965": "2021-01-27",
+      "185.243.112.79:52736": "2026-01-02",
+      "185.62.57.118:443": "2024-12-20",
+      "185.82.216.184:443": "2024-03-09",
+      "185.9.17.213:443": "2026-07-07",
+      "188.208.141.177:443": "2026-07-07",
+      "188.208.141.177:47001": "2026-07-01",
+      "192.153.57.98:8080": "2024-03-27",
+      "192.52.166.252:443": "2026-01-02",
+      "193.149.129.93:8443": "2024-03-27",
+      "194.5.97.169:443": "2026-07-07",
+      "194.59.183.133:443": "2026-07-07",
+      "195.123.218.78:443": "2023-02-01",
+      "195.123.246.26:22": "2024-03-09",
+      "195.211.96.99:443": "2024-03-09",
+      "195.66.213.170:443": "2026-07-07",
+      "2.58.15.28:8090": "2026-01-02",
+      "2.59.216.250:443": "2026-07-07",
+      "218.255.96.245:443": "2026-01-02",
+      "223.26.52.245:443": "2026-01-02",
+      "223.26.52.245:5000": "2026-01-02",
+      "223.26.52.245:8090": "2026-01-02",
+      "3.228.54.173:1883": "2023-02-17",
+      "38.54.42.106:443": "2026-07-07",
+      "38.89.72.133:443": "2026-01-02",
+      "43.229.79.163:443": "2026-01-02",
+      "43.254.132.217:443": "2026-01-02",
+      "45.131.179.179:110": "2022-03-23",
+      "45.131.179.179:22": "2022-07-18",
+      "45.131.179.179:443": "2022-07-18",
+      "45.131.179.179:5938": "2022-03-23",
+      "45.134.83.4:22": "2022-06-02",
+      "45.134.83.4:443": "2022-06-02",
+      "45.142.166.112:110": "2022-07-31",
+      "45.142.166.112:443": "2022-07-31",
+      "45.144.165.66:443": "2024-12-20",
+      "45.152.65.213:443": "2026-01-02",
+      "45.154.14.235:443": "2022-03-08",
+      "45.195.69.111:443": "2026-01-02",
+      "45.195.69.111:5000": "2026-01-02",
+      "45.195.69.111:8088": "2026-01-02",
+      "45.248.87.162:110": "2020-11-24",
+      "45.43.63.219:111": "2024-06-27",
+      "45.43.63.219:236": "2024-06-27",
+      "45.76.132.25:443": "2024-04-05",
+      "45.83.236.105:443": "2024-03-09",
+      "45.86.162.125:52736": "2026-01-02",
+      "45.86.162.79:443": "2026-01-02",
+      "45.89.105.83:443": "2026-07-07",
+      "45.90.59.153:443": "2022-12-28",
+      "45.90.59.39:443": "2023-03-14",
+      "47.253.106.177:443": "2024-09-09",
+      "47.76.87.55:443": "2024-09-09",
+      "5.34.178.156:443": "2022-12-07",
+      "54.87.92.106:1883": "2023-02-17",
+      "61.4.102.75:443": "2024-06-25",
+      "62.233.57.136:443": "2023-05-10",
+      "64.34.205.41:443": "2022-07-06",
+      "65.20.103.231:81": "2024-03-27",
+      "66.85.26.161:443": "2026-01-02",
+      "69.90.184.125:443": "2022-03-08",
+      "80.85.156.151:8000": "2024-02-22",
+      "83.229.127.115:443": "2026-01-02",
+      "83.229.127.115:5000": "2026-01-02",
+      "86.0.0.13:8080": "2026-01-02",
+      "91.245.253.46:443": "2024-01-26",
+      "92.118.188.78:443": "2022-02-28"
+    },
+    "url": {
+      "cosmosmusic.com/upload/pds/_notes/music.js": "2026-04-21",
+      "http://103.107.104.19": "2022-02-28",
+      "http://103.13.31.75": "2026-01-02",
+      "http://103.15.28.208": "2021-12-28",
+      "http://103.15.29.179": "2022-11-25",
+      "http://103.159.132.91": "2024-02-22",
+      "http://103.192.226.87": "2022-12-07",
+      "http://103.231.14.134": "2022-04-17",
+      "http://103.56.53.120": "2022-03-23",
+      "http://103.75.190.224": "2022-11-25",
+      "http://103.85.24.161": "2020-08-21",
+      "http://104.42.43.178": "2022-12-07",
+      "http://118.174.183.89": "2026-01-02",
+      "http://123.253.32.71": "2024-04-06",
+      "http://123.51.185.75": "2020-03-23",
+      "http://139.59.46.88": "2024-03-27",
+      "http://144.202.54.8": "2019-10-08",
+      "http://154.204.27.181": "2022-03-23",
+      "http://154.221.24.47": "2019-10-08",
+      "http://155.94.200.206": "2022-03-21",
+      "http://155.94.200.209": "2022-03-24",
+      "http://155.94.200.211": "2022-03-24",
+      "http://158.255.2.63": "2022-11-22",
+      "http://167.88.180.148": "2019-08-21",
+      "http://185.144.31.86": "2024-02-22",
+      "http://185.207.153.208": "2022-03-23",
+      "http://185.62.57.118": "2024-12-20",
+      "http://185.80.201.4": "2022-12-07",
+      "http://194.124.227.90": "2022-12-07",
+      "http://202.53.148.24": "2022-11-25",
+      "http://202.53.148.26": "2022-11-25",
+      "http://202.58.105.38": "2022-02-11",
+      "http://43.254.218.128": "2022-12-07",
+      "http://43.254.218.42": "2022-03-23",
+      "http://45.131.179.179": "2022-03-23",
+      "http://45.142.166.112": "2022-07-31",
+      "http://45.144.165.66": "2024-12-20",
+      "http://45.147.26.45": "2022-12-07",
+      "http://45.154.14.235": "2022-03-08",
+      "http://45.248.87.162": "2020-11-24",
+      "http://45.32.101.7": "2022-12-07",
+      "http://62.233.57.49": "2022-12-07",
+      "http://64.34.216.44": "2022-12-07",
+      "http://64.34.216.50": "2022-12-07",
+      "http://65.20.103.231": "2024-03-27",
+      "http://69.90.184.125": "2022-03-08",
+      "http://80.85.156.151": "2024-02-22",
+      "http://80.85.156.232": "2024-02-22",
+      "http://80.85.156.240": "2024-02-22",
+      "http://80.85.157.3": "2024-02-22",
+      "http://89.38.225.151": "2022-08-09",
+      "http://92.118.188.78": "2022-03-23",
+      "http://98.142.251.29": "2022-07-12"
+    },
+    "url_path": {
+      "/c0c00c0c/": "2021-03-16",
+      "/cgyusdft/": "2026-01-02",
+      "/cgyusdft/whfgujfg/": "2026-01-02",
+      "/csgdyhfywhefdj/": "2026-01-02",
+      "/csgdyhfywhefdj/gdydfhasc/": "2026-01-02",
+      "/e32c8df2cf6b7a16/": "2022-04-17",
+      "/e8c76295a5f9acb7/": "2022-04-17",
+      "/eciwrnjnx": "2024-08-30",
+      "/eufzyzhd": "2024-08-30",
+      "/ewfuck": "2024-02-22",
+      "/ewfuck00000": "2024-02-22",
+      "/gdydfhasc/": "2026-01-02",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/": "2026-01-02",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/jhegiokj7889seghjegh786jkhegfukj/": "2026-01-02",
+      "/jhegiokj7889seghjegh786jkhegfukj/": "2026-01-02",
+      "/kjuehbit": "2024-08-30",
+      "/kptinfo/import/index.php": "2026-01-02",
+      "/uVdjpZ": "2022-07-18",
+      "/whfgujfg/": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "aadcdn.msauth.document-invoiceviewer.online": "at-or-before",
+      "aadcdn.msauth.document-viewer.xyz": "at-or-before",
+      "aadcdn.msauth.documentpdfviewer.xyz": "at-or-before",
+      "account.live.document-invoiceviewer.online": "at-or-before",
+      "account.live.document-viewer.xyz": "at-or-before",
+      "account.live.office-docs.online": "at-or-before",
+      "accounts.documentpdfviewer.xyz": "at-or-before",
+      "accounts.hmailevma5.documentpdfviewer.xyz": "at-or-before",
+      "aliyunconsole.com": "at-or-before",
+      "api.document-invoiceviewer.online": "at-or-before",
+      "api.document-viewer.xyz": "at-or-before",
+      "api.office-docs.online": "at-or-before",
+      "b.document-viewer.xyz": "at-or-before",
+      "b8pjmgd6.com": "at-or-before",
+      "csp.document-invoiceviewer.online": "at-or-before",
+      "csp.document-viewer.xyz": "at-or-before",
+      "csp.documentpdfviewer.xyz": "at-or-before",
+      "csp.office-docs.online": "at-or-before",
+      "d32tpl7xt7175h.cloudfront.net": "at-or-before",
+      "dest-working.com": "at-or-before",
+      "document-invoiceviewer.online": "at-or-before",
+      "document-viewer.xyz": "at-or-before",
+      "documentinvoice-viewer.top": "at-or-before",
+      "documentpdfviewer.xyz": "at-or-before",
+      "events.api.document-invoiceviewer.online": "at-or-before",
+      "events.api.document-viewer.xyz": "at-or-before",
+      "events.api.office-docs.online": "at-or-before",
+      "files.document-invoiceviewer.online": "at-or-before",
+      "files.document-viewer.xyz": "at-or-before",
+      "files.documentpdfviewer.xyz": "at-or-before",
+      "files.office-docs.online": "at-or-before",
+      "files.office3-docviewer.com": "at-or-before",
+      "fjke5oe.com": "at-or-before",
+      "flowise.document-viewer.xyz": "at-or-before",
+      "gclm.name": "at-or-before",
+      "ggrdl4.com": "at-or-before",
+      "gm4rys.com": "at-or-before",
+      "gui.document-invoiceviewer.online": "at-or-before",
+      "gui.documentpdfviewer.xyz": "at-or-before",
+      "gui.office-docs.online": "at-or-before",
+      "haberciinternational.com": "at-or-before",
+      "hbsanews.com": "at-or-before",
+      "hmailevma5.documentpdfviewer.xyz": "at-or-before",
+      "i5y3dl.com": "at-or-before",
+      "img1.document-invoiceviewer.online": "at-or-before",
+      "img1.documentpdfviewer.xyz": "at-or-before",
+      "img1.office-docs.online": "at-or-before",
+      "img6.document-invoiceviewer.online": "at-or-before",
+      "img6.document-viewer.xyz": "at-or-before",
+      "img6.documentpdfviewer.xyz": "at-or-before",
+      "img6.office-docs.online": "at-or-before",
+      "jpkinki.com": "at-or-before",
+      "live.document-invoiceviewer.online": "at-or-before",
+      "live.document-viewer.xyz": "at-or-before",
+      "live.documentpdfviewer.xyz": "at-or-before",
+      "live.office-docs.online": "at-or-before",
+      "login-us.document-viewer.xyz": "at-or-before",
+      "login.document-invoiceviewer.online": "at-or-before",
+      "login.document-viewer.xyz": "at-or-before",
+      "login.documentpdfviewer.xyz": "at-or-before",
+      "login.live.document-invoiceviewer.online": "at-or-before",
+      "login.live.documentpdfviewer.xyz": "at-or-before",
+      "login.live.office-docs.online": "at-or-before",
+      "login.office-docs.online": "at-or-before",
+      "logincdn.document-invoiceviewer.online": "at-or-before",
+      "logincdn.documentpdfviewer.xyz": "at-or-before",
+      "logincdn.office-docs.online": "at-or-before",
+      "m365.office-docs.online": "at-or-before",
+      "mediareleaseupdates.com": "at-or-before",
+      "msauth.document-invoiceviewer.online": "at-or-before",
+      "msauth.document-viewer.xyz": "at-or-before",
+      "msauth.documentpdfviewer.xyz": "at-or-before",
+      "myaccount.documentpdfviewer.xyz": "at-or-before",
+      "myaccount.hmailevma5.documentpdfviewer.xyz": "at-or-before",
+      "myanmarclouddrive.ru": "at-or-before",
+      "mydownfile.z11.web.core.windows.net": "at-or-before",
+      "office-docs.online": "at-or-before",
+      "office.document-invoiceviewer.online": "at-or-before",
+      "office.document-viewer.xyz": "at-or-before",
+      "office.documentpdfviewer.xyz": "at-or-before",
+      "office.office-docs.online": "at-or-before",
+      "office3-docviewer.com": "at-or-before",
+      "pdf.document-viewer.xyz": "at-or-before",
+      "pdf.documentpdfviewer.xyz": "at-or-before",
+      "portal.document-invoiceviewer.online": "at-or-before",
+      "portal.document-viewer.xyz": "at-or-before",
+      "portal.office-docs.online": "at-or-before",
+      "profile-keybord.com": "at-or-before",
+      "qa.flowise.document-viewer.xyz": "at-or-before",
+      "renxinguo.com": "at-or-before",
+      "sajjadsmziranir.iransmz.tech": "at-or-before",
+      "sclickvpn.com": "at-or-before",
+      "share.office-docs.online": "at-or-before",
+      "smz4.iransmz.tech": "at-or-before",
+      "sso.document-invoiceviewer.online": "at-or-before",
+      "tasensors.com": "at-or-before",
+      "update.fjke5oe.com": "at-or-before",
+      "webmail.documentpdfviewer.xyz": "at-or-before",
+      "zimbra.page": "at-or-before"
+    },
+    "ipv4": {
+      "103.107.104.61:443": "at-or-before",
+      "103.107.104.61:8088": "at-or-before",
+      "103.13.31.75:443": "at-or-before",
+      "103.56.18.101:443": "at-or-before",
+      "103.56.18.101:53": "at-or-before",
+      "103.79.120.70:443": "at-or-before",
+      "103.79.120.70:8088": "at-or-before",
+      "103.79.120.71:443": "at-or-before",
+      "103.79.120.71:8088": "at-or-before",
+      "103.79.120.73:443": "at-or-before",
+      "103.79.120.73:8088": "at-or-before",
+      "103.79.120.74:443": "at-or-before",
+      "103.79.120.74:8088": "at-or-before",
+      "103.79.120.81:443": "at-or-before",
+      "103.79.120.81:8088": "at-or-before",
+      "103.79.120.85:443": "at-or-before",
+      "103.79.120.89:443": "at-or-before",
+      "107.155.56.87:53": "at-or-before",
+      "136.0.141.189:443": "at-or-before",
+      "136.0.141.189:5000": "at-or-before",
+      "136.0.141.189:8088": "at-or-before",
+      "139.180.192.163:443": "at-or-before",
+      "139.180.192.163:8088": "at-or-before",
+      "146.70.29.229:443": "at-or-before",
+      "152.32.130.139:443": "at-or-before",
+      "152.32.130.139:5000": "at-or-before",
+      "166.88.2.90:443": "at-or-before",
+      "173.199.71.152:443": "at-or-before",
+      "173.199.71.152:8443": "at-or-before",
+      "185.140.12.224:443": "at-or-before",
+      "185.243.112.79:52736": "at-or-before",
+      "192.52.166.252:443": "at-or-before",
+      "2.58.15.28:8090": "at-or-before",
+      "218.255.96.245:443": "at-or-before",
+      "223.26.52.245:443": "at-or-before",
+      "223.26.52.245:5000": "at-or-before",
+      "223.26.52.245:8090": "at-or-before",
+      "38.89.72.133:443": "at-or-before",
+      "43.229.79.163:443": "at-or-before",
+      "43.254.132.217:443": "at-or-before",
+      "45.152.65.213:443": "at-or-before",
+      "45.195.69.111:443": "at-or-before",
+      "45.195.69.111:5000": "at-or-before",
+      "45.195.69.111:8088": "at-or-before",
+      "45.86.162.125:52736": "at-or-before",
+      "45.86.162.79:443": "at-or-before",
+      "66.85.26.161:443": "at-or-before",
+      "83.229.127.115:443": "at-or-before",
+      "83.229.127.115:5000": "at-or-before",
+      "86.0.0.13:8080": "at-or-before"
+    },
+    "url": {
+      "http://103.13.31.75": "at-or-before",
+      "http://118.174.183.89": "at-or-before"
+    },
+    "url_path": {
+      "/cgyusdft/": "at-or-before",
+      "/cgyusdft/whfgujfg/": "at-or-before",
+      "/csgdyhfywhefdj/": "at-or-before",
+      "/csgdyhfywhefdj/gdydfhasc/": "at-or-before",
+      "/gdydfhasc/": "at-or-before",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/": "at-or-before",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/jhegiokj7889seghjegh786jkhegfukj/": "at-or-before",
+      "/jhegiokj7889seghjegh786jkhegfukj/": "at-or-before",
+      "/kptinfo/import/index.php": "at-or-before",
+      "/whfgujfg/": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2019-08-20",
+    "latest": "2026-07-07"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "21-ninety.com",
+      "247up.org",
+      "3012965.securefastserver.com",
+      "3784f20bb00.com",
+      "7daydai1y.com",
+      "9521182.com",
+      "aadcdn.msauth.document-invoiceviewer.online",
+      "aadcdn.msauth.document-viewer.xyz",
+      "aadcdn.msauth.documentpdfviewer.xyz",
+      "account.live.document-invoiceviewer.online",
+      "account.live.document-viewer.xyz",
+      "account.live.office-docs.online",
+      "accounts.documentpdfviewer.xyz",
+      "accounts.hmailevma5.documentpdfviewer.xyz",
+      "adobephotostage.com",
+      "ai.nerdnooks.com",
+      "aihkstore.com",
+      "airdndvn.com",
+      "aliyunconsole.com",
+      "api.document-invoiceviewer.online",
+      "api.document-viewer.xyz",
+      "api.office-docs.online",
+      "apple-net.com",
+      "attd.z23.web.core.windows.net",
+      "b.document-viewer.xyz",
+      "b83928922.questincc.com",
+      "b8pjmgd6.com",
+      "babyafrosapparel.com",
+      "back.vlvlvlvl.site",
+      "backups.muathye.com",
+      "bcller.com",
+      "blogdirve.com",
+      "bonuscave.com",
+      "buyonebuy.top",
+      "c7p949983.silveradeearyray.com",
+      "cabsecnow.com",
+      "calendargbmechanical.cam",
+      "calendarthomastecs.cam",
+      "calendercongress.cam",
+      "calendercongress.com",
+      "careerhuawei.net",
+      "cdn.update.huaweiyuncdn.com",
+      "cdn1.update.huaweiyuncdn.com",
+      "cdn7s65.z13.web.core.windows.net",
+      "concreteinportland.com",
+      "conflictaslesson.com",
+      "connectmvasalu.cam",
+      "constructionferryfences.cam",
+      "coolboxpc.com",
+      "couldinstallup.com",
+      "cremessage.com",
+      "csp.document-invoiceviewer.online",
+      "csp.document-viewer.xyz",
+      "csp.documentpdfviewer.xyz",
+      "csp.office-docs.online",
+      "d32tpl7xt7175h.cloudfront.net",
+      "daydreamdew.net",
+      "deleted.tripadviso.online",
+      "dest-working.com",
+      "destroy2013.com",
+      "devlyrics.com",
+      "devlyrics.github.io",
+      "dl6yfsl.com",
+      "dljmp2p.com",
+      "document-invoiceviewer.online",
+      "document-viewer.xyz",
+      "documentinvoice-viewer.top",
+      "documentpdfviewer.xyz",
+      "dodefoh.com",
+      "download.flach.cn",
+      "download.hilifimyanmar.com",
+      "drive.babyafrosapparel.com",
+      "editor.gleeze.com",
+      "electrictulsa.com",
+      "em2in.johnsimde.xyz",
+      "estmongolia.com",
+      "events.api.document-invoiceviewer.online",
+      "events.api.document-viewer.xyz",
+      "events.api.office-docs.online",
+      "ferryfences.cam",
+      "ferryfencesconstruc.cam",
+      "ferryfencesconstruction.cam",
+      "fil76v6shar604bbdoc0o.com",
+      "fileclub.modaestilo.net",
+      "files.document-invoiceviewer.online",
+      "files.document-viewer.xyz",
+      "files.documentpdfviewer.xyz",
+      "files.office-docs.online",
+      "files.office3-docviewer.com",
+      "files.riddhiman.shop",
+      "filesdownld.z13.web.core.windows.net",
+      "fileshare.babyafrosapparel.com",
+      "fileshare.gorollerskate.com",
+      "filestoretome.z23.web.core.windows.net",
+      "filevault.soundit.co",
+      "fitehook.com",
+      "fjke5oe.com",
+      "flach.cn",
+      "flash-update.buyonebuy.top",
+      "flowise.document-viewer.xyz",
+      "forexdualsystem.com",
+      "formainservercheap.com",
+      "forum.flach.cn",
+      "gclm.name",
+      "getfiledown.com",
+      "getfilefox.com",
+      "ggrdl4.com",
+      "gm4rys.com",
+      "goclamdep.net",
+      "gooledives.z48.web.core.windows.net",
+      "gorollerskate.com",
+      "gui.document-invoiceviewer.online",
+      "gui.documentpdfviewer.xyz",
+      "gui.office-docs.online",
+      "haberciinternational.com",
+      "hb3788263.questincc.com",
+      "hbsanews.com",
+      "hidusi.com",
+      "hilifimyanmar.com",
+      "hmailevma5.documentpdfviewer.xyz",
+      "holtconstruction.cam",
+      "holtlogistics.cam",
+      "hostareas.com",
+      "hr.careerhuawei.net",
+      "huaweiyuncdn.com",
+      "hydrationroom.cam",
+      "i5y3dl.com",
+      "iamc2c2.com",
+      "icloud-cdn.net",
+      "images.kiidcloud.com",
+      "images.markplay.net",
+      "images.myanmarnewsonline.org",
+      "img1.document-invoiceviewer.online",
+      "img1.documentpdfviewer.xyz",
+      "img1.office-docs.online",
+      "img6.document-invoiceviewer.online",
+      "img6.document-viewer.xyz",
+      "img6.documentpdfviewer.xyz",
+      "img6.office-docs.online",
+      "info.careerhuawei.net",
+      "info.flach.cn",
+      "infoadmin.update.huaweiyuncdn.com",
+      "infosecvn.com",
+      "inly5sf.com",
+      "iot.johnsimde.xyz",
+      "ipsoftwarelabs.com",
+      "irrawddy.com",
+      "ivibers.com",
+      "jcswcd.com",
+      "jk319201923.lectrosonic.com",
+      "johnsimde.xyz",
+      "joxinu.com",
+      "jpkinki.com",
+      "jsquerys.net",
+      "kantolocalfinance.com",
+      "kuhkhjvmjh.com",
+      "kxmmcdmnb.online",
+      "lameers.com",
+      "lectrosonic.com",
+      "lionforcesystems.com",
+      "live.document-invoiceviewer.online",
+      "live.document-viewer.xyz",
+      "live.documentpdfviewer.xyz",
+      "live.office-docs.online",
+      "lm663772881.questincc.com",
+      "locvnpt.com",
+      "login-us.document-viewer.xyz",
+      "login.document-invoiceviewer.online",
+      "login.document-viewer.xyz",
+      "login.documentpdfviewer.xyz",
+      "login.live.document-invoiceviewer.online",
+      "login.live.documentpdfviewer.xyz",
+      "login.live.office-docs.online",
+      "login.office-docs.online",
+      "logincdn.document-invoiceviewer.online",
+      "logincdn.documentpdfviewer.xyz",
+      "logincdn.office-docs.online",
+      "lokjopppkuimlpo.shop",
+      "lyjxq3.com",
+      "m.cremessage.com",
+      "m.flach.cn",
+      "m365.office-docs.online",
+      "macuwuf.com",
+      "mail.kantolocalfinance.com",
+      "mail.nexushighcargo.com",
+      "mail.oceancertsurveyors.com",
+      "markplay.net",
+      "mashupdatabase.com",
+      "mediadomainservice.org",
+      "mediareleaseupdates.com",
+      "meet.schedulethomastecs.cam",
+      "meetviberapi.com",
+      "meetvibersapi.com",
+      "mega.vlvlvlvl.site",
+      "miandfish.store",
+      "microsite-manager.com",
+      "midasconsilium.com",
+      "militarytc.com",
+      "miscrosaft.com",
+      "mmtimes.net",
+      "mmtimes.org",
+      "mobile.flach.cn",
+      "modaestilo.net",
+      "mongolianshipregistrar.com",
+      "mopfi-ferd.com",
+      "msauth.document-invoiceviewer.online",
+      "msauth.document-viewer.xyz",
+      "msauth.documentpdfviewer.xyz",
+      "myaccount.documentpdfviewer.xyz",
+      "myaccount.hmailevma5.documentpdfviewer.xyz",
+      "myanmarclouddrive.ru",
+      "myanmarfreedomwork.org",
+      "myanmarnewsonline.org",
+      "mydownfile.z11.web.core.windows.net",
+      "mydownload.z29.web.core.windows.net",
+      "mydownloadfile.z7.web.core.windows.net",
+      "myfile.tokyobighub.com",
+      "nerdnooks.com",
+      "news.comsnews.com",
+      "newsmailnet.com",
+      "next.calendarthomastecs.cam",
+      "next.connectmvasalu.cam",
+      "next.schedulethomastecs.cam",
+      "next.schthomastecs.cam",
+      "nexthomastecs.cam",
+      "nexushighcargo.com",
+      "nx39489933.ltapprel.com",
+      "oceancertsurveyors.com",
+      "offerbox.pro",
+      "office-docs.online",
+      "office.document-invoiceviewer.online",
+      "office.document-viewer.xyz",
+      "office.documentpdfviewer.xyz",
+      "office.office-docs.online",
+      "office3-docviewer.com",
+      "officeproduces.com",
+      "openai-cheapagent.com",
+      "openservername.com",
+      "oshibadrive.com",
+      "pass.romexperts.com",
+      "payment.tripadviso.online",
+      "pdf.document-viewer.xyz",
+      "pdf.documentpdfviewer.xyz",
+      "portal.document-invoiceviewer.online",
+      "portal.document-viewer.xyz",
+      "portal.office-docs.online",
+      "preperlanguageserver.com",
+      "president-office.gov.mm",
+      "profile-keybord.com",
+      "pumpamed.com",
+      "qa.flowise.document-viewer.xyz",
+      "qlv838393942.watchefswant.com",
+      "reloadsite.z13.web.core.windows.net",
+      "renewyourclicks.org",
+      "renxinguo.com",
+      "resources.babyafrosapparel.com",
+      "rewards.roshan.af",
+      "riddhiman.shop",
+      "romexperts.com",
+      "rt47588343.lectrosonic.com",
+      "sa2il.johnsimde.xyz",
+      "sajjadsmziranir.iransmz.tech",
+      "schedule.thomastecs.cam",
+      "scheduleferryfences.cam",
+      "schedulethomastecs.cam",
+      "schthomastecs.cam",
+      "sclickvpn.com",
+      "secondomoma.com",
+      "share.office-docs.online",
+      "shreyaninfotech.com",
+      "silveradeearyray.com",
+      "siteup-365.org",
+      "smz4.iransmz.tech",
+      "snova-tech.com",
+      "srv1.blackberrygame.com",
+      "sso.document-invoiceviewer.online",
+      "stlfast.com",
+      "strust.club",
+      "svchosts.com",
+      "svrhosts.com",
+      "syncnovaall.com",
+      "systeminfor.com",
+      "taiwallace.pserver.space",
+      "tasensors.com",
+      "terminal.flach.cn",
+      "thesiamworks.com",
+      "thisistestc2.com",
+      "thomastecs.cam",
+      "tokyobighub.com",
+      "toptipvideo.com",
+      "tripadviso.online",
+      "unassigned.172-81-60-97.spryt.net",
+      "update.babyafrosapparel.com",
+      "update.careerhuawei.net",
+      "update.fjke5oe.com",
+      "update.flach.cn",
+      "update.hilifimyanmar.com",
+      "update.huaweiyuncdn.com",
+      "update.olk4.com",
+      "updatecatalogs.com",
+      "upespr.com",
+      "urmsec.com",
+      "uvfr4ep.com",
+      "vie3490gy23777bnufil8903456bil623000r789sit986uhhh.com",
+      "vietnam.zing.photos",
+      "viksend.vikkify.com",
+      "vlvlvlvl.site",
+      "wbemsystem.com",
+      "web.bonuscave.com",
+      "web.daydreamdew.net",
+      "webmail.documentpdfviewer.xyz",
+      "webmail.mmtimes.net",
+      "widgets.babyafrosapparel.com",
+      "yahoo-cdn.it.com",
+      "yahoorealtors.com",
+      "yg7488392.lectrosonic.com",
+      "ynsins.com",
+      "zimbra.page",
+      "zyber-i.com"
+    ],
+    "ipv4": [
+      "102.211.234.105:443",
+      "103.107.104.19:33182",
+      "103.107.104.19:33255",
+      "103.107.104.19:443",
+      "103.107.104.37:443",
+      "103.107.104.61:443",
+      "103.107.104.61:8088",
+      "103.13.31.75:443",
+      "103.15.28.145:6666",
+      "103.15.29.17:443",
+      "103.159.132.80:443",
+      "103.175.50.32:443",
+      "103.192.226.46:443",
+      "103.200.97.189:110",
+      "103.200.97.189:965",
+      "103.245.164.154:443",
+      "103.247.19.204:443",
+      "103.249.84.137:443",
+      "103.27.109.157:443",
+      "103.56.18.101:443",
+      "103.56.18.101:53",
+      "103.56.53.120:8080",
+      "103.79.120.70:443",
+      "103.79.120.70:8088",
+      "103.79.120.71:443",
+      "103.79.120.71:8088",
+      "103.79.120.73:443",
+      "103.79.120.73:8088",
+      "103.79.120.74:443",
+      "103.79.120.74:8088",
+      "103.79.120.81:443",
+      "103.79.120.81:8088",
+      "103.79.120.85:443",
+      "103.79.120.89:443",
+      "103.79.77.181:443",
+      "104.194.154.150:443",
+      "107.155.56.87:443",
+      "107.155.56.87:53",
+      "107.167.64.4:443",
+      "107.181.160.16:443",
+      "110.42.64.64:24680",
+      "123.253.32.15:443",
+      "136.0.141.189:443",
+      "136.0.141.189:5000",
+      "136.0.141.189:8088",
+      "139.180.192.163:443",
+      "139.180.192.163:8088",
+      "139.180.217.142:5000",
+      "139.59.46.88:443",
+      "139.59.46.88:8080",
+      "139.59.46.88:8443",
+      "139.59.46.88:9443",
+      "146.70.149.186:443",
+      "146.70.149.36:443",
+      "146.70.29.229:443",
+      "146.70.29.241:443",
+      "149.104.11.29:443",
+      "149.104.12.64:443",
+      "149.28.156.153:443",
+      "152.32.130.139:443",
+      "152.32.130.139:5000",
+      "154.196.139.38:443",
+      "154.204.26.120:22",
+      "154.204.26.120:443",
+      "154.204.27.130:443",
+      "154.204.27.181:110",
+      "154.223.58.142:20807",
+      "154.223.58.142:20811",
+      "154.90.32.88:443",
+      "155.94.200.206:5008",
+      "155.94.200.211:5008",
+      "155.94.200.212:443",
+      "159.138.84.217:81",
+      "166.88.2.90:443",
+      "172.81.60.97:3389",
+      "172.81.60.97:443",
+      "173.199.71.152:443",
+      "173.199.71.152:8443",
+      "176.97.117.5:443",
+      "18.163.112.181:443",
+      "185.140.12.224:443",
+      "185.239.226.17:110",
+      "185.239.226.17:965",
+      "185.243.112.79:52736",
+      "185.62.57.118:443",
+      "185.82.216.184:443",
+      "185.9.17.213:443",
+      "188.208.141.177:443",
+      "188.208.141.177:47001",
+      "192.153.57.98:8080",
+      "192.52.166.252:443",
+      "193.149.129.93:8443",
+      "194.5.97.169:443",
+      "194.59.183.133:443",
+      "195.123.218.78:443",
+      "195.123.246.26:22",
+      "195.211.96.99:443",
+      "195.66.213.170:443",
+      "2.58.15.28:8090",
+      "2.59.216.250:443",
+      "218.255.96.245:443",
+      "223.26.52.245:443",
+      "223.26.52.245:5000",
+      "223.26.52.245:8090",
+      "3.228.54.173:1883",
+      "38.54.42.106:443",
+      "38.89.72.133:443",
+      "43.229.79.163:443",
+      "43.254.132.217:443",
+      "45.131.179.179:110",
+      "45.131.179.179:22",
+      "45.131.179.179:443",
+      "45.131.179.179:5938",
+      "45.134.83.4:22",
+      "45.134.83.4:443",
+      "45.142.166.112:110",
+      "45.142.166.112:443",
+      "45.144.165.66:443",
+      "45.152.65.213:443",
+      "45.154.14.235:443",
+      "45.195.69.111:443",
+      "45.195.69.111:5000",
+      "45.195.69.111:8088",
+      "45.248.87.162:110",
+      "45.43.63.219:111",
+      "45.43.63.219:236",
+      "45.76.132.25:443",
+      "45.83.236.105:443",
+      "45.86.162.125:52736",
+      "45.86.162.79:443",
+      "45.89.105.83:443",
+      "45.90.59.153:443",
+      "45.90.59.39:443",
+      "47.253.106.177:443",
+      "47.76.87.55:443",
+      "5.34.178.156:443",
+      "54.87.92.106:1883",
+      "61.4.102.75:443",
+      "62.233.57.136:443",
+      "64.34.205.41:443",
+      "65.20.103.231:81",
+      "66.85.26.161:443",
+      "69.90.184.125:443",
+      "80.85.156.151:8000",
+      "83.229.127.115:443",
+      "83.229.127.115:5000",
+      "86.0.0.13:8080",
+      "91.245.253.46:443",
+      "92.118.188.78:443"
+    ],
+    "url": [
+      "cosmosmusic.com/upload/pds/_notes/music.js",
+      "http://103.107.104.19",
+      "http://103.13.31.75",
+      "http://103.15.28.208",
+      "http://103.15.29.179",
+      "http://103.159.132.91",
+      "http://103.192.226.87",
+      "http://103.231.14.134",
+      "http://103.56.53.120",
+      "http://103.75.190.224",
+      "http://103.85.24.161",
+      "http://104.42.43.178",
+      "http://118.174.183.89",
+      "http://123.253.32.71",
+      "http://123.51.185.75",
+      "http://139.59.46.88",
+      "http://144.202.54.8",
+      "http://154.204.27.181",
+      "http://154.221.24.47",
+      "http://155.94.200.206",
+      "http://155.94.200.209",
+      "http://155.94.200.211",
+      "http://158.255.2.63",
+      "http://167.88.180.148",
+      "http://185.144.31.86",
+      "http://185.207.153.208",
+      "http://185.62.57.118",
+      "http://185.80.201.4",
+      "http://194.124.227.90",
+      "http://202.53.148.24",
+      "http://202.53.148.26",
+      "http://202.58.105.38",
+      "http://43.254.218.128",
+      "http://43.254.218.42",
+      "http://45.131.179.179",
+      "http://45.142.166.112",
+      "http://45.144.165.66",
+      "http://45.147.26.45",
+      "http://45.154.14.235",
+      "http://45.248.87.162",
+      "http://45.32.101.7",
+      "http://62.233.57.49",
+      "http://64.34.216.44",
+      "http://64.34.216.50",
+      "http://65.20.103.231",
+      "http://69.90.184.125",
+      "http://80.85.156.151",
+      "http://80.85.156.232",
+      "http://80.85.156.240",
+      "http://80.85.157.3",
+      "http://89.38.225.151",
+      "http://92.118.188.78",
+      "http://98.142.251.29"
+    ],
+    "url_path": [
+      "/c0c00c0c/",
+      "/cgyusdft/",
+      "/cgyusdft/whfgujfg/",
+      "/csgdyhfywhefdj/",
+      "/csgdyhfywhefdj/gdydfhasc/",
+      "/e32c8df2cf6b7a16/",
+      "/e8c76295a5f9acb7/",
+      "/eciwrnjnx",
+      "/eufzyzhd",
+      "/ewfuck",
+      "/ewfuck00000",
+      "/gdydfhasc/",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/",
+      "/heugojhgriuhn78867jhkbjkdgfhuie78/jhegiokj7889seghjegh786jkhegfukj/",
+      "/jhegiokj7889seghjegh786jkhegfukj/",
+      "/kjuehbit",
+      "/kptinfo/import/index.php",
+      "/uVdjpZ",
+      "/whfgujfg/"
+    ]
+  },
+  "last_modified": "2026-07-10T12:28:15+00:00",
+  "maltrail_groups": [
+    "CAMARODRAGON",
+    "LUMINOUSMOTH",
+    "MUSTANGPANDA",
+    "TA416"
+  ],
+  "references": [
+    "http://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats/",
+    "https://any.run/report/bbbeb1a937274825b0434414fa2d9ec629ba846b1e3e33a59c613b54d375e4d2/dd877b4d-8b36-48c0-af07-ce37fd9fee7b",
+    "https://app.validin.com/detail?find=b9dceb7aa7369a63f1c64648a3b8d0fa&type=hash&ref_id=98fc0b0493f#tab=host_pairs (# 2025-04-04)",
+    "https://arcticwolf.com/resources/blog/unc6384-weaponizes-zdi-can-25373-vulnerability-to-deploy-plugx/",
+    "https://blog.talosintelligence.com/2022/05/mustang-panda-targets-europe.html",
+    "https://blog.vincss.net/2020/03/re012-phan-tich-ma-doc-loi-dung-dich-COVID-19-de-phat-tan-gia-mao-chi-thi-cua-thu-tuong-Nguyen-Xuan-Phuc-phan2.html",
+    "https://blog.vincss.net/2020/03/re012-phan-tich-ma-doc-loi-dung-dich-COVID-19-de-phat-tan-gia-mao-chi-thi-cua-thu-tuong-Nguyen-Xuan-Phuc.html",
+    "https://blogs.blackberry.com/en/2022/12/mustang-panda-uses-the-russian-ukrainian-war-to-attack-europe-and-asia-pacific-targets",
+    "https://drive.google.com/file/d/1OpPiT6ieub3_q0sLIxGt8iI85tInqjoU/view",
+    "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/China/APT/Unknown/20-08-19/Malware%20analysis%2020-08-19.md",
+    "https://github.com/eset/malware-ioc/tree/master/ceranakeeper",
+    "https://go.recordedfuture.com/hubfs/reports/cta-2020-0728.pdf",
+    "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf",
+    "https://kienmanowar.wordpress.com/2022/12/27/diving-into-a-plugx-sample-of-mustang-panda-group/",
+    "https://lab52.io/blog/mustang-panda-recent-activity-dll-sideloading-trojans-with-temporal-c2-servers/",
+    "https://lab52.io/blog/mustang-pandas-plugx-new-variant-targetting-taiwanese-government-and-diplomats/",
+    "https://malwareandstuff.com/mustang-panda-joins-the-covid19-bandwagon/",
+    "https://mp.weixin.qq.com/s?__biz=MzI2MDc2MDA4OA==&mid=2247514297&idx=1&sn=976e0be3763db78860ce88dc76342a54&chksm=ea664fcedd11c6d8388a94c786a447613fd762176ae1bc0e3db9392494e787a019d71b37d415&scene=178&cur_album_id=1539799351089283075",
+    "https://or10nlabs.tech/reverse-engineering-the-mustang-panda-plugx-rat-extracting-the-config/",
+    "https://otx.alienvault.com/pulse/5d9c72d7e2efa3b5aa799b41",
+    "https://otx.alienvault.com/pulse/5e0a1aa2617f951d88c9d891",
+    "https://otx.alienvault.com/pulse/5ed7c36c21ae174ca3acfaee",
+    "https://otx.alienvault.com/pulse/5f219067fd875a905691df22",
+    "https://otx.alienvault.com/pulse/5fbc0c5ec4bfeaa7f7956ff4",
+    "https://otx.alienvault.com/pulse/6050e65d389812e02dfca3c3",
+    "https://otx.alienvault.com/pulse/60efe4047c9b9b9564314643",
+    "https://otx.alienvault.com/pulse/613914361364535ed5d60bc4",
+    "https://otx.alienvault.com/pulse/6144875da41b403380a06521",
+    "https://otx.alienvault.com/pulse/64a5960b230e2e9a1bf9ec66",
+    "https://research.checkpoint.com/2023/chinese-threat-actors-targeting-europe-in-smugx-campaign/",
+    "https://research.checkpoint.com/2023/the-dragon-who-sold-his-camaro-analyzing-custom-router-implant/",
+    "https://securelist.com/apt-luminousmoth/103332/",
+    "https://securelist.com/exploitation-of-the-cve-2021-40444-vulnerability-in-mshtml/104218/",
+    "https://ti.qianxin.com/blog/articles/operation-sea-elephant-the-dying-walrus-wandering-the-indian-ocean-en/",
+    "https://twitter.com/8th_grey_owl/status/1767860327369298026",
+    "https://twitter.com/Cuser07/status/1748000699122958665",
+    "https://twitter.com/G60930953/status/1507031738282909698",
+    "https://twitter.com/IntezerLabs/status/1316384526323638274",
+    "https://twitter.com/Jane_0sint/status/1750537878420295808",
+    "https://twitter.com/StillAzureH/status/1505823479945625604",
+    "https://twitter.com/StopMalvertisin/status/1610961056163311619",
+    "https://twitter.com/StopMalvertisin/status/1635620870214352901",
+    "https://twitter.com/Unit42_Intel/status/1626613722700472320",
+    "https://twitter.com/aRtAGGI/status/1498314276104200193",
+    "https://twitter.com/barberousse_bin/status/1594791243489345537",
+    "https://twitter.com/cyber__sloth/status/1229080836487540736",
+    "https://twitter.com/cyber__sloth/status/1296722004964409349",
+    "https://twitter.com/felixaime/status/1501150428016357378",
+    "https://twitter.com/fr0s7_/status/1501158252045901824",
+    "https://twitter.com/h2jazi/status/1498308592495214592",
+    "https://twitter.com/h2jazi/status/1546861105678524418",
+    "https://twitter.com/h2jazi/status/1775911374821941432",
+    "https://twitter.com/hackingump1/status/1241760059543244805",
+    "https://twitter.com/k3yp0d/status/1683811748871122944",
+    "https://twitter.com/katechondic/status/1556940169483264000",
+    "https://twitter.com/katechondic/status/1557031529141964801",
+    "https://twitter.com/kienbigmummy/status/1532305081676464128",
+    "https://twitter.com/kienbigmummy/status/1544537348670881792",
+    "https://twitter.com/kienbigmummy/status/1549058500806197248",
+    "https://twitter.com/kienbigmummy/status/1553737903398072320",
+    "https://twitter.com/kienbigmummy/status/1582217448731729920",
+    "https://twitter.com/kienbigmummy/status/1582217473499140097",
+    "https://twitter.com/malwrhunterteam/status/1546857896755044358",
+    "https://twitter.com/s1ckb017/status/1475621967160123395",
+    "https://twitter.com/s1ckb017/status/1492069505803116546",
+    "https://twitter.com/t3ft3lb/status/1620848769607806976",
+    "https://twitter.com/t3ft3lb/status/1656194831830401024",
+    "https://twitter.com/t3ft3lb/status/1656297883048505346",
+    "https://unit42.paloaltonetworks.com/chinese-apts-target-asean-entities/",
+    "https://unit42.paloaltonetworks.com/stately-taurus-uses-bookworm-malware/",
+    "https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/",
+    "https://www.acronis.com/en/tru/posts/mustang-panda-targets-indias-government-and-energy-sectors/",
+    "https://www.acronis.com/en/tru/posts/same-packet-different-magic-mustang-panda-hits-indias-banking-sector-and-korea-geopolitics/",
+    "https://www.anomali.com/blog/china-based-apt-mustang-panda-targets-minority-groups-public-and-private-sector-organizations",
+    "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+    "https://www.ibm.com/think/x-force/hive0154-drops-updated-toneshell-backdoor",
+    "https://www.ibm.com/think/x-force/hive0154-mustang-panda-shifts-focus-tibetan-community-deploy-pubload-backdoor",
+    "https://www.joesandbox.com/analysis/584888/0/html",
+    "https://www.macnica.co.jp/business/security/security-reports/pdf/cyberespionage_report_2023.pdf",
+    "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-dianxun.pdf",
+    "https://www.proofpoint.com/us/blog/threat-insight/good-bad-and-web-bug-ta416-increases-operational-tempo-against-european",
+    "https://www.proofpoint.com/us/blog/threat-insight/id-come-running-back-eu-again-ta416-resumes-european-government-espionage",
+    "https://www.proofpoint.com/us/blog/threat-insight/ta416-goes-ground-and-returns-golang-plugx-malware-loader",
+    "https://www.secureworks.com/research/bronze-president-targets-ngos",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/k/earth-preta-spear-phishing-governments-worldwide/IOCs-earth-preta-spear-phishing-since-march.txt",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/b/earth-preta-campaign-uses-doplugs-to-target-asia/ioc-earth-preta-doplugs.txt",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/i/earth-preta-evolves-its-attacks-with-new-malware-and-strategies/IOC%20List%20-%20Earth%20Preta%20Evolves%20its%20Attacks%20with%20New%20Malware%20and%20Strategies.txt",
+    "https://www.trendmicro.com/en_us/research/22/k/earth-preta-spear-phishing-governments-worldwide.html",
+    "https://www.trendmicro.com/en_us/research/24/b/earth-preta-campaign-targets-asia-doplugs.html",
+    "https://www.trendmicro.com/en_us/research/24/i/earth-preta-new-malware-and-strategies.html",
+    "https://www.trendmicro.com/en_za/research/23/f/behind-the-scenes-unveiling-the-hidden-workings-of-earth-preta.html",
+    "https://www.validin.com/blog/hunting_pandas/",
+    "https://www.virustotal.com/gui/file/00619a5312d6957248bac777c44c0e9dd871950c6785830695c51184217a1437/detection",
+    "https://www.virustotal.com/gui/file/00fbfaf36114d3ff9e2c43885341f1c02fade82b49d1cf451bc756d992c84b06/detection",
+    "https://www.virustotal.com/gui/file/0198949a02fc4dcd65c29c028ba5f20365dc629d764f9e0a95721300b9fadbad/detection",
+    "https://www.virustotal.com/gui/file/02f4186b532b3e33a5cd6d9a39d9469b8d9c12df7cb45dba6dcab912b03e3cb8/detection",
+    "https://www.virustotal.com/gui/file/035d1f670b5e9d29d65fbb2b309ae042d6ee6807300162be9e3f6046ea27113f/detection",
+    "https://www.virustotal.com/gui/file/065585a379615b6bec23d1c9c414542c34c93ac269b6971b46e37007dd331da1/detection",
+    "https://www.virustotal.com/gui/file/080386f5dc89d42d7c1e684ca371b57ea4f7df85a6ea05acaa364247e3f8d390/detection",
+    "https://www.virustotal.com/gui/file/0ac93ddc58e7666eae677812d3be93fe8f922ffc32baeee0f803109341dc1ea7/detection",
+    "https://www.virustotal.com/gui/file/0b152012c1deab39c6ed7fe75a27168eaaec43ae025ee74d35c2fee2651b8902/detection",
+    "https://www.virustotal.com/gui/file/0d0296e94f6117ac0852b5c11a4caba09c4653a4927e62df0b7ec06c34f33354/detection",
+    "https://www.virustotal.com/gui/file/0d154e036b4de53059b5a24a1677fb546e1c136d6d0aa37c21a878c24891ee2c/detection",
+    "https://www.virustotal.com/gui/file/18bc0e0f627d90fb283aa243055b46d0bfb5d85a7240d0f63ec2d1c0a2c15893/detection",
+    "https://www.virustotal.com/gui/file/1de88a2ad4fd1b16005558591fa2a385f2fe343162bbca328384600c167df721/detection",
+    "https://www.virustotal.com/gui/file/231bac4015da9157553f5a8090bea35b8657406a18f14455fdaa71eb14427466/detection",
+    "https://www.virustotal.com/gui/file/2a00d95b658e11ca71a8de532999dd33ddee7f80432653427eaa885b611ddd87/detection",
+    "https://www.virustotal.com/gui/file/2c34b47ee7d271326cfff9701377277b05ec4654753b31c89be622e80d225250/detection",
+    "https://www.virustotal.com/gui/file/30c71d644bc72e0d55d46bed753ab3f72dc77b7f1be0e34693c957939a779507/detection",
+    "https://www.virustotal.com/gui/file/3489955d23e66d6f34b3ada70b4d228547dbb3ccb0f6c7282553cbbdeaf168cb/detection",
+    "https://www.virustotal.com/gui/file/3adf6df9bfc377a762f4cebe9e5b5e7d7a823de03f6bfe8efa8ed5473ce10bc1/detection",
+    "https://www.virustotal.com/gui/file/451ee465675e674cebe3c42ed41356ae2c972703e1dc7800a187426a6b34efdc/detection",
+    "https://www.virustotal.com/gui/file/471e61015ff18349f4bf357447597a54579839336188d98d299b14cff458d132/detection",
+    "https://www.virustotal.com/gui/file/47eb43acdd342d3975000f650cf656d9f0f759780d85f16d806d6b9a70f1be46/detection",
+    "https://www.virustotal.com/gui/file/48e2ebee3f8de80c4a50f1dd948e8e9a41509f4847a574f67a453c154d21ce60/detection",
+    "https://www.virustotal.com/gui/file/505f0409d896d34be04565609fd3484d78dd93469e9c338c365b106a802c1082/detection",
+    "https://www.virustotal.com/gui/file/51d89afe0a49a3abf88ed6f032e4f0a83949fc44489fc7b45c860020f905c9d7/detection",
+    "https://www.virustotal.com/gui/file/558cbbcb969fe2fa3f1c74c376e307efcdbe3bad7497095619927edd5762363a/detection",
+    "https://www.virustotal.com/gui/file/563611caf1787441dcc12c5a77427224b5f1ac0d18efac4032ab67eed3a99928/detection",
+    "https://www.virustotal.com/gui/file/564a03763879aaed4da8a8c1d6067f4112d8e13bb46c2f80e0fcb9ffdd40384c/detection",
+    "https://www.virustotal.com/gui/file/5afe21142999659a4050f6e038a6dab96cf4827f332497049a91cdb1a4d4828b/detection",
+    "https://www.virustotal.com/gui/file/5b18f8b379cb32945ef7722b7ec175f5d24e7c468f6f5d593c51610f6b87f21f/detection",
+    "https://www.virustotal.com/gui/file/60ee19bb558d20c2591569ddb73fc90787dd47a07453e252a3afcaa222dde125/detection",
+    "https://www.virustotal.com/gui/file/62087a1226c5433d6f6184d627c4874c347c1de1cb1c1fdbdc1b0cac1e354201/detection",
+    "https://www.virustotal.com/gui/file/6655c5686b9b0292cf5121fc6346341bb888704b421a85a15011456a9a2c192a/detection",
+    "https://www.virustotal.com/gui/file/6a5b0cfdaf402e94f892f66a0f53e347d427be4105ab22c1a9f259238c272b60/detection",
+    "https://www.virustotal.com/gui/file/6d18906c49e213ca0db7b2ce28f1a20066c521367fc61caae0710bf0e10cfc9e/detection",
+    "https://www.virustotal.com/gui/file/6e408aada775eaf19c524792344cabca0b406247154e2b03ed03a929e0feee5a/detection",
+    "https://www.virustotal.com/gui/file/736036bc0069eaec6c489e95553111cd235adb07bc19ddbdd2c63ec41a90d0dd/detection",
+    "https://www.virustotal.com/gui/file/79d3481bac60ac1ecc7e2d1a4b86bde8a6b2c66f4e9c755f28512f7717f7badd/detection",
+    "https://www.virustotal.com/gui/file/843709a59f12ff7aa06a5837be7a1a93fdf6f02f99936af6658c166e8abcaa2d/detection",
+    "https://www.virustotal.com/gui/file/887345540f1bf31c40755edcda2e3dd9fe640122fc9020f3873c895daa2378bf/detection",
+    "https://www.virustotal.com/gui/file/8964dce6ae40681a51226b7912728c589c33febba1a1547c351353fea6a6571c/detection",
+    "https://www.virustotal.com/gui/file/8f32bebce3a4f35531de592ed57af7b63906d64565f36abe91298acc8ea3e93d/detection",
+    "https://www.virustotal.com/gui/file/9170169ae732c3a843c871be73875ea1bc8081876db5f9bcfd5f05d792bcaef0/detection",
+    "https://www.virustotal.com/gui/file/9335e9ec308de135651bec4b3f2f4f43324e7ab40329796e6d4343698c8a0d2a/detection",
+    "https://www.virustotal.com/gui/file/98c1527d4b064fcf4a95488c34576e5f443585cb6e385c7b8765e63fa9e83ccc/detection",
+    "https://www.virustotal.com/gui/file/a00673e35eaccf494977f4e9a957d5820a20fe6b589c796f9085a0271e8c380c/detection",
+    "https://www.virustotal.com/gui/file/a0a3eeb6973f12fe61e6e90fe5fe8e406a8e00b31b1511a0dfe9a88109d0d129/detection",
+    "https://www.virustotal.com/gui/file/a693b9f9ffc5f4900e094b1d1360f7e7b907c9c8680abfeace34e1a8e380f405/detection",
+    "https://www.virustotal.com/gui/file/ab62e351a56e0f749d36dc6ec6b1211f1becc52305478fa5653c6236a221a85e/detection",
+    "https://www.virustotal.com/gui/file/ab9324028bcc347040a058d41c079c0205398d200a63a6ed6cbe1df973634b2d/detection",
+    "https://www.virustotal.com/gui/file/b25c79ba507a256c9ca12a9bd34def6a33f9c087578c03d083d7863c708eca21/detection",
+    "https://www.virustotal.com/gui/file/b7e042d2accdf4a488c3cd46ccd95d6ad5b5a8be71b5d6d76b8046f17debaa18/detection",
+    "https://www.virustotal.com/gui/file/b7f692ae4d4ebfa82109bd74475c7906738513413894d150702ab9ac4ad98130/detection",
+    "https://www.virustotal.com/gui/file/bb2990a1bbc417cfec40d5f1a6a8b22cac0ef21aed869dd8503e28573cf84401/detection",
+    "https://www.virustotal.com/gui/file/becdb31a669676dac3e797fb6db482f9fd644853e73fc28eb0031bd58487d081/detection",
+    "https://www.virustotal.com/gui/file/c0331d4dee56ef0a8bb8e3d31bdfd3381bafc6ee80b85b338cee4001f7fb3d8c/detection",
+    "https://www.virustotal.com/gui/file/c52828dbf62fc52ae750ada43c505c934f1faeb9c58d71c76bdb398a3fbbe1e2/detection",
+    "https://www.virustotal.com/gui/file/c6e2d561b20fa38f79a28350cb397ae0863008585190b6857faabda6cb9b9d7c/detection",
+    "https://www.virustotal.com/gui/file/c7ec098093eb08d2b36d1c37b928d716d8da021f93319a093808a7ceb3b35dc1/detection",
+    "https://www.virustotal.com/gui/file/ca0dfda9a329f5729b3ca07c6578b3b6560e7cfaeff8d988d1fe8c9ca6896da5/detection",
+    "https://www.virustotal.com/gui/file/cb42d6a839d2cb81479fb04c9fb3bd9264b2f0ea08d96549c8c8f0a0d6567346/detection",
+    "https://www.virustotal.com/gui/file/ce308b538ff3a0be0dbcee753db7e556a54b4aeddbddd0c03db7126b08911fe2/detection",
+    "https://www.virustotal.com/gui/file/d0dd9c624bb2b33de96c29b0ccb5aa5b43ce83a54e2842f1643247811487f8d9/detection",
+    "https://www.virustotal.com/gui/file/d4b9f7c167bc69471baf9e18afd924cf9583b12eee0f088c98abfc55efd77617/detection",
+    "https://www.virustotal.com/gui/file/d99e33878e23582308b1e217aff4a5f8f0836735338b4a4dff80ee85989d22a8/detection",
+    "https://www.virustotal.com/gui/file/dafad19900fff383c2790e017c958a1e92e84f7bb159a2a7136923b715a4c94f/detection",
+    "https://www.virustotal.com/gui/file/dd261a5db199b32414c33136aed44c3ebe2ae55f18991ae3dc341fc43a1ef7f4/detection",
+    "https://www.virustotal.com/gui/file/df84d6c284dd39c2bfed6f8eb26149a4154396c27de50595ed5d80b428930dcd/detection",
+    "https://www.virustotal.com/gui/file/e0e0f2af3af10b09951983badd05b48be1bc0530381e0fd369ebc5a1c86e39ed/detection",
+    "https://www.virustotal.com/gui/file/e2a6a2b7a55d0d5cfb406a9ba941558a4b10a998f232e945ceaa79261aa05086/detection",
+    "https://www.virustotal.com/gui/file/e79d19d68d307c12413f8549aafa4a56776002dd04601e36e0125b2e6d56ff94/detection",
+    "https://www.virustotal.com/gui/file/e8357cacdccdb4670f6ae427a781f36a9c4b268907f83c1ce3502a0fd9ce2606/detection",
+    "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection",
+    "https://www.virustotal.com/gui/file/f00e5ff2dc47a7625c86ac89784d5aa26b210a8437b9fb150b66eb3798b3c1d6/detection",
+    "https://www.virustotal.com/gui/file/f1f6024579e7c3475f5182aa177f791d1bdffc2e8ceb1e71758d02c2bdf3715a/detection",
+    "https://www.virustotal.com/gui/file/f70d3601fb456a18ed7e7ed599d10783447016da78234f5dca61b8bd3a084a15/detection",
+    "https://www.virustotal.com/gui/ip-address/103.245.165.237/relations",
+    "https://www.virustotal.com/gui/ip-address/103.27.202.185/relations",
+    "https://www.virustotal.com/gui/ip-address/123.51.185.75/relations",
+    "https://www.virustotal.com/gui/ip-address/142.250.178.4/relations",
+    "https://www.virustotal.com/gui/ip-address/167.88.180.148/relations",
+    "https://www.virustotal.com/gui/ip-address/181.215.246.155/relations",
+    "https://www.virustotal.com/gui/ip-address/188.208.141.218/relations",
+    "https://www.virustotal.com/gui/ip-address/5.34.182.68/relations",
+    "https://www.welivesecurity.com/2022/03/23/mustang-panda-hodur-old-tricks-new-korplug-variant/",
+    "https://www.welivesecurity.com/en/eset-research/separating-bee-panda-ceranakeeper-making-beeline-thailand/",
+    "https://www.zscaler.com/blogs/security-research/latest-mustang-panda-arsenal-toneshell-and-starproxy-p1",
+    "https://x.com/4rchib4ld/status/1805514091240296879",
+    "https://x.com/AzakaSekai_/status/2009481951368135097",
+    "https://x.com/Cyberteam008/status/1901817451274539274",
+    "https://x.com/Cyberteam008/status/1914501911241228629",
+    "https://x.com/Cyberteam008/status/2074340012288844049",
+    "https://x.com/ESETresearch/status/1841466248367915019",
+    "https://x.com/ESETresearch/status/1841466250469261374",
+    "https://x.com/G60930953/status/2008641011514585094",
+    "https://x.com/SinghSoodeep/status/1974780785782837632",
+    "https://x.com/StrikeReadyLabs/status/1795091326398009447",
+    "https://x.com/StrikeReadyLabs/status/1811711337313042845",
+    "https://x.com/Thisism23567356/status/1834216409787674754",
+    "https://x.com/Thisism23567356/status/1858518325346574666",
+    "https://x.com/Thisism23567356/status/1863490595550883976",
+    "https://x.com/Thisism23567356/status/1904855651936776202",
+    "https://x.com/VirITeXplorer/status/1829426003103363123",
+    "https://x.com/askardyuss/status/2069389179440816153",
+    "https://x.com/felixaime/status/1674724194976776194",
+    "https://x.com/frdfzi/status/1849616996222349674",
+    "https://x.com/frdfzi/status/1858524001947279652",
+    "https://x.com/frdfzi/status/1870018996717924829",
+    "https://x.com/goldenjackel12/status/2026529278758990165",
+    "https://x.com/h2jazi/status/1796201393415418282",
+    "https://x.com/malwrhunterteam/status/2026614706866180128",
+    "https://x.com/nao_sec/status/1819021807602782522",
+    "https://x.com/smica83/status/1870033683547111614"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "PKPLUG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares RCSession, China Chopper",
+          "kind": "software",
+          "weight": 0.643
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Wevtutil",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Wevtutil",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ShadowPad, China Chopper",
+          "kind": "software",
+          "weight": 0.31
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "G0129",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 15
+      },
+      "first_seen": "2026-07-07",
+      "indicators": {
+        "ipv4": [
+          "102.211.234.105:443",
+          "103.175.50.32:443",
+          "103.245.164.154:443",
+          "103.247.19.204:443",
+          "146.70.29.241:443",
+          "154.196.139.38:443",
+          "176.97.117.5:443",
+          "185.9.17.213:443",
+          "188.208.141.177:443",
+          "194.5.97.169:443",
+          "194.59.183.133:443",
+          "195.66.213.170:443",
+          "2.59.216.250:443",
+          "38.54.42.106:443",
+          "45.89.105.83:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/2074340012288844049"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1
+      },
+      "first_seen": "2026-07-01",
+      "indicators": {
+        "domain": [
+          "couldinstallup.com",
+          "kuhkhjvmjh.com",
+          "syncnovaall.com",
+          "thesiamworks.com"
+        ],
+        "ipv4": [
+          "188.208.141.177:47001"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.acronis.com/en/tru/posts/mustang-panda-targets-indias-government-and-energy-sectors/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-06-25",
+      "indicators": {
+        "domain": [
+          "mydownload.z29.web.core.windows.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/SinghSoodeep/status/1974780785782837632",
+        "https://www.proofpoint.com/us/blog/threat-insight/id-come-running-back-eu-again-ta416-resumes-european-government-espionage"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-06-25",
+      "indicators": {
+        "domain": [
+          "attd.z23.web.core.windows.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/id-come-running-back-eu-again-ta416-resumes-european-government-espionage"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-06-25",
+      "indicators": {
+        "domain": [
+          "mydownloadfile.z7.web.core.windows.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://arcticwolf.com/resources/blog/unc6384-weaponizes-zdi-can-25373-vulnerability-to-deploy-plugx/",
+        "https://www.proofpoint.com/us/blog/threat-insight/id-come-running-back-eu-again-ta416-resumes-european-government-espionage"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 70
+      },
+      "first_seen": "2026-06-23",
+      "indicators": {
+        "domain": [
+          "21-ninety.com",
+          "3012965.securefastserver.com",
+          "3784f20bb00.com",
+          "9521182.com",
+          "b83928922.questincc.com",
+          "babyafrosapparel.com",
+          "backups.muathye.com",
+          "c7p949983.silveradeearyray.com",
+          "calendargbmechanical.cam",
+          "calendarthomastecs.cam",
+          "calendercongress.cam",
+          "calendercongress.com",
+          "concreteinportland.com",
+          "connectmvasalu.cam",
+          "constructionferryfences.cam",
+          "drive.babyafrosapparel.com",
+          "ferryfences.cam",
+          "ferryfencesconstruc.cam",
+          "ferryfencesconstruction.cam",
+          "fil76v6shar604bbdoc0o.com",
+          "fileclub.modaestilo.net",
+          "files.riddhiman.shop",
+          "fileshare.babyafrosapparel.com",
+          "fileshare.gorollerskate.com",
+          "filevault.soundit.co",
+          "gorollerskate.com",
+          "hb3788263.questincc.com",
+          "holtconstruction.cam",
+          "holtlogistics.cam",
+          "hydrationroom.cam",
+          "jk319201923.lectrosonic.com",
+          "kantolocalfinance.com",
+          "lectrosonic.com",
+          "lm663772881.questincc.com",
+          "mail.kantolocalfinance.com",
+          "mail.nexushighcargo.com",
+          "mail.oceancertsurveyors.com",
+          "meet.schedulethomastecs.cam",
+          "modaestilo.net",
+          "myfile.tokyobighub.com",
+          "next.calendarthomastecs.cam",
+          "next.connectmvasalu.cam",
+          "next.schedulethomastecs.cam",
+          "next.schthomastecs.cam",
+          "nexthomastecs.cam",
+          "nexushighcargo.com",
+          "nx39489933.ltapprel.com",
+          "oceancertsurveyors.com",
+          "offerbox.pro",
+          "pass.romexperts.com",
+          "pumpamed.com",
+          "qlv838393942.watchefswant.com",
+          "resources.babyafrosapparel.com",
+          "riddhiman.shop",
+          "romexperts.com",
+          "rt47588343.lectrosonic.com",
+          "schedule.thomastecs.cam",
+          "scheduleferryfences.cam",
+          "schedulethomastecs.cam",
+          "schthomastecs.cam",
+          "secondomoma.com",
+          "silveradeearyray.com",
+          "stlfast.com",
+          "thomastecs.cam",
+          "tokyobighub.com",
+          "update.babyafrosapparel.com",
+          "vie3490gy23777bnufil8903456bil623000r789sit986uhhh.com",
+          "viksend.vikkify.com",
+          "widgets.babyafrosapparel.com",
+          "yg7488392.lectrosonic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/askardyuss/status/2069389179440816153",
+        "https://www.virustotal.com/gui/file/b7f692ae4d4ebfa82109bd74475c7906738513413894d150702ab9ac4ad98130/detection"
+      ],
+      "total": 70
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 2
+      },
+      "first_seen": "2026-05-15",
+      "indicators": {
+        "domain": [
+          "icloud-cdn.net",
+          "yahoo-cdn.it.com"
+        ],
+        "ipv4": [
+          "154.223.58.142:20807",
+          "154.223.58.142:20811"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2026-04-21",
+      "indicators": {
+        "domain": [
+          "editor.gleeze.com"
+        ],
+        "ipv4": [
+          "103.79.77.181:443"
+        ],
+        "url": [
+          "cosmosmusic.com/upload/pds/_notes/music.js"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.acronis.com/en/tru/posts/same-packet-different-magic-mustang-panda-hits-indias-banking-sector-and-korea-geopolitics/",
+        "https://www.virustotal.com/gui/file/18bc0e0f627d90fb283aa243055b46d0bfb5d85a7240d0f63ec2d1c0a2c15893/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-04-21",
+      "indicators": {
+        "domain": [
+          "unassigned.172-81-60-97.spryt.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/G60930953/status/2008641011514585094",
+        "https://x.com/AzakaSekai_/status/2009481951368135097",
+        "https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/",
+        "https://www.virustotal.com/gui/file/231bac4015da9157553f5a8090bea35b8657406a18f14455fdaa71eb14427466/detection",
+        "https://www.virustotal.com/gui/file/2c34b47ee7d271326cfff9701377277b05ec4654753b31c89be622e80d225250/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-04-06",
+      "indicators": {
+        "domain": [
+          "filesdownld.z13.web.core.windows.net",
+          "filestoretome.z23.web.core.windows.net",
+          "gooledives.z48.web.core.windows.net",
+          "reloadsite.z13.web.core.windows.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/id-come-running-back-eu-again-ta416-resumes-european-government-espionage"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-02-25",
+      "indicators": {
+        "domain": [
+          "devlyrics.com",
+          "devlyrics.github.io"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/goldenjackel12/status/2026529278758990165",
+        "https://x.com/malwrhunterteam/status/2026614706866180128",
+        "https://www.virustotal.com/gui/file/30c71d644bc72e0d55d46bed753ab3f72dc77b7f1be0e34693c957939a779507/detection",
+        "https://www.virustotal.com/gui/file/e79d19d68d307c12413f8549aafa4a56776002dd04601e36e0125b2e6d56ff94/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-09",
+      "indicators": {
+        "ipv4": [
+          "172.81.60.97:3389",
+          "172.81.60.97:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/G60930953/status/2008641011514585094",
+        "https://x.com/AzakaSekai_/status/2009481951368135097",
+        "https://www.acronis.com/en/tru/posts/lotuslite-targeted-espionage-leveraging-geopolitical-themes/",
+        "https://www.virustotal.com/gui/file/231bac4015da9157553f5a8090bea35b8657406a18f14455fdaa71eb14427466/detection",
+        "https://www.virustotal.com/gui/file/2c34b47ee7d271326cfff9701377277b05ec4654753b31c89be622e80d225250/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 79
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aadcdn.msauth.document-invoiceviewer.online",
+          "aadcdn.msauth.document-viewer.xyz",
+          "aadcdn.msauth.documentpdfviewer.xyz",
+          "account.live.document-invoiceviewer.online",
+          "account.live.document-viewer.xyz",
+          "account.live.office-docs.online",
+          "accounts.documentpdfviewer.xyz",
+          "accounts.hmailevma5.documentpdfviewer.xyz",
+          "api.document-invoiceviewer.online",
+          "api.document-viewer.xyz",
+          "api.office-docs.online",
+          "b.document-viewer.xyz",
+          "csp.document-invoiceviewer.online",
+          "csp.document-viewer.xyz",
+          "csp.documentpdfviewer.xyz",
+          "csp.office-docs.online",
+          "document-invoiceviewer.online",
+          "document-viewer.xyz",
+          "documentinvoice-viewer.top",
+          "documentpdfviewer.xyz",
+          "events.api.document-invoiceviewer.online",
+          "events.api.document-viewer.xyz",
+          "events.api.office-docs.online",
+          "files.document-invoiceviewer.online",
+          "files.document-viewer.xyz",
+          "files.documentpdfviewer.xyz",
+          "files.office-docs.online",
+          "files.office3-docviewer.com",
+          "flowise.document-viewer.xyz",
+          "gui.document-invoiceviewer.online",
+          "gui.documentpdfviewer.xyz",
+          "gui.office-docs.online",
+          "hmailevma5.documentpdfviewer.xyz",
+          "img1.document-invoiceviewer.online",
+          "img1.documentpdfviewer.xyz",
+          "img1.office-docs.online",
+          "img6.document-invoiceviewer.online",
+          "img6.document-viewer.xyz",
+          "img6.documentpdfviewer.xyz",
+          "img6.office-docs.online",
+          "live.document-invoiceviewer.online",
+          "live.document-viewer.xyz",
+          "live.documentpdfviewer.xyz",
+          "live.office-docs.online",
+          "login-us.document-viewer.xyz",
+          "login.document-invoiceviewer.online",
+          "login.document-viewer.xyz",
+          "login.documentpdfviewer.xyz",
+          "login.live.document-invoiceviewer.online",
+          "login.live.documentpdfviewer.xyz",
+          "login.live.office-docs.online",
+          "login.office-docs.online",
+          "logincdn.document-invoiceviewer.online",
+          "logincdn.documentpdfviewer.xyz",
+          "logincdn.office-docs.online",
+          "m365.office-docs.online",
+          "msauth.document-invoiceviewer.online",
+          "msauth.document-viewer.xyz",
+          "msauth.documentpdfviewer.xyz",
+          "myaccount.documentpdfviewer.xyz",
+          "myaccount.hmailevma5.documentpdfviewer.xyz",
+          "myanmarclouddrive.ru",
+          "office-docs.online",
+          "office.document-invoiceviewer.online",
+          "office.document-viewer.xyz",
+          "office.documentpdfviewer.xyz",
+          "office.office-docs.online",
+          "office3-docviewer.com",
+          "pdf.document-viewer.xyz",
+          "pdf.documentpdfviewer.xyz",
+          "portal.document-invoiceviewer.online",
+          "portal.document-viewer.xyz",
+          "portal.office-docs.online",
+          "qa.flowise.document-viewer.xyz",
+          "sajjadsmziranir.iransmz.tech",
+          "share.office-docs.online",
+          "smz4.iransmz.tech",
+          "sso.document-invoiceviewer.online",
+          "webmail.documentpdfviewer.xyz"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Cyberteam008/status/1914501911241228629"
+      ],
+      "total": 79
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 31
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "gclm.name",
+          "haberciinternational.com",
+          "jpkinki.com",
+          "renxinguo.com"
+        ],
+        "ipv4": [
+          "103.107.104.61:443",
+          "103.107.104.61:8088",
+          "103.79.120.70:443",
+          "103.79.120.70:8088",
+          "103.79.120.71:443",
+          "103.79.120.71:8088",
+          "103.79.120.73:443",
+          "103.79.120.73:8088",
+          "103.79.120.74:443",
+          "103.79.120.74:8088",
+          "103.79.120.81:443",
+          "103.79.120.81:8088",
+          "103.79.120.85:443",
+          "103.79.120.89:443",
+          "136.0.141.189:443",
+          "136.0.141.189:5000",
+          "136.0.141.189:8088",
+          "139.180.192.163:443",
+          "139.180.192.163:8088",
+          "173.199.71.152:443",
+          "173.199.71.152:8443",
+          "223.26.52.245:443",
+          "223.26.52.245:5000",
+          "223.26.52.245:8090",
+          "38.89.72.133:443",
+          "45.152.65.213:443",
+          "45.195.69.111:443",
+          "45.195.69.111:5000",
+          "45.195.69.111:8088",
+          "83.229.127.115:443",
+          "83.229.127.115:5000"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.validin.com/blog/hunting_pandas/",
+        "https://x.com/Thisism23567356/status/1904855651936776202",
+        "https://app.validin.com/detail?find=b9dceb7aa7369a63f1c64648a3b8d0fa&type=hash&ref_id=98fc0b0493f#tab=host_pairs (# 2025-04-04)"
+      ],
+      "total": 35
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 7,
+        "url_path": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aliyunconsole.com"
+        ],
+        "ipv4": [
+          "185.140.12.224:443",
+          "185.243.112.79:52736",
+          "192.52.166.252:443",
+          "2.58.15.28:8090",
+          "45.86.162.125:52736",
+          "45.86.162.79:443",
+          "66.85.26.161:443"
+        ],
+        "url_path": [
+          "/cgyusdft/",
+          "/cgyusdft/whfgujfg/",
+          "/csgdyhfywhefdj/",
+          "/csgdyhfywhefdj/gdydfhasc/",
+          "/gdydfhasc/",
+          "/whfgujfg/"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://ti.qianxin.com/blog/articles/operation-sea-elephant-the-dying-walrus-wandering-the-indian-ocean-en/",
+        "https://mp.weixin.qq.com/s?__biz=MzI2MDc2MDA4OA==&mid=2247514297&idx=1&sn=976e0be3763db78860ce88dc76342a54&chksm=ea664fcedd11c6d8388a94c786a447613fd762176ae1bc0e3db9392494e787a019d71b37d415&scene=178&cur_album_id=1539799351089283075"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 3,
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "dest-working.com",
+          "profile-keybord.com"
+        ],
+        "ipv4": [
+          "103.13.31.75:443",
+          "43.229.79.163:443",
+          "43.254.132.217:443"
+        ],
+        "url": [
+          "http://103.13.31.75"
+        ],
+        "url_path": [
+          "/heugojhgriuhn78867jhkbjkdgfhuie78/",
+          "/heugojhgriuhn78867jhkbjkdgfhuie78/jhegiokj7889seghjegh786jkhegfukj/",
+          "/jhegiokj7889seghjegh786jkhegfukj/"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/latest-mustang-panda-arsenal-toneshell-and-starproxy-p1",
+        "https://www.virustotal.com/gui/ip-address/181.215.246.155/relations",
+        "https://www.virustotal.com/gui/file/0d0296e94f6117ac0852b5c11a4caba09c4653a4927e62df0b7ec06c34f33354/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "b8pjmgd6.com",
+          "fjke5oe.com",
+          "ggrdl4.com",
+          "gm4rys.com",
+          "hbsanews.com",
+          "i5y3dl.com",
+          "update.fjke5oe.com",
+          "zimbra.page"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://unit42.paloaltonetworks.com/stately-taurus-uses-bookworm-malware/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "ipv4": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "107.155.56.87:53",
+          "152.32.130.139:443",
+          "152.32.130.139:5000",
+          "86.0.0.13:8080"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/felixaime/status/1674724194976776194"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "sclickvpn.com"
+        ],
+        "ipv4": [
+          "146.70.29.229:443"
+        ],
+        "url": [
+          "http://118.174.183.89"
+        ],
+        "url_path": [
+          "/kptinfo/import/index.php"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.ibm.com/think/x-force/hive0154-drops-updated-toneshell-backdoor",
+        "https://www.virustotal.com/gui/file/564a03763879aaed4da8a8c1d6067f4112d8e13bb46c2f80e0fcb9ffdd40384c/detection",
+        "https://www.virustotal.com/gui/file/c6e2d561b20fa38f79a28350cb397ae0863008585190b6857faabda6cb9b9d7c/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "103.56.18.101:443",
+          "103.56.18.101:53"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Cyberteam008/status/1901817451274539274",
+        "https://www.virustotal.com/gui/file/080386f5dc89d42d7c1e684ca371b57ea4f7df85a6ea05acaa364247e3f8d390/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "d32tpl7xt7175h.cloudfront.net",
+          "mydownfile.z11.web.core.windows.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://arcticwolf.com/resources/blog/unc6384-weaponizes-zdi-can-25373-vulnerability-to-deploy-plugx/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "mediareleaseupdates.com"
+        ],
+        "ipv4": [
+          "166.88.2.90:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "http://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "218.255.96.245:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.ibm.com/think/x-force/hive0154-mustang-panda-shifts-focus-tibetan-community-deploy-pubload-backdoor",
+        "https://www.virustotal.com/gui/file/d99e33878e23582308b1e217aff4a5f8f0836735338b4a4dff80ee85989d22a8/detection",
+        "https://www.virustotal.com/gui/file/98c1527d4b064fcf4a95488c34576e5f443585cb6e385c7b8765e63fa9e83ccc/detection",
+        "https://www.virustotal.com/gui/file/9335e9ec308de135651bec4b3f2f4f43324e7ab40329796e6d4343698c8a0d2a/detection",
+        "https://www.virustotal.com/gui/file/6e408aada775eaf19c524792344cabca0b406247154e2b03ed03a929e0feee5a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "tasensors.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1683811748871122944",
+        "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf",
+        "https://www.virustotal.com/gui/file/a0a3eeb6973f12fe61e6e90fe5fe8e406a8e00b31b1511a0dfe9a88109d0d129/detection",
+        "https://www.virustotal.com/gui/file/471e61015ff18349f4bf357447597a54579839336188d98d299b14cff458d132/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 2
+      },
+      "first_seen": "2024-12-20",
+      "indicators": {
+        "ipv4": [
+          "185.62.57.118:443",
+          "45.144.165.66:443"
+        ],
+        "url": [
+          "http://185.62.57.118",
+          "http://45.144.165.66"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/smica83/status/1870033683547111614",
+        "https://x.com/frdfzi/status/1870018996717924829",
+        "https://www.virustotal.com/gui/file/5b18f8b379cb32945ef7722b7ec175f5d24e7c468f6f5d593c51610f6b87f21f/detection",
+        "https://www.virustotal.com/gui/file/62087a1226c5433d6f6184d627c4874c347c1de1cb1c1fdbdc1b0cac1e354201/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-02",
+      "indicators": {
+        "domain": [
+          "srv1.blackberrygame.com"
+        ],
+        "ipv4": [
+          "146.70.149.186:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Thisism23567356/status/1863490595550883976",
+        "https://www.virustotal.com/gui/file/065585a379615b6bec23d1c9c414542c34c93ac269b6971b46e37007dd331da1/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-11-19",
+      "indicators": {
+        "domain": [
+          "openai-cheapagent.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Thisism23567356/status/1858518325346574666"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-11-18",
+      "indicators": {
+        "domain": [
+          "formainservercheap.com",
+          "preperlanguageserver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/frdfzi/status/1858524001947279652",
+        "https://www.virustotal.com/gui/ip-address/188.208.141.218/relations",
+        "https://www.virustotal.com/gui/file/035d1f670b5e9d29d65fbb2b309ae042d6ee6807300162be9e3f6046ea27113f/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-10-26",
+      "indicators": {
+        "domain": [
+          "lyjxq3.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/frdfzi/status/1849616996222349674",
+        "https://www.virustotal.com/gui/file/f00e5ff2dc47a7625c86ac89784d5aa26b210a8437b9fb150b66eb3798b3c1d6/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-10-02",
+      "indicators": {
+        "domain": [
+          "dl6yfsl.com",
+          "dljmp2p.com",
+          "inly5sf.com",
+          "toptipvideo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ESETresearch/status/1841466248367915019",
+        "https://x.com/ESETresearch/status/1841466250469261374",
+        "https://www.welivesecurity.com/en/eset-research/separating-bee-panda-ceranakeeper-making-beeline-thailand/",
+        "https://github.com/eset/malware-ioc/tree/master/ceranakeeper",
+        "https://www.virustotal.com/gui/ip-address/103.245.165.237/relations",
+        "https://www.virustotal.com/gui/ip-address/103.27.202.185/relations",
+        "https://www.virustotal.com/gui/file/b25c79ba507a256c9ca12a9bd34def6a33f9c087578c03d083d7863c708eca21/detection",
+        "https://www.virustotal.com/gui/file/dafad19900fff383c2790e017c958a1e92e84f7bb159a2a7136923b715a4c94f/detection",
+        "https://www.virustotal.com/gui/file/451ee465675e674cebe3c42ed41356ae2c972703e1dc7800a187426a6b34efdc/detection",
+        "https://www.virustotal.com/gui/file/6655c5686b9b0292cf5121fc6346341bb888704b421a85a15011456a9a2c192a/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-09-24",
+      "indicators": {
+        "ipv4": [
+          "107.155.56.87:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/felixaime/status/1674724194976776194"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-09-12",
+      "indicators": {
+        "domain": [
+          "conflictaslesson.com",
+          "goclamdep.net",
+          "lokjopppkuimlpo.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/VirITeXplorer/status/1829426003103363123",
+        "https://x.com/Thisism23567356/status/1834216409787674754",
+        "https://www.virustotal.com/gui/file/79d3481bac60ac1ecc7e2d1a4b86bde8a6b2c66f4e9c755f28512f7717f7badd/detection",
+        "https://www.virustotal.com/gui/file/0b152012c1deab39c6ed7fe75a27168eaaec43ae025ee74d35c2fee2651b8902/detection",
+        "https://www.virustotal.com/gui/file/00619a5312d6957248bac777c44c0e9dd871950c6785830695c51184217a1437/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 5
+      },
+      "first_seen": "2024-09-09",
+      "indicators": {
+        "domain": [
+          "aihkstore.com",
+          "bcller.com",
+          "ynsins.com"
+        ],
+        "ipv4": [
+          "103.15.29.17:443",
+          "154.90.32.88:443",
+          "18.163.112.181:443",
+          "47.253.106.177:443",
+          "47.76.87.55:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/24/i/earth-preta-new-malware-and-strategies.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/i/earth-preta-evolves-its-attacks-with-new-malware-and-strategies/IOC%20List%20-%20Earth%20Preta%20Evolves%20its%20Attacks%20with%20New%20Malware%20and%20Strategies.txt"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 3
+      },
+      "first_seen": "2024-08-30",
+      "indicators": {
+        "domain": [
+          "kxmmcdmnb.online"
+        ],
+        "url_path": [
+          "/eciwrnjnx",
+          "/eufzyzhd",
+          "/kjuehbit"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/VirITeXplorer/status/1829426003103363123",
+        "https://x.com/Thisism23567356/status/1834216409787674754",
+        "https://www.virustotal.com/gui/file/79d3481bac60ac1ecc7e2d1a4b86bde8a6b2c66f4e9c755f28512f7717f7badd/detection",
+        "https://www.virustotal.com/gui/file/0b152012c1deab39c6ed7fe75a27168eaaec43ae025ee74d35c2fee2651b8902/detection",
+        "https://www.virustotal.com/gui/file/00619a5312d6957248bac777c44c0e9dd871950c6785830695c51184217a1437/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-01",
+      "indicators": {
+        "domain": [
+          "cdn7s65.z13.web.core.windows.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/nao_sec/status/1819021807602782522",
+        "https://www.virustotal.com/gui/file/ca0dfda9a329f5729b3ca07c6578b3b6560e7cfaeff8d988d1fe8c9ca6896da5/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-07-12",
+      "indicators": {
+        "ipv4": [
+          "104.194.154.150:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/StrikeReadyLabs/status/1811711337313042845",
+        "https://www.virustotal.com/gui/file/cb42d6a839d2cb81479fb04c9fb3bd9264b2f0ea08d96549c8c8f0a0d6567346/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2024-06-27",
+      "indicators": {
+        "ipv4": [
+          "45.43.63.219:111",
+          "45.43.63.219:236"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.macnica.co.jp/business/security/security-reports/pdf/cyberespionage_report_2023.pdf",
+        "https://www.virustotal.com/gui/file/505f0409d896d34be04565609fd3484d78dd93469e9c338c365b106a802c1082/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-06-25",
+      "indicators": {
+        "ipv4": [
+          "61.4.102.75:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/4rchib4ld/status/1805514091240296879",
+        "https://www.virustotal.com/gui/file/736036bc0069eaec6c489e95553111cd235adb07bc19ddbdd2c63ec41a90d0dd/detection",
+        "https://www.virustotal.com/gui/file/3adf6df9bfc377a762f4cebe9e5b5e7d7a823de03f6bfe8efa8ed5473ce10bc1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2024-05-30",
+      "indicators": {
+        "domain": [
+          "back.vlvlvlvl.site",
+          "deleted.tripadviso.online",
+          "mega.vlvlvlvl.site",
+          "payment.tripadviso.online",
+          "tripadviso.online",
+          "vlvlvlvl.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/h2jazi/status/1796201393415418282",
+        "https://www.virustotal.com/gui/file/47eb43acdd342d3975000f650cf656d9f0f759780d85f16d806d6b9a70f1be46/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-05-30",
+      "indicators": {
+        "domain": [
+          "shreyaninfotech.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/StrikeReadyLabs/status/1795091326398009447",
+        "https://www.virustotal.com/gui/file/e0e0f2af3af10b09951983badd05b48be1bc0530381e0fd369ebc5a1c86e39ed/detection",
+        "https://www.virustotal.com/gui/file/d4b9f7c167bc69471baf9e18afd924cf9583b12eee0f088c98abfc55efd77617/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2024-04-06",
+      "indicators": {
+        "domain": [
+          "ai.nerdnooks.com",
+          "daydreamdew.net",
+          "nerdnooks.com",
+          "web.daydreamdew.net"
+        ],
+        "ipv4": [
+          "146.70.149.36:443"
+        ],
+        "url": [
+          "http://123.253.32.71"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/chinese-apts-target-asean-entities/",
+        "https://www.virustotal.com/gui/file/02f4186b532b3e33a5cd6d9a39d9469b8d9c12df7cb45dba6dcab912b03e3cb8/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-04-05",
+      "indicators": {
+        "ipv4": [
+          "45.76.132.25:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1775911374821941432",
+        "https://www.virustotal.com/gui/file/f1f6024579e7c3475f5182aa177f791d1bdffc2e8ceb1e71758d02c2bdf3715a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 7,
+        "url": 2
+      },
+      "first_seen": "2024-03-27",
+      "indicators": {
+        "ipv4": [
+          "139.59.46.88:443",
+          "139.59.46.88:8080",
+          "139.59.46.88:8443",
+          "139.59.46.88:9443",
+          "192.153.57.98:8080",
+          "193.149.129.93:8443",
+          "65.20.103.231:81"
+        ],
+        "url": [
+          "http://139.59.46.88",
+          "http://65.20.103.231"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/chinese-apts-target-asean-entities/",
+        "https://www.virustotal.com/gui/file/02f4186b532b3e33a5cd6d9a39d9469b8d9c12df7cb45dba6dcab912b03e3cb8/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-03-13",
+      "indicators": {
+        "ipv4": [
+          "103.27.109.157:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/8th_grey_owl/status/1767860327369298026"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 12,
+        "ipv4": 7
+      },
+      "first_seen": "2024-03-09",
+      "indicators": {
+        "domain": [
+          "bonuscave.com",
+          "electrictulsa.com",
+          "getfiledown.com",
+          "getfilefox.com",
+          "iamc2c2.com",
+          "images.kiidcloud.com",
+          "images.markplay.net",
+          "markplay.net",
+          "meetviberapi.com",
+          "news.comsnews.com",
+          "thisistestc2.com",
+          "web.bonuscave.com"
+        ],
+        "ipv4": [
+          "103.107.104.37:443",
+          "149.104.11.29:443",
+          "149.104.12.64:443",
+          "185.82.216.184:443",
+          "195.123.246.26:22",
+          "195.211.96.99:443",
+          "45.83.236.105:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/24/b/earth-preta-campaign-targets-asia-doplugs.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/24/b/earth-preta-campaign-uses-doplugs-to-target-asia/ioc-earth-preta-doplugs.txt"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 7,
+        "ipv4": 2,
+        "url": 6,
+        "url_path": 2
+      },
+      "first_seen": "2024-02-22",
+      "indicators": {
+        "domain": [
+          "em2in.johnsimde.xyz",
+          "iot.johnsimde.xyz",
+          "johnsimde.xyz",
+          "myanmarfreedomwork.org",
+          "rewards.roshan.af",
+          "sa2il.johnsimde.xyz",
+          "taiwallace.pserver.space"
+        ],
+        "ipv4": [
+          "139.180.217.142:5000",
+          "80.85.156.151:8000"
+        ],
+        "url": [
+          "http://103.159.132.91",
+          "http://185.144.31.86",
+          "http://80.85.156.151",
+          "http://80.85.156.232",
+          "http://80.85.156.240",
+          "http://80.85.157.3"
+        ],
+        "url_path": [
+          "/ewfuck",
+          "/ewfuck00000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_za/research/23/f/behind-the-scenes-unveiling-the-hidden-workings-of-earth-preta.html"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 4
+      },
+      "first_seen": "2024-01-26",
+      "indicators": {
+        "domain": [
+          "militarytc.com"
+        ],
+        "ipv4": [
+          "103.159.132.80:443",
+          "103.249.84.137:443",
+          "123.253.32.15:443",
+          "91.245.253.46:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Jane_0sint/status/1750537878420295808",
+        "https://www.virustotal.com/gui/file/dd261a5db199b32414c33136aed44c3ebe2ae55f18991ae3dc341fc43a1ef7f4/detection",
+        "https://www.virustotal.com/gui/file/5afe21142999659a4050f6e038a6dab96cf4827f332497049a91cdb1a4d4828b/detection",
+        "https://www.virustotal.com/gui/file/2a00d95b658e11ca71a8de532999dd33ddee7f80432653427eaa885b611ddd87/detection",
+        "https://www.virustotal.com/gui/file/51d89afe0a49a3abf88ed6f032e4f0a83949fc44489fc7b45c860020f905c9d7/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-01-18",
+      "indicators": {
+        "domain": [
+          "openservername.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Cuser07/status/1748000699122958665",
+        "https://www.virustotal.com/gui/file/a00673e35eaccf494977f4e9a957d5820a20fe6b589c796f9085a0271e8c380c/detection",
+        "https://www.virustotal.com/gui/file/b7e042d2accdf4a488c3cd46ccd95d6ad5b5a8be71b5d6d76b8046f17debaa18/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-12-11",
+      "indicators": {
+        "domain": [
+          "ivibers.com",
+          "meetvibersapi.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/mustang-pandas-plugx-new-variant-targetting-taiwanese-government-and-diplomats/",
+        "https://www.virustotal.com/gui/file/c7ec098093eb08d2b36d1c37b928d716d8da021f93319a093808a7ceb3b35dc1/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-25",
+      "indicators": {
+        "domain": [
+          "uvfr4ep.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ESETresearch/status/1841466248367915019",
+        "https://x.com/ESETresearch/status/1841466250469261374",
+        "https://www.welivesecurity.com/en/eset-research/separating-bee-panda-ceranakeeper-making-beeline-thailand/",
+        "https://github.com/eset/malware-ioc/tree/master/ceranakeeper",
+        "https://www.virustotal.com/gui/ip-address/103.245.165.237/relations",
+        "https://www.virustotal.com/gui/ip-address/103.27.202.185/relations",
+        "https://www.virustotal.com/gui/file/b25c79ba507a256c9ca12a9bd34def6a33f9c087578c03d083d7863c708eca21/detection",
+        "https://www.virustotal.com/gui/file/dafad19900fff383c2790e017c958a1e92e84f7bb159a2a7136923b715a4c94f/detection",
+        "https://www.virustotal.com/gui/file/451ee465675e674cebe3c42ed41356ae2c972703e1dc7800a187426a6b34efdc/detection",
+        "https://www.virustotal.com/gui/file/6655c5686b9b0292cf5121fc6346341bb888704b421a85a15011456a9a2c192a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-24",
+      "indicators": {
+        "domain": [
+          "newsmailnet.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2023/chinese-threat-actors-targeting-europe-in-smugx-campaign/",
+        "https://otx.alienvault.com/pulse/64a5960b230e2e9a1bf9ec66"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-07-25",
+      "indicators": {
+        "domain": [
+          "estmongolia.com",
+          "mongolianshipregistrar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1683811748871122944",
+        "https://go.recordedfuture.com/hubfs/reports/cta-cn-2025-0109.pdf",
+        "https://www.virustotal.com/gui/file/a0a3eeb6973f12fe61e6e90fe5fe8e406a8e00b31b1511a0dfe9a88109d0d129/detection",
+        "https://www.virustotal.com/gui/file/471e61015ff18349f4bf357447597a54579839336188d98d299b14cff458d132/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-05-20",
+      "indicators": {
+        "domain": [
+          "cremessage.com",
+          "m.cremessage.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2023/the-dragon-who-sold-his-camaro-analyzing-custom-router-implant/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2023-05-10",
+      "indicators": {
+        "domain": [
+          "jcswcd.com"
+        ],
+        "ipv4": [
+          "62.233.57.136:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1656194831830401024",
+        "https://twitter.com/t3ft3lb/status/1656297883048505346",
+        "https://www.virustotal.com/gui/file/3489955d23e66d6f34b3ada70b4d228547dbb3ccb0f6c7282553cbbdeaf168cb/detection",
+        "https://www.virustotal.com/gui/file/ce308b538ff3a0be0dbcee753db7e556a54b4aeddbddd0c03db7126b08911fe2/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2023-03-14",
+      "indicators": {
+        "domain": [
+          "midasconsilium.com"
+        ],
+        "ipv4": [
+          "45.90.59.39:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1635620870214352901",
+        "https://www.virustotal.com/gui/file/6d18906c49e213ca0db7b2ce28f1a20066c521367fc61caae0710bf0e10cfc9e/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2023-02-17",
+      "indicators": {
+        "ipv4": [
+          "3.228.54.173:1883",
+          "54.87.92.106:1883"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Unit42_Intel/status/1626613722700472320",
+        "https://www.virustotal.com/gui/file/e2a6a2b7a55d0d5cfb406a9ba941558a4b10a998f232e945ceaa79261aa05086/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-02-01",
+      "indicators": {
+        "ipv4": [
+          "195.123.218.78:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1620848769607806976",
+        "https://www.virustotal.com/gui/file/48e2ebee3f8de80c4a50f1dd948e8e9a41509f4847a574f67a453c154d21ce60/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-01-05",
+      "indicators": {
+        "domain": [
+          "blogdirve.com",
+          "mashupdatabase.com",
+          "microsite-manager.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StopMalvertisin/status/1610961056163311619",
+        "https://www.virustotal.com/gui/ip-address/142.250.178.4/relations",
+        "https://www.virustotal.com/gui/ip-address/5.34.182.68/relations",
+        "https://www.virustotal.com/gui/file/0ac93ddc58e7666eae677812d3be93fe8f922ffc32baeee0f803109341dc1ea7/detection",
+        "https://www.virustotal.com/gui/file/8964dce6ae40681a51226b7912728c589c33febba1a1547c351353fea6a6571c/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-12-28",
+      "indicators": {
+        "ipv4": [
+          "45.90.59.153:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://kienmanowar.wordpress.com/2022/12/27/diving-into-a-plugx-sample-of-mustang-panda-group/",
+        "https://www.virustotal.com/gui/file/ab62e351a56e0f749d36dc6ec6b1211f1becc52305478fa5653c6236a221a85e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 10
+      },
+      "first_seen": "2022-12-07",
+      "indicators": {
+        "ipv4": [
+          "5.34.178.156:443"
+        ],
+        "url": [
+          "http://103.192.226.87",
+          "http://104.42.43.178",
+          "http://185.80.201.4",
+          "http://194.124.227.90",
+          "http://43.254.218.128",
+          "http://45.147.26.45",
+          "http://45.32.101.7",
+          "http://62.233.57.49",
+          "http://64.34.216.44",
+          "http://64.34.216.50"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogs.blackberry.com/en/2022/12/mustang-panda-uses-the-russian-ukrainian-war-to-attack-europe-and-asia-pacific-targets",
+        "https://www.virustotal.com/gui/file/f70d3601fb456a18ed7e7ed599d10783447016da78234f5dca61b8bd3a084a15/detection"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "url": 4
+      },
+      "first_seen": "2022-11-25",
+      "indicators": {
+        "url": [
+          "http://103.15.29.179",
+          "http://103.75.190.224",
+          "http://202.53.148.24",
+          "http://202.53.148.26"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/katechondic/status/1556940169483264000",
+        "https://twitter.com/katechondic/status/1557031529141964801",
+        "https://www.trendmicro.com/en_us/research/22/k/earth-preta-spear-phishing-governments-worldwide.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/k/earth-preta-spear-phishing-governments-worldwide/IOCs-earth-preta-spear-phishing-since-march.txt",
+        "https://www.virustotal.com/gui/file/c52828dbf62fc52ae750ada43c505c934f1faeb9c58d71c76bdb398a3fbbe1e2/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-11-22",
+      "indicators": {
+        "url": [
+          "http://158.255.2.63"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/barberousse_bin/status/1594791243489345537",
+        "https://www.virustotal.com/gui/file/e8357cacdccdb4670f6ae427a781f36a9c4b268907f83c1ce3502a0fd9ce2606/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-10-18",
+      "indicators": {
+        "ipv4": [
+          "107.181.160.16:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1582217448731729920",
+        "https://twitter.com/kienbigmummy/status/1582217473499140097",
+        "https://www.virustotal.com/gui/file/becdb31a669676dac3e797fb6db482f9fd644853e73fc28eb0031bd58487d081/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-08-09",
+      "indicators": {
+        "url": [
+          "http://89.38.225.151"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/katechondic/status/1556940169483264000",
+        "https://twitter.com/katechondic/status/1557031529141964801",
+        "https://www.trendmicro.com/en_us/research/22/k/earth-preta-spear-phishing-governments-worldwide.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/k/earth-preta-spear-phishing-governments-worldwide/IOCs-earth-preta-spear-phishing-since-march.txt",
+        "https://www.virustotal.com/gui/file/c52828dbf62fc52ae750ada43c505c934f1faeb9c58d71c76bdb398a3fbbe1e2/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2022-07-31",
+      "indicators": {
+        "ipv4": [
+          "45.142.166.112:110",
+          "45.142.166.112:443"
+        ],
+        "url": [
+          "http://45.142.166.112"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1553737903398072320",
+        "https://www.virustotal.com/gui/file/00fbfaf36114d3ff9e2c43885341f1c02fade82b49d1cf451bc756d992c84b06/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url_path": 1
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "ipv4": [
+          "103.192.226.46:443",
+          "45.131.179.179:22",
+          "45.131.179.179:443"
+        ],
+        "url_path": [
+          "/uVdjpZ"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1549058500806197248",
+        "https://www.virustotal.com/gui/file/1de88a2ad4fd1b16005558591fa2a385f2fe343162bbca328384600c167df721/detection",
+        "https://www.virustotal.com/gui/file/563611caf1787441dcc12c5a77427224b5f1ac0d18efac4032ab67eed3a99928/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-07-12",
+      "indicators": {
+        "url": [
+          "http://98.142.251.29"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1546857896755044358",
+        "https://twitter.com/h2jazi/status/1546861105678524418",
+        "https://www.virustotal.com/gui/file/a693b9f9ffc5f4900e094b1d1360f7e7b907c9c8680abfeace34e1a8e380f405/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-07-06",
+      "indicators": {
+        "ipv4": [
+          "64.34.205.41:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1544537348670881792",
+        "https://www.virustotal.com/gui/file/8f32bebce3a4f35531de592ed57af7b63906d64565f36abe91298acc8ea3e93d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 3
+      },
+      "first_seen": "2022-06-02",
+      "indicators": {
+        "domain": [
+          "download.hilifimyanmar.com",
+          "hilifimyanmar.com",
+          "images.myanmarnewsonline.org",
+          "myanmarnewsonline.org",
+          "update.hilifimyanmar.com"
+        ],
+        "ipv4": [
+          "154.204.26.120:22",
+          "45.134.83.4:22",
+          "45.134.83.4:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1532305081676464128",
+        "https://www.virustotal.com/gui/file/843709a59f12ff7aa06a5837be7a1a93fdf6f02f99936af6658c166e8abcaa2d/detection",
+        "https://www.virustotal.com/gui/file/60ee19bb558d20c2591569ddb73fc90787dd47a07453e252a3afcaa222dde125/detection",
+        "https://www.virustotal.com/gui/file/558cbbcb969fe2fa3f1c74c376e307efcdbe3bad7497095619927edd5762363a/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "first_seen": "2022-05-05",
+      "indicators": {
+        "domain": [
+          "president-office.gov.mm"
+        ],
+        "ipv4": [
+          "103.15.28.145:6666",
+          "110.42.64.64:24680"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2022/05/mustang-panda-targets-europe.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url_path": 2
+      },
+      "first_seen": "2022-04-17",
+      "indicators": {
+        "domain": [
+          "dodefoh.com",
+          "macuwuf.com"
+        ],
+        "url_path": [
+          "/e32c8df2cf6b7a16/",
+          "/e8c76295a5f9acb7/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/613914361364535ed5d60bc4"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-04-17",
+      "indicators": {
+        "url": [
+          "http://103.231.14.134"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/exploitation-of-the-cve-2021-40444-vulnerability-in-mshtml/104218/",
+        "https://otx.alienvault.com/pulse/6144875da41b403380a06521",
+        "https://www.virustotal.com/gui/file/0198949a02fc4dcd65c29c028ba5f20365dc629d764f9e0a95721300b9fadbad/detection",
+        "https://www.virustotal.com/gui/file/ab9324028bcc347040a058d41c079c0205398d200a63a6ed6cbe1df973634b2d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 2
+      },
+      "first_seen": "2022-03-24",
+      "indicators": {
+        "ipv4": [
+          "155.94.200.211:5008",
+          "155.94.200.212:443"
+        ],
+        "url": [
+          "http://155.94.200.209",
+          "http://155.94.200.211"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/G60930953/status/1507031738282909698",
+        "https://www.virustotal.com/gui/file/887345540f1bf31c40755edcda2e3dd9fe640122fc9020f3873c895daa2378bf/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 3,
+        "url": 6
+      },
+      "first_seen": "2022-03-23",
+      "indicators": {
+        "domain": [
+          "coolboxpc.com",
+          "locvnpt.com",
+          "snova-tech.com",
+          "urmsec.com"
+        ],
+        "ipv4": [
+          "103.56.53.120:8080",
+          "154.204.27.181:110",
+          "45.131.179.179:110"
+        ],
+        "url": [
+          "http://103.56.53.120",
+          "http://154.204.27.181",
+          "http://185.207.153.208",
+          "http://43.254.218.42",
+          "http://45.131.179.179",
+          "http://92.118.188.78"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2022/03/23/mustang-panda-hodur-old-tricks-new-korplug-variant/",
+        "https://www.virustotal.com/gui/file/0d154e036b4de53059b5a24a1677fb546e1c136d6d0aa37c21a878c24891ee2c/detection",
+        "https://www.virustotal.com/gui/file/9170169ae732c3a843c871be73875ea1bc8081876db5f9bcfd5f05d792bcaef0/detection",
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2022-03-23",
+      "indicators": {
+        "ipv4": [
+          "103.107.104.19:33182",
+          "103.107.104.19:33255"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2022-03-23",
+      "indicators": {
+        "ipv4": [
+          "154.204.26.120:443",
+          "154.204.27.130:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kienbigmummy/status/1532305081676464128",
+        "https://www.virustotal.com/gui/file/843709a59f12ff7aa06a5837be7a1a93fdf6f02f99936af6658c166e8abcaa2d/detection",
+        "https://www.virustotal.com/gui/file/60ee19bb558d20c2591569ddb73fc90787dd47a07453e252a3afcaa222dde125/detection",
+        "https://www.virustotal.com/gui/file/558cbbcb969fe2fa3f1c74c376e307efcdbe3bad7497095619927edd5762363a/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-23",
+      "indicators": {
+        "ipv4": [
+          "45.131.179.179:5938"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2022/03/23/mustang-panda-hodur-old-tricks-new-korplug-variant/",
+        "https://www.virustotal.com/gui/file/0d154e036b4de53059b5a24a1677fb546e1c136d6d0aa37c21a878c24891ee2c/detection",
+        "https://www.virustotal.com/gui/file/9170169ae732c3a843c871be73875ea1bc8081876db5f9bcfd5f05d792bcaef0/detection",
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection",
+        "https://twitter.com/kienbigmummy/status/1549058500806197248",
+        "https://www.virustotal.com/gui/file/1de88a2ad4fd1b16005558591fa2a385f2fe343162bbca328384600c167df721/detection",
+        "https://www.virustotal.com/gui/file/563611caf1787441dcc12c5a77427224b5f1ac0d18efac4032ab67eed3a99928/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2022-03-21",
+      "indicators": {
+        "ipv4": [
+          "155.94.200.206:5008"
+        ],
+        "url": [
+          "http://155.94.200.206"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/StillAzureH/status/1505823479945625604",
+        "https://www.virustotal.com/gui/file/bb2990a1bbc417cfec40d5f1a6a8b22cac0ef21aed869dd8503e28573cf84401/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-11",
+      "indicators": {
+        "domain": [
+          "hidusi.com",
+          "joxinu.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/613914361364535ed5d60bc4"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 3,
+        "url": 2
+      },
+      "first_seen": "2022-03-08",
+      "indicators": {
+        "domain": [
+          "upespr.com"
+        ],
+        "ipv4": [
+          "103.107.104.19:443",
+          "45.154.14.235:443",
+          "69.90.184.125:443"
+        ],
+        "url": [
+          "http://45.154.14.235",
+          "http://69.90.184.125"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/good-bad-and-web-bug-ta416-increases-operational-tempo-against-european"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-08",
+      "indicators": {
+        "ipv4": [
+          "107.167.64.4:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1501150428016357378",
+        "https://twitter.com/fr0s7_/status/1501158252045901824",
+        "https://www.joesandbox.com/analysis/584888/0/html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-02-28",
+      "indicators": {
+        "ipv4": [
+          "92.118.188.78:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2022/03/23/mustang-panda-hodur-old-tricks-new-korplug-variant/",
+        "https://www.virustotal.com/gui/file/0d154e036b4de53059b5a24a1677fb546e1c136d6d0aa37c21a878c24891ee2c/detection",
+        "https://www.virustotal.com/gui/file/9170169ae732c3a843c871be73875ea1bc8081876db5f9bcfd5f05d792bcaef0/detection",
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection",
+        "https://twitter.com/h2jazi/status/1498308592495214592",
+        "https://twitter.com/aRtAGGI/status/1498314276104200193"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-02-28",
+      "indicators": {
+        "url": [
+          "http://103.107.104.19"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1498308592495214592",
+        "https://twitter.com/aRtAGGI/status/1498314276104200193",
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection",
+        "https://www.proofpoint.com/us/blog/threat-insight/good-bad-and-web-bug-ta416-increases-operational-tempo-against-european"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-02-28",
+      "indicators": {
+        "domain": [
+          "zyber-i.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1498308592495214592",
+        "https://twitter.com/aRtAGGI/status/1498314276104200193",
+        "https://www.virustotal.com/gui/file/effd63168fc7957baf609f7492cd82579459963f80fc6fc4d261fbc68877f5a1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-02-11",
+      "indicators": {
+        "url": [
+          "http://202.58.105.38"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/s1ckb017/status/1492069505803116546"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-12-28",
+      "indicators": {
+        "url": [
+          "http://103.15.28.208"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/s1ckb017/status/1475621967160123395",
+        "https://www.virustotal.com/gui/file/df84d6c284dd39c2bfed6f8eb26149a4154396c27de50595ed5d80b428930dcd/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2021-07-17",
+      "indicators": {
+        "domain": [
+          "7daydai1y.com",
+          "irrawddy.com",
+          "mmtimes.net",
+          "mmtimes.org",
+          "mopfi-ferd.com",
+          "updatecatalogs.com",
+          "webmail.mmtimes.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/apt-luminousmoth/103332/",
+        "https://otx.alienvault.com/pulse/60efe4047c9b9b9564314643"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 18,
+        "ipv4": 1,
+        "url_path": 1
+      },
+      "first_seen": "2021-03-16",
+      "indicators": {
+        "domain": [
+          "buyonebuy.top",
+          "careerhuawei.net",
+          "cdn.update.huaweiyuncdn.com",
+          "cdn1.update.huaweiyuncdn.com",
+          "download.flach.cn",
+          "flash-update.buyonebuy.top",
+          "forum.flach.cn",
+          "hr.careerhuawei.net",
+          "huaweiyuncdn.com",
+          "info.careerhuawei.net",
+          "info.flach.cn",
+          "infoadmin.update.huaweiyuncdn.com",
+          "m.flach.cn",
+          "mobile.flach.cn",
+          "terminal.flach.cn",
+          "update.careerhuawei.net",
+          "update.flach.cn",
+          "update.huaweiyuncdn.com"
+        ],
+        "ipv4": [
+          "159.138.84.217:81"
+        ],
+        "url_path": [
+          "/c0c00c0c/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-dianxun.pdf",
+        "https://otx.alienvault.com/pulse/6050e65d389812e02dfca3c3"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "ipv4": 4
+      },
+      "first_seen": "2021-01-27",
+      "indicators": {
+        "ipv4": [
+          "103.200.97.189:110",
+          "103.200.97.189:965",
+          "185.239.226.17:110",
+          "185.239.226.17:965"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://or10nlabs.tech/reverse-engineering-the-mustang-panda-plugx-rat-extracting-the-config/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-11-24",
+      "indicators": {
+        "ipv4": [
+          "45.248.87.162:110"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/6a5b0cfdaf402e94f892f66a0f53e347d427be4105ab22c1a9f259238c272b60/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-11-24",
+      "indicators": {
+        "url": [
+          "http://45.248.87.162"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/ta416-goes-ground-and-returns-golang-plugx-malware-loader",
+        "https://otx.alienvault.com/pulse/5fbc0c5ec4bfeaa7f7956ff4"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-14",
+      "indicators": {
+        "domain": [
+          "flach.cn"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/IntezerLabs/status/1316384526323638274",
+        "https://www.virustotal.com/gui/file/c0331d4dee56ef0a8bb8e3d31bdfd3381bafc6ee80b85b338cee4001f7fb3d8c/detection",
+        "https://www.virustotal.com/gui/file/d0dd9c624bb2b33de96c29b0ccb5aa5b43ce83a54e2842f1643247811487f8d9/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-08-21",
+      "indicators": {
+        "url": [
+          "http://103.85.24.161"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyber__sloth/status/1296722004964409349"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-07-29",
+      "indicators": {
+        "domain": [
+          "cabsecnow.com",
+          "hostareas.com",
+          "jsquerys.net",
+          "miscrosaft.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2020-0728.pdf",
+        "https://otx.alienvault.com/pulse/5f219067fd875a905691df22"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-07-02",
+      "indicators": {
+        "domain": [
+          "miandfish.store"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/mustang-panda-recent-activity-dll-sideloading-trojans-with-temporal-c2-servers/",
+        "https://otx.alienvault.com/pulse/5ed7c36c21ae174ca3acfaee"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-15",
+      "indicators": {
+        "domain": [
+          "systeminfor.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2020-0728.pdf",
+        "https://otx.alienvault.com/pulse/5f219067fd875a905691df22"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-06-03",
+      "indicators": {
+        "domain": [
+          "destroy2013.com",
+          "fitehook.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/mustang-panda-recent-activity-dll-sideloading-trojans-with-temporal-c2-servers/",
+        "https://otx.alienvault.com/pulse/5ed7c36c21ae174ca3acfaee"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-03-23",
+      "indicators": {
+        "url": [
+          "http://123.51.185.75"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/hackingump1/status/1241760059543244805",
+        "https://malwareandstuff.com/mustang-panda-joins-the-covid19-bandwagon/",
+        "https://www.virustotal.com/gui/ip-address/123.51.185.75/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-03-19",
+      "indicators": {
+        "domain": [
+          "vietnam.zing.photos"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.vincss.net/2020/03/re012-phan-tich-ma-doc-loi-dung-dich-COVID-19-de-phat-tan-gia-mao-chi-thi-cua-thu-tuong-Nguyen-Xuan-Phuc.html",
+        "https://blog.vincss.net/2020/03/re012-phan-tich-ma-doc-loi-dung-dich-COVID-19-de-phat-tan-gia-mao-chi-thi-cua-thu-tuong-Nguyen-Xuan-Phuc-phan2.html",
+        "https://drive.google.com/file/d/1OpPiT6ieub3_q0sLIxGt8iI85tInqjoU/view",
+        "https://any.run/report/bbbeb1a937274825b0434414fa2d9ec629ba846b1e3e33a59c613b54d375e4d2/dd877b4d-8b36-48c0-af07-ce37fd9fee7b"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-02-16",
+      "indicators": {
+        "ipv4": [
+          "149.28.156.153:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyber__sloth/status/1229080836487540736"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-11",
+      "indicators": {
+        "domain": [
+          "lameers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2020-0728.pdf",
+        "https://otx.alienvault.com/pulse/5f219067fd875a905691df22"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-12-30",
+      "indicators": {
+        "domain": [
+          "forexdualsystem.com",
+          "lionforcesystems.com",
+          "oshibadrive.com",
+          "strust.club",
+          "svchosts.com",
+          "svrhosts.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/research/bronze-president-targets-ngos",
+        "https://otx.alienvault.com/pulse/5e0a1aa2617f951d88c9d891"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-30",
+      "indicators": {
+        "domain": [
+          "ipsoftwarelabs.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2020-0728.pdf",
+        "https://otx.alienvault.com/pulse/5f219067fd875a905691df22",
+        "https://www.secureworks.com/research/bronze-president-targets-ngos",
+        "https://otx.alienvault.com/pulse/5e0a1aa2617f951d88c9d891"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6,
+        "url": 2
+      },
+      "first_seen": "2019-10-08",
+      "indicators": {
+        "domain": [
+          "adobephotostage.com",
+          "airdndvn.com",
+          "infosecvn.com",
+          "officeproduces.com",
+          "update.olk4.com",
+          "yahoorealtors.com"
+        ],
+        "url": [
+          "http://144.202.54.8",
+          "http://154.221.24.47"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.anomali.com/blog/china-based-apt-mustang-panda-targets-minority-groups-public-and-private-sector-organizations",
+        "https://otx.alienvault.com/pulse/5d9c72d7e2efa3b5aa799b41"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-08",
+      "indicators": {
+        "domain": [
+          "wbemsystem.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.anomali.com/blog/china-based-apt-mustang-panda-targets-minority-groups-public-and-private-sector-organizations",
+        "https://otx.alienvault.com/pulse/5d9c72d7e2efa3b5aa799b41",
+        "https://www.secureworks.com/research/bronze-president-targets-ngos",
+        "https://otx.alienvault.com/pulse/5e0a1aa2617f951d88c9d891"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "url": 1
+      },
+      "first_seen": "2019-08-21",
+      "indicators": {
+        "domain": [
+          "247up.org",
+          "mediadomainservice.org",
+          "renewyourclicks.org",
+          "siteup-365.org"
+        ],
+        "url": [
+          "http://167.88.180.148"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/China/APT/Unknown/20-08-19/Malware%20analysis%2020-08-19.md",
+        "https://www.virustotal.com/gui/ip-address/167.88.180.148/relations"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-20",
+      "indicators": {
+        "domain": [
+          "apple-net.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.anomali.com/blog/china-based-apt-mustang-panda-targets-minority-groups-public-and-private-sector-organizations",
+        "https://otx.alienvault.com/pulse/5d9c72d7e2efa3b5aa799b41",
+        "https://www.secureworks.com/research/bronze-president-targets-ngos",
+        "https://otx.alienvault.com/pulse/5e0a1aa2617f951d88c9d891",
+        "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/China/APT/Unknown/20-08-19/Malware%20analysis%2020-08-19.md",
+        "https://www.virustotal.com/gui/ip-address/167.88.180.148/relations"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1704286684",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ef4b1eca-734f-5b49-80ea-63e246cbfe47",
+        "value": "apsdighi.estttsec.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697792370",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "79f405d5-b3e4-5c62-a512-18e6b8534fcc",
+        "value": "awesscholarship.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1704286684",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "02297887-db33-5732-87e6-31a02c19007b",
+        "value": "epar.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1704286684",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0bf76cad-1435-59e6-96bb-f6ed203f4948",
+        "value": "estttsec.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1704286684",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cfc90785-3f65-5186-8fbb-8a46059b664f",
+        "value": "nicdsa.estttsec.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1704286684",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "89ee00af-9db9-50c0-8b2e-96cb91d61485",
+        "value": "parichay.epar.in"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:rusticweb"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: RUSTICWEB",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "022a9e21-c1bf-5b1e-adfb-ccbf4983af10"
+  }
+}

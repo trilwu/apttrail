@@ -1,0 +1,115 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5cb56c51-6da9-5be3-bc55-d91acd491fb0",
+        "value": "great.vssigma.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e16ce18a-110e-5055-b0f1-2dab06b9a1bc",
+        "value": "red.vssigma.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "023d6e62-edab-5ade-829e-f469967be6a7",
+        "value": "resell.siseau.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "79c7a960-a54a-5320-b9ad-02ee6a902864",
+        "value": "siseau.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3456f628-afbc-5163-967b-6962d869fce6",
+        "value": "vssigma.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649587409",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "54bd6bac-62ae-5b02-9d8f-630a3c690226",
+        "value": "http://140.112.19.195"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "9fa2256c-40c0-5c52-ba1d-b97ff3cfbbe1",
+        "value": "mail.hfmforum.com/microsoft/errorpost/default/connect.aspx"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "18f98cb5-e4e2-53b3-bc45-cce627fd61da",
+        "value": "mail.hfmforum.com/microsoftupdate/getupdate/default.aspx"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "95b369c0-38b4-531e-8dbf-13f6da936a61",
+        "value": "/microsoft/errorpost/default/connect.aspx"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1649600766",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "910f17b4-facd-5cd0-9ba2-d5cbdd817b9b",
+        "value": "/microsoftupdate/getupdate/default.aspx"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:putterpanda"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Putter Panda - G0024\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Putter Panda (G0024) - Maltrail group PUTTERPANDA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "4a1a0d9a-6ac4-594a-8d16-fa0a0e8af329"
+  }
+}

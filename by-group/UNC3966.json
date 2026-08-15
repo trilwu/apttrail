@@ -1,0 +1,77 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "ms-prod19-live.com": "2023-03-23"
+    },
+    "url_path": {
+      "/rehjhj8785780923853/": "2023-03-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-03-23",
+    "latest": "2023-03-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ms-prod19-live.com"
+    ],
+    "url_path": [
+      "/rehjhj8785780923853/"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC3966"
+  ],
+  "references": [
+    "https://www.mandiant.com/resources/blog/unc961-multiverse-financially-motivated"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNC961"
+    }
+  ],
+  "slug": "UNC3966",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2023-03-23",
+      "indicators": {
+        "domain": [
+          "ms-prod19-live.com"
+        ],
+        "url_path": [
+          "/rehjhj8785780923853/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/unc961-multiverse-financially-motivated"
+      ],
+      "total": 2
+    }
+  ]
+}

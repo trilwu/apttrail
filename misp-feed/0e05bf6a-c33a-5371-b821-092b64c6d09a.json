@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1648715457",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "86548b93-e77b-51f8-bfe9-1eb1476b64be",
+        "value": "appplace.shop"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1642172147",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ff0464e0-30d3-590c-94a3-300e87ace457",
+        "value": "appz.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648715457",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "372dbddc-0f83-540a-9426-a51dc6e04278",
+        "value": "appzshare.club"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648715457",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5ce6c314-36fb-541b-80c2-6e8671c68358",
+        "value": "appzshare.digital"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648715457",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fd690ebd-82c7-5865-bd4e-d8ddf3713bba",
+        "value": "apzshare.club"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648715457",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4974e763-a958-59e5-9c19-c94032f99a98",
+        "value": "http://212.24.100.197"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:vajraeleph"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: VAJRAELEPH",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "0e05bf6a-c33a-5371-b821-092b64c6d09a"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "name": "Sea Turtle (G1041) - APTtrail",
+  "description": "Techniques attributed to Sea Turtle by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1041.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1027.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1213.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1557",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.011",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1584.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1690",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Sea Turtle",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

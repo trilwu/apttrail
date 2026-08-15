@@ -1,0 +1,155 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b1bd8537-4f2a-54b1-a3e6-6c5f24d2fa91",
+        "value": "doosan-job.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c4d13f5-76ca-56dc-aba1-135de55a1e79",
+        "value": "downloadsservers.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5363395d-0cea-5d06-85bb-f6510ca16c71",
+        "value": "drivercenterupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "11c9d3e2-4bcc-5a07-b7b5-be074e9e7a96",
+        "value": "easyresumecreatorpro.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "640a2f22-22da-5625-885c-96f29bc47f7a",
+        "value": "googleproductupdate.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7726aa42-7576-59c3-a9f4-a9dcb56bbd34",
+        "value": "microsoftmiddleast.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "323cd21b-223b-584f-a895-14cb14724c4b",
+        "value": "microsoftserverupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "42db7c07-44f5-5c1b-b757-91b0a3cbced2",
+        "value": "microsoftwindowsresources.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9d2949c7-40f7-5f49-8bf8-b0eb5bdc900d",
+        "value": "microsoftwindowsupdate.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "06032fbf-b4e3-5ac8-a46e-e251df28203b",
+        "value": "northropgrumman.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "aef4636c-eb40-53c0-a5b1-346d15f4706c",
+        "value": "teledyne-jobs.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "76cae0b5-541e-5520-864e-1db0fb8fc29c",
+        "value": "windowscentralupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f7873b81-d482-5310-b080-44e839b86b7f",
+        "value": "windowssecurityupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c07c602-f7af-573f-9b37-2d5068fc3470",
+        "value": "windowsserverupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52f21453-40a0-5a73-9036-cdb52fb28788",
+        "value": "windowsupdateserver.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cleaver"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Cleaver - G0003\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Cleaver (G0003) - Maltrail group CLEAVER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "d80270a6-cb77-5d8f-83a0-08c43301405c"
+  }
+}

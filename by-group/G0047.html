@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Gamaredon Group · APTtrail</title>
+<meta name=description content="62,980 indicators attributed to Gamaredon Group (G0047), from 3,058 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0047.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="Gamaredon Group · APTtrail">
+<meta property="og:description" content="62,980 indicators attributed to Gamaredon Group (G0047), from 3,058 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0047.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>Gamaredon Group <a class=gid href="https://attack.mitre.org/groups/G0047/">G0047</a></h1>
+<p class=aka><b>GAMAREDON</b> &middot; <b>GAMAREDON-1</b> &middot; actinium &middot; apt-c-53 &middot; armageddon &middot; bluealpha &middot; gamaload &middot; gamawiper &middot; gammadrop &middot; gammaload &middot; gammasteel &middot; glowsand &middot; glowspark &middot; hive0051 &middot; litterdrifter &middot; primitive bear &middot; pterodo &middot; pterodograph &middot; pteroeffigy &middot; pterographin &middot; pterolnk &middot; pteroodd &middot; pterostew &middot; shuckworm</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>62,980</dd></div>
+<div><dt>Source reports</dt><dd>3,058</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-06-25</dd></div>
+</dl>
+<div class=spark><span style="--h:4%" title="2017: 54 indicators"></span><span style="--h:1%" title="2018: 5 indicators"></span><span style="--h:9%" title="2019: 255 indicators"></span><span style="--h:23%" title="2020: 1,629 indicators"></span><span style="--h:22%" title="2021: 1,460 indicators"></span><span style="--h:87%" title="2022: 22,916 indicators"></span><span style="--h:100%" title="2023: 30,141 indicators"></span><span style="--h:43%" title="2024: 5,644 indicators"></span><span class=hot style="--h:3%" title="2025: 25 indicators"></span><span class=hot style="--h:17%" title="2026: 851 indicators"></span></div>
+<div class=spark-axis><span>2017</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=RU">RU</a></dd>
+<dt>Targeted sectors</dt><dd><ul class=chips><li><a href="../groups.html?sector=Government">Government</a></li></ul></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>Germany</li><li>Ukraine</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_gamaredon.txt">GAMAREDON</a> &middot; <a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_gamaredon-1.txt">GAMAREDON-1</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0047.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0047-domain.txt</pre>
+<p class=note><a href="G0047.json">G0047.json</a> &middot; <a href="G0047-domain.txt">G0047-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>62,980 indicators</span></h2>
+<p class=lede>Gamaredon Group is a suspected Russian cyber espionage group that has targeted military, law enforcement, judiciary, non-profit, and non-governmental organizations in Ukraine since at least 2013. The name Gamaredon Group derives from a misspelling of the word &quot;Armageddon,&quot; found in early campaigns. In November 2021, the Ukrainian government publicly attributed Gamaredon Group to Russia’s Federal Security Service (FSB) Center 18, an assessment later supported by multiple independent cybersecurity researchers.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>60,677</td><td class=f><a href="G0047-domain.txt">G0047-domain.txt</a></td></tr>
+<tr><td>url_path</td><td class=n>1,869</td><td class=f><a href="G0047.json">G0047.json</a></td></tr>
+<tr><td>url</td><td class=n>397</td><td class=f><a href="G0047.json">G0047.json</a></td></tr>
+<tr><td>ipv4</td><td class=n>37</td><td class=f><a href="G0047.json">G0047.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>70 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0047-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0047-navigator.json">download the layer</a> (70 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1001/"><b>T1001</b> Data Obfuscation</a></li><li><a href="https://attack.mitre.org/techniques/T1005/"><b>T1005</b> Data from Local System</a></li><li><a href="https://attack.mitre.org/techniques/T1012/"><b>T1012</b> Query Registry</a></li><li><a href="https://attack.mitre.org/techniques/T1016/001/"><b>T1016.001</b> Internet Connection Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1020/"><b>T1020</b> Automated Exfiltration</a></li><li><a href="https://attack.mitre.org/techniques/T1021/005/"><b>T1021.005</b> VNC</a></li><li><a href="https://attack.mitre.org/techniques/T1025/"><b>T1025</b> Data from Removable Media</a></li><li><a href="https://attack.mitre.org/techniques/T1027/"><b>T1027</b> Obfuscated Files or Information</a></li><li><a href="https://attack.mitre.org/techniques/T1027/004/"><b>T1027.004</b> Compile After Delivery</a></li><li><a href="https://attack.mitre.org/techniques/T1027/010/"><b>T1027.010</b> Command Obfuscation</a></li><li><a href="https://attack.mitre.org/techniques/T1027/012/"><b>T1027.012</b> LNK Icon Smuggling</a></li><li><a href="https://attack.mitre.org/techniques/T1027/015/"><b>T1027.015</b> Compression</a></li><li><a href="https://attack.mitre.org/techniques/T1027/016/"><b>T1027.016</b> Junk Code Insertion</a></li><li><a href="https://attack.mitre.org/techniques/T1033/"><b>T1033</b> System Owner/User Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1036/005/"><b>T1036.005</b> Match Legitimate Resource Name or Location</a></li><li><a href="https://attack.mitre.org/techniques/T1039/"><b>T1039</b> Data from Network Shared Drive</a></li><li><a href="https://attack.mitre.org/techniques/T1041/"><b>T1041</b> Exfiltration Over C2 Channel</a></li><li><a href="https://attack.mitre.org/techniques/T1047/"><b>T1047</b> Windows Management Instrumentation</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1055/"><b>T1055</b> Process Injection</a></li><li><a href="https://attack.mitre.org/techniques/T1057/"><b>T1057</b> Process Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/003/"><b>T1059.003</b> Windows Command Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/005/"><b>T1059.005</b> Visual Basic</a></li><li><a href="https://attack.mitre.org/techniques/T1070/004/"><b>T1070.004</b> File Deletion</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1080/"><b>T1080</b> Taint Shared Content</a></li><li><a href="https://attack.mitre.org/techniques/T1082/"><b>T1082</b> System Information Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1083/"><b>T1083</b> File and Directory Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1090/"><b>T1090</b> Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1090/003/"><b>T1090.003</b> Multi-hop Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1091/"><b>T1091</b> Replication Through Removable Media</a></li><li><a href="https://attack.mitre.org/techniques/T1095/"><b>T1095</b> Non-Application Layer Protocol</a></li><li><a href="https://attack.mitre.org/techniques/T1102/"><b>T1102</b> Web Service</a></li><li><a href="https://attack.mitre.org/techniques/T1102/002/"><b>T1102.002</b> Bidirectional Communication</a></li><li><a href="https://attack.mitre.org/techniques/T1102/003/"><b>T1102.003</b> One-Way Communication</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1106/"><b>T1106</b> Native API</a></li><li><a href="https://attack.mitre.org/techniques/T1112/"><b>T1112</b> Modify Registry</a></li><li><a href="https://attack.mitre.org/techniques/T1113/"><b>T1113</b> Screen Capture</a></li><li><a href="https://attack.mitre.org/techniques/T1119/"><b>T1119</b> Automated Collection</a></li><li><a href="https://attack.mitre.org/techniques/T1120/"><b>T1120</b> Peripheral Device Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1137/"><b>T1137</b> Office Application Startup</a></li><li><a href="https://attack.mitre.org/techniques/T1140/"><b>T1140</b> Deobfuscate/Decode Files or Information</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1204/002/"><b>T1204.002</b> Malicious File</a></li><li><a href="https://attack.mitre.org/techniques/T1218/005/"><b>T1218.005</b> Mshta</a></li><li><a href="https://attack.mitre.org/techniques/T1218/011/"><b>T1218.011</b> Rundll32</a></li><li><a href="https://attack.mitre.org/techniques/T1221/"><b>T1221</b> Template Injection</a></li><li><a href="https://attack.mitre.org/techniques/T1480/"><b>T1480</b> Execution Guardrails</a></li><li><a href="https://attack.mitre.org/techniques/T1491/001/"><b>T1491.001</b> Internal Defacement</a></li><li><a href="https://attack.mitre.org/techniques/T1497/001/"><b>T1497.001</b> System Checks</a></li><li><a href="https://attack.mitre.org/techniques/T1518/001/"><b>T1518.001</b> Security Software Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1534/"><b>T1534</b> Internal Spearphishing</a></li><li><a href="https://attack.mitre.org/techniques/T1547/001/"><b>T1547.001</b> Registry Run Keys / Startup Folder</a></li><li><a href="https://attack.mitre.org/techniques/T1559/001/"><b>T1559.001</b> Component Object Model</a></li><li><a href="https://attack.mitre.org/techniques/T1561/001/"><b>T1561.001</b> Disk Content Wipe</a></li><li><a href="https://attack.mitre.org/techniques/T1564/003/"><b>T1564.003</b> Hidden Window</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1568/"><b>T1568</b> Dynamic Resolution</a></li><li><a href="https://attack.mitre.org/techniques/T1568/001/"><b>T1568.001</b> Fast Flux DNS</a></li><li><a href="https://attack.mitre.org/techniques/T1571/"><b>T1571</b> Non-Standard Port</a></li><li><a href="https://attack.mitre.org/techniques/T1583/001/"><b>T1583.001</b> Domains</a></li><li><a href="https://attack.mitre.org/techniques/T1583/003/"><b>T1583.003</b> Virtual Private Server</a></li><li><a href="https://attack.mitre.org/techniques/T1583/006/"><b>T1583.006</b> Web Services</a></li><li><a href="https://attack.mitre.org/techniques/T1587/003/"><b>T1587.003</b> Digital Certificates</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li><li><a href="https://attack.mitre.org/techniques/T1608/001/"><b>T1608.001</b> Upload Malware</a></li><li><a href="https://attack.mitre.org/techniques/T1620/"><b>T1620</b> Reflective Code Loading</a></li><li><a href="https://attack.mitre.org/techniques/T1685/"><b>T1685</b> Disable or Modify Tools</a></li></ul>
+
+<h2 id=software>Software <span class=n>6</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0075/"><b>Reg</b></a></li><li><a href="https://attack.mitre.org/software/S0097/"><b>Ping</b></a></li><li><a href="https://attack.mitre.org/software/S0147/"><b>Pteranodon</b></a></li><li><a href="https://attack.mitre.org/software/S0332/"><b>Remcos</b></a></li><li><a href="https://attack.mitre.org/software/S0685/"><b>PowerPunch</b></a></li><li><a href="https://attack.mitre.org/software/S0686/"><b>QuietSieve</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>3,058 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>13,258</span><a href="https://www.virustotal.com/gui/ip-address/170.64.146.248/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/170.64.146.248/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>10,887</span><a href="https://www.virustotal.com/gui/ip-address/165.22.16.41/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/165.22.16.41/relations</span></a><div class=bar style="--w:82%"></div></li>
+<li><span class=c>2,277</span><a href="https://www.virustotal.com/gui/ip-address/139.180.168.138/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/139.180.168.138/relations</span></a><div class=bar style="--w:17%"></div></li>
+<li><span class=c>1,601</span><a href="https://www.virustotal.com/gui/ip-address/159.223.236.108/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/159.223.236.108/relations</span></a><div class=bar style="--w:12%"></div></li>
+<li><span class=c>1,303</span><a href="https://www.virustotal.com/gui/ip-address/78.141.206.197/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/78.141.206.197/relations</span></a><div class=bar style="--w:10%"></div></li>
+<li><span class=c>1,114</span><a href="https://www.virustotal.com/gui/ip-address/162.33.178.84/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/162.33.178.84/relations</span></a><div class=bar style="--w:8%"></div></li>
+<li><span class=c>1,060</span><a href="https://www.virustotal.com/gui/ip-address/45.76.36.201/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.76.36.201/relations</span></a><div class=bar style="--w:8%"></div></li>
+<li><span class=c>1,053</span><a href="https://www.virustotal.com/gui/ip-address/45.61.136.56/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.61.136.56/relations</span></a><div class=bar style="--w:8%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>4</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="G0100.html">Inception</a> <span class=gidtag>G0100</span><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="TINYSCOUTS.html">TINYSCOUTS</a><div class=why><span class="ev infrastructure">1 shared indicator</span> &middot; <span class="ev reporting">2 reports cite both</span></div></li><li><a href="G0096.html">APT41</a> <span class=gidtag>G0096</span><div class=why><span class="ev reporting">1 report cite both</span></div></li><li><a href="G0094.html">Kimsuky</a> <span class=gidtag>G0094</span><div class=why><span class="ev reporting">1 report cite both</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>62,980 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>300</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 60,677</button><button type=button data-type="url_path" aria-pressed=false>url_path 1,869</button><button type=button data-type="url" aria-pressed=false>url 397</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 37</button></div>
+<p class=note>Showing the 300 most recent of 62,980. Complete: <a href="G0047.json">G0047.json</a>.</p>
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-06-25-bb48c7" class=hot>
+<div class=when><a class=date href="#b-2026-06-25-bb48c7"><time datetime="2026-06-25">2026-06-25</time></a> <span class=cnt>33 domain, 1 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/blackorbird/status/2070111342934233218" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/blackorbird/status/2070111342934233218</span></a> &middot; <a href="https://github.com/blackorbird/APT_REPORT/blob/master/Gamaredon/gamaredon-in-2025.pdf" rel="noopener nofollow"><span class=host>github.com</span><span class=path>/blackorbird/APT_REPORT/blob/master/Gama…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>3742eddi.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>7062a41689f7a.loophole.site</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>7tnzsgp4-80.use.devtunnels.ms</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ac7d30a02442d.loophole.site</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>alfred-assumptionsasin-winston.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cheese-metalsgourmet-interviews.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dushun.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>earlysilence.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>fewwef.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>finally-electionaudience-dont.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>graph-proved-physicians-ward.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>holdmyspice.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ignores.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>innocent-faressupposedloved.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>jvyuwatt.ssuworker.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>lettinggo.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>maybefallout.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>maybefallout.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>parameter-iron-turns-combinations.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ser-uk-definesinvolved.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>srkwk.3742eddi.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ssuworker.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>stake.ytmrj83283.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>szrtrboyre.fewwef.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>utulex.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>veryinappropriate.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wage.zpwyi71185.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wwpeeya.ignores.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>x3f2q1cd80.asse.devtunnels.ms</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>your-combinationpercent-gibson.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ytmrj83283.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zalupka.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zpwyi71185.workers.dev</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://69.67.173.214</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-08-594bed" class=hot>
+<div class=when><a class=date href="#b-2026-06-08-594bed"><time datetime="2026-06-08">2026-06-08</time></a> <span class=cnt>1 domain, 1 ipv4, 1 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://blog.sekoia.io/fsbs-matryoshka-3-3-gamaredons-gifts-that-keeps-unpacking-gammasteel/" rel="noopener nofollow"><span class=host>blog.sekoia.io</span><span class=path>/fsbs-matryoshka-3-3-gamaredons-gifts-th…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>justsstop.ru</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>165.22.170.129:443</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://165.22.170.129</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-03-17f985" class=hot>
+<div class=when><a class=date href="#b-2026-06-03-17f985"><time datetime="2026-06-03">2026-06-03</time></a> <span class=cnt>10 domain, 1 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://blog.sekoia.io/fsbs-matryoshka-2-3-gamaredons-gifts-that-keeps-unpacking-gammaload/" rel="noopener nofollow"><span class=host>blog.sekoia.io</span><span class=path>/fsbs-matryoshka-2-3-gamaredons-gifts-th…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>2j.dayobtvoyu.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>csxvl00328.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dayobtvoyu.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>e097.yggjf81487.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>febul89300.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>insight-sweet-drainage-appreciated.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sweet.csxvl00328.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vids-road-christina-guards.trycloudflare.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>white.febul89300.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>yggjf81487.workers.dev</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://172.86.72.243</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-02-f9666a" class=hot>
+<div class=when><a class=date href="#b-2026-06-02-f9666a"><time datetime="2026-06-02">2026-06-02</time></a> <span class=cnt>3 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://blog.sekoia.io/fsbs-matryoshka-1-3-gamaredons-gifts-that-keeps-unpacking-gammaphish-and-gammaworm/" rel="noopener nofollow"><span class=host>blog.sekoia.io</span><span class=path>/fsbs-matryoshka-1-3-gamaredons-gifts-th…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bold.zsjtn41091.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>quitethepastry.ru</td></tr>
+<tr data-t="domain"><td class=val>zsjtn41091.workers.dev</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-16-2e01e4" class=hot>
+<div class=when><a class=date href="#b-2026-05-16-2e01e4"><time datetime="2026-05-16">2026-05-16</time></a> <span class=cnt>1 domain, 1 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/smica83/status/2054882140169363928" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2054882140169363928</span></a> &middot; <a href="https://x.com/smica83/status/2055647354485690522" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2055647354485690522</span></a> &middot; <a href="https://www.virustotal.com/gui/file/836db26f88b8124828629f1bcf5e12fe521b56850a4a60b76b350813498c6056/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/836db26f88b8124828629f1bcf5e12…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ccbe75cdcf65ee66e44c09e33d99a2236168fc6bea85787284397ae7ce553d1b/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ccbe75cdcf65ee66e44c09e33d99a2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/0ac035b3695c933dda913b1a0037d40c1031523b30b4172fbd7c0b8c5264da63/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/0ac035b3695c933dda913b1a0037d4…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>advocat.publicvm.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>89.124.88.211:443</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-14-2e01e4" class=hot>
+<div class=when><a class=date href="#b-2026-05-14-2e01e4"><time datetime="2026-05-14">2026-05-14</time></a> <span class=cnt>1 domain, 1 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/smica83/status/2054882140169363928" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2054882140169363928</span></a> &middot; <a href="https://x.com/smica83/status/2055647354485690522" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2055647354485690522</span></a> &middot; <a href="https://www.virustotal.com/gui/file/836db26f88b8124828629f1bcf5e12fe521b56850a4a60b76b350813498c6056/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/836db26f88b8124828629f1bcf5e12…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ccbe75cdcf65ee66e44c09e33d99a2236168fc6bea85787284397ae7ce553d1b/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ccbe75cdcf65ee66e44c09e33d99a2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/0ac035b3695c933dda913b1a0037d40c1031523b30b4172fbd7c0b8c5264da63/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/0ac035b3695c933dda913b1a0037d4…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>advokat.publicvm.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>89.124.79.33:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-13-2e1088" class=hot>
+<div class=when><a class=date href="#b-2026-05-13-2e1088"><time datetime="2026-05-13">2026-05-13</time></a> <span class=cnt>129 domain, 1 ipv4, 9 url_path</span><span class=ago>this year</span></div>
+<p class=src><a href="https://harfanglab.io/insidethelab/gamaredon-gammadrop-gammaload/" rel="noopener nofollow"><span class=host>harfanglab.io</span><span class=path>/insidethelab/gamaredon-gammadrop-gammal…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/245a3b5790ff9bc88a9133d4e03f4fd8bec0e8d0ec7ad5baaecf4809a4bc14f2/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/245a3b5790ff9bc88a9133d4e03f4f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/62818ae5e305b89b9461536dac1b9daf4cebd99d24e417357e27e2ae4582a704/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/62818ae5e305b89b9461536dac1b9d…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/ef239b58b6bae3034b66274ca5d377bc66bc2b8293472774558d259d8417871c/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/ef239b58b6bae3034b66274ca5d377…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/9a7053ce9d9959619f35ee58c0dcafc301dc3b29d00695a9d6aac26d3913f795/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/9a7053ce9d9959619f35ee58c0dcaf…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/be05c74c5ed62be987bbd868c51ab8828d2d5cb37b128d7e3d38f676591a233f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/be05c74c5ed62be987bbd868c51ab8…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/7b9582b2a84f0c61d51246896ae4f0d0a892cd738e0740617d8db87445968a24/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/7b9582b2a84f0c61d51246896ae4f0…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>2ad1.gmuds90318.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>2f34.u9wixg8dcxrxw.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>300a.mbdudar2m.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>33.soprorotos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>46c0.sqogj22317.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>47ad.pdjqa15890.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>6cab.pxlbg77972.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>6u.uarefire.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>7799.nlufx08035.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>a.cnbyvilkghx2a6p.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ab0f2.xh0lr6gvbtqopyp.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>alazsol.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>antresolle.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>antresolle.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>armanzo.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>asc67.viperan.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>astrocaf.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>b80.sc9nj1tx.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bf7.he2p9djjz.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>biillingr.scdevelopements.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>billonda.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bittere63e.gcjc7ulfg8zc.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bloodywolves.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bnxaz24270.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>boppekax.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>broken-dust-20eb.bnxaz24270.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>busha80d.dp7uszdstai.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bzcku21528.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bzvbl72942.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>c71.zb41e6kcfa.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cf2.tcrn7uoroffxls.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cloud-stetament-online.ddnsfree.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cnbyvilkghx2a6p.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>daremoinai.bounceme.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>db6b.vmocs87616.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dmnfesfnadt3.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dnco.site</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dp7uszdstai.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>eldior.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>elvaos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>f6f8.bzvbl72942.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>fallze2e73.l1uxclprg1cj.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>favoriteclown.endl.site</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ffoqdlqg.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gcjc7ulfg8zc.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gmuds90318.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gusnqojic0byx.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>h4puonhajw.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>hatf8d7.oxwqplxmoyjpe.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>he2p9djjz.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>heart7766.vmkyieebw2.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>iguessillgoout.myvnc.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>j2.scdevelopements.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>jiri.eldior.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ke3fm3xwqbhi.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>kosoyed.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>kosoyed.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>kw68guncvjq.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>l1uxclprg1cj.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>li751.ffoqdlqg.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>lin95.lp6kxqip.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>lively-disk-b5d5.tiffany88-140.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>lp6kxqip.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mail.astrocaf.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>massadex.3utilities.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mbdudar2m.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mnf8b.wcpxlxtnk.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mo88.dmnfesfnadt3.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>msc-chek.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>neddos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>nlufx08035.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ns2.kosoyed.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>nsdbzy1t.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>oclouds.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>oreb1.qxjmxpd8dfr.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>oxwqplxmoyjpe.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pati1fa.gusnqojic0byx.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pdjqa15890.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pe.neddos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pg.eldior.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pr.elvaos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>pxlbg77972.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>q9.zelzer.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>qu776.nsdbzy1t.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>qxjmxpd8dfr.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>raspy.bzcku21528.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>relay.astrocaf.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>rfgah07ggr.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>rubakovox.pro</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>rug5o12yj2pa.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sb353.rug5o12yj2pa.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sc9nj1tx.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>scdevelopements.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>soprorotos.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sq.viperan.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sqogj22317.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>squc32.ke3fm3xwqbhi.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sr.alazsol.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ss975.zsq7cmi9.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>st.armanzo.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sweetnce.kw68guncvjq.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sz.kosoyed.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>tcrn7uoroffxls.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>thre6d.rfgah07ggr.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>throbsuns2.h4puonhajw.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>tiffany88-140.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>tigh8d.wnsmohinpf.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>tillthesunrise.sytes.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>u9wixg8dcxrxw.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>uarefire.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>uarefire.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vaporblue.ddnsking.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vc.uarefire.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>viperan.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vj.boppekax.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vmkyieebw2.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vmocs87616.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wcpxlxtnk.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wnsmohinpf.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>worker.3utilities.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>xh0lr6gvbtqopyp.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>youaresilent.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>youaresilent.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>yourrain.online</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>yourrain.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zb41e6kcfa.workers.dev</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zeh01.host2go.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zelzer.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>zsq7cmi9.workers.dev</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>107.189.25.145:8008</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/AkadHtm-28-04/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/AkadHtm-28-04/aggregation/pea/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/DvvsUa-18-03/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/DvvsUa-18-03/knife/bennet/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/GppUa-18-03/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/GppUa-18-03/cane/athwart/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/GppUa-18-03/disturb/mother/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/MouBig-27-04/</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/MouBig-27-04/confer/</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-13-306161" class=hot>
+<div class=when><a class=date href="#b-2026-05-13-306161"><time datetime="2026-05-13">2026-05-13</time></a> <span class=cnt>1 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://tria.ge/251202-py8v3swjap/behavioral2" rel="noopener nofollow"><span class=host>tria.ge</span><span class=path>/251202-py8v3swjap/behavioral2</span></a> &middot; <a href="https://www.virustotal.com/gui/file/28431f09c87116adacac29abcd65757f6416110c6ee880011664283ef9e1ec2c/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/28431f09c87116adacac29abcd6575…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/bce49a781267db81ff9a070abd80c9442ee963cf572e23842de83d6fe3b2a78c/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/bce49a781267db81ff9a070abd80c9…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/6bae37356ac23bb2c17e8d6a62a18a90bae35885597e9c8cb93941a0950840b9/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/6bae37356ac23bb2c17e8d6a62a18a…</span></a></p>
+<table class=iocs>
+<tr data-t="url"><td class=val>http://107.189.19.48</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-01-c33890" class=hot>
+<div class=when><a class=date href="#b-2026-05-01-c33890"><time datetime="2026-05-01">2026-05-01</time></a> <span class=cnt>30 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.virustotal.com/gui/ip-address/144.172.85.28/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/144.172.85.28/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>82resto.ru</td></tr>
+<tr data-t="domain"><td class=val>anatolina.ru</td></tr>
+<tr data-t="domain"><td class=val>as-prometheus.ru</td></tr>
+<tr data-t="domain"><td class=val>bashkirbees.ru</td></tr>
+<tr data-t="domain"><td class=val>bstrela.ru</td></tr>
+<tr data-t="domain"><td class=val>btc43.ru</td></tr>
+<tr data-t="domain"><td class=val>buketplus-dzr.ru</td></tr>
+<tr data-t="domain"><td class=val>chazirtest.ru</td></tr>
+<tr data-t="domain"><td class=val>creativelabo.ru</td></tr>
+<tr data-t="domain"><td class=val>dvincik.ru</td></tr>
+<tr data-t="domain"><td class=val>headlinerscrypto.ru</td></tr>
+<tr data-t="domain"><td class=val>hench.ru</td></tr>
+<tr data-t="domain"><td class=val>hostel-in.ru</td></tr>
+<tr data-t="domain"><td class=val>hrstories.ru</td></tr>
+<tr data-t="domain"><td class=val>innovatehub.ru</td></tr>
+<tr data-t="domain"><td class=val>leresume.ru</td></tr>
+<tr data-t="domain"><td class=val>mdeditor.ru</td></tr>
+<tr data-t="domain"><td class=val>milanaykus.ru</td></tr>
+<tr data-t="domain"><td class=val>monoplit.ru</td></tr>
+<tr data-t="domain"><td class=val>proekt-sew.ru</td></tr>
+<tr data-t="domain"><td class=val>purpurwhale.ru</td></tr>
+<tr data-t="domain"><td class=val>skopina.ru</td></tr>
+<tr data-t="domain"><td class=val>stoauto-primier.ru</td></tr>
+<tr data-t="domain"><td class=val>svd-123.ru</td></tr>
+<tr data-t="domain"><td class=val>udivitor.ru</td></tr>
+<tr data-t="domain"><td class=val>umco-01.ru</td></tr>
+<tr data-t="domain"><td class=val>vgik27.ru</td></tr>
+<tr data-t="domain"><td class=val>web-prov.ru</td></tr>
+<tr data-t="domain"><td class=val>wezar.ru</td></tr>
+<tr data-t="domain"><td class=val>zalipka.ru</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-03-10-736f46" class=hot>
+<div class=when><a class=date href="#b-2026-03-10-736f46"><time datetime="2026-03-10">2026-03-10</time></a> <span class=cnt>1 url, 1 url_path</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/smica83/status/2031353310469386501" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2031353310469386501</span></a> &middot; <a href="https://www.virustotal.com/gui/file/edc242b4a81011d254cbad1b448cab9883d9253e9d9a354804cd6d6067f7cb7f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/edc242b4a81011d254cbad1b448cab…</span></a></p>
+<table class=iocs>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://212.193.20.110</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/AkkUa-10-03</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-02-08-f369a4" class=hot>
+<div class=when><a class=date href="#b-2026-02-08-f369a4"><time datetime="2026-02-08">2026-02-08</time></a> <span class=cnt>22 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/Cyber0verload/status/2020257754020032661" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/Cyber0verload/status/2020257754020032661</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>ansowhat.online</td></tr>
+<tr data-t="domain"><td class=val>avhcz36777.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>dpbki57860.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>drunk-bear.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>fewfgwegf.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>go0glee.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>lgrpl85754.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>moressa.online</td></tr>
+<tr data-t="domain"><td class=val>notathird.online</td></tr>
+<tr data-t="domain"><td class=val>npvcr24265.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>oclouds.online</td></tr>
+<tr data-t="domain"><td class=val>pernicious.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>perspicacious.ru</td></tr>
+<tr data-t="domain"><td class=val>pgffe70962-268.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>pushing.perspicacious.ru</td></tr>
+<tr data-t="domain"><td class=val>rgrem29013.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>rspqf54995.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>tmwco85016.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>warker.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>wznye68531.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>yahhoo.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>yojyk05723.workers.dev</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-02-04-8b260e" class=hot>
+<div class=when><a class=date href="#b-2026-02-04-8b260e"><time datetime="2026-02-04">2026-02-04</time></a> <span class=cnt>6 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/smica83/status/2019029651260399710" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/smica83/status/2019029651260399710</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c759e9d24a0ab4ddd73317ffa466d93ced1f6a8699e75dc1dd59f72c0a957aa2/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c759e9d24a0ab4ddd73317ffa466d9…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>awokent5.ease.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>be42.khlgj68234.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>ease.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>inquiries.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>khlgj68234.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>mobx2i.inquiries.workers.dev</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-16-034f6d" class=hot>
+<div class=when><a class=date href="#b-2026-01-16-034f6d"><time datetime="2026-01-16">2026-01-16</time></a> <span class=cnt>6 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.virustotal.com/gui/ip-address/144.172.96.59/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/144.172.96.59/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>44getobject.vitorog.ru</td></tr>
+<tr data-t="domain"><td class=val>for2023.podriks.ru</td></tr>
+<tr data-t="domain"><td class=val>for364.podriks.ru</td></tr>
+<tr data-t="domain"><td class=val>for3836.podriks.ru</td></tr>
+<tr data-t="domain"><td class=val>then10.mitrala.ru</td></tr>
+<tr data-t="domain"><td class=val>then79.mitrala.ru</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-06-750987" class=hot>
+<div class=when><a class=date href="#b-2026-01-06-750987"><time datetime="2026-01-06">2026-01-06</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.virustotal.com/gui/ip-address/212.193.20.110/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/212.193.20.110/relations</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>hampay.serveirc.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-c1d0de" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-c1d0de"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>122 domain, 9 url, 2 url_path</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.security.com/threat-intelligence/shuckworm-ukraine-gammasteel" rel="noopener nofollow"><span class=host>security.com</span><span class=path>/threat-intelligence/shuckworm-ukraine-g…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/107.189.19.137/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/107.189.19.137/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/172.86.80.234/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/172.86.80.234/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/45.61.169.118/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.61.169.118/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/7e129d0cc94ef8e15eb0303cb688003e71599548378d0a4c219a3fa41813adae/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/7e129d0cc94ef8e15eb0303cb68800…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/b694b7c89fdffa9945d291dc46c7c18185b770814e66912adc10346077fa25de/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/b694b7c89fdffa9945d291dc46c7c1…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/30100e3f2f6d1dc04c366ad2e98bd338c924001efb6abb314aa0f20eb25430c6/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/30100e3f2f6d1dc04c366ad2e98bd3…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>0aaqhwf689wwecsz.stradrol.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>100asc.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>10chr.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>10to.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>16sleep.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>19loop.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>1zerrvhhqobcihry.drygmetal.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>21position.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>24createobject.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>29absorbed.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>29send.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>2hazard.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>32function.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>35absorbed.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>35chr.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>36asc.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>3kppnqjsdkj.drygmetal.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>40chr.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>40openastextstream.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>41savetofile.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>44journal.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>44loop.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>45loop.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>46createobject.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>51journal.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>51sleep.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>56chr.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>56openastextstream.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>56sleep.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>57ending.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>57to.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>58journal.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>5xa2bxerikqbklf7k.stradrol.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>60asc.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>62each.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>63chr.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>63xor.crudoes.ru</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>64ending.crudoes.ru</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button> &middot; 95 more in this batch, in the JSON</p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>3,071</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G0047" rel="noopener nofollow">attack.mitre.org/groups/G0047</a></li>
+<li><a href="https://blog.cloudflare.com/2026-threat-report/" rel="noopener nofollow">blog.cloudflare.com/2026-threat-report</a></li>
+<li><a href="https://blog.trendmicro.com/trendlabs-security-intelligence/gamaredon-apt-group-use-covid-19-lure-in-campaigns/" rel="noopener nofollow">blog.trendmicro.com/trendlabs-security-intelligence/gamared…</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide" rel="noopener nofollow">learn.microsoft.com/en-us/microsoft-365/security/intelligen…</a></li>
+<li><a href="https://researchcenter.paloaltonetworks.com/2017/02/unit-42-title-gamaredon-group-toolset-evolution/" rel="noopener nofollow">researchcenter.paloaltonetworks.com/2017/02/unit-42-title-gamaredon-group-t…</a></li>
+<li><a href="https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/shuckworm-gamaredon-espionage-ukraine" rel="noopener nofollow">symantec-enterprise-blogs.security.com/blogs/threat-intelligence/shuckworm-gam…</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update-2021/" rel="noopener nofollow">unit42.paloaltonetworks.com/gamaredon-primitive-bear-ukraine-update…</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ukraine-links-members-of-gamaredon-hacker-group-to-russian-fsb/" rel="noopener nofollow">bleepingcomputer.com/news/security/ukraine-links-members-of-…</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2022/02/04/actinium-targets-ukrainian-organizations/" rel="noopener nofollow">microsoft.com/security/blog/2022/02/04/actinium-targe…</a></li>
+<li><a href="https://www.secureworks.com/research/threat-profiles/iron-tilden" rel="noopener nofollow">secureworks.com/research/threat-profiles/iron-tilden</a></li>
+<li><a href="https://www.welivesecurity.com/2020/06/11/gamaredon-group-grows-its-game/" rel="noopener nofollow">welivesecurity.com/2020/06/11/gamaredon-group-grows-its-ga…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/165.22.53.191/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/165.22.53.191/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/92.53.96.150/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/92.53.96.150/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/172.86.104.81/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/172.86.104.81/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/217.69.8.13/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/217.69.8.13/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/185.158.115.154/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/185.158.115.154/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/78.153.139.127/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/78.153.139.127/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/45.95.233.215/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/45.95.233.215/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/081b548f9e06488d367497b02de972394b0da10b473a245bdf0c026e6406b86b/detection" rel="noopener nofollow">virustotal.com/gui/file/081b548f9e06488d367497b02de972…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/a82cb2076b7274179d5f7246f8db274eda47a89392875b3c700f2fa15d70ab2e/detection" rel="noopener nofollow">virustotal.com/gui/file/a82cb2076b7274179d5f7246f8db27…</a></li>
+<li><a href="https://twitter.com/souiten/status/1551807443469889536" rel="noopener nofollow">twitter.com/souiten/status/1551807443469889536</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/45.32.145.44/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/45.32.145.44/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/253.64.237.135/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/253.64.237.135/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/176.57.215.22/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/176.57.215.22/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/89.185.84.228/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/89.185.84.228/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/194.67.71.140/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/194.67.71.140/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/98de4142829d62815a2e07a130c2e41d0af28967c986ef0621752cfc18e67965/detection" rel="noopener nofollow">virustotal.com/gui/file/98de4142829d62815a2e07a130c2e4…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/5389ae45c839c003b27060af851fda6a4618299ef084d3258bcad738425932d4/detection" rel="noopener nofollow">virustotal.com/gui/file/5389ae45c839c003b27060af851fda…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/172.86.76.180/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/172.86.76.180/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/185.39.204.196/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/185.39.204.196/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/188.225.78.105/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/188.225.78.105/relations</a></li>
+<li><a href="https://twitter.com/ShadowChasing1/status/1296707738756501504" rel="noopener nofollow">twitter.com/ShadowChasing1/status/12967077387565015…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/6cc711215898b2aebcde6c105297e280307a78db6bea8473d6cc8f1d08c3bc45/detection" rel="noopener nofollow">virustotal.com/gui/file/6cc711215898b2aebcde6c105297e2…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/167.88.169.167/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/167.88.169.167/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/149.28.170.39/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/149.28.170.39/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/185.247.184.157/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/185.247.184.157/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/215d79d31ec6c4b008cf585dcf90007487b636229284b9ad924f52206c46a8a7/detection" rel="noopener nofollow">virustotal.com/gui/file/215d79d31ec6c4b008cf585dcf9000…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/215.176.190.232/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/215.176.190.232/relations</a></li>
+<li><a href="https://twitter.com/Cyber0verload/status/1573232161205133314" rel="noopener nofollow">twitter.com/Cyber0verload/status/1573232161205133314</a></li>
+<li><a href="https://www.virustotal.com/gui/file/be05c74c5ed62be987bbd868c51ab8828d2d5cb37b128d7e3d38f676591a233f/detection" rel="noopener nofollow">virustotal.com/gui/file/be05c74c5ed62be987bbd868c51ab8…</a></li>
+</ul>
+<p class=note>3,031 more, and the report behind every indicator, in <a href="G0047.json">G0047.json</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

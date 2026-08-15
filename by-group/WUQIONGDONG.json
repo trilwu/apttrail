@@ -1,0 +1,229 @@
+{
+  "aliases": [
+    "apt-c-59",
+    "apt-q-11",
+    "shadowtiger"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 25,
+    "ipv4": 4,
+    "url": 5,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "blue.chinfoset.com": "2022-07-21",
+      "cchiwa.com": "2022-07-21",
+      "chinfoset.com": "2022-07-21",
+      "cloud.unite.un.org.docs-verify.com": "2022-07-21",
+      "common.js.ftp.sh": "2022-01-13",
+      "data.cchiwa.com": "2022-07-21",
+      "datasectioninfo.com": "2022-07-21",
+      "docs-verify.com": "2022-07-21",
+      "guest-mailclouds.com": "2022-07-21",
+      "hao.360.mooo.com": "2022-01-13",
+      "helpdesk-mailservice.com": "2022-07-21",
+      "itoxtlthpw.com": "2022-01-13",
+      "lion.waitnetwork.net": "2022-07-21",
+      "mail-drivecenter.com": "2022-07-21",
+      "mail-hostfile.com": "2022-07-21",
+      "mail.datasectioninfo.com": "2022-07-21",
+      "microsoft.ccivde.com": "2022-07-21",
+      "morning-place.com": "2022-07-21",
+      "ms0ffice.guest-mailclouds.com": "2022-07-21",
+      "netease.mail-drivecenter.com": "2022-07-21",
+      "netease.smartsystem36.com": "2022-07-21",
+      "oversea-cnki.net": "2022-07-21",
+      "service-hq.com": "2022-07-21",
+      "smartsystem36.com": "2022-07-21",
+      "waitnetwork.net": "2022-07-21"
+    },
+    "ipv4": {
+      "37.120.140.233:65505": "2022-01-13",
+      "62.112.8.79:13": "2022-01-13",
+      "66.70.220.100:25": "2022-01-13",
+      "88.150.227.110:13": "2022-07-21"
+    },
+    "url": {
+      "http://190.2.147.128": "2022-01-13",
+      "http://193.9.113.180": "2022-07-21",
+      "http://62.112.8.79": "2022-07-21",
+      "http://88.150.227.110": "2022-01-13",
+      "http://89.38.99.11": "2022-01-13"
+    },
+    "url_path": {
+      "/cloud/360log/safemon.php": "2022-01-13",
+      "/sangfor/cloud/edrTL.php": "2022-01-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-01-13",
+    "latest": "2022-07-21"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "blue.chinfoset.com",
+      "cchiwa.com",
+      "chinfoset.com",
+      "cloud.unite.un.org.docs-verify.com",
+      "common.js.ftp.sh",
+      "data.cchiwa.com",
+      "datasectioninfo.com",
+      "docs-verify.com",
+      "guest-mailclouds.com",
+      "hao.360.mooo.com",
+      "helpdesk-mailservice.com",
+      "itoxtlthpw.com",
+      "lion.waitnetwork.net",
+      "mail-drivecenter.com",
+      "mail-hostfile.com",
+      "mail.datasectioninfo.com",
+      "microsoft.ccivde.com",
+      "morning-place.com",
+      "ms0ffice.guest-mailclouds.com",
+      "netease.mail-drivecenter.com",
+      "netease.smartsystem36.com",
+      "oversea-cnki.net",
+      "service-hq.com",
+      "smartsystem36.com",
+      "waitnetwork.net"
+    ],
+    "ipv4": [
+      "37.120.140.233:65505",
+      "62.112.8.79:13",
+      "66.70.220.100:25",
+      "88.150.227.110:13"
+    ],
+    "url": [
+      "http://190.2.147.128",
+      "http://193.9.113.180",
+      "http://62.112.8.79",
+      "http://88.150.227.110",
+      "http://89.38.99.11"
+    ],
+    "url_path": [
+      "/cloud/360log/safemon.php",
+      "/sangfor/cloud/edrTL.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "WUQIONGDONG"
+  ],
+  "references": [
+    "https://mp-weixin-qq-com.translate.goog/s/jX8D8d-4q46pKHS0AIVgjw?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp",
+    "https://mp.weixin.qq.com/s/WBpML3BTxFPHmBgyunmEEA (Chinese)",
+    "https://otx.alienvault.com/pulse/61811ddc259f23fdd630e196",
+    "https://twitter.com/Timele9527/status/1549950577349496832"
+  ],
+  "related": [],
+  "slug": "WUQIONGDONG",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 22,
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen": "2022-07-21",
+      "indicators": {
+        "domain": [
+          "blue.chinfoset.com",
+          "cchiwa.com",
+          "chinfoset.com",
+          "cloud.unite.un.org.docs-verify.com",
+          "data.cchiwa.com",
+          "datasectioninfo.com",
+          "docs-verify.com",
+          "guest-mailclouds.com",
+          "helpdesk-mailservice.com",
+          "lion.waitnetwork.net",
+          "mail-drivecenter.com",
+          "mail-hostfile.com",
+          "mail.datasectioninfo.com",
+          "microsoft.ccivde.com",
+          "morning-place.com",
+          "ms0ffice.guest-mailclouds.com",
+          "netease.mail-drivecenter.com",
+          "netease.smartsystem36.com",
+          "oversea-cnki.net",
+          "service-hq.com",
+          "smartsystem36.com",
+          "waitnetwork.net"
+        ],
+        "ipv4": [
+          "88.150.227.110:13"
+        ],
+        "url": [
+          "http://193.9.113.180",
+          "http://62.112.8.79"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527/status/1549950577349496832",
+        "https://mp-weixin-qq-com.translate.goog/s/jX8D8d-4q46pKHS0AIVgjw?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp"
+      ],
+      "total": 25
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 3,
+        "url": 3
+      },
+      "first_seen": "2022-01-13",
+      "indicators": {
+        "domain": [
+          "common.js.ftp.sh",
+          "hao.360.mooo.com",
+          "itoxtlthpw.com"
+        ],
+        "ipv4": [
+          "37.120.140.233:65505",
+          "62.112.8.79:13",
+          "66.70.220.100:25"
+        ],
+        "url": [
+          "http://190.2.147.128",
+          "http://88.150.227.110",
+          "http://89.38.99.11"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://mp.weixin.qq.com/s/WBpML3BTxFPHmBgyunmEEA (Chinese)",
+        "https://otx.alienvault.com/pulse/61811ddc259f23fdd630e196"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2022-01-13",
+      "indicators": {
+        "url_path": [
+          "/cloud/360log/safemon.php",
+          "/sangfor/cloud/edrTL.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527/status/1549950577349496832",
+        "https://mp-weixin-qq-com.translate.goog/s/jX8D8d-4q46pKHS0AIVgjw?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN&_x_tr_pto=wapp"
+      ],
+      "total": 2
+    }
+  ]
+}

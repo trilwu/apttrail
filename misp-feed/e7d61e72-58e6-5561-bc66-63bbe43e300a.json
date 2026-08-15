@@ -1,0 +1,111 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "856d7762-27e2-50b4-983f-3769ea10a510",
+        "value": "arabooks.ch"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c82618d4-e396-5e7a-a7de-84967c15efd3",
+        "value": "artas.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1456189530",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5bf64131-720f-5edf-b860-8938b8e549dd",
+        "value": "eamtm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560722164",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "70ed4148-8c93-5072-b6e2-4677efc84ca9",
+        "value": "extremesportsevents.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7af489fa-912f-5e74-9ba2-72ebc06f7d9f",
+        "value": "news.grouptumbler.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712437",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7df66893-86e8-567a-be46-43ac0133e9fc",
+        "value": "tsoftonline.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560721866",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8b832d61-59b1-5bf3-894c-70b41492e77a",
+        "value": "algherolido.it/img/common/thumb/thumb.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560721866",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "0a4edd7c-d183-505d-b2db-9767ea6c9dd0",
+        "value": "rtproductionsusa.com/wp-includes/images/smilies/icon_gif.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560721866",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "b7ede7fd-905d-53c6-9e29-be145c9ae8d6",
+        "value": "store.extremesportsevents.net/index.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560721866",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "7883921d-e94d-5b98-b1ff-34ece604eeb5",
+        "value": "tangentialreality.com/cache/template/yoo_cache.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:miniduke"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: MINIDUKE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e7d61e72-58e6-5561-bc66-63bbe43e300a"
+  }
+}

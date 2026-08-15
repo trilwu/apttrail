@@ -1,0 +1,306 @@
+{
+  "name": "APT38 (G0082) - APTtrail",
+  "description": "Techniques attributed to APT38 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0082.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1049",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1115",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1135",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1217",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.011",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1480.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1529",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1548.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1553.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1561.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1565.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1565.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1565.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1569.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1690",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by APT38",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

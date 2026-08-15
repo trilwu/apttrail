@@ -1,0 +1,196 @@
+{
+  "aliases": [],
+  "attack_id": "G1022",
+  "attack_name": "ToddyCat",
+  "attack_url": "https://attack.mitre.org/groups/G1022/",
+  "counts": {
+    "domain": 29,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "ad.fopingu.com": "2023-10-28",
+      "admit.pkigoscorp.com": "2023-10-28",
+      "backend.rtmcsync.com": "2023-10-28",
+      "cdn.pkigoscorp.com": "2023-10-28",
+      "cert.qform3d.in": "2023-10-28",
+      "certexvpn.com": "2023-10-28",
+      "cyberguard.certexvpn.com": "2023-10-28",
+      "eaq.machineaccountquota.com": "2023-10-28",
+      "eohsdnsaaojrhnqo.windowshost.us": "2022-06-21",
+      "fopingu.com": "2023-10-28",
+      "gist.gitbusercontent.com": "2023-10-28",
+      "git.gitbusercontent.com": "2023-10-28",
+      "gitbusercontent.com": "2023-10-28",
+      "githubdd.workers.dev": "2023-10-12",
+      "idp.pkigoscorp.com": "2023-10-28",
+      "imap.774b884034c450b.com": "2023-10-28",
+      "machineaccountquota.com": "2023-10-28",
+      "mfeagents.workers.dev": "2023-10-12",
+      "ns01.nayatel.orinafz.com": "2023-10-28",
+      "pic.rtmcsync.com": "2023-10-28",
+      "pkigoscorp.com": "2023-10-28",
+      "proxy.rtmcsync.com": "2023-10-28",
+      "qaq2.machineaccountquota.com": "2023-10-28",
+      "qform3d.in": "2023-10-28",
+      "raw.gitbusercontent.com": "2023-10-28",
+      "rtmcsync.com": "2023-10-28",
+      "solitary-dawn-61af.mfeagents.workers.dev": "2023-10-12",
+      "sslvpn.pkigoscorp.com": "2023-10-28",
+      "update.certexvpn.com": "2023-10-28"
+    },
+    "ipv4": {
+      "139.180.145.121:443": "2023-10-28"
+    },
+    "url": {
+      "http://139.180.145.121": "2023-10-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-06-21",
+    "latest": "2023-10-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ad.fopingu.com",
+      "admit.pkigoscorp.com",
+      "backend.rtmcsync.com",
+      "cdn.pkigoscorp.com",
+      "cert.qform3d.in",
+      "certexvpn.com",
+      "cyberguard.certexvpn.com",
+      "eaq.machineaccountquota.com",
+      "eohsdnsaaojrhnqo.windowshost.us",
+      "fopingu.com",
+      "gist.gitbusercontent.com",
+      "git.gitbusercontent.com",
+      "gitbusercontent.com",
+      "githubdd.workers.dev",
+      "idp.pkigoscorp.com",
+      "imap.774b884034c450b.com",
+      "machineaccountquota.com",
+      "mfeagents.workers.dev",
+      "ns01.nayatel.orinafz.com",
+      "pic.rtmcsync.com",
+      "pkigoscorp.com",
+      "proxy.rtmcsync.com",
+      "qaq2.machineaccountquota.com",
+      "qform3d.in",
+      "raw.gitbusercontent.com",
+      "rtmcsync.com",
+      "solitary-dawn-61af.mfeagents.workers.dev",
+      "sslvpn.pkigoscorp.com",
+      "update.certexvpn.com"
+    ],
+    "ipv4": [
+      "139.180.145.121:443"
+    ],
+    "url": [
+      "http://139.180.145.121"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TODDYCAT"
+  ],
+  "references": [
+    "https://research.checkpoint.com/2023/stayin-alive-targeted-attacks-against-telecoms-and-government-ministries-in-asia/",
+    "https://securelist.com/toddycat-keep-calm-and-check-logs/110696/",
+    "https://securelist.com/toddycat/106799/",
+    "https://www.virustotal.com/gui/file/877579185a72fbaf1afa78d3c50dbab187780d545d5375ba4c29147083176697/detection"
+  ],
+  "related": [],
+  "slug": "G1022",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 25,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2023-10-28",
+      "indicators": {
+        "domain": [
+          "ad.fopingu.com",
+          "admit.pkigoscorp.com",
+          "backend.rtmcsync.com",
+          "cdn.pkigoscorp.com",
+          "cert.qform3d.in",
+          "certexvpn.com",
+          "cyberguard.certexvpn.com",
+          "eaq.machineaccountquota.com",
+          "fopingu.com",
+          "gist.gitbusercontent.com",
+          "git.gitbusercontent.com",
+          "gitbusercontent.com",
+          "idp.pkigoscorp.com",
+          "imap.774b884034c450b.com",
+          "machineaccountquota.com",
+          "ns01.nayatel.orinafz.com",
+          "pic.rtmcsync.com",
+          "pkigoscorp.com",
+          "proxy.rtmcsync.com",
+          "qaq2.machineaccountquota.com",
+          "qform3d.in",
+          "raw.gitbusercontent.com",
+          "rtmcsync.com",
+          "sslvpn.pkigoscorp.com",
+          "update.certexvpn.com"
+        ],
+        "ipv4": [
+          "139.180.145.121:443"
+        ],
+        "url": [
+          "http://139.180.145.121"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2023/stayin-alive-targeted-attacks-against-telecoms-and-government-ministries-in-asia/",
+        "https://www.virustotal.com/gui/file/877579185a72fbaf1afa78d3c50dbab187780d545d5375ba4c29147083176697/detection"
+      ],
+      "total": 27
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-10-12",
+      "indicators": {
+        "domain": [
+          "githubdd.workers.dev",
+          "mfeagents.workers.dev",
+          "solitary-dawn-61af.mfeagents.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/toddycat-keep-calm-and-check-logs/110696/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-21",
+      "indicators": {
+        "domain": [
+          "eohsdnsaaojrhnqo.windowshost.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/toddycat/106799/"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1456189530",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7e1d6323-ad9c-5388-aa0c-19ebd530f6a1",
+        "value": "mypremierfutbol.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1456189530",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9840a61b-9770-5fe3-9928-4b47abf3c9db",
+        "value": "todaysfutbol.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:stuxnet"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: STUXNET",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e7a08a50-b115-57f5-89ef-5031063ed2fd"
+  }
+}

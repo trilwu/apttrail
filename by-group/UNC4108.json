@@ -1,0 +1,89 @@
+{
+  "aliases": [
+    "ghostweaver"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "akami-cdns.com": "2025-02-15",
+      "cdns-clfr-dns.com": "2025-02-15",
+      "content-cdnsclfr.com": "2026-01-02",
+      "query-dns-cdn.com": "2025-02-15",
+      "query-js-ajax.com": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "content-cdnsclfr.com": "at-or-before",
+      "query-js-ajax.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2025-02-15",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "akami-cdns.com",
+      "cdns-clfr-dns.com",
+      "content-cdnsclfr.com",
+      "query-dns-cdn.com",
+      "query-js-ajax.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4108"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=192.52.167.63&type=ip4&ref_id=5e5d97557ba#tab=resolutions",
+    "https://trac-labs.com/dont-ghost-the-socgholish-ghostweaver-backdoor-574154dd9983"
+  ],
+  "related": [],
+  "slug": "UNC4108",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "content-cdnsclfr.com",
+          "query-js-ajax.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://trac-labs.com/dont-ghost-the-socgholish-ghostweaver-backdoor-574154dd9983",
+        "https://app.validin.com/detail?find=192.52.167.63&type=ip4&ref_id=5e5d97557ba#tab=resolutions"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2025-02-15",
+      "indicators": {
+        "domain": [
+          "akami-cdns.com",
+          "cdns-clfr-dns.com",
+          "query-dns-cdn.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://trac-labs.com/dont-ghost-the-socgholish-ghostweaver-backdoor-574154dd9983",
+        "https://app.validin.com/detail?find=192.52.167.63&type=ip4&ref_id=5e5d97557ba#tab=resolutions"
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "aliases": [
+    "bobik",
+    "ddosia",
+    "killnet"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 10,
+    "ipv4": 18,
+    "url": 7,
+    "url_path": 10
+  },
+  "first_seen": {
+    "domain": {
+      "beaconbeagle.com": "2026-02-18",
+      "ftp.beaconbeagle.com": "2026-02-18",
+      "ftp.minimedusa.lol": "2026-02-18",
+      "minimedusa.lol": "2026-02-18",
+      "q7zemy6zc7ptaeks.servehttp.com": "2023-01-11",
+      "tom56gaz6poh13f28.myftp.org": "2023-01-12",
+      "v9agm8uwtjmz.sytes.net": "2023-01-11",
+      "witha.name": "2026-02-18",
+      "withanamemwesdvodfhthjq25a5a3uas24cpgoa7qm6gchcerzpis6qd.onion": "2026-02-18",
+      "zig35m48zur14nel40.myftp.org": "2023-01-12"
+    },
+    "ipv4": {
+      "109.107.181.130:4200": "2023-01-11",
+      "109.107.181.130:5001": "2023-01-11",
+      "109.107.184.11:27017": "2023-01-27",
+      "161.35.199.2:22": "2023-04-19",
+      "161.35.199.2:5001": "2023-04-19",
+      "185.173.37.220:5672": "2023-01-27",
+      "185.173.37.220:6379": "2023-01-27",
+      "31.13.195.87:9100": "2023-01-27",
+      "77.91.66.85:5000": "2026-01-02",
+      "77.91.66.85:5005": "2026-01-02",
+      "87.121.52.9:22": "2023-04-19",
+      "87.121.52.9:5001": "2023-01-27",
+      "91.142.79.201:5051": "2023-01-27",
+      "91.142.79.201:9100": "2023-01-27",
+      "94.140.114.239:22": "2023-04-19",
+      "94.140.114.239:5001": "2023-04-19",
+      "94.140.115.129:22": "2023-04-19",
+      "94.140.115.129:5001": "2023-04-19"
+    },
+    "url": {
+      "http://161.35.199.2": "2023-04-19",
+      "http://168.119.241.4": "2026-02-18",
+      "http://212.73.134.208": "2023-01-30",
+      "http://31.13.195.87": "2023-01-27",
+      "http://87.121.52.9": "2023-04-19",
+      "http://94.140.114.239": "2023-04-19",
+      "http://94.140.115.129": "2023-03-12"
+    },
+    "url_path": {
+      "/27bff71b-42c0-4a47-ba39-04c83f2f40bb/update?id=": "2023-01-11",
+      "/bcaa8752-51ff-4e35-8ef9-4aefbf42b482/update?id=": "2023-01-11",
+      "/d380f816-7412-400a-9b64-78e35dd51f6e/update?id=": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/AdminService.exe": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/BAebY2lBT7ee.exe": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/Q7yheyG7.exe": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/XuS1qxZa.exe": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/afVAcUJTvDvM.exe": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/update?id=": "2023-01-11",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/xLZ6auza.exe": "2023-01-11"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {
+      "77.91.66.85:5000": "at-or-before",
+      "77.91.66.85:5005": "at-or-before"
+    },
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-01-11",
+    "latest": "2026-02-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "beaconbeagle.com",
+      "ftp.beaconbeagle.com",
+      "ftp.minimedusa.lol",
+      "minimedusa.lol",
+      "q7zemy6zc7ptaeks.servehttp.com",
+      "tom56gaz6poh13f28.myftp.org",
+      "v9agm8uwtjmz.sytes.net",
+      "witha.name",
+      "withanamemwesdvodfhthjq25a5a3uas24cpgoa7qm6gchcerzpis6qd.onion",
+      "zig35m48zur14nel40.myftp.org"
+    ],
+    "ipv4": [
+      "109.107.181.130:4200",
+      "109.107.181.130:5001",
+      "109.107.184.11:27017",
+      "161.35.199.2:22",
+      "161.35.199.2:5001",
+      "185.173.37.220:5672",
+      "185.173.37.220:6379",
+      "31.13.195.87:9100",
+      "77.91.66.85:5000",
+      "77.91.66.85:5005",
+      "87.121.52.9:22",
+      "87.121.52.9:5001",
+      "91.142.79.201:5051",
+      "91.142.79.201:9100",
+      "94.140.114.239:22",
+      "94.140.114.239:5001",
+      "94.140.115.129:22",
+      "94.140.115.129:5001"
+    ],
+    "url": [
+      "http://161.35.199.2",
+      "http://168.119.241.4",
+      "http://212.73.134.208",
+      "http://31.13.195.87",
+      "http://87.121.52.9",
+      "http://94.140.114.239",
+      "http://94.140.115.129"
+    ],
+    "url_path": [
+      "/27bff71b-42c0-4a47-ba39-04c83f2f40bb/update?id=",
+      "/bcaa8752-51ff-4e35-8ef9-4aefbf42b482/update?id=",
+      "/d380f816-7412-400a-9b64-78e35dd51f6e/update?id=",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/AdminService.exe",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/BAebY2lBT7ee.exe",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/Q7yheyG7.exe",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/XuS1qxZa.exe",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/afVAcUJTvDvM.exe",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/update?id=",
+      "/fb82275d-6255-4463-8261-ef65d439b83b/xLZ6auza.exe"
+    ]
+  },
+  "last_modified": "2026-02-18T15:00:14+00:00",
+  "maltrail_groups": [
+    "NONAME05716"
+  ],
+  "references": [
+    "https://decoded.avast.io/martinchlumecky/bobik/",
+    "https://decoded.avast.io/martinchlumecky/ddosia-project-how-noname05716-is-trying-to-improve-the-efficiency-of-ddos-attacks/",
+    "https://decoded.avast.io/martinchlumecky/ddosia-project/",
+    "https://github.com/avast/ioc/tree/master/Bobik",
+    "https://twitter.com/teamcymru_S2/status/1620019172712550401",
+    "https://www.sentinelone.com/labs/noname05716-the-pro-russian-hacktivist-group-targeting-nato/",
+    "https://www.team-cymru.com/post/a-blog-with-noname",
+    "https://www.virustotal.com/gui/file/5588d1c5901d61bb09cd2fc86d523e2ccbc35a0565fd63c73b62757ac2ee51f5/detection",
+    "https://www.virustotal.com/gui/file/9707920bd84a9aafcb5efc112ed19ec2d23b5e36dcc3caba33f5e6aadf0c558f/detection",
+    "https://www.virustotal.com/gui/ip-address/2.57.122.243/relations",
+    "https://www.virustotal.com/gui/ip-address/2.57.122.82/relations",
+    "https://www.virustotal.com/gui/ip-address/31.13.195.87/relations",
+    "https://x.com/skocherhan/status/1898214290655428964",
+    "https://x.com/t43cr0wl3r/status/2024123960481153039"
+  ],
+  "related": [],
+  "slug": "NONAME05716",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6,
+        "url": 1
+      },
+      "first_seen": "2026-02-18",
+      "indicators": {
+        "domain": [
+          "beaconbeagle.com",
+          "ftp.beaconbeagle.com",
+          "ftp.minimedusa.lol",
+          "minimedusa.lol",
+          "witha.name",
+          "withanamemwesdvodfhthjq25a5a3uas24cpgoa7qm6gchcerzpis6qd.onion"
+        ],
+        "url": [
+          "http://168.119.241.4"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t43cr0wl3r/status/2024123960481153039"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "77.91.66.85:5000",
+          "77.91.66.85:5005"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/skocherhan/status/1898214290655428964",
+        "https://www.virustotal.com/gui/file/9707920bd84a9aafcb5efc112ed19ec2d23b5e36dcc3caba33f5e6aadf0c558f/detection",
+        "https://www.virustotal.com/gui/file/5588d1c5901d61bb09cd2fc86d523e2ccbc35a0565fd63c73b62757ac2ee51f5/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 7,
+        "url": 3
+      },
+      "first_seen": "2023-04-19",
+      "indicators": {
+        "ipv4": [
+          "161.35.199.2:22",
+          "161.35.199.2:5001",
+          "87.121.52.9:22",
+          "94.140.114.239:22",
+          "94.140.114.239:5001",
+          "94.140.115.129:22",
+          "94.140.115.129:5001"
+        ],
+        "url": [
+          "http://161.35.199.2",
+          "http://87.121.52.9",
+          "http://94.140.114.239"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://decoded.avast.io/martinchlumecky/ddosia-project-how-noname05716-is-trying-to-improve-the-efficiency-of-ddos-attacks/"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-03-12",
+      "indicators": {
+        "url": [
+          "http://94.140.115.129"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://decoded.avast.io/martinchlumecky/ddosia-project-how-noname05716-is-trying-to-improve-the-efficiency-of-ddos-attacks/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-01-30",
+      "indicators": {
+        "url": [
+          "http://212.73.134.208"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/teamcymru_S2/status/1620019172712550401"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 6,
+        "url": 1
+      },
+      "first_seen": "2023-01-27",
+      "indicators": {
+        "ipv4": [
+          "109.107.184.11:27017",
+          "185.173.37.220:5672",
+          "185.173.37.220:6379",
+          "31.13.195.87:9100",
+          "91.142.79.201:5051",
+          "91.142.79.201:9100"
+        ],
+        "url": [
+          "http://31.13.195.87"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.team-cymru.com/post/a-blog-with-noname"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-01-27",
+      "indicators": {
+        "ipv4": [
+          "87.121.52.9:5001"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.team-cymru.com/post/a-blog-with-noname",
+        "https://decoded.avast.io/martinchlumecky/ddosia-project-how-noname05716-is-trying-to-improve-the-efficiency-of-ddos-attacks/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-01-12",
+      "indicators": {
+        "domain": [
+          "tom56gaz6poh13f28.myftp.org",
+          "zig35m48zur14nel40.myftp.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/noname05716-the-pro-russian-hacktivist-group-targeting-nato/",
+        "https://www.virustotal.com/gui/ip-address/31.13.195.87/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url_path": 10
+      },
+      "first_seen": "2023-01-11",
+      "indicators": {
+        "url_path": [
+          "/27bff71b-42c0-4a47-ba39-04c83f2f40bb/update?id=",
+          "/bcaa8752-51ff-4e35-8ef9-4aefbf42b482/update?id=",
+          "/d380f816-7412-400a-9b64-78e35dd51f6e/update?id=",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/AdminService.exe",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/BAebY2lBT7ee.exe",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/Q7yheyG7.exe",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/XuS1qxZa.exe",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/afVAcUJTvDvM.exe",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/update?id=",
+          "/fb82275d-6255-4463-8261-ef65d439b83b/xLZ6auza.exe"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/t43cr0wl3r/status/2024123960481153039"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2023-01-11",
+      "indicators": {
+        "ipv4": [
+          "109.107.181.130:4200",
+          "109.107.181.130:5001"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://decoded.avast.io/martinchlumecky/ddosia-project/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-01-11",
+      "indicators": {
+        "domain": [
+          "q7zemy6zc7ptaeks.servehttp.com",
+          "v9agm8uwtjmz.sytes.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://decoded.avast.io/martinchlumecky/bobik/",
+        "https://www.virustotal.com/gui/ip-address/2.57.122.243/relations",
+        "https://www.virustotal.com/gui/ip-address/2.57.122.82/relations",
+        "https://github.com/avast/ioc/tree/master/Bobik"
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "aliases": [
+    "apt-c-12",
+    "apt12",
+    "bluemushroom",
+    "dnscalc",
+    "dyncalc",
+    "ixeshe"
+  ],
+  "attack_id": "G0005",
+  "attack_name": "APT12",
+  "attack_url": "https://attack.mitre.org/groups/G0005/",
+  "counts": {
+    "domain": 2,
+    "ipv4": 1,
+    "url": 10
+  },
+  "first_seen": {
+    "domain": {
+      "icc.ignorelist.com": "2019-10-19",
+      "video.csmcpr.com": "2019-10-19"
+    },
+    "ipv4": {
+      "178.128.110.214:8080": "2020-02-13"
+    },
+    "url": {
+      "http://128.199.73.43": "2020-02-13",
+      "http://139.59.101.236": "2019-10-30",
+      "http://139.59.110.217": "2019-10-30",
+      "http://139.59.226.29": "2019-10-30",
+      "http://139.59.230.181": "2020-02-13",
+      "http://141.108.2.157": "2019-10-19",
+      "http://159.65.127.93": "2020-02-13",
+      "http://159.65.74.97": "2020-02-13",
+      "http://188.226.144.42": "2020-02-13",
+      "http://59.73.16.165": "2020-02-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-19",
+    "latest": "2020-02-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "icc.ignorelist.com",
+      "video.csmcpr.com"
+    ],
+    "ipv4": [
+      "178.128.110.214:8080"
+    ],
+    "url": [
+      "http://128.199.73.43",
+      "http://139.59.101.236",
+      "http://139.59.110.217",
+      "http://139.59.226.29",
+      "http://139.59.230.181",
+      "http://141.108.2.157",
+      "http://159.65.127.93",
+      "http://159.65.74.97",
+      "http://188.226.144.42",
+      "http://59.73.16.165"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "12"
+  ],
+  "references": [
+    "https://bitofhex.com/2020/02/10/sapphire-mushroom-lnk-files/",
+    "https://github.com/fireeye/iocs/tree/master/APT12",
+    "https://otx.alienvault.com/pulse/5e447f6666b942ff1568cf2a",
+    "https://twitter.com/ccxsaber/status/1189017890927726593",
+    "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html",
+    "https://www.virustotal.com/gui/file/a70d914bf690898d0737692735e99cea29741bb90360ba26e5c9cad9c59506b2/detection",
+    "https://www.virustotal.com/gui/ip-address/141.108.2.157/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "slug": "G0013"
+    }
+  ],
+  "slug": "G0005",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 6
+      },
+      "first_seen": "2020-02-13",
+      "indicators": {
+        "ipv4": [
+          "178.128.110.214:8080"
+        ],
+        "url": [
+          "http://128.199.73.43",
+          "http://139.59.230.181",
+          "http://159.65.127.93",
+          "http://159.65.74.97",
+          "http://188.226.144.42",
+          "http://59.73.16.165"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://bitofhex.com/2020/02/10/sapphire-mushroom-lnk-files/",
+        "https://otx.alienvault.com/pulse/5e447f6666b942ff1568cf2a"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2019-10-30",
+      "indicators": {
+        "url": [
+          "http://139.59.101.236",
+          "http://139.59.110.217"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1189017890927726593",
+        "https://www.virustotal.com/gui/file/a70d914bf690898d0737692735e99cea29741bb90360ba26e5c9cad9c59506b2/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-10-30",
+      "indicators": {
+        "url": [
+          "http://139.59.226.29"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1189017890927726593",
+        "https://www.virustotal.com/gui/file/a70d914bf690898d0737692735e99cea29741bb90360ba26e5c9cad9c59506b2/detection",
+        "https://bitofhex.com/2020/02/10/sapphire-mushroom-lnk-files/",
+        "https://otx.alienvault.com/pulse/5e447f6666b942ff1568cf2a"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2019-10-19",
+      "indicators": {
+        "domain": [
+          "icc.ignorelist.com",
+          "video.csmcpr.com"
+        ],
+        "url": [
+          "http://141.108.2.157"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2014/09/darwins-favorite-apt-group-2.html",
+        "https://github.com/fireeye/iocs/tree/master/APT12",
+        "https://www.virustotal.com/gui/ip-address/141.108.2.157/relations"
+      ],
+      "total": 3
+    }
+  ]
+}

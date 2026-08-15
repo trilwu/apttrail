@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "03a9ba45-2a54-543f-b900-61fd24bff195",
+        "value": "camprainbowgold.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6afd48d6-a6da-5977-bc50-85f149374eb7",
+        "value": "mntexpress.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ec7e816a-0d13-5ddf-ae91-3bdb460a84e2",
+        "value": "poolwaterslide2011.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "114ce3ec-7d0f-55f4-b597-2c5b8f4b9c2d",
+        "value": "truecryptrussia.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "db64cdde-2a29-55e6-9dc5-eec6ea235a4d",
+        "value": "worldairpost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "39555bb9-2052-5af1-8ece-bef1883b37bf",
+        "value": "worldairpost.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:potao"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: POTAO",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "6cd2f9d4-36c2-5280-b764-06ef2ba3646d"
+  }
+}

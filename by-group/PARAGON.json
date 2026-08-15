@@ -1,0 +1,227 @@
+{
+  "aliases": [
+    "bigpretzel",
+    "graphite spyware"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 18,
+    "ipv4": 17
+  },
+  "first_seen": {
+    "domain": {
+      "ancient-thing.it": "2026-01-02",
+      "external-astra.com": "2026-01-02",
+      "external-cag.com": "2026-01-02",
+      "external-cap.com": "2026-01-02",
+      "external-drt.com": "2026-01-02",
+      "external-muki.com": "2026-01-02",
+      "external-shotgun3.com": "2026-01-02",
+      "external-sht-prd-4.com": "2026-01-02",
+      "external-sht.com": "2026-01-02",
+      "forti.external-muki.com": "2026-01-02",
+      "forti.external-shotgun3.com": "2026-01-02",
+      "forti.external-sht-prd-4.com": "2026-01-02",
+      "forti.external-sht.com": "2026-01-02",
+      "forti.internal-stg.com": "2026-01-02",
+      "forti.paraccess.com": "2026-01-02",
+      "internal-abba.com": "2026-01-02",
+      "internal-stg.com": "2026-01-02",
+      "modern-money.org": "2026-01-02"
+    },
+    "ipv4": {
+      "178.237.39.204:443": "2026-01-02",
+      "178.237.39.204:50801": "2026-01-02",
+      "178.237.39.204:53392": "2026-01-02",
+      "178.237.39.204:64823": "2026-01-02",
+      "194.71.130.218:443": "2026-01-02",
+      "46.183.184.91:443": "2026-01-02",
+      "84.110.122.27:443": "2026-01-02",
+      "84.110.47.82:4443": "2026-01-02",
+      "84.110.47.83:443": "2026-01-02",
+      "84.110.47.84:1443": "2026-01-02",
+      "84.110.47.84:443": "2026-01-02",
+      "84.110.47.84:4443": "2026-01-02",
+      "84.110.47.85:1443": "2026-01-02",
+      "84.110.47.85:4443": "2026-01-02",
+      "84.110.47.86:2443": "2026-01-02",
+      "84.110.47.86:4432": "2026-01-02",
+      "84.110.47.86:4443": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "ancient-thing.it": "at-or-before",
+      "external-astra.com": "at-or-before",
+      "external-cag.com": "at-or-before",
+      "external-cap.com": "at-or-before",
+      "external-drt.com": "at-or-before",
+      "external-muki.com": "at-or-before",
+      "external-shotgun3.com": "at-or-before",
+      "external-sht-prd-4.com": "at-or-before",
+      "external-sht.com": "at-or-before",
+      "forti.external-muki.com": "at-or-before",
+      "forti.external-shotgun3.com": "at-or-before",
+      "forti.external-sht-prd-4.com": "at-or-before",
+      "forti.external-sht.com": "at-or-before",
+      "forti.internal-stg.com": "at-or-before",
+      "forti.paraccess.com": "at-or-before",
+      "internal-abba.com": "at-or-before",
+      "internal-stg.com": "at-or-before",
+      "modern-money.org": "at-or-before"
+    },
+    "ipv4": {
+      "178.237.39.204:443": "at-or-before",
+      "178.237.39.204:50801": "at-or-before",
+      "178.237.39.204:53392": "at-or-before",
+      "178.237.39.204:64823": "at-or-before",
+      "194.71.130.218:443": "at-or-before",
+      "46.183.184.91:443": "at-or-before",
+      "84.110.122.27:443": "at-or-before",
+      "84.110.47.82:4443": "at-or-before",
+      "84.110.47.83:443": "at-or-before",
+      "84.110.47.84:1443": "at-or-before",
+      "84.110.47.84:443": "at-or-before",
+      "84.110.47.84:4443": "at-or-before",
+      "84.110.47.85:1443": "at-or-before",
+      "84.110.47.85:4443": "at-or-before",
+      "84.110.47.86:2443": "at-or-before",
+      "84.110.47.86:4432": "at-or-before",
+      "84.110.47.86:4443": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ancient-thing.it",
+      "external-astra.com",
+      "external-cag.com",
+      "external-cap.com",
+      "external-drt.com",
+      "external-muki.com",
+      "external-shotgun3.com",
+      "external-sht-prd-4.com",
+      "external-sht.com",
+      "forti.external-muki.com",
+      "forti.external-shotgun3.com",
+      "forti.external-sht-prd-4.com",
+      "forti.external-sht.com",
+      "forti.internal-stg.com",
+      "forti.paraccess.com",
+      "internal-abba.com",
+      "internal-stg.com",
+      "modern-money.org"
+    ],
+    "ipv4": [
+      "178.237.39.204:443",
+      "178.237.39.204:50801",
+      "178.237.39.204:53392",
+      "178.237.39.204:64823",
+      "194.71.130.218:443",
+      "46.183.184.91:443",
+      "84.110.122.27:443",
+      "84.110.47.82:4443",
+      "84.110.47.83:443",
+      "84.110.47.84:1443",
+      "84.110.47.84:443",
+      "84.110.47.84:4443",
+      "84.110.47.85:1443",
+      "84.110.47.85:4443",
+      "84.110.47.86:2443",
+      "84.110.47.86:4432",
+      "84.110.47.86:4443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PARAGON"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=%2FO%3Dnetwork39managment%2FCN%3Dgreenad&type=raw&ref_id=92a69af4516#tab=host_pairs (# 2025-06-13)",
+    "https://citizenlab.ca/2025/03/a-first-look-at-paragons-proliferating-spyware-operations/",
+    "https://citizenlab.ca/2025/06/first-forensic-confirmation-of-paragons-ios-mercenary-spyware-finds-journalists-targeted/ (# bigpretzel)",
+    "https://search.censys.io/hosts/178.237.39.204",
+    "https://x.com/blackorbird/status/1933368441433698638"
+  ],
+  "related": [],
+  "slug": "PARAGON",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 18,
+        "ipv4": 15
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ancient-thing.it",
+          "external-astra.com",
+          "external-cag.com",
+          "external-cap.com",
+          "external-drt.com",
+          "external-muki.com",
+          "external-shotgun3.com",
+          "external-sht-prd-4.com",
+          "external-sht.com",
+          "forti.external-muki.com",
+          "forti.external-shotgun3.com",
+          "forti.external-sht-prd-4.com",
+          "forti.external-sht.com",
+          "forti.internal-stg.com",
+          "forti.paraccess.com",
+          "internal-abba.com",
+          "internal-stg.com",
+          "modern-money.org"
+        ],
+        "ipv4": [
+          "178.237.39.204:443",
+          "178.237.39.204:50801",
+          "178.237.39.204:53392",
+          "178.237.39.204:64823",
+          "84.110.122.27:443",
+          "84.110.47.82:4443",
+          "84.110.47.83:443",
+          "84.110.47.84:1443",
+          "84.110.47.84:443",
+          "84.110.47.84:4443",
+          "84.110.47.85:1443",
+          "84.110.47.85:4443",
+          "84.110.47.86:2443",
+          "84.110.47.86:4432",
+          "84.110.47.86:4443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://citizenlab.ca/2025/03/a-first-look-at-paragons-proliferating-spyware-operations/",
+        "https://search.censys.io/hosts/178.237.39.204"
+      ],
+      "total": 33
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "194.71.130.218:443",
+          "46.183.184.91:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/1933368441433698638",
+        "https://citizenlab.ca/2025/06/first-forensic-confirmation-of-paragons-ios-mercenary-spyware-finds-journalists-targeted/ (# bigpretzel)",
+        "https://app.validin.com/detail?find=%2FO%3Dnetwork39managment%2FCN%3Dgreenad&type=raw&ref_id=92a69af4516#tab=host_pairs (# 2025-06-13)"
+      ],
+      "total": 2
+    }
+  ]
+}

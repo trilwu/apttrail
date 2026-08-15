@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "190d618b-69e0-501d-916b-52738f06d040",
+        "value": "barinoh9.beget.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ceba2754-b6c2-5ac4-b3ac-4c307ca061d5",
+        "value": "barinovbb.had.su"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ebbc1d5a-3aae-57b4-a9c2-4cd7eb5d5637",
+        "value": "buhuchetooo.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8a7741f5-d4eb-56bd-a530-739fbc4d52da",
+        "value": "document-buh.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e37f60f5-44d8-5344-beaa-d24b5ba8dd17",
+        "value": "micorsoft.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e0fe01eb-fd91-5c06-9b8a-e48c25c4685d",
+        "value": "mts2015stm.myjino.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b41b0c61-28fe-5b0f-8566-f939a7ce3db9",
+        "value": "papaninili.temp.swtest.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533301858",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9c221f34-0ca0-5c77-8000-2e8afb96585b",
+        "value": "rosatomgov.ru"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:tvrms"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: TVRMS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "2577e961-c239-5f82-b34e-6ffab4f10c67"
+  }
+}

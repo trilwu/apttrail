@@ -1,0 +1,175 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 13,
+    "ipv4": 1,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "comemail.email": "2018-09-21",
+      "comemails.email": "2018-09-21",
+      "commail.co": "2018-09-21",
+      "daynew.today": "2018-09-21",
+      "daynews.today": "2018-09-21",
+      "t1bet.net": "2018-09-21",
+      "tibet-office.net": "2018-09-21",
+      "tibetfreedom.xyz": "2022-06-03",
+      "tibetfrum.info": "2018-09-21",
+      "tibethouse.info": "2018-09-21",
+      "tibetnews.info": "2018-09-21",
+      "tibetnews.today": "2018-09-21",
+      "tibetyouthcongress.com": "2022-06-03"
+    },
+    "ipv4": {
+      "45.77.45.222:110": "2022-06-03"
+    },
+    "url_path": {
+      "/qqqzqa": "2018-09-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-21",
+    "latest": "2022-06-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "comemail.email",
+      "comemails.email",
+      "commail.co",
+      "daynew.today",
+      "daynews.today",
+      "t1bet.net",
+      "tibet-office.net",
+      "tibetfreedom.xyz",
+      "tibetfrum.info",
+      "tibethouse.info",
+      "tibetnews.info",
+      "tibetnews.today",
+      "tibetyouthcongress.com"
+    ],
+    "ipv4": [
+      "45.77.45.222:110"
+    ],
+    "url_path": [
+      "/qqqzqa"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FAMILIARFEELING"
+  ],
+  "references": [
+    "https://citizenlab.ca/2018/01/spying-on-a-budget-inside-a-phishing-operation-with-targets-in-the-tibetan-community/",
+    "https://citizenlab.ca/2018/08/familiar-feeling-a-malware-campaign-targeting-the-tibetan-diaspora-resurfaces/",
+    "https://twitter.com/malwrhunterteam/status/1532611343882276864",
+    "https://www.virustotal.com/gui/file/5217c2a1802b0b0fe5592f9437cdfd21f87da1b6ebdc917679ed084e40096bfd/detection",
+    "https://www.virustotal.com/gui/ip-address/140.82.13.183/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "LUCKYCAT"
+    }
+  ],
+  "slug": "FAMILIARFEELING",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-06-03",
+      "indicators": {
+        "domain": [
+          "tibetyouthcongress.com"
+        ],
+        "ipv4": [
+          "45.77.45.222:110"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1532611343882276864",
+        "https://www.virustotal.com/gui/file/5217c2a1802b0b0fe5592f9437cdfd21f87da1b6ebdc917679ed084e40096bfd/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-03",
+      "indicators": {
+        "domain": [
+          "tibetfreedom.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/140.82.13.183/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9,
+        "url_path": 1
+      },
+      "first_seen": "2018-09-21",
+      "indicators": {
+        "domain": [
+          "comemail.email",
+          "comemails.email",
+          "commail.co",
+          "daynew.today",
+          "daynews.today",
+          "tibetfrum.info",
+          "tibethouse.info",
+          "tibetnews.info",
+          "tibetnews.today"
+        ],
+        "url_path": [
+          "/qqqzqa"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2018/08/familiar-feeling-a-malware-campaign-targeting-the-tibetan-diaspora-resurfaces/"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-21",
+      "indicators": {
+        "domain": [
+          "t1bet.net",
+          "tibet-office.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2018/01/spying-on-a-budget-inside-a-phishing-operation-with-targets-in-the-tibetan-community/"
+      ],
+      "total": 2
+    }
+  ]
+}

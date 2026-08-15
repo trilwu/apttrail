@@ -1,0 +1,187 @@
+{
+  "aliases": [
+    "vampirebot"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 21,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "api.samsungcareers.work": "2026-01-02",
+      "api3.samsungcareers.work": "2026-01-02",
+      "djactuallsbuilds.com": "2024-11-26",
+      "ftp.spaceq.ovh": "2024-11-26",
+      "get-reponse-subt1.duckdns.org": "2026-01-02",
+      "get-reponse-subt2.duckdns.org": "2024-11-26",
+      "get-reponse-subt3.duckdns.org": "2024-11-26",
+      "get-reponse-subt4.duckdns.org": "2026-01-02",
+      "img.samsungcareers.work": "2026-01-02",
+      "jobs-infomarriott.com": "2026-01-02",
+      "jobs-marriott.com": "2026-01-02",
+      "jobswork.vn": "2026-01-02",
+      "mail.jobs-infomarriott.com": "2026-01-02",
+      "mail.jobs-marriott.com": "2026-01-02",
+      "mail.jobswork.vn": "2026-01-02",
+      "mysupportnetflix.com": "2024-11-26",
+      "panel2.samsungcareers.work": "2026-01-02",
+      "samsung-work.com": "2024-11-26",
+      "samsungcareers.work": "2024-11-26",
+      "spaceq.ovh": "2024-11-26",
+      "workjobs.net": "2026-01-02"
+    },
+    "ipv4": {
+      "5.252.235.172:4449": "2024-11-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "api.samsungcareers.work": "at-or-before",
+      "api3.samsungcareers.work": "at-or-before",
+      "get-reponse-subt1.duckdns.org": "at-or-before",
+      "get-reponse-subt4.duckdns.org": "at-or-before",
+      "img.samsungcareers.work": "at-or-before",
+      "jobs-infomarriott.com": "at-or-before",
+      "jobs-marriott.com": "at-or-before",
+      "jobswork.vn": "at-or-before",
+      "mail.jobs-infomarriott.com": "at-or-before",
+      "mail.jobs-marriott.com": "at-or-before",
+      "mail.jobswork.vn": "at-or-before",
+      "panel2.samsungcareers.work": "at-or-before",
+      "workjobs.net": "at-or-before"
+    },
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-11-26",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "api.samsungcareers.work",
+      "api3.samsungcareers.work",
+      "djactuallsbuilds.com",
+      "ftp.spaceq.ovh",
+      "get-reponse-subt1.duckdns.org",
+      "get-reponse-subt2.duckdns.org",
+      "get-reponse-subt3.duckdns.org",
+      "get-reponse-subt4.duckdns.org",
+      "img.samsungcareers.work",
+      "jobs-infomarriott.com",
+      "jobs-marriott.com",
+      "jobswork.vn",
+      "mail.jobs-infomarriott.com",
+      "mail.jobs-marriott.com",
+      "mail.jobswork.vn",
+      "mysupportnetflix.com",
+      "panel2.samsungcareers.work",
+      "samsung-work.com",
+      "samsungcareers.work",
+      "spaceq.ovh",
+      "workjobs.net"
+    ],
+    "ipv4": [
+      "5.252.235.172:4449"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BATSHADOW"
+  ],
+  "references": [
+    "https://github.com/blackorbird/APT_REPORT/blob/master/cybercrime/BatShadow/batshadow-vietnamese-threat-group-vampire-bot-report.pdf",
+    "https://www.virustotal.com/gui/file/14aa9c1113184d439d6f65c6c55c1bfa3654c113f7ed164d92f0b439e2134342/detection",
+    "https://www.virustotal.com/gui/file/afed785aef35e7997e2208e45b2f91a5110d246bc282e0d9a3f6b0698cb871d6/detection",
+    "https://www.virustotal.com/gui/ip-address/103.124.95.115/relations",
+    "https://www.virustotal.com/gui/ip-address/103.124.95.161/relations",
+    "https://x.com/DaveLikesMalwre/status/1861387766812078398",
+    "https://x.com/Thisism23567356/status/1861367550774292804",
+    "https://x.com/blackorbird/status/1975811759610208662"
+  ],
+  "related": [],
+  "slug": "BATSHADOW",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "jobs-infomarriott.com",
+          "jobs-marriott.com",
+          "jobswork.vn",
+          "mail.jobs-infomarriott.com",
+          "mail.jobs-marriott.com",
+          "mail.jobswork.vn",
+          "workjobs.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/1975811759610208662",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/cybercrime/BatShadow/batshadow-vietnamese-threat-group-vampire-bot-report.pdf",
+        "https://www.virustotal.com/gui/ip-address/103.124.95.115/relations",
+        "https://www.virustotal.com/gui/ip-address/103.124.95.161/relations",
+        "https://www.virustotal.com/gui/file/afed785aef35e7997e2208e45b2f91a5110d246bc282e0d9a3f6b0698cb871d6/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "api.samsungcareers.work",
+          "api3.samsungcareers.work",
+          "get-reponse-subt1.duckdns.org",
+          "get-reponse-subt4.duckdns.org",
+          "img.samsungcareers.work",
+          "panel2.samsungcareers.work"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Thisism23567356/status/1861367550774292804",
+        "https://x.com/DaveLikesMalwre/status/1861387766812078398",
+        "https://www.virustotal.com/gui/file/14aa9c1113184d439d6f65c6c55c1bfa3654c113f7ed164d92f0b439e2134342/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 1
+      },
+      "first_seen": "2024-11-26",
+      "indicators": {
+        "domain": [
+          "djactuallsbuilds.com",
+          "ftp.spaceq.ovh",
+          "get-reponse-subt2.duckdns.org",
+          "get-reponse-subt3.duckdns.org",
+          "mysupportnetflix.com",
+          "samsung-work.com",
+          "samsungcareers.work",
+          "spaceq.ovh"
+        ],
+        "ipv4": [
+          "5.252.235.172:4449"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Thisism23567356/status/1861367550774292804",
+        "https://x.com/DaveLikesMalwre/status/1861387766812078398",
+        "https://www.virustotal.com/gui/file/14aa9c1113184d439d6f65c6c55c1bfa3654c113f7ed164d92f0b439e2134342/detection"
+      ],
+      "total": 9
+    }
+  ]
+}

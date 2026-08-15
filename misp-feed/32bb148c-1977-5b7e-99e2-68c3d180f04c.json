@@ -1,0 +1,63 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1660909544",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ea8564bf-1cdb-51da-8bea-5e7c7cccd8c6",
+        "value": "bookstore.neu.edu.tr"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1660909544",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "91079793-87ee-54b5-8a5f-5a386aa5f00a",
+        "value": "d0g3.cachedns.io"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1660909544",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2df16662-52f5-53f8-8532-2cb6da1e311b",
+        "value": "jc.neu.edu.tr"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1660909544",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8cb8731d-ec72-5677-a438-f16282fbed6d",
+        "value": "oldies.neu.edu.tr"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:murenshark"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: MURENSHARK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "32bb148c-1977-5b7e-99e2-68c3d180f04c"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "androidbak.com": "2017-04-18",
+      "droidback.com": "2017-04-18",
+      "endpointup.com": "2017-04-18",
+      "goodydaddy.com": "2017-04-18",
+      "siteanalysto.com": "2017-04-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-18",
+    "latest": "2017-04-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "androidbak.com",
+      "droidback.com",
+      "endpointup.com",
+      "goodydaddy.com",
+      "siteanalysto.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "WEAKESTLINK"
+  ],
+  "references": [
+    "https://securelist.com/blog/incidents/77562/breaking-the-weakest-link-of-the-strongest-chain/"
+  ],
+  "related": [],
+  "slug": "WEAKESTLINK",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2017-04-18",
+      "indicators": {
+        "domain": [
+          "androidbak.com",
+          "droidback.com",
+          "endpointup.com",
+          "goodydaddy.com",
+          "siteanalysto.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/blog/incidents/77562/breaking-the-weakest-link-of-the-strongest-chain/"
+      ],
+      "total": 5
+    }
+  ]
+}

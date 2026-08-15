@@ -1,0 +1,123 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1691665465",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f21e03cb-32eb-5d98-b5ec-381430e1bf71",
+        "value": "centrocspupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691665465",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e7c07214-acfa-54ac-b5ab-5d076e2e22b3",
+        "value": "dervasopssec.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5a2fdb50-b50e-521b-ae85-bcb2fbeaf14b",
+        "value": "edgeupdate-security-windows.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691665465",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e421d709-af90-58d8-9a71-0f06357056aa",
+        "value": "ocsp-atomsecure.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691665465",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d33d8b7a-1ef4-538b-9851-756f6e2114d2",
+        "value": "securityocspdev.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "56aa18d9-16d0-5973-b2dd-82de4e2f6aee",
+        "value": "209.19.37.184:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ca3a9c48-e7da-5f8f-aafc-41b276e5d929",
+        "value": "24.9.51.94:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ed0d19f7-7c62-5b79-b364-0fb9dde95822",
+        "value": "35.214.56.2:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "38736999-cd0d-5186-95a4-e2708098bf20",
+        "value": "38.9.8.78:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c2b775aa-f7ad-5f50-a3d0-613b6baaa73c",
+        "value": "52.3.8.25:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1691673138",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9cf50783-5025-5fc8-abf2-03e40c862342",
+        "value": "59.6.8.25:445"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:moustachedbouncer"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"MoustachedBouncer - G1019\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: MoustachedBouncer (G1019) - Maltrail group MOUSTACHEDBOUNCER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "cd5357ca-c92e-5a8d-a7fd-58636a74ef77"
+  }
+}

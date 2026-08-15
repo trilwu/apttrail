@@ -1,0 +1,241 @@
+{
+  "aliases": [],
+  "attack_id": "G0075",
+  "attack_name": "Rancor",
+  "attack_url": "https://attack.mitre.org/groups/G0075/",
+  "counts": {
+    "domain": 18,
+    "ipv4": 1,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "754d56-8523.sexidude.com": "2019-10-04",
+      "bafunpda.xyz": "2019-12-18",
+      "charleseedwards.dynamic-dns.net": "2019-10-04",
+      "dsdfdscxcv.justdied.com": "2019-10-04",
+      "dsgsdgergrfv.toythieves.com": "2019-10-04",
+      "facebook-apps.com": "2019-09-12",
+      "ftp.chinhphu.ddns.ms": "2019-09-12",
+      "goole.authorizeddns.us": "2019-09-12",
+      "jdanief.xyz": "2019-09-12",
+      "kfesv.xyz": "2019-12-18",
+      "kibistation.onmypc.net": "2019-10-04",
+      "microsoft.authorizeddns.us": "2019-09-12",
+      "microsoft.https443.org": "2019-09-12",
+      "msdns.otzo.com": "2019-09-12",
+      "nicetiss54.lflink.com": "2019-05-14",
+      "oui6473rf.xxuz.com": "2019-10-04",
+      "sfstnksfcv.jungleheart.com": "2019-10-04",
+      "vvcxvsdvx.dynamic-dns.net": "2019-07-04"
+    },
+    "ipv4": {
+      "139.162.14.25": "2019-12-18"
+    },
+    "url": {
+      "http://167.71.237.100": "2019-09-12",
+      "http://199.247.6.253": "2019-12-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-05-14",
+    "latest": "2019-12-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "754d56-8523.sexidude.com",
+      "bafunpda.xyz",
+      "charleseedwards.dynamic-dns.net",
+      "dsdfdscxcv.justdied.com",
+      "dsgsdgergrfv.toythieves.com",
+      "facebook-apps.com",
+      "ftp.chinhphu.ddns.ms",
+      "goole.authorizeddns.us",
+      "jdanief.xyz",
+      "kfesv.xyz",
+      "kibistation.onmypc.net",
+      "microsoft.authorizeddns.us",
+      "microsoft.https443.org",
+      "msdns.otzo.com",
+      "nicetiss54.lflink.com",
+      "oui6473rf.xxuz.com",
+      "sfstnksfcv.jungleheart.com",
+      "vvcxvsdvx.dynamic-dns.net"
+    ],
+    "ipv4": [
+      "139.162.14.25"
+    ],
+    "url": [
+      "http://167.71.237.100",
+      "http://199.247.6.253"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "RANCOR"
+  ],
+  "references": [
+    "https://meltx0r.github.io/tech/2019/09/11/rancor-apt.html",
+    "https://otx.alienvault.com/pulse/5d94cb1196acaec6cb740e33",
+    "https://otx.alienvault.com/pulse/5dfa52f208b44bd6293eb130",
+    "https://research.checkpoint.com/rancor-the-year-of-the-phish/",
+    "https://twitter.com/MeltX0R/status/1172046597942915072",
+    "https://unit42.paloaltonetworks.com/rancor-cyber-espionage-group-uses-new-custom-malware-to-attack-southeast-asia/",
+    "https://unit42.paloaltonetworks.com/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/",
+    "https://www.virustotal.com/gui/ip-address/139.162.14.25/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "43% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.429
+        }
+      ],
+      "slug": "G0095"
+    }
+  ],
+  "slug": "G0075",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2019-12-18",
+      "indicators": {
+        "domain": [
+          "bafunpda.xyz",
+          "kfesv.xyz"
+        ],
+        "ipv4": [
+          "139.162.14.25"
+        ],
+        "url": [
+          "http://199.247.6.253"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/rancor-cyber-espionage-group-uses-new-custom-malware-to-attack-southeast-asia/",
+        "https://otx.alienvault.com/pulse/5dfa52f208b44bd6293eb130",
+        "https://www.virustotal.com/gui/ip-address/139.162.14.25/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-10-04",
+      "indicators": {
+        "domain": [
+          "754d56-8523.sexidude.com",
+          "charleseedwards.dynamic-dns.net",
+          "dsdfdscxcv.justdied.com",
+          "dsgsdgergrfv.toythieves.com",
+          "kibistation.onmypc.net",
+          "oui6473rf.xxuz.com",
+          "sfstnksfcv.jungleheart.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/rancor-the-year-of-the-phish/",
+        "https://otx.alienvault.com/pulse/5d94cb1196acaec6cb740e33"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-09-12",
+      "indicators": {
+        "domain": [
+          "facebook-apps.com",
+          "ftp.chinhphu.ddns.ms",
+          "goole.authorizeddns.us",
+          "jdanief.xyz",
+          "microsoft.authorizeddns.us",
+          "microsoft.https443.org",
+          "msdns.otzo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/unit42-rancor-targeted-attacks-south-east-asia-using-plaintee-ddkong-malware-families/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-09-12",
+      "indicators": {
+        "url": [
+          "http://167.71.237.100"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MeltX0R/status/1172046597942915072",
+        "https://meltx0r.github.io/tech/2019/09/11/rancor-apt.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-04",
+      "indicators": {
+        "domain": [
+          "vvcxvsdvx.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/rancor-the-year-of-the-phish/",
+        "https://otx.alienvault.com/pulse/5d94cb1196acaec6cb740e33"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-14",
+      "indicators": {
+        "domain": [
+          "nicetiss54.lflink.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/rancor-the-year-of-the-phish/",
+        "https://otx.alienvault.com/pulse/5d94cb1196acaec6cb740e33"
+      ],
+      "total": 1
+    }
+  ]
+}

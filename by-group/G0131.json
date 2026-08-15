@@ -1,0 +1,1522 @@
+{
+  "aliases": [
+    "bisonal",
+    "tonto",
+    "tontoteam"
+  ],
+  "attack_id": "G0131",
+  "attack_name": "Tonto Team",
+  "attack_url": "https://attack.mitre.org/groups/G0131/",
+  "counts": {
+    "domain": 232,
+    "ipv4": 5,
+    "url": 4,
+    "url_path": 5
+  },
+  "first_seen": {
+    "domain": {
+      "0906.toh.info": "2020-03-05",
+      "21kmg.my-homeip.net": "2020-03-05",
+      "abulasha-banama.onedumb.com": "2020-10-03",
+      "acivo.serveblog.net": "2020-10-03",
+      "adobe-online.com": "2020-10-03",
+      "adoberevise.com": "2020-10-03",
+      "adobeupdata.zzux.com": "2020-10-03",
+      "adobeupdate.dns04.com": "2020-10-03",
+      "agent.my-homeip.net": "2020-03-05",
+      "alleyk.onthewifi.com": "2023-09-20",
+      "amanser951.otzo.com": "2020-03-05",
+      "anna111.epac.to": "2020-10-03",
+      "anrnet.servegame.com": "2023-09-20",
+      "applejp.myfw.us": "2020-03-05",
+      "asheepa.sytes.net": "2023-09-20",
+      "attachdaum.servecounterstrike.com": "2023-09-20",
+      "attachmaildaum.serveblog.net": "2023-09-20",
+      "attachmaildaum.servecounterstrike.com": "2023-09-20",
+      "babyhome.lflink.com": "2020-10-03",
+      "babyhome.mefound.com": "2020-10-03",
+      "baekmaonline.com": "2020-10-03",
+      "bbc.xxxy.info": "2020-10-03",
+      "beatidc.com": "2020-10-03",
+      "best.indoingwulearn.com": "2020-10-03",
+      "bitsshare.com": "2021-07-07",
+      "bizmeka.viewdns.net": "2023-09-20",
+      "bluecat.mefound.com": "2020-09-08",
+      "bluesky.jkub.com": "2020-10-03",
+      "bravojack.justdied.com": "2020-10-03",
+      "bucketnec.bounceme.net": "2023-09-20",
+      "chrgeom.system-ns.net": "2020-10-03",
+      "chromeupdate.lflink.com": "2020-10-03",
+      "chsoun.serveftp.com": "2023-09-20",
+      "ckstar.zapto.org": "2022-08-06",
+      "cnnmirror.com": "2020-10-03",
+      "comunity.system-ns.org": "2021-02-13",
+      "connts.zzux.com": "2020-10-03",
+      "creepbeforeyouwalk.com": "2020-10-03",
+      "daecheol.myvnc.com": "2023-09-20",
+      "daum.xxuz.com": "2020-09-08",
+      "daummail.otzo.com": "2020-10-03",
+      "dds.walshdavis.com": "2020-03-05",
+      "developman.ocry.com": "2020-09-08",
+      "dnsdns1.passas.us": "2020-03-05",
+      "doctor-s.dhcp.biz": "2020-10-03",
+      "doctor-s.edns.biz": "2020-10-03",
+      "eburim.viewdns.net": "2023-09-20",
+      "eduin21.zapto.org": "2023-09-20",
+      "elecinfonec.servehalflife.com": "2023-09-20",
+      "emsit.serveirc.com": "2020-03-05",
+      "etude.servemp3.com": "2020-01-14",
+      "euiro8966.organiccrap.com": "2018-08-02",
+      "facegooglebook.mrbasic.com": "2020-09-08",
+      "faceto.uglyas.com": "2020-03-05",
+      "fdods.my03.com": "2020-10-03",
+      "fdtg.dynamic-dns.net": "2020-10-03",
+      "finance.my-homeip.com": "2022-05-04",
+      "finance.my-homeip.net": "2020-10-03",
+      "foodlab.hopto.org": "2023-09-20",
+      "formsgle.freedynamicdns.net": "2022-05-04",
+      "formsgle.freedynamicdns.org": "2023-09-20",
+      "fose.mos2ioa.com": "2020-10-03",
+      "free2015.longmusic.com": "2020-09-08",
+      "freemusic.zzux.com": "2020-09-08",
+      "fresh.servepics.com": "2023-09-20",
+      "ftp.sshdd.toythieves.com": "2020-10-03",
+      "g00gleru.wikaba.com": "2020-09-08",
+      "games.my-homeip.com": "2018-08-02",
+      "gedadye.com": "2020-10-03",
+      "global.freedynamicdns.net": "2023-09-20",
+      "global.freedynamicdns.org": "2023-09-20",
+      "gmailserverweb.com": "2020-10-03",
+      "gmarket.system-ns.org": "2020-09-08",
+      "golfmsdn.com": "2020-10-03",
+      "gomalove.system-ns.org": "2021-02-13",
+      "gotomail.ddns.net": "2020-10-03",
+      "gtfd.mos2ioa.com": "2020-10-03",
+      "hairouni.serveblog.net": "2023-05-06",
+      "hamonsoft.serveblog.net": "2023-09-20",
+      "hanseo1.hopto.org": "2023-09-20",
+      "hansun.serveblog.net": "2020-03-05",
+      "harvest.my-homeip.net": "2022-05-04",
+      "havsar.com": "2020-10-03",
+      "hellomydog.compress.to": "2020-10-03",
+      "hellomydog.mrface.com": "2020-10-03",
+      "home-blog.dynssl.com": "2020-10-03",
+      "hometax.onthewifi.com": "2023-09-20",
+      "hosting.tempors.com": "2020-01-22",
+      "hotadobes.com": "2020-10-03",
+      "hwarang.myddns.me": "2023-09-20",
+      "imbc.onthewifi.com": "2020-03-07",
+      "indbaba.myfw.us": "2020-03-05",
+      "indoingwulearn.com": "2020-10-03",
+      "instructor.giize.com": "2022-07-07",
+      "jaminss.viewdns.net": "2023-09-20",
+      "janara.freedynamicdns.org": "2023-09-20",
+      "japanbaba.myfw.us": "2020-08-13",
+      "jennifer998.lookin.at": "2018-08-02",
+      "jeoash.servemp3.com": "2023-09-20",
+      "jobnate.system-ns.org": "2021-02-13",
+      "jstreco.myftp.biz": "2023-09-20",
+      "kakao.myonlineportal.org": "2020-10-03",
+      "kanager.bounceme.net": "2023-09-20",
+      "kazama.myfw.us": "2020-03-05",
+      "kcgselect.servehalflife.com": "2023-09-20",
+      "kfsinfo.byinter.net": "2020-03-05",
+      "kjmacgk.ddnsking.com": "2023-09-20",
+      "kookmina.servecounterstrike.com": "2023-09-20",
+      "koreamama.myfw.us": "2020-08-13",
+      "kreng.bounceme.net": "2020-03-05",
+      "ksd22.myddns.me": "2023-09-20",
+      "kted56erhg.dynssl.com": "2018-08-02",
+      "kumohhic.viewdns.net": "2023-09-20",
+      "kybook.viewdns.net": "2023-09-20",
+      "leader.gotdns.ch": "2023-09-20",
+      "likms.hopto.org": "2023-09-20",
+      "lingrevelat.com": "2022-06-18",
+      "logindaums.ddnsking.com": "2023-09-20",
+      "loginsdaum.viewdns.net": "2023-09-20",
+      "lovehome.zzux.com": "2020-10-03",
+      "lubny23.com": "2020-10-03",
+      "luckybabys.dnset.com": "2020-10-03",
+      "lucylucy.dynamic-dns.net": "2020-10-03",
+      "lucylucy.ninth.biz": "2020-10-03",
+      "mafolog.serveminecraft.net": "2023-09-20",
+      "mailplug.ddnsking.com": "2023-09-20",
+      "maintenance.baekmaonline.com": "2020-10-03",
+      "manage.yesterdayko.com": "2020-10-03",
+      "media.myonlineportal.net": "2020-10-03",
+      "minjoo2.servehttp.com": "2023-09-20",
+      "mintaek.bounceme.net": "2023-09-20",
+      "misova.mos2ioa.com": "2020-10-03",
+      "missca.justdied.com": "2020-10-03",
+      "mos2ioa.com": "2020-10-03",
+      "mosclar.mrbonus.com": "2020-10-03",
+      "movie2014.passas.us": "2020-10-03",
+      "msdn.ezua.com": "2020-09-08",
+      "munjanara.servehttp.com": "2023-09-20",
+      "music2014.passas.us": "2020-10-03",
+      "mvp.onedumb.com": "2020-10-03",
+      "myblogcloud.com": "2021-07-07",
+      "mycount.mrslove.com": "2020-03-05",
+      "myforumcloud.com": "2021-07-07",
+      "mynotecloud.com": "2021-07-07",
+      "myschedulecloud.com": "2021-07-07",
+      "nancyxi.gotdns.org": "2020-08-13",
+      "navego.serveblog.net": "2020-03-05",
+      "nayana.adultdns.net": "2020-03-05",
+      "necgo.serveblog.net": "2023-09-20",
+      "news-serverweb.com": "2020-10-03",
+      "news.wooordhunts.com": "2022-07-07",
+      "nmbpo.com": "2020-10-03",
+      "nothree.myfw.us": "2020-08-13",
+      "nubpubwizard.jetos.com": "2018-09-29",
+      "officerevise.com": "2020-10-03",
+      "offices-update.com": "2020-06-17",
+      "online-offices.com": "2020-10-03",
+      "organisea.rutrackerbit.com": "2020-10-03",
+      "pattern.webhop.me": "2023-09-20",
+      "pixoneer.myvnc.com": "2023-09-20",
+      "plomacy.ddnsking.com": "2023-09-20",
+      "prettyrose.justdied.com": "2020-10-03",
+      "proeso.servehttp.com": "2023-09-20",
+      "prparty.webhop.me": "2023-09-20",
+      "puacgo1.servemp3.com": "2023-09-20",
+      "ramblercloud.com": "2022-06-20",
+      "redfish.misecure.com": "2020-09-08",
+      "relerc.ddns.net": "2020-10-03",
+      "rutrackerbit.com": "2020-10-03",
+      "saevit.servebeer.com": "2023-09-20",
+      "safety.viewdns.net": "2023-09-20",
+      "samgiblue.servegame.com": "2023-09-20",
+      "sarang.serveminecraft.net": "2023-09-20",
+      "satreci.bounceme.net": "2023-09-20",
+      "sdkpress.com": "2020-10-03",
+      "search.system-ns.net": "2021-02-13",
+      "search.yesterdayko.com": "2020-10-03",
+      "sejonglog.hopto.org": "2023-09-20",
+      "serviceonline.otzo.com": "2020-09-08",
+      "shinkhek.myfw.us": "2020-03-05",
+      "shinkhw.myfw.us": "2020-08-13",
+      "shinkhw.organiccrap.com": "2020-08-13",
+      "shop.beatidc.com": "2020-10-03",
+      "shuudans.com": "2020-10-03",
+      "signga.redirectme.net": "2023-09-20",
+      "since.qpoe.com": "2020-03-05",
+      "skparty.myonlineportal.org": "2022-05-04",
+      "sshdd.toythieves.com": "2020-10-03",
+      "stcinet.com": "2019-03-22",
+      "stcnet.ddns.net": "2019-03-22",
+      "steering.viewdns.net": "2023-09-20",
+      "stjpmsko.serveblog.net": "2023-09-20",
+      "store.beatidc.com": "2020-10-03",
+      "support.baekmaonline.com": "2020-10-03",
+      "supportteam.lingrevelat.com": "2022-06-18",
+      "surveymonkey.myddns.me": "2023-09-20",
+      "svyaztu.indoingwulearn.com": "2020-10-03",
+      "svyaztulaya.dynamic-dns.net": "2020-01-22",
+      "tcostream.dhcp.biz": "2020-10-03",
+      "themiujoo.viewdns.net": "2023-09-20",
+      "thresident.com": "2022-06-18",
+      "tknow.squirly.info": "2020-10-03",
+      "tradekorea.system-ns.org": "2020-10-03",
+      "tsahimt.com": "2020-10-03",
+      "tsowe.2waky.com": "2020-10-03",
+      "tsuago.servehalflife.com": "2023-09-20",
+      "tsuagos.servehalflife.com": "2023-09-20",
+      "tube.compress.to": "2020-10-03",
+      "tvpot.system-ns.org": "2020-10-03",
+      "uacmoscow.com": "2020-01-22",
+      "unipedu.servebeer.com": "2023-09-20",
+      "upportteam.lingrevelat.com": "2022-06-18",
+      "usababa.myfw.us": "2020-03-05",
+      "v3net.rr.nu": "2020-03-05",
+      "videoservice.dnset.com": "2020-09-08",
+      "vip.fartit.com": "2020-10-03",
+      "vip.onedumb.com": "2020-10-03",
+      "visdpaka.servemp3.com": "2023-09-20",
+      "visual.webhop.me": "2023-09-20",
+      "webmaff.dns05.com": "2020-08-13",
+      "webtvpot.system-ns.org": "2020-10-03",
+      "wew.mymom.info": "2020-03-05",
+      "wikipedia.dnset.com": "2020-10-03",
+      "wooordhunts.com": "2022-07-07",
+      "worktrs.wikaba.com": "2018-09-29",
+      "ww1.system-ns.net": "2021-02-13",
+      "ww12.system-ns.net": "2021-02-13",
+      "ww7.system-ns.net": "2021-02-13",
+      "wwl1764.ddnsking.com": "2023-09-20",
+      "yandex.mrface.com": "2020-09-08",
+      "yandexmedia.serveuser.com": "2020-10-03",
+      "yesterdayko.com": "2020-10-03"
+    },
+    "ipv4": {
+      "103.231.14.134:443": "2022-04-17",
+      "103.85.20.194:443": "2023-02-13",
+      "137.220.176.165:443": "2023-02-13",
+      "153.234.77.155:8080": "2023-05-06",
+      "45.133.194.135:8080": "2023-05-06"
+    },
+    "url": {
+      "http://137.220.176.165": "2023-02-13",
+      "http://154.223.175.115/chapter1/user.html/": "2020-08-15",
+      "http://154.95.17.145/chapter1/user.html/": "2020-08-15",
+      "http://61.90.202.198": "2020-08-13"
+    },
+    "url_path": {
+      "/krsy/a.asp": "2021-02-12",
+      "/ru/news/index.php?strPageID=": "2023-02-13",
+      "/ru/order/index.php?strPageID=": "2023-02-13",
+      "/siteFiles/index.php?strPageID=": "2023-02-13",
+      "/xhome.native.page/datareader.php": "2023-02-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-02",
+    "latest": "2023-09-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0906.toh.info",
+      "21kmg.my-homeip.net",
+      "abulasha-banama.onedumb.com",
+      "acivo.serveblog.net",
+      "adobe-online.com",
+      "adoberevise.com",
+      "adobeupdata.zzux.com",
+      "adobeupdate.dns04.com",
+      "agent.my-homeip.net",
+      "alleyk.onthewifi.com",
+      "amanser951.otzo.com",
+      "anna111.epac.to",
+      "anrnet.servegame.com",
+      "applejp.myfw.us",
+      "asheepa.sytes.net",
+      "attachdaum.servecounterstrike.com",
+      "attachmaildaum.serveblog.net",
+      "attachmaildaum.servecounterstrike.com",
+      "babyhome.lflink.com",
+      "babyhome.mefound.com",
+      "baekmaonline.com",
+      "bbc.xxxy.info",
+      "beatidc.com",
+      "best.indoingwulearn.com",
+      "bitsshare.com",
+      "bizmeka.viewdns.net",
+      "bluecat.mefound.com",
+      "bluesky.jkub.com",
+      "bravojack.justdied.com",
+      "bucketnec.bounceme.net",
+      "chrgeom.system-ns.net",
+      "chromeupdate.lflink.com",
+      "chsoun.serveftp.com",
+      "ckstar.zapto.org",
+      "cnnmirror.com",
+      "comunity.system-ns.org",
+      "connts.zzux.com",
+      "creepbeforeyouwalk.com",
+      "daecheol.myvnc.com",
+      "daum.xxuz.com",
+      "daummail.otzo.com",
+      "dds.walshdavis.com",
+      "developman.ocry.com",
+      "dnsdns1.passas.us",
+      "doctor-s.dhcp.biz",
+      "doctor-s.edns.biz",
+      "eburim.viewdns.net",
+      "eduin21.zapto.org",
+      "elecinfonec.servehalflife.com",
+      "emsit.serveirc.com",
+      "etude.servemp3.com",
+      "euiro8966.organiccrap.com",
+      "facegooglebook.mrbasic.com",
+      "faceto.uglyas.com",
+      "fdods.my03.com",
+      "fdtg.dynamic-dns.net",
+      "finance.my-homeip.com",
+      "finance.my-homeip.net",
+      "foodlab.hopto.org",
+      "formsgle.freedynamicdns.net",
+      "formsgle.freedynamicdns.org",
+      "fose.mos2ioa.com",
+      "free2015.longmusic.com",
+      "freemusic.zzux.com",
+      "fresh.servepics.com",
+      "ftp.sshdd.toythieves.com",
+      "g00gleru.wikaba.com",
+      "games.my-homeip.com",
+      "gedadye.com",
+      "global.freedynamicdns.net",
+      "global.freedynamicdns.org",
+      "gmailserverweb.com",
+      "gmarket.system-ns.org",
+      "golfmsdn.com",
+      "gomalove.system-ns.org",
+      "gotomail.ddns.net",
+      "gtfd.mos2ioa.com",
+      "hairouni.serveblog.net",
+      "hamonsoft.serveblog.net",
+      "hanseo1.hopto.org",
+      "hansun.serveblog.net",
+      "harvest.my-homeip.net",
+      "havsar.com",
+      "hellomydog.compress.to",
+      "hellomydog.mrface.com",
+      "home-blog.dynssl.com",
+      "hometax.onthewifi.com",
+      "hosting.tempors.com",
+      "hotadobes.com",
+      "hwarang.myddns.me",
+      "imbc.onthewifi.com",
+      "indbaba.myfw.us",
+      "indoingwulearn.com",
+      "instructor.giize.com",
+      "jaminss.viewdns.net",
+      "janara.freedynamicdns.org",
+      "japanbaba.myfw.us",
+      "jennifer998.lookin.at",
+      "jeoash.servemp3.com",
+      "jobnate.system-ns.org",
+      "jstreco.myftp.biz",
+      "kakao.myonlineportal.org",
+      "kanager.bounceme.net",
+      "kazama.myfw.us",
+      "kcgselect.servehalflife.com",
+      "kfsinfo.byinter.net",
+      "kjmacgk.ddnsking.com",
+      "kookmina.servecounterstrike.com",
+      "koreamama.myfw.us",
+      "kreng.bounceme.net",
+      "ksd22.myddns.me",
+      "kted56erhg.dynssl.com",
+      "kumohhic.viewdns.net",
+      "kybook.viewdns.net",
+      "leader.gotdns.ch",
+      "likms.hopto.org",
+      "lingrevelat.com",
+      "logindaums.ddnsking.com",
+      "loginsdaum.viewdns.net",
+      "lovehome.zzux.com",
+      "lubny23.com",
+      "luckybabys.dnset.com",
+      "lucylucy.dynamic-dns.net",
+      "lucylucy.ninth.biz",
+      "mafolog.serveminecraft.net",
+      "mailplug.ddnsking.com",
+      "maintenance.baekmaonline.com",
+      "manage.yesterdayko.com",
+      "media.myonlineportal.net",
+      "minjoo2.servehttp.com",
+      "mintaek.bounceme.net",
+      "misova.mos2ioa.com",
+      "missca.justdied.com",
+      "mos2ioa.com",
+      "mosclar.mrbonus.com",
+      "movie2014.passas.us",
+      "msdn.ezua.com",
+      "munjanara.servehttp.com",
+      "music2014.passas.us",
+      "mvp.onedumb.com",
+      "myblogcloud.com",
+      "mycount.mrslove.com",
+      "myforumcloud.com",
+      "mynotecloud.com",
+      "myschedulecloud.com",
+      "nancyxi.gotdns.org",
+      "navego.serveblog.net",
+      "nayana.adultdns.net",
+      "necgo.serveblog.net",
+      "news-serverweb.com",
+      "news.wooordhunts.com",
+      "nmbpo.com",
+      "nothree.myfw.us",
+      "nubpubwizard.jetos.com",
+      "officerevise.com",
+      "offices-update.com",
+      "online-offices.com",
+      "organisea.rutrackerbit.com",
+      "pattern.webhop.me",
+      "pixoneer.myvnc.com",
+      "plomacy.ddnsking.com",
+      "prettyrose.justdied.com",
+      "proeso.servehttp.com",
+      "prparty.webhop.me",
+      "puacgo1.servemp3.com",
+      "ramblercloud.com",
+      "redfish.misecure.com",
+      "relerc.ddns.net",
+      "rutrackerbit.com",
+      "saevit.servebeer.com",
+      "safety.viewdns.net",
+      "samgiblue.servegame.com",
+      "sarang.serveminecraft.net",
+      "satreci.bounceme.net",
+      "sdkpress.com",
+      "search.system-ns.net",
+      "search.yesterdayko.com",
+      "sejonglog.hopto.org",
+      "serviceonline.otzo.com",
+      "shinkhek.myfw.us",
+      "shinkhw.myfw.us",
+      "shinkhw.organiccrap.com",
+      "shop.beatidc.com",
+      "shuudans.com",
+      "signga.redirectme.net",
+      "since.qpoe.com",
+      "skparty.myonlineportal.org",
+      "sshdd.toythieves.com",
+      "stcinet.com",
+      "stcnet.ddns.net",
+      "steering.viewdns.net",
+      "stjpmsko.serveblog.net",
+      "store.beatidc.com",
+      "support.baekmaonline.com",
+      "supportteam.lingrevelat.com",
+      "surveymonkey.myddns.me",
+      "svyaztu.indoingwulearn.com",
+      "svyaztulaya.dynamic-dns.net",
+      "tcostream.dhcp.biz",
+      "themiujoo.viewdns.net",
+      "thresident.com",
+      "tknow.squirly.info",
+      "tradekorea.system-ns.org",
+      "tsahimt.com",
+      "tsowe.2waky.com",
+      "tsuago.servehalflife.com",
+      "tsuagos.servehalflife.com",
+      "tube.compress.to",
+      "tvpot.system-ns.org",
+      "uacmoscow.com",
+      "unipedu.servebeer.com",
+      "upportteam.lingrevelat.com",
+      "usababa.myfw.us",
+      "v3net.rr.nu",
+      "videoservice.dnset.com",
+      "vip.fartit.com",
+      "vip.onedumb.com",
+      "visdpaka.servemp3.com",
+      "visual.webhop.me",
+      "webmaff.dns05.com",
+      "webtvpot.system-ns.org",
+      "wew.mymom.info",
+      "wikipedia.dnset.com",
+      "wooordhunts.com",
+      "worktrs.wikaba.com",
+      "ww1.system-ns.net",
+      "ww12.system-ns.net",
+      "ww7.system-ns.net",
+      "wwl1764.ddnsking.com",
+      "yandex.mrface.com",
+      "yandexmedia.serveuser.com",
+      "yesterdayko.com"
+    ],
+    "ipv4": [
+      "103.231.14.134:443",
+      "103.85.20.194:443",
+      "137.220.176.165:443",
+      "153.234.77.155:8080",
+      "45.133.194.135:8080"
+    ],
+    "url": [
+      "http://137.220.176.165",
+      "http://154.223.175.115/chapter1/user.html/",
+      "http://154.95.17.145/chapter1/user.html/",
+      "http://61.90.202.198"
+    ],
+    "url_path": [
+      "/krsy/a.asp",
+      "/ru/news/index.php?strPageID=",
+      "/ru/order/index.php?strPageID=",
+      "/siteFiles/index.php?strPageID=",
+      "/xhome.native.page/datareader.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BISONAL"
+  ],
+  "references": [
+    "https://app.any.run/tasks/4c751168-358a-49c9-b751-e5b4aad9b060/",
+    "https://asec.ahnlab.com/1298",
+    "https://asec.ahnlab.com/en/51746/",
+    "https://asec.ahnlab.com/ko/33948/ (Korean)",
+    "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html",
+    "https://docs.google.com/spreadsheets/d/1lDzylI6Jymz7EE0agRVUsL3kwmJSRDjXYjr5l5MUOEk/edit#gid=127522608 (# Bisonal)",
+    "https://go.recordedfuture.com/hubfs/reports/cta-2023-0919.pdf (# TAG-74, TAG74)",
+    "https://otx.alienvault.com/pulse/5e612f6d1dadda20c4314b21",
+    "https://otx.alienvault.com/pulse/62729ce9e66ec5fd15790d3a",
+    "https://otx.alienvault.com/pulse/644fbd07a98ffc006a3e71cc",
+    "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
+    "https://securelist.com/cactuspete-apt-groups-updated-bisonal-backdoor/97962/",
+    "https://securitykitten.github.io/2014/11/25/curious-korlia.html",
+    "https://twitter.com/8th_grey_owl/status/1412583883137110020",
+    "https://twitter.com/GroupIB_TI/status/1625050738933071873",
+    "https://twitter.com/Vishnyak0v/status/1216689015035977730",
+    "https://twitter.com/blu3_team/status/951647866531057665",
+    "https://twitter.com/h2jazi/status/1537536029250490382",
+    "https://twitter.com/h2jazi/status/1538914969495928838",
+    "https://twitter.com/h2jazi/status/1555611666343133185",
+    "https://twitter.com/nao_sec/status/1273209439764406272",
+    "https://twitter.com/nao_sec/status/1538857219025817605",
+    "https://twitter.com/vigilantbeluga/status/1235496629811077121",
+    "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 3)",
+    "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 4)",
+    "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 5)",
+    "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 6)",
+    "https://www.group-ib.com/blog/tonto-team/",
+    "https://www.ptsecurity.com/ru-ru/research/pt-esc-threat-intelligence/shadowpad-novaya-aktivnost-gruppirovki-winnti/ (Russian, # Bisonal IOC)",
+    "https://www.sentinelone.com/labs/targets-of-interest-russian-organizations-increasingly-under-attack-by-chinese-apts/",
+    "https://www.virustotal.com/gui/file/13c5eb2c8deaf1b4b51eac782cc1f1a7c64e2ee8a9a12d37c25b45b09524c354/detection",
+    "https://www.virustotal.com/gui/file/56f714b1832d0eb58a688c843d417653b1219d3d0b7644049db7b6156b24274b/detection",
+    "https://www.virustotal.com/gui/file/677e697644f7c0d83a30e2daaddb93fc5a4707292b4490e8bf8856e87a7a1af4/detection",
+    "https://www.virustotal.com/gui/file/7944fa9cbfef2c7d652f032edc159abeaa1fb4fd64143a8fe3b175095c4519f5/detection",
+    "https://www.virustotal.com/gui/file/80f8c3c2f44dc514500b49adc31b9b4e269ea2604fc09a94d7e4c6bce18223a1/detection",
+    "https://www.virustotal.com/gui/file/83231d8e25f1c8d74aa9eb07f18dca9154323e0f372b29d89a2ce2dcbfad6cf8/detection",
+    "https://www.virustotal.com/gui/file/969bd3755589e616b8bcf553c7fbad2056a79fcd054edf9594f0ee54256609ac/detection",
+    "https://www.virustotal.com/gui/file/98c59d682da617f993f3d57bb9e3ff076caa7469ddb0701c46715c25c9c0453d/detection",
+    "https://www.virustotal.com/gui/file/a56003dc199224113e9c85b0edb2197d4a4af91b15e7d0710873e2ef848c3221/detection",
+    "https://www.virustotal.com/gui/file/b1ee236a36f04ca43d3c8e3ad6255b59e13902688d45ec78babcb046eac9e514/detection",
+    "https://www.virustotal.com/gui/file/b6584fe5d4e1c8fbbae108e79e87f8f82999aaae7b225f84cea3c7b37ab56256/detection",
+    "https://www.virustotal.com/gui/file/ba2c89192643f05e64f49b5cb3513a6a5bbfa719225af3b72c83587b8b774e8d/detection",
+    "https://www.virustotal.com/gui/file/beb8c6dce6088512ef28a4431ad57ffb198bfe0cce2fa0f9442d1bf0a80c19a1/detection",
+    "https://www.virustotal.com/gui/file/c7018ee3783f4b2fb19fedc78c59586390efa1b72c907867794bf42141eb767c/detection",
+    "https://www.virustotal.com/gui/file/d181dc5c6806077378d6951cb3ec67074f0c953b8fde0c9c712331a046d38c8e/detection",
+    "https://www.virustotal.com/gui/file/d5da23df6242a672e8fd520db6d91926c7861c685dfb2b4e6b3cda70935af1a1/detection",
+    "https://www.virustotal.com/gui/file/dc9645b7ed1e88442b74be13298afa3d2dcca48e6563c548ce0442140d0246ea/detection",
+    "https://www.virustotal.com/gui/file/dc9f17c87397428089e70aeea5af47f5588460b4ae5b8effb5370dc742eff1cf/detection",
+    "https://www.virustotal.com/gui/ip-address/137.220.176.165/relations",
+    "https://www.virustotal.com/gui/ip-address/61.90.202.198/relations",
+    "https://www.virustotal.com/gui/ip-address/64.233.167.99/relations",
+    "https://www.virustotal.com/gui/ip-address/67.205.76.102/relations",
+    "https://www.virustotal.com/gui/ip-address/92.38.135.212/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares gsecdump, ShadowPad",
+          "kind": "software",
+          "weight": 0.367
+        }
+      ],
+      "slug": "G0060"
+    }
+  ],
+  "slug": "G0131",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 66
+      },
+      "first_seen": "2023-09-20",
+      "indicators": {
+        "domain": [
+          "alleyk.onthewifi.com",
+          "anrnet.servegame.com",
+          "asheepa.sytes.net",
+          "attachdaum.servecounterstrike.com",
+          "attachmaildaum.serveblog.net",
+          "attachmaildaum.servecounterstrike.com",
+          "bizmeka.viewdns.net",
+          "bucketnec.bounceme.net",
+          "chsoun.serveftp.com",
+          "daecheol.myvnc.com",
+          "eburim.viewdns.net",
+          "eduin21.zapto.org",
+          "elecinfonec.servehalflife.com",
+          "foodlab.hopto.org",
+          "formsgle.freedynamicdns.org",
+          "fresh.servepics.com",
+          "global.freedynamicdns.net",
+          "global.freedynamicdns.org",
+          "hamonsoft.serveblog.net",
+          "hanseo1.hopto.org",
+          "hometax.onthewifi.com",
+          "hwarang.myddns.me",
+          "jaminss.viewdns.net",
+          "janara.freedynamicdns.org",
+          "jeoash.servemp3.com",
+          "jstreco.myftp.biz",
+          "kanager.bounceme.net",
+          "kcgselect.servehalflife.com",
+          "kjmacgk.ddnsking.com",
+          "kookmina.servecounterstrike.com",
+          "ksd22.myddns.me",
+          "kumohhic.viewdns.net",
+          "kybook.viewdns.net",
+          "leader.gotdns.ch",
+          "likms.hopto.org",
+          "logindaums.ddnsking.com",
+          "loginsdaum.viewdns.net",
+          "mafolog.serveminecraft.net",
+          "mailplug.ddnsking.com",
+          "minjoo2.servehttp.com",
+          "mintaek.bounceme.net",
+          "munjanara.servehttp.com",
+          "necgo.serveblog.net",
+          "pattern.webhop.me",
+          "pixoneer.myvnc.com",
+          "plomacy.ddnsking.com",
+          "proeso.servehttp.com",
+          "prparty.webhop.me",
+          "puacgo1.servemp3.com",
+          "saevit.servebeer.com",
+          "safety.viewdns.net",
+          "samgiblue.servegame.com",
+          "sarang.serveminecraft.net",
+          "satreci.bounceme.net",
+          "sejonglog.hopto.org",
+          "signga.redirectme.net",
+          "steering.viewdns.net",
+          "stjpmsko.serveblog.net",
+          "surveymonkey.myddns.me",
+          "themiujoo.viewdns.net",
+          "tsuago.servehalflife.com",
+          "tsuagos.servehalflife.com",
+          "unipedu.servebeer.com",
+          "visdpaka.servemp3.com",
+          "visual.webhop.me",
+          "wwl1764.ddnsking.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1555611666343133185",
+        "https://asec.ahnlab.com/ko/33948/ (Korean)",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2023-0919.pdf (# TAG-74, TAG74)",
+        "https://www.virustotal.com/gui/ip-address/92.38.135.212/relations",
+        "https://otx.alienvault.com/pulse/62729ce9e66ec5fd15790d3a",
+        "https://www.virustotal.com/gui/file/56f714b1832d0eb58a688c843d417653b1219d3d0b7644049db7b6156b24274b/detection"
+      ],
+      "total": 66
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2023-05-06",
+      "indicators": {
+        "ipv4": [
+          "153.234.77.155:8080",
+          "45.133.194.135:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec.ahnlab.com/en/51746/",
+        "https://otx.alienvault.com/pulse/644fbd07a98ffc006a3e71cc"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-05-06",
+      "indicators": {
+        "domain": [
+          "hairouni.serveblog.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec.ahnlab.com/en/51746/",
+        "https://otx.alienvault.com/pulse/644fbd07a98ffc006a3e71cc",
+        "https://twitter.com/h2jazi/status/1555611666343133185",
+        "https://asec.ahnlab.com/ko/33948/ (Korean)",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2023-0919.pdf (# TAG-74, TAG74)",
+        "https://www.virustotal.com/gui/ip-address/92.38.135.212/relations",
+        "https://otx.alienvault.com/pulse/62729ce9e66ec5fd15790d3a",
+        "https://www.virustotal.com/gui/file/56f714b1832d0eb58a688c843d417653b1219d3d0b7644049db7b6156b24274b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1,
+        "url_path": 4
+      },
+      "first_seen": "2023-02-13",
+      "indicators": {
+        "ipv4": [
+          "103.85.20.194:443",
+          "137.220.176.165:443"
+        ],
+        "url": [
+          "http://137.220.176.165"
+        ],
+        "url_path": [
+          "/ru/news/index.php?strPageID=",
+          "/ru/order/index.php?strPageID=",
+          "/siteFiles/index.php?strPageID=",
+          "/xhome.native.page/datareader.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1537536029250490382",
+        "https://twitter.com/nao_sec/status/1538857219025817605",
+        "https://twitter.com/GroupIB_TI/status/1625050738933071873",
+        "https://www.sentinelone.com/labs/targets-of-interest-russian-organizations-increasingly-under-attack-by-chinese-apts/",
+        "https://www.group-ib.com/blog/tonto-team/",
+        "https://www.virustotal.com/gui/ip-address/137.220.176.165/relations",
+        "https://www.virustotal.com/gui/ip-address/64.233.167.99/relations",
+        "https://www.virustotal.com/gui/file/c7018ee3783f4b2fb19fedc78c59586390efa1b72c907867794bf42141eb767c/detection",
+        "https://www.virustotal.com/gui/file/7944fa9cbfef2c7d652f032edc159abeaa1fb4fd64143a8fe3b175095c4519f5/detection",
+        "https://www.virustotal.com/gui/file/ba2c89192643f05e64f49b5cb3513a6a5bbfa719225af3b72c83587b8b774e8d/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-08-06",
+      "indicators": {
+        "domain": [
+          "ckstar.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1555611666343133185",
+        "https://asec.ahnlab.com/ko/33948/ (Korean)",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2023-0919.pdf (# TAG-74, TAG74)",
+        "https://www.virustotal.com/gui/ip-address/92.38.135.212/relations",
+        "https://otx.alienvault.com/pulse/62729ce9e66ec5fd15790d3a",
+        "https://www.virustotal.com/gui/file/56f714b1832d0eb58a688c843d417653b1219d3d0b7644049db7b6156b24274b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-07-07",
+      "indicators": {
+        "domain": [
+          "instructor.giize.com",
+          "news.wooordhunts.com",
+          "wooordhunts.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1537536029250490382",
+        "https://twitter.com/nao_sec/status/1538857219025817605",
+        "https://twitter.com/GroupIB_TI/status/1625050738933071873",
+        "https://www.sentinelone.com/labs/targets-of-interest-russian-organizations-increasingly-under-attack-by-chinese-apts/",
+        "https://www.group-ib.com/blog/tonto-team/",
+        "https://www.virustotal.com/gui/ip-address/137.220.176.165/relations",
+        "https://www.virustotal.com/gui/ip-address/64.233.167.99/relations",
+        "https://www.virustotal.com/gui/file/c7018ee3783f4b2fb19fedc78c59586390efa1b72c907867794bf42141eb767c/detection",
+        "https://www.virustotal.com/gui/file/7944fa9cbfef2c7d652f032edc159abeaa1fb4fd64143a8fe3b175095c4519f5/detection",
+        "https://www.virustotal.com/gui/file/ba2c89192643f05e64f49b5cb3513a6a5bbfa719225af3b72c83587b8b774e8d/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-20",
+      "indicators": {
+        "domain": [
+          "ramblercloud.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1538914969495928838",
+        "https://www.virustotal.com/gui/file/a56003dc199224113e9c85b0edb2197d4a4af91b15e7d0710873e2ef848c3221/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-06-18",
+      "indicators": {
+        "domain": [
+          "lingrevelat.com",
+          "supportteam.lingrevelat.com",
+          "thresident.com",
+          "upportteam.lingrevelat.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1537536029250490382",
+        "https://twitter.com/nao_sec/status/1538857219025817605",
+        "https://twitter.com/GroupIB_TI/status/1625050738933071873",
+        "https://www.sentinelone.com/labs/targets-of-interest-russian-organizations-increasingly-under-attack-by-chinese-apts/",
+        "https://www.group-ib.com/blog/tonto-team/",
+        "https://www.virustotal.com/gui/ip-address/137.220.176.165/relations",
+        "https://www.virustotal.com/gui/ip-address/64.233.167.99/relations",
+        "https://www.virustotal.com/gui/file/c7018ee3783f4b2fb19fedc78c59586390efa1b72c907867794bf42141eb767c/detection",
+        "https://www.virustotal.com/gui/file/7944fa9cbfef2c7d652f032edc159abeaa1fb4fd64143a8fe3b175095c4519f5/detection",
+        "https://www.virustotal.com/gui/file/ba2c89192643f05e64f49b5cb3513a6a5bbfa719225af3b72c83587b8b774e8d/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-05-04",
+      "indicators": {
+        "domain": [
+          "finance.my-homeip.com",
+          "formsgle.freedynamicdns.net",
+          "harvest.my-homeip.net",
+          "skparty.myonlineportal.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1555611666343133185",
+        "https://asec.ahnlab.com/ko/33948/ (Korean)",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2023-0919.pdf (# TAG-74, TAG74)",
+        "https://www.virustotal.com/gui/ip-address/92.38.135.212/relations",
+        "https://otx.alienvault.com/pulse/62729ce9e66ec5fd15790d3a",
+        "https://www.virustotal.com/gui/file/56f714b1832d0eb58a688c843d417653b1219d3d0b7644049db7b6156b24274b/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-17",
+      "indicators": {
+        "ipv4": [
+          "103.231.14.134:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/b1ee236a36f04ca43d3c8e3ad6255b59e13902688d45ec78babcb046eac9e514/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2021-07-07",
+      "indicators": {
+        "domain": [
+          "bitsshare.com",
+          "myblogcloud.com",
+          "myforumcloud.com",
+          "mynotecloud.com",
+          "myschedulecloud.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/8th_grey_owl/status/1412583883137110020",
+        "https://www.virustotal.com/gui/ip-address/67.205.76.102/relations",
+        "https://www.virustotal.com/gui/file/677e697644f7c0d83a30e2daaddb93fc5a4707292b4490e8bf8856e87a7a1af4/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-02-13",
+      "indicators": {
+        "domain": [
+          "search.system-ns.net",
+          "ww1.system-ns.net",
+          "ww12.system-ns.net",
+          "ww7.system-ns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/beb8c6dce6088512ef28a4431ad57ffb198bfe0cce2fa0f9442d1bf0a80c19a1/detection",
+        "https://www.virustotal.com/gui/file/d5da23df6242a672e8fd520db6d91926c7861c685dfb2b4e6b3cda70935af1a1/detection",
+        "https://www.virustotal.com/gui/file/b6584fe5d4e1c8fbbae108e79e87f8f82999aaae7b225f84cea3c7b37ab56256/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-13",
+      "indicators": {
+        "domain": [
+          "comunity.system-ns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/dc9645b7ed1e88442b74be13298afa3d2dcca48e6563c548ce0442140d0246ea/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-13",
+      "indicators": {
+        "domain": [
+          "jobnate.system-ns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/d181dc5c6806077378d6951cb3ec67074f0c953b8fde0c9c712331a046d38c8e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-13",
+      "indicators": {
+        "domain": [
+          "gomalove.system-ns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/969bd3755589e616b8bcf553c7fbad2056a79fcd054edf9594f0ee54256609ac/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-02-12",
+      "indicators": {
+        "url_path": [
+          "/krsy/a.asp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/beb8c6dce6088512ef28a4431ad57ffb198bfe0cce2fa0f9442d1bf0a80c19a1/detection",
+        "https://www.virustotal.com/gui/file/d5da23df6242a672e8fd520db6d91926c7861c685dfb2b4e6b3cda70935af1a1/detection",
+        "https://www.virustotal.com/gui/file/b6584fe5d4e1c8fbbae108e79e87f8f82999aaae7b225f84cea3c7b37ab56256/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 31
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "acivo.serveblog.net",
+          "adobe-online.com",
+          "adoberevise.com",
+          "anna111.epac.to",
+          "babyhome.lflink.com",
+          "babyhome.mefound.com",
+          "bluesky.jkub.com",
+          "chrgeom.system-ns.net",
+          "creepbeforeyouwalk.com",
+          "doctor-s.dhcp.biz",
+          "doctor-s.edns.biz",
+          "finance.my-homeip.net",
+          "gedadye.com",
+          "home-blog.dynssl.com",
+          "hotadobes.com",
+          "kakao.myonlineportal.org",
+          "lovehome.zzux.com",
+          "luckybabys.dnset.com",
+          "lucylucy.dynamic-dns.net",
+          "media.myonlineportal.net",
+          "missca.justdied.com",
+          "movie2014.passas.us",
+          "music2014.passas.us",
+          "officerevise.com",
+          "online-offices.com",
+          "sdkpress.com",
+          "tcostream.dhcp.biz",
+          "tradekorea.system-ns.org",
+          "tvpot.system-ns.org",
+          "webtvpot.system-ns.org",
+          "wikipedia.dnset.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 4)"
+      ],
+      "total": 31
+    },
+    {
+      "counts": {
+        "domain": 26
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "abulasha-banama.onedumb.com",
+          "best.indoingwulearn.com",
+          "connts.zzux.com",
+          "fdods.my03.com",
+          "fdtg.dynamic-dns.net",
+          "fose.mos2ioa.com",
+          "gotomail.ddns.net",
+          "gtfd.mos2ioa.com",
+          "hellomydog.compress.to",
+          "hellomydog.mrface.com",
+          "indoingwulearn.com",
+          "lucylucy.ninth.biz",
+          "misova.mos2ioa.com",
+          "mos2ioa.com",
+          "mosclar.mrbonus.com",
+          "mvp.onedumb.com",
+          "nmbpo.com",
+          "relerc.ddns.net",
+          "shuudans.com",
+          "svyaztu.indoingwulearn.com",
+          "tsahimt.com",
+          "tsowe.2waky.com",
+          "tube.compress.to",
+          "vip.fartit.com",
+          "vip.onedumb.com",
+          "yandexmedia.serveuser.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 3)"
+      ],
+      "total": 26
+    },
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "adobeupdata.zzux.com",
+          "adobeupdate.dns04.com",
+          "baekmaonline.com",
+          "beatidc.com",
+          "bravojack.justdied.com",
+          "chromeupdate.lflink.com",
+          "cnnmirror.com",
+          "gmailserverweb.com",
+          "havsar.com",
+          "lubny23.com",
+          "maintenance.baekmaonline.com",
+          "news-serverweb.com",
+          "prettyrose.justdied.com",
+          "shop.beatidc.com",
+          "store.beatidc.com",
+          "support.baekmaonline.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 5)"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "bbc.xxxy.info",
+          "daummail.otzo.com",
+          "ftp.sshdd.toythieves.com",
+          "golfmsdn.com",
+          "manage.yesterdayko.com",
+          "organisea.rutrackerbit.com",
+          "rutrackerbit.com",
+          "search.yesterdayko.com",
+          "sshdd.toythieves.com",
+          "tknow.squirly.info",
+          "yesterdayko.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 6)"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2020-09-08",
+      "indicators": {
+        "domain": [
+          "bluecat.mefound.com",
+          "developman.ocry.com",
+          "free2015.longmusic.com",
+          "freemusic.zzux.com",
+          "gmarket.system-ns.org",
+          "redfish.misecure.com",
+          "serviceonline.otzo.com",
+          "videoservice.dnset.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 4)"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-09-08",
+      "indicators": {
+        "domain": [
+          "daum.xxuz.com",
+          "facegooglebook.mrbasic.com",
+          "msdn.ezua.com",
+          "yandex.mrface.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 6)"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-09-08",
+      "indicators": {
+        "domain": [
+          "g00gleru.wikaba.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ru-ru/research/pt-esc-threat-intelligence/shadowpad-novaya-aktivnost-gruppirovki-winnti/ (Russian, # Bisonal IOC)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2020-08-15",
+      "indicators": {
+        "url": [
+          "http://154.223.175.115/chapter1/user.html/",
+          "http://154.95.17.145/chapter1/user.html/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/cactuspete-apt-groups-updated-bisonal-backdoor/97962/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "domain": [
+          "japanbaba.myfw.us",
+          "koreamama.myfw.us"
+        ],
+        "url": [
+          "http://61.90.202.198"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securitykitten.github.io/2014/11/25/curious-korlia.html",
+        "https://www.virustotal.com/gui/ip-address/61.90.202.198/relations",
+        "https://www.virustotal.com/gui/file/dc9f17c87397428089e70aeea5af47f5588460b4ae5b8effb5370dc742eff1cf/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "domain": [
+          "nancyxi.gotdns.org",
+          "nothree.myfw.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/98c59d682da617f993f3d57bb9e3ff076caa7469ddb0701c46715c25c9c0453d/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "domain": [
+          "shinkhw.organiccrap.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/83231d8e25f1c8d74aa9eb07f18dca9154323e0f372b29d89a2ce2dcbfad6cf8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "domain": [
+          "webmaff.dns05.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/80f8c3c2f44dc514500b49adc31b9b4e269ea2604fc09a94d7e4c6bce18223a1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-13",
+      "indicators": {
+        "domain": [
+          "shinkhw.myfw.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/13c5eb2c8deaf1b4b51eac782cc1f1a7c64e2ee8a9a12d37c25b45b09524c354/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-17",
+      "indicators": {
+        "domain": [
+          "offices-update.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/nao_sec/status/1273209439764406272",
+        "https://app.any.run/tasks/4c751168-358a-49c9-b751-e5b4aad9b060/",
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 4)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-03-07",
+      "indicators": {
+        "domain": [
+          "imbc.onthewifi.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asec.ahnlab.com/1298",
+        "https://twitter.com/vigilantbeluga/status/1235496629811077121",
+        "https://otx.alienvault.com/pulse/5e612f6d1dadda20c4314b21"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 22
+      },
+      "first_seen": "2020-03-05",
+      "indicators": {
+        "domain": [
+          "0906.toh.info",
+          "21kmg.my-homeip.net",
+          "agent.my-homeip.net",
+          "amanser951.otzo.com",
+          "applejp.myfw.us",
+          "dds.walshdavis.com",
+          "dnsdns1.passas.us",
+          "emsit.serveirc.com",
+          "faceto.uglyas.com",
+          "hansun.serveblog.net",
+          "indbaba.myfw.us",
+          "kazama.myfw.us",
+          "kfsinfo.byinter.net",
+          "kreng.bounceme.net",
+          "mycount.mrslove.com",
+          "navego.serveblog.net",
+          "nayana.adultdns.net",
+          "shinkhek.myfw.us",
+          "since.qpoe.com",
+          "usababa.myfw.us",
+          "v3net.rr.nu",
+          "wew.mymom.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html"
+      ],
+      "total": 22
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-22",
+      "indicators": {
+        "domain": [
+          "hosting.tempors.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
+        "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-22",
+      "indicators": {
+        "domain": [
+          "uacmoscow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/spreadsheets/d/1lDzylI6Jymz7EE0agRVUsL3kwmJSRDjXYjr5l5MUOEk/edit#gid=127522608 (# Bisonal)",
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 4)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-22",
+      "indicators": {
+        "domain": [
+          "svyaztulaya.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/spreadsheets/d/1lDzylI6Jymz7EE0agRVUsL3kwmJSRDjXYjr5l5MUOEk/edit#gid=127522608 (# Bisonal)",
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 3)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-14",
+      "indicators": {
+        "domain": [
+          "etude.servemp3.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1216689015035977730",
+        "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "domain": [
+          "stcinet.com",
+          "stcnet.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 3)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-29",
+      "indicators": {
+        "domain": [
+          "nubpubwizard.jetos.com",
+          "worktrs.wikaba.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blu3_team/status/951647866531057665",
+        "https://vblocalhost.com/uploads/VB2020-Lunghi-Horejsi.pdf (# Cluster 3)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2018-08-02",
+      "indicators": {
+        "domain": [
+          "euiro8966.organiccrap.com",
+          "games.my-homeip.com",
+          "jennifer998.lookin.at",
+          "kted56erhg.dynssl.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
+        "https://blog.talosintelligence.com/2020/03/bisonal-10-years-of-play.html"
+      ],
+      "total": 4
+    }
+  ]
+}

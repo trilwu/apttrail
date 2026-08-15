@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1553029419",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "60aa6896-8544-513d-ac01-fd5c4a0206a8",
+        "value": "/bbs/icon/ritian.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1553029419",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "b2edca76-0136-5f71-b922-908f7687113d",
+        "value": "/include/bin/visab.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:goldenbird"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOLDENBIRD",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "53a2c3ec-0a92-5450-9876-5069a904e551"
+  }
+}

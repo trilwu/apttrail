@@ -1,0 +1,57 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "url": 2
+  },
+  "first_seen": {
+    "url": {
+      "gezelimmi.com/wp-includes/misc/bb/": "2016-02-23",
+      "horizons-tourisme.com/_vti_bin/_vti_msc/bb/": "2016-02-23"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2016-02-23",
+    "latest": "2016-02-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "gezelimmi.com/wp-includes/misc/bb/",
+      "horizons-tourisme.com/_vti_bin/_vti_msc/bb/"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BABAR"
+  ],
+  "references": [
+    "http://www.cyphort.com/babar-suspected-nation-state-spyware-spotlight/"
+  ],
+  "related": [],
+  "slug": "BABAR",
+  "timeline": [
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "url": [
+          "gezelimmi.com/wp-includes/misc/bb/",
+          "horizons-tourisme.com/_vti_bin/_vti_msc/bb/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.cyphort.com/babar-suspected-nation-state-spyware-spotlight/"
+      ],
+      "total": 2
+    }
+  ]
+}

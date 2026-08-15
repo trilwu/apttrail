@@ -1,0 +1,65 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4
+  },
+  "first_seen": {
+    "domain": {
+      "encagil.com": "2023-09-21",
+      "explorecell.com": "2023-09-21",
+      "mode.encagil.com": "2023-09-21",
+      "ssl.explorecell.com": "2023-09-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-09-21",
+    "latest": "2023-09-21"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "encagil.com",
+      "explorecell.com",
+      "mode.encagil.com",
+      "ssl.explorecell.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SANDMAN"
+  ],
+  "references": [
+    "https://www.sentinelone.com/labs/sandman-apt-a-mystery-group-targeting-telcos-with-a-luajit-toolkit/",
+    "https://www.virustotal.com/gui/file/0b962ad02e8eef3c717ce6fcfda9587f92ebe9e7ed6ee93be6bc1103daa4e8bf/detection"
+  ],
+  "related": [],
+  "slug": "SANDMAN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-09-21",
+      "indicators": {
+        "domain": [
+          "encagil.com",
+          "explorecell.com",
+          "mode.encagil.com",
+          "ssl.explorecell.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/sandman-apt-a-mystery-group-targeting-telcos-with-a-luajit-toolkit/",
+        "https://www.virustotal.com/gui/file/0b962ad02e8eef3c717ce6fcfda9587f92ebe9e7ed6ee93be6bc1103daa4e8bf/detection"
+      ],
+      "total": 4
+    }
+  ]
+}

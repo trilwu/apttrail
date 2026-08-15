@@ -1,0 +1,111 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b781b317-4219-511d-a8ac-463eece2e03d",
+        "value": "analytics-google.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5621f017-4306-5492-b9d0-33c436aa27d4",
+        "value": "go-microstf.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570183409",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "61f01228-e4de-5835-b272-9fa119dbfdc5",
+        "value": "key8854321.pub"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "91b94dd2-549e-5861-b9c4-5e134df4f908",
+        "value": "maps-modon.club"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ae1a8ea6-3efa-5e05-8cd0-60385f7b6dcb",
+        "value": "mol.com-ho.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1553722241",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "03929e84-b989-5db8-8276-7d94f8132b1f",
+        "value": "mynetwork.ddns.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1dc45a75-9b24-5f08-90c4-b561a9ea36da",
+        "value": "ntg-sa.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570183409",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "846c08cc-ba6d-5c06-9147-d7ed6280a3e1",
+        "value": "possibletarget.ddns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1487327095",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8211282e-6458-5f3b-8364-a97969e31412",
+        "value": "winappupdater.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1570274687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ace345cc-f2dd-555f-abe3-e0aa85dd2cfe",
+        "value": "winupdater.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:shamoon"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: SHAMOON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "b08dc961-0619-5883-9fc4-3bda9e135d07"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "aliases": [
+    "iocontrol"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "ocferda.com": "2024-12-13",
+      "tylarion867mino.com": "2024-12-13",
+      "uuokhhfsdlk.tylarion867mino.com": "2024-12-13"
+    },
+    "ipv4": {
+      "159.100.6.69:8883": "2024-12-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-12-13",
+    "latest": "2024-12-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ocferda.com",
+      "tylarion867mino.com",
+      "uuokhhfsdlk.tylarion867mino.com"
+    ],
+    "ipv4": [
+      "159.100.6.69:8883"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CYBERAV3NGERS"
+  ],
+  "references": [
+    "https://claroty.com/team82/research/inside-a-new-ot-iot-cyber-weapon-iocontrol",
+    "https://www.virustotal.com/gui/file/1b39f9b2b96a6586c4a11ab2fdbff8fdf16ba5a0ac7603149023d73f33b84498/detection",
+    "https://www.virustotal.com/gui/ip-address/159.100.6.69/relations"
+  ],
+  "related": [],
+  "slug": "CYBERAV3NGERS",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-13",
+      "indicators": {
+        "domain": [
+          "ocferda.com",
+          "tylarion867mino.com",
+          "uuokhhfsdlk.tylarion867mino.com"
+        ],
+        "ipv4": [
+          "159.100.6.69:8883"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://claroty.com/team82/research/inside-a-new-ot-iot-cyber-weapon-iocontrol",
+        "https://www.virustotal.com/gui/ip-address/159.100.6.69/relations",
+        "https://www.virustotal.com/gui/file/1b39f9b2b96a6586c4a11ab2fdbff8fdf16ba5a0ac7603149023d73f33b84498/detection"
+      ],
+      "total": 4
+    }
+  ]
+}

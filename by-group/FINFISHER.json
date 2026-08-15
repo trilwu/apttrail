@@ -1,0 +1,234 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11,
+    "ipv4": 10,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "browserupdate.download": "2020-09-28",
+      "ff-demo.blogdns.org": "2015-03-18",
+      "google.wwwhost.biz": "2018-09-23",
+      "info.dynamic-dns.net": "2018-09-23",
+      "news-youm7.com": "2018-09-23",
+      "pal2me.net": "2018-09-23",
+      "pal4u.net": "2018-09-23",
+      "shop8d.net": "2018-09-23",
+      "tiger.gamma-international.de": "2015-03-18",
+      "workingulf.net": "2018-09-23",
+      "wp.piedslibres.com": "2018-09-23"
+    },
+    "ipv4": {
+      "108.61.190.183:443": "2021-10-12",
+      "109.235.67.175:443": "2021-10-12",
+      "184.82.101.234:443": "2020-12-01",
+      "184.82.101.234:53": "2020-12-01",
+      "185.141.24.204:443": "2021-10-12",
+      "185.25.51.104:443": "2021-10-12",
+      "213.252.247.105:443": "2021-10-12",
+      "45.86.136.138:443": "2021-10-12",
+      "45.86.163.138:443": "2022-04-04",
+      "79.143.87.216:443": "2021-10-12"
+    },
+    "url": {
+      "http://158.69.105.207": "2020-09-28",
+      "http://172.241.27.171": "2020-09-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2022-04-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "browserupdate.download",
+      "ff-demo.blogdns.org",
+      "google.wwwhost.biz",
+      "info.dynamic-dns.net",
+      "news-youm7.com",
+      "pal2me.net",
+      "pal4u.net",
+      "shop8d.net",
+      "tiger.gamma-international.de",
+      "workingulf.net",
+      "wp.piedslibres.com"
+    ],
+    "ipv4": [
+      "108.61.190.183:443",
+      "109.235.67.175:443",
+      "184.82.101.234:443",
+      "184.82.101.234:53",
+      "185.141.24.204:443",
+      "185.25.51.104:443",
+      "213.252.247.105:443",
+      "45.86.136.138:443",
+      "45.86.163.138:443",
+      "79.143.87.216:443"
+    ],
+    "url": [
+      "http://158.69.105.207",
+      "http://172.241.27.171"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FINFISHER"
+  ],
+  "references": [
+    "http://securityaffairs.co/wordpress/8085/intelligence/finfisher-the-case-of-a-cyber-espionage-found-everywhere.html",
+    "https://app.any.run/tasks/a717ebe4-e74f-4b0a-8233-b138906861a8/",
+    "https://citizenlab.ca/2015/10/mapping-finfishers-continuing-proliferation/",
+    "https://community.rapid7.com/community/infosec/blog/2012/08/08/finfisher",
+    "https://otx.alienvault.com/pulse/5f6e34fc8c150f8d8fb9c337",
+    "https://otx.alienvault.com/pulse/6153383f0a31835f61921552",
+    "https://securelist.com/finspy-unseen-findings/104322/",
+    "https://twitter.com/billmarczak/status/511798673504620545",
+    "https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt-and-mac-and-linux-versions-revealed/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0081"
+    }
+  ],
+  "slug": "FINFISHER",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "ipv4": [
+          "45.86.163.138:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/finspy-unseen-findings/104322/",
+        "https://otx.alienvault.com/pulse/6153383f0a31835f61921552"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 7
+      },
+      "first_seen": "2021-10-12",
+      "indicators": {
+        "ipv4": [
+          "108.61.190.183:443",
+          "109.235.67.175:443",
+          "185.141.24.204:443",
+          "185.25.51.104:443",
+          "213.252.247.105:443",
+          "45.86.136.138:443",
+          "79.143.87.216:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/finspy-unseen-findings/104322/",
+        "https://otx.alienvault.com/pulse/6153383f0a31835f61921552"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2020-12-01",
+      "indicators": {
+        "ipv4": [
+          "184.82.101.234:443",
+          "184.82.101.234:53"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://app.any.run/tasks/a717ebe4-e74f-4b0a-8233-b138906861a8/",
+        "https://twitter.com/billmarczak/status/511798673504620545"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 2
+      },
+      "first_seen": "2020-09-28",
+      "indicators": {
+        "domain": [
+          "browserupdate.download"
+        ],
+        "url": [
+          "http://158.69.105.207",
+          "http://172.241.27.171"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.amnesty.org/en/latest/research/2020/09/german-made-finspy-spyware-found-in-egypt-and-mac-and-linux-versions-revealed/",
+        "https://otx.alienvault.com/pulse/5f6e34fc8c150f8d8fb9c337"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2018-09-23",
+      "indicators": {
+        "domain": [
+          "google.wwwhost.biz",
+          "info.dynamic-dns.net",
+          "news-youm7.com",
+          "pal2me.net",
+          "pal4u.net",
+          "shop8d.net",
+          "workingulf.net",
+          "wp.piedslibres.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2015/10/mapping-finfishers-continuing-proliferation/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "ff-demo.blogdns.org",
+          "tiger.gamma-international.de"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://securityaffairs.co/wordpress/8085/intelligence/finfisher-the-case-of-a-cyber-espionage-found-everywhere.html",
+        "https://community.rapid7.com/community/infosec/blog/2012/08/08/finfisher"
+      ],
+      "total": 2
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "aliases": [
+    "apt-c-5"
+  ],
+  "attack_id": "G1023",
+  "attack_name": "APT5",
+  "attack_url": "https://attack.mitre.org/groups/G1023/",
+  "counts": {
+    "domain": 41,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "4jslg.diggfunny.com": "2022-04-10",
+      "alyac.org": "2022-04-10",
+      "bbs.edsplan.com": "2022-04-10",
+      "bbs.ezxsoft.com": "2022-04-10",
+      "bomuls.com": "2022-04-10",
+      "cache.mindplat.com": "2022-04-10",
+      "daumfan.com": "2022-04-10",
+      "dig.edsplan.com": "2022-04-10",
+      "diggfunny.com": "2022-04-10",
+      "dnf.diggfunny.com": "2022-04-10",
+      "download.bomuls.com": "2022-04-10",
+      "duamlive.com": "2022-04-10",
+      "edsplan.com": "2022-04-10",
+      "expre.dyndns.tv": "2022-04-10",
+      "ezxsoft.com": "2022-04-10",
+      "fh.edsplan.com": "2022-04-10",
+      "file1.nprotects.org": "2022-04-10",
+      "finalcover.com": "2022-04-10",
+      "fr.duamlive.com": "2022-04-10",
+      "gl.edsplan.com": "2022-04-10",
+      "l.finalcover.com": "2022-04-10",
+      "mindplat.com": "2022-04-10",
+      "n.duamlive.com": "2022-04-10",
+      "natefan.com": "2022-04-10",
+      "nateon.duamlive.com": "2022-04-10",
+      "nprotects.org": "2022-04-10",
+      "path.alyac.org": "2022-04-10",
+      "pc.nprotects.org": "2022-04-10",
+      "projectxz.com": "2022-04-10",
+      "ro.diggfunny.com": "2022-04-10",
+      "smartnet.edsplan.com": "2022-04-10",
+      "soucesp.com": "2022-04-10",
+      "t.finalcover.com": "2022-04-10",
+      "text.edsplan.com": "2022-04-10",
+      "trendmicros.net": "2022-04-10",
+      "unix.edsplan.com": "2022-04-10",
+      "update.alyac.org": "2022-04-10",
+      "update.nprotects.org": "2022-04-10",
+      "us.duamlive.com": "2022-04-10",
+      "vn.edsplan.com": "2022-04-10",
+      "wf.edsplan.com": "2022-04-10"
+    },
+    "ipv4": {
+      "116.127.121.41:8080": "2022-04-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-04-10",
+    "latest": "2022-04-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "4jslg.diggfunny.com",
+      "alyac.org",
+      "bbs.edsplan.com",
+      "bbs.ezxsoft.com",
+      "bomuls.com",
+      "cache.mindplat.com",
+      "daumfan.com",
+      "dig.edsplan.com",
+      "diggfunny.com",
+      "dnf.diggfunny.com",
+      "download.bomuls.com",
+      "duamlive.com",
+      "edsplan.com",
+      "expre.dyndns.tv",
+      "ezxsoft.com",
+      "fh.edsplan.com",
+      "file1.nprotects.org",
+      "finalcover.com",
+      "fr.duamlive.com",
+      "gl.edsplan.com",
+      "l.finalcover.com",
+      "mindplat.com",
+      "n.duamlive.com",
+      "natefan.com",
+      "nateon.duamlive.com",
+      "nprotects.org",
+      "path.alyac.org",
+      "pc.nprotects.org",
+      "projectxz.com",
+      "ro.diggfunny.com",
+      "smartnet.edsplan.com",
+      "soucesp.com",
+      "t.finalcover.com",
+      "text.edsplan.com",
+      "trendmicros.net",
+      "unix.edsplan.com",
+      "update.alyac.org",
+      "update.nprotects.org",
+      "us.duamlive.com",
+      "vn.edsplan.com",
+      "wf.edsplan.com"
+    ],
+    "ipv4": [
+      "116.127.121.41:8080"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "5"
+  ],
+  "references": [
+    "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2013/04/20082912/C5_APT_SKHack.pdf"
+  ],
+  "related": [],
+  "slug": "G1023",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 41,
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-10",
+      "indicators": {
+        "domain": [
+          "4jslg.diggfunny.com",
+          "alyac.org",
+          "bbs.edsplan.com",
+          "bbs.ezxsoft.com",
+          "bomuls.com",
+          "cache.mindplat.com",
+          "daumfan.com",
+          "dig.edsplan.com",
+          "diggfunny.com",
+          "dnf.diggfunny.com",
+          "download.bomuls.com",
+          "duamlive.com",
+          "edsplan.com",
+          "expre.dyndns.tv",
+          "ezxsoft.com",
+          "fh.edsplan.com",
+          "file1.nprotects.org",
+          "finalcover.com",
+          "fr.duamlive.com",
+          "gl.edsplan.com",
+          "l.finalcover.com",
+          "mindplat.com",
+          "n.duamlive.com",
+          "natefan.com",
+          "nateon.duamlive.com",
+          "nprotects.org",
+          "path.alyac.org",
+          "pc.nprotects.org",
+          "projectxz.com",
+          "ro.diggfunny.com",
+          "smartnet.edsplan.com",
+          "soucesp.com",
+          "t.finalcover.com",
+          "text.edsplan.com",
+          "trendmicros.net",
+          "unix.edsplan.com",
+          "update.alyac.org",
+          "update.nprotects.org",
+          "us.duamlive.com",
+          "vn.edsplan.com",
+          "wf.edsplan.com"
+        ],
+        "ipv4": [
+          "116.127.121.41:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2013/04/20082912/C5_APT_SKHack.pdf"
+      ],
+      "total": 42
+    }
+  ]
+}

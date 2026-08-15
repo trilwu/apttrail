@@ -1,0 +1,84 @@
+{
+  "aliases": [
+    "apt-c-27",
+    "goldmouse"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 5
+  },
+  "first_seen": {
+    "ipv4": {
+      "82.137.255.56:1740": "2019-03-27",
+      "82.137.255.56:1921": "2019-03-27",
+      "82.137.255.56:1940": "2019-04-20",
+      "82.137.255.56:1994": "2019-03-27",
+      "82.137.255.56:5602": "2019-04-20"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-03-27",
+    "latest": "2019-04-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "82.137.255.56:1740",
+      "82.137.255.56:1921",
+      "82.137.255.56:1940",
+      "82.137.255.56:1994",
+      "82.137.255.56:5602"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GOLDMOUSE"
+  ],
+  "references": [
+    "https://ti.360.net/blog/articles/apt-c-27-(goldmouse):-suspected-target-attack-against-the-middle-east-with-winrar-exploit-en/"
+  ],
+  "related": [],
+  "slug": "GOLDMOUSE",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2019-04-20",
+      "indicators": {
+        "ipv4": [
+          "82.137.255.56:1940",
+          "82.137.255.56:5602"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/apt-c-27-(goldmouse):-suspected-target-attack-against-the-middle-east-with-winrar-exploit-en/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 3
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "ipv4": [
+          "82.137.255.56:1740",
+          "82.137.255.56:1921",
+          "82.137.255.56:1994"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/apt-c-27-(goldmouse):-suspected-target-attack-against-the-middle-east-with-winrar-exploit-en/"
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1734126176",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12ecb239-3f2c-530d-a522-7f125c2cae13",
+        "value": "ocferda.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1734126176",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c1475e61-ae94-5e22-9225-cc01a4eeb0f0",
+        "value": "tylarion867mino.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1734126176",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2a04eb41-9c48-5d26-b055-014bca250bfc",
+        "value": "uuokhhfsdlk.tylarion867mino.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1734126176",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "48e418b0-014e-58ed-a021-6be6b93a2f3e",
+        "value": "159.100.6.69:8883"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cyberav3ngers"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CYBERAV3NGERS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "baf2243f-b2f9-5c4f-9c4a-6e44ed5b706e"
+  }
+}

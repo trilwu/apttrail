@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fef411c9-766c-5fa8-8630-292f56e76845",
+        "value": "adobupdate.serveftp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "33763a32-ce61-5344-91da-13c6c7906ba3",
+        "value": "adobupdate.servehttp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "10fda3a9-9488-5ec8-94c6-d21a0323968d",
+        "value": "antivirus.myftp.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7827d1ea-8384-53d3-9078-48ee7892d76e",
+        "value": "blogg.serveblog.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ee80992b-03d8-574e-a4dc-ac3d5c447a34",
+        "value": "driver.myftp.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "14ac33f7-53aa-50e2-99fe-235ba00fbc04",
+        "value": "halkinsesitv.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3449b3f3-c49b-52de-89af-769c820bb168",
+        "value": "messenger.serveirc.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b906a8a7-c1bf-5238-a0d8-2c99f09c0d35",
+        "value": "tigereyes2.servepics.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143498",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3d6494a1-b064-5a27-854a-321128e78c8c",
+        "value": "twiter.serveblog.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:egomaniac"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: EGOMANIAC",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "3235bf3a-49ee-548a-8f50-7fc99941dd12"
+  }
+}

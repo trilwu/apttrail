@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1569390074",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bff3fcaf-aedc-5c4a-b52c-322bf4e56bc2",
+        "value": "orionfile.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1569390074",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fd82636c-e9cf-550b-8ceb-041fc1d0d036",
+        "value": "tawaranmurah.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1569390074",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "3119773d-b9e3-5d95-aede-b2f2a9180da7",
+        "value": "http://81.4.100.197"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:deadlykiss"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DEADLYKISS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "75239f03-dfac-5558-9ac8-0ef2689e9ec3"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "aliases": [
+    "UIDAI"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "admin.samuelblog.xyz": "2022-04-16",
+      "date.samuelblog.info": "2022-04-16",
+      "db1.samuelblog.me": "2022-04-16",
+      "db1.samuelblog.site": "2022-04-16",
+      "samuelblog.info": "2022-04-16",
+      "samuelblog.me": "2022-04-16",
+      "samuelblog.site": "2022-04-16",
+      "samuelblog.website": "2022-04-16",
+      "samuelblog.xyz": "2022-04-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-04-16",
+    "latest": "2022-04-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "admin.samuelblog.xyz",
+      "date.samuelblog.info",
+      "db1.samuelblog.me",
+      "db1.samuelblog.site",
+      "samuelblog.info",
+      "samuelblog.me",
+      "samuelblog.site",
+      "samuelblog.website",
+      "samuelblog.xyz"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TAG28"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/614af64c63989af23d536083"
+  ],
+  "related": [],
+  "slug": "TAG28",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-04-16",
+      "indicators": {
+        "domain": [
+          "admin.samuelblog.xyz",
+          "date.samuelblog.info",
+          "db1.samuelblog.me",
+          "db1.samuelblog.site",
+          "samuelblog.info",
+          "samuelblog.me",
+          "samuelblog.site",
+          "samuelblog.website",
+          "samuelblog.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/614af64c63989af23d536083"
+      ],
+      "total": 9
+    }
+  ]
+}

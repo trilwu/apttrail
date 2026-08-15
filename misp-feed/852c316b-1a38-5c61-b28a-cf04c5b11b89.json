@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "efe37158-72f1-5819-a835-48e16514d0f8",
+        "value": "admin.samuelblog.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f78fba46-7054-57ce-8a9f-08b5c25c06d8",
+        "value": "date.samuelblog.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "85da39ba-c67a-5161-8385-d4c303dd625b",
+        "value": "db1.samuelblog.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8a7ecaf9-a948-513a-b710-b857873fad1e",
+        "value": "db1.samuelblog.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a25aaf81-c6a3-5348-b1cc-7d2bb9a57c0f",
+        "value": "samuelblog.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7995d219-5045-5ca9-8d51-3f444dfaed3d",
+        "value": "samuelblog.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1d87e329-ff86-5761-807d-d2131a0d4df7",
+        "value": "samuelblog.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f7fbc5da-8be8-587d-b45d-86886ac67f79",
+        "value": "samuelblog.website"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1650143209",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "263579cc-6408-5f0d-ba1a-a961fa0b8835",
+        "value": "samuelblog.xyz"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:tag28"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: TAG28",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "852c316b-1a38-5c61-b28a-cf04c5b11b89"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1709147655",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9388a662-6dc2-5e63-8c37-f1da2baa9efb",
+        "value": "softwarediskservice.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1709147655",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e440d65d-0066-5f95-af4f-eec0423ecb3d",
+        "value": "star.softwarediskservice.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:68"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: 68",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "499473f1-09f5-5c89-b19b-222302af98ad"
+  }
+}

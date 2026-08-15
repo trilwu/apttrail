@@ -1,0 +1,88 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11
+  },
+  "first_seen": {
+    "domain": {
+      "bkmail.blogdns.com": "2017-04-14",
+      "debain.servehttp.com": "2017-04-14",
+      "linuxdns.sytes.net": "2017-04-14",
+      "news.nhknews.hk": "2017-04-14",
+      "sswmail.gotdns.com": "2017-04-14",
+      "sswwmail.gotdns.com": "2017-04-14",
+      "sysnc.sytes.net": "2017-04-14",
+      "systeminfothai.gotdns.ch": "2017-04-14",
+      "thailandbbs.ddns.net": "2017-04-14",
+      "ubuntudns.sytes.net": "2017-04-14",
+      "web12.nhknews.hk": "2017-04-14"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-14",
+    "latest": "2017-04-14"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bkmail.blogdns.com",
+      "debain.servehttp.com",
+      "linuxdns.sytes.net",
+      "news.nhknews.hk",
+      "sswmail.gotdns.com",
+      "sswwmail.gotdns.com",
+      "sysnc.sytes.net",
+      "systeminfothai.gotdns.ch",
+      "thailandbbs.ddns.net",
+      "ubuntudns.sytes.net",
+      "web12.nhknews.hk"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BOOKWORM"
+  ],
+  "references": [
+    "http://researchcenter.paloaltonetworks.com/2015/11/bookworm-trojan-a-model-of-modular-architecture/",
+    "https://twitter.com/kienbigmummy/status/1557762252870385664",
+    "https://www.virustotal.com/gui/file/87ec9b5cb7f8dbdf5ea89cade8ab71b3303acff94b119c22bc2cc8c18a4e4260/detection"
+  ],
+  "related": [],
+  "slug": "BOOKWORM",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2017-04-14",
+      "indicators": {
+        "domain": [
+          "bkmail.blogdns.com",
+          "debain.servehttp.com",
+          "linuxdns.sytes.net",
+          "news.nhknews.hk",
+          "sswmail.gotdns.com",
+          "sswwmail.gotdns.com",
+          "sysnc.sytes.net",
+          "systeminfothai.gotdns.ch",
+          "thailandbbs.ddns.net",
+          "ubuntudns.sytes.net",
+          "web12.nhknews.hk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2015/11/bookworm-trojan-a-model-of-modular-architecture/",
+        "https://twitter.com/kienbigmummy/status/1557762252870385664",
+        "https://www.virustotal.com/gui/file/87ec9b5cb7f8dbdf5ea89cade8ab71b3303acff94b119c22bc2cc8c18a4e4260/detection"
+      ],
+      "total": 11
+    }
+  ]
+}

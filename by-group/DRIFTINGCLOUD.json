@@ -1,0 +1,98 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "url": 8
+  },
+  "first_seen": {
+    "domain": {
+      "akamprod.com": "2022-06-16",
+      "googleanalytics.proxydns.com": "2022-06-16",
+      "servusers.com": "2022-06-16",
+      "u2d.servusers.com": "2022-06-16"
+    },
+    "url": {
+      "http://158.247.200.24": "2022-06-16",
+      "http://180.149.38.136": "2022-06-16",
+      "http://185.82.218.66": "2022-06-16",
+      "http://192.248.152.58": "2022-06-16",
+      "http://209.250.231.67": "2022-06-16",
+      "http://5.188.228.40": "2022-06-16",
+      "http://95.85.71.20": "2022-06-16",
+      "http://95.85.71.23": "2022-06-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-06-16",
+    "latest": "2022-06-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "akamprod.com",
+      "googleanalytics.proxydns.com",
+      "servusers.com",
+      "u2d.servusers.com"
+    ],
+    "url": [
+      "http://158.247.200.24",
+      "http://180.149.38.136",
+      "http://185.82.218.66",
+      "http://192.248.152.58",
+      "http://209.250.231.67",
+      "http://5.188.228.40",
+      "http://95.85.71.20",
+      "http://95.85.71.23"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DRIFTINGCLOUD"
+  ],
+  "references": [
+    "https://github.com/volexity/threat-intel/blob/main/2022/2022-06-15%20DriftingCloud%20-%20Zero-Day%20Sophos%20Firewall%20Exploitation%20and%20an%20Insidious%20Breach/indicators/indicators.csv",
+    "https://www.volexity.com/blog/2022/06/15/driftingcloud-zero-day-sophos-firewall-exploitation-and-an-insidious-breach/"
+  ],
+  "related": [],
+  "slug": "DRIFTINGCLOUD",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "url": 8
+      },
+      "first_seen": "2022-06-16",
+      "indicators": {
+        "domain": [
+          "akamprod.com",
+          "googleanalytics.proxydns.com",
+          "servusers.com",
+          "u2d.servusers.com"
+        ],
+        "url": [
+          "http://158.247.200.24",
+          "http://180.149.38.136",
+          "http://185.82.218.66",
+          "http://192.248.152.58",
+          "http://209.250.231.67",
+          "http://5.188.228.40",
+          "http://95.85.71.20",
+          "http://95.85.71.23"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2022/06/15/driftingcloud-zero-day-sophos-firewall-exploitation-and-an-insidious-breach/",
+        "https://github.com/volexity/threat-intel/blob/main/2022/2022-06-15%20DriftingCloud%20-%20Zero-Day%20Sophos%20Firewall%20Exploitation%20and%20an%20Insidious%20Breach/indicators/indicators.csv"
+      ],
+      "total": 12
+    }
+  ]
+}

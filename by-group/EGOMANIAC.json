@@ -1,0 +1,80 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "adobupdate.serveftp.com": "2022-04-16",
+      "adobupdate.servehttp.com": "2022-04-16",
+      "antivirus.myftp.org": "2022-04-16",
+      "blogg.serveblog.net": "2022-04-16",
+      "driver.myftp.org": "2022-04-16",
+      "halkinsesitv.com": "2022-04-16",
+      "messenger.serveirc.com": "2022-04-16",
+      "tigereyes2.servepics.com": "2022-04-16",
+      "twiter.serveblog.net": "2022-04-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-04-16",
+    "latest": "2022-04-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adobupdate.serveftp.com",
+      "adobupdate.servehttp.com",
+      "antivirus.myftp.org",
+      "blogg.serveblog.net",
+      "driver.myftp.org",
+      "halkinsesitv.com",
+      "messenger.serveirc.com",
+      "tigereyes2.servepics.com",
+      "twiter.serveblog.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "EGOMANIAC"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/6138debb9bd98b0f5c3983a4",
+    "https://www.sentinelone.com/labs/egomaniac-an-unscrupulous-turkish-nexus-threat-actor/EGoManiac.pdf"
+  ],
+  "related": [],
+  "slug": "EGOMANIAC",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-04-16",
+      "indicators": {
+        "domain": [
+          "adobupdate.serveftp.com",
+          "adobupdate.servehttp.com",
+          "antivirus.myftp.org",
+          "blogg.serveblog.net",
+          "driver.myftp.org",
+          "halkinsesitv.com",
+          "messenger.serveirc.com",
+          "tigereyes2.servepics.com",
+          "twiter.serveblog.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/egomaniac-an-unscrupulous-turkish-nexus-threat-actor/EGoManiac.pdf",
+        "https://otx.alienvault.com/pulse/6138debb9bd98b0f5c3983a4"
+      ],
+      "total": 9
+    }
+  ]
+}

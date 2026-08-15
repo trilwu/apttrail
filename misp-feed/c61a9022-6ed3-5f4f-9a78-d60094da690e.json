@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d7404fca-cbfd-53df-9c70-de2ac24e93d9",
+        "value": "androidbak.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1c5c9065-c905-5bb7-8405-2c02ad768951",
+        "value": "droidback.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "981b67a4-521f-599f-8dd9-70b0be184e59",
+        "value": "endpointup.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1bd58f20-8dd4-5d3d-bec1-6868986fb8d6",
+        "value": "goodydaddy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2cf92bd1-00c3-5018-b323-ba48bb54bf3f",
+        "value": "siteanalysto.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:weakestlink"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: WEAKESTLINK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c61a9022-6ed3-5f4f-9a78-d60094da690e"
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 35
+  },
+  "first_seen": {
+    "domain": {
+      "bandtester.com": "2017-04-12",
+      "datasamsung.com": "2017-04-12",
+      "down.downloadoneyoutube.co.vu": "2017-04-12",
+      "downloadlog.linkpc.net": "2017-04-12",
+      "downloadmyhost.zapto.org": "2017-04-12",
+      "downloadtesting.com": "2017-04-12",
+      "dynamicipaddress.linkpc.net": "2017-04-12",
+      "exportball.servegame.org": "2017-04-12",
+      "ftpserverit.otzo.com": "2017-04-12",
+      "galaxy-s.com": "2017-04-12",
+      "galaxysupdates.com": "2017-04-12",
+      "gameoolines.com": "2017-04-12",
+      "gamestoplay.bid": "2017-04-12",
+      "havan.qhigh.com": "2017-04-12",
+      "help2014.linkpc.net": "2017-04-12",
+      "helpyoume.linkpc.net": "2017-04-12",
+      "hostgatero.ddns.net": "2017-04-12",
+      "kolabdown.sytes.net": "2017-04-12",
+      "microsoftnewupdate.com": "2017-04-06",
+      "netstreamag.publicvm.com": "2017-04-12",
+      "newphoneapp.com": "2017-04-12",
+      "noredirecto.redirectme.net": "2017-04-12",
+      "onlinesoft.space": "2017-04-12",
+      "progsupdate.com": "2017-04-06",
+      "rotter2.publicvm.com": "2017-04-12",
+      "safara.sytes.net": "2017-04-12",
+      "smartsftp.pw": "2017-04-12",
+      "speedbind.com": "2017-04-12",
+      "subsidiaryohio.linkpc.net": "2017-04-12",
+      "topgamse.com": "2017-04-12",
+      "ukgames.tech": "2017-04-12",
+      "viewnet.better-than.tv": "2017-04-12",
+      "wallanews.publicvm.com": "2017-04-12",
+      "wallanews.sytes.net": "2017-04-12",
+      "webfile.myq-see.com": "2017-04-12"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-06",
+    "latest": "2017-04-12"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bandtester.com",
+      "datasamsung.com",
+      "down.downloadoneyoutube.co.vu",
+      "downloadlog.linkpc.net",
+      "downloadmyhost.zapto.org",
+      "downloadtesting.com",
+      "dynamicipaddress.linkpc.net",
+      "exportball.servegame.org",
+      "ftpserverit.otzo.com",
+      "galaxy-s.com",
+      "galaxysupdates.com",
+      "gameoolines.com",
+      "gamestoplay.bid",
+      "havan.qhigh.com",
+      "help2014.linkpc.net",
+      "helpyoume.linkpc.net",
+      "hostgatero.ddns.net",
+      "kolabdown.sytes.net",
+      "microsoftnewupdate.com",
+      "netstreamag.publicvm.com",
+      "newphoneapp.com",
+      "noredirecto.redirectme.net",
+      "onlinesoft.space",
+      "progsupdate.com",
+      "rotter2.publicvm.com",
+      "safara.sytes.net",
+      "smartsftp.pw",
+      "speedbind.com",
+      "subsidiaryohio.linkpc.net",
+      "topgamse.com",
+      "ukgames.tech",
+      "viewnet.better-than.tv",
+      "wallanews.publicvm.com",
+      "wallanews.sytes.net",
+      "webfile.myq-see.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "QUASAR"
+  ],
+  "references": [
+    "http://researchcenter.paloaltonetworks.com/2017/01/unit42-downeks-and-quasar-rat-used-in-recent-targeted-attacks-against-governments/",
+    "https://www.symantec.com/security_response/writeup.jsp?docid=2017-020114-1619-99&tabid=2"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "11 shared indicators",
+          "kind": "infrastructure",
+          "weight": 11.0
+        }
+      ],
+      "slug": "GAZA"
+    }
+  ],
+  "slug": "QUASAR",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 33
+      },
+      "first_seen": "2017-04-12",
+      "indicators": {
+        "domain": [
+          "bandtester.com",
+          "datasamsung.com",
+          "down.downloadoneyoutube.co.vu",
+          "downloadlog.linkpc.net",
+          "downloadmyhost.zapto.org",
+          "downloadtesting.com",
+          "dynamicipaddress.linkpc.net",
+          "exportball.servegame.org",
+          "ftpserverit.otzo.com",
+          "galaxy-s.com",
+          "galaxysupdates.com",
+          "gameoolines.com",
+          "gamestoplay.bid",
+          "havan.qhigh.com",
+          "help2014.linkpc.net",
+          "helpyoume.linkpc.net",
+          "hostgatero.ddns.net",
+          "kolabdown.sytes.net",
+          "netstreamag.publicvm.com",
+          "newphoneapp.com",
+          "noredirecto.redirectme.net",
+          "onlinesoft.space",
+          "rotter2.publicvm.com",
+          "safara.sytes.net",
+          "smartsftp.pw",
+          "speedbind.com",
+          "subsidiaryohio.linkpc.net",
+          "topgamse.com",
+          "ukgames.tech",
+          "viewnet.better-than.tv",
+          "wallanews.publicvm.com",
+          "wallanews.sytes.net",
+          "webfile.myq-see.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://researchcenter.paloaltonetworks.com/2017/01/unit42-downeks-and-quasar-rat-used-in-recent-targeted-attacks-against-governments/"
+      ],
+      "total": 33
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-06",
+      "indicators": {
+        "domain": [
+          "progsupdate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2017-020114-1619-99&tabid=2",
+        "http://researchcenter.paloaltonetworks.com/2017/01/unit42-downeks-and-quasar-rat-used-in-recent-targeted-attacks-against-governments/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-06",
+      "indicators": {
+        "domain": [
+          "microsoftnewupdate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2017-020114-1619-99&tabid=2"
+      ],
+      "total": 1
+    }
+  ]
+}

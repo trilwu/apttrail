@@ -1,0 +1,63 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1619801278",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6d2b113a-259e-5e8c-8c6f-49c8757c02b3",
+        "value": "celomito.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619801278",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "847f901b-7d62-5275-ad56-d68839ca5ba5",
+        "value": "cosarm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619801278",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b6bf5052-e8b7-5cca-bdb9-d14ed717192e",
+        "value": "feticost.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619801278",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e48e8485-acbd-50bd-bee6-50290332b9f1",
+        "value": "portalcos.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc2447"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC2447",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "98e2a9db-38ea-520e-b2ad-54033e5b3b24"
+  }
+}

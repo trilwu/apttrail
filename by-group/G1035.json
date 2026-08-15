@@ -1,0 +1,415 @@
+{
+  "aliases": [
+    "sharpshooter",
+    "ta473"
+  ],
+  "attack_id": "G1035",
+  "attack_name": "Winter Vivern",
+  "attack_url": "https://attack.mitre.org/groups/G1035/",
+  "counts": {
+    "domain": 16,
+    "url": 5,
+    "url_path": 17
+  },
+  "first_seen": {
+    "domain": {
+      "applicationdevsoc.com": "2023-02-02",
+      "bugiplaysec.com": "2023-02-01",
+      "centr-security.com": "2022-04-04",
+      "marakanas.com": "2023-03-16",
+      "nepalihemp.com": "2023-03-31",
+      "ocs-romastassec.com": "2023-03-16",
+      "ocsp-reloads.com": "2023-03-17",
+      "ocsp-report.com": "2023-03-17",
+      "ocspdep.com": "2023-02-01",
+      "oscp-avanguard.com": "2023-03-31",
+      "recsecas.com": "2023-10-31",
+      "secure-daddy.com": "2022-04-04",
+      "securemanage.com": "2022-04-04",
+      "securetourspd.com": "2022-04-04",
+      "security-ocsp.com": "2023-02-02",
+      "troadsecow.com": "2023-01-31"
+    },
+    "url": {
+      "http://137.74.41.56": "2022-04-04",
+      "http://208.117.44.112": "2019-10-05",
+      "http://34.214.99.20": "2022-04-04",
+      "kingkoil.com.sg/board.php": "2018-12-19",
+      "kingkoil.com.sg/query.php": "2019-03-05"
+    },
+    "url_path": {
+      "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php": "2023-02-01",
+      "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php": "2023-02-01",
+      "/Kkdn7862Jj6h2oDASGmpqU4Qq4q4.php": "2023-03-16",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05.php": "2023-02-01",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php": "2023-02-01",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php": "2023-02-01",
+      "/fjasmngptwq214.php": "2023-02-01",
+      "/fjasmngptwq95824s.php": "2023-02-01",
+      "/fx64g15g.xml": "2023-02-01",
+      "/gkaslnwqpasg/fx64g15g.xml": "2023-02-01",
+      "/gkaslnwqpasg/usersfolders/": "2023-02-01",
+      "/goog_comredira3cf7ed34f8.php": "2023-03-16",
+      "/lg5362s5215098-xvbxzcnsaf4lmsa.php": "2023-02-01",
+      "/wintervivern/server/": "2022-04-04",
+      "/wintervivern/vivern/": "2022-04-04",
+      "/wintervivern/vivern/getAnswer.php?username=": "2022-04-04",
+      "/wintervivern/vivern/getcommand?username=": "2022-04-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-12-19",
+    "latest": "2023-10-31"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "applicationdevsoc.com",
+      "bugiplaysec.com",
+      "centr-security.com",
+      "marakanas.com",
+      "nepalihemp.com",
+      "ocs-romastassec.com",
+      "ocsp-reloads.com",
+      "ocsp-report.com",
+      "ocspdep.com",
+      "oscp-avanguard.com",
+      "recsecas.com",
+      "secure-daddy.com",
+      "securemanage.com",
+      "securetourspd.com",
+      "security-ocsp.com",
+      "troadsecow.com"
+    ],
+    "url": [
+      "http://137.74.41.56",
+      "http://208.117.44.112",
+      "http://34.214.99.20",
+      "kingkoil.com.sg/board.php",
+      "kingkoil.com.sg/query.php"
+    ],
+    "url_path": [
+      "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php",
+      "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php",
+      "/Kkdn7862Jj6h2oDASGmpqU4Qq4q4.php",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05.php",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php",
+      "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php",
+      "/fjasmngptwq214.php",
+      "/fjasmngptwq95824s.php",
+      "/fx64g15g.xml",
+      "/gkaslnwqpasg/fx64g15g.xml",
+      "/gkaslnwqpasg/usersfolders/",
+      "/goog_comredira3cf7ed34f8.php",
+      "/lg5362s5215098-xvbxzcnsaf4lmsa.php",
+      "/wintervivern/server/",
+      "/wintervivern/vivern/",
+      "/wintervivern/vivern/getAnswer.php?username=",
+      "/wintervivern/vivern/getcommand?username="
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "WINTERVIVERN"
+  ],
+  "references": [
+    "https://cert.gov.ua/article/3761104",
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-12-operation-sharpshooter-targets-global-defense-critical-infrastructure/operation-sharpshooter-targets-global-defense-critical-infrastructure.csv",
+    "https://lab52.io/blog/winter-vivern-all-summer/",
+    "https://otx.alienvault.com/pulse/6152feb7f8ed6979d6eb5c10",
+    "https://otx.alienvault.com/pulse/64134d77740d6bc14f3a8349",
+    "https://otx.alienvault.com/pulse/653a74e3546b288fb2e329a3",
+    "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-defense-critical-infrastructure/?mid=1",
+    "https://twitter.com/Cyber0verload/status/1620484493818855426",
+    "https://twitter.com/Cyber0verload/status/1636773766679109632",
+    "https://twitter.com/felixaime/status/1621189712105951232",
+    "https://twitter.com/felixaime/status/1636760060931248130",
+    "https://www.bleepingcomputer.com/news/security/winter-vivern-apt-hackers-use-fake-antivirus-scans-to-install-malware/",
+    "https://www.domaintools.com/resources/blog/winter-vivern-a-look-at-re-crafted-government-maldocs",
+    "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+    "https://www.proofpoint.com/us/blog/threat-insight/exploitation-dish-best-served-cold-winter-vivern-uses-known-zimbra-vulnerability",
+    "https://www.sentinelone.com/labs/winter-vivern-uncovering-a-wave-of-global-espionage/",
+    "https://www.virustotal.com/gui/file/05457a790782542d3f16c9b8368a077b458ff7349856e6da541223a51e94b9c8/detection",
+    "https://www.virustotal.com/gui/file/72028cff34d33e26bf01e4bf63c8b977ece33b3809bd6dd075bcff343895dc4b/detection",
+    "https://www.virustotal.com/gui/file/88a5287b6e9879e79240660408e2e868d9d332e3c37c753a05a40b87f1549646/detection",
+    "https://www.virustotal.com/gui/file/a5115118908268569db2b1187b5b13b2cec9480585728d7da0abff38ecd771a6/detection",
+    "https://www.virustotal.com/gui/ip-address/45.136.198.141/relations",
+    "https://www.welivesecurity.com/en/eset-research/winter-vivern-exploits-zero-day-vulnerability-roundcube-webmail-servers/"
+  ],
+  "related": [],
+  "slug": "G1035",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-10-31",
+      "indicators": {
+        "domain": [
+          "recsecas.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/winter-vivern-exploits-zero-day-vulnerability-roundcube-webmail-servers/",
+        "https://otx.alienvault.com/pulse/653a74e3546b288fb2e329a3"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-03-31",
+      "indicators": {
+        "domain": [
+          "nepalihemp.com",
+          "oscp-avanguard.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/exploitation-dish-best-served-cold-winter-vivern-uses-known-zimbra-vulnerability"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-03-17",
+      "indicators": {
+        "domain": [
+          "ocsp-reloads.com",
+          "ocsp-report.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1636760060931248130",
+        "https://twitter.com/Cyber0verload/status/1636773766679109632"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url_path": 2
+      },
+      "first_seen": "2023-03-16",
+      "indicators": {
+        "domain": [
+          "marakanas.com",
+          "ocs-romastassec.com"
+        ],
+        "url_path": [
+          "/Kkdn7862Jj6h2oDASGmpqU4Qq4q4.php",
+          "/goog_comredira3cf7ed34f8.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bleepingcomputer.com/news/security/winter-vivern-apt-hackers-use-fake-antivirus-scans-to-install-malware/",
+        "https://www.sentinelone.com/labs/winter-vivern-uncovering-a-wave-of-global-espionage/",
+        "https://otx.alienvault.com/pulse/64134d77740d6bc14f3a8349",
+        "https://www.virustotal.com/gui/file/a5115118908268569db2b1187b5b13b2cec9480585728d7da0abff38ecd771a6/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-02-02",
+      "indicators": {
+        "domain": [
+          "applicationdevsoc.com",
+          "security-ocsp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/felixaime/status/1621189712105951232"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url_path": 11
+      },
+      "first_seen": "2023-02-01",
+      "indicators": {
+        "domain": [
+          "bugiplaysec.com",
+          "ocspdep.com"
+        ],
+        "url_path": [
+          "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php",
+          "/76bja21412/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php",
+          "/c6bd801d882333fdb93dd17308b3e2de3a78cc05.php",
+          "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_.php",
+          "/c6bd801d882333fdb93dd17308b3e2de3a78cc05_1.php",
+          "/fjasmngptwq214.php",
+          "/fjasmngptwq95824s.php",
+          "/fx64g15g.xml",
+          "/gkaslnwqpasg/fx64g15g.xml",
+          "/gkaslnwqpasg/usersfolders/",
+          "/lg5362s5215098-xvbxzcnsaf4lmsa.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Cyber0verload/status/1620484493818855426",
+        "https://cert.gov.ua/article/3761104",
+        "https://www.virustotal.com/gui/ip-address/45.136.198.141/relations",
+        "https://www.virustotal.com/gui/file/05457a790782542d3f16c9b8368a077b458ff7349856e6da541223a51e94b9c8/detection",
+        "https://www.virustotal.com/gui/file/72028cff34d33e26bf01e4bf63c8b977ece33b3809bd6dd075bcff343895dc4b/detection"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-31",
+      "indicators": {
+        "domain": [
+          "troadsecow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Cyber0verload/status/1620484493818855426",
+        "https://cert.gov.ua/article/3761104",
+        "https://www.virustotal.com/gui/ip-address/45.136.198.141/relations",
+        "https://www.virustotal.com/gui/file/05457a790782542d3f16c9b8368a077b458ff7349856e6da541223a51e94b9c8/detection",
+        "https://www.virustotal.com/gui/file/72028cff34d33e26bf01e4bf63c8b977ece33b3809bd6dd075bcff343895dc4b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "url_path": [
+          "/wintervivern/server/",
+          "/wintervivern/vivern/",
+          "/wintervivern/vivern/getAnswer.php?username=",
+          "/wintervivern/vivern/getcommand?username="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/winter-vivern-exploits-zero-day-vulnerability-roundcube-webmail-servers/",
+        "https://otx.alienvault.com/pulse/653a74e3546b288fb2e329a3"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "domain": [
+          "centr-security.com",
+          "secure-daddy.com",
+          "securemanage.com",
+          "securetourspd.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.domaintools.com/resources/blog/winter-vivern-a-look-at-re-crafted-government-maldocs",
+        "https://lab52.io/blog/winter-vivern-all-summer/",
+        "https://otx.alienvault.com/pulse/6152feb7f8ed6979d6eb5c10"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "url": [
+          "http://137.74.41.56",
+          "http://34.214.99.20"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-defense-critical-infrastructure/?mid=1",
+        "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-12-operation-sharpshooter-targets-global-defense-critical-infrastructure/operation-sharpshooter-targets-global-defense-critical-infrastructure.csv",
+        "https://www.virustotal.com/gui/file/88a5287b6e9879e79240660408e2e868d9d332e3c37c753a05a40b87f1549646/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-10-05",
+      "indicators": {
+        "url": [
+          "http://208.117.44.112"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-defense-critical-infrastructure/?mid=1",
+        "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-12-operation-sharpshooter-targets-global-defense-critical-infrastructure/operation-sharpshooter-targets-global-defense-critical-infrastructure.csv",
+        "https://www.virustotal.com/gui/file/88a5287b6e9879e79240660408e2e868d9d332e3c37c753a05a40b87f1549646/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-03-05",
+      "indicators": {
+        "url": [
+          "kingkoil.com.sg/query.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-defense-critical-infrastructure/?mid=1",
+        "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-12-operation-sharpshooter-targets-global-defense-critical-infrastructure/operation-sharpshooter-targets-global-defense-critical-infrastructure.csv",
+        "https://www.virustotal.com/gui/file/88a5287b6e9879e79240660408e2e868d9d332e3c37c753a05a40b87f1549646/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2018-12-19",
+      "indicators": {
+        "url": [
+          "kingkoil.com.sg/board.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-defense-critical-infrastructure/?mid=1",
+        "https://www.mcafee.com/enterprise/en-us/assets/reports/rp-operation-sharpshooter.pdf",
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-12-operation-sharpshooter-targets-global-defense-critical-infrastructure/operation-sharpshooter-targets-global-defense-critical-infrastructure.csv",
+        "https://www.virustotal.com/gui/file/88a5287b6e9879e79240660408e2e868d9d332e3c37c753a05a40b87f1549646/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

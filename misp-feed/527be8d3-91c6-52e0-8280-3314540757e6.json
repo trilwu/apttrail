@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1697181261",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "8907cef8-9532-5ae0-9cb0-fad504464144",
+        "value": "65.109.157.77:42474"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1697181261",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "dad891c0-d451-58cf-a836-465cb89f6e8d",
+        "value": "http://65.109.157.77"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:caracalkitten"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CARACALKITTEN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "527be8d3-91c6-52e0-8280-3314540757e6"
+  }
+}

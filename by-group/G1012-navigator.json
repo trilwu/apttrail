@@ -1,0 +1,121 @@
+{
+  "name": "CURIUM (G1012) - APTtrail",
+  "description": "Techniques attributed to CURIUM by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1012.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1041",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1048.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1124",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1584.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.004",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by CURIUM",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

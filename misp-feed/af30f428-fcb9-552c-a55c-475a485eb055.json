@@ -1,0 +1,87 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ad0ade81-c484-54bf-904d-7a47e9d94fe5",
+        "value": "185.38.150.8:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "4d3d04a9-b9f6-52b0-98c2-a10c9b676fe2",
+        "value": "185.38.150.8:49736"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9079c910-d76b-5aa8-8c3d-fb90ad3da8e6",
+        "value": "88.80.148.65:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "3fccb7ae-0e6a-565a-a60f-688e7e64e463",
+        "value": "88.80.148.65:49713"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5de3afca-c11f-5f24-b51b-709db89ca8f2",
+        "value": "88.80.148.65:49714"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "a156cb74-f1a7-5047-a8b9-857b25027626",
+        "value": "http://185.38.150.8"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713346782",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "1779e892-d7bd-5a5a-b9f8-959ff824eb67",
+        "value": "http://88.80.148.65"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:kapeka"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: KAPEKA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "af30f428-fcb9-552c-a55c-475a485eb055"
+  }
+}

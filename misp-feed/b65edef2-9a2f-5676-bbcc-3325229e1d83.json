@@ -1,0 +1,171 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "712867a6-858c-5ce5-b505-2cadb7650823",
+        "value": "back.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1617185502",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9feaad42-b20b-5ede-b797-329e1c7cab0e",
+        "value": "bingoshow.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "30f97719-74a0-52d2-8331-4c91efbe66ce",
+        "value": "bk.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d40d2df3-8646-53cc-bdc0-cb927369e6f0",
+        "value": "does-no-exist33.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "adc1d0fd-6ed4-52c5-bc25-0dfe54b04b7e",
+        "value": "e.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "01e955bf-22f9-599a-b6ee-c11e225d1517",
+        "value": "indicate.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e919e396-7356-5349-be94-c54e94ab6188",
+        "value": "inducate.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8fd169fb-bf10-5ad9-9071-8e7362e54b73",
+        "value": "load.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0c7e0ca6-e35c-5b12-bc8b-3654f3750538",
+        "value": "log.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b611dde6-eb9d-532f-af22-2eb461cfd361",
+        "value": "moon.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1615558255",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bf778ee5-b5fd-5048-8625-b58053b53953",
+        "value": "p.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05074b25-0868-53cf-951e-d75274e562a7",
+        "value": "pslog.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1615327244",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b91d974a-042e-5eda-8e73-dbf008e37e41",
+        "value": "shelltools-1254394685.cos.ap-shanghai.myqcloud.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b75b35d9-d566-51b4-b98b-445679cb9af1",
+        "value": "sk.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "43e542da-14c9-573d-bde8-2bba2c789b1a",
+        "value": "sploit.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641769504",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "51bdd5da-6915-51ac-ac82-90c599bcf223",
+        "value": "task.estonine.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1615327244",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "da8a9fe8-dc91-532b-9aae-c2c8bc03b12a",
+        "value": "101.37.76.66:5000"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:hafnium"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"HAFNIUM - G0125\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: HAFNIUM (G0125) - Maltrail group HAFNIUM",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "b65edef2-9a2f-5676-bbcc-3325229e1d83"
+  }
+}

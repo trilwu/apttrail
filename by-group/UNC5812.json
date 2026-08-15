@@ -1,0 +1,64 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "civildefense.com.ua": "2024-10-29",
+      "fu-laravel.onrender.com": "2024-10-29",
+      "h315225216.nichost.ru": "2024-10-29"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-10-29",
+    "latest": "2024-10-29"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "civildefense.com.ua",
+      "fu-laravel.onrender.com",
+      "h315225216.nichost.ru"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC5812"
+  ],
+  "references": [
+    "https://cloud.google.com/blog/topics/threat-intelligence/russian-espionage-influence-ukrainian-military-recruits-anti-mobilization-narratives",
+    "https://www.virustotal.com/gui/file/009fffad90a45f979313340fa6dcd4ec1ab8bf8d26f747deaaf18bb11d8e8b6f/detection",
+    "https://x.com/blackorbird/status/1851104711304495238"
+  ],
+  "related": [],
+  "slug": "UNC5812",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-10-29",
+      "indicators": {
+        "domain": [
+          "civildefense.com.ua",
+          "fu-laravel.onrender.com",
+          "h315225216.nichost.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1851104711304495238",
+        "https://cloud.google.com/blog/topics/threat-intelligence/russian-espionage-influence-ukrainian-military-recruits-anti-mobilization-narratives",
+        "https://www.virustotal.com/gui/file/009fffad90a45f979313340fa6dcd4ec1ab8bf8d26f747deaaf18bb11d8e8b6f/detection"
+      ],
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "aliases": [
+    "entryshell",
+    "sparrowdoor",
+    "xiangoop"
+  ],
+  "attack_id": "G1045",
+  "attack_name": "Salt Typhoon",
+  "attack_url": "https://attack.mitre.org/groups/G1045/",
+  "counts": {
+    "domain": 14,
+    "ipv4": 15
+  },
+  "first_seen": {
+    "domain": {
+      "aftercould.com": "2021-10-26",
+      "amelicen.com": "2026-01-02",
+      "datacentreonline.com": "2021-10-26",
+      "dateupdata.com": "2024-10-29",
+      "freedecrease.com": "2021-10-26",
+      "game.newfreepre.com": "2021-10-26",
+      "imap.dateupdata.com": "2024-10-29",
+      "imap.newlylab.com": "2021-10-26",
+      "imap.webdignusdata.com": "2021-10-26",
+      "mail.reclubpress.com": "2021-10-26",
+      "newfreepre.com": "2021-10-26",
+      "newlylab.com": "2021-10-26",
+      "reclubpress.com": "2021-10-26",
+      "webdignusdata.com": "2021-10-26"
+    },
+    "ipv4": {
+      "103.85.25.166:8444": "2026-01-02",
+      "107.148.165.158:443": "2021-10-26",
+      "107.148.165.158:80": "2021-10-26",
+      "154.223.135.214:443": "2021-10-26",
+      "154.223.135.214:80": "2021-10-26",
+      "27.102.113.240:443": "2021-10-26",
+      "27.102.113.240:80": "2021-10-26",
+      "27.102.113.57:443": "2021-10-26",
+      "27.102.113.57:80": "2021-10-26",
+      "27.102.114.55:443": "2021-10-26",
+      "27.102.114.55:80": "2021-10-26",
+      "27.102.115.51:443": "2021-10-26",
+      "27.102.115.51:80": "2021-10-26",
+      "27.102.129.120:443": "2021-10-26",
+      "27.102.129.120:80": "2021-10-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "amelicen.com": "at-or-before"
+    },
+    "ipv4": {
+      "103.85.25.166:8444": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2021-10-26",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aftercould.com",
+      "amelicen.com",
+      "datacentreonline.com",
+      "dateupdata.com",
+      "freedecrease.com",
+      "game.newfreepre.com",
+      "imap.dateupdata.com",
+      "imap.newlylab.com",
+      "imap.webdignusdata.com",
+      "mail.reclubpress.com",
+      "newfreepre.com",
+      "newlylab.com",
+      "reclubpress.com",
+      "webdignusdata.com"
+    ],
+    "ipv4": [
+      "103.85.25.166:8444",
+      "107.148.165.158:443",
+      "107.148.165.158:80",
+      "154.223.135.214:443",
+      "154.223.135.214:80",
+      "27.102.113.240:443",
+      "27.102.113.240:80",
+      "27.102.113.57:443",
+      "27.102.113.57:80",
+      "27.102.114.55:443",
+      "27.102.114.55:80",
+      "27.102.115.51:443",
+      "27.102.115.51:80",
+      "27.102.129.120:443",
+      "27.102.129.120:80"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GHOSTEMPEROR"
+  ],
+  "references": [
+    "https://securelist.com/ghostemperor-from-proxylogon-to-kernel-mode/104407/",
+    "https://www.sygnia.co/blog/ghost-emperor-demodex-rootkit/",
+    "https://www.virustotal.com/gui/file/b696fe2f31279af1e006d89beb0ff0c1915df4f8a6d3a201ccda54505688840c/detection",
+    "https://www.virustotal.com/gui/file/f81a2e8a2a272e0bdae4e267fa220d6d40e23214087f33bdcdab6c7ad10b60b8/detection",
+    "https://www.virustotal.com/gui/ip-address/193.239.86.168/relations",
+    "https://www.virustotal.com/gui/ip-address/43.254.216.195/relations",
+    "https://www.virustotal.com/gui/ip-address/45.131.179.24/relations",
+    "https://www.welivesecurity.com/en/eset-research/you-will-always-remember-this-as-the-day-you-finally-caught-famoussparrow/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "EARTHESTRIES"
+    }
+  ],
+  "slug": "G1045",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "amelicen.com"
+        ],
+        "ipv4": [
+          "103.85.25.166:8444"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/you-will-always-remember-this-as-the-day-you-finally-caught-famoussparrow/",
+        "https://www.virustotal.com/gui/ip-address/45.131.179.24/relations",
+        "https://www.virustotal.com/gui/ip-address/43.254.216.195/relations",
+        "https://www.virustotal.com/gui/file/b696fe2f31279af1e006d89beb0ff0c1915df4f8a6d3a201ccda54505688840c/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-10-29",
+      "indicators": {
+        "domain": [
+          "dateupdata.com",
+          "imap.dateupdata.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sygnia.co/blog/ghost-emperor-demodex-rootkit/",
+        "https://www.virustotal.com/gui/ip-address/193.239.86.168/relations",
+        "https://www.virustotal.com/gui/file/f81a2e8a2a272e0bdae4e267fa220d6d40e23214087f33bdcdab6c7ad10b60b8/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 11,
+        "ipv4": 14
+      },
+      "first_seen": "2021-10-26",
+      "indicators": {
+        "domain": [
+          "aftercould.com",
+          "datacentreonline.com",
+          "freedecrease.com",
+          "game.newfreepre.com",
+          "imap.newlylab.com",
+          "imap.webdignusdata.com",
+          "mail.reclubpress.com",
+          "newfreepre.com",
+          "newlylab.com",
+          "reclubpress.com",
+          "webdignusdata.com"
+        ],
+        "ipv4": [
+          "107.148.165.158:443",
+          "107.148.165.158:80",
+          "154.223.135.214:443",
+          "154.223.135.214:80",
+          "27.102.113.240:443",
+          "27.102.113.240:80",
+          "27.102.113.57:443",
+          "27.102.113.57:80",
+          "27.102.114.55:443",
+          "27.102.114.55:80",
+          "27.102.115.51:443",
+          "27.102.115.51:80",
+          "27.102.129.120:443",
+          "27.102.129.120:80"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/ghostemperor-from-proxylogon-to-kernel-mode/104407/"
+      ],
+      "total": 25
+    }
+  ]
+}

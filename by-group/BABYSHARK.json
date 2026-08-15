@@ -1,0 +1,155 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5,
+    "url": 1,
+    "url_path": 4
+  },
+  "first_seen": {
+    "domain": {
+      "beastmodser.club": "2022-03-02",
+      "frebough.com": "2022-03-02",
+      "hodbeast.com": "2022-03-02",
+      "retmodul.com": "2022-03-02",
+      "worldinfocontact.club": "2021-07-27"
+    },
+    "url": {
+      "http://212.73.150.246": "2019-10-01"
+    },
+    "url_path": {
+      "/gate/connect": "2019-10-01",
+      "/gate/test": "2019-10-01",
+      "/onedrive/winmm.php": "2022-03-02",
+      "/sil/0304/d.php": "2022-03-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-01",
+    "latest": "2022-03-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "beastmodser.club",
+      "frebough.com",
+      "hodbeast.com",
+      "retmodul.com",
+      "worldinfocontact.club"
+    ],
+    "url": [
+      "http://212.73.150.246"
+    ],
+    "url_path": [
+      "/gate/connect",
+      "/gate/test",
+      "/onedrive/winmm.php",
+      "/sil/0304/d.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BABYSHARK"
+  ],
+  "references": [
+    "https://github.com/Neo23x0/signature-base/blob/master/yara/apt_babyshark.yar",
+    "https://otx.alienvault.com/pulse/5d932d449de02b0e8c0b8cba",
+    "https://www.huntress.com/blog/targeted-apt-activity-babyshark-is-out-for-blood"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "BABYSHARK",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "url_path": 2
+      },
+      "first_seen": "2022-03-02",
+      "indicators": {
+        "domain": [
+          "beastmodser.club",
+          "frebough.com",
+          "hodbeast.com",
+          "retmodul.com"
+        ],
+        "url_path": [
+          "/onedrive/winmm.php",
+          "/sil/0304/d.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.huntress.com/blog/targeted-apt-activity-babyshark-is-out-for-blood"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-07-27",
+      "indicators": {
+        "domain": [
+          "worldinfocontact.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.huntress.com/blog/targeted-apt-activity-babyshark-is-out-for-blood"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 2
+      },
+      "first_seen": "2019-10-01",
+      "indicators": {
+        "url_path": [
+          "/gate/connect",
+          "/gate/test"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.huntress.com/blog/targeted-apt-activity-babyshark-is-out-for-blood"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-10-01",
+      "indicators": {
+        "url": [
+          "http://212.73.150.246"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/Neo23x0/signature-base/blob/master/yara/apt_babyshark.yar",
+        "https://otx.alienvault.com/pulse/5d932d449de02b0e8c0b8cba"
+      ],
+      "total": 1
+    }
+  ]
+}

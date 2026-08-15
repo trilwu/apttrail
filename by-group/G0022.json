@@ -1,0 +1,137 @@
+{
+  "aliases": [
+    "apt-c-3",
+    "apt3",
+    "ups"
+  ],
+  "attack_id": "G0022",
+  "attack_name": "APT3",
+  "attack_url": "https://attack.mitre.org/groups/G0022/",
+  "counts": {
+    "domain": 10
+  },
+  "first_seen": {
+    "domain": {
+      "bedircati.com": "2019-10-19",
+      "lamb-site.com": "2019-10-19",
+      "link.angellroofing.com": "2019-10-19",
+      "playboysplus.com": "2019-10-19",
+      "psa.perrydale.com": "2019-10-19",
+      "report.perrydale.com": "2019-10-19",
+      "rpt.perrydale.com": "2019-10-19",
+      "securitywap.com": "2018-09-27",
+      "vic.perrydale.com": "2019-10-19",
+      "walterclean.com": "2018-09-27"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-27",
+    "latest": "2019-10-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bedircati.com",
+      "lamb-site.com",
+      "link.angellroofing.com",
+      "playboysplus.com",
+      "psa.perrydale.com",
+      "report.perrydale.com",
+      "rpt.perrydale.com",
+      "securitywap.com",
+      "vic.perrydale.com",
+      "walterclean.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GOTHICPANDA"
+  ],
+  "references": [
+    "https://www.fireeye.com/blog/threat-research/2014/11/operation_doubletap.html",
+    "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html (# APT3’s campaign)"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "G0022",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-10-19",
+      "indicators": {
+        "domain": [
+          "link.angellroofing.com",
+          "psa.perrydale.com",
+          "report.perrydale.com",
+          "rpt.perrydale.com",
+          "vic.perrydale.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2015/07/demonstrating_hustle.html (# APT3’s campaign)"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-10-19",
+      "indicators": {
+        "domain": [
+          "bedircati.com",
+          "lamb-site.com",
+          "playboysplus.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2014/11/operation_doubletap.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-27",
+      "indicators": {
+        "domain": [
+          "securitywap.com",
+          "walterclean.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2014/11/operation_doubletap.html"
+      ],
+      "total": 2
+    }
+  ]
+}

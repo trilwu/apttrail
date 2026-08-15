@@ -1,0 +1,57 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "ewplus.com": "2018-09-22",
+      "tcw.homier.com": "2018-09-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-22",
+    "latest": "2018-09-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ewplus.com",
+      "tcw.homier.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GLASSES"
+  ],
+  "references": [
+    "https://citizenlab.ca/2013/02/apt1s-glasses-watching-a-human-rights-organization/"
+  ],
+  "related": [],
+  "slug": "GLASSES",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "ewplus.com",
+          "tcw.homier.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2013/02/apt1s-glasses-watching-a-human-rights-organization/"
+      ],
+      "total": 2
+    }
+  ]
+}

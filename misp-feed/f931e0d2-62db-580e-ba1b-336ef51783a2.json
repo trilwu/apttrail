@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6f7d196b-9fe2-541b-977d-ae1b3314fec3",
+        "value": "ali.blankchair.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "57ad3a2f-52fe-56f5-905b-d2dac42b1624",
+        "value": "book.flnet.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b5b2b54d-2f9d-5f1d-807d-dfde8d47050a",
+        "value": "cht.blankchair.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bc95e004-c58b-578f-b9e4-897732289180",
+        "value": "dll.freshdns.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "93c51ef9-6bc2-5dd0-98fb-ba5cbc502af1",
+        "value": "icybin.flnet.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d9d9dff2-f009-542d-b444-86a181a40707",
+        "value": "info.flnet.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "65ba8e96-b05f-5f38-8163-003b7d1e107b",
+        "value": "me.scieron.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492081932",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9d54c37b-f5cb-5d2a-a67a-9f1c52b27b42",
+        "value": "rt.blankchair.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:snowman"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: SNOWMAN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f931e0d2-62db-580e-ba1b-336ef51783a2"
+  }
+}

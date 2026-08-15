@@ -1,0 +1,69 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "com-securitysettingpage.tk": "2018-09-22",
+      "id4242.ga": "2018-09-22",
+      "id833.ga": "2018-09-22",
+      "id834.ga": "2018-09-22",
+      "id9954.gq": "2018-09-22",
+      "mail-google-login.blogspot.com": "2018-09-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-22",
+    "latest": "2018-09-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "com-securitysettingpage.tk",
+      "id4242.ga",
+      "id833.ga",
+      "id834.ga",
+      "id9954.gq",
+      "mail-google-login.blogspot.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "RNEXUS"
+  ],
+  "references": [
+    "https://citizenlab.ca/2017/05/tainted-leaks-disinformation-phish/"
+  ],
+  "related": [],
+  "slug": "RNEXUS",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "com-securitysettingpage.tk",
+          "id4242.ga",
+          "id833.ga",
+          "id834.ga",
+          "id9954.gq",
+          "mail-google-login.blogspot.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2017/05/tainted-leaks-disinformation-phish/"
+      ],
+      "total": 6
+    }
+  ]
+}

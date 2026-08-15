@@ -1,0 +1,75 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1536952003",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "63d4f02b-4e78-5917-99d2-87e1668bb096",
+        "value": "chemscalere.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536952003",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7bcf3365-6ff3-59ac-ad5d-27a2a9c4d71d",
+        "value": "mlcdailynews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536952003",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f322bf43-c96e-56e1-a9b4-7b9fe12cbca1",
+        "value": "partyforumseasia.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536952003",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d36be217-20c3-5868-8dba-2e1efb3cb1db",
+        "value": "scsnewstoday.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1543530577",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3579b569-4121-57d0-aad6-91b527441a98",
+        "value": "thyssenkrupp-marinesystems.org"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:tempperiscope"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Leviathan - G0065\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Leviathan (G0065) - Maltrail group TEMPPERISCOPE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "9d327db1-0238-5af0-8350-394980f13acb"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "updates.win32.live": "2023-02-09",
+      "win32.live": "2023-02-09",
+      "windowsupdates.shop": "2023-01-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-01-23",
+    "latest": "2023-02-09"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "updates.win32.live",
+      "win32.live",
+      "windowsupdates.shop"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NEWSPENGUIN"
+  ],
+  "references": [
+    "https://blogs.blackberry.com/en/2023/02/newspenguin-a-previously-unknown-threat-actor-targets-pakistan-with-advanced-espionage-tool",
+    "https://twitter.com/__0XYC__/status/1617408058573094914",
+    "https://twitter.com/dimitribest/status/1623648275134914562",
+    "https://twitter.com/doc_guard/status/1617483771275784192",
+    "https://www.virustotal.com/gui/file/80326b1e151e8348307114c8115e275c2fd63f0d2eb1dfacb6eca9840cf98525/detection",
+    "https://www.virustotal.com/gui/ip-address/185.198.59.109/relations",
+    "https://www.virustotal.com/gui/ip-address/51.222.103.8/relations"
+  ],
+  "related": [],
+  "slug": "NEWSPENGUIN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-02-09",
+      "indicators": {
+        "domain": [
+          "updates.win32.live",
+          "win32.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/__0XYC__/status/1617408058573094914",
+        "https://twitter.com/doc_guard/status/1617483771275784192",
+        "https://twitter.com/dimitribest/status/1623648275134914562",
+        "https://www.virustotal.com/gui/ip-address/185.198.59.109/relations",
+        "https://www.virustotal.com/gui/ip-address/51.222.103.8/relations",
+        "https://blogs.blackberry.com/en/2023/02/newspenguin-a-previously-unknown-threat-actor-targets-pakistan-with-advanced-espionage-tool",
+        "https://www.virustotal.com/gui/file/80326b1e151e8348307114c8115e275c2fd63f0d2eb1dfacb6eca9840cf98525/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-01-23",
+      "indicators": {
+        "domain": [
+          "windowsupdates.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/__0XYC__/status/1617408058573094914",
+        "https://twitter.com/doc_guard/status/1617483771275784192",
+        "https://twitter.com/dimitribest/status/1623648275134914562",
+        "https://www.virustotal.com/gui/ip-address/185.198.59.109/relations",
+        "https://www.virustotal.com/gui/ip-address/51.222.103.8/relations",
+        "https://blogs.blackberry.com/en/2023/02/newspenguin-a-previously-unknown-threat-actor-targets-pakistan-with-advanced-espionage-tool",
+        "https://www.virustotal.com/gui/file/80326b1e151e8348307114c8115e275c2fd63f0d2eb1dfacb6eca9840cf98525/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

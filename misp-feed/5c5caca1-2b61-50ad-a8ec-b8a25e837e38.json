@@ -1,0 +1,87 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "240151d7-4e4e-5e19-946d-259e1dd1175f",
+        "value": "82.118.236.23:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "031ea96a-3d1e-5786-a0d0-7c003b6cae2c",
+        "value": "82.118.236.23:8443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "196e0b1b-d644-583b-b0ba-c68435b271d3",
+        "value": "88.198.13.116:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "46a43826-7dd6-5e07-9ae4-3cfb56dfb4a5",
+        "value": "88.198.13.116:8443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "5be465db-367c-57bb-a0da-14c0d05c3c48",
+        "value": "217.12.204.100/news/"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "cc072d2c-5055-52a5-b69f-ddddadb72a25",
+        "value": "pbank.co.ua/favicon.ico"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539771248",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "ae4fd03a-3c97-598c-adec-c229f181b2f5",
+        "value": "/27c00829d57988279f3ec61a05dee75a"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:greyenergy"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GREYENERGY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5c5caca1-2b61-50ad-a8ec-b8a25e837e38"
+  }
+}

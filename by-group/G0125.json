@@ -1,0 +1,188 @@
+{
+  "aliases": [
+    "Hade ransomware",
+    "TimosaraHackerTerm"
+  ],
+  "attack_id": "G0125",
+  "attack_name": "HAFNIUM",
+  "attack_url": "https://attack.mitre.org/groups/G0125/",
+  "counts": {
+    "domain": 16,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "back.estonine.com": "2022-01-09",
+      "bingoshow.xyz": "2021-03-31",
+      "bk.estonine.com": "2022-01-09",
+      "does-no-exist33.estonine.com": "2022-01-09",
+      "e.estonine.com": "2022-01-09",
+      "indicate.estonine.com": "2022-01-09",
+      "inducate.estonine.com": "2022-01-09",
+      "load.estonine.com": "2022-01-09",
+      "log.estonine.com": "2022-01-09",
+      "moon.estonine.com": "2022-01-09",
+      "p.estonine.com": "2021-03-12",
+      "pslog.estonine.com": "2022-01-09",
+      "shelltools-1254394685.cos.ap-shanghai.myqcloud.com": "2021-03-09",
+      "sk.estonine.com": "2022-01-09",
+      "sploit.estonine.com": "2022-01-09",
+      "task.estonine.com": "2022-01-09"
+    },
+    "ipv4": {
+      "101.37.76.66:5000": "2021-03-09"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-03-09",
+    "latest": "2022-01-09"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "back.estonine.com",
+      "bingoshow.xyz",
+      "bk.estonine.com",
+      "does-no-exist33.estonine.com",
+      "e.estonine.com",
+      "indicate.estonine.com",
+      "inducate.estonine.com",
+      "load.estonine.com",
+      "log.estonine.com",
+      "moon.estonine.com",
+      "p.estonine.com",
+      "pslog.estonine.com",
+      "shelltools-1254394685.cos.ap-shanghai.myqcloud.com",
+      "sk.estonine.com",
+      "sploit.estonine.com",
+      "task.estonine.com"
+    ],
+    "ipv4": [
+      "101.37.76.66:5000"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HAFNIUM"
+  ],
+  "references": [
+    "https://twitter.com/BushidoToken/status/1369273531867992064",
+    "https://twitter.com/Max_Mal_/status/1480284003617882121",
+    "https://twitter.com/resecurity_com/status/1377137102094098439",
+    "https://www.infosecurity-magazine.com/news/hades-ransomware-linked-hafnium/",
+    "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/",
+    "https://www.virustotal.com/gui/file/62842cffd1c663ac2b2abe85a9fd482fcffc1c2e0683d1a536d8791b9f99cd3b/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ASPXSpy, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "G0125",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 13
+      },
+      "first_seen": "2022-01-09",
+      "indicators": {
+        "domain": [
+          "back.estonine.com",
+          "bk.estonine.com",
+          "does-no-exist33.estonine.com",
+          "e.estonine.com",
+          "indicate.estonine.com",
+          "inducate.estonine.com",
+          "load.estonine.com",
+          "log.estonine.com",
+          "moon.estonine.com",
+          "pslog.estonine.com",
+          "sk.estonine.com",
+          "sploit.estonine.com",
+          "task.estonine.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Max_Mal_/status/1480284003617882121"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-31",
+      "indicators": {
+        "domain": [
+          "bingoshow.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/resecurity_com/status/1377137102094098439",
+        "https://www.infosecurity-magazine.com/news/hades-ransomware-linked-hafnium/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-12",
+      "indicators": {
+        "domain": [
+          "p.estonine.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Max_Mal_/status/1480284003617882121"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2021-03-09",
+      "indicators": {
+        "domain": [
+          "shelltools-1254394685.cos.ap-shanghai.myqcloud.com"
+        ],
+        "ipv4": [
+          "101.37.76.66:5000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.microsoft.com/security/blog/2021/03/02/hafnium-targeting-exchange-servers/",
+        "https://twitter.com/BushidoToken/status/1369273531867992064",
+        "https://www.virustotal.com/gui/file/62842cffd1c663ac2b2abe85a9fd482fcffc1c2e0683d1a536d8791b9f99cd3b/detection"
+      ],
+      "total": 2
+    }
+  ]
+}

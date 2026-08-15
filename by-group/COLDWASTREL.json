@@ -1,0 +1,570 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 105
+  },
+  "first_seen": {
+    "domain": {
+      "account-api.cloudstorageservice.online": "2024-09-20",
+      "account-api.onlinestorageroute.space": "2024-09-20",
+      "account-api.protondrive.online": "2024-09-20",
+      "account.email-pm.me": "2024-09-20",
+      "account.onlinestorageroute.space": "2024-09-20",
+      "account.open-button.com": "2024-09-20",
+      "account.proton-drive.me": "2024-09-20",
+      "account.proton-service.services": "2024-09-20",
+      "account.proton-verify.me": "2024-08-28",
+      "account.proton.shared-urls.me": "2024-10-16",
+      "account.protondrive.cloud": "2024-08-15",
+      "account.protondrive.online": "2024-09-20",
+      "account.protondrive.onlinestorageroute.space": "2024-09-20",
+      "account.protondrive.services": "2024-08-29",
+      "account.secure-pm.me": "2024-09-20",
+      "account.service-pm.me": "2024-09-20",
+      "account.service-proton.com": "2024-08-29",
+      "account.service-proton.me": "2024-09-20",
+      "account.services-proton.me": "2024-08-29",
+      "accounts-proton.me": "2024-08-28",
+      "accounts.support-ukr.net": "2024-09-20",
+      "center-facebook.com": "2024-09-20",
+      "civic-synergy.online": "2024-09-20",
+      "cloudstorageservice.online": "2024-09-20",
+      "decryptor.me": "2024-08-19",
+      "desktop-facebook.com": "2024-09-20",
+      "document-decryption.me": "2024-08-20",
+      "drive-proton.com": "2024-08-28",
+      "drive.link-pm.me": "2024-09-20",
+      "drive.proton-verify.me": "2024-08-28",
+      "drive.proton.decryptor.me": "2024-08-30",
+      "drive.proton.filestorage.me": "2024-08-30",
+      "drive.proton.shared-urls.me": "2024-10-16",
+      "drive.secure-pm.me": "2024-09-20",
+      "drive.service-pm.me": "2024-09-20",
+      "drive.service-proton.me": "2024-09-20",
+      "driveproton.me": "2024-08-20",
+      "driveshare.me": "2024-08-20",
+      "edisk.support-ukr.net": "2024-09-20",
+      "email-pm.me": "2024-09-20",
+      "email-ukr.net": "2024-09-20",
+      "email.support-ukr.net": "2024-09-20",
+      "en-us.center-facebook.com": "2024-09-20",
+      "en-us.desktop-facebook.com": "2024-09-20",
+      "fb-me.com": "2024-09-20",
+      "fidh.tech": "2024-09-20",
+      "filestorage.me": "2024-08-28",
+      "fr-fr.center-facebook.com": "2024-09-20",
+      "h.maiils.com": "2024-09-20",
+      "link-pm.me": "2024-09-20",
+      "livecloudaccount.com": "2024-09-20",
+      "login.livecloudaccount.com": "2024-09-20",
+      "login.security-gm.com": "2024-09-20",
+      "login.support-gm.com": "2024-09-20",
+      "m.h.maiils.com": "2024-09-20",
+      "maiils.com": "2024-09-20",
+      "mail-api.onlinestorageroute.space": "2024-09-20",
+      "mail-api.protondrive.online": "2024-09-20",
+      "mail-ukr.net": "2024-09-24",
+      "mail.civic-synergy.online": "2024-09-20",
+      "mail.fidh.tech": "2024-09-20",
+      "mail.onetimeopportunity.store": "2024-09-20",
+      "mail.onlinestorageroute.space": "2024-09-20",
+      "mail.protondrive.online": "2024-09-20",
+      "mail.support-ukr.net": "2024-09-20",
+      "n.maiils.com": "2024-09-20",
+      "na.maiils.com": "2024-09-20",
+      "old.onlinestorageroute.space": "2024-09-20",
+      "old.protondrive.online": "2024-09-20",
+      "onetimeopportunity.store": "2024-09-20",
+      "online-facebook.com": "2024-09-20",
+      "onlinestorageroute.space": "2024-09-20",
+      "open-button.com": "2024-09-20",
+      "proton-drive.me": "2024-08-28",
+      "proton-service.services": "2024-09-20",
+      "proton-verify.me": "2024-08-28",
+      "proton.decryptor.me": "2024-08-19",
+      "proton.document-decryption.me": "2024-08-20",
+      "proton.driveshare.me": "2024-08-30",
+      "proton.filestorage.me": "2024-08-30",
+      "proton.shared-urls.me": "2024-10-16",
+      "protondrive.cloud": "2024-08-15",
+      "protondrive.me": "2024-08-14",
+      "protondrive.online": "2024-08-14",
+      "protondrive.onlinestorageroute.space": "2024-09-20",
+      "protondrive.services": "2024-08-14",
+      "reports.onlinestorageroute.space": "2024-09-20",
+      "reports.protondrive.online": "2024-09-20",
+      "ru-ru.center-facebook.com": "2024-09-20",
+      "ru-ru.desktop-facebook.com": "2024-09-20",
+      "secure-pm.me": "2024-09-20",
+      "secure.onlinestorageroute.space": "2024-09-20",
+      "secure.protondrive.online": "2024-09-20",
+      "security-gm.com": "2024-09-20",
+      "service-pm.me": "2024-09-20",
+      "service-proton.com": "2024-08-28",
+      "service-proton.me": "2024-08-14",
+      "service.link-pm.me": "2024-09-20",
+      "services-proton.me": "2024-08-28",
+      "shared-urls.me": "2024-10-16",
+      "support-gm.com": "2024-09-20",
+      "support-ukr.net": "2024-09-20",
+      "verify-proton.me": "2024-08-28",
+      "view-menu.site": "2024-09-20",
+      "webmail.civic-synergy.online": "2024-09-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-08-14",
+    "latest": "2024-10-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "account-api.cloudstorageservice.online",
+      "account-api.onlinestorageroute.space",
+      "account-api.protondrive.online",
+      "account.email-pm.me",
+      "account.onlinestorageroute.space",
+      "account.open-button.com",
+      "account.proton-drive.me",
+      "account.proton-service.services",
+      "account.proton-verify.me",
+      "account.proton.shared-urls.me",
+      "account.protondrive.cloud",
+      "account.protondrive.online",
+      "account.protondrive.onlinestorageroute.space",
+      "account.protondrive.services",
+      "account.secure-pm.me",
+      "account.service-pm.me",
+      "account.service-proton.com",
+      "account.service-proton.me",
+      "account.services-proton.me",
+      "accounts-proton.me",
+      "accounts.support-ukr.net",
+      "center-facebook.com",
+      "civic-synergy.online",
+      "cloudstorageservice.online",
+      "decryptor.me",
+      "desktop-facebook.com",
+      "document-decryption.me",
+      "drive-proton.com",
+      "drive.link-pm.me",
+      "drive.proton-verify.me",
+      "drive.proton.decryptor.me",
+      "drive.proton.filestorage.me",
+      "drive.proton.shared-urls.me",
+      "drive.secure-pm.me",
+      "drive.service-pm.me",
+      "drive.service-proton.me",
+      "driveproton.me",
+      "driveshare.me",
+      "edisk.support-ukr.net",
+      "email-pm.me",
+      "email-ukr.net",
+      "email.support-ukr.net",
+      "en-us.center-facebook.com",
+      "en-us.desktop-facebook.com",
+      "fb-me.com",
+      "fidh.tech",
+      "filestorage.me",
+      "fr-fr.center-facebook.com",
+      "h.maiils.com",
+      "link-pm.me",
+      "livecloudaccount.com",
+      "login.livecloudaccount.com",
+      "login.security-gm.com",
+      "login.support-gm.com",
+      "m.h.maiils.com",
+      "maiils.com",
+      "mail-api.onlinestorageroute.space",
+      "mail-api.protondrive.online",
+      "mail-ukr.net",
+      "mail.civic-synergy.online",
+      "mail.fidh.tech",
+      "mail.onetimeopportunity.store",
+      "mail.onlinestorageroute.space",
+      "mail.protondrive.online",
+      "mail.support-ukr.net",
+      "n.maiils.com",
+      "na.maiils.com",
+      "old.onlinestorageroute.space",
+      "old.protondrive.online",
+      "onetimeopportunity.store",
+      "online-facebook.com",
+      "onlinestorageroute.space",
+      "open-button.com",
+      "proton-drive.me",
+      "proton-service.services",
+      "proton-verify.me",
+      "proton.decryptor.me",
+      "proton.document-decryption.me",
+      "proton.driveshare.me",
+      "proton.filestorage.me",
+      "proton.shared-urls.me",
+      "protondrive.cloud",
+      "protondrive.me",
+      "protondrive.online",
+      "protondrive.onlinestorageroute.space",
+      "protondrive.services",
+      "reports.onlinestorageroute.space",
+      "reports.protondrive.online",
+      "ru-ru.center-facebook.com",
+      "ru-ru.desktop-facebook.com",
+      "secure-pm.me",
+      "secure.onlinestorageroute.space",
+      "secure.protondrive.online",
+      "security-gm.com",
+      "service-pm.me",
+      "service-proton.com",
+      "service-proton.me",
+      "service.link-pm.me",
+      "services-proton.me",
+      "shared-urls.me",
+      "support-gm.com",
+      "support-ukr.net",
+      "verify-proton.me",
+      "view-menu.site",
+      "webmail.civic-synergy.online"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "COLDWASTREL"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=38.180.18.59&type=ip4&ref_id=3160b1058e5#tab=resolutions",
+    "https://app.validin.com/detail?type=ip&find=38.180.87.136#tab=resolutions",
+    "https://citizenlab.ca/2024/08/sophisticated-phishing-targets-russias-perceived-enemies-around-the-globe/",
+    "https://en.fofa.info/result?qbase64=aGVhZGVyX2hhc2g9Ii0xNjkyOTY3NzM4IiAmJiBzZXJ2ZXI9PSJuZ2lueC8xLjE4LjAiICYmIGFzbj0iMjA2ODA0Ig%3D%3D",
+    "https://en.fofa.info/result?qbase64=aGVhZGVyX2hhc2g9IjY1ODMyNjkwMSIgJiYgamFybT0iMjdkNDBkNDBkMDAwNDBkMDAwNDJkNDNkMDAwMDAwNGFjMjRlNzdkNzY2NDY4NjdmMGY2YTBjNmQ5YjliYjAiICYmIHNlcnZlcj09Im5naW54LzEuMTguMCIgJiYgaXA9IjM4LjE4MC44Ni44Ny8xNiI%3D",
+    "https://search.censys.io/certificates/d15350021f0ecc2faf863db6c41dbc415b4c85bf17d5d0f94785ea890fda3cc0",
+    "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/coldwastrel-space.html",
+    "https://www.virustotal.com/gui/file/4a9a2c2926b7b8e388984d38cb9e259fb4060cccc2d291c7910be030ae5301a3/detection",
+    "https://www.virustotal.com/gui/ip-address/38.180.18.236/relations",
+    "https://www.virustotal.com/gui/ip-address/38.180.86.201/relations",
+    "https://www.virustotal.com/gui/ip-address/38.180.86.87/relations",
+    "https://www.virustotal.com/gui/ip-address/45.133.195.117/relations",
+    "https://x.com/Cyberteam008/status/1828989730840621365",
+    "https://x.com/Cyberteam008/status/1829352207562481811",
+    "https://x.com/MichalKoczwara/status/1823848259686949313",
+    "https://x.com/MichalKoczwara/status/1825616253844861051",
+    "https://x.com/TLP_R3D/status/1825846559738626438",
+    "https://x.com/TLP_R3D/status/1828824260778885517",
+    "https://x.com/felixaime/status/1828811264354897956",
+    "https://x.com/felixaime/status/1828811266703393232"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1033"
+    }
+  ],
+  "slug": "COLDWASTREL",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-10-16",
+      "indicators": {
+        "domain": [
+          "account.proton.shared-urls.me",
+          "drive.proton.shared-urls.me",
+          "proton.shared-urls.me",
+          "shared-urls.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://search.censys.io/certificates/d15350021f0ecc2faf863db6c41dbc415b4c85bf17d5d0f94785ea890fda3cc0"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-09-24",
+      "indicators": {
+        "domain": [
+          "mail-ukr.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/coldwastrel-space.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 71
+      },
+      "first_seen": "2024-09-20",
+      "indicators": {
+        "domain": [
+          "account-api.cloudstorageservice.online",
+          "account-api.onlinestorageroute.space",
+          "account-api.protondrive.online",
+          "account.email-pm.me",
+          "account.onlinestorageroute.space",
+          "account.open-button.com",
+          "account.proton-drive.me",
+          "account.proton-service.services",
+          "account.protondrive.online",
+          "account.protondrive.onlinestorageroute.space",
+          "account.secure-pm.me",
+          "account.service-pm.me",
+          "account.service-proton.me",
+          "accounts.support-ukr.net",
+          "center-facebook.com",
+          "civic-synergy.online",
+          "cloudstorageservice.online",
+          "desktop-facebook.com",
+          "drive.link-pm.me",
+          "drive.secure-pm.me",
+          "drive.service-pm.me",
+          "drive.service-proton.me",
+          "edisk.support-ukr.net",
+          "email-pm.me",
+          "email-ukr.net",
+          "email.support-ukr.net",
+          "en-us.center-facebook.com",
+          "en-us.desktop-facebook.com",
+          "fb-me.com",
+          "fidh.tech",
+          "fr-fr.center-facebook.com",
+          "h.maiils.com",
+          "link-pm.me",
+          "livecloudaccount.com",
+          "login.livecloudaccount.com",
+          "login.security-gm.com",
+          "login.support-gm.com",
+          "m.h.maiils.com",
+          "maiils.com",
+          "mail-api.onlinestorageroute.space",
+          "mail-api.protondrive.online",
+          "mail.civic-synergy.online",
+          "mail.fidh.tech",
+          "mail.onetimeopportunity.store",
+          "mail.onlinestorageroute.space",
+          "mail.protondrive.online",
+          "mail.support-ukr.net",
+          "n.maiils.com",
+          "na.maiils.com",
+          "old.onlinestorageroute.space",
+          "old.protondrive.online",
+          "onetimeopportunity.store",
+          "online-facebook.com",
+          "onlinestorageroute.space",
+          "open-button.com",
+          "proton-service.services",
+          "protondrive.onlinestorageroute.space",
+          "reports.onlinestorageroute.space",
+          "reports.protondrive.online",
+          "ru-ru.center-facebook.com",
+          "ru-ru.desktop-facebook.com",
+          "secure-pm.me",
+          "secure.onlinestorageroute.space",
+          "secure.protondrive.online",
+          "security-gm.com",
+          "service-pm.me",
+          "service.link-pm.me",
+          "support-gm.com",
+          "support-ukr.net",
+          "view-menu.site",
+          "webmail.civic-synergy.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.pwc.com/gx/en/issues/cybersecurity/cyber-threat-intelligence/coldwastrel-space.html"
+      ],
+      "total": 71
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-08-30",
+      "indicators": {
+        "domain": [
+          "drive.proton.decryptor.me",
+          "drive.proton.filestorage.me",
+          "proton.driveshare.me",
+          "proton.filestorage.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1829352207562481811",
+        "https://en.fofa.info/result?qbase64=aGVhZGVyX2hhc2g9IjY1ODMyNjkwMSIgJiYgamFybT0iMjdkNDBkNDBkMDAwNDBkMDAwNDJkNDNkMDAwMDAwNGFjMjRlNzdkNzY2NDY4NjdmMGY2YTBjNmQ5YjliYjAiICYmIHNlcnZlcj09Im5naW54LzEuMTguMCIgJiYgaXA9IjM4LjE4MC44Ni44Ny8xNiI%3D"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-08-29",
+      "indicators": {
+        "domain": [
+          "account.protondrive.services",
+          "account.service-proton.com",
+          "account.services-proton.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1828989730840621365",
+        "https://en.fofa.info/result?qbase64=aGVhZGVyX2hhc2g9Ii0xNjkyOTY3NzM4IiAmJiBzZXJ2ZXI9PSJuZ2lueC8xLjE4LjAiICYmIGFzbj0iMjA2ODA0Ig%3D%3D"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2024-08-28",
+      "indicators": {
+        "domain": [
+          "account.proton-verify.me",
+          "accounts-proton.me",
+          "drive-proton.com",
+          "drive.proton-verify.me",
+          "filestorage.me",
+          "proton-drive.me",
+          "proton-verify.me",
+          "service-proton.com",
+          "services-proton.me",
+          "verify-proton.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TLP_R3D/status/1828824260778885517",
+        "https://x.com/felixaime/status/1828811264354897956",
+        "https://x.com/felixaime/status/1828811266703393232",
+        "https://www.virustotal.com/gui/ip-address/45.133.195.117/relations"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-08-20",
+      "indicators": {
+        "domain": [
+          "document-decryption.me",
+          "proton.document-decryption.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/38.180.18.236/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-20",
+      "indicators": {
+        "domain": [
+          "driveproton.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TLP_R3D/status/1825846559738626438",
+        "https://www.virustotal.com/gui/ip-address/38.180.86.87/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-20",
+      "indicators": {
+        "domain": [
+          "driveshare.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/38.180.86.201/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-08-19",
+      "indicators": {
+        "domain": [
+          "decryptor.me",
+          "proton.decryptor.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/MichalKoczwara/status/1825616253844861051",
+        "https://app.validin.com/detail?type=ip&find=38.180.87.136#tab=resolutions"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-08-15",
+      "indicators": {
+        "domain": [
+          "account.protondrive.cloud",
+          "protondrive.cloud"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/MichalKoczwara/status/1823848259686949313",
+        "https://app.validin.com/detail?find=38.180.18.59&type=ip4&ref_id=3160b1058e5#tab=resolutions"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-08-14",
+      "indicators": {
+        "domain": [
+          "protondrive.me",
+          "protondrive.online",
+          "protondrive.services",
+          "service-proton.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2024/08/sophisticated-phishing-targets-russias-perceived-enemies-around-the-globe/",
+        "https://www.virustotal.com/gui/file/4a9a2c2926b7b8e388984d38cb9e259fb4060cccc2d291c7910be030ae5301a3/detection"
+      ],
+      "total": 4
+    }
+  ]
+}

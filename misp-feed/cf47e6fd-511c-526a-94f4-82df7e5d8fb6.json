@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1783363062",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f10331db-3bde-509c-807d-e17bd066be8f",
+        "value": "adserviceupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783365774",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "83e5a24d-ded2-5f47-995c-eea0f341bb78",
+        "value": "api.zapretmusic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783365774",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "174cd857-7c07-5c99-867f-a925a95795bb",
+        "value": "app.zapretmusic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783363062",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fbfde0e8-c03a-5fba-b448-f4f19fa1d78a",
+        "value": "auth.hospitalinstallation.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783363062",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cb45a206-cb29-5f3f-9b36-8e66540836ec",
+        "value": "google.com.hospitalinstallation.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783363062",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1ab42407-7518-56d8-9594-b8f2c8068948",
+        "value": "hospitalinstallation.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783363062",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e209793b-04f5-5630-88d6-8c0fa46a610a",
+        "value": "hygienehistory.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783365774",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7e5e9228-34ce-5f30-adde-1769451d7743",
+        "value": "update.myddns.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1783365774",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fe6ec227-b7d4-5218-936c-56c94ce976ed",
+        "value": "zapretmusic.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cavernmanticore"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CAVERNMANTICORE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "cf47e6fd-511c-526a-94f4-82df7e5d8fb6"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11
+  },
+  "first_seen": {
+    "domain": {
+      "activequest.goautodial.com": "2023-10-14",
+      "chat.thedresscodeapp.com": "2023-10-14",
+      "crm.cardabel.com": "2023-10-14",
+      "data.vectorse.com": "2023-10-14",
+      "engage.adaptqe.com": "2023-10-14",
+      "ops-ca.mioying.com": "2023-10-14",
+      "order.staging.photobookworldwide.com": "2023-10-14",
+      "public.pusulait.com": "2023-10-14",
+      "search.allaccountingcareers.com": "2023-10-14",
+      "secure.poliigon.com": "2023-10-14",
+      "superapi-staging.mlmprotec.com": "2023-10-14"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-10-14",
+    "latest": "2023-10-14"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "activequest.goautodial.com",
+      "chat.thedresscodeapp.com",
+      "crm.cardabel.com",
+      "data.vectorse.com",
+      "engage.adaptqe.com",
+      "ops-ca.mioying.com",
+      "order.staging.photobookworldwide.com",
+      "public.pusulait.com",
+      "search.allaccountingcareers.com",
+      "secure.poliigon.com",
+      "superapi-staging.mlmprotec.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ATLASCROSS"
+  ],
+  "references": [
+    "https://nsfocusglobal.com/warning-newly-discovered-apt-attacker-atlascross-exploits-red-cross-blood-drive-phishing-for-cyberattack/",
+    "https://otx.alienvault.com/pulse/6514782fe337d1b070430c99",
+    "https://www.virustotal.com/gui/file/2ef26042422e2cf48870e6d97921f8d916f6886457d013602623d06906f10fda/detection",
+    "https://www.virustotal.com/gui/file/380f5069a6d9b4689058ba53876b0571a9f81cf8d1388d71ee555118a0d967c8/detection",
+    "https://www.virustotal.com/gui/file/5e914133503e60491b445e5a06f3fa8144463340a3c9dc6d875bbfdcd6ff7f55/detection",
+    "https://www.virustotal.com/gui/file/9c2f990f2d23f380f1cf8f83e9e23749f7ef097bda5b530c7d43fbf5feb3ba99/detection"
+  ],
+  "related": [],
+  "slug": "ATLASCROSS",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2023-10-14",
+      "indicators": {
+        "domain": [
+          "activequest.goautodial.com",
+          "chat.thedresscodeapp.com",
+          "crm.cardabel.com",
+          "data.vectorse.com",
+          "engage.adaptqe.com",
+          "ops-ca.mioying.com",
+          "order.staging.photobookworldwide.com",
+          "public.pusulait.com",
+          "search.allaccountingcareers.com",
+          "secure.poliigon.com",
+          "superapi-staging.mlmprotec.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://nsfocusglobal.com/warning-newly-discovered-apt-attacker-atlascross-exploits-red-cross-blood-drive-phishing-for-cyberattack/",
+        "https://otx.alienvault.com/pulse/6514782fe337d1b070430c99",
+        "https://www.virustotal.com/gui/file/380f5069a6d9b4689058ba53876b0571a9f81cf8d1388d71ee555118a0d967c8/detection",
+        "https://www.virustotal.com/gui/file/9c2f990f2d23f380f1cf8f83e9e23749f7ef097bda5b530c7d43fbf5feb3ba99/detection",
+        "https://www.virustotal.com/gui/file/2ef26042422e2cf48870e6d97921f8d916f6886457d013602623d06906f10fda/detection",
+        "https://www.virustotal.com/gui/file/5e914133503e60491b445e5a06f3fa8144463340a3c9dc6d875bbfdcd6ff7f55/detection"
+      ],
+      "total": 11
+    }
+  ]
+}

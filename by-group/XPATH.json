@@ -1,0 +1,147 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 7
+  },
+  "first_seen": {
+    "domain": {
+      "dns03.cainformations.com": "2020-07-20",
+      "kkkfaster.jumpingcrab.com": "2020-07-20",
+      "nicodonald.accesscam.org": "2019-06-04",
+      "pneword.net": "2020-07-20",
+      "sultris.com": "2019-10-31",
+      "tv.teldcomtv.com": "2019-10-31",
+      "v.nnncity.xyz": "2020-07-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-06-04",
+    "latest": "2020-07-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "dns03.cainformations.com",
+      "kkkfaster.jumpingcrab.com",
+      "nicodonald.accesscam.org",
+      "pneword.net",
+      "sultris.com",
+      "tv.teldcomtv.com",
+      "v.nnncity.xyz"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "XPATH"
+  ],
+  "references": [
+    "https://github.com/DoctorWebLtd/malware-iocs/blob/master/APT_XPath/README.adoc",
+    "https://news.drweb.com/show/?lng=en&p=0&i=13907&c=0"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "CALYPSO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "ICEFOG"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "REDFOXTROT"
+    }
+  ],
+  "slug": "XPATH",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-07-20",
+      "indicators": {
+        "domain": [
+          "dns03.cainformations.com",
+          "kkkfaster.jumpingcrab.com",
+          "pneword.net",
+          "v.nnncity.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://news.drweb.com/show/?lng=en&p=0&i=13907&c=0",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/APT_XPath/README.adoc"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-31",
+      "indicators": {
+        "domain": [
+          "sultris.com",
+          "tv.teldcomtv.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://news.drweb.com/show/?lng=en&p=0&i=13907&c=0",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/APT_XPath/README.adoc"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "nicodonald.accesscam.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://news.drweb.com/show/?lng=en&p=0&i=13907&c=0",
+        "https://github.com/DoctorWebLtd/malware-iocs/blob/master/APT_XPath/README.adoc"
+      ],
+      "total": 1
+    }
+  ]
+}

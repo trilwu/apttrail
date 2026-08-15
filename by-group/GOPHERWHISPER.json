@@ -1,0 +1,77 @@
+{
+  "aliases": [
+    "boxoffriends",
+    "compactgopher",
+    "laxgopher",
+    "ratgopher",
+    "sslordoor"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 2,
+    "url": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "43.231.113.50:22": "2026-04-23",
+      "43.231.113.50:443": "2026-04-23"
+    },
+    "url": {
+      "http://43.231.113.50": "2026-04-23"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-04-23",
+    "latest": "2026-04-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "43.231.113.50:22",
+      "43.231.113.50:443"
+    ],
+    "url": [
+      "http://43.231.113.50"
+    ]
+  },
+  "last_modified": "2026-04-23T19:50:54+00:00",
+  "maltrail_groups": [
+    "GOPHERWHISPER"
+  ],
+  "references": [
+    "https://web-assets.esetstatic.com/wls/en/papers/white-papers/gopherwhisper-burrow-full-malware.pdf",
+    "https://www.welivesecurity.com/en/eset-research/gopherwhisper-burrow-full-malware/"
+  ],
+  "related": [],
+  "slug": "GOPHERWHISPER",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2026-04-23",
+      "indicators": {
+        "ipv4": [
+          "43.231.113.50:22",
+          "43.231.113.50:443"
+        ],
+        "url": [
+          "http://43.231.113.50"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/gopherwhisper-burrow-full-malware/",
+        "https://web-assets.esetstatic.com/wls/en/papers/white-papers/gopherwhisper-burrow-full-malware.pdf"
+      ],
+      "total": 3
+    }
+  ]
+}

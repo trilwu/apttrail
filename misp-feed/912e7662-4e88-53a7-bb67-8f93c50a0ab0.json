@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1692963680",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a999ef7a-44cf-5fb5-938a-07e27e7c0e23",
+        "value": "asljkdqhkhasdq.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692963680",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "166b650b-c8cd-5f5f-82d3-f36b65048908",
+        "value": "vpn437972693.sednc.cn"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1692963680",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "75c10109-e62e-51b3-b730-e9acfa8ecadb",
+        "value": "vpn472462384.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "76c5669f-eb50-5cbc-b778-8f2c0cf8f18b",
+        "value": "http://149.28.137.179"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6606d946-7560-5dc9-9ad9-ab6887453c11",
+        "value": "http://158.247.193.93"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "e1449e1c-3096-5811-b26b-25e68936edb8",
+        "value": "http://158.247.226.80"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:flaxtyphoon"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: FLAXTYPHOON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "912e7662-4e88-53a7-bb67-8f93c50a0ab0"
+  }
+}

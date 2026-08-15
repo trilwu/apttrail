@@ -1,0 +1,67 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4
+  },
+  "first_seen": {
+    "domain": {
+      "celomito.com": "2021-04-30",
+      "cosarm.com": "2021-04-30",
+      "feticost.com": "2021-04-30",
+      "portalcos.com": "2021-04-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-04-30",
+    "latest": "2021-04-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "celomito.com",
+      "cosarm.com",
+      "feticost.com",
+      "portalcos.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2447"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/608c30d78049ae7a24b0b431",
+    "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-126a",
+    "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html"
+  ],
+  "related": [],
+  "slug": "UNC2447",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-04-30",
+      "indicators": {
+        "domain": [
+          "celomito.com",
+          "cosarm.com",
+          "feticost.com",
+          "portalcos.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2021/04/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat.html",
+        "https://otx.alienvault.com/pulse/608c30d78049ae7a24b0b431",
+        "https://us-cert.cisa.gov/ncas/analysis-reports/ar21-126a"
+      ],
+      "total": 4
+    }
+  ]
+}

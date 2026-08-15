@@ -1,0 +1,195 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 9,
+    "url": 8
+  },
+  "first_seen": {
+    "ipv4": {
+      "107.181.187.184:4242": "2022-03-16",
+      "107.181.187.184:443": "2022-03-30",
+      "149.28.200.140:443": "2022-03-30",
+      "149.28.71.70:443": "2022-03-30",
+      "162.33.178.149:443": "2022-03-30",
+      "185.172.129.215:443": "2022-03-30",
+      "195.149.87.87:443": "2022-03-30",
+      "34.102.54.152:443": "2022-03-30",
+      "45.61.136.188:443": "2022-03-30"
+    },
+    "url": {
+      "http://107.181.187.184": "2022-03-30",
+      "http://149.28.200.140": "2022-03-30",
+      "http://149.28.71.70": "2022-03-30",
+      "http://162.33.178.149": "2022-03-30",
+      "http://185.172.129.215": "2022-03-30",
+      "http://195.149.87.87": "2022-03-30",
+      "http://34.102.54.152": "2022-03-30",
+      "http://45.61.136.188": "2022-03-30"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-03-16",
+    "latest": "2022-03-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "107.181.187.184:4242",
+      "107.181.187.184:443",
+      "149.28.200.140:443",
+      "149.28.71.70:443",
+      "162.33.178.149:443",
+      "185.172.129.215:443",
+      "195.149.87.87:443",
+      "34.102.54.152:443",
+      "45.61.136.188:443"
+    ],
+    "url": [
+      "http://107.181.187.184",
+      "http://149.28.200.140",
+      "http://149.28.71.70",
+      "http://162.33.178.149",
+      "http://185.172.129.215",
+      "http://195.149.87.87",
+      "http://34.102.54.152",
+      "http://45.61.136.188"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC961"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb",
+    "https://otx.alienvault.com/pulse/641c9c1ed12f8bb9ab022552",
+    "https://www.crowdstrike.com/blog/prophet-spider-exploits-citrix-sharefile/",
+    "https://www.mandiant.com/resources/blog/unc961-multiverse-financially-motivated",
+    "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation",
+    "https://www.virustotal.com/gui/file/1c26b4078c75e10420f5a556e25654ff4c9aa864100cc2885e7bd1bddd86f8b6/detection (# HOLERUN)",
+    "https://www.virustotal.com/gui/file/ec8fcc5f5bc33d9cbe3b1d14a2c39b94ce8230e7d99ba4913881d03a3f84ab3f/detection (# HOLEDOOR)"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "GOLDMELODY"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC3500"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC3535"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNC3966"
+    }
+  ],
+  "slug": "UNC961",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 8,
+        "url": 8
+      },
+      "first_seen": "2022-03-30",
+      "indicators": {
+        "ipv4": [
+          "107.181.187.184:443",
+          "149.28.200.140:443",
+          "149.28.71.70:443",
+          "162.33.178.149:443",
+          "185.172.129.215:443",
+          "195.149.87.87:443",
+          "34.102.54.152:443",
+          "45.61.136.188:443"
+        ],
+        "url": [
+          "http://107.181.187.184",
+          "http://149.28.200.140",
+          "http://149.28.71.70",
+          "http://162.33.178.149",
+          "http://185.172.129.215",
+          "http://195.149.87.87",
+          "http://34.102.54.152",
+          "http://45.61.136.188"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation",
+        "https://www.mandiant.com/resources/blog/unc961-multiverse-financially-motivated",
+        "https://www.crowdstrike.com/blog/prophet-spider-exploits-citrix-sharefile/",
+        "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb",
+        "https://otx.alienvault.com/pulse/641c9c1ed12f8bb9ab022552",
+        "https://www.virustotal.com/gui/file/1c26b4078c75e10420f5a556e25654ff4c9aa864100cc2885e7bd1bddd86f8b6/detection (# HOLERUN)",
+        "https://www.virustotal.com/gui/file/ec8fcc5f5bc33d9cbe3b1d14a2c39b94ce8230e7d99ba4913881d03a3f84ab3f/detection (# HOLEDOOR)"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-16",
+      "indicators": {
+        "ipv4": [
+          "107.181.187.184:4242"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation",
+        "https://www.mandiant.com/resources/blog/unc961-multiverse-financially-motivated",
+        "https://www.crowdstrike.com/blog/prophet-spider-exploits-citrix-sharefile/",
+        "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb",
+        "https://otx.alienvault.com/pulse/641c9c1ed12f8bb9ab022552",
+        "https://www.virustotal.com/gui/file/1c26b4078c75e10420f5a556e25654ff4c9aa864100cc2885e7bd1bddd86f8b6/detection (# HOLERUN)",
+        "https://www.virustotal.com/gui/file/ec8fcc5f5bc33d9cbe3b1d14a2c39b94ce8230e7d99ba4913881d03a3f84ab3f/detection (# HOLEDOOR)"
+      ],
+      "total": 1
+    }
+  ]
+}

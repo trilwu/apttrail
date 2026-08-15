@@ -1,0 +1,127 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "995e0fdf-0e80-504f-bf5b-5d8599b1d61d",
+        "value": "ccna.organiccrap.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "44a1ab12-2e5c-5112-b18e-51519982e404",
+        "value": "cloud.trendav.co"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "abe68f2d-6dd4-5b47-a4fb-d9abc54d5bf3",
+        "value": "downloads.trendav.vip"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e00b72ec-0e36-5cb0-9a11-b6c358e0a0ca",
+        "value": "epp.navy.ddns.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d5fa219c-6932-502b-a61e-1640b72f7d9d",
+        "value": "mail.ccna.organiccrap.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8df00b7a-4e49-5ed0-9f51-f4a42e38ece4",
+        "value": "mail.secmailbox.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12ac97c2-515c-55d3-abc4-7a90fd2a4b58",
+        "value": "navy.ddns.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f046f982-91ec-5971-b338-72ccbee0ba0e",
+        "value": "secmailbox.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "acefd81f-c2ae-5b2a-88f5-761ff474904b",
+        "value": "sentinelxdr.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3f1a73ad-b850-559b-9196-e1f547e1fe89",
+        "value": "tatacom.duckdns.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "03365eb3-c87c-5bdd-9d80-22c519e0142a",
+        "value": "trendav.vip"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "a5390220-4268-5b05-8576-c27987d37041",
+        "value": "45.13.199.209:443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:purplehaze"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: PURPLEHAZE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "8272c330-46d5-5325-8977-01af431840e2"
+  }
+}

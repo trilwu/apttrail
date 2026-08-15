@@ -1,0 +1,101 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "cloud.services-mozilla.com": "2017-03-24",
+      "msservice.site": "2017-03-24",
+      "service.chrome-up.date": "2017-03-24",
+      "service1.chrome-up.date": "2017-04-18",
+      "webmaster.serveirc.com": "2017-04-18",
+      "www.chrome-up.date": "2017-04-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-03-24",
+    "latest": "2017-04-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cloud.services-mozilla.com",
+      "msservice.site",
+      "service.chrome-up.date",
+      "service1.chrome-up.date",
+      "webmaster.serveirc.com",
+      "www.chrome-up.date"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NEWSBEEF"
+  ],
+  "references": [
+    "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/",
+    "https://www.symantec.com/security_response/writeup.jsp?docid=2017-022712-2204-99&tabid=2"
+  ],
+  "related": [],
+  "slug": "NEWSBEEF",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2017-04-18",
+      "indicators": {
+        "domain": [
+          "service1.chrome-up.date",
+          "webmaster.serveirc.com",
+          "www.chrome-up.date"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2017-03-24",
+      "indicators": {
+        "domain": [
+          "cloud.services-mozilla.com",
+          "msservice.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2017-022712-2204-99&tabid=2"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-03-24",
+      "indicators": {
+        "domain": [
+          "service.chrome-up.date"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/blog/research/77725/from-shamoon-to-stonedrill/",
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2017-022712-2204-99&tabid=2"
+      ],
+      "total": 1
+    }
+  ]
+}

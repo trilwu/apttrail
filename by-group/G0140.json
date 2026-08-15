@@ -1,0 +1,303 @@
+{
+  "aliases": [],
+  "attack_id": "G0140",
+  "attack_name": "LazyScripter",
+  "attack_url": "https://attack.mitre.org/groups/G0140/",
+  "counts": {
+    "domain": 18,
+    "ipv4": 2,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "bsjsiq3ytpt3efsn6wnu3pukxil6q6plty6m6dcz.duckdns.org": "2022-03-10",
+      "gowaymevps.xyz": "2022-03-09",
+      "gowaymevpslink1.xyz": "2022-03-10",
+      "gowaymevpslink2.xyz": "2022-03-10",
+      "gowaymevpslink3.xyz": "2022-03-10",
+      "gowaymevpslink4.xyz": "2022-03-10",
+      "gowaymevpslink5.xyz": "2022-03-10",
+      "iatassl-telechargementsecurity.duckdns.org": "2021-02-24",
+      "internetexploraldon.sytes.net": "2022-03-09",
+      "jbizgsvhzj22evqon9ezz8bmbupp1s6cprmriam1.duckdns.org": "2022-03-09",
+      "milla.publicvm.com": "2020-09-27",
+      "saqicpcgflrlgxgoxxzkbfrjuisbkozeqrmthrzo.duckdns.org": "2022-03-09",
+      "securessl.fit": "2022-03-09",
+      "smscs.publicvm.com": "2022-03-10",
+      "stub.ignorelist.com": "2019-12-14",
+      "u1153246fov.ha004.t.justns.ru": "2022-03-09",
+      "varifsecuripass.duckdns.org": "2021-03-02",
+      "vistacp-enhance.duckdns.org": "2022-03-10"
+    },
+    "ipv4": {
+      "185.81.157.186:1995": "2022-03-09",
+      "45.91.92.112:449": "2022-03-10"
+    },
+    "url": {
+      "http://185.81.157.186": "2021-01-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-12-14",
+    "latest": "2022-03-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bsjsiq3ytpt3efsn6wnu3pukxil6q6plty6m6dcz.duckdns.org",
+      "gowaymevps.xyz",
+      "gowaymevpslink1.xyz",
+      "gowaymevpslink2.xyz",
+      "gowaymevpslink3.xyz",
+      "gowaymevpslink4.xyz",
+      "gowaymevpslink5.xyz",
+      "iatassl-telechargementsecurity.duckdns.org",
+      "internetexploraldon.sytes.net",
+      "jbizgsvhzj22evqon9ezz8bmbupp1s6cprmriam1.duckdns.org",
+      "milla.publicvm.com",
+      "saqicpcgflrlgxgoxxzkbfrjuisbkozeqrmthrzo.duckdns.org",
+      "securessl.fit",
+      "smscs.publicvm.com",
+      "stub.ignorelist.com",
+      "u1153246fov.ha004.t.justns.ru",
+      "varifsecuripass.duckdns.org",
+      "vistacp-enhance.duckdns.org"
+    ],
+    "ipv4": [
+      "185.81.157.186:1995",
+      "45.91.92.112:449"
+    ],
+    "url": [
+      "http://185.81.157.186"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "LAZYSCRIPTER"
+  ],
+  "references": [
+    "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+    "https://otx.alienvault.com/pulse/603693b42a32d06720efad59/",
+    "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+    "https://resources.malwarebytes.com/files/2021/02/LazyScripter.pdf",
+    "https://twitter.com/h2jazi/status/1366759252757512194",
+    "https://www.virustotal.com/gui/file/0652962c5dace16ed170a932e3ce7eb3097b34bc809343fbb96b27cf3d22a5c7/detection",
+    "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection",
+    "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+    "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+    "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "slug": "G0078"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "slug": "G0099"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G1003"
+    }
+  ],
+  "slug": "G0140",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-10",
+      "indicators": {
+        "domain": [
+          "bsjsiq3ytpt3efsn6wnu3pukxil6q6plty6m6dcz.duckdns.org",
+          "gowaymevpslink1.xyz",
+          "gowaymevpslink2.xyz",
+          "gowaymevpslink3.xyz",
+          "gowaymevpslink4.xyz",
+          "gowaymevpslink5.xyz",
+          "smscs.publicvm.com",
+          "vistacp-enhance.duckdns.org"
+        ],
+        "ipv4": [
+          "45.91.92.112:449"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+        "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+        "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+        "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+        "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations",
+        "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 6,
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-09",
+      "indicators": {
+        "domain": [
+          "gowaymevps.xyz",
+          "internetexploraldon.sytes.net",
+          "jbizgsvhzj22evqon9ezz8bmbupp1s6cprmriam1.duckdns.org",
+          "saqicpcgflrlgxgoxxzkbfrjuisbkozeqrmthrzo.duckdns.org",
+          "securessl.fit",
+          "u1153246fov.ha004.t.justns.ru"
+        ],
+        "ipv4": [
+          "185.81.157.186:1995"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+        "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+        "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+        "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+        "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations",
+        "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-02",
+      "indicators": {
+        "domain": [
+          "varifsecuripass.duckdns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://resources.malwarebytes.com/files/2021/02/LazyScripter.pdf",
+        "https://otx.alienvault.com/pulse/603693b42a32d06720efad59/",
+        "https://twitter.com/h2jazi/status/1366759252757512194",
+        "https://www.virustotal.com/gui/file/0652962c5dace16ed170a932e3ce7eb3097b34bc809343fbb96b27cf3d22a5c7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-24",
+      "indicators": {
+        "domain": [
+          "iatassl-telechargementsecurity.duckdns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://resources.malwarebytes.com/files/2021/02/LazyScripter.pdf",
+        "https://otx.alienvault.com/pulse/603693b42a32d06720efad59/",
+        "https://twitter.com/h2jazi/status/1366759252757512194",
+        "https://www.virustotal.com/gui/file/0652962c5dace16ed170a932e3ce7eb3097b34bc809343fbb96b27cf3d22a5c7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-01-13",
+      "indicators": {
+        "url": [
+          "http://185.81.157.186"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+        "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+        "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+        "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+        "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations",
+        "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-09-27",
+      "indicators": {
+        "domain": [
+          "milla.publicvm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+        "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+        "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+        "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+        "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations",
+        "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-14",
+      "indicators": {
+        "domain": [
+          "stub.ignorelist.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/very-very-lazy-lazyscripters-scripts-double-compromise-in-a-single-obfuscation/",
+        "https://otx.alienvault.com/pulse/6228d0ba244cc5a2d6457b25",
+        "https://www.virustotal.com/gui/ip-address/147.182.192.241/relations",
+        "https://www.virustotal.com/gui/ip-address/185.81.157.186/relations",
+        "https://www.virustotal.com/gui/ip-address/66.29.130.204/relations",
+        "https://www.virustotal.com/gui/file/23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

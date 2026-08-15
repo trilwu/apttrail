@@ -1,0 +1,848 @@
+{
+  "aliases": [],
+  "attack_id": "G0064",
+  "attack_name": "APT33",
+  "attack_url": "https://attack.mitre.org/groups/G0064/",
+  "counts": {
+    "domain": 99,
+    "ipv4": 1,
+    "url": 1,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "admindirector.com": "2019-09-20",
+      "akadnsplugin.com": "2020-09-11",
+      "alsalam.ddns.net": "2019-01-10",
+      "aramcojobs.ddns.net": "2019-03-27",
+      "availsqaapi.premieredigital.net": "2020-06-22",
+      "azure-dnszones.com": "2019-11-13",
+      "backupaccount.net": "2019-06-23",
+      "backupnet.ddns.net": "2019-06-26",
+      "becomestateman.com": "2019-06-23",
+      "bistbotsproxies.ddns.net": "2019-06-26",
+      "boeing.servehttp.com": "2019-01-10",
+      "businessscards.com": "2019-09-20",
+      "cardchsk.com": "2019-09-20",
+      "cardkuys.com": "2019-09-20",
+      "ceoadminoffice.com": "2019-09-20",
+      "chromup.com": "2019-06-26",
+      "customermgmt.net": "2019-07-03",
+      "dailystudy.org": "2020-02-13",
+      "digitalcodecrafters.com": "2023-12-22",
+      "diplomatsign.com": "2019-09-20",
+      "dyn-corp.ddns.net": "2019-03-27",
+      "dyncorp.ddns.net": "2019-03-27",
+      "eventmonitoring.org": "2020-02-13",
+      "fucksaudi.ddns.net": "2019-06-26",
+      "gefurrinn.com": "2020-02-13",
+      "global-careers.org": "2019-11-13",
+      "googlechromehost.ddns.net": "2019-06-26",
+      "googlmail.net": "2019-01-10",
+      "groupchiefexecutive.com": "2019-09-20",
+      "hellocookies.ddns.net": "2019-06-26",
+      "hyperservice.ddns.net": "2019-06-26",
+      "imap-outlook.com": "2020-02-13",
+      "inboxsync.org": "2019-06-23",
+      "lovememories.org": "2019-11-13",
+      "mailsarchive.com": "2019-09-20",
+      "managehelpdesk.com": "2019-01-10",
+      "managementdirector.com": "2019-09-20",
+      "microsoftupdated.com": "2017-11-07",
+      "microsoftupdated.net": "2019-01-10",
+      "moreonlineshopping.com": "2019-09-20",
+      "mynetwork.cf": "2019-06-26",
+      "mynetwork.ddns.net": "2019-03-27",
+      "mynetwork2.ddns.net": "2019-03-27",
+      "mypsh.ddns.net": "2018-11-13",
+      "mywinnetwork.ddns.net": "2019-01-10",
+      "n3tc4t.hopto.com": "2019-06-26",
+      "newhost.hopto.org": "2019-06-26",
+      "ngaaksa.ddns.net": "2019-01-10",
+      "ngaaksa.ga": "2019-03-27",
+      "ngaaksa.sytes.net": "2019-01-10",
+      "njrat12.ddns.net": "2019-06-26",
+      "ocsp-support.com": "2020-09-11",
+      "officemngt.com": "2019-09-20",
+      "osupd.com": "2019-01-10",
+      "phpencryptssl.com": "2019-09-20",
+      "powersafety.org": "2020-02-13",
+      "qualitweb.com": "2019-11-14",
+      "relaxingsports.com": "2020-08-12",
+      "remote-server.ddns.net": "2019-06-26",
+      "remserver.ddns.net": "2019-06-26",
+      "sabic-co.ddns.net": "2019-03-27",
+      "saharapcc.ddns.net": "2019-03-27",
+      "securityupdated.com": "2017-03-24",
+      "servhost.hopto.org": "2019-06-26",
+      "service-avant.com": "2019-06-26",
+      "service-eset.com": "2019-11-14",
+      "service-essential.com": "2019-11-14",
+      "service-explorer.com": "2019-11-14",
+      "service-houston.com": "2020-09-11",
+      "service-norton.com": "2019-11-14",
+      "service-search.info": "2019-09-20",
+      "simsoshop.com": "2019-11-14",
+      "sipchem.ddns.net": "2019-03-27",
+      "smtpauths.com": "2020-02-13",
+      "smtpsync.com": "2020-02-13",
+      "srvhost.servehttp.com": "2019-06-26",
+      "suncocity.com": "2019-11-14",
+      "support-newyork.com": "2020-09-11",
+      "svcexplores.com": "2019-06-26",
+      "syn.broadcaster.rocks": "2019-01-10",
+      "teamnj.ddns.net": "2019-06-26",
+      "theworldjob.org": "2020-02-13",
+      "times-sync.com": "2019-11-13",
+      "tokensetting.com": "2019-09-20",
+      "trojan1117.hopto.org": "2019-06-26",
+      "truelogon.com": "2019-09-20",
+      "update-sec.com": "2019-06-26",
+      "update-symantec.com": "2019-11-14",
+      "urlmanage.com": "2019-09-20",
+      "vinnellarabia.myftp.org": "2019-01-10",
+      "whiteelection.com": "2019-06-23",
+      "windowsx.sytes.net": "2019-06-26",
+      "world-careers.org": "2020-02-13",
+      "wwwgooglecom.sytes.net": "2019-06-26",
+      "xtreme.hopto.org": "2019-06-26",
+      "younesadams.ddns.net": "2019-06-26",
+      "za158155.ddns.net": "2019-06-26",
+      "zandelshop.com": "2019-11-14",
+      "zeverco.com": "2019-11-14"
+    },
+    "ipv4": {
+      "188.166.55.116:56444": "2019-12-16"
+    },
+    "url": {
+      "http://34.101.157.124": "2024-02-20"
+    },
+    "url_path": {
+      "/aramco/": "2019-03-27"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-03-24",
+    "latest": "2024-02-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "admindirector.com",
+      "akadnsplugin.com",
+      "alsalam.ddns.net",
+      "aramcojobs.ddns.net",
+      "availsqaapi.premieredigital.net",
+      "azure-dnszones.com",
+      "backupaccount.net",
+      "backupnet.ddns.net",
+      "becomestateman.com",
+      "bistbotsproxies.ddns.net",
+      "boeing.servehttp.com",
+      "businessscards.com",
+      "cardchsk.com",
+      "cardkuys.com",
+      "ceoadminoffice.com",
+      "chromup.com",
+      "customermgmt.net",
+      "dailystudy.org",
+      "digitalcodecrafters.com",
+      "diplomatsign.com",
+      "dyn-corp.ddns.net",
+      "dyncorp.ddns.net",
+      "eventmonitoring.org",
+      "fucksaudi.ddns.net",
+      "gefurrinn.com",
+      "global-careers.org",
+      "googlechromehost.ddns.net",
+      "googlmail.net",
+      "groupchiefexecutive.com",
+      "hellocookies.ddns.net",
+      "hyperservice.ddns.net",
+      "imap-outlook.com",
+      "inboxsync.org",
+      "lovememories.org",
+      "mailsarchive.com",
+      "managehelpdesk.com",
+      "managementdirector.com",
+      "microsoftupdated.com",
+      "microsoftupdated.net",
+      "moreonlineshopping.com",
+      "mynetwork.cf",
+      "mynetwork.ddns.net",
+      "mynetwork2.ddns.net",
+      "mypsh.ddns.net",
+      "mywinnetwork.ddns.net",
+      "n3tc4t.hopto.com",
+      "newhost.hopto.org",
+      "ngaaksa.ddns.net",
+      "ngaaksa.ga",
+      "ngaaksa.sytes.net",
+      "njrat12.ddns.net",
+      "ocsp-support.com",
+      "officemngt.com",
+      "osupd.com",
+      "phpencryptssl.com",
+      "powersafety.org",
+      "qualitweb.com",
+      "relaxingsports.com",
+      "remote-server.ddns.net",
+      "remserver.ddns.net",
+      "sabic-co.ddns.net",
+      "saharapcc.ddns.net",
+      "securityupdated.com",
+      "servhost.hopto.org",
+      "service-avant.com",
+      "service-eset.com",
+      "service-essential.com",
+      "service-explorer.com",
+      "service-houston.com",
+      "service-norton.com",
+      "service-search.info",
+      "simsoshop.com",
+      "sipchem.ddns.net",
+      "smtpauths.com",
+      "smtpsync.com",
+      "srvhost.servehttp.com",
+      "suncocity.com",
+      "support-newyork.com",
+      "svcexplores.com",
+      "syn.broadcaster.rocks",
+      "teamnj.ddns.net",
+      "theworldjob.org",
+      "times-sync.com",
+      "tokensetting.com",
+      "trojan1117.hopto.org",
+      "truelogon.com",
+      "update-sec.com",
+      "update-symantec.com",
+      "urlmanage.com",
+      "vinnellarabia.myftp.org",
+      "whiteelection.com",
+      "windowsx.sytes.net",
+      "world-careers.org",
+      "wwwgooglecom.sytes.net",
+      "xtreme.hopto.org",
+      "younesadams.ddns.net",
+      "za158155.ddns.net",
+      "zandelshop.com",
+      "zeverco.com"
+    ],
+    "ipv4": [
+      "188.166.55.116:56444"
+    ],
+    "url": [
+      "http://34.101.157.124"
+    ],
+    "url_path": [
+      "/aramco/"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "33"
+  ],
+  "references": [
+    "https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/",
+    "https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/",
+    "https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/",
+    "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+    "https://hyas.com/news/hunting-apt33-campaign-infrastructure/",
+    "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa",
+    "https://otx.alienvault.com/pulse/5d85272acd389e89e743368c",
+    "https://otx.alienvault.com/pulse/5dcc25f17c401b08b33d3d84",
+    "https://otx.alienvault.com/pulse/5dcd22740cea7974f1e9927b",
+    "https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872",
+    "https://shadowdragon.io/blog/additional-insights-into-iranian-cyber-espionage-apt33-2/",
+    "https://thehackernews.com/2023/12/microsoft-warns-of-new-falsefont.html",
+    "https://twitter.com/CTI_Marc/status/1194573048625729536",
+    "https://twitter.com/ClearskySec/status/1059532789572386817",
+    "https://twitter.com/ClearskySec/status/1059532946045050883",
+    "https://twitter.com/ClearskySec/status/1142749950998171648",
+    "https://twitter.com/MsftSecIntel/status/1737895710169628824",
+    "https://twitter.com/MsftSecIntel/status/1737895717870440609",
+    "https://twitter.com/Sam1rSQS/status/1206552916959662080",
+    "https://twitter.com/ShadowChasing1/status/1275042060207132672",
+    "https://twitter.com/banthisguy9349/status/1759984117003719061",
+    "https://twitter.com/kyleehmke/status/1293498254009815040",
+    "https://twitter.com/kyleehmke/status/1304444869809758210",
+    "https://twitter.com/kyleehmke/status/1304444870979919872",
+    "https://unit42.paloaltonetworks.com/curious-serpens-falsefont-backdoor/",
+    "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+    "https://www.virustotal.com/gui/file/e7b992f95b3908579d026f22c237ad5ff7663c9886b520f15cc3e27ef90dcbb1/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "STONEDRILL"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "SHAMOON"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares AutoIt backdoor",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0040"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares NanoCore",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0043"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares NanoCore",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0078"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G1001"
+    }
+  ],
+  "slug": "G0064",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2024-02-20",
+      "indicators": {
+        "url": [
+          "http://34.101.157.124"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/banthisguy9349/status/1759984117003719061",
+        "https://shadowdragon.io/blog/additional-insights-into-iranian-cyber-espionage-apt33-2/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-12-22",
+      "indicators": {
+        "domain": [
+          "digitalcodecrafters.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/MsftSecIntel/status/1737895710169628824",
+        "https://twitter.com/MsftSecIntel/status/1737895717870440609",
+        "https://thehackernews.com/2023/12/microsoft-warns-of-new-falsefont.html",
+        "https://unit42.paloaltonetworks.com/curious-serpens-falsefont-backdoor/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-09-11",
+      "indicators": {
+        "domain": [
+          "akadnsplugin.com",
+          "ocsp-support.com",
+          "service-houston.com",
+          "support-newyork.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1304444869809758210",
+        "https://twitter.com/kyleehmke/status/1304444870979919872"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-12",
+      "indicators": {
+        "domain": [
+          "relaxingsports.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1293498254009815040"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-22",
+      "indicators": {
+        "domain": [
+          "availsqaapi.premieredigital.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1275042060207132672",
+        "https://www.virustotal.com/gui/file/e7b992f95b3908579d026f22c237ad5ff7663c9886b520f15cc3e27ef90dcbb1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2020-02-13",
+      "indicators": {
+        "domain": [
+          "dailystudy.org",
+          "eventmonitoring.org",
+          "gefurrinn.com",
+          "imap-outlook.com",
+          "powersafety.org",
+          "smtpauths.com",
+          "smtpsync.com",
+          "theworldjob.org",
+          "world-careers.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/",
+        "https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2019-12-16",
+      "indicators": {
+        "ipv4": [
+          "188.166.55.116:56444"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Sam1rSQS/status/1206552916959662080"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-11-14",
+      "indicators": {
+        "domain": [
+          "qualitweb.com",
+          "service-eset.com",
+          "service-essential.com",
+          "service-explorer.com",
+          "service-norton.com",
+          "simsoshop.com",
+          "suncocity.com",
+          "update-symantec.com",
+          "zandelshop.com",
+          "zeverco.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/",
+        "https://otx.alienvault.com/pulse/5dcd22740cea7974f1e9927b"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-11-13",
+      "indicators": {
+        "domain": [
+          "azure-dnszones.com",
+          "global-careers.org",
+          "lovememories.org",
+          "times-sync.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/CTI_Marc/status/1194573048625729536",
+        "https://otx.alienvault.com/pulse/5dcc25f17c401b08b33d3d84",
+        "https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/",
+        "https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2019-09-20",
+      "indicators": {
+        "domain": [
+          "admindirector.com",
+          "businessscards.com",
+          "cardchsk.com",
+          "cardkuys.com",
+          "ceoadminoffice.com",
+          "diplomatsign.com",
+          "groupchiefexecutive.com",
+          "mailsarchive.com",
+          "managementdirector.com",
+          "moreonlineshopping.com",
+          "officemngt.com",
+          "phpencryptssl.com",
+          "service-search.info",
+          "tokensetting.com",
+          "truelogon.com",
+          "urlmanage.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://hyas.com/news/hunting-apt33-campaign-infrastructure/",
+        "https://otx.alienvault.com/pulse/5d85272acd389e89e743368c"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-03",
+      "indicators": {
+        "domain": [
+          "customermgmt.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://hyas.com/news/hunting-apt33-campaign-infrastructure/",
+        "https://otx.alienvault.com/pulse/5d85272acd389e89e743368c"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2019-06-26",
+      "indicators": {
+        "domain": [
+          "backupnet.ddns.net",
+          "bistbotsproxies.ddns.net",
+          "fucksaudi.ddns.net",
+          "googlechromehost.ddns.net",
+          "hellocookies.ddns.net",
+          "hyperservice.ddns.net",
+          "mynetwork.cf",
+          "n3tc4t.hopto.com",
+          "newhost.hopto.org",
+          "njrat12.ddns.net",
+          "remote-server.ddns.net",
+          "remserver.ddns.net",
+          "servhost.hopto.org",
+          "service-avant.com",
+          "srvhost.servehttp.com",
+          "svcexplores.com",
+          "teamnj.ddns.net",
+          "trojan1117.hopto.org",
+          "update-sec.com",
+          "windowsx.sytes.net",
+          "wwwgooglecom.sytes.net",
+          "xtreme.hopto.org",
+          "younesadams.ddns.net",
+          "za158155.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 24
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-26",
+      "indicators": {
+        "domain": [
+          "chromup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-06-23",
+      "indicators": {
+        "domain": [
+          "inboxsync.org",
+          "whiteelection.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1142749950998171648",
+        "https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/",
+        "https://hyas.com/news/hunting-apt33-campaign-infrastructure/",
+        "https://otx.alienvault.com/pulse/5d85272acd389e89e743368c"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-23",
+      "indicators": {
+        "domain": [
+          "backupaccount.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1142749950998171648",
+        "https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/",
+        "https://hyas.com/news/hunting-apt33-campaign-infrastructure/",
+        "https://otx.alienvault.com/pulse/5d85272acd389e89e743368c",
+        "https://twitter.com/Sam1rSQS/status/1206552916959662080"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-23",
+      "indicators": {
+        "domain": [
+          "becomestateman.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1142749950998171648",
+        "https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "url_path": 1
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "domain": [
+          "aramcojobs.ddns.net",
+          "dyn-corp.ddns.net",
+          "dyncorp.ddns.net",
+          "mynetwork2.ddns.net",
+          "ngaaksa.ga",
+          "sabic-co.ddns.net",
+          "saharapcc.ddns.net",
+          "sipchem.ddns.net"
+        ],
+        "url_path": [
+          "/aramco/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1059532789572386817",
+        "https://twitter.com/ClearskySec/status/1059532946045050883"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "domain": [
+          "mynetwork.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1059532789572386817",
+        "https://twitter.com/ClearskySec/status/1059532946045050883",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-01-10",
+      "indicators": {
+        "domain": [
+          "alsalam.ddns.net",
+          "boeing.servehttp.com",
+          "googlmail.net",
+          "managehelpdesk.com",
+          "microsoftupdated.net",
+          "ngaaksa.ddns.net",
+          "ngaaksa.sytes.net",
+          "osupd.com",
+          "syn.broadcaster.rocks",
+          "vinnellarabia.myftp.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-01-10",
+      "indicators": {
+        "domain": [
+          "mywinnetwork.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-11-13",
+      "indicators": {
+        "domain": [
+          "mypsh.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-11-07",
+      "indicators": {
+        "domain": [
+          "microsoftupdated.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-03-24",
+      "indicators": {
+        "domain": [
+          "securityupdated.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf",
+        "https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa"
+      ],
+      "total": 1
+    }
+  ]
+}

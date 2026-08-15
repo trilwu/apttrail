@@ -1,0 +1,43 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1689258478",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "007f6b4c-0c39-5f7f-aed5-800f2a477957",
+        "value": "justiceua.org"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cadetblizzard"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Ember Bear - G1003\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Ember Bear (G1003) - Maltrail group CADETBLIZZARD",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c720d7c0-1407-596b-b9a1-a63d4e34d48d"
+  }
+}

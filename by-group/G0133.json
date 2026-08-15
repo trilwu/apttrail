@@ -1,0 +1,200 @@
+{
+  "aliases": [
+    "Dustsquad",
+    "Nomadic Octopus",
+    "Octopus",
+    "Paperbug"
+  ],
+  "attack_id": "G0133",
+  "attack_name": "Nomadic Octopus",
+  "attack_url": "https://attack.mitre.org/groups/G0133/",
+  "counts": {
+    "domain": 15,
+    "url": 11,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "blondehairman.com": "2018-10-19",
+      "certificatesshop.com": "2018-10-19",
+      "cookiesqueen.com": "2019-11-21",
+      "desperados20.es": "2018-10-19",
+      "footcoinball.com": "2023-04-28",
+      "giftfromspace.com": "2018-10-19",
+      "hovnanflovers.com": "2018-10-19",
+      "humorpics.download": "2018-10-19",
+      "islandsnake.com": "2023-04-28",
+      "latecafe.in": "2018-10-19",
+      "lovingearthy.com": "2023-04-28",
+      "mikohanzer.website": "2018-10-19",
+      "poisonfight.com": "2019-11-21",
+      "porenticofacts.com": "2018-10-19",
+      "prom3.biz.ua": "2018-10-19"
+    },
+    "url": {
+      "http://185.32.126.102": "2023-04-28",
+      "http://185.99.133.244": "2023-04-28",
+      "http://194.180.174.154": "2023-04-28",
+      "http://199.188.200.245": "2023-04-28",
+      "http://44.227.65.245": "2023-04-28",
+      "http://44.227.76.166": "2023-04-28",
+      "http://54.36.185.101": "2023-04-28",
+      "http://86.106.137.150": "2023-04-28",
+      "http://91.208.184.79": "2023-04-28",
+      "http://91.219.238.239": "2023-04-28",
+      "http://94.140.114.20": "2023-04-28"
+    },
+    "url_path": {
+      "/0ct0pus3.php": "2018-10-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-19",
+    "latest": "2023-04-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "blondehairman.com",
+      "certificatesshop.com",
+      "cookiesqueen.com",
+      "desperados20.es",
+      "footcoinball.com",
+      "giftfromspace.com",
+      "hovnanflovers.com",
+      "humorpics.download",
+      "islandsnake.com",
+      "latecafe.in",
+      "lovingearthy.com",
+      "mikohanzer.website",
+      "poisonfight.com",
+      "porenticofacts.com",
+      "prom3.biz.ua"
+    ],
+    "url": [
+      "http://185.32.126.102",
+      "http://185.99.133.244",
+      "http://194.180.174.154",
+      "http://199.188.200.245",
+      "http://44.227.65.245",
+      "http://44.227.76.166",
+      "http://54.36.185.101",
+      "http://86.106.137.150",
+      "http://91.208.184.79",
+      "http://91.219.238.239",
+      "http://94.140.114.20"
+    ],
+    "url_path": [
+      "/0ct0pus3.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DUSTSQUAD"
+  ],
+  "references": [
+    "https://securelist.com/octopus-infested-seas-of-central-asia/88200/",
+    "https://twitter.com/Rmy_Reserve/status/1197448735422238721",
+    "https://www.prodaft.com/resource/detail/paperbug-nomadic-octopus-paperbug-campaign",
+    "https://www.virustotal.com/gui/file/f5941f3d8dc8d60581d4915d06d56acba74f3ffad543680a85037a8d3bf3f8bc/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "40% of published techniques in common",
+          "kind": "technique",
+          "weight": 0.4
+        }
+      ],
+      "slug": "G0079"
+    }
+  ],
+  "slug": "G0133",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3,
+        "url": 11
+      },
+      "first_seen": "2023-04-28",
+      "indicators": {
+        "domain": [
+          "footcoinball.com",
+          "islandsnake.com",
+          "lovingearthy.com"
+        ],
+        "url": [
+          "http://185.32.126.102",
+          "http://185.99.133.244",
+          "http://194.180.174.154",
+          "http://199.188.200.245",
+          "http://44.227.65.245",
+          "http://44.227.76.166",
+          "http://54.36.185.101",
+          "http://86.106.137.150",
+          "http://91.208.184.79",
+          "http://91.219.238.239",
+          "http://94.140.114.20"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.prodaft.com/resource/detail/paperbug-nomadic-octopus-paperbug-campaign"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-11-21",
+      "indicators": {
+        "domain": [
+          "cookiesqueen.com",
+          "poisonfight.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Rmy_Reserve/status/1197448735422238721",
+        "https://www.virustotal.com/gui/file/f5941f3d8dc8d60581d4915d06d56acba74f3ffad543680a85037a8d3bf3f8bc/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 10,
+        "url_path": 1
+      },
+      "first_seen": "2018-10-19",
+      "indicators": {
+        "domain": [
+          "blondehairman.com",
+          "certificatesshop.com",
+          "desperados20.es",
+          "giftfromspace.com",
+          "hovnanflovers.com",
+          "humorpics.download",
+          "latecafe.in",
+          "mikohanzer.website",
+          "porenticofacts.com",
+          "prom3.biz.ua"
+        ],
+        "url_path": [
+          "/0ct0pus3.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/octopus-infested-seas-of-central-asia/88200/"
+      ],
+      "total": 11
+    }
+  ]
+}

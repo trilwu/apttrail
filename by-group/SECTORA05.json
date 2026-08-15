@@ -1,0 +1,220 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 31,
+    "url_path": 4
+  },
+  "first_seen": {
+    "domain": {
+      "acount-qooqle.pe.hu": "2019-02-04",
+      "ago2.co.kr": "2019-02-04",
+      "ahnniab.esy.es": "2019-02-04",
+      "aiyac-updaite.hol.es": "2019-02-04",
+      "daum-safety-team.esy.es": "2019-02-04",
+      "daum-settting.hol.es": "2019-03-06",
+      "gyjmc.com": "2019-02-04",
+      "jejuseongahn.org": "2019-02-04",
+      "jundosase.cafe24.com": "2019-02-04",
+      "kuku675.site11.com": "2019-02-04",
+      "kuku79.herobo.com": "2019-02-04",
+      "mail-service.pe.hu": "2019-02-04",
+      "mail-support.esy.es": "2019-02-04",
+      "ms-performance.hol.es": "2019-03-06",
+      "msperformance.hol.es": "2019-03-06",
+      "my-homework.890m.com": "2019-02-04",
+      "myacccounts-goggle.hol.es": "2019-02-04",
+      "myaccounnts-goggle.esy.es": "2019-02-04",
+      "myprofileacc.pe.hu": "2019-03-06",
+      "nav-mail.hol.es": "2019-02-04",
+      "navem-rnail.hol.es": "2019-03-06",
+      "need-nver.hol.es": "2019-03-06",
+      "nid-mail.esy.es": "2019-02-04",
+      "nid-mail.hol.es": "2019-03-06",
+      "nid-mail.pe.hu": "2019-03-06",
+      "nid-naver.hol.es": "2019-02-04",
+      "nid-never.pe.hu": "2019-03-06",
+      "qqoqle-centering.esy.es": "2019-02-04",
+      "rnyacount-jpadmin.hol.es": "2019-03-06",
+      "safe-naver-mail.pe.hu": "2019-02-04",
+      "suppcrt-seourity.esy.es": "2019-02-04"
+    },
+    "url_path": {
+      "/bbs/data/board.php": "2019-03-22",
+      "/bbs/data/tmp/D.php": "2019-03-22",
+      "/bbs/data/tmp/Ping.php": "2019-03-22",
+      "/bbs/data/tmp/fileupload.php": "2019-03-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-02-04",
+    "latest": "2019-03-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "acount-qooqle.pe.hu",
+      "ago2.co.kr",
+      "ahnniab.esy.es",
+      "aiyac-updaite.hol.es",
+      "daum-safety-team.esy.es",
+      "daum-settting.hol.es",
+      "gyjmc.com",
+      "jejuseongahn.org",
+      "jundosase.cafe24.com",
+      "kuku675.site11.com",
+      "kuku79.herobo.com",
+      "mail-service.pe.hu",
+      "mail-support.esy.es",
+      "ms-performance.hol.es",
+      "msperformance.hol.es",
+      "my-homework.890m.com",
+      "myacccounts-goggle.hol.es",
+      "myaccounnts-goggle.esy.es",
+      "myprofileacc.pe.hu",
+      "nav-mail.hol.es",
+      "navem-rnail.hol.es",
+      "need-nver.hol.es",
+      "nid-mail.esy.es",
+      "nid-mail.hol.es",
+      "nid-mail.pe.hu",
+      "nid-naver.hol.es",
+      "nid-never.pe.hu",
+      "qqoqle-centering.esy.es",
+      "rnyacount-jpadmin.hol.es",
+      "safe-naver-mail.pe.hu",
+      "suppcrt-seourity.esy.es"
+    ],
+    "url_path": [
+      "/bbs/data/board.php",
+      "/bbs/data/tmp/D.php",
+      "/bbs/data/tmp/Ping.php",
+      "/bbs/data/tmp/fileupload.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SECTORA05"
+  ],
+  "references": [
+    "http://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf",
+    "https://threatrecon.nshc.net/2019/01/30/operation-kitty-phishing/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "8 shared indicators",
+          "kind": "infrastructure",
+          "weight": 8.0
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "SECTORA05",
+  "timeline": [
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "url_path": [
+          "/bbs/data/board.php",
+          "/bbs/data/tmp/D.php",
+          "/bbs/data/tmp/Ping.php",
+          "/bbs/data/tmp/fileupload.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-03-06",
+      "indicators": {
+        "domain": [
+          "daum-settting.hol.es",
+          "ms-performance.hol.es",
+          "msperformance.hol.es",
+          "myprofileacc.pe.hu",
+          "navem-rnail.hol.es",
+          "need-nver.hol.es",
+          "nid-mail.hol.es",
+          "nid-mail.pe.hu",
+          "nid-never.pe.hu",
+          "rnyacount-jpadmin.hol.es"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2019-02-04",
+      "indicators": {
+        "domain": [
+          "ago2.co.kr",
+          "ahnniab.esy.es",
+          "daum-safety-team.esy.es",
+          "gyjmc.com",
+          "jejuseongahn.org",
+          "jundosase.cafe24.com",
+          "kuku675.site11.com",
+          "kuku79.herobo.com",
+          "mail-service.pe.hu",
+          "mail-support.esy.es",
+          "myacccounts-goggle.hol.es",
+          "myaccounnts-goggle.esy.es",
+          "nid-mail.esy.es",
+          "qqoqle-centering.esy.es",
+          "safe-naver-mail.pe.hu",
+          "suppcrt-seourity.esy.es"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatrecon.nshc.net/2019/01/30/operation-kitty-phishing/"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-02-04",
+      "indicators": {
+        "domain": [
+          "acount-qooqle.pe.hu",
+          "aiyac-updaite.hol.es",
+          "my-homework.890m.com",
+          "nav-mail.hol.es",
+          "nid-naver.hol.es"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatrecon.nshc.net/2019/01/30/operation-kitty-phishing/",
+        "http://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf"
+      ],
+      "total": 5
+    }
+  ]
+}

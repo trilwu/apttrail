@@ -1,0 +1,272 @@
+{
+  "aliases": [
+    "UAC-0008"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 24,
+    "url": 4,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "allwomens.eu": "2018-08-06",
+      "alt-2cdn.net": "2022-02-21",
+      "avidium.ru.com": "2018-08-06",
+      "corp-microsoft.com": "2019-07-11",
+      "cs1.wpc-v0cdn.org": "2022-02-21",
+      "edinstvennaya.eu": "2018-08-06",
+      "hdfilm-seyret.com": "2019-07-11",
+      "ipv6-microsoft.org": "2019-03-25",
+      "ipv6-wpnc.net": "2022-02-21",
+      "khabmama.eu": "2018-08-06",
+      "mail.nais-gov.org": "2022-02-21",
+      "nais-gov.com": "2022-02-21",
+      "nais-gov.org": "2022-02-21",
+      "ns2-dns.com": "2022-02-21",
+      "ns3-dns.com": "2022-02-21",
+      "redmond.corp-microsoft.com": "2019-06-04",
+      "secure-telemetry.net": "2019-03-25",
+      "services-glbdns2.com": "2019-03-25",
+      "shkolazhizni.eu": "2018-08-06",
+      "sibmama.eu": "2018-08-06",
+      "slingshop.ru.com": "2018-08-06",
+      "widget.forum-pokemon.com": "2022-02-21",
+      "wpc-v0cdn.org": "2022-02-21",
+      "zhenskoe-mnenie.eu": "2018-08-06"
+    },
+    "url": {
+      "engde.fr/community/viewforum.php": "2019-06-04",
+      "focus.tula.su/viewforum.php": "2018-08-06",
+      "http://195.123.227.99": "2019-09-09",
+      "topic.penza.su/viewtopic.php": "2018-08-06"
+    },
+    "url_path": {
+      "/g_38472341.php": "2019-09-09"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-06",
+    "latest": "2022-02-21"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "allwomens.eu",
+      "alt-2cdn.net",
+      "avidium.ru.com",
+      "corp-microsoft.com",
+      "cs1.wpc-v0cdn.org",
+      "edinstvennaya.eu",
+      "hdfilm-seyret.com",
+      "ipv6-microsoft.org",
+      "ipv6-wpnc.net",
+      "khabmama.eu",
+      "mail.nais-gov.org",
+      "nais-gov.com",
+      "nais-gov.org",
+      "ns2-dns.com",
+      "ns3-dns.com",
+      "redmond.corp-microsoft.com",
+      "secure-telemetry.net",
+      "services-glbdns2.com",
+      "shkolazhizni.eu",
+      "sibmama.eu",
+      "slingshop.ru.com",
+      "widget.forum-pokemon.com",
+      "wpc-v0cdn.org",
+      "zhenskoe-mnenie.eu"
+    ],
+    "url": [
+      "engde.fr/community/viewforum.php",
+      "focus.tula.su/viewforum.php",
+      "http://195.123.227.99",
+      "topic.penza.su/viewtopic.php"
+    ],
+    "url_path": [
+      "/g_38472341.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BUHTRAP"
+  ],
+  "references": [
+    "https://cert.gov.ua/article/37246",
+    "https://otx.alienvault.com/pulse/5cf6846544f75bf827720cb4",
+    "https://otx.alienvault.com/pulse/5d270b29fccc021c80764db4",
+    "https://securelist.ru/buhtrap-strikes-again/90980/",
+    "https://securelist.ru/news-buhtrap/89540/",
+    "https://twitter.com/c_APT_ure/status/1171102216784158720",
+    "https://www.virustotal.com/gui/file/2598455a3dc8ff8282adc081f87bceddb101281d168ebaee98bce784c21e6e40/detection",
+    "https://www.virustotal.com/gui/file/b475f14a1ffdeaf883c73e97724544b9bba0f6c481830bd25e3ba0d0f69b9181/detection (# Win32/Spy.Buhtrap.AK, ESET-NOD32)",
+    "https://www.welivesecurity.com/2019/07/11/buhtrap-zero-day-espionage-campaigns/"
+  ],
+  "related": [],
+  "slug": "BUHTRAP",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2022-02-21",
+      "indicators": {
+        "domain": [
+          "alt-2cdn.net",
+          "cs1.wpc-v0cdn.org",
+          "ipv6-wpnc.net",
+          "mail.nais-gov.org",
+          "nais-gov.com",
+          "nais-gov.org",
+          "ns2-dns.com",
+          "ns3-dns.com",
+          "widget.forum-pokemon.com",
+          "wpc-v0cdn.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/37246"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen": "2019-09-09",
+      "indicators": {
+        "url": [
+          "http://195.123.227.99"
+        ],
+        "url_path": [
+          "/g_38472341.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/c_APT_ure/status/1171102216784158720",
+        "https://www.virustotal.com/gui/file/2598455a3dc8ff8282adc081f87bceddb101281d168ebaee98bce784c21e6e40/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-07-11",
+      "indicators": {
+        "domain": [
+          "corp-microsoft.com",
+          "hdfilm-seyret.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/07/11/buhtrap-zero-day-espionage-campaigns/",
+        "https://otx.alienvault.com/pulse/5d270b29fccc021c80764db4"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "url": [
+          "engde.fr/community/viewforum.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.ru/news-buhtrap/89540/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "redmond.corp-microsoft.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cf6846544f75bf827720cb4",
+        "https://www.virustotal.com/gui/file/b475f14a1ffdeaf883c73e97724544b9bba0f6c481830bd25e3ba0d0f69b9181/detection (# Win32/Spy.Buhtrap.AK, ESET-NOD32)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-03-25",
+      "indicators": {
+        "domain": [
+          "ipv6-microsoft.org",
+          "secure-telemetry.net",
+          "services-glbdns2.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/07/11/buhtrap-zero-day-espionage-campaigns/",
+        "https://otx.alienvault.com/pulse/5d270b29fccc021c80764db4"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2018-08-06",
+      "indicators": {
+        "domain": [
+          "allwomens.eu",
+          "avidium.ru.com",
+          "edinstvennaya.eu",
+          "khabmama.eu",
+          "shkolazhizni.eu",
+          "sibmama.eu",
+          "slingshop.ru.com",
+          "zhenskoe-mnenie.eu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.ru/buhtrap-strikes-again/90980/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2018-08-06",
+      "indicators": {
+        "url": [
+          "focus.tula.su/viewforum.php",
+          "topic.penza.su/viewtopic.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.ru/news-buhtrap/89540/"
+      ],
+      "total": 2
+    }
+  ]
+}

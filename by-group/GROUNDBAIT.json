@@ -1,0 +1,97 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 7,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "bolepaund.com": "2017-04-07",
+      "disk-fulldatabase.rhcloud.com": "2017-04-07",
+      "gils.ho.ua": "2017-04-07",
+      "lefting.org": "2017-04-07",
+      "literat.ho.ua": "2017-04-07",
+      "wallejob.in.ua": "2017-04-07",
+      "wallex.ho.ua": "2017-04-07"
+    },
+    "url": {
+      "celebrat.net/wd.php": "2020-11-11"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-07",
+    "latest": "2020-11-11"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bolepaund.com",
+      "disk-fulldatabase.rhcloud.com",
+      "gils.ho.ua",
+      "lefting.org",
+      "literat.ho.ua",
+      "wallejob.in.ua",
+      "wallex.ho.ua"
+    ],
+    "url": [
+      "celebrat.net/wd.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GROUNDBAIT"
+  ],
+  "references": [
+    "https://github.com/eset/malware-ioc/tree/master/groundbait",
+    "https://www.virustotal.com/gui/file/a72fd9b23d0388ddcf38e6ca324a6853d08f261360236bb14e5594e879f9ea88/behavior"
+  ],
+  "related": [],
+  "slug": "GROUNDBAIT",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-11-11",
+      "indicators": {
+        "url": [
+          "celebrat.net/wd.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/a72fd9b23d0388ddcf38e6ca324a6853d08f261360236bb14e5594e879f9ea88/behavior"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2017-04-07",
+      "indicators": {
+        "domain": [
+          "bolepaund.com",
+          "disk-fulldatabase.rhcloud.com",
+          "gils.ho.ua",
+          "lefting.org",
+          "literat.ho.ua",
+          "wallejob.in.ua",
+          "wallex.ho.ua"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/groundbait"
+      ],
+      "total": 7
+    }
+  ]
+}

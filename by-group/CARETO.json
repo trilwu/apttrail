@@ -1,0 +1,238 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 32
+  },
+  "first_seen": {
+    "domain": {
+      "appleupdt.com": "2015-03-18",
+      "carrus.gotdns.com": "2015-03-18",
+      "cherry1962.dyndns.org": "2015-03-18",
+      "ctronlinenews.dyndns.tv": "2015-03-18",
+      "dfup.selfip.org": "2015-03-18",
+      "fast8.homeftp.org": "2015-03-18",
+      "gx5639.dyndns.tv": "2015-03-18",
+      "helpcenter1it6238.cz.cc": "2021-01-16",
+      "helpcenter2br6932.cc": "2021-01-16",
+      "isaserver.minrex.gov.cu": "2017-04-12",
+      "karpeskmon.dyndns.org": "2017-04-12",
+      "linkconf.net": "2015-03-18",
+      "mango66.dyndns.org": "2015-03-18",
+      "msupdate.ath.cx": "2017-04-12",
+      "msupdt.com": "2015-03-18",
+      "nav1002.ath.cx": "2015-03-18",
+      "nthost.shacknet.nu": "2015-03-18",
+      "oco-231-ms.xns01.com": "2021-01-16",
+      "pininfarina.dynalias.com": "2015-03-18",
+      "pl400.dyndns.org": "2015-03-18",
+      "prosoccer1.dyndns.info": "2015-03-18",
+      "prosoccer2.dyndns.info": "2015-03-18",
+      "redirserver.net": "2015-03-18",
+      "ricush.ath.cx": "2015-03-18",
+      "services.serveftp.org": "2015-03-18",
+      "sv.serveftp.org": "2015-03-18",
+      "swupdt.com": "2015-03-18",
+      "takami.podzone.net": "2015-03-18",
+      "tunga.homedns.org": "2015-03-18",
+      "updates.homeftp.org": "2022-01-01",
+      "wqq.dyndns.org": "2015-03-18",
+      "wwnav.selfip.net": "2015-03-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2022-01-01"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "appleupdt.com",
+      "carrus.gotdns.com",
+      "cherry1962.dyndns.org",
+      "ctronlinenews.dyndns.tv",
+      "dfup.selfip.org",
+      "fast8.homeftp.org",
+      "gx5639.dyndns.tv",
+      "helpcenter1it6238.cz.cc",
+      "helpcenter2br6932.cc",
+      "isaserver.minrex.gov.cu",
+      "karpeskmon.dyndns.org",
+      "linkconf.net",
+      "mango66.dyndns.org",
+      "msupdate.ath.cx",
+      "msupdt.com",
+      "nav1002.ath.cx",
+      "nthost.shacknet.nu",
+      "oco-231-ms.xns01.com",
+      "pininfarina.dynalias.com",
+      "pl400.dyndns.org",
+      "prosoccer1.dyndns.info",
+      "prosoccer2.dyndns.info",
+      "redirserver.net",
+      "ricush.ath.cx",
+      "services.serveftp.org",
+      "sv.serveftp.org",
+      "swupdt.com",
+      "takami.podzone.net",
+      "tunga.homedns.org",
+      "updates.homeftp.org",
+      "wqq.dyndns.org",
+      "wwnav.selfip.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CARETO"
+  ],
+  "references": [
+    "http://kernelmode.info/forum/viewtopic.php?f=16&t=3159",
+    "https://discussions.nessus.org/thread/7087",
+    "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Lazarus.json",
+    "https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz",
+    "https://snort-org-site.s3.amazonaws.com/production/release_files/files/000/012/156/original/snort3-community-rules.tar.gz"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "SAGUARO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0032"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0097"
+    }
+  ],
+  "slug": "CARETO",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-01",
+      "indicators": {
+        "domain": [
+          "updates.homeftp.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Lazarus.json"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-01-16",
+      "indicators": {
+        "domain": [
+          "helpcenter1it6238.cz.cc",
+          "helpcenter2br6932.cc",
+          "oco-231-ms.xns01.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz",
+        "https://snort-org-site.s3.amazonaws.com/production/release_files/files/000/012/156/original/snort3-community-rules.tar.gz"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2017-04-12",
+      "indicators": {
+        "domain": [
+          "isaserver.minrex.gov.cu",
+          "karpeskmon.dyndns.org",
+          "msupdate.ath.cx"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://kernelmode.info/forum/viewtopic.php?f=16&t=3159"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 25
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "appleupdt.com",
+          "carrus.gotdns.com",
+          "cherry1962.dyndns.org",
+          "ctronlinenews.dyndns.tv",
+          "dfup.selfip.org",
+          "fast8.homeftp.org",
+          "gx5639.dyndns.tv",
+          "linkconf.net",
+          "mango66.dyndns.org",
+          "msupdt.com",
+          "nav1002.ath.cx",
+          "nthost.shacknet.nu",
+          "pininfarina.dynalias.com",
+          "pl400.dyndns.org",
+          "prosoccer1.dyndns.info",
+          "prosoccer2.dyndns.info",
+          "redirserver.net",
+          "ricush.ath.cx",
+          "services.serveftp.org",
+          "sv.serveftp.org",
+          "swupdt.com",
+          "takami.podzone.net",
+          "tunga.homedns.org",
+          "wqq.dyndns.org",
+          "wwnav.selfip.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://discussions.nessus.org/thread/7087"
+      ],
+      "total": 25
+    }
+  ]
+}

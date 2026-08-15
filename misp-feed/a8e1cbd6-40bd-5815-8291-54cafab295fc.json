@@ -1,0 +1,127 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e14382c3-9e20-592b-9b63-6de0fbc004f2",
+        "value": "akamprod.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4ed00817-3a4e-54d7-b668-7083b2bd727e",
+        "value": "googleanalytics.proxydns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c0ec4f14-6ffd-52a2-be65-77151a5d9ec1",
+        "value": "servusers.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "36b44a1a-14c9-53de-b709-ad725bf26a58",
+        "value": "u2d.servusers.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4979d65d-09ac-5413-9179-2b43a54b2620",
+        "value": "http://158.247.200.24"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "08cfc549-b828-5d3f-9c39-15f5ba8fb081",
+        "value": "http://180.149.38.136"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "2b1be11e-ec01-549a-83be-25d227574a11",
+        "value": "http://185.82.218.66"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "f6f2c657-eb1d-5536-83b8-b4fdfa941ddc",
+        "value": "http://192.248.152.58"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "c8680688-6f2d-5134-9020-0419b1e161e4",
+        "value": "http://209.250.231.67"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "263ed2d4-443c-553c-b193-9b3c9e8f2aee",
+        "value": "http://5.188.228.40"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "37279df1-049f-5fa3-81c3-5b3acc852b97",
+        "value": "http://95.85.71.20"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655397723",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "ff65317b-4e02-5095-b1fc-7687cad8f803",
+        "value": "http://95.85.71.23"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:driftingcloud"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DRIFTINGCLOUD",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a8e1cbd6-40bd-5815-8291-54cafab295fc"
+  }
+}

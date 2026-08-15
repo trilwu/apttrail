@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1a5c1a7f-d565-5176-bf5d-509f9a4a7b3d",
+        "value": "ddspadus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "22d4f035-ce32-5de4-9938-9ff972d966a9",
+        "value": "http.ddspadus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cd76290c-ba56-5527-9b0e-0ad250f60e05",
+        "value": "hxxp.ddspadus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1a0477f5-efaa-5779-b2bf-d6a3fe091fc7",
+        "value": "ipv6.ddspadus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "856dc930-60cf-542f-89e1-9b412f2cbd59",
+        "value": "nhttp.ddspadus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1647163942",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dde015eb-6c32-5f71-bd07-1df99637fe0f",
+        "value": "ttp.ddspadus.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:ironhusky"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: IRONHUSKY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a4fd4ccb-a68b-5193-8073-f8ecdcd7207b"
+  }
+}

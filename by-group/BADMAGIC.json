@@ -1,0 +1,428 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 27,
+    "ipv4": 2,
+    "url": 5,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "01yakutsk.ru": "2024-05-22",
+      "asteriskx.ru": "2024-06-10",
+      "astita.ru": "2024-07-12",
+      "autotimesvc.com": "2023-12-02",
+      "clodmail.ru": "2023-12-02",
+      "contileservices.net": "2023-12-02",
+      "ivanovee.ru": "2026-05-01",
+      "kassperskylaw.ru": "2023-12-01",
+      "kb6ns.ru": "2024-08-28",
+      "licensecheckout.net": "2023-12-02",
+      "mail.01yakutsk.ru": "2024-05-22",
+      "mail.russexportlogistics.ru": "2024-05-20",
+      "passportyandex.net": "2023-12-02",
+      "russexportlogistics.ru": "2024-05-20",
+      "savebrowsing.net": "2023-12-02",
+      "securitysearch.ddns.net": "2023-05-10",
+      "servicehost-update.net": "2023-03-17",
+      "softdownloaderonline.net": "2023-12-02",
+      "statusgeotrust.com": "2023-12-02",
+      "tapiservicemgr.com": "2023-12-02",
+      "uploaderonline.com": "2023-12-02",
+      "uploadingonline.com": "2023-12-02",
+      "versusmain.com": "2023-12-02",
+      "webservice-srv.online": "2023-03-21",
+      "webservice-srv1.online": "2023-03-21",
+      "winupdateronline.com": "2023-12-02",
+      "winuptodate.com": "2023-12-02"
+    },
+    "ipv4": {
+      "185.166.217.184:2380": "2023-05-10",
+      "5.35.100.31:443": "2023-12-01"
+    },
+    "url": {
+      "http://176.114.9.192": "2023-05-10",
+      "http://185.166.217.184": "2022-09-23",
+      "http://45.154.116.147": "2023-05-10",
+      "http://91.234.33.108": "2021-04-02",
+      "http://91.234.33.185": "2023-05-10"
+    },
+    "url_path": {
+      "/CFVJKXIUPHESRHUSE4FHUREHUIFERAY97A4FXA/": "2022-09-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-04-02",
+    "latest": "2026-05-01"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "01yakutsk.ru",
+      "asteriskx.ru",
+      "astita.ru",
+      "autotimesvc.com",
+      "clodmail.ru",
+      "contileservices.net",
+      "ivanovee.ru",
+      "kassperskylaw.ru",
+      "kb6ns.ru",
+      "licensecheckout.net",
+      "mail.01yakutsk.ru",
+      "mail.russexportlogistics.ru",
+      "passportyandex.net",
+      "russexportlogistics.ru",
+      "savebrowsing.net",
+      "securitysearch.ddns.net",
+      "servicehost-update.net",
+      "softdownloaderonline.net",
+      "statusgeotrust.com",
+      "tapiservicemgr.com",
+      "uploaderonline.com",
+      "uploadingonline.com",
+      "versusmain.com",
+      "webservice-srv.online",
+      "webservice-srv1.online",
+      "winupdateronline.com",
+      "winuptodate.com"
+    ],
+    "ipv4": [
+      "185.166.217.184:2380",
+      "5.35.100.31:443"
+    ],
+    "url": [
+      "http://176.114.9.192",
+      "http://185.166.217.184",
+      "http://45.154.116.147",
+      "http://91.234.33.108",
+      "http://91.234.33.185"
+    ],
+    "url_path": [
+      "/CFVJKXIUPHESRHUSE4FHUREHUIFERAY97A4FXA/"
+    ]
+  },
+  "last_modified": "2026-05-01T13:08:41+00:00",
+  "maltrail_groups": [
+    "BADMAGIC"
+  ],
+  "references": [
+    "https://bi.zone/eng/expertise/blog/core-werewolf-protiv-opk-i-kriticheskoy-infrastruktury/",
+    "https://securelist.com/bad-magic-apt/109087/ (# CommonMagic/PowerMagic)",
+    "https://twitter.com/ShadowChasing1/status/1377973764164476932",
+    "https://twitter.com/ShadowChasing1/status/1377973769579360258",
+    "https://twitter.com/ginkgo_g/status/1730523884649402872",
+    "https://twitter.com/h2jazi/status/1573309097021444096",
+    "https://twitter.com/h2jazi/status/1636768039273377797",
+    "https://www.malwarebytes.com/blog/threat-intelligence/2023/05/redstinger",
+    "https://www.virustotal.com/gui/file/14037909d704c418a1d97835bcf7cf62239f0ad3dfd9fc4f4ca191f28fca894a/detection",
+    "https://www.virustotal.com/gui/file/22eb4239b472a868ca0ab01bda28203b0b58e1788ef779ec8858c4a4fb57aa40/detection",
+    "https://www.virustotal.com/gui/file/2df66c8258ca164e2138997754c9226d88748612e4df16cfdcb0aa89c5c874f4/detection",
+    "https://www.virustotal.com/gui/file/301e819008e19b9803ad8b75ecede9ecfa5b11a3ecd8df0316914588b95371c8/detection",
+    "https://www.virustotal.com/gui/file/33e611181d25079cf975c20bce8a5969dd63c326c694731465a24147eba1002d/detection",
+    "https://www.virustotal.com/gui/file/42eecd06c7aea0a536f653dd1af238fa199df14f2adc4932443aa6f74889f582/detection",
+    "https://www.virustotal.com/gui/file/7d784e925f73946a63491483369427f6468de328c1d19c2d3ee05ebce0aa4d25/detection",
+    "https://www.virustotal.com/gui/file/b748d7f3083d6868e1e71469dcbc2d3f6b92b4962d05040d92a0ab9378ad0da3/detection",
+    "https://www.virustotal.com/gui/file/c1be9aa6f4ee71180d9779ab8ebae5a84c85b72083829d24e31787cfc9da6a96/detection",
+    "https://www.virustotal.com/gui/file/c75d905cd7826182505c15d39ebe952dca5b4c80fb62b8f7283fa09d7f51c815/detection",
+    "https://www.virustotal.com/gui/file/f68996c4d0a72a0b3c3f0757a7363678f7abd19df77c34288a135b9f425982d6/detection",
+    "https://www.virustotal.com/gui/file/fa89cbcc99939914e8655aac1f62e01d5bab35b6b4862441366290280be33e0c/detection",
+    "https://www.virustotal.com/gui/file/fb48b9102388620bb02d1a47297ba101f755632f9a421d09e9ab419cbeb65db8/detection",
+    "https://www.virustotal.com/gui/ip-address/31.31.198.109/relations",
+    "https://www.virustotal.com/gui/ip-address/45.154.116.147/relations",
+    "https://www.virustotal.com/gui/ip-address/5.35.100.31/relations",
+    "https://www.virustotal.com/gui/ip-address/5.8.50.153/relations",
+    "https://www.virustotal.com/gui/ip-address/80.85.155.64/relations",
+    "https://www.virustotal.com/gui/ip-address/95.142.39.88/relations",
+    "https://x.com/StrikeReadyLabs/status/1811797419971039539",
+    "https://x.com/alex_lanstein/status/1792291521884283058",
+    "https://x.com/fstenv/status/1828546982467518823",
+    "https://x.com/suyog41/status/1793183460158312914",
+    "https://x.com/suyog41/status/1800049246462411209"
+  ],
+  "related": [],
+  "slug": "BADMAGIC",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-05-01",
+      "indicators": {
+        "domain": [
+          "ivanovee.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ginkgo_g/status/1730523884649402872",
+        "https://www.virustotal.com/gui/ip-address/5.35.100.31/relations",
+        "https://www.virustotal.com/gui/file/fa89cbcc99939914e8655aac1f62e01d5bab35b6b4862441366290280be33e0c/detection",
+        "https://www.virustotal.com/gui/file/c1be9aa6f4ee71180d9779ab8ebae5a84c85b72083829d24e31787cfc9da6a96/detection",
+        "https://www.virustotal.com/gui/file/b748d7f3083d6868e1e71469dcbc2d3f6b92b4962d05040d92a0ab9378ad0da3/detection",
+        "https://www.virustotal.com/gui/file/22eb4239b472a868ca0ab01bda28203b0b58e1788ef779ec8858c4a4fb57aa40/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-08-28",
+      "indicators": {
+        "domain": [
+          "kb6ns.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/fstenv/status/1828546982467518823",
+        "https://www.virustotal.com/gui/file/14037909d704c418a1d97835bcf7cf62239f0ad3dfd9fc4f4ca191f28fca894a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-07-12",
+      "indicators": {
+        "domain": [
+          "astita.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/StrikeReadyLabs/status/1811797419971039539",
+        "https://www.virustotal.com/gui/ip-address/80.85.155.64/relations",
+        "https://www.virustotal.com/gui/file/42eecd06c7aea0a536f653dd1af238fa199df14f2adc4932443aa6f74889f582/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-06-10",
+      "indicators": {
+        "domain": [
+          "asteriskx.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/suyog41/status/1800049246462411209",
+        "https://www.virustotal.com/gui/file/33e611181d25079cf975c20bce8a5969dd63c326c694731465a24147eba1002d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-05-22",
+      "indicators": {
+        "domain": [
+          "01yakutsk.ru",
+          "mail.01yakutsk.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/suyog41/status/1793183460158312914",
+        "https://www.virustotal.com/gui/file/f68996c4d0a72a0b3c3f0757a7363678f7abd19df77c34288a135b9f425982d6/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-05-20",
+      "indicators": {
+        "domain": [
+          "mail.russexportlogistics.ru",
+          "russexportlogistics.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/alex_lanstein/status/1792291521884283058",
+        "https://www.virustotal.com/gui/ip-address/5.8.50.153/relations",
+        "https://www.virustotal.com/gui/file/7d784e925f73946a63491483369427f6468de328c1d19c2d3ee05ebce0aa4d25/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2023-12-02",
+      "indicators": {
+        "domain": [
+          "autotimesvc.com",
+          "clodmail.ru",
+          "contileservices.net",
+          "licensecheckout.net",
+          "passportyandex.net",
+          "savebrowsing.net",
+          "softdownloaderonline.net",
+          "statusgeotrust.com",
+          "tapiservicemgr.com",
+          "uploaderonline.com",
+          "uploadingonline.com",
+          "versusmain.com",
+          "winupdateronline.com",
+          "winuptodate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://bi.zone/eng/expertise/blog/core-werewolf-protiv-opk-i-kriticheskoy-infrastruktury/"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2023-12-01",
+      "indicators": {
+        "domain": [
+          "kassperskylaw.ru"
+        ],
+        "ipv4": [
+          "5.35.100.31:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ginkgo_g/status/1730523884649402872",
+        "https://www.virustotal.com/gui/ip-address/5.35.100.31/relations",
+        "https://www.virustotal.com/gui/file/fa89cbcc99939914e8655aac1f62e01d5bab35b6b4862441366290280be33e0c/detection",
+        "https://www.virustotal.com/gui/file/c1be9aa6f4ee71180d9779ab8ebae5a84c85b72083829d24e31787cfc9da6a96/detection",
+        "https://www.virustotal.com/gui/file/b748d7f3083d6868e1e71469dcbc2d3f6b92b4962d05040d92a0ab9378ad0da3/detection",
+        "https://www.virustotal.com/gui/file/22eb4239b472a868ca0ab01bda28203b0b58e1788ef779ec8858c4a4fb57aa40/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url": 3
+      },
+      "first_seen": "2023-05-10",
+      "indicators": {
+        "domain": [
+          "securitysearch.ddns.net"
+        ],
+        "ipv4": [
+          "185.166.217.184:2380"
+        ],
+        "url": [
+          "http://176.114.9.192",
+          "http://45.154.116.147",
+          "http://91.234.33.185"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1377973764164476932",
+        "https://twitter.com/ShadowChasing1/status/1377973769579360258",
+        "https://www.malwarebytes.com/blog/threat-intelligence/2023/05/redstinger",
+        "https://www.virustotal.com/gui/ip-address/45.154.116.147/relations",
+        "https://www.virustotal.com/gui/file/fb48b9102388620bb02d1a47297ba101f755632f9a421d09e9ab419cbeb65db8/detection",
+        "https://www.virustotal.com/gui/file/301e819008e19b9803ad8b75ecede9ecfa5b11a3ecd8df0316914588b95371c8/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-03-21",
+      "indicators": {
+        "domain": [
+          "webservice-srv.online",
+          "webservice-srv1.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/bad-magic-apt/109087/ (# CommonMagic/PowerMagic)",
+        "https://www.virustotal.com/gui/ip-address/31.31.198.109/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-03-17",
+      "indicators": {
+        "domain": [
+          "servicehost-update.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1636768039273377797",
+        "https://www.virustotal.com/gui/ip-address/95.142.39.88/relations",
+        "https://www.virustotal.com/gui/file/2df66c8258ca164e2138997754c9226d88748612e4df16cfdcb0aa89c5c874f4/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1,
+        "url_path": 1
+      },
+      "first_seen": "2022-09-23",
+      "indicators": {
+        "url": [
+          "http://185.166.217.184"
+        ],
+        "url_path": [
+          "/CFVJKXIUPHESRHUSE4FHUREHUIFERAY97A4FXA/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1573309097021444096",
+        "https://www.virustotal.com/gui/file/c75d905cd7826182505c15d39ebe952dca5b4c80fb62b8f7283fa09d7f51c815/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2021-04-02",
+      "indicators": {
+        "url": [
+          "http://91.234.33.108"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1377973764164476932",
+        "https://twitter.com/ShadowChasing1/status/1377973769579360258",
+        "https://www.malwarebytes.com/blog/threat-intelligence/2023/05/redstinger",
+        "https://www.virustotal.com/gui/ip-address/45.154.116.147/relations",
+        "https://www.virustotal.com/gui/file/fb48b9102388620bb02d1a47297ba101f755632f9a421d09e9ab419cbeb65db8/detection",
+        "https://www.virustotal.com/gui/file/301e819008e19b9803ad8b75ecede9ecfa5b11a3ecd8df0316914588b95371c8/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

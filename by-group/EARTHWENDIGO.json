@@ -1,0 +1,65 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4
+  },
+  "first_seen": {
+    "domain": {
+      "anybodyopenfind.com": "2021-01-05",
+      "googletwtw.com": "2021-01-05",
+      "mail2000tw.com": "2021-01-05",
+      "travelsiteadvisor.com": "2021-01-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-01-05",
+    "latest": "2021-01-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "anybodyopenfind.com",
+      "googletwtw.com",
+      "mail2000tw.com",
+      "travelsiteadvisor.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "EARTHWENDIGO"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5ff4910b62daeb96d924cce8",
+    "https://www.trendmicro.com/en_us/research/21/a/earth-wendigo-injects-javascript-backdoor-to-service-worker-for-.html"
+  ],
+  "related": [],
+  "slug": "EARTHWENDIGO",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-01-05",
+      "indicators": {
+        "domain": [
+          "anybodyopenfind.com",
+          "googletwtw.com",
+          "mail2000tw.com",
+          "travelsiteadvisor.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/21/a/earth-wendigo-injects-javascript-backdoor-to-service-worker-for-.html",
+        "https://otx.alienvault.com/pulse/5ff4910b62daeb96d924cce8"
+      ],
+      "total": 4
+    }
+  ]
+}

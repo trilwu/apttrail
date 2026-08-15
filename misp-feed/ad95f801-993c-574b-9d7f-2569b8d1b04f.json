@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "63d16dfa-7218-5a21-88d6-0787f1d36248",
+        "value": "195.201.175.210:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "7c333b80-196a-53e0-a81c-fa3912b35ef9",
+        "value": "3.215.23.185:3000"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "bd954e94-0796-5e7f-9f79-4cffb684e3b0",
+        "value": "3.215.23.185:8082"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c8c21afa-2095-59cf-ac20-7f6e28d92ab5",
+        "value": "45.148.10.141:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6d4c9516-1997-5c72-8356-d9f95bb56aa1",
+        "value": "45.148.10.141:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "69252980-89f9-5b46-bb42-c56929984929",
+        "value": "5.9.108.250:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6990eb0c-74d1-5510-b583-f6cf69e3b49b",
+        "value": "5.9.108.250:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "8f5e3051-6f3d-5ba5-880b-305c1fbcac7a",
+        "value": "http://195.201.175.210"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "2cd37530-eb1c-58e1-89a4-f3c0d8c6cb76",
+        "value": "http://3.215.23.185"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "421e63d1-57c8-5c1d-89ed-b07e6863e55b",
+        "value": "http://45.148.10.141"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "2d9ea0f1-0c5b-53dc-9130-8c30a2ff7d2c",
+        "value": "http://5.9.108.250"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:crimsoncollective"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CRIMSONCOLLECTIVE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "ad95f801-993c-574b-9d7f-2569b8d1b04f"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2,
+    "ipv4": 1,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "chain.mycoinexplorer.com": "2026-03-04",
+      "mycoinexplorer.com": "2026-03-04"
+    },
+    "ipv4": {
+      "176.10.80.38:8843": "2023-05-31"
+    },
+    "url": {
+      "webhook.site/288a834b-fd92-4531-82a5-b41e907daa56": "2023-05-31",
+      "webhook.site/2b733e31-70bb-4777-be4a-41a98f3559bf": "2023-05-31"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-05-31",
+    "latest": "2026-03-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "chain.mycoinexplorer.com",
+      "mycoinexplorer.com"
+    ],
+    "ipv4": [
+      "176.10.80.38:8843"
+    ],
+    "url": [
+      "webhook.site/288a834b-fd92-4531-82a5-b41e907daa56",
+      "webhook.site/2b733e31-70bb-4777-be4a-41a98f3559bf"
+    ]
+  },
+  "last_modified": "2026-03-04T19:06:02+00:00",
+  "maltrail_groups": [
+    "DARKPINK"
+  ],
+  "references": [
+    "https://www.group-ib.com/blog/dark-pink-apt/",
+    "https://www.group-ib.com/blog/dark-pink-episode-2/",
+    "https://www.virustotal.com/gui/file/2bcd2424b5c74bcfcda5aadfbcede3ad623e092ef7c725832d8950e79d3e2b51/detection",
+    "https://x.com/smica83/status/1988162278563238145"
+  ],
+  "related": [],
+  "slug": "DARKPINK",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-03-04",
+      "indicators": {
+        "domain": [
+          "chain.mycoinexplorer.com",
+          "mycoinexplorer.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/smica83/status/1988162278563238145",
+        "https://www.virustotal.com/gui/file/2bcd2424b5c74bcfcda5aadfbcede3ad623e092ef7c725832d8950e79d3e2b51/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen": "2023-05-31",
+      "indicators": {
+        "ipv4": [
+          "176.10.80.38:8843"
+        ],
+        "url": [
+          "webhook.site/288a834b-fd92-4531-82a5-b41e907daa56",
+          "webhook.site/2b733e31-70bb-4777-be4a-41a98f3559bf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.group-ib.com/blog/dark-pink-apt/",
+        "https://www.group-ib.com/blog/dark-pink-episode-2/"
+      ],
+      "total": 3
+    }
+  ]
+}

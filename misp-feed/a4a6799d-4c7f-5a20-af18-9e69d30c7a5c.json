@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1739649492",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fe21d36f-baf6-57c2-b44c-8adda7b27769",
+        "value": "akami-cdns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739649492",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8455fd07-f72b-5897-bcf9-844c6f66e340",
+        "value": "cdns-clfr-dns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6591cad7-4497-553e-abf8-a157bbbc2442",
+        "value": "content-cdnsclfr.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739649492",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ba366a1b-37bc-58cf-8046-94f6ab337672",
+        "value": "query-dns-cdn.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "af6885ac-7e10-5718-8c78-55727258b1fb",
+        "value": "query-js-ajax.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc4108"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC4108",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a4a6799d-4c7f-5a20-af18-9e69d30c7a5c"
+  }
+}

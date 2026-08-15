@@ -1,0 +1,542 @@
+{
+  "aliases": [
+    "apt19",
+    "c0d0so0",
+    "codoso",
+    "codoso team",
+    "deep panda",
+    "sunshop group"
+  ],
+  "attack_id": "G0073",
+  "attack_name": "APT19",
+  "attack_url": "https://attack.mitre.org/groups/G0073/",
+  "counts": {
+    "domain": 57,
+    "ipv4": 2,
+    "url": 8,
+    "url_path": 4
+  },
+  "first_seen": {
+    "domain": {
+      "EmpireB1ue.com": "2015-10-20",
+      "ameteksen.com": "2015-10-20",
+      "asconline.we11point.com": "2015-10-20",
+      "assso.net": "2015-10-20",
+      "autodiscover.2bunny.com": "2018-09-15",
+      "b.gnisoft.com": "2022-03-31",
+      "capstoneturbine.cechire.com": "2015-10-20",
+      "caref1rst.com": "2015-10-20",
+      "careflrst.com": "2015-10-20",
+      "client.gnisoft.com": "2020-05-21",
+      "extcitrix.we11point.com": "2015-10-20",
+      "facefuture.us": "2015-10-20",
+      "gifas.blogsite.org": "2015-10-20",
+      "gifas.cechire.com": "2015-10-20",
+      "giga.gnisoft.com": "2022-03-31",
+      "gnisoft.com": "2022-03-31",
+      "google-dash.com": "2017-02-21",
+      "googlewebcache.com": "2020-12-27",
+      "healthslie.com": "2015-10-20",
+      "hrsolutions.we11point.com": "2015-10-20",
+      "icbcqsz.com": "2015-10-20",
+      "images.googlewebcache.com": "2018-09-13",
+      "jbossas.org": "2020-03-04",
+      "kaspersyk.com": "2020-12-27",
+      "lyncdiscover.2bunny.com": "2018-09-15",
+      "me.we11point.com": "2015-10-20",
+      "microsoft-cache.com": "2020-03-04",
+      "mycitrix.we11point.com": "2015-10-20",
+      "myhr.we11point.com": "2015-10-20",
+      "oa.ameteksen.com": "2015-10-20",
+      "oa.technical-requre.com": "2015-10-20",
+      "oa.trustneser.com": "2015-10-20",
+      "outlookssl.com": "2020-12-27",
+      "polarroute.com": "2015-10-20",
+      "premrera.com": "2026-02-19",
+      "prennera.com": "2015-10-20",
+      "savmpet.com": "2015-10-20",
+      "sfo02s01-in-f2.cloudsend.net": "2018-09-15",
+      "sharepoint-vaeit.com": "2015-10-20",
+      "sinmoung.com": "2015-10-20",
+      "smi1egate.com": "2022-03-31",
+      "smtp.outlookssl.com": "2018-09-13",
+      "ssl-vaeit.com": "2015-10-20",
+      "ssl-vait.com": "2015-10-20",
+      "supermanbox.org": "2020-03-04",
+      "svn1.smi1egate.com": "2022-03-31",
+      "tk-in-f156.2bunny.com": "2018-09-15",
+      "topsec2014.com": "2015-10-20",
+      "vipreclod.com": "2015-10-20",
+      "vpn.premrera.com": "2026-02-19",
+      "vpn.we11point.com": "2015-10-20",
+      "vpn2.smi1egate.com": "2022-03-31",
+      "we11point.com": "2015-10-20",
+      "webmail.kaspersyk.com": "2015-10-20",
+      "webmail.vipreclod.com": "2015-10-20",
+      "wiki-vaeit.com": "2015-10-20",
+      "ysims.com": "2015-10-20"
+    },
+    "ipv4": {
+      "104.223.34.198:443": "2022-06-25",
+      "192.95.36.61:443": "2022-03-31"
+    },
+    "url": {
+      "http://104.223.34.198": "2022-03-31",
+      "http://104.236.77.169": "2018-09-15",
+      "http://106.185.43.96/user/atv.html": "2020-12-27",
+      "http://138.68.45.9": "2018-09-15",
+      "http://162.243.143.145": "2018-09-15",
+      "http://210.181.184.64": "2020-12-27",
+      "http://218.54.139.20": "2020-12-27",
+      "http://42.200.18.194": "2020-12-27"
+    },
+    "url_path": {
+      "/example/McAltLib.dll": "2020-12-27",
+      "/lifeandstyle/marmalade-paddington-sales-up-making-drinking": "2020-12-27",
+      "/money/ofcom-fines-nuisance-calls": "2020-12-27",
+      "/world/video/shrien-dewani-arrives-uk-murder-trial-collapses-video": "2020-12-27"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-10-20",
+    "latest": "2026-02-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "EmpireB1ue.com",
+      "ameteksen.com",
+      "asconline.we11point.com",
+      "assso.net",
+      "autodiscover.2bunny.com",
+      "b.gnisoft.com",
+      "capstoneturbine.cechire.com",
+      "caref1rst.com",
+      "careflrst.com",
+      "client.gnisoft.com",
+      "extcitrix.we11point.com",
+      "facefuture.us",
+      "gifas.blogsite.org",
+      "gifas.cechire.com",
+      "giga.gnisoft.com",
+      "gnisoft.com",
+      "google-dash.com",
+      "googlewebcache.com",
+      "healthslie.com",
+      "hrsolutions.we11point.com",
+      "icbcqsz.com",
+      "images.googlewebcache.com",
+      "jbossas.org",
+      "kaspersyk.com",
+      "lyncdiscover.2bunny.com",
+      "me.we11point.com",
+      "microsoft-cache.com",
+      "mycitrix.we11point.com",
+      "myhr.we11point.com",
+      "oa.ameteksen.com",
+      "oa.technical-requre.com",
+      "oa.trustneser.com",
+      "outlookssl.com",
+      "polarroute.com",
+      "premrera.com",
+      "prennera.com",
+      "savmpet.com",
+      "sfo02s01-in-f2.cloudsend.net",
+      "sharepoint-vaeit.com",
+      "sinmoung.com",
+      "smi1egate.com",
+      "smtp.outlookssl.com",
+      "ssl-vaeit.com",
+      "ssl-vait.com",
+      "supermanbox.org",
+      "svn1.smi1egate.com",
+      "tk-in-f156.2bunny.com",
+      "topsec2014.com",
+      "vipreclod.com",
+      "vpn.premrera.com",
+      "vpn.we11point.com",
+      "vpn2.smi1egate.com",
+      "we11point.com",
+      "webmail.kaspersyk.com",
+      "webmail.vipreclod.com",
+      "wiki-vaeit.com",
+      "ysims.com"
+    ],
+    "ipv4": [
+      "104.223.34.198:443",
+      "192.95.36.61:443"
+    ],
+    "url": [
+      "http://104.223.34.198",
+      "http://104.236.77.169",
+      "http://106.185.43.96/user/atv.html",
+      "http://138.68.45.9",
+      "http://162.243.143.145",
+      "http://210.181.184.64",
+      "http://218.54.139.20",
+      "http://42.200.18.194"
+    ],
+    "url_path": [
+      "/example/McAltLib.dll",
+      "/lifeandstyle/marmalade-paddington-sales-up-making-drinking",
+      "/money/ofcom-fines-nuisance-calls",
+      "/world/video/shrien-dewani-arrives-uk-murder-trial-collapses-video"
+    ]
+  },
+  "last_modified": "2026-02-19T09:20:22+00:00",
+  "maltrail_groups": [
+    "CODOSO"
+  ],
+  "references": [
+    "https://attack.mitre.org/wiki/Group/G0009",
+    "https://cybergeeks.tech/analyzing-apt19-malware-using-a-step-by-step-method/",
+    "https://krebsonsecurity.com/wp-content/uploads/2015/02/FBI-Flash-Warning-Deep-Panda.pdf",
+    "https://otx.alienvault.com/pulse/6245655996f5a1a01e2b5d94",
+    "https://otx.alienvault.com/pulse/62b5767285717d7d3a45b2b8",
+    "https://twitter.com/unpacker/status/1343143954007482369",
+    "https://unit42.paloaltonetworks.com/new-attacks-linked-to-c0d0s0-group/",
+    "https://www.cisa.gov/uscert/ncas/alerts/aa22-174a",
+    "https://www.domaintools.com/resources/blog/domaintools-101-the-art-of-tracking-threat-actors",
+    "https://www.fireeye.com/blog/threat-research/2017/06/phished-at-the-request-of-counsel.html (Network Based Indicators (NBI))",
+    "https://www.fortinet.com/blog/threat-research/deep-panda-log4shell-fire-chili-rootkits",
+    "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-black-vine-cyberespionage-group.pdf",
+    "https://www.virustotal.com/gui/file/3f62db0ff8ee1ce8cb2015c5bd2af8dbcc8089bb349192ee8b8d5a923476af71/detection",
+    "https://www.virustotal.com/gui/file/8b0877209594dada522e606ebac60ce82ceaa31978e71e7772fd8ae0065d53de/detection",
+    "https://www.virustotal.com/gui/file/c0a2a3708516a321ad2fd68400bef6a3b302af54d6533b5cce6c67b4e13b87d3/detection",
+    "https://x.com/skocherhan/status/2024248493037015409"
+  ],
+  "related": [],
+  "slug": "G0073",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-02-19",
+      "indicators": {
+        "domain": [
+          "premrera.com",
+          "vpn.premrera.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/skocherhan/status/2024248493037015409",
+        "https://www.virustotal.com/gui/file/3f62db0ff8ee1ce8cb2015c5bd2af8dbcc8089bb349192ee8b8d5a923476af71/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "ipv4": [
+          "104.223.34.198:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cisa.gov/uscert/ncas/alerts/aa22-174a",
+        "https://otx.alienvault.com/pulse/62b5767285717d7d3a45b2b8"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2022-03-31",
+      "indicators": {
+        "domain": [
+          "b.gnisoft.com",
+          "giga.gnisoft.com",
+          "gnisoft.com",
+          "smi1egate.com",
+          "svn1.smi1egate.com",
+          "vpn2.smi1egate.com"
+        ],
+        "ipv4": [
+          "192.95.36.61:443"
+        ],
+        "url": [
+          "http://104.223.34.198"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fortinet.com/blog/threat-research/deep-panda-log4shell-fire-chili-rootkits",
+        "https://otx.alienvault.com/pulse/6245655996f5a1a01e2b5d94",
+        "https://www.virustotal.com/gui/file/c0a2a3708516a321ad2fd68400bef6a3b302af54d6533b5cce6c67b4e13b87d3/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "url_path": [
+          "/example/McAltLib.dll",
+          "/lifeandstyle/marmalade-paddington-sales-up-making-drinking",
+          "/money/ofcom-fines-nuisance-calls",
+          "/world/video/shrien-dewani-arrives-uk-murder-trial-collapses-video"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/skocherhan/status/2024248493037015409",
+        "https://www.virustotal.com/gui/file/3f62db0ff8ee1ce8cb2015c5bd2af8dbcc8089bb349192ee8b8d5a923476af71/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "url": [
+          "http://210.181.184.64",
+          "http://218.54.139.20",
+          "http://42.200.18.194"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/new-attacks-linked-to-c0d0s0-group/",
+        "https://www.domaintools.com/resources/blog/domaintools-101-the-art-of-tracking-threat-actors"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "domain": [
+          "googlewebcache.com",
+          "outlookssl.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://attack.mitre.org/wiki/Group/G0009",
+        "https://krebsonsecurity.com/wp-content/uploads/2015/02/FBI-Flash-Warning-Deep-Panda.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "domain": [
+          "kaspersyk.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-black-vine-cyberespionage-group.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "url": [
+          "http://106.185.43.96/user/atv.html"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/unpacker/status/1343143954007482369",
+        "https://cybergeeks.tech/analyzing-apt19-malware-using-a-step-by-step-method/",
+        "https://www.virustotal.com/gui/file/8b0877209594dada522e606ebac60ce82ceaa31978e71e7772fd8ae0065d53de/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-21",
+      "indicators": {
+        "domain": [
+          "client.gnisoft.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fortinet.com/blog/threat-research/deep-panda-log4shell-fire-chili-rootkits",
+        "https://otx.alienvault.com/pulse/6245655996f5a1a01e2b5d94",
+        "https://www.virustotal.com/gui/file/c0a2a3708516a321ad2fd68400bef6a3b302af54d6533b5cce6c67b4e13b87d3/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-03-04",
+      "indicators": {
+        "domain": [
+          "jbossas.org",
+          "supermanbox.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/new-attacks-linked-to-c0d0s0-group/",
+        "https://www.domaintools.com/resources/blog/domaintools-101-the-art-of-tracking-threat-actors"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-03-04",
+      "indicators": {
+        "domain": [
+          "microsoft-cache.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/new-attacks-linked-to-c0d0s0-group/",
+        "https://www.domaintools.com/resources/blog/domaintools-101-the-art-of-tracking-threat-actors",
+        "https://twitter.com/unpacker/status/1343143954007482369",
+        "https://cybergeeks.tech/analyzing-apt19-malware-using-a-step-by-step-method/",
+        "https://www.virustotal.com/gui/file/8b0877209594dada522e606ebac60ce82ceaa31978e71e7772fd8ae0065d53de/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "url": 3
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "autodiscover.2bunny.com",
+          "lyncdiscover.2bunny.com",
+          "sfo02s01-in-f2.cloudsend.net",
+          "tk-in-f156.2bunny.com"
+        ],
+        "url": [
+          "http://104.236.77.169",
+          "http://138.68.45.9",
+          "http://162.243.143.145"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/06/phished-at-the-request-of-counsel.html (Network Based Indicators (NBI))"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-13",
+      "indicators": {
+        "domain": [
+          "images.googlewebcache.com",
+          "smtp.outlookssl.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://attack.mitre.org/wiki/Group/G0009",
+        "https://krebsonsecurity.com/wp-content/uploads/2015/02/FBI-Flash-Warning-Deep-Panda.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-02-21",
+      "indicators": {
+        "domain": [
+          "google-dash.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/unpacker/status/1343143954007482369",
+        "https://cybergeeks.tech/analyzing-apt19-malware-using-a-step-by-step-method/",
+        "https://www.virustotal.com/gui/file/8b0877209594dada522e606ebac60ce82ceaa31978e71e7772fd8ae0065d53de/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 35
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "EmpireB1ue.com",
+          "ameteksen.com",
+          "asconline.we11point.com",
+          "assso.net",
+          "capstoneturbine.cechire.com",
+          "caref1rst.com",
+          "careflrst.com",
+          "extcitrix.we11point.com",
+          "facefuture.us",
+          "gifas.blogsite.org",
+          "gifas.cechire.com",
+          "healthslie.com",
+          "hrsolutions.we11point.com",
+          "icbcqsz.com",
+          "me.we11point.com",
+          "mycitrix.we11point.com",
+          "myhr.we11point.com",
+          "oa.ameteksen.com",
+          "oa.technical-requre.com",
+          "oa.trustneser.com",
+          "polarroute.com",
+          "prennera.com",
+          "savmpet.com",
+          "sharepoint-vaeit.com",
+          "sinmoung.com",
+          "ssl-vaeit.com",
+          "ssl-vait.com",
+          "topsec2014.com",
+          "vipreclod.com",
+          "vpn.we11point.com",
+          "we11point.com",
+          "webmail.kaspersyk.com",
+          "webmail.vipreclod.com",
+          "wiki-vaeit.com",
+          "ysims.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/the-black-vine-cyberespionage-group.pdf"
+      ],
+      "total": 35
+    }
+  ]
+}

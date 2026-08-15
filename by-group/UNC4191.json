@@ -1,0 +1,64 @@
+{
+  "aliases": [
+    "bluehaze",
+    "darkdew",
+    "mistcloak"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "closed.theworkpc.com": "2022-11-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-11-28",
+    "latest": "2022-11-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "closed.theworkpc.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4191"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/641ddcfa90e8b1f23b3089e1",
+    "https://www.mandiant.com/resources/blog/china-nexus-espionage-southeast-asia",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/c/earth-preta-updated-stealthy-strategies/iocs-earth-pretas-updated-stealthy-strategies.txt",
+    "https://www.trendmicro.com/en_us/research/23/c/earth-preta-updated-stealthy-strategies.html"
+  ],
+  "related": [],
+  "slug": "UNC4191",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-28",
+      "indicators": {
+        "domain": [
+          "closed.theworkpc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/china-nexus-espionage-southeast-asia",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/c/earth-preta-updated-stealthy-strategies/iocs-earth-pretas-updated-stealthy-strategies.txt",
+        "https://www.trendmicro.com/en_us/research/23/c/earth-preta-updated-stealthy-strategies.html",
+        "https://otx.alienvault.com/pulse/641ddcfa90e8b1f23b3089e1"
+      ],
+      "total": 1
+    }
+  ]
+}

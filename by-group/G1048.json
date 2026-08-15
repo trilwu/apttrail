@@ -1,0 +1,133 @@
+{
+  "aliases": [
+    "castletap",
+    "mopsled",
+    "redpenguin",
+    "riflespine",
+    "tinyshell"
+  ],
+  "attack_id": "G1048",
+  "attack_name": "UNC3886",
+  "attack_url": "https://attack.mitre.org/groups/G1048/",
+  "counts": {
+    "ipv4": 10
+  },
+  "first_seen": {
+    "ipv4": {
+      "101.100.182.122:22": "2026-01-02",
+      "116.88.34.184:22": "2026-01-02",
+      "118.189.188.122:22": "2026-01-02",
+      "118.193.63.40:22": "2026-01-02",
+      "129.126.109.50:22": "2026-01-02",
+      "158.140.135.244:22": "2026-01-02",
+      "223.25.78.136:22": "2026-01-02",
+      "45.77.39.28:22": "2026-01-02",
+      "47.246.68.13:22": "2026-01-02",
+      "8.222.225.8:22": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {
+      "101.100.182.122:22": "at-or-before",
+      "116.88.34.184:22": "at-or-before",
+      "118.189.188.122:22": "at-or-before",
+      "118.193.63.40:22": "at-or-before",
+      "129.126.109.50:22": "at-or-before",
+      "158.140.135.244:22": "at-or-before",
+      "223.25.78.136:22": "at-or-before",
+      "45.77.39.28:22": "at-or-before",
+      "47.246.68.13:22": "at-or-before",
+      "8.222.225.8:22": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "101.100.182.122:22",
+      "116.88.34.184:22",
+      "118.189.188.122:22",
+      "118.193.63.40:22",
+      "129.126.109.50:22",
+      "158.140.135.244:22",
+      "223.25.78.136:22",
+      "45.77.39.28:22",
+      "47.246.68.13:22",
+      "8.222.225.8:22"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC3886"
+  ],
+  "references": [
+    "https://censys.com/junos-and-redpenguin/",
+    "https://cloud.google.com/blog/topics/threat-intelligence/china-nexus-espionage-targets-juniper-routers",
+    "https://www.bleepingcomputer.com/news/security/chinese-cyberspies-backdoor-juniper-routers-for-stealthy-access/",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/25/g/unc3886/revisiting-unc3886-tactics.txt",
+    "https://www.trendmicro.com/en_us/research/25/g/revisiting-unc3886-tactics-to-defend-against-present-risk.html",
+    "https://www.virustotal.com/gui/file/5bef7608d66112315eefff354dae42f49178b7498f994a728ae6203a8a59f5a2/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares MOPSLED",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "G1048",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 8
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "101.100.182.122:22",
+          "116.88.34.184:22",
+          "118.189.188.122:22",
+          "129.126.109.50:22",
+          "158.140.135.244:22",
+          "223.25.78.136:22",
+          "45.77.39.28:22",
+          "8.222.225.8:22"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.bleepingcomputer.com/news/security/chinese-cyberspies-backdoor-juniper-routers-for-stealthy-access/",
+        "https://cloud.google.com/blog/topics/threat-intelligence/china-nexus-espionage-targets-juniper-routers",
+        "https://censys.com/junos-and-redpenguin/",
+        "https://www.virustotal.com/gui/file/5bef7608d66112315eefff354dae42f49178b7498f994a728ae6203a8a59f5a2/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "118.193.63.40:22",
+          "47.246.68.13:22"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/25/g/revisiting-unc3886-tactics-to-defend-against-present-risk.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/25/g/unc3886/revisiting-unc3886-tactics.txt"
+      ],
+      "total": 2
+    }
+  ]
+}

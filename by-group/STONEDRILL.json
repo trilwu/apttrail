@@ -1,0 +1,68 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "eservice.com": "2017-03-24",
+      "securityupdated.com": "2017-03-24"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-03-24",
+    "latest": "2017-03-24"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "eservice.com",
+      "securityupdated.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "STONEDRILL"
+  ],
+  "references": [
+    "https://www.symantec.com/security_response/writeup.jsp?docid=2017-030708-4403-99&tabid=2"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0064"
+    }
+  ],
+  "slug": "STONEDRILL",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2017-03-24",
+      "indicators": {
+        "domain": [
+          "eservice.com",
+          "securityupdated.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2017-030708-4403-99&tabid=2"
+      ],
+      "total": 2
+    }
+  ]
+}

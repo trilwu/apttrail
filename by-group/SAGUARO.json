@@ -1,0 +1,81 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "eduarditopallares.mooo.com": "2021-01-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-01-16",
+    "latest": "2021-01-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "eduarditopallares.mooo.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SAGUARO"
+  ],
+  "references": [
+    "https://apt.securelist.com/apt/saguaro",
+    "https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz",
+    "https://snort-org-site.s3.amazonaws.com/production/release_files/files/000/012/156/original/snort3-community-rules.tar.gz",
+    "https://www.virustotal.com/gui/file/ad9cc1045992078054e0250b3681cd7947f98a3f87a0a450c0aa2796dcbad8dd/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "CARETO"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0007"
+    }
+  ],
+  "slug": "SAGUARO",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-16",
+      "indicators": {
+        "domain": [
+          "eduarditopallares.mooo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://s3.amazonaws.com/snort-org/www/rules/community/community-rules.tar.gz",
+        "https://snort-org-site.s3.amazonaws.com/production/release_files/files/000/012/156/original/snort3-community-rules.tar.gz",
+        "https://apt.securelist.com/apt/saguaro",
+        "https://www.virustotal.com/gui/file/ad9cc1045992078054e0250b3681cd7947f98a3f87a0a450c0aa2796dcbad8dd/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3d04739f-bfa2-56f4-91e1-747987b53005",
+        "value": "efb.recume.ink"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bbda0778-4d21-527e-aa4b-df9bd1609f13",
+        "value": "klp.recume.ink"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ca970b58-a8f1-54f3-a0d7-b37300117545",
+        "value": "mnb.recume.ink"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1732615441",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0abf19f9-504b-52b6-8528-26bbbca9b8de",
+        "value": "panbaiclu.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3f719631-27ad-52f6-af0f-d5ea733431a4",
+        "value": "recume.ink"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1732615441",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7be689ab-a18f-5ccc-8519-baa7ab0b4215",
+        "value": "vpn616865750.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "18b4336e-e8a8-5fe1-82f1-98c81ac22e18",
+        "value": "185.243.112.142:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "3e8f5575-4460-5e16-ac53-a89a6ab89237",
+        "value": "/ldhifwdgfjdbcu/"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "c6c24338-aaa9-58c6-921e-188ea6b3d0e7",
+        "value": "/ldhifwdgfjdbcu/qbjhwgf/"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1781866669",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "f40ddc39-eb4b-5055-93a3-e50933e2f43a",
+        "value": "/qbjhwgf/"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:48"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: 48",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "32f42422-0468-553d-96b2-353589c5df3c"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "elliotterusties.com": "2022-05-20",
+      "img.elliotterusties.com": "2022-05-20",
+      "microtreely.com": "2022-03-23",
+      "miniboxmail.com": "2022-03-23",
+      "minzdravros.com": "2022-05-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-03-23",
+    "latest": "2022-05-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "elliotterusties.com",
+      "img.elliotterusties.com",
+      "microtreely.com",
+      "miniboxmail.com",
+      "minzdravros.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TWISTEDPANDA"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/628755c56b3dff4b4459107b",
+    "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/",
+    "https://twitter.com/ShadowChasing1/status/1506573766456864770",
+    "https://twitter.com/ShadowChasing1/status/1506573768939909123",
+    "https://www.virustotal.com/gui/file/3001f0a05df31eee89d1bb3721b9cd060c1f20088d4e91bc1d0b243ba73e36f8/detection",
+    "https://www.virustotal.com/gui/file/5b558c5fcbed8544cb100bd3db3c04a70dca02eec6fedffd5e3dcecb0b04fba0/detection"
+  ],
+  "related": [],
+  "slug": "TWISTEDPANDA",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-05-20",
+      "indicators": {
+        "domain": [
+          "elliotterusties.com",
+          "img.elliotterusties.com",
+          "minzdravros.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1506573766456864770",
+        "https://twitter.com/ShadowChasing1/status/1506573768939909123",
+        "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/",
+        "https://otx.alienvault.com/pulse/628755c56b3dff4b4459107b",
+        "https://www.virustotal.com/gui/file/3001f0a05df31eee89d1bb3721b9cd060c1f20088d4e91bc1d0b243ba73e36f8/detection",
+        "https://www.virustotal.com/gui/file/5b558c5fcbed8544cb100bd3db3c04a70dca02eec6fedffd5e3dcecb0b04fba0/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-23",
+      "indicators": {
+        "domain": [
+          "microtreely.com",
+          "miniboxmail.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1506573766456864770",
+        "https://twitter.com/ShadowChasing1/status/1506573768939909123",
+        "https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/",
+        "https://otx.alienvault.com/pulse/628755c56b3dff4b4459107b",
+        "https://www.virustotal.com/gui/file/3001f0a05df31eee89d1bb3721b9cd060c1f20088d4e91bc1d0b243ba73e36f8/detection",
+        "https://www.virustotal.com/gui/file/5b558c5fcbed8544cb100bd3db3c04a70dca02eec6fedffd5e3dcecb0b04fba0/detection"
+      ],
+      "total": 2
+    }
+  ]
+}

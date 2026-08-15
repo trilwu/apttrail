@@ -1,0 +1,176 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 19,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "atlaswebportal.zapto.org": "2019-07-16",
+      "bzone.no-ip.biz": "2022-02-10",
+      "chivalkarstone.com": "2022-02-10",
+      "duniaenewsportal.ddns.net": "2020-06-16",
+      "gayakwaad.com": "2022-02-10",
+      "greenpeacesite.com": "2022-02-10",
+      "jasonhistoryarticles.read-books.org": "2022-02-10",
+      "johnmarcus.zapto.org": "2022-02-10",
+      "knudandersen.zapto.org": "2022-02-10",
+      "nepal3.msntv.org": "2022-02-10",
+      "new-agency.us": "2022-02-10",
+      "newmms.ru": "2022-02-10",
+      "pahiclisting.ddns.net": "2022-02-10",
+      "ramesh212121.zapto.org": "2022-02-10",
+      "researchplanet.zapto.org": "2020-06-16",
+      "socialstatistics.zapto.org": "2020-06-16",
+      "socialstudies.zapto.org": "2022-02-10",
+      "testingnew.no-ip.org": "2022-02-10",
+      "vinaychutiya.no-ip.biz": "2022-02-10"
+    },
+    "ipv4": {
+      "146.148.42.217:2018": "2022-02-10",
+      "222.212.28.30:8081": "2022-02-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-07-16",
+    "latest": "2022-02-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "atlaswebportal.zapto.org",
+      "bzone.no-ip.biz",
+      "chivalkarstone.com",
+      "duniaenewsportal.ddns.net",
+      "gayakwaad.com",
+      "greenpeacesite.com",
+      "jasonhistoryarticles.read-books.org",
+      "johnmarcus.zapto.org",
+      "knudandersen.zapto.org",
+      "nepal3.msntv.org",
+      "new-agency.us",
+      "newmms.ru",
+      "pahiclisting.ddns.net",
+      "ramesh212121.zapto.org",
+      "researchplanet.zapto.org",
+      "socialstatistics.zapto.org",
+      "socialstudies.zapto.org",
+      "testingnew.no-ip.org",
+      "vinaychutiya.no-ip.biz"
+    ],
+    "ipv4": [
+      "146.148.42.217:2018",
+      "222.212.28.30:8081"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MODIFIEDELEPHANT"
+  ],
+  "references": [
+    "https://assets.sentinelone.com/sentinellabs-apt/modified-elephant-apt",
+    "https://otx.alienvault.com/pulse/62053151ca89868dc36f41e8",
+    "https://www.virustotal.com/gui/file/76547269ada3892693d041956e53c6794b6e110af6569d02e3303f8e51009950/detection",
+    "https://www.virustotal.com/gui/file/d6583adb19a327cc2d4e5436889f1c186a552067759e97a7ffbbfe471b2b621b/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0121"
+    }
+  ],
+  "slug": "MODIFIEDELEPHANT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 15,
+        "ipv4": 2
+      },
+      "first_seen": "2022-02-10",
+      "indicators": {
+        "domain": [
+          "bzone.no-ip.biz",
+          "chivalkarstone.com",
+          "gayakwaad.com",
+          "greenpeacesite.com",
+          "jasonhistoryarticles.read-books.org",
+          "johnmarcus.zapto.org",
+          "knudandersen.zapto.org",
+          "nepal3.msntv.org",
+          "new-agency.us",
+          "newmms.ru",
+          "pahiclisting.ddns.net",
+          "ramesh212121.zapto.org",
+          "socialstudies.zapto.org",
+          "testingnew.no-ip.org",
+          "vinaychutiya.no-ip.biz"
+        ],
+        "ipv4": [
+          "146.148.42.217:2018",
+          "222.212.28.30:8081"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://assets.sentinelone.com/sentinellabs-apt/modified-elephant-apt",
+        "https://otx.alienvault.com/pulse/62053151ca89868dc36f41e8",
+        "https://www.virustotal.com/gui/file/d6583adb19a327cc2d4e5436889f1c186a552067759e97a7ffbbfe471b2b621b/detection",
+        "https://www.virustotal.com/gui/file/76547269ada3892693d041956e53c6794b6e110af6569d02e3303f8e51009950/detection"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-06-16",
+      "indicators": {
+        "domain": [
+          "duniaenewsportal.ddns.net",
+          "researchplanet.zapto.org",
+          "socialstatistics.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://assets.sentinelone.com/sentinellabs-apt/modified-elephant-apt",
+        "https://otx.alienvault.com/pulse/62053151ca89868dc36f41e8",
+        "https://www.virustotal.com/gui/file/d6583adb19a327cc2d4e5436889f1c186a552067759e97a7ffbbfe471b2b621b/detection",
+        "https://www.virustotal.com/gui/file/76547269ada3892693d041956e53c6794b6e110af6569d02e3303f8e51009950/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-16",
+      "indicators": {
+        "domain": [
+          "atlaswebportal.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://assets.sentinelone.com/sentinellabs-apt/modified-elephant-apt",
+        "https://otx.alienvault.com/pulse/62053151ca89868dc36f41e8",
+        "https://www.virustotal.com/gui/file/d6583adb19a327cc2d4e5436889f1c186a552067759e97a7ffbbfe471b2b621b/detection",
+        "https://www.virustotal.com/gui/file/76547269ada3892693d041956e53c6794b6e110af6569d02e3303f8e51009950/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

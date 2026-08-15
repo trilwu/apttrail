@@ -1,0 +1,139 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 28
+  },
+  "first_seen": {
+    "domain": {
+      "2020anekafkark2020.ddns.net": "2023-07-15",
+      "712175206totot.ddns.net": "2023-07-15",
+      "77112hilan.ddns.net": "2023-07-15",
+      "87524uyre.ddns.net": "2023-07-15",
+      "abas1.ddns.net": "2023-07-15",
+      "akjdaks54678sdas.ddns.net": "2023-07-15",
+      "antahomaar2022.ddns.net": "2023-07-15",
+      "bobkkfoundationyemen2022.ddns.net": "2023-07-15",
+      "bobm1jgjahsg81.ddns.net": "2023-07-15",
+      "dhgrshghjrsg0092102.ddns.net": "2023-07-15",
+      "djhgurjhwdskh72532.ddns.me": "2023-07-15",
+      "goman239.ddns.net": "2023-07-15",
+      "gomnd2873yemnenrc.ddns.net": "2023-07-15",
+      "hilan77112.ddns.net": "2023-07-15",
+      "hjsdg2368gskambv.ddns.net": "2023-07-15",
+      "hm712175206zh.ddns.net": "2023-07-15",
+      "hsdg763276jgkjx.ddns.net": "2023-07-15",
+      "hsgdjh78632.mypsx.net": "2023-07-15",
+      "magtimego.servegame.com": "2023-07-15",
+      "manyouhomaar21.ddns.net": "2023-07-15",
+      "moonname2022.ddns.net": "2023-07-15",
+      "musicmatrix.access.ly": "2023-07-15",
+      "ncbyemen2008.ddns.net": "2023-07-15",
+      "ndf236fgh4367h.ddns.net": "2023-07-15",
+      "saaoff33993homhl.ddns.net": "2023-07-15",
+      "saudigazette2022yemen.ddns.net": "2023-07-15",
+      "yemenofoneofline.ddns.net": "2023-07-15",
+      "you7788mtnq.ddns.net": "2023-07-15"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-07-15",
+    "latest": "2023-07-15"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2020anekafkark2020.ddns.net",
+      "712175206totot.ddns.net",
+      "77112hilan.ddns.net",
+      "87524uyre.ddns.net",
+      "abas1.ddns.net",
+      "akjdaks54678sdas.ddns.net",
+      "antahomaar2022.ddns.net",
+      "bobkkfoundationyemen2022.ddns.net",
+      "bobm1jgjahsg81.ddns.net",
+      "dhgrshghjrsg0092102.ddns.net",
+      "djhgurjhwdskh72532.ddns.me",
+      "goman239.ddns.net",
+      "gomnd2873yemnenrc.ddns.net",
+      "hilan77112.ddns.net",
+      "hjsdg2368gskambv.ddns.net",
+      "hm712175206zh.ddns.net",
+      "hsdg763276jgkjx.ddns.net",
+      "hsgdjh78632.mypsx.net",
+      "magtimego.servegame.com",
+      "manyouhomaar21.ddns.net",
+      "moonname2022.ddns.net",
+      "musicmatrix.access.ly",
+      "ncbyemen2008.ddns.net",
+      "ndf236fgh4367h.ddns.net",
+      "saaoff33993homhl.ddns.net",
+      "saudigazette2022yemen.ddns.net",
+      "yemenofoneofline.ddns.net",
+      "you7788mtnq.ddns.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "OILALPHA"
+  ],
+  "references": [
+    "https://go.recordedfuture.com/hubfs/reports/cta-2023-0516.pdf",
+    "https://otx.alienvault.com/pulse/6466470c091e09c4b108d7f6",
+    "https://www.recordedfuture.com/oilalpha-likely-pro-houthi-group-targeting-arabian-peninsula"
+  ],
+  "related": [],
+  "slug": "OILALPHA",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 28
+      },
+      "first_seen": "2023-07-15",
+      "indicators": {
+        "domain": [
+          "2020anekafkark2020.ddns.net",
+          "712175206totot.ddns.net",
+          "77112hilan.ddns.net",
+          "87524uyre.ddns.net",
+          "abas1.ddns.net",
+          "akjdaks54678sdas.ddns.net",
+          "antahomaar2022.ddns.net",
+          "bobkkfoundationyemen2022.ddns.net",
+          "bobm1jgjahsg81.ddns.net",
+          "dhgrshghjrsg0092102.ddns.net",
+          "djhgurjhwdskh72532.ddns.me",
+          "goman239.ddns.net",
+          "gomnd2873yemnenrc.ddns.net",
+          "hilan77112.ddns.net",
+          "hjsdg2368gskambv.ddns.net",
+          "hm712175206zh.ddns.net",
+          "hsdg763276jgkjx.ddns.net",
+          "hsgdjh78632.mypsx.net",
+          "magtimego.servegame.com",
+          "manyouhomaar21.ddns.net",
+          "moonname2022.ddns.net",
+          "musicmatrix.access.ly",
+          "ncbyemen2008.ddns.net",
+          "ndf236fgh4367h.ddns.net",
+          "saaoff33993homhl.ddns.net",
+          "saudigazette2022yemen.ddns.net",
+          "yemenofoneofline.ddns.net",
+          "you7788mtnq.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/oilalpha-likely-pro-houthi-group-targeting-arabian-peninsula",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2023-0516.pdf",
+        "https://otx.alienvault.com/pulse/6466470c091e09c4b108d7f6"
+      ],
+      "total": 28
+    }
+  ]
+}

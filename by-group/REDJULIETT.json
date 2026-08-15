@@ -1,0 +1,100 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11
+  },
+  "first_seen": {
+    "domain": {
+      "cktime.ooguy.com": "2024-09-18",
+      "cond0r.com": "2024-09-18",
+      "dns361.tk": "2024-09-18",
+      "godblack.cf": "2024-09-18",
+      "javacheck.ooguy.com": "2024-09-18",
+      "javaupdate.giize.com": "2024-09-18",
+      "purple76.com": "2024-09-18",
+      "sofeter.ml": "2024-09-18",
+      "solana.onl": "2024-09-18",
+      "togey.online": "2024-09-18",
+      "yeeyeey.top": "2024-09-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-09-18",
+    "latest": "2024-09-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cktime.ooguy.com",
+      "cond0r.com",
+      "dns361.tk",
+      "godblack.cf",
+      "javacheck.ooguy.com",
+      "javaupdate.giize.com",
+      "purple76.com",
+      "sofeter.ml",
+      "solana.onl",
+      "togey.online",
+      "yeeyeey.top"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "REDJULIETT"
+  ],
+  "references": [
+    "https://www.recordedfuture.com/research/redjuliett-intensifies-taiwanese-cyber-espionage-via-network-perimeter",
+    "https://www.virustotal.com/gui/ip-address/122.10.89.230/relations",
+    "https://www.virustotal.com/gui/ip-address/137.220.36.87/relations",
+    "https://www.virustotal.com/gui/ip-address/140.120.98.115/detection",
+    "https://www.virustotal.com/gui/ip-address/154.197.98.3/relations",
+    "https://www.virustotal.com/gui/ip-address/154.197.99.202/relations",
+    "https://www.virustotal.com/gui/ip-address/176.119.150.92/relations",
+    "https://www.virustotal.com/gui/ip-address/38.147.190.192/relations",
+    "https://www.virustotal.com/gui/ip-address/61.238.103.155/relations"
+  ],
+  "related": [],
+  "slug": "REDJULIETT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2024-09-18",
+      "indicators": {
+        "domain": [
+          "cktime.ooguy.com",
+          "cond0r.com",
+          "dns361.tk",
+          "godblack.cf",
+          "javacheck.ooguy.com",
+          "javaupdate.giize.com",
+          "purple76.com",
+          "sofeter.ml",
+          "solana.onl",
+          "togey.online",
+          "yeeyeey.top"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.recordedfuture.com/research/redjuliett-intensifies-taiwanese-cyber-espionage-via-network-perimeter",
+        "https://www.virustotal.com/gui/ip-address/38.147.190.192/relations",
+        "https://www.virustotal.com/gui/ip-address/61.238.103.155/relations",
+        "https://www.virustotal.com/gui/ip-address/122.10.89.230/relations",
+        "https://www.virustotal.com/gui/ip-address/137.220.36.87/relations",
+        "https://www.virustotal.com/gui/ip-address/140.120.98.115/detection",
+        "https://www.virustotal.com/gui/ip-address/154.197.98.3/relations",
+        "https://www.virustotal.com/gui/ip-address/154.197.99.202/relations",
+        "https://www.virustotal.com/gui/ip-address/176.119.150.92/relations"
+      ],
+      "total": 11
+    }
+  ]
+}

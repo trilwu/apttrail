@@ -1,0 +1,56 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "kakiosk.adsparkdev.com": "2023-02-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-02-18",
+    "latest": "2023-02-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "kakiosk.adsparkdev.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2565"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/63d94fda79bac208bafcdc09",
+    "https://www.mandiant.com/resources/blog/tracking-evolution-gootloader-operations"
+  ],
+  "related": [],
+  "slug": "UNC2565",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-02-18",
+      "indicators": {
+        "domain": [
+          "kakiosk.adsparkdev.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/tracking-evolution-gootloader-operations",
+        "https://otx.alienvault.com/pulse/63d94fda79bac208bafcdc09"
+      ],
+      "total": 1
+    }
+  ]
+}

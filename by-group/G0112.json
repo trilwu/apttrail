@@ -1,0 +1,1361 @@
+{
+  "aliases": [],
+  "attack_id": "G0112",
+  "attack_name": "Windshift",
+  "attack_url": "https://attack.mitre.org/groups/G0112/",
+  "counts": {
+    "domain": 186,
+    "ipv4": 14,
+    "url": 2,
+    "url_path": 8
+  },
+  "first_seen": {
+    "domain": {
+      "32e6dwbbpg.de": "2022-09-06",
+      "32player.com": "2018-09-14",
+      "5iw68rugwfcir37uj8z3r6rfaxwd8g8cdcfcqw62.de": "2022-04-16",
+      "96r1yh643o.de": "2022-11-22",
+      "account-googie.com": "2020-10-08",
+      "accountvalidate.com": "2020-10-08",
+      "airfitgym.com": "2020-10-08",
+      "ambicluster.com": "2020-10-08",
+      "appswonder.info": "2018-09-14",
+      "aspnet.dyndns.info": "2020-10-08",
+      "aspnet.dyndns.infoassurecom.info": "2020-10-08",
+      "assurecom.info": "2020-10-08",
+      "ay3a9j7pc3.de": "2022-07-29",
+      "bulletinalerts.com": "2020-10-08",
+      "by4mode.com": "2020-10-08",
+      "capsnit.com": "2018-09-14",
+      "cdn-icloud.co": "2020-10-08",
+      "cdn-icloud.cocelebsnightmares.com": "2020-10-08",
+      "cdw1ir0dc9g3dwl5oh1y.de": "2022-11-26",
+      "celebsnightmares.com": "2020-10-08",
+      "citrusquad.com": "2020-10-08",
+      "classmunch.com": "2020-10-08",
+      "cloud-authorize.com": "2020-10-08",
+      "cocahut.com": "2020-10-08",
+      "cocelebsnightmares.com": "2020-10-08",
+      "cocoka.info": "2020-10-08",
+      "cocoka.infocrawloofle.com": "2020-10-08",
+      "cohealthclubfun.com": "2020-10-08",
+      "crawloofle.com": "2020-10-08",
+      "cyroonline.com": "2020-10-08",
+      "datahost.click": "2022-03-13",
+      "dev-demo.click": "2026-06-26",
+      "devicesupport-rnicrosoft.com": "2020-10-08",
+      "docreader.icu": "2026-06-26",
+      "doctor-reader.icu": "2026-06-26",
+      "domforworld.com": "2019-03-05",
+      "dservices.space": "2026-06-26",
+      "dsharedservices.xyz": "2026-06-26",
+      "electrobric.com": "2020-10-08",
+      "everification-session-load.com": "2020-10-08",
+      "fastfiterzone.com": "2021-04-03",
+      "fjasfjfas89e.gkcx6ye4t4zafw8ju2xdr5na5.de": "2022-06-25",
+      "flux2key.com": "2019-03-05",
+      "freepunjab2020.info": "2020-10-08",
+      "freesexvideos.ch": "2022-04-16",
+      "frexinq.com": "2020-10-08",
+      "ft8hua063okwfdcu21pw.de": "2022-03-19",
+      "fvbyavgyea.com": "2023-01-19",
+      "gateway-yahoo.com": "2020-10-08",
+      "ghelp.co": "2020-10-08",
+      "ghelp.cohealthclubfun.com": "2020-10-08",
+      "gkcx6ye4t4zafw8ju2xdr5na5.de": "2022-06-25",
+      "h94xnghlldx6a862moj3.de": "2022-04-16",
+      "hbx5adg6vk.de": "2023-05-07",
+      "healthclubfun.com": "2020-10-08",
+      "hiltrox.com": "2018-09-14",
+      "hypforever.com": "2020-10-08",
+      "hytechmart.com": "2019-04-20",
+      "i3mode.com": "2020-10-08",
+      "ie-settings.com": "2022-01-31",
+      "imging.site": "2020-10-08",
+      "imging.siteinlineirnage.com": "2020-10-08",
+      "iminglechat.de": "2022-06-25",
+      "infoassurecom.info": "2020-10-08",
+      "infocrawloofle.com": "2020-10-08",
+      "inlineirnage.com": "2020-10-08",
+      "ios-certificate-update.com": "2018-09-14",
+      "ios-update-whatsapp.com": "2018-09-14",
+      "jkiohreh.com": "2023-01-19",
+      "justsikhthings.com": "2020-10-08",
+      "kannat.ns01.us": "2020-10-08",
+      "kannat.ns01.uskhalistanlehar.com": "2020-10-08",
+      "khalistanlehar.com": "2020-10-08",
+      "khalsaforum.com": "2023-05-07",
+      "leastinfo.com": "2020-10-08",
+      "leelee.dnset.com": "2020-10-08",
+      "lepze.com": "2022-01-01",
+      "lizacorner.com": "2020-10-08",
+      "lobertica.info": "2020-10-08",
+      "login-private.com": "2020-10-08",
+      "logon-info-gsupport.com": "2020-10-08",
+      "logstrick.com": "2020-10-08",
+      "m0-rnaiil-siina-chn-reload.everification-session-load.com": "2020-10-08",
+      "mail-incc.com": "2020-10-08",
+      "mail-king.com": "2020-10-08",
+      "mail-validation.info": "2020-10-08",
+      "mail.techsprouts.com": "2020-10-08",
+      "mailinfo-bh.com": "2020-10-08",
+      "mamoonchat.com": "2023-05-07",
+      "marketing-bmut.icu": "2026-06-26",
+      "me-yahoo.com": "2020-10-08",
+      "medieczema.com": "2020-10-08",
+      "memoadvicr.com": "2021-04-03",
+      "metclix.com": "2018-09-14",
+      "middleeastleaks.com": "2020-10-08",
+      "mideastleaks.com": "2020-10-08",
+      "mindcraftstore.com": "2020-10-08",
+      "musicbandfiles.com": "2020-10-08",
+      "myaccount-googie.com": "2020-10-08",
+      "myappie.comyfoodzone.net": "2020-10-08",
+      "myggl.ioo-auth.net": "2020-10-08",
+      "netonlinetokenid.com": "2020-10-08",
+      "netstring2me.com": "2020-10-08",
+      "newshostpoint.co": "2022-09-15",
+      "nfinx.info": "2019-04-20",
+      "oha.alpinemap.net": "2024-08-22",
+      "onlinedomain.link": "2021-07-08",
+      "onlinetokenid.com": "2020-10-08",
+      "opticscold.com": "2020-10-08",
+      "opticzstore.com": "2020-10-08",
+      "optusiy.com": "2020-10-08",
+      "orgyes2khalistanis.com": "2020-10-08",
+      "out-look-mail-bh.com": "2020-10-08",
+      "oyesterclub.info": "2020-10-08",
+      "painel.dev-demo.click": "2026-06-26",
+      "painel.marketing-bmut.icu": "2026-06-26",
+      "painel.smspro.click": "2026-06-26",
+      "passwordsaverr.com": "2020-10-08",
+      "pdfreader.help": "2026-06-26",
+      "play-store-secure-safechat.usmimedia.com": "2023-05-07",
+      "poiusavid.com": "2020-10-08",
+      "portal549.com": "2020-10-08",
+      "privacylog.info": "2020-10-08",
+      "procompass.org": "2021-03-22",
+      "prontexim.com": "2020-10-08",
+      "punjab-news18media-tribuneindia-mail.usmimedia.com": "2023-05-07",
+      "referfile.com": "2019-04-20",
+      "regditogo.com": "2020-10-08",
+      "rhc-jo.com": "2020-10-08",
+      "risalaencryptor.com": "2020-10-08",
+      "rnaiill2-rnaill-slna-m0.everification-session-load.com": "2020-10-08",
+      "rnail-appld-oath-varfiction.everification-session-load.com": "2020-10-08",
+      "rondwsign.com": "2023-01-19",
+      "rwzj2nntc3.de": "2023-05-07",
+      "scan8t.comsecure-useraccount.com": "2020-10-08",
+      "scrollayer.com": "2018-09-14",
+      "securechatnow.com": "2022-04-16",
+      "service-authorization.com": "2020-10-08",
+      "setting-secure.com": "2020-10-08",
+      "shiaar-e-islam.com": "2020-10-08",
+      "signtabo.com": "2020-10-08",
+      "sikhforjustice.org": "2020-10-08",
+      "sikhforjustice.orgsimilerwork.netstring2me.com": "2020-10-08",
+      "similerwork.net": "2020-10-08",
+      "smspro.click": "2026-06-26",
+      "srv.psyberia.org": "2024-08-22",
+      "string2me.com": "2019-03-05",
+      "sync-tokens.com": "2020-10-08",
+      "tansyroof.com": "2020-10-08",
+      "techsprouts.com": "2020-10-08",
+      "techwach.com": "2019-04-20",
+      "thegogl.com": "2020-10-08",
+      "thesecurevpn.com": "2022-04-15",
+      "tierradom.com": "2020-10-08",
+      "timesofarab.com": "2020-10-08",
+      "tokenmajorp.com": "2023-01-19",
+      "toysforislam.com": "2020-10-08",
+      "trailhinder.com": "2020-10-08",
+      "traxbin.com": "2019-04-20",
+      "treemanic.com": "2020-10-08",
+      "trioganic.com": "2020-10-08",
+      "twitck.com": "2019-04-20",
+      "user-privacy.com": "2020-10-08",
+      "uskhalistanlehar.com": "2020-10-08",
+      "usmimedia.com": "2023-05-07",
+      "uyghuri.51vip.biz": "2020-10-08",
+      "uyghuri.51vip.bizuyghurie.51vip.bizuygur.5166.info": "2020-10-08",
+      "uyghurie.51vip.biz": "2020-10-08",
+      "uygur.5166.info": "2020-10-08",
+      "uygur.51vip.biz": "2020-10-08",
+      "uygur.51vip.bizuygur.eicp.netuygur.xicp.netvlprnaiill2-rnaill-slna.m0.everification-session-load.com": "2020-10-08",
+      "uygur.eicp.net": "2020-10-08",
+      "uygur.xicp.net": "2020-10-08",
+      "varweregofo.com": "2023-01-19",
+      "vlprnaiill2-rnaill-slna.m0.everification-session-load.com": "2020-10-08",
+      "voiceofislam.info": "2020-10-29",
+      "weddnest.com": "2020-10-08",
+      "wpitcher.com": "2018-09-14",
+      "xyz.psyberia.org": "2024-08-22",
+      "yes2khalistan.org": "2020-10-08",
+      "yes2khalistan.orgyes2khalistanis.com": "2020-10-08",
+      "yes2khalistanis.com": "2020-10-08",
+      "yfoodzone.netmyggl.ioo-auth.netonlinetokenid.com": "2020-10-08",
+      "yu27izuchc.de": "2022-07-29",
+      "zhqdgk.com": "2020-10-08",
+      "zovwelle.com": "2021-04-03"
+    },
+    "ipv4": {
+      "134.255.231.233:8443": "2023-12-11",
+      "14.16.88.35:5000": "2022-11-25",
+      "162.55.103.211:20121": "2024-08-22",
+      "162.55.103.211:20122": "2024-08-22",
+      "162.55.103.211:20123": "2024-08-22",
+      "162.55.103.212:20121": "2023-01-19",
+      "162.55.103.212:20122": "2023-01-19",
+      "162.55.103.212:20123": "2023-01-19",
+      "172.64.168.30:2053": "2022-06-25",
+      "172.64.168.30:8443": "2022-06-25",
+      "193.23.161.164:8443": "2022-06-25",
+      "194.156.88.235:5000": "2022-11-26",
+      "45.156.84.129:3000": "2022-11-26",
+      "45.156.85.161:2096": "2022-11-26"
+    },
+    "url": {
+      "http://45.156.84.129": "2023-02-17",
+      "hunzanews.net/wp-content/uploads/apk/": "2023-11-13"
+    },
+    "url_path": {
+      "/ChatService_master.apk": "2022-06-25",
+      "/Kashmir-Youth.apk": "2022-04-16",
+      "/Kashmir.apk": "2022-04-16",
+      "/jkRt5e/": "2022-03-13",
+      "/jkRt5e/check.php": "2022-03-13",
+      "/securechatnow_v1_0_6.apk": "2022-04-16",
+      "/securechatnow_v1_0_7.apk": "2022-04-16",
+      "/skdfhwsdkfksgfuisiseifgygffiw.php": "2019-03-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-14",
+    "latest": "2026-06-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "32e6dwbbpg.de",
+      "32player.com",
+      "5iw68rugwfcir37uj8z3r6rfaxwd8g8cdcfcqw62.de",
+      "96r1yh643o.de",
+      "account-googie.com",
+      "accountvalidate.com",
+      "airfitgym.com",
+      "ambicluster.com",
+      "appswonder.info",
+      "aspnet.dyndns.info",
+      "aspnet.dyndns.infoassurecom.info",
+      "assurecom.info",
+      "ay3a9j7pc3.de",
+      "bulletinalerts.com",
+      "by4mode.com",
+      "capsnit.com",
+      "cdn-icloud.co",
+      "cdn-icloud.cocelebsnightmares.com",
+      "cdw1ir0dc9g3dwl5oh1y.de",
+      "celebsnightmares.com",
+      "citrusquad.com",
+      "classmunch.com",
+      "cloud-authorize.com",
+      "cocahut.com",
+      "cocelebsnightmares.com",
+      "cocoka.info",
+      "cocoka.infocrawloofle.com",
+      "cohealthclubfun.com",
+      "crawloofle.com",
+      "cyroonline.com",
+      "datahost.click",
+      "dev-demo.click",
+      "devicesupport-rnicrosoft.com",
+      "docreader.icu",
+      "doctor-reader.icu",
+      "domforworld.com",
+      "dservices.space",
+      "dsharedservices.xyz",
+      "electrobric.com",
+      "everification-session-load.com",
+      "fastfiterzone.com",
+      "fjasfjfas89e.gkcx6ye4t4zafw8ju2xdr5na5.de",
+      "flux2key.com",
+      "freepunjab2020.info",
+      "freesexvideos.ch",
+      "frexinq.com",
+      "ft8hua063okwfdcu21pw.de",
+      "fvbyavgyea.com",
+      "gateway-yahoo.com",
+      "ghelp.co",
+      "ghelp.cohealthclubfun.com",
+      "gkcx6ye4t4zafw8ju2xdr5na5.de",
+      "h94xnghlldx6a862moj3.de",
+      "hbx5adg6vk.de",
+      "healthclubfun.com",
+      "hiltrox.com",
+      "hypforever.com",
+      "hytechmart.com",
+      "i3mode.com",
+      "ie-settings.com",
+      "imging.site",
+      "imging.siteinlineirnage.com",
+      "iminglechat.de",
+      "infoassurecom.info",
+      "infocrawloofle.com",
+      "inlineirnage.com",
+      "ios-certificate-update.com",
+      "ios-update-whatsapp.com",
+      "jkiohreh.com",
+      "justsikhthings.com",
+      "kannat.ns01.us",
+      "kannat.ns01.uskhalistanlehar.com",
+      "khalistanlehar.com",
+      "khalsaforum.com",
+      "leastinfo.com",
+      "leelee.dnset.com",
+      "lepze.com",
+      "lizacorner.com",
+      "lobertica.info",
+      "login-private.com",
+      "logon-info-gsupport.com",
+      "logstrick.com",
+      "m0-rnaiil-siina-chn-reload.everification-session-load.com",
+      "mail-incc.com",
+      "mail-king.com",
+      "mail-validation.info",
+      "mail.techsprouts.com",
+      "mailinfo-bh.com",
+      "mamoonchat.com",
+      "marketing-bmut.icu",
+      "me-yahoo.com",
+      "medieczema.com",
+      "memoadvicr.com",
+      "metclix.com",
+      "middleeastleaks.com",
+      "mideastleaks.com",
+      "mindcraftstore.com",
+      "musicbandfiles.com",
+      "myaccount-googie.com",
+      "myappie.comyfoodzone.net",
+      "myggl.ioo-auth.net",
+      "netonlinetokenid.com",
+      "netstring2me.com",
+      "newshostpoint.co",
+      "nfinx.info",
+      "oha.alpinemap.net",
+      "onlinedomain.link",
+      "onlinetokenid.com",
+      "opticscold.com",
+      "opticzstore.com",
+      "optusiy.com",
+      "orgyes2khalistanis.com",
+      "out-look-mail-bh.com",
+      "oyesterclub.info",
+      "painel.dev-demo.click",
+      "painel.marketing-bmut.icu",
+      "painel.smspro.click",
+      "passwordsaverr.com",
+      "pdfreader.help",
+      "play-store-secure-safechat.usmimedia.com",
+      "poiusavid.com",
+      "portal549.com",
+      "privacylog.info",
+      "procompass.org",
+      "prontexim.com",
+      "punjab-news18media-tribuneindia-mail.usmimedia.com",
+      "referfile.com",
+      "regditogo.com",
+      "rhc-jo.com",
+      "risalaencryptor.com",
+      "rnaiill2-rnaill-slna-m0.everification-session-load.com",
+      "rnail-appld-oath-varfiction.everification-session-load.com",
+      "rondwsign.com",
+      "rwzj2nntc3.de",
+      "scan8t.comsecure-useraccount.com",
+      "scrollayer.com",
+      "securechatnow.com",
+      "service-authorization.com",
+      "setting-secure.com",
+      "shiaar-e-islam.com",
+      "signtabo.com",
+      "sikhforjustice.org",
+      "sikhforjustice.orgsimilerwork.netstring2me.com",
+      "similerwork.net",
+      "smspro.click",
+      "srv.psyberia.org",
+      "string2me.com",
+      "sync-tokens.com",
+      "tansyroof.com",
+      "techsprouts.com",
+      "techwach.com",
+      "thegogl.com",
+      "thesecurevpn.com",
+      "tierradom.com",
+      "timesofarab.com",
+      "tokenmajorp.com",
+      "toysforislam.com",
+      "trailhinder.com",
+      "traxbin.com",
+      "treemanic.com",
+      "trioganic.com",
+      "twitck.com",
+      "user-privacy.com",
+      "uskhalistanlehar.com",
+      "usmimedia.com",
+      "uyghuri.51vip.biz",
+      "uyghuri.51vip.bizuyghurie.51vip.bizuygur.5166.info",
+      "uyghurie.51vip.biz",
+      "uygur.5166.info",
+      "uygur.51vip.biz",
+      "uygur.51vip.bizuygur.eicp.netuygur.xicp.netvlprnaiill2-rnaill-slna.m0.everification-session-load.com",
+      "uygur.eicp.net",
+      "uygur.xicp.net",
+      "varweregofo.com",
+      "vlprnaiill2-rnaill-slna.m0.everification-session-load.com",
+      "voiceofislam.info",
+      "weddnest.com",
+      "wpitcher.com",
+      "xyz.psyberia.org",
+      "yes2khalistan.org",
+      "yes2khalistan.orgyes2khalistanis.com",
+      "yes2khalistanis.com",
+      "yfoodzone.netmyggl.ioo-auth.netonlinetokenid.com",
+      "yu27izuchc.de",
+      "zhqdgk.com",
+      "zovwelle.com"
+    ],
+    "ipv4": [
+      "134.255.231.233:8443",
+      "14.16.88.35:5000",
+      "162.55.103.211:20121",
+      "162.55.103.211:20122",
+      "162.55.103.211:20123",
+      "162.55.103.212:20121",
+      "162.55.103.212:20122",
+      "162.55.103.212:20123",
+      "172.64.168.30:2053",
+      "172.64.168.30:8443",
+      "193.23.161.164:8443",
+      "194.156.88.235:5000",
+      "45.156.84.129:3000",
+      "45.156.85.161:2096"
+    ],
+    "url": [
+      "http://45.156.84.129",
+      "hunzanews.net/wp-content/uploads/apk/"
+    ],
+    "url_path": [
+      "/ChatService_master.apk",
+      "/Kashmir-Youth.apk",
+      "/Kashmir.apk",
+      "/jkRt5e/",
+      "/jkRt5e/check.php",
+      "/securechatnow_v1_0_6.apk",
+      "/securechatnow_v1_0_7.apk",
+      "/skdfhwsdkfksgfuisiseifgygffiw.php"
+    ]
+  },
+  "last_modified": "2026-06-26T12:58:13+00:00",
+  "maltrail_groups": [
+    "BAHAMUT",
+    "WINDSHIFT"
+  ],
+  "references": [
+    "https://about.fb.com/wp-content/uploads/2023/05/Meta-Quarterly-Adversarial-Threat-Report-Q1-2023.pdf",
+    "https://blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html",
+    "https://gsec.hitb.org/materials/sg2018/D1%20COMMSEC%20-%20In%20the%20Trails%20of%20WINDSHIFT%20APT%20-%20Taha%20Karim.pdf",
+    "https://mp.weixin.qq.com/s/YAAybJBAvxqrQWYDg31BBw?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN",
+    "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56",
+    "https://otx.alienvault.com/pulse/625591f0fdef5bd852d84afe",
+    "https://otx.alienvault.com/pulse/63809fb03dacd453ae69d37b",
+    "https://otx.alienvault.com/pulse/6552657c0e444a423248f10c",
+    "https://pastebin.com/9U57CHZn",
+    "https://threatfox.abuse.ch/browse/malware/apk.bahamut/",
+    "https://tria.ge/260626-nf8lxsax8v/behavioral1",
+    "https://twitter.com/0x6rsk/status/1656554067160702982",
+    "https://twitter.com/BaoshengbinCumt/status/1656577909224796161",
+    "https://twitter.com/Circuitous__/status/1377767299709550593",
+    "https://twitter.com/Des00464472/status/1552146340515561472",
+    "https://twitter.com/Des00464472/status/1567097126999703553",
+    "https://twitter.com/bl4ckh0l3z/status/1321746458308128769",
+    "https://twitter.com/dyngnosis/status/1616149602578595846",
+    "https://twitter.com/m0br3v/status/1413076245152141316",
+    "https://twitter.com/m0br3v/status/1502262179390758913",
+    "https://twitter.com/m0br3v/status/1570415612014530562",
+    "https://twitter.com/malwrhunterteam/status/1504892577975259141",
+    "https://twitter.com/malwrhunterteam/status/1539985809184641024",
+    "https://twitter.com/malwrhunterteam/status/1540332848577667073",
+    "https://twitter.com/malwrhunterteam/status/1595141450177871872",
+    "https://twitter.com/malwrhunterteam/status/1616145101343817750",
+    "https://twitter.com/midnight_comms/status/1596156830363029504",
+    "https://twitter.com/midnight_comms/status/1596563852035903488",
+    "https://twitter.com/midnight_comms/status/1596566303598182401",
+    "https://unit42.paloaltonetworks.com/shifting-in-the-wind-windshift-attacks-target-middle-eastern-governments/",
+    "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+    "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
+    "https://www.virustotal.com/gui/domain/ie-settings.com/detection",
+    "https://www.virustotal.com/gui/file/0a7a9a3e5915f390e8a0d89c0ec21dd056504b0b759ea57ef68a000ee05b12e9/detection",
+    "https://www.virustotal.com/gui/file/0d7c1dffbd5abab02c174836cf1075bdc24f125b4084e5ba75e2c8ecccb747a3/detection",
+    "https://www.virustotal.com/gui/file/1084b7ff4758b5d13dcfc4f9167b16e6b834bfff2032b540e74959ceb18a5b1e/detection",
+    "https://www.virustotal.com/gui/file/38d0804412c47a77f08ecb346df27a9036dc02b83c51f70ab830902a2eab66dc/detection",
+    "https://www.virustotal.com/gui/file/45a6a0b2b02a9d288afba1ff41c689be9b9bd40ee862aa4bd6b036e3f0a4c3ab/detection",
+    "https://www.virustotal.com/gui/file/4fd441183ffd576aea2cf50b19d263f6b07b7548ea24725a496a0a929daaf912/detection",
+    "https://www.virustotal.com/gui/file/672d56b13708752b9d5287a8ac5e063174aa0af0c616a3ce8dd0dfbaff13386a/detection",
+    "https://www.virustotal.com/gui/file/701016a39ff5656b6a7e6cf17a6ae0e7c3442b65c2f9b1d609c78b483b5cfe26/detection",
+    "https://www.virustotal.com/gui/file/73b516a0a3996ec1c685ad3d8e26a7191e5d7698bfd98970afc27d5356003cac/detection",
+    "https://www.virustotal.com/gui/file/815466ec21c59f7704f094a0e4cfc4f817c8b98231d10fe01919b6bd60eca64e/detection",
+    "https://www.virustotal.com/gui/file/833eb2907cbf002c325356a4025a572e84fcc01504708f6328d154dd57c3b42f/detection",
+    "https://www.virustotal.com/gui/file/8609ce3bd3f395a25f3a2e2e343eb3ee87b0f1375202b5cec8bfcf8579d0472e/detection",
+    "https://www.virustotal.com/gui/file/a2abdf1d3439c9598f76c3732770b98725315efd32db322d926207ed28edf0db/detection",
+    "https://www.virustotal.com/gui/file/a40c7cabf874517f5d3d069e0377fa9348e10344000e39717c1a6571939ba7c0/detection",
+    "https://www.virustotal.com/gui/file/a71290070f826292c0ce907f21280e46cb4b800163ca3b81301c75710387ff1b/detection",
+    "https://www.virustotal.com/gui/file/b8e797526a4d22ddfe0d9cf97a24264c305f5c09aa5cf63b56b067d92a1ad66e/detection",
+    "https://www.virustotal.com/gui/file/c5f29fcb69ffaaac4568b0607d94bce55641ab5e7c6279393cd9605d14be0311/detection",
+    "https://www.virustotal.com/gui/file/c921363c790c2eb82ab009f94ac0961164690d795c4ae87bed61897cc80fb33f/detection",
+    "https://www.virustotal.com/gui/file/cef4be533954e5bb901080cbca26976929d55692674f1bb9fefeca0c349c86db/detection",
+    "https://www.virustotal.com/gui/ip-address/193.23.161.164/relations",
+    "https://www.virustotal.com/gui/ip-address/5.249.160.136/relations",
+    "https://www.virustotal.com/gui/ip-address/5.249.160.150/relations",
+    "https://www.welivesecurity.com/2022/11/23/bahamut-cybermercenary-group-targets-android-users-fake-vpn-apps/",
+    "https://www.welivesecurity.com/en/eset-research/unlucky-kamran-android-malware-spying-urdu-speaking-residents-gilgit-baltistan/",
+    "https://x.com/malwrhunterteam/status/1826580072645431357",
+    "https://x.com/malwrhunterteam/status/2070466586591313950"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0040"
+    }
+  ],
+  "slug": "G0112",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2026-06-26",
+      "indicators": {
+        "domain": [
+          "dev-demo.click",
+          "docreader.icu",
+          "doctor-reader.icu",
+          "dservices.space",
+          "dsharedservices.xyz",
+          "marketing-bmut.icu",
+          "painel.dev-demo.click",
+          "painel.marketing-bmut.icu",
+          "painel.smspro.click",
+          "pdfreader.help",
+          "smspro.click"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2070466586591313950",
+        "https://tria.ge/260626-nf8lxsax8v/behavioral1",
+        "https://www.virustotal.com/gui/file/833eb2907cbf002c325356a4025a572e84fcc01504708f6328d154dd57c3b42f/detection"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 3
+      },
+      "first_seen": "2024-08-22",
+      "indicators": {
+        "domain": [
+          "oha.alpinemap.net",
+          "srv.psyberia.org",
+          "xyz.psyberia.org"
+        ],
+        "ipv4": [
+          "162.55.103.211:20121",
+          "162.55.103.211:20122",
+          "162.55.103.211:20123"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1826580072645431357",
+        "https://www.virustotal.com/gui/file/701016a39ff5656b6a7e6cf17a6ae0e7c3442b65c2f9b1d609c78b483b5cfe26/detection",
+        "https://www.virustotal.com/gui/file/b8e797526a4d22ddfe0d9cf97a24264c305f5c09aa5cf63b56b067d92a1ad66e/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-12-11",
+      "indicators": {
+        "ipv4": [
+          "134.255.231.233:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatfox.abuse.ch/browse/malware/apk.bahamut/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-11-13",
+      "indicators": {
+        "url": [
+          "hunzanews.net/wp-content/uploads/apk/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/unlucky-kamran-android-malware-spying-urdu-speaking-residents-gilgit-baltistan/",
+        "https://otx.alienvault.com/pulse/6552657c0e444a423248f10c",
+        "https://www.virustotal.com/gui/file/8609ce3bd3f395a25f3a2e2e343eb3ee87b0f1375202b5cec8bfcf8579d0472e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2023-05-07",
+      "indicators": {
+        "domain": [
+          "hbx5adg6vk.de",
+          "khalsaforum.com",
+          "mamoonchat.com",
+          "play-store-secure-safechat.usmimedia.com",
+          "punjab-news18media-tribuneindia-mail.usmimedia.com",
+          "rwzj2nntc3.de",
+          "usmimedia.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/0x6rsk/status/1656554067160702982",
+        "https://twitter.com/BaoshengbinCumt/status/1656577909224796161",
+        "https://about.fb.com/wp-content/uploads/2023/05/Meta-Quarterly-Adversarial-Threat-Report-Q1-2023.pdf",
+        "https://www.virustotal.com/gui/file/0a7a9a3e5915f390e8a0d89c0ec21dd056504b0b759ea57ef68a000ee05b12e9/detection",
+        "https://www.virustotal.com/gui/file/672d56b13708752b9d5287a8ac5e063174aa0af0c616a3ce8dd0dfbaff13386a/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-02-17",
+      "indicators": {
+        "url": [
+          "http://45.156.84.129"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1595141450177871872",
+        "https://twitter.com/midnight_comms/status/1596156830363029504",
+        "https://twitter.com/midnight_comms/status/1596566303598182401",
+        "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
+        "https://www.virustotal.com/gui/file/45a6a0b2b02a9d288afba1ff41c689be9b9bd40ee862aa4bd6b036e3f0a4c3ab/detection",
+        "https://www.virustotal.com/gui/file/a2abdf1d3439c9598f76c3732770b98725315efd32db322d926207ed28edf0db/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 3
+      },
+      "first_seen": "2023-01-19",
+      "indicators": {
+        "domain": [
+          "fvbyavgyea.com",
+          "jkiohreh.com",
+          "rondwsign.com",
+          "tokenmajorp.com",
+          "varweregofo.com"
+        ],
+        "ipv4": [
+          "162.55.103.212:20121",
+          "162.55.103.212:20122",
+          "162.55.103.212:20123"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1616145101343817750",
+        "https://twitter.com/dyngnosis/status/1616149602578595846",
+        "https://www.virustotal.com/gui/file/0d7c1dffbd5abab02c174836cf1075bdc24f125b4084e5ba75e2c8ecccb747a3/detection",
+        "https://www.virustotal.com/gui/file/38d0804412c47a77f08ecb346df27a9036dc02b83c51f70ab830902a2eab66dc/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 3
+      },
+      "first_seen": "2022-11-26",
+      "indicators": {
+        "domain": [
+          "cdw1ir0dc9g3dwl5oh1y.de"
+        ],
+        "ipv4": [
+          "194.156.88.235:5000",
+          "45.156.84.129:3000",
+          "45.156.85.161:2096"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1595141450177871872",
+        "https://twitter.com/midnight_comms/status/1596156830363029504",
+        "https://twitter.com/midnight_comms/status/1596566303598182401",
+        "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
+        "https://www.virustotal.com/gui/file/45a6a0b2b02a9d288afba1ff41c689be9b9bd40ee862aa4bd6b036e3f0a4c3ab/detection",
+        "https://www.virustotal.com/gui/file/a2abdf1d3439c9598f76c3732770b98725315efd32db322d926207ed28edf0db/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-11-25",
+      "indicators": {
+        "ipv4": [
+          "14.16.88.35:5000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1595141450177871872",
+        "https://twitter.com/midnight_comms/status/1596156830363029504",
+        "https://twitter.com/midnight_comms/status/1596566303598182401",
+        "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
+        "https://www.virustotal.com/gui/file/45a6a0b2b02a9d288afba1ff41c689be9b9bd40ee862aa4bd6b036e3f0a4c3ab/detection",
+        "https://www.virustotal.com/gui/file/a2abdf1d3439c9598f76c3732770b98725315efd32db322d926207ed28edf0db/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-22",
+      "indicators": {
+        "domain": [
+          "96r1yh643o.de"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1595141450177871872",
+        "https://twitter.com/midnight_comms/status/1596156830363029504",
+        "https://twitter.com/midnight_comms/status/1596566303598182401",
+        "https://www.cyfirma.com/outofband/apt-bahamut-attacks-indian-intelligence-operative-using-android-malware/",
+        "https://www.virustotal.com/gui/file/45a6a0b2b02a9d288afba1ff41c689be9b9bd40ee862aa4bd6b036e3f0a4c3ab/detection",
+        "https://www.virustotal.com/gui/file/a2abdf1d3439c9598f76c3732770b98725315efd32db322d926207ed28edf0db/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-09-15",
+      "indicators": {
+        "domain": [
+          "newshostpoint.co"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/m0br3v/status/1570415612014530562",
+        "https://www.virustotal.com/gui/file/c5f29fcb69ffaaac4568b0607d94bce55641ab5e7c6279393cd9605d14be0311/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-09-06",
+      "indicators": {
+        "domain": [
+          "32e6dwbbpg.de"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Des00464472/status/1567097126999703553",
+        "https://www.virustotal.com/gui/ip-address/5.249.160.150/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-07-29",
+      "indicators": {
+        "domain": [
+          "ay3a9j7pc3.de",
+          "yu27izuchc.de"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Des00464472/status/1552146340515561472",
+        "https://www.virustotal.com/gui/ip-address/5.249.160.136/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 3
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "domain": [
+          "fjasfjfas89e.gkcx6ye4t4zafw8ju2xdr5na5.de",
+          "gkcx6ye4t4zafw8ju2xdr5na5.de",
+          "iminglechat.de"
+        ],
+        "ipv4": [
+          "172.64.168.30:2053",
+          "172.64.168.30:8443",
+          "193.23.161.164:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1539985809184641024",
+        "https://twitter.com/malwrhunterteam/status/1540332848577667073",
+        "https://www.virustotal.com/gui/ip-address/193.23.161.164/relations",
+        "https://www.virustotal.com/gui/file/1084b7ff4758b5d13dcfc4f9167b16e6b834bfff2032b540e74959ceb18a5b1e/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "url_path": [
+          "/ChatService_master.apk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2070466586591313950",
+        "https://tria.ge/260626-nf8lxsax8v/behavioral1",
+        "https://www.virustotal.com/gui/file/833eb2907cbf002c325356a4025a572e84fcc01504708f6328d154dd57c3b42f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 4
+      },
+      "first_seen": "2022-04-16",
+      "indicators": {
+        "url_path": [
+          "/Kashmir-Youth.apk",
+          "/Kashmir.apk",
+          "/securechatnow_v1_0_6.apk",
+          "/securechatnow_v1_0_7.apk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2070466586591313950",
+        "https://tria.ge/260626-nf8lxsax8v/behavioral1",
+        "https://www.virustotal.com/gui/file/833eb2907cbf002c325356a4025a572e84fcc01504708f6328d154dd57c3b42f/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-04-16",
+      "indicators": {
+        "domain": [
+          "5iw68rugwfcir37uj8z3r6rfaxwd8g8cdcfcqw62.de",
+          "freesexvideos.ch",
+          "h94xnghlldx6a862moj3.de",
+          "securechatnow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://mp.weixin.qq.com/s/YAAybJBAvxqrQWYDg31BBw?_x_tr_sl=zh-CN&_x_tr_tl=en&_x_tr_hl=zh-CN",
+        "https://otx.alienvault.com/pulse/625591f0fdef5bd852d84afe"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-15",
+      "indicators": {
+        "domain": [
+          "thesecurevpn.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1504892577975259141",
+        "https://twitter.com/midnight_comms/status/1596563852035903488",
+        "https://www.welivesecurity.com/2022/11/23/bahamut-cybermercenary-group-targets-android-users-fake-vpn-apps/",
+        "https://otx.alienvault.com/pulse/63809fb03dacd453ae69d37b",
+        "https://www.virustotal.com/gui/file/a40c7cabf874517f5d3d069e0377fa9348e10344000e39717c1a6571939ba7c0/detection",
+        "https://www.virustotal.com/gui/file/a71290070f826292c0ce907f21280e46cb4b800163ca3b81301c75710387ff1b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-19",
+      "indicators": {
+        "domain": [
+          "ft8hua063okwfdcu21pw.de"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1504892577975259141",
+        "https://twitter.com/midnight_comms/status/1596563852035903488",
+        "https://www.welivesecurity.com/2022/11/23/bahamut-cybermercenary-group-targets-android-users-fake-vpn-apps/",
+        "https://otx.alienvault.com/pulse/63809fb03dacd453ae69d37b",
+        "https://www.virustotal.com/gui/file/a40c7cabf874517f5d3d069e0377fa9348e10344000e39717c1a6571939ba7c0/detection",
+        "https://www.virustotal.com/gui/file/a71290070f826292c0ce907f21280e46cb4b800163ca3b81301c75710387ff1b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 2
+      },
+      "first_seen": "2022-03-13",
+      "indicators": {
+        "domain": [
+          "datahost.click"
+        ],
+        "url_path": [
+          "/jkRt5e/",
+          "/jkRt5e/check.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/m0br3v/status/1502262179390758913",
+        "https://www.virustotal.com/gui/file/c921363c790c2eb82ab009f94ac0961164690d795c4ae87bed61897cc80fb33f/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-31",
+      "indicators": {
+        "domain": [
+          "ie-settings.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/domain/ie-settings.com/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-01",
+      "indicators": {
+        "domain": [
+          "lepze.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/815466ec21c59f7704f094a0e4cfc4f817c8b98231d10fe01919b6bd60eca64e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-07-08",
+      "indicators": {
+        "domain": [
+          "onlinedomain.link"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/m0br3v/status/1413076245152141316",
+        "https://www.virustotal.com/gui/file/73b516a0a3996ec1c685ad3d8e26a7191e5d7698bfd98970afc27d5356003cac/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-04-03",
+      "indicators": {
+        "domain": [
+          "fastfiterzone.com",
+          "memoadvicr.com",
+          "zovwelle.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Circuitous__/status/1377767299709550593",
+        "https://pastebin.com/9U57CHZn"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-22",
+      "indicators": {
+        "domain": [
+          "procompass.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/bl4ckh0l3z/status/1321746458308128769",
+        "https://www.virustotal.com/gui/file/cef4be533954e5bb901080cbca26976929d55692674f1bb9fefeca0c349c86db/detection",
+        "https://www.virustotal.com/gui/file/4fd441183ffd576aea2cf50b19d263f6b07b7548ea24725a496a0a929daaf912/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-29",
+      "indicators": {
+        "domain": [
+          "voiceofislam.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/bl4ckh0l3z/status/1321746458308128769",
+        "https://www.virustotal.com/gui/file/cef4be533954e5bb901080cbca26976929d55692674f1bb9fefeca0c349c86db/detection",
+        "https://www.virustotal.com/gui/file/4fd441183ffd576aea2cf50b19d263f6b07b7548ea24725a496a0a929daaf912/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 117
+      },
+      "first_seen": "2020-10-08",
+      "indicators": {
+        "domain": [
+          "account-googie.com",
+          "accountvalidate.com",
+          "airfitgym.com",
+          "ambicluster.com",
+          "aspnet.dyndns.info",
+          "aspnet.dyndns.infoassurecom.info",
+          "assurecom.info",
+          "bulletinalerts.com",
+          "by4mode.com",
+          "cdn-icloud.co",
+          "cdn-icloud.cocelebsnightmares.com",
+          "celebsnightmares.com",
+          "citrusquad.com",
+          "classmunch.com",
+          "cloud-authorize.com",
+          "cocahut.com",
+          "cocelebsnightmares.com",
+          "cocoka.info",
+          "cocoka.infocrawloofle.com",
+          "cohealthclubfun.com",
+          "crawloofle.com",
+          "cyroonline.com",
+          "devicesupport-rnicrosoft.com",
+          "electrobric.com",
+          "everification-session-load.com",
+          "freepunjab2020.info",
+          "frexinq.com",
+          "gateway-yahoo.com",
+          "ghelp.co",
+          "ghelp.cohealthclubfun.com",
+          "healthclubfun.com",
+          "hypforever.com",
+          "i3mode.com",
+          "imging.site",
+          "imging.siteinlineirnage.com",
+          "infoassurecom.info",
+          "infocrawloofle.com",
+          "inlineirnage.com",
+          "justsikhthings.com",
+          "kannat.ns01.us",
+          "kannat.ns01.uskhalistanlehar.com",
+          "khalistanlehar.com",
+          "leastinfo.com",
+          "leelee.dnset.com",
+          "lizacorner.com",
+          "login-private.com",
+          "logon-info-gsupport.com",
+          "logstrick.com",
+          "m0-rnaiil-siina-chn-reload.everification-session-load.com",
+          "mail-incc.com",
+          "mail-king.com",
+          "mail-validation.info",
+          "mail.techsprouts.com",
+          "mailinfo-bh.com",
+          "me-yahoo.com",
+          "medieczema.com",
+          "middleeastleaks.com",
+          "mideastleaks.com",
+          "mindcraftstore.com",
+          "musicbandfiles.com",
+          "myaccount-googie.com",
+          "myappie.comyfoodzone.net",
+          "myggl.ioo-auth.net",
+          "netonlinetokenid.com",
+          "netstring2me.com",
+          "onlinetokenid.com",
+          "opticscold.com",
+          "opticzstore.com",
+          "optusiy.com",
+          "orgyes2khalistanis.com",
+          "out-look-mail-bh.com",
+          "oyesterclub.info",
+          "passwordsaverr.com",
+          "poiusavid.com",
+          "portal549.com",
+          "privacylog.info",
+          "prontexim.com",
+          "regditogo.com",
+          "rhc-jo.com",
+          "risalaencryptor.com",
+          "rnaiill2-rnaill-slna-m0.everification-session-load.com",
+          "rnail-appld-oath-varfiction.everification-session-load.com",
+          "scan8t.comsecure-useraccount.com",
+          "service-authorization.com",
+          "setting-secure.com",
+          "shiaar-e-islam.com",
+          "signtabo.com",
+          "sikhforjustice.org",
+          "sikhforjustice.orgsimilerwork.netstring2me.com",
+          "similerwork.net",
+          "sync-tokens.com",
+          "tansyroof.com",
+          "techsprouts.com",
+          "thegogl.com",
+          "tierradom.com",
+          "timesofarab.com",
+          "toysforislam.com",
+          "trailhinder.com",
+          "treemanic.com",
+          "trioganic.com",
+          "user-privacy.com",
+          "uskhalistanlehar.com",
+          "uyghuri.51vip.biz",
+          "uyghuri.51vip.bizuyghurie.51vip.bizuygur.5166.info",
+          "uyghurie.51vip.biz",
+          "uygur.5166.info",
+          "uygur.51vip.biz",
+          "uygur.51vip.bizuygur.eicp.netuygur.xicp.netvlprnaiill2-rnaill-slna.m0.everification-session-load.com",
+          "uygur.eicp.net",
+          "uygur.xicp.net",
+          "vlprnaiill2-rnaill-slna.m0.everification-session-load.com",
+          "weddnest.com",
+          "yes2khalistan.org",
+          "yes2khalistan.orgyes2khalistanis.com",
+          "yes2khalistanis.com",
+          "yfoodzone.netmyggl.ioo-auth.netonlinetokenid.com",
+          "zhqdgk.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+        "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56"
+      ],
+      "total": 117
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-08",
+      "indicators": {
+        "domain": [
+          "lobertica.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+        "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56",
+        "https://twitter.com/Circuitous__/status/1377767299709550593",
+        "https://pastebin.com/9U57CHZn"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-04-20",
+      "indicators": {
+        "domain": [
+          "hytechmart.com",
+          "nfinx.info",
+          "referfile.com",
+          "twitck.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-20",
+      "indicators": {
+        "domain": [
+          "traxbin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+        "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-20",
+      "indicators": {
+        "domain": [
+          "techwach.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html",
+        "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+        "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-03-05",
+      "indicators": {
+        "domain": [
+          "domforworld.com",
+          "flux2key.com",
+          "string2me.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/us/en/pdfviewer?file=/content/dam/blackberry-com/asset/enterprise/pdf/direct/report-spark-bahamut.pdf",
+        "https://otx.alienvault.com/pulse/5f7dd394005536c84adbaf56",
+        "https://unit42.paloaltonetworks.com/shifting-in-the-wind-windshift-attacks-target-middle-eastern-governments/",
+        "https://gsec.hitb.org/materials/sg2018/D1%20COMMSEC%20-%20In%20the%20Trails%20of%20WINDSHIFT%20APT%20-%20Taha%20Karim.pdf"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2019-03-05",
+      "indicators": {
+        "url_path": [
+          "/skdfhwsdkfksgfuisiseifgygffiw.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/shifting-in-the-wind-windshift-attacks-target-middle-eastern-governments/",
+        "https://gsec.hitb.org/materials/sg2018/D1%20COMMSEC%20-%20In%20the%20Trails%20of%20WINDSHIFT%20APT%20-%20Taha%20Karim.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2018-09-14",
+      "indicators": {
+        "domain": [
+          "32player.com",
+          "appswonder.info",
+          "capsnit.com",
+          "hiltrox.com",
+          "ios-certificate-update.com",
+          "ios-update-whatsapp.com",
+          "metclix.com",
+          "scrollayer.com",
+          "wpitcher.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM-Part2.html"
+      ],
+      "total": 9
+    }
+  ]
+}

@@ -1,0 +1,2081 @@
+{
+  "aliases": [
+    "apt34",
+    "greenbug",
+    "helixkitten",
+    "oilrig",
+    "spearal",
+    "veaty"
+  ],
+  "attack_id": "G0049",
+  "attack_name": "OilRig",
+  "attack_url": "https://attack.mitre.org/groups/G0049/",
+  "counts": {
+    "domain": 220,
+    "ipv4": 42,
+    "url": 6,
+    "url_path": 3
+  },
+  "first_seen": {
+    "domain": {
+      "262t3my0gt.cardioteacher.com": "2022-12-21",
+      "2fhj.asiaworldremit.com": "2022-05-11",
+      "2u21hipg70.uber-asia.com": "2022-05-11",
+      "2zcf.uber-asia.com": "2022-05-26",
+      "3j3oyvsf8i.joexpediagroup.com": "2022-05-11",
+      "5s5gp24f8x.asiaworldremit.com": "2022-05-11",
+      "6google.com": "2019-09-28",
+      "7a7n4j60g4.cardioteacher.com": "2022-12-21",
+      "7w7rbgt13f.uber-asia.com": "2022-05-11",
+      "ababab.biz": "2020-12-08",
+      "acceptplan.com": "2020-12-17",
+      "acrlee.com": "2020-07-22",
+      "acrobatverify.com": "2018-09-06",
+      "admin.mofaiq.com": "2024-09-12",
+      "akamai-global.com": "2019-07-30",
+      "akastatus.com": "2021-06-08",
+      "alcirineos.com": "2020-12-08",
+      "alforatsystem.com": "2019-09-28",
+      "allsecpackupdater.com": "2020-07-22",
+      "amazon-loveyou.com": "2020-12-08",
+      "anhuisiafu.com": "2020-12-08",
+      "antivirus-update.top": "2019-09-28",
+      "anyportals.com": "2018-09-05",
+      "applicationframehost.in": "2019-03-29",
+      "apps.iqwebservice.com": "2024-09-12",
+      "asiacall.net": "2024-09-12",
+      "asiaworldremit.com": "2022-05-11",
+      "astrazencea.com": "2022-05-12",
+      "astrazeneeca.com": "2022-05-12",
+      "axoryvexity.eu": "2026-01-02",
+      "bargertextiles.com": "2020-12-08",
+      "barsupport.org": "2018-10-29",
+      "base32.iqwebservice.com": "2024-09-12",
+      "berqertextiles.com": "2020-12-08",
+      "bgre.kozow.com": "2021-12-10",
+      "biam-iraq.org": "2026-01-02",
+      "boardexecutivemanagement.com": "2020-12-08",
+      "boardsexecutives.com": "2020-12-08",
+      "cam-research-ac.com": "2019-07-18",
+      "cardioteacher.com": "2022-12-21",
+      "careers-ntiva.com": "2020-11-27",
+      "cdn-edge-akamai.com": "2019-07-18",
+      "cererock.com": "2020-12-08",
+      "chinaconstructioncorp.com": "2020-12-08",
+      "chrome-dns.com": "2019-03-29",
+      "cisco0.com": "2022-05-12",
+      "clearinghouseinternational.com": "2020-12-08",
+      "cloudipnameserver.com": "2019-05-01",
+      "coinbasedeutschland.com": "2022-05-12",
+      "coldflys.com": "2018-10-29",
+      "confusedtown.com": "2020-12-17",
+      "connect-roofing.com": "2020-12-08",
+      "cornerstoneconect.com": "2020-12-08",
+      "cpuproc.com": "2018-09-06",
+      "crucialanswer.com": "2020-12-19",
+      "defender-update.com": "2018-08-28",
+      "digi.shanx.icu": "2020-07-24",
+      "dns-update.club": "2018-09-05",
+      "dnsupdateservers.net": "2019-03-29",
+      "donotfollowmeass.com": "2020-12-17",
+      "efezhyrzc9.joexpediagroup.com": "2022-05-26",
+      "egef74rfrf.cardioteacher.com": "2022-12-21",
+      "endlesspromises.com": "2020-12-19",
+      "exmngt.com": "2020-12-08",
+      "fastasia.shop": "2024-09-12",
+      "ffconnectivitycheck.com": "2020-01-28",
+      "fireeyeupdate.com": "2019-03-29",
+      "firewallsupports.com": "2019-09-28",
+      "flowconnectivity.com": "2020-01-28",
+      "forecasterman.com": "2020-12-19",
+      "forskys.com": "2018-10-29",
+      "fuktheme.com": "2019-07-19",
+      "go0gIe.com": "2020-04-06",
+      "godoycrus.com": "2020-02-02",
+      "googie.email": "2019-05-01",
+      "google-update.com": "2017-03-31",
+      "googleupdate.download": "2020-04-06",
+      "goosegoosecome.com": "2019-07-19",
+      "greenkeyllc-projects.com": "2020-09-16",
+      "groupsexecutive.com": "2020-12-08",
+      "herkhabar.com": "2018-08-28",
+      "hoganlouells.com": "2020-12-08",
+      "hopeisstamina.com": "2020-12-19",
+      "hpserver.online": "2018-09-05",
+      "hr-westat.com": "2020-01-30",
+      "hsbcbkcn.com": "2022-05-12",
+      "hscminkjet.com": "2020-12-08",
+      "hugebricks.com": "2019-07-19",
+      "huopay.top": "2020-12-08",
+      "importantgate.com": "2020-12-17",
+      "indeptheva.com": "2020-12-08",
+      "infopulsejobs.com": "2020-09-16",
+      "intelligent-finance.site": "2020-07-22",
+      "iqwebservice.com": "2024-09-12",
+      "iraqmailservice.com": "2026-01-02",
+      "j9jnkf7asv.joexpediagroup.com": "2022-05-11",
+      "jiabolianjie0.com": "2020-12-08",
+      "jinkangpu.co": "2020-12-08",
+      "jlrootfile.com": "2020-12-08",
+      "joexpediagroup.com": "2022-05-11",
+      "jqj6po1g71.uber-asia.com": "2022-05-11",
+      "kent-lawfirm.net": "2020-12-08",
+      "kizlarsoroyur.com": "2020-07-22",
+      "klwebsrv.com": "2020-11-28",
+      "kopilkaorukov.com": "2020-07-22",
+      "lavalingroup.com": "2020-12-08",
+      "lcepos.com": "2019-12-23",
+      "lebanonbuilder.com": "2020-02-03",
+      "level3-resolvers.net": "2019-03-29",
+      "linledin.net": "2019-07-30",
+      "lowconnectivity.com": "2019-05-01",
+      "mail.army.gov.lb": "2021-06-17",
+      "manygoodnews.com": "2020-01-30",
+      "microsoft-publisher.com": "2019-03-29",
+      "microsofte-update.com": "2019-09-28",
+      "miedafire.com": "2019-03-29",
+      "mngtboard.com": "2020-12-08",
+      "mofaiq.com": "2024-09-12",
+      "mslicensecheck.com": "2019-03-29",
+      "msoffice-cdn.com": "2019-04-30",
+      "msoffice365update.com": "2019-03-29",
+      "mumbai-m.site": "2018-09-05",
+      "mxmbwci0gs.cardioteacher.com": "2022-12-21",
+      "myleftheart.com": "2019-04-17",
+      "mytrustiq.com": "2026-01-02",
+      "ns1.asiacall.net": "2024-09-12",
+      "ns1.fastasia.shop": "2024-09-12",
+      "ns1.iqwebservice.com": "2024-09-12",
+      "ns1.mofaiq.com": "2024-09-12",
+      "ns1.spacenet.fun": "2024-09-12",
+      "ns2.fastasia.shop": "2024-09-12",
+      "ns2.iqwebservice.com": "2024-09-12",
+      "ns2.mofaiq.com": "2024-09-12",
+      "ns2.spacenet.fun": "2024-09-12",
+      "nsn1.winodwsupdates.me": "2019-03-29",
+      "ntpupdateserver.com": "2019-03-29",
+      "ntu-sg-edu.com": "2022-05-12",
+      "oculus-au.info": "2020-12-08",
+      "office365-management.com": "2019-04-30",
+      "offlineearthquake.com": "2019-07-18",
+      "offturn.com": "2019-07-19",
+      "opendns-server.com": "2019-03-29",
+      "oudax.com": "2020-07-22",
+      "outl00k.net": "2019-07-30",
+      "outlookteam.live": "2019-03-29",
+      "ozo26hwfhl.uber-asia.com": "2022-05-11",
+      "p5p98ljg7e.asiaworldremit.com": "2022-05-11",
+      "pet188.biz": "2020-12-08",
+      "petrochinas.com": "2020-12-08",
+      "pkpqzvgb3t.cardioteacher.com": "2022-12-21",
+      "plenoryvantyx.eu": "2026-01-02",
+      "pluginmain.com": "2021-02-11",
+      "poison-frog.club": "2019-03-29",
+      "prosalar.com": "2019-03-29",
+      "proxycheker.pro": "2018-09-05",
+      "qcqrpjgasn.joexpediagroup.com": "2022-05-11",
+      "r2rcdvnasg.asiaworldremit.com": "2022-05-11",
+      "rdmsi.com": "2020-07-22",
+      "rdppath.com": "2018-09-06",
+      "renrenbaowang.com": "2020-12-08",
+      "renrenbaowang.net": "2020-12-08",
+      "ressume.site": "2019-03-29",
+      "rimaga.com": "2020-02-13",
+      "sakabota.com": "2019-09-28",
+      "sarmsoftware.com": "2021-04-08",
+      "scoorpion.com": "2020-02-04",
+      "severalfissures.com": "2021-01-12",
+      "shalaghlagh.tk": "2020-04-06",
+      "sharjatv.com": "2020-07-22",
+      "shoterup.com": "2018-10-29",
+      "shsz3eub38.cardioteacher.com": "2022-12-21",
+      "spacenet.fun": "2024-09-12",
+      "stagmein.pl": "2020-12-08",
+      "superrnax.com": "2020-12-08",
+      "svn-stone.com": "2020-12-08",
+      "t3tadulf8d.joexpediagroup.com": "2022-05-11",
+      "tatavpnservices.com": "2019-03-29",
+      "tecforsc-001-site1.gtempurl.com": "2023-10-01",
+      "theworldbank.uk": "2022-05-12",
+      "tprs-servers.eu": "2020-07-22",
+      "truetone.cfd": "2024-09-12",
+      "u3u6gm4b34.cardioteacher.com": "2022-12-21",
+      "uber-asia.com": "2022-05-11",
+      "ucu4dsvf8m.joexpediagroup.com": "2022-05-11",
+      "unsecuredstorage.com": "2020-12-19",
+      "update-kernal.net": "2020-04-06",
+      "upgradesystems.info": "2020-04-06",
+      "us-customs.org": "2020-12-08",
+      "valtorynexon.eu": "2026-01-02",
+      "valtronics-ae.com": "2022-05-12",
+      "valtryventyx.eu": "2026-01-02",
+      "vhvn201135.joexpediagroup.com": "2022-05-11",
+      "virtual-slots.com": "2020-12-08",
+      "virtualcaresadvisor.com": "2020-12-08",
+      "w0wiq48g7w.uber-asia.com": "2022-05-11",
+      "wastedsituation.com": "2020-02-02",
+      "westagnews.com": "2026-01-02",
+      "westat-hr.com": "2020-01-30",
+      "whatzapps.net": "2019-09-28",
+      "wilsonconts.com": "2020-12-08",
+      "window5.win": "2019-03-29",
+      "windowscredcity.com": "2020-09-27",
+      "windowspatch.com": "2018-08-28",
+      "winodwsupdates.me": "2019-03-29",
+      "wiqzi.com": "2020-12-08",
+      "withyourface.com": "2018-09-19",
+      "wwmal.com": "2020-07-22",
+      "yahoooooomail.com": "2020-04-06",
+      "yciwcgakeqowsbrieq1sqtahecq96qca.dnsstatus.org": "2021-06-08",
+      "yciwfgpmeq5wstpke6psqtahecnue5we.defenderlive.com": "2021-06-08",
+      "yciwfgroetpwetaletomqtahecq96qca.defenderlive.com": "2021-06-08",
+      "yciwftaie66jstpmds5sqtahecnue5we.dnsstatus.org": "2021-06-08",
+      "yciwftaketowstrmehpsqtahecnuetwb.dnsstatus.org": "2021-06-08",
+      "yciwstrnecpwebaletpmqtahecnuec5d.dnsstatus.org": "2021-06-08",
+      "yciwzbrue66jsbaoespsqtahecnuetwb.defenderlive.com": "2021-06-08",
+      "yciwztanet1kcpnjds1wepwacqmz6frgxqlzutrxsmuux.defenderlive.com": "2021-06-08",
+      "zgz4sjvb33.cardioteacher.com": "2022-12-21",
+      "zj-tunq.com": "2020-12-08",
+      "zlz5ow818r.joexpediagroup.com": "2022-05-11",
+      "zyverantova.eu": "2026-01-02"
+    },
+    "ipv4": {
+      "151.236.17.231:53": "2024-09-12",
+      "151.236.17.231:8080": "2024-09-13",
+      "151.236.17.231:8989": "2026-01-02",
+      "185.198.59.121:137": "2021-12-10",
+      "185.198.59.121:139": "2021-12-10",
+      "185.198.59.121:445": "2021-12-10",
+      "185.32.178.176:80": "2020-02-16",
+      "185.76.78.177:53": "2024-09-12",
+      "185.76.78.177:8080": "2024-09-13",
+      "185.76.78.177:8989": "2026-01-02",
+      "185.76.78.177:9090": "2026-01-02",
+      "192.71.166.24:10443": "2026-01-02",
+      "193.36.132.224:8080": "2026-01-02",
+      "194.68.32.114:53": "2024-09-12",
+      "198.44.140.29:8080": "2024-09-13",
+      "198.44.140.29:8989": "2026-01-02",
+      "206.206.123.176:443": "2024-09-12",
+      "206.206.123.176:8080": "2024-09-12",
+      "37.1.213.152:39654": "2024-09-12",
+      "37.1.213.152:8999": "2024-09-12",
+      "38.180.140.30:8080": "2026-01-02",
+      "38.180.18.189:8080": "2026-01-02",
+      "38.180.31.225:443": "2026-01-02",
+      "38.180.31.225:8080": "2026-01-02",
+      "89.46.233.239:10443": "2026-01-02",
+      "89.46.233.239:8080": "2026-01-02",
+      "91.132.95.117:53": "2024-09-12",
+      "91.132.95.117:8080": "2026-01-02",
+      "91.132.95.117:8081": "2024-09-13",
+      "91.132.95.117:8989": "2026-01-02",
+      "91.184.249.198:443": "2026-01-02",
+      "93.177.75.180:80": "2020-02-16",
+      "95.156.204.168:10443": "2026-01-02",
+      "95.156.204.168:443": "2026-01-02",
+      "95.156.204.168:8080": "2026-01-02",
+      "95.211.104.253:2255": "2020-07-07",
+      "95.211.104.253:443": "2020-07-07",
+      "95.211.104.253:80": "2020-02-16",
+      "95.211.210.55:80": "2020-02-16",
+      "95.211.213.168:80": "2020-02-16",
+      "95.211.213.177:80": "2020-02-16",
+      "95.211.215.225:80": "2020-02-16"
+    },
+    "url": {
+      "host1.com/rt.ovf": "2023-12-16",
+      "http://138.68.234.128": "2021-12-10",
+      "http://185.15.247.154": "2019-07-18",
+      "http://185.198.59.121": "2021-12-10",
+      "iafflocal290.org/sapm/Poland/china.php": "2020-12-08",
+      "karachidha.org/docs/EOIForm.rtf": "2021-12-10"
+    },
+    "url_path": {
+      "/Gfg786v6fcd6v8j09jg67f6/": "2021-12-10",
+      "/Gfg786v6fcd6v8j09jg67f6/addentry2.php": "2021-12-10",
+      "/Gfg786v6fcd6v8j09jg67f6/dolist.php": "2021-12-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "axoryvexity.eu": "at-or-before",
+      "biam-iraq.org": "at-or-before",
+      "iraqmailservice.com": "at-or-before",
+      "mytrustiq.com": "at-or-before",
+      "plenoryvantyx.eu": "at-or-before",
+      "valtorynexon.eu": "at-or-before",
+      "valtryventyx.eu": "at-or-before",
+      "westagnews.com": "at-or-before",
+      "zyverantova.eu": "at-or-before"
+    },
+    "ipv4": {
+      "151.236.17.231:8989": "at-or-before",
+      "185.76.78.177:8989": "at-or-before",
+      "185.76.78.177:9090": "at-or-before",
+      "192.71.166.24:10443": "at-or-before",
+      "193.36.132.224:8080": "at-or-before",
+      "198.44.140.29:8989": "at-or-before",
+      "38.180.140.30:8080": "at-or-before",
+      "38.180.18.189:8080": "at-or-before",
+      "38.180.31.225:443": "at-or-before",
+      "38.180.31.225:8080": "at-or-before",
+      "89.46.233.239:10443": "at-or-before",
+      "89.46.233.239:8080": "at-or-before",
+      "91.132.95.117:8080": "at-or-before",
+      "91.132.95.117:8989": "at-or-before",
+      "91.184.249.198:443": "at-or-before",
+      "95.156.204.168:10443": "at-or-before",
+      "95.156.204.168:443": "at-or-before",
+      "95.156.204.168:8080": "at-or-before"
+    },
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-03-31",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "262t3my0gt.cardioteacher.com",
+      "2fhj.asiaworldremit.com",
+      "2u21hipg70.uber-asia.com",
+      "2zcf.uber-asia.com",
+      "3j3oyvsf8i.joexpediagroup.com",
+      "5s5gp24f8x.asiaworldremit.com",
+      "6google.com",
+      "7a7n4j60g4.cardioteacher.com",
+      "7w7rbgt13f.uber-asia.com",
+      "ababab.biz",
+      "acceptplan.com",
+      "acrlee.com",
+      "acrobatverify.com",
+      "admin.mofaiq.com",
+      "akamai-global.com",
+      "akastatus.com",
+      "alcirineos.com",
+      "alforatsystem.com",
+      "allsecpackupdater.com",
+      "amazon-loveyou.com",
+      "anhuisiafu.com",
+      "antivirus-update.top",
+      "anyportals.com",
+      "applicationframehost.in",
+      "apps.iqwebservice.com",
+      "asiacall.net",
+      "asiaworldremit.com",
+      "astrazencea.com",
+      "astrazeneeca.com",
+      "axoryvexity.eu",
+      "bargertextiles.com",
+      "barsupport.org",
+      "base32.iqwebservice.com",
+      "berqertextiles.com",
+      "bgre.kozow.com",
+      "biam-iraq.org",
+      "boardexecutivemanagement.com",
+      "boardsexecutives.com",
+      "cam-research-ac.com",
+      "cardioteacher.com",
+      "careers-ntiva.com",
+      "cdn-edge-akamai.com",
+      "cererock.com",
+      "chinaconstructioncorp.com",
+      "chrome-dns.com",
+      "cisco0.com",
+      "clearinghouseinternational.com",
+      "cloudipnameserver.com",
+      "coinbasedeutschland.com",
+      "coldflys.com",
+      "confusedtown.com",
+      "connect-roofing.com",
+      "cornerstoneconect.com",
+      "cpuproc.com",
+      "crucialanswer.com",
+      "defender-update.com",
+      "digi.shanx.icu",
+      "dns-update.club",
+      "dnsupdateservers.net",
+      "donotfollowmeass.com",
+      "efezhyrzc9.joexpediagroup.com",
+      "egef74rfrf.cardioteacher.com",
+      "endlesspromises.com",
+      "exmngt.com",
+      "fastasia.shop",
+      "ffconnectivitycheck.com",
+      "fireeyeupdate.com",
+      "firewallsupports.com",
+      "flowconnectivity.com",
+      "forecasterman.com",
+      "forskys.com",
+      "fuktheme.com",
+      "go0gIe.com",
+      "godoycrus.com",
+      "googie.email",
+      "google-update.com",
+      "googleupdate.download",
+      "goosegoosecome.com",
+      "greenkeyllc-projects.com",
+      "groupsexecutive.com",
+      "herkhabar.com",
+      "hoganlouells.com",
+      "hopeisstamina.com",
+      "hpserver.online",
+      "hr-westat.com",
+      "hsbcbkcn.com",
+      "hscminkjet.com",
+      "hugebricks.com",
+      "huopay.top",
+      "importantgate.com",
+      "indeptheva.com",
+      "infopulsejobs.com",
+      "intelligent-finance.site",
+      "iqwebservice.com",
+      "iraqmailservice.com",
+      "j9jnkf7asv.joexpediagroup.com",
+      "jiabolianjie0.com",
+      "jinkangpu.co",
+      "jlrootfile.com",
+      "joexpediagroup.com",
+      "jqj6po1g71.uber-asia.com",
+      "kent-lawfirm.net",
+      "kizlarsoroyur.com",
+      "klwebsrv.com",
+      "kopilkaorukov.com",
+      "lavalingroup.com",
+      "lcepos.com",
+      "lebanonbuilder.com",
+      "level3-resolvers.net",
+      "linledin.net",
+      "lowconnectivity.com",
+      "mail.army.gov.lb",
+      "manygoodnews.com",
+      "microsoft-publisher.com",
+      "microsofte-update.com",
+      "miedafire.com",
+      "mngtboard.com",
+      "mofaiq.com",
+      "mslicensecheck.com",
+      "msoffice-cdn.com",
+      "msoffice365update.com",
+      "mumbai-m.site",
+      "mxmbwci0gs.cardioteacher.com",
+      "myleftheart.com",
+      "mytrustiq.com",
+      "ns1.asiacall.net",
+      "ns1.fastasia.shop",
+      "ns1.iqwebservice.com",
+      "ns1.mofaiq.com",
+      "ns1.spacenet.fun",
+      "ns2.fastasia.shop",
+      "ns2.iqwebservice.com",
+      "ns2.mofaiq.com",
+      "ns2.spacenet.fun",
+      "nsn1.winodwsupdates.me",
+      "ntpupdateserver.com",
+      "ntu-sg-edu.com",
+      "oculus-au.info",
+      "office365-management.com",
+      "offlineearthquake.com",
+      "offturn.com",
+      "opendns-server.com",
+      "oudax.com",
+      "outl00k.net",
+      "outlookteam.live",
+      "ozo26hwfhl.uber-asia.com",
+      "p5p98ljg7e.asiaworldremit.com",
+      "pet188.biz",
+      "petrochinas.com",
+      "pkpqzvgb3t.cardioteacher.com",
+      "plenoryvantyx.eu",
+      "pluginmain.com",
+      "poison-frog.club",
+      "prosalar.com",
+      "proxycheker.pro",
+      "qcqrpjgasn.joexpediagroup.com",
+      "r2rcdvnasg.asiaworldremit.com",
+      "rdmsi.com",
+      "rdppath.com",
+      "renrenbaowang.com",
+      "renrenbaowang.net",
+      "ressume.site",
+      "rimaga.com",
+      "sakabota.com",
+      "sarmsoftware.com",
+      "scoorpion.com",
+      "severalfissures.com",
+      "shalaghlagh.tk",
+      "sharjatv.com",
+      "shoterup.com",
+      "shsz3eub38.cardioteacher.com",
+      "spacenet.fun",
+      "stagmein.pl",
+      "superrnax.com",
+      "svn-stone.com",
+      "t3tadulf8d.joexpediagroup.com",
+      "tatavpnservices.com",
+      "tecforsc-001-site1.gtempurl.com",
+      "theworldbank.uk",
+      "tprs-servers.eu",
+      "truetone.cfd",
+      "u3u6gm4b34.cardioteacher.com",
+      "uber-asia.com",
+      "ucu4dsvf8m.joexpediagroup.com",
+      "unsecuredstorage.com",
+      "update-kernal.net",
+      "upgradesystems.info",
+      "us-customs.org",
+      "valtorynexon.eu",
+      "valtronics-ae.com",
+      "valtryventyx.eu",
+      "vhvn201135.joexpediagroup.com",
+      "virtual-slots.com",
+      "virtualcaresadvisor.com",
+      "w0wiq48g7w.uber-asia.com",
+      "wastedsituation.com",
+      "westagnews.com",
+      "westat-hr.com",
+      "whatzapps.net",
+      "wilsonconts.com",
+      "window5.win",
+      "windowscredcity.com",
+      "windowspatch.com",
+      "winodwsupdates.me",
+      "wiqzi.com",
+      "withyourface.com",
+      "wwmal.com",
+      "yahoooooomail.com",
+      "yciwcgakeqowsbrieq1sqtahecq96qca.dnsstatus.org",
+      "yciwfgpmeq5wstpke6psqtahecnue5we.defenderlive.com",
+      "yciwfgroetpwetaletomqtahecq96qca.defenderlive.com",
+      "yciwftaie66jstpmds5sqtahecnue5we.dnsstatus.org",
+      "yciwftaketowstrmehpsqtahecnuetwb.dnsstatus.org",
+      "yciwstrnecpwebaletpmqtahecnuec5d.dnsstatus.org",
+      "yciwzbrue66jsbaoespsqtahecnuetwb.defenderlive.com",
+      "yciwztanet1kcpnjds1wepwacqmz6frgxqlzutrxsmuux.defenderlive.com",
+      "zgz4sjvb33.cardioteacher.com",
+      "zj-tunq.com",
+      "zlz5ow818r.joexpediagroup.com",
+      "zyverantova.eu"
+    ],
+    "ipv4": [
+      "151.236.17.231:53",
+      "151.236.17.231:8080",
+      "151.236.17.231:8989",
+      "185.198.59.121:137",
+      "185.198.59.121:139",
+      "185.198.59.121:445",
+      "185.32.178.176:80",
+      "185.76.78.177:53",
+      "185.76.78.177:8080",
+      "185.76.78.177:8989",
+      "185.76.78.177:9090",
+      "192.71.166.24:10443",
+      "193.36.132.224:8080",
+      "194.68.32.114:53",
+      "198.44.140.29:8080",
+      "198.44.140.29:8989",
+      "206.206.123.176:443",
+      "206.206.123.176:8080",
+      "37.1.213.152:39654",
+      "37.1.213.152:8999",
+      "38.180.140.30:8080",
+      "38.180.18.189:8080",
+      "38.180.31.225:443",
+      "38.180.31.225:8080",
+      "89.46.233.239:10443",
+      "89.46.233.239:8080",
+      "91.132.95.117:53",
+      "91.132.95.117:8080",
+      "91.132.95.117:8081",
+      "91.132.95.117:8989",
+      "91.184.249.198:443",
+      "93.177.75.180:80",
+      "95.156.204.168:10443",
+      "95.156.204.168:443",
+      "95.156.204.168:8080",
+      "95.211.104.253:2255",
+      "95.211.104.253:443",
+      "95.211.104.253:80",
+      "95.211.210.55:80",
+      "95.211.213.168:80",
+      "95.211.213.177:80",
+      "95.211.215.225:80"
+    ],
+    "url": [
+      "host1.com/rt.ovf",
+      "http://138.68.234.128",
+      "http://185.15.247.154",
+      "http://185.198.59.121",
+      "iafflocal290.org/sapm/Poland/china.php",
+      "karachidha.org/docs/EOIForm.rtf"
+    ],
+    "url_path": [
+      "/Gfg786v6fcd6v8j09jg67f6/",
+      "/Gfg786v6fcd6v8j09jg67f6/addentry2.php",
+      "/Gfg786v6fcd6v8j09jg67f6/dolist.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "IRN2",
+    "OILRIG"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=151.236.17.231&type=ip4&ref_id=29bbecc74a1#tab=resolutions",
+    "https://app.validin.com/detail?find=185.76.78.177&type=ip4&ref_id=70a5c38659b#tab=resolutions",
+    "https://app.validin.com/detail?find=3981e30d1289ce1be9210c929a68bca0&type=hash&ref_id=f7daca57730#tab=host_pairs (# 2025-03-31)",
+    "https://app.validin.com/detail?find=b60d5beecd0576e7c59f2195e2462822f9d096cd&type=hash&ref_id=f7daca57730#tab=host_pairs (# 2025-03-31)",
+    "https://app.validin.com/detail?find=helllllllllllllllllllllllllo&type=raw&ref_id=ad162dcfc0e#tab=dns",
+    "https://blog.malwarebytes.com/threat-intelligence/2022/05/apt34-targets-jordan-government-using-new-saitama-backdoor/",
+    "https://blog.morphisec.com/microsoft-equation-editor-backdoor",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (# 2018-05-13: PRB-Backdoor and its connection to Oilrig)",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-14: ALMA Communicator by Oilrig sample)",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-16: Iranian Oilrig campaign with C2 coldflys[.]com)",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-22: Oilrig - new old sample)",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-12-10: Oilrig-APT34)",
+    "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-01-02: Iranian threat group Oilrig Bahrain decoy)",
+    "https://en.fofa.info/result?qbase64=IHRpdGxlPT0iZ29vZF9uZXdzX3NpdGUi",
+    "https://hunt.io/blog/track-apt34-like-infrastructure-before-it-strikes",
+    "https://intezer.com/blog-new-iranian-campaign-tailored-to-us-companies-uses-updated-toolset/",
+    "https://kc.mcafee.com/corporate/index?page=content&id=KB92581&locale=en_US",
+    "https://misterch0c.blogspot.com/2019/04/apt34-oilrig-leak.html",
+    "https://otx.alienvault.com/pulse/5cb74e5ce1f7e4097ff06255",
+    "https://otx.alienvault.com/pulse/5cc8494e1a6c9c572567ba7f",
+    "https://otx.alienvault.com/pulse/5d3092fc4cd930e8cd6b1f76",
+    "https://otx.alienvault.com/pulse/5e305bb0fdf782ede5a5405b",
+    "https://otx.alienvault.com/pulse/5e498b13d1107f3801d4b0b0",
+    "https://otx.alienvault.com/pulse/5f18618ca64fbccf241e8746",
+    "https://otx.alienvault.com/pulse/5fcfc04c753344dd65c6135d",
+    "https://otx.alienvault.com/pulse/606f347aadebd8f4dd043ac9",
+    "https://otx.alienvault.com/pulse/627ce7ceecf262a2aff36f9f",
+    "https://otx.alienvault.com/pulse/657b11ab57c4b75f5004b236",
+    "https://research.checkpoint.com/2021/irans-apt34-returns-with-an-updated-arsenal/",
+    "https://research.checkpoint.com/2024/iranian-malware-attacks-iraqi-government/ (# spearal, veaty)",
+    "https://researchcenter.paloaltonetworks.com/2018/07/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/",
+    "https://researchcenter.paloaltonetworks.com/2018/09/unit42-oilrig-uses-updated-bondupdater-target-middle-eastern-government/",
+    "https://sec0wn.blogspot.com/2018/05/prb-backdoor-fully-loaded-powershell.html",
+    "https://threatbook.io/blog/id/1101",
+    "https://twitter.com/AnonySecAgency/status/1405451968374444035",
+    "https://twitter.com/ClearskySec/status/1026297541581664257",
+    "https://twitter.com/ClearskySec/status/1209055280090288131",
+    "https://twitter.com/GoCyberYourself/status/1224020878146654211",
+    "https://twitter.com/ShadowChasing1/status/1306780216384258049",
+    "https://twitter.com/__0XYC__/status/1468909913976025100",
+    "https://twitter.com/kyleehmke/status/1151944337598668801",
+    "https://twitter.com/kyleehmke/status/1222970186162155523",
+    "https://twitter.com/kyleehmke/status/1224193166393344002",
+    "https://twitter.com/kyleehmke/status/1224546670576390145",
+    "https://twitter.com/kyleehmke/status/1227993245025738753",
+    "https://twitter.com/kyleehmke/status/1305342438479933442",
+    "https://twitter.com/kyleehmke/status/1332141973403291648",
+    "https://twitter.com/kyleehmke/status/1332716197188661248",
+    "https://twitter.com/kyleehmke/status/1338907878455963648",
+    "https://twitter.com/kyleehmke/status/1339410533410369537",
+    "https://twitter.com/kyleehmke/status/1340304704589492225",
+    "https://twitter.com/kyleehmke/status/1349041310704029701",
+    "https://twitter.com/kyleehmke/status/1359828105804869634",
+    "https://twitter.com/silv0123/status/1166399156853846017",
+    "https://twitter.com/t3ft3lb/status/1605487437995597826",
+    "https://unit42.paloaltonetworks.com/behind-the-scenes-with-oilrig/",
+    "https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/ (# RDAT Backdoor)",
+    "https://unit42.paloaltonetworks.com/unit42-oilrig-malware-campaign-updates-toolset-and-expands-targets/",
+    "https://unit42.paloaltonetworks.com/xhunt-campaign-attacks-on-kuwait-shipping-and-transportation-organizations/ (Table 3.)",
+    "https://unit42.paloaltonetworks.com/xhunt-campaign-new-watering-hole-identified-for-credential-harvesting/",
+    "https://www.area1security.com/resources/operation-doos/",
+    "https://www.clearskysec.com/wp-content/uploads/2020/02/ClearSky-Fox-Kitten-Campaign-v1.pdf",
+    "https://www.domaintools.com/resources/blog/identifying-critical-infrastructure-targeting-through-network-creation",
+    "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html",
+    "https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html",
+    "https://www.fortinet.com/blog/threat-research/please-confirm-you-received-our-apt",
+    "https://www.trendmicro.com/en_us/research/23/i/apt34-deploys-phishing-attack-with-new-malware.html",
+    "https://www.virustotal.com/gui/file/08261ed40e21140eb438f16af0233217c701d9b022dce0a45b6e3e1ee2467739/detection",
+    "https://www.virustotal.com/gui/file/0ee32e3ea3d83da9df6317d7c8c539f0f3622af82ef242d74fdca1e5d4ee427f/detection",
+    "https://www.virustotal.com/gui/file/1388f124c6af24eefe5483a5a50ab186abdf51a89875036f7383ea51139ab4b4/detection",
+    "https://www.virustotal.com/gui/file/17f9db18327a29777b01d741f7631d9eb9c7e4cb33aa0905670154a5c191195c/detection",
+    "https://www.virustotal.com/gui/file/1f47770cc42ac8805060004f203a5f537b7473a36ff41eabb746900b2fa24cc8/detection",
+    "https://www.virustotal.com/gui/file/40ba95b54dc4cf0754efcfaeef3bbd71aac65882f3c92b8814a82ea02969da84/behavior/Lastline",
+    "https://www.virustotal.com/gui/file/413cef6cf83ff649c15c60fff888197183418fb9d2b84a12cd44e4607e6a6881/detection",
+    "https://www.virustotal.com/gui/file/5b307600b1ceb84f29315c95e5b21776eb6154b79214528629e4fc2310cd50e3/detection",
+    "https://www.virustotal.com/gui/file/5b5b1608e6736c7759b1ecf61e756794cf9ef3bb4752c315527bcc675480b6c6/detection",
+    "https://www.virustotal.com/gui/file/64156f9ca51951a9bf91b5b74073d31c16873ca60492c25895c1f0f074787345/detection",
+    "https://www.virustotal.com/gui/file/81e3e31ffd8aa0a96f48eeb638eed9e9344ffb65537cbeb8a357c92f0999555c/detection",
+    "https://www.virustotal.com/gui/file/8a8a7a506fd57bde314ce6154f2484f280049f2bda504d43704b9ad412d5d618/detection",
+    "https://www.virustotal.com/gui/file/b607d60d680f1f1335902a666df843ac9cc58299af6731d2ad1a5ea617cf4a99/detection",
+    "https://www.virustotal.com/gui/file/b69812221cd9328a70c90f771c58be44693de493df18f0a08ebd0bb6236e37a7/detection",
+    "https://www.virustotal.com/gui/file/b85ffc8af90d4312aca9a81e0da00aabe6278fd9c92e933aec7e2da80c2c1f7e/detection",
+    "https://www.virustotal.com/gui/file/c6e71d457779d2802f78c7526a65268600ead6bf8dd75ef9bee5af85569336ef/behavior/VirusTotal%20Jujubox",
+    "https://www.virustotal.com/gui/file/cb00ee3f246a3d3af6ba4f97546a39090a55dd8312b8531bd99efa353e267887/detection",
+    "https://www.virustotal.com/gui/file/d33da74a263c03bb9473ac6db7ef1a82c1ba0a5fd40a0dcc2bc1fcdf9eda5bd5/detection",
+    "https://www.virustotal.com/gui/file/dcdaa9da5ee4750b1084f7dd99faeed2c713595bb156ac6491b29c2f9e0a1ade/detection",
+    "https://www.virustotal.com/gui/file/e0872958b8d3824089e5e1cfab03d9d98d22b9bcb294463818d721380075a52d/detection",
+    "https://www.virustotal.com/gui/file/f91c5250b33fc5f95495c5e3d63b5fde7ca538178feb253322808b383a26599d/detection",
+    "https://www.virustotal.com/gui/ip-address/194.68.32.114/relations",
+    "https://www.virustotal.com/gui/ip-address/206.206.123.176/relations",
+    "https://www.virustotal.com/gui/ip-address/37.1.213.152/relations",
+    "https://www.welivesecurity.com/en/eset-research/oilrig-persistent-attacks-cloud-service-powered-downloaders/",
+    "https://www.zoomeye.hk/searchResult?q=title%3A%22good_news_site%22",
+    "https://x.com/Aarn63373424/status/1834496842580505035",
+    "https://x.com/Cyber_O51NT/status/1834069690777301121",
+    "https://x.com/Cyberteam008/status/1834415607825277069",
+    "https://x.com/ThreatBookLabs/status/1899472630849413627",
+    "https://x.com/ThreatBookLabs/status/1906670311145091390",
+    "https://x.com/ThreatBookLabs/status/1924470599394422785",
+    "https://x.com/ThreatBookLabs/status/1939972243238633634",
+    "https://x.com/k3yp0d/status/1834192780605710659"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "7 shared indicators",
+          "kind": "infrastructure",
+          "weight": 7.0
+        }
+      ],
+      "slug": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "5 shared indicators",
+          "kind": "infrastructure",
+          "weight": 5.0
+        },
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0067"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1001"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ftp, Systeminfo",
+          "kind": "software",
+          "weight": 0.367
+        }
+      ],
+      "slug": "G0019"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Systeminfo, Reg",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0010"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0140"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares ngrok",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G1003"
+    }
+  ],
+  "slug": "G0049",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 15
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "mytrustiq.com"
+        ],
+        "ipv4": [
+          "151.236.17.231:8989",
+          "185.76.78.177:8989",
+          "185.76.78.177:9090",
+          "192.71.166.24:10443",
+          "193.36.132.224:8080",
+          "198.44.140.29:8989",
+          "38.180.31.225:443",
+          "38.180.31.225:8080",
+          "89.46.233.239:10443",
+          "89.46.233.239:8080",
+          "91.132.95.117:8080",
+          "91.132.95.117:8989",
+          "95.156.204.168:10443",
+          "95.156.204.168:443",
+          "95.156.204.168:8080"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1899472630849413627",
+        "https://x.com/ThreatBookLabs/status/1906670311145091390",
+        "https://x.com/ThreatBookLabs/status/1939972243238633634",
+        "https://threatbook.io/blog/id/1101",
+        "https://app.validin.com/detail?find=b60d5beecd0576e7c59f2195e2462822f9d096cd&type=hash&ref_id=f7daca57730#tab=host_pairs (# 2025-03-31)",
+        "https://app.validin.com/detail?find=3981e30d1289ce1be9210c929a68bca0&type=hash&ref_id=f7daca57730#tab=host_pairs (# 2025-03-31)",
+        "https://www.virustotal.com/gui/file/b607d60d680f1f1335902a666df843ac9cc58299af6731d2ad1a5ea617cf4a99/detection"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "axoryvexity.eu",
+          "biam-iraq.org",
+          "iraqmailservice.com",
+          "plenoryvantyx.eu",
+          "valtorynexon.eu",
+          "valtryventyx.eu",
+          "westagnews.com",
+          "zyverantova.eu"
+        ],
+        "ipv4": [
+          "38.180.140.30:8080",
+          "38.180.18.189:8080"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://hunt.io/blog/track-apt34-like-infrastructure-before-it-strikes"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "91.184.249.198:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1924470599394422785"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 4
+      },
+      "first_seen": "2024-09-13",
+      "indicators": {
+        "ipv4": [
+          "151.236.17.231:8080",
+          "185.76.78.177:8080",
+          "198.44.140.29:8080",
+          "91.132.95.117:8081"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyberteam008/status/1834415607825277069",
+        "https://x.com/Aarn63373424/status/1834496842580505035",
+        "https://en.fofa.info/result?qbase64=IHRpdGxlPT0iZ29vZF9uZXdzX3NpdGUi",
+        "https://www.zoomeye.hk/searchResult?q=title%3A%22good_news_site%22"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 15,
+        "ipv4": 8
+      },
+      "first_seen": "2024-09-12",
+      "indicators": {
+        "domain": [
+          "admin.mofaiq.com",
+          "apps.iqwebservice.com",
+          "asiacall.net",
+          "base32.iqwebservice.com",
+          "iqwebservice.com",
+          "mofaiq.com",
+          "ns1.asiacall.net",
+          "ns1.iqwebservice.com",
+          "ns1.mofaiq.com",
+          "ns1.spacenet.fun",
+          "ns2.iqwebservice.com",
+          "ns2.mofaiq.com",
+          "ns2.spacenet.fun",
+          "spacenet.fun",
+          "truetone.cfd"
+        ],
+        "ipv4": [
+          "151.236.17.231:53",
+          "185.76.78.177:53",
+          "194.68.32.114:53",
+          "206.206.123.176:443",
+          "206.206.123.176:8080",
+          "37.1.213.152:39654",
+          "37.1.213.152:8999",
+          "91.132.95.117:53"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/Cyber_O51NT/status/1834069690777301121",
+        "https://research.checkpoint.com/2024/iranian-malware-attacks-iraqi-government/ (# spearal, veaty)",
+        "https://app.validin.com/detail?find=151.236.17.231&type=ip4&ref_id=29bbecc74a1#tab=resolutions",
+        "https://app.validin.com/detail?find=185.76.78.177&type=ip4&ref_id=70a5c38659b#tab=resolutions",
+        "https://www.virustotal.com/gui/ip-address/194.68.32.114/relations",
+        "https://www.virustotal.com/gui/ip-address/206.206.123.176/relations",
+        "https://www.virustotal.com/gui/ip-address/37.1.213.152/relations",
+        "https://www.virustotal.com/gui/file/1388f124c6af24eefe5483a5a50ab186abdf51a89875036f7383ea51139ab4b4/detection",
+        "https://www.virustotal.com/gui/file/413cef6cf83ff649c15c60fff888197183418fb9d2b84a12cd44e4607e6a6881/detection",
+        "https://www.virustotal.com/gui/file/81e3e31ffd8aa0a96f48eeb638eed9e9344ffb65537cbeb8a357c92f0999555c/detection",
+        "https://www.virustotal.com/gui/file/b85ffc8af90d4312aca9a81e0da00aabe6278fd9c92e933aec7e2da80c2c1f7e/detection",
+        "https://www.virustotal.com/gui/file/dcdaa9da5ee4750b1084f7dd99faeed2c713595bb156ac6491b29c2f9e0a1ade/detection"
+      ],
+      "total": 23
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-09-12",
+      "indicators": {
+        "domain": [
+          "fastasia.shop",
+          "ns1.fastasia.shop",
+          "ns2.fastasia.shop"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/k3yp0d/status/1834192780605710659",
+        "https://app.validin.com/detail?find=helllllllllllllllllllllllllo&type=raw&ref_id=ad162dcfc0e#tab=dns"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-12-16",
+      "indicators": {
+        "url": [
+          "host1.com/rt.ovf"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/oilrig-persistent-attacks-cloud-service-powered-downloaders/",
+        "https://otx.alienvault.com/pulse/657b11ab57c4b75f5004b236"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-10-01",
+      "indicators": {
+        "domain": [
+          "tecforsc-001-site1.gtempurl.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/23/i/apt34-deploys-phishing-attack-with-new-malware.html",
+        "https://www.virustotal.com/gui/file/8a8a7a506fd57bde314ce6154f2484f280049f2bda504d43704b9ad412d5d618/detection",
+        "https://www.virustotal.com/gui/file/64156f9ca51951a9bf91b5b74073d31c16873ca60492c25895c1f0f074787345/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2022-12-21",
+      "indicators": {
+        "domain": [
+          "262t3my0gt.cardioteacher.com",
+          "7a7n4j60g4.cardioteacher.com",
+          "cardioteacher.com",
+          "egef74rfrf.cardioteacher.com",
+          "mxmbwci0gs.cardioteacher.com",
+          "pkpqzvgb3t.cardioteacher.com",
+          "shsz3eub38.cardioteacher.com",
+          "u3u6gm4b34.cardioteacher.com",
+          "zgz4sjvb33.cardioteacher.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/t3ft3lb/status/1605487437995597826",
+        "https://www.virustotal.com/gui/file/d33da74a263c03bb9473ac6db7ef1a82c1ba0a5fd40a0dcc2bc1fcdf9eda5bd5/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-26",
+      "indicators": {
+        "domain": [
+          "2zcf.uber-asia.com",
+          "efezhyrzc9.joexpediagroup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/b69812221cd9328a70c90f771c58be44693de493df18f0a08ebd0bb6236e37a7/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2022-05-12",
+      "indicators": {
+        "domain": [
+          "astrazencea.com",
+          "astrazeneeca.com",
+          "cisco0.com",
+          "coinbasedeutschland.com",
+          "hsbcbkcn.com",
+          "ntu-sg-edu.com",
+          "theworldbank.uk",
+          "valtronics-ae.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/threat-intelligence/2022/05/apt34-targets-jordan-government-using-new-saitama-backdoor/",
+        "https://www.fortinet.com/blog/threat-research/please-confirm-you-received-our-apt",
+        "https://otx.alienvault.com/pulse/627ce7ceecf262a2aff36f9f",
+        "https://www.virustotal.com/gui/file/e0872958b8d3824089e5e1cfab03d9d98d22b9bcb294463818d721380075a52d/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2022-05-11",
+      "indicators": {
+        "domain": [
+          "2fhj.asiaworldremit.com",
+          "2u21hipg70.uber-asia.com",
+          "3j3oyvsf8i.joexpediagroup.com",
+          "5s5gp24f8x.asiaworldremit.com",
+          "7w7rbgt13f.uber-asia.com",
+          "asiaworldremit.com",
+          "j9jnkf7asv.joexpediagroup.com",
+          "joexpediagroup.com",
+          "jqj6po1g71.uber-asia.com",
+          "ozo26hwfhl.uber-asia.com",
+          "p5p98ljg7e.asiaworldremit.com",
+          "qcqrpjgasn.joexpediagroup.com",
+          "r2rcdvnasg.asiaworldremit.com",
+          "t3tadulf8d.joexpediagroup.com",
+          "uber-asia.com",
+          "ucu4dsvf8m.joexpediagroup.com",
+          "vhvn201135.joexpediagroup.com",
+          "w0wiq48g7w.uber-asia.com",
+          "zlz5ow818r.joexpediagroup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/threat-intelligence/2022/05/apt34-targets-jordan-government-using-new-saitama-backdoor/",
+        "https://www.fortinet.com/blog/threat-research/please-confirm-you-received-our-apt",
+        "https://otx.alienvault.com/pulse/627ce7ceecf262a2aff36f9f",
+        "https://www.virustotal.com/gui/file/e0872958b8d3824089e5e1cfab03d9d98d22b9bcb294463818d721380075a52d/detection"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2021-12-10",
+      "indicators": {
+        "domain": [
+          "bgre.kozow.com"
+        ],
+        "url": [
+          "karachidha.org/docs/EOIForm.rtf"
+        ],
+        "url_path": [
+          "/Gfg786v6fcd6v8j09jg67f6/",
+          "/Gfg786v6fcd6v8j09jg67f6/addentry2.php",
+          "/Gfg786v6fcd6v8j09jg67f6/dolist.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/__0XYC__/status/1468909913976025100",
+        "https://www.virustotal.com/gui/file/5b5b1608e6736c7759b1ecf61e756794cf9ef3bb4752c315527bcc675480b6c6/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url": 2
+      },
+      "first_seen": "2021-12-10",
+      "indicators": {
+        "ipv4": [
+          "185.198.59.121:137",
+          "185.198.59.121:139",
+          "185.198.59.121:445"
+        ],
+        "url": [
+          "http://138.68.234.128",
+          "http://185.198.59.121"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.morphisec.com/microsoft-equation-editor-backdoor",
+        "https://www.virustotal.com/gui/file/5b307600b1ceb84f29315c95e5b21776eb6154b79214528629e4fc2310cd50e3/detection",
+        "https://www.virustotal.com/gui/file/17f9db18327a29777b01d741f7631d9eb9c7e4cb33aa0905670154a5c191195c/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-17",
+      "indicators": {
+        "domain": [
+          "mail.army.gov.lb"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/AnonySecAgency/status/1405451968374444035",
+        "https://www.virustotal.com/gui/file/1f47770cc42ac8805060004f203a5f537b7473a36ff41eabb746900b2fa24cc8/detection",
+        "https://www.virustotal.com/gui/file/cb00ee3f246a3d3af6ba4f97546a39090a55dd8312b8531bd99efa353e267887/detection",
+        "https://www.virustotal.com/gui/file/f91c5250b33fc5f95495c5e3d63b5fde7ca538178feb253322808b383a26599d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2021-06-08",
+      "indicators": {
+        "domain": [
+          "akastatus.com",
+          "yciwcgakeqowsbrieq1sqtahecq96qca.dnsstatus.org",
+          "yciwfgpmeq5wstpke6psqtahecnue5we.defenderlive.com",
+          "yciwfgroetpwetaletomqtahecq96qca.defenderlive.com",
+          "yciwftaie66jstpmds5sqtahecnue5we.dnsstatus.org",
+          "yciwftaketowstrmehpsqtahecnuetwb.dnsstatus.org",
+          "yciwstrnecpwebaletpmqtahecnuec5d.dnsstatus.org",
+          "yciwzbrue66jsbaoespsqtahecnuetwb.defenderlive.com",
+          "yciwztanet1kcpnjds1wepwacqmz6frgxqlzutrxsmuux.defenderlive.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/08261ed40e21140eb438f16af0233217c701d9b022dce0a45b6e3e1ee2467739/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-04-08",
+      "indicators": {
+        "domain": [
+          "sarmsoftware.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2021/irans-apt34-returns-with-an-updated-arsenal/",
+        "https://otx.alienvault.com/pulse/606f347aadebd8f4dd043ac9"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-02-11",
+      "indicators": {
+        "domain": [
+          "pluginmain.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1359828105804869634"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-12",
+      "indicators": {
+        "domain": [
+          "severalfissures.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1349041310704029701"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2020-12-19",
+      "indicators": {
+        "domain": [
+          "crucialanswer.com",
+          "endlesspromises.com",
+          "forecasterman.com",
+          "hopeisstamina.com",
+          "unsecuredstorage.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1340304704589492225"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-12-17",
+      "indicators": {
+        "domain": [
+          "acceptplan.com",
+          "confusedtown.com",
+          "importantgate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1339410533410369537"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-17",
+      "indicators": {
+        "domain": [
+          "donotfollowmeass.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1338907878455963648"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 39,
+        "url": 1
+      },
+      "first_seen": "2020-12-08",
+      "indicators": {
+        "domain": [
+          "ababab.biz",
+          "alcirineos.com",
+          "amazon-loveyou.com",
+          "anhuisiafu.com",
+          "bargertextiles.com",
+          "berqertextiles.com",
+          "boardexecutivemanagement.com",
+          "boardsexecutives.com",
+          "cererock.com",
+          "chinaconstructioncorp.com",
+          "clearinghouseinternational.com",
+          "connect-roofing.com",
+          "cornerstoneconect.com",
+          "exmngt.com",
+          "groupsexecutive.com",
+          "hoganlouells.com",
+          "hscminkjet.com",
+          "huopay.top",
+          "indeptheva.com",
+          "jiabolianjie0.com",
+          "jinkangpu.co",
+          "jlrootfile.com",
+          "kent-lawfirm.net",
+          "lavalingroup.com",
+          "mngtboard.com",
+          "oculus-au.info",
+          "pet188.biz",
+          "petrochinas.com",
+          "renrenbaowang.com",
+          "renrenbaowang.net",
+          "stagmein.pl",
+          "superrnax.com",
+          "svn-stone.com",
+          "us-customs.org",
+          "virtual-slots.com",
+          "virtualcaresadvisor.com",
+          "wilsonconts.com",
+          "wiqzi.com",
+          "zj-tunq.com"
+        ],
+        "url": [
+          "iafflocal290.org/sapm/Poland/china.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.domaintools.com/resources/blog/identifying-critical-infrastructure-targeting-through-network-creation",
+        "https://otx.alienvault.com/pulse/5fcfc04c753344dd65c6135d"
+      ],
+      "total": 40
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-28",
+      "indicators": {
+        "domain": [
+          "klwebsrv.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1332716197188661248",
+        "https://www.domaintools.com/resources/blog/identifying-critical-infrastructure-targeting-through-network-creation",
+        "https://otx.alienvault.com/pulse/5fcfc04c753344dd65c6135d"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-27",
+      "indicators": {
+        "domain": [
+          "careers-ntiva.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1332141973403291648",
+        "https://www.domaintools.com/resources/blog/identifying-critical-infrastructure-targeting-through-network-creation",
+        "https://otx.alienvault.com/pulse/5fcfc04c753344dd65c6135d"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-09-27",
+      "indicators": {
+        "domain": [
+          "windowscredcity.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1306780216384258049",
+        "https://www.virustotal.com/gui/file/0ee32e3ea3d83da9df6317d7c8c539f0f3622af82ef242d74fdca1e5d4ee427f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-09-16",
+      "indicators": {
+        "domain": [
+          "greenkeyllc-projects.com",
+          "infopulsejobs.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1305342438479933442"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-07-24",
+      "indicators": {
+        "domain": [
+          "digi.shanx.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/ (# RDAT Backdoor)",
+        "https://otx.alienvault.com/pulse/5f18618ca64fbccf241e8746"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2020-07-22",
+      "indicators": {
+        "domain": [
+          "acrlee.com",
+          "allsecpackupdater.com",
+          "intelligent-finance.site",
+          "kizlarsoroyur.com",
+          "kopilkaorukov.com",
+          "oudax.com",
+          "rdmsi.com",
+          "sharjatv.com",
+          "tprs-servers.eu",
+          "wwmal.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/oilrig-novel-c2-channel-steganography/ (# RDAT Backdoor)",
+        "https://otx.alienvault.com/pulse/5f18618ca64fbccf241e8746"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2020-07-07",
+      "indicators": {
+        "ipv4": [
+          "95.211.104.253:2255",
+          "95.211.104.253:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.clearskysec.com/wp-content/uploads/2020/02/ClearSky-Fox-Kitten-Campaign-v1.pdf",
+        "https://otx.alienvault.com/pulse/5e498b13d1107f3801d4b0b0",
+        "https://kc.mcafee.com/corporate/index?page=content&id=KB92581&locale=en_US",
+        "https://www.virustotal.com/gui/file/c6e71d457779d2802f78c7526a65268600ead6bf8dd75ef9bee5af85569336ef/behavior/VirusTotal%20Jujubox",
+        "https://www.virustotal.com/gui/file/40ba95b54dc4cf0754efcfaeef3bbd71aac65882f3c92b8814a82ea02969da84/behavior/Lastline"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2020-04-06",
+      "indicators": {
+        "domain": [
+          "go0gIe.com",
+          "googleupdate.download",
+          "shalaghlagh.tk",
+          "update-kernal.net",
+          "upgradesystems.info",
+          "yahoooooomail.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/unit42-oilrig-malware-campaign-updates-toolset-and-expands-targets/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 7
+      },
+      "first_seen": "2020-02-16",
+      "indicators": {
+        "ipv4": [
+          "185.32.178.176:80",
+          "93.177.75.180:80",
+          "95.211.104.253:80",
+          "95.211.210.55:80",
+          "95.211.213.168:80",
+          "95.211.213.177:80",
+          "95.211.215.225:80"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.clearskysec.com/wp-content/uploads/2020/02/ClearSky-Fox-Kitten-Campaign-v1.pdf",
+        "https://otx.alienvault.com/pulse/5e498b13d1107f3801d4b0b0",
+        "https://kc.mcafee.com/corporate/index?page=content&id=KB92581&locale=en_US",
+        "https://www.virustotal.com/gui/file/c6e71d457779d2802f78c7526a65268600ead6bf8dd75ef9bee5af85569336ef/behavior/VirusTotal%20Jujubox",
+        "https://www.virustotal.com/gui/file/40ba95b54dc4cf0754efcfaeef3bbd71aac65882f3c92b8814a82ea02969da84/behavior/Lastline"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-13",
+      "indicators": {
+        "domain": [
+          "rimaga.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1227993245025738753"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-04",
+      "indicators": {
+        "domain": [
+          "scoorpion.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1224546670576390145"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-03",
+      "indicators": {
+        "domain": [
+          "lebanonbuilder.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1224193166393344002"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-02-02",
+      "indicators": {
+        "domain": [
+          "godoycrus.com",
+          "wastedsituation.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/GoCyberYourself/status/1224020878146654211"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-01-30",
+      "indicators": {
+        "domain": [
+          "hr-westat.com",
+          "westat-hr.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1222970186162155523"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-30",
+      "indicators": {
+        "domain": [
+          "manygoodnews.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://intezer.com/blog-new-iranian-campaign-tailored-to-us-companies-uses-updated-toolset/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-01-28",
+      "indicators": {
+        "domain": [
+          "ffconnectivitycheck.com",
+          "flowconnectivity.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/xhunt-campaign-new-watering-hole-identified-for-credential-harvesting/",
+        "https://otx.alienvault.com/pulse/5e305bb0fdf782ede5a5405b"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-23",
+      "indicators": {
+        "domain": [
+          "lcepos.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1209055280090288131"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-09-28",
+      "indicators": {
+        "domain": [
+          "6google.com",
+          "alforatsystem.com",
+          "antivirus-update.top",
+          "firewallsupports.com",
+          "microsofte-update.com",
+          "sakabota.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/xhunt-campaign-new-watering-hole-identified-for-credential-harvesting/",
+        "https://otx.alienvault.com/pulse/5e305bb0fdf782ede5a5405b"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-28",
+      "indicators": {
+        "domain": [
+          "whatzapps.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/xhunt-campaign-attacks-on-kuwait-shipping-and-transportation-organizations/ (Table 3.)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-07-30",
+      "indicators": {
+        "domain": [
+          "akamai-global.com",
+          "linledin.net",
+          "outl00k.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (# 2018-05-13: PRB-Backdoor and its connection to Oilrig)",
+        "https://sec0wn.blogspot.com/2018/05/prb-backdoor-fully-loaded-powershell.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-07-19",
+      "indicators": {
+        "domain": [
+          "fuktheme.com",
+          "goosegoosecome.com",
+          "hugebricks.com",
+          "offturn.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1151944337598668801"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "url": 1
+      },
+      "first_seen": "2019-07-18",
+      "indicators": {
+        "domain": [
+          "cam-research-ac.com",
+          "cdn-edge-akamai.com",
+          "offlineearthquake.com"
+        ],
+        "url": [
+          "http://185.15.247.154"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html",
+        "https://otx.alienvault.com/pulse/5d3092fc4cd930e8cd6b1f76"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-05-01",
+      "indicators": {
+        "domain": [
+          "cloudipnameserver.com",
+          "googie.email",
+          "lowconnectivity.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/xhunt-campaign-new-watering-hole-identified-for-credential-harvesting/",
+        "https://otx.alienvault.com/pulse/5e305bb0fdf782ede5a5405b"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-04-30",
+      "indicators": {
+        "domain": [
+          "msoffice-cdn.com",
+          "office365-management.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/behind-the-scenes-with-oilrig/",
+        "https://otx.alienvault.com/pulse/5cc8494e1a6c9c572567ba7f"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-17",
+      "indicators": {
+        "domain": [
+          "myleftheart.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cb74e5ce1f7e4097ff06255",
+        "https://misterch0c.blogspot.com/2019/04/apt34-oilrig-leak.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "applicationframehost.in",
+          "chrome-dns.com",
+          "dnsupdateservers.net",
+          "fireeyeupdate.com",
+          "level3-resolvers.net",
+          "microsoft-publisher.com",
+          "miedafire.com",
+          "mslicensecheck.com",
+          "msoffice365update.com",
+          "ntpupdateserver.com",
+          "opendns-server.com",
+          "outlookteam.live",
+          "poison-frog.club",
+          "ressume.site",
+          "tatavpnservices.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-12-10: Oilrig-APT34)",
+        "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "window5.win"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2018-01-02: Iranian threat group Oilrig Bahrain decoy)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "winodwsupdates.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-22: Oilrig - new old sample)",
+        "https://unit42.paloaltonetworks.com/unit42-oilrig-malware-campaign-updates-toolset-and-expands-targets/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "nsn1.winodwsupdates.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-22: Oilrig - new old sample)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-29",
+      "indicators": {
+        "domain": [
+          "prosalar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-14: ALMA Communicator by Oilrig sample)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "barsupport.org",
+          "forskys.com",
+          "shoterup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.area1security.com/resources/operation-doos/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "coldflys.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.area1security.com/resources/operation-doos/",
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-11-16: Iranian Oilrig campaign with C2 coldflys[.]com)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-19",
+      "indicators": {
+        "domain": [
+          "withyourface.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/09/unit42-oilrig-uses-updated-bondupdater-target-middle-eastern-government/",
+        "https://twitter.com/silv0123/status/1166399156853846017"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-09-06",
+      "indicators": {
+        "domain": [
+          "acrobatverify.com",
+          "cpuproc.com",
+          "rdppath.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2018/07/unit42-oilrig-targets-technology-service-provider-government-agency-quadagent/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2018-09-05",
+      "indicators": {
+        "domain": [
+          "anyportals.com",
+          "dns-update.club",
+          "hpserver.online",
+          "mumbai-m.site",
+          "proxycheker.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://docs.google.com/document/d/1oYX3uN6KxIX_StzTH0s0yFNNoHDnV8VgmVqU5WoeErc (2017-12-10: Oilrig-APT34)",
+        "https://www.fireeye.com/blog/threat-research/2017/12/targeted-attack-in-middle-east-by-apt34.html"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-08-28",
+      "indicators": {
+        "domain": [
+          "defender-update.com",
+          "herkhabar.com",
+          "windowspatch.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ClearskySec/status/1026297541581664257"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-03-31",
+      "indicators": {
+        "domain": [
+          "google-update.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/xhunt-campaign-new-watering-hole-identified-for-credential-harvesting/",
+        "https://otx.alienvault.com/pulse/5e305bb0fdf782ede5a5405b"
+      ],
+      "total": 1
+    }
+  ]
+}

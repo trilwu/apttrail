@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1583226124",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2942c24d-848f-5099-a03b-3ab49b722b6f",
+        "value": "cdn.dosya.web.tr"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1583226124",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c4dd7fae-7df7-5fe1-b323-1ace800e189a",
+        "value": "ludo.ezyro.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1583226124",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d52286e9-bd03-5170-aed9-cb49d7686505",
+        "value": "samsung.apps.linkpc.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:silencerlion"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: SILENCERLION",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5f53aca3-4dd0-54bd-afa8-5188af94547d"
+  }
+}

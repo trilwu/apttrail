@@ -1,0 +1,87 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "afb33d68-9da9-590a-bd2c-003f27b8e85d",
+        "value": "cdn.fmlstatic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4791161a-d816-5c65-b81f-6f6e2910c7af",
+        "value": "financasdebrasil.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6874bb39-bf52-543d-b16f-23437c8f36d2",
+        "value": "fmlstatic.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3a9c7133-c9d1-5854-ab0c-7d7d40352c0a",
+        "value": "uaefinance.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "153607c0-c459-5d8f-b2ee-8062c151e914",
+        "value": "103.242.119.71:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2e3219ff-5003-5752-9b06-41f5e36094bf",
+        "value": "120.50.38.187:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1619945667",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "45f483b7-873d-53cd-b6fb-1963cf78e329",
+        "value": "161.5.6.206:3128"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:longhorn"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: LONGHORN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "40b7409d-383b-599c-b898-de28580b6e42"
+  }
+}

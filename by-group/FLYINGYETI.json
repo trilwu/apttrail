@@ -1,0 +1,84 @@
+{
+  "aliases": [
+    "cookbox"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "array.myftp.biz": "2024-02-26",
+      "bom02.gotdns.ch": "2024-02-26",
+      "postdock.serveftp.com": "2024-05-31",
+      "worker-polished-union-f396.vqu89698.workers.dev": "2024-05-31",
+      "worker-test-6f41.idv64828.workers.dev": "2024-02-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-02-26",
+    "latest": "2024-05-31"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "array.myftp.biz",
+      "bom02.gotdns.ch",
+      "postdock.serveftp.com",
+      "worker-polished-union-f396.vqu89698.workers.dev",
+      "worker-test-6f41.idv64828.workers.dev"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FLYINGYETI"
+  ],
+  "references": [
+    "https://blog.cloudflare.com/disrupting-flyingyeti-campaign-targeting-ukraine",
+    "https://cert.gov.ua/article/6277849 (# UAC-0149)"
+  ],
+  "related": [],
+  "slug": "FLYINGYETI",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-05-31",
+      "indicators": {
+        "domain": [
+          "postdock.serveftp.com",
+          "worker-polished-union-f396.vqu89698.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.cloudflare.com/disrupting-flyingyeti-campaign-targeting-ukraine"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2024-02-26",
+      "indicators": {
+        "domain": [
+          "array.myftp.biz",
+          "bom02.gotdns.ch",
+          "worker-test-6f41.idv64828.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6277849 (# UAC-0149)"
+      ],
+      "total": 3
+    }
+  ]
+}

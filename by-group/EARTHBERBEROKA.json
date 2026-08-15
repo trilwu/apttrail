@@ -1,0 +1,360 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 55,
+    "ipv4": 3
+  },
+  "first_seen": {
+    "domain": {
+      "1.googie.ph": "2022-05-03",
+      "12371829hkdanm.fbi.am": "2022-05-03",
+      "1qw6etagydbn2peifj8hf.fbi.am": "2022-05-03",
+      "2.googie.ph": "2022-05-03",
+      "3.googie.ph": "2022-05-03",
+      "adobe-flash.wiki": "2022-05-03",
+      "adobe.name": "2022-05-03",
+      "agph.ivi66.net": "2022-05-03",
+      "bos.github.wiki": "2022-05-03",
+      "caonimade.11i.me": "2020-12-22",
+      "d.github.wiki": "2022-05-03",
+      "darknet.rootkit.tools": "2022-05-03",
+      "darwin.github.wiki": "2022-05-03",
+      "download.mircrosoftscoulds.com": "2022-05-03",
+      "dust.github.wiki": "2022-05-03",
+      "exmail.googie.com.ph": "2022-05-03",
+      "fbi.fuckbc.com": "2022-05-03",
+      "flash.wy886066.com": "2022-05-03",
+      "fuckbc.com": "2022-05-03",
+      "fuckeryoumm.nmb.bet": "2021-12-10",
+      "fuckyou.fbi.am": "2022-03-16",
+      "gb.googie.ph": "2022-05-03",
+      "github.wiki": "2022-05-03",
+      "googie.com.ph": "2022-05-03",
+      "googie.ph": "2022-05-03",
+      "helloword.11i.me": "2022-05-03",
+      "helloword.daj8.me": "2021-12-10",
+      "hk.whoamis.info": "2022-05-03",
+      "hkdust.github.wiki": "2022-05-03",
+      "huaidan.fbi.am": "2022-05-03",
+      "ivi66.net": "2022-05-03",
+      "linux.daj8.me": "2022-05-03",
+      "linux.daji8.me": "2022-05-03",
+      "linux.shopingchina.net": "2022-05-03",
+      "linux.wy01.com": "2022-05-03",
+      "linux.wy01.vip": "2022-05-03",
+      "linux1.shopingchina.net": "2022-05-03",
+      "linux2.shopingchina.net": "2022-05-03",
+      "list.whoamis.info": "2022-03-16",
+      "localhost.11i.me": "2022-05-03",
+      "mircrosoftscoulds.com": "2022-05-03",
+      "mmimdown.oss-cn-hongkong.aliyuncs.com": "2022-05-05",
+      "rc.dajuw.com": "2022-05-03",
+      "rootkit.tools": "2022-05-03",
+      "shopingchina.net": "2020-02-18",
+      "steam.dajuw.com": "2022-05-03",
+      "test.mircrosoftscoulds.com": "2022-05-03",
+      "tools.daji8.me": "2022-05-03",
+      "update.adobe.wiki": "2022-05-03",
+      "win.googie.ph": "2022-05-03",
+      "wmgnews.daji8.me": "2022-05-03",
+      "wps.daj8.me": "2022-05-03",
+      "wpsup.daj8.me": "2022-05-03",
+      "wy886066.com": "2022-05-03",
+      "yabo.googie.ph": "2022-05-03"
+    },
+    "ipv4": {
+      "103.43.18.71:88": "2024-09-29",
+      "167.179.95.191:81": "2022-05-03",
+      "45.76.199.119:83": "2022-05-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-02-18",
+    "latest": "2024-09-29"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "1.googie.ph",
+      "12371829hkdanm.fbi.am",
+      "1qw6etagydbn2peifj8hf.fbi.am",
+      "2.googie.ph",
+      "3.googie.ph",
+      "adobe-flash.wiki",
+      "adobe.name",
+      "agph.ivi66.net",
+      "bos.github.wiki",
+      "caonimade.11i.me",
+      "d.github.wiki",
+      "darknet.rootkit.tools",
+      "darwin.github.wiki",
+      "download.mircrosoftscoulds.com",
+      "dust.github.wiki",
+      "exmail.googie.com.ph",
+      "fbi.fuckbc.com",
+      "flash.wy886066.com",
+      "fuckbc.com",
+      "fuckeryoumm.nmb.bet",
+      "fuckyou.fbi.am",
+      "gb.googie.ph",
+      "github.wiki",
+      "googie.com.ph",
+      "googie.ph",
+      "helloword.11i.me",
+      "helloword.daj8.me",
+      "hk.whoamis.info",
+      "hkdust.github.wiki",
+      "huaidan.fbi.am",
+      "ivi66.net",
+      "linux.daj8.me",
+      "linux.daji8.me",
+      "linux.shopingchina.net",
+      "linux.wy01.com",
+      "linux.wy01.vip",
+      "linux1.shopingchina.net",
+      "linux2.shopingchina.net",
+      "list.whoamis.info",
+      "localhost.11i.me",
+      "mircrosoftscoulds.com",
+      "mmimdown.oss-cn-hongkong.aliyuncs.com",
+      "rc.dajuw.com",
+      "rootkit.tools",
+      "shopingchina.net",
+      "steam.dajuw.com",
+      "test.mircrosoftscoulds.com",
+      "tools.daji8.me",
+      "update.adobe.wiki",
+      "win.googie.ph",
+      "wmgnews.daji8.me",
+      "wps.daj8.me",
+      "wpsup.daj8.me",
+      "wy886066.com",
+      "yabo.googie.ph"
+    ],
+    "ipv4": [
+      "103.43.18.71:88",
+      "167.179.95.191:81",
+      "45.76.199.119:83"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "EARTHBERBEROKA"
+  ],
+  "references": [
+    "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+    "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+    "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+    "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+    "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection",
+    "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+    "https://x.com/DaveLikesMalwre/status/1840103584672960692"
+  ],
+  "related": [],
+  "slug": "EARTHBERBEROKA",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-09-29",
+      "indicators": {
+        "ipv4": [
+          "103.43.18.71:88"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/DaveLikesMalwre/status/1840103584672960692"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-05",
+      "indicators": {
+        "domain": [
+          "mmimdown.oss-cn-hongkong.aliyuncs.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 48,
+        "ipv4": 2
+      },
+      "first_seen": "2022-05-03",
+      "indicators": {
+        "domain": [
+          "1.googie.ph",
+          "12371829hkdanm.fbi.am",
+          "1qw6etagydbn2peifj8hf.fbi.am",
+          "2.googie.ph",
+          "3.googie.ph",
+          "adobe-flash.wiki",
+          "adobe.name",
+          "agph.ivi66.net",
+          "bos.github.wiki",
+          "d.github.wiki",
+          "darknet.rootkit.tools",
+          "darwin.github.wiki",
+          "download.mircrosoftscoulds.com",
+          "dust.github.wiki",
+          "exmail.googie.com.ph",
+          "fbi.fuckbc.com",
+          "flash.wy886066.com",
+          "fuckbc.com",
+          "gb.googie.ph",
+          "github.wiki",
+          "googie.com.ph",
+          "googie.ph",
+          "helloword.11i.me",
+          "hk.whoamis.info",
+          "hkdust.github.wiki",
+          "huaidan.fbi.am",
+          "ivi66.net",
+          "linux.daj8.me",
+          "linux.daji8.me",
+          "linux.shopingchina.net",
+          "linux.wy01.com",
+          "linux.wy01.vip",
+          "linux1.shopingchina.net",
+          "linux2.shopingchina.net",
+          "localhost.11i.me",
+          "mircrosoftscoulds.com",
+          "rc.dajuw.com",
+          "rootkit.tools",
+          "steam.dajuw.com",
+          "test.mircrosoftscoulds.com",
+          "tools.daji8.me",
+          "update.adobe.wiki",
+          "win.googie.ph",
+          "wmgnews.daji8.me",
+          "wps.daj8.me",
+          "wpsup.daj8.me",
+          "wy886066.com",
+          "yabo.googie.ph"
+        ],
+        "ipv4": [
+          "167.179.95.191:81",
+          "45.76.199.119:83"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 50
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-03-16",
+      "indicators": {
+        "domain": [
+          "fuckyou.fbi.am",
+          "list.whoamis.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-10",
+      "indicators": {
+        "domain": [
+          "fuckeryoumm.nmb.bet",
+          "helloword.daj8.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-22",
+      "indicators": {
+        "domain": [
+          "caonimade.11i.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-18",
+      "indicators": {
+        "domain": [
+          "shopingchina.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trendmicro.com/en_us/research/22/d/new-apt-group-earth-berberoka-targets-gambling-websites-with-old.html",
+        "https://documents.trendmicro.com/assets/txt/earth-berberoka-domains-2.txt",
+        "https://g-soft.info/security/2196/earth-berberoka-apt-iocs/",
+        "https://otx.alienvault.com/pulse/62714f1a00e250a297938915",
+        "https://www.virustotal.com/gui/file/401d0b1f1a94df6a70818ef2bad80d139bb258c0e7746612066599aa43456dad/detection",
+        "https://www.virustotal.com/gui/file/2c403e390f59b2c2bfafde476dc18000b0ad1bbc8ac9ee0670662c48ba5b748f/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

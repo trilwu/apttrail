@@ -1,0 +1,143 @@
+{
+  "aliases": [
+    "ridile"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 16,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "2022-blanks.site": "2023-05-06",
+      "ashgrrwt.click": "2023-04-05",
+      "extenision-app.com": "2023-05-06",
+      "finandy.info": "2023-05-06",
+      "finandy.online": "2023-05-06",
+      "flnand.online": "2023-05-06",
+      "kz-smartbank.com": "2023-05-06",
+      "mareux.online": "2023-05-06",
+      "mmarx.quest": "2023-05-06",
+      "okxsat.xyz": "2023-05-06",
+      "pr-tracker.online": "2023-05-06",
+      "qivvi-3.click": "2023-05-06",
+      "serienjunkies.us": "2023-05-06",
+      "telegromcn.org": "2023-05-06",
+      "vceilinichego.ru": "2023-04-05",
+      "vse-blanki.online": "2023-05-06"
+    },
+    "ipv4": {
+      "146.70.79.75:443": "2023-05-06"
+    },
+    "url": {
+      "http://146.70.79.75": "2023-05-06"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-04-05",
+    "latest": "2023-05-06"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2022-blanks.site",
+      "ashgrrwt.click",
+      "extenision-app.com",
+      "finandy.info",
+      "finandy.online",
+      "flnand.online",
+      "kz-smartbank.com",
+      "mareux.online",
+      "mmarx.quest",
+      "okxsat.xyz",
+      "pr-tracker.online",
+      "qivvi-3.click",
+      "serienjunkies.us",
+      "telegromcn.org",
+      "vceilinichego.ru",
+      "vse-blanki.online"
+    ],
+    "ipv4": [
+      "146.70.79.75:443"
+    ],
+    "url": [
+      "http://146.70.79.75"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4553"
+  ],
+  "references": [
+    "https://www.mandiant.com/resources/blog/lnk-between-browsers",
+    "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/rilide-a-new-malicious-browser-extension-for-stealing-cryptocurrencies/",
+    "https://www.virustotal.com/gui/file/0c878188752d6f1e3273d51abda81d97a1439e05131d891978232724a8267eee/detection"
+  ],
+  "related": [],
+  "slug": "UNC4553",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 14,
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2023-05-06",
+      "indicators": {
+        "domain": [
+          "2022-blanks.site",
+          "extenision-app.com",
+          "finandy.info",
+          "finandy.online",
+          "flnand.online",
+          "kz-smartbank.com",
+          "mareux.online",
+          "mmarx.quest",
+          "okxsat.xyz",
+          "pr-tracker.online",
+          "qivvi-3.click",
+          "serienjunkies.us",
+          "telegromcn.org",
+          "vse-blanki.online"
+        ],
+        "ipv4": [
+          "146.70.79.75:443"
+        ],
+        "url": [
+          "http://146.70.79.75"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/lnk-between-browsers",
+        "https://www.virustotal.com/gui/file/0c878188752d6f1e3273d51abda81d97a1439e05131d891978232724a8267eee/detection"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-04-05",
+      "indicators": {
+        "domain": [
+          "ashgrrwt.click",
+          "vceilinichego.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/rilide-a-new-malicious-browser-extension-for-stealing-cryptocurrencies/"
+      ],
+      "total": 2
+    }
+  ]
+}

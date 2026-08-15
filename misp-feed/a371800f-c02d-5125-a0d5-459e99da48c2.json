@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1490364824",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e8b26edb-4bec-5845-bfc6-d04908189edf",
+        "value": "cloud.services-mozilla.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1490364824",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9c31e1a0-57c5-5741-96b1-02dc6c2ee8d0",
+        "value": "msservice.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1490364824",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8af57db3-7f18-5115-98dc-585a7c98cc3b",
+        "value": "service.chrome-up.date"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9ac9f9e4-6f20-5767-8cd4-b6961139c889",
+        "value": "service1.chrome-up.date"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "68881ae5-fea6-59ca-b9ac-0a0c406d56b2",
+        "value": "webmaster.serveirc.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1492514576",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8533ee11-867c-5828-8101-c079af16ca29",
+        "value": "www.chrome-up.date"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:newsbeef"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: NEWSBEEF",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a371800f-c02d-5125-a0d5-459e99da48c2"
+  }
+}

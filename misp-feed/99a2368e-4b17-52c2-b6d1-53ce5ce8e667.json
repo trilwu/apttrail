@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1653041913",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ba60ebfd-a9b9-5b15-ae38-a9aa4844a054",
+        "value": "elliotterusties.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1653041913",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2a7be58a-be81-5fee-bb4d-0b27f0c07eaf",
+        "value": "img.elliotterusties.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648052164",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4b7a171e-c6ff-50dc-aa12-38e7b083fa74",
+        "value": "microtreely.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648052164",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "60c911ce-ec56-59f8-871d-6a755aeaaf7c",
+        "value": "miniboxmail.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1653041913",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "506c772f-255b-5e28-91f8-643d6f7931bf",
+        "value": "minzdravros.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:twistedpanda"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: TWISTEDPANDA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "99a2368e-4b17-52c2-b6d1-53ce5ce8e667"
+  }
+}

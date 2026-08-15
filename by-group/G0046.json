@@ -1,0 +1,186 @@
+{
+  "aliases": [],
+  "attack_id": "G0046",
+  "attack_name": "FIN7",
+  "attack_url": "https://attack.mitre.org/groups/G0046/",
+  "counts": {
+    "domain": 16,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "againcome.com": "2022-03-30",
+      "alphalanding.com": "2022-03-30",
+      "besaintegration.com": "2020-12-27",
+      "charjackyum.com": "2020-06-25",
+      "chauvinistable.com": "2022-03-30",
+      "colahasch.com": "2022-03-30",
+      "electroncador.com": "2020-06-25",
+      "gemmiparalyzed.com": "2020-06-25",
+      "jaglamorous.com": "2020-06-25",
+      "judicialance.com": "2020-06-25",
+      "neighborhoodlumish.com": "2020-06-25",
+      "petshopbook.com": "2021-01-04",
+      "podestablished.com": "2020-06-25",
+      "spontaneousance.com": "2020-06-25",
+      "spoolopedia.com": "2020-06-25",
+      "temptationone.com": "2020-06-25"
+    },
+    "url": {
+      "http://185.163.45.249": "2022-03-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-06-25",
+    "latest": "2022-03-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "againcome.com",
+      "alphalanding.com",
+      "besaintegration.com",
+      "charjackyum.com",
+      "chauvinistable.com",
+      "colahasch.com",
+      "electroncador.com",
+      "gemmiparalyzed.com",
+      "jaglamorous.com",
+      "judicialance.com",
+      "neighborhoodlumish.com",
+      "petshopbook.com",
+      "podestablished.com",
+      "spontaneousance.com",
+      "spoolopedia.com",
+      "temptationone.com"
+    ],
+    "url": [
+      "http://185.163.45.249"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CARBONSPIDER"
+  ],
+  "references": [
+    "https://app.any.run/tasks/d40e13a1-f17a-449c-8ac4-a7fd947f986b/",
+    "https://otx.alienvault.com/pulse/612f3d563c0ce5d63ed47842",
+    "https://twitter.com/James_inthe_box/status/1275914690627899392",
+    "https://twitter.com/ThreatHive/status/1275918481800617984",
+    "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/",
+    "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-2/"
+  ],
+  "related": [],
+  "slug": "G0046",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "url": 1
+      },
+      "first_seen": "2022-03-30",
+      "indicators": {
+        "domain": [
+          "againcome.com",
+          "alphalanding.com",
+          "chauvinistable.com",
+          "colahasch.com"
+        ],
+        "url": [
+          "http://185.163.45.249"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/",
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-2/",
+        "https://otx.alienvault.com/pulse/612f3d563c0ce5d63ed47842"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-04",
+      "indicators": {
+        "domain": [
+          "petshopbook.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/",
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-2/",
+        "https://otx.alienvault.com/pulse/612f3d563c0ce5d63ed47842"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-27",
+      "indicators": {
+        "domain": [
+          "besaintegration.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/",
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-2/",
+        "https://otx.alienvault.com/pulse/612f3d563c0ce5d63ed47842"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2020-06-25",
+      "indicators": {
+        "domain": [
+          "charjackyum.com",
+          "gemmiparalyzed.com",
+          "jaglamorous.com",
+          "judicialance.com",
+          "neighborhoodlumish.com",
+          "podestablished.com",
+          "spontaneousance.com",
+          "spoolopedia.com",
+          "temptationone.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1275914690627899392",
+        "https://twitter.com/ThreatHive/status/1275918481800617984",
+        "https://app.any.run/tasks/d40e13a1-f17a-449c-8ac4-a7fd947f986b/"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-25",
+      "indicators": {
+        "domain": [
+          "electroncador.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-1/",
+        "https://www.crowdstrike.com/blog/carbon-spider-embraces-big-game-hunting-part-2/",
+        "https://otx.alienvault.com/pulse/612f3d563c0ce5d63ed47842"
+      ],
+      "total": 1
+    }
+  ]
+}

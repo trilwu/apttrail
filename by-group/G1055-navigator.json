@@ -1,0 +1,341 @@
+{
+  "name": "VOID MANTICORE (G1055) - APTtrail",
+  "description": "Techniques attributed to VOID MANTICORE by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1055.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.015",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1041",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1072",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1087.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1102",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1123",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1125",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1213.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1219.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1484.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1490",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1552.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1561.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1561.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1572",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1595.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1651",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1657",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1679",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686.003",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by VOID MANTICORE",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

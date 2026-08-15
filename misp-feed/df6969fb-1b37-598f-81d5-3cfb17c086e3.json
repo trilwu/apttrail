@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1550583648",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7d9aad35-3605-5a92-8849-18dabeb6b3e2",
+        "value": "money.moneyhome.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1550583648",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "08d0f675-1b6a-5c35-aa35-1028957d84a4",
+        "value": "voda.dns04.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:wickedpanda"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT41 - G0096\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT41 (G0096) - Maltrail group WICKEDPANDA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "df6969fb-1b37-598f-81d5-3cfb17c086e3"
+  }
+}

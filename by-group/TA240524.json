@@ -1,0 +1,66 @@
+{
+  "aliases": [
+    "ABCloader",
+    "ABCsync",
+    "Actor240524"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "185.23.253.143:36731": "2024-08-08"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-08-08",
+    "latest": "2024-08-08"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "185.23.253.143:36731"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TA240524"
+  ],
+  "references": [
+    "https://nsfocusglobal.com/new-apt-group-actor240524-a-closer-look-at-its-cyber-tactics-against-azerbaijan-and-israel/",
+    "https://www.virustotal.com/gui/file/31300645371f90f83ca6aa058503fa7c2ba386f496ac181a6b287ba7ba1ea10e/detection",
+    "https://www.virustotal.com/gui/file/6fa56ab1ce0d4fc9db6422bff8caa38bea1bdb9abbe4a48ecfb364eb20c7ac1a/detection",
+    "https://www.virustotal.com/gui/file/a250740948aba579462397ac95ff10e6b0ee952c2af7d9d726cbfde9da1eaaff/detection",
+    "https://x.com/fuyinglab/status/1821388288089018486"
+  ],
+  "related": [],
+  "slug": "TA240524",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-08-08",
+      "indicators": {
+        "ipv4": [
+          "185.23.253.143:36731"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/fuyinglab/status/1821388288089018486",
+        "https://nsfocusglobal.com/new-apt-group-actor240524-a-closer-look-at-its-cyber-tactics-against-azerbaijan-and-israel/",
+        "https://www.virustotal.com/gui/file/31300645371f90f83ca6aa058503fa7c2ba386f496ac181a6b287ba7ba1ea10e/detection",
+        "https://www.virustotal.com/gui/file/6fa56ab1ce0d4fc9db6422bff8caa38bea1bdb9abbe4a48ecfb364eb20c7ac1a/detection",
+        "https://www.virustotal.com/gui/file/a250740948aba579462397ac95ff10e6b0ee952c2af7d9d726cbfde9da1eaaff/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

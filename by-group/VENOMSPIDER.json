@@ -1,0 +1,644 @@
+{
+  "aliases": [
+    "goldenchickens",
+    "moreeggs",
+    "revc2",
+    "terracryptor",
+    "terraloader",
+    "terrastealer",
+    "terrastealerv2",
+    "venomlnk",
+    "venomloader"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 49,
+    "ipv4": 9,
+    "url": 6,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "anuffrost.com": "2019-12-09",
+      "api.cloudservers.kz": "2019-02-25",
+      "api.incapdns.kz": "2026-01-02",
+      "api.sharefiles.center": "2024-08-22",
+      "api.totalsphere.center": "2024-08-22",
+      "avadgray.org": "2026-01-02",
+      "beta.w3.org.kz": "2026-01-02",
+      "blog.jasonlees.com": "2019-12-30",
+      "boldvertex.store": "2026-01-02",
+      "cast.voxcdn.kz": "2026-01-02",
+      "contactlistsagregator.com": "2019-02-25",
+      "developer.master.org.kz": "2026-01-02",
+      "dns.hahdyman.com": "2019-12-09",
+      "drive.fileio.center": "2024-10-19",
+      "fileio.center": "2024-10-19",
+      "finatick.com": "2024-12-28",
+      "gdrive.rest": "2024-08-19",
+      "incapdns.kz": "2026-01-02",
+      "interrafcu.com": "2019-02-25",
+      "jonatechlab.com": "2026-01-02",
+      "mail.incapdns.kz": "2026-01-02",
+      "mail.rediffmail.kz": "2019-02-25",
+      "maps.doaglas.com": "2020-06-18",
+      "master.org.kz": "2026-01-02",
+      "monstrack.org": "2026-01-02",
+      "nopsec.org": "2024-09-25",
+      "onlinemail.kz": "2019-02-25",
+      "pub-ee3b9adcbb354679b5c35d5210673997.r2.dev": "2026-01-02",
+      "qb-hos.pages.dev": "2026-01-02",
+      "report.monicabellucci.kz": "2019-04-19",
+      "ryanberardi.com": "2026-01-02",
+      "secure.cloudserv.ink": "2019-02-25",
+      "seopager.xyz": "2024-09-25",
+      "sharefiles.center": "2024-08-22",
+      "stats.wp.org.kz": "2026-01-02",
+      "swiftvantage.online": "2026-01-02",
+      "swissblog.org": "2026-01-02",
+      "tonsandmillions.com": "2019-02-25",
+      "tool.municipiodechepo.org": "2026-01-02",
+      "totalsphere.center": "2024-08-22",
+      "usstaffing.services": "2019-02-25",
+      "vad.totalsphere.center": "2024-08-22",
+      "voxcdn.kz": "2026-01-02",
+      "w3.org.kz": "2026-01-02",
+      "waveax.net": "2025-01-14",
+      "wetransfers.io": "2026-01-02",
+      "winapi.net": "2024-08-19",
+      "wp.org.kz": "2026-01-02",
+      "yerra.org": "2024-09-16"
+    },
+    "ipv4": {
+      "170.75.168.151:8080": "2024-10-14",
+      "208.85.17.52:8082": "2024-12-02",
+      "217.69.8.13:8082": "2024-09-25",
+      "65.20.104.138:443": "2026-01-02",
+      "65.20.104.138:445": "2026-01-02",
+      "65.20.104.150:8080": "2024-08-19",
+      "65.20.104.212:8080": "2024-12-28",
+      "65.20.107.145:8080": "2024-09-25",
+      "65.20.99.10:8080": "2025-01-14"
+    },
+    "url": {
+      "http://170.75.168.151": "2024-10-19",
+      "http://65.20.104.138": "2026-01-02",
+      "http://65.38.121.145": "2024-08-22",
+      "http://65.38.121.211": "2024-10-19",
+      "http://65.38.121.75": "2024-08-22",
+      "http://72.5.43.19": "2024-09-16"
+    },
+    "url_path": {
+      "/aaaQHvrzTFUuAh": "2024-09-16",
+      "/ccckweJYfszthKpQa": "2024-09-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "api.incapdns.kz": "at-or-before",
+      "avadgray.org": "at-or-before",
+      "beta.w3.org.kz": "at-or-before",
+      "boldvertex.store": "at-or-before",
+      "cast.voxcdn.kz": "at-or-before",
+      "developer.master.org.kz": "at-or-before",
+      "incapdns.kz": "at-or-before",
+      "jonatechlab.com": "at-or-before",
+      "mail.incapdns.kz": "at-or-before",
+      "master.org.kz": "at-or-before",
+      "monstrack.org": "at-or-before",
+      "pub-ee3b9adcbb354679b5c35d5210673997.r2.dev": "at-or-before",
+      "qb-hos.pages.dev": "at-or-before",
+      "ryanberardi.com": "at-or-before",
+      "stats.wp.org.kz": "at-or-before",
+      "swiftvantage.online": "at-or-before",
+      "swissblog.org": "at-or-before",
+      "tool.municipiodechepo.org": "at-or-before",
+      "voxcdn.kz": "at-or-before",
+      "w3.org.kz": "at-or-before",
+      "wetransfers.io": "at-or-before",
+      "wp.org.kz": "at-or-before"
+    },
+    "ipv4": {
+      "65.20.104.138:443": "at-or-before",
+      "65.20.104.138:445": "at-or-before"
+    },
+    "url": {
+      "http://65.20.104.138": "at-or-before"
+    },
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-02-25",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "anuffrost.com",
+      "api.cloudservers.kz",
+      "api.incapdns.kz",
+      "api.sharefiles.center",
+      "api.totalsphere.center",
+      "avadgray.org",
+      "beta.w3.org.kz",
+      "blog.jasonlees.com",
+      "boldvertex.store",
+      "cast.voxcdn.kz",
+      "contactlistsagregator.com",
+      "developer.master.org.kz",
+      "dns.hahdyman.com",
+      "drive.fileio.center",
+      "fileio.center",
+      "finatick.com",
+      "gdrive.rest",
+      "incapdns.kz",
+      "interrafcu.com",
+      "jonatechlab.com",
+      "mail.incapdns.kz",
+      "mail.rediffmail.kz",
+      "maps.doaglas.com",
+      "master.org.kz",
+      "monstrack.org",
+      "nopsec.org",
+      "onlinemail.kz",
+      "pub-ee3b9adcbb354679b5c35d5210673997.r2.dev",
+      "qb-hos.pages.dev",
+      "report.monicabellucci.kz",
+      "ryanberardi.com",
+      "secure.cloudserv.ink",
+      "seopager.xyz",
+      "sharefiles.center",
+      "stats.wp.org.kz",
+      "swiftvantage.online",
+      "swissblog.org",
+      "tonsandmillions.com",
+      "tool.municipiodechepo.org",
+      "totalsphere.center",
+      "usstaffing.services",
+      "vad.totalsphere.center",
+      "voxcdn.kz",
+      "w3.org.kz",
+      "waveax.net",
+      "wetransfers.io",
+      "winapi.net",
+      "wp.org.kz",
+      "yerra.org"
+    ],
+    "ipv4": [
+      "170.75.168.151:8080",
+      "208.85.17.52:8082",
+      "217.69.8.13:8082",
+      "65.20.104.138:443",
+      "65.20.104.138:445",
+      "65.20.104.150:8080",
+      "65.20.104.212:8080",
+      "65.20.107.145:8080",
+      "65.20.99.10:8080"
+    ],
+    "url": [
+      "http://170.75.168.151",
+      "http://65.20.104.138",
+      "http://65.38.121.145",
+      "http://65.38.121.211",
+      "http://65.38.121.75",
+      "http://72.5.43.19"
+    ],
+    "url_path": [
+      "/aaaQHvrzTFUuAh",
+      "/ccckweJYfszthKpQa"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "VENOMSPIDER"
+  ],
+  "references": [
+    "https://app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24a71/",
+    "https://app.any.run/tasks/48907a8c-bc47-4552-a705-334e93d0edca/",
+    "https://app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d6ff/",
+    "https://app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59bebec/",
+    "https://app.any.run/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2cb5",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10927/2734",
+    "https://go.recordedfuture.com/hubfs/reports/cta-2025-0501.pdf",
+    "https://twitter.com/James_inthe_box/status/1204125950033575937",
+    "https://twitter.com/VK_Intel/status/1119082329324965893",
+    "https://twitter.com/VK_Intel/status/1211758023376592896",
+    "https://twitter.com/VK_Intel/status/1286747453849468929",
+    "https://www.proofpoint.com/us/threat-insight/post/fake-jobs-campaigns-delivering-moreeggs-backdoor-fake-job-offers",
+    "https://www.recordedfuture.com/research/terrastealerv2-and-terralogger",
+    "https://www.virustotal.com/gui/file/01446c36f93532f2cd8af96396e22086f37aef1bb8e68b3b03076c9da5ec9737/detection",
+    "https://www.virustotal.com/gui/file/0151383431f7d057aa48ddff60feaa3a6511ec0b0eb0b224136e0cbef93daf85/detection",
+    "https://www.virustotal.com/gui/file/18c8117c589f6986ff02504283c5af9906483a2d72ecad764ac597f04fc81ae9/detection",
+    "https://www.virustotal.com/gui/file/1ddb7d620b40e406d07b5242683583071ef11dc43713ca03cf9c054b284d2fb7/detection",
+    "https://www.virustotal.com/gui/file/207c283b7877f26e57b555dc638a297633920d3a3df81a492dd4e121d52d1872/detection",
+    "https://www.virustotal.com/gui/file/28cb51c171d591b2bb35bc9a4379010fd37f66cfcd317a67cb73b24262dc17c6/detection",
+    "https://www.virustotal.com/gui/file/38f3a52e1ebd93db75f0fb6ce6172565cc0f27f0f86f32f470fa7a9c8de9f094/detection",
+    "https://www.virustotal.com/gui/file/4ca845b77a71cc1b5d8b367f3329a70cd7753c2d5d056b1dac51860a4815b859/detection",
+    "https://www.virustotal.com/gui/file/b1781a062bfca853a3b556afe982e1800bb1e30cde0771cf7c62ca272503c788/detection",
+    "https://www.virustotal.com/gui/file/b24603f97e43ce0445f13d902adad63fb1763e5e1ddf16a31379dd13d467b09f/detection",
+    "https://www.virustotal.com/gui/file/c0579b32a8dfad75f00078c48a25ae34c73950692104cfca6c299dcc9de27b4a/detection",
+    "https://www.virustotal.com/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e2c5e4d0bba2bf117023a00b0b8603ef31d/detection",
+    "https://www.zscaler.com/blogs/security-research/unveiling-revc2-and-venom-loader",
+    "https://x.com/DaveLikesMalwre/status/1845590642430529630",
+    "https://x.com/DaveLikesMalwre/status/1872840653597823387",
+    "https://x.com/DaveLikesMalwre/status/1878933026547040271",
+    "https://x.com/DaveLikesMalwre/status/1910770682071539863",
+    "https://x.com/RecordedFuture/status/1919777955368120356",
+    "https://x.com/fr0s7_/status/1826559678668501494",
+    "https://x.com/k3yp0d/status/1835549865155154285",
+    "https://x.com/k3yp0d/status/1838668770841108608",
+    "https://x.com/malwrhunterteam/status/1847583357485416896",
+    "https://x.com/r3dbU7z/status/1825446509082505613",
+    "https://x.com/s1dhy/status/1825654074068578528",
+    "https://x.com/skocherhan/status/1919869645646889308"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1002"
+    }
+  ],
+  "slug": "VENOMSPIDER",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 13
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "api.incapdns.kz",
+          "beta.w3.org.kz",
+          "cast.voxcdn.kz",
+          "developer.master.org.kz",
+          "incapdns.kz",
+          "mail.incapdns.kz",
+          "master.org.kz",
+          "ryanberardi.com",
+          "stats.wp.org.kz",
+          "tool.municipiodechepo.org",
+          "voxcdn.kz",
+          "w3.org.kz",
+          "wp.org.kz"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10927/2734"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "boldvertex.store",
+          "jonatechlab.com",
+          "pub-ee3b9adcbb354679b5c35d5210673997.r2.dev",
+          "qb-hos.pages.dev",
+          "swiftvantage.online",
+          "wetransfers.io"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/RecordedFuture/status/1919777955368120356",
+        "https://x.com/skocherhan/status/1919869645646889308",
+        "https://www.recordedfuture.com/research/terrastealerv2-and-terralogger",
+        "https://go.recordedfuture.com/hubfs/reports/cta-2025-0501.pdf"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 2,
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "avadgray.org",
+          "monstrack.org",
+          "swissblog.org"
+        ],
+        "ipv4": [
+          "65.20.104.138:443",
+          "65.20.104.138:445"
+        ],
+        "url": [
+          "http://65.20.104.138"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/DaveLikesMalwre/status/1910770682071539863",
+        "https://www.virustotal.com/gui/file/0151383431f7d057aa48ddff60feaa3a6511ec0b0eb0b224136e0cbef93daf85/detection",
+        "https://www.virustotal.com/gui/file/18c8117c589f6986ff02504283c5af9906483a2d72ecad764ac597f04fc81ae9/detection",
+        "https://www.virustotal.com/gui/file/b24603f97e43ce0445f13d902adad63fb1763e5e1ddf16a31379dd13d467b09f/detection",
+        "https://www.virustotal.com/gui/file/207c283b7877f26e57b555dc638a297633920d3a3df81a492dd4e121d52d1872/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2025-01-14",
+      "indicators": {
+        "domain": [
+          "waveax.net"
+        ],
+        "ipv4": [
+          "65.20.99.10:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/DaveLikesMalwre/status/1878933026547040271"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-28",
+      "indicators": {
+        "domain": [
+          "finatick.com"
+        ],
+        "ipv4": [
+          "65.20.104.212:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/DaveLikesMalwre/status/1872840653597823387",
+        "https://app.any.run/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2cb5"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-02",
+      "indicators": {
+        "ipv4": [
+          "208.85.17.52:8082"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/unveiling-revc2-and-venom-loader"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 2
+      },
+      "first_seen": "2024-10-19",
+      "indicators": {
+        "domain": [
+          "drive.fileio.center",
+          "fileio.center"
+        ],
+        "url": [
+          "http://170.75.168.151",
+          "http://65.38.121.211"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1847583357485416896",
+        "https://www.virustotal.com/gui/file/1ddb7d620b40e406d07b5242683583071ef11dc43713ca03cf9c054b284d2fb7/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-10-14",
+      "indicators": {
+        "ipv4": [
+          "170.75.168.151:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/DaveLikesMalwre/status/1845590642430529630",
+        "https://www.virustotal.com/gui/file/b1781a062bfca853a3b556afe982e1800bb1e30cde0771cf7c62ca272503c788/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 2
+      },
+      "first_seen": "2024-09-25",
+      "indicators": {
+        "domain": [
+          "nopsec.org",
+          "seopager.xyz"
+        ],
+        "ipv4": [
+          "217.69.8.13:8082",
+          "65.20.107.145:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/k3yp0d/status/1838668770841108608",
+        "https://www.virustotal.com/gui/file/c0579b32a8dfad75f00078c48a25ae34c73950692104cfca6c299dcc9de27b4a/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1,
+        "url_path": 2
+      },
+      "first_seen": "2024-09-16",
+      "indicators": {
+        "domain": [
+          "yerra.org"
+        ],
+        "url": [
+          "http://72.5.43.19"
+        ],
+        "url_path": [
+          "/aaaQHvrzTFUuAh",
+          "/ccckweJYfszthKpQa"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/k3yp0d/status/1835549865155154285",
+        "https://www.virustotal.com/gui/file/01446c36f93532f2cd8af96396e22086f37aef1bb8e68b3b03076c9da5ec9737/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "url": 2
+      },
+      "first_seen": "2024-08-22",
+      "indicators": {
+        "domain": [
+          "api.sharefiles.center",
+          "api.totalsphere.center",
+          "sharefiles.center",
+          "totalsphere.center",
+          "vad.totalsphere.center"
+        ],
+        "url": [
+          "http://65.38.121.145",
+          "http://65.38.121.75"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/s1dhy/status/1825654074068578528",
+        "https://x.com/fr0s7_/status/1826559678668501494",
+        "https://app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d6ff/",
+        "https://app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59bebec/",
+        "https://app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24a71/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2024-08-19",
+      "indicators": {
+        "domain": [
+          "gdrive.rest",
+          "winapi.net"
+        ],
+        "ipv4": [
+          "65.20.104.150:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/r3dbU7z/status/1825446509082505613",
+        "https://www.virustotal.com/gui/file/4ca845b77a71cc1b5d8b367f3329a70cd7753c2d5d056b1dac51860a4815b859/detection",
+        "https://www.virustotal.com/gui/file/28cb51c171d591b2bb35bc9a4379010fd37f66cfcd317a67cb73b24262dc17c6/detection",
+        "https://www.virustotal.com/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e2c5e4d0bba2bf117023a00b0b8603ef31d/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-18",
+      "indicators": {
+        "domain": [
+          "maps.doaglas.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/VK_Intel/status/1286747453849468929",
+        "https://www.virustotal.com/gui/file/38f3a52e1ebd93db75f0fb6ce6172565cc0f27f0f86f32f470fa7a9c8de9f094/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-30",
+      "indicators": {
+        "domain": [
+          "blog.jasonlees.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/VK_Intel/status/1211758023376592896"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-12-09",
+      "indicators": {
+        "domain": [
+          "anuffrost.com",
+          "dns.hahdyman.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1204125950033575937",
+        "https://app.any.run/tasks/48907a8c-bc47-4552-a705-334e93d0edca/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-19",
+      "indicators": {
+        "domain": [
+          "report.monicabellucci.kz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/VK_Intel/status/1119082329324965893"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2019-02-25",
+      "indicators": {
+        "domain": [
+          "api.cloudservers.kz",
+          "contactlistsagregator.com",
+          "interrafcu.com",
+          "mail.rediffmail.kz",
+          "onlinemail.kz",
+          "secure.cloudserv.ink",
+          "tonsandmillions.com",
+          "usstaffing.services"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/threat-insight/post/fake-jobs-campaigns-delivering-moreeggs-backdoor-fake-job-offers"
+      ],
+      "total": 8
+    }
+  ]
+}

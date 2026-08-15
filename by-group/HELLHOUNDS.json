@@ -1,0 +1,221 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 36
+  },
+  "first_seen": {
+    "domain": {
+      "08m-srv.daily-share.ns3.name": "2023-12-02",
+      "2fm-srv.daily-share.ns3.name": "2023-12-02",
+      "6cm-srv.daily-share.ns3.name": "2023-12-02",
+      "78m-srv.daily-share.ns3.name": "2023-12-02",
+      "7fm-srv.daily-share.ns3.name": "2023-12-02",
+      "98m-srv.daily-share.ns3.name": "2023-12-02",
+      "acrm-11331.com": "2023-12-02",
+      "ads-tm-glb.click": "2023-04-14",
+      "allowlisted.net": "2023-04-14",
+      "atlas-upd.com": "2023-04-14",
+      "b1m-srv.daily-share.ns3.name": "2023-12-02",
+      "beacon.net.eu.org": "2024-05-23",
+      "c.glb-ru.info": "2024-05-23",
+      "cbox4.ignorelist.com": "2023-04-14",
+      "d5m-srv.daily-share.ns3.name": "2023-12-02",
+      "daily-share.ns3.name": "2023-12-02",
+      "dw-filter.com": "2024-05-23",
+      "ertelecom.org": "2023-12-02",
+      "f-share.duckdns.org": "2023-12-02",
+      "hsdps.cc": "2023-04-14",
+      "lez2yae2.dynamic-dns.net": "2023-12-02",
+      "m-srv.daily-share.ns3.name": "2023-12-02",
+      "maxpatrol.net": "2023-08-24",
+      "mvs05.zyns.com": "2024-05-23",
+      "net-sensors.net": "2024-05-23",
+      "ns1.maxpatrol.net": "2023-12-02",
+      "ns1.net-sensors.net": "2024-05-23",
+      "ns1.webrtc.foo": "2023-12-02",
+      "ns2.maxpatrol.net": "2023-12-02",
+      "ns2.net-sensors.net": "2024-05-23",
+      "ns2.webrtc.foo": "2023-12-02",
+      "ns3.maxpatrol.net": "2023-12-02",
+      "ns4.maxpatrol.net": "2023-12-02",
+      "vcs.dns04.com": "2023-12-02",
+      "webrtc.foo": "2023-12-02",
+      "z-uid.lez2yae2.dynamic-dns.net": "2023-12-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-04-14",
+    "latest": "2024-05-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "08m-srv.daily-share.ns3.name",
+      "2fm-srv.daily-share.ns3.name",
+      "6cm-srv.daily-share.ns3.name",
+      "78m-srv.daily-share.ns3.name",
+      "7fm-srv.daily-share.ns3.name",
+      "98m-srv.daily-share.ns3.name",
+      "acrm-11331.com",
+      "ads-tm-glb.click",
+      "allowlisted.net",
+      "atlas-upd.com",
+      "b1m-srv.daily-share.ns3.name",
+      "beacon.net.eu.org",
+      "c.glb-ru.info",
+      "cbox4.ignorelist.com",
+      "d5m-srv.daily-share.ns3.name",
+      "daily-share.ns3.name",
+      "dw-filter.com",
+      "ertelecom.org",
+      "f-share.duckdns.org",
+      "hsdps.cc",
+      "lez2yae2.dynamic-dns.net",
+      "m-srv.daily-share.ns3.name",
+      "maxpatrol.net",
+      "mvs05.zyns.com",
+      "net-sensors.net",
+      "ns1.maxpatrol.net",
+      "ns1.net-sensors.net",
+      "ns1.webrtc.foo",
+      "ns2.maxpatrol.net",
+      "ns2.net-sensors.net",
+      "ns2.webrtc.foo",
+      "ns3.maxpatrol.net",
+      "ns4.maxpatrol.net",
+      "vcs.dns04.com",
+      "webrtc.foo",
+      "z-uid.lez2yae2.dynamic-dns.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HELLHOUNDS"
+  ],
+  "references": [
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat-part-2/",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat/",
+    "https://www.virustotal.com/gui/ip-address/185.126.239.60/relations",
+    "https://www.virustotal.com/gui/ip-address/185.22.152.227/relations",
+    "https://www.virustotal.com/gui/ip-address/194.87.68.65/relations",
+    "https://www.virustotal.com/gui/ip-address/45.147.201.188/relations"
+  ],
+  "related": [],
+  "slug": "HELLHOUNDS",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2024-05-23",
+      "indicators": {
+        "domain": [
+          "beacon.net.eu.org",
+          "c.glb-ru.info",
+          "dw-filter.com",
+          "mvs05.zyns.com",
+          "net-sensors.net",
+          "ns1.net-sensors.net",
+          "ns2.net-sensors.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat-part-2/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 23
+      },
+      "first_seen": "2023-12-02",
+      "indicators": {
+        "domain": [
+          "08m-srv.daily-share.ns3.name",
+          "2fm-srv.daily-share.ns3.name",
+          "6cm-srv.daily-share.ns3.name",
+          "78m-srv.daily-share.ns3.name",
+          "7fm-srv.daily-share.ns3.name",
+          "98m-srv.daily-share.ns3.name",
+          "acrm-11331.com",
+          "b1m-srv.daily-share.ns3.name",
+          "d5m-srv.daily-share.ns3.name",
+          "daily-share.ns3.name",
+          "ertelecom.org",
+          "f-share.duckdns.org",
+          "lez2yae2.dynamic-dns.net",
+          "m-srv.daily-share.ns3.name",
+          "ns1.maxpatrol.net",
+          "ns1.webrtc.foo",
+          "ns2.maxpatrol.net",
+          "ns2.webrtc.foo",
+          "ns3.maxpatrol.net",
+          "ns4.maxpatrol.net",
+          "vcs.dns04.com",
+          "webrtc.foo",
+          "z-uid.lez2yae2.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat/",
+        "https://www.virustotal.com/gui/ip-address/194.87.68.65/relations",
+        "https://www.virustotal.com/gui/ip-address/185.126.239.60/relations",
+        "https://www.virustotal.com/gui/ip-address/185.22.152.227/relations",
+        "https://www.virustotal.com/gui/ip-address/45.147.201.188/relations"
+      ],
+      "total": 23
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-24",
+      "indicators": {
+        "domain": [
+          "maxpatrol.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat/",
+        "https://www.virustotal.com/gui/ip-address/194.87.68.65/relations",
+        "https://www.virustotal.com/gui/ip-address/185.126.239.60/relations",
+        "https://www.virustotal.com/gui/ip-address/185.22.152.227/relations",
+        "https://www.virustotal.com/gui/ip-address/45.147.201.188/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2023-04-14",
+      "indicators": {
+        "domain": [
+          "ads-tm-glb.click",
+          "allowlisted.net",
+          "atlas-upd.com",
+          "cbox4.ignorelist.com",
+          "hsdps.cc"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/hellhounds-operation-lahat/",
+        "https://www.virustotal.com/gui/ip-address/194.87.68.65/relations",
+        "https://www.virustotal.com/gui/ip-address/185.126.239.60/relations",
+        "https://www.virustotal.com/gui/ip-address/185.22.152.227/relations",
+        "https://www.virustotal.com/gui/ip-address/45.147.201.188/relations"
+      ],
+      "total": 5
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "aliases": [],
+  "attack_id": "G0060",
+  "attack_name": "BRONZE BUTLER",
+  "attack_url": "https://attack.mitre.org/groups/G0060/",
+  "counts": {
+    "domain": 19,
+    "url": 4
+  },
+  "first_seen": {
+    "domain": {
+      "amamihanahana.com": "2019-06-24",
+      "englandprevail.com": "2019-06-24",
+      "han-game.com": "2019-06-24",
+      "kot.gogoblog.net": "2019-06-24",
+      "memsbay.com": "2019-06-24",
+      "menu.han-game.com": "2019-02-19",
+      "menu.rakutenline.com": "2019-02-19",
+      "menu.sa-guard.com": "2019-02-19",
+      "mssql.waterglue.org": "2023-03-14",
+      "oracle.eneygylakes.com": "2023-03-14",
+      "poi.cydisk.net": "2019-06-24",
+      "pre.englandprevail.com": "2019-06-24",
+      "rakutenline.com": "2019-06-24",
+      "rbb.gol-unkai4.com": "2019-02-19",
+      "rp.thumbbay.com": "2019-02-19",
+      "sa-guard.com": "2019-06-24",
+      "slientship.com": "2023-03-14",
+      "travelasist.com": "2023-03-14",
+      "update.saranmall.com": "2019-06-24"
+    },
+    "url": {
+      "adc-home.com/28732.html": "2018-10-19",
+      "http://103.127.124.117": "2023-03-14",
+      "http://103.127.124.119": "2023-03-14",
+      "oonumaboat.com/cx/index.php": "2018-10-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-19",
+    "latest": "2023-03-14"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "amamihanahana.com",
+      "englandprevail.com",
+      "han-game.com",
+      "kot.gogoblog.net",
+      "memsbay.com",
+      "menu.han-game.com",
+      "menu.rakutenline.com",
+      "menu.sa-guard.com",
+      "mssql.waterglue.org",
+      "oracle.eneygylakes.com",
+      "poi.cydisk.net",
+      "pre.englandprevail.com",
+      "rakutenline.com",
+      "rbb.gol-unkai4.com",
+      "rp.thumbbay.com",
+      "sa-guard.com",
+      "slientship.com",
+      "travelasist.com",
+      "update.saranmall.com"
+    ],
+    "url": [
+      "adc-home.com/28732.html",
+      "http://103.127.124.117",
+      "http://103.127.124.119",
+      "oonumaboat.com/cx/index.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "REDBALDKNIGHT",
+    "TICK"
+  ],
+  "references": [
+    "https://blog.talosintelligence.com/2018/10/tracking-tick-through-recent-campaigns.html",
+    "https://blogs.jpcert.or.jp/ja/2019/02/tick-activity.html",
+    "https://image.ahnlab.com/file_upload/asecissue_files/ASEC%20REPORT_vol.95.pdf",
+    "https://otx.alienvault.com/pulse/5d10b9b00e51b1938fd552b5",
+    "https://pastebin.com/91vYTTiZ",
+    "https://www.welivesecurity.com/2023/03/14/slow-ticking-time-bomb-tick-apt-group-dlp-software-developer-east-asia/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares at, Windows Credential Editor",
+          "kind": "software",
+          "weight": 0.75
+        }
+      ],
+      "slug": "G0065"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, gsecdump",
+          "kind": "software",
+          "weight": 0.45
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares gsecdump, ShadowPad",
+          "kind": "software",
+          "weight": 0.367
+        }
+      ],
+      "slug": "G0131"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0022"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0026"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares cmd",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0045"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares schtasks",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "G0060",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "url": 2
+      },
+      "first_seen": "2023-03-14",
+      "indicators": {
+        "domain": [
+          "mssql.waterglue.org",
+          "oracle.eneygylakes.com",
+          "slientship.com",
+          "travelasist.com"
+        ],
+        "url": [
+          "http://103.127.124.117",
+          "http://103.127.124.119"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2023/03/14/slow-ticking-time-bomb-tick-apt-group-dlp-software-developer-east-asia/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-06-24",
+      "indicators": {
+        "domain": [
+          "englandprevail.com",
+          "kot.gogoblog.net",
+          "memsbay.com",
+          "poi.cydisk.net",
+          "pre.englandprevail.com",
+          "update.saranmall.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://image.ahnlab.com/file_upload/asecissue_files/ASEC%20REPORT_vol.95.pdf",
+        "https://otx.alienvault.com/pulse/5d10b9b00e51b1938fd552b5",
+        "https://pastebin.com/91vYTTiZ"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-06-24",
+      "indicators": {
+        "domain": [
+          "amamihanahana.com",
+          "han-game.com",
+          "rakutenline.com",
+          "sa-guard.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogs.jpcert.or.jp/ja/2019/02/tick-activity.html"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-02-19",
+      "indicators": {
+        "domain": [
+          "menu.han-game.com",
+          "menu.rakutenline.com",
+          "menu.sa-guard.com",
+          "rbb.gol-unkai4.com",
+          "rp.thumbbay.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogs.jpcert.or.jp/ja/2019/02/tick-activity.html"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2018-10-20",
+      "indicators": {
+        "url": [
+          "oonumaboat.com/cx/index.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/10/tracking-tick-through-recent-campaigns.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2018-10-19",
+      "indicators": {
+        "url": [
+          "adc-home.com/28732.html"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/2018/10/tracking-tick-through-recent-campaigns.html"
+      ],
+      "total": 1
+    }
+  ]
+}

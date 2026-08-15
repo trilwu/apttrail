@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1556113176",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5540b95f-8b32-5d24-bfd3-5479a1e3938b",
+        "value": "1c-ru.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1548833603",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "18b65f7a-1f8f-5fbd-8ef1-60efa6e20721",
+        "value": "intersys32.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1556113176",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "c5529c14-ea92-5b36-bf62-9cbb2e9f3833",
+        "value": "http://146.0.72.180"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1556113176",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "36222675-56d7-5b51-8db6-8606230c8630",
+        "value": "http://185.70.186.145"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1556113176",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "63494a13-9ebd-5434-b666-21ced3d29efb",
+        "value": "http://193.109.69.5"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:evapiks"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: EVAPIKS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "4de84451-f392-52a5-9bb9-d50050d6d23c"
+  }
+}

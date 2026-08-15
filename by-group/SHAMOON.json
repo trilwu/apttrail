@@ -1,0 +1,211 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 10
+  },
+  "first_seen": {
+    "domain": {
+      "analytics-google.org": "2017-04-13",
+      "go-microstf.com": "2017-04-18",
+      "key8854321.pub": "2019-10-04",
+      "maps-modon.club": "2017-04-18",
+      "mol.com-ho.me": "2017-04-18",
+      "mynetwork.ddns.net": "2019-03-27",
+      "ntg-sa.com": "2017-04-18",
+      "possibletarget.ddns.com": "2019-10-04",
+      "winappupdater.com": "2017-02-17",
+      "winupdater.com": "2019-10-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-02-17",
+    "latest": "2019-10-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "analytics-google.org",
+      "go-microstf.com",
+      "key8854321.pub",
+      "maps-modon.club",
+      "mol.com-ho.me",
+      "mynetwork.ddns.net",
+      "ntg-sa.com",
+      "possibletarget.ddns.com",
+      "winappupdater.com",
+      "winupdater.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SHAMOON"
+  ],
+  "references": [
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2017/2017-01-27-spotlight-on-shamoon/spotlight-on-shamoon.csv",
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-14-shamoon-returns-to-wipe-systems-in-middle-east-europe/shamoon-returns-to-wipe-systems-in-middle-east-europe.csv",
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-19-shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems.csv",
+    "https://securityintelligence.com/the-full-shamoon-how-the-devastating-malware-was-inserted-into-networks/",
+    "https://www.arbornetworks.com/blog/asert/additional-insights-on-shamoon2/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0064"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0058"
+    }
+  ],
+  "slug": "SHAMOON",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-05",
+      "indicators": {
+        "domain": [
+          "winupdater.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2017/2017-01-27-spotlight-on-shamoon/spotlight-on-shamoon.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-04",
+      "indicators": {
+        "domain": [
+          "possibletarget.ddns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-19-shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-04",
+      "indicators": {
+        "domain": [
+          "key8854321.pub"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-14-shamoon-returns-to-wipe-systems-in-middle-east-europe/shamoon-returns-to-wipe-systems-in-middle-east-europe.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "domain": [
+          "mynetwork.ddns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2018/2018-12-19-shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems/shamoon-attackers-employ-new-tool-kit-to-wipe-infected-systems.csv"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2017-04-18",
+      "indicators": {
+        "domain": [
+          "maps-modon.club",
+          "mol.com-ho.me",
+          "ntg-sa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securityintelligence.com/the-full-shamoon-how-the-devastating-malware-was-inserted-into-networks/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-18",
+      "indicators": {
+        "domain": [
+          "go-microstf.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.arbornetworks.com/blog/asert/additional-insights-on-shamoon2/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-13",
+      "indicators": {
+        "domain": [
+          "analytics-google.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.arbornetworks.com/blog/asert/additional-insights-on-shamoon2/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-02-17",
+      "indicators": {
+        "domain": [
+          "winappupdater.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2017/2017-01-27-spotlight-on-shamoon/spotlight-on-shamoon.csv"
+      ],
+      "total": 1
+    }
+  ]
+}

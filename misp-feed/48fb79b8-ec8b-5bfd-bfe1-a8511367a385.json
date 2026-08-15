@@ -1,0 +1,67 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1551814309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b771b525-ebfe-5733-a222-2b158b4edba9",
+        "value": "domforworld.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1551814309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3f99a4a0-1643-53f4-856d-f137bd11577c",
+        "value": "flux2key.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1551814309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ee6a143a-e5ae-5fd4-b1c9-82fafe06a795",
+        "value": "string2me.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1551814309",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "75a57894-f61a-5ef7-8ec8-1bd2b41d0820",
+        "value": "/skdfhwsdkfksgfuisiseifgygffiw.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:windshift"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Windshift - G0112\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Windshift (G0112) - Maltrail group WINDSHIFT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "48fb79b8-ec8b-5bfd-bfe1-a8511367a385"
+  }
+}

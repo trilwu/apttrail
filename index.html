@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APTtrail · APT indicators that tell you whose they are</title>
+<meta name=description content="172,623 APT indicators across 313 actors. Every one carries the actor it belongs to, its MITRE ATT&amp;CK id, when it appeared and the report that published it. Static files, no API key.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="APTtrail · APT indicators that tell you whose they are">
+<meta property="og:description" content="172,623 APT indicators across 313 actors. Every one carries the actor it belongs to, its MITRE ATT&amp;CK id, when it appeared and the report that published it. Static files, no API key.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+main.solo { grid-column: 1 / -1; max-width: 58rem; }
+h1 { max-width: 20em; }
+h1 em { font-style: italic; color: var(--accent); }
+.masthead .lede { margin: .2rem 0 1.6rem; max-width: 38rem; }
+code { font: .88em var(--mono); color: var(--muted); }
+
+.go { display: flex; flex-wrap: wrap; gap: .6rem; margin: 0 0 1.8rem; }
+.go a { display: inline-flex; align-items: baseline; gap: .5rem; text-decoration: none;
+        border: 1px solid var(--line-firm); border-radius: 3px; padding: .6rem .9rem;
+        font: .9rem/1.3 var(--sans); }
+.go a:first-child { border-color: var(--accent); color: var(--accent); }
+.go a:hover { border-color: var(--accent); color: var(--accent); }
+.go a span { font: .72rem/1.3 var(--mono); color: var(--faint); }
+.go a:hover span { color: inherit; }
+
+.proof { border: 1px solid var(--line-firm); border-radius: 4px; padding: 1.1rem 1.2rem;
+         margin: 1.2rem 0 0; background: var(--panel); }
+.proof h3 { font: .68rem/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); margin: 0 0 .6rem; }
+.proof pre { background: none; border: 0; padding: 0; margin: 0; font-size: .8rem; }
+.proof .out { margin-top: .7rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+.proof .k { color: var(--faint); }
+.proof .v { color: var(--ink); }
+.proof .said { margin: .9rem 0 0; font: .86rem/1.6 var(--sans); color: var(--muted); }
+
+.worth { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 1rem; }
+.worth div { background: var(--bg); padding: .9rem 1rem; }
+.worth dt { font: .68rem/1.4 var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--accent); }
+.worth dd { margin: .35rem 0 0; font-size: .9rem; line-height: 1.6; }
+.worth b { font: 500 1.05rem/1 var(--mono); font-variant-numeric: tabular-nums; display: block;
+           margin-bottom: .15rem; }
+
+.tools-grid { list-style: none; padding: 0; margin: 1rem 0 0; display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: .1rem 1.6rem; }
+.tools-grid li { padding: .35rem 0; border-bottom: 1px solid var(--line); font-size: .88rem; }
+.tools-grid b { font-weight: 500; }
+.tools-grid span { color: var(--muted); font: .8rem/1.6 var(--mono); }
+
+.groups { margin-top: .8rem; }
+.groups th { text-align: left; font: .68rem/1.4 var(--mono); letter-spacing: .09em;
+             text-transform: uppercase; color: var(--faint); font-weight: 400;
+             padding: 0 .8rem .4rem 0; border-bottom: 1px solid var(--line-firm); }
+.groups th[data-col] { cursor: pointer; user-select: none; }
+.groups th[data-col]:hover { color: var(--accent); }
+.groups th[aria-sort=ascending]::after { content: " \2191"; color: var(--accent); }
+.groups th[aria-sort=descending]::after { content: " \2193"; color: var(--accent); }
+.groups td { padding: .45rem .8rem .45rem 0; border-bottom: 1px solid var(--line);
+             vertical-align: baseline; }
+.groups td.gid { font: .84rem/1.5 var(--mono); white-space: nowrap; }
+.groups td.gid a { color: var(--accent); text-decoration: none; }
+.groups td .who { text-decoration: none; }
+.groups tr:hover td .who, .groups tr:hover td.gid a { color: var(--accent); }
+.groups td.n { text-align: right; font: .88rem/1.5 var(--mono); font-variant-numeric: tabular-nums; }
+.groups td.span { white-space: nowrap; font: .82rem/1.5 var(--mono); color: var(--muted);
+                  font-variant-numeric: tabular-nums; }
+.groups td.f { font: .78rem/1.5 var(--mono); white-space: nowrap; }
+.groups td.f a { color: var(--muted); text-decoration: none; }
+.groups td.f a:hover { color: var(--accent); }
+.groups .aka { font: .76rem/1.5 var(--mono); color: var(--faint); margin-top: .1rem; }
+/* Suspected origin, inline with the name so a facetted result explains itself. */
+.groups .cc { font: .68rem/1 var(--mono); letter-spacing: .06em; color: var(--faint);
+              border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .32rem;
+              margin-left: .45rem; vertical-align: .08em; }
+.tools select { background: var(--panel); color: inherit; border: 1px solid var(--line-firm);
+                border-radius: 2px; padding: .38rem .5rem; font: .8rem var(--mono); }
+.tools select:hover { border-color: var(--accent); }
+.stale { color: var(--warn); }
+@media (max-width: 40rem) { .groups td.span, .groups th.span { display: none; } }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <span>APTtrail</span>
+  <a href="https://github.com/trilwu/apttrail">source &amp; docs</a>
+</div>
+
+<header class=masthead>
+<h1>APT indicators that tell you <em>whose</em> they are</h1>
+<p class=lede>Most free feeds hand you a list of bad domains. This one hands you
+the actor, its ATT&amp;CK id, the date it appeared and the write-up it came from
+&mdash; for every indicator.</p>
+
+<dl class=stats>
+<div><dt>Indicators</dt><dd>172,623</dd></div>
+<div><dt>Actors</dt><dd>313
+  <small>97 carry an ATT&amp;CK id</small></dd></div>
+<div><dt>Sourced</dt><dd>100%
+  <small>name their report</small></dd></div>
+<div><dt>Updated</dt><dd id=ago>&hellip;
+  <small><time id=generated datetime="2026-08-15T23:20:53+00:00">2026-08-15T23:20:53+00:00</time></small></dd></div>
+</dl>
+
+<div class=go>
+  <a href="search.html">Look up an indicator <span>an alert fired</span></a>
+  <a href="groups.html">Browse 313 actors <span>by name or alias</span></a>
+  <a href="activity.html">What moved recently <span>last 30 days</span></a>
+  <a href="graph.html">How actors relate <span>202 links</span></a>
+</div>
+</header>
+
+<div class=grid>
+<main class=solo>
+
+<div class=proof>
+<h3>One request, from an alert to an answer</h3>
+<pre><span class=k># what do you know about this domain?</span>
+IOC=doosan-job.com
+shard=$(printf %s "$IOC" | sha256sum | cut -c1-2)
+curl -s https://trilwu.github.io/apttrail/by-indicator/$shard.json | jq --arg v "$IOC" '.[$v]'</pre>
+<div class=out><pre>{
+  <span class=k>"type"</span>: <span class=v>&quot;domain&quot;</span>,
+  <span class=k>"groups"</span>: <span class=v>[&quot;CLEAVER&quot;]</span>,
+  <span class=k>"attack_ids"</span>: <span class=v>[&quot;G0003&quot;]</span>,
+  <span class=k>"first_seen"</span>: <span class=v>&quot;2015-03-18&quot;</span>,
+  <span class=k>"references"</span>: <span class=v>[&quot;http://www.cylance.com/assets/Cleaver/Cylance_Operation_Cleaver_Report.pdf&quot;]</span>
+}</pre></div>
+<p class=said>The actor, its ATT&amp;CK id, the date it appeared upstream, and the
+write-up it came from &mdash; from one 178&nbsp;KB fetch, with no key and no
+account. <a href="search.html">Try it in the browser</a>.</p>
+</div>
+
+<h2>What you get that a blocklist does not</h2>
+<dl class=worth>
+<div><dt>Attribution</dt><dd><b>97 ATT&amp;CK sets</b>
+resolved from 124 of 340 upstream
+groups, and the id travels into every export format &mdash; so a hit in Suricata or
+MISP still says <em>whose</em>.</dd></div>
+
+<div><dt>Provenance</dt><dd><b>172,622 of 172,623</b>
+indicators name the report that published them. Not a reference list at the bottom
+of a page &mdash; the specific write-up behind that specific value.</dd></div>
+
+<div><dt>History</dt><dd><b>2015 &rarr; 2026</b>
+158,844 carry an exact first-seen date,
+recovered from history upstream had discarded. Filter on age instead of blocking a
+domain last used in 2016.</dd></div>
+
+<div><dt>No friction</dt><dd><b>Static files</b>
+on stable URLs. No account, no key, no rate limit, rebuilt hourly. Look-ups run in
+your browser, so nothing you paste is sent anywhere.</dd></div>
+</dl>
+
+<h2>Into your tooling</h2>
+<ul class=tools-grid><li><b>MISP</b><br><span>add the URL as a feed; one event per actor</span></li><li><b>STIX 2.1</b><br><span>intrusion-set objects, merges with ATT&amp;CK</span></li><li><b>Suricata</b><br><span>~4,100 dataset-backed rules, validated in CI</span></li><li><b>Sigma</b><br><span>one rule per group, attack.gXXXX tagged</span></li><li><b>Flat lists</b><br><span>one value per line, for a blocklist</span></li><li><b>JSON / CSV</b><br><span>per actor, with dates and sources</span></li></ul>
+<p class=note>The ATT&amp;CK id survives the trip: <code>metadata:apt_group SOFACY,
+mitre_group_id G0007;</code> in Suricata, a <code>misp-galaxy:mitre-intrusion-set</code>
+tag in MISP, an <code>external_references</code> entry in STIX.
+<a href="https://github.com/trilwu/apttrail#per-tool-setup">Setup for each tool</a>.</p>
+
+<h2>Start here</h2>
+<pre><span class=k># every domain APT28 has been seen using</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0007-domain.txt
+
+<span class=k># one actor, full detail: dates, sources, ATT&amp;CK</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0007.json
+
+<span class=k># what exists, with counts</span>
+curl -sL https://trilwu.github.io/apttrail/index.json</pre>
+
+<p class=note>Also: <a href="activity.xml">Atom feed</a> of new indicators,
+<a href="graph.json">graph.json</a>, and per-group
+<a href="https://github.com/trilwu/apttrail#per-tool-setup">ATT&amp;CK Navigator layers</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>;
+attribution from <a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a> and the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a>, inherited rather than
+independently assessed. These are historical indicators: treat a hit as a lead to
+triage, not proof of compromise.</p>
+<p>Rebuilt hourly &middot; <a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var el = document.getElementById('generated');
+  var out = document.getElementById('ago');
+  if (!el || !out) return;
+  // generated_at is timezone-aware ("...+00:00"). Appending Z to that makes it
+  // unparseable, which is what shipped once: the clock read "unknown" for every
+  // visitor. Only a naive stamp needs the suffix.
+  var raw = el.getAttribute('datetime');
+  var then = new Date(/(Z|[+-]\d\d:?\d\d)$/.test(raw) ? raw : raw + 'Z');
+  if (isNaN(then)) { out.firstChild.textContent = 'unknown'; return; }
+  var mins = Math.max(0, Math.round((Date.now() - then) / 60000));
+  out.firstChild.textContent = mins < 1 ? 'just now'
+    : mins < 60 ? mins + ' min ago'
+    : mins < 1440 ? Math.round(mins / 60) + ' h ago'
+    : Math.round(mins / 1440) + ' d ago';
+  if (mins > 180) { out.classList.add('stale'); }
+  el.textContent = then.toISOString().replace('T', ' ').replace('.000Z', '') + ' UTC';
+})();
+</script>
+</html>

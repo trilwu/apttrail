@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "35d6f11f-cbe4-5e43-9f19-d363178f409f",
+        "value": "commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "89f863e2-a9b8-5c63-a914-7947ff63dedf",
+        "value": "e1awq1lp.commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9f27e064-aff9-59a4-ac4e-d5b579501ac5",
+        "value": "g1sea23g.commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e284bd47-bb9a-5c11-b908-15090fd7e949",
+        "value": "mc.commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "639b57dd-ce8c-57c7-a5b0-03e692b8a516",
+        "value": "service.userfeedsync.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b55cb572-9264-527e-85d9-10b8e297d437",
+        "value": "telemetry.commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e732e4dc-763c-56cb-b145-c01db3a5f5e9",
+        "value": "telemetry.userfeedsync.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "95aa4e44-01d4-5baa-bfd7-5ed8c53bc95f",
+        "value": "tg1sea23g.commonline.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713990421",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a18c9fef-f707-55e7-983f-4026a59495d4",
+        "value": "userfeedsync.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:dunequixote"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DUNEQUIXOTE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "b01adaf8-9ea1-5ab1-88c0-3dfc49be9435"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "77333675-4277-56d5-91c1-51bec996e28b",
+        "value": "beastmodser.club"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "43539a22-c77b-58ff-88f2-bdfe91be70f3",
+        "value": "frebough.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7083f35e-3bfb-5f8a-93b0-ca784141af5f",
+        "value": "hodbeast.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4ffbd684-9bd1-5eb1-b99d-6c9f7d0c2553",
+        "value": "retmodul.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1627378597",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "eda0783f-28f3-58e7-86d2-3c0aea9dd097",
+        "value": "worldinfocontact.club"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1569931652",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "f28c8148-7ccd-522e-9125-5a90d1a5343c",
+        "value": "http://212.73.150.246"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1569931652",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "5f7dfaf8-c66c-589b-b088-3c515ea54d3b",
+        "value": "/gate/connect"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1569931652",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "cf13f1b2-71e8-506b-8f4d-aa66d4fc6501",
+        "value": "/gate/test"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "70cd2906-c0b5-5cf6-ae92-6f224f211d49",
+        "value": "/onedrive/winmm.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1646238608",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "a10ef945-484d-5015-81f1-0aa00177744e",
+        "value": "/sil/0304/d.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:babyshark"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BABYSHARK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "64e8ea32-41fa-565f-a19f-c93eeac5e9f5"
+  }
+}

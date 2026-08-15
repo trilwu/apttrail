@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1633715952",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "568ea5a9-51b7-5180-bcb2-0a8bef042d5e",
+        "value": "azure.ms-tech.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1633715952",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "31bd8f49-f62a-5458-b87d-f88580fe3415",
+        "value": "ms-tech.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1633715952",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "75680c2e-c4a6-5fe5-83b9-be70a1631d29",
+        "value": "whynooneistherefornoneofthem.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:malkamak"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: MALKAMAK",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "db9b35cb-aabc-51f6-b16e-bf0d55282b13"
+  }
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APTtrail MISP feed</title>
+<style>
+ body { font: 15px/1.6 ui-sans-serif, system-ui, sans-serif; max-width: 44rem;
+        margin: 3rem auto; padding: 0 1.2rem; }
+ code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .88em; }
+ pre { background: #8881; padding: .8rem; border-radius: 4px; overflow-x: auto; }
+ .muted { opacity: .75; }
+</style>
+<h1>APTtrail MISP feed</h1>
+<p>This is a <strong>MISP feed directory</strong>, not a web page. Add the URL
+below in MISP under <em>Sync Actions &rarr; Feeds &rarr; Add Feed</em>, with
+input source <code>Network</code> and format <code>MISP Feed</code>:</p>
+<pre>https://trilwu.github.io/apttrail/misp-feed</pre>
+<p>MISP appends <code>/manifest.json</code> itself. The parts, if you want to
+look directly:</p>
+<ul>
+  <li><a href="manifest.json">manifest.json</a> &mdash; 340 events, one per APT group</li>
+  <li><a href="hashes.csv">hashes.csv</a> &mdash; for correlation without pulling events</li>
+  <li><code>&lt;event-uuid&gt;.json</code> &mdash; one file per event, listed in the manifest</li>
+</ul>
+<p class=muted>Event and attribute UUIDs are deterministic, so re-fetching
+updates events in place rather than duplicating them. Generated 2026-08-15T23:20:53+00:00,
+rebuilt hourly.</p>
+<p><a href="https://trilwu.github.io/apttrail/">APTtrail</a> &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</html>

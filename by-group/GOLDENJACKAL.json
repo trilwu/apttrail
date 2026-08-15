@@ -1,0 +1,197 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1,
+    "url": 38
+  },
+  "first_seen": {
+    "ipv4": {
+      "83.24.9.124:443": "2024-10-12"
+    },
+    "url": {
+      "abert-online.de/meeting/plugins.php": "2023-08-20",
+      "acehigh.host/robotx.php": "2023-08-20",
+      "ajapnyakmc.com/wp-content/cache/index.php": "2023-08-20",
+      "assistance.uz/admin/plugins.php": "2023-08-20",
+      "asusiran.com/wp-content/plugins/persian-woocommerce/include/class-cache.php": "2023-08-20",
+      "asusiran.com/wp-content/themes/woodmart/inc/modules/cache.php": "2023-08-20",
+      "cnom.sante.gov.ml/components/com_avreloaded/views/popup/tmpl/header.php": "2023-08-20",
+      "croma.vn/wp-content/themes/croma/template-parts/footer.php": "2023-08-20",
+      "den-photomaster.kz/wp-track.php": "2023-08-20",
+      "djstuff.fr/wp-content/themes/twentyfourteen/inc/footer.php": "2023-08-20",
+      "eyetelligence.ai/wp-content/themes/cms/inc/template-parts/footer.php": "2023-08-20",
+      "finasteridehair.com/wp-includes/class-wp-network-statistics.php": "2023-08-20",
+      "gradaran.be/wp-content/themes/tb-sound/inc/footer.php": "2023-08-20",
+      "http://196.29.32.210": "2024-10-12",
+      "http://83.24.9.124": "2024-10-12",
+      "info.merysof.am/plugins/search/content/plugins.php": "2023-08-20",
+      "invest.zyrardow.pl/admin/model/setting/plugins.php": "2023-08-20",
+      "mehrganhospital.com/wp-includes/class-wp-tax-system.php": "2023-08-20",
+      "meukowcognac.com/wp-content/themes/astra/page-flags.php": "2023-08-20",
+      "nassiraq.iq/wp-includes/class-wp-header-styles.php": "2023-08-20",
+      "new.jmcashback.com/wp-track.php": "2023-08-20",
+      "news.lmond.com/wp-content/themes/newsbook/inc/footer.php": "2023-08-20",
+      "pabalochistan.gov.pk/new/wp-content/cache/functions.php": "2023-08-20",
+      "pabalochistan.gov.pk/new/wp-content/themes/dt-the7/inc/cache.php": "2023-08-20",
+      "pabalochistan.gov.pk/new/wp-content/themes/twentyfifteen/content-manager.php": "2023-08-20",
+      "pak-developers.net/internal_data/templates/bottom.jpg": "2023-08-20",
+      "pak-developers.net/internal_data/templates/template.html": "2023-08-20",
+      "perlesoie.com/wp-content/plugins/contact-form-7/includes/cache.php": "2023-08-20",
+      "perlesoie.com/wp-content/themes/flatsome/inc/classes/class-flatsome-cache.php": "2023-08-20",
+      "sbj-i.com/wp-content/plugins/wp-persian/includes/class-wp-cache.php": "2023-08-20",
+      "sbj-i.com/wp-content/themes/hamyarwp-spacious/cache.php": "2023-08-20",
+      "sokerpower.com/wp-includes/class-wp-header-styles.php": "2023-08-20",
+      "tahaherbal.ir/wp-includes/class-wp-http-iwr-client.php": "2023-08-20",
+      "technocometsolutions.com/wp-content/themes/seofy/templates-sample.php": "2023-08-20",
+      "unitechlink.com/wp-content/cache/cache-functions.php": "2023-08-20",
+      "weblines.gr/gallery/gallery_input.php": "2023-08-20",
+      "wetter-bild.de/plugins.php": "2023-08-20",
+      "winoptimum.com/wp-includes/customize/class-wp-customize-sidebar-refresh.php": "2023-08-20"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-08-20",
+    "latest": "2024-10-12"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "83.24.9.124:443"
+    ],
+    "url": [
+      "abert-online.de/meeting/plugins.php",
+      "acehigh.host/robotx.php",
+      "ajapnyakmc.com/wp-content/cache/index.php",
+      "assistance.uz/admin/plugins.php",
+      "asusiran.com/wp-content/plugins/persian-woocommerce/include/class-cache.php",
+      "asusiran.com/wp-content/themes/woodmart/inc/modules/cache.php",
+      "cnom.sante.gov.ml/components/com_avreloaded/views/popup/tmpl/header.php",
+      "croma.vn/wp-content/themes/croma/template-parts/footer.php",
+      "den-photomaster.kz/wp-track.php",
+      "djstuff.fr/wp-content/themes/twentyfourteen/inc/footer.php",
+      "eyetelligence.ai/wp-content/themes/cms/inc/template-parts/footer.php",
+      "finasteridehair.com/wp-includes/class-wp-network-statistics.php",
+      "gradaran.be/wp-content/themes/tb-sound/inc/footer.php",
+      "http://196.29.32.210",
+      "http://83.24.9.124",
+      "info.merysof.am/plugins/search/content/plugins.php",
+      "invest.zyrardow.pl/admin/model/setting/plugins.php",
+      "mehrganhospital.com/wp-includes/class-wp-tax-system.php",
+      "meukowcognac.com/wp-content/themes/astra/page-flags.php",
+      "nassiraq.iq/wp-includes/class-wp-header-styles.php",
+      "new.jmcashback.com/wp-track.php",
+      "news.lmond.com/wp-content/themes/newsbook/inc/footer.php",
+      "pabalochistan.gov.pk/new/wp-content/cache/functions.php",
+      "pabalochistan.gov.pk/new/wp-content/themes/dt-the7/inc/cache.php",
+      "pabalochistan.gov.pk/new/wp-content/themes/twentyfifteen/content-manager.php",
+      "pak-developers.net/internal_data/templates/bottom.jpg",
+      "pak-developers.net/internal_data/templates/template.html",
+      "perlesoie.com/wp-content/plugins/contact-form-7/includes/cache.php",
+      "perlesoie.com/wp-content/themes/flatsome/inc/classes/class-flatsome-cache.php",
+      "sbj-i.com/wp-content/plugins/wp-persian/includes/class-wp-cache.php",
+      "sbj-i.com/wp-content/themes/hamyarwp-spacious/cache.php",
+      "sokerpower.com/wp-includes/class-wp-header-styles.php",
+      "tahaherbal.ir/wp-includes/class-wp-http-iwr-client.php",
+      "technocometsolutions.com/wp-content/themes/seofy/templates-sample.php",
+      "unitechlink.com/wp-content/cache/cache-functions.php",
+      "weblines.gr/gallery/gallery_input.php",
+      "wetter-bild.de/plugins.php",
+      "winoptimum.com/wp-includes/customize/class-wp-customize-sidebar-refresh.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GOLDENJACKAL"
+  ],
+  "references": [
+    "https://securelist.com/goldenjackal-apt-group/109677/",
+    "https://twitter.com/k3yp0d/status/1693249804166422939",
+    "https://www.virustotal.com/gui/file/6407fffce3c28fc5933c792b5a6ac7a42f4073e1544a4cf0de1b417d3994b9ea/detection",
+    "https://www.welivesecurity.com/en/eset-research/mind-air-gap-goldenjackal-gooses-government-guardrails/"
+  ],
+  "related": [],
+  "slug": "GOLDENJACKAL",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 2
+      },
+      "first_seen": "2024-10-12",
+      "indicators": {
+        "ipv4": [
+          "83.24.9.124:443"
+        ],
+        "url": [
+          "http://196.29.32.210",
+          "http://83.24.9.124"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/mind-air-gap-goldenjackal-gooses-government-guardrails/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url": 36
+      },
+      "first_seen": "2023-08-20",
+      "indicators": {
+        "url": [
+          "abert-online.de/meeting/plugins.php",
+          "acehigh.host/robotx.php",
+          "ajapnyakmc.com/wp-content/cache/index.php",
+          "assistance.uz/admin/plugins.php",
+          "asusiran.com/wp-content/plugins/persian-woocommerce/include/class-cache.php",
+          "asusiran.com/wp-content/themes/woodmart/inc/modules/cache.php",
+          "cnom.sante.gov.ml/components/com_avreloaded/views/popup/tmpl/header.php",
+          "croma.vn/wp-content/themes/croma/template-parts/footer.php",
+          "den-photomaster.kz/wp-track.php",
+          "djstuff.fr/wp-content/themes/twentyfourteen/inc/footer.php",
+          "eyetelligence.ai/wp-content/themes/cms/inc/template-parts/footer.php",
+          "finasteridehair.com/wp-includes/class-wp-network-statistics.php",
+          "gradaran.be/wp-content/themes/tb-sound/inc/footer.php",
+          "info.merysof.am/plugins/search/content/plugins.php",
+          "invest.zyrardow.pl/admin/model/setting/plugins.php",
+          "mehrganhospital.com/wp-includes/class-wp-tax-system.php",
+          "meukowcognac.com/wp-content/themes/astra/page-flags.php",
+          "nassiraq.iq/wp-includes/class-wp-header-styles.php",
+          "new.jmcashback.com/wp-track.php",
+          "news.lmond.com/wp-content/themes/newsbook/inc/footer.php",
+          "pabalochistan.gov.pk/new/wp-content/cache/functions.php",
+          "pabalochistan.gov.pk/new/wp-content/themes/dt-the7/inc/cache.php",
+          "pabalochistan.gov.pk/new/wp-content/themes/twentyfifteen/content-manager.php",
+          "pak-developers.net/internal_data/templates/bottom.jpg",
+          "pak-developers.net/internal_data/templates/template.html",
+          "perlesoie.com/wp-content/plugins/contact-form-7/includes/cache.php",
+          "perlesoie.com/wp-content/themes/flatsome/inc/classes/class-flatsome-cache.php",
+          "sbj-i.com/wp-content/plugins/wp-persian/includes/class-wp-cache.php",
+          "sbj-i.com/wp-content/themes/hamyarwp-spacious/cache.php",
+          "sokerpower.com/wp-includes/class-wp-header-styles.php",
+          "tahaherbal.ir/wp-includes/class-wp-http-iwr-client.php",
+          "technocometsolutions.com/wp-content/themes/seofy/templates-sample.php",
+          "unitechlink.com/wp-content/cache/cache-functions.php",
+          "weblines.gr/gallery/gallery_input.php",
+          "wetter-bild.de/plugins.php",
+          "winoptimum.com/wp-includes/customize/class-wp-customize-sidebar-refresh.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/goldenjackal-apt-group/109677/",
+        "https://twitter.com/k3yp0d/status/1693249804166422939",
+        "https://www.virustotal.com/gui/file/6407fffce3c28fc5933c792b5a6ac7a42f4073e1544a4cf0de1b417d3994b9ea/detection"
+      ],
+      "total": 36
+    }
+  ]
+}

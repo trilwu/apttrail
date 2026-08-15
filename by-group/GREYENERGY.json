@@ -1,0 +1,90 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 4,
+    "url": 2,
+    "url_path": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "82.118.236.23:8080": "2018-10-17",
+      "82.118.236.23:8443": "2018-10-17",
+      "88.198.13.116:8080": "2018-10-17",
+      "88.198.13.116:8443": "2018-10-17"
+    },
+    "url": {
+      "217.12.204.100/news/": "2018-10-17",
+      "pbank.co.ua/favicon.ico": "2018-10-17"
+    },
+    "url_path": {
+      "/27c00829d57988279f3ec61a05dee75a": "2018-10-17"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-17",
+    "latest": "2018-10-17"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "82.118.236.23:8080",
+      "82.118.236.23:8443",
+      "88.198.13.116:8080",
+      "88.198.13.116:8443"
+    ],
+    "url": [
+      "217.12.204.100/news/",
+      "pbank.co.ua/favicon.ico"
+    ],
+    "url_path": [
+      "/27c00829d57988279f3ec61a05dee75a"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GREYENERGY"
+  ],
+  "references": [
+    "https://github.com/eset/malware-ioc/tree/master/greyenergy"
+  ],
+  "related": [],
+  "slug": "GREYENERGY",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 4,
+        "url": 2,
+        "url_path": 1
+      },
+      "first_seen": "2018-10-17",
+      "indicators": {
+        "ipv4": [
+          "82.118.236.23:8080",
+          "82.118.236.23:8443",
+          "88.198.13.116:8080",
+          "88.198.13.116:8443"
+        ],
+        "url": [
+          "217.12.204.100/news/",
+          "pbank.co.ua/favicon.ico"
+        ],
+        "url_path": [
+          "/27c00829d57988279f3ec61a05dee75a"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/greyenergy"
+      ],
+      "total": 7
+    }
+  ]
+}

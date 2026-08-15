@@ -1,0 +1,681 @@
+{
+  "name": "Kimsuky (G0094) - APTtrail",
+  "description": "Techniques attributed to Kimsuky by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0094.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1012",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1016",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1020",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.010",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.012",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.015",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.016",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1041",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1055.012",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1098.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1102.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1102.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1106",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1111",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1112",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1115",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1124",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1132.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1136.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1176.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1185",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1205",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1217",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.010",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.011",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1219.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1480.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1489",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1497.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1534",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1539",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1546.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1550.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1552.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1553.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1555.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1557",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1559.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.011",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1567.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1568",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1584.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1586.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1591",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1593.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1593.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1594",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1596",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1608.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1620",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1657",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1660",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1678",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1680",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1682",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Kimsuky",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

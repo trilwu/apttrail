@@ -1,0 +1,172 @@
+{
+  "aliases": [],
+  "attack_id": "G0070",
+  "attack_name": "Dark Caracal",
+  "attack_url": "https://attack.mitre.org/groups/G0070/",
+  "counts": {
+    "domain": 35,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "accountslogin.services": "2024-08-02",
+      "adobe-flashviewer.accountslogin.services": "2024-08-02",
+      "adobeair.net": "2024-08-02",
+      "adobeinstall.com": "2024-08-02",
+      "ancmax.com": "2024-08-02",
+      "arablivenews.com": "2024-08-02",
+      "arabpublisherslb.com": "2024-08-02",
+      "axroot.com": "2024-08-02",
+      "dropboxonline.com": "2024-08-02",
+      "ecowatchasia.com": "2024-08-02",
+      "etn9.com": "2024-08-02",
+      "fbtweets.net": "2024-08-02",
+      "globalmic.net": "2024-08-02",
+      "gsec.in": "2024-08-02",
+      "iceteapeach.com": "2024-08-02",
+      "jaysonj.no-ip.biz": "2024-08-02",
+      "kaliex.net": "2024-08-02",
+      "mangoco.net": "2024-08-02",
+      "mecodata.com": "2024-08-02",
+      "megadeb.com": "2024-08-02",
+      "nancyrazzouk.com": "2024-08-02",
+      "nvidiaupdate.com": "2024-08-02",
+      "opwalls.com": "2024-08-02",
+      "orange2015.net": "2024-08-02",
+      "paktest.ddns.net": "2024-08-02",
+      "planethdx.com": "2024-08-02",
+      "playermea.com": "2024-08-02",
+      "roxsoft.net": "2024-08-02",
+      "sabisint.com": "2024-08-02",
+      "secureandroid.info": "2024-08-02",
+      "skypeservice.no-ip.org": "2024-08-02",
+      "skypeupdate.com": "2024-08-02",
+      "tenoclock.net": "2024-08-02",
+      "tweetsfb.com": "2024-08-02",
+      "watermelon2017.com": "2024-08-02"
+    },
+    "url": {
+      "cma-cgrm.com/ebusiness/ne.abc": "2024-08-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-08-02",
+    "latest": "2024-08-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "accountslogin.services",
+      "adobe-flashviewer.accountslogin.services",
+      "adobeair.net",
+      "adobeinstall.com",
+      "ancmax.com",
+      "arablivenews.com",
+      "arabpublisherslb.com",
+      "axroot.com",
+      "dropboxonline.com",
+      "ecowatchasia.com",
+      "etn9.com",
+      "fbtweets.net",
+      "globalmic.net",
+      "gsec.in",
+      "iceteapeach.com",
+      "jaysonj.no-ip.biz",
+      "kaliex.net",
+      "mangoco.net",
+      "mecodata.com",
+      "megadeb.com",
+      "nancyrazzouk.com",
+      "nvidiaupdate.com",
+      "opwalls.com",
+      "orange2015.net",
+      "paktest.ddns.net",
+      "planethdx.com",
+      "playermea.com",
+      "roxsoft.net",
+      "sabisint.com",
+      "secureandroid.info",
+      "skypeservice.no-ip.org",
+      "skypeupdate.com",
+      "tenoclock.net",
+      "tweetsfb.com",
+      "watermelon2017.com"
+    ],
+    "url": [
+      "cma-cgrm.com/ebusiness/ne.abc"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DARKCARACAL"
+  ],
+  "references": [
+    "https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf",
+    "https://www.virustotal.com/gui/file/ce583821191345274cd954b2db7da9742c239fe413fc17dcb97ffdd7b51cb072/detection",
+    "https://www.virustotal.com/gui/file/fb101e91397dddbdf7aeb799cb3651b233e37997ecbdb8e5b6247f5775b915ad/detection"
+  ],
+  "related": [],
+  "slug": "G0070",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 35,
+        "url": 1
+      },
+      "first_seen": "2024-08-02",
+      "indicators": {
+        "domain": [
+          "accountslogin.services",
+          "adobe-flashviewer.accountslogin.services",
+          "adobeair.net",
+          "adobeinstall.com",
+          "ancmax.com",
+          "arablivenews.com",
+          "arabpublisherslb.com",
+          "axroot.com",
+          "dropboxonline.com",
+          "ecowatchasia.com",
+          "etn9.com",
+          "fbtweets.net",
+          "globalmic.net",
+          "gsec.in",
+          "iceteapeach.com",
+          "jaysonj.no-ip.biz",
+          "kaliex.net",
+          "mangoco.net",
+          "mecodata.com",
+          "megadeb.com",
+          "nancyrazzouk.com",
+          "nvidiaupdate.com",
+          "opwalls.com",
+          "orange2015.net",
+          "paktest.ddns.net",
+          "planethdx.com",
+          "playermea.com",
+          "roxsoft.net",
+          "sabisint.com",
+          "secureandroid.info",
+          "skypeservice.no-ip.org",
+          "skypeupdate.com",
+          "tenoclock.net",
+          "tweetsfb.com",
+          "watermelon2017.com"
+        ],
+        "url": [
+          "cma-cgrm.com/ebusiness/ne.abc"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://info.lookout.com/rs/051-ESQ-475/images/Lookout_Dark-Caracal_srr_20180118_us_v.1.0.pdf",
+        "https://www.virustotal.com/gui/file/fb101e91397dddbdf7aeb799cb3651b233e37997ecbdb8e5b6247f5775b915ad/detection",
+        "https://www.virustotal.com/gui/file/ce583821191345274cd954b2db7da9742c239fe413fc17dcb97ffdd7b51cb072/detection"
+      ],
+      "total": 36
+    }
+  ]
+}

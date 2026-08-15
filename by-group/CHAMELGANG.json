@@ -1,0 +1,321 @@
+{
+  "aliases": [
+    "camofei"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 59,
+    "ipv4": 2,
+    "url": 2,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "api.microsofed.com": "2021-10-01",
+      "app.centralgoogle.com": "2021-10-01",
+      "app.tstartel.org": "2021-10-01",
+      "appupdate.ibmlotus.net": "2021-10-01",
+      "auth.newtrendmicro.com": "2021-10-01",
+      "cdn-chrome.com": "2021-10-01",
+      "centralgoogle.com": "2021-10-01",
+      "cn.mcafee-service.us.com": "2021-10-01",
+      "collector.centralgoogle.com": "2021-10-01",
+      "content.centralgoogle.com": "2021-10-01",
+      "content.newtrendmicro.com": "2021-10-01",
+      "contents.newtrendmicro.com": "2021-10-01",
+      "derbox.centralgoogle.com": "2021-10-01",
+      "docs.microsoft-support.net": "2021-10-01",
+      "download.softupdate-online.top": "2021-10-01",
+      "downloads.softupdate-online.top": "2021-10-01",
+      "en.mcafee-service.us.com": "2021-10-01",
+      "funding-exchange.org": "2021-10-01",
+      "helpdisk.ibmlotus.net": "2021-10-01",
+      "ibmlotus.net": "2021-10-01",
+      "internet.softupdate-online.top": "2021-10-01",
+      "jumper.funding-exchange.org": "2021-10-01",
+      "kaspernsky.com": "2020-05-04",
+      "login.cdn-chrome.com": "2021-10-01",
+      "mail.ibmlotus.net": "2021-10-01",
+      "mail.tstartel.org": "2021-10-01",
+      "market.newtrendmicro.com": "2021-10-01",
+      "mcafee-service.us.com": "2021-10-01",
+      "mcafee-upgrade.com": "2021-10-01",
+      "microsofed.com": "2021-10-01",
+      "microsoft-support.net": "2021-10-01",
+      "newtrendmicro.com": "2021-10-01",
+      "ns1.marocfamily.com": "2023-08-20",
+      "ns1.marocfamilym.com": "2023-08-20",
+      "ns1.marocfamilyx.com": "2023-08-20",
+      "ns1.spezialsex.com": "2023-08-20",
+      "ns2.marocfamily.com": "2023-08-20",
+      "ns2.spezialsex.com": "2023-08-20",
+      "ns30.mayashopping.net": "2023-08-20",
+      "ns31.mayashopping.net": "2023-08-20",
+      "online.softupdate-online.top": "2021-10-01",
+      "os.microsoft-support.net": "2021-10-01",
+      "search.ibmlotus.net": "2021-10-01",
+      "snn1.mhysl.org": "2021-10-01",
+      "snn2.mhysl.org": "2021-10-01",
+      "snn3.mhysl.org": "2021-10-01",
+      "softupdate-online.top": "2021-10-01",
+      "ssl.mcafee-upgrade.com": "2021-10-01",
+      "static.mhysl.org": "2021-10-01",
+      "test.mcafee-upgrade.com": "2021-10-01",
+      "tstartel.org": "2021-10-01",
+      "tw.mcafee-upgrade.com": "2021-10-01",
+      "update.kaspernsky.com": "2021-10-01",
+      "update.microsoft-support.net": "2023-08-20",
+      "update.softupdate-online.top": "2021-10-01",
+      "upgrade.ibmlotus.net": "2021-10-01",
+      "upgrade.newtrendmicro.com": "2021-10-01",
+      "us.mcafee-upgrade.com": "2021-10-01",
+      "webmail.tstartel.org": "2021-10-01"
+    },
+    "ipv4": {
+      "115.144.122.8:5555": "2021-10-01",
+      "45.91.24.73:8996": "2021-10-01"
+    },
+    "url": {
+      "http://42.99.116.14": "2021-10-01",
+      "http://45.99.116.14": "2021-10-01"
+    },
+    "url_path": {
+      "/vuln6581362514513155613jboss": "2021-10-01"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-05-04",
+    "latest": "2023-08-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "api.microsofed.com",
+      "app.centralgoogle.com",
+      "app.tstartel.org",
+      "appupdate.ibmlotus.net",
+      "auth.newtrendmicro.com",
+      "cdn-chrome.com",
+      "centralgoogle.com",
+      "cn.mcafee-service.us.com",
+      "collector.centralgoogle.com",
+      "content.centralgoogle.com",
+      "content.newtrendmicro.com",
+      "contents.newtrendmicro.com",
+      "derbox.centralgoogle.com",
+      "docs.microsoft-support.net",
+      "download.softupdate-online.top",
+      "downloads.softupdate-online.top",
+      "en.mcafee-service.us.com",
+      "funding-exchange.org",
+      "helpdisk.ibmlotus.net",
+      "ibmlotus.net",
+      "internet.softupdate-online.top",
+      "jumper.funding-exchange.org",
+      "kaspernsky.com",
+      "login.cdn-chrome.com",
+      "mail.ibmlotus.net",
+      "mail.tstartel.org",
+      "market.newtrendmicro.com",
+      "mcafee-service.us.com",
+      "mcafee-upgrade.com",
+      "microsofed.com",
+      "microsoft-support.net",
+      "newtrendmicro.com",
+      "ns1.marocfamily.com",
+      "ns1.marocfamilym.com",
+      "ns1.marocfamilyx.com",
+      "ns1.spezialsex.com",
+      "ns2.marocfamily.com",
+      "ns2.spezialsex.com",
+      "ns30.mayashopping.net",
+      "ns31.mayashopping.net",
+      "online.softupdate-online.top",
+      "os.microsoft-support.net",
+      "search.ibmlotus.net",
+      "snn1.mhysl.org",
+      "snn2.mhysl.org",
+      "snn3.mhysl.org",
+      "softupdate-online.top",
+      "ssl.mcafee-upgrade.com",
+      "static.mhysl.org",
+      "test.mcafee-upgrade.com",
+      "tstartel.org",
+      "tw.mcafee-upgrade.com",
+      "update.kaspernsky.com",
+      "update.microsoft-support.net",
+      "update.softupdate-online.top",
+      "upgrade.ibmlotus.net",
+      "upgrade.newtrendmicro.com",
+      "us.mcafee-upgrade.com",
+      "webmail.tstartel.org"
+    ],
+    "ipv4": [
+      "115.144.122.8:5555",
+      "45.91.24.73:8996"
+    ],
+    "url": [
+      "http://42.99.116.14",
+      "http://45.99.116.14"
+    ],
+    "url_path": [
+      "/vuln6581362514513155613jboss"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CHAMELGANG"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/64907e470e46bba8d3b68d52",
+    "https://stairwell.com/news/chamelgang-and-chameldoh-a-dns-over-https-implant/",
+    "https://stillu.cc/assets/slides/2023-08-Unmasking%20CamoFei.pdf",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/"
+  ],
+  "related": [],
+  "slug": "CHAMELGANG",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2023-08-20",
+      "indicators": {
+        "domain": [
+          "ns1.marocfamily.com",
+          "ns1.marocfamilym.com",
+          "ns1.marocfamilyx.com",
+          "ns1.spezialsex.com",
+          "ns2.marocfamily.com",
+          "ns2.spezialsex.com",
+          "ns30.mayashopping.net",
+          "ns31.mayashopping.net",
+          "update.microsoft-support.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://stairwell.com/news/chamelgang-and-chameldoh-a-dns-over-https-implant/",
+        "https://otx.alienvault.com/pulse/64907e470e46bba8d3b68d52"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 49,
+        "ipv4": 2,
+        "url": 2
+      },
+      "first_seen": "2021-10-01",
+      "indicators": {
+        "domain": [
+          "api.microsofed.com",
+          "app.centralgoogle.com",
+          "app.tstartel.org",
+          "appupdate.ibmlotus.net",
+          "auth.newtrendmicro.com",
+          "cdn-chrome.com",
+          "centralgoogle.com",
+          "cn.mcafee-service.us.com",
+          "collector.centralgoogle.com",
+          "content.centralgoogle.com",
+          "content.newtrendmicro.com",
+          "contents.newtrendmicro.com",
+          "derbox.centralgoogle.com",
+          "docs.microsoft-support.net",
+          "download.softupdate-online.top",
+          "downloads.softupdate-online.top",
+          "en.mcafee-service.us.com",
+          "funding-exchange.org",
+          "helpdisk.ibmlotus.net",
+          "ibmlotus.net",
+          "internet.softupdate-online.top",
+          "jumper.funding-exchange.org",
+          "login.cdn-chrome.com",
+          "mail.ibmlotus.net",
+          "mail.tstartel.org",
+          "market.newtrendmicro.com",
+          "mcafee-service.us.com",
+          "mcafee-upgrade.com",
+          "microsofed.com",
+          "microsoft-support.net",
+          "newtrendmicro.com",
+          "online.softupdate-online.top",
+          "os.microsoft-support.net",
+          "search.ibmlotus.net",
+          "snn1.mhysl.org",
+          "snn2.mhysl.org",
+          "snn3.mhysl.org",
+          "softupdate-online.top",
+          "ssl.mcafee-upgrade.com",
+          "static.mhysl.org",
+          "test.mcafee-upgrade.com",
+          "tstartel.org",
+          "tw.mcafee-upgrade.com",
+          "update.kaspernsky.com",
+          "update.softupdate-online.top",
+          "upgrade.ibmlotus.net",
+          "upgrade.newtrendmicro.com",
+          "us.mcafee-upgrade.com",
+          "webmail.tstartel.org"
+        ],
+        "ipv4": [
+          "115.144.122.8:5555",
+          "45.91.24.73:8996"
+        ],
+        "url": [
+          "http://42.99.116.14",
+          "http://45.99.116.14"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/",
+        "https://stillu.cc/assets/slides/2023-08-Unmasking%20CamoFei.pdf"
+      ],
+      "total": 53
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2021-10-01",
+      "indicators": {
+        "url_path": [
+          "/vuln6581362514513155613jboss"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://stairwell.com/news/chamelgang-and-chameldoh-a-dns-over-https-implant/",
+        "https://otx.alienvault.com/pulse/64907e470e46bba8d3b68d52"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-04",
+      "indicators": {
+        "domain": [
+          "kaspernsky.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/new-apt-group-chamelgang/",
+        "https://stillu.cc/assets/slides/2023-08-Unmasking%20CamoFei.pdf"
+      ],
+      "total": 1
+    }
+  ]
+}

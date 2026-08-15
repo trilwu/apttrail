@@ -1,0 +1,623 @@
+{
+  "aliases": [
+    "apt-c-40",
+    "apt40",
+    "leviathan",
+    "mudcarp",
+    "periscope"
+  ],
+  "attack_id": "G0065",
+  "attack_name": "Leviathan",
+  "attack_url": "https://attack.mitre.org/groups/G0065/",
+  "counts": {
+    "domain": 62,
+    "url": 7,
+    "url_path": 4
+  },
+  "first_seen": {
+    "domain": {
+      "accountsx.bounceme.net": "2019-12-09",
+      "api.dreamsbottle.com": "2022-04-09",
+      "appexistence.com": "2022-04-09",
+      "armybar.hopto.org": "2020-06-29",
+      "australianmorningnews.com": "2022-08-30",
+      "bbranchs.com": "2022-04-09",
+      "byfleur.myftp.org": "2020-02-08",
+      "cankerscarcass.com": "2022-04-09",
+      "capitana.onthewifi.com": "2020-02-08",
+      "cdn.aexhausts.com": "2022-04-09",
+      "chemscalere.com": "2018-09-14",
+      "cm.musicandfile.com": "2022-04-09",
+      "cnnzapmeta.com": "2021-07-20",
+      "dexercisep.com": "2022-04-09",
+      "duutsxlydw.com": "2022-04-09",
+      "dynamics.ddnsking.com": "2020-02-08",
+      "eujinonline.sytes.net": "2019-04-05",
+      "goo2k88yyh2.chickenkiller.com": "2021-07-20",
+      "guardggg.com": "2022-04-09",
+      "heraldsun.me": "2022-08-30",
+      "iherlvufjknw.com": "2022-04-09",
+      "image.australianmorningnews.com": "2022-08-30",
+      "ja.iherlvufjknw.com": "2022-04-09",
+      "katy197.chickenkiller.com": "2021-07-20",
+      "kulkarni.bounceme.net": "2020-02-08",
+      "laodailylive.com": "2022-04-09",
+      "laodata.network": "2022-04-09",
+      "laodiplomat.com": "2022-04-09",
+      "laotranslations.com": "2022-04-09",
+      "mail2.ignorelist.com": "2021-07-20",
+      "manaloguek.com": "2022-04-09",
+      "microsql-update.info": "2021-07-20",
+      "mihybb.com": "2021-07-20",
+      "mlcdailynews.com": "2018-09-14",
+      "musicandfile.com": "2022-04-09",
+      "networkslaoupdate.com": "2022-04-01",
+      "news.duutsxlydw.com": "2022-04-09",
+      "news.networkslaoupdate.com": "2022-04-01",
+      "nmw4xhipveaca7hm.onion.link": "2021-07-20",
+      "office.duutsxlydw.com": "2022-04-09",
+      "partyforumseasia.com": "2018-09-14",
+      "porndec143.chickenkiller.com": "2021-07-20",
+      "regionail.xyz": "2022-08-30",
+      "rninhsss.com": "2022-07-17",
+      "scsnewstoday.com": "2018-09-14",
+      "soure7788.chickenkiller.com": "2021-07-20",
+      "teledynegroup.com": "2021-07-20",
+      "testdomain2019.chickenkiller.com": "2021-07-20",
+      "theaustralian.in": "2022-08-30",
+      "thestar.live": "2018-09-29",
+      "thestar.serveblog.net": "2020-02-08",
+      "thyssenkrupp-marinesystems.org": "2018-11-29",
+      "togetno992.mooo.com": "2021-07-20",
+      "tojenner97.chickenkiller.com": "2021-07-20",
+      "tomema.myddns.me": "2020-06-29",
+      "ttxs.aexhausts.com": "2022-04-09",
+      "vser.mooo.com": "2021-07-20",
+      "vvavesltd.servebeer.com": "2020-02-08",
+      "walmartsde.com": "2022-08-30",
+      "wsmcoff.com": "2019-04-05",
+      "xbug.uk.to": "2021-07-20",
+      "yorkshire-espana-sa.com": "2021-07-20"
+    },
+    "url": {
+      "http://139.162.44.81": "2020-02-08",
+      "http://152.89.161.5": "2020-02-08",
+      "http://159.65.197.248": "2020-02-08",
+      "http://167.99.72.82": "2020-02-08",
+      "http://172.105.114.27": "2022-08-30",
+      "http://195.12.50.168": "2020-02-08",
+      "http://207.148.79.152": "2020-02-08"
+    },
+    "url_path": {
+      "/?cwhe18nc": "2022-08-30",
+      "/D2_de2o@sp0/": "2019-03-27",
+      "/cwhe18nc.htm": "2022-08-30",
+      "/cwhe18nc.js": "2022-08-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-14",
+    "latest": "2022-08-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "accountsx.bounceme.net",
+      "api.dreamsbottle.com",
+      "appexistence.com",
+      "armybar.hopto.org",
+      "australianmorningnews.com",
+      "bbranchs.com",
+      "byfleur.myftp.org",
+      "cankerscarcass.com",
+      "capitana.onthewifi.com",
+      "cdn.aexhausts.com",
+      "chemscalere.com",
+      "cm.musicandfile.com",
+      "cnnzapmeta.com",
+      "dexercisep.com",
+      "duutsxlydw.com",
+      "dynamics.ddnsking.com",
+      "eujinonline.sytes.net",
+      "goo2k88yyh2.chickenkiller.com",
+      "guardggg.com",
+      "heraldsun.me",
+      "iherlvufjknw.com",
+      "image.australianmorningnews.com",
+      "ja.iherlvufjknw.com",
+      "katy197.chickenkiller.com",
+      "kulkarni.bounceme.net",
+      "laodailylive.com",
+      "laodata.network",
+      "laodiplomat.com",
+      "laotranslations.com",
+      "mail2.ignorelist.com",
+      "manaloguek.com",
+      "microsql-update.info",
+      "mihybb.com",
+      "mlcdailynews.com",
+      "musicandfile.com",
+      "networkslaoupdate.com",
+      "news.duutsxlydw.com",
+      "news.networkslaoupdate.com",
+      "nmw4xhipveaca7hm.onion.link",
+      "office.duutsxlydw.com",
+      "partyforumseasia.com",
+      "porndec143.chickenkiller.com",
+      "regionail.xyz",
+      "rninhsss.com",
+      "scsnewstoday.com",
+      "soure7788.chickenkiller.com",
+      "teledynegroup.com",
+      "testdomain2019.chickenkiller.com",
+      "theaustralian.in",
+      "thestar.live",
+      "thestar.serveblog.net",
+      "thyssenkrupp-marinesystems.org",
+      "togetno992.mooo.com",
+      "tojenner97.chickenkiller.com",
+      "tomema.myddns.me",
+      "ttxs.aexhausts.com",
+      "vser.mooo.com",
+      "vvavesltd.servebeer.com",
+      "walmartsde.com",
+      "wsmcoff.com",
+      "xbug.uk.to",
+      "yorkshire-espana-sa.com"
+    ],
+    "url": [
+      "http://139.162.44.81",
+      "http://152.89.161.5",
+      "http://159.65.197.248",
+      "http://167.99.72.82",
+      "http://172.105.114.27",
+      "http://195.12.50.168",
+      "http://207.148.79.152"
+    ],
+    "url_path": [
+      "/?cwhe18nc",
+      "/D2_de2o@sp0/",
+      "/cwhe18nc.htm",
+      "/cwhe18nc.js"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MUDCARP",
+    "TEMPPERISCOPE"
+  ],
+  "references": [
+    "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Gh0st_Variant.json",
+    "https://medium.com/@Sebdraven/apt-40-in-malaysia-61ed9c9642e9",
+    "https://otx.alienvault.com/pulse/5ca740c67a9dbc78fe32f9b9",
+    "https://otx.alienvault.com/pulse/5e3dbad21b45e958a0d9e5a6",
+    "https://otx.alienvault.com/pulse/5efa1262602caffb4ac35148",
+    "https://otx.alienvault.com/pulse/60f597533e911956a673717b",
+    "https://otx.alienvault.com/pulse/61b2290ee7cb4628d56979d5",
+    "https://twitter.com/ClearskySec/status/1110941178231484417",
+    "https://twitter.com/Vishnyak0v/status/1203986670623887361",
+    "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+    "https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf",
+    "https://www.elastic.co/fr/blog/advanced-techniques-used-in-malaysian-focused-apt-campaign",
+    "https://www.fireeye.com/blog/threat-research/2018/07/chinese-espionage-group-targets-cambodia-ahead-of-elections.html",
+    "https://www.proofpoint.com/us/blog/threat-insight/chasing-currents-espionage-south-china-sea (# TA423, Red Ladon, Red Ladon)",
+    "https://www.recordedfuture.com/chinese-threat-actor-tempperiscope/",
+    "https://www.virustotal.com/gui/ip-address/139.59.60.116/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "shares Derusbi, BLACKCOFFEE, China Chopper and 1 more",
+          "kind": "software",
+          "weight": 1.119
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares at, Windows Credential Editor",
+          "kind": "software",
+          "weight": 0.75
+        }
+      ],
+      "slug": "G0060"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Windows Credential Editor, China Chopper",
+          "kind": "software",
+          "weight": 0.393
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Tor",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0007"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Tor",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0016"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares BLACKCOFFEE",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0025"
+    }
+  ],
+  "slug": "G0065",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6,
+        "url": 1,
+        "url_path": 3
+      },
+      "first_seen": "2022-08-30",
+      "indicators": {
+        "domain": [
+          "australianmorningnews.com",
+          "heraldsun.me",
+          "image.australianmorningnews.com",
+          "regionail.xyz",
+          "theaustralian.in",
+          "walmartsde.com"
+        ],
+        "url": [
+          "http://172.105.114.27"
+        ],
+        "url_path": [
+          "/?cwhe18nc",
+          "/cwhe18nc.htm",
+          "/cwhe18nc.js"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/chasing-currents-espionage-south-china-sea (# TA423, Red Ladon, Red Ladon)",
+        "https://www.virustotal.com/gui/ip-address/139.59.60.116/relations"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-17",
+      "indicators": {
+        "domain": [
+          "rninhsss.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_Gh0st_Variant.json"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2022-04-09",
+      "indicators": {
+        "domain": [
+          "api.dreamsbottle.com",
+          "appexistence.com",
+          "bbranchs.com",
+          "cankerscarcass.com",
+          "cdn.aexhausts.com",
+          "cm.musicandfile.com",
+          "dexercisep.com",
+          "duutsxlydw.com",
+          "guardggg.com",
+          "iherlvufjknw.com",
+          "ja.iherlvufjknw.com",
+          "laodailylive.com",
+          "laodata.network",
+          "laodiplomat.com",
+          "laotranslations.com",
+          "manaloguek.com",
+          "musicandfile.com",
+          "news.duutsxlydw.com",
+          "office.duutsxlydw.com",
+          "ttxs.aexhausts.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/61b2290ee7cb4628d56979d5"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-01",
+      "indicators": {
+        "domain": [
+          "networkslaoupdate.com",
+          "news.networkslaoupdate.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/61b2290ee7cb4628d56979d5"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 16
+      },
+      "first_seen": "2021-07-20",
+      "indicators": {
+        "domain": [
+          "cnnzapmeta.com",
+          "goo2k88yyh2.chickenkiller.com",
+          "katy197.chickenkiller.com",
+          "mail2.ignorelist.com",
+          "microsql-update.info",
+          "mihybb.com",
+          "nmw4xhipveaca7hm.onion.link",
+          "porndec143.chickenkiller.com",
+          "soure7788.chickenkiller.com",
+          "teledynegroup.com",
+          "testdomain2019.chickenkiller.com",
+          "togetno992.mooo.com",
+          "tojenner97.chickenkiller.com",
+          "vser.mooo.com",
+          "xbug.uk.to",
+          "yorkshire-espana-sa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b"
+      ],
+      "total": 16
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-06-29",
+      "indicators": {
+        "domain": [
+          "armybar.hopto.org",
+          "tomema.myddns.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.elastic.co/fr/blog/advanced-techniques-used-in-malaysian-focused-apt-campaign",
+        "https://otx.alienvault.com/pulse/5efa1262602caffb4ac35148"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 6,
+        "url": 6
+      },
+      "first_seen": "2020-02-08",
+      "indicators": {
+        "domain": [
+          "byfleur.myftp.org",
+          "capitana.onthewifi.com",
+          "dynamics.ddnsking.com",
+          "kulkarni.bounceme.net",
+          "thestar.serveblog.net",
+          "vvavesltd.servebeer.com"
+        ],
+        "url": [
+          "http://139.162.44.81",
+          "http://152.89.161.5",
+          "http://159.65.197.248",
+          "http://167.99.72.82",
+          "http://195.12.50.168",
+          "http://207.148.79.152"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://medium.com/@Sebdraven/apt-40-in-malaysia-61ed9c9642e9",
+        "https://twitter.com/ClearskySec/status/1110941178231484417",
+        "https://otx.alienvault.com/pulse/5e3dbad21b45e958a0d9e5a6"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-09",
+      "indicators": {
+        "domain": [
+          "accountsx.bounceme.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1203986670623887361",
+        "https://medium.com/@Sebdraven/apt-40-in-malaysia-61ed9c9642e9",
+        "https://twitter.com/ClearskySec/status/1110941178231484417",
+        "https://otx.alienvault.com/pulse/5e3dbad21b45e958a0d9e5a6"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-05",
+      "indicators": {
+        "domain": [
+          "wsmcoff.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5ca740c67a9dbc78fe32f9b9",
+        "https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf",
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-05",
+      "indicators": {
+        "domain": [
+          "eujinonline.sytes.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5ca740c67a9dbc78fe32f9b9",
+        "https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2019-03-27",
+      "indicators": {
+        "url_path": [
+          "/D2_de2o@sp0/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/blog/threat-insight/chasing-currents-espionage-south-china-sea (# TA423, Red Ladon, Red Ladon)",
+        "https://www.virustotal.com/gui/ip-address/139.59.60.116/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-11-29",
+      "indicators": {
+        "domain": [
+          "thyssenkrupp-marinesystems.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5ca740c67a9dbc78fe32f9b9",
+        "https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf",
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b",
+        "https://www.recordedfuture.com/chinese-threat-actor-tempperiscope/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-29",
+      "indicators": {
+        "domain": [
+          "thestar.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-14",
+      "indicators": {
+        "domain": [
+          "chemscalere.com",
+          "scsnewstoday.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5ca740c67a9dbc78fe32f9b9",
+        "https://www.accenture.com/t20190305T200954Z__w__/us-en/_acnmedia/PDF-96/Accenture-Security-MUDCARP-Full-Report.pdf",
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b",
+        "https://www.fireeye.com/blog/threat-research/2018/07/chinese-espionage-group-targets-cambodia-ahead-of-elections.html"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-14",
+      "indicators": {
+        "domain": [
+          "partyforumseasia.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2018/07/chinese-espionage-group-targets-cambodia-ahead-of-elections.html"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-14",
+      "indicators": {
+        "domain": [
+          "mlcdailynews.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://us-cert.cisa.gov/ncas/alerts/aa21-200a",
+        "https://otx.alienvault.com/pulse/60f597533e911956a673717b",
+        "https://www.fireeye.com/blog/threat-research/2018/07/chinese-espionage-group-targets-cambodia-ahead-of-elections.html"
+      ],
+      "total": 1
+    }
+  ]
+}

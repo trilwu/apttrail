@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537644245",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "60ac62c5-be07-5782-a154-74ee5ff3414a",
+        "value": "ewplus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537644245",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "db5f9102-54a4-5528-9df4-380aeeaf24b2",
+        "value": "tcw.homier.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:glasses"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GLASSES",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c1c5bd6a-9a5d-59b3-a435-28e3a9816b86"
+  }
+}

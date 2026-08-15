@@ -1,0 +1,108 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 15,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "cd-media4u.com": "2018-09-21",
+      "diretube.co.uk": "2018-09-21",
+      "eastafro.net": "2018-09-21",
+      "flashpoint-ip.com": "2018-09-21",
+      "getadobeplayer.com": "2018-09-21",
+      "meskereme.net": "2018-09-21",
+      "nozonenet.com": "2018-09-21",
+      "pnv.vipnetwork.fr": "2018-09-21",
+      "pupki.co": "2018-09-21",
+      "rdhotel.uz": "2018-09-21",
+      "signalschool.net": "2018-09-21",
+      "thewhistleblowers.org": "2018-09-21",
+      "time-local.com": "2018-09-21",
+      "time-local.net": "2018-09-21",
+      "villepinte2017.dynu.net": "2018-09-21"
+    },
+    "url_path": {
+      "/ts8.php": "2018-09-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-21",
+    "latest": "2018-09-21"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cd-media4u.com",
+      "diretube.co.uk",
+      "eastafro.net",
+      "flashpoint-ip.com",
+      "getadobeplayer.com",
+      "meskereme.net",
+      "nozonenet.com",
+      "pnv.vipnetwork.fr",
+      "pupki.co",
+      "rdhotel.uz",
+      "signalschool.net",
+      "thewhistleblowers.org",
+      "time-local.com",
+      "time-local.net",
+      "villepinte2017.dynu.net"
+    ],
+    "url_path": [
+      "/ts8.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CYBERBIT"
+  ],
+  "references": [
+    "https://citizenlab.ca/2017/12/champing-cyberbit-ethiopian-dissidents-targeted-commercial-spyware/"
+  ],
+  "related": [],
+  "slug": "CYBERBIT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 15,
+        "url_path": 1
+      },
+      "first_seen": "2018-09-21",
+      "indicators": {
+        "domain": [
+          "cd-media4u.com",
+          "diretube.co.uk",
+          "eastafro.net",
+          "flashpoint-ip.com",
+          "getadobeplayer.com",
+          "meskereme.net",
+          "nozonenet.com",
+          "pnv.vipnetwork.fr",
+          "pupki.co",
+          "rdhotel.uz",
+          "signalschool.net",
+          "thewhistleblowers.org",
+          "time-local.com",
+          "time-local.net",
+          "villepinte2017.dynu.net"
+        ],
+        "url_path": [
+          "/ts8.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2017/12/champing-cyberbit-ethiopian-dissidents-targeted-commercial-spyware/"
+      ],
+      "total": 16
+    }
+  ]
+}

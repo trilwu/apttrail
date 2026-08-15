@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e2594492-8335-5976-9355-bde6a71a583b",
+        "value": "ach-uz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "666841c6-be98-51a1-a877-73c566eb87a7",
+        "value": "audit-kg.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4edab874-68e3-5340-b9da-966c1ab3f41c",
+        "value": "esf-kg.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e1d6e6f1-cccd-51aa-aa3e-8db0e564d481",
+        "value": "hgame33.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fb295514-cd74-5cf4-8a43-c933dc43de46",
+        "value": "hisobot-uz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6baa1d86-2042-5ffb-8860-180a54d25b45",
+        "value": "minjust-kg.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "651a268e-79ac-5309-a92a-970d37e853f1",
+        "value": "nac-ac.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e9afc693-d86b-50d0-bfa9-5c155b058e45",
+        "value": "ravinads.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f42b3db3-0669-5a03-91f1-a1fd3cf2d3de",
+        "value": "soliq-uz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f9811085-5b86-5c48-9787-6dceec0f6ef7",
+        "value": "ttbbaits.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3583caeb-c61b-5b30-bd1b-5ed233e54b6c",
+        "value": "uzaudit.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:bloodywolf"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BLOODYWOLF",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "4c7124e9-67bb-5968-be76-8cb8393d81ef"
+  }
+}

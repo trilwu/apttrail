@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1539699428",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "044de8f1-6d34-5944-b06d-3d65b57a9d29",
+        "value": "shelves-design.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539699428",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b619eb47-ee3b-59c2-9a21-5ac9403b47da",
+        "value": "weekendstrips.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:fruityarmor"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Stealth Falcon - G0038\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Stealth Falcon (G0038) - Maltrail group FRUITYARMOR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "df2b744b-366c-59ab-9325-d3dc49abe3d5"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "aliases": [
+    "leslieloader",
+    "storm-2077"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "aeifile.offiec.us.kg": "2026-01-02",
+      "citrix.offiec.us.kg": "2026-01-02",
+      "cna.offiec.us.kg": "2026-01-02",
+      "download.offiec.us.kg": "2026-01-02",
+      "gp.offiec.us.kg": "2026-01-02",
+      "login.offiec.us.kg": "2026-01-02",
+      "test.offiec.us.kg": "2026-01-02",
+      "vpn.offiec.us.kg": "2026-01-02",
+      "vpn1.offiec.us.kg": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "aeifile.offiec.us.kg": "at-or-before",
+      "citrix.offiec.us.kg": "at-or-before",
+      "cna.offiec.us.kg": "at-or-before",
+      "download.offiec.us.kg": "at-or-before",
+      "gp.offiec.us.kg": "at-or-before",
+      "login.offiec.us.kg": "at-or-before",
+      "test.offiec.us.kg": "at-or-before",
+      "vpn.offiec.us.kg": "at-or-before",
+      "vpn1.offiec.us.kg": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aeifile.offiec.us.kg",
+      "citrix.offiec.us.kg",
+      "cna.offiec.us.kg",
+      "download.offiec.us.kg",
+      "gp.offiec.us.kg",
+      "login.offiec.us.kg",
+      "test.offiec.us.kg",
+      "vpn.offiec.us.kg",
+      "vpn1.offiec.us.kg"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "REDNOVEMBER"
+  ],
+  "references": [
+    "https://www.recordedfuture.com/research/rednovember-targets-government-defense-and-technology-organizations"
+  ],
+  "related": [],
+  "slug": "REDNOVEMBER",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aeifile.offiec.us.kg",
+          "citrix.offiec.us.kg",
+          "cna.offiec.us.kg",
+          "download.offiec.us.kg",
+          "gp.offiec.us.kg",
+          "login.offiec.us.kg",
+          "test.offiec.us.kg",
+          "vpn.offiec.us.kg",
+          "vpn1.offiec.us.kg"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.recordedfuture.com/research/rednovember-targets-government-defense-and-technology-organizations"
+      ],
+      "total": 9
+    }
+  ]
+}

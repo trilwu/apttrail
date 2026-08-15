@@ -1,0 +1,434 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 49,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "01transport.com": "2019-06-04",
+      "applelenovo.com": "2019-06-04",
+      "appst0re.net": "2019-06-04",
+      "aries.epac.to": "2019-06-04",
+      "baagii.sportsnewsa.net": "2019-06-04",
+      "basaa.sportsnewsa.net": "2019-06-04",
+      "benzerold.com": "2019-06-04",
+      "blue-vpn.net": "2019-06-04",
+      "bluesky.zyns.com": "2019-06-04",
+      "bulgaa.sportsnewsa.net": "2019-06-04",
+      "comesafe.com": "2019-06-04",
+      "cospation.net": "2019-06-04",
+      "date.dellnewsup.net": "2019-06-04",
+      "dwm.dnsedc.com": "2019-06-04",
+      "eagleoftajik.dynamic-dns.net": "2019-06-04",
+      "eyellowarm.com": "2019-06-04",
+      "game.sexidude.com": "2019-06-04",
+      "honoroftajik.dynamic-dns.net": "2019-06-04",
+      "https.ikwb.com": "2019-06-04",
+      "kaboolyn.com": "2019-06-04",
+      "kastygost.compress.to": "2019-01-08",
+      "knightpal.com": "2019-06-04",
+      "kyssrcd.pw": "2019-06-04",
+      "laugh.toh.info": "2019-06-04",
+      "mitian123.com": "2019-06-04",
+      "mn.dellnewsup.net": "2019-06-04",
+      "mocus.cospation.net": "2019-06-04",
+      "moonlight.compress.to": "2019-06-04",
+      "news.dellnewsup.net": "2019-06-04",
+      "nicodonald.accesscam.org": "2019-06-04",
+      "niteast.strangled.net": "2019-06-04",
+      "nitec.ns1.name": "2019-06-04",
+      "numnote.com": "2019-06-04",
+      "poff.wha.la": "2019-06-04",
+      "russion.dnsedc.com": "2019-06-04",
+      "skylineqaz.crabdance.com": "2019-01-08",
+      "suverycool.com": "2019-06-04",
+      "tajikmusic.dynamic-dns.net": "2019-06-04",
+      "tajikstantravel.dynamic-dns.net": "2019-06-04",
+      "tele.zyns.com": "2019-01-08",
+      "trendiis.sixth.biz": "2019-06-04",
+      "uzwatersource.dynamic-dns.net": "2019-01-08",
+      "whitebirds.mefound.com": "2019-06-04",
+      "win.dellnewsup.net": "2019-06-04",
+      "xn--uareexcellent-or3qa.kozow.com": "2019-06-04",
+      "ylineqaz-y25ja.crabdance.com": "2019-06-04",
+      "youareexcellent.kozow.com": "2019-06-04",
+      "zaluu.dellnewsup.net": "2019-06-04",
+      "zorsoft.ns1.name": "2019-06-04"
+    },
+    "ipv4": {
+      "95.179.131.29:443": "2019-08-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-01-08",
+    "latest": "2019-08-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "01transport.com",
+      "applelenovo.com",
+      "appst0re.net",
+      "aries.epac.to",
+      "baagii.sportsnewsa.net",
+      "basaa.sportsnewsa.net",
+      "benzerold.com",
+      "blue-vpn.net",
+      "bluesky.zyns.com",
+      "bulgaa.sportsnewsa.net",
+      "comesafe.com",
+      "cospation.net",
+      "date.dellnewsup.net",
+      "dwm.dnsedc.com",
+      "eagleoftajik.dynamic-dns.net",
+      "eyellowarm.com",
+      "game.sexidude.com",
+      "honoroftajik.dynamic-dns.net",
+      "https.ikwb.com",
+      "kaboolyn.com",
+      "kastygost.compress.to",
+      "knightpal.com",
+      "kyssrcd.pw",
+      "laugh.toh.info",
+      "mitian123.com",
+      "mn.dellnewsup.net",
+      "mocus.cospation.net",
+      "moonlight.compress.to",
+      "news.dellnewsup.net",
+      "nicodonald.accesscam.org",
+      "niteast.strangled.net",
+      "nitec.ns1.name",
+      "numnote.com",
+      "poff.wha.la",
+      "russion.dnsedc.com",
+      "skylineqaz.crabdance.com",
+      "suverycool.com",
+      "tajikmusic.dynamic-dns.net",
+      "tajikstantravel.dynamic-dns.net",
+      "tele.zyns.com",
+      "trendiis.sixth.biz",
+      "uzwatersource.dynamic-dns.net",
+      "whitebirds.mefound.com",
+      "win.dellnewsup.net",
+      "xn--uareexcellent-or3qa.kozow.com",
+      "ylineqaz-y25ja.crabdance.com",
+      "youareexcellent.kozow.com",
+      "zaluu.dellnewsup.net",
+      "zorsoft.ns1.name"
+    ],
+    "ipv4": [
+      "95.179.131.29:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ICEFOG"
+  ],
+  "references": [
+    "https://app.any.run/tasks/3a08945b-62c3-4a0e-893b-bcdbdc920650/",
+    "https://otx.alienvault.com/pulse/5cf67ff667d9acf61c422cd2",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=21",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=35",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=38",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=41",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=44 (# root domains)",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=49",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=55",
+    "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=56",
+    "https://twitter.com/clearskysec/status/968104469014761472?lang=en",
+    "https://twitter.com/ostinjohn/status/1158076164327583745",
+    "https://www.virustotal.com/gui/domain/sportsnewsa.net/relations",
+    "https://www.virustotal.com/gui/file/5e3cd28d9ab02de8d816b7a0719e715330b4ad28cb2d2778a5f54a3396620991/detection"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "12 shared indicators",
+          "kind": "infrastructure",
+          "weight": 12.0
+        }
+      ],
+      "slug": "REDFOXTROT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "4 shared indicators",
+          "kind": "infrastructure",
+          "weight": 4.0
+        }
+      ],
+      "slug": "G0027"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "XPATH"
+    }
+  ],
+  "slug": "ICEFOG",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2019-08-04",
+      "indicators": {
+        "ipv4": [
+          "95.179.131.29:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ostinjohn/status/1158076164327583745",
+        "https://www.virustotal.com/gui/file/5e3cd28d9ab02de8d816b7a0719e715330b4ad28cb2d2778a5f54a3396620991/detection",
+        "https://app.any.run/tasks/3a08945b-62c3-4a0e-893b-bcdbdc920650/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "01transport.com",
+          "applelenovo.com",
+          "benzerold.com",
+          "blue-vpn.net",
+          "comesafe.com",
+          "eyellowarm.com",
+          "kaboolyn.com",
+          "knightpal.com",
+          "kyssrcd.pw",
+          "numnote.com",
+          "suverycool.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=44 (# root domains)"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "bluesky.zyns.com",
+          "game.sexidude.com",
+          "honoroftajik.dynamic-dns.net",
+          "moonlight.compress.to",
+          "niteast.strangled.net",
+          "nitec.ns1.name",
+          "whitebirds.mefound.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=56"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "baagii.sportsnewsa.net",
+          "basaa.sportsnewsa.net",
+          "bulgaa.sportsnewsa.net",
+          "russion.dnsedc.com",
+          "xn--uareexcellent-or3qa.kozow.com",
+          "ylineqaz-y25ja.crabdance.com",
+          "zaluu.dellnewsup.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cf67ff667d9acf61c422cd2",
+        "https://www.virustotal.com/gui/domain/sportsnewsa.net/relations"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "cospation.net",
+          "mitian123.com",
+          "mocus.cospation.net",
+          "poff.wha.la",
+          "tajikstantravel.dynamic-dns.net",
+          "zorsoft.ns1.name"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=38"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "date.dellnewsup.net",
+          "dwm.dnsedc.com",
+          "mn.dellnewsup.net",
+          "news.dellnewsup.net",
+          "win.dellnewsup.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=35"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "eagleoftajik.dynamic-dns.net",
+          "https.ikwb.com",
+          "tajikmusic.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=55"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "aries.epac.to",
+          "laugh.toh.info",
+          "trendiis.sixth.biz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=41"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "nicodonald.accesscam.org",
+          "youareexcellent.kozow.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=49"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "appst0re.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=21"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-01-08",
+      "indicators": {
+        "domain": [
+          "kastygost.compress.to",
+          "uzwatersource.dynamic-dns.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/clearskysec/status/968104469014761472?lang=en"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-01-08",
+      "indicators": {
+        "domain": [
+          "skylineqaz.crabdance.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=49"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-01-08",
+      "indicators": {
+        "domain": [
+          "tele.zyns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://speakerdeck.com/ashley920/into-the-fog-the-return-of-icefog-apt?slide=41"
+      ],
+      "total": 1
+    }
+  ]
+}

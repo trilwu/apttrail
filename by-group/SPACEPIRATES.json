@@ -1,0 +1,557 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 79,
+    "ipv4": 13,
+    "url": 5
+  },
+  "first_seen": {
+    "domain": {
+      "0077.x24hr.com": "2022-05-18",
+      "alex.dnset.com": "2022-05-18",
+      "amazon-corp.wikaba.com": "2022-05-18",
+      "api.microft.dynssl.com": "2022-05-18",
+      "app.hostareas.com": "2022-05-18",
+      "apple-corp.changeip.org": "2022-05-18",
+      "as.amazon-corp.wikaba.com": "2022-05-18",
+      "asd.powergame.0077.x24hr.com": "2022-05-18",
+      "bamo.ocry.com": "2020-06-23",
+      "cdnsvc.microft.dynssl.com": "2022-05-18",
+      "chdsjjkrazomg.dhcp.biz": "2022-05-18",
+      "comein.journal.itsaol.com": "2022-05-18",
+      "community.reportsearch.dynamic-dns.net": "2022-05-18",
+      "dnsinfo.microft.dynssl.com": "2022-05-18",
+      "docs.microft.dynssl.com": "2022-05-18",
+      "edge.microft.dynssl.com": "2022-05-18",
+      "elienceso.kozow.com": "2021-06-18",
+      "erdcserver.microft.dynssl.com": "2022-05-18",
+      "eset.zzux.com": "2022-05-18",
+      "exowa.microft.dynssl.com": "2022-05-18",
+      "fgjhkergvlimdfg2.wikaba.com": "2022-05-18",
+      "fileserverrt.reportsearch.dynamic-dns.net": "2022-05-18",
+      "flashplayeractivex.info": "2022-05-18",
+      "freewula.strangled.net": "2022-05-03",
+      "fssprus.dns04.com": "2022-05-18",
+      "ftp.microft.dynssl.com": "2022-05-18",
+      "gamepoer7.com": "2022-05-18",
+      "gigabitdate.com": "2022-05-18",
+      "goon.oldvideo.longmusic.com": "2022-05-18",
+      "journal.itsaol.com": "2022-05-18",
+      "js.journal.itsaol.com": "2022-05-18",
+      "lck.gigabitdate.com": "2022-05-18",
+      "lib.hostareas.com": "2022-05-18",
+      "loge.otzo.com": "2019-07-04",
+      "mail.playdr2.com": "2022-05-18",
+      "mcafee-update.com": "2022-05-18",
+      "miche.justdied.com": "2021-06-18",
+      "micro.dns04.com": "2022-05-18",
+      "microft.dynssl.com": "2022-05-18",
+      "mktoon.ftp1.biz": "2022-05-18",
+      "news.flashplayeractivex.info": "2022-05-18",
+      "noon.dns04.com": "2022-05-18",
+      "ns2.gamepoer7.com": "2022-05-18",
+      "ns9.mcafee-update.com": "2022-05-18",
+      "oldvideo.longmusic.com": "2022-05-18",
+      "omgod.org": "2022-05-18",
+      "playdr2.com": "2022-05-18",
+      "pop.playdr2.com": "2022-05-18",
+      "powergame.0077.x24hr.com": "2022-05-18",
+      "q34ewrd.youdontcare.com": "2022-05-18",
+      "reportsearch.dynamic-dns.net": "2022-05-18",
+      "rt.ftp1.biz": "2022-05-18",
+      "ruclient.dns04.com": "2022-05-18",
+      "safer.ddns.us": "2022-05-18",
+      "sdo.microft.dynssl.com": "2022-05-18",
+      "search.microft.dynssl.com": "2022-05-18",
+      "serviechelp.changeip.us": "2022-05-18",
+      "shareddocs.microft.dynssl.com": "2022-05-18",
+      "smsreport.microft.dynssl.com": "2022-05-18",
+      "speedtest.reportsearch.dynamic-dns.net": "2022-05-18",
+      "sprfilet.microft.dynssl.com": "2022-05-18",
+      "srcier0wqesj1.microft.dynssl.com": "2022-05-18",
+      "srv.xxxy.biz": "2022-05-18",
+      "ssl.gigabitdate.com": "2022-05-18",
+      "sslvpn.microft.dynssl.com": "2022-05-18",
+      "staticd.dynamic-dns.net": "2022-05-18",
+      "stmspeedtest.reportsearch.dynamic-dns.net": "2022-05-18",
+      "szuunet.strangled.net": "2022-05-03",
+      "tombstone.kozow.com": "2022-05-18",
+      "toogasd.www.oldvideo.longmusic.com": "2022-05-18",
+      "toon.mrbasic.com": "2022-05-18",
+      "update.flashplayeractivex.info": "2022-05-18",
+      "w.asd3.as.amazon-corp.wikaba.com": "2022-05-18",
+      "web.miscrosaft.com": "2022-05-18",
+      "webdocsshare.microft.dynssl.com": "2022-05-18",
+      "werwesf.dynamic-dns.net": "2022-05-18",
+      "wserver1.microft.dynssl.com": "2022-05-18",
+      "wwa1we.wbew.amazon-corp.wikaba.com": "2022-05-18",
+      "ybcps4.freeddns.org": "2022-05-18"
+    },
+    "ipv4": {
+      "101.37.16.125:2121": "2022-05-18",
+      "103.101.178.152:53": "2022-05-18",
+      "120.78.127.189:6500": "2022-05-18",
+      "121.89.210.144:6600": "2022-05-18",
+      "154.211.161.161:443": "2022-05-18",
+      "154.85.48.108:8080": "2022-05-18",
+      "170.178.190.213:443": "2022-05-18",
+      "192.225.226.123:443": "2022-05-18",
+      "192.225.226.217:8443": "2020-02-10",
+      "192.225.226.218:443": "2022-05-18",
+      "207.148.121.88:7000": "2022-05-18",
+      "45.77.16.91:51094": "2022-05-18",
+      "47.108.89.169:7000": "2022-05-18"
+    },
+    "url": {
+      "http://103.101.178.152": "2022-05-18",
+      "http://123.1.151.64": "2022-05-18",
+      "http://154.213.21.207": "2022-05-18",
+      "http://170.178.190.213": "2022-05-18",
+      "http://192.225.226.123": "2022-05-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-07-04",
+    "latest": "2022-05-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0077.x24hr.com",
+      "alex.dnset.com",
+      "amazon-corp.wikaba.com",
+      "api.microft.dynssl.com",
+      "app.hostareas.com",
+      "apple-corp.changeip.org",
+      "as.amazon-corp.wikaba.com",
+      "asd.powergame.0077.x24hr.com",
+      "bamo.ocry.com",
+      "cdnsvc.microft.dynssl.com",
+      "chdsjjkrazomg.dhcp.biz",
+      "comein.journal.itsaol.com",
+      "community.reportsearch.dynamic-dns.net",
+      "dnsinfo.microft.dynssl.com",
+      "docs.microft.dynssl.com",
+      "edge.microft.dynssl.com",
+      "elienceso.kozow.com",
+      "erdcserver.microft.dynssl.com",
+      "eset.zzux.com",
+      "exowa.microft.dynssl.com",
+      "fgjhkergvlimdfg2.wikaba.com",
+      "fileserverrt.reportsearch.dynamic-dns.net",
+      "flashplayeractivex.info",
+      "freewula.strangled.net",
+      "fssprus.dns04.com",
+      "ftp.microft.dynssl.com",
+      "gamepoer7.com",
+      "gigabitdate.com",
+      "goon.oldvideo.longmusic.com",
+      "journal.itsaol.com",
+      "js.journal.itsaol.com",
+      "lck.gigabitdate.com",
+      "lib.hostareas.com",
+      "loge.otzo.com",
+      "mail.playdr2.com",
+      "mcafee-update.com",
+      "miche.justdied.com",
+      "micro.dns04.com",
+      "microft.dynssl.com",
+      "mktoon.ftp1.biz",
+      "news.flashplayeractivex.info",
+      "noon.dns04.com",
+      "ns2.gamepoer7.com",
+      "ns9.mcafee-update.com",
+      "oldvideo.longmusic.com",
+      "omgod.org",
+      "playdr2.com",
+      "pop.playdr2.com",
+      "powergame.0077.x24hr.com",
+      "q34ewrd.youdontcare.com",
+      "reportsearch.dynamic-dns.net",
+      "rt.ftp1.biz",
+      "ruclient.dns04.com",
+      "safer.ddns.us",
+      "sdo.microft.dynssl.com",
+      "search.microft.dynssl.com",
+      "serviechelp.changeip.us",
+      "shareddocs.microft.dynssl.com",
+      "smsreport.microft.dynssl.com",
+      "speedtest.reportsearch.dynamic-dns.net",
+      "sprfilet.microft.dynssl.com",
+      "srcier0wqesj1.microft.dynssl.com",
+      "srv.xxxy.biz",
+      "ssl.gigabitdate.com",
+      "sslvpn.microft.dynssl.com",
+      "staticd.dynamic-dns.net",
+      "stmspeedtest.reportsearch.dynamic-dns.net",
+      "szuunet.strangled.net",
+      "tombstone.kozow.com",
+      "toogasd.www.oldvideo.longmusic.com",
+      "toon.mrbasic.com",
+      "update.flashplayeractivex.info",
+      "w.asd3.as.amazon-corp.wikaba.com",
+      "web.miscrosaft.com",
+      "webdocsshare.microft.dynssl.com",
+      "werwesf.dynamic-dns.net",
+      "wserver1.microft.dynssl.com",
+      "wwa1we.wbew.amazon-corp.wikaba.com",
+      "ybcps4.freeddns.org"
+    ],
+    "ipv4": [
+      "101.37.16.125:2121",
+      "103.101.178.152:53",
+      "120.78.127.189:6500",
+      "121.89.210.144:6600",
+      "154.211.161.161:443",
+      "154.85.48.108:8080",
+      "170.178.190.213:443",
+      "192.225.226.123:443",
+      "192.225.226.217:8443",
+      "192.225.226.218:443",
+      "207.148.121.88:7000",
+      "45.77.16.91:51094",
+      "47.108.89.169:7000"
+    ],
+    "url": [
+      "http://103.101.178.152",
+      "http://123.1.151.64",
+      "http://154.213.21.207",
+      "http://170.178.190.213",
+      "http://192.225.226.123"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SPACEPIRATES"
+  ],
+  "references": [
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+    "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+    "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+    "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+    "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection",
+    "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+    "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+    "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+    "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+    "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+    "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+    "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+    "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+    "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "REDFOXTROT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    }
+  ],
+  "slug": "SPACEPIRATES",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 73,
+        "ipv4": 12,
+        "url": 5
+      },
+      "first_seen": "2022-05-18",
+      "indicators": {
+        "domain": [
+          "0077.x24hr.com",
+          "alex.dnset.com",
+          "amazon-corp.wikaba.com",
+          "api.microft.dynssl.com",
+          "app.hostareas.com",
+          "apple-corp.changeip.org",
+          "as.amazon-corp.wikaba.com",
+          "asd.powergame.0077.x24hr.com",
+          "cdnsvc.microft.dynssl.com",
+          "chdsjjkrazomg.dhcp.biz",
+          "comein.journal.itsaol.com",
+          "community.reportsearch.dynamic-dns.net",
+          "dnsinfo.microft.dynssl.com",
+          "docs.microft.dynssl.com",
+          "edge.microft.dynssl.com",
+          "erdcserver.microft.dynssl.com",
+          "eset.zzux.com",
+          "exowa.microft.dynssl.com",
+          "fgjhkergvlimdfg2.wikaba.com",
+          "fileserverrt.reportsearch.dynamic-dns.net",
+          "flashplayeractivex.info",
+          "fssprus.dns04.com",
+          "ftp.microft.dynssl.com",
+          "gamepoer7.com",
+          "gigabitdate.com",
+          "goon.oldvideo.longmusic.com",
+          "journal.itsaol.com",
+          "js.journal.itsaol.com",
+          "lck.gigabitdate.com",
+          "lib.hostareas.com",
+          "mail.playdr2.com",
+          "mcafee-update.com",
+          "micro.dns04.com",
+          "microft.dynssl.com",
+          "mktoon.ftp1.biz",
+          "news.flashplayeractivex.info",
+          "noon.dns04.com",
+          "ns2.gamepoer7.com",
+          "ns9.mcafee-update.com",
+          "oldvideo.longmusic.com",
+          "omgod.org",
+          "playdr2.com",
+          "pop.playdr2.com",
+          "powergame.0077.x24hr.com",
+          "q34ewrd.youdontcare.com",
+          "reportsearch.dynamic-dns.net",
+          "rt.ftp1.biz",
+          "ruclient.dns04.com",
+          "safer.ddns.us",
+          "sdo.microft.dynssl.com",
+          "search.microft.dynssl.com",
+          "serviechelp.changeip.us",
+          "shareddocs.microft.dynssl.com",
+          "smsreport.microft.dynssl.com",
+          "speedtest.reportsearch.dynamic-dns.net",
+          "sprfilet.microft.dynssl.com",
+          "srcier0wqesj1.microft.dynssl.com",
+          "srv.xxxy.biz",
+          "ssl.gigabitdate.com",
+          "sslvpn.microft.dynssl.com",
+          "staticd.dynamic-dns.net",
+          "stmspeedtest.reportsearch.dynamic-dns.net",
+          "tombstone.kozow.com",
+          "toogasd.www.oldvideo.longmusic.com",
+          "toon.mrbasic.com",
+          "update.flashplayeractivex.info",
+          "w.asd3.as.amazon-corp.wikaba.com",
+          "web.miscrosaft.com",
+          "webdocsshare.microft.dynssl.com",
+          "werwesf.dynamic-dns.net",
+          "wserver1.microft.dynssl.com",
+          "wwa1we.wbew.amazon-corp.wikaba.com",
+          "ybcps4.freeddns.org"
+        ],
+        "ipv4": [
+          "101.37.16.125:2121",
+          "103.101.178.152:53",
+          "120.78.127.189:6500",
+          "121.89.210.144:6600",
+          "154.211.161.161:443",
+          "154.85.48.108:8080",
+          "170.178.190.213:443",
+          "192.225.226.123:443",
+          "192.225.226.218:443",
+          "207.148.121.88:7000",
+          "45.77.16.91:51094",
+          "47.108.89.169:7000"
+        ],
+        "url": [
+          "http://103.101.178.152",
+          "http://123.1.151.64",
+          "http://154.213.21.207",
+          "http://170.178.190.213",
+          "http://192.225.226.123"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 90
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-03",
+      "indicators": {
+        "domain": [
+          "freewula.strangled.net",
+          "szuunet.strangled.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-06-18",
+      "indicators": {
+        "domain": [
+          "elienceso.kozow.com",
+          "miche.justdied.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-23",
+      "indicators": {
+        "domain": [
+          "bamo.ocry.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-02-10",
+      "indicators": {
+        "ipv4": [
+          "192.225.226.217:8443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-04",
+      "indicators": {
+        "domain": [
+          "loge.otzo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/space-pirates-tools-and-connections/",
+        "https://www.virustotal.com/gui/ip-address/141.164.35.87/relations",
+        "https://www.virustotal.com/gui/ip-address/45.76.145.22/relations",
+        "https://www.virustotal.com/gui/file/f6c4c84487bbec5959068e4a8b84e515de4695c794769c3d3080bf5c2bb63d00/detection",
+        "https://www.virustotal.com/gui/file/84eb2efa324eba0c2e06c3b84395e9f5e3f28a3c9b86edd1f813807ba39d9acb/detection",
+        "https://www.virustotal.com/gui/file/0f818f9b39c262087b3bdaca6783406e1ecf51696c4c98632095e47f713ce7ce/detection",
+        "https://www.virustotal.com/gui/file/19b797b92b2879cde03d894e954a25c4ae2d85c9e50fa43beb2ec8458f6fef7b/detection",
+        "https://www.virustotal.com/gui/file/5ec2134f34f128edd61124ef6ea7a9f9c55c6ef58c610907aa87f6d9b308dca6/detection",
+        "https://www.virustotal.com/gui/file/d6af2d1df948e2221a4bdaa3dd736dc0646c95d76f1aa1a1d314e5b20185e161/detection",
+        "https://www.virustotal.com/gui/file/45c944889a482ae2e0e0a8e260c3be737cb612c8804164badef61e8a8713b92f/detection",
+        "https://www.virustotal.com/gui/file/ce1fb1a7bd7c108bceb71b0ca92d8d04b244e1bd7e9e7db5082e0c1d7e836f94/detection",
+        "https://www.virustotal.com/gui/file/5b4e69c19738490df9cc55dee7bfdab49eff2ef98003aced28a66cebabbf2bec/detection",
+        "https://www.virustotal.com/gui/file/e5f471dcd4f5a47f0a53fc389e58c70b9ef81805c503ed6b100950d02ee7f777/detection",
+        "https://www.virustotal.com/gui/file/4a7cf906c8cc871176d0702245953eeee5065f9651186cd8ae594e6835b8a8eb/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1711657526",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "29bf2620-d104-5b47-a50e-f19bdd27e2d5",
+        "value": "alfarabischoolgroup.slack.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711657526",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f3a90c82-ecf7-5d14-8824-2cbdfdd295b1",
+        "value": "solucionesgeofisicas.slack.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711657526",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d4557bc8-3c69-5fe1-a219-e22bc24e6e0c",
+        "value": "swiftrecruiters.slack.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711657526",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2bbe29ce-615a-5e55-85fc-9034fea74eb9",
+        "value": "telcomprodicci.slack.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1711657526",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4364238e-83e7-5500-9bdf-3e3e9fa3efa3",
+        "value": "tucker-group.slack.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:flightnight"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: FLIGHTNIGHT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "d6cdf1d1-01ed-5a9d-b838-5e202d441f46"
+  }
+}

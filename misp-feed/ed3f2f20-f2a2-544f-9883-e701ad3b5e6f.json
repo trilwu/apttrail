@@ -1,0 +1,103 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1e491614-b7ea-58b1-bf8e-9b34f6e4e6c0",
+        "value": "aeifile.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "002433e8-d569-5543-a4f5-ace669861930",
+        "value": "citrix.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "75589dda-8fea-59dd-9656-3b451eee5761",
+        "value": "cna.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "68dbd5e3-7fdc-5726-908f-0526f6cc1aba",
+        "value": "download.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1c145eda-5959-5b1f-8cf2-e6d5e8d7729b",
+        "value": "gp.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "098beeb2-d99d-549e-97d7-bd699f14065d",
+        "value": "login.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c55c8ca2-ed0a-5952-bfd2-aac3ccaf6ad0",
+        "value": "test.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "db2523cd-3b19-5b97-a0f3-b12b08f85fb3",
+        "value": "vpn.offiec.us.kg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "454f0f97-a8a9-52ee-91d9-6597d5280cad",
+        "value": "vpn1.offiec.us.kg"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:rednovember"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: REDNOVEMBER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "ed3f2f20-f2a2-544f-9883-e701ad3b5e6f"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2c7b375f-705a-57cc-a48c-6459ba3f3ecb",
+        "value": "carima2012.site90.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ae7b46c2-575b-5941-bf69-2a57ee0934ea",
+        "value": "dotnetexplorer.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "49f4cb32-cd35-5e07-b0fb-4c6b6c28ebc2",
+        "value": "dotntexplorere.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "403728a1-4e73-5f8b-890b-d07180a23d8b",
+        "value": "erdotntexplore.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ee3f0008-7268-5d53-abb3-960c733d34df",
+        "value": "explorerdotnt.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "667875cf-64dc-5ac2-a963-4af4027762e7",
+        "value": "saveweb.wink.ws"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1445328390",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fbc77810-6601-54f8-9ad1-ee5ce8620b41",
+        "value": "xploreredotnet.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1664799352",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "99489eb7-bde5-59cc-abc1-e6bfc88e1dcf",
+        "value": "200.159.87.196:3306"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1664799352",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "eb3a44ee-2af8-56d2-b493-23b8f455f634",
+        "value": "http://200.159.87.196"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:volatilecedar"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Volatile Cedar - G0123\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Volatile Cedar (G0123) - Maltrail group VOLATILECEDAR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "0dae9351-e9da-5107-96e4-ea13ba2bae99"
+  }
+}

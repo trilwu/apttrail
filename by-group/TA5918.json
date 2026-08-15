@@ -1,0 +1,75 @@
+{
+  "aliases": [
+    "uat-5918",
+    "uat-7237"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "cvbbonwxtgvc3isfqfc52cwzja0kvuqd.lambda-url.ap-northeast-1.on.aws": "2026-01-02"
+    },
+    "url": {
+      "http://141.164.50.141": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "cvbbonwxtgvc3isfqfc52cwzja0kvuqd.lambda-url.ap-northeast-1.on.aws": "at-or-before"
+    },
+    "url": {
+      "http://141.164.50.141": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cvbbonwxtgvc3isfqfc52cwzja0kvuqd.lambda-url.ap-northeast-1.on.aws"
+    ],
+    "url": [
+      "http://141.164.50.141"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TA5918"
+  ],
+  "references": [
+    "https://blog.talosintelligence.com/uat-5918-targets-critical-infra-in-taiwan/",
+    "https://blog.talosintelligence.com/uat-7237-targets-web-hosting-infra/"
+  ],
+  "related": [],
+  "slug": "TA5918",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "cvbbonwxtgvc3isfqfc52cwzja0kvuqd.lambda-url.ap-northeast-1.on.aws"
+        ],
+        "url": [
+          "http://141.164.50.141"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://blog.talosintelligence.com/uat-5918-targets-critical-infra-in-taiwan/",
+        "https://blog.talosintelligence.com/uat-7237-targets-web-hosting-infra/"
+      ],
+      "total": 2
+    }
+  ]
+}

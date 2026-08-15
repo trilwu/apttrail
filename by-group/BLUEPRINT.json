@@ -1,0 +1,59 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "cloud.yourdocument.biz": "2019-06-04",
+      "swift-fraud.com": "2019-06-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-06-04",
+    "latest": "2019-06-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cloud.yourdocument.biz",
+      "swift-fraud.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BLUEPRINT"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5cf63c5f1c20b24747675033",
+    "https://www.bitdefender.com/files/News/CaseStudies/study/262/Bitdefender-WhitePaper-An-APT-Blueprint-Gaining-New-Visibility-into-Financial-Threats-interactive.pdf"
+  ],
+  "related": [],
+  "slug": "BLUEPRINT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-06-04",
+      "indicators": {
+        "domain": [
+          "cloud.yourdocument.biz",
+          "swift-fraud.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bitdefender.com/files/News/CaseStudies/study/262/Bitdefender-WhitePaper-An-APT-Blueprint-Gaining-New-Visibility-into-Financial-Threats-interactive.pdf",
+        "https://otx.alienvault.com/pulse/5cf63c5f1c20b24747675033"
+      ],
+      "total": 2
+    }
+  ]
+}

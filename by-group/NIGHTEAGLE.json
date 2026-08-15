@@ -1,0 +1,184 @@
+{
+  "aliases": [
+    "APT-Q-95"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 31
+  },
+  "first_seen": {
+    "domain": {
+      "app.flowgw.com": "2026-01-02",
+      "ccproxy.org": "2026-01-02",
+      "cloud.synologyupdates.com": "2026-01-02",
+      "comfyupdate.org": "2026-01-02",
+      "coremailtech.com": "2026-01-02",
+      "daihou360.com": "2026-01-02",
+      "dashboard.daihou360.com": "2026-01-02",
+      "doubleclicked.com": "2026-01-02",
+      "e-mailrelay.com": "2026-01-02",
+      "fastapi-cdn.com": "2026-01-02",
+      "flowgw.com": "2026-01-02",
+      "fortisys.net": "2026-01-02",
+      "haprxy.org": "2026-01-02",
+      "liveupdate.wsupdatecloud.net": "2026-01-02",
+      "lvusdupdates.org": "2026-01-02",
+      "mirror1.mirrors-openjdk.org": "2026-01-02",
+      "mirrors-openjdk.org": "2026-01-02",
+      "ms-nipre.com": "2026-01-02",
+      "ms.wsupdatecloud.net": "2026-01-02",
+      "rhel.lvusdupdates.org": "2026-01-02",
+      "sangsoft.net": "2026-01-02",
+      "saperpcloud.com": "2026-01-02",
+      "shangjuyike.com": "2026-01-02",
+      "synologyupdates.com": "2026-01-02",
+      "threatbookav.com": "2026-01-02",
+      "tracking.doubleclicked.com": "2026-01-02",
+      "update.haprxy.org": "2026-01-02",
+      "update.saperpcloud.com": "2026-01-02",
+      "updates.ccproxy.org": "2026-01-02",
+      "wechatutilities.com": "2026-01-02",
+      "wsupdatecloud.net": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "app.flowgw.com": "at-or-before",
+      "ccproxy.org": "at-or-before",
+      "cloud.synologyupdates.com": "at-or-before",
+      "comfyupdate.org": "at-or-before",
+      "coremailtech.com": "at-or-before",
+      "daihou360.com": "at-or-before",
+      "dashboard.daihou360.com": "at-or-before",
+      "doubleclicked.com": "at-or-before",
+      "e-mailrelay.com": "at-or-before",
+      "fastapi-cdn.com": "at-or-before",
+      "flowgw.com": "at-or-before",
+      "fortisys.net": "at-or-before",
+      "haprxy.org": "at-or-before",
+      "liveupdate.wsupdatecloud.net": "at-or-before",
+      "lvusdupdates.org": "at-or-before",
+      "mirror1.mirrors-openjdk.org": "at-or-before",
+      "mirrors-openjdk.org": "at-or-before",
+      "ms-nipre.com": "at-or-before",
+      "ms.wsupdatecloud.net": "at-or-before",
+      "rhel.lvusdupdates.org": "at-or-before",
+      "sangsoft.net": "at-or-before",
+      "saperpcloud.com": "at-or-before",
+      "shangjuyike.com": "at-or-before",
+      "synologyupdates.com": "at-or-before",
+      "threatbookav.com": "at-or-before",
+      "tracking.doubleclicked.com": "at-or-before",
+      "update.haprxy.org": "at-or-before",
+      "update.saperpcloud.com": "at-or-before",
+      "updates.ccproxy.org": "at-or-before",
+      "wechatutilities.com": "at-or-before",
+      "wsupdatecloud.net": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "app.flowgw.com",
+      "ccproxy.org",
+      "cloud.synologyupdates.com",
+      "comfyupdate.org",
+      "coremailtech.com",
+      "daihou360.com",
+      "dashboard.daihou360.com",
+      "doubleclicked.com",
+      "e-mailrelay.com",
+      "fastapi-cdn.com",
+      "flowgw.com",
+      "fortisys.net",
+      "haprxy.org",
+      "liveupdate.wsupdatecloud.net",
+      "lvusdupdates.org",
+      "mirror1.mirrors-openjdk.org",
+      "mirrors-openjdk.org",
+      "ms-nipre.com",
+      "ms.wsupdatecloud.net",
+      "rhel.lvusdupdates.org",
+      "sangsoft.net",
+      "saperpcloud.com",
+      "shangjuyike.com",
+      "synologyupdates.com",
+      "threatbookav.com",
+      "tracking.doubleclicked.com",
+      "update.haprxy.org",
+      "update.saperpcloud.com",
+      "updates.ccproxy.org",
+      "wechatutilities.com",
+      "wsupdatecloud.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NIGHTEAGLE"
+  ],
+  "references": [
+    "https://github.com/RedDrip7/Report/blob/master/APT/Exclusive%20disclosure%20of%20the%20attack%20activities%20of%20the%20USA%20APT%20group%20NightEagle.pdf",
+    "https://mp.weixin.qq.com/s/I907WsSIPfkTG8kYloj29w",
+    "https://x.com/RedDrip7/status/1940637150158139764",
+    "https://x.com/RedDrip7/status/1940780494662390135"
+  ],
+  "related": [],
+  "slug": "NIGHTEAGLE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 31
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "app.flowgw.com",
+          "ccproxy.org",
+          "cloud.synologyupdates.com",
+          "comfyupdate.org",
+          "coremailtech.com",
+          "daihou360.com",
+          "dashboard.daihou360.com",
+          "doubleclicked.com",
+          "e-mailrelay.com",
+          "fastapi-cdn.com",
+          "flowgw.com",
+          "fortisys.net",
+          "haprxy.org",
+          "liveupdate.wsupdatecloud.net",
+          "lvusdupdates.org",
+          "mirror1.mirrors-openjdk.org",
+          "mirrors-openjdk.org",
+          "ms-nipre.com",
+          "ms.wsupdatecloud.net",
+          "rhel.lvusdupdates.org",
+          "sangsoft.net",
+          "saperpcloud.com",
+          "shangjuyike.com",
+          "synologyupdates.com",
+          "threatbookav.com",
+          "tracking.doubleclicked.com",
+          "update.haprxy.org",
+          "update.saperpcloud.com",
+          "updates.ccproxy.org",
+          "wechatutilities.com",
+          "wsupdatecloud.net"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/RedDrip7/status/1940637150158139764",
+        "https://x.com/RedDrip7/status/1940780494662390135",
+        "https://mp.weixin.qq.com/s/I907WsSIPfkTG8kYloj29w",
+        "https://github.com/RedDrip7/Report/blob/master/APT/Exclusive%20disclosure%20of%20the%20attack%20activities%20of%20the%20USA%20APT%20group%20NightEagle.pdf"
+      ],
+      "total": 31
+    }
+  ]
+}

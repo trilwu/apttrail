@@ -1,0 +1,171 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1648640012",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dbfe6f9e-ef13-5844-b376-82fc4df6b406",
+        "value": "againcome.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648640012",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ecf09070-1bc2-5bcc-8a34-d4362279ab9c",
+        "value": "alphalanding.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1609085679",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4766ccc3-cb35-5390-865b-471c3860433b",
+        "value": "besaintegration.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4a6a902f-4011-5459-8d39-a88b0ef36c15",
+        "value": "charjackyum.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648640012",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3bbef75a-4223-5076-8490-04257094ec46",
+        "value": "chauvinistable.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648640012",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "da6472f0-f507-58bd-bd2c-923b9d5a26b5",
+        "value": "colahasch.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "194d64f2-a17a-5cd7-8916-3f9a2f16538d",
+        "value": "electroncador.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2b11ad2f-2a7b-513d-bd72-2b135491ce7e",
+        "value": "gemmiparalyzed.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "99388f5b-5604-58e8-8a55-577d2f662182",
+        "value": "jaglamorous.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a8e6fde2-d57a-5dfa-9dfd-22d7f0c02214",
+        "value": "judicialance.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e77758d1-83da-5c79-9fe0-deaa1b7a5225",
+        "value": "neighborhoodlumish.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1609793804",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "929f9cd5-ce4e-5202-83b1-08ac32ba47c3",
+        "value": "petshopbook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "91fbcf09-86f3-5ccb-929c-417084344f27",
+        "value": "podestablished.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "18b3f322-723c-5a7f-96ef-8f5cbb9b445d",
+        "value": "spontaneousance.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "316c2d37-29dc-5665-b0c5-6a9ff5909d6b",
+        "value": "spoolopedia.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1593068483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a060c848-e11b-5d47-92c5-df166b501a22",
+        "value": "temptationone.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648640012",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "ff658c6f-23d8-5983-87f1-448ce7c2bbc7",
+        "value": "http://185.163.45.249"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:carbonspider"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"FIN7 - G0046\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: FIN7 (G0046) - Maltrail group CARBONSPIDER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "cc0c0f42-91be-5ae5-b8fa-0c14b80320ec"
+  }
+}

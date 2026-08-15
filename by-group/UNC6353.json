@@ -1,0 +1,183 @@
+{
+  "aliases": [
+    "darksword"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 26
+  },
+  "first_seen": {
+    "domain": {
+      "afewminago.site": "2026-03-19",
+      "cartned.sheexcell.ink": "2026-06-20",
+      "cdn.cdncounter.net": "2026-03-18",
+      "cdn.uacounter.com": "2026-03-18",
+      "cdncounter.net": "2026-03-18",
+      "count.cdncounter.net": "2026-03-18",
+      "downdown.online": "2026-03-19",
+      "duflaro.com": "2026-06-20",
+      "escofiringbijou.com": "2026-03-27",
+      "inventorepkrje.sheexcell.ink": "2026-06-20",
+      "iokert.com": "2026-06-20",
+      "lifechangerai.site": "2026-06-20",
+      "link.sheexcell.ink": "2026-06-20",
+      "mxloft.sheexcell.ink": "2026-06-20",
+      "nuceciwa138.xyz": "2026-03-19",
+      "rhdcnwjnwf.site": "2026-03-19",
+      "sheexcell.ink": "2026-06-20",
+      "shkaacloud.ink": "2026-03-19",
+      "siekeltd.com": "2026-03-27",
+      "sqwas.shapelie.com": "2026-03-18",
+      "static.cdncounter.net": "2026-03-18",
+      "t.sheexcell.ink": "2026-06-20",
+      "touch-n-go.online": "2026-03-19",
+      "uacounter.com": "2026-03-18",
+      "world-news.site": "2026-03-19",
+      "wwteam.space": "2026-06-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-03-18",
+    "latest": "2026-06-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "afewminago.site",
+      "cartned.sheexcell.ink",
+      "cdn.cdncounter.net",
+      "cdn.uacounter.com",
+      "cdncounter.net",
+      "count.cdncounter.net",
+      "downdown.online",
+      "duflaro.com",
+      "escofiringbijou.com",
+      "inventorepkrje.sheexcell.ink",
+      "iokert.com",
+      "lifechangerai.site",
+      "link.sheexcell.ink",
+      "mxloft.sheexcell.ink",
+      "nuceciwa138.xyz",
+      "rhdcnwjnwf.site",
+      "sheexcell.ink",
+      "shkaacloud.ink",
+      "siekeltd.com",
+      "sqwas.shapelie.com",
+      "static.cdncounter.net",
+      "t.sheexcell.ink",
+      "touch-n-go.online",
+      "uacounter.com",
+      "world-news.site",
+      "wwteam.space"
+    ]
+  },
+  "last_modified": "2026-06-20T23:29:06+00:00",
+  "maltrail_groups": [
+    "UNC6353"
+  ],
+  "references": [
+    "https://www.lookout.com/threat-intelligence/article/darksword",
+    "https://www.virustotal.com/gui/file/b7ef4985662625c45955db295d949e04fd0a9fd5c8ce0c6a3bcb68e4a06c16e4/detection",
+    "https://x.com/MalforsHQ/status/2037293707351765450",
+    "https://x.com/_IMalihi_/status/2067948568401395880",
+    "https://x.com/felixaime/status/2034580922742235351",
+    "https://x.com/threatinsight/status/2037563799142858899"
+  ],
+  "related": [],
+  "slug": "UNC6353",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2026-06-20",
+      "indicators": {
+        "domain": [
+          "cartned.sheexcell.ink",
+          "duflaro.com",
+          "inventorepkrje.sheexcell.ink",
+          "iokert.com",
+          "lifechangerai.site",
+          "link.sheexcell.ink",
+          "mxloft.sheexcell.ink",
+          "sheexcell.ink",
+          "t.sheexcell.ink",
+          "wwteam.space"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/_IMalihi_/status/2067948568401395880"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2026-03-27",
+      "indicators": {
+        "domain": [
+          "escofiringbijou.com",
+          "siekeltd.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/MalforsHQ/status/2037293707351765450",
+        "https://x.com/threatinsight/status/2037563799142858899",
+        "https://www.virustotal.com/gui/file/b7ef4985662625c45955db295d949e04fd0a9fd5c8ce0c6a3bcb68e4a06c16e4/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2026-03-19",
+      "indicators": {
+        "domain": [
+          "afewminago.site",
+          "downdown.online",
+          "nuceciwa138.xyz",
+          "rhdcnwjnwf.site",
+          "shkaacloud.ink",
+          "touch-n-go.online",
+          "world-news.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/felixaime/status/2034580922742235351"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2026-03-18",
+      "indicators": {
+        "domain": [
+          "cdn.cdncounter.net",
+          "cdn.uacounter.com",
+          "cdncounter.net",
+          "count.cdncounter.net",
+          "sqwas.shapelie.com",
+          "static.cdncounter.net",
+          "uacounter.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.lookout.com/threat-intelligence/article/darksword"
+      ],
+      "total": 7
+    }
+  ]
+}

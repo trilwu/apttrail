@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1490364824",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4b0dcaa6-5439-5ea1-ab7d-33237990bde4",
+        "value": "eservice.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1490364824",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "315b19c3-996d-5990-80aa-e01bd969f76c",
+        "value": "securityupdated.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:stonedrill"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: STONEDRILL",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c1784745-7d92-5556-847b-a22ef94f55c7"
+  }
+}

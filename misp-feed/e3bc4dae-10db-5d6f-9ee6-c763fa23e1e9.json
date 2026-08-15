@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "19a42655-c125-5588-b788-87afaf29042e",
+        "value": "56nk4qmwxcdd72yiaro7bxixvgf5awgmmzpodub7phmfsqylezu2tsid.onion.moe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c8d0e684-dace-5a04-9fdb-cc3d7624c91a",
+        "value": "cdnworld.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dee31c5b-5a03-5614-8a1c-e7f7341f7aba",
+        "value": "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.moe"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "be11a323-a8b1-5368-a55a-c4421aa75f65",
+        "value": "ufowdauczwpa4enmzj2yyf7m4cbsjcaxxoyeebc2wdgzwnhvwhjf7iid.onion.ws"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c98db426-dd8c-530e-8520-ff128fecb696",
+        "value": "193.142.30.166:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1671223357",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ca017926-2e15-565a-bd08-96d8fdcaa046",
+        "value": "91.205.230.66:8443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc4166"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC4166",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e3bc4dae-10db-5d6f-9ee6-c763fa23e1e9"
+  }
+}

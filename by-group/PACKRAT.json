@@ -1,0 +1,87 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 12
+  },
+  "first_seen": {
+    "domain": {
+      "conhost.servehttp.com": "2018-09-22",
+      "daynews.sytes.net": "2018-09-22",
+      "deyrep24.ddns.net": "2018-09-22",
+      "dllhost.servehttp.com": "2018-09-22",
+      "lolinha.no-ip.org": "2018-09-22",
+      "ruley.no-ip.org": "2018-09-22",
+      "taskmgr.redirectme.com": "2018-09-22",
+      "taskmgr.serveftp.com": "2018-09-22",
+      "taskmgr.servehttp.com": "2018-09-22",
+      "wjwj.no-ip.org": "2018-09-22",
+      "wjwjwj.no-ip.org": "2018-09-22",
+      "wjwjwjwj.no-ip.org": "2018-09-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-22",
+    "latest": "2018-09-22"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "conhost.servehttp.com",
+      "daynews.sytes.net",
+      "deyrep24.ddns.net",
+      "dllhost.servehttp.com",
+      "lolinha.no-ip.org",
+      "ruley.no-ip.org",
+      "taskmgr.redirectme.com",
+      "taskmgr.serveftp.com",
+      "taskmgr.servehttp.com",
+      "wjwj.no-ip.org",
+      "wjwjwj.no-ip.org",
+      "wjwjwjwj.no-ip.org"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PACKRAT"
+  ],
+  "references": [
+    "https://citizenlab.ca/2015/12/packrat-report/"
+  ],
+  "related": [],
+  "slug": "PACKRAT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "conhost.servehttp.com",
+          "daynews.sytes.net",
+          "deyrep24.ddns.net",
+          "dllhost.servehttp.com",
+          "lolinha.no-ip.org",
+          "ruley.no-ip.org",
+          "taskmgr.redirectme.com",
+          "taskmgr.serveftp.com",
+          "taskmgr.servehttp.com",
+          "wjwj.no-ip.org",
+          "wjwjwj.no-ip.org",
+          "wjwjwjwj.no-ip.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2015/12/packrat-report/"
+      ],
+      "total": 12
+    }
+  ]
+}

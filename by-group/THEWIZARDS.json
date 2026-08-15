@@ -1,0 +1,190 @@
+{
+  "aliases": [
+    "darknights",
+    "dknife",
+    "spellbinder",
+    "wizardnet"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 4,
+    "ipv4": 13,
+    "url": 10
+  },
+  "first_seen": {
+    "domain": {
+      "assetsqq.com": "2026-02-06",
+      "mkdmcdn.com": "2026-02-06",
+      "ssl-dns.com": "2026-02-06",
+      "vv.ssl-dns.com": "2026-02-06"
+    },
+    "ipv4": {
+      "110.185.104.180:8000": "2026-02-06",
+      "110.92.64.177:8000": "2026-02-10",
+      "117.175.185.81:8003": "2026-02-06",
+      "43.132.205.118:81": "2026-02-06",
+      "43.155.62.54:81": "2026-02-06",
+      "47.238.107.83:81": "2026-02-06",
+      "47.93.54.134:8001": "2026-02-06",
+      "47.93.54.134:8003": "2026-02-06",
+      "47.93.54.134:8005": "2026-02-06",
+      "49.89.41.187:8001": "2026-02-06",
+      "49.89.41.187:8002": "2026-02-06",
+      "49.89.41.187:8003": "2026-02-06",
+      "89.195.5.18:4553": "2026-02-06"
+    },
+    "url": {
+      "http://110.92.64.117": "2026-02-06",
+      "http://110.92.64.17": "2026-02-06",
+      "http://117.175.185.81": "2026-02-06",
+      "http://210.56.49.72": "2026-02-06",
+      "http://43.132.105.118": "2026-02-06",
+      "http://43.155.62.54": "2026-02-06",
+      "http://47.93.54.134": "2026-02-06",
+      "http://49.89.41.187": "2026-02-06",
+      "http://60.205.148.180": "2026-02-06",
+      "http://61.139.76.99": "2026-02-06"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-02-06",
+    "latest": "2026-02-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "assetsqq.com",
+      "mkdmcdn.com",
+      "ssl-dns.com",
+      "vv.ssl-dns.com"
+    ],
+    "ipv4": [
+      "110.185.104.180:8000",
+      "110.92.64.177:8000",
+      "117.175.185.81:8003",
+      "43.132.205.118:81",
+      "43.155.62.54:81",
+      "47.238.107.83:81",
+      "47.93.54.134:8001",
+      "47.93.54.134:8003",
+      "47.93.54.134:8005",
+      "49.89.41.187:8001",
+      "49.89.41.187:8002",
+      "49.89.41.187:8003",
+      "89.195.5.18:4553"
+    ],
+    "url": [
+      "http://110.92.64.117",
+      "http://110.92.64.17",
+      "http://117.175.185.81",
+      "http://210.56.49.72",
+      "http://43.132.105.118",
+      "http://43.155.62.54",
+      "http://47.93.54.134",
+      "http://49.89.41.187",
+      "http://60.205.148.180",
+      "http://61.139.76.99"
+    ]
+  },
+  "last_modified": "2026-02-10T09:39:09+00:00",
+  "maltrail_groups": [
+    "THEWIZARDS"
+  ],
+  "references": [
+    "https://blog.talosintelligence.com/knife-cutting-the-edge/",
+    "https://github.com/Cisco-Talos/IOCs/blob/main/2026/02/knife-cutting-the-edge.txt",
+    "https://github.com/eset/malware-ioc/tree/master/thewizards",
+    "https://www.virustotal.com/gui/file/17a2dd45f9f57161b4cc40924296c4deab65beea447efb46d3178a9e76815d06/detection",
+    "https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/",
+    "https://x.com/skocherhan/status/2021067035447525705"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0096"
+    }
+  ],
+  "slug": "THEWIZARDS",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-02-10",
+      "indicators": {
+        "ipv4": [
+          "110.92.64.177:8000"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/skocherhan/status/2021067035447525705",
+        "https://www.virustotal.com/gui/file/17a2dd45f9f57161b4cc40924296c4deab65beea447efb46d3178a9e76815d06/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 12,
+        "url": 10
+      },
+      "first_seen": "2026-02-06",
+      "indicators": {
+        "domain": [
+          "assetsqq.com",
+          "mkdmcdn.com",
+          "ssl-dns.com",
+          "vv.ssl-dns.com"
+        ],
+        "ipv4": [
+          "110.185.104.180:8000",
+          "117.175.185.81:8003",
+          "43.132.205.118:81",
+          "43.155.62.54:81",
+          "47.238.107.83:81",
+          "47.93.54.134:8001",
+          "47.93.54.134:8003",
+          "47.93.54.134:8005",
+          "49.89.41.187:8001",
+          "49.89.41.187:8002",
+          "49.89.41.187:8003",
+          "89.195.5.18:4553"
+        ],
+        "url": [
+          "http://110.92.64.117",
+          "http://110.92.64.17",
+          "http://117.175.185.81",
+          "http://210.56.49.72",
+          "http://43.132.105.118",
+          "http://43.155.62.54",
+          "http://47.93.54.134",
+          "http://49.89.41.187",
+          "http://60.205.148.180",
+          "http://61.139.76.99"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/thewizards-apt-group-slaac-spoofing-adversary-in-the-middle-attacks/",
+        "https://blog.talosintelligence.com/knife-cutting-the-edge/",
+        "https://github.com/eset/malware-ioc/tree/master/thewizards",
+        "https://github.com/Cisco-Talos/IOCs/blob/main/2026/02/knife-cutting-the-edge.txt"
+      ],
+      "total": 26
+    }
+  ]
+}

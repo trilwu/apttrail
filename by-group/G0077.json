@@ -1,0 +1,72 @@
+{
+  "aliases": [],
+  "attack_id": "G0077",
+  "attack_name": "Leafminer",
+  "attack_url": "https://attack.mitre.org/groups/G0077/",
+  "counts": {
+    "domain": 7
+  },
+  "first_seen": {
+    "domain": {
+      "adobe-flash.us": "2018-08-07",
+      "adobe-plugin.bid": "2018-08-07",
+      "ilhost.in": "2018-08-07",
+      "iqhost.us": "2018-08-07",
+      "microsoft-office-free-templates-download.btc-int.in": "2018-08-07",
+      "microsoft-office-free-templates.in": "2018-08-07",
+      "offiice365.us": "2018-08-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-07",
+    "latest": "2018-08-07"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adobe-flash.us",
+      "adobe-plugin.bid",
+      "ilhost.in",
+      "iqhost.us",
+      "microsoft-office-free-templates-download.btc-int.in",
+      "microsoft-office-free-templates.in",
+      "offiice365.us"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "LEAFMINER"
+  ],
+  "references": [
+    "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+  ],
+  "related": [],
+  "slug": "G0077",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2018-08-07",
+      "indicators": {
+        "domain": [
+          "adobe-flash.us",
+          "adobe-plugin.bid",
+          "ilhost.in",
+          "iqhost.us",
+          "microsoft-office-free-templates-download.btc-int.in",
+          "microsoft-office-free-templates.in",
+          "offiice365.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/blogs/threat-intelligence/leafminer-espionage-middle-east"
+      ],
+      "total": 7
+    }
+  ]
+}

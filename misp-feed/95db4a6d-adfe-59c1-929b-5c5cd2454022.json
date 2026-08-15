@@ -1,0 +1,63 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1695327663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1e0a3130-6a19-5c40-bda6-f175bbe180b2",
+        "value": "encagil.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1695327663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "74918aa5-bc72-5670-aa58-f644e8591642",
+        "value": "explorecell.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1695327663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c3b92bfe-7d33-502e-a184-e46cab81607e",
+        "value": "mode.encagil.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1695327663",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "79073b69-908c-5f95-a5c6-7f463c77b1e9",
+        "value": "ssl.explorecell.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:sandman"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: SANDMAN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "95db4a6d-adfe-59c1-929b-5c5cd2454022"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537594787",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "36fced6d-1403-52b3-9d28-bace1e266fd7",
+        "value": "assadcrimes.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537594787",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d1dc7298-e1c6-5a68-babc-408cdb4e3a7d",
+        "value": "crypter.ir"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537594787",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b84b119b-3875-5356-ab39-6662dd8a7356",
+        "value": "crypting.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537594787",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4805c861-ee68-5538-9d60-2514fc5ff633",
+        "value": "server22.rayanegarco.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:group5"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Group5 - G0043\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Group5 (G0043) - Maltrail group GROUP5",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "640dbff2-d8ae-51df-a17a-331ee704c341"
+  }
+}

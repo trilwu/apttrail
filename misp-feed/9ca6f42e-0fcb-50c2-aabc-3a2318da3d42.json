@@ -1,0 +1,87 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ce69edd6-9c56-51e6-a48a-448d532a1a81",
+        "value": "glb.it-desktop.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b56240cb-a198-59d6-b094-33fa92bd4264",
+        "value": "globalprint-us.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c39dab56-b1bc-5279-a3ca-8d064c772b3a",
+        "value": "hi.getgo2.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "92071d2b-9284-53f4-a232-e447b78407d0",
+        "value": "intranetwabcam.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d6cf29b5-0f22-5f4c-9afb-e3390ab7e1c5",
+        "value": "local.it-desktop.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a58871b7-44c5-590f-93a1-8e9acc340ad8",
+        "value": "login.access-mail.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1536048417",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4a4de4fc-dd51-5be1-94e6-dafd6f69534b",
+        "value": "ns1.logitech-usa.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:webky"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: WEBKY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "9ca6f42e-0fcb-50c2-aabc-3a2318da3d42"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11
+  },
+  "first_seen": {
+    "domain": {
+      "ach-uz.com": "2026-01-02",
+      "audit-kg.com": "2026-01-02",
+      "esf-kg.com": "2026-01-02",
+      "hgame33.com": "2026-01-02",
+      "hisobot-uz.com": "2026-01-02",
+      "minjust-kg.com": "2026-01-02",
+      "nac-ac.com": "2026-01-02",
+      "ravinads.com": "2026-01-02",
+      "soliq-uz.com": "2026-01-02",
+      "ttbbaits.com": "2026-01-02",
+      "uzaudit.com": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "ach-uz.com": "at-or-before",
+      "audit-kg.com": "at-or-before",
+      "esf-kg.com": "at-or-before",
+      "hgame33.com": "at-or-before",
+      "hisobot-uz.com": "at-or-before",
+      "minjust-kg.com": "at-or-before",
+      "nac-ac.com": "at-or-before",
+      "ravinads.com": "at-or-before",
+      "soliq-uz.com": "at-or-before",
+      "ttbbaits.com": "at-or-before",
+      "uzaudit.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ach-uz.com",
+      "audit-kg.com",
+      "esf-kg.com",
+      "hgame33.com",
+      "hisobot-uz.com",
+      "minjust-kg.com",
+      "nac-ac.com",
+      "ravinads.com",
+      "soliq-uz.com",
+      "ttbbaits.com",
+      "uzaudit.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BLOODYWOLF"
+  ],
+  "references": [
+    "https://www.group-ib.com/blog/bloody-wolf/"
+  ],
+  "related": [],
+  "slug": "BLOODYWOLF",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ach-uz.com",
+          "audit-kg.com",
+          "esf-kg.com",
+          "hgame33.com",
+          "hisobot-uz.com",
+          "minjust-kg.com",
+          "nac-ac.com",
+          "ravinads.com",
+          "soliq-uz.com",
+          "ttbbaits.com",
+          "uzaudit.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.group-ib.com/blog/bloody-wolf/"
+      ],
+      "total": 11
+    }
+  ]
+}

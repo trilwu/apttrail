@@ -1,0 +1,82 @@
+{
+  "aliases": [
+    "nosydoor",
+    "nosydownloader",
+    "nosyhistorian"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "assesscompplan.com": "2026-01-02",
+      "blazenewso.com": "2026-01-02",
+      "privacypolicy-my.com": "2026-01-02",
+      "rethinkpayequity.com": "2026-01-02",
+      "sslvpnserver.com": "2026-01-02",
+      "threadstub.com": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "assesscompplan.com": "at-or-before",
+      "blazenewso.com": "at-or-before",
+      "privacypolicy-my.com": "at-or-before",
+      "rethinkpayequity.com": "at-or-before",
+      "sslvpnserver.com": "at-or-before",
+      "threadstub.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "assesscompplan.com",
+      "blazenewso.com",
+      "privacypolicy-my.com",
+      "rethinkpayequity.com",
+      "sslvpnserver.com",
+      "threadstub.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "LONGNOSEDGOBLIN"
+  ],
+  "references": [
+    "https://www.virustotal.com/gui/ip-address/103.159.132.75/relations",
+    "https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/"
+  ],
+  "related": [],
+  "slug": "LONGNOSEDGOBLIN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "assesscompplan.com",
+          "blazenewso.com",
+          "privacypolicy-my.com",
+          "rethinkpayequity.com",
+          "sslvpnserver.com",
+          "threadstub.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/longnosedgoblin-tries-sniff-out-governmental-affairs-southeast-asia-japan/",
+        "https://www.virustotal.com/gui/ip-address/103.159.132.75/relations"
+      ],
+      "total": 6
+    }
+  ]
+}

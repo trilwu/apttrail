@@ -1,0 +1,91 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cec81d55-3fbe-588c-9d74-b6fe0fbf5fa5",
+        "value": "adobe-flash.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8b776236-c525-5178-988e-375d6a8ea68a",
+        "value": "adobe-plugin.bid"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c7409ce5-6ff4-5d96-bac3-a9afce3739e8",
+        "value": "ilhost.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "77dbf6cb-f703-589a-bdf1-646e7b849ff3",
+        "value": "iqhost.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "53bb46e8-b80e-5dfa-91d2-20e7020c44e5",
+        "value": "microsoft-office-free-templates-download.btc-int.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e59a882f-eef1-5481-93af-2aa329e329af",
+        "value": "microsoft-office-free-templates.in"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1533683145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d085d5f1-958f-5d1d-bfcb-31baa738138b",
+        "value": "offiice365.us"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:leafminer"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Leafminer - G0077\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Leafminer (G0077) - Maltrail group LEAFMINER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "28a7ee0d-4b9d-569a-83ed-b9d6c242ec46"
+  }
+}

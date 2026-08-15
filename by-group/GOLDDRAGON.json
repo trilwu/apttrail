@@ -1,0 +1,159 @@
+{
+  "aliases": [
+    "brave prince",
+    "ghost419",
+    "gold dragon"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 13,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "0523qyfw.cn": "2024-10-30",
+      "0523qyfw.com": "2024-10-30",
+      "eodo1.000webhostapp.com": "2019-06-10",
+      "followgho.byethost7.com": "2019-06-10",
+      "ink.inkboom.co.kr": "2019-06-10",
+      "nid-help-pchange.atwebpages.com": "2019-06-10",
+      "nyazz.com": "2024-10-30",
+      "one.0523qyfw.com": "2024-10-30",
+      "redi.nyazz.com": "2024-10-30",
+      "scrt1.nyazz.com": "2024-10-30",
+      "ssh.0523qyfw.cn": "2024-10-30",
+      "ssh.0523qyfw.com": "2024-10-30",
+      "trydai.000webhostapp.com": "2019-06-10"
+    },
+    "ipv4": {
+      "107.148.61.127:8084": "2024-10-30",
+      "154.19.200.133:8087": "2024-10-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-06-10",
+    "latest": "2024-10-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0523qyfw.cn",
+      "0523qyfw.com",
+      "eodo1.000webhostapp.com",
+      "followgho.byethost7.com",
+      "ink.inkboom.co.kr",
+      "nid-help-pchange.atwebpages.com",
+      "nyazz.com",
+      "one.0523qyfw.com",
+      "redi.nyazz.com",
+      "scrt1.nyazz.com",
+      "ssh.0523qyfw.cn",
+      "ssh.0523qyfw.com",
+      "trydai.000webhostapp.com"
+    ],
+    "ipv4": [
+      "107.148.61.127:8084",
+      "154.19.200.133:8087"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GOLDDRAGON"
+  ],
+  "references": [
+    "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/",
+    "https://www.virustotal.com/gui/file/04102f13e59243cd2a96c435e9cc3c6dc3b52c988865926434a3b8cb643e5e63/detection",
+    "https://www.virustotal.com/gui/file/6153da017a50ba3f781c78b6a3a2be3552b9371574da657d97d0063a40b17bbf/detection",
+    "https://x.com/malwrhunterteam/status/1851566881825538348",
+    "https://x.com/malwrhunterteam/status/1851567599701705051"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    }
+  ],
+  "slug": "GOLDDRAGON",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1
+      },
+      "first_seen": "2024-10-30",
+      "indicators": {
+        "domain": [
+          "0523qyfw.cn",
+          "one.0523qyfw.com",
+          "redi.nyazz.com",
+          "ssh.0523qyfw.cn"
+        ],
+        "ipv4": [
+          "107.148.61.127:8084"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1851567599701705051",
+        "https://www.virustotal.com/gui/file/04102f13e59243cd2a96c435e9cc3c6dc3b52c988865926434a3b8cb643e5e63/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1
+      },
+      "first_seen": "2024-10-30",
+      "indicators": {
+        "domain": [
+          "0523qyfw.com",
+          "nyazz.com",
+          "scrt1.nyazz.com",
+          "ssh.0523qyfw.com"
+        ],
+        "ipv4": [
+          "154.19.200.133:8087"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1851566881825538348",
+        "https://www.virustotal.com/gui/file/6153da017a50ba3f781c78b6a3a2be3552b9371574da657d97d0063a40b17bbf/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-06-10",
+      "indicators": {
+        "domain": [
+          "eodo1.000webhostapp.com",
+          "followgho.byethost7.com",
+          "ink.inkboom.co.kr",
+          "nid-help-pchange.atwebpages.com",
+          "trydai.000webhostapp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/"
+      ],
+      "total": 5
+    }
+  ]
+}

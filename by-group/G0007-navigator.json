@@ -1,0 +1,501 @@
+{
+  "name": "APT28 (G0007) - APTtrail",
+  "description": "Techniques attributed to APT28 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0007.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1001.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1003.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1014",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1025",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1027.013",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1030",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1037.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1039",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1048.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1056.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1070.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1074.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1083",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1090.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1090.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1091",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1092",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1098.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1102.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1113",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1114.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1119",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1120",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1134.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1137.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1140",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1199",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1203",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1210",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1211",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1213",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1213.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1218.011",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1221",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1328",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1346",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1498",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1528",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1542.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1546.015",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1550.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1550.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1557.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1559.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1564.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1567",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1573.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1584.008",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1586.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.007",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1589.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1591",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1595.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1596",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1598.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1669",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1684.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.005",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by APT28",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

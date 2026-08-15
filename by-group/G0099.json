@@ -1,0 +1,872 @@
+{
+  "aliases": [
+    "aguilaciega",
+    "apt-c-36",
+    "apt-q-98",
+    "apt36",
+    "blind eagle",
+    "blotchyquasar",
+    "tag-144"
+  ],
+  "attack_id": "G0099",
+  "attack_name": "APT-C-36",
+  "attack_url": "https://attack.mitre.org/groups/G0099/",
+  "counts": {
+    "domain": 64,
+    "ipv4": 20,
+    "url": 9,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "ajaxcoder.polycomusa.com": "2022-04-18",
+      "aseguradotelle.duckdns.org": "2026-01-02",
+      "autgerman.autgerman.com": "2023-09-11",
+      "autgerman.com": "2023-11-03",
+      "axu87794.polycomusa.com": "2022-04-18",
+      "ceoempresarialsas.com": "2019-02-19",
+      "ceosas.linkpc.net": "2018-09-29",
+      "ceoseguros.com": "2019-02-19",
+      "chileimportaciones.cl": "2023-05-04",
+      "cryptersandtools.minhacasa.tv": "2023-07-12",
+      "defenderav.con-ip.com": "2022-04-18",
+      "dian.server.tl": "2023-04-26",
+      "diangovcomuiscia.com": "2019-02-19",
+      "edificiobaldeares.linkpc.net": "2024-09-06",
+      "enero2022.con-ip.com": "2022-04-18",
+      "envio02-04.duckdns.org": "2026-01-02",
+      "envio14-03.duckdns.org": "2026-01-02",
+      "envio1414.duckdns.org": "2026-01-02",
+      "envio19-05.duckdns.org": "2026-01-02",
+      "envio21-05.duckdns.org": "2026-01-02",
+      "envio2333.duckdns.org": "2026-01-02",
+      "envio26-03.duckdns.org": "2026-01-02",
+      "envio28-003.duckdns.org": "2026-01-02",
+      "envio29.duckdns.org": "2026-01-02",
+      "envio31-03.duckdns.org": "2026-01-02",
+      "equipo.linkpc.net": "2024-09-06",
+      "febenvi.duckdns.org": "2022-03-15",
+      "giraffebear.polycomusa.com": "2022-04-18",
+      "hellmagers.polycomusa.com": "2022-04-18",
+      "host-rami.polycomusa.com": "2022-04-18",
+      "ismaboli.com": "2019-02-19",
+      "laminascol.linkpc.net": "2023-01-06",
+      "marzo72022.con-ip.com": "2022-04-18",
+      "medicosco.publicvm.com": "2019-02-19",
+      "medicosempresa.com": "2019-07-01",
+      "mega.polycomusa.com": "2022-04-18",
+      "mentes.publicvm.com": "2019-02-19",
+      "ojosostenerfebrero.duckdns.org": "2026-01-02",
+      "perfect5.publicvm.com": "2024-09-06",
+      "perfect8.publicvm.com": "2024-09-06",
+      "polycomusa.com": "2022-04-18",
+      "pub-4c182737706e41d29aee6cc5517f834d.r2.dev": "2024-10-02",
+      "pub-6346c84860d5480393a1799fb277dfdc.r2.dev": "2024-10-02",
+      "qua25q.duckdns.org": "2026-01-02",
+      "qua25qua.duckdns.org": "2026-01-02",
+      "respaldito01.duckdns.org": "2026-01-02",
+      "respaldito03.duckdns.org": "2026-01-02",
+      "respaldomax3.duckdns.org": "2026-01-02",
+      "respaldomax4.duckdns.org": "2026-01-02",
+      "respaldomx1.duckdns.org": "2026-01-02",
+      "respaldomx5.duckdns.org": "2026-01-02",
+      "sainth.polycomusa.com": "2022-04-18",
+      "sanctuary.polycomusa.com": "2022-04-18",
+      "sicariop.polycomusa.com": "2022-04-18",
+      "smakaf1.polycomusa.com": "2022-04-18",
+      "strekhost2066.duckdns.org": "2023-05-06",
+      "subirfact.com": "2023-11-03",
+      "systemwin.linkpc.net": "2023-01-06",
+      "therussian.polycomusa.com": "2022-04-21",
+      "upxsystems.com": "2023-01-06",
+      "vargasvargasabogadosnotificaciones.privat.lc": "2023-07-12",
+      "yty0do.polycomusa.com": "2022-04-18",
+      "zhost.polycomusa.com": "2022-04-18",
+      "zvoracle.polycomusa.com": "2022-04-18"
+    },
+    "ipv4": {
+      "103.151.124.233:666": "2022-04-18",
+      "128.90.108.115:4799": "2024-09-06",
+      "128.90.115.167:4799": "2024-09-06",
+      "128.90.115.93:4799": "2024-09-06",
+      "128.90.115.95:4724": "2024-09-06",
+      "128.90.130.185:4724": "2024-09-06",
+      "177.255.89.112:4203": "2023-03-26",
+      "177.255.89.112:5220": "2023-05-06",
+      "181.130.5.112:33889": "2022-04-18",
+      "181.130.9.145:6522": "2022-04-18",
+      "181.130.9.145:6525": "2022-04-18",
+      "181.131.217.174:2050": "2022-03-15",
+      "2.56.57.27:8080": "2022-04-18",
+      "2.56.59.208:7075": "2022-04-18",
+      "35.34.5.27:443": "2024-10-02",
+      "45.147.231.85:12632": "2022-04-18",
+      "62.197.136.252:1655": "2022-04-18",
+      "69.167.10.207:4845": "2024-09-06",
+      "69.167.11.9:4724": "2024-09-06",
+      "69.167.8.118:9057": "2024-09-06"
+    },
+    "url": {
+      "http://104.168.32.148": "2024-10-02",
+      "http://107.172.130.147": "2024-10-02",
+      "http://134.19.177.44": "2024-10-02",
+      "http://134.255.227.248": "2024-10-02",
+      "http://172.232.184.131": "2024-10-02",
+      "http://185.29.10.52": "2024-10-02",
+      "http://198.46.129.134": "2024-10-02",
+      "http://45.79.190.156": "2024-10-02",
+      "http://72.5.43.53": "2024-10-02"
+    },
+    "url_path": {
+      "/hAkDVgKdlfL7jcn/": "2022-09-19",
+      "/udodinmauwa.txt": "2023-05-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "aseguradotelle.duckdns.org": "at-or-before",
+      "envio02-04.duckdns.org": "at-or-before",
+      "envio14-03.duckdns.org": "at-or-before",
+      "envio1414.duckdns.org": "at-or-before",
+      "envio19-05.duckdns.org": "at-or-before",
+      "envio21-05.duckdns.org": "at-or-before",
+      "envio2333.duckdns.org": "at-or-before",
+      "envio26-03.duckdns.org": "at-or-before",
+      "envio28-003.duckdns.org": "at-or-before",
+      "envio29.duckdns.org": "at-or-before",
+      "envio31-03.duckdns.org": "at-or-before",
+      "ojosostenerfebrero.duckdns.org": "at-or-before",
+      "qua25q.duckdns.org": "at-or-before",
+      "qua25qua.duckdns.org": "at-or-before",
+      "respaldito01.duckdns.org": "at-or-before",
+      "respaldito03.duckdns.org": "at-or-before",
+      "respaldomax3.duckdns.org": "at-or-before",
+      "respaldomax4.duckdns.org": "at-or-before",
+      "respaldomx1.duckdns.org": "at-or-before",
+      "respaldomx5.duckdns.org": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-29",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ajaxcoder.polycomusa.com",
+      "aseguradotelle.duckdns.org",
+      "autgerman.autgerman.com",
+      "autgerman.com",
+      "axu87794.polycomusa.com",
+      "ceoempresarialsas.com",
+      "ceosas.linkpc.net",
+      "ceoseguros.com",
+      "chileimportaciones.cl",
+      "cryptersandtools.minhacasa.tv",
+      "defenderav.con-ip.com",
+      "dian.server.tl",
+      "diangovcomuiscia.com",
+      "edificiobaldeares.linkpc.net",
+      "enero2022.con-ip.com",
+      "envio02-04.duckdns.org",
+      "envio14-03.duckdns.org",
+      "envio1414.duckdns.org",
+      "envio19-05.duckdns.org",
+      "envio21-05.duckdns.org",
+      "envio2333.duckdns.org",
+      "envio26-03.duckdns.org",
+      "envio28-003.duckdns.org",
+      "envio29.duckdns.org",
+      "envio31-03.duckdns.org",
+      "equipo.linkpc.net",
+      "febenvi.duckdns.org",
+      "giraffebear.polycomusa.com",
+      "hellmagers.polycomusa.com",
+      "host-rami.polycomusa.com",
+      "ismaboli.com",
+      "laminascol.linkpc.net",
+      "marzo72022.con-ip.com",
+      "medicosco.publicvm.com",
+      "medicosempresa.com",
+      "mega.polycomusa.com",
+      "mentes.publicvm.com",
+      "ojosostenerfebrero.duckdns.org",
+      "perfect5.publicvm.com",
+      "perfect8.publicvm.com",
+      "polycomusa.com",
+      "pub-4c182737706e41d29aee6cc5517f834d.r2.dev",
+      "pub-6346c84860d5480393a1799fb277dfdc.r2.dev",
+      "qua25q.duckdns.org",
+      "qua25qua.duckdns.org",
+      "respaldito01.duckdns.org",
+      "respaldito03.duckdns.org",
+      "respaldomax3.duckdns.org",
+      "respaldomax4.duckdns.org",
+      "respaldomx1.duckdns.org",
+      "respaldomx5.duckdns.org",
+      "sainth.polycomusa.com",
+      "sanctuary.polycomusa.com",
+      "sicariop.polycomusa.com",
+      "smakaf1.polycomusa.com",
+      "strekhost2066.duckdns.org",
+      "subirfact.com",
+      "systemwin.linkpc.net",
+      "therussian.polycomusa.com",
+      "upxsystems.com",
+      "vargasvargasabogadosnotificaciones.privat.lc",
+      "yty0do.polycomusa.com",
+      "zhost.polycomusa.com",
+      "zvoracle.polycomusa.com"
+    ],
+    "ipv4": [
+      "103.151.124.233:666",
+      "128.90.108.115:4799",
+      "128.90.115.167:4799",
+      "128.90.115.93:4799",
+      "128.90.115.95:4724",
+      "128.90.130.185:4724",
+      "177.255.89.112:4203",
+      "177.255.89.112:5220",
+      "181.130.5.112:33889",
+      "181.130.9.145:6522",
+      "181.130.9.145:6525",
+      "181.131.217.174:2050",
+      "2.56.57.27:8080",
+      "2.56.59.208:7075",
+      "35.34.5.27:443",
+      "45.147.231.85:12632",
+      "62.197.136.252:1655",
+      "69.167.10.207:4845",
+      "69.167.11.9:4724",
+      "69.167.8.118:9057"
+    ],
+    "url": [
+      "http://104.168.32.148",
+      "http://107.172.130.147",
+      "http://134.19.177.44",
+      "http://134.255.227.248",
+      "http://172.232.184.131",
+      "http://185.29.10.52",
+      "http://198.46.129.134",
+      "http://45.79.190.156",
+      "http://72.5.43.53"
+    ],
+    "url_path": [
+      "/hAkDVgKdlfL7jcn/",
+      "/udodinmauwa.txt"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BLINDEAGLE"
+  ],
+  "references": [
+    "https://gist.github.com/kirk-sayre-work/354d875086bb533b3095dc06b7537869",
+    "https://mp.weixin.qq.com/s/-7U1-NTP0EdVOtptzbHUsg (Chinese)",
+    "https://otx.alienvault.com/pulse/64419d343c9d98fc279185f7",
+    "https://research.checkpoint.com/2023/blindeagle-targeting-ecuador-with-sharpened-tools/",
+    "https://ti.360.net/blog/articles/apt-c-36-continuous-attacks-targeting-colombian-government-institutions-and-corporations-en/",
+    "https://tria.ge/220314-3qe5padgh2",
+    "https://tria.ge/230506-mbyeqagg43/behavioral1",
+    "https://tria.ge/230506-mdhr2sgg55/behavioral2",
+    "https://twitter.com/0xToxin/status/1654802474534830080",
+    "https://twitter.com/1ZRR4H/status/1503572957595111427",
+    "https://twitter.com/HONKONE_K/status/1145536069435195392",
+    "https://twitter.com/Joseliyo_Jstnk/status/1654038642489442304",
+    "https://twitter.com/Joseliyo_Jstnk/status/1654038649514921984",
+    "https://twitter.com/dark0pcodes/status/1678920710872244225",
+    "https://twitter.com/th3_protoCOL/status/1517144901871235072",
+    "https://www.recordedfuture.com/research/tag-144s-persistent-grip-on-south-american-organizations",
+    "https://www.virustotal.com/gui/domain/polycomusa.com/community",
+    "https://www.virustotal.com/gui/file/13e36170821628f9097862556e42cbed5f1cccc6897405fc7edc8ae914675bf4/detection",
+    "https://www.virustotal.com/gui/file/378e01925608bcd74544a5b5536c20a0007eb255e145370df228bb004aa59de2/detection",
+    "https://www.virustotal.com/gui/file/50d29874cbfe0d2cb5aa6e30d56cb62091a935214a8158173c065476893df49b/detection",
+    "https://www.virustotal.com/gui/file/7d2862bafaa267a5b2e9dae56c92018fe685c1a35ff5ec8f8196b3fe541c8dc6/detection",
+    "https://www.virustotal.com/gui/file/8038bd440b03f72d2f1147b2eb0642d6ab3bb54fc88dca1cade2df3b11cf207f/detection",
+    "https://www.virustotal.com/gui/file/80e498268b8be964d5a74ca226218b17cb7a28a8929e70e2d2c3aed768e6308c/detection",
+    "https://www.virustotal.com/gui/file/8b437a76538722dc4535cbf3180005eb973caa6e9be13c6d3852fed1789960a0/detection",
+    "https://www.virustotal.com/gui/file/8c2215d43e7cd77c90a424ca6c81c1b94acf01eaecbb048447e171ebef0c2dfd/detection",
+    "https://www.virustotal.com/gui/file/95eb3d6f61d5082bee11ea47a7c90c0dcdc18af71985276ab56f648dcc549d87/detection",
+    "https://www.virustotal.com/gui/file/9c10849b9f11cda1187e3827089261eb6b2a1d15c58c0180379390a05a90ec28/detection",
+    "https://www.virustotal.com/gui/file/b63b7ab595fe60b92be73ba8b6e620cbff34c0f369723de15159c17dbef5f152/detection",
+    "https://www.virustotal.com/gui/file/c2081fafabc9816a2392f3936489d78f72dc794b8f0a8d370fadeb257b3b9a20/detection",
+    "https://www.virustotal.com/gui/file/e81baa5e7bf0fe2ebeb07983e71d05d09698e567d9bcaf17176e631156d01c60/detection",
+    "https://www.virustotal.com/gui/file/eb4a92271d1e034d3107a4acb892b37cab12cda6afb6903690cc1b11fe700492/detection",
+    "https://www.virustotal.com/gui/file/ebbc37e280f15408a2ff17bec1151cc64d151e20c1e59209a76b9eb3944d6704/detection",
+    "https://www.virustotal.com/gui/file/ec2dd6753e42f0e0b173a98f074aa41d2640390c163ae77999eb6c10ff7e2ebd/detection",
+    "https://www.virustotal.com/gui/file/f964f108f661de1c15e3cedee074cf1617ce02f85eb7e8613077f9ed95c4b37d/detection",
+    "https://www.zscaler.com/blogs/security-research/blindeagle-targets-colombian-insurance-sector-blotchyquasar",
+    "https://x.com/bigmacjpg/status/1841133075880632683"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNCLASSIFIED"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "slug": "G0078"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Remcos, njRAT, QuasarRAT",
+          "kind": "software",
+          "weight": 0.56
+        }
+      ],
+      "slug": "G0140"
+    }
+  ],
+  "slug": "G0099",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aseguradotelle.duckdns.org",
+          "envio02-04.duckdns.org",
+          "envio14-03.duckdns.org",
+          "envio1414.duckdns.org",
+          "envio19-05.duckdns.org",
+          "envio21-05.duckdns.org",
+          "envio2333.duckdns.org",
+          "envio26-03.duckdns.org",
+          "envio28-003.duckdns.org",
+          "envio29.duckdns.org",
+          "envio31-03.duckdns.org",
+          "ojosostenerfebrero.duckdns.org",
+          "qua25q.duckdns.org",
+          "qua25qua.duckdns.org",
+          "respaldito01.duckdns.org",
+          "respaldito03.duckdns.org",
+          "respaldomax3.duckdns.org",
+          "respaldomax4.duckdns.org",
+          "respaldomx1.duckdns.org",
+          "respaldomx5.duckdns.org"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.recordedfuture.com/research/tag-144s-persistent-grip-on-south-american-organizations"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url": 9
+      },
+      "first_seen": "2024-10-02",
+      "indicators": {
+        "domain": [
+          "pub-4c182737706e41d29aee6cc5517f834d.r2.dev",
+          "pub-6346c84860d5480393a1799fb277dfdc.r2.dev"
+        ],
+        "ipv4": [
+          "35.34.5.27:443"
+        ],
+        "url": [
+          "http://104.168.32.148",
+          "http://107.172.130.147",
+          "http://134.19.177.44",
+          "http://134.255.227.248",
+          "http://172.232.184.131",
+          "http://185.29.10.52",
+          "http://198.46.129.134",
+          "http://45.79.190.156",
+          "http://72.5.43.53"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/bigmacjpg/status/1841133075880632683",
+        "https://gist.github.com/kirk-sayre-work/354d875086bb533b3095dc06b7537869"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 8
+      },
+      "first_seen": "2024-09-06",
+      "indicators": {
+        "domain": [
+          "edificiobaldeares.linkpc.net",
+          "equipo.linkpc.net",
+          "perfect5.publicvm.com",
+          "perfect8.publicvm.com"
+        ],
+        "ipv4": [
+          "128.90.108.115:4799",
+          "128.90.115.167:4799",
+          "128.90.115.93:4799",
+          "128.90.115.95:4724",
+          "128.90.130.185:4724",
+          "69.167.10.207:4845",
+          "69.167.11.9:4724",
+          "69.167.8.118:9057"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/blindeagle-targets-colombian-insurance-sector-blotchyquasar",
+        "https://www.virustotal.com/gui/file/ec2dd6753e42f0e0b173a98f074aa41d2640390c163ae77999eb6c10ff7e2ebd/detection",
+        "https://www.virustotal.com/gui/file/eb4a92271d1e034d3107a4acb892b37cab12cda6afb6903690cc1b11fe700492/detection",
+        "https://www.virustotal.com/gui/file/c2081fafabc9816a2392f3936489d78f72dc794b8f0a8d370fadeb257b3b9a20/detection",
+        "https://www.virustotal.com/gui/file/b63b7ab595fe60b92be73ba8b6e620cbff34c0f369723de15159c17dbef5f152/detection",
+        "https://www.virustotal.com/gui/file/9c10849b9f11cda1187e3827089261eb6b2a1d15c58c0180379390a05a90ec28/detection",
+        "https://www.virustotal.com/gui/file/8038bd440b03f72d2f1147b2eb0642d6ab3bb54fc88dca1cade2df3b11cf207f/detection",
+        "https://www.virustotal.com/gui/file/7d2862bafaa267a5b2e9dae56c92018fe685c1a35ff5ec8f8196b3fe541c8dc6/detection",
+        "https://www.virustotal.com/gui/file/50d29874cbfe0d2cb5aa6e30d56cb62091a935214a8158173c065476893df49b/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-11-03",
+      "indicators": {
+        "domain": [
+          "autgerman.com",
+          "subirfact.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://mp.weixin.qq.com/s/-7U1-NTP0EdVOtptzbHUsg (Chinese)"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-11",
+      "indicators": {
+        "domain": [
+          "autgerman.autgerman.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://mp.weixin.qq.com/s/-7U1-NTP0EdVOtptzbHUsg (Chinese)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-07-12",
+      "indicators": {
+        "domain": [
+          "cryptersandtools.minhacasa.tv",
+          "vargasvargasabogadosnotificaciones.privat.lc"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/dark0pcodes/status/1678920710872244225"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2023-05-06",
+      "indicators": {
+        "domain": [
+          "strekhost2066.duckdns.org"
+        ],
+        "ipv4": [
+          "177.255.89.112:5220"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/0xToxin/status/1654802474534830080",
+        "https://tria.ge/230506-mbyeqagg43/behavioral1",
+        "https://tria.ge/230506-mdhr2sgg55/behavioral2"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2023-05-04",
+      "indicators": {
+        "domain": [
+          "chileimportaciones.cl"
+        ],
+        "url_path": [
+          "/udodinmauwa.txt"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Joseliyo_Jstnk/status/1654038642489442304",
+        "https://twitter.com/Joseliyo_Jstnk/status/1654038649514921984"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-04-26",
+      "indicators": {
+        "domain": [
+          "dian.server.tl"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/64419d343c9d98fc279185f7"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-03-26",
+      "indicators": {
+        "ipv4": [
+          "177.255.89.112:4203"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/0xToxin/status/1654802474534830080",
+        "https://tria.ge/230506-mbyeqagg43/behavioral1",
+        "https://tria.ge/230506-mdhr2sgg55/behavioral2"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-01-06",
+      "indicators": {
+        "domain": [
+          "laminascol.linkpc.net",
+          "systemwin.linkpc.net",
+          "upxsystems.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2023/blindeagle-targeting-ecuador-with-sharpened-tools/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2022-09-19",
+      "indicators": {
+        "url_path": [
+          "/hAkDVgKdlfL7jcn/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/th3_protoCOL/status/1517144901871235072",
+        "https://www.virustotal.com/gui/domain/polycomusa.com/community",
+        "https://www.virustotal.com/gui/file/13e36170821628f9097862556e42cbed5f1cccc6897405fc7edc8ae914675bf4/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-21",
+      "indicators": {
+        "domain": [
+          "therussian.polycomusa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/th3_protoCOL/status/1517144901871235072",
+        "https://www.virustotal.com/gui/domain/polycomusa.com/community",
+        "https://www.virustotal.com/gui/file/13e36170821628f9097862556e42cbed5f1cccc6897405fc7edc8ae914675bf4/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "domain": [
+          "ajaxcoder.polycomusa.com",
+          "axu87794.polycomusa.com",
+          "giraffebear.polycomusa.com",
+          "hellmagers.polycomusa.com",
+          "host-rami.polycomusa.com",
+          "mega.polycomusa.com",
+          "polycomusa.com",
+          "sainth.polycomusa.com",
+          "sanctuary.polycomusa.com",
+          "sicariop.polycomusa.com",
+          "smakaf1.polycomusa.com",
+          "yty0do.polycomusa.com",
+          "zhost.polycomusa.com",
+          "zvoracle.polycomusa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/th3_protoCOL/status/1517144901871235072",
+        "https://www.virustotal.com/gui/domain/polycomusa.com/community",
+        "https://www.virustotal.com/gui/file/13e36170821628f9097862556e42cbed5f1cccc6897405fc7edc8ae914675bf4/detection"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "domain": [
+          "defenderav.con-ip.com"
+        ],
+        "ipv4": [
+          "181.130.5.112:33889"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/ebbc37e280f15408a2ff17bec1151cc64d151e20c1e59209a76b9eb3944d6704/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "domain": [
+          "marzo72022.con-ip.com"
+        ],
+        "ipv4": [
+          "181.130.9.145:6525"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/e81baa5e7bf0fe2ebeb07983e71d05d09698e567d9bcaf17176e631156d01c60/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "domain": [
+          "enero2022.con-ip.com"
+        ],
+        "ipv4": [
+          "181.130.9.145:6522"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/8b437a76538722dc4535cbf3180005eb973caa6e9be13c6d3852fed1789960a0/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "ipv4": [
+          "45.147.231.85:12632"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/f964f108f661de1c15e3cedee074cf1617ce02f85eb7e8613077f9ed95c4b37d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "ipv4": [
+          "2.56.59.208:7075"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/95eb3d6f61d5082bee11ea47a7c90c0dcdc18af71985276ab56f648dcc549d87/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "ipv4": [
+          "2.56.57.27:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/8c2215d43e7cd77c90a424ca6c81c1b94acf01eaecbb048447e171ebef0c2dfd/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "ipv4": [
+          "62.197.136.252:1655"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/80e498268b8be964d5a74ca226218b17cb7a28a8929e70e2d2c3aed768e6308c/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-18",
+      "indicators": {
+        "ipv4": [
+          "103.151.124.233:666"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/378e01925608bcd74544a5b5536c20a0007eb255e145370df228bb004aa59de2/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-15",
+      "indicators": {
+        "domain": [
+          "febenvi.duckdns.org"
+        ],
+        "ipv4": [
+          "181.131.217.174:2050"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/1ZRR4H/status/1503572957595111427",
+        "https://tria.ge/220314-3qe5padgh2"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-07-01",
+      "indicators": {
+        "domain": [
+          "medicosempresa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/HONKONE_K/status/1145536069435195392"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-02-19",
+      "indicators": {
+        "domain": [
+          "ceoempresarialsas.com",
+          "ceoseguros.com",
+          "diangovcomuiscia.com",
+          "ismaboli.com",
+          "medicosco.publicvm.com",
+          "mentes.publicvm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/apt-c-36-continuous-attacks-targeting-colombian-government-institutions-and-corporations-en/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-29",
+      "indicators": {
+        "domain": [
+          "ceosas.linkpc.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/apt-c-36-continuous-attacks-targeting-colombian-government-institutions-and-corporations-en/"
+      ],
+      "total": 1
+    }
+  ]
+}

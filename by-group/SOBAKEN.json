@@ -1,0 +1,258 @@
+{
+  "aliases": [
+    "SPECTR",
+    "Vermin",
+    "firmachagent"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 27,
+    "url": 5
+  },
+  "first_seen": {
+    "domain": {
+      "aeroua.online": "2026-01-02",
+      "akamaicdn.ru": "2018-07-25",
+      "akamainet021.info": "2018-07-25",
+      "akamainet022.info": "2018-07-25",
+      "akamainet023.info": "2018-07-25",
+      "akamainet024.info": "2018-07-25",
+      "akamainet066.info": "2018-07-25",
+      "akamainet067.info": "2018-07-25",
+      "aviasys.somee.com": "2026-01-02",
+      "cdnakamai.ru": "2018-07-25",
+      "code.ukraero.space": "2026-01-02",
+      "firma.ukraero.space": "2026-01-02",
+      "getmod.host": "2022-03-17",
+      "gw.telegrarn.fun": "2026-01-02",
+      "mail.ukraero.space": "2026-01-02",
+      "mailukr.net": "2018-07-25",
+      "meteolink.host": "2022-03-17",
+      "netbin.host": "2022-03-17",
+      "notifymail.ru": "2018-07-25",
+      "prozorro.online": "2024-08-20",
+      "stormpredictor.host": "2022-03-17",
+      "syncapp.host": "2022-03-17",
+      "tech-adobe.dyndns.biz": "2018-07-25",
+      "telegrarn.fun": "2026-01-02",
+      "ukr.somee.com": "2026-01-02",
+      "ukraero.space": "2024-08-20",
+      "windowsupdate.kiev.ua": "2018-07-25"
+    },
+    "url": {
+      "http://171.22.120.50": "2024-08-20",
+      "http://176.119.2.194": "2022-03-17",
+      "http://176.119.2.195": "2022-03-17",
+      "http://176.119.2.212": "2022-03-17",
+      "http://176.119.2.214": "2022-03-17"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "aeroua.online": "at-or-before",
+      "aviasys.somee.com": "at-or-before",
+      "code.ukraero.space": "at-or-before",
+      "firma.ukraero.space": "at-or-before",
+      "gw.telegrarn.fun": "at-or-before",
+      "mail.ukraero.space": "at-or-before",
+      "telegrarn.fun": "at-or-before",
+      "ukr.somee.com": "at-or-before"
+    },
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-07-25",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aeroua.online",
+      "akamaicdn.ru",
+      "akamainet021.info",
+      "akamainet022.info",
+      "akamainet023.info",
+      "akamainet024.info",
+      "akamainet066.info",
+      "akamainet067.info",
+      "aviasys.somee.com",
+      "cdnakamai.ru",
+      "code.ukraero.space",
+      "firma.ukraero.space",
+      "getmod.host",
+      "gw.telegrarn.fun",
+      "mail.ukraero.space",
+      "mailukr.net",
+      "meteolink.host",
+      "netbin.host",
+      "notifymail.ru",
+      "prozorro.online",
+      "stormpredictor.host",
+      "syncapp.host",
+      "tech-adobe.dyndns.biz",
+      "telegrarn.fun",
+      "ukr.somee.com",
+      "ukraero.space",
+      "windowsupdate.kiev.ua"
+    ],
+    "url": [
+      "http://171.22.120.50",
+      "http://176.119.2.194",
+      "http://176.119.2.195",
+      "http://176.119.2.212",
+      "http://176.119.2.214"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SOBAKEN"
+  ],
+  "references": [
+    "https://cert.gov.ua/article/37815 (Ukrainian)",
+    "https://cert.gov.ua/article/6280422",
+    "https://malpedia.caad.fkie.fraunhofer.de/details/win.vermin",
+    "https://www.virustotal.com/gui/file/076edddf05a35a150d4e973eca9e7acd6249abca54f2d12ca05f0464aaca37e6/detection",
+    "https://www.virustotal.com/gui/file/250f49264ff06c39f2222d4d7e73685ad39e72effe806341ccbe73d1fc759743/detection",
+    "https://www.virustotal.com/gui/file/621b0d5a0c91b1d90588b78bc04fa961412601ab392b91b9d3995498a417dca4/detection",
+    "https://www.virustotal.com/gui/file/b474e4db82023d913a00b6c127e1ba6c2b65129e906c4babdf01a69ef8851e84/detection",
+    "https://www.virustotal.com/gui/ip-address/171.22.120.50/relations",
+    "https://www.virustotal.com/gui/ip-address/91.225.219.185/relations",
+    "https://www.virustotal.com/gui/ip-address/94.232.249.88/relations",
+    "https://www.welivesecurity.com/wp-content/uploads/2018/07/ESET_Quasar_Sobaken_Vermin.pdf",
+    "https://x.com/JAMESWT_WT/status/1950522465068720460",
+    "https://x.com/smica83/status/1950515843110154388"
+  ],
+  "related": [],
+  "slug": "SOBAKEN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aeroua.online",
+          "gw.telegrarn.fun",
+          "telegrarn.fun",
+          "ukr.somee.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/smica83/status/1950515843110154388",
+        "https://x.com/JAMESWT_WT/status/1950522465068720460",
+        "https://www.virustotal.com/gui/file/076edddf05a35a150d4e973eca9e7acd6249abca54f2d12ca05f0464aaca37e6/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aviasys.somee.com",
+          "code.ukraero.space",
+          "firma.ukraero.space",
+          "mail.ukraero.space"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://cert.gov.ua/article/6280422",
+        "https://www.virustotal.com/gui/ip-address/171.22.120.50/relations",
+        "https://www.virustotal.com/gui/ip-address/91.225.219.185/relations",
+        "https://www.virustotal.com/gui/ip-address/94.232.249.88/relations",
+        "https://www.virustotal.com/gui/file/b474e4db82023d913a00b6c127e1ba6c2b65129e906c4babdf01a69ef8851e84/detection",
+        "https://www.virustotal.com/gui/file/250f49264ff06c39f2222d4d7e73685ad39e72effe806341ccbe73d1fc759743/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2024-08-20",
+      "indicators": {
+        "domain": [
+          "prozorro.online",
+          "ukraero.space"
+        ],
+        "url": [
+          "http://171.22.120.50"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/6280422",
+        "https://www.virustotal.com/gui/ip-address/171.22.120.50/relations",
+        "https://www.virustotal.com/gui/ip-address/91.225.219.185/relations",
+        "https://www.virustotal.com/gui/ip-address/94.232.249.88/relations",
+        "https://www.virustotal.com/gui/file/b474e4db82023d913a00b6c127e1ba6c2b65129e906c4babdf01a69ef8851e84/detection",
+        "https://www.virustotal.com/gui/file/250f49264ff06c39f2222d4d7e73685ad39e72effe806341ccbe73d1fc759743/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5,
+        "url": 4
+      },
+      "first_seen": "2022-03-17",
+      "indicators": {
+        "domain": [
+          "getmod.host",
+          "meteolink.host",
+          "netbin.host",
+          "stormpredictor.host",
+          "syncapp.host"
+        ],
+        "url": [
+          "http://176.119.2.194",
+          "http://176.119.2.195",
+          "http://176.119.2.212",
+          "http://176.119.2.214"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://malpedia.caad.fkie.fraunhofer.de/details/win.vermin",
+        "https://cert.gov.ua/article/37815 (Ukrainian)",
+        "https://www.virustotal.com/gui/file/621b0d5a0c91b1d90588b78bc04fa961412601ab392b91b9d3995498a417dca4/detection"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2018-07-25",
+      "indicators": {
+        "domain": [
+          "akamaicdn.ru",
+          "akamainet021.info",
+          "akamainet022.info",
+          "akamainet023.info",
+          "akamainet024.info",
+          "akamainet066.info",
+          "akamainet067.info",
+          "cdnakamai.ru",
+          "mailukr.net",
+          "notifymail.ru",
+          "tech-adobe.dyndns.biz",
+          "windowsupdate.kiev.ua"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/wp-content/uploads/2018/07/ESET_Quasar_Sobaken_Vermin.pdf"
+      ],
+      "total": 12
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>WIRTE · APTtrail</title>
+<meta name=description content="90 indicators attributed to WIRTE (G0090), from 28 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0090.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="WIRTE · APTtrail">
+<meta property="og:description" content="90 indicators attributed to WIRTE (G0090), from 28 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0090.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>WIRTE <a class=gid href="https://attack.mitre.org/groups/G0090/">G0090</a></h1>
+<p class=aka><b>WIRTE</b> &middot; ashenlepus &middot; ashenloader &middot; ashenorchestrator &middot; ashenstager &middot; ashtag</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>90</dd></div>
+<div><dt>Source reports</dt><dd>28</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-01-02</dd></div>
+</dl>
+<div class=spark><span style="--h:31%" title="2018: 3 indicators"></span><span style="--h:44%" title="2019: 6 indicators"></span><span style="--h:36%" title="2020: 4 indicators"></span><span style="--h:25%" title="2021: 2 indicators"></span><span style="--h:67%" title="2022: 14 indicators"></span><span style="--h:0%" title="2023: 0 indicators"></span><span style="--h:100%" title="2024: 31 indicators"></span><span style="--h:0%" title="2025: 0 indicators"></span><span class=hot style="--h:98%" title="2026: 30 indicators"></span></div>
+<div class=spark-axis><span>2018</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=PS">PS</a></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_wirte.txt">WIRTE</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0090.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0090-domain.txt</pre>
+<p class=note><a href="G0090.json">G0090.json</a> &middot; <a href="G0090-domain.txt">G0090-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>90 indicators</span></h2>
+<p class=lede>WIRTE is a cyberespionage actor, believed to be a subgroup of the Hamas-affiliated Gaza Cybergang, that has been active since at least August 2018. WIRTE has targeted diplomatic, financial, military, legal, and technology organizations across the Middle East, North Africa, and in Europe to gather intelligence. WIRTE has remained persistently active despite the ongoing Israel-Hamas conflict and has expanded their operations to include wiper malware attacks against Israeli targets.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>82</td><td class=f><a href="G0090-domain.txt">G0090-domain.txt</a></td></tr>
+<tr><td>ipv4</td><td class=n>6</td><td class=f><a href="G0090.json">G0090.json</a></td></tr>
+<tr><td>url</td><td class=n>1</td><td class=f><a href="G0090.json">G0090.json</a></td></tr>
+<tr><td>url_path</td><td class=n>1</td><td class=f><a href="G0090.json">G0090.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>26 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0090-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0090-navigator.json">download the layer</a> (26 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1027/010/"><b>T1027.010</b> Command Obfuscation</a></li><li><a href="https://attack.mitre.org/techniques/T1027/015/"><b>T1027.015</b> Compression</a></li><li><a href="https://attack.mitre.org/techniques/T1036/005/"><b>T1036.005</b> Match Legitimate Resource Name or Location</a></li><li><a href="https://attack.mitre.org/techniques/T1041/"><b>T1041</b> Exfiltration Over C2 Channel</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/003/"><b>T1059.003</b> Windows Command Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/005/"><b>T1059.005</b> Visual Basic</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1074/001/"><b>T1074.001</b> Local Data Staging</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1106/"><b>T1106</b> Native API</a></li><li><a href="https://attack.mitre.org/techniques/T1114/001/"><b>T1114.001</b> Local Email Collection</a></li><li><a href="https://attack.mitre.org/techniques/T1140/"><b>T1140</b> Deobfuscate/Decode Files or Information</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1204/002/"><b>T1204.002</b> Malicious File</a></li><li><a href="https://attack.mitre.org/techniques/T1218/010/"><b>T1218.010</b> Regsvr32</a></li><li><a href="https://attack.mitre.org/techniques/T1497/001/"><b>T1497.001</b> System Checks</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1566/002/"><b>T1566.002</b> Spearphishing Link</a></li><li><a href="https://attack.mitre.org/techniques/T1571/"><b>T1571</b> Non-Standard Port</a></li><li><a href="https://attack.mitre.org/techniques/T1574/001/"><b>T1574.001</b> DLL</a></li><li><a href="https://attack.mitre.org/techniques/T1583/001/"><b>T1583.001</b> Domains</a></li><li><a href="https://attack.mitre.org/techniques/T1586/002/"><b>T1586.002</b> Email Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li><li><a href="https://attack.mitre.org/techniques/T1608/001/"><b>T1608.001</b> Upload Malware</a></li><li><a href="https://attack.mitre.org/techniques/T1684/001/"><b>T1684.001</b> Impersonation</a></li></ul>
+
+<h2 id=software>Software <span class=n>8</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0363/"><b>Empire</b></a></li><li><a href="https://attack.mitre.org/software/S0679/"><b>Ferocious</b></a></li><li><a href="https://attack.mitre.org/software/S0680/"><b>LitePower</b></a></li><li><a href="https://attack.mitre.org/software/S1040/"><b>Rclone</b></a></li><li><a href="https://attack.mitre.org/software/S1229/"><b>Havoc</b></a></li><li><a href="https://attack.mitre.org/software/S9029/"><b>IronWind</b></a></li><li><a href="https://attack.mitre.org/software/S9030/"><b>SameCoin</b></a></li><li><a href="https://attack.mitre.org/software/S9031/"><b>AshTag</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>28 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>31</span><a href="https://x.com/k3yp0d/status/1857000802067345730" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/k3yp0d/status/1857000802067345730</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>31</span><a href="https://research.checkpoint.com/2024/hamas-affiliated-threat-actor-expands-to-disruptive-activity/" rel="noopener nofollow"><span class=host>research.checkpoint.com</span><span class=path>/2024/hamas-affiliated-threat-actor-expa…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>23</span><a href="https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/" rel="noopener nofollow"><span class=host>unit42.paloaltonetworks.com</span><span class=path>/hamas-affiliate-ashen-lepus-uses-new-ma…</span></a><div class=bar style="--w:74%"></div></li>
+<li><span class=c>23</span><a href="https://www.virustotal.com/gui/file/9979ed5993fb6d678727e6dacb15d26c1b4f07f16404b62dc8b5e25a359d9aec/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/9979ed5993fb6d678727e6dacb15d2…</span></a><div class=bar style="--w:74%"></div></li>
+<li><span class=c>14</span><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a><div class=bar style="--w:45%"></div></li>
+<li><span class=c>14</span><a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a><div class=bar style="--w:45%"></div></li>
+<li><span class=c>14</span><a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a><div class=bar style="--w:45%"></div></li>
+<li><span class=c>14</span><a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a><div class=bar style="--w:45%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>3</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="G1001.html">HEXANE</a> <span class=gidtag>G1001</span><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="G0069.html">MuddyWater</a> <span class=gidtag>G0069</span><div class=why><span class="ev software">shares Rclone</span></div></li><li><a href="G1003.html">Ember Bear</a> <span class=gidtag>G1003</span><div class=why><span class="ev software">shares Rclone</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>90 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>90</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 82</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 6</button><button type=button data-type="url" aria-pressed=false>url 1</button><button type=button data-type="url_path" aria-pressed=false>url_path 1</button></div>
+
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-01-02-9e3385" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-9e3385"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>23 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/" rel="noopener nofollow"><span class=host>unit42.paloaltonetworks.com</span><span class=path>/hamas-affiliate-ashen-lepus-uses-new-ma…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/9979ed5993fb6d678727e6dacb15d26c1b4f07f16404b62dc8b5e25a359d9aec/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/9979ed5993fb6d678727e6dacb15d2…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>account.techupinfo.com</td></tr>
+<tr data-t="domain"><td class=val>api.healthylifefeed.com</td></tr>
+<tr data-t="domain"><td class=val>api.medicinefinders.com</td></tr>
+<tr data-t="domain"><td class=val>api.softmatictech.com</td></tr>
+<tr data-t="domain"><td class=val>api.systemsync.info</td></tr>
+<tr data-t="domain"><td class=val>api.technology-system.com</td></tr>
+<tr data-t="domain"><td class=val>api.widetechno.info</td></tr>
+<tr data-t="domain"><td class=val>apiv2.onlinefieldtech.com</td></tr>
+<tr data-t="domain"><td class=val>auth.onlinefieldtech.com</td></tr>
+<tr data-t="domain"><td class=val>cdn.techpointinfo.com</td></tr>
+<tr data-t="domain"><td class=val>forum.technoforts.com</td></tr>
+<tr data-t="domain"><td class=val>forum.techtg.com</td></tr>
+<tr data-t="domain"><td class=val>healthylifefeed.com</td></tr>
+<tr data-t="domain"><td class=val>medicinefinders.com</td></tr>
+<tr data-t="domain"><td class=val>onlinefieldtech.com</td></tr>
+<tr data-t="domain"><td class=val>softmatictech.com</td></tr>
+<tr data-t="domain"><td class=val>status.techupinfo.com</td></tr>
+<tr data-t="domain"><td class=val>systemsync.info</td></tr>
+<tr data-t="domain"><td class=val>technoforts.com</td></tr>
+<tr data-t="domain"><td class=val>techpointinfo.com</td></tr>
+<tr data-t="domain"><td class=val>techtg.com</td></tr>
+<tr data-t="domain"><td class=val>techupinfo.com</td></tr>
+<tr data-t="domain"><td class=val>widetechno.info</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-41819a" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-41819a"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>6 domain, 1 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html" rel="noopener nofollow"><span class=host>blog.talosintelligence.com</span><span class=path>/2018/02/targeted-attacks-in-middle-east…</span></a> &middot; <a href="https://twitter.com/SaudiDFIR/status/1119666633251930113" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SaudiDFIR/status/1119666633251930113</span></a> &middot; <a href="https://twitter.com/James_inthe_box/status/1119932303088578561" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/James_inthe_box/status/1119932303088578…</span></a> &middot; <a href="https://twitter.com/MoBustami/status/1119959411156488192" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/MoBustami/status/1119959411156488192</span></a> &middot; <a href="https://x.com/malwrhunterteam/status/1998743764630732932" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/malwrhunterteam/status/1998743764630732…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f5328e0bfec7c278b2b6010d9812012ec5a/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>check.office365-update.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>download.share2file.pro</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>eg.foxlove.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>fox.foxlove.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>jo.foxlove.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>update.share2file.pro</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>194.38.11.3:1790</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-11-14-fd521d">
+<div class=when><a class=date href="#b-2024-11-14-fd521d"><time datetime="2024-11-14">2024-11-14</time></a> <span class=cnt>31 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/k3yp0d/status/1857000802067345730" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/k3yp0d/status/1857000802067345730</span></a> &middot; <a href="https://research.checkpoint.com/2024/hamas-affiliated-threat-actor-expands-to-disruptive-activity/" rel="noopener nofollow"><span class=host>research.checkpoint.com</span><span class=path>/2024/hamas-affiliated-threat-actor-expa…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>bankjordan.com</td></tr>
+<tr data-t="domain"><td class=val>dentalaccord.com</td></tr>
+<tr data-t="domain"><td class=val>easybackupcloud.com</td></tr>
+<tr data-t="domain"><td class=val>economymentor.com</td></tr>
+<tr data-t="domain"><td class=val>economystocking.com</td></tr>
+<tr data-t="domain"><td class=val>egyptican.com</td></tr>
+<tr data-t="domain"><td class=val>egyptskytours.com</td></tr>
+<tr data-t="domain"><td class=val>egypttourism-online.com</td></tr>
+<tr data-t="domain"><td class=val>ellemedic.com</td></tr>
+<tr data-t="domain"><td class=val>finance-analyst.com</td></tr>
+<tr data-t="domain"><td class=val>financecovers.com</td></tr>
+<tr data-t="domain"><td class=val>financeinfoguide.com</td></tr>
+<tr data-t="domain"><td class=val>healthcarb.com</td></tr>
+<tr data-t="domain"><td class=val>healthoptionstoday.com</td></tr>
+<tr data-t="domain"><td class=val>healthscratches.com</td></tr>
+<tr data-t="domain"><td class=val>jordanrefugees.com</td></tr>
+<tr data-t="domain"><td class=val>jordansons.com</td></tr>
+<tr data-t="domain"><td class=val>king-pharmacy.com</td></tr>
+<tr data-t="domain"><td class=val>master-dental.com</td></tr>
+<tr data-t="domain"><td class=val>microsoftliveforums.com</td></tr>
+<tr data-t="domain"><td class=val>microsoftteams365.com</td></tr>
+<tr data-t="domain"><td class=val>microsoftwindowshelp.com</td></tr>
+<tr data-t="domain"><td class=val>printspoolerupdates.com</td></tr>
+<tr data-t="domain"><td class=val>qrdorks.com</td></tr>
+<tr data-t="domain"><td class=val>saudiarabianow.org</td></tr>
+<tr data-t="domain"><td class=val>saudiday.org</td></tr>
+<tr data-t="domain"><td class=val>suppertools.com</td></tr>
+<tr data-t="domain"><td class=val>support-api.financecovers.com</td></tr>
+<tr data-t="domain"><td class=val>theshortner.com</td></tr>
+<tr data-t="domain"><td class=val>trendingcharts.finance-analyst.com</td></tr>
+<tr data-t="domain"><td class=val>wellhealthtech.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-09-07-f6d29f">
+<div class=when><a class=date href="#b-2022-09-07-f6d29f"><time datetime="2022-09-07">2022-09-07</time></a> <span class=cnt>2 domain</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1567247803184779266" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1567247803184779266</span></a> &middot; <a href="https://twitter.com/h2jazi/status/1567247805986574341" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1567247805986574341</span></a> &middot; <a href="https://www.virustotal.com/gui/file/e21362195463fe7c953afe07bea6a26ffead024c7f7394f51b683cbfe139b917/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/e21362195463fe7c953afe07bea6a2…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/08a8ecc39817a81bb9cde3775ce7289d56e678e94b56b120e06eca171634a97d/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/08a8ecc39817a81bb9cde3775ce728…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>neweconomysolution.com</td></tr>
+<tr data-t="domain"><td class=val>sun-tourist.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-07-04-1263e0">
+<div class=when><a class=date href="#b-2022-07-04-1263e0"><time datetime="2022-07-04">2022-07-04</time></a> <span class=cnt>1 domain, 1 url, 1 url_path</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1543957383193444352" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1543957383193444352</span></a> &middot; <a href="https://www.virustotal.com/gui/file/58ff981332189a0a2e0b1152f36a5eb58402501fcf218339deab69a187edf823/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/58ff981332189a0a2e0b1152f36a5e…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/467b59feba8ebaa7ef81b19ca69c133c07953affebeaf32f2d284b12533391be/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/467b59feba8ebaa7ef81b19ca69c13…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/086e49e431272b1ea8e3c1d7a9e297a8c50891db833bf180f2a5e9035f1bee8b/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/086e49e431272b1ea8e3c1d7a9e297…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>thefinanceinvest.com</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://20.43.53.72</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/okceG</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-04-25-a3c443">
+<div class=when><a class=date href="#b-2022-04-25-a3c443"><time datetime="2022-04-25">2022-04-25</time></a> <span class=cnt>1 domain</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1518629712364515329" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1518629712364515329</span></a> &middot; <a href="https://www.virustotal.com/gui/file/d767e2ba31b75714aeb1cc3995de9191a53bd184e213780987e51e315ec2e4c5/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/d767e2ba31b75714aeb1cc3995de91…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>imagine-world.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2022-03-17-6ea717">
+<div class=when><a class=date href="#b-2022-03-17-6ea717"><time datetime="2022-03-17">2022-03-17</time></a> <span class=cnt>8 domain</span><span class=ago>4 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a> &middot; <a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a> &middot; <a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a> &middot; <a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a> &middot; <a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow"><span class=host>securelist.com</span><span class=path>/wirtes-campaign-in-the-middle-east-livi…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/61a4fb7c9b88f16b103c151d</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>allaccounting.ca</td></tr>
+<tr data-t="domain"><td class=val>doctoressolis.com</td></tr>
+<tr data-t="domain"><td class=val>est-clinic.com</td></tr>
+<tr data-t="domain"><td class=val>firstohiobank.com</td></tr>
+<tr data-t="domain"><td class=val>kneeexercises.net</td></tr>
+<tr data-t="domain"><td class=val>niftybuysellchart.com</td></tr>
+<tr data-t="domain"><td class=val>nutrition-information.org</td></tr>
+<tr data-t="domain"><td class=val>pocket-property.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2021-03-18-6ea717">
+<div class=when><a class=date href="#b-2021-03-18-6ea717"><time datetime="2021-03-18">2021-03-18</time></a> <span class=cnt>1 domain</span><span class=ago>5 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a> &middot; <a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a> &middot; <a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a> &middot; <a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a> &middot; <a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow"><span class=host>securelist.com</span><span class=path>/wirtes-campaign-in-the-middle-east-livi…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/61a4fb7c9b88f16b103c151d</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>stgeorgebankers.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2021-03-17-6ea717">
+<div class=when><a class=date href="#b-2021-03-17-6ea717"><time datetime="2021-03-17">2021-03-17</time></a> <span class=cnt>1 domain</span><span class=ago>5 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a> &middot; <a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a> &middot; <a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a> &middot; <a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a> &middot; <a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow"><span class=host>securelist.com</span><span class=path>/wirtes-campaign-in-the-middle-east-livi…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/61a4fb7c9b88f16b103c151d</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>unitedfamilyhealth.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-03-03-6ea717">
+<div class=when><a class=date href="#b-2020-03-03-6ea717"><time datetime="2020-03-03">2020-03-03</time></a> <span class=cnt>1 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a> &middot; <a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a> &middot; <a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a> &middot; <a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a> &middot; <a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow"><span class=host>securelist.com</span><span class=path>/wirtes-campaign-in-the-middle-east-livi…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/61a4fb7c9b88f16b103c151d</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>omegaeyehospital.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-01-29-6ea717">
+<div class=when><a class=date href="#b-2020-01-29-6ea717"><time datetime="2020-01-29">2020-01-29</time></a> <span class=cnt>1 domain, 2 ipv4</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/malwrhunterteam/status/1233666708616941…</span></a> &middot; <a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SBousseaden/status/1222465015975948289</span></a> &middot; <a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</span></a> &middot; <a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</span></a> &middot; <a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow"><span class=host>securelist.com</span><span class=path>/wirtes-campaign-in-the-middle-east-livi…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/61a4fb7c9b88f16b103c151d</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dentalmatrix.net</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.28.1.134:2087</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>172.86.75.211:80</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-04-21-da8520">
+<div class=when><a class=date href="#b-2019-04-21-da8520"><time datetime="2019-04-21">2019-04-21</time></a> <span class=cnt>3 ipv4</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.securityartwork.es/2019/01/18/grupo-wirte-atacando-a-oriente-medio/" rel="noopener nofollow"><span class=host>securityartwork.es</span><span class=path>/2019/01/18/grupo-wirte-atacando-a-orien…</span></a> &middot; <a href="https://www.securityartwork.es/2019/01/25/wirte-group-attacking-the-middle-east/" rel="noopener nofollow"><span class=host>securityartwork.es</span><span class=path>/2019/01/25/wirte-group-attacking-the-mi…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>104.24.108.64:2082</td></tr>
+<tr data-t="ipv4"><td class=val>104.24.109.64:2082</td></tr>
+<tr data-t="ipv4"><td class=val>185.86.79.243:2082</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-04-21-41819a">
+<div class=when><a class=date href="#b-2019-04-21-41819a"><time datetime="2019-04-21">2019-04-21</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html" rel="noopener nofollow"><span class=host>blog.talosintelligence.com</span><span class=path>/2018/02/targeted-attacks-in-middle-east…</span></a> &middot; <a href="https://twitter.com/SaudiDFIR/status/1119666633251930113" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SaudiDFIR/status/1119666633251930113</span></a> &middot; <a href="https://twitter.com/James_inthe_box/status/1119932303088578561" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/James_inthe_box/status/1119932303088578…</span></a> &middot; <a href="https://twitter.com/MoBustami/status/1119959411156488192" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/MoBustami/status/1119959411156488192</span></a> &middot; <a href="https://x.com/malwrhunterteam/status/1998743764630732932" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/malwrhunterteam/status/1998743764630732…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f5328e0bfec7c278b2b6010d9812012ec5a/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>office365-update.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-02-05-da8520">
+<div class=when><a class=date href="#b-2019-02-05-da8520"><time datetime="2019-02-05">2019-02-05</time></a> <span class=cnt>2 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.securityartwork.es/2019/01/18/grupo-wirte-atacando-a-oriente-medio/" rel="noopener nofollow"><span class=host>securityartwork.es</span><span class=path>/2019/01/18/grupo-wirte-atacando-a-orien…</span></a> &middot; <a href="https://www.securityartwork.es/2019/01/25/wirte-group-attacking-the-middle-east/" rel="noopener nofollow"><span class=host>securityartwork.es</span><span class=path>/2019/01/25/wirte-group-attacking-the-mi…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>micorsoft.store</td></tr>
+<tr data-t="domain"><td class=val>office365-update.co</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2018-09-14-41819a">
+<div class=when><a class=date href="#b-2018-09-14-41819a"><time datetime="2018-09-14">2018-09-14</time></a> <span class=cnt>3 domain</span><span class=ago>8 yrs ago</span></div>
+<p class=src><a href="https://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html" rel="noopener nofollow"><span class=host>blog.talosintelligence.com</span><span class=path>/2018/02/targeted-attacks-in-middle-east…</span></a> &middot; <a href="https://twitter.com/SaudiDFIR/status/1119666633251930113" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/SaudiDFIR/status/1119666633251930113</span></a> &middot; <a href="https://twitter.com/James_inthe_box/status/1119932303088578561" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/James_inthe_box/status/1119932303088578…</span></a> &middot; <a href="https://twitter.com/MoBustami/status/1119959411156488192" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/MoBustami/status/1119959411156488192</span></a> &middot; <a href="https://x.com/malwrhunterteam/status/1998743764630732932" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/malwrhunterteam/status/1998743764630732…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f5328e0bfec7c278b2b6010d9812012ec5a/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>foxlove.life</td></tr>
+<tr data-t="domain"><td class=val>office-update.services</td></tr>
+<tr data-t="domain"><td class=val>share2file.pro</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>31</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G0090" rel="noopener nofollow">attack.mitre.org/groups/G0090</a></li>
+<li><a href="https://lab52.io/blog/wirte-group-attacking-the-middle-east/" rel="noopener nofollow">lab52.io/blog/wirte-group-attacking-the-middle-e…</a></li>
+<li><a href="https://research.checkpoint.com/2024/hamas-affiliated-threat-actor-expands-to-disruptive-activity/" rel="noopener nofollow">research.checkpoint.com/2024/hamas-affiliated-threat-actor-expa…</a></li>
+<li><a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044" rel="noopener nofollow">securelist.com/wirtes-campaign-in-the-middle-east-livi…</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-malware-suite-ashtag/" rel="noopener nofollow">unit42.paloaltonetworks.com/hamas-affiliate-ashen-lepus-uses-new-ma…</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1543957383193444352" rel="noopener nofollow">twitter.com/h2jazi/status/1543957383193444352</a></li>
+<li><a href="https://www.virustotal.com/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f5328e0bfec7c278b2b6010d9812012ec5a/detection" rel="noopener nofollow">virustotal.com/gui/file/d9dc90fd23cd2ad5e5a1b9df65d36f…</a></li>
+<li><a href="https://twitter.com/SaudiDFIR/status/1119666633251930113" rel="noopener nofollow">twitter.com/SaudiDFIR/status/1119666633251930113</a></li>
+<li><a href="https://securelist.com/wirtes-campaign-in-the-middle-east-living-off-the-land-since-at-least-2019/105044/" rel="noopener nofollow">securelist.com/wirtes-campaign-in-the-middle-east-livi…</a></li>
+<li><a href="https://www.securityartwork.es/2019/01/25/wirte-group-attacking-the-middle-east/" rel="noopener nofollow">securityartwork.es/2019/01/25/wirte-group-attacking-the-mi…</a></li>
+<li><a href="https://app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5ecde/" rel="noopener nofollow">app.any.run/tasks/b63ec8f5-70a6-4379-97e9-acbe3ce5e…</a></li>
+<li><a href="https://twitter.com/James_inthe_box/status/1119932303088578561" rel="noopener nofollow">twitter.com/James_inthe_box/status/1119932303088578…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d" rel="noopener nofollow">otx.alienvault.com/pulse/61a4fb7c9b88f16b103c151d</a></li>
+<li><a href="https://twitter.com/MoBustami/status/1119959411156488192" rel="noopener nofollow">twitter.com/MoBustami/status/1119959411156488192</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1567247803184779266" rel="noopener nofollow">twitter.com/h2jazi/status/1567247803184779266</a></li>
+<li><a href="https://www.securityartwork.es/2019/01/18/grupo-wirte-atacando-a-oriente-medio/" rel="noopener nofollow">securityartwork.es/2019/01/18/grupo-wirte-atacando-a-orien…</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1567247805986574341" rel="noopener nofollow">twitter.com/h2jazi/status/1567247805986574341</a></li>
+<li><a href="https://www.virustotal.com/gui/file/467b59feba8ebaa7ef81b19ca69c133c07953affebeaf32f2d284b12533391be/detection" rel="noopener nofollow">virustotal.com/gui/file/467b59feba8ebaa7ef81b19ca69c13…</a></li>
+<li><a href="https://x.com/malwrhunterteam/status/1998743764630732932" rel="noopener nofollow">x.com/malwrhunterteam/status/1998743764630732…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/086e49e431272b1ea8e3c1d7a9e297a8c50891db833bf180f2a5e9035f1bee8b/detection" rel="noopener nofollow">virustotal.com/gui/file/086e49e431272b1ea8e3c1d7a9e297…</a></li>
+<li><a href="https://blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east.html" rel="noopener nofollow">blog.talosintelligence.com/2018/02/targeted-attacks-in-middle-east…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/58ff981332189a0a2e0b1152f36a5eb58402501fcf218339deab69a187edf823/detection" rel="noopener nofollow">virustotal.com/gui/file/58ff981332189a0a2e0b1152f36a5e…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/d767e2ba31b75714aeb1cc3995de9191a53bd184e213780987e51e315ec2e4c5/detection" rel="noopener nofollow">virustotal.com/gui/file/d767e2ba31b75714aeb1cc3995de91…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/9979ed5993fb6d678727e6dacb15d26c1b4f07f16404b62dc8b5e25a359d9aec/detection" rel="noopener nofollow">virustotal.com/gui/file/9979ed5993fb6d678727e6dacb15d2…</a></li>
+<li><a href="https://x.com/k3yp0d/status/1857000802067345730" rel="noopener nofollow">x.com/k3yp0d/status/1857000802067345730</a></li>
+<li><a href="https://twitter.com/SBousseaden/status/1222465015975948289" rel="noopener nofollow">twitter.com/SBousseaden/status/1222465015975948289</a></li>
+<li><a href="https://www.virustotal.com/gui/file/e21362195463fe7c953afe07bea6a26ffead024c7f7394f51b683cbfe139b917/detection" rel="noopener nofollow">virustotal.com/gui/file/e21362195463fe7c953afe07bea6a2…</a></li>
+<li><a href="https://app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0824/" rel="noopener nofollow">app.any.run/tasks/4c404a75-4caf-430b-a901-c18bc8fb0…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/08a8ecc39817a81bb9cde3775ce7289d56e678e94b56b120e06eca171634a97d/detection" rel="noopener nofollow">virustotal.com/gui/file/08a8ecc39817a81bb9cde3775ce728…</a></li>
+<li><a href="https://twitter.com/malwrhunterteam/status/1233666708616941570" rel="noopener nofollow">twitter.com/malwrhunterteam/status/1233666708616941…</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1518629712364515329" rel="noopener nofollow">twitter.com/h2jazi/status/1518629712364515329</a></li>
+</ul>
+
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

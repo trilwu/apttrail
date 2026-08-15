@@ -1,0 +1,175 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b1bcff06-f6a8-52d0-813a-a7b05e1f187c",
+        "value": "2022-blanks.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1680705515",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b1716a64-f15e-57c2-9e84-fbc07c00728b",
+        "value": "ashgrrwt.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "96507619-659f-588a-9a1f-9a405f26a46a",
+        "value": "extenision-app.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "129760d8-8e78-5ba3-8bdf-d7c009685c14",
+        "value": "finandy.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8a0b9f4d-8d2a-533c-9c9b-6c8828a6b5cd",
+        "value": "finandy.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "028eca07-ad48-5f95-b0b4-0d6d561a9d48",
+        "value": "flnand.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "968ae296-e6d8-5eed-b5ee-2bfbbd049e1b",
+        "value": "kz-smartbank.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c263dc72-73de-5388-a00e-5a4d6d7de7d7",
+        "value": "mareux.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ef2bbf4e-16c7-5390-953f-e1c37cc5c217",
+        "value": "mmarx.quest"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e123ecc0-9084-5b84-8a46-004c7c658b57",
+        "value": "okxsat.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "321099d4-98dd-5d04-973e-27958da7c262",
+        "value": "pr-tracker.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3b183f62-a93a-50d5-9a68-ad843b5a0b64",
+        "value": "qivvi-3.click"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "18224306-9da0-59aa-beaf-62f2223bfc6e",
+        "value": "serienjunkies.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "959a93e3-c2e4-5110-bf18-665e8bb12ac2",
+        "value": "telegromcn.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1680705515",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e76a91ef-baf3-5334-a28c-fd4103d2e9c6",
+        "value": "vceilinichego.ru"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a9a0796f-bf72-5469-958b-35340e27fe01",
+        "value": "vse-blanki.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ad9bf8ed-b032-5d85-927c-0b5291a6c98b",
+        "value": "146.70.79.75:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1683401852",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "95d104e5-7b2a-5bd7-a15b-aa38d942e6a5",
+        "value": "http://146.70.79.75"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc4553"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC4553",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "180150ea-f927-5c56-8cf7-d0f7dba7be5d"
+  }
+}

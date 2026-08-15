@@ -1,0 +1,115 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "83e0ea21-710e-597d-91f4-a0f833a29022",
+        "value": "101.100.182.122:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "88a269a3-a566-5c31-a0f5-c130a6576d33",
+        "value": "116.88.34.184:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "719b6046-a9a8-53f8-90dd-fbe9b7c21466",
+        "value": "118.189.188.122:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "1ee2c633-f95e-5efa-a4b3-f6e48f87537b",
+        "value": "118.193.63.40:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "f45eba99-0df1-5c14-a330-e5fcd0c58bc4",
+        "value": "129.126.109.50:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "222b0b77-df3c-5bab-b03c-0a8b5612ca98",
+        "value": "158.140.135.244:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "852c0175-f7e0-5af2-8431-237d79f8a231",
+        "value": "223.25.78.136:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6c34731b-e4d5-5d1a-9d23-697ae409e828",
+        "value": "45.77.39.28:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2a1a7a9d-21c8-5922-b4f7-b064aa2d4362",
+        "value": "47.246.68.13:22"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "a3c6d128-200e-53d0-ab50-897b2649e7f3",
+        "value": "8.222.225.8:22"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc3886"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"UNC3886 - G1048\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC3886 (G1048) - Maltrail group UNC3886",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5296839d-4560-5b82-b366-a320f113405a"
+  }
+}

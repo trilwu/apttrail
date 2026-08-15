@@ -1,0 +1,84 @@
+{
+  "aliases": [
+    "cav3rn"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "adserviceupdate.com": "2026-07-06",
+      "api.zapretmusic.com": "2026-07-06",
+      "app.zapretmusic.com": "2026-07-06",
+      "auth.hospitalinstallation.com": "2026-07-06",
+      "google.com.hospitalinstallation.com": "2026-07-06",
+      "hospitalinstallation.com": "2026-07-06",
+      "hygienehistory.com": "2026-07-06",
+      "update.myddns.me": "2026-07-06",
+      "zapretmusic.com": "2026-07-06"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-07-06",
+    "latest": "2026-07-06"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adserviceupdate.com",
+      "api.zapretmusic.com",
+      "app.zapretmusic.com",
+      "auth.hospitalinstallation.com",
+      "google.com.hospitalinstallation.com",
+      "hospitalinstallation.com",
+      "hygienehistory.com",
+      "update.myddns.me",
+      "zapretmusic.com"
+    ]
+  },
+  "last_modified": "2026-07-06T19:22:54+00:00",
+  "maltrail_groups": [
+    "CAVERNMANTICORE"
+  ],
+  "references": [
+    "https://research.checkpoint.com/2026/cavern-manticore-exposing-iran-linked-modular-c2-framework/",
+    "https://www.virustotal.com/gui/file/cbc9485db715e1b8cc384fe94b4cceadca4006cda8a5e28adc8848529cfafc93/detection",
+    "https://www.virustotal.com/gui/file/ccf218189c3aadb1c761da14bfda3bae686769031e1e1b10007648bd72e34748/detection"
+  ],
+  "related": [],
+  "slug": "CAVERNMANTICORE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2026-07-06",
+      "indicators": {
+        "domain": [
+          "adserviceupdate.com",
+          "api.zapretmusic.com",
+          "app.zapretmusic.com",
+          "auth.hospitalinstallation.com",
+          "google.com.hospitalinstallation.com",
+          "hospitalinstallation.com",
+          "hygienehistory.com",
+          "update.myddns.me",
+          "zapretmusic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2026/cavern-manticore-exposing-iran-linked-modular-c2-framework/",
+        "https://www.virustotal.com/gui/file/ccf218189c3aadb1c761da14bfda3bae686769031e1e1b10007648bd72e34748/detection",
+        "https://www.virustotal.com/gui/file/cbc9485db715e1b8cc384fe94b4cceadca4006cda8a5e28adc8848529cfafc93/detection"
+      ],
+      "total": 9
+    }
+  ]
+}

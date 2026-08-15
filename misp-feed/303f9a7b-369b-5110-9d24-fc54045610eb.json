@@ -1,0 +1,67 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1540374433",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "750166a7-2f88-5edd-bcb5-9285bc2b0b14",
+        "value": "algorithm.ddnsgeek.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540374433",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d225043e-daef-57c0-a113-4055f578eb67",
+        "value": "firefoxcomt.arkouowi.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540374433",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "555a2707-2e92-5a3b-b5c3-205c17d20456",
+        "value": "friendlysupport.giize.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540374433",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4068630e-6577-53ce-a364-5a63da7d7245",
+        "value": "update.arkouowi.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:hogfish"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"menuPass - G0045\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: menuPass (G0045) - Maltrail group HOGFISH",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "303f9a7b-369b-5110-9d24-fc54045610eb"
+  }
+}

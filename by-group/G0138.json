@@ -1,0 +1,147 @@
+{
+  "aliases": [
+    "apt-45",
+    "apt45",
+    "onyx sleet",
+    "silent chollima"
+  ],
+  "attack_id": "G0138",
+  "attack_name": "Andariel",
+  "attack_url": "https://attack.mitre.org/groups/G0138/",
+  "counts": {
+    "domain": 6,
+    "ipv4": 4
+  },
+  "first_seen": {
+    "domain": {
+      "bluedragon.com": "2022-04-30",
+      "cyancow.com": "2022-04-30",
+      "phpick.com": "2024-10-04",
+      "semiconductboard.com": "2022-04-30",
+      "tecnojournals.com": "2022-04-30",
+      "trollbydefault.com": "2024-10-04"
+    },
+    "ipv4": {
+      "147.78.149.201:9090": "2023-11-15",
+      "162.19.71.175:7443": "2023-11-15",
+      "216.120.201.112:443": "2024-10-04",
+      "51.81.168.157:443": "2024-10-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-04-30",
+    "latest": "2024-10-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bluedragon.com",
+      "cyancow.com",
+      "phpick.com",
+      "semiconductboard.com",
+      "tecnojournals.com",
+      "trollbydefault.com"
+    ],
+    "ipv4": [
+      "147.78.149.201:9090",
+      "162.19.71.175:7443",
+      "216.120.201.112:443",
+      "51.81.168.157:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ONYXSLEET",
+    "STONEFLY"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/626bba5ec3f783b80d69a882",
+    "https://otx.alienvault.com/pulse/65534130052d1800f62e7ba2",
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/stonefly-north-korea-espionage",
+    "https://symantec-enterprise-blogs.security.com/threat-intelligence/stonefly-north-korea-extortion",
+    "https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/",
+    "https://www.virustotal.com/gui/ip-address/216.120.201.112/relations",
+    "https://x.com/threatintel/status/1841507279150940288"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0032"
+    }
+  ],
+  "slug": "G0138",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 2
+      },
+      "first_seen": "2024-10-04",
+      "indicators": {
+        "domain": [
+          "phpick.com",
+          "trollbydefault.com"
+        ],
+        "ipv4": [
+          "216.120.201.112:443",
+          "51.81.168.157:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/threatintel/status/1841507279150940288",
+        "https://symantec-enterprise-blogs.security.com/threat-intelligence/stonefly-north-korea-extortion",
+        "https://www.virustotal.com/gui/ip-address/216.120.201.112/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2023-11-15",
+      "indicators": {
+        "ipv4": [
+          "147.78.149.201:9090",
+          "162.19.71.175:7443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2023/10/18/multiple-north-korean-threat-actors-exploiting-the-teamcity-cve-2023-42793-vulnerability/",
+        "https://otx.alienvault.com/pulse/65534130052d1800f62e7ba2"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "domain": [
+          "bluedragon.com",
+          "cyancow.com",
+          "semiconductboard.com",
+          "tecnojournals.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/stonefly-north-korea-espionage",
+        "https://otx.alienvault.com/pulse/626bba5ec3f783b80d69a882"
+      ],
+      "total": 4
+    }
+  ]
+}

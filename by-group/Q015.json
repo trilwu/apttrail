@@ -1,0 +1,139 @@
+{
+  "aliases": [
+    "operation run",
+    "utg-q-015"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 7,
+    "ipv4": 5,
+    "url_path": 2
+  },
+  "first_seen": {
+    "domain": {
+      "beta.naipump.xyz": "2026-01-02",
+      "biodao.finance": "2026-01-02",
+      "chormeupdatetool.xyz": "2026-01-02",
+      "molecular-mazda-forests-shop.trycloudflare.com": "2026-01-02",
+      "naipump.xyz": "2026-01-02",
+      "safe-controls.oss-cn-hongkong.aliyuncs.com": "2026-01-02",
+      "updategoogls.cc": "2026-01-02"
+    },
+    "ipv4": {
+      "194.34.254.219:10404": "2026-01-02",
+      "194.34.254.219:10410": "2026-01-02",
+      "209.250.254.130:13389": "2026-01-02",
+      "209.250.254.130:15672": "2026-01-02",
+      "209.250.254.130:16379": "2026-01-02"
+    },
+    "url_path": {
+      "/DSfsdasgaa/": "2026-01-02",
+      "/DSfsdasgaa/shell/": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "beta.naipump.xyz": "at-or-before",
+      "biodao.finance": "at-or-before",
+      "chormeupdatetool.xyz": "at-or-before",
+      "molecular-mazda-forests-shop.trycloudflare.com": "at-or-before",
+      "naipump.xyz": "at-or-before",
+      "safe-controls.oss-cn-hongkong.aliyuncs.com": "at-or-before",
+      "updategoogls.cc": "at-or-before"
+    },
+    "ipv4": {
+      "194.34.254.219:10404": "at-or-before",
+      "194.34.254.219:10410": "at-or-before",
+      "209.250.254.130:13389": "at-or-before",
+      "209.250.254.130:15672": "at-or-before",
+      "209.250.254.130:16379": "at-or-before"
+    },
+    "url_path": {
+      "/DSfsdasgaa/": "at-or-before",
+      "/DSfsdasgaa/shell/": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "beta.naipump.xyz",
+      "biodao.finance",
+      "chormeupdatetool.xyz",
+      "molecular-mazda-forests-shop.trycloudflare.com",
+      "naipump.xyz",
+      "safe-controls.oss-cn-hongkong.aliyuncs.com",
+      "updategoogls.cc"
+    ],
+    "ipv4": [
+      "194.34.254.219:10404",
+      "194.34.254.219:10410",
+      "209.250.254.130:13389",
+      "209.250.254.130:15672",
+      "209.250.254.130:16379"
+    ],
+    "url_path": [
+      "/DSfsdasgaa/",
+      "/DSfsdasgaa/shell/"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "Q015"
+  ],
+  "references": [
+    "https://app.validin.com/detail?type=dom&find=updategoogls.cc#tab=host_pairs (# 2025-05-28)",
+    "https://mp.weixin.qq.com/s/IPzuok7ej_ghTn59R9PRbA",
+    "https://otx.alienvault.com/pulse/682d301dfe9ec47fb4c06550",
+    "https://ti.qianxin.com/blog/articles/operation-run-the-cyber-carnival-of-offshore-patriots-en/",
+    "https://x.com/blackorbird/status/1927669064308314381"
+  ],
+  "related": [],
+  "slug": "Q015",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7,
+        "ipv4": 5,
+        "url_path": 2
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "beta.naipump.xyz",
+          "biodao.finance",
+          "chormeupdatetool.xyz",
+          "molecular-mazda-forests-shop.trycloudflare.com",
+          "naipump.xyz",
+          "safe-controls.oss-cn-hongkong.aliyuncs.com",
+          "updategoogls.cc"
+        ],
+        "ipv4": [
+          "194.34.254.219:10404",
+          "194.34.254.219:10410",
+          "209.250.254.130:13389",
+          "209.250.254.130:15672",
+          "209.250.254.130:16379"
+        ],
+        "url_path": [
+          "/DSfsdasgaa/",
+          "/DSfsdasgaa/shell/"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/1927669064308314381",
+        "https://ti.qianxin.com/blog/articles/operation-run-the-cyber-carnival-of-offshore-patriots-en/",
+        "https://mp.weixin.qq.com/s/IPzuok7ej_ghTn59R9PRbA",
+        "https://otx.alienvault.com/pulse/682d301dfe9ec47fb4c06550",
+        "https://app.validin.com/detail?type=dom&find=updategoogls.cc#tab=host_pairs (# 2025-05-28)"
+      ],
+      "total": 14
+    }
+  ]
+}

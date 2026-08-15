@@ -1,0 +1,51 @@
+{
+  "name": "APT17 (G0025) - APTtrail",
+  "description": "Techniques attributed to APT17 by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0025.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1331",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1341",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1342",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1583.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by APT17",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

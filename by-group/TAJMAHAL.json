@@ -1,0 +1,62 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "rahasn.akamake.net": "2019-04-10",
+      "rahasn.homewealth.biz": "2019-04-10",
+      "rahasn.webhop.org": "2019-04-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-04-10",
+    "latest": "2019-04-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "rahasn.akamake.net",
+      "rahasn.homewealth.biz",
+      "rahasn.webhop.org"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TAJMAHAL"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5cad645554fab2031f8d0109",
+    "https://securelist.com/project-tajmahal/90240/"
+  ],
+  "related": [],
+  "slug": "TAJMAHAL",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-04-10",
+      "indicators": {
+        "domain": [
+          "rahasn.akamake.net",
+          "rahasn.homewealth.biz",
+          "rahasn.webhop.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cad645554fab2031f8d0109",
+        "https://securelist.com/project-tajmahal/90240/"
+      ],
+      "total": 3
+    }
+  ]
+}

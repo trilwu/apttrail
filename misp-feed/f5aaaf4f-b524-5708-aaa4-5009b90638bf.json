@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1675970994",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4239c7e0-001e-513f-894d-b119be0b9029",
+        "value": "updates.win32.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1675970994",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b53d0db5-21e7-55b5-899a-e0d5cd049fed",
+        "value": "win32.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1674503979",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5e286c38-4809-5460-a044-28dfe1142ec7",
+        "value": "windowsupdates.shop"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:newspenguin"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: NEWSPENGUIN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f5aaaf4f-b524-5708-aaa4-5009b90638bf"
+  }
+}

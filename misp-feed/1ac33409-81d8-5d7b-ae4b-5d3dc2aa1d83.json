@@ -1,0 +1,63 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1609867094",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52d5715d-4088-5848-a275-019a3e556de1",
+        "value": "anybodyopenfind.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1609867094",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d832524e-5ac6-5c5d-bb24-24497119c900",
+        "value": "googletwtw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1609867094",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "588427aa-2642-5bec-b569-fe56b5479c2e",
+        "value": "mail2000tw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1609867094",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ccf7dd4-64be-5972-a967-88510476d4bb",
+        "value": "travelsiteadvisor.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:earthwendigo"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: EARTHWENDIGO",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "1ac33409-81d8-5d7b-ae4b-5d3dc2aa1d83"
+  }
+}

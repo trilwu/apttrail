@@ -1,0 +1,80 @@
+{
+  "aliases": [
+    "CR4T"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "commonline.space": "2024-04-24",
+      "e1awq1lp.commonline.space": "2024-04-24",
+      "g1sea23g.commonline.space": "2024-04-24",
+      "mc.commonline.space": "2024-04-24",
+      "service.userfeedsync.com": "2024-04-24",
+      "telemetry.commonline.space": "2024-04-24",
+      "telemetry.userfeedsync.com": "2024-04-24",
+      "tg1sea23g.commonline.space": "2024-04-24",
+      "userfeedsync.com": "2024-04-24"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-04-24",
+    "latest": "2024-04-24"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "commonline.space",
+      "e1awq1lp.commonline.space",
+      "g1sea23g.commonline.space",
+      "mc.commonline.space",
+      "service.userfeedsync.com",
+      "telemetry.commonline.space",
+      "telemetry.userfeedsync.com",
+      "tg1sea23g.commonline.space",
+      "userfeedsync.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DUNEQUIXOTE"
+  ],
+  "references": [
+    "https://securelist.com/dunequixote/112425/"
+  ],
+  "related": [],
+  "slug": "DUNEQUIXOTE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2024-04-24",
+      "indicators": {
+        "domain": [
+          "commonline.space",
+          "e1awq1lp.commonline.space",
+          "g1sea23g.commonline.space",
+          "mc.commonline.space",
+          "service.userfeedsync.com",
+          "telemetry.commonline.space",
+          "telemetry.userfeedsync.com",
+          "tg1sea23g.commonline.space",
+          "userfeedsync.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/dunequixote/112425/"
+      ],
+      "total": 9
+    }
+  ]
+}

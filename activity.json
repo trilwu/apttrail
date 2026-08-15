@@ -1,0 +1,2376 @@
+{
+  "batches": [
+    {
+      "anchor": "b-2026-08-15-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 23
+      },
+      "date": "2026-08-15",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 23
+    },
+    {
+      "anchor": "b-2026-08-14-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 17
+      },
+      "date": "2026-08-14",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 17
+    },
+    {
+      "anchor": "b-2026-08-14-811afb",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-08-14",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2088263292804596108"
+      ],
+      "slug": "G0121",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-08-14-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-08-14",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-08-13-79387b",
+      "attack_id": null,
+      "counts": {
+        "domain": 245
+      },
+      "date": "2026-08-13",
+      "group": "UNC6691-1",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/coruna-powerful-ios-exploit-kit",
+        "https://iverify.io/blog/coruna-inside-the-nation-state-grade-ios-exploit-kit-we-ve-been-tracking"
+      ],
+      "slug": "UNC6691-1",
+      "total": 245
+    },
+    {
+      "anchor": "b-2026-08-13-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 77
+      },
+      "date": "2026-08-13",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 77
+    },
+    {
+      "anchor": "b-2026-08-13-add188",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 14
+      },
+      "date": "2026-08-13",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/ElementalX2/status/2087894249652252818",
+        "https://www.acronis.com/en/tru/posts/patchcord-new-malware-cluster-targets-afghan-telecom-and-south-asian-critical-infrastructure/"
+      ],
+      "slug": "G0134",
+      "total": 14
+    },
+    {
+      "anchor": "b-2026-08-13-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 7
+      },
+      "date": "2026-08-13",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 7
+    },
+    {
+      "anchor": "b-2026-08-13-7946d8",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-13",
+      "group": "MuddyWater",
+      "references": [
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-13-e84d3c",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-13",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/solostalking/status/1962845037710245957",
+        "https://urlscan.io/result/01990ac1-3c1d-703a-b854-38e4e38ba8c5/",
+        "https://urlscan.io/result/01990ac2-dbe4-77c8-9ca8-ee5429d98069/",
+        "https://x.com/ElementalX2/status/2087894249652252818",
+        "https://www.acronis.com/en/tru/posts/patchcord-new-malware-cluster-targets-afghan-telecom-and-south-asian-critical-infrastructure/"
+      ],
+      "slug": "G0134",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-13-ca89f6",
+      "attack_id": "G1002",
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-08-13",
+      "group": "BITTER",
+      "references": [
+        "https://x.com/nextronresearch/status/2087830204920090939",
+        "https://www.virustotal.com/gui/file/5e08012967a184f456400168c3382a8b6ab3efdf21c520667c3cf9c5d57b01f2/detection"
+      ],
+      "slug": "G1002",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-12-6d234b",
+      "attack_id": null,
+      "counts": {
+        "domain": 21,
+        "ipv4": 12,
+        "url": 4
+      },
+      "date": "2026-08-12",
+      "group": "RAINBOWHYENA",
+      "references": [
+        "https://ics-cert.kaspersky.com/publications/reports/2026/08/12/head-mare-exploits-vulnerabilities-in-trueconf-server-to-deliver-phantomcore-malware/"
+      ],
+      "slug": "RAINBOWHYENA",
+      "total": 37
+    },
+    {
+      "anchor": "b-2026-08-12-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 7
+      },
+      "date": "2026-08-12",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 7
+    },
+    {
+      "anchor": "b-2026-08-12-9d77df",
+      "attack_id": null,
+      "counts": {
+        "domain": 6
+      },
+      "date": "2026-08-12",
+      "group": "RAINBOWHYENA",
+      "references": [
+        "https://x.com/smica83/status/2023454582794580164",
+        "https://www.virustotal.com/gui/ip-address/195.58.54.229/relations",
+        "https://www.virustotal.com/gui/ip-address/45.156.27.193/relations",
+        "https://www.virustotal.com/gui/file/d54ac06c67f53368db393aadce11838019c95c32cba99d90d2efa4219202ace6/detection",
+        "https://www.virustotal.com/gui/file/0780ad6ecdf92dd6d4c89c5e0cd69ce4b0ef439df54b2fc2c618f0ff39382044/detection",
+        "https://www.virustotal.com/gui/file/09bb44cba75ce0db212f0c3a0babefbc0c05f97e419a69f1185dc66d4fb7cd1b/detection",
+        "https://www.virustotal.com/gui/file/24b2f1d434b822133679940445c60347f8ad3bf1c4d22bfb57483fd97f76d338/detection",
+        "https://www.virustotal.com/gui/file/2dd8712251076c17347c918b434ab4d61c9e91556b0eb9ab7ac9d18aa9afe15e/detection",
+        "https://www.virustotal.com/gui/file/82a45be3d6b8275a49cf3c5d3aa23af094070d8f2beb51ec78dbea5742ea7570/detection",
+        "https://www.virustotal.com/gui/file/a0e6035dbf5116e8de48606db01d79c5042ab9ac3d4504bdaf65cc4c55fc6e70/detection",
+        "https://www.virustotal.com/gui/file/9dd9d17fe59be22e0a53aabfc359e11ff9b6cd717946563429e069e373c93c6a/detection",
+        "https://www.virustotal.com/gui/file/c53f13b6214aa16d44c12d834dd5bc767b0c23b505fe44309b3f07c72031bcdd/detection",
+        "https://www.virustotal.com/gui/file/1ac2c21c314bc1554ec0074adeedf1900b6be0da5c07359568c33a5cbd876161/detection",
+        "https://www.virustotal.com/gui/file/2396e6b1ff979a71f850fa0cb0fcb9d5a6e0b62d02b38057734bf168ee42033b/detection",
+        "https://www.virustotal.com/gui/file/b806acf8705977eecd3ba84f289bfa89783f62bb142c4aa93d1e2ded37897903/detection"
+      ],
+      "slug": "RAINBOWHYENA",
+      "total": 6
+    },
+    {
+      "anchor": "b-2026-08-12-7946d8",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-12",
+      "group": "MuddyWater",
+      "references": [
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-11-89d55a",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 10,
+        "ipv4": 8,
+        "url": 6,
+        "url_path": 4
+      },
+      "date": "2026-08-11",
+      "group": "Lazarus Group",
+      "references": [
+        "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation/",
+        "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation-part-two/"
+      ],
+      "slug": "G0032",
+      "total": 28
+    },
+    {
+      "anchor": "b-2026-08-11-a61d30",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 21
+      },
+      "date": "2026-08-11",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/unpacker/status/2087145269020561711"
+      ],
+      "slug": "G0032",
+      "total": 21
+    },
+    {
+      "anchor": "b-2026-08-11-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 13
+      },
+      "date": "2026-08-11",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 13
+    },
+    {
+      "anchor": "b-2026-08-11-4d983f",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 4,
+        "ipv4": 4
+      },
+      "date": "2026-08-11",
+      "group": "Lazarus Group",
+      "references": [
+        "https://research.checkpoint.com/2026/shattering-the-dream-when-a-job-offer-becomes-a-zero-day-attack/"
+      ],
+      "slug": "G0032",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-08-11-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-08-11",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-08-11-b88dd7",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-11",
+      "group": "Patchwork",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1974988141854609418"
+      ],
+      "slug": "G0040",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-10-79387b",
+      "attack_id": null,
+      "counts": {
+        "domain": 85
+      },
+      "date": "2026-08-10",
+      "group": "UNC6691-1",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/coruna-powerful-ios-exploit-kit",
+        "https://iverify.io/blog/coruna-inside-the-nation-state-grade-ios-exploit-kit-we-ve-been-tracking"
+      ],
+      "slug": "UNC6691-1",
+      "total": 85
+    },
+    {
+      "anchor": "b-2026-08-10-65c599",
+      "attack_id": "G0034",
+      "counts": {
+        "domain": 39,
+        "ipv4": 1
+      },
+      "date": "2026-08-10",
+      "group": "Sandworm Team",
+      "references": [
+        "https://cert.gov.ua/article/6318863"
+      ],
+      "slug": "G0034",
+      "total": 40
+    },
+    {
+      "anchor": "b-2026-08-10-7946d8",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 8
+      },
+      "date": "2026-08-10",
+      "group": "MuddyWater",
+      "references": [
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-08-10-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 4
+      },
+      "date": "2026-08-10",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-08-10-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-08-10",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-08-09-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 78
+      },
+      "date": "2026-08-09",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 78
+    },
+    {
+      "anchor": "b-2026-08-09-63f3e8",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 38
+      },
+      "date": "2026-08-09",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2086469312362291330",
+        "https://www.virustotal.com/gui/ip-address/181.215.18.89/relations"
+      ],
+      "slug": "G0121",
+      "total": 38
+    },
+    {
+      "anchor": "b-2026-08-09-db5e39",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 2,
+        "url_path": 4
+      },
+      "date": "2026-08-09",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/G60930953/status/2054029601408479514",
+        "https://www.virustotal.com/gui/file/731d96ba17bd5714bba1f4f1dbfa0d1487fe2f54ff20bfdc64d4502538c3d587/detection"
+      ],
+      "slug": "G0032",
+      "total": 6
+    },
+    {
+      "anchor": "b-2026-08-09-5f29bb",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1,
+        "ipv4": 3
+      },
+      "date": "2026-08-09",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/G60930953/status/2086376673834852703",
+        "https://www.virustotal.com/gui/file/c3457cca3bdb77750f8bd12be02a993875b763ff00428cf9bfaf89764a2f4e3e/detection",
+        "https://www.virustotal.com/gui/file/794a53776783bbe9565219b4c3ba2a99a92b32b08b9bbabe62747c83bd1e10f8/detection"
+      ],
+      "slug": "G0032",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-08-09-91c1f5",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-09",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/cyberwar_15/status/2086442417197318279"
+      ],
+      "slug": "G0094",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-09-f3b0e4",
+      "attack_id": "G0121",
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-08-09",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/Thisism23567356/status/2047237888799092781",
+        "https://x.com/volrant136/status/2086469312362291330",
+        "https://www.virustotal.com/gui/file/ae3348414926ec22db313ccd61b0d78c819325b3c6f364903d88da5404a05ac4/detection",
+        "https://www.virustotal.com/gui/file/d375ad74e3f3994f919a68f97d082f796a8dc426083423141d40d5f095cede09/detection"
+      ],
+      "slug": "G0121",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-08-79387b",
+      "attack_id": null,
+      "counts": {
+        "domain": 272
+      },
+      "date": "2026-08-08",
+      "group": "UNC6691-1",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/coruna-powerful-ios-exploit-kit",
+        "https://iverify.io/blog/coruna-inside-the-nation-state-grade-ios-exploit-kit-we-ve-been-tracking"
+      ],
+      "slug": "UNC6691-1",
+      "total": 272
+    },
+    {
+      "anchor": "b-2026-08-08-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-08-08",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-08-07-4dc567",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 10
+      },
+      "date": "2026-08-07",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/"
+      ],
+      "slug": "G0032",
+      "total": 10
+    },
+    {
+      "anchor": "b-2026-08-07-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 8
+      },
+      "date": "2026-08-07",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-08-07-b4263c",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-08-07",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/joe4security/status/2085384961570349091",
+        "https://www.joesandbox.com/joereverser/analysis/2e03ffcc-7c06-455e-bbfd-a5b7188fa521/download?type=reports&report=html",
+        "https://www.virustotal.com/gui/file/3b9432019a80a62fe6760a65f2677783bd60383b60206a5db7237a1b050647a2/detection",
+        "https://www.virustotal.com/gui/file/6b85e9c7dd33416a096e377303d82ac49c8c3044f969ff72560409a3f1151cfb/detection"
+      ],
+      "slug": "G0121",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-08-07-35d114",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-08-07",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2085410874051981755"
+      ],
+      "slug": "G0121",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-08-06-568685",
+      "attack_id": null,
+      "counts": {
+        "domain": 7221,
+        "ipv4": 5
+      },
+      "date": "2026-08-06",
+      "group": "UNC6691",
+      "references": [
+        "https://www.validin.com/blog/aye_coruna_ios_exploit_kit_c2/"
+      ],
+      "slug": "UNC6691",
+      "total": 7226
+    },
+    {
+      "anchor": "b-2026-08-06-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 62
+      },
+      "date": "2026-08-06",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 62
+    },
+    {
+      "anchor": "b-2026-08-06-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 15
+      },
+      "date": "2026-08-06",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 15
+    },
+    {
+      "anchor": "b-2026-08-06-4dc567",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 3
+      },
+      "date": "2026-08-06",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2026/02/24/c2-developer-targeting-campaign/"
+      ],
+      "slug": "G0032",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-08-06-ddb617",
+      "attack_id": null,
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-08-06",
+      "group": "UNC6691",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/coruna-powerful-ios-exploit-kit",
+        "https://iverify.io/blog/coruna-inside-the-nation-state-grade-ios-exploit-kit-we-ve-been-tracking",
+        "https://www.validin.com/blog/aye_coruna_ios_exploit_kit_c2/"
+      ],
+      "slug": "UNC6691",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-08-05-51f8f1",
+      "attack_id": "G0100",
+      "counts": {
+        "domain": 14
+      },
+      "date": "2026-08-05",
+      "group": "Inception",
+      "references": [
+        "https://twitter.com/felixaime/status/1601257303080308739",
+        "https://twitter.com/felixaime/status/1601257305294921728"
+      ],
+      "slug": "G0100",
+      "total": 14
+    },
+    {
+      "anchor": "b-2026-08-05-1f6549",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1,
+        "ipv4": 3
+      },
+      "date": "2026-08-05",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/ishivtripathi/status/2084907438243991883",
+        "https://www.virustotal.com/gui/file/ab65cef60fc097c2a9fb03a7855c9c03dfe3ccc874080720f0e631c6ee2c3e51/detection",
+        "https://www.virustotal.com/gui/file/225d7482772a26e4236d91cae51197ab1dfbdd42232157c3e169c19177a384e1/detection",
+        "https://www.virustotal.com/gui/file/5c9bc15e2db6ca97ff325159d6c07fd381a39f9e55ef69499bbfde51bb064808/detection"
+      ],
+      "slug": "G0032",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-08-05-ebbc34",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 4
+      },
+      "date": "2026-08-05",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/blackorbird/status/2084940847863509476",
+        "https://mp.weixin.qq.com/s/PALBLusD4umh_52gy2wVAg"
+      ],
+      "slug": "G0121",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-08-05-6d3876",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-05",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/KseProso/status/2084984281785389166"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-04-769eb7",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 1932
+      },
+      "date": "2026-08-04",
+      "group": "MuddyWater",
+      "references": [
+        "https://www.security.com/threat-intelligence/iran-seedworm-electronics",
+        "https://www.virustotal.com/gui/ip-address/192.124.216.133/relations",
+        "https://www.virustotal.com/gui/ip-address/217.71.204.197/relations",
+        "https://www.virustotal.com/gui/ip-address/57.129.117.19/relations"
+      ],
+      "slug": "G0069",
+      "total": 1932
+    },
+    {
+      "anchor": "b-2026-08-04-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 42
+      },
+      "date": "2026-08-04",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 42
+    },
+    {
+      "anchor": "b-2026-08-04-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-08-04",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-08-04-568685",
+      "attack_id": null,
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-04",
+      "group": "UNC6691",
+      "references": [
+        "https://www.validin.com/blog/aye_coruna_ios_exploit_kit_c2/"
+      ],
+      "slug": "UNC6691",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-03-769eb7",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 1400
+      },
+      "date": "2026-08-03",
+      "group": "MuddyWater",
+      "references": [
+        "https://www.security.com/threat-intelligence/iran-seedworm-electronics",
+        "https://www.virustotal.com/gui/ip-address/192.124.216.133/relations",
+        "https://www.virustotal.com/gui/ip-address/217.71.204.197/relations",
+        "https://www.virustotal.com/gui/ip-address/57.129.117.19/relations"
+      ],
+      "slug": "G0069",
+      "total": 1400
+    },
+    {
+      "anchor": "b-2026-08-03-29c924",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 264
+      },
+      "date": "2026-08-03",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/1979514409551819168"
+      ],
+      "slug": "G0134",
+      "total": 264
+    },
+    {
+      "anchor": "b-2026-08-03-7946d8",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 122
+      },
+      "date": "2026-08-03",
+      "group": "MuddyWater",
+      "references": [
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 122
+    },
+    {
+      "anchor": "b-2026-08-03-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 15
+      },
+      "date": "2026-08-03",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 15
+    },
+    {
+      "anchor": "b-2026-08-03-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 14
+      },
+      "date": "2026-08-03",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 14
+    },
+    {
+      "anchor": "b-2026-08-03-287189",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 13
+      },
+      "date": "2026-08-03",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/skocherhan/status/2066130507427983633"
+      ],
+      "slug": "G0134",
+      "total": 13
+    },
+    {
+      "anchor": "b-2026-08-03-cbd37b",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 10,
+        "url_path": 2
+      },
+      "date": "2026-08-03",
+      "group": "Patchwork",
+      "references": [
+        "https://x.com/SinghSoodeep/status/2084220447487381592",
+        "https://www.virustotal.com/gui/file/d1ae51e18644263c9fdf618b285c978edb46507295faaf60062794011afb31b9/detection",
+        "https://www.virustotal.com/gui/file/6d142127e10dc9bd88e804d0f71278540fa4278c85e6eac6bd6480151e9486a8/detection"
+      ],
+      "slug": "G0040",
+      "total": 12
+    },
+    {
+      "anchor": "b-2026-08-03-5e6768",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-03",
+      "group": "Lazarus Group",
+      "references": [
+        "https://blog.fox-it.com/2025/09/01/three-lazarus-rats-coming-for-your-cheese/",
+        "https://blog.fox-it.com/2026/05/22/remotepe-the-lazarus-rat-that-lives-in-memory/",
+        "https://www.virustotal.com/gui/file/d8de31bcaf5b9ebb99bef36244b0ab3c21367821947a789dff69c33d49aaffc9/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-03-42bf5b",
+      "attack_id": "G0069",
+      "counts": {
+        "url_path": 1
+      },
+      "date": "2026-08-03",
+      "group": "MuddyWater",
+      "references": [
+        "https://www.virustotal.com/gui/file/8ab83a870b4015ecba44502697d5c078466db2d6cc355c03f0d72f9cb2d57961/detection",
+        "https://www.virustotal.com/gui/file/addc18597f18cd87b2b3e0e2cab2b9a63ddad6eb44bbbfdf02233a3db1059709/detection"
+      ],
+      "slug": "G0069",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-03-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-03",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-02-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 9
+      },
+      "date": "2026-08-02",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 9
+    },
+    {
+      "anchor": "b-2026-08-02-eeafbd",
+      "attack_id": null,
+      "counts": {
+        "domain": 9
+      },
+      "date": "2026-08-02",
+      "group": "PAPERWEREWOLF",
+      "references": [
+        "https://x.com/phatomcandle/status/2083976136669974980",
+        "https://www.virustotal.com/gui/ip-address/130.49.213.54/relations",
+        "https://www.virustotal.com/gui/ip-address/213.165.61.50/relations",
+        "https://www.virustotal.com/gui/ip-address/77.110.112.165/relations"
+      ],
+      "slug": "PAPERWEREWOLF",
+      "total": 9
+    },
+    {
+      "anchor": "b-2026-08-02-68056f",
+      "attack_id": "G0016",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-02",
+      "group": "APT29",
+      "references": [
+        "https://x.com/LloydLabs/status/2083594247547068883",
+        "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+      ],
+      "slug": "G0016",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-02-b23109",
+      "attack_id": null,
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-02",
+      "group": "PAPERWEREWOLF",
+      "references": [
+        "https://bi.zone/eng/expertise/blog/kamen-nozhnitsy-bumaga-novyy-instrumentariy-v-atakakh-klastera-paper-werewolf/",
+        "https://www.virustotal.com/gui/ip-address/193.233.18.135/relations",
+        "https://www.virustotal.com/gui/ip-address/213.165.61.226/relations",
+        "https://www.virustotal.com/gui/ip-address/78.153.149.182/relations",
+        "https://www.virustotal.com/gui/ip-address/87.251.66.114/relations",
+        "https://www.virustotal.com/gui/file/938dac6227e47fed245ad25d289489d67e574882430652b5fb7b6368e262e873/detection",
+        "https://x.com/phatomcandle/status/2083976136669974980",
+        "https://www.virustotal.com/gui/ip-address/130.49.213.54/relations",
+        "https://www.virustotal.com/gui/ip-address/213.165.61.50/relations",
+        "https://www.virustotal.com/gui/ip-address/77.110.112.165/relations"
+      ],
+      "slug": "PAPERWEREWOLF",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-08-01-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 70
+      },
+      "date": "2026-08-01",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 70
+    },
+    {
+      "anchor": "b-2026-08-01-68056f",
+      "attack_id": "G0016",
+      "counts": {
+        "domain": 5,
+        "ipv4": 14,
+        "url_path": 1
+      },
+      "date": "2026-08-01",
+      "group": "APT29",
+      "references": [
+        "https://x.com/LloydLabs/status/2083594247547068883",
+        "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+      ],
+      "slug": "G0016",
+      "total": 20
+    },
+    {
+      "anchor": "b-2026-08-01-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 12
+      },
+      "date": "2026-08-01",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 12
+    },
+    {
+      "anchor": "b-2026-08-01-f41b35",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-08-01",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/phatomcandle/status/2077737009569808478",
+        "https://x.com/volrant136/status/2083246886262313189",
+        "https://www.virustotal.com/gui/file/1202845815bc416bdfd8be09f500b5833e63ba5e06aeb5fafba093edf0f7e1b9/detection"
+      ],
+      "slug": "G0121",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-31-5f0196",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-31",
+      "group": "Patchwork",
+      "references": [
+        "https://app.validin.com/detail?type=hash&find=caa62d2795e1d665608e9cf51ef7d088#tab=host_pairs (# 2025-01-26)",
+        "https://www.virustotal.com/gui/ip-address/206.188.197.82/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.139.141/relations",
+        "https://www.virustotal.com/gui/file/41fae8ffc58fab5e1405aa95baec295c3d64512b2fc59cd8abe3fbb0a03667f6/detection",
+        "https://www.virustotal.com/gui/file/e8dcdbbfaea83f0aa48fc74b7fb960de2935fcd4621ef7f4e5bb46ad2792418a/detection"
+      ],
+      "slug": "G0040",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-30-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 38
+      },
+      "date": "2026-07-30",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 38
+    },
+    {
+      "anchor": "b-2026-07-30-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-07-30",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-07-29-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 96
+      },
+      "date": "2026-07-29",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 96
+    },
+    {
+      "anchor": "b-2026-07-29-ceefdc",
+      "attack_id": "G0058",
+      "counts": {
+        "domain": 29,
+        "url_path": 1
+      },
+      "date": "2026-07-29",
+      "group": "Charming Kitten",
+      "references": [
+        "https://securelist.com/mirage-kitten-new-tools/120811/"
+      ],
+      "slug": "G0058",
+      "total": 30
+    },
+    {
+      "anchor": "b-2026-07-29-91ad19",
+      "attack_id": null,
+      "counts": {
+        "domain": 3,
+        "url_path": 12
+      },
+      "date": "2026-07-29",
+      "group": "TRIANGULATION",
+      "references": [
+        "https://x.com/blackorbird/status/2082028695909449873",
+        "https://www.virustotal.com/gui/ip-address/185.151.31.6/relations",
+        "https://www.gendigital.com/blog/insights/research/chasing-an-angry-spark",
+        "https://medium.com/@billmarczak/an-angry-spark-or-a-triangle-in-disguise-ac32852a1be3"
+      ],
+      "slug": "TRIANGULATION",
+      "total": 15
+    },
+    {
+      "anchor": "b-2026-07-29-aa7063",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 5,
+        "ipv4": 6,
+        "url": 2
+      },
+      "date": "2026-07-29",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/tuckner/status/2065140621497561236",
+        "https://gist.github.com/danslo/1778c3bf30d65967db2d680727cbc89d"
+      ],
+      "slug": "G0032",
+      "total": 13
+    },
+    {
+      "anchor": "b-2026-07-29-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-07-29",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-29-d4271b",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-07-29",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2036158996554637591"
+      ],
+      "slug": "G0094",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-29-ec0122",
+      "attack_id": "G0094",
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-07-29",
+      "group": "Kimsuky",
+      "references": [
+        "https://asec.ahnlab.com/en/94552/"
+      ],
+      "slug": "G0094",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-28-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 117
+      },
+      "date": "2026-07-28",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 117
+    },
+    {
+      "anchor": "b-2026-07-28-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 34
+      },
+      "date": "2026-07-28",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 34
+    },
+    {
+      "anchor": "b-2026-07-28-b88dd7",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 8
+      },
+      "date": "2026-07-28",
+      "group": "Patchwork",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1974988141854609418"
+      ],
+      "slug": "G0040",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-07-28-f9b2c7",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-28",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2064325045938274373",
+        "https://x.com/malwrhunterteam/status/2069411902774472896",
+        "https://www.virustotal.com/gui/file/c7a24e1fc68b7233e1c93c02409e9429a1ea5cf0662eb4cd03364373df7d7044/detection",
+        "https://www.virustotal.com/gui/file/9d7576046152695728ead43e9752a105ef2641ef6317ff8d47094b8f541835b2/detection",
+        "https://www.virustotal.com/gui/file/70f732e98634c3f887d84ba8acb1ee7b62e4f865ea4cb1be1edf32c40c27ae51/detection",
+        "https://www.virustotal.com/gui/file/51e1f3a97629e8db50ca1f9a0b68c019e74c07ce5209d5eefd4a2e3f4fe62869/detection",
+        "https://www.virustotal.com/gui/file/322b2eb4e4d61ec6a746e3da421e8fd9c62ce4f919f03aed373f663de539b2ba/detection",
+        "https://www.virustotal.com/gui/file/068505fab1dc1b784ddc845c9eeeba8e04da512383ecd55a7a3d076879656393/detection",
+        "https://www.virustotal.com/gui/file/0988384971ae7a2213793eab632112599031694fba074516b615ca0367f2bf8d/detection",
+        "https://www.virustotal.com/gui/file/3ad42864371905aa4618ab74dcd67b2ddb578b9e3ecaa998f9a54a59fd3fa50c/detection",
+        "https://www.virustotal.com/gui/file/4524b20f1d3c3299c66058e9bcba6f7a18675b7a6eea52c593a08259220c37ae/detection",
+        "https://www.virustotal.com/gui/file/cc92280557b399ec9271af08c5b6f576c8478a7e2660f8fe1b4e8df3d0d80904/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-28-f4665a",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-07-28",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/KirkDerpca/status/2065027462761787802",
+        "https://panther.com/blog/tracking-an-ottercookie-infostealer-campaign-across-npm"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-28-a4794a",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-28",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/1923061758643597787"
+      ],
+      "slug": "G0121",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-27-837068",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 12
+      },
+      "date": "2026-07-27",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2081805669175370115"
+      ],
+      "slug": "G0121",
+      "total": 12
+    },
+    {
+      "anchor": "b-2026-07-26-b71ff1",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-07-26",
+      "group": "Patchwork",
+      "references": [
+        "https://www.cyderes.com/howler-cell/tracking-donot-apt-c-35-bangladesh-military-intrusion"
+      ],
+      "slug": "G0040",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-25-44e7c8",
+      "attack_id": "G0082",
+      "counts": {
+        "domain": 320,
+        "ipv4": 2,
+        "url": 1
+      },
+      "date": "2026-07-25",
+      "group": "APT38",
+      "references": [
+        "https://www.jumpsec.com/guides/inside-a-dprk-bluenoroff-clickfix-kit/"
+      ],
+      "slug": "G0082",
+      "total": 323
+    },
+    {
+      "anchor": "b-2026-07-25-91d8a3",
+      "attack_id": "G0050",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-25",
+      "group": "APT32",
+      "references": [
+        "https://x.com/skocherhan/status/2080796885774680487",
+        "https://www.virustotal.com/gui/file/d1cdeea8a081397632c0522476da2122f93c71cb14a36ad4e8d4351b3d65fd6d/detection"
+      ],
+      "slug": "G0050",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-24-7a148e",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 5,
+        "ipv4": 1,
+        "url_path": 3
+      },
+      "date": "2026-07-24",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/goldenjackel12/status/2080527848432148692",
+        "https://x.com/goldenjackel12/status/2080529013924389088",
+        "https://www.virustotal.com/gui/file/67bbed4c71f93013910a8443fd92f4feb025ea44e7eba47e2f7afe84e3e8e830/detection"
+      ],
+      "slug": "G0134",
+      "total": 9
+    },
+    {
+      "anchor": "b-2026-07-24-ec8be5",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-24",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2080669471878819889"
+      ],
+      "slug": "G0121",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-23-7946d8",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 4406
+      },
+      "date": "2026-07-23",
+      "group": "MuddyWater",
+      "references": [
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 4406
+    },
+    {
+      "anchor": "b-2026-07-23-769eb7",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 949
+      },
+      "date": "2026-07-23",
+      "group": "MuddyWater",
+      "references": [
+        "https://www.security.com/threat-intelligence/iran-seedworm-electronics",
+        "https://www.virustotal.com/gui/ip-address/192.124.216.133/relations",
+        "https://www.virustotal.com/gui/ip-address/217.71.204.197/relations",
+        "https://www.virustotal.com/gui/ip-address/57.129.117.19/relations"
+      ],
+      "slug": "G0069",
+      "total": 949
+    },
+    {
+      "anchor": "b-2026-07-23-4a396d",
+      "attack_id": "G0069",
+      "counts": {
+        "domain": 783
+      },
+      "date": "2026-07-23",
+      "group": "MuddyWater",
+      "references": [
+        "https://www.security.com/threat-intelligence/iran-seedworm-electronics",
+        "https://www.virustotal.com/gui/ip-address/192.124.216.133/relations",
+        "https://www.virustotal.com/gui/ip-address/217.71.204.197/relations",
+        "https://www.virustotal.com/gui/ip-address/57.129.117.19/relations",
+        "https://x.com/phatomcandle/status/2079989870622298451"
+      ],
+      "slug": "G0069",
+      "total": 783
+    },
+    {
+      "anchor": "b-2026-07-23-ce61df",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 25,
+        "ipv4": 2
+      },
+      "date": "2026-07-23",
+      "group": "Kimsuky",
+      "references": [
+        "https://www.enki.co.kr/media-center/blog/analysis-of-kimsuky-s-attack-on-a-south-korean-groupware-vendor-using-a-new-gomir-family-variant"
+      ],
+      "slug": "G0094",
+      "total": 27
+    },
+    {
+      "anchor": "b-2026-07-23-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 20
+      },
+      "date": "2026-07-23",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 20
+    },
+    {
+      "anchor": "b-2026-07-23-ec0122",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 5,
+        "ipv4": 2,
+        "url": 1
+      },
+      "date": "2026-07-23",
+      "group": "Kimsuky",
+      "references": [
+        "https://asec.ahnlab.com/en/94552/"
+      ],
+      "slug": "G0094",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-07-23-3ba343",
+      "attack_id": "G0050",
+      "counts": {
+        "domain": 4
+      },
+      "date": "2026-07-23",
+      "group": "APT32",
+      "references": [
+        "https://x.com/blackorbird/status/2079936188832723190",
+        "https://mp.weixin.qq.com/s/FIDg23u6Peb_cR8N7ddzbA",
+        "https://www.virustotal.com/gui/ip-address/211.4.0.204/relations"
+      ],
+      "slug": "G0050",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-07-23-f41b35",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-07-23",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/phatomcandle/status/2077737009569808478",
+        "https://x.com/volrant136/status/2083246886262313189",
+        "https://www.virustotal.com/gui/file/1202845815bc416bdfd8be09f500b5833e63ba5e06aeb5fafba093edf0f7e1b9/detection"
+      ],
+      "slug": "G0121",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-23-a01573",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-07-23",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/2eroHunter/status/2059205570393997429",
+        "https://www.virustotal.com/gui/file/163e4a72cbe392c073eddc60aee69dc1cf87ce492c375af74e923d75d8084683/detection"
+      ],
+      "slug": "G0032",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-23-b88dd7",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-23",
+      "group": "Patchwork",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1974988141854609418"
+      ],
+      "slug": "G0040",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-22-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 27
+      },
+      "date": "2026-07-22",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 27
+    },
+    {
+      "anchor": "b-2026-07-22-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 8
+      },
+      "date": "2026-07-22",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 8
+    },
+    {
+      "anchor": "b-2026-07-22-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-07-22",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-07-22-517665",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "date": "2026-07-22",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/blackbigswan/status/2079687425757249884"
+      ],
+      "slug": "G0032",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-22-68ef13",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 2
+      },
+      "date": "2026-07-22",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/zoomeye_team/status/1901822378348568825",
+        "https://x.com/blackorbird/status/1993135605623218560",
+        "https://socket.dev/blog/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages",
+        "https://www.gendigital.com/blog/insights/research/apt-cyber-alliances-2025",
+        "https://app.validin.com/detail?find=L-Administrator&type=raw&ref_id=7c876e7935a#tab=host_pairs",
+        "https://www.virustotal.com/gui/file/c6edbb0d733798e5e8168a9df2bccaad7834e40f3c30d09816cc9a8ecc431376/detection"
+      ],
+      "slug": "G0032",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-22-404f8c",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-07-22",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/nextronresearch/status/2079454428038406646",
+        "https://www.virustotal.com/gui/file/1aadea997fc4eda5a8a04e68f6e1828c93e00e817e50c5b6ef874faef43f7fca/detection",
+        "https://www.virustotal.com/gui/file/c107419b6b4c793c92289f00cbb229a344fbe6fad1f34bc53e3e9147fb0a242e/detection"
+      ],
+      "slug": "G0032",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-22-de4520",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-22",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/L0Psec/status/2020850377801781319",
+        "https://www.virustotal.com/gui/ip-address/95.169.180.198/relations",
+        "https://www.virustotal.com/gui/file/41c24510d95fcafc4cc3c31bebccc0c45afad114eb1c9bc6b49a69afc549d574/detection",
+        "https://www.virustotal.com/gui/file/867dd37ad635536cd9396c15944b9bca4b1fa9a9858171e164e73b9fc6be0d55/detection",
+        "https://www.virustotal.com/gui/file/cf33cc4237492b0660698f25548d6738ed1ff24d485dda9654a7fa0b476a953e/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-21-a77f82",
+      "attack_id": null,
+      "counts": {
+        "domain": 96
+      },
+      "date": "2026-07-21",
+      "group": "UNC2465",
+      "references": [
+        "https://x.com/g0njxa/status/2010485906466394343",
+        "https://x.com/g0njxa/status/2027082406847709524",
+        "https://www.virustotal.com/gui/file/cbbe98e1b36eb68a7afe534c21055f9cc793c2a6a7ca63256d273020a096f7a7/detection",
+        "https://www.virustotal.com/gui/file/30427b6732fea64c2cdc0b40c19695902f2bdea5f87dab16b4082bb3cf208557/detection"
+      ],
+      "slug": "UNC2465",
+      "total": 96
+    },
+    {
+      "anchor": "b-2026-07-21-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 77
+      },
+      "date": "2026-07-21",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 77
+    },
+    {
+      "anchor": "b-2026-07-21-1c1546",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 21,
+        "ipv4": 3
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://socradar.io/blog/dprk-clickfake-pylangghost-golangghost-rats/"
+      ],
+      "slug": "G0032",
+      "total": 24
+    },
+    {
+      "anchor": "b-2026-07-21-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 11
+      },
+      "date": "2026-07-21",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 11
+    },
+    {
+      "anchor": "b-2026-07-21-fe624c",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 10
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1991488257708945474",
+        "https://x.com/banthisguy9349/status/2012552220101738625",
+        "https://research.jfrog.com/post/hijacked-npm-vscode-tasks-blockchain/",
+        "https://checkmarx.com/zero-post/chainveil-a-malicious-npm-supply-chain-attack-by-successkey/",
+        "https://www.virustotal.com/gui/file/0a133d4b96fc7b750a7b2ac14c152b61befd8dfa670e1fcd99661e531b49886e/detection"
+      ],
+      "slug": "G0032",
+      "total": 10
+    },
+    {
+      "anchor": "b-2026-07-21-3970fa",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 2
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://app.validin.com/detail?find=Node.js%20upload%20multiple%20files&type=raw&ref_id=02496d38d39#tab=host_pairs (# 2025-08-02)",
+        "https://app.validin.com/detail?find=VScode&type=raw&ref_id=689da69896f#tab=host_pairs (# 2026-04-10)"
+      ],
+      "slug": "G0032",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-21-f9b2c7",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2064325045938274373",
+        "https://x.com/malwrhunterteam/status/2069411902774472896",
+        "https://www.virustotal.com/gui/file/c7a24e1fc68b7233e1c93c02409e9429a1ea5cf0662eb4cd03364373df7d7044/detection",
+        "https://www.virustotal.com/gui/file/9d7576046152695728ead43e9752a105ef2641ef6317ff8d47094b8f541835b2/detection",
+        "https://www.virustotal.com/gui/file/70f732e98634c3f887d84ba8acb1ee7b62e4f865ea4cb1be1edf32c40c27ae51/detection",
+        "https://www.virustotal.com/gui/file/51e1f3a97629e8db50ca1f9a0b68c019e74c07ce5209d5eefd4a2e3f4fe62869/detection",
+        "https://www.virustotal.com/gui/file/322b2eb4e4d61ec6a746e3da421e8fd9c62ce4f919f03aed373f663de539b2ba/detection",
+        "https://www.virustotal.com/gui/file/068505fab1dc1b784ddc845c9eeeba8e04da512383ecd55a7a3d076879656393/detection",
+        "https://www.virustotal.com/gui/file/0988384971ae7a2213793eab632112599031694fba074516b615ca0367f2bf8d/detection",
+        "https://www.virustotal.com/gui/file/3ad42864371905aa4618ab74dcd67b2ddb578b9e3ecaa998f9a54a59fd3fa50c/detection",
+        "https://www.virustotal.com/gui/file/4524b20f1d3c3299c66058e9bcba6f7a18675b7a6eea52c593a08259220c37ae/detection",
+        "https://www.virustotal.com/gui/file/cc92280557b399ec9271af08c5b6f576c8478a7e2660f8fe1b4e8df3d0d80904/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-21-06a715",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/82.29.157.117/relations",
+        "https://app.validin.com/detail?find=%3A%3A%3A%22keywords%22%3A%22hiring%20platform%2C%20recruitment%20software%2C%20candidate%20screening%2C%20talent%20evaluation%2C%20skills-based%20hiring%2C%20interview%20tools%2C%20tech%20hiring%2C%20remote%20hiring%2C%20hiring%20automation%2C%20team%20building%22&type=raw#tab=host_pairs (# 2025-09-08)"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-21-ffc7aa",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-21",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/76.76.21.241/relations"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-20-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 32
+      },
+      "date": "2026-07-20",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 32
+    },
+    {
+      "anchor": "b-2026-07-20-975ae8",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-07-20",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/banthisguy9349/status/2079077405113860398",
+        "https://www.virustotal.com/gui/file/41ee7ddb2be173686dc3a73a49b4e93bc883ef363acca770f7ede891451122ab/detection"
+      ],
+      "slug": "G0032",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-07-20-e63405",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-20",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/nextronresearch/status/2079118025236566357"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-20-de4520",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-20",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/L0Psec/status/2020850377801781319",
+        "https://www.virustotal.com/gui/ip-address/95.169.180.198/relations",
+        "https://www.virustotal.com/gui/file/41c24510d95fcafc4cc3c31bebccc0c45afad114eb1c9bc6b49a69afc549d574/detection",
+        "https://www.virustotal.com/gui/file/867dd37ad635536cd9396c15944b9bca4b1fa9a9858171e164e73b9fc6be0d55/detection",
+        "https://www.virustotal.com/gui/file/cf33cc4237492b0660698f25548d6738ed1ff24d485dda9654a7fa0b476a953e/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-20-e28e08",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-07-20",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/KfishNFT/status/2014379828787494923",
+        "https://x.com/g0njxa/status/2014800328105894004",
+        "https://radar.securityalliance.org/vs-code-tasks-abuse-by-contagious-interview-dprk/",
+        "https://www.abstract.security/blog/contagious-interview-tracking-the-vs-code-tasks-infection-vector",
+        "https://www.virustotal.com/gui/file/60914b8df5b5d64070f71ef13817499b3a85de98433ae5c01bd235abec9464f6/detection",
+        "https://www.virustotal.com/gui/file/6be45e165de60b61e9b7cb9e1f9b72c652c388a04c02d2068de6188cc88fc3fe/detection",
+        "https://www.virustotal.com/gui/file/c226eb59cf696a85ed7134b57f12d82cb392d42b908dd6a463cd4d8c980ee5e8/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-20-f1185e",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-20",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/104.21.39.124/relations"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-20-240919",
+      "attack_id": null,
+      "counts": {
+        "ipv4": 1
+      },
+      "date": "2026-07-20",
+      "group": "UNCLASSIFIED",
+      "references": [
+        "https://x.com/malwrhunterteam/status/2079157644611223810",
+        "https://www.virustotal.com/gui/file/566cc087706f3d3a0e49b9a1d9c8e27090211d80a069162de2e5e8a5b8847414/detection",
+        "https://www.virustotal.com/gui/file/6d0573a78716d51a5fa5282d99a9568e1d515f5c16b9b86a3f3536c1f2622c50/detection"
+      ],
+      "slug": "UNCLASSIFIED",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-19-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-07-19",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-18-6c9d71",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 7,
+        "ipv4": 5
+      },
+      "date": "2026-07-18",
+      "group": "Lazarus Group",
+      "references": [
+        "https://www.elastic.co/security-labs/contagious-interview-malware-svg-steganography"
+      ],
+      "slug": "G0032",
+      "total": 12
+    },
+    {
+      "anchor": "b-2026-07-18-de4520",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 2,
+        "ipv4": 4
+      },
+      "date": "2026-07-18",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/L0Psec/status/2020850377801781319",
+        "https://www.virustotal.com/gui/ip-address/95.169.180.198/relations",
+        "https://www.virustotal.com/gui/file/41c24510d95fcafc4cc3c31bebccc0c45afad114eb1c9bc6b49a69afc549d574/detection",
+        "https://www.virustotal.com/gui/file/867dd37ad635536cd9396c15944b9bca4b1fa9a9858171e164e73b9fc6be0d55/detection",
+        "https://www.virustotal.com/gui/file/cf33cc4237492b0660698f25548d6738ed1ff24d485dda9654a7fa0b476a953e/detection"
+      ],
+      "slug": "G0032",
+      "total": 6
+    },
+    {
+      "anchor": "b-2026-07-18-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-07-18",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-07-18-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-07-18",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-18-dea2a2",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-18",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/skocherhan/status/2027484078132379889"
+      ],
+      "slug": "G0121",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-17-d74301",
+      "attack_id": "G0058",
+      "counts": {
+        "domain": 98
+      },
+      "date": "2026-07-17",
+      "group": "Charming Kitten",
+      "references": [
+        "https://x.com/nextronresearch/status/2078037561667142042",
+        "https://www.nextron-systems.com/2026/06/01/detecting-nimbus-manticore-and-their-sideloading-infection-chains/"
+      ],
+      "slug": "G0058",
+      "total": 98
+    },
+    {
+      "anchor": "b-2026-07-17-74c42a",
+      "attack_id": "G0058",
+      "counts": {
+        "domain": 35
+      },
+      "date": "2026-07-17",
+      "group": "Charming Kitten",
+      "references": [
+        "https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/",
+        "https://research.checkpoint.com/2026/fast-and-furious-nimbus-manticore-operations-during-the-iranian-conflict/"
+      ],
+      "slug": "G0058",
+      "total": 35
+    },
+    {
+      "anchor": "b-2026-07-17-224008",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 10
+      },
+      "date": "2026-07-17",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/L0Psec/status/2077401458505359828",
+        "https://www.virustotal.com/gui/file/795034792aa705f730dd498c51cbd6e472bae2e823d3a865f52bc3814fdeafd0/detection"
+      ],
+      "slug": "G0032",
+      "total": 10
+    },
+    {
+      "anchor": "b-2026-07-17-4356af",
+      "attack_id": "G0032",
+      "counts": {
+        "ipv4": 3
+      },
+      "date": "2026-07-17",
+      "group": "Lazarus Group",
+      "references": [
+        "https://kl4r10n.tech/blog/dprk-new-malware"
+      ],
+      "slug": "G0032",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-17-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 3
+      },
+      "date": "2026-07-17",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 3
+    },
+    {
+      "anchor": "b-2026-07-16-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 12
+      },
+      "date": "2026-07-16",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 12
+    },
+    {
+      "anchor": "b-2026-07-16-b71ff1",
+      "attack_id": "G0040",
+      "counts": {
+        "domain": 1,
+        "url_path": 9
+      },
+      "date": "2026-07-16",
+      "group": "Patchwork",
+      "references": [
+        "https://www.cyderes.com/howler-cell/tracking-donot-apt-c-35-bangladesh-military-intrusion"
+      ],
+      "slug": "G0040",
+      "total": 10
+    },
+    {
+      "anchor": "b-2026-07-16-8aec37",
+      "attack_id": "G0082",
+      "counts": {
+        "ipv4": 2
+      },
+      "date": "2026-07-16",
+      "group": "APT38",
+      "references": [
+        "https://www.validin.com/blog/i_cant_hear_you_unc1069/"
+      ],
+      "slug": "G0082",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-15-e37723",
+      "attack_id": "G0034",
+      "counts": {
+        "domain": 179
+      },
+      "date": "2026-07-15",
+      "group": "Sandworm Team",
+      "references": [
+        "https://cert.gov.ua/article/6318437"
+      ],
+      "slug": "G0034",
+      "total": 179
+    },
+    {
+      "anchor": "b-2026-07-15-766375",
+      "attack_id": "G0082",
+      "counts": {
+        "domain": 40,
+        "ipv4": 12,
+        "url": 1,
+        "url_path": 1
+      },
+      "date": "2026-07-15",
+      "group": "APT38",
+      "references": [
+        "https://x.com/ramimacisabird/status/2038813850179449156",
+        "https://app.garnet.ai/public/detections/6c823543-6d82-5677-8048-40b38527250a",
+        "https://www.stepsecurity.io/blog/axios-compromised-on-npm-malicious-versions-drop-remote-access-trojan",
+        "https://research.jfrog.com/post/easy-day-js/",
+        "https://www.ox.security/blog/easy-day-js-supply-chain-attack-hits-mastra-ai-in-npm/",
+        "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/",
+        "https://www.virustotal.com/gui/ip-address/142.11.206.73/relations",
+        "https://www.virustotal.com/gui/file/e10b1fa84f1d6481625f741b69892780140d4e0e7769e7491e5f4d894c2e0e09/detection",
+        "https://www.virustotal.com/gui/file/f7d335205b8d7b20208fb3ef93ee6dc817905dc3ae0c10a0b164f4e7d07121cd/detection"
+      ],
+      "slug": "G0082",
+      "total": 54
+    },
+    {
+      "anchor": "b-2026-07-15-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 13
+      },
+      "date": "2026-07-15",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 13
+    },
+    {
+      "anchor": "b-2026-07-14-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 110
+      },
+      "date": "2026-07-14",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 110
+    },
+    {
+      "anchor": "b-2026-07-14-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 2
+      },
+      "date": "2026-07-14",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 2
+    },
+    {
+      "anchor": "b-2026-07-13-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 16
+      },
+      "date": "2026-07-13",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 16
+    },
+    {
+      "anchor": "b-2026-07-13-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 4
+      },
+      "date": "2026-07-13",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 4
+    },
+    {
+      "anchor": "b-2026-07-13-de4520",
+      "attack_id": "G0032",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-13",
+      "group": "Lazarus Group",
+      "references": [
+        "https://x.com/L0Psec/status/2020850377801781319",
+        "https://www.virustotal.com/gui/ip-address/95.169.180.198/relations",
+        "https://www.virustotal.com/gui/file/41c24510d95fcafc4cc3c31bebccc0c45afad114eb1c9bc6b49a69afc549d574/detection",
+        "https://www.virustotal.com/gui/file/867dd37ad635536cd9396c15944b9bca4b1fa9a9858171e164e73b9fc6be0d55/detection",
+        "https://www.virustotal.com/gui/file/cf33cc4237492b0660698f25548d6738ed1ff24d485dda9654a7fa0b476a953e/detection"
+      ],
+      "slug": "G0032",
+      "total": 1
+    },
+    {
+      "anchor": "b-2026-07-12-c3225f",
+      "attack_id": "G0094",
+      "counts": {
+        "domain": 17
+      },
+      "date": "2026-07-12",
+      "group": "Kimsuky",
+      "references": [
+        "https://x.com/skocherhan/status/2047382182000312798",
+        "https://x.com/skocherhan/status/2048153192563613921"
+      ],
+      "slug": "G0094",
+      "total": 17
+    },
+    {
+      "anchor": "b-2026-07-12-a3b405",
+      "attack_id": "G0134",
+      "counts": {
+        "domain": 5
+      },
+      "date": "2026-07-12",
+      "group": "Transparent Tribe",
+      "references": [
+        "https://x.com/Malwarehunterr/status/2073465217888223424"
+      ],
+      "slug": "G0134",
+      "total": 5
+    },
+    {
+      "anchor": "b-2026-07-11-bb6a2e",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 9
+      },
+      "date": "2026-07-11",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/suyog41/status/2075572390315311333",
+        "https://www.virustotal.com/gui/file/372226c831de35186e1c96ec28c9ca8ceb02d69c9fe718e21d35b2e921ccf1de/detection",
+        "https://www.virustotal.com/gui/file/5ef25d162827195f2fbdc80fd5c6d119ff41dd16f980692a8c4308465d88c554/detection"
+      ],
+      "slug": "G0121",
+      "total": 9
+    },
+    {
+      "anchor": "b-2026-07-11-17cd5e",
+      "attack_id": "G0121",
+      "counts": {
+        "domain": 1
+      },
+      "date": "2026-07-11",
+      "group": "Sidewinder",
+      "references": [
+        "https://x.com/volrant136/status/2076012175685287991"
+      ],
+      "slug": "G0121",
+      "total": 1
+    }
+  ],
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "project": "https://github.com/trilwu/apttrail",
+  "window": {
+    "from": "2026-07-11",
+    "to": "2026-08-15"
+  }
+}

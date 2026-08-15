@@ -1,0 +1,224 @@
+{
+  "aliases": [
+    "ghostform",
+    "splitdrop",
+    "twintalk",
+    "twintask"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 36,
+    "ipv4": 4,
+    "url": 4
+  },
+  "first_seen": {
+    "domain": {
+      "207-e-walter.xyz": "2026-03-02",
+      "afterworld.store": "2026-03-02",
+      "anythingshere.shop": "2026-03-02",
+      "cside.site": "2026-03-02",
+      "cywofio2.pro": "2026-03-02",
+      "digitaleconomy.lol": "2026-03-02",
+      "digitallcomunity.xyz": "2026-03-02",
+      "fashionmodels.site": "2026-03-02",
+      "findbesthotels.info": "2026-03-02",
+      "footballclub.sbs": "2026-03-02",
+      "footballfans.asia": "2026-03-02",
+      "formacja.info": "2026-03-02",
+      "garbagecollector.site": "2026-03-02",
+      "girlsbags.shop": "2026-03-02",
+      "justweb.click": "2026-03-02",
+      "lecturegenieltd.pro": "2026-03-02",
+      "luckywavez.shop": "2026-03-02",
+      "mancpr.icu": "2026-03-02",
+      "meetingapp.site": "2026-03-02",
+      "menclub.lt": "2026-03-02",
+      "musiclivetrack.website": "2026-03-02",
+      "ntcx.pro": "2026-03-02",
+      "onlinepettools.shop": "2026-03-02",
+      "parct.tech": "2026-03-04",
+      "phoneaccessory.site": "2026-03-02",
+      "programmingcourse.site": "2026-03-02",
+      "retseptik.info": "2026-03-02",
+      "sportscarshop.lol": "2026-03-02",
+      "steelweight.mobi": "2026-03-02",
+      "stone110.store": "2026-03-02",
+      "test.tender.pro": "2026-03-04",
+      "test.xn--d1abb4arh.xn--p1ai": "2026-03-04",
+      "testold.tender.pro": "2026-03-02",
+      "web14.info": "2026-03-02",
+      "web27.info": "2026-03-02",
+      "wehakaa2.pro": "2026-03-02"
+    },
+    "ipv4": {
+      "185.76.79.125:443": "2026-03-04",
+      "38.180.239.161:443": "2026-03-04",
+      "83.172.159.180:443": "2026-03-04",
+      "92.243.65.243:443": "2026-03-04"
+    },
+    "url": {
+      "http://185.76.79.125": "2026-03-04",
+      "http://38.180.239.161": "2026-03-04",
+      "http://83.172.159.180": "2026-03-04",
+      "http://92.243.65.243": "2026-03-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-03-02",
+    "latest": "2026-03-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "207-e-walter.xyz",
+      "afterworld.store",
+      "anythingshere.shop",
+      "cside.site",
+      "cywofio2.pro",
+      "digitaleconomy.lol",
+      "digitallcomunity.xyz",
+      "fashionmodels.site",
+      "findbesthotels.info",
+      "footballclub.sbs",
+      "footballfans.asia",
+      "formacja.info",
+      "garbagecollector.site",
+      "girlsbags.shop",
+      "justweb.click",
+      "lecturegenieltd.pro",
+      "luckywavez.shop",
+      "mancpr.icu",
+      "meetingapp.site",
+      "menclub.lt",
+      "musiclivetrack.website",
+      "ntcx.pro",
+      "onlinepettools.shop",
+      "parct.tech",
+      "phoneaccessory.site",
+      "programmingcourse.site",
+      "retseptik.info",
+      "sportscarshop.lol",
+      "steelweight.mobi",
+      "stone110.store",
+      "test.tender.pro",
+      "test.xn--d1abb4arh.xn--p1ai",
+      "testold.tender.pro",
+      "web14.info",
+      "web27.info",
+      "wehakaa2.pro"
+    ],
+    "ipv4": [
+      "185.76.79.125:443",
+      "38.180.239.161:443",
+      "83.172.159.180:443",
+      "92.243.65.243:443"
+    ],
+    "url": [
+      "http://185.76.79.125",
+      "http://38.180.239.161",
+      "http://83.172.159.180",
+      "http://92.243.65.243"
+    ]
+  },
+  "last_modified": "2026-03-04T16:06:08+00:00",
+  "maltrail_groups": [
+    "DUSTSPECTER"
+  ],
+  "references": [
+    "https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters",
+    "https://www.zscaler.com/blogs/security-research/dust-specter-apt-targets-government-officials-iraq"
+  ],
+  "related": [],
+  "slug": "DUSTSPECTER",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 4,
+        "url": 4
+      },
+      "first_seen": "2026-03-04",
+      "indicators": {
+        "domain": [
+          "parct.tech",
+          "test.tender.pro",
+          "test.xn--d1abb4arh.xn--p1ai"
+        ],
+        "ipv4": [
+          "185.76.79.125:443",
+          "38.180.239.161:443",
+          "83.172.159.180:443",
+          "92.243.65.243:443"
+        ],
+        "url": [
+          "http://185.76.79.125",
+          "http://38.180.239.161",
+          "http://83.172.159.180",
+          "http://92.243.65.243"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/dust-specter-apt-targets-government-officials-iraq",
+        "https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 33
+      },
+      "first_seen": "2026-03-02",
+      "indicators": {
+        "domain": [
+          "207-e-walter.xyz",
+          "afterworld.store",
+          "anythingshere.shop",
+          "cside.site",
+          "cywofio2.pro",
+          "digitaleconomy.lol",
+          "digitallcomunity.xyz",
+          "fashionmodels.site",
+          "findbesthotels.info",
+          "footballclub.sbs",
+          "footballfans.asia",
+          "formacja.info",
+          "garbagecollector.site",
+          "girlsbags.shop",
+          "justweb.click",
+          "lecturegenieltd.pro",
+          "luckywavez.shop",
+          "mancpr.icu",
+          "meetingapp.site",
+          "menclub.lt",
+          "musiclivetrack.website",
+          "ntcx.pro",
+          "onlinepettools.shop",
+          "phoneaccessory.site",
+          "programmingcourse.site",
+          "retseptik.info",
+          "sportscarshop.lol",
+          "steelweight.mobi",
+          "stone110.store",
+          "testold.tender.pro",
+          "web14.info",
+          "web27.info",
+          "wehakaa2.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.zscaler.com/blogs/security-research/dust-specter-apt-targets-government-officials-iraq",
+        "https://hunt.io/blog/iranian-apt-infrastructure-state-aligned-clusters"
+      ],
+      "total": 33
+    }
+  ]
+}

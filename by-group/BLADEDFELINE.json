@@ -1,0 +1,79 @@
+{
+  "aliases": [
+    "laret",
+    "pinar"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 6
+  },
+  "first_seen": {
+    "ipv4": {
+      "178.209.51.61:1234": "2026-01-02",
+      "178.209.51.61:22": "2026-01-02",
+      "178.209.51.61:8000": "2026-01-02",
+      "185.76.78.177:1234": "2026-01-02",
+      "185.76.78.177:22": "2026-01-02",
+      "185.76.78.177:8000": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {
+      "178.209.51.61:1234": "at-or-before",
+      "178.209.51.61:22": "at-or-before",
+      "178.209.51.61:8000": "at-or-before",
+      "185.76.78.177:1234": "at-or-before",
+      "185.76.78.177:22": "at-or-before",
+      "185.76.78.177:8000": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "178.209.51.61:1234",
+      "178.209.51.61:22",
+      "178.209.51.61:8000",
+      "185.76.78.177:1234",
+      "185.76.78.177:22",
+      "185.76.78.177:8000"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "BLADEDFELINE"
+  ],
+  "references": [
+    "https://www.welivesecurity.com/en/eset-research/bladedfeline-whispering-dark/"
+  ],
+  "related": [],
+  "slug": "BLADEDFELINE",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 6
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "178.209.51.61:1234",
+          "178.209.51.61:22",
+          "178.209.51.61:8000",
+          "185.76.78.177:1234",
+          "185.76.78.177:22",
+          "185.76.78.177:8000"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/bladedfeline-whispering-dark/"
+      ],
+      "total": 6
+    }
+  ]
+}

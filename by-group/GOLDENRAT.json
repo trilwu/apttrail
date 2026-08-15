@@ -1,0 +1,80 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "bashalalassad1sea.noip.me": "2018-10-23",
+      "bbbb4.noip.me": "2018-10-23",
+      "chatsecurelite.uk.to": "2018-10-23",
+      "chatsecurelite.us.to": "2018-10-23",
+      "telegram.strangled.net": "2018-10-23",
+      "telgram.strangled.net": "2018-10-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-23",
+    "latest": "2018-10-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bashalalassad1sea.noip.me",
+      "bbbb4.noip.me",
+      "chatsecurelite.uk.to",
+      "chatsecurelite.us.to",
+      "telegram.strangled.net",
+      "telgram.strangled.net"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "GOLDENRAT"
+  ],
+  "references": [
+    "https://vxcube.com/recent-threats-ioc/5b56b22da39bb5094a3c9231/detail"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0027"
+    }
+  ],
+  "slug": "GOLDENRAT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2018-10-23",
+      "indicators": {
+        "domain": [
+          "bashalalassad1sea.noip.me",
+          "bbbb4.noip.me",
+          "chatsecurelite.uk.to",
+          "chatsecurelite.us.to",
+          "telegram.strangled.net",
+          "telgram.strangled.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vxcube.com/recent-threats-ioc/5b56b22da39bb5094a3c9231/detail"
+      ],
+      "total": 6
+    }
+  ]
+}

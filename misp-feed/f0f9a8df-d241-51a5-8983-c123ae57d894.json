@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a8514677-0107-5b35-a95c-0b757cd9ab39",
+        "value": "bolepaund.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3ba1cdc3-26af-54f3-9722-0f9d9c376ace",
+        "value": "disk-fulldatabase.rhcloud.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7be3920d-8877-5787-b884-056088b19002",
+        "value": "gils.ho.ua"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5c92f7f0-30b9-52e6-848a-33a73df5cd35",
+        "value": "lefting.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1b6a62db-43ec-599c-bcdc-b8f1152d60db",
+        "value": "literat.ho.ua"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ecaa1f69-6637-56c8-9179-c4d921ade98e",
+        "value": "wallejob.in.ua"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1491578410",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b8ff1d3d-2c8a-5a6b-9bfc-1f7c84aa98d8",
+        "value": "wallex.ho.ua"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1605088619",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "e16d02b4-14d5-54a9-b0b2-1ca59b22ca4b",
+        "value": "celebrat.net/wd.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:groundbait"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GROUNDBAIT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f0f9a8df-d241-51a5-8983-c123ae57d894"
+  }
+}

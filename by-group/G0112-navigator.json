@@ -1,0 +1,201 @@
+{
+  "name": "Windshift (G0112) - APTtrail",
+  "description": "Techniques attributed to Windshift by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0112.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1027",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1033",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1036.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1057",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1082",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1189",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1406",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1407",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1417.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1420",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1426",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1429",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1430",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1512",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1518.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1521.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1533",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1627.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1628.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1632.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1633.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1636.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1636.004",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Windshift",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

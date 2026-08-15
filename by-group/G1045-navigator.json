@@ -1,0 +1,96 @@
+{
+  "name": "Salt Typhoon (G1045) - APTtrail",
+  "description": "Techniques attributed to Salt Typhoon by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G1045.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1021.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1048.003",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1098.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1110.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1136",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1572",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1590.004",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1602.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1685.006",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1686",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Salt Typhoon",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

@@ -1,0 +1,151 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f502c9d5-e21c-5e24-820d-3bb3fcd72bf1",
+        "value": "comemail.email"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0f902daa-1fad-527d-8a0b-4bfc58a93b13",
+        "value": "comemails.email"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d2c94391-1e5d-5107-891e-bee37c57d454",
+        "value": "commail.co"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "41263bb8-2ee7-5bfd-93bc-2dd0cb369c6b",
+        "value": "daynew.today"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3787d0ca-52fe-553b-a653-77ffe24a40ab",
+        "value": "daynews.today"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537526698",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c76cfa61-9bd0-5251-84fe-adfd73195c52",
+        "value": "t1bet.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537526698",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dd9fed8e-a962-54b2-9b49-5e213ccc27a6",
+        "value": "tibet-office.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654239407",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8322fb49-59f7-58d1-bdb5-f21e52407cb5",
+        "value": "tibetfreedom.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "442572e3-e3b6-5b8f-b5c0-71ce969d77f9",
+        "value": "tibetfrum.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9b38bb88-3036-5646-87ae-7e2b0a6f04f7",
+        "value": "tibethouse.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1179d6f6-5ad0-54ee-8d42-c90bf7b6fe97",
+        "value": "tibetnews.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8f61024d-7254-58f3-9267-9e02b73feb77",
+        "value": "tibetnews.today"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654238959",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e8be31c1-9e89-5474-be48-d50c5293dde9",
+        "value": "tibetyouthcongress.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654238959",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "9f7c853d-77a6-5a4a-8787-0dde7aa6aff7",
+        "value": "45.77.45.222:110"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537523753",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "94ea6742-e0a3-5555-821b-39020d01cd94",
+        "value": "/qqqzqa"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:familiarfeeling"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: FAMILIARFEELING",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "1b452c51-2f12-5f95-95c4-e5802f72c550"
+  }
+}

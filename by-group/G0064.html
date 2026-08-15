@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APT33 · APTtrail</title>
+<meta name=description content="102 indicators attributed to APT33 (G0064), from 27 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0064.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="APT33 · APTtrail">
+<meta property="og:description" content="102 indicators attributed to APT33 (G0064), from 27 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0064.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>APT33 <a class=gid href="https://attack.mitre.org/groups/G0064/">G0064</a></h1>
+<p class=aka><b>33</b></p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>102</dd></div>
+<div><dt>Source reports</dt><dd>27</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-01-02</dd></div>
+</dl>
+<div class=spark><span style="--h:16%" title="2017: 2 indicators"></span><span style="--h:11%" title="2018: 1 indicators"></span><span style="--h:100%" title="2019: 82 indicators"></span><span style="--h:43%" title="2020: 15 indicators"></span><span style="--h:0%" title="2021: 0 indicators"></span><span style="--h:0%" title="2022: 0 indicators"></span><span style="--h:11%" title="2023: 1 indicators"></span><span style="--h:11%" title="2024: 1 indicators"></span></div>
+<div class=spark-axis><span>2017</span><span>2024</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=IR">IR</a><br><span class=note>Iran (Islamic Republic of)</span></dd>
+<dt>Activity</dt><dd>Espionage</dd>
+<dt>Targeted sectors</dt><dd><ul class=chips><li><a href="../groups.html?sector=Private%20sector">Private sector</a></li></ul></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>Saudi Arabia</li><li>South Korea</li><li>United States</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_33.txt">33</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0064.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0064-domain.txt</pre>
+<p class=note><a href="G0064.json">G0064.json</a> &middot; <a href="G0064-domain.txt">G0064-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>102 indicators</span></h2>
+<p class=lede>APT33 is a suspected Iranian threat group that has carried out operations since at least 2013. The group has targeted organizations across multiple industries in the United States, Saudi Arabia, and South Korea, with a particular interest in the aviation and energy sectors.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>99</td><td class=f><a href="G0064-domain.txt">G0064-domain.txt</a></td></tr>
+<tr><td>ipv4</td><td class=n>1</td><td class=f><a href="G0064.json">G0064.json</a></td></tr>
+<tr><td>url</td><td class=n>1</td><td class=f><a href="G0064.json">G0064.json</a></td></tr>
+<tr><td>url_path</td><td class=n>1</td><td class=f><a href="G0064.json">G0064.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>31 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0064-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0064-navigator.json">download the layer</a> (31 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1003/001/"><b>T1003.001</b> LSASS Memory</a></li><li><a href="https://attack.mitre.org/techniques/T1003/004/"><b>T1003.004</b> LSA Secrets</a></li><li><a href="https://attack.mitre.org/techniques/T1003/005/"><b>T1003.005</b> Cached Domain Credentials</a></li><li><a href="https://attack.mitre.org/techniques/T1027/013/"><b>T1027.013</b> Encrypted/Encoded File</a></li><li><a href="https://attack.mitre.org/techniques/T1040/"><b>T1040</b> Network Sniffing</a></li><li><a href="https://attack.mitre.org/techniques/T1048/003/"><b>T1048.003</b> Exfiltration Over Unencrypted Non-C2 Protocol</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/005/"><b>T1059.005</b> Visual Basic</a></li><li><a href="https://attack.mitre.org/techniques/T1068/"><b>T1068</b> Exploitation for Privilege Escalation</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1078/"><b>T1078</b> Valid Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1078/004/"><b>T1078.004</b> Cloud Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1110/003/"><b>T1110.003</b> Password Spraying</a></li><li><a href="https://attack.mitre.org/techniques/T1132/001/"><b>T1132.001</b> Standard Encoding</a></li><li><a href="https://attack.mitre.org/techniques/T1203/"><b>T1203</b> Exploitation for Client Execution</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1204/002/"><b>T1204.002</b> Malicious File</a></li><li><a href="https://attack.mitre.org/techniques/T1546/003/"><b>T1546.003</b> Windows Management Instrumentation Event Subscription</a></li><li><a href="https://attack.mitre.org/techniques/T1547/001/"><b>T1547.001</b> Registry Run Keys / Startup Folder</a></li><li><a href="https://attack.mitre.org/techniques/T1552/001/"><b>T1552.001</b> Credentials In Files</a></li><li><a href="https://attack.mitre.org/techniques/T1552/006/"><b>T1552.006</b> Group Policy Preferences</a></li><li><a href="https://attack.mitre.org/techniques/T1555/"><b>T1555</b> Credentials from Password Stores</a></li><li><a href="https://attack.mitre.org/techniques/T1555/003/"><b>T1555.003</b> Credentials from Web Browsers</a></li><li><a href="https://attack.mitre.org/techniques/T1560/001/"><b>T1560.001</b> Archive via Utility</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1566/002/"><b>T1566.002</b> Spearphishing Link</a></li><li><a href="https://attack.mitre.org/techniques/T1571/"><b>T1571</b> Non-Standard Port</a></li><li><a href="https://attack.mitre.org/techniques/T1573/001/"><b>T1573.001</b> Symmetric Cryptography</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li></ul>
+
+<h2 id=software>Software <span class=n>16</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0002/"><b>Mimikatz</b></a></li><li><a href="https://attack.mitre.org/software/S0039/"><b>Net</b></a></li><li><a href="https://attack.mitre.org/software/S0095/"><b>ftp</b></a></li><li><a href="https://attack.mitre.org/software/S0129/"><b>AutoIt backdoor</b></a></li><li><a href="https://attack.mitre.org/software/S0192/"><b>Pupy</b></a></li><li><a href="https://attack.mitre.org/software/S0194/"><b>PowerSploit</b></a></li><li><a href="https://attack.mitre.org/software/S0198/"><b>NETWIRE</b></a></li><li><a href="https://attack.mitre.org/software/S0199/"><b>TURNEDUP</b></a></li><li><a href="https://attack.mitre.org/software/S0336/"><b>NanoCore</b></a></li><li><a href="https://attack.mitre.org/software/S0349/"><b>LaZagne</b></a></li><li><a href="https://attack.mitre.org/software/S0358/"><b>Ruler</b></a></li><li><a href="https://attack.mitre.org/software/S0363/"><b>Empire</b></a></li><li><a href="https://attack.mitre.org/software/S0371/"><b>POWERTON</b></a></li><li><a href="https://attack.mitre.org/software/S0378/"><b>PoshC2</b></a></li><li><a href="https://attack.mitre.org/software/S0380/"><b>StoneDrill</b></a></li><li><a href="https://attack.mitre.org/software/S1134/"><b>DEADWOOD</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>27 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>29</span><a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>29</span><a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>20</span><a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow"><span class=host>hyas.com</span><span class=path>/news/hunting-apt33-campaign-infrastruct…</span></a><div class=bar style="--w:69%"></div></li>
+<li><span class=c>20</span><a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d85272acd389e89e743368c</span></a><div class=bar style="--w:69%"></div></li>
+<li><span class=c>14</span><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a><div class=bar style="--w:48%"></div></li>
+<li><span class=c>13</span><a href="https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/" rel="noopener nofollow"><span class=host>blog.telsy.com</span><span class=path>/meeting-powerband-the-apt33-net-powerto…</span></a><div class=bar style="--w:45%"></div></li>
+<li><span class=c>13</span><a href="https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5e4430d06ed4c78cf4aa7872</span></a><div class=bar style="--w:45%"></div></li>
+<li><span class=c>10</span><a href="https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/" rel="noopener nofollow"><span class=host>blog.trendmicro.com</span><span class=path>/trendlabs-security-intelligence/more-th…</span></a><div class=bar style="--w:34%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>8</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="STONEDRILL.html">STONEDRILL</a><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="G0007.html">APT28</a> <span class=gidtag>G0007</span><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="SHAMOON.html">SHAMOON</a><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="G0040.html">Patchwork</a> <span class=gidtag>G0040</span><div class=why><span class="ev software">shares AutoIt backdoor</span></div></li><li><a href="G0034.html">Sandworm Team</a> <span class=gidtag>G0034</span><div class=why><span class="ev software">shares PoshC2</span></div></li><li><a href="G0043.html">Group5</a> <span class=gidtag>G0043</span><div class=why><span class="ev software">shares NanoCore</span></div></li><li><a href="G0078.html">Gorgon Group</a> <span class=gidtag>G0078</span><div class=why><span class="ev software">shares NanoCore</span></div></li><li><a href="G1001.html">HEXANE</a> <span class=gidtag>G1001</span><div class=why><span class="ev software">shares PoshC2</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>102 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2022-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2022</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>102</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 99</button><button type=button data-type="url" aria-pressed=false>url 1</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 1</button><button type=button data-type="url_path" aria-pressed=false>url_path 1</button></div>
+
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2024-02-20-7e2099">
+<div class=when><a class=date href="#b-2024-02-20-7e2099"><time datetime="2024-02-20">2024-02-20</time></a> <span class=cnt>1 url</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/banthisguy9349/status/1759984117003719061" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/banthisguy9349/status/17599841170037190…</span></a> &middot; <a href="https://shadowdragon.io/blog/additional-insights-into-iranian-cyber-espionage-apt33-2/" rel="noopener nofollow"><span class=host>shadowdragon.io</span><span class=path>/blog/additional-insights-into-iranian-c…</span></a></p>
+<table class=iocs>
+<tr data-t="url"><td class=val>http://34.101.157.124</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2023-12-22-695276">
+<div class=when><a class=date href="#b-2023-12-22-695276"><time datetime="2023-12-22">2023-12-22</time></a> <span class=cnt>1 domain</span><span class=ago>3 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/MsftSecIntel/status/1737895710169628824" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/MsftSecIntel/status/1737895710169628824</span></a> &middot; <a href="https://twitter.com/MsftSecIntel/status/1737895717870440609" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/MsftSecIntel/status/1737895717870440609</span></a> &middot; <a href="https://thehackernews.com/2023/12/microsoft-warns-of-new-falsefont.html" rel="noopener nofollow"><span class=host>thehackernews.com</span><span class=path>/2023/12/microsoft-warns-of-new-falsefon…</span></a> &middot; <a href="https://unit42.paloaltonetworks.com/curious-serpens-falsefont-backdoor/" rel="noopener nofollow"><span class=host>unit42.paloaltonetworks.com</span><span class=path>/curious-serpens-falsefont-backdoor</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>digitalcodecrafters.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-09-11-e3fc81">
+<div class=when><a class=date href="#b-2020-09-11-e3fc81"><time datetime="2020-09-11">2020-09-11</time></a> <span class=cnt>4 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/kyleehmke/status/1304444869809758210" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/kyleehmke/status/1304444869809758210</span></a> &middot; <a href="https://twitter.com/kyleehmke/status/1304444870979919872" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/kyleehmke/status/1304444870979919872</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>akadnsplugin.com</td></tr>
+<tr data-t="domain"><td class=val>ocsp-support.com</td></tr>
+<tr data-t="domain"><td class=val>service-houston.com</td></tr>
+<tr data-t="domain"><td class=val>support-newyork.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-08-12-b2dc59">
+<div class=when><a class=date href="#b-2020-08-12-b2dc59"><time datetime="2020-08-12">2020-08-12</time></a> <span class=cnt>1 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/kyleehmke/status/1293498254009815040" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/kyleehmke/status/1293498254009815040</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>relaxingsports.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-06-22-3a427a">
+<div class=when><a class=date href="#b-2020-06-22-3a427a"><time datetime="2020-06-22">2020-06-22</time></a> <span class=cnt>1 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ShadowChasing1/status/1275042060207132672" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ShadowChasing1/status/12750420602071326…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/e7b992f95b3908579d026f22c237ad5ff7663c9886b520f15cc3e27ef90dcbb1/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/e7b992f95b3908579d026f22c237ad…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>availsqaapi.premieredigital.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-02-13-015d7f">
+<div class=when><a class=date href="#b-2020-02-13-015d7f"><time datetime="2020-02-13">2020-02-13</time></a> <span class=cnt>9 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/" rel="noopener nofollow"><span class=host>blog.telsy.com</span><span class=path>/meeting-powerband-the-apt33-net-powerto…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5e4430d06ed4c78cf4aa7872</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>dailystudy.org</td></tr>
+<tr data-t="domain"><td class=val>eventmonitoring.org</td></tr>
+<tr data-t="domain"><td class=val>gefurrinn.com</td></tr>
+<tr data-t="domain"><td class=val>imap-outlook.com</td></tr>
+<tr data-t="domain"><td class=val>powersafety.org</td></tr>
+<tr data-t="domain"><td class=val>smtpauths.com</td></tr>
+<tr data-t="domain"><td class=val>smtpsync.com</td></tr>
+<tr data-t="domain"><td class=val>theworldjob.org</td></tr>
+<tr data-t="domain"><td class=val>world-careers.org</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-12-16-a98c86">
+<div class=when><a class=date href="#b-2019-12-16-a98c86"><time datetime="2019-12-16">2019-12-16</time></a> <span class=cnt>1 ipv4</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/Sam1rSQS/status/1206552916959662080" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Sam1rSQS/status/1206552916959662080</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>188.166.55.116:56444</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-11-14-329447">
+<div class=when><a class=date href="#b-2019-11-14-329447"><time datetime="2019-11-14">2019-11-14</time></a> <span class=cnt>10 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/" rel="noopener nofollow"><span class=host>blog.trendmicro.com</span><span class=path>/trendlabs-security-intelligence/more-th…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5dcd22740cea7974f1e9927b" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5dcd22740cea7974f1e9927b</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>qualitweb.com</td></tr>
+<tr data-t="domain"><td class=val>service-eset.com</td></tr>
+<tr data-t="domain"><td class=val>service-essential.com</td></tr>
+<tr data-t="domain"><td class=val>service-explorer.com</td></tr>
+<tr data-t="domain"><td class=val>service-norton.com</td></tr>
+<tr data-t="domain"><td class=val>simsoshop.com</td></tr>
+<tr data-t="domain"><td class=val>suncocity.com</td></tr>
+<tr data-t="domain"><td class=val>update-symantec.com</td></tr>
+<tr data-t="domain"><td class=val>zandelshop.com</td></tr>
+<tr data-t="domain"><td class=val>zeverco.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-11-13-94ab51">
+<div class=when><a class=date href="#b-2019-11-13-94ab51"><time datetime="2019-11-13">2019-11-13</time></a> <span class=cnt>4 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/CTI_Marc/status/1194573048625729536" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/CTI_Marc/status/1194573048625729536</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5dcc25f17c401b08b33d3d84" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5dcc25f17c401b08b33d3d84</span></a> &middot; <a href="https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/" rel="noopener nofollow"><span class=host>blog.telsy.com</span><span class=path>/meeting-powerband-the-apt33-net-powerto…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5e4430d06ed4c78cf4aa7872</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>azure-dnszones.com</td></tr>
+<tr data-t="domain"><td class=val>global-careers.org</td></tr>
+<tr data-t="domain"><td class=val>lovememories.org</td></tr>
+<tr data-t="domain"><td class=val>times-sync.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-09-20-c14963">
+<div class=when><a class=date href="#b-2019-09-20-c14963"><time datetime="2019-09-20">2019-09-20</time></a> <span class=cnt>16 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow"><span class=host>hyas.com</span><span class=path>/news/hunting-apt33-campaign-infrastruct…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d85272acd389e89e743368c</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>admindirector.com</td></tr>
+<tr data-t="domain"><td class=val>businessscards.com</td></tr>
+<tr data-t="domain"><td class=val>cardchsk.com</td></tr>
+<tr data-t="domain"><td class=val>cardkuys.com</td></tr>
+<tr data-t="domain"><td class=val>ceoadminoffice.com</td></tr>
+<tr data-t="domain"><td class=val>diplomatsign.com</td></tr>
+<tr data-t="domain"><td class=val>groupchiefexecutive.com</td></tr>
+<tr data-t="domain"><td class=val>mailsarchive.com</td></tr>
+<tr data-t="domain"><td class=val>managementdirector.com</td></tr>
+<tr data-t="domain"><td class=val>moreonlineshopping.com</td></tr>
+<tr data-t="domain"><td class=val>officemngt.com</td></tr>
+<tr data-t="domain"><td class=val>phpencryptssl.com</td></tr>
+<tr data-t="domain"><td class=val>service-search.info</td></tr>
+<tr data-t="domain"><td class=val>tokensetting.com</td></tr>
+<tr data-t="domain"><td class=val>truelogon.com</td></tr>
+<tr data-t="domain"><td class=val>urlmanage.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-07-03-c14963">
+<div class=when><a class=date href="#b-2019-07-03-c14963"><time datetime="2019-07-03">2019-07-03</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow"><span class=host>hyas.com</span><span class=path>/news/hunting-apt33-campaign-infrastruct…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d85272acd389e89e743368c</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>customermgmt.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-06-26-d9f079">
+<div class=when><a class=date href="#b-2019-06-26-d9f079"><time datetime="2019-06-26">2019-06-26</time></a> <span class=cnt>24 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>backupnet.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>bistbotsproxies.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>fucksaudi.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>googlechromehost.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>hellocookies.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>hyperservice.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>mynetwork.cf</td></tr>
+<tr data-t="domain"><td class=val>n3tc4t.hopto.com</td></tr>
+<tr data-t="domain"><td class=val>newhost.hopto.org</td></tr>
+<tr data-t="domain"><td class=val>njrat12.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>remote-server.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>remserver.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>servhost.hopto.org</td></tr>
+<tr data-t="domain"><td class=val>service-avant.com</td></tr>
+<tr data-t="domain"><td class=val>srvhost.servehttp.com</td></tr>
+<tr data-t="domain"><td class=val>svcexplores.com</td></tr>
+<tr data-t="domain"><td class=val>teamnj.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>trojan1117.hopto.org</td></tr>
+<tr data-t="domain"><td class=val>update-sec.com</td></tr>
+<tr data-t="domain"><td class=val>windowsx.sytes.net</td></tr>
+<tr data-t="domain"><td class=val>wwwgooglecom.sytes.net</td></tr>
+<tr data-t="domain"><td class=val>xtreme.hopto.org</td></tr>
+<tr data-t="domain"><td class=val>younesadams.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>za158155.ddns.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-06-26-126dbf">
+<div class=when><a class=date href="#b-2019-06-26-126dbf"><time datetime="2019-06-26">2019-06-26</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>chromup.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-06-23-e14545">
+<div class=when><a class=date href="#b-2019-06-23-e14545"><time datetime="2019-06-23">2019-06-23</time></a> <span class=cnt>2 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ClearskySec/status/1142749950998171648" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1142749950998171648</span></a> &middot; <a href="https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/c761d00f-4897-4c9e-8468-9172fcce2…</span></a> &middot; <a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow"><span class=host>hyas.com</span><span class=path>/news/hunting-apt33-campaign-infrastruct…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d85272acd389e89e743368c</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>inboxsync.org</td></tr>
+<tr data-t="domain"><td class=val>whiteelection.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-06-23-22e7d9">
+<div class=when><a class=date href="#b-2019-06-23-22e7d9"><time datetime="2019-06-23">2019-06-23</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ClearskySec/status/1142749950998171648" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1142749950998171648</span></a> &middot; <a href="https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/c761d00f-4897-4c9e-8468-9172fcce2…</span></a> &middot; <a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow"><span class=host>hyas.com</span><span class=path>/news/hunting-apt33-campaign-infrastruct…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d85272acd389e89e743368c</span></a> &middot; <a href="https://twitter.com/Sam1rSQS/status/1206552916959662080" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/Sam1rSQS/status/1206552916959662080</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>backupaccount.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-06-23-2db1bb">
+<div class=when><a class=date href="#b-2019-06-23-2db1bb"><time datetime="2019-06-23">2019-06-23</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ClearskySec/status/1142749950998171648" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1142749950998171648</span></a> &middot; <a href="https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/c761d00f-4897-4c9e-8468-9172fcce2…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>becomestateman.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-03-27-6efb73">
+<div class=when><a class=date href="#b-2019-03-27-6efb73"><time datetime="2019-03-27">2019-03-27</time></a> <span class=cnt>8 domain, 1 url_path</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ClearskySec/status/1059532789572386817" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1059532789572386817</span></a> &middot; <a href="https://twitter.com/ClearskySec/status/1059532946045050883" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1059532946045050883</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>aramcojobs.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dyn-corp.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dyncorp.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mynetwork2.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ngaaksa.ga</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sabic-co.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>saharapcc.ddns.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sipchem.ddns.net</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/aramco/</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-03-27-6b3eb9">
+<div class=when><a class=date href="#b-2019-03-27-6b3eb9"><time datetime="2019-03-27">2019-03-27</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/ClearskySec/status/1059532789572386817" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1059532789572386817</span></a> &middot; <a href="https://twitter.com/ClearskySec/status/1059532946045050883" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/ClearskySec/status/1059532946045050883</span></a> &middot; <a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>mynetwork.ddns.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-01-10-126dbf">
+<div class=when><a class=date href="#b-2019-01-10-126dbf"><time datetime="2019-01-10">2019-01-10</time></a> <span class=cnt>10 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>alsalam.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>boeing.servehttp.com</td></tr>
+<tr data-t="domain"><td class=val>googlmail.net</td></tr>
+<tr data-t="domain"><td class=val>managehelpdesk.com</td></tr>
+<tr data-t="domain"><td class=val>microsoftupdated.net</td></tr>
+<tr data-t="domain"><td class=val>ngaaksa.ddns.net</td></tr>
+<tr data-t="domain"><td class=val>ngaaksa.sytes.net</td></tr>
+<tr data-t="domain"><td class=val>osupd.com</td></tr>
+<tr data-t="domain"><td class=val>syn.broadcaster.rocks</td></tr>
+<tr data-t="domain"><td class=val>vinnellarabia.myftp.org</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-01-10-d4dbb6">
+<div class=when><a class=date href="#b-2019-01-10-d4dbb6"><time datetime="2019-01-10">2019-01-10</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a> &middot; <a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>mywinnetwork.ddns.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2018-11-13-d9f079">
+<div class=when><a class=date href="#b-2018-11-13-d9f079"><time datetime="2018-11-13">2018-11-13</time></a> <span class=cnt>1 domain</span><span class=ago>8 yrs ago</span></div>
+<p class=src><a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>mypsh.ddns.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2017-11-07-d4dbb6">
+<div class=when><a class=date href="#b-2017-11-07-d4dbb6"><time datetime="2017-11-07">2017-11-07</time></a> <span class=cnt>1 domain</span><span class=ago>9 yrs ago</span></div>
+<p class=src><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a> &middot; <a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>microsoftupdated.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2017-03-24-d4dbb6">
+<div class=when><a class=date href="#b-2017-03-24-d4dbb6"><time datetime="2017-03-24">2017-03-24</time></a> <span class=cnt>1 domain</span><span class=ago>9 yrs ago</span></div>
+<p class=src><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow"><span class=host>fireeye.com</span><span class=path>/blog/threat-research/2017/09/apt33-insi…</span></a> &middot; <a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2019-0626.pdf</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5d13cf4759eec0125b9d8ffa</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>securityupdated.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>32</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G0064" rel="noopener nofollow">attack.mitre.org/groups/G0064</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide" rel="noopener nofollow">learn.microsoft.com/en-us/microsoft-365/security/intelligen…</a></li>
+<li><a href="https://www.brighttalk.com/webcast/10703/275683" rel="noopener nofollow">brighttalk.com/webcast/10703/275683</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2017/09/apt33-insights-into-iranian-cyber-espionage.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2017/09/apt33-insi…</a></li>
+<li><a href="https://www.microsoft.com/security/blog/2020/06/18/inside-microsoft-threat-protection-mapping-attack-chains-from-cloud-to-endpoint/" rel="noopener nofollow">microsoft.com/security/blog/2020/06/18/inside-microso…</a></li>
+<li><a href="https://www.symantec.com/blogs/threat-intelligence/elfin-apt33-espionage" rel="noopener nofollow">symantec.com/blogs/threat-intelligence/elfin-apt33-e…</a></li>
+<li><a href="https://app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce21d7/" rel="noopener nofollow">app.any.run/tasks/c761d00f-4897-4c9e-8468-9172fcce2…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5d85272acd389e89e743368c" rel="noopener nofollow">otx.alienvault.com/pulse/5d85272acd389e89e743368c</a></li>
+<li><a href="https://twitter.com/kyleehmke/status/1293498254009815040" rel="noopener nofollow">twitter.com/kyleehmke/status/1293498254009815040</a></li>
+<li><a href="https://twitter.com/ClearskySec/status/1142749950998171648" rel="noopener nofollow">twitter.com/ClearskySec/status/1142749950998171648</a></li>
+<li><a href="https://go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf" rel="noopener nofollow">go.recordedfuture.com/hubfs/reports/cta-2019-0626.pdf</a></li>
+<li><a href="https://twitter.com/ClearskySec/status/1059532946045050883" rel="noopener nofollow">twitter.com/ClearskySec/status/1059532946045050883</a></li>
+<li><a href="https://twitter.com/kyleehmke/status/1304444869809758210" rel="noopener nofollow">twitter.com/kyleehmke/status/1304444869809758210</a></li>
+<li><a href="https://twitter.com/ShadowChasing1/status/1275042060207132672" rel="noopener nofollow">twitter.com/ShadowChasing1/status/12750420602071326…</a></li>
+<li><a href="https://twitter.com/CTI_Marc/status/1194573048625729536" rel="noopener nofollow">twitter.com/CTI_Marc/status/1194573048625729536</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa" rel="noopener nofollow">otx.alienvault.com/pulse/5d13cf4759eec0125b9d8ffa</a></li>
+<li><a href="https://twitter.com/banthisguy9349/status/1759984117003719061" rel="noopener nofollow">twitter.com/banthisguy9349/status/17599841170037190…</a></li>
+<li><a href="https://twitter.com/MsftSecIntel/status/1737895717870440609" rel="noopener nofollow">twitter.com/MsftSecIntel/status/1737895717870440609</a></li>
+<li><a href="https://thehackernews.com/2023/12/microsoft-warns-of-new-falsefont.html" rel="noopener nofollow">thehackernews.com/2023/12/microsoft-warns-of-new-falsefon…</a></li>
+<li><a href="https://blog.trendmicro.com/trendlabs-security-intelligence/more-than-a-dozen-obfuscated-apt33-botnets-used-for-extreme-narrow-targeting/" rel="noopener nofollow">blog.trendmicro.com/trendlabs-security-intelligence/more-th…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5dcd22740cea7974f1e9927b" rel="noopener nofollow">otx.alienvault.com/pulse/5dcd22740cea7974f1e9927b</a></li>
+<li><a href="https://hyas.com/news/hunting-apt33-campaign-infrastructure/" rel="noopener nofollow">hyas.com/news/hunting-apt33-campaign-infrastruct…</a></li>
+<li><a href="https://twitter.com/Sam1rSQS/status/1206552916959662080" rel="noopener nofollow">twitter.com/Sam1rSQS/status/1206552916959662080</a></li>
+<li><a href="https://twitter.com/MsftSecIntel/status/1737895710169628824" rel="noopener nofollow">twitter.com/MsftSecIntel/status/1737895710169628824</a></li>
+<li><a href="https://twitter.com/kyleehmke/status/1304444870979919872" rel="noopener nofollow">twitter.com/kyleehmke/status/1304444870979919872</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5dcc25f17c401b08b33d3d84" rel="noopener nofollow">otx.alienvault.com/pulse/5dcc25f17c401b08b33d3d84</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872" rel="noopener nofollow">otx.alienvault.com/pulse/5e4430d06ed4c78cf4aa7872</a></li>
+<li><a href="https://shadowdragon.io/blog/additional-insights-into-iranian-cyber-espionage-apt33-2/" rel="noopener nofollow">shadowdragon.io/blog/additional-insights-into-iranian-c…</a></li>
+<li><a href="https://blog.telsy.com/meeting-powerband-the-apt33-net-powerton-variant/" rel="noopener nofollow">blog.telsy.com/meeting-powerband-the-apt33-net-powerto…</a></li>
+<li><a href="https://twitter.com/ClearskySec/status/1059532789572386817" rel="noopener nofollow">twitter.com/ClearskySec/status/1059532789572386817</a></li>
+<li><a href="https://www.virustotal.com/gui/file/e7b992f95b3908579d026f22c237ad5ff7663c9886b520f15cc3e27ef90dcbb1/detection" rel="noopener nofollow">virustotal.com/gui/file/e7b992f95b3908579d026f22c237ad…</a></li>
+<li><a href="https://unit42.paloaltonetworks.com/curious-serpens-falsefont-backdoor/" rel="noopener nofollow">unit42.paloaltonetworks.com/curious-serpens-falsefont-backdoor</a></li>
+</ul>
+
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

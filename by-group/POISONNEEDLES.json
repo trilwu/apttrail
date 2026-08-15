@@ -1,0 +1,58 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "url": 1
+  },
+  "first_seen": {
+    "url": {
+      "http://188.241.58.68": "2022-07-18"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-07-18",
+    "latest": "2022-07-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "http://188.241.58.68"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "POISONNEEDLES"
+  ],
+  "references": [
+    "https://blogs.360.net/post/PoisonNeedles_CVE-2018-15982_EN.html",
+    "https://twitter.com/souiten/status/1548929893752193024",
+    "https://www.virustotal.com/gui/file/80b2424fcf17d09bd22bff67e95ec2c173e27873e59f2d6e810f555b28850893/detection"
+  ],
+  "related": [],
+  "slug": "POISONNEEDLES",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "url": [
+          "http://188.241.58.68"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/souiten/status/1548929893752193024",
+        "https://blogs.360.net/post/PoisonNeedles_CVE-2018-15982_EN.html",
+        "https://www.virustotal.com/gui/file/80b2424fcf17d09bd22bff67e95ec2c173e27873e59f2d6e810f555b28850893/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "150e893c-9dcd-57f2-a3b0-cf1a3abe7b89",
+        "value": "a.updatesinfos.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "445a689e-a4f8-5993-9584-656af134ba1e",
+        "value": "b.updatesinfos.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1540284312",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7591a7ff-17e4-5276-be0b-90cda90504cb",
+        "value": "bitdefs.ignorelist.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5b5c3c41-693b-5f9f-ad2e-a7936c539472",
+        "value": "gphi-adhaswe.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52a4f0f9-1005-5ce4-97fa-386783197bed",
+        "value": "gphi-gsaeyheq.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2acacbdb-4ab8-5078-b49c-e0acbc0a4a87",
+        "value": "gphi.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "491d6d36-1c89-5668-a354-4db6d144923c",
+        "value": "ip1.gphi-adhaswe.xyz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "59aff0d3-a655-52f7-bd5b-2ccc65394fd3",
+        "value": "ip1.gphi-gsaeyheq.top"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "64fb463d-d6f8-5008-9209-d5fdfad33818",
+        "value": "ip1.s.gphi.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e7038798-c503-50e3-a339-a5bb3a0f9f40",
+        "value": "ip2.s.gphi.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1575895152",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "af1ee839-6851-5fba-8d71-ade6204053a2",
+        "value": "updatesinfos.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:38"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT38 - G0082\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT38 (G0082) - Maltrail group 38",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "4411e6a1-5f11-5aca-8f1b-1adcbfa86bf0"
+  }
+}

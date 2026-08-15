@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>APT41 · APTtrail</title>
+<meta name=description content="3,526 indicators attributed to APT41 (G0096), from 188 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G0096.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="APT41 · APTtrail">
+<meta property="og:description" content="3,526 indicators attributed to APT41 (G0096), from 188 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G0096.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>APT41 <a class=gid href="https://attack.mitre.org/groups/G0096/">G0096</a></h1>
+<p class=aka><b>BARIUM</b> &middot; <b>WICKEDPANDA</b> &middot; AXIOMATICASYMPTOTE &middot; RedEcho &middot; apt-c-41 &middot; apt41 &middot; bamboloader &middot; double dragon &middot; eagerbee &middot; earth baku &middot; earth baxia &middot; geardoor &middot; lowkey &middot; monikerloader &middot; shadowhammer &middot; shadowpad &middot; silver dragon &middot; silverscreen &middot; sshcmd &middot; ta415 &middot; toughprogress &middot; voldemort &middot; xianggang</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>3,526</dd></div>
+<div><dt>Source reports</dt><dd>188</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-07-10</dd></div>
+</dl>
+<div class=spark><span style="--h:3%" title="2017: 1 indicators"></span><span style="--h:0%" title="2018: 0 indicators"></span><span style="--h:16%" title="2019: 40 indicators"></span><span style="--h:15%" title="2020: 37 indicators"></span><span style="--h:13%" title="2021: 25 indicators"></span><span style="--h:33%" title="2022: 167 indicators"></span><span style="--h:100%" title="2023: 1,573 indicators"></span><span style="--h:59%" title="2024: 541 indicators"></span><span class=hot style="--h:25%" title="2025: 101 indicators"></span><span class=hot style="--h:81%" title="2026: 1,041 indicators"></span></div>
+<div class=spark-axis><span>2017</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=CN">CN</a><br><span class=note>People&#x27;s Republic of China</span></dd>
+<dt>Targeted sectors</dt><dd><ul class=chips><li><a href="../groups.html?sector=Automotive">Automotive</a></li><li><a href="../groups.html?sector=Business">Business</a></li><li><a href="../groups.html?sector=Cryptocurrency">Cryptocurrency</a></li><li><a href="../groups.html?sector=Education">Education</a></li><li><a href="../groups.html?sector=Energy">Energy</a></li><li><a href="../groups.html?sector=Finance">Finance</a></li><li><a href="../groups.html?sector=Healthcare">Healthcare</a></li><li><a href="../groups.html?sector=High-Tech">High-Tech</a></li><li><a href="../groups.html?sector=Intergovernmental">Intergovernmental</a></li><li><a href="../groups.html?sector=Media">Media</a></li><li><a href="../groups.html?sector=Pharmaceuticals">Pharmaceuticals</a></li><li><a href="../groups.html?sector=Private%20sector">Private sector</a></li><li><a href="../groups.html?sector=Retail">Retail</a></li><li><a href="../groups.html?sector=Services">Services</a></li><li><a href="../groups.html?sector=Telecommunications">Telecommunications</a></li><li><a href="../groups.html?sector=Travel">Travel</a></li></ul></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>China</li><li>France</li><li>Hong Kong</li><li>India</li><li>Italy</li><li>Japan</li><li>Myanmar</li><li>Netherlands</li><li>Singapore</li><li>South Africa</li><li>South Korea</li><li>Switzerland</li><li>Thailand</li><li>Turkey</li><li>United Kingdom</li><li>United States</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_barium.txt">BARIUM</a> &middot; <a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_wickedpanda.txt">WICKEDPANDA</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0096.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G0096-domain.txt</pre>
+<p class=note><a href="G0096.json">G0096.json</a> &middot; <a href="G0096-domain.txt">G0096-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>3,526 indicators</span></h2>
+<p class=lede>APT41 is a threat group that researchers have assessed as Chinese state-sponsored espionage group that also conducts financially-motivated operations. Active since at least 2012, APT41 has been observed targeting various industries, including but not limited to healthcare, telecom, technology, finance, education, retail and video game industries in 14 countries. Notable behaviors include using a wide range of malware and tools to complete mission objectives. APT41 overlaps at least partially with public reporting on groups including BARIUM and Winnti Group.</p>
+<table class=coverage>
+<tr><td>ipv4</td><td class=n>2,784</td><td class=f><a href="G0096.json">G0096.json</a></td></tr>
+<tr><td>domain</td><td class=n>541</td><td class=f><a href="G0096-domain.txt">G0096-domain.txt</a></td></tr>
+<tr><td>url</td><td class=n>201</td><td class=f><a href="G0096.json">G0096.json</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>82 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG0096-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G0096-navigator.json">download the layer</a> (82 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1003/001/"><b>T1003.001</b> LSASS Memory</a></li><li><a href="https://attack.mitre.org/techniques/T1003/002/"><b>T1003.002</b> Security Account Manager</a></li><li><a href="https://attack.mitre.org/techniques/T1003/003/"><b>T1003.003</b> NTDS</a></li><li><a href="https://attack.mitre.org/techniques/T1005/"><b>T1005</b> Data from Local System</a></li><li><a href="https://attack.mitre.org/techniques/T1008/"><b>T1008</b> Fallback Channels</a></li><li><a href="https://attack.mitre.org/techniques/T1012/"><b>T1012</b> Query Registry</a></li><li><a href="https://attack.mitre.org/techniques/T1014/"><b>T1014</b> Rootkit</a></li><li><a href="https://attack.mitre.org/techniques/T1016/"><b>T1016</b> System Network Configuration Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1018/"><b>T1018</b> Remote System Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1021/001/"><b>T1021.001</b> Remote Desktop Protocol</a></li><li><a href="https://attack.mitre.org/techniques/T1021/002/"><b>T1021.002</b> SMB/Windows Admin Shares</a></li><li><a href="https://attack.mitre.org/techniques/T1027/"><b>T1027</b> Obfuscated Files or Information</a></li><li><a href="https://attack.mitre.org/techniques/T1027/002/"><b>T1027.002</b> Software Packing</a></li><li><a href="https://attack.mitre.org/techniques/T1030/"><b>T1030</b> Data Transfer Size Limits</a></li><li><a href="https://attack.mitre.org/techniques/T1033/"><b>T1033</b> System Owner/User Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1036/004/"><b>T1036.004</b> Masquerade Task or Service</a></li><li><a href="https://attack.mitre.org/techniques/T1036/005/"><b>T1036.005</b> Match Legitimate Resource Name or Location</a></li><li><a href="https://attack.mitre.org/techniques/T1037/"><b>T1037</b> Boot or Logon Initialization Scripts</a></li><li><a href="https://attack.mitre.org/techniques/T1046/"><b>T1046</b> Network Service Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1047/"><b>T1047</b> Windows Management Instrumentation</a></li><li><a href="https://attack.mitre.org/techniques/T1049/"><b>T1049</b> System Network Connections Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1055/"><b>T1055</b> Process Injection</a></li><li><a href="https://attack.mitre.org/techniques/T1056/001/"><b>T1056.001</b> Keylogging</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/003/"><b>T1059.003</b> Windows Command Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1059/004/"><b>T1059.004</b> Unix Shell</a></li><li><a href="https://attack.mitre.org/techniques/T1069/"><b>T1069</b> Permission Groups Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1070/003/"><b>T1070.003</b> Clear Command History</a></li><li><a href="https://attack.mitre.org/techniques/T1070/004/"><b>T1070.004</b> File Deletion</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1071/002/"><b>T1071.002</b> File Transfer Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1071/004/"><b>T1071.004</b> DNS</a></li><li><a href="https://attack.mitre.org/techniques/T1078/"><b>T1078</b> Valid Accounts</a></li><li><a href="https://attack.mitre.org/techniques/T1082/"><b>T1082</b> System Information Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1083/"><b>T1083</b> File and Directory Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1087/001/"><b>T1087.001</b> Local Account</a></li><li><a href="https://attack.mitre.org/techniques/T1087/002/"><b>T1087.002</b> Domain Account</a></li><li><a href="https://attack.mitre.org/techniques/T1090/"><b>T1090</b> Proxy</a></li><li><a href="https://attack.mitre.org/techniques/T1098/007/"><b>T1098.007</b> Additional Local or Domain Groups</a></li><li><a href="https://attack.mitre.org/techniques/T1102/001/"><b>T1102.001</b> Dead Drop Resolver</a></li><li><a href="https://attack.mitre.org/techniques/T1104/"><b>T1104</b> Multi-Stage Channels</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1110/"><b>T1110</b> Brute Force</a></li><li><a href="https://attack.mitre.org/techniques/T1112/"><b>T1112</b> Modify Registry</a></li><li><a href="https://attack.mitre.org/techniques/T1133/"><b>T1133</b> External Remote Services</a></li><li><a href="https://attack.mitre.org/techniques/T1135/"><b>T1135</b> Network Share Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1136/001/"><b>T1136.001</b> Local Account</a></li><li><a href="https://attack.mitre.org/techniques/T1190/"><b>T1190</b> Exploit Public-Facing Application</a></li><li><a href="https://attack.mitre.org/techniques/T1195/002/"><b>T1195.002</b> Compromise Software Supply Chain</a></li><li><a href="https://attack.mitre.org/techniques/T1197/"><b>T1197</b> BITS Jobs</a></li><li><a href="https://attack.mitre.org/techniques/T1203/"><b>T1203</b> Exploitation for Client Execution</a></li><li><a href="https://attack.mitre.org/techniques/T1213/003/"><b>T1213.003</b> Code Repositories</a></li><li><a href="https://attack.mitre.org/techniques/T1218/001/"><b>T1218.001</b> Compiled HTML File</a></li><li><a href="https://attack.mitre.org/techniques/T1218/011/"><b>T1218.011</b> Rundll32</a></li><li><a href="https://attack.mitre.org/techniques/T1480/001/"><b>T1480.001</b> Environmental Keying</a></li><li><a href="https://attack.mitre.org/techniques/T1484/001/"><b>T1484.001</b> Group Policy Modification</a></li><li><a href="https://attack.mitre.org/techniques/T1486/"><b>T1486</b> Data Encrypted for Impact</a></li><li><a href="https://attack.mitre.org/techniques/T1496/001/"><b>T1496.001</b> Compute Hijacking</a></li><li><a href="https://attack.mitre.org/techniques/T1542/003/"><b>T1542.003</b> Bootkit</a></li><li><a href="https://attack.mitre.org/techniques/T1543/003/"><b>T1543.003</b> Windows Service</a></li><li><a href="https://attack.mitre.org/techniques/T1546/008/"><b>T1546.008</b> Accessibility Features</a></li><li><a href="https://attack.mitre.org/techniques/T1547/001/"><b>T1547.001</b> Registry Run Keys / Startup Folder</a></li><li><a href="https://attack.mitre.org/techniques/T1550/002/"><b>T1550.002</b> Pass the Hash</a></li><li><a href="https://attack.mitre.org/techniques/T1553/002/"><b>T1553.002</b> Code Signing</a></li><li><a href="https://attack.mitre.org/techniques/T1555/"><b>T1555</b> Credentials from Password Stores</a></li><li><a href="https://attack.mitre.org/techniques/T1555/003/"><b>T1555.003</b> Credentials from Web Browsers</a></li><li><a href="https://attack.mitre.org/techniques/T1560/001/"><b>T1560.001</b> Archive via Utility</a></li><li><a href="https://attack.mitre.org/techniques/T1566/001/"><b>T1566.001</b> Spearphishing Attachment</a></li><li><a href="https://attack.mitre.org/techniques/T1568/002/"><b>T1568.002</b> Domain Generation Algorithms</a></li><li><a href="https://attack.mitre.org/techniques/T1569/002/"><b>T1569.002</b> Service Execution</a></li><li><a href="https://attack.mitre.org/techniques/T1570/"><b>T1570</b> Lateral Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1574/001/"><b>T1574.001</b> DLL</a></li><li><a href="https://attack.mitre.org/techniques/T1574/006/"><b>T1574.006</b> Dynamic Linker Hijacking</a></li><li><a href="https://attack.mitre.org/techniques/T1588/002/"><b>T1588.002</b> Tool</a></li><li><a href="https://attack.mitre.org/techniques/T1595/002/"><b>T1595.002</b> Vulnerability Scanning</a></li><li><a href="https://attack.mitre.org/techniques/T1595/003/"><b>T1595.003</b> Wordlist Scanning</a></li><li><a href="https://attack.mitre.org/techniques/T1596/005/"><b>T1596.005</b> Scan Databases</a></li><li><a href="https://attack.mitre.org/techniques/T1599/"><b>T1599</b> Network Boundary Bridging</a></li><li><a href="https://attack.mitre.org/techniques/T1684/001/"><b>T1684.001</b> Impersonation</a></li><li><a href="https://attack.mitre.org/techniques/T1685/"><b>T1685</b> Disable or Modify Tools</a></li><li><a href="https://attack.mitre.org/techniques/T1685/005/"><b>T1685.005</b> Clear Windows Event Logs</a></li></ul>
+
+<h2 id=software>Software <span class=n>32</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0002/"><b>Mimikatz</b></a></li><li><a href="https://attack.mitre.org/software/S0006/"><b>pwdump</b></a></li><li><a href="https://attack.mitre.org/software/S0013/"><b>PlugX</b></a></li><li><a href="https://attack.mitre.org/software/S0020/"><b>China Chopper</b></a></li><li><a href="https://attack.mitre.org/software/S0021/"><b>Derusbi</b></a></li><li><a href="https://attack.mitre.org/software/S0032/"><b>gh0st RAT</b></a></li><li><a href="https://attack.mitre.org/software/S0039/"><b>Net</b></a></li><li><a href="https://attack.mitre.org/software/S0069/"><b>BLACKCOFFEE</b></a></li><li><a href="https://attack.mitre.org/software/S0073/"><b>ASPXSpy</b></a></li><li><a href="https://attack.mitre.org/software/S0095/"><b>ftp</b></a></li><li><a href="https://attack.mitre.org/software/S0097/"><b>Ping</b></a></li><li><a href="https://attack.mitre.org/software/S0100/"><b>ipconfig</b></a></li><li><a href="https://attack.mitre.org/software/S0104/"><b>netstat</b></a></li><li><a href="https://attack.mitre.org/software/S0105/"><b>dsquery</b></a></li><li><a href="https://attack.mitre.org/software/S0112/"><b>ROCKBOOT</b></a></li><li><a href="https://attack.mitre.org/software/S0154/"><b>Cobalt Strike</b></a></li><li><a href="https://attack.mitre.org/software/S0160/"><b>certutil</b></a></li><li><a href="https://attack.mitre.org/software/S0190/"><b>BITSAdmin</b></a></li><li><a href="https://attack.mitre.org/software/S0194/"><b>PowerSploit</b></a></li><li><a href="https://attack.mitre.org/software/S0225/"><b>sqlmap</b></a></li><li><a href="https://attack.mitre.org/software/S0357/"><b>Impacket</b></a></li><li><a href="https://attack.mitre.org/software/S0363/"><b>Empire</b></a></li><li><a href="https://attack.mitre.org/software/S0385/"><b>njRAT</b></a></li><li><a href="https://attack.mitre.org/software/S0412/"><b>ZxShell</b></a></li><li><a href="https://attack.mitre.org/software/S0430/"><b>Winnti for Linux</b></a></li><li><a href="https://attack.mitre.org/software/S0443/"><b>MESSAGETAP</b></a></li><li><a href="https://attack.mitre.org/software/S0596/"><b>ShadowPad</b></a></li><li><a href="https://attack.mitre.org/software/S1051/"><b>KEYPLUG</b></a></li><li><a href="https://attack.mitre.org/software/S1158/"><b>DUSTPAN</b></a></li><li><a href="https://attack.mitre.org/software/S1159/"><b>DUSTTRAP</b></a></li><li><a href="https://attack.mitre.org/software/S1185/"><b>LightSpy</b></a></li><li><a href="https://attack.mitre.org/software/S1221/"><b>MOPSLED</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>188 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>759</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-11-25)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2023-1…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>745</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2026-02-09)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2026-0…</span></a><div class=bar style="--w:98%"></div></li>
+<li><span class=c>205</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-12-03)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2023-1…</span></a><div class=bar style="--w:27%"></div></li>
+<li><span class=c>180</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-11-23)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2023-1…</span></a><div class=bar style="--w:24%"></div></li>
+<li><span class=c>158</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-10-13)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2023-1…</span></a><div class=bar style="--w:21%"></div></li>
+<li><span class=c>131</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-10-26)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2023-1…</span></a><div class=bar style="--w:17%"></div></li>
+<li><span class=c>108</span><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2024-01-16)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2024-0…</span></a><div class=bar style="--w:14%"></div></li>
+<li><span class=c>95</span><a href="https://hunt.io/blog/keyplug-infrastructure-tls-certificates-ghostwolf-activity" rel="noopener nofollow"><span class=host>hunt.io</span><span class=path>/blog/keyplug-infrastructure-tls-certifi…</span></a><div class=bar style="--w:13%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>19</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="SPACEPIRATES.html">SPACEPIRATES</a><div class=why><span class="ev infrastructure">2 shared indicators</span></div></li><li><a href="XPATH.html">XPATH</a><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="G0004.html">Ke3chang</a> <span class=gidtag>G0004</span><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="G0019.html">Naikon</a> <span class=gidtag>G0019</span><div class=why><span class="ev infrastructure">1 shared indicator</span></div></li><li><a href="UNCLASSIFIED.html">UNCLASSIFIED</a><div class=why><span class="ev infrastructure">1 shared indicator</span> &middot; <span class="ev reporting">1 report cite both</span></div></li><li><a href="UNC3500.html">UNC3500</a><div class=why><span class="ev reporting">2 reports cite both</span></div></li><li><a href="UNC3535.html">UNC3535</a><div class=why><span class="ev reporting">2 reports cite both</span></div></li><li><a href="UNC961.html">UNC961</a><div class=why><span class="ev reporting">2 reports cite both</span></div></li>
+</ul>
+<p class=note>11 more in the <a href="../graph.html">relationship graph</a>.</p>
+
+<h2 id=timeline>Timeline <span class=n>3,526 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>300</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 2,784</button><button type=button data-type="domain" aria-pressed=false>domain 541</button><button type=button data-type="url" aria-pressed=false>url 201</button></div>
+<p class=note>Showing the 300 most recent of 3,526. Complete: <a href="G0096.json">G0096.json</a>.</p>
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-07-10-f9aa14" class=hot>
+<div class=when><a class=date href="#b-2026-07-10-f9aa14"><time datetime="2026-07-10">2026-07-10</time></a> <span class=cnt>4 domain, 1 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.sentinelone.com/labs/one-target-china-india-espionage-converge-on-pakistani-law-enforcement/" rel="noopener nofollow"><span class=host>sentinelone.com</span><span class=path>/labs/one-target-china-india-espionage-c…</span></a> &middot; <a href="https://www.virustotal.com/gui/ip-address/45.125.32.218/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/ip-address/45.125.32.218/relations</span></a> &middot; <a href="https://www.virustotal.com/gui/file/4d7da83ed24320959b067e0ac9682fadc3536e48a4d1290987b4e2991be9c0a3/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/4d7da83ed24320959b067e0ac9682f…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dns.dnserver.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>dnserver.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>erp.kaspersky.icu</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>kaspersky.icu</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>45.125.32.218:443</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-07-09-b54346" class=hot>
+<div class=when><a class=date href="#b-2026-07-09-b54346"><time datetime="2026-07-09">2026-07-09</time></a> <span class=cnt>1 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://app.validin.com/detail?type=hash&amp;find=e760bb9ce1e83e274def380574509c7b9e9088ff#tab=host_pairs (# 2025-02-27)" rel="noopener nofollow"><span class=host>app.validin.com</span><span class=path>/detail?type=hash&amp;find=e760bb9ce1e83e274…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>proxy-test.dynv6.net</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-06-28-6bbafb" class=hot>
+<div class=when><a class=date href="#b-2026-06-28-6bbafb"><time datetime="2026-06-28">2026-06-28</time></a> <span class=cnt>6 domain, 12 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://plausible-deniability.co/blog/PullingTheThread-ChineseEspionnage/" rel="noopener nofollow"><span class=host>plausible-deniability.co</span><span class=path>/blog/PullingTheThread-ChineseEspionnage</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>7f4d5b4d9b3b4474a46824c3ae43d06a.ddns.gcloud.gg</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>api-v2.cloud</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cashmicrosoft.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>googledrivecloud.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>rallyracingglobal.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>windowsupdate.cyou</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>103.140.186.81:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>103.140.187.9:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.238.148.158:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>139.180.137.3:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>139.180.211.117:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>193.56.255.178:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>195.86.120.2:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>38.60.208.77:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>38.60.255.134:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.67.90:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.76.151:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.97.249:443</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-21-99a28a" class=hot>
+<div class=when><a class=date href="#b-2026-05-21-99a28a"><time datetime="2026-05-21">2026-05-21</time></a> <span class=cnt>2 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/StrikeReadyLabs/status/1845881714607792250" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/StrikeReadyLabs/status/1845881714607792…</span></a> &middot; <a href="https://x.com/AptXXhunter/status/2057431332041506967" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/AptXXhunter/status/2057431332041506967</span></a> &middot; <a href="https://fortifiedhealthsecurity.com/threat-bulletin/lightspy-deepdata/" rel="noopener nofollow"><span class=host>fortifiedhealthsecurity.com</span><span class=path>/threat-bulletin/lightspy-deepdata</span></a> &middot; <a href="https://www.virustotal.com/gui/file/92d71e5e265fd266036881767a83093838004130be44b448f033cc3f7195172e/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/92d71e5e265fd266036881767a8309…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>103.27.108.207:8080</td></tr>
+<tr data-t="ipv4"><td class=val>103.56.16.173:443</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-05-21-a05dc2" class=hot>
+<div class=when><a class=date href="#b-2026-05-21-a05dc2"><time datetime="2026-05-21">2026-05-21</time></a> <span class=cnt>1 domain, 1 ipv4</span><span class=ago>this year</span></div>
+<p class=src><a href="https://www.lookout.com/threat-intelligence/article/wyrmspy-dragonegg-surveillanceware-apt41" rel="noopener nofollow"><span class=host>lookout.com</span><span class=path>/threat-intelligence/article/wyrmspy-dra…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/38e18d79b83e7c0afbe1ac246a7a5fe6b2783adc085e9aeb2ec610e76f5ccaad/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/38e18d79b83e7c0afbe1ac246a7a5f…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>yxwasec.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.201.109.98:443</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-03-03-013dc1" class=hot>
+<div class=when><a class=date href="#b-2026-03-03-013dc1"><time datetime="2026-03-03">2026-03-03</time></a> <span class=cnt>12 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/_CPResearch_/status/2028888546438766707" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/_CPResearch_/status/2028888546438766707</span></a> &middot; <a href="https://research.checkpoint.com/2026/silver-dragon-targets-organizations-in-southeast-asia-and-europe/" rel="noopener nofollow"><span class=host>research.checkpoint.com</span><span class=path>/2026/silver-dragon-targets-organization…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>ampolice.org</td></tr>
+<tr data-t="domain"><td class=val>bigflx.net</td></tr>
+<tr data-t="domain"><td class=val>copilot-cloud.net</td></tr>
+<tr data-t="domain"><td class=val>drivefrontend.pa-clients.workers.dev</td></tr>
+<tr data-t="domain"><td class=val>exchange4study.com</td></tr>
+<tr data-t="domain"><td class=val>mindssurpass.com</td></tr>
+<tr data-t="domain"><td class=val>onedriveconsole.com</td></tr>
+<tr data-t="domain"><td class=val>protacik.com</td></tr>
+<tr data-t="domain"><td class=val>revitpourtous.com</td></tr>
+<tr data-t="domain"><td class=val>splunkds.com</td></tr>
+<tr data-t="domain"><td class=val>wikipedla.blog</td></tr>
+<tr data-t="domain"><td class=val>zhydromet.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-02-09-191c57" class=hot>
+<div class=when><a class=date href="#b-2026-02-09-191c57"><time datetime="2026-02-09">2026-02-09</time></a> <span class=cnt>25 domain, 706 ipv4, 14 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2026-02-09)" rel="noopener nofollow"><span class=host>threatfox.abuse.ch</span><span class=path>/browse/malware/win.shadowpad/ (# 2026-0…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>app30.hema129.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>app40.hema129.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>bganmcza.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>channels.openvista.ma</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>cnt9.stayout.life</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>commandidate.directory</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ec2-16-163-161-107.ap-east-1.compute.amazonaws.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>fervent-curran.45-77-153-108.plesk.page</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gallant-pike.45-77-153-108.plesk.page</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>grxcmoyh.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>infallible-tereshkova.199-247-22-187.plesk.page</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>ip-89-38-128-94-106854.vps.hosted-by-mvps.net</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>jqvmwznu.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>laodocument.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>maxdesigns.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mgm4adminsi.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>mhgxpcgd.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>patch.updatesapi.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>riwmztda.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>smivsugd.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sv3.xxyybb.xyz</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>wait.imiul.com</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>xeaefryx.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>xvaxzoac.top</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>xxyybb.xyz</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.101.250:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.107.96:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.148.235:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.72.199:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.92.98.22:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.101.136:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.125.147:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.137.47:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.2.18:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.30.121:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>1.94.96.137:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>103.27.111.247:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>103.82.143.13:56891</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>103.85.252.170:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>104.167.16.95:8080</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>108.181.121.150:8083</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.14.216:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.169.151:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.22.9:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.56.186:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>110.41.63.167:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>112.26.72.6:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>112.27.239.72:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>112.27.239.72:8012</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>112.27.239.72:8032</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>112.30.118.6:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>117.133.132.134:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>117.133.132.135:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>117.48.148.58:6951</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>119.3.251.25:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.221.103:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.76.213:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>120.46.93.223:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.36.196.101:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.172.191:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.184.225:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.241.33:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.37.42.92:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>121.9.235.74:38002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.11.137:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.249.83.110:8007</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8000</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8001</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8002</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8003</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8004</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8005</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8006</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>123.60.109.41:8007</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button> &middot; 485 more in this batch, in the JSON</p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>193</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G0096" rel="noopener nofollow">attack.mitre.org/groups/G0096</a></li>
+<li><a href="https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf" rel="noopener nofollow">go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdSt…</a></li>
+<li><a href="https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/microsoft-threat-actor-naming?view=o365-worldwide" rel="noopener nofollow">learn.microsoft.com/en-us/microsoft-365/security/intelligen…</a></li>
+<li><a href="https://www.group-ib.com/blog/colunmtk-apt41/" rel="noopener nofollow">group-ib.com/blog/colunmtk-apt41</a></li>
+<li><a href="https://www.mandiant.com/sites/default/files/2022-02/rt-apt41-dual-operation.pdf" rel="noopener nofollow">mandiant.com/sites/default/files/2022-02/rt-apt41-du…</a></li>
+<li><a href="https://twitter.com/ydklijnsma/status/1110220766778286080" rel="noopener nofollow">twitter.com/ydklijnsma/status/1110220766778286080</a></li>
+<li><a href="https://x.com/nahamike01/status/1799730688725508290" rel="noopener nofollow">x.com/nahamike01/status/1799730688725508290</a></li>
+<li><a href="https://www.virustotal.com/gui/file/e9cb02690d987de8d392d0e24b3ccbb294c751dff73962135913c7ec0d8a8064/detection" rel="noopener nofollow">virustotal.com/gui/file/e9cb02690d987de8d392d0e24b3ccb…</a></li>
+<li><a href="https://x.com/Cyberteam008/status/1861596387625890122" rel="noopener nofollow">x.com/Cyberteam008/status/1861596387625890122</a></li>
+<li><a href="https://securelist.com/eagerbee-backdoor/115175/" rel="noopener nofollow">securelist.com/eagerbee-backdoor/115175</a></li>
+<li><a href="https://twitter.com/luc4m/status/1778110699870310840" rel="noopener nofollow">twitter.com/luc4m/status/1778110699870310840</a></li>
+<li><a href="https://www.virustotal.com/gui/file/76998c3cef50132d7eb091555b034b03a351bd8639c1c5dc05cf1ea6c19331d9/detection" rel="noopener nofollow">virustotal.com/gui/file/76998c3cef50132d7eb091555b034b…</a></li>
+<li><a href="https://app.validin.com/detail?type=raw&amp;find=AndroidControl+v1.0.4#tab=host_pairs" rel="noopener nofollow">app.validin.com/detail?type=raw&amp;find=AndroidControl+v1.…</a></li>
+<li><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-10-13)" rel="noopener nofollow">threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-1…</a></li>
+<li><a href="https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/k/hack-the-real-box-apt41-new-subgroup-earth-longzhi/IOCs-hack-the-real-box-apt41-new-subgroup-earth-longzhi.txt" rel="noopener nofollow">trendmicro.com/content/dam/trendmicro/global/en/resear…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/64.176.69.95/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/64.176.69.95/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/151.236.16.167/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/151.236.16.167/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/e9bb6609ffe43c5c9a1617818097568a7e873aa1499d9f5e05c2c6c5ac8cb962/detection" rel="noopener nofollow">virustotal.com/gui/file/e9bb6609ffe43c5c9a161781809756…</a></li>
+<li><a href="https://asec.ahnlab.com/en/91166/" rel="noopener nofollow">asec.ahnlab.com/en/91166</a></li>
+<li><a href="https://otx.alienvault.com/pulse/630615f326d4b91e473170fe" rel="noopener nofollow">otx.alienvault.com/pulse/630615f326d4b91e473170fe</a></li>
+<li><a href="https://twitter.com/sysgoblin/status/1237054973579583489 (# CVE-2020-10189)" rel="noopener nofollow">twitter.com/sysgoblin/status/1237054973579583489 (#…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/154.90.58.189/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/154.90.58.189/relations</a></li>
+<li><a href="https://x.com/SBousseaden/status/1794484811064586632" rel="noopener nofollow">x.com/SBousseaden/status/1794484811064586632</a></li>
+<li><a href="https://x.com/AptXXhunter/status/2057431332041506967" rel="noopener nofollow">x.com/AptXXhunter/status/2057431332041506967</a></li>
+<li><a href="https://www.mandiant.com/resources/mobileiron-log4shell-exploitation" rel="noopener nofollow">mandiant.com/resources/mobileiron-log4shell-exploita…</a></li>
+<li><a href="https://threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-10-26)" rel="noopener nofollow">threatfox.abuse.ch/browse/malware/win.shadowpad/ (# 2023-1…</a></li>
+<li><a href="https://blogs.vmware.com/security/2022/10/threat-analysis-active-c2-discovery-using-protocol-emulation-part3-shadowpad.html" rel="noopener nofollow">blogs.vmware.com/security/2022/10/threat-analysis-active…</a></li>
+<li><a href="https://www.scrible.com/view/source/R2IO1C0L20LQG2MG3443K8O48P4CM20E:1424161239/" rel="noopener nofollow">scrible.com/view/source/R2IO1C0L20LQG2MG3443K8O48P4…</a></li>
+<li><a href="https://www.elastic.co/security-labs/introducing-the-ref5961-intrusion-set" rel="noopener nofollow">elastic.co/security-labs/introducing-the-ref5961-i…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/536def339fefa0c259cf34f809393322cdece06fc4f2b37f06136375b073dff3/detection" rel="noopener nofollow">virustotal.com/gui/file/536def339fefa0c259cf34f8093933…</a></li>
+<li><a href="https://x.com/Tac_Mangusta/status/1828077441925157172" rel="noopener nofollow">x.com/Tac_Mangusta/status/1828077441925157172</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/62.233.57.94/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/62.233.57.94/relations</a></li>
+<li><a href="https://x.com/suyog41/status/1835557924443509029" rel="noopener nofollow">x.com/suyog41/status/1835557924443509029</a></li>
+<li><a href="https://www.fireeye.com/blog/threat-research/2020/03/apt41-initiates-global-intrusion-campaign-using-multiple-exploits.html" rel="noopener nofollow">fireeye.com/blog/threat-research/2020/03/apt41-init…</a></li>
+<li><a href="https://app.validin.com/detail?find=https%3A%2F%2Fkaspersky.com%2Fads.txt&amp;type=raw&amp;ref_id=a73a038fe6c#tab=host_pairs (# 2025-02-09)" rel="noopener nofollow">app.validin.com/detail?find=https%3A%2F%2Fkaspersky.com…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/0ba468400dd88b6dbe96407cb104f28876adb62805689d97de5d2650770ff39c/detection" rel="noopener nofollow">virustotal.com/gui/file/0ba468400dd88b6dbe96407cb104f2…</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/38.54.50.46/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/38.54.50.46/relations</a></li>
+<li><a href="https://x.com/_CPResearch_/status/2028888546438766707" rel="noopener nofollow">x.com/_CPResearch_/status/2028888546438766707</a></li>
+<li><a href="https://www.virustotal.com/gui/ip-address/82.118.21.230/relations" rel="noopener nofollow">virustotal.com/gui/ip-address/82.118.21.230/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/3e8f51ec601e6e9c3aaafd3d156721fc85911544417d43f6b6c0b029a009c584/detection" rel="noopener nofollow">virustotal.com/gui/file/3e8f51ec601e6e9c3aaafd3d156721…</a></li>
+</ul>
+<p class=note>153 more, and the report behind every indicator, in <a href="G0096.json">G0096.json</a>.</p>
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

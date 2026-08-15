@@ -1,0 +1,201 @@
+{
+  "aliases": [],
+  "attack_id": "G0126",
+  "attack_name": "Higaisa",
+  "attack_url": "https://attack.mitre.org/groups/G0126/",
+  "counts": {
+    "domain": 13,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "api.s2cloud-amazon.com": "2024-08-20",
+      "app-dimensiona.s3.sa-east-1.amazonaws.com": "2024-08-20",
+      "bjj-files-production.s3.sa-east-1.amazonaws.com": "2024-08-20",
+      "comcleanner.info": "2020-06-06",
+      "footracker-statics.s3.sa-east-1.amazonaws.com": "2024-08-20",
+      "goodhk.azurewebsites.net": "2020-05-31",
+      "p-game.s3.sa-east-1.amazonaws.com": "2024-08-20",
+      "s2cloud-amazon.com": "2024-08-20",
+      "sixindent.epizy.com": "2020-06-06",
+      "speedshare.oss-cn-hongkong.aliyuncs.com": "2024-08-20",
+      "xianggang000.oss-cn-hongkong.aliyuncs.com": "2024-09-16",
+      "yitoo.oss-cn-hongkong.aliyuncs.com": "2024-09-16",
+      "zeplin.atwebpages.com": "2020-06-06"
+    },
+    "ipv4": {
+      "45.76.6.149:443": "2020-06-11"
+    },
+    "url": {
+      "http://152.42.226.161": "2024-09-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-05-31",
+    "latest": "2024-09-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "api.s2cloud-amazon.com",
+      "app-dimensiona.s3.sa-east-1.amazonaws.com",
+      "bjj-files-production.s3.sa-east-1.amazonaws.com",
+      "comcleanner.info",
+      "footracker-statics.s3.sa-east-1.amazonaws.com",
+      "goodhk.azurewebsites.net",
+      "p-game.s3.sa-east-1.amazonaws.com",
+      "s2cloud-amazon.com",
+      "sixindent.epizy.com",
+      "speedshare.oss-cn-hongkong.aliyuncs.com",
+      "xianggang000.oss-cn-hongkong.aliyuncs.com",
+      "yitoo.oss-cn-hongkong.aliyuncs.com",
+      "zeplin.atwebpages.com"
+    ],
+    "ipv4": [
+      "45.76.6.149:443"
+    ],
+    "url": [
+      "http://152.42.226.161"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "HIGAISA"
+  ],
+  "references": [
+    "https://blog.malwarebytes.com/threat-analysis/2020/06/higaisa/",
+    "https://github.com/StrikeReady-Inc/samples/blob/main/2024-08-20%20VN%20Oil%26Gas%20MSC/urls.txt",
+    "https://otx.alienvault.com/pulse/5eda8caf8ef3aa0d8d0b8030",
+    "https://www.tgsoft.it/news/news_archivio.asp?id=1568&lang=eng",
+    "https://www.virustotal.com/gui/file/1e6c661d6981c0fa56c011c29536e57d21545fd11205eddf9218269ddf53d448/detection",
+    "https://www.virustotal.com/gui/file/9b73cd0be50e457d9355b702d8b6df09b77a1c92bd70bbdcb538d87eccf6eef0/detection",
+    "https://www.virustotal.com/gui/file/df999d24bde96decdbb65287ca0986db98f73b4ed477e18c3ef100064bceba6d/detection",
+    "https://www.virustotal.com/gui/file/f1d519f43c36e24a89b351f00059a1bdb9afc2a339f7301117babb484e2cc555/detection",
+    "https://x.com/StrikeReadyLabs/status/1825885062186860714",
+    "https://x.com/TuringAlex/status/1937442563285508449",
+    "https://x.com/VirITeXplorer/status/1835667782853140788"
+  ],
+  "related": [],
+  "slug": "G0126",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2,
+        "url": 1
+      },
+      "first_seen": "2024-09-16",
+      "indicators": {
+        "domain": [
+          "xianggang000.oss-cn-hongkong.aliyuncs.com",
+          "yitoo.oss-cn-hongkong.aliyuncs.com"
+        ],
+        "url": [
+          "http://152.42.226.161"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/StrikeReadyLabs/status/1825885062186860714",
+        "https://x.com/VirITeXplorer/status/1835667782853140788",
+        "https://x.com/TuringAlex/status/1937442563285508449",
+        "https://www.tgsoft.it/news/news_archivio.asp?id=1568&lang=eng",
+        "https://github.com/StrikeReady-Inc/samples/blob/main/2024-08-20%20VN%20Oil%26Gas%20MSC/urls.txt",
+        "https://www.virustotal.com/gui/file/f1d519f43c36e24a89b351f00059a1bdb9afc2a339f7301117babb484e2cc555/detection",
+        "https://www.virustotal.com/gui/file/1e6c661d6981c0fa56c011c29536e57d21545fd11205eddf9218269ddf53d448/detection",
+        "https://www.virustotal.com/gui/file/9b73cd0be50e457d9355b702d8b6df09b77a1c92bd70bbdcb538d87eccf6eef0/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2024-08-20",
+      "indicators": {
+        "domain": [
+          "api.s2cloud-amazon.com",
+          "app-dimensiona.s3.sa-east-1.amazonaws.com",
+          "bjj-files-production.s3.sa-east-1.amazonaws.com",
+          "footracker-statics.s3.sa-east-1.amazonaws.com",
+          "p-game.s3.sa-east-1.amazonaws.com",
+          "s2cloud-amazon.com",
+          "speedshare.oss-cn-hongkong.aliyuncs.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/StrikeReadyLabs/status/1825885062186860714",
+        "https://x.com/VirITeXplorer/status/1835667782853140788",
+        "https://x.com/TuringAlex/status/1937442563285508449",
+        "https://www.tgsoft.it/news/news_archivio.asp?id=1568&lang=eng",
+        "https://github.com/StrikeReady-Inc/samples/blob/main/2024-08-20%20VN%20Oil%26Gas%20MSC/urls.txt",
+        "https://www.virustotal.com/gui/file/f1d519f43c36e24a89b351f00059a1bdb9afc2a339f7301117babb484e2cc555/detection",
+        "https://www.virustotal.com/gui/file/1e6c661d6981c0fa56c011c29536e57d21545fd11205eddf9218269ddf53d448/detection",
+        "https://www.virustotal.com/gui/file/9b73cd0be50e457d9355b702d8b6df09b77a1c92bd70bbdcb538d87eccf6eef0/detection"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-06-11",
+      "indicators": {
+        "ipv4": [
+          "45.76.6.149:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/threat-analysis/2020/06/higaisa/",
+        "https://otx.alienvault.com/pulse/5eda8caf8ef3aa0d8d0b8030",
+        "https://www.virustotal.com/gui/file/df999d24bde96decdbb65287ca0986db98f73b4ed477e18c3ef100064bceba6d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-06-06",
+      "indicators": {
+        "domain": [
+          "comcleanner.info",
+          "sixindent.epizy.com",
+          "zeplin.atwebpages.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/threat-analysis/2020/06/higaisa/",
+        "https://otx.alienvault.com/pulse/5eda8caf8ef3aa0d8d0b8030",
+        "https://www.virustotal.com/gui/file/df999d24bde96decdbb65287ca0986db98f73b4ed477e18c3ef100064bceba6d/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-31",
+      "indicators": {
+        "domain": [
+          "goodhk.azurewebsites.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/threat-analysis/2020/06/higaisa/",
+        "https://otx.alienvault.com/pulse/5eda8caf8ef3aa0d8d0b8030",
+        "https://www.virustotal.com/gui/file/df999d24bde96decdbb65287ca0986db98f73b4ed477e18c3ef100064bceba6d/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

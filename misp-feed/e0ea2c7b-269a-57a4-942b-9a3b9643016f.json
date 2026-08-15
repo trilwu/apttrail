@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1555416508",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "fd6e5961-a2dc-5616-b291-5c61cc649f23",
+        "value": "144.202.54.86:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1555416508",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "1539a273-df46-5c4e-b893-73bc5c5ef944",
+        "value": "http://144.202.54.86"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:docless"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: DOCLESS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "e0ea2c7b-269a-57a4-942b-9a3b9643016f"
+  }
+}

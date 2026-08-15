@@ -1,0 +1,352 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 10,
+    "ipv4": 8,
+    "url": 13,
+    "url_path": 17
+  },
+  "first_seen": {
+    "domain": {
+      "aufreighttransport.com": "2022-06-29",
+      "controlmytraffic.com": "2022-06-29",
+      "coredashcloud.com": "2022-06-29",
+      "guesttrafficinformation.com": "2022-06-29",
+      "hoaquincloud.com": "2022-06-29",
+      "msvsseccloud.com": "2022-06-29",
+      "nyculturecloud.com": "2022-06-29",
+      "org-nk.com": "2026-01-02",
+      "tomatozcloud.com": "2022-06-29",
+      "trafficcheckdaily.com": "2022-06-29"
+    },
+    "ipv4": {
+      "185.181.229.110:443": "2026-01-02",
+      "185.181.230.110:443": "2026-01-02",
+      "185.181.230.71:443": "2026-01-02",
+      "185.231.222.86:443": "2022-06-29",
+      "192.236.209.139:443": "2026-01-02",
+      "23.81.42.154:443": "2026-01-02",
+      "46.183.27.134:443": "2026-01-05",
+      "51.77.72.146:443": "2026-01-02"
+    },
+    "url": {
+      "http://131.226.4.22": "2022-06-29",
+      "http://162.222.214.109": "2022-06-29",
+      "http://162.222.214.50": "2022-06-29",
+      "http://185.145.97.62": "2022-06-29",
+      "http://185.181.230.110": "2026-01-02",
+      "http://185.181.230.71": "2026-01-02",
+      "http://185.207.206.108": "2022-06-29",
+      "http://188.241.58.25": "2022-06-29",
+      "http://192.236.147.112": "2022-06-29",
+      "http://5.188.231.101": "2022-06-29",
+      "http://82.221.129.104": "2022-06-29",
+      "http://82.221.136.25": "2022-06-29",
+      "http://91.235.116.227": "2022-06-29"
+    },
+    "url_path": {
+      "/JxQpe5T2nCn747UP.bmp": "2022-06-29",
+      "/VYtpPTc8UE2zG4dH.bmp": "2022-06-29",
+      "/WHZAZVRYVJTN.bmp": "2022-06-29",
+      "/d7w5y/n3tb4.asp": "2026-01-02",
+      "/files/kqAjJY3v4JxtChh3.bmp": "2022-06-29",
+      "/kqAjJY3v4JxtChh3.bmp": "2022-06-29",
+      "/manager/JxQpe5T2nCn747UP.bmp": "2022-06-29",
+      "/manager/VYtpPTc8UE2zG4dH.bmp": "2022-06-29",
+      "/verify/V4/WHZAZVRYVJTN.bmp": "2022-06-29",
+      "/wkdo9/2qpmk.asp": "2026-01-02",
+      "/wkdo9/4b3ru.asp": "2026-01-02",
+      "/wkdo9/n3tb4.asp": "2026-01-02",
+      "/wkdo9/t1802.asp": "2026-01-02",
+      "/z2jb95/a3pvvu.asp": "2026-01-05",
+      "/z2jb95/fz0n15.asp": "2026-01-05",
+      "/z2jb95/hsvxr8.asp": "2026-01-05",
+      "/z2jb95/yejo9i.asp": "2026-01-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "org-nk.com": "at-or-before"
+    },
+    "ipv4": {
+      "185.181.229.110:443": "at-or-before",
+      "185.181.230.110:443": "at-or-before",
+      "185.181.230.71:443": "at-or-before",
+      "192.236.209.139:443": "at-or-before",
+      "23.81.42.154:443": "at-or-before",
+      "51.77.72.146:443": "at-or-before"
+    },
+    "url": {
+      "http://185.181.230.110": "at-or-before",
+      "http://185.181.230.71": "at-or-before"
+    },
+    "url_path": {
+      "/d7w5y/n3tb4.asp": "at-or-before",
+      "/wkdo9/2qpmk.asp": "at-or-before",
+      "/wkdo9/4b3ru.asp": "at-or-before",
+      "/wkdo9/n3tb4.asp": "at-or-before",
+      "/wkdo9/t1802.asp": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2022-06-29",
+    "latest": "2026-01-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aufreighttransport.com",
+      "controlmytraffic.com",
+      "coredashcloud.com",
+      "guesttrafficinformation.com",
+      "hoaquincloud.com",
+      "msvsseccloud.com",
+      "nyculturecloud.com",
+      "org-nk.com",
+      "tomatozcloud.com",
+      "trafficcheckdaily.com"
+    ],
+    "ipv4": [
+      "185.181.229.110:443",
+      "185.181.230.110:443",
+      "185.181.230.71:443",
+      "185.231.222.86:443",
+      "192.236.209.139:443",
+      "23.81.42.154:443",
+      "46.183.27.134:443",
+      "51.77.72.146:443"
+    ],
+    "url": [
+      "http://131.226.4.22",
+      "http://162.222.214.109",
+      "http://162.222.214.50",
+      "http://185.145.97.62",
+      "http://185.181.230.110",
+      "http://185.181.230.71",
+      "http://185.207.206.108",
+      "http://188.241.58.25",
+      "http://192.236.147.112",
+      "http://5.188.231.101",
+      "http://82.221.129.104",
+      "http://82.221.136.25",
+      "http://91.235.116.227"
+    ],
+    "url_path": [
+      "/JxQpe5T2nCn747UP.bmp",
+      "/VYtpPTc8UE2zG4dH.bmp",
+      "/WHZAZVRYVJTN.bmp",
+      "/d7w5y/n3tb4.asp",
+      "/files/kqAjJY3v4JxtChh3.bmp",
+      "/kqAjJY3v4JxtChh3.bmp",
+      "/manager/JxQpe5T2nCn747UP.bmp",
+      "/manager/VYtpPTc8UE2zG4dH.bmp",
+      "/verify/V4/WHZAZVRYVJTN.bmp",
+      "/wkdo9/2qpmk.asp",
+      "/wkdo9/4b3ru.asp",
+      "/wkdo9/n3tb4.asp",
+      "/wkdo9/t1802.asp",
+      "/z2jb95/a3pvvu.asp",
+      "/z2jb95/fz0n15.asp",
+      "/z2jb95/hsvxr8.asp",
+      "/z2jb95/yejo9i.asp"
+    ]
+  },
+  "last_modified": "2026-01-05T09:37:02+00:00",
+  "maltrail_groups": [
+    "Q12"
+  ],
+  "references": [
+    "https://blogs.jpcert.or.jp/ja/2025/10/APT-C-60_update.html",
+    "https://twitter.com/malwrhunterteam/status/1541784815728459779",
+    "https://twitter.com/unpacker/status/1541944761140948993",
+    "https://twitter.com/unpacker/status/1541944861275828224",
+    "https://twitter.com/unpacker/status/1541945280467111936",
+    "https://www.secrss.com/articles/36606 (Chinese)",
+    "https://www.virustotal.com/gui/file/1b7502a8a9e17568c1cd31629708f922822eaac86f4685261401b3b1f46de5fe/detection",
+    "https://www.virustotal.com/gui/file/41cfac27c16272327bbe6c2251ce43432d26c4a01ff9a3042b824ba8ebcccb0d/detection",
+    "https://www.virustotal.com/gui/file/6702d4eca0e2bd4e7cbfc3e700d241f7934b52626f66b7dacf1807dc20a66103/detection",
+    "https://www.virustotal.com/gui/file/90b7e2c0aea51f1b51c367ee580cbacb06e71b4fb934ac9f2e4dec1bb3fdfeb0/detection",
+    "https://www.virustotal.com/gui/file/9932be44c8916fc5750ef63866ab6b4ab3984298cdfadad2c606f3f6d36127e9/detection",
+    "https://www.virustotal.com/gui/file/bffacbb0b54a3b1dd6f25686d2486d0a064f5e8eedefb4e572740f7b63ba4fa4/detection",
+    "https://www.virustotal.com/gui/file/d4e95d7bef8d3628a74b3f4c19c86fed1f70446b9d466851c713c52d89e48370/detection",
+    "https://www.virustotal.com/gui/ip-address/162.222.214.109/relations",
+    "https://x.com/RedDrip7/status/1967783537232507326",
+    "https://x.com/RedDrip7/status/2008083368647508460",
+    "https://x.com/blackorbird/status/1984200996588073442"
+  ],
+  "related": [],
+  "slug": "Q12",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url_path": 4
+      },
+      "first_seen": "2026-01-05",
+      "indicators": {
+        "ipv4": [
+          "46.183.27.134:443"
+        ],
+        "url_path": [
+          "/z2jb95/a3pvvu.asp",
+          "/z2jb95/fz0n15.asp",
+          "/z2jb95/hsvxr8.asp",
+          "/z2jb95/yejo9i.asp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/RedDrip7/status/2008083368647508460"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url": 2,
+        "url_path": 5
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "185.181.230.110:443",
+          "185.181.230.71:443",
+          "23.81.42.154:443"
+        ],
+        "url": [
+          "http://185.181.230.110",
+          "http://185.181.230.71"
+        ],
+        "url_path": [
+          "/d7w5y/n3tb4.asp",
+          "/wkdo9/2qpmk.asp",
+          "/wkdo9/4b3ru.asp",
+          "/wkdo9/n3tb4.asp",
+          "/wkdo9/t1802.asp"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/1984200996588073442",
+        "https://blogs.jpcert.or.jp/ja/2025/10/APT-C-60_update.html",
+        "https://www.virustotal.com/gui/file/1b7502a8a9e17568c1cd31629708f922822eaac86f4685261401b3b1f46de5fe/detection"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "org-nk.com"
+        ],
+        "ipv4": [
+          "185.181.229.110:443",
+          "192.236.209.139:443",
+          "51.77.72.146:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/RedDrip7/status/1967783537232507326"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 9,
+        "ipv4": 1,
+        "url": 7
+      },
+      "first_seen": "2022-06-29",
+      "indicators": {
+        "domain": [
+          "aufreighttransport.com",
+          "controlmytraffic.com",
+          "coredashcloud.com",
+          "guesttrafficinformation.com",
+          "hoaquincloud.com",
+          "msvsseccloud.com",
+          "nyculturecloud.com",
+          "tomatozcloud.com",
+          "trafficcheckdaily.com"
+        ],
+        "ipv4": [
+          "185.231.222.86:443"
+        ],
+        "url": [
+          "http://162.222.214.109",
+          "http://185.145.97.62",
+          "http://188.241.58.25",
+          "http://192.236.147.112",
+          "http://5.188.231.101",
+          "http://82.221.136.25",
+          "http://91.235.116.227"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secrss.com/articles/36606 (Chinese)",
+        "https://www.virustotal.com/gui/ip-address/162.222.214.109/relations",
+        "https://www.virustotal.com/gui/file/41cfac27c16272327bbe6c2251ce43432d26c4a01ff9a3042b824ba8ebcccb0d/detection",
+        "https://www.virustotal.com/gui/file/6702d4eca0e2bd4e7cbfc3e700d241f7934b52626f66b7dacf1807dc20a66103/detection",
+        "https://www.virustotal.com/gui/file/d4e95d7bef8d3628a74b3f4c19c86fed1f70446b9d466851c713c52d89e48370/detection",
+        "https://www.virustotal.com/gui/file/90b7e2c0aea51f1b51c367ee580cbacb06e71b4fb934ac9f2e4dec1bb3fdfeb0/detection",
+        "https://www.virustotal.com/gui/file/9932be44c8916fc5750ef63866ab6b4ab3984298cdfadad2c606f3f6d36127e9/detection"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "url_path": 8
+      },
+      "first_seen": "2022-06-29",
+      "indicators": {
+        "url_path": [
+          "/JxQpe5T2nCn747UP.bmp",
+          "/VYtpPTc8UE2zG4dH.bmp",
+          "/WHZAZVRYVJTN.bmp",
+          "/files/kqAjJY3v4JxtChh3.bmp",
+          "/kqAjJY3v4JxtChh3.bmp",
+          "/manager/JxQpe5T2nCn747UP.bmp",
+          "/manager/VYtpPTc8UE2zG4dH.bmp",
+          "/verify/V4/WHZAZVRYVJTN.bmp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/RedDrip7/status/2008083368647508460"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "url": 4
+      },
+      "first_seen": "2022-06-29",
+      "indicators": {
+        "url": [
+          "http://131.226.4.22",
+          "http://162.222.214.50",
+          "http://185.207.206.108",
+          "http://82.221.129.104"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1541784815728459779",
+        "https://twitter.com/unpacker/status/1541944761140948993",
+        "https://twitter.com/unpacker/status/1541944861275828224",
+        "https://twitter.com/unpacker/status/1541945280467111936",
+        "https://www.virustotal.com/gui/file/bffacbb0b54a3b1dd6f25686d2486d0a064f5e8eedefb4e572740f7b63ba4fa4/detection"
+      ],
+      "total": 4
+    }
+  ]
+}

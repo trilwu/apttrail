@@ -1,0 +1,139 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1571488800",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3db015e0-a965-507f-ac50-260a3809ddaa",
+        "value": "icc.ignorelist.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571488800",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ecc9d201-b2e7-50a6-bf39-44d83b552f70",
+        "value": "video.csmcpr.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5c48fbee-e4b5-547a-8d0a-3237abb79b96",
+        "value": "178.128.110.214:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "b8a9ae46-06e0-5325-86fb-14979ad03346",
+        "value": "http://128.199.73.43"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1572469081",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "fd687e28-f38d-576d-9951-1235635dc6a1",
+        "value": "http://139.59.101.236"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1572469081",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "f0cc0205-5155-5a67-89bd-820377fcafa7",
+        "value": "http://139.59.110.217"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1572469081",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "58b8777a-464f-528f-bd3b-4e08d9b7a603",
+        "value": "http://139.59.226.29"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "1b4003a4-ef29-5662-ac5a-e4c100660abd",
+        "value": "http://139.59.230.181"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571488800",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "df5f91f9-f508-54ec-8637-d937a25fa036",
+        "value": "http://141.108.2.157"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6ef78e9d-7284-5ce9-8e18-b464a59f0627",
+        "value": "http://159.65.127.93"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "6f557493-b17f-5f4f-8f18-63c7ea44f7f0",
+        "value": "http://159.65.74.97"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "bc05a2ba-70d1-55c3-ac4c-144e4fb7cf05",
+        "value": "http://188.226.144.42"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1581606988",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "634abd51-ca22-5a66-9164-97c9d31d1233",
+        "value": "http://59.73.16.165"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:12"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT12 - G0005\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT12 (G0005) - Maltrail group 12",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "f7078113-29fb-553f-ab5e-4dbb5bba5a43"
+  }
+}

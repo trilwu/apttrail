@@ -1,0 +1,169 @@
+{
+  "aliases": [],
+  "attack_id": "G1005",
+  "attack_name": "POLONIUM",
+  "attack_url": "https://attack.mitre.org/groups/G1005/",
+  "counts": {
+    "ipv4": 16,
+    "url": 5,
+    "url_path": 5
+  },
+  "first_seen": {
+    "ipv4": {
+      "146.70.86.6:1433": "2022-10-12",
+      "185.203.119.99:8080": "2022-10-12",
+      "185.244.129.216:5055": "2022-10-12",
+      "185.244.129.216:8080": "2023-05-15",
+      "185.244.129.79:63047": "2022-10-12",
+      "195.166.100.23:5055": "2022-10-12",
+      "45.137.148.7:2121": "2022-10-12",
+      "45.80.148.119:8080": "2022-10-12",
+      "45.80.148.167:21": "2022-10-12",
+      "45.80.148.167:5055": "2022-10-12",
+      "45.80.148.186:8080": "2022-10-12",
+      "45.80.149.108:8080": "2022-10-12",
+      "45.80.149.154:1302": "2022-10-12",
+      "45.80.149.154:21": "2022-10-12",
+      "45.80.149.22:8080": "2022-10-12",
+      "45.80.149.68:63047": "2022-10-12"
+    },
+    "url": {
+      "http://212.73.150.174": "2022-10-12",
+      "http://37.120.233.89": "2022-10-12",
+      "http://45.80.149.71": "2022-10-12",
+      "http://51.83.246.73": "2022-10-12",
+      "http://94.156.189.103": "2022-10-12"
+    },
+    "url_path": {
+      "/IZJXKKqgAJ?g7Bh7t=": "2023-05-15",
+      "/t2kmBOZdMn/": "2023-05-15",
+      "/t2kmBOZdMn/IZJXKKqgAJ?g7Bh7t=": "2023-05-15",
+      "/ui/chk?mactok=": "2023-05-15",
+      "/ui/insrt?mactok=": "2023-05-15"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-10-12",
+    "latest": "2023-05-15"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "146.70.86.6:1433",
+      "185.203.119.99:8080",
+      "185.244.129.216:5055",
+      "185.244.129.216:8080",
+      "185.244.129.79:63047",
+      "195.166.100.23:5055",
+      "45.137.148.7:2121",
+      "45.80.148.119:8080",
+      "45.80.148.167:21",
+      "45.80.148.167:5055",
+      "45.80.148.186:8080",
+      "45.80.149.108:8080",
+      "45.80.149.154:1302",
+      "45.80.149.154:21",
+      "45.80.149.22:8080",
+      "45.80.149.68:63047"
+    ],
+    "url": [
+      "http://212.73.150.174",
+      "http://37.120.233.89",
+      "http://45.80.149.71",
+      "http://51.83.246.73",
+      "http://94.156.189.103"
+    ],
+    "url_path": [
+      "/IZJXKKqgAJ?g7Bh7t=",
+      "/t2kmBOZdMn/",
+      "/t2kmBOZdMn/IZJXKKqgAJ?g7Bh7t=",
+      "/ui/chk?mactok=",
+      "/ui/insrt?mactok="
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "POLONIUM"
+  ],
+  "references": [
+    "https://github.com/eset/malware-ioc/tree/master/polonium",
+    "https://twitter.com/k3yp0d/status/1658089065885884420",
+    "https://www.virustotal.com/gui/file/70e4b5d32abfa9134122ae36ba64d060bc6c1d33fbabcf7869d3df5e337698a4/detection",
+    "https://www.virustotal.com/gui/file/a81247a8a16bc1c0077346dacfa005d49f26386381819f3ed8e047b4382668fe/detection",
+    "https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/"
+  ],
+  "related": [],
+  "slug": "G1005",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url_path": 5
+      },
+      "first_seen": "2023-05-15",
+      "indicators": {
+        "ipv4": [
+          "185.244.129.216:8080"
+        ],
+        "url_path": [
+          "/IZJXKKqgAJ?g7Bh7t=",
+          "/t2kmBOZdMn/",
+          "/t2kmBOZdMn/IZJXKKqgAJ?g7Bh7t=",
+          "/ui/chk?mactok=",
+          "/ui/insrt?mactok="
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1658089065885884420",
+        "https://www.virustotal.com/gui/file/70e4b5d32abfa9134122ae36ba64d060bc6c1d33fbabcf7869d3df5e337698a4/detection",
+        "https://www.virustotal.com/gui/file/a81247a8a16bc1c0077346dacfa005d49f26386381819f3ed8e047b4382668fe/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "ipv4": 15,
+        "url": 5
+      },
+      "first_seen": "2022-10-12",
+      "indicators": {
+        "ipv4": [
+          "146.70.86.6:1433",
+          "185.203.119.99:8080",
+          "185.244.129.216:5055",
+          "185.244.129.79:63047",
+          "195.166.100.23:5055",
+          "45.137.148.7:2121",
+          "45.80.148.119:8080",
+          "45.80.148.167:21",
+          "45.80.148.167:5055",
+          "45.80.148.186:8080",
+          "45.80.149.108:8080",
+          "45.80.149.154:1302",
+          "45.80.149.154:21",
+          "45.80.149.22:8080",
+          "45.80.149.68:63047"
+        ],
+        "url": [
+          "http://212.73.150.174",
+          "http://37.120.233.89",
+          "http://45.80.149.71",
+          "http://51.83.246.73",
+          "http://94.156.189.103"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2022/10/11/polonium-targets-israel-creepy-malware/",
+        "https://github.com/eset/malware-ioc/tree/master/polonium"
+      ],
+      "total": 20
+    }
+  ]
+}

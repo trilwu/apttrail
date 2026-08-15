@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Daggerfly · APTtrail</title>
+<meta name=description content="14 indicators attributed to Daggerfly (G1034), from 17 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/G1034.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="Daggerfly · APTtrail">
+<meta property="og:description" content="14 indicators attributed to Daggerfly (G1034), from 17 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/G1034.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>Daggerfly <a class=gid href="https://attack.mitre.org/groups/G1034/">G1034</a></h1>
+<p class=aka><b>EVASIVEPANDA</b> &middot; Bronze Highland &middot; Daggerfly</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>14</dd></div>
+<div><dt>Source reports</dt><dd>17</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-01-02</dd></div>
+</dl>
+<div class=spark><span style="--h:79%" title="2020: 5 indicators"></span><span style="--h:0%" title="2021: 0 indicators"></span><span style="--h:0%" title="2022: 0 indicators"></span><span style="--h:0%" title="2023: 0 indicators"></span><span style="--h:100%" title="2024: 8 indicators"></span><span class=hot style="--h:35%" title="2025: 1 indicators"></span></div>
+<div class=spark-axis><span>2020</span><span>2025</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#techniques">Techniques</a></li><li><a href="#software">Software</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Suspected origin</dt><dd><a href="../groups.html?country=CN">CN</a></dd>
+<dt>Suspected victims</dt><dd><ul class=chips><li>Hong Kong</li><li>India</li><li>Macao</li><li>Malaysia</li><li>Nigeria</li><li>Taiwan</li></ul></dd>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_evasivepanda.txt">EVASIVEPANDA</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G1034.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/G1034-domain.txt</pre>
+<p class=note><a href="G1034.json">G1034.json</a> &middot; <a href="G1034-domain.txt">G1034-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>14 indicators</span></h2>
+<p class=lede>Daggerfly is a People&#x27;s Republic of China-linked APT entity active since at least 2012. Daggerfly has targeted individuals, government and NGO entities, and telecommunication companies in Asia and Africa. Daggerfly is associated with exclusive use of MgBot malware and is noted for several potential supply chain infection campaigns.</p>
+<table class=coverage>
+<tr><td>ipv4</td><td class=n>11</td><td class=f><a href="G1034.json">G1034.json</a></td></tr>
+<tr><td>domain</td><td class=n>3</td><td class=f><a href="G1034-domain.txt">G1034-domain.txt</a></td></tr>
+</table>
+
+<h2 id=techniques>Techniques <span class=n>17 ATT&amp;CK</span></h2>
+<p class=note><a class=cta href="https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Ftrilwu.github.io%2Fapttrail%2Fby-group%2FG1034-navigator.json" rel="noopener">Open in ATT&amp;CK Navigator &rarr;</a> <span class=sep>or</span> <a href="G1034-navigator.json">download the layer</a> (17 techniques, layer&nbsp;4.5)</p>
+<ul class=chips><li><a href="https://attack.mitre.org/techniques/T1003/002/"><b>T1003.002</b> Security Account Manager</a></li><li><a href="https://attack.mitre.org/techniques/T1012/"><b>T1012</b> Query Registry</a></li><li><a href="https://attack.mitre.org/techniques/T1036/003/"><b>T1036.003</b> Rename Legitimate Utilities</a></li><li><a href="https://attack.mitre.org/techniques/T1053/005/"><b>T1053.005</b> Scheduled Task</a></li><li><a href="https://attack.mitre.org/techniques/T1059/001/"><b>T1059.001</b> PowerShell</a></li><li><a href="https://attack.mitre.org/techniques/T1071/001/"><b>T1071.001</b> Web Protocols</a></li><li><a href="https://attack.mitre.org/techniques/T1082/"><b>T1082</b> System Information Discovery</a></li><li><a href="https://attack.mitre.org/techniques/T1105/"><b>T1105</b> Ingress Tool Transfer</a></li><li><a href="https://attack.mitre.org/techniques/T1136/001/"><b>T1136.001</b> Local Account</a></li><li><a href="https://attack.mitre.org/techniques/T1189/"><b>T1189</b> Drive-by Compromise</a></li><li><a href="https://attack.mitre.org/techniques/T1195/002/"><b>T1195.002</b> Compromise Software Supply Chain</a></li><li><a href="https://attack.mitre.org/techniques/T1204/001/"><b>T1204.001</b> Malicious Link</a></li><li><a href="https://attack.mitre.org/techniques/T1218/011/"><b>T1218.011</b> Rundll32</a></li><li><a href="https://attack.mitre.org/techniques/T1553/002/"><b>T1553.002</b> Code Signing</a></li><li><a href="https://attack.mitre.org/techniques/T1574/001/"><b>T1574.001</b> DLL</a></li><li><a href="https://attack.mitre.org/techniques/T1584/004/"><b>T1584.004</b> Server</a></li><li><a href="https://attack.mitre.org/techniques/T1587/002/"><b>T1587.002</b> Code Signing Certificates</a></li></ul>
+
+<h2 id=software>Software <span class=n>6</span></h2>
+<ul class=chips><li><a href="https://attack.mitre.org/software/S0013/"><b>PlugX</b></a></li><li><a href="https://attack.mitre.org/software/S0075/"><b>Reg</b></a></li><li><a href="https://attack.mitre.org/software/S0190/"><b>BITSAdmin</b></a></li><li><a href="https://attack.mitre.org/software/S1016/"><b>MacMa</b></a></li><li><a href="https://attack.mitre.org/software/S1146/"><b>MgBot</b></a></li><li><a href="https://attack.mitre.org/software/S1147/"><b>Nightdoor</b></a></li></ul>
+
+<h2 id=reporting>Principal sources <span class=n>17 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>5</span><a href="https://twitter.com/h2jazi/status/1296919948598673409" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1296919948598673409</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>5</span><a href="https://blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-group-targets-india-and-hong-kong-using-new-variant-of-mgbot-malware/" rel="noopener nofollow"><span class=host>blog.malwarebytes.com</span><span class=path>/threat-analysis/2020/07/chinese-apt-gro…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>5</span><a href="https://otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5f170c74a81587f5b2b6be5f</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>5</span><a href="https://www.virustotal.com/gui/domain/governmentmm.com/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/domain/governmentmm.com/relations</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>5</span><a href="https://app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04f0e/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>4</span><a href="https://x.com/TuringAlex/status/1859969605084823621" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/TuringAlex/status/1859969605084823621</span></a><div class=bar style="--w:80%"></div></li>
+<li><span class=c>4</span><a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-use-new-ssh-backdoor-in-network-device-hacks/" rel="noopener nofollow"><span class=host>bleepingcomputer.com</span><span class=path>/news/security/chinese-cyberspies-use-ne…</span></a><div class=bar style="--w:80%"></div></li>
+<li><span class=c>4</span><a href="https://www.virustotal.com/gui/file/94e8540ea39893b6be910cfee0331766e4a199684b0360e367741facca74191f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/94e8540ea39893b6be910cfee03317…</span></a><div class=bar style="--w:80%"></div></li>
+</ul>
+
+
+
+<h2 id=timeline>Timeline <span class=n>14 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2023-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2023</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>14</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 11</button><button type=button data-type="domain" aria-pressed=false>domain 3</button></div>
+
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2025-02-08-d8aced" class=hot>
+<div class=when><a class=date href="#b-2025-02-08-d8aced"><time datetime="2025-02-08">2025-02-08</time></a> <span class=cnt>1 ipv4</span><span class=ago>1 yr ago</span></div>
+<p class=src><a href="https://x.com/TuringAlex/status/1859969605084823621" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/TuringAlex/status/1859969605084823621</span></a> &middot; <a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-use-new-ssh-backdoor-in-network-device-hacks/" rel="noopener nofollow"><span class=host>bleepingcomputer.com</span><span class=path>/news/security/chinese-cyberspies-use-ne…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/94e8540ea39893b6be910cfee0331766e4a199684b0360e367741facca74191f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/94e8540ea39893b6be910cfee03317…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>45.125.64.200:33200</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-11-22-d8aced">
+<div class=when><a class=date href="#b-2024-11-22-d8aced"><time datetime="2024-11-22">2024-11-22</time></a> <span class=cnt>3 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/TuringAlex/status/1859969605084823621" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/TuringAlex/status/1859969605084823621</span></a> &middot; <a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-use-new-ssh-backdoor-in-network-device-hacks/" rel="noopener nofollow"><span class=host>bleepingcomputer.com</span><span class=path>/news/security/chinese-cyberspies-use-ne…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/94e8540ea39893b6be910cfee0331766e4a199684b0360e367741facca74191f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/94e8540ea39893b6be910cfee03317…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>223.165.4.175:81</td></tr>
+<tr data-t="ipv4"><td class=val>45.125.64.200:33220</td></tr>
+<tr data-t="ipv4"><td class=val>45.125.64.200:33223</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-07-24-9b72e2">
+<div class=when><a class=date href="#b-2024-07-24-9b72e2"><time datetime="2024-07-24">2024-07-24</time></a> <span class=cnt>4 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/daggerfly-espionage-updated-toolset" rel="noopener nofollow"><span class=host>symantec-enterprise-blogs.security.com</span><span class=path>/threat-intelligence/daggerfly-espionage…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/5c52e41090cdd13e0bfa7ec11c283f5051347ba02c9868b4fddfd9c3fc452191/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/5c52e41090cdd13e0bfa7ec11c283f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/5687b32cdd5c4d1b3e928ee0792f6ec43817883721f9b86ec8066c5ec2791595/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/5687b32cdd5c4d1b3e928ee0792f6e…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/23acab55f533cad2471516d15f52a85d7f3a64e9589b6bfc76981dde39d1e0d4/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/23acab55f533cad2471516d15f52a8…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/dfd28fa39cfa6a8e06ea897a6df78f9e27d36bba192b43e83790ff09879ac2bc/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/dfd28fa39cfa6a8e06ea897a6df78f…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/a0b125e69a8b3619b372fe363bd2cf2c2c3772c2eec39fa40f86c47b1a0d16d9/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/a0b125e69a8b3619b372fe363bd2cf…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/82c36fe8429b63c59d06d3741d1e4de7b60e196d1106a678fe052cc73909a997/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/82c36fe8429b63c59d06d3741d1e4d…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/82a662cc06c49714efd8ed9086e20181659535718c515aa583efc70206256085/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/82a662cc06c49714efd8ed9086e201…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>103.96.128.44:10001</td></tr>
+<tr data-t="ipv4"><td class=val>103.96.128.44:16564</td></tr>
+<tr data-t="ipv4"><td class=val>103.96.131.150:19876</td></tr>
+<tr data-t="ipv4"><td class=val>103.96.131.150:40020</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-03-07-85a08a">
+<div class=when><a class=date href="#b-2024-03-07-85a08a"><time datetime="2024-03-07">2024-03-07</time></a> <span class=cnt>1 domain</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://www.welivesecurity.com/en/eset-research/evasive-panda-leverages-monlam-festival-target-tibetans/" rel="noopener nofollow"><span class=host>welivesecurity.com</span><span class=path>/en/eset-research/evasive-panda-leverage…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>update.devicebug.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-08-21-3f85f9">
+<div class=when><a class=date href="#b-2020-08-21-3f85f9"><time datetime="2020-08-21">2020-08-21</time></a> <span class=cnt>1 ipv4</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1296919948598673409" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1296919948598673409</span></a> &middot; <a href="https://blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-group-targets-india-and-hong-kong-using-new-variant-of-mgbot-malware/" rel="noopener nofollow"><span class=host>blog.malwarebytes.com</span><span class=path>/threat-analysis/2020/07/chinese-apt-gro…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5f170c74a81587f5b2b6be5f</span></a> &middot; <a href="https://www.virustotal.com/gui/domain/governmentmm.com/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/domain/governmentmm.com/relations</span></a> &middot; <a href="https://app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04f0e/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>45.77.140.81:81</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-07-21-3f85f9">
+<div class=when><a class=date href="#b-2020-07-21-3f85f9"><time datetime="2020-07-21">2020-07-21</time></a> <span class=cnt>1 domain, 2 ipv4</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1296919948598673409" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1296919948598673409</span></a> &middot; <a href="https://blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-group-targets-india-and-hong-kong-using-new-variant-of-mgbot-malware/" rel="noopener nofollow"><span class=host>blog.malwarebytes.com</span><span class=path>/threat-analysis/2020/07/chinese-apt-gro…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5f170c74a81587f5b2b6be5f</span></a> &middot; <a href="https://www.virustotal.com/gui/domain/governmentmm.com/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/domain/governmentmm.com/relations</span></a> &middot; <a href="https://app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04f0e/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>governmentmm.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>122.10.89.170:9552</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>122.10.89.172:10560</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-07-07-3f85f9">
+<div class=when><a class=date href="#b-2020-07-07-3f85f9"><time datetime="2020-07-07">2020-07-07</time></a> <span class=cnt>1 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/h2jazi/status/1296919948598673409" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/h2jazi/status/1296919948598673409</span></a> &middot; <a href="https://blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-group-targets-india-and-hong-kong-using-new-variant-of-mgbot-malware/" rel="noopener nofollow"><span class=host>blog.malwarebytes.com</span><span class=path>/threat-analysis/2020/07/chinese-apt-gro…</span></a> &middot; <a href="https://otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f" rel="noopener nofollow"><span class=host>otx.alienvault.com</span><span class=path>/pulse/5f170c74a81587f5b2b6be5f</span></a> &middot; <a href="https://www.virustotal.com/gui/domain/governmentmm.com/relations" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/domain/governmentmm.com/relations</span></a> &middot; <a href="https://app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04f0e/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>flash.governmentmm.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>20</span></h2>
+<ul class=refs>
+<li><a href="https://attack.mitre.org/groups/G1034" rel="noopener nofollow">attack.mitre.org/groups/G1034</a></li>
+<li><a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/apt-attacks-telecoms-africa-mgbot" rel="noopener nofollow">symantec-enterprise-blogs.security.com/threat-intelligence/apt-attacks-telecom…</a></li>
+<li><a href="https://symantec-enterprise-blogs.security.com/threat-intelligence/daggerfly-espionage-updated-toolset" rel="noopener nofollow">symantec-enterprise-blogs.security.com/threat-intelligence/daggerfly-espionage…</a></li>
+<li><a href="https://www.welivesecurity.com/2023/04/26/evasive-panda-apt-group-malware-updates-popular-chinese-software/" rel="noopener nofollow">welivesecurity.com/2023/04/26/evasive-panda-apt-group-malw…</a></li>
+<li><a href="https://www.welivesecurity.com/en/eset-research/evasive-panda-leverages-monlam-festival-target-tibetans/" rel="noopener nofollow">welivesecurity.com/en/eset-research/evasive-panda-leverage…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/94e8540ea39893b6be910cfee0331766e4a199684b0360e367741facca74191f/detection" rel="noopener nofollow">virustotal.com/gui/file/94e8540ea39893b6be910cfee03317…</a></li>
+<li><a href="https://blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-group-targets-india-and-hong-kong-using-new-variant-of-mgbot-malware/" rel="noopener nofollow">blog.malwarebytes.com/threat-analysis/2020/07/chinese-apt-gro…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/23acab55f533cad2471516d15f52a85d7f3a64e9589b6bfc76981dde39d1e0d4/detection" rel="noopener nofollow">virustotal.com/gui/file/23acab55f533cad2471516d15f52a8…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/dfd28fa39cfa6a8e06ea897a6df78f9e27d36bba192b43e83790ff09879ac2bc/detection" rel="noopener nofollow">virustotal.com/gui/file/dfd28fa39cfa6a8e06ea897a6df78f…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/a0b125e69a8b3619b372fe363bd2cf2c2c3772c2eec39fa40f86c47b1a0d16d9/detection" rel="noopener nofollow">virustotal.com/gui/file/a0b125e69a8b3619b372fe363bd2cf…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/82c36fe8429b63c59d06d3741d1e4de7b60e196d1106a678fe052cc73909a997/detection" rel="noopener nofollow">virustotal.com/gui/file/82c36fe8429b63c59d06d3741d1e4d…</a></li>
+<li><a href="https://x.com/TuringAlex/status/1859969605084823621" rel="noopener nofollow">x.com/TuringAlex/status/1859969605084823621</a></li>
+<li><a href="https://www.virustotal.com/gui/domain/governmentmm.com/relations" rel="noopener nofollow">virustotal.com/gui/domain/governmentmm.com/relations</a></li>
+<li><a href="https://www.virustotal.com/gui/file/5c52e41090cdd13e0bfa7ec11c283f5051347ba02c9868b4fddfd9c3fc452191/detection" rel="noopener nofollow">virustotal.com/gui/file/5c52e41090cdd13e0bfa7ec11c283f…</a></li>
+<li><a href="https://otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f" rel="noopener nofollow">otx.alienvault.com/pulse/5f170c74a81587f5b2b6be5f</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/chinese-cyberspies-use-new-ssh-backdoor-in-network-device-hacks/" rel="noopener nofollow">bleepingcomputer.com/news/security/chinese-cyberspies-use-ne…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/82a662cc06c49714efd8ed9086e20181659535718c515aa583efc70206256085/detection" rel="noopener nofollow">virustotal.com/gui/file/82a662cc06c49714efd8ed9086e201…</a></li>
+<li><a href="https://twitter.com/h2jazi/status/1296919948598673409" rel="noopener nofollow">twitter.com/h2jazi/status/1296919948598673409</a></li>
+<li><a href="https://app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04f0e/" rel="noopener nofollow">app.any.run/tasks/e5ad4dd0-32f7-45a6-8012-44711ed04…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/5687b32cdd5c4d1b3e928ee0792f6ec43817883721f9b86ec8066c5ec2791595/detection" rel="noopener nofollow">virustotal.com/gui/file/5687b32cdd5c4d1b3e928ee0792f6e…</a></li>
+</ul>
+
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

@@ -1,0 +1,123 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9,
+    "ipv4": 2
+  },
+  "first_seen": {
+    "domain": {
+      "acquerifec.com": "2026-01-31",
+      "ayobabelan.com": "2026-01-31",
+      "b0aweb0.refec.site": "2026-01-31",
+      "bloggoversikten.com": "2026-01-31",
+      "outlook-d12.zyns.com": "2026-01-31",
+      "refec.site": "2026-01-31",
+      "refreb0.com": "2026-01-31",
+      "refreb1.info": "2026-01-31",
+      "ws.iferc.com": "2026-01-31"
+    },
+    "ipv4": {
+      "82.221.100.40:443": "2026-02-17",
+      "95.174.65.218:443": "2026-01-31"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-31",
+    "latest": "2026-02-17"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "acquerifec.com",
+      "ayobabelan.com",
+      "b0aweb0.refec.site",
+      "bloggoversikten.com",
+      "outlook-d12.zyns.com",
+      "refec.site",
+      "refreb0.com",
+      "refreb1.info",
+      "ws.iferc.com"
+    ],
+    "ipv4": [
+      "82.221.100.40:443",
+      "95.174.65.218:443"
+    ]
+  },
+  "last_modified": "2026-02-17T10:49:06+00:00",
+  "maltrail_groups": [
+    "PUNISHINGOWL"
+  ],
+  "references": [
+    "https://habr.com/ru/companies/pt/articles/990374/",
+    "https://www.virustotal.com/gui/file/09636fbca343f268ee7c0c033e37a9b007fe40ce914c4273ed961d84b52bed17/detection",
+    "https://www.virustotal.com/gui/file/6aa09062a755775e1b11dfd5fa80981fa50e1ecf4ba3f1ae41b2ed8b671e0f6a/detection",
+    "https://www.virustotal.com/gui/file/b1782f8f3440ce4b184f27c4047439aa998058ec17319a5b08031eda545d5a50/detection",
+    "https://www.virustotal.com/gui/file/dfd49ea1911fb7e800440c82b6518828ec7fa7c595d7ea6baabec29e5d9cecec/detection",
+    "https://www.virustotal.com/gui/file/f25506f5a7f3580edae159bbdbca3f8d17dfeeaadcc548c8202a764399550778/detection"
+  ],
+  "related": [],
+  "slug": "PUNISHINGOWL",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-02-17",
+      "indicators": {
+        "ipv4": [
+          "82.221.100.40:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://habr.com/ru/companies/pt/articles/990374/",
+        "https://www.virustotal.com/gui/file/f25506f5a7f3580edae159bbdbca3f8d17dfeeaadcc548c8202a764399550778/detection",
+        "https://www.virustotal.com/gui/file/dfd49ea1911fb7e800440c82b6518828ec7fa7c595d7ea6baabec29e5d9cecec/detection",
+        "https://www.virustotal.com/gui/file/b1782f8f3440ce4b184f27c4047439aa998058ec17319a5b08031eda545d5a50/detection",
+        "https://www.virustotal.com/gui/file/6aa09062a755775e1b11dfd5fa80981fa50e1ecf4ba3f1ae41b2ed8b671e0f6a/detection",
+        "https://www.virustotal.com/gui/file/09636fbca343f268ee7c0c033e37a9b007fe40ce914c4273ed961d84b52bed17/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-31",
+      "indicators": {
+        "domain": [
+          "acquerifec.com",
+          "ayobabelan.com",
+          "b0aweb0.refec.site",
+          "bloggoversikten.com",
+          "outlook-d12.zyns.com",
+          "refec.site",
+          "refreb0.com",
+          "refreb1.info",
+          "ws.iferc.com"
+        ],
+        "ipv4": [
+          "95.174.65.218:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://habr.com/ru/companies/pt/articles/990374/",
+        "https://www.virustotal.com/gui/file/f25506f5a7f3580edae159bbdbca3f8d17dfeeaadcc548c8202a764399550778/detection",
+        "https://www.virustotal.com/gui/file/dfd49ea1911fb7e800440c82b6518828ec7fa7c595d7ea6baabec29e5d9cecec/detection",
+        "https://www.virustotal.com/gui/file/b1782f8f3440ce4b184f27c4047439aa998058ec17319a5b08031eda545d5a50/detection",
+        "https://www.virustotal.com/gui/file/6aa09062a755775e1b11dfd5fa80981fa50e1ecf4ba3f1ae41b2ed8b671e0f6a/detection",
+        "https://www.virustotal.com/gui/file/09636fbca343f268ee7c0c033e37a9b007fe40ce914c4273ed961d84b52bed17/detection"
+      ],
+      "total": 10
+    }
+  ]
+}

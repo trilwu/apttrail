@@ -1,0 +1,871 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "725e3417-861d-5f57-9079-bac78afc3dc6",
+        "value": "account-api.cloudstorageservice.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ff7130e4-1c59-50bf-bd16-4cdefab6a8f0",
+        "value": "account-api.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8892f1bc-eda9-5bae-8c53-8805939d026b",
+        "value": "account-api.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5ffe0d59-602c-56b7-b94c-cfaf0f7f6c6f",
+        "value": "account.email-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a2bc645a-764d-5069-a89d-7408a6cea1cd",
+        "value": "account.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7a24e6bf-9b77-59c1-a495-811257d9e9fa",
+        "value": "account.open-button.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1847364f-2f5f-594d-abb1-168d23d7779a",
+        "value": "account.proton-drive.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52df47df-c9c8-5ba5-9200-16b56fba6498",
+        "value": "account.proton-service.services"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724863772",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "83336c83-2195-5172-acd2-78f08cb92182",
+        "value": "account.proton-verify.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1729071855",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bea35713-cfdf-5357-96fc-2a692daba366",
+        "value": "account.proton.shared-urls.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723698228",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6776d8e7-e6cf-5306-9ea8-7af894137fc6",
+        "value": "account.protondrive.cloud"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "febb721e-2b3a-5cb4-9244-d507a7a94077",
+        "value": "account.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8a32bd0e-3db8-59cc-b0e7-90de844ae5dd",
+        "value": "account.protondrive.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724912261",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "381afc4e-e843-56ee-9a63-ab127a6b58df",
+        "value": "account.protondrive.services"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "15e2fe1a-4ee0-5113-973a-0766dbc28a9f",
+        "value": "account.secure-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e5c97b66-5f60-50e9-aa78-060e7d633da4",
+        "value": "account.service-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724912261",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cd55f283-ac97-5fca-8cab-ab7ea8def27b",
+        "value": "account.service-proton.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f087b3dd-066c-5ebe-a5c5-fb2b2d52ffeb",
+        "value": "account.service-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724912261",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "eb909b26-38d7-50a9-ab12-174c3d5d47ae",
+        "value": "account.services-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d421bb94-ddc0-59d0-a5bd-a010d5f3b6ad",
+        "value": "accounts-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "146599f4-e601-5b28-a394-374deb8d5fbf",
+        "value": "accounts.support-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "54340968-62d4-5c7e-984a-aa7b3cab761b",
+        "value": "center-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6c58b6b3-718e-55f6-a395-176b7791ddbd",
+        "value": "civic-synergy.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1caec553-141b-5e2b-92a0-853fd63ef6f4",
+        "value": "cloudstorageservice.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724096155",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1882c5e9-227a-5c94-a818-e8e5a5881670",
+        "value": "decryptor.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ae572088-dca7-5a72-8897-32a81af9b40c",
+        "value": "desktop-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724153309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b4912fb2-2aca-574f-83c2-412792713bb1",
+        "value": "document-decryption.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "74c24f4b-f916-52f1-8725-e4f3f9791637",
+        "value": "drive-proton.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "40499c69-47cf-55a2-9750-7ee3b1e7f5e4",
+        "value": "drive.link-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724863772",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fbf36c4a-e115-5e58-a140-6d9fbc00c1f0",
+        "value": "drive.proton-verify.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724993661",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d45f3c44-0bd1-59a3-bbc0-830102403497",
+        "value": "drive.proton.decryptor.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724993661",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e5a69a94-35a8-5f74-ae81-d455fde3559b",
+        "value": "drive.proton.filestorage.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1729071855",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7379121e-1ae5-557c-80d3-4149b3bf42be",
+        "value": "drive.proton.shared-urls.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "525785fc-f2ac-59db-adf5-78a77a6596f7",
+        "value": "drive.secure-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1d48d5d4-502e-55c1-8af9-335394f9ea27",
+        "value": "drive.service-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "309fb2cc-87b9-54bb-8bc7-4eee8e942e53",
+        "value": "drive.service-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724151577",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "17b4bd75-5af8-5a62-af7b-896ae3c16d9b",
+        "value": "driveproton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724151769",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4f102787-a112-55c1-98f3-c1aa0426f110",
+        "value": "driveshare.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52cf29d6-5dd7-5e59-a872-bd8d74aa955e",
+        "value": "edisk.support-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7812684a-187f-5f2f-bf17-be9b060d0ce9",
+        "value": "email-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "10e84db6-1521-534b-b783-60109083af13",
+        "value": "email-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "62273e6a-e1b5-50a6-a587-97799ae5f616",
+        "value": "email.support-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7f578b8c-246c-5686-9201-bcfbf66a6215",
+        "value": "en-us.center-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "53a98e9f-973a-58f2-8038-46953d026c60",
+        "value": "en-us.desktop-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5f3a41b6-5e8c-5af9-a320-ed96b861bfdb",
+        "value": "fb-me.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "99c5f13a-7bc4-5d21-99f8-00cfdbef3f53",
+        "value": "fidh.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52e9d90f-71e5-55aa-a06e-7a57e52bd51d",
+        "value": "filestorage.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b9c7ebb9-6829-5d36-95c7-4adc52658827",
+        "value": "fr-fr.center-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e3b98c97-788d-5cb1-b1f9-9b5e640b3f3a",
+        "value": "h.maiils.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d3ecc37a-2635-501e-adb2-e3aa2a663886",
+        "value": "link-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3318edd2-ab0d-583d-a206-da885cd88a00",
+        "value": "livecloudaccount.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6314f5e1-6a74-5df8-9916-8ab01348b528",
+        "value": "login.livecloudaccount.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "478ca3c4-0749-5974-8e45-0de68a99ffc1",
+        "value": "login.security-gm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1be778ae-58fb-5afb-b2a5-437a8c89524d",
+        "value": "login.support-gm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4e58a561-4145-51dc-bdf4-b2621fc8a7a9",
+        "value": "m.h.maiils.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8b08b937-2159-558a-af7b-89f1f96e0de3",
+        "value": "maiils.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "62fbaa21-7c47-571d-8777-948aaf21795e",
+        "value": "mail-api.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "afa0961f-dc1b-5cef-88ca-54ff7ddd4c24",
+        "value": "mail-api.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1727206102",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "13ddeca9-dcea-55da-a399-05d26c326038",
+        "value": "mail-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2ae6b89a-cee0-5836-a1c9-2917da224e25",
+        "value": "mail.civic-synergy.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "02b48d10-b9ac-5e3a-b798-b41ae0030747",
+        "value": "mail.fidh.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "74f11377-f790-5fe3-a0f4-85cbf20d108f",
+        "value": "mail.onetimeopportunity.store"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "712d807d-6a74-55d9-a9ba-ba430c855073",
+        "value": "mail.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "53e3b4dd-5871-5e65-b9b0-e1cab581acbc",
+        "value": "mail.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6edbe09c-ba7d-58bb-96d0-f92d8c7ca775",
+        "value": "mail.support-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9103f7bf-12e2-5562-abaf-995b94cb1d21",
+        "value": "n.maiils.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5467cf71-478b-554f-a26b-8b04837ebf68",
+        "value": "na.maiils.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4cf1a77d-f4d3-5e49-bdc2-f897d513947c",
+        "value": "old.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4f6f90a4-02d2-52e1-a2b4-e1c51cdfc3f4",
+        "value": "old.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ed2a000a-00e6-5d76-8068-603d7f3a10a1",
+        "value": "onetimeopportunity.store"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "62984384-d0d3-5707-a09b-3542e2bb8d9f",
+        "value": "online-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ab77fb02-9b5a-5f31-9e44-7a5f6fecd9f4",
+        "value": "onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5f3f6985-d921-58ab-8251-51fd5c8d3e43",
+        "value": "open-button.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e464bf83-85b4-542a-9fc7-daa432cf852d",
+        "value": "proton-drive.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "145c5fc0-388f-5fcd-8201-4b8b4d6e4fc1",
+        "value": "proton-service.services"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724863772",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "425c6e0b-1683-59a5-aa2c-2a16a1de288f",
+        "value": "proton-verify.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724096155",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3c151f5c-bba9-578a-b634-5f63c7502390",
+        "value": "proton.decryptor.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724153309",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d9be4715-b0a1-5af1-8f8f-d33f98927c2b",
+        "value": "proton.document-decryption.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724993661",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "30eb588d-6b38-5850-a482-c9263df33d6a",
+        "value": "proton.driveshare.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724993661",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "befb379c-0bfc-5e9a-a584-cdc07588a2c3",
+        "value": "proton.filestorage.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1729071855",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5fc4fd4d-585f-57e4-803b-b2ab638bad40",
+        "value": "proton.shared-urls.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723698228",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4e5a292a-8331-55e9-a215-340feeb78e42",
+        "value": "protondrive.cloud"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723640581",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9e78017e-39c2-5e2f-8a1d-3f09ce346ae1",
+        "value": "protondrive.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723640581",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b5f32043-ab16-509f-89e1-94bccff5b51c",
+        "value": "protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "748042b4-65a9-5ed8-82f3-d6b53d751d3f",
+        "value": "protondrive.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723640581",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "27a5222f-e0f8-556e-b4df-1926265b1ae1",
+        "value": "protondrive.services"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5208afa0-efbc-5eca-a6d0-388fe54afc00",
+        "value": "reports.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9485d6a2-b3e0-544a-8786-03fe887f1d22",
+        "value": "reports.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "858599a8-05a0-5b96-b537-e5ed23ba80ae",
+        "value": "ru-ru.center-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5946b825-3724-589c-ac78-2513144c989a",
+        "value": "ru-ru.desktop-facebook.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "834d576d-fbaa-598c-9a8f-85cc7cb65d2b",
+        "value": "secure-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c61ea66c-7f28-5aa9-8c85-e007be321dbd",
+        "value": "secure.onlinestorageroute.space"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bda81f6d-7e74-5bcc-829e-6e01f063182e",
+        "value": "secure.protondrive.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "89edebe3-7286-5b46-b34c-97d146956b97",
+        "value": "security-gm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d4e2b606-3e8c-5a66-8025-1c34edfbd76f",
+        "value": "service-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b94f3631-5c23-580b-9406-071307dbcda3",
+        "value": "service-proton.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1723640581",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "32b02664-f678-57a8-a68f-8efdff7b178c",
+        "value": "service-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "870ba5cc-5960-5361-9d17-523c973a5d6e",
+        "value": "service.link-pm.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "299a10fa-8ec6-5702-919b-ce02286ae936",
+        "value": "services-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1729071855",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0e5592a3-0833-5277-85a5-7d37d380d547",
+        "value": "shared-urls.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2599128f-859e-54fa-8105-81d4a2fbe697",
+        "value": "support-gm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c6cb49a8-4285-51f8-9284-ac1664d1702a",
+        "value": "support-ukr.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724864076",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "519ce54c-c382-5146-a60d-9ffd0d46b5f4",
+        "value": "verify-proton.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9297204d-746f-5d93-9814-1a4f1f4a2774",
+        "value": "view-menu.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726811103",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05e6375d-4bd4-5fcd-ba80-bdda4d4aeaef",
+        "value": "webmail.civic-synergy.online"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:coldwastrel"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: COLDWASTREL",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "41d3252b-1d19-5c4a-829a-8c3ee4033099"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5b0cb990-6acb-5f2f-9df9-0421720c17fd",
+        "value": "cd-media4u.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "234750be-fae3-5951-af5e-316544affd80",
+        "value": "diretube.co.uk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9d41a524-363b-5469-8494-fa738f62ae46",
+        "value": "eastafro.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c6177b95-e8e5-527f-9b02-0e3448d9eee2",
+        "value": "flashpoint-ip.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1ff2c033-6003-50bd-907c-4bed21eb2957",
+        "value": "getadobeplayer.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f3e04b21-5b70-5ca1-b813-6ce3904bf9b7",
+        "value": "meskereme.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7955a478-b795-5b9d-834f-583e6dbe5b23",
+        "value": "nozonenet.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "58939094-e832-577f-8d50-b930f0dc9fd1",
+        "value": "pnv.vipnetwork.fr"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0ca3a82f-ca56-559f-bf5d-3aef77f8d0ac",
+        "value": "pupki.co"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "23cf7d5e-3cfd-5c98-9942-09a8f68f8f6d",
+        "value": "rdhotel.uz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c3af1045-a1e4-5929-a689-8a53aca2d83a",
+        "value": "signalschool.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "05e5dfa2-8971-5349-a62c-fb01d468f845",
+        "value": "thewhistleblowers.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0463d6f6-aace-59e1-a4e7-3ab6545c73c1",
+        "value": "time-local.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "90d2ceaf-d31e-5e7a-bc22-e67437b52048",
+        "value": "time-local.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0536f1bf-a919-5740-8b8b-7e8a3dbce060",
+        "value": "villepinte2017.dynu.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537533545",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "902d7729-c3e4-5c04-bb6a-731cac0e89b7",
+        "value": "/ts8.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cyberbit"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CYBERBIT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "ff788573-3b42-50f6-9218-f4bf187ad190"
+  }
+}

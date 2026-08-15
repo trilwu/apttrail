@@ -1,0 +1,151 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1731793105",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "01d8c9f1-a3f2-57ca-9642-d336f6def0dc",
+        "value": "3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654162145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "47bc34d1-3a17-5672-83a4-4c252e4fa140",
+        "value": "blog.karakurt.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654162145",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "44001a99-8ecf-5cf3-a83e-f175ec5faacc",
+        "value": "internal.karakurt.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654195875",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c13fae98-67be-5655-b827-ab911497b325",
+        "value": "karachat.group"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654195875",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e2377cb4-da5c-5e0d-888c-024f998cb6cf",
+        "value": "karachat.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654161935",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bb0fe35e-69a2-5bcd-b633-292ddc5fd9f5",
+        "value": "karakurt.co"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654161505",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cee14a59-a674-5630-a065-7eb99aaaa0f6",
+        "value": "karakurt.group"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654161935",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "904142f2-bfff-52d0-a768-128d90d76568",
+        "value": "karakurt.systems"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654161935",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9adddafc-b4af-5c38-aa64-77a389614873",
+        "value": "karakurt.tech"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731793105",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c47dc8f7-2eee-5081-a71f-85515981bb85",
+        "value": "karaleaks.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654161505",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bc571316-52ea-5cdb-9eda-77bbe9ef6069",
+        "value": "omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1656490760",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "c45c3ac7-6a88-5ab4-b265-79f44bc1a505",
+        "value": "178.255.220.111:3050"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654195875",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "b09b226b-3ac3-54a5-a8ca-89d35359713b",
+        "value": "94.156.174.204:3051"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654195875",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "0fe5e7d0-bc01-5aa6-93f6-af75834c6793",
+        "value": "94.156.174.204:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1654195875",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "d831a5da-b572-53c1-b9be-104d405b4cf9",
+        "value": "94.156.174.204:8443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:karakurt"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: KARAKURT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "75324e5d-547e-5aee-8bbd-d99fa726fb10"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1641739077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ef46cefd-2cd7-53e0-8fea-97964ca69e1f",
+        "value": "4hzyuotli6maqa4u.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cf54c6a8-8911-57d2-8cb4-842f7313be5a",
+        "value": "fuckcisanet5nzv4d766izugxhnqqgiyllzfynyb4whzbqhzjojbn7id.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "480c7c87-378a-5823-ba37-d8470add8080",
+        "value": "fuckfbrlvtibsdw5rxtfjxtog6dfgpz62ewoc2rpor2s6zd5nog4zxad.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e9dd0c1c-158e-5c45-ac84-f81198166748",
+        "value": "ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1641739077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f2003099-ea7d-5190-be87-3c8cab921394",
+        "value": "vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4776cd3e-7987-5ffa-bfb9-23a4e05b9ef9",
+        "value": "vsocietyjynbgmz4n4lietzmqrg2tab4roxwd2c2btufdwxi6v2pptyd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2ca0024f-68f7-5d43-8abb-37e1389ed2be",
+        "value": "wjdgz3btk257obba7aekowz7ylm33zb6hu4aetxc3bypfajixzvx4iad.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672429883",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4d03dfc5-950a-594f-9a6d-d15bda1f53d8",
+        "value": "wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:vicesociety"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: VICESOCIETY",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5b78f6e2-fddf-589f-82a2-b9baf23b6cc0"
+  }
+}

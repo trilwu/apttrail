@@ -1,0 +1,59 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1626544374",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "12893a4d-b3bb-5092-96bd-50f76dcd9606",
+        "value": "microsoftd.tk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626544374",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "27f84018-453b-51b8-b65a-2311a5d2ee2c",
+        "value": "wikimedia.vip"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626544374",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2cee9c0c-8a78-5cfd-b487-98e00141da8f",
+        "value": "windowshostnamehost.club"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:tag22"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Earth Lusca - G1006\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Earth Lusca (G1006) - Maltrail group TAG22",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "ddfbe381-93a9-5b0d-abe8-c8b3df151b0b"
+  }
+}

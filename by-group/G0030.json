@@ -1,0 +1,366 @@
+{
+  "aliases": [
+    "chrysalis",
+    "hacked notepad++",
+    "warbird"
+  ],
+  "attack_id": "G0030",
+  "attack_name": "Lotus Blossom",
+  "attack_url": "https://attack.mitre.org/groups/G0030/",
+  "counts": {
+    "domain": 51,
+    "ipv4": 5,
+    "url": 3,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "38qmk6.0to9.info": "2018-10-29",
+      "3qyo4o7.7r7i3.info": "2018-10-29",
+      "7g91xhp.envuy3.net": "2018-10-29",
+      "aliancesky.com": "2016-02-23",
+      "api.cloudtrafficservice.com": "2026-02-03",
+      "api.skycloudcenter.com": "2026-02-03",
+      "api.wiresguard.com": "2026-02-03",
+      "asean-star.com": "2015-10-20",
+      "aseaneco.org": "2015-10-20",
+      "aseansec.dynalias.org": "2015-10-20",
+      "babysoal.com": "2016-02-23",
+      "beckhammer.xicp.net": "2015-10-20",
+      "boshman09.com": "2015-10-20",
+      "cdncheck.it.com": "2026-02-03",
+      "chris201.net": "2015-10-20",
+      "cloudtrafficservice.com": "2026-02-03",
+      "cpcl2006.dyndns-free.com": "2015-10-20",
+      "cybertunnel.dyndns.info": "2015-10-20",
+      "dtdf5vu.nt7yq.info": "2018-10-29",
+      "harryleed.dyndns.org": "2015-10-20",
+      "iascas.net": "2016-02-23",
+      "imonju.com": "2016-02-23",
+      "imonju.net": "2016-02-23",
+      "interhero.net": "2016-02-23",
+      "j.4tc3ldw.g9ml.www0.org": "2018-10-29",
+      "jackyson.dyndns.info": "2015-10-20",
+      "kid.dyndns.org": "2015-10-20",
+      "kjd.dyndns.org": "2015-10-20",
+      "l.hovux.eln9wj7.7gpj.org": "2018-10-29",
+      "newinfo32.eicp.net": "2015-10-20",
+      "newshappys.dyndns-blog.com": "2015-10-20",
+      "petto.mooo.com": "2015-10-20",
+      "phil-army.gotdns.org": "2015-10-20",
+      "phil-gov.gotdns.org": "2015-10-20",
+      "safe-dns.it.com": "2026-02-04",
+      "scristioned.dyndns-web.com": "2015-10-20",
+      "seachers.net": "2016-02-23",
+      "self-dns.it.com": "2026-02-03",
+      "serchers.net": "2016-02-23",
+      "shotacon.dyndns.info": "2015-10-20",
+      "skycloudcenter.com": "2026-02-03",
+      "tgecc.org": "2016-02-23",
+      "tintuchoahau.com": "2016-02-23",
+      "ubkv1t.ec0.com": "2018-10-29",
+      "usa-moon.net": "2015-10-20",
+      "verolalia.dyndns.org": "2015-10-20",
+      "vienclp.com": "2016-02-23",
+      "w.7sytdjc.wroi.cxy.com": "2018-10-29",
+      "wiresguard.com": "2026-02-03",
+      "wsi.dyndns.org": "2015-10-20",
+      "www3.bkav2010.net": "2015-10-20"
+    },
+    "ipv4": {
+      "124.222.137.114:9999": "2026-02-03",
+      "59.110.7.32:8880": "2026-02-03",
+      "59.110.7.32:8999": "2026-02-03",
+      "95.179.213.0:443": "2026-02-03",
+      "95.179.213.0:8080": "2026-02-03"
+    },
+    "url": {
+      "http://45.32.144.255": "2026-02-03",
+      "http://45.76.155.202": "2026-02-03",
+      "http://95.179.213.0": "2026-02-03"
+    },
+    "url_path": {
+      "/ukalDxyz": "2026-02-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-10-20",
+    "latest": "2026-02-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "38qmk6.0to9.info",
+      "3qyo4o7.7r7i3.info",
+      "7g91xhp.envuy3.net",
+      "aliancesky.com",
+      "api.cloudtrafficservice.com",
+      "api.skycloudcenter.com",
+      "api.wiresguard.com",
+      "asean-star.com",
+      "aseaneco.org",
+      "aseansec.dynalias.org",
+      "babysoal.com",
+      "beckhammer.xicp.net",
+      "boshman09.com",
+      "cdncheck.it.com",
+      "chris201.net",
+      "cloudtrafficservice.com",
+      "cpcl2006.dyndns-free.com",
+      "cybertunnel.dyndns.info",
+      "dtdf5vu.nt7yq.info",
+      "harryleed.dyndns.org",
+      "iascas.net",
+      "imonju.com",
+      "imonju.net",
+      "interhero.net",
+      "j.4tc3ldw.g9ml.www0.org",
+      "jackyson.dyndns.info",
+      "kid.dyndns.org",
+      "kjd.dyndns.org",
+      "l.hovux.eln9wj7.7gpj.org",
+      "newinfo32.eicp.net",
+      "newshappys.dyndns-blog.com",
+      "petto.mooo.com",
+      "phil-army.gotdns.org",
+      "phil-gov.gotdns.org",
+      "safe-dns.it.com",
+      "scristioned.dyndns-web.com",
+      "seachers.net",
+      "self-dns.it.com",
+      "serchers.net",
+      "shotacon.dyndns.info",
+      "skycloudcenter.com",
+      "tgecc.org",
+      "tintuchoahau.com",
+      "ubkv1t.ec0.com",
+      "usa-moon.net",
+      "verolalia.dyndns.org",
+      "vienclp.com",
+      "w.7sytdjc.wroi.cxy.com",
+      "wiresguard.com",
+      "wsi.dyndns.org",
+      "www3.bkav2010.net"
+    ],
+    "ipv4": [
+      "124.222.137.114:9999",
+      "59.110.7.32:8880",
+      "59.110.7.32:8999",
+      "95.179.213.0:443",
+      "95.179.213.0:8080"
+    ],
+    "url": [
+      "http://45.32.144.255",
+      "http://45.76.155.202",
+      "http://95.179.213.0"
+    ],
+    "url_path": [
+      "/ukalDxyz"
+    ]
+  },
+  "last_modified": "2026-02-04T19:26:40+00:00",
+  "maltrail_groups": [
+    "LOTUSBLOSSOM"
+  ],
+  "references": [
+    "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
+    "https://securelist.com/notepad-supply-chain-attack/118708/",
+    "https://www.accenture.com/t20180131T100734Z__w__/us-en/_acnmedia/PDF-46/Accenture-Security-Elise-Threat-Analysis.pdf",
+    "https://www.paloaltonetworks.com/content/dam/paloaltonetworks-com/en_US/assets/pdf/reports/Unit_42/operation-lotus-blossom/unit42-operation-lotus-blossom.pdf",
+    "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/",
+    "https://www.validin.com/blog/exploring_notepad_plus_plus_network_indicators/",
+    "https://www.virustotal.com/gui/file/0755d2dc99c0a44f4e5435c398d9afca0db783e51a9df9ea472ac6936384d0d8/detection",
+    "https://www.virustotal.com/gui/file/0a9b8df968df41920b6ff07785cbfebe8bda29e6b512c94a3b2a83d10014d2fd/detection",
+    "https://www.virustotal.com/gui/file/7f2e0f51e83d6cf9c50922f898126b139f69cc49e8768830042358c1bd336dbc/detection",
+    "https://www.virustotal.com/gui/file/b4169a831292e245ebdffedd5820584d73b129411546e7d3eccf4663d5fc5be3/detection",
+    "https://www.virustotal.com/gui/file/e7cd605568c38bd6e0aba31045e1633205d0598c607a855e2e1bca4cca1c6eda/detection",
+    "https://www.virustotal.com/gui/file/f365cfbca03a28a7692308c9766f8ae92f74f6c79aaa68458b1facbc74b534f2/detection",
+    "https://www.virustotal.com/gui/file/fcc2765305bcd213b7558025b2039df2265c3e0b6401e4833123c461df2de51a/detection",
+    "https://www.virustotal.com/gui/ip-address/160.250.93.48/relations",
+    "https://x.com/ValidinLLC/status/2018680305364685102",
+    "https://x.com/cyb3rops/status/2018253965645766993",
+    "https://x.com/cyb3rops/status/2018361184626356411"
+  ],
+  "related": [],
+  "slug": "G0030",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-02-04",
+      "indicators": {
+        "domain": [
+          "safe-dns.it.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/cyb3rops/status/2018253965645766993",
+        "https://x.com/cyb3rops/status/2018361184626356411",
+        "https://x.com/ValidinLLC/status/2018680305364685102",
+        "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
+        "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/",
+        "https://www.validin.com/blog/exploring_notepad_plus_plus_network_indicators/",
+        "https://securelist.com/notepad-supply-chain-attack/118708/",
+        "https://www.virustotal.com/gui/ip-address/160.250.93.48/relations",
+        "https://www.virustotal.com/gui/file/e7cd605568c38bd6e0aba31045e1633205d0598c607a855e2e1bca4cca1c6eda/detection",
+        "https://www.virustotal.com/gui/file/0755d2dc99c0a44f4e5435c398d9afca0db783e51a9df9ea472ac6936384d0d8/detection",
+        "https://www.virustotal.com/gui/file/0a9b8df968df41920b6ff07785cbfebe8bda29e6b512c94a3b2a83d10014d2fd/detection",
+        "https://www.virustotal.com/gui/file/7f2e0f51e83d6cf9c50922f898126b139f69cc49e8768830042358c1bd336dbc/detection",
+        "https://www.virustotal.com/gui/file/f365cfbca03a28a7692308c9766f8ae92f74f6c79aaa68458b1facbc74b534f2/detection",
+        "https://www.virustotal.com/gui/file/b4169a831292e245ebdffedd5820584d73b129411546e7d3eccf4663d5fc5be3/detection",
+        "https://www.virustotal.com/gui/file/fcc2765305bcd213b7558025b2039df2265c3e0b6401e4833123c461df2de51a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 5,
+        "url": 3,
+        "url_path": 1
+      },
+      "first_seen": "2026-02-03",
+      "indicators": {
+        "domain": [
+          "api.cloudtrafficservice.com",
+          "api.skycloudcenter.com",
+          "api.wiresguard.com",
+          "cdncheck.it.com",
+          "cloudtrafficservice.com",
+          "self-dns.it.com",
+          "skycloudcenter.com",
+          "wiresguard.com"
+        ],
+        "ipv4": [
+          "124.222.137.114:9999",
+          "59.110.7.32:8880",
+          "59.110.7.32:8999",
+          "95.179.213.0:443",
+          "95.179.213.0:8080"
+        ],
+        "url": [
+          "http://45.32.144.255",
+          "http://45.76.155.202",
+          "http://95.179.213.0"
+        ],
+        "url_path": [
+          "/ukalDxyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/cyb3rops/status/2018253965645766993",
+        "https://x.com/cyb3rops/status/2018361184626356411",
+        "https://x.com/ValidinLLC/status/2018680305364685102",
+        "https://notepad-plus-plus.org/news/hijacked-incident-info-update/",
+        "https://www.rapid7.com/blog/post/tr-chrysalis-backdoor-dive-into-lotus-blossoms-toolkit/",
+        "https://www.validin.com/blog/exploring_notepad_plus_plus_network_indicators/",
+        "https://securelist.com/notepad-supply-chain-attack/118708/",
+        "https://www.virustotal.com/gui/ip-address/160.250.93.48/relations",
+        "https://www.virustotal.com/gui/file/e7cd605568c38bd6e0aba31045e1633205d0598c607a855e2e1bca4cca1c6eda/detection",
+        "https://www.virustotal.com/gui/file/0755d2dc99c0a44f4e5435c398d9afca0db783e51a9df9ea472ac6936384d0d8/detection",
+        "https://www.virustotal.com/gui/file/0a9b8df968df41920b6ff07785cbfebe8bda29e6b512c94a3b2a83d10014d2fd/detection",
+        "https://www.virustotal.com/gui/file/7f2e0f51e83d6cf9c50922f898126b139f69cc49e8768830042358c1bd336dbc/detection",
+        "https://www.virustotal.com/gui/file/f365cfbca03a28a7692308c9766f8ae92f74f6c79aaa68458b1facbc74b534f2/detection",
+        "https://www.virustotal.com/gui/file/b4169a831292e245ebdffedd5820584d73b129411546e7d3eccf4663d5fc5be3/detection",
+        "https://www.virustotal.com/gui/file/fcc2765305bcd213b7558025b2039df2265c3e0b6401e4833123c461df2de51a/detection"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2018-10-29",
+      "indicators": {
+        "domain": [
+          "38qmk6.0to9.info",
+          "3qyo4o7.7r7i3.info",
+          "7g91xhp.envuy3.net",
+          "dtdf5vu.nt7yq.info",
+          "j.4tc3ldw.g9ml.www0.org",
+          "l.hovux.eln9wj7.7gpj.org",
+          "ubkv1t.ec0.com",
+          "w.7sytdjc.wroi.cxy.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.accenture.com/t20180131T100734Z__w__/us-en/_acnmedia/PDF-46/Accenture-Security-Elise-Threat-Analysis.pdf"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "aliancesky.com",
+          "babysoal.com",
+          "iascas.net",
+          "imonju.com",
+          "imonju.net",
+          "interhero.net",
+          "seachers.net",
+          "serchers.net",
+          "tgecc.org",
+          "tintuchoahau.com",
+          "vienclp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.paloaltonetworks.com/content/dam/paloaltonetworks-com/en_US/assets/pdf/reports/Unit_42/operation-lotus-blossom/unit42-operation-lotus-blossom.pdf"
+      ],
+      "total": 11
+    },
+    {
+      "counts": {
+        "domain": 23
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "asean-star.com",
+          "aseaneco.org",
+          "aseansec.dynalias.org",
+          "beckhammer.xicp.net",
+          "boshman09.com",
+          "chris201.net",
+          "cpcl2006.dyndns-free.com",
+          "cybertunnel.dyndns.info",
+          "harryleed.dyndns.org",
+          "jackyson.dyndns.info",
+          "kid.dyndns.org",
+          "kjd.dyndns.org",
+          "newinfo32.eicp.net",
+          "newshappys.dyndns-blog.com",
+          "petto.mooo.com",
+          "phil-army.gotdns.org",
+          "phil-gov.gotdns.org",
+          "scristioned.dyndns-web.com",
+          "shotacon.dyndns.info",
+          "usa-moon.net",
+          "verolalia.dyndns.org",
+          "wsi.dyndns.org",
+          "www3.bkav2010.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.paloaltonetworks.com/content/dam/paloaltonetworks-com/en_US/assets/pdf/reports/Unit_42/operation-lotus-blossom/unit42-operation-lotus-blossom.pdf"
+      ],
+      "total": 23
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "name": "Cleaver (G0003) - APTtrail",
+  "description": "Techniques attributed to Cleaver by MITRE ATT&CK, packaged by APTtrail. Indicators: https://trilwu.github.io/apttrail/by-group/G0003.json",
+  "domain": "enterprise-attack",
+  "versions": {
+    "layer": "4.5",
+    "navigator": "5.1.0"
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1003.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1313",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1341",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1342",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1345",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1557.002",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1585.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1587.001",
+      "score": 1,
+      "enabled": true
+    },
+    {
+      "techniqueID": "T1588.002",
+      "score": 1,
+      "enabled": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#e86f4a"
+    ],
+    "minValue": 0,
+    "maxValue": 1
+  },
+  "legendItems": [
+    {
+      "label": "Used by Cleaver",
+      "color": "#e86f4a"
+    }
+  ],
+  "hideDisabled": false
+}

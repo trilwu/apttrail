@@ -1,0 +1,155 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6844e0a1-3f2c-556e-a796-d376afd17222",
+        "value": "api.s2cloud-amazon.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9e442d0c-09b2-5bcc-96ba-2882751dcdeb",
+        "value": "app-dimensiona.s3.sa-east-1.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ec92a32-0038-534c-a6e1-db6a3cdd6123",
+        "value": "bjj-files-production.s3.sa-east-1.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1591426529",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dfb7c52b-db04-5a9a-8726-4454fea77e9f",
+        "value": "comcleanner.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b54d1f07-9227-53a5-bf6c-da6cab03b056",
+        "value": "footracker-statics.s3.sa-east-1.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1590911985",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bc13bf49-2b3b-5606-968d-851fc63b01a3",
+        "value": "goodhk.azurewebsites.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c6b318e7-bcc0-551f-9677-3b6a3159c2cc",
+        "value": "p-game.s3.sa-east-1.amazonaws.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6a028724-e349-53f4-a20b-bff29c2e04af",
+        "value": "s2cloud-amazon.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1591426529",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bea7ee52-9cb8-5a15-95ed-a05a0bac60c0",
+        "value": "sixindent.epizy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1724162508",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f018e2b3-ad0e-5876-8184-18c7960953bc",
+        "value": "speedshare.oss-cn-hongkong.aliyuncs.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726518411",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "646e219e-280b-5e5d-9bb7-791e4dda0958",
+        "value": "xianggang000.oss-cn-hongkong.aliyuncs.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726518411",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8e7cd915-206e-5086-b012-a1860ea10214",
+        "value": "yitoo.oss-cn-hongkong.aliyuncs.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1591426529",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c59bab7f-c3a1-5f1c-a2c2-a25006b118b1",
+        "value": "zeplin.atwebpages.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1591881977",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "71471c08-ae35-5b21-9613-6214000955e9",
+        "value": "45.76.6.149:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726518411",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "12ca6055-e324-5663-8b5f-d798e682e10f",
+        "value": "http://152.42.226.161"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:higaisa"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Higaisa - G0126\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Higaisa (G0126) - Maltrail group HIGAISA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "b37a7aaf-1a4f-51c4-92e1-8efd7a2d9898"
+  }
+}

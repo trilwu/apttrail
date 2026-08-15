@@ -1,0 +1,95 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "50d6455c-73ba-512c-b506-fbc5c845e379",
+        "value": "vpn599147072.softether.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "4aefba83-560b-5483-8108-57349c2b0f2c",
+        "value": "34.92.40.189:33221"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "d9711e99-2ad4-5480-ba87-d7d5ff992d38",
+        "value": "34.92.40.189:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "cbcd799d-3748-5588-9cc2-bca0d414bc03",
+        "value": "45.76.98.184:33221"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "d2e84474-0a5f-5b69-aaeb-4b18e3819b55",
+        "value": "45.76.98.184:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "aeb8e482-b2d3-5fad-93b9-f69bb153a7bb",
+        "value": "45.76.98.184:53"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648662465",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "1c3fda88-9fbd-54e7-af2a-b1f07849bbe4",
+        "value": "http://203.160.86.2"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1648661505",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "446a7718-0b14-5e73-b165-ceefddedb56b",
+        "value": "http://35.189.145.119"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc3500"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: UNC3500",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "061e0e91-a141-5914-9f48-e2bb74801abf"
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "aliases": [
+    "earthkapre",
+    "goldblade",
+    "redcurl",
+    "redloader",
+    "redwolf"
+  ],
+  "attack_id": "G1039",
+  "attack_name": "RedCurl",
+  "attack_url": "https://attack.mitre.org/groups/G1039/",
+  "counts": {
+    "domain": 58,
+    "ipv4": 2,
+    "url_path": 5
+  },
+  "first_seen": {
+    "domain": {
+      "alphastoned.pro": "2025-01-10",
+      "amscloudhost.com": "2023-09-08",
+      "app-ins-001.amscloudhost.com": "2023-09-08",
+      "app-ins-002.amscloudhost.com": "2023-09-08",
+      "app-l01.msftcloud.click": "2023-09-08",
+      "app-l03.msftcloud.click": "2023-09-08",
+      "app-l03.servicehost.click": "2023-09-08",
+      "app-l07.servicehost.click": "2023-10-01",
+      "automatinghrservices.workers.dev": "2026-01-02",
+      "bora.teracloud.jp": "2025-01-10",
+      "buyhighroad.scienceontheweb.net": "2023-09-08",
+      "cdn.wgroadcdn.workers.dev": "2025-01-10",
+      "clever.forcloudnetworks.online": "2023-10-06",
+      "cloud-01.servicehost.click": "2023-09-08",
+      "community.rmobileappdevelopment.workers.dev": "2025-02-17",
+      "ctrl1.sm.advhost.co.uk": "2023-10-06",
+      "cvsend.resumeexpert.cloud": "2025-02-17",
+      "datascience.iotconnectivity.workers.dev": "2025-02-17",
+      "dav.automatinghrservices.workers.dev": "2026-01-02",
+      "dav.cloud-01.servicehost.click": "2023-09-08",
+      "dav.linkedin-cloud-manager.servicehost.click": "2023-09-08",
+      "eap.byethost10.com": "2023-09-08",
+      "earthmart.c1.biz": "2023-09-08",
+      "fiona.forcloudnetworks.online": "2024-02-07",
+      "forcloudnetworks.online": "2023-10-06",
+      "hfn-c-001.cc.msftcloud.click": "2023-10-06",
+      "hwsrv-1048332.hostwindsdns.com": "2023-10-06",
+      "ksg-c-001.cc.msftcloud.click": "2023-10-06",
+      "ksg-c-002.cc.msftcloud.click": "2023-10-06",
+      "ktr-cn-001.amscloudhost.com": "2023-10-06",
+      "ktr-cn-002.amscloudhost.com": "2023-09-08",
+      "l-dn-01.msftcloud.click": "2023-09-08",
+      "l-dn-02.msftcloud.click": "2023-09-08",
+      "l3-dn-01.servicehost.click": "2023-10-06",
+      "l4-dn-01.servicehost.click": "2023-10-06",
+      "l7-dn-01.servicehost.click": "2023-10-06",
+      "linkedin-cloud-manager.servicehost.click": "2023-09-08",
+      "live.airemoteplant.workers.dev": "2026-01-02",
+      "live.itsmartuniverse.workers.dev": "2025-02-17",
+      "m-dn-001.amscloudhost.com": "2023-09-08",
+      "m-dn-002.amscloudhost.com": "2023-09-08",
+      "mainsts-01.cn.alphastoned.pro": "2025-01-10",
+      "mia.nl.tab.digital": "2025-02-17",
+      "msftcloud.click": "2023-09-08",
+      "mtk-cn-001.amscloudhost.com": "2023-09-08",
+      "mtk-cn-002.amscloudhost.com": "2023-09-08",
+      "quiet.msftlivecloudsrv.workers.dev": "2026-01-02",
+      "rl-cn-s-001.amscloudhost.com": "2023-09-08",
+      "servicehost.click": "2023-09-08",
+      "sm.vbigdatasolutions.workers.dev": "2025-02-17",
+      "ss-cn-001.amscloudhost.com": "2023-09-08",
+      "ss-cn-002.amscloudhost.com": "2023-09-08",
+      "sup.wgsphere.workers.dev": "2025-01-10",
+      "tdnmouse.atspace.eu": "2023-09-08",
+      "test.amscloudhost.com": "2023-09-08",
+      "trur-c-001.cc.msftcloud.click": "2023-10-06",
+      "wgroadcdn.workers.dev": "2025-01-10",
+      "wgsphere.workers.dev": "2025-01-10"
+    },
+    "ipv4": {
+      "188.130.207.253:10310": "2025-01-10",
+      "193.176.158.30:40141": "2025-01-10"
+    },
+    "url_path": {
+      "/ldn20_seek": "2024-02-07",
+      "/ldn21_amazon": "2023-10-01",
+      "/ldn22_samsung": "2024-02-07",
+      "/ldn23_samsung": "2023-10-06",
+      "/ldn25_cv_au": "2024-02-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "automatinghrservices.workers.dev": "at-or-before",
+      "dav.automatinghrservices.workers.dev": "at-or-before",
+      "live.airemoteplant.workers.dev": "at-or-before",
+      "quiet.msftlivecloudsrv.workers.dev": "at-or-before"
+    },
+    "ipv4": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-09-08",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "alphastoned.pro",
+      "amscloudhost.com",
+      "app-ins-001.amscloudhost.com",
+      "app-ins-002.amscloudhost.com",
+      "app-l01.msftcloud.click",
+      "app-l03.msftcloud.click",
+      "app-l03.servicehost.click",
+      "app-l07.servicehost.click",
+      "automatinghrservices.workers.dev",
+      "bora.teracloud.jp",
+      "buyhighroad.scienceontheweb.net",
+      "cdn.wgroadcdn.workers.dev",
+      "clever.forcloudnetworks.online",
+      "cloud-01.servicehost.click",
+      "community.rmobileappdevelopment.workers.dev",
+      "ctrl1.sm.advhost.co.uk",
+      "cvsend.resumeexpert.cloud",
+      "datascience.iotconnectivity.workers.dev",
+      "dav.automatinghrservices.workers.dev",
+      "dav.cloud-01.servicehost.click",
+      "dav.linkedin-cloud-manager.servicehost.click",
+      "eap.byethost10.com",
+      "earthmart.c1.biz",
+      "fiona.forcloudnetworks.online",
+      "forcloudnetworks.online",
+      "hfn-c-001.cc.msftcloud.click",
+      "hwsrv-1048332.hostwindsdns.com",
+      "ksg-c-001.cc.msftcloud.click",
+      "ksg-c-002.cc.msftcloud.click",
+      "ktr-cn-001.amscloudhost.com",
+      "ktr-cn-002.amscloudhost.com",
+      "l-dn-01.msftcloud.click",
+      "l-dn-02.msftcloud.click",
+      "l3-dn-01.servicehost.click",
+      "l4-dn-01.servicehost.click",
+      "l7-dn-01.servicehost.click",
+      "linkedin-cloud-manager.servicehost.click",
+      "live.airemoteplant.workers.dev",
+      "live.itsmartuniverse.workers.dev",
+      "m-dn-001.amscloudhost.com",
+      "m-dn-002.amscloudhost.com",
+      "mainsts-01.cn.alphastoned.pro",
+      "mia.nl.tab.digital",
+      "msftcloud.click",
+      "mtk-cn-001.amscloudhost.com",
+      "mtk-cn-002.amscloudhost.com",
+      "quiet.msftlivecloudsrv.workers.dev",
+      "rl-cn-s-001.amscloudhost.com",
+      "servicehost.click",
+      "sm.vbigdatasolutions.workers.dev",
+      "ss-cn-001.amscloudhost.com",
+      "ss-cn-002.amscloudhost.com",
+      "sup.wgsphere.workers.dev",
+      "tdnmouse.atspace.eu",
+      "test.amscloudhost.com",
+      "trur-c-001.cc.msftcloud.click",
+      "wgroadcdn.workers.dev",
+      "wgsphere.workers.dev"
+    ],
+    "ipv4": [
+      "188.130.207.253:10310",
+      "193.176.158.30:40141"
+    ],
+    "url_path": [
+      "/ldn20_seek",
+      "/ldn21_amazon",
+      "/ldn22_samsung",
+      "/ldn23_samsung",
+      "/ldn25_cv_au"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "REDWOLF"
+  ],
+  "references": [
+    "https://bi-zone.medium.com/hunting-the-hunter-bi-zone-traces-the-footsteps-of-red-wolf-3677783e164d",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-07-v10412/926",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-08-v10413/928",
+    "https://github.com/eSentire/iocs/blob/main/EarthKapre/EarthKapre-RedCurl-IoCs-02-05-2025.txt",
+    "https://twitter.com/k3yp0d/status/1708495262673465713",
+    "https://twitter.com/k3yp0d/status/1710230683870785767",
+    "https://www.esentire.com/blog/unraveling-the-many-stages-and-techniques-used-by-redcurl-earthkapre-apt",
+    "https://www.facct.ru/blog/redcurl-2024/",
+    "https://www.huntress.com/blog/the-hunt-for-redcurl-2",
+    "https://www.virustotal.com/gui/file/1ea43ba4192fd793de5aa18d20b60f0821dfe201f531ea4d1739b96a35526e36/detection",
+    "https://www.virustotal.com/gui/file/3bd054a5095806cd7e8392b749efa283735616ae8a0e707cdcc25654059bfe6b/detection",
+    "https://www.virustotal.com/gui/file/4188c953d784049dbd5be209e655d6d73f37435d9def71fd1edb4ed74a2f9e17/detection",
+    "https://www.virustotal.com/gui/file/61ca00df551f138d3f8602c19936c4a70b1da581183b8d1264fbd2bc416361cf/detection",
+    "https://www.virustotal.com/gui/file/8d9aaa5cf9c7b442917a8f8542d020b221e9de595d78ef88b82ee696880491ef/detection",
+    "https://www.virustotal.com/gui/file/e7b881cd106aefa6100d0e5f361e46e557e8f2372bd36cefe863607d19471a04/detection",
+    "https://www.virustotal.com/gui/ip-address/23.254.224.79/relations",
+    "https://www.virustotal.com/gui/ip-address/45.61.138.81/relations",
+    "https://x.com/SophosXOps/status/1950483325996445879",
+    "https://x.com/birchb0y/status/1877491934639313096"
+  ],
+  "related": [],
+  "slug": "G1039",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "automatinghrservices.workers.dev",
+          "dav.automatinghrservices.workers.dev",
+          "live.airemoteplant.workers.dev",
+          "quiet.msftlivecloudsrv.workers.dev"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/SophosXOps/status/1950483325996445879"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2025-02-17",
+      "indicators": {
+        "domain": [
+          "community.rmobileappdevelopment.workers.dev",
+          "cvsend.resumeexpert.cloud",
+          "datascience.iotconnectivity.workers.dev",
+          "live.itsmartuniverse.workers.dev",
+          "mia.nl.tab.digital",
+          "sm.vbigdatasolutions.workers.dev"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.esentire.com/blog/unraveling-the-many-stages-and-techniques-used-by-redcurl-earthkapre-apt",
+        "https://github.com/eSentire/iocs/blob/main/EarthKapre/EarthKapre-RedCurl-IoCs-02-05-2025.txt"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 7,
+        "ipv4": 2
+      },
+      "first_seen": "2025-01-10",
+      "indicators": {
+        "domain": [
+          "alphastoned.pro",
+          "bora.teracloud.jp",
+          "cdn.wgroadcdn.workers.dev",
+          "mainsts-01.cn.alphastoned.pro",
+          "sup.wgsphere.workers.dev",
+          "wgroadcdn.workers.dev",
+          "wgsphere.workers.dev"
+        ],
+        "ipv4": [
+          "188.130.207.253:10310",
+          "193.176.158.30:40141"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/birchb0y/status/1877491934639313096",
+        "https://www.huntress.com/blog/the-hunt-for-redcurl-2"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "url_path": 3
+      },
+      "first_seen": "2024-02-07",
+      "indicators": {
+        "url_path": [
+          "/ldn20_seek",
+          "/ldn22_samsung",
+          "/ldn25_cv_au"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/SophosXOps/status/1950483325996445879"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-02-07",
+      "indicators": {
+        "domain": [
+          "fiona.forcloudnetworks.online"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.facct.ru/blog/redcurl-2024/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2023-10-06",
+      "indicators": {
+        "domain": [
+          "clever.forcloudnetworks.online",
+          "ctrl1.sm.advhost.co.uk",
+          "forcloudnetworks.online",
+          "hfn-c-001.cc.msftcloud.click",
+          "hwsrv-1048332.hostwindsdns.com",
+          "ksg-c-001.cc.msftcloud.click",
+          "ksg-c-002.cc.msftcloud.click",
+          "ktr-cn-001.amscloudhost.com",
+          "l3-dn-01.servicehost.click",
+          "l4-dn-01.servicehost.click",
+          "l7-dn-01.servicehost.click",
+          "trur-c-001.cc.msftcloud.click"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1710230683870785767",
+        "https://bi-zone.medium.com/hunting-the-hunter-bi-zone-traces-the-footsteps-of-red-wolf-3677783e164d",
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-07-v10412/926",
+        "https://www.virustotal.com/gui/ip-address/23.254.224.79/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.138.81/relations",
+        "https://www.virustotal.com/gui/file/e7b881cd106aefa6100d0e5f361e46e557e8f2372bd36cefe863607d19471a04/detection",
+        "https://www.virustotal.com/gui/file/3bd054a5095806cd7e8392b749efa283735616ae8a0e707cdcc25654059bfe6b/detection",
+        "https://www.virustotal.com/gui/file/4188c953d784049dbd5be209e655d6d73f37435d9def71fd1edb4ed74a2f9e17/detection",
+        "https://www.virustotal.com/gui/file/1ea43ba4192fd793de5aa18d20b60f0821dfe201f531ea4d1739b96a35526e36/detection",
+        "https://www.virustotal.com/gui/file/8d9aaa5cf9c7b442917a8f8542d020b221e9de595d78ef88b82ee696880491ef/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2023-10-06",
+      "indicators": {
+        "url_path": [
+          "/ldn23_samsung"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/SophosXOps/status/1950483325996445879"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2023-10-01",
+      "indicators": {
+        "url_path": [
+          "/ldn21_amazon"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/SophosXOps/status/1950483325996445879"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-10-01",
+      "indicators": {
+        "domain": [
+          "app-l07.servicehost.click"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1710230683870785767",
+        "https://bi-zone.medium.com/hunting-the-hunter-bi-zone-traces-the-footsteps-of-red-wolf-3677783e164d",
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-07-v10412/926",
+        "https://www.virustotal.com/gui/ip-address/23.254.224.79/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.138.81/relations",
+        "https://www.virustotal.com/gui/file/e7b881cd106aefa6100d0e5f361e46e557e8f2372bd36cefe863607d19471a04/detection",
+        "https://www.virustotal.com/gui/file/3bd054a5095806cd7e8392b749efa283735616ae8a0e707cdcc25654059bfe6b/detection",
+        "https://www.virustotal.com/gui/file/4188c953d784049dbd5be209e655d6d73f37435d9def71fd1edb4ed74a2f9e17/detection",
+        "https://www.virustotal.com/gui/file/1ea43ba4192fd793de5aa18d20b60f0821dfe201f531ea4d1739b96a35526e36/detection",
+        "https://www.virustotal.com/gui/file/8d9aaa5cf9c7b442917a8f8542d020b221e9de595d78ef88b82ee696880491ef/detection",
+        "https://twitter.com/k3yp0d/status/1708495262673465713",
+        "https://www.virustotal.com/gui/file/61ca00df551f138d3f8602c19936c4a70b1da581183b8d1264fbd2bc416361cf/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 23
+      },
+      "first_seen": "2023-09-08",
+      "indicators": {
+        "domain": [
+          "amscloudhost.com",
+          "app-ins-001.amscloudhost.com",
+          "app-ins-002.amscloudhost.com",
+          "app-l01.msftcloud.click",
+          "app-l03.msftcloud.click",
+          "app-l03.servicehost.click",
+          "cloud-01.servicehost.click",
+          "dav.cloud-01.servicehost.click",
+          "dav.linkedin-cloud-manager.servicehost.click",
+          "ktr-cn-002.amscloudhost.com",
+          "l-dn-01.msftcloud.click",
+          "l-dn-02.msftcloud.click",
+          "linkedin-cloud-manager.servicehost.click",
+          "m-dn-001.amscloudhost.com",
+          "m-dn-002.amscloudhost.com",
+          "msftcloud.click",
+          "mtk-cn-001.amscloudhost.com",
+          "mtk-cn-002.amscloudhost.com",
+          "rl-cn-s-001.amscloudhost.com",
+          "servicehost.click",
+          "ss-cn-001.amscloudhost.com",
+          "ss-cn-002.amscloudhost.com",
+          "test.amscloudhost.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1710230683870785767",
+        "https://bi-zone.medium.com/hunting-the-hunter-bi-zone-traces-the-footsteps-of-red-wolf-3677783e164d",
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-07-v10412/926",
+        "https://www.virustotal.com/gui/ip-address/23.254.224.79/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.138.81/relations",
+        "https://www.virustotal.com/gui/file/e7b881cd106aefa6100d0e5f361e46e557e8f2372bd36cefe863607d19471a04/detection",
+        "https://www.virustotal.com/gui/file/3bd054a5095806cd7e8392b749efa283735616ae8a0e707cdcc25654059bfe6b/detection",
+        "https://www.virustotal.com/gui/file/4188c953d784049dbd5be209e655d6d73f37435d9def71fd1edb4ed74a2f9e17/detection",
+        "https://www.virustotal.com/gui/file/1ea43ba4192fd793de5aa18d20b60f0821dfe201f531ea4d1739b96a35526e36/detection",
+        "https://www.virustotal.com/gui/file/8d9aaa5cf9c7b442917a8f8542d020b221e9de595d78ef88b82ee696880491ef/detection"
+      ],
+      "total": 23
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-09-08",
+      "indicators": {
+        "domain": [
+          "buyhighroad.scienceontheweb.net",
+          "eap.byethost10.com",
+          "earthmart.c1.biz",
+          "tdnmouse.atspace.eu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-08-v10413/928"
+      ],
+      "total": 4
+    }
+  ]
+}

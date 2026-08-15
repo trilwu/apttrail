@@ -1,0 +1,217 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 45
+  },
+  "first_seen": {
+    "domain": {
+      "allen.w223.west263.cn": "2015-03-18",
+      "andriodphone.net": "2015-03-18",
+      "bauer.8866.org": "2015-03-18",
+      "buynewes.com": "2015-03-18",
+      "cultureacess.com": "2015-03-18",
+      "discoverypeace.org": "2015-03-18",
+      "drag2008.com": "2015-03-18",
+      "eaglesey.com": "2015-03-18",
+      "enterairment.net": "2015-03-18",
+      "gami1.com": "2015-03-18",
+      "globalmailru.com": "2015-03-18",
+      "hint09.9966.org": "2015-03-18",
+      "imapupdate.com": "2015-03-18",
+      "info-spb.com": "2017-04-18",
+      "interfaxru.com": "2017-04-18",
+      "inwpvpn.com": "2015-03-18",
+      "keyboardhk.com": "2015-03-18",
+      "localgroupnet.com": "2015-03-18",
+      "mailyandexru.com": "2015-03-18",
+      "mogoogle.com": "2017-04-18",
+      "msnnewes.com": "2015-03-18",
+      "newesyahoo.com": "2015-03-18",
+      "newfax.net": "2015-03-18",
+      "pkspring.net": "2015-03-18",
+      "ra1nru.com": "2015-03-18",
+      "ramb1er.com": "2015-03-18",
+      "riaru.net": "2017-04-18",
+      "sghrhd.190.20081.info": "2015-03-18",
+      "southstock.net": "2015-03-18",
+      "spit113.minidns.net": "2015-03-18",
+      "tassnews.net": "2017-04-06",
+      "tsgoogoo.net": "2015-03-18",
+      "vip222idc.s169.288idc.com": "2015-03-18",
+      "viplenta.com": "2015-03-18",
+      "vipmailru.com": "2015-03-18",
+      "viprainru.com": "2015-03-18",
+      "viprambler.com": "2015-03-18",
+      "vipyandex.com": "2015-03-18",
+      "voennovosti.com": "2017-04-18",
+      "vpnwork.3322.org": "2015-03-18",
+      "wolf0.3322.org": "2015-03-18",
+      "wolf001.us109.eoidc.net": "2015-03-18",
+      "yahooair.com": "2015-03-18",
+      "yangdex.org": "2015-03-18",
+      "zeroicelee.com": "2015-03-18"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2017-04-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "allen.w223.west263.cn",
+      "andriodphone.net",
+      "bauer.8866.org",
+      "buynewes.com",
+      "cultureacess.com",
+      "discoverypeace.org",
+      "drag2008.com",
+      "eaglesey.com",
+      "enterairment.net",
+      "gami1.com",
+      "globalmailru.com",
+      "hint09.9966.org",
+      "imapupdate.com",
+      "info-spb.com",
+      "interfaxru.com",
+      "inwpvpn.com",
+      "keyboardhk.com",
+      "localgroupnet.com",
+      "mailyandexru.com",
+      "mogoogle.com",
+      "msnnewes.com",
+      "newesyahoo.com",
+      "newfax.net",
+      "pkspring.net",
+      "ra1nru.com",
+      "ramb1er.com",
+      "riaru.net",
+      "sghrhd.190.20081.info",
+      "southstock.net",
+      "spit113.minidns.net",
+      "tassnews.net",
+      "tsgoogoo.net",
+      "vip222idc.s169.288idc.com",
+      "viplenta.com",
+      "vipmailru.com",
+      "viprainru.com",
+      "viprambler.com",
+      "vipyandex.com",
+      "voennovosti.com",
+      "vpnwork.3322.org",
+      "wolf0.3322.org",
+      "wolf001.us109.eoidc.net",
+      "yahooair.com",
+      "yangdex.org",
+      "zeroicelee.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NETTRAVELER"
+  ],
+  "references": [
+    "http://securelist.com/blog/research/35936/nettraveler-is-running-red-star-apt-attacks-compromise-high-profile-victims/",
+    "https://www.proofpoint.com/us/threat-insight/post/nettraveler-apt-targets-russian-european-interests"
+  ],
+  "related": [],
+  "slug": "NETTRAVELER",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2017-04-18",
+      "indicators": {
+        "domain": [
+          "info-spb.com",
+          "interfaxru.com",
+          "mogoogle.com",
+          "riaru.net",
+          "voennovosti.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/threat-insight/post/nettraveler-apt-targets-russian-european-interests"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-06",
+      "indicators": {
+        "domain": [
+          "tassnews.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/threat-insight/post/nettraveler-apt-targets-russian-european-interests"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 39
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "allen.w223.west263.cn",
+          "andriodphone.net",
+          "bauer.8866.org",
+          "buynewes.com",
+          "cultureacess.com",
+          "discoverypeace.org",
+          "drag2008.com",
+          "eaglesey.com",
+          "enterairment.net",
+          "gami1.com",
+          "globalmailru.com",
+          "hint09.9966.org",
+          "imapupdate.com",
+          "inwpvpn.com",
+          "keyboardhk.com",
+          "localgroupnet.com",
+          "mailyandexru.com",
+          "msnnewes.com",
+          "newesyahoo.com",
+          "newfax.net",
+          "pkspring.net",
+          "ra1nru.com",
+          "ramb1er.com",
+          "sghrhd.190.20081.info",
+          "southstock.net",
+          "spit113.minidns.net",
+          "tsgoogoo.net",
+          "vip222idc.s169.288idc.com",
+          "viplenta.com",
+          "vipmailru.com",
+          "viprainru.com",
+          "viprambler.com",
+          "vipyandex.com",
+          "vpnwork.3322.org",
+          "wolf0.3322.org",
+          "wolf001.us109.eoidc.net",
+          "yahooair.com",
+          "yangdex.org",
+          "zeroicelee.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://securelist.com/blog/research/35936/nettraveler-is-running-red-star-apt-attacks-compromise-high-profile-victims/"
+      ],
+      "total": 39
+    }
+  ]
+}

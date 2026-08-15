@@ -1,0 +1,59 @@
+{
+  "aliases": [
+    "MyRTUs"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 2
+  },
+  "first_seen": {
+    "domain": {
+      "mypremierfutbol.com": "2016-02-23",
+      "todaysfutbol.com": "2016-02-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2016-02-23",
+    "latest": "2016-02-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "mypremierfutbol.com",
+      "todaysfutbol.com"
+    ]
+  },
+  "last_modified": "2026-08-12T15:13:38+00:00",
+  "maltrail_groups": [
+    "STUXNET"
+  ],
+  "references": [
+    "http://www.wired.com/images_blogs/threatlevel/2010/10/w32_stuxnet_dossier.pdf"
+  ],
+  "related": [],
+  "slug": "STUXNET",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "mypremierfutbol.com",
+          "todaysfutbol.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.wired.com/images_blogs/threatlevel/2010/10/w32_stuxnet_dossier.pdf"
+      ],
+      "total": 2
+    }
+  ]
+}

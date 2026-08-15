@@ -1,0 +1,183 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9b456a06-d67e-5b9e-854e-90872598e98f",
+        "value": "afalr-onedrive.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a19d8867-3812-5a99-8509-56d1a6eb1e2a",
+        "value": "afalr-sharepoint.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "785571b0-5c0a-5103-90d1-da048de973f1",
+        "value": "alarabiye.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e1c867c4-d955-5fef-8bb0-ed28f153db67",
+        "value": "cpuconfig.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5d376852-d1c6-554b-a115-ad90300e0aca",
+        "value": "developerchrome.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "89646137-256c-5620-bfa7-e33c71429497",
+        "value": "endupload.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1538259966",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ea962b9f-fe33-5f74-b094-ea384a0bb232",
+        "value": "firefox-addons.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3dd785cf-4b07-5f2c-adc0-50e719a0dfe2",
+        "value": "gradleservice.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "90bfb76f-3462-5144-9221-83eb935b85a8",
+        "value": "mailgoogle.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "66491604-1b49-5ad7-837b-cb68ec504349",
+        "value": "picfile.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "76a1719f-f78f-5e29-b88b-fa5b91175422",
+        "value": "telegrambackups.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3c4c4c66-a341-59a5-8881-7d1c015460bc",
+        "value": "telegrambots.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "be81d2e8-8ff3-5ce9-b87a-e070dab72463",
+        "value": "telegramco.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d1970d5d-a2c2-5027-8cb8-cd292fd78688",
+        "value": "telegramdesktop.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c05b2611-4cea-5f46-b5df-1207802bd89a",
+        "value": "telegramreport.me"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ce4fdece-725b-53ee-a04d-32a81d053267",
+        "value": "telegramup.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b69646c7-efd9-5ef8-87e5-d2ebd7358343",
+        "value": "update-help.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e938c913-7f2c-573f-93db-f7157a3b7595",
+        "value": "vareangold.de"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1601153310",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3aba8deb-d8e6-5fda-90e5-c977e51c2451",
+        "value": "winchecking.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:rampantkitten"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: RAMPANTKITTEN",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "3ef007a8-3083-539f-a338-77e317b37c02"
+  }
+}

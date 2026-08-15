@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1695379286",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c10bb63b-af40-57ea-a683-3a1503caa51e",
+        "value": "karabakhtelekom.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1695379060",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "7d8dfb1a-a5f5-588b-a0f4-ba714d5effef",
+        "value": "139.84.231.199:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1702809720",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "27be71a4-0983-59ed-8690-d1cd1e01cb20",
+        "value": "193.161.193.99:31570"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:kasablanka"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: KASABLANKA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "768d5e3a-d9c2-5076-b37b-99285ddfd9b8"
+  }
+}

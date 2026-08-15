@@ -1,0 +1,281 @@
+{
+  "aliases": [
+    "unfading sea haze"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 41,
+    "ipv4": 22,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "adswt.com": "2024-11-30",
+      "airst.giize.com": "2024-05-29",
+      "api.bitdefenderupdate.org": "2024-05-29",
+      "api.simpletra.com": "2024-05-29",
+      "auth.bitdefenderupdate.com": "2024-05-29",
+      "babystats.dnset.com": "2024-11-30",
+      "bit.kozow.com": "2024-05-29",
+      "bitdefenderupdate.com": "2024-05-29",
+      "bitdefenderupdate.org": "2024-05-29",
+      "bomloginset.com": "2024-11-30",
+      "cdn.g8z.net": "2024-05-29",
+      "consilium.dnset.com": "2024-11-30",
+      "dns-log.d-n-s.org.uk": "2024-05-29",
+      "dns.g8z.net": "2024-05-29",
+      "employee.mywire.org": "2024-05-29",
+      "fc.adswt.com": "2024-05-29",
+      "helpdesk.fxnxs.com": "2024-05-29",
+      "images.emldn.com": "2024-05-29",
+      "link.theworkguyoo.com": "2024-05-29",
+      "linklab.blinklab.com": "2024-05-29",
+      "loadviber.webredirect.org": "2024-05-29",
+      "mail.adswt.com": "2024-05-29",
+      "mail.bomloginset.com": "2024-05-29",
+      "mail.pcygphil.com": "2024-05-29",
+      "mail.simpletra.com": "2024-05-29",
+      "mail.theworkguyoo.com": "2024-05-29",
+      "manags.twilightparadox.com": "2024-05-29",
+      "message.ooguy.com": "2024-05-29",
+      "news.nevuer.com": "2024-05-29",
+      "newy.hifiliving.com": "2024-05-29",
+      "ns2.theworkguyoo.com": "2024-11-30",
+      "payroll.mywire.org": "2024-05-29",
+      "pcygphil.com": "2024-11-30",
+      "provider.giize.com": "2024-05-29",
+      "rest.redirectme.net": "2024-05-29",
+      "simpletra.com": "2024-11-30",
+      "sopho.kozow.com": "2024-05-29",
+      "spcg.lunaticfridge.com": "2024-05-29",
+      "theworkguyoo.com": "2024-11-30",
+      "upupdate.ooguy.com": "2024-05-29",
+      "word.emldn.com": "2024-05-29"
+    },
+    "ipv4": {
+      "139.180.216.33:21": "2024-05-29",
+      "139.180.221.55:21": "2024-05-29",
+      "139.59.61.42:21": "2024-05-29",
+      "142.93.80.236:21": "2024-05-29",
+      "143.198.80.75:21": "2024-05-29",
+      "146.185.136.221:21": "2024-05-29",
+      "152.89.161.26:21": "2024-05-29",
+      "154.90.34.83:445": "2024-05-29",
+      "165.22.104.184:21": "2024-05-29",
+      "165.232.84.56:21": "2024-05-29",
+      "167.99.222.58:21": "2024-05-29",
+      "178.128.19.134:21": "2024-05-29",
+      "185.195.237.114:21": "2024-05-29",
+      "185.198.57.135:21": "2024-05-29",
+      "185.244.129.60:21": "2024-05-29",
+      "185.244.130.34:21": "2024-05-29",
+      "194.5.250.54:21": "2024-05-29",
+      "206.189.153.85:21": "2024-05-29",
+      "45.32.125.175:21": "2024-05-29",
+      "68.183.185.80:21": "2024-05-29",
+      "91.235.143.251:21": "2024-05-29",
+      "95.216.63.54:21": "2024-05-29"
+    },
+    "url": {
+      "http://139.180.216.33": "2024-05-29",
+      "http://154.90.34.83": "2024-05-29"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-05-29",
+    "latest": "2024-11-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adswt.com",
+      "airst.giize.com",
+      "api.bitdefenderupdate.org",
+      "api.simpletra.com",
+      "auth.bitdefenderupdate.com",
+      "babystats.dnset.com",
+      "bit.kozow.com",
+      "bitdefenderupdate.com",
+      "bitdefenderupdate.org",
+      "bomloginset.com",
+      "cdn.g8z.net",
+      "consilium.dnset.com",
+      "dns-log.d-n-s.org.uk",
+      "dns.g8z.net",
+      "employee.mywire.org",
+      "fc.adswt.com",
+      "helpdesk.fxnxs.com",
+      "images.emldn.com",
+      "link.theworkguyoo.com",
+      "linklab.blinklab.com",
+      "loadviber.webredirect.org",
+      "mail.adswt.com",
+      "mail.bomloginset.com",
+      "mail.pcygphil.com",
+      "mail.simpletra.com",
+      "mail.theworkguyoo.com",
+      "manags.twilightparadox.com",
+      "message.ooguy.com",
+      "news.nevuer.com",
+      "newy.hifiliving.com",
+      "ns2.theworkguyoo.com",
+      "payroll.mywire.org",
+      "pcygphil.com",
+      "provider.giize.com",
+      "rest.redirectme.net",
+      "simpletra.com",
+      "sopho.kozow.com",
+      "spcg.lunaticfridge.com",
+      "theworkguyoo.com",
+      "upupdate.ooguy.com",
+      "word.emldn.com"
+    ],
+    "ipv4": [
+      "139.180.216.33:21",
+      "139.180.221.55:21",
+      "139.59.61.42:21",
+      "142.93.80.236:21",
+      "143.198.80.75:21",
+      "146.185.136.221:21",
+      "152.89.161.26:21",
+      "154.90.34.83:445",
+      "165.22.104.184:21",
+      "165.232.84.56:21",
+      "167.99.222.58:21",
+      "178.128.19.134:21",
+      "185.195.237.114:21",
+      "185.198.57.135:21",
+      "185.244.129.60:21",
+      "185.244.130.34:21",
+      "194.5.250.54:21",
+      "206.189.153.85:21",
+      "45.32.125.175:21",
+      "68.183.185.80:21",
+      "91.235.143.251:21",
+      "95.216.63.54:21"
+    ],
+    "url": [
+      "http://139.180.216.33",
+      "http://154.90.34.83"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "USH"
+  ],
+  "references": [
+    "https://blogapp.bitdefender.com/labs/content/files/2024/05/Bitdefender-Report-DeepDive-creat7721-en_EN.pdf"
+  ],
+  "related": [],
+  "slug": "USH",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2024-11-30",
+      "indicators": {
+        "domain": [
+          "adswt.com",
+          "babystats.dnset.com",
+          "bomloginset.com",
+          "consilium.dnset.com",
+          "ns2.theworkguyoo.com",
+          "pcygphil.com",
+          "simpletra.com",
+          "theworkguyoo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogapp.bitdefender.com/labs/content/files/2024/05/Bitdefender-Report-DeepDive-creat7721-en_EN.pdf"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 33,
+        "ipv4": 22,
+        "url": 2
+      },
+      "first_seen": "2024-05-29",
+      "indicators": {
+        "domain": [
+          "airst.giize.com",
+          "api.bitdefenderupdate.org",
+          "api.simpletra.com",
+          "auth.bitdefenderupdate.com",
+          "bit.kozow.com",
+          "bitdefenderupdate.com",
+          "bitdefenderupdate.org",
+          "cdn.g8z.net",
+          "dns-log.d-n-s.org.uk",
+          "dns.g8z.net",
+          "employee.mywire.org",
+          "fc.adswt.com",
+          "helpdesk.fxnxs.com",
+          "images.emldn.com",
+          "link.theworkguyoo.com",
+          "linklab.blinklab.com",
+          "loadviber.webredirect.org",
+          "mail.adswt.com",
+          "mail.bomloginset.com",
+          "mail.pcygphil.com",
+          "mail.simpletra.com",
+          "mail.theworkguyoo.com",
+          "manags.twilightparadox.com",
+          "message.ooguy.com",
+          "news.nevuer.com",
+          "newy.hifiliving.com",
+          "payroll.mywire.org",
+          "provider.giize.com",
+          "rest.redirectme.net",
+          "sopho.kozow.com",
+          "spcg.lunaticfridge.com",
+          "upupdate.ooguy.com",
+          "word.emldn.com"
+        ],
+        "ipv4": [
+          "139.180.216.33:21",
+          "139.180.221.55:21",
+          "139.59.61.42:21",
+          "142.93.80.236:21",
+          "143.198.80.75:21",
+          "146.185.136.221:21",
+          "152.89.161.26:21",
+          "154.90.34.83:445",
+          "165.22.104.184:21",
+          "165.232.84.56:21",
+          "167.99.222.58:21",
+          "178.128.19.134:21",
+          "185.195.237.114:21",
+          "185.198.57.135:21",
+          "185.244.129.60:21",
+          "185.244.130.34:21",
+          "194.5.250.54:21",
+          "206.189.153.85:21",
+          "45.32.125.175:21",
+          "68.183.185.80:21",
+          "91.235.143.251:21",
+          "95.216.63.54:21"
+        ],
+        "url": [
+          "http://139.180.216.33",
+          "http://154.90.34.83"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blogapp.bitdefender.com/labs/content/files/2024/05/Bitdefender-Report-DeepDive-creat7721-en_EN.pdf"
+      ],
+      "total": 57
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "eset-endpointantivirus.com": "2026-01-02",
+      "eset-review.com": "2026-01-02",
+      "esetremover.com": "2026-01-02",
+      "esetscanner.com": "2026-01-02",
+      "esetsmart.com": "2026-01-02",
+      "updater-file.xyz": "2026-03-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "eset-endpointantivirus.com": "at-or-before",
+      "eset-review.com": "at-or-before",
+      "esetremover.com": "at-or-before",
+      "esetscanner.com": "at-or-before",
+      "esetsmart.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-03-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "eset-endpointantivirus.com",
+      "eset-review.com",
+      "esetremover.com",
+      "esetscanner.com",
+      "esetsmart.com",
+      "updater-file.xyz"
+    ]
+  },
+  "last_modified": "2026-03-13T22:54:43+00:00",
+  "maltrail_groups": [
+    "INEDIBLEOCHOTENSE"
+  ],
+  "references": [
+    "https://infosecwriteups.com/cti-research-sandworm-apt44-649332e8af44#5870",
+    "https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-apt-activity-report-q2-2025-q3-2025.pdf"
+  ],
+  "related": [],
+  "slug": "INEDIBLEOCHOTENSE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-03-13",
+      "indicators": {
+        "domain": [
+          "updater-file.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-apt-activity-report-q2-2025-q3-2025.pdf",
+        "https://infosecwriteups.com/cti-research-sandworm-apt44-649332e8af44#5870"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "eset-endpointantivirus.com",
+          "eset-review.com",
+          "esetremover.com",
+          "esetscanner.com",
+          "esetsmart.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://web-assets.esetstatic.com/wls/en/papers/threat-reports/eset-apt-activity-report-q2-2025-q3-2025.pdf",
+        "https://infosecwriteups.com/cti-research-sandworm-apt44-649332e8af44#5870"
+      ],
+      "total": 5
+    }
+  ]
+}

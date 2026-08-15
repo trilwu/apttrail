@@ -1,0 +1,93 @@
+{
+  "aliases": [],
+  "attack_id": "G1019",
+  "attack_name": "MoustachedBouncer",
+  "attack_url": "https://attack.mitre.org/groups/G1019/",
+  "counts": {
+    "domain": 5,
+    "ipv4": 6
+  },
+  "first_seen": {
+    "domain": {
+      "centrocspupdate.com": "2023-08-10",
+      "dervasopssec.com": "2023-08-10",
+      "edgeupdate-security-windows.com": "2023-08-10",
+      "ocsp-atomsecure.com": "2023-08-10",
+      "securityocspdev.com": "2023-08-10"
+    },
+    "ipv4": {
+      "209.19.37.184:445": "2023-08-10",
+      "24.9.51.94:445": "2023-08-10",
+      "35.214.56.2:445": "2023-08-10",
+      "38.9.8.78:445": "2023-08-10",
+      "52.3.8.25:445": "2023-08-10",
+      "59.6.8.25:445": "2023-08-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-08-10",
+    "latest": "2023-08-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "centrocspupdate.com",
+      "dervasopssec.com",
+      "edgeupdate-security-windows.com",
+      "ocsp-atomsecure.com",
+      "securityocspdev.com"
+    ],
+    "ipv4": [
+      "209.19.37.184:445",
+      "24.9.51.94:445",
+      "35.214.56.2:445",
+      "38.9.8.78:445",
+      "52.3.8.25:445",
+      "59.6.8.25:445"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MOUSTACHEDBOUNCER"
+  ],
+  "references": [
+    "https://www.welivesecurity.com/en/eset-research/moustachedbouncer-espionage-against-foreign-diplomats-in-belarus/"
+  ],
+  "related": [],
+  "slug": "G1019",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5,
+        "ipv4": 6
+      },
+      "first_seen": "2023-08-10",
+      "indicators": {
+        "domain": [
+          "centrocspupdate.com",
+          "dervasopssec.com",
+          "edgeupdate-security-windows.com",
+          "ocsp-atomsecure.com",
+          "securityocspdev.com"
+        ],
+        "ipv4": [
+          "209.19.37.184:445",
+          "24.9.51.94:445",
+          "35.214.56.2:445",
+          "38.9.8.78:445",
+          "52.3.8.25:445",
+          "59.6.8.25:445"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/moustachedbouncer-espionage-against-foreign-diplomats-in-belarus/"
+      ],
+      "total": 11
+    }
+  ]
+}

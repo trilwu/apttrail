@@ -1,0 +1,986 @@
+{
+  "aliases": [
+    "apt-c-41",
+    "promethium",
+    "strongpity"
+  ],
+  "attack_id": "G0056",
+  "attack_name": "PROMETHIUM",
+  "attack_url": "https://attack.mitre.org/groups/G0056/",
+  "counts": {
+    "domain": 78,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "apn-state-upd2.com": "2020-02-21",
+      "app-mx3-delivery.com": "2020-02-21",
+      "applicationrepo.com": "2022-07-31",
+      "apt5-secure3-state.com": "2020-01-21",
+      "cdn12-web-security.com": "2021-04-01",
+      "cdn2-state-upd.com": "2020-02-21",
+      "cdn2-svr-state.com": "2020-02-21",
+      "cdn4-rxe3-map.com": "2020-02-21",
+      "cerulearc.com": "2020-10-12",
+      "dutchvideochatting.com": "2022-07-18",
+      "edicupd002.com": "2020-01-24",
+      "fairgowingo.com": "2022-08-05",
+      "fileaccesscontrol.com": "2021-12-11",
+      "filedocumentmanager.com": "2021-06-01",
+      "findingpcdrivers.com": "2020-12-30",
+      "ftp.mynetenergy.com": "2020-01-24",
+      "hardwareoption.com": "2021-03-15",
+      "hierarchicalfiles.com": "2021-03-15",
+      "hostoperationsystems.com": "2020-05-24",
+      "hotpatches.net": "2024-12-06",
+      "hybirdcloudreportingsoftware.com": "2021-01-02",
+      "informationserviceslab.com": "2021-05-17",
+      "inodeapplicationserver.com": "2022-10-21",
+      "intagrefedcircuitchip.com": "2023-01-10",
+      "javaplugin-update.com": "2024-12-06",
+      "lurkingnet.com": "2021-03-07",
+      "mailtransfersagents.com": "2020-05-26",
+      "mentiononecommon.com": "2020-05-26",
+      "ms-cdn-88.com": "2020-11-30",
+      "ms-health-monitor.com": "2021-04-01",
+      "ms-sys-security.com": "2018-09-13",
+      "ms21-app3-upload.com": "2020-05-26",
+      "ms6-upload-serv3.com": "2020-01-24",
+      "mx-upd2-cdn-state.com": "2020-02-21",
+      "myrappid.com": "2020-01-24",
+      "mytoshba.com": "2020-01-24",
+      "networkmanagemersolutions.com": "2021-12-11",
+      "networksoftwaresegment.com": "2023-01-10",
+      "node1-cdn-network.com": "2020-02-13",
+      "oem-sec4-mx32.com": "2020-02-21",
+      "pinkturtle.me": "2020-01-24",
+      "protectapplication.com": "2020-10-12",
+      "pulmonyarea.com": "2021-03-15",
+      "ralrab.com": "2020-01-24",
+      "record-fords.cerulearc.com": "2020-10-12",
+      "remoteaaddressconnect.com": "2024-12-06",
+      "repositoryupdating.com": "2022-01-10",
+      "requiredvision.com": "2024-12-06",
+      "resolutionplatform.com": "2021-03-12",
+      "selectednewfile.com": "2021-06-03",
+      "serv3-app-system4.com": "2020-01-27",
+      "sessionprotocol.com": "2022-03-13",
+      "srv-cdn3-system.com": "2020-02-21",
+      "srv5-upd51-mx3-sec22.com": "2020-02-21",
+      "srv601.ddns.net": "2020-01-24",
+      "srv602.ddns.net": "2020-01-24",
+      "state-awe3-apt.com": "2020-01-24",
+      "svnservices.com": "2020-01-24",
+      "svr-sec2-system.com": "2020-02-21",
+      "sys4-upload2-srv.com": "2020-02-21",
+      "syse-update-app4.com": "2020-02-18",
+      "system6-mxe-ups3.com": "2020-02-21",
+      "transfermychoice.com": "2021-03-14",
+      "transferprotocolpolicy.com": "2020-11-24",
+      "true-crypte.website": "2020-01-24",
+      "truecrypte.org": "2020-01-24",
+      "upd-ncx4-server.com": "2020-02-21",
+      "upd-network-ms2.com": "2020-02-21",
+      "upd-secure-srv1.com": "2020-02-21",
+      "upd2-app-state.com": "2020-02-21",
+      "upd3-srv-system-app.com": "2020-02-21",
+      "upd32-secure-serv4.com": "2019-10-31",
+      "upd56-state3-cdn7-mx8.com": "2020-02-21",
+      "updatesync.com": "2020-01-24",
+      "updserv-east-cdn3.com": "2020-12-01",
+      "upn-sec3-msd.com": "2020-02-21",
+      "uppertrainingtool.com": "2020-12-26",
+      "windriversupport.com": "2020-01-24"
+    },
+    "ipv4": {
+      "193.235.207.60:443": "2020-01-21"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-13",
+    "latest": "2024-12-06"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "apn-state-upd2.com",
+      "app-mx3-delivery.com",
+      "applicationrepo.com",
+      "apt5-secure3-state.com",
+      "cdn12-web-security.com",
+      "cdn2-state-upd.com",
+      "cdn2-svr-state.com",
+      "cdn4-rxe3-map.com",
+      "cerulearc.com",
+      "dutchvideochatting.com",
+      "edicupd002.com",
+      "fairgowingo.com",
+      "fileaccesscontrol.com",
+      "filedocumentmanager.com",
+      "findingpcdrivers.com",
+      "ftp.mynetenergy.com",
+      "hardwareoption.com",
+      "hierarchicalfiles.com",
+      "hostoperationsystems.com",
+      "hotpatches.net",
+      "hybirdcloudreportingsoftware.com",
+      "informationserviceslab.com",
+      "inodeapplicationserver.com",
+      "intagrefedcircuitchip.com",
+      "javaplugin-update.com",
+      "lurkingnet.com",
+      "mailtransfersagents.com",
+      "mentiononecommon.com",
+      "ms-cdn-88.com",
+      "ms-health-monitor.com",
+      "ms-sys-security.com",
+      "ms21-app3-upload.com",
+      "ms6-upload-serv3.com",
+      "mx-upd2-cdn-state.com",
+      "myrappid.com",
+      "mytoshba.com",
+      "networkmanagemersolutions.com",
+      "networksoftwaresegment.com",
+      "node1-cdn-network.com",
+      "oem-sec4-mx32.com",
+      "pinkturtle.me",
+      "protectapplication.com",
+      "pulmonyarea.com",
+      "ralrab.com",
+      "record-fords.cerulearc.com",
+      "remoteaaddressconnect.com",
+      "repositoryupdating.com",
+      "requiredvision.com",
+      "resolutionplatform.com",
+      "selectednewfile.com",
+      "serv3-app-system4.com",
+      "sessionprotocol.com",
+      "srv-cdn3-system.com",
+      "srv5-upd51-mx3-sec22.com",
+      "srv601.ddns.net",
+      "srv602.ddns.net",
+      "state-awe3-apt.com",
+      "svnservices.com",
+      "svr-sec2-system.com",
+      "sys4-upload2-srv.com",
+      "syse-update-app4.com",
+      "system6-mxe-ups3.com",
+      "transfermychoice.com",
+      "transferprotocolpolicy.com",
+      "true-crypte.website",
+      "truecrypte.org",
+      "upd-ncx4-server.com",
+      "upd-network-ms2.com",
+      "upd-secure-srv1.com",
+      "upd2-app-state.com",
+      "upd3-srv-system-app.com",
+      "upd32-secure-serv4.com",
+      "upd56-state3-cdn7-mx8.com",
+      "updatesync.com",
+      "updserv-east-cdn3.com",
+      "upn-sec3-msd.com",
+      "uppertrainingtool.com",
+      "windriversupport.com"
+    ],
+    "ipv4": [
+      "193.235.207.60:443"
+    ]
+  },
+  "last_modified": "2026-04-09T10:31:12+00:00",
+  "maltrail_groups": [
+    "STRONGPITY"
+  ],
+  "references": [
+    "http://www.tgsoft.it/english/news_archivio_eng.asp?id=781",
+    "https://0xthreatintel.medium.com/uncovering-apt-c-41-strongpity-backdoor-e7f9a7a076f4",
+    "https://anchorednarratives.substack.com/p/recover-your-files-with-strongpity",
+    "https://app.any.run/tasks/3ab76ba4-b4ab-4e18-b3b6-9f56e3202056/",
+    "https://app.any.run/tasks/6ae5416b-fc75-405f-8888-71d5f6c7de4d/",
+    "https://cybersecurity.att.com/blogs/labs-research/newly-identified-strongpity-operations",
+    "https://cybleinc.com/2020/12/31/strongpity-apt-extends-global-reach-with-new-infrastructure/",
+    "https://twitter.com/0xthreatintel/status/1355847489291603970",
+    "https://twitter.com/BaoshengbinCumt/status/1313717536865742848",
+    "https://twitter.com/BaoshengbinCumt/status/1330056911195136012",
+    "https://twitter.com/BaoshengbinCumt/status/1333302456185339904",
+    "https://twitter.com/BaoshengbinCumt/status/1333583293636255745",
+    "https://twitter.com/BaoshengbinCumt/status/1342761047967481856",
+    "https://twitter.com/BaoshengbinCumt/status/1344270106201784320",
+    "https://twitter.com/BaoshengbinCumt/status/1344620693086904321",
+    "https://twitter.com/BaoshengbinCumt/status/1399652333210923014",
+    "https://twitter.com/BaoshengbinCumt/status/1400271045576192001",
+    "https://twitter.com/CTI_Marc/status/1221809588925800449",
+    "https://twitter.com/Des00464472/status/1351104382943830017",
+    "https://twitter.com/Des00464472/status/1555433330786848771",
+    "https://twitter.com/Des00464472/status/1583333357714538497",
+    "https://twitter.com/RedDrip7/status/1430716604896010243",
+    "https://twitter.com/VK_Intel/status/1189939324344766464",
+    "https://twitter.com/Vishnyak0v/status/1219590822204727296",
+    "https://twitter.com/Vishnyak0v/status/1229725292513636353",
+    "https://twitter.com/_re_fox/status/1371197939599749123",
+    "https://twitter.com/kyleehmke/status/1220738826513063942",
+    "https://twitter.com/kyleehmke/status/1227950151140073472",
+    "https://twitter.com/malwrhunterteam/status/1264137361446899712",
+    "https://twitter.com/malwrhunterteam/status/1549125906416943108",
+    "https://twitter.com/silv0123/status/1368589447780954113",
+    "https://twitter.com/silv0123/status/1370339230329696260",
+    "https://twitter.com/silv0123/status/1394124776080240640",
+    "https://twitter.com/voodoodahl1/status/1265340234054668289",
+    "https://twitter.com/voodoodahl1/status/1371538406984007683",
+    "https://vxcube.com/recent-threats-ioc/5bf0f120a39bb52be98684cd/detail",
+    "https://www.proofpoint.com/us/daily-ruleset-update-summary-20180522",
+    "https://www.virustotal.com/gui/file/0265e9f22753a574dcc0f20fdb1838aaf22ba17e8f2577d1d88a811ed1f6467b/detection",
+    "https://www.virustotal.com/gui/file/04c6b2e93ee33d4b12f61c565ef164931ce8bb8225d0a80cae32782c1c30a802/detection",
+    "https://www.virustotal.com/gui/file/057e27d215f4930469417bfd5fec41b193c85ac9275a1ae5594fcbab68c23ed7/detection",
+    "https://www.virustotal.com/gui/file/0e4651625abda88df56952b7e97d7fb64a3e1ea97bfe01e931d47381c0952e98/detection",
+    "https://www.virustotal.com/gui/file/0f4933ae0b67f03154f36c3e47acd5eece9b3872677a30fdaf22df952b96b704/detection",
+    "https://www.virustotal.com/gui/file/1185998fd595936708c1fc5a3ddeadbdd46b88e216419597da0b461e136ddfa7/detection",
+    "https://www.virustotal.com/gui/file/1887977dc8ea476b5ddacccfe74e6c630222bfff1c7888eef08ce0e0c4d0d12f/detection",
+    "https://www.virustotal.com/gui/file/2b26f4ce23dea823f4f7f8daf4c81550855068a4042bc150dfb71344f74b6f79/detection",
+    "https://www.virustotal.com/gui/file/2ea1ff8dc4a5ea276f8ae4137cbce0fd80b27d662dc0969127b454f5c0aa34e1/detection",
+    "https://www.virustotal.com/gui/file/3da5ad345fa5dc65c5313a0846897ba696630e1b4c6b9388e7a479edce27745e/detection",
+    "https://www.virustotal.com/gui/file/4efa6bc5ffe7b39a4e7f674e081e6428e981a11ac8289bd71e527213ec541fc8/detection",
+    "https://www.virustotal.com/gui/file/4f4efb22c0bdd0bd8d1af525594571f31c641f8e5aa65b0b563bfad01e4a4505/detection",
+    "https://www.virustotal.com/gui/file/50baf0ea166f7e578b19fa519a6050e8095c79f30ef6954021fbe40e9058acd8/detection",
+    "https://www.virustotal.com/gui/file/786c58acaf7a1354b0038f34adec8a46235059b8f3e87a47197f008446a5c757/detection",
+    "https://www.virustotal.com/gui/file/7b6d5d611d70dade1b90c10d2dfced62dd2cba1487f45a2800f81bf4f75bbee8/detection",
+    "https://www.virustotal.com/gui/file/80ad6598f6e0b7c2b7258cbb69aa782dbcac308ca3d9d451b9bb5290b943a58f/detection",
+    "https://www.virustotal.com/gui/file/84621560ab59aff0d63ab521d6eea3efb0f4c042dcc29317a5abe7dabafd15db/detection",
+    "https://www.virustotal.com/gui/file/a9ed18bf798d32dcb7e9203720c35c54fed8b528924a8ec2bf5e58c775abbf84/detection",
+    "https://www.virustotal.com/gui/file/b6e3018d7b5f4aef74bcbd38b86ec5a3c6ca9fa1b1310aca5396217a1290db79/detection",
+    "https://www.virustotal.com/gui/file/b75fbe3b21d83e2000928349d1610f292e1a4c072fd0454309fe1c6c7d85ff46/detection",
+    "https://www.virustotal.com/gui/file/be1593bd1f1d5a4d05217f0492832e13bddd61281d8e109668ea5c64920fe9b2/detection",
+    "https://www.virustotal.com/gui/file/c278454e57783e327ec452a418ccc119be8bd79e7421d6958666d50eef2eff55/detection",
+    "https://www.virustotal.com/gui/file/d22c6046f7c1102da9f60162f5529a08acb6da58ed598cc721fe8ffae7f47ea2/detection",
+    "https://www.virustotal.com/gui/file/d8e09efe37e802b6541b97b22ca49d467fb02d2f7b7319fda0eed4fdc2e21e2b/detection",
+    "https://www.virustotal.com/gui/file/debf8937623397e35359cd8e758283857eb0e161a5038f3637f496838ddeadd0/detection",
+    "https://www.virustotal.com/gui/file/eef5205cce36d1613036ce4ece3875e907473b75fdc09711c6545757547ea08a/detection",
+    "https://www.virustotal.com/gui/file/ef156165bdefe2a90c83e787218a670665e16ff23a097b78c654573df629a9b6/detection",
+    "https://www.virustotal.com/gui/file/f1552d049c3cae1a81be859cb8cd0c885797a9f5ce0266c4d53cc3c2ba3ecb1c/detection",
+    "https://www.virustotal.com/gui/file/f81d16d98d7c5423e8f231fe47778b0824360fb41525fd545097bb8e700e1a8d/detection",
+    "https://www.virustotal.com/gui/file/f8671aedf3691b8bd5765fadfdb2865adfccaaee8a03ffd5447edca42d5b376d/detection",
+    "https://www.virustotal.com/gui/ip-address/139.59.250.183/relations",
+    "https://www.virustotal.com/gui/ip-address/185.47.131.103/relations",
+    "https://www.virustotal.com/gui/ip-address/91.219.238.31/relations",
+    "https://www.welivesecurity.com/2023/01/10/strongpity-espionage-campaign-targeting-android-users/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0081"
+    }
+  ],
+  "slug": "G0056",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2024-12-06",
+      "indicators": {
+        "domain": [
+          "hotpatches.net",
+          "javaplugin-update.com",
+          "remoteaaddressconnect.com",
+          "requiredvision.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/139.59.250.183/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-01-10",
+      "indicators": {
+        "domain": [
+          "intagrefedcircuitchip.com",
+          "networksoftwaresegment.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1549125906416943108",
+        "https://www.welivesecurity.com/2023/01/10/strongpity-espionage-campaign-targeting-android-users/",
+        "https://www.virustotal.com/gui/file/be1593bd1f1d5a4d05217f0492832e13bddd61281d8e109668ea5c64920fe9b2/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-10-21",
+      "indicators": {
+        "domain": [
+          "inodeapplicationserver.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Des00464472/status/1583333357714538497"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-08-05",
+      "indicators": {
+        "domain": [
+          "fairgowingo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Des00464472/status/1555433330786848771"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-31",
+      "indicators": {
+        "domain": [
+          "applicationrepo.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Des00464472/status/1351104382943830017"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-18",
+      "indicators": {
+        "domain": [
+          "dutchvideochatting.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1549125906416943108",
+        "https://www.welivesecurity.com/2023/01/10/strongpity-espionage-campaign-targeting-android-users/",
+        "https://www.virustotal.com/gui/file/be1593bd1f1d5a4d05217f0492832e13bddd61281d8e109668ea5c64920fe9b2/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-13",
+      "indicators": {
+        "domain": [
+          "sessionprotocol.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/ef156165bdefe2a90c83e787218a670665e16ff23a097b78c654573df629a9b6/detection",
+        "https://www.virustotal.com/gui/file/d8e09efe37e802b6541b97b22ca49d467fb02d2f7b7319fda0eed4fdc2e21e2b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-10",
+      "indicators": {
+        "domain": [
+          "repositoryupdating.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1430716604896010243",
+        "https://www.virustotal.com/gui/file/c278454e57783e327ec452a418ccc119be8bd79e7421d6958666d50eef2eff55/detection",
+        "https://www.virustotal.com/gui/file/7b6d5d611d70dade1b90c10d2dfced62dd2cba1487f45a2800f81bf4f75bbee8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-11",
+      "indicators": {
+        "domain": [
+          "fileaccesscontrol.com",
+          "networkmanagemersolutions.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://anchorednarratives.substack.com/p/recover-your-files-with-strongpity",
+        "https://www.virustotal.com/gui/file/1887977dc8ea476b5ddacccfe74e6c630222bfff1c7888eef08ce0e0c4d0d12f/detection",
+        "https://www.virustotal.com/gui/file/2b26f4ce23dea823f4f7f8daf4c81550855068a4042bc150dfb71344f74b6f79/detection",
+        "https://www.virustotal.com/gui/file/786c58acaf7a1354b0038f34adec8a46235059b8f3e87a47197f008446a5c757/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-03",
+      "indicators": {
+        "domain": [
+          "selectednewfile.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1400271045576192001",
+        "https://www.virustotal.com/gui/file/84621560ab59aff0d63ab521d6eea3efb0f4c042dcc29317a5abe7dabafd15db/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-01",
+      "indicators": {
+        "domain": [
+          "filedocumentmanager.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1399652333210923014",
+        "https://www.virustotal.com/gui/file/d22c6046f7c1102da9f60162f5529a08acb6da58ed598cc721fe8ffae7f47ea2/detection",
+        "https://www.virustotal.com/gui/file/a9ed18bf798d32dcb7e9203720c35c54fed8b528924a8ec2bf5e58c775abbf84/detection",
+        "https://www.virustotal.com/gui/file/f8671aedf3691b8bd5765fadfdb2865adfccaaee8a03ffd5447edca42d5b376d/detection",
+        "https://www.virustotal.com/gui/file/f1552d049c3cae1a81be859cb8cd0c885797a9f5ce0266c4d53cc3c2ba3ecb1c/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-17",
+      "indicators": {
+        "domain": [
+          "informationserviceslab.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/silv0123/status/1394124776080240640",
+        "https://www.virustotal.com/gui/file/debf8937623397e35359cd8e758283857eb0e161a5038f3637f496838ddeadd0/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-04-01",
+      "indicators": {
+        "domain": [
+          "cdn12-web-security.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/eef5205cce36d1613036ce4ece3875e907473b75fdc09711c6545757547ea08a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-04-01",
+      "indicators": {
+        "domain": [
+          "ms-health-monitor.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/50baf0ea166f7e578b19fa519a6050e8095c79f30ef6954021fbe40e9058acd8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-03-15",
+      "indicators": {
+        "domain": [
+          "hardwareoption.com",
+          "hierarchicalfiles.com",
+          "pulmonyarea.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/voodoodahl1/status/1371538406984007683"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-14",
+      "indicators": {
+        "domain": [
+          "transfermychoice.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/_re_fox/status/1371197939599749123",
+        "https://www.virustotal.com/gui/file/b6e3018d7b5f4aef74bcbd38b86ec5a3c6ca9fa1b1310aca5396217a1290db79/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-12",
+      "indicators": {
+        "domain": [
+          "resolutionplatform.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/silv0123/status/1370339230329696260",
+        "https://www.virustotal.com/gui/file/0e4651625abda88df56952b7e97d7fb64a3e1ea97bfe01e931d47381c0952e98/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-07",
+      "indicators": {
+        "domain": [
+          "lurkingnet.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/silv0123/status/1368589447780954113",
+        "https://www.virustotal.com/gui/file/057e27d215f4930469417bfd5fec41b193c85ac9275a1ae5594fcbab68c23ed7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-01-02",
+      "indicators": {
+        "domain": [
+          "hybirdcloudreportingsoftware.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cybleinc.com/2020/12/31/strongpity-apt-extends-global-reach-with-new-infrastructure/",
+        "https://www.virustotal.com/gui/ip-address/185.47.131.103/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-30",
+      "indicators": {
+        "domain": [
+          "findingpcdrivers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1344270106201784320",
+        "https://www.virustotal.com/gui/file/4efa6bc5ffe7b39a4e7f674e081e6428e981a11ac8289bd71e527213ec541fc8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-26",
+      "indicators": {
+        "domain": [
+          "uppertrainingtool.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1342761047967481856",
+        "https://www.virustotal.com/gui/file/1185998fd595936708c1fc5a3ddeadbdd46b88e216419597da0b461e136ddfa7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-01",
+      "indicators": {
+        "domain": [
+          "updserv-east-cdn3.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1333583293636255745",
+        "https://www.virustotal.com/gui/file/4f4efb22c0bdd0bd8d1af525594571f31c641f8e5aa65b0b563bfad01e4a4505/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-30",
+      "indicators": {
+        "domain": [
+          "ms-cdn-88.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1333302456185339904",
+        "https://www.virustotal.com/gui/file/0265e9f22753a574dcc0f20fdb1838aaf22ba17e8f2577d1d88a811ed1f6467b/detection",
+        "https://www.virustotal.com/gui/file/0f4933ae0b67f03154f36c3e47acd5eece9b3872677a30fdaf22df952b96b704/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-24",
+      "indicators": {
+        "domain": [
+          "transferprotocolpolicy.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1330056911195136012"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-10-12",
+      "indicators": {
+        "domain": [
+          "cerulearc.com",
+          "protectapplication.com",
+          "record-fords.cerulearc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1313717536865742848",
+        "https://www.virustotal.com/gui/file/04c6b2e93ee33d4b12f61c565ef164931ce8bb8225d0a80cae32782c1c30a802/detection",
+        "https://www.virustotal.com/gui/file/2ea1ff8dc4a5ea276f8ae4137cbce0fd80b27d662dc0969127b454f5c0aa34e1/detection",
+        "https://www.virustotal.com/gui/file/3da5ad345fa5dc65c5313a0846897ba696630e1b4c6b9388e7a479edce27745e/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-05-26",
+      "indicators": {
+        "domain": [
+          "mailtransfersagents.com",
+          "mentiononecommon.com",
+          "ms21-app3-upload.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/voodoodahl1/status/1265340234054668289"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-24",
+      "indicators": {
+        "domain": [
+          "hostoperationsystems.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/malwrhunterteam/status/1264137361446899712",
+        "https://twitter.com/0xthreatintel/status/1355847489291603970",
+        "https://0xthreatintel.medium.com/uncovering-apt-c-41-strongpity-backdoor-e7f9a7a076f4",
+        "https://www.virustotal.com/gui/ip-address/91.219.238.31/relations",
+        "https://twitter.com/BaoshengbinCumt/status/1344620693086904321",
+        "https://www.virustotal.com/gui/file/f81d16d98d7c5423e8f231fe47778b0824360fb41525fd545097bb8e700e1a8d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2020-02-21",
+      "indicators": {
+        "domain": [
+          "apn-state-upd2.com",
+          "app-mx3-delivery.com",
+          "cdn2-state-upd.com",
+          "cdn2-svr-state.com",
+          "cdn4-rxe3-map.com",
+          "mx-upd2-cdn-state.com",
+          "oem-sec4-mx32.com",
+          "srv-cdn3-system.com",
+          "srv5-upd51-mx3-sec22.com",
+          "svr-sec2-system.com",
+          "sys4-upload2-srv.com",
+          "system6-mxe-ups3.com",
+          "upd-ncx4-server.com",
+          "upd-network-ms2.com",
+          "upd-secure-srv1.com",
+          "upd2-app-state.com",
+          "upd3-srv-system-app.com",
+          "upd56-state3-cdn7-mx8.com",
+          "upn-sec3-msd.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cybersecurity.att.com/blogs/labs-research/newly-identified-strongpity-operations",
+        "https://app.any.run/tasks/3ab76ba4-b4ab-4e18-b3b6-9f56e3202056/"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-18",
+      "indicators": {
+        "domain": [
+          "syse-update-app4.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1229725292513636353"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-13",
+      "indicators": {
+        "domain": [
+          "node1-cdn-network.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1227950151140073472"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-27",
+      "indicators": {
+        "domain": [
+          "serv3-app-system4.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/CTI_Marc/status/1221809588925800449"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2020-01-24",
+      "indicators": {
+        "domain": [
+          "edicupd002.com",
+          "ftp.mynetenergy.com",
+          "srv601.ddns.net",
+          "srv602.ddns.net",
+          "svnservices.com",
+          "updatesync.com",
+          "windriversupport.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vxcube.com/recent-threats-ioc/5bf0f120a39bb52be98684cd/detail"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2020-01-24",
+      "indicators": {
+        "domain": [
+          "myrappid.com",
+          "mytoshba.com",
+          "pinkturtle.me",
+          "ralrab.com",
+          "true-crypte.website"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.tgsoft.it/english/news_archivio_eng.asp?id=781"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-01-24",
+      "indicators": {
+        "domain": [
+          "ms6-upload-serv3.com",
+          "state-awe3-apt.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1220738826513063942",
+        "https://app.any.run/tasks/6ae5416b-fc75-405f-8888-71d5f6c7de4d/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-24",
+      "indicators": {
+        "domain": [
+          "truecrypte.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.tgsoft.it/english/news_archivio_eng.asp?id=781",
+        "https://vxcube.com/recent-threats-ioc/5bf0f120a39bb52be98684cd/detail"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-01-21",
+      "indicators": {
+        "ipv4": [
+          "193.235.207.60:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/80ad6598f6e0b7c2b7258cbb69aa782dbcac308ca3d9d451b9bb5290b943a58f/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-01-21",
+      "indicators": {
+        "domain": [
+          "apt5-secure3-state.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Vishnyak0v/status/1219590822204727296"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-10-31",
+      "indicators": {
+        "domain": [
+          "upd32-secure-serv4.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/VK_Intel/status/1189939324344766464",
+        "https://www.virustotal.com/gui/file/b75fbe3b21d83e2000928349d1610f292e1a4c072fd0454309fe1c6c7d85ff46/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-13",
+      "indicators": {
+        "domain": [
+          "ms-sys-security.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/daily-ruleset-update-summary-20180522"
+      ],
+      "total": 1
+    }
+  ]
+}

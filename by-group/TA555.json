@@ -1,0 +1,56 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "194.36.188.132:443": "2020-02-03"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2020-02-03",
+    "latest": "2020-02-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "194.36.188.132:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TA555"
+  ],
+  "references": [
+    "http://www.hexed.in/2020/02/ta555-campaign-feb-2020.html",
+    "https://twitter.com/reegun21/status/1224600875777159169"
+  ],
+  "related": [],
+  "slug": "TA555",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-02-03",
+      "indicators": {
+        "ipv4": [
+          "194.36.188.132:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/reegun21/status/1224600875777159169",
+        "http://www.hexed.in/2020/02/ta555-campaign-feb-2020.html"
+      ],
+      "total": 1
+    }
+  ]
+}

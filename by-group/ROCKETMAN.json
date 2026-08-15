@@ -1,0 +1,106 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "url": 8
+  },
+  "first_seen": {
+    "url": {
+      "causwc.or.kr/board_community01/board_community01/index2.php": "2019-05-02",
+      "cnjob.co.kr/data/blog/iindex.php": "2018-08-22",
+      "ebsmpi.com/ipin/360/down.php": "2018-08-22",
+      "icare.or.kr/upload/board/index1.php": "2019-05-02",
+      "kumdo.org/admin/noti/files/iindex.php": "2019-05-02",
+      "notac.co.kr/admin/case/iindex.php": "2018-08-22",
+      "seline.co.kr/datafiles/CNOOC.php": "2018-08-22",
+      "youngs.dgweb.kr/skin15/include/bin/home.php": "2019-05-02"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-08-22",
+    "latest": "2019-05-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "causwc.or.kr/board_community01/board_community01/index2.php",
+      "cnjob.co.kr/data/blog/iindex.php",
+      "ebsmpi.com/ipin/360/down.php",
+      "icare.or.kr/upload/board/index1.php",
+      "kumdo.org/admin/noti/files/iindex.php",
+      "notac.co.kr/admin/case/iindex.php",
+      "seline.co.kr/datafiles/CNOOC.php",
+      "youngs.dgweb.kr/skin15/include/bin/home.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ROCKETMAN"
+  ],
+  "references": [
+    "http://blog.alyac.co.kr/1853",
+    "https://otx.alienvault.com/pulse/5ccaed31545df8f17b695ffe"
+  ],
+  "related": [],
+  "slug": "ROCKETMAN",
+  "timeline": [
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2019-05-02",
+      "indicators": {
+        "url": [
+          "causwc.or.kr/board_community01/board_community01/index2.php",
+          "icare.or.kr/upload/board/index1.php",
+          "kumdo.org/admin/noti/files/iindex.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blog.alyac.co.kr/1853"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-05-02",
+      "indicators": {
+        "url": [
+          "youngs.dgweb.kr/skin15/include/bin/home.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5ccaed31545df8f17b695ffe"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 4
+      },
+      "first_seen": "2018-08-22",
+      "indicators": {
+        "url": [
+          "cnjob.co.kr/data/blog/iindex.php",
+          "ebsmpi.com/ipin/360/down.php",
+          "notac.co.kr/admin/case/iindex.php",
+          "seline.co.kr/datafiles/CNOOC.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://blog.alyac.co.kr/1853"
+      ],
+      "total": 4
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 20
+  },
+  "first_seen": {
+    "domain": {
+      "74871011.huliqianbao.com": "2022-06-13",
+      "app.imztoken.xyz": "2022-06-13",
+      "bnb.lnfura.org": "2022-06-13",
+      "bsc.lnfura.org": "2022-06-13",
+      "btc.lnfura.org": "2022-06-13",
+      "colnbase.homes": "2022-06-13",
+      "copy.lnfura.org": "2022-06-13",
+      "eth.lnfura.org": "2022-06-13",
+      "facai.im": "2022-06-13",
+      "imztoken.xyz": "2022-06-13",
+      "lnfura.io": "2022-06-13",
+      "lnfura.org": "2022-06-13",
+      "mainnet.lnfura.io": "2022-06-13",
+      "mainnet.lnfura.org": "2022-06-13",
+      "manage.lnfura.io": "2022-06-13",
+      "metanask.cc": "2022-06-13",
+      "som-coinbase.com": "2022-06-13",
+      "test.lnfura.org": "2022-06-13",
+      "token18.app": "2022-06-13",
+      "trx.lnfura.org": "2022-06-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-06-13",
+    "latest": "2022-06-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "74871011.huliqianbao.com",
+      "app.imztoken.xyz",
+      "bnb.lnfura.org",
+      "bsc.lnfura.org",
+      "btc.lnfura.org",
+      "colnbase.homes",
+      "copy.lnfura.org",
+      "eth.lnfura.org",
+      "facai.im",
+      "imztoken.xyz",
+      "lnfura.io",
+      "lnfura.org",
+      "mainnet.lnfura.io",
+      "mainnet.lnfura.org",
+      "manage.lnfura.io",
+      "metanask.cc",
+      "som-coinbase.com",
+      "test.lnfura.org",
+      "token18.app",
+      "trx.lnfura.org"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SEAFLOWER"
+  ],
+  "references": [
+    "https://blog.confiant.com/how-seaflower-%E8%97%8F%E6%B5%B7%E8%8A%B1-installs-backdoors-in-ios-android-web3-wallets-to-steal-your-seed-phrase-d25f0ccdffce"
+  ],
+  "related": [],
+  "slug": "SEAFLOWER",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2022-06-13",
+      "indicators": {
+        "domain": [
+          "74871011.huliqianbao.com",
+          "app.imztoken.xyz",
+          "bnb.lnfura.org",
+          "bsc.lnfura.org",
+          "btc.lnfura.org",
+          "colnbase.homes",
+          "copy.lnfura.org",
+          "eth.lnfura.org",
+          "facai.im",
+          "imztoken.xyz",
+          "lnfura.io",
+          "lnfura.org",
+          "mainnet.lnfura.io",
+          "mainnet.lnfura.org",
+          "manage.lnfura.io",
+          "metanask.cc",
+          "som-coinbase.com",
+          "test.lnfura.org",
+          "token18.app",
+          "trx.lnfura.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.confiant.com/how-seaflower-%E8%97%8F%E6%B5%B7%E8%8A%B1-installs-backdoors-in-ios-android-web3-wallets-to-steal-your-seed-phrase-d25f0ccdffce"
+      ],
+      "total": 20
+    }
+  ]
+}

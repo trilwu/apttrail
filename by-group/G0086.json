@@ -1,0 +1,160 @@
+{
+  "aliases": [
+    "babyshark",
+    "kimjongrat"
+  ],
+  "attack_id": "G0086",
+  "attack_name": "Stolen Pencil",
+  "attack_url": "https://attack.mitre.org/groups/G0086/",
+  "counts": {
+    "domain": 15,
+    "url": 1,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "bizsonet.ayar.biz": "2018-12-06",
+      "bizsonet.com": "2018-12-06",
+      "client-message.com": "2018-12-06",
+      "client-screenfonts.com": "2018-12-06",
+      "docsdriver.com": "2018-12-06",
+      "grsvps.com": "2018-12-06",
+      "itservicedesk.org": "2018-12-06",
+      "pqexport.com": "2018-12-06",
+      "scaurri.com": "2018-12-06",
+      "secozco.com": "2018-12-06",
+      "sharedriver.pw": "2018-12-06",
+      "sharedriver.us": "2018-12-06",
+      "tempdomain8899.com": "2018-12-06",
+      "world-paper.net": "2018-12-06",
+      "zwfaxi.com": "2018-12-06"
+    },
+    "url": {
+      "tdalpacafarm.com/files/kr/contents/upload.php": "2019-03-06"
+    },
+    "url_path": {
+      "/expres.php": "2019-04-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-12-06",
+    "latest": "2019-04-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bizsonet.ayar.biz",
+      "bizsonet.com",
+      "client-message.com",
+      "client-screenfonts.com",
+      "docsdriver.com",
+      "grsvps.com",
+      "itservicedesk.org",
+      "pqexport.com",
+      "scaurri.com",
+      "secozco.com",
+      "sharedriver.pw",
+      "sharedriver.us",
+      "tempdomain8899.com",
+      "world-paper.net",
+      "zwfaxi.com"
+    ],
+    "url": [
+      "tdalpacafarm.com/files/kr/contents/upload.php"
+    ],
+    "url_path": [
+      "/expres.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "STOLENPENCIL"
+  ],
+  "references": [
+    "https://asert.arbornetworks.com/stolen-pencil-campaign-targets-academia/",
+    "https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/)",
+    "https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0094"
+    }
+  ],
+  "slug": "G0086",
+  "timeline": [
+    {
+      "counts": {
+        "url_path": 1
+      },
+      "first_seen": "2019-04-26",
+      "indicators": {
+        "url_path": [
+          "/expres.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/babyshark-malware-part-two-attacks-continue-using-kimjongrat-and-pcrat/)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-03-06",
+      "indicators": {
+        "url": [
+          "tdalpacafarm.com/files/kr/contents/upload.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/new-babyshark-malware-targets-u-s-national-security-think-tanks/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2018-12-06",
+      "indicators": {
+        "domain": [
+          "bizsonet.ayar.biz",
+          "bizsonet.com",
+          "client-message.com",
+          "client-screenfonts.com",
+          "docsdriver.com",
+          "grsvps.com",
+          "itservicedesk.org",
+          "pqexport.com",
+          "scaurri.com",
+          "secozco.com",
+          "sharedriver.pw",
+          "sharedriver.us",
+          "tempdomain8899.com",
+          "world-paper.net",
+          "zwfaxi.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://asert.arbornetworks.com/stolen-pencil-campaign-targets-academia/"
+      ],
+      "total": 15
+    }
+  ]
+}

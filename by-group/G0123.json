@@ -1,0 +1,115 @@
+{
+  "aliases": [
+    "DeftTorero",
+    "LebaneseCedar",
+    "VolatileCedar"
+  ],
+  "attack_id": "G0123",
+  "attack_name": "Volatile Cedar",
+  "attack_url": "https://attack.mitre.org/groups/G0123/",
+  "counts": {
+    "domain": 7,
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "carima2012.site90.com": "2015-10-20",
+      "dotnetexplorer.info": "2015-10-20",
+      "dotntexplorere.info": "2015-10-20",
+      "erdotntexplore.info": "2015-10-20",
+      "explorerdotnt.info": "2015-10-20",
+      "saveweb.wink.ws": "2015-10-20",
+      "xploreredotnet.info": "2015-10-20"
+    },
+    "ipv4": {
+      "200.159.87.196:3306": "2022-10-03"
+    },
+    "url": {
+      "http://200.159.87.196": "2022-10-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-10-20",
+    "latest": "2022-10-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "carima2012.site90.com",
+      "dotnetexplorer.info",
+      "dotntexplorere.info",
+      "erdotntexplore.info",
+      "explorerdotnt.info",
+      "saveweb.wink.ws",
+      "xploreredotnet.info"
+    ],
+    "ipv4": [
+      "200.159.87.196:3306"
+    ],
+    "url": [
+      "http://200.159.87.196"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "VOLATILECEDAR"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/633acb17ed56f34d3779a9a4",
+    "https://securelist.com/defttorero-tactics-techniques-and-procedures/107610/",
+    "https://www.checkpoint.com/downloads/volatile-cedar-technical-report.pdf"
+  ],
+  "related": [],
+  "slug": "G0123",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2022-10-03",
+      "indicators": {
+        "ipv4": [
+          "200.159.87.196:3306"
+        ],
+        "url": [
+          "http://200.159.87.196"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/defttorero-tactics-techniques-and-procedures/107610/",
+        "https://otx.alienvault.com/pulse/633acb17ed56f34d3779a9a4"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "carima2012.site90.com",
+          "dotnetexplorer.info",
+          "dotntexplorere.info",
+          "erdotntexplore.info",
+          "explorerdotnt.info",
+          "saveweb.wink.ws",
+          "xploreredotnet.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.checkpoint.com/downloads/volatile-cedar-technical-report.pdf"
+      ],
+      "total": 7
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c0e8c51b-84de-5cb1-bb7c-6d9f9b7170da",
+        "value": "eset-endpointantivirus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c7de256d-e53a-5471-92c7-f3ac21426d4b",
+        "value": "eset-review.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0a6da73c-501d-50ed-bd35-41a8c83980e0",
+        "value": "esetremover.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4939d7ae-a603-5522-add9-9bd1dd456524",
+        "value": "esetscanner.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fcce10fb-d5b3-5da5-b880-72d962b723c8",
+        "value": "esetsmart.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1773442483",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3a2aa7c8-094a-504d-818f-bcd217455a4f",
+        "value": "updater-file.xyz"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:inedibleochotense"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: INEDIBLEOCHOTENSE",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "65ee896d-f193-59a7-8864-84a08aff2ef3"
+  }
+}

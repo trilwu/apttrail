@@ -1,0 +1,320 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 58
+  },
+  "first_seen": {
+    "domain": {
+      "3w.tcpdo.net": "2019-02-27",
+      "admin.nslookupdns.com": "2018-09-13",
+      "adminloader.com": "2019-02-27",
+      "adminsysteminfo.com": "2019-02-27",
+      "andphocen.com": "2019-02-27",
+      "app.newfacebk.com": "2019-02-27",
+      "appupdatemoremagic.com": "2018-09-13",
+      "cdncool.com": "2019-02-27",
+      "csip6.biz": "2019-02-27",
+      "dns.cdncool.com": "2019-02-27",
+      "feed-5613.coderformylife.info": "2023-09-22",
+      "gooledriveservice.com": "2018-09-13",
+      "honor2020.ga": "2019-02-27",
+      "hwmt10.w3.ezua.com": "2019-10-04",
+      "imw100pass.imwork.net": "2019-10-04",
+      "info.adminsysteminfo.com": "2019-02-27",
+      "jackhex.md5c.com": "2019-10-04",
+      "jackhex.md5c.net": "2018-09-13",
+      "lala513.gicp.net": "2019-02-27",
+      "linkdatax.com": "2019-02-27",
+      "logitechwkgame.com": "2018-09-13",
+      "lzsps.ml": "2019-10-04",
+      "mail.queryurl.com": "2019-02-27",
+      "md.sony36.com": "2019-02-27",
+      "md5c.net": "2019-02-27",
+      "microsoftdefence.com": "2018-09-13",
+      "microsoftserve.com": "2018-09-13",
+      "mxdnsv6.com": "2018-09-13",
+      "netvovo.windowsnetwork.org": "2019-02-27",
+      "newfacebk.com": "2019-02-27",
+      "news.tibetgroupworks.com": "2019-10-04",
+      "nslookupdns.com": "2019-10-04",
+      "outhmail.com": "2018-09-13",
+      "ppt.bodologetee.com": "2019-10-04",
+      "queryurl.com": "2018-09-13",
+      "re.queryurl.com": "2019-02-27",
+      "sm.umtt.com": "2019-10-04",
+      "sony36.com": "2019-02-27",
+      "tcpdo.net": "2019-02-27",
+      "tibetgroupworks.com": "2019-10-04",
+      "up.outhmail.com": "2019-02-27",
+      "update.newfacebk.com": "2019-02-27",
+      "update.queryurl.com": "2019-02-27",
+      "update.tcpdo.net": "2019-02-27",
+      "uvfr43p.com": "2023-09-22",
+      "uvfr4ep.com": "2023-09-25",
+      "uyghurapps.net": "2019-10-04",
+      "w3.changeip.org": "2019-02-27",
+      "w3.ezua.com": "2019-02-27",
+      "web.microsoftdefence.com": "2019-10-04",
+      "web.outlooksysm.net": "2019-10-04",
+      "webserver.servehttp.com": "2018-09-13",
+      "windowsnetwork.org": "2019-02-27",
+      "work.andphocen.com": "2019-02-27",
+      "workwifi.andphocen.com": "2019-10-04",
+      "www3.mefound.com": "2019-02-27",
+      "www5.zyns.com": "2019-02-27",
+      "yl.andphocen.com": "2019-10-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-13",
+    "latest": "2023-09-25"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "3w.tcpdo.net",
+      "admin.nslookupdns.com",
+      "adminloader.com",
+      "adminsysteminfo.com",
+      "andphocen.com",
+      "app.newfacebk.com",
+      "appupdatemoremagic.com",
+      "cdncool.com",
+      "csip6.biz",
+      "dns.cdncool.com",
+      "feed-5613.coderformylife.info",
+      "gooledriveservice.com",
+      "honor2020.ga",
+      "hwmt10.w3.ezua.com",
+      "imw100pass.imwork.net",
+      "info.adminsysteminfo.com",
+      "jackhex.md5c.com",
+      "jackhex.md5c.net",
+      "lala513.gicp.net",
+      "linkdatax.com",
+      "logitechwkgame.com",
+      "lzsps.ml",
+      "mail.queryurl.com",
+      "md.sony36.com",
+      "md5c.net",
+      "microsoftdefence.com",
+      "microsoftserve.com",
+      "mxdnsv6.com",
+      "netvovo.windowsnetwork.org",
+      "newfacebk.com",
+      "news.tibetgroupworks.com",
+      "nslookupdns.com",
+      "outhmail.com",
+      "ppt.bodologetee.com",
+      "queryurl.com",
+      "re.queryurl.com",
+      "sm.umtt.com",
+      "sony36.com",
+      "tcpdo.net",
+      "tibetgroupworks.com",
+      "up.outhmail.com",
+      "update.newfacebk.com",
+      "update.queryurl.com",
+      "update.tcpdo.net",
+      "uvfr43p.com",
+      "uvfr4ep.com",
+      "uyghurapps.net",
+      "w3.changeip.org",
+      "w3.ezua.com",
+      "web.microsoftdefence.com",
+      "web.outlooksysm.net",
+      "webserver.servehttp.com",
+      "windowsnetwork.org",
+      "work.andphocen.com",
+      "workwifi.andphocen.com",
+      "www3.mefound.com",
+      "www5.zyns.com",
+      "yl.andphocen.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PKPLUG"
+  ],
+  "references": [
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-22-v10423/980",
+    "https://otx.alienvault.com/pulse/6511d6fd63ecbfd938c3580f",
+    "https://pan-unit42.github.io/playbook_viewer/?pb=pkplug",
+    "https://unit42.paloaltonetworks.com/pkplug_chinese_cyber_espionage_group_attacking_asia/",
+    "https://unit42.paloaltonetworks.com/stately-taurus-attacks-se-asian-government/",
+    "https://unit42.paloaltonetworks.com/unsigned-dlls/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 shared indicators",
+          "kind": "infrastructure",
+          "weight": 2.0
+        }
+      ],
+      "slug": "GREENSPOT"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0129"
+    }
+  ],
+  "slug": "PKPLUG",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-25",
+      "indicators": {
+        "domain": [
+          "uvfr4ep.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/unsigned-dlls/",
+        "https://unit42.paloaltonetworks.com/stately-taurus-attacks-se-asian-government/",
+        "https://otx.alienvault.com/pulse/6511d6fd63ecbfd938c3580f",
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-22-v10423/980"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-09-22",
+      "indicators": {
+        "domain": [
+          "feed-5613.coderformylife.info",
+          "uvfr43p.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/unsigned-dlls/",
+        "https://unit42.paloaltonetworks.com/stately-taurus-attacks-se-asian-government/",
+        "https://otx.alienvault.com/pulse/6511d6fd63ecbfd938c3580f",
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2023-09-22-v10423/980"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2019-10-04",
+      "indicators": {
+        "domain": [
+          "hwmt10.w3.ezua.com",
+          "imw100pass.imwork.net",
+          "jackhex.md5c.com",
+          "lzsps.ml",
+          "news.tibetgroupworks.com",
+          "nslookupdns.com",
+          "ppt.bodologetee.com",
+          "sm.umtt.com",
+          "tibetgroupworks.com",
+          "uyghurapps.net",
+          "web.microsoftdefence.com",
+          "web.outlooksysm.net",
+          "workwifi.andphocen.com",
+          "yl.andphocen.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pkplug_chinese_cyber_espionage_group_attacking_asia/",
+        "https://pan-unit42.github.io/playbook_viewer/?pb=pkplug"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 30
+      },
+      "first_seen": "2019-02-27",
+      "indicators": {
+        "domain": [
+          "3w.tcpdo.net",
+          "adminloader.com",
+          "adminsysteminfo.com",
+          "andphocen.com",
+          "app.newfacebk.com",
+          "cdncool.com",
+          "csip6.biz",
+          "dns.cdncool.com",
+          "honor2020.ga",
+          "info.adminsysteminfo.com",
+          "lala513.gicp.net",
+          "linkdatax.com",
+          "mail.queryurl.com",
+          "md.sony36.com",
+          "md5c.net",
+          "netvovo.windowsnetwork.org",
+          "newfacebk.com",
+          "re.queryurl.com",
+          "sony36.com",
+          "tcpdo.net",
+          "up.outhmail.com",
+          "update.newfacebk.com",
+          "update.queryurl.com",
+          "update.tcpdo.net",
+          "w3.changeip.org",
+          "w3.ezua.com",
+          "windowsnetwork.org",
+          "work.andphocen.com",
+          "www3.mefound.com",
+          "www5.zyns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pkplug_chinese_cyber_espionage_group_attacking_asia/",
+        "https://pan-unit42.github.io/playbook_viewer/?pb=pkplug"
+      ],
+      "total": 30
+    },
+    {
+      "counts": {
+        "domain": 11
+      },
+      "first_seen": "2018-09-13",
+      "indicators": {
+        "domain": [
+          "admin.nslookupdns.com",
+          "appupdatemoremagic.com",
+          "gooledriveservice.com",
+          "jackhex.md5c.net",
+          "logitechwkgame.com",
+          "microsoftdefence.com",
+          "microsoftserve.com",
+          "mxdnsv6.com",
+          "outhmail.com",
+          "queryurl.com",
+          "webserver.servehttp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/pkplug_chinese_cyber_espionage_group_attacking_asia/",
+        "https://pan-unit42.github.io/playbook_viewer/?pb=pkplug"
+      ],
+      "total": 11
+    }
+  ]
+}

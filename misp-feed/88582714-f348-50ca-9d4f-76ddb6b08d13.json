@@ -1,0 +1,159 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "317f6a6c-ed9a-5ee3-802c-eff6dc1def2c",
+        "value": "bowenpres.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cc7054dc-111f-5d87-be23-8befeb5e7788",
+        "value": "bowenpress.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6281f003-9f07-5a13-9912-2b6606935d61",
+        "value": "bowenpress.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9aa47365-8658-596e-be04-52f059249fd9",
+        "value": "bowenpross.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "896e807c-74e3-5937-8222-0d917690f30f",
+        "value": "chinadagitaltimes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "42808903-04c6-5db8-b127-e9e364d5cb84",
+        "value": "datalink.one"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5f8c7ea7-0fac-5ff5-baa8-1dcd4bc391eb",
+        "value": "epochatimes.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "64243beb-2fed-554e-a75a-e6a7a3143dbf",
+        "value": "nhknews.hk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "54992bf3-6dc4-56c4-9484-4998d1fb552f",
+        "value": "rooter.tk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "4fd2be9f-8f5f-5ad3-8cec-c7a92383875d",
+        "value": "secuerserver.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e3283507-6189-59cb-a205-b73b0d725ab6",
+        "value": "tibetonline.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1eb49a68-e0f6-5a16-b35c-ad97a3ed5015",
+        "value": "vancouversun.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fb8f5aee-325c-54a7-aeed-0dd58bcca4f9",
+        "value": "vnews.hk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c7c5678a-badf-5908-877b-ae823c674d20",
+        "value": "voanews.hk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0263e876-8ee9-5ae1-9f13-fc80cee0e9ea",
+        "value": "yomiuri.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1537588681",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "cb4351d9-4391-5eda-86b0-3ae0203ade6a",
+        "value": "/asdasdasadqddd12222111.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:cdt"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: CDT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "88582714-f348-50ca-9d4f-76ddb6b08d13"
+  }
+}

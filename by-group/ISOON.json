@@ -1,0 +1,172 @@
+{
+  "aliases": [
+    "i-soon"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 13,
+    "ipv4": 5,
+    "url": 5
+  },
+  "first_seen": {
+    "domain": {
+      "acc.newyorker.cloud": "2026-01-02",
+      "account.newyorker.cloud": "2026-01-02",
+      "asiaic.org": "2026-01-02",
+      "ecoatmosphere.org": "2026-01-02",
+      "grhost.pro": "2026-01-02",
+      "heidrickjobs.com": "2026-01-02",
+      "live.newyorker.cloud": "2026-01-02",
+      "maddmail.site": "2026-01-02",
+      "mobprodetect.live": "2026-01-02",
+      "newvsrch.pro": "2026-01-02",
+      "newyorker.cloud": "2026-01-02",
+      "outlook.newyorker.cloud": "2026-01-02",
+      "ssl.newyorker.cloud": "2026-01-02"
+    },
+    "ipv4": {
+      "140.82.48.85:443": "2026-01-02",
+      "149.248.57.11:443": "2026-01-02",
+      "40.82.48.85:443": "2026-01-02",
+      "45.77.132.157:443": "2026-01-02",
+      "95.179.202.21:443": "2026-01-02"
+    },
+    "url": {
+      "http://140.82.48.85": "2026-01-02",
+      "http://149.248.57.11": "2026-01-02",
+      "http://40.82.48.85": "2026-01-02",
+      "http://45.77.132.157": "2026-01-02",
+      "http://95.179.202.21": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "acc.newyorker.cloud": "at-or-before",
+      "account.newyorker.cloud": "at-or-before",
+      "asiaic.org": "at-or-before",
+      "ecoatmosphere.org": "at-or-before",
+      "grhost.pro": "at-or-before",
+      "heidrickjobs.com": "at-or-before",
+      "live.newyorker.cloud": "at-or-before",
+      "maddmail.site": "at-or-before",
+      "mobprodetect.live": "at-or-before",
+      "newvsrch.pro": "at-or-before",
+      "newyorker.cloud": "at-or-before",
+      "outlook.newyorker.cloud": "at-or-before",
+      "ssl.newyorker.cloud": "at-or-before"
+    },
+    "ipv4": {
+      "140.82.48.85:443": "at-or-before",
+      "149.248.57.11:443": "at-or-before",
+      "40.82.48.85:443": "at-or-before",
+      "45.77.132.157:443": "at-or-before",
+      "95.179.202.21:443": "at-or-before"
+    },
+    "url": {
+      "http://140.82.48.85": "at-or-before",
+      "http://149.248.57.11": "at-or-before",
+      "http://40.82.48.85": "at-or-before",
+      "http://45.77.132.157": "at-or-before",
+      "http://95.179.202.21": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "acc.newyorker.cloud",
+      "account.newyorker.cloud",
+      "asiaic.org",
+      "ecoatmosphere.org",
+      "grhost.pro",
+      "heidrickjobs.com",
+      "live.newyorker.cloud",
+      "maddmail.site",
+      "mobprodetect.live",
+      "newvsrch.pro",
+      "newyorker.cloud",
+      "outlook.newyorker.cloud",
+      "ssl.newyorker.cloud"
+    ],
+    "ipv4": [
+      "140.82.48.85:443",
+      "149.248.57.11:443",
+      "40.82.48.85:443",
+      "45.77.132.157:443",
+      "95.179.202.21:443"
+    ],
+    "url": [
+      "http://140.82.48.85",
+      "http://149.248.57.11",
+      "http://40.82.48.85",
+      "http://45.77.132.157",
+      "http://95.179.202.21"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ISOON"
+  ],
+  "references": [
+    "https://www.justice.gov/opa/media/1391896/dl",
+    "https://www.virustotal.com/gui/ip-address/149.28.66.186/relations",
+    "https://www.virustotal.com/gui/ip-address/45.61.136.31/relations",
+    "https://x.com/craiu/status/1898365894822338798"
+  ],
+  "related": [],
+  "slug": "ISOON",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 13,
+        "ipv4": 5,
+        "url": 5
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "acc.newyorker.cloud",
+          "account.newyorker.cloud",
+          "asiaic.org",
+          "ecoatmosphere.org",
+          "grhost.pro",
+          "heidrickjobs.com",
+          "live.newyorker.cloud",
+          "maddmail.site",
+          "mobprodetect.live",
+          "newvsrch.pro",
+          "newyorker.cloud",
+          "outlook.newyorker.cloud",
+          "ssl.newyorker.cloud"
+        ],
+        "ipv4": [
+          "140.82.48.85:443",
+          "149.248.57.11:443",
+          "40.82.48.85:443",
+          "45.77.132.157:443",
+          "95.179.202.21:443"
+        ],
+        "url": [
+          "http://140.82.48.85",
+          "http://149.248.57.11",
+          "http://40.82.48.85",
+          "http://45.77.132.157",
+          "http://95.179.202.21"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/craiu/status/1898365894822338798",
+        "https://www.justice.gov/opa/media/1391896/dl",
+        "https://www.virustotal.com/gui/ip-address/149.28.66.186/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.136.31/relations"
+      ],
+      "total": 23
+    }
+  ]
+}

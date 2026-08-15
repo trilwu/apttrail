@@ -1,0 +1,69 @@
+{
+  "aliases": [
+    "snowbelt",
+    "snowglaze"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "cloudfront-021.s3.us-west-2.amazonaws.com": "2026-04-23",
+      "sad4w7h913-b4a57f9c36eb.herokuapp.com": "2026-04-23",
+      "service-page-11369-28315-outlook.s3.us-west-2.amazonaws.com": "2026-04-23",
+      "service-page-18968-2419-outlook.s3.us-west-2.amazonaws.com": "2026-04-23",
+      "service-page-25144-30466-outlook.s3.us-west-2.amazonaws.com": "2026-04-23"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-04-23",
+    "latest": "2026-04-23"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cloudfront-021.s3.us-west-2.amazonaws.com",
+      "sad4w7h913-b4a57f9c36eb.herokuapp.com",
+      "service-page-11369-28315-outlook.s3.us-west-2.amazonaws.com",
+      "service-page-18968-2419-outlook.s3.us-west-2.amazonaws.com",
+      "service-page-25144-30466-outlook.s3.us-west-2.amazonaws.com"
+    ]
+  },
+  "last_modified": "2026-04-23T17:49:53+00:00",
+  "maltrail_groups": [
+    "UNC6692"
+  ],
+  "references": [
+    "https://cloud.google.com/blog/topics/threat-intelligence/unc6692-social-engineering-custom-malware"
+  ],
+  "related": [],
+  "slug": "UNC6692",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2026-04-23",
+      "indicators": {
+        "domain": [
+          "cloudfront-021.s3.us-west-2.amazonaws.com",
+          "sad4w7h913-b4a57f9c36eb.herokuapp.com",
+          "service-page-11369-28315-outlook.s3.us-west-2.amazonaws.com",
+          "service-page-18968-2419-outlook.s3.us-west-2.amazonaws.com",
+          "service-page-25144-30466-outlook.s3.us-west-2.amazonaws.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/unc6692-social-engineering-custom-malware"
+      ],
+      "total": 5
+    }
+  ]
+}

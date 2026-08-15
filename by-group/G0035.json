@@ -1,0 +1,106 @@
+{
+  "aliases": [
+    "crouching yeti",
+    "dragonfly",
+    "iron liberty",
+    "tg-4192"
+  ],
+  "attack_id": "G0035",
+  "attack_name": "Dragonfly",
+  "attack_url": "https://attack.mitre.org/groups/G0035/",
+  "counts": {
+    "domain": 5,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "ecco0.b13x.org": "2019-11-15",
+      "kanri.rbridal.net": "2019-11-15",
+      "lite.ultralitedesigns.com": "2020-04-14",
+      "satanal.info": "2019-11-15",
+      "tureg.info": "2019-11-15"
+    },
+    "url": {
+      "http://155.207.63.4": "2020-04-14",
+      "http://51.159.28.101": "2020-04-14"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-11-15",
+    "latest": "2020-04-14"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ecco0.b13x.org",
+      "kanri.rbridal.net",
+      "lite.ultralitedesigns.com",
+      "satanal.info",
+      "tureg.info"
+    ],
+    "url": [
+      "http://155.207.63.4",
+      "http://51.159.28.101"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "ENERGETICBEAR"
+  ],
+  "references": [
+    "https://lab52.io/blog/the-geopolitical-and-potential-cyber-influence-of-russia-in-africa/",
+    "https://securelist.com/energetic-bear-crouching-yeti/85345/",
+    "https://www.virustotal.com/gui/ip-address/155.207.63.4/relations",
+    "https://www.virustotal.com/gui/ip-address/51.159.28.101/relations"
+  ],
+  "related": [],
+  "slug": "G0035",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "url": 2
+      },
+      "first_seen": "2020-04-14",
+      "indicators": {
+        "domain": [
+          "lite.ultralitedesigns.com"
+        ],
+        "url": [
+          "http://155.207.63.4",
+          "http://51.159.28.101"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/energetic-bear-crouching-yeti/85345/",
+        "https://www.virustotal.com/gui/ip-address/155.207.63.4/relations",
+        "https://www.virustotal.com/gui/ip-address/51.159.28.101/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-11-15",
+      "indicators": {
+        "domain": [
+          "ecco0.b13x.org",
+          "kanri.rbridal.net",
+          "satanal.info",
+          "tureg.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/the-geopolitical-and-potential-cyber-influence-of-russia-in-africa/"
+      ],
+      "total": 4
+    }
+  ]
+}

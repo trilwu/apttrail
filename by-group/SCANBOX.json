@@ -1,0 +1,69 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6
+  },
+  "first_seen": {
+    "domain": {
+      "bak.mailaunch.com": "2018-09-13",
+      "file.googlecaches.com": "2018-09-13",
+      "gtm.googlecaches.com": "2018-09-13",
+      "js.googlewebcache.com": "2018-09-13",
+      "owa.outlookssl.com": "2018-09-13",
+      "us-mg6.mail.yahoo.mailaunch.com": "2018-09-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-13",
+    "latest": "2018-09-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bak.mailaunch.com",
+      "file.googlecaches.com",
+      "gtm.googlecaches.com",
+      "js.googlewebcache.com",
+      "owa.outlookssl.com",
+      "us-mg6.mail.yahoo.mailaunch.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SCANBOX"
+  ],
+  "references": [
+    "http://pwc.blogs.com/files/cto-tib-20150223-01a.pdf"
+  ],
+  "related": [],
+  "slug": "SCANBOX",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2018-09-13",
+      "indicators": {
+        "domain": [
+          "bak.mailaunch.com",
+          "file.googlecaches.com",
+          "gtm.googlecaches.com",
+          "js.googlewebcache.com",
+          "owa.outlookssl.com",
+          "us-mg6.mail.yahoo.mailaunch.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://pwc.blogs.com/files/cto-tib-20150223-01a.pdf"
+      ],
+      "total": 6
+    }
+  ]
+}

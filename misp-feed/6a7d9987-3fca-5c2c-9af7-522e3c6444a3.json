@@ -1,0 +1,151 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "52ad41f0-fe7b-567d-b245-6ac79a44f8ac",
+        "value": "0523qyfw.cn"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1fbbb093-be9a-56ef-b00b-5098b973f534",
+        "value": "0523qyfw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560199919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ee6a4f1e-842c-531d-a155-211fe68313ce",
+        "value": "eodo1.000webhostapp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560199919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "082cb602-c4de-50a8-b455-f031593d002e",
+        "value": "followgho.byethost7.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560199919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "29ab8b75-dc71-59dd-a062-8f750e04c44d",
+        "value": "ink.inkboom.co.kr"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560199919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a42147ba-347b-5432-804d-8488c32f0329",
+        "value": "nid-help-pchange.atwebpages.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "014ac41f-4f39-5eef-bf52-3cb98eba4cb6",
+        "value": "nyazz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "be6d454f-db41-53e5-af35-03022e2012be",
+        "value": "one.0523qyfw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "85015f48-1255-5ac7-bcbc-dbd4422ba53b",
+        "value": "redi.nyazz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0fd3501a-920f-5be7-9caa-4eda6e697beb",
+        "value": "scrt1.nyazz.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "dbf603a0-bff0-5251-ac75-b8c4d422927a",
+        "value": "ssh.0523qyfw.cn"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "703ef74a-873e-5308-b386-08f71fba2ce7",
+        "value": "ssh.0523qyfw.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1560199919",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "874104aa-d344-50e6-bb83-d097c18738fb",
+        "value": "trydai.000webhostapp.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "295c5c83-2be7-5394-9da9-2549cc216547",
+        "value": "107.148.61.127:8084"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1730296687",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ef81e202-42eb-5c95-8871-9e4f3ea774f5",
+        "value": "154.19.200.133:8087"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:golddragon"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: GOLDDRAGON",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "6a7d9987-3fca-5c2c-9af7-522e3c6444a3"
+  }
+}

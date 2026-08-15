@@ -1,0 +1,72 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 7
+  },
+  "first_seen": {
+    "domain": {
+      "glb.it-desktop.com": "2018-09-04",
+      "globalprint-us.com": "2018-09-04",
+      "hi.getgo2.com": "2018-09-04",
+      "intranetwabcam.com": "2018-09-04",
+      "local.it-desktop.com": "2018-09-04",
+      "login.access-mail.com": "2018-09-04",
+      "ns1.logitech-usa.com": "2018-09-04"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-04",
+    "latest": "2018-09-04"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "glb.it-desktop.com",
+      "globalprint-us.com",
+      "hi.getgo2.com",
+      "intranetwabcam.com",
+      "local.it-desktop.com",
+      "login.access-mail.com",
+      "ns1.logitech-usa.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "WEBKY"
+  ],
+  "references": [
+    "https://researchcenter.paloaltonetworks.com/2016/05/unit42-new-wekby-attacks-use-dns-requests-as-command-and-control-mechanism/"
+  ],
+  "related": [],
+  "slug": "WEBKY",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2018-09-04",
+      "indicators": {
+        "domain": [
+          "glb.it-desktop.com",
+          "globalprint-us.com",
+          "hi.getgo2.com",
+          "intranetwabcam.com",
+          "local.it-desktop.com",
+          "login.access-mail.com",
+          "ns1.logitech-usa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2016/05/unit42-new-wekby-attacks-use-dns-requests-as-command-and-control-mechanism/"
+      ],
+      "total": 7
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1672949126",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f3f33fb4-ba9f-57e5-9a2c-ac65ef919850",
+        "value": "manager.surro.am"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672949126",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a43ae538-9881-5b5c-803f-023f746e5223",
+        "value": "surro.am"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1672949126",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "3fa3e61e-49fe-522b-9844-555b2076937a",
+        "value": "194.67.209.186:443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:unc4210"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Turla - G0010\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Turla (G0010) - Maltrail group UNC4210",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "a394e5a7-76d3-5e42-97f6-39ac70b5b70f"
+  }
+}

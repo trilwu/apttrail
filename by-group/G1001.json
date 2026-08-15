@@ -1,0 +1,643 @@
+{
+  "aliases": [
+    "danbot",
+    "hexane",
+    "lyceum"
+  ],
+  "attack_id": "G1001",
+  "attack_name": "HEXANE",
+  "attack_url": "https://attack.mitre.org/groups/G1001/",
+  "counts": {
+    "domain": 45,
+    "ipv4": 7
+  },
+  "first_seen": {
+    "domain": {
+      "akastatus.com": "2021-06-08",
+      "bsolutions-cloude.com": "2019-08-27",
+      "centosupdatecdn.com": "2021-10-20",
+      "cloudmsn.net": "2021-10-20",
+      "cyberclub.one": "2022-03-15",
+      "cybersecnet.co.za": "2019-08-27",
+      "cybersecnet.org": "2019-08-27",
+      "defenderlive.com": "2021-10-20",
+      "defenderstatus.com": "2022-01-15",
+      "digitalmarketingnews.net": "2021-10-20",
+      "dmgagency.net": "2021-10-20",
+      "dnscachecloud.com": "2019-08-27",
+      "dnscatalog.net": "2021-10-20",
+      "dnscdn.org": "2021-10-20",
+      "dnscloudservice.com": "2019-08-27",
+      "dnsstatus.org": "2021-10-20",
+      "excsrvcdn.com": "2019-08-27",
+      "he-express-marketing.com": "2022-08-29",
+      "hpesystem.com": "2021-10-20",
+      "jobschippc.com": "2022-01-15",
+      "livecdn.com": "2021-10-20",
+      "main.download": "2022-06-02",
+      "mastertape.org": "2021-10-20",
+      "microsftonline.net": "2021-10-20",
+      "msnnews.org": "2021-10-20",
+      "news-reporter.xyz": "2022-04-05",
+      "news-spot.live": "2022-04-05",
+      "news-spot.xyz": "2022-04-05",
+      "online-analytic.com": "2019-08-27",
+      "onlineoutlook.net": "2021-10-20",
+      "opendnscloud.com": "2019-08-27",
+      "planet-informer.me": "2022-06-25",
+      "science-news.live": "2022-03-15",
+      "securednsservice.net": "2021-10-20",
+      "softwareagjobs.com": "2022-01-15",
+      "stgeorgebankers.com": "2021-03-18",
+      "sysadminnews.info": "2021-10-20",
+      "uctpostgraduate.com": "2021-10-20",
+      "updatecdn.net": "2021-10-20",
+      "web-statistics.info": "2019-08-27",
+      "web-traffic.info": "2019-08-27",
+      "webmaster-team.com": "2021-10-20",
+      "windowsupdatecdn.com": "2021-10-20",
+      "wsuslink.com": "2021-10-20",
+      "zonestatistic.com": "2022-01-15"
+    },
+    "ipv4": {
+      "104.249.26.60:5512": "2022-03-15",
+      "185.243.112.136:5512": "2022-04-05",
+      "185.243.112.136:6501": "2022-08-29",
+      "85.206.175.199:53": "2022-06-10",
+      "89.39.149.18:3444": "2022-06-25",
+      "89.39.149.18:6500": "2022-06-16",
+      "89.39.149.18:6501": "2022-06-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-08-27",
+    "latest": "2022-08-29"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "akastatus.com",
+      "bsolutions-cloude.com",
+      "centosupdatecdn.com",
+      "cloudmsn.net",
+      "cyberclub.one",
+      "cybersecnet.co.za",
+      "cybersecnet.org",
+      "defenderlive.com",
+      "defenderstatus.com",
+      "digitalmarketingnews.net",
+      "dmgagency.net",
+      "dnscachecloud.com",
+      "dnscatalog.net",
+      "dnscdn.org",
+      "dnscloudservice.com",
+      "dnsstatus.org",
+      "excsrvcdn.com",
+      "he-express-marketing.com",
+      "hpesystem.com",
+      "jobschippc.com",
+      "livecdn.com",
+      "main.download",
+      "mastertape.org",
+      "microsftonline.net",
+      "msnnews.org",
+      "news-reporter.xyz",
+      "news-spot.live",
+      "news-spot.xyz",
+      "online-analytic.com",
+      "onlineoutlook.net",
+      "opendnscloud.com",
+      "planet-informer.me",
+      "science-news.live",
+      "securednsservice.net",
+      "softwareagjobs.com",
+      "stgeorgebankers.com",
+      "sysadminnews.info",
+      "uctpostgraduate.com",
+      "updatecdn.net",
+      "web-statistics.info",
+      "web-traffic.info",
+      "webmaster-team.com",
+      "windowsupdatecdn.com",
+      "wsuslink.com",
+      "zonestatistic.com"
+    ],
+    "ipv4": [
+      "104.249.26.60:5512",
+      "185.243.112.136:5512",
+      "185.243.112.136:6501",
+      "85.206.175.199:53",
+      "89.39.149.18:3444",
+      "89.39.149.18:6500",
+      "89.39.149.18:6501"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "LYCEUM"
+  ],
+  "references": [
+    "https://medium.com/@Manu_De_Lucia/exploding-the-danbot-code-to-hunt-for-hexanes-cyber-weapon-3d466775f480",
+    "https://otx.alienvault.com/pulse/5d656065aaa9ac9b19ef75c2",
+    "https://otx.alienvault.com/pulse/611cebb137fe5c6475b044f5",
+    "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+    "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+    "https://otx.alienvault.com/pulse/62b598f4ee9576cd17e3ad87",
+    "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+    "https://twitter.com/Manu_De_Lucia/status/1208388233731678208",
+    "https://twitter.com/RedDrip7/status/1537389704374431744",
+    "https://twitter.com/RedDrip7/status/1564090684612952064",
+    "https://twitter.com/blackorbird/status/1166345000826724352",
+    "https://twitter.com/fr0s7_/status/1503678175284449288",
+    "https://twitter.com/h2jazi/status/1372543666909220873",
+    "https://twitter.com/k3yp0d/status/1503756002738515969",
+    "https://twitter.com/sS55752750/status/1540353519974334467",
+    "https://vblocalhost.com/uploads/VB2021-Kayal-etal.pdf",
+    "https://www.clearskysec.com/wp-content/uploads/2021/08/Siamesekitten.pdf",
+    "https://www.clearskysec.com/wp-content/uploads/2022/06/Lyceum-suicide-drone-23.6.pdf",
+    "https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign",
+    "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection",
+    "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+    "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+    "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+    "https://www.virustotal.com/gui/file/11c52732d7fde12f5f4c6431f8be876ffd73acdd725c4b908b257be1b007a290/detection",
+    "https://www.virustotal.com/gui/file/1e6d7fa1c7a17d4bc9fc939132347ed9d4df4628bfcaa7539d757218ed0b87ff/detection",
+    "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+    "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+    "https://www.virustotal.com/gui/file/4e70df688e8d824008cc08e1d05f84bb8eccef1856ecabcbf0228efa87adb129/detection",
+    "https://www.virustotal.com/gui/file/50e643e06c1fd6b334668439c1fb734c9d42707f80af2edbcb0e5541513546fe/detection",
+    "https://www.virustotal.com/gui/file/5f0e0f0abc28ccc1911533fd035e984b4183eb9838bb41c1f6589de84a617ca6/detection",
+    "https://www.virustotal.com/gui/file/8883bbd14017d0946aefd2c6fbc7b2c9b0b6b2439f96125bf4ae1c3d314a03c7/detection",
+    "https://www.virustotal.com/gui/file/8bd23bbab513e03ea1eb2adae09f56b08c53cacd2a3e8134ded5ef8a741a12a5/detection",
+    "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+    "https://www.virustotal.com/gui/file/9eca74b1fef65ac41d28f7ada626eec1e1a9fe8b9285943d72d43b87e81f8a7e/detection",
+    "https://www.virustotal.com/gui/file/9ed939f56eb04fb40c9a0ce6f3a4fe8045619eeab1d0d378a2431578c0a2ca23/detection",
+    "https://www.virustotal.com/gui/file/a02db59312f14aa8208c462e0e5b3d3de33dd3018dae150417daffc2216903da/detection",
+    "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+    "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+    "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+    "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+    "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+    "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+    "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+    "https://www.virustotal.com/gui/ip-address/89.39.149.19/relations",
+    "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0049"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0090"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0095"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0121"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0034"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares PoshC2",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0064"
+    }
+  ],
+  "slug": "G1001",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2022-08-29",
+      "indicators": {
+        "domain": [
+          "he-express-marketing.com"
+        ],
+        "ipv4": [
+          "185.243.112.136:6501"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1564090684612952064",
+        "https://www.virustotal.com/gui/file/1e6d7fa1c7a17d4bc9fc939132347ed9d4df4628bfcaa7539d757218ed0b87ff/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "domain": [
+          "planet-informer.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.clearskysec.com/wp-content/uploads/2022/06/Lyceum-suicide-drone-23.6.pdf",
+        "https://otx.alienvault.com/pulse/62b598f4ee9576cd17e3ad87",
+        "https://www.virustotal.com/gui/ip-address/89.39.149.19/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-06-25",
+      "indicators": {
+        "ipv4": [
+          "89.39.149.18:3444"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/sS55752750/status/1540353519974334467"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2022-06-16",
+      "indicators": {
+        "ipv4": [
+          "89.39.149.18:6500",
+          "89.39.149.18:6501"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1537389704374431744",
+        "https://www.virustotal.com/gui/file/8883bbd14017d0946aefd2c6fbc7b2c9b0b6b2439f96125bf4ae1c3d314a03c7/detection",
+        "https://www.virustotal.com/gui/file/50e643e06c1fd6b334668439c1fb734c9d42707f80af2edbcb0e5541513546fe/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-06-10",
+      "indicators": {
+        "ipv4": [
+          "85.206.175.199:53"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+        "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor",
+        "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+        "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+        "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+        "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+        "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+        "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+        "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+        "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+        "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+        "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+        "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+        "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+        "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+        "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+        "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-06-02",
+      "indicators": {
+        "domain": [
+          "main.download"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+        "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor",
+        "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+        "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+        "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+        "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+        "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+        "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+        "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+        "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+        "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+        "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+        "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+        "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+        "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+        "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+        "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "ipv4": 1
+      },
+      "first_seen": "2022-04-05",
+      "indicators": {
+        "domain": [
+          "news-reporter.xyz",
+          "news-spot.live",
+          "news-spot.xyz"
+        ],
+        "ipv4": [
+          "185.243.112.136:5512"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+        "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor",
+        "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+        "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+        "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+        "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+        "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+        "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+        "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+        "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+        "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+        "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+        "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+        "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+        "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+        "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+        "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2022-03-15",
+      "indicators": {
+        "ipv4": [
+          "104.249.26.60:5512"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1503756002738515969",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+        "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+        "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor",
+        "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+        "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+        "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+        "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+        "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+        "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+        "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+        "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+        "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+        "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+        "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+        "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+        "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+        "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+        "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-15",
+      "indicators": {
+        "domain": [
+          "science-news.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/k3yp0d/status/1503756002738515969",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-03-15",
+      "indicators": {
+        "domain": [
+          "cyberclub.one"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/fr0s7_/status/1503678175284449288",
+        "https://www.virustotal.com/gui/file/5f0e0f0abc28ccc1911533fd035e984b4183eb9838bb41c1f6589de84a617ca6/detection",
+        "https://research.checkpoint.com/2022/state-sponsored-attack-groups-capitalise-on-russia-ukraine-war-for-cyber-espionage/",
+        "https://www.zscaler.com/blogs/security-research/lyceum-net-dns-backdoor",
+        "https://otx.alienvault.com/pulse/624c29baad734a210134b02c",
+        "https://otx.alienvault.com/pulse/6298718ccb0c8c00f0485af3",
+        "https://www.virustotal.com/gui/ip-address/85.206.175.201/relations",
+        "https://www.virustotal.com/gui/file/0e06aa02a69b8efc5c38753849e325c920aaae90c17f50f602257041589ad366/detection",
+        "https://www.virustotal.com/gui/file/e8bb67e80203e1996c4098d83667998e7641194347ca6ec52070b58f5d3d2254/detection",
+        "https://www.virustotal.com/gui/file/e3d375744e9e03c6248cc1c4770c57dedde36f4e2ee1a3e4f04e7218ff568354/detection",
+        "https://www.virustotal.com/gui/file/b668c7308223885f7875b02de2c924bb4456ff2040129c71ae5853a63f824f16/detection",
+        "https://www.virustotal.com/gui/file/a9f9e5a30cc858dc135ec428cdd68cb06143732e5c62c4dc4b359c8abc11d74b/detection",
+        "https://www.virustotal.com/gui/file/4d05bef5407ca33b133ff9ca7f1686bc2200e0a3c3af8eec3a164cd86861532b/detection",
+        "https://www.virustotal.com/gui/file/431900772fde6905031b35077072d694d957b0ce27c3592e10686558843d8b8d/detection",
+        "https://www.virustotal.com/gui/file/10ac0884f1b53c3f42d97fd78b17af7ea4397cb6d0222b357c8180733f8165e6/detection",
+        "https://www.virustotal.com/gui/file/fcd1f79cec4de354b05cac1d606865d1896db086e715c88ec0c6915884588579/detection",
+        "https://www.virustotal.com/gui/file/a8829144273332032b5527e41a22cce7f8473206bb22e22c479bfc0b38c80d9b/detection",
+        "https://www.virustotal.com/gui/file/91100c15dbd7ce47fc8598ef621181916080860f8f6c5663dc232e3843216cd2/detection",
+        "https://www.virustotal.com/gui/file/0a43911679e3ad25638d04d1f4b000a4be9ba8f93aa46b7860f9309991d18df8/detection",
+        "https://www.virustotal.com/gui/file/029e41b95553b0d2e6254a52b78630652ce11edeac12d54bca38e9e25b2420d8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-01-15",
+      "indicators": {
+        "domain": [
+          "defenderstatus.com",
+          "jobschippc.com",
+          "softwareagjobs.com",
+          "zonestatistic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.clearskysec.com/wp-content/uploads/2021/08/Siamesekitten.pdf",
+        "https://otx.alienvault.com/pulse/611cebb137fe5c6475b044f5"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 21
+      },
+      "first_seen": "2021-10-20",
+      "indicators": {
+        "domain": [
+          "centosupdatecdn.com",
+          "cloudmsn.net",
+          "defenderlive.com",
+          "digitalmarketingnews.net",
+          "dmgagency.net",
+          "dnscatalog.net",
+          "dnscdn.org",
+          "dnsstatus.org",
+          "hpesystem.com",
+          "livecdn.com",
+          "mastertape.org",
+          "microsftonline.net",
+          "msnnews.org",
+          "onlineoutlook.net",
+          "securednsservice.net",
+          "sysadminnews.info",
+          "uctpostgraduate.com",
+          "updatecdn.net",
+          "webmaster-team.com",
+          "windowsupdatecdn.com",
+          "wsuslink.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2021-Kayal-etal.pdf"
+      ],
+      "total": 21
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-06-08",
+      "indicators": {
+        "domain": [
+          "akastatus.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://vblocalhost.com/uploads/VB2021-Kayal-etal.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-18",
+      "indicators": {
+        "domain": [
+          "stgeorgebankers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1372543666909220873",
+        "https://www.virustotal.com/gui/file/8bd23bbab513e03ea1eb2adae09f56b08c53cacd2a3e8134ded5ef8a741a12a5/detection",
+        "https://www.virustotal.com/gui/file/4e70df688e8d824008cc08e1d05f84bb8eccef1856ecabcbf0228efa87adb129/detection",
+        "https://www.virustotal.com/gui/file/9ed939f56eb04fb40c9a0ce6f3a4fe8045619eeab1d0d378a2431578c0a2ca23/detection",
+        "https://www.virustotal.com/gui/file/9eca74b1fef65ac41d28f7ada626eec1e1a9fe8b9285943d72d43b87e81f8a7e/detection",
+        "https://www.virustotal.com/gui/file/a02db59312f14aa8208c462e0e5b3d3de33dd3018dae150417daffc2216903da/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-08-27",
+      "indicators": {
+        "domain": [
+          "bsolutions-cloude.com",
+          "cybersecnet.co.za",
+          "cybersecnet.org",
+          "dnscachecloud.com",
+          "dnscloudservice.com",
+          "excsrvcdn.com",
+          "online-analytic.com",
+          "opendnscloud.com",
+          "web-statistics.info",
+          "web-traffic.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1166345000826724352",
+        "https://www.secureworks.com/blog/lyceum-takes-center-stage-in-middle-east-campaign",
+        "https://otx.alienvault.com/pulse/5d656065aaa9ac9b19ef75c2",
+        "https://twitter.com/Manu_De_Lucia/status/1208388233731678208",
+        "https://medium.com/@Manu_De_Lucia/exploding-the-danbot-code-to-hunt-for-hexanes-cyber-weapon-3d466775f480",
+        "https://www.virustotal.com/gui/file/11c52732d7fde12f5f4c6431f8be876ffd73acdd725c4b908b257be1b007a290/detection"
+      ],
+      "total": 10
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "aliases": [
+    "angry spark"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 18,
+    "url_path": 12
+  },
+  "first_seen": {
+    "domain": {
+      "ad43-nxs.com": "2026-07-29",
+      "addatamarket.net": "2023-06-01",
+      "ans7tv.net": "2023-06-01",
+      "anstv.net": "2023-06-01",
+      "backuprabbit.com": "2023-06-01",
+      "businessvideonews.com": "2023-06-01",
+      "cloudsponcer.com": "2023-06-01",
+      "datamarketplace.net": "2023-06-01",
+      "growthtransport.com": "2023-06-01",
+      "mobilegamerstats.com": "2023-06-01",
+      "pick.storewebzone.net": "2026-07-29",
+      "s13035516.server-sys.com": "2026-07-29",
+      "snoweeanalytics.com": "2023-06-01",
+      "tagclick-cdn.com": "2023-06-01",
+      "topographyupdates.com": "2023-06-01",
+      "unlimitedteacup.com": "2023-06-01",
+      "virtuallaughing.com": "2023-06-01",
+      "web-trackers.com": "2023-06-01"
+    },
+    "url_path": {
+      "/KhzbPFTj/": "2026-07-29",
+      "/KhzbPFTj/6515/gbLJ8y_Ac7e.php": "2026-07-29",
+      "/asb2dz_1dd4.php": "2026-07-29",
+      "/gbLJ8y_Ac7e.php": "2026-07-29",
+      "/irC6Zn_8FCd.php": "2026-07-29",
+      "/myAVDAnA/": "2026-07-29",
+      "/myAVDAnA/5466/irC6Zn_8FCd.php": "2026-07-29",
+      "/prod/KhzbPFTj/6515/gbLJ8y_Ac7e.php": "2026-07-29",
+      "/prod/myAVDAnA/5466/irC6Zn_8FCd.php": "2026-07-29",
+      "/prod/vUcLWuZF/8363/asb2dz_1dd4.php": "2026-07-29",
+      "/vUcLWuZF/": "2026-07-29",
+      "/vUcLWuZF/8363/asb2dz_1dd4.php": "2026-07-29"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-06-01",
+    "latest": "2026-07-29"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ad43-nxs.com",
+      "addatamarket.net",
+      "ans7tv.net",
+      "anstv.net",
+      "backuprabbit.com",
+      "businessvideonews.com",
+      "cloudsponcer.com",
+      "datamarketplace.net",
+      "growthtransport.com",
+      "mobilegamerstats.com",
+      "pick.storewebzone.net",
+      "s13035516.server-sys.com",
+      "snoweeanalytics.com",
+      "tagclick-cdn.com",
+      "topographyupdates.com",
+      "unlimitedteacup.com",
+      "virtuallaughing.com",
+      "web-trackers.com"
+    ],
+    "url_path": [
+      "/KhzbPFTj/",
+      "/KhzbPFTj/6515/gbLJ8y_Ac7e.php",
+      "/asb2dz_1dd4.php",
+      "/gbLJ8y_Ac7e.php",
+      "/irC6Zn_8FCd.php",
+      "/myAVDAnA/",
+      "/myAVDAnA/5466/irC6Zn_8FCd.php",
+      "/prod/KhzbPFTj/6515/gbLJ8y_Ac7e.php",
+      "/prod/myAVDAnA/5466/irC6Zn_8FCd.php",
+      "/prod/vUcLWuZF/8363/asb2dz_1dd4.php",
+      "/vUcLWuZF/",
+      "/vUcLWuZF/8363/asb2dz_1dd4.php"
+    ]
+  },
+  "last_modified": "2026-07-29T15:42:18+00:00",
+  "maltrail_groups": [
+    "TRIANGULATION"
+  ],
+  "references": [
+    "https://medium.com/@billmarczak/an-angry-spark-or-a-triangle-in-disguise-ac32852a1be3",
+    "https://securelist.com/operation-triangulation/109842/",
+    "https://www.gendigital.com/blog/insights/research/chasing-an-angry-spark",
+    "https://www.virustotal.com/gui/ip-address/185.151.31.6/relations",
+    "https://x.com/blackorbird/status/2082028695909449873"
+  ],
+  "related": [],
+  "slug": "TRIANGULATION",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3,
+        "url_path": 12
+      },
+      "first_seen": "2026-07-29",
+      "indicators": {
+        "domain": [
+          "ad43-nxs.com",
+          "pick.storewebzone.net",
+          "s13035516.server-sys.com"
+        ],
+        "url_path": [
+          "/KhzbPFTj/",
+          "/KhzbPFTj/6515/gbLJ8y_Ac7e.php",
+          "/asb2dz_1dd4.php",
+          "/gbLJ8y_Ac7e.php",
+          "/irC6Zn_8FCd.php",
+          "/myAVDAnA/",
+          "/myAVDAnA/5466/irC6Zn_8FCd.php",
+          "/prod/KhzbPFTj/6515/gbLJ8y_Ac7e.php",
+          "/prod/myAVDAnA/5466/irC6Zn_8FCd.php",
+          "/prod/vUcLWuZF/8363/asb2dz_1dd4.php",
+          "/vUcLWuZF/",
+          "/vUcLWuZF/8363/asb2dz_1dd4.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/2082028695909449873",
+        "https://www.virustotal.com/gui/ip-address/185.151.31.6/relations",
+        "https://www.gendigital.com/blog/insights/research/chasing-an-angry-spark",
+        "https://medium.com/@billmarczak/an-angry-spark-or-a-triangle-in-disguise-ac32852a1be3"
+      ],
+      "total": 15
+    },
+    {
+      "counts": {
+        "domain": 15
+      },
+      "first_seen": "2023-06-01",
+      "indicators": {
+        "domain": [
+          "addatamarket.net",
+          "ans7tv.net",
+          "anstv.net",
+          "backuprabbit.com",
+          "businessvideonews.com",
+          "cloudsponcer.com",
+          "datamarketplace.net",
+          "growthtransport.com",
+          "mobilegamerstats.com",
+          "snoweeanalytics.com",
+          "tagclick-cdn.com",
+          "topographyupdates.com",
+          "unlimitedteacup.com",
+          "virtuallaughing.com",
+          "web-trackers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/operation-triangulation/109842/"
+      ],
+      "total": 15
+    }
+  ]
+}

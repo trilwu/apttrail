@@ -1,0 +1,123 @@
+{
+  "aliases": [
+    "apt-c-48"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6,
+    "ipv4": 1,
+    "url_path": 3
+  },
+  "first_seen": {
+    "domain": {
+      "efb.recume.ink": "2026-06-19",
+      "klp.recume.ink": "2026-06-19",
+      "mnb.recume.ink": "2026-06-19",
+      "panbaiclu.com": "2024-11-26",
+      "recume.ink": "2026-06-19",
+      "vpn616865750.softether.net": "2024-11-26"
+    },
+    "ipv4": {
+      "185.243.112.142:443": "2026-06-19"
+    },
+    "url_path": {
+      "/ldhifwdgfjdbcu/": "2026-06-19",
+      "/ldhifwdgfjdbcu/qbjhwgf/": "2026-06-19",
+      "/qbjhwgf/": "2026-06-19"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-11-26",
+    "latest": "2026-06-19"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "efb.recume.ink",
+      "klp.recume.ink",
+      "mnb.recume.ink",
+      "panbaiclu.com",
+      "recume.ink",
+      "vpn616865750.softether.net"
+    ],
+    "ipv4": [
+      "185.243.112.142:443"
+    ],
+    "url_path": [
+      "/ldhifwdgfjdbcu/",
+      "/ldhifwdgfjdbcu/qbjhwgf/",
+      "/qbjhwgf/"
+    ]
+  },
+  "last_modified": "2026-06-19T10:57:49+00:00",
+  "maltrail_groups": [
+    "48"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=b0caff7b71c1e189a304b3420d6315c34af4476777845cfc95fde03f9a5b1d1a&type=hash&ref_id=316ceb33ab1#tab=host_pairs",
+    "https://mp.weixin.qq.com/s/0aCqF4Qvi8sb8d6W3yxWbg",
+    "https://mp.weixin.qq.com/s/Xb8bEZMV3FHC1O6lWt-4pg",
+    "https://x.com/blackorbird/status/1861348202156564993",
+    "https://x.com/blackorbird/status/2067395589197951117"
+  ],
+  "related": [],
+  "slug": "48",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "ipv4": 1,
+        "url_path": 3
+      },
+      "first_seen": "2026-06-19",
+      "indicators": {
+        "domain": [
+          "efb.recume.ink",
+          "klp.recume.ink",
+          "mnb.recume.ink",
+          "recume.ink"
+        ],
+        "ipv4": [
+          "185.243.112.142:443"
+        ],
+        "url_path": [
+          "/ldhifwdgfjdbcu/",
+          "/ldhifwdgfjdbcu/qbjhwgf/",
+          "/qbjhwgf/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/2067395589197951117",
+        "https://mp.weixin.qq.com/s/0aCqF4Qvi8sb8d6W3yxWbg"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-11-26",
+      "indicators": {
+        "domain": [
+          "panbaiclu.com",
+          "vpn616865750.softether.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1861348202156564993",
+        "https://mp.weixin.qq.com/s/Xb8bEZMV3FHC1O6lWt-4pg",
+        "https://app.validin.com/detail?find=b0caff7b71c1e189a304b3420d6315c34af4476777845cfc95fde03f9a5b1d1a&type=hash&ref_id=316ceb33ab1#tab=host_pairs"
+      ],
+      "total": 2
+    }
+  ]
+}

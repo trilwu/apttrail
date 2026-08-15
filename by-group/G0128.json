@@ -1,0 +1,230 @@
+{
+  "aliases": [
+    "apt-31",
+    "bronze vinewood",
+    "zirconium"
+  ],
+  "attack_id": "G0128",
+  "attack_name": "ZIRCONIUM",
+  "attack_url": "https://attack.mitre.org/groups/G0128/",
+  "counts": {
+    "domain": 24,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "api.flushcdn.com": "2021-08-03",
+      "api.hostupoeui.com": "2021-08-03",
+      "api.last-key.com": "2021-12-15",
+      "be-government.com": "2021-08-03",
+      "cdn.microsoft-official.com": "2022-04-30",
+      "const.be-government.com": "2021-08-03",
+      "drmtake.tk": "2021-08-03",
+      "edgecloudc.com": "2021-08-03",
+      "flushcdn.com": "2021-08-03",
+      "gitcloudcache.com": "2021-08-03",
+      "hostupoeui.com": "2021-08-03",
+      "inst.rsnet-devel.com": "2021-08-03",
+      "intranet-rsnet.com": "2022-04-30",
+      "last-key.com": "2021-12-15",
+      "microsoft-products.com": "2019-05-18",
+      "office.microsoft-products.com": "2022-04-30",
+      "offline-microsoft.com": "2022-04-30",
+      "p1.offline-microsoft.com": "2022-04-30",
+      "portal.intranet-rsnet.com": "2022-04-30",
+      "portal.super-encrypt.com": "2022-04-30",
+      "rsnet-devel.com": "2021-08-03",
+      "super-encrypt.com": "2022-04-30",
+      "wshnews.com": "2020-07-02",
+      "yandexpro.net": "2022-08-05"
+    },
+    "ipv4": {
+      "20.11.11.67:443": "2021-08-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-05-18",
+    "latest": "2022-08-05"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "api.flushcdn.com",
+      "api.hostupoeui.com",
+      "api.last-key.com",
+      "be-government.com",
+      "cdn.microsoft-official.com",
+      "const.be-government.com",
+      "drmtake.tk",
+      "edgecloudc.com",
+      "flushcdn.com",
+      "gitcloudcache.com",
+      "hostupoeui.com",
+      "inst.rsnet-devel.com",
+      "intranet-rsnet.com",
+      "last-key.com",
+      "microsoft-products.com",
+      "office.microsoft-products.com",
+      "offline-microsoft.com",
+      "p1.offline-microsoft.com",
+      "portal.intranet-rsnet.com",
+      "portal.super-encrypt.com",
+      "rsnet-devel.com",
+      "super-encrypt.com",
+      "wshnews.com",
+      "yandexpro.net"
+    ],
+    "ipv4": [
+      "20.11.11.67:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "JUDGMENTPANDA"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/610a40dee36aae4fcd35e9cf",
+    "https://twitter.com/h2jazi/status/1519769353297747970",
+    "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-013.pdf",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt31-cloud-attacks/",
+    "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt31-new-attacks/",
+    "https://www.secureworks.com/research/bronz-vinewood-uses-hanaloader-to-target-government-supply-chain",
+    "https://www.virustotal.com/gui/file/33f136069d7c3a030b2e0738a5ee80d442dee1a202f6937121fa4e92a775fead/detection",
+    "https://www.virustotal.com/gui/file/c4343d5a53495095cf0d44c308c2bb6ad1a10ccf97aef62e49ae03c27d980c5d/detection",
+    "https://www.virustotal.com/gui/file/efdbb19fb65bcf5c4a8feb3eab784682d01f3e75f711674e4d469d4dfe4a21f3/detection",
+    "https://www.virustotal.com/gui/ip-address/31.192.107.152/relations"
+  ],
+  "related": [],
+  "slug": "G0128",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-08-05",
+      "indicators": {
+        "domain": [
+          "yandexpro.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt31-cloud-attacks/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "domain": [
+          "cdn.microsoft-official.com",
+          "intranet-rsnet.com",
+          "office.microsoft-products.com",
+          "offline-microsoft.com",
+          "p1.offline-microsoft.com",
+          "portal.intranet-rsnet.com",
+          "portal.super-encrypt.com",
+          "super-encrypt.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1519769353297747970",
+        "https://www.virustotal.com/gui/ip-address/31.192.107.152/relations",
+        "https://www.virustotal.com/gui/file/c4343d5a53495095cf0d44c308c2bb6ad1a10ccf97aef62e49ae03c27d980c5d/detection"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-15",
+      "indicators": {
+        "domain": [
+          "api.last-key.com",
+          "last-key.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cert.ssi.gouv.fr/uploads/CERTFR-2021-CTI-013.pdf"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 11,
+        "ipv4": 1
+      },
+      "first_seen": "2021-08-03",
+      "indicators": {
+        "domain": [
+          "api.flushcdn.com",
+          "api.hostupoeui.com",
+          "be-government.com",
+          "const.be-government.com",
+          "drmtake.tk",
+          "edgecloudc.com",
+          "flushcdn.com",
+          "gitcloudcache.com",
+          "hostupoeui.com",
+          "inst.rsnet-devel.com",
+          "rsnet-devel.com"
+        ],
+        "ipv4": [
+          "20.11.11.67:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/apt31-new-attacks/",
+        "https://otx.alienvault.com/pulse/610a40dee36aae4fcd35e9cf",
+        "https://www.virustotal.com/gui/file/33f136069d7c3a030b2e0738a5ee80d442dee1a202f6937121fa4e92a775fead/detection",
+        "https://www.virustotal.com/gui/file/efdbb19fb65bcf5c4a8feb3eab784682d01f3e75f711674e4d469d4dfe4a21f3/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-07-02",
+      "indicators": {
+        "domain": [
+          "wshnews.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.secureworks.com/research/bronz-vinewood-uses-hanaloader-to-target-government-supply-chain"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-18",
+      "indicators": {
+        "domain": [
+          "microsoft-products.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h2jazi/status/1519769353297747970",
+        "https://www.virustotal.com/gui/ip-address/31.192.107.152/relations",
+        "https://www.virustotal.com/gui/file/c4343d5a53495095cf0d44c308c2bb6ad1a10ccf97aef62e49ae03c27d980c5d/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

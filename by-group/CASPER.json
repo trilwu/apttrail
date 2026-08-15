@@ -1,0 +1,54 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "url": 1
+  },
+  "first_seen": {
+    "url": {
+      "jpic.gov.sy/css/images/_cgi/": "2015-03-18"
+    }
+  },
+  "first_seen_precision": {
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2015-03-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "url": [
+      "jpic.gov.sy/css/images/_cgi/"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CASPER"
+  ],
+  "references": [
+    "http://www.welivesecurity.com/2015/03/05/casper-malware-babar-bunny-another-espionage-cartoon/"
+  ],
+  "related": [],
+  "slug": "CASPER",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "url": [
+          "jpic.gov.sy/css/images/_cgi/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.welivesecurity.com/2015/03/05/casper-malware-babar-bunny-another-espionage-cartoon/"
+      ],
+      "total": 1
+    }
+  ]
+}

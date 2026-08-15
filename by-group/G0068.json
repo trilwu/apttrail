@@ -1,0 +1,81 @@
+{
+  "aliases": [],
+  "attack_id": "G0068",
+  "attack_name": "PLATINUM",
+  "attack_url": "https://attack.mitre.org/groups/G0068/",
+  "counts": {
+    "domain": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "happiness.freevar.com": "2019-06-07"
+    },
+    "url": {
+      "http://70.39.115.196": "2019-11-08"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-06-07",
+    "latest": "2019-11-08"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "happiness.freevar.com"
+    ],
+    "url": [
+      "http://70.39.115.196"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PLATINUM"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5cf7ccd8e9e95f3f24518a6a",
+    "https://securelist.com/platinum-is-back/91135/",
+    "https://securelist.com/titanium-the-platinum-group-strikes-again/94961/"
+  ],
+  "related": [],
+  "slug": "G0068",
+  "timeline": [
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-11-08",
+      "indicators": {
+        "url": [
+          "http://70.39.115.196"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/titanium-the-platinum-group-strikes-again/94961/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-07",
+      "indicators": {
+        "domain": [
+          "happiness.freevar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/platinum-is-back/91135/",
+        "https://otx.alienvault.com/pulse/5cf7ccd8e9e95f3f24518a6a"
+      ],
+      "total": 1
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 9
+  },
+  "first_seen": {
+    "domain": {
+      "arab-chat.site": "2018-10-30",
+      "arab-download.com": "2020-02-27",
+      "chat-messenger.site": "2018-10-30",
+      "chat-world.site": "2018-10-30",
+      "free-apps.us": "2018-10-30",
+      "gserv.mobi": "2018-10-30",
+      "kikstore.net": "2018-10-30",
+      "network-lab.info": "2018-10-30",
+      "onlineclub.info": "2018-10-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-10-30",
+    "latest": "2020-02-27"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "arab-chat.site",
+      "arab-download.com",
+      "chat-messenger.site",
+      "chat-world.site",
+      "free-apps.us",
+      "gserv.mobi",
+      "kikstore.net",
+      "network-lab.info",
+      "onlineclub.info"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "TEMPTINGCEDAR"
+  ],
+  "references": [
+    "https://blog.avast.com/avast-tracks-down-tempting-cedar-spyware",
+    "https://twitter.com/kyleehmke/status/1233024422581325824"
+  ],
+  "related": [],
+  "slug": "TEMPTINGCEDAR",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-02-27",
+      "indicators": {
+        "domain": [
+          "arab-download.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/kyleehmke/status/1233024422581325824"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2018-10-30",
+      "indicators": {
+        "domain": [
+          "arab-chat.site",
+          "chat-messenger.site",
+          "chat-world.site",
+          "free-apps.us",
+          "gserv.mobi",
+          "kikstore.net",
+          "network-lab.info",
+          "onlineclub.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.avast.com/avast-tracks-down-tempting-cedar-spyware"
+      ],
+      "total": 8
+    }
+  ]
+}

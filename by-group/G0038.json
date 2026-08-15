@@ -1,0 +1,442 @@
+{
+  "aliases": [],
+  "attack_id": "G0038",
+  "attack_name": "Stealth Falcon",
+  "attack_url": "https://attack.mitre.org/groups/G0038/",
+  "counts": {
+    "domain": 96
+  },
+  "first_seen": {
+    "domain": {
+      "adhostingcache.com": "2018-09-22",
+      "adlinkmetric.com": "2017-04-14",
+      "adlinkmetrics.com": "2017-04-14",
+      "adobereaderupdater.com": "2017-04-14",
+      "airlineadverts.com": "2017-04-14",
+      "akamai-host-network.com": "2017-04-14",
+      "akamai-hosting-network.com": "2017-04-14",
+      "akamaicachecdn.com": "2017-04-14",
+      "akamaicloud.net": "2017-04-14",
+      "akamaicss.com": "2017-04-14",
+      "akamaihostcdn.net": "2017-04-14",
+      "akamaiwebcache.com": "2017-04-14",
+      "appleimagecache.com": "2017-04-14",
+      "bestairlinepricetags.com": "2017-04-14",
+      "burst-media.com": "2017-04-14",
+      "cachecontent.com": "2017-04-14",
+      "cdn-logichosting.com": "2017-04-14",
+      "cdnimagescache.com": "2017-04-14",
+      "chromeupdater.com": "2017-04-14",
+      "clickstatistic.com": "2017-04-14",
+      "cloudburstcdn.net": "2017-04-14",
+      "cloudburstercdn.net": "2017-04-14",
+      "cloudimagecdn.com": "2017-04-14",
+      "cloudimagehosters.com": "2017-04-14",
+      "contenthosts.com": "2017-04-14",
+      "contenthosts.net": "2017-04-14",
+      "cyclingonlineshop.com": "2026-01-02",
+      "dnsclienthelper.com": "2017-04-14",
+      "dnsclientresolver.com": "2017-04-14",
+      "domainimagehost.com": "2017-04-14",
+      "dotnetupdatechecker.com": "2017-04-14",
+      "dotnetupdates.com": "2017-04-14",
+      "downloadessays.net": "2026-01-02",
+      "dropboxsyncservice.com": "2017-04-14",
+      "edgecacheimagehosting.com": "2017-04-14",
+      "electricalweb.org": "2019-09-09",
+      "fastfilebackup.com": "2026-01-02",
+      "fasttravelclearance.com": "2017-04-14",
+      "flashplayersupdates.com": "2017-04-14",
+      "flashplayerupdater.com": "2017-04-14",
+      "footballtimes.info": "2019-09-09",
+      "healthherofit.com": "2026-01-02",
+      "iesafebrowsingcache.com": "2017-04-14",
+      "iesaferbrowsingcache.com": "2017-04-14",
+      "incapsulawebcache.com": "2018-09-22",
+      "javaupdatecache.com": "2017-04-14",
+      "javaupdatersvc.com": "2017-04-14",
+      "javaupdatescache.com": "2017-04-14",
+      "javaupdatesvc.com": "2017-04-14",
+      "limelightimagecache.com": "2017-04-14",
+      "livewebcache.com": "2017-04-14",
+      "luxuryfitnesslabs.com": "2026-01-02",
+      "media-providers.net": "2017-04-14",
+      "mediacachecdn.com": "2017-04-14",
+      "mediacachecdn.net": "2017-04-14",
+      "mediacloudsolution.com": "2017-04-14",
+      "mediacloudsolutions.net": "2017-04-14",
+      "mediaimagecache.com": "2017-04-14",
+      "mediaproviders.net": "2017-04-14",
+      "ministrynewschannel.com": "2017-04-14",
+      "ministrynewsinfo.com": "2017-04-14",
+      "msofficesso.com": "2017-04-14",
+      "msofficeupdates.com": "2017-04-14",
+      "mswindowsupdater.com": "2017-04-14",
+      "netassistcache.com": "2017-04-14",
+      "netcloudcdn.com": "2017-04-14",
+      "optimizedimghosting.com": "2017-04-14",
+      "optimizercache.com": "2017-04-14",
+      "oraclejavaupdate.com": "2017-04-14",
+      "oraclejavaupdater.com": "2017-04-14",
+      "purvoyage.com": "2026-01-02",
+      "radiotimesignal.com": "2026-01-02",
+      "rapidlinkhit.com": "2017-04-14",
+      "roundedbullets.com": "2026-01-02",
+      "safeadspace.com": "2017-04-14",
+      "safeadvertimgs.com": "2017-04-14",
+      "shelves-design.com": "2018-10-16",
+      "simpleadbanners.com": "2017-04-14",
+      "summerartcamp.net": "2026-01-02",
+      "tinyimagehosting.com": "2017-04-14",
+      "upnpdiscover.org": "2019-09-09",
+      "vegetableportfolio.com": "2019-09-09",
+      "webanalyticstats.com": "2017-04-14",
+      "weekendstrips.net": "2018-10-16",
+      "wincertificateupdater.com": "2017-04-14",
+      "winconnectors.com": "2017-04-14",
+      "windefenderupdater.com": "2017-04-14",
+      "windowsconnector.com": "2017-04-14",
+      "windowsdefenderupdater.com": "2017-04-14",
+      "windowsearchcache.com": "2017-04-14",
+      "windowshealthcheck.com": "2017-04-14",
+      "windowspatchmanager.com": "2017-04-14",
+      "windowssearchcache.com": "2017-04-14",
+      "windowsupdatecache.com": "2017-04-14",
+      "windowsupdatescache.com": "2017-04-14",
+      "worryfreetransport.com": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "cyclingonlineshop.com": "at-or-before",
+      "downloadessays.net": "at-or-before",
+      "fastfilebackup.com": "at-or-before",
+      "healthherofit.com": "at-or-before",
+      "luxuryfitnesslabs.com": "at-or-before",
+      "purvoyage.com": "at-or-before",
+      "radiotimesignal.com": "at-or-before",
+      "roundedbullets.com": "at-or-before",
+      "summerartcamp.net": "at-or-before",
+      "worryfreetransport.com": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-14",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "adhostingcache.com",
+      "adlinkmetric.com",
+      "adlinkmetrics.com",
+      "adobereaderupdater.com",
+      "airlineadverts.com",
+      "akamai-host-network.com",
+      "akamai-hosting-network.com",
+      "akamaicachecdn.com",
+      "akamaicloud.net",
+      "akamaicss.com",
+      "akamaihostcdn.net",
+      "akamaiwebcache.com",
+      "appleimagecache.com",
+      "bestairlinepricetags.com",
+      "burst-media.com",
+      "cachecontent.com",
+      "cdn-logichosting.com",
+      "cdnimagescache.com",
+      "chromeupdater.com",
+      "clickstatistic.com",
+      "cloudburstcdn.net",
+      "cloudburstercdn.net",
+      "cloudimagecdn.com",
+      "cloudimagehosters.com",
+      "contenthosts.com",
+      "contenthosts.net",
+      "cyclingonlineshop.com",
+      "dnsclienthelper.com",
+      "dnsclientresolver.com",
+      "domainimagehost.com",
+      "dotnetupdatechecker.com",
+      "dotnetupdates.com",
+      "downloadessays.net",
+      "dropboxsyncservice.com",
+      "edgecacheimagehosting.com",
+      "electricalweb.org",
+      "fastfilebackup.com",
+      "fasttravelclearance.com",
+      "flashplayersupdates.com",
+      "flashplayerupdater.com",
+      "footballtimes.info",
+      "healthherofit.com",
+      "iesafebrowsingcache.com",
+      "iesaferbrowsingcache.com",
+      "incapsulawebcache.com",
+      "javaupdatecache.com",
+      "javaupdatersvc.com",
+      "javaupdatescache.com",
+      "javaupdatesvc.com",
+      "limelightimagecache.com",
+      "livewebcache.com",
+      "luxuryfitnesslabs.com",
+      "media-providers.net",
+      "mediacachecdn.com",
+      "mediacachecdn.net",
+      "mediacloudsolution.com",
+      "mediacloudsolutions.net",
+      "mediaimagecache.com",
+      "mediaproviders.net",
+      "ministrynewschannel.com",
+      "ministrynewsinfo.com",
+      "msofficesso.com",
+      "msofficeupdates.com",
+      "mswindowsupdater.com",
+      "netassistcache.com",
+      "netcloudcdn.com",
+      "optimizedimghosting.com",
+      "optimizercache.com",
+      "oraclejavaupdate.com",
+      "oraclejavaupdater.com",
+      "purvoyage.com",
+      "radiotimesignal.com",
+      "rapidlinkhit.com",
+      "roundedbullets.com",
+      "safeadspace.com",
+      "safeadvertimgs.com",
+      "shelves-design.com",
+      "simpleadbanners.com",
+      "summerartcamp.net",
+      "tinyimagehosting.com",
+      "upnpdiscover.org",
+      "vegetableportfolio.com",
+      "webanalyticstats.com",
+      "weekendstrips.net",
+      "wincertificateupdater.com",
+      "winconnectors.com",
+      "windefenderupdater.com",
+      "windowsconnector.com",
+      "windowsdefenderupdater.com",
+      "windowsearchcache.com",
+      "windowshealthcheck.com",
+      "windowspatchmanager.com",
+      "windowssearchcache.com",
+      "windowsupdatecache.com",
+      "windowsupdatescache.com",
+      "worryfreetransport.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FRUITYARMOR",
+    "STEALTHFALCON"
+  ],
+  "references": [
+    "https://citizenlab.ca/2016/05/stealth-falcon/",
+    "https://citizenlab.org/2016/05/stealth-falcon-appendices/",
+    "https://research.checkpoint.com/2025/stealth-falcon-zero-day/",
+    "https://securelist.com/cve-2018-8453-used-in-targeted-attacks/88151/",
+    "https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0007"
+    }
+  ],
+  "slug": "G0038",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "cyclingonlineshop.com",
+          "downloadessays.net",
+          "fastfilebackup.com",
+          "healthherofit.com",
+          "luxuryfitnesslabs.com",
+          "purvoyage.com",
+          "radiotimesignal.com",
+          "roundedbullets.com",
+          "summerartcamp.net",
+          "worryfreetransport.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://research.checkpoint.com/2025/stealth-falcon-zero-day/"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-09-09",
+      "indicators": {
+        "domain": [
+          "electricalweb.org",
+          "footballtimes.info",
+          "upnpdiscover.org",
+          "vegetableportfolio.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-10-16",
+      "indicators": {
+        "domain": [
+          "shelves-design.com",
+          "weekendstrips.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/cve-2018-8453-used-in-targeted-attacks/88151/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2018-09-22",
+      "indicators": {
+        "domain": [
+          "adhostingcache.com",
+          "incapsulawebcache.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.ca/2016/05/stealth-falcon/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 77
+      },
+      "first_seen": "2017-04-14",
+      "indicators": {
+        "domain": [
+          "adlinkmetric.com",
+          "adlinkmetrics.com",
+          "adobereaderupdater.com",
+          "airlineadverts.com",
+          "akamai-host-network.com",
+          "akamai-hosting-network.com",
+          "akamaicachecdn.com",
+          "akamaicloud.net",
+          "akamaicss.com",
+          "akamaihostcdn.net",
+          "akamaiwebcache.com",
+          "appleimagecache.com",
+          "bestairlinepricetags.com",
+          "burst-media.com",
+          "cachecontent.com",
+          "cdn-logichosting.com",
+          "cdnimagescache.com",
+          "chromeupdater.com",
+          "clickstatistic.com",
+          "cloudburstcdn.net",
+          "cloudburstercdn.net",
+          "cloudimagecdn.com",
+          "cloudimagehosters.com",
+          "contenthosts.com",
+          "contenthosts.net",
+          "dnsclienthelper.com",
+          "dnsclientresolver.com",
+          "domainimagehost.com",
+          "dotnetupdatechecker.com",
+          "dotnetupdates.com",
+          "dropboxsyncservice.com",
+          "edgecacheimagehosting.com",
+          "fasttravelclearance.com",
+          "flashplayersupdates.com",
+          "flashplayerupdater.com",
+          "iesafebrowsingcache.com",
+          "iesaferbrowsingcache.com",
+          "javaupdatecache.com",
+          "javaupdatersvc.com",
+          "javaupdatescache.com",
+          "javaupdatesvc.com",
+          "limelightimagecache.com",
+          "livewebcache.com",
+          "media-providers.net",
+          "mediacachecdn.com",
+          "mediacachecdn.net",
+          "mediacloudsolution.com",
+          "mediacloudsolutions.net",
+          "mediaimagecache.com",
+          "mediaproviders.net",
+          "ministrynewschannel.com",
+          "ministrynewsinfo.com",
+          "msofficesso.com",
+          "msofficeupdates.com",
+          "mswindowsupdater.com",
+          "netassistcache.com",
+          "netcloudcdn.com",
+          "optimizedimghosting.com",
+          "optimizercache.com",
+          "oraclejavaupdate.com",
+          "oraclejavaupdater.com",
+          "rapidlinkhit.com",
+          "safeadspace.com",
+          "safeadvertimgs.com",
+          "simpleadbanners.com",
+          "tinyimagehosting.com",
+          "webanalyticstats.com",
+          "wincertificateupdater.com",
+          "winconnectors.com",
+          "windefenderupdater.com",
+          "windowsconnector.com",
+          "windowsdefenderupdater.com",
+          "windowshealthcheck.com",
+          "windowspatchmanager.com",
+          "windowssearchcache.com",
+          "windowsupdatecache.com",
+          "windowsupdatescache.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.org/2016/05/stealth-falcon-appendices/"
+      ],
+      "total": 77
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-14",
+      "indicators": {
+        "domain": [
+          "windowsearchcache.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://citizenlab.org/2016/05/stealth-falcon-appendices/",
+        "https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/"
+      ],
+      "total": 1
+    }
+  ]
+}

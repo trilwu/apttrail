@@ -1,0 +1,358 @@
+{
+  "aliases": [
+    "BackdoorDiplomacy",
+    "Quarian",
+    "Turian"
+  ],
+  "attack_id": "G0135",
+  "attack_name": "BackdoorDiplomacy",
+  "attack_url": "https://attack.mitre.org/groups/G0135/",
+  "counts": {
+    "domain": 67
+  },
+  "first_seen": {
+    "domain": {
+      "250f7cloud.crmdev.org": "2022-12-07",
+      "29c04uc.ejalase.org": "2022-12-07",
+      "62ffauc.ejalase.org": "2022-12-07",
+      "7f4d9fcanet.microsoftshop.org": "2022-12-07",
+      "adboeonline.net": "2023-01-18",
+      "alberto2011.com": "2022-12-07",
+      "andyothers.acmetoy.com": "2019-10-05",
+      "bill.microsoftbuys.com": "2021-06-11",
+      "buffetfactory.oicp.io": "2021-06-11",
+      "cloud.fastpaymentser-vice.com": "2022-12-07",
+      "cloud.microsoftshop.org": "2022-12-07",
+      "cloud.skypecloud.net": "2022-12-07",
+      "crmdev.org": "2022-12-07",
+      "delldrivers.in": "2022-12-07",
+      "dnsupdate.dns1.us": "2021-06-11",
+      "dnsupdate.dns2.us": "2021-06-11",
+      "dynsystem.imbbs.in": "2021-06-11",
+      "efanshion.com": "2022-12-07",
+      "ejalase.org": "2022-12-07",
+      "fastpaymentser-vice.com": "2022-12-07",
+      "fazlol-lah.net": "2022-12-07",
+      "fazlollah.net": "2022-04-30",
+      "freedns02.dns2.us": "2021-06-11",
+      "icta.worldmessg.com": "2021-06-11",
+      "info.fazlol-lah.net": "2022-12-07",
+      "info.fazlollah.net": "2022-05-11",
+      "info.payamra-dio.com": "2022-12-07",
+      "info.payamradio.com": "2022-12-07",
+      "intelupdate.dns1.us": "2021-06-11",
+      "irir.org": "2022-12-07",
+      "keep.ns3.name": "2019-10-05",
+      "mail.irir.org": "2022-12-07",
+      "mci.ejalase.org": "2022-12-07",
+      "mfaantivirus.xyz": "2023-01-18",
+      "microsoftbuys.com": "2022-12-07",
+      "microsoftshop.org": "2022-12-07",
+      "news.alberto2011.com": "2022-12-07",
+      "officenews365.com": "2022-12-07",
+      "officeupdate.ns01.us": "2021-06-11",
+      "officeupdates.cleansite.us": "2021-06-11",
+      "oracleapps.org": "2022-12-07",
+      "payamra-dio.com": "2022-12-07",
+      "payamradio.com": "2022-12-07",
+      "pfs1010.com": "2023-01-18",
+      "pfs1010.xyz": "2023-01-18",
+      "picture.efanshion.com": "2022-12-07",
+      "plastic.delldrivers.in": "2022-12-07",
+      "pmdskm.top": "2021-06-11",
+      "proxy.oracleapps.org": "2022-12-07",
+      "scm.oracleapps.org": "2023-01-18",
+      "skypecloud.net": "2022-12-07",
+      "srv.fazlollah.net": "2022-05-11",
+      "srv.payamradio.com": "2022-12-07",
+      "support.vpnkerio.com": "2022-12-07",
+      "systeminfo.cleansite.info": "2021-06-11",
+      "systeminfo.myftp.name": "2021-06-11",
+      "systeminfo.oicp.net": "2021-06-11",
+      "szsz.pmdskm.top": "2021-06-11",
+      "uc.ejalase.org": "2022-12-07",
+      "update.adboeonline.net": "2023-01-18",
+      "update.delldrivers.in": "2023-01-18",
+      "update.officenews365.com": "2021-06-11",
+      "updateip.onmypc.net": "2021-06-11",
+      "vpnkerio.com": "2022-12-07",
+      "web.vpnkerio.com": "2021-06-11",
+      "winupdate.ns02.us": "2021-06-11",
+      "worldmessg.com": "2022-12-07"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-10-05",
+    "latest": "2023-01-18"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "250f7cloud.crmdev.org",
+      "29c04uc.ejalase.org",
+      "62ffauc.ejalase.org",
+      "7f4d9fcanet.microsoftshop.org",
+      "adboeonline.net",
+      "alberto2011.com",
+      "andyothers.acmetoy.com",
+      "bill.microsoftbuys.com",
+      "buffetfactory.oicp.io",
+      "cloud.fastpaymentser-vice.com",
+      "cloud.microsoftshop.org",
+      "cloud.skypecloud.net",
+      "crmdev.org",
+      "delldrivers.in",
+      "dnsupdate.dns1.us",
+      "dnsupdate.dns2.us",
+      "dynsystem.imbbs.in",
+      "efanshion.com",
+      "ejalase.org",
+      "fastpaymentser-vice.com",
+      "fazlol-lah.net",
+      "fazlollah.net",
+      "freedns02.dns2.us",
+      "icta.worldmessg.com",
+      "info.fazlol-lah.net",
+      "info.fazlollah.net",
+      "info.payamra-dio.com",
+      "info.payamradio.com",
+      "intelupdate.dns1.us",
+      "irir.org",
+      "keep.ns3.name",
+      "mail.irir.org",
+      "mci.ejalase.org",
+      "mfaantivirus.xyz",
+      "microsoftbuys.com",
+      "microsoftshop.org",
+      "news.alberto2011.com",
+      "officenews365.com",
+      "officeupdate.ns01.us",
+      "officeupdates.cleansite.us",
+      "oracleapps.org",
+      "payamra-dio.com",
+      "payamradio.com",
+      "pfs1010.com",
+      "pfs1010.xyz",
+      "picture.efanshion.com",
+      "plastic.delldrivers.in",
+      "pmdskm.top",
+      "proxy.oracleapps.org",
+      "scm.oracleapps.org",
+      "skypecloud.net",
+      "srv.fazlollah.net",
+      "srv.payamradio.com",
+      "support.vpnkerio.com",
+      "systeminfo.cleansite.info",
+      "systeminfo.myftp.name",
+      "systeminfo.oicp.net",
+      "szsz.pmdskm.top",
+      "uc.ejalase.org",
+      "update.adboeonline.net",
+      "update.delldrivers.in",
+      "update.officenews365.com",
+      "updateip.onmypc.net",
+      "vpnkerio.com",
+      "web.vpnkerio.com",
+      "winupdate.ns02.us",
+      "worldmessg.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "QUARIAN"
+  ],
+  "references": [
+    "https://github.com/advanced-threat-research/IOCs/blob/master/2013/2013-10-07-quarian-group-targets-victims-with-spearphishing-attacks/quarian-group-targets-victims-with-spearphishing-attacks.csv",
+    "https://otx.alienvault.com/pulse/60c341dc8964edd2e2fcb651",
+    "https://otx.alienvault.com/pulse/6390cbe098c9fb94d48e7a1c",
+    "https://otx.alienvault.com/pulse/63c82cfb80f9e85b9b69c3cc",
+    "https://unit42.paloaltonetworks.com/playful-taurus/",
+    "https://www.bitdefender.com/files/News/CaseStudies/study/426/Bitdefender-PR-Whitepaper-BackdoorDiplomacy-creat6507-en-EN.pdf",
+    "https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/"
+  ],
+  "related": [],
+  "slug": "G0135",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2023-01-18",
+      "indicators": {
+        "domain": [
+          "adboeonline.net",
+          "mfaantivirus.xyz",
+          "pfs1010.com",
+          "pfs1010.xyz",
+          "scm.oracleapps.org",
+          "update.adboeonline.net",
+          "update.delldrivers.in"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/playful-taurus/",
+        "https://otx.alienvault.com/pulse/63c82cfb80f9e85b9b69c3cc"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 32
+      },
+      "first_seen": "2022-12-07",
+      "indicators": {
+        "domain": [
+          "250f7cloud.crmdev.org",
+          "29c04uc.ejalase.org",
+          "62ffauc.ejalase.org",
+          "7f4d9fcanet.microsoftshop.org",
+          "alberto2011.com",
+          "cloud.fastpaymentser-vice.com",
+          "cloud.microsoftshop.org",
+          "cloud.skypecloud.net",
+          "crmdev.org",
+          "delldrivers.in",
+          "efanshion.com",
+          "ejalase.org",
+          "fastpaymentser-vice.com",
+          "fazlol-lah.net",
+          "info.fazlol-lah.net",
+          "info.payamra-dio.com",
+          "info.payamradio.com",
+          "irir.org",
+          "mail.irir.org",
+          "mci.ejalase.org",
+          "microsoftshop.org",
+          "news.alberto2011.com",
+          "oracleapps.org",
+          "payamra-dio.com",
+          "payamradio.com",
+          "picture.efanshion.com",
+          "plastic.delldrivers.in",
+          "proxy.oracleapps.org",
+          "skypecloud.net",
+          "srv.payamradio.com",
+          "support.vpnkerio.com",
+          "uc.ejalase.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bitdefender.com/files/News/CaseStudies/study/426/Bitdefender-PR-Whitepaper-BackdoorDiplomacy-creat6507-en-EN.pdf",
+        "https://otx.alienvault.com/pulse/6390cbe098c9fb94d48e7a1c"
+      ],
+      "total": 32
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2022-12-07",
+      "indicators": {
+        "domain": [
+          "microsoftbuys.com",
+          "officenews365.com",
+          "vpnkerio.com",
+          "worldmessg.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/",
+        "https://otx.alienvault.com/pulse/60c341dc8964edd2e2fcb651"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-11",
+      "indicators": {
+        "domain": [
+          "info.fazlollah.net",
+          "srv.fazlollah.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bitdefender.com/files/News/CaseStudies/study/426/Bitdefender-PR-Whitepaper-BackdoorDiplomacy-creat6507-en-EN.pdf",
+        "https://otx.alienvault.com/pulse/6390cbe098c9fb94d48e7a1c"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "domain": [
+          "fazlollah.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.bitdefender.com/files/News/CaseStudies/study/426/Bitdefender-PR-Whitepaper-BackdoorDiplomacy-creat6507-en-EN.pdf",
+        "https://otx.alienvault.com/pulse/6390cbe098c9fb94d48e7a1c"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2021-06-11",
+      "indicators": {
+        "domain": [
+          "bill.microsoftbuys.com",
+          "buffetfactory.oicp.io",
+          "dnsupdate.dns1.us",
+          "dnsupdate.dns2.us",
+          "dynsystem.imbbs.in",
+          "freedns02.dns2.us",
+          "icta.worldmessg.com",
+          "intelupdate.dns1.us",
+          "officeupdate.ns01.us",
+          "officeupdates.cleansite.us",
+          "pmdskm.top",
+          "systeminfo.cleansite.info",
+          "systeminfo.myftp.name",
+          "systeminfo.oicp.net",
+          "szsz.pmdskm.top",
+          "update.officenews365.com",
+          "updateip.onmypc.net",
+          "web.vpnkerio.com",
+          "winupdate.ns02.us"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2021/06/10/backdoordiplomacy-upgrading-quarian-turian/",
+        "https://otx.alienvault.com/pulse/60c341dc8964edd2e2fcb651"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-05",
+      "indicators": {
+        "domain": [
+          "andyothers.acmetoy.com",
+          "keep.ns3.name"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/advanced-threat-research/IOCs/blob/master/2013/2013-10-07-quarian-group-targets-victims-with-spearphishing-attacks/quarian-group-targets-victims-with-spearphishing-attacks.csv"
+      ],
+      "total": 2
+    }
+  ]
+}

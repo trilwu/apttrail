@@ -1,0 +1,147 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1594109532",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8f43b411-c3a8-594f-9fe3-0e42ff61c4a3",
+        "value": "flash.governmentmm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595355918",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9c1175c3-acde-5ec8-8a4c-9e7a0d395e53",
+        "value": "governmentmm.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1709837937",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e4d56249-ac52-586a-aa7e-066f7c977470",
+        "value": "update.devicebug.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721811269",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "57362d85-8191-5559-8581-d92ddbec160a",
+        "value": "103.96.128.44:10001"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721811269",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "8229362b-e390-591c-bfd1-87b5f9044f67",
+        "value": "103.96.128.44:16564"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721811269",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "30d959f0-b83e-5d6c-99eb-90c9c5603769",
+        "value": "103.96.131.150:19876"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1721811269",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "dee4819a-b0b4-5359-9b78-9bb8adb8b9be",
+        "value": "103.96.131.150:40020"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595355918",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "76fc8b4f-f2a2-5035-9177-b6053d1ebb69",
+        "value": "122.10.89.170:9552"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1595355918",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2765afb7-f4a2-5a59-b502-9ef8a04c42fb",
+        "value": "122.10.89.172:10560"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1732318689",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6b3efb25-e176-5261-a00d-f9124ee58e12",
+        "value": "223.165.4.175:81"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1739053729",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "0bea123b-fe3d-51a9-ab68-bdf91c260d7a",
+        "value": "45.125.64.200:33200"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1732318689",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "2aca4518-7bf3-5094-99d1-962bcc2e40d6",
+        "value": "45.125.64.200:33220"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1732318740",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ffe09e54-edaa-55ed-b8ac-9d7ec0e58400",
+        "value": "45.125.64.200:33223"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1598047747",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "dc870529-2911-52df-987b-5b45c008a615",
+        "value": "45.77.140.81:81"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:evasivepanda"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Daggerfly - G1034\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Daggerfly (G1034) - Maltrail group EVASIVEPANDA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "557f19f0-54bc-5b53-8255-75ed602f2a0a"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 16,
+    "url": 6,
+    "url_path": 3
+  },
+  "first_seen": {
+    "domain": {
+      "apiworld.cf": "2024-02-03",
+      "bobsmith.apiworld.cf": "2024-02-03",
+      "captcha.grouphelp.top": "2024-02-03",
+      "captcha.tgbot.it": "2024-02-03",
+      "davebeerblog.eu.org": "2024-02-03",
+      "eu1.microtunnel.it": "2024-02-03",
+      "euserv3.herokuapp.com": "2024-02-03",
+      "evinfeoptasw.dedyn.io": "2023-08-23",
+      "geraldonsboutique.altervista.org": "2024-02-03",
+      "lucaespo.altervista.org": "2024-02-03",
+      "lucaesposito.herokuapp.com": "2024-02-03",
+      "microtunnel.it": "2024-02-03",
+      "monumental.ga": "2024-02-03",
+      "ncnskjhrbefwifjhww.tk": "2024-02-03",
+      "studiofotografico35mm.altervista.org": "2024-02-03",
+      "wjecpujpanmwm.tk": "2023-03-20"
+    },
+    "url": {
+      "arstechnica.com/civis/members/frncbf22.1062014/about/": "2024-02-03",
+      "eldi8.github.io/src.txt": "2024-02-03",
+      "evh001.gitlab.io/src.txt": "2024-02-03",
+      "luke.compeyson.eu.org/runservice/api/public.php": "2024-02-03",
+      "luke.compeyson.eu.org/runservice/api/public_result.php": "2024-02-03",
+      "luke.compeyson.eu.org/wp-admin.php": "2024-02-03"
+    },
+    "url_path": {
+      "/c0s1ta/": "2024-02-03",
+      "/c0s1ta/index.php": "2024-02-03",
+      "/updater.php?from=USB1": "2024-02-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-03-20",
+    "latest": "2024-02-03"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "apiworld.cf",
+      "bobsmith.apiworld.cf",
+      "captcha.grouphelp.top",
+      "captcha.tgbot.it",
+      "davebeerblog.eu.org",
+      "eu1.microtunnel.it",
+      "euserv3.herokuapp.com",
+      "evinfeoptasw.dedyn.io",
+      "geraldonsboutique.altervista.org",
+      "lucaespo.altervista.org",
+      "lucaesposito.herokuapp.com",
+      "microtunnel.it",
+      "monumental.ga",
+      "ncnskjhrbefwifjhww.tk",
+      "studiofotografico35mm.altervista.org",
+      "wjecpujpanmwm.tk"
+    ],
+    "url": [
+      "arstechnica.com/civis/members/frncbf22.1062014/about/",
+      "eldi8.github.io/src.txt",
+      "evh001.gitlab.io/src.txt",
+      "luke.compeyson.eu.org/runservice/api/public.php",
+      "luke.compeyson.eu.org/runservice/api/public_result.php",
+      "luke.compeyson.eu.org/wp-admin.php"
+    ],
+    "url_path": [
+      "/c0s1ta/",
+      "/c0s1ta/index.php",
+      "/updater.php?from=USB1"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4990"
+  ],
+  "references": [
+    "https://www.mandiant.com/resources/blog/unc4990-evolution-usb-malware"
+  ],
+  "related": [],
+  "slug": "UNC4990",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 14,
+        "url": 6,
+        "url_path": 3
+      },
+      "first_seen": "2024-02-03",
+      "indicators": {
+        "domain": [
+          "apiworld.cf",
+          "bobsmith.apiworld.cf",
+          "captcha.grouphelp.top",
+          "captcha.tgbot.it",
+          "davebeerblog.eu.org",
+          "eu1.microtunnel.it",
+          "euserv3.herokuapp.com",
+          "geraldonsboutique.altervista.org",
+          "lucaespo.altervista.org",
+          "lucaesposito.herokuapp.com",
+          "microtunnel.it",
+          "monumental.ga",
+          "ncnskjhrbefwifjhww.tk",
+          "studiofotografico35mm.altervista.org"
+        ],
+        "url": [
+          "arstechnica.com/civis/members/frncbf22.1062014/about/",
+          "eldi8.github.io/src.txt",
+          "evh001.gitlab.io/src.txt",
+          "luke.compeyson.eu.org/runservice/api/public.php",
+          "luke.compeyson.eu.org/runservice/api/public_result.php",
+          "luke.compeyson.eu.org/wp-admin.php"
+        ],
+        "url_path": [
+          "/c0s1ta/",
+          "/c0s1ta/index.php",
+          "/updater.php?from=USB1"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/unc4990-evolution-usb-malware"
+      ],
+      "total": 23
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-08-23",
+      "indicators": {
+        "domain": [
+          "evinfeoptasw.dedyn.io"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/unc4990-evolution-usb-malware"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-03-20",
+      "indicators": {
+        "domain": [
+          "wjecpujpanmwm.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/unc4990-evolution-usb-malware"
+      ],
+      "total": 1
+    }
+  ]
+}

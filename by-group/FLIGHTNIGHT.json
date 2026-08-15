@@ -1,0 +1,72 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5
+  },
+  "first_seen": {
+    "domain": {
+      "alfarabischoolgroup.slack.com": "2024-03-28",
+      "solucionesgeofisicas.slack.com": "2024-03-28",
+      "swiftrecruiters.slack.com": "2024-03-28",
+      "telcomprodicci.slack.com": "2024-03-28",
+      "tucker-group.slack.com": "2024-03-28"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-03-28",
+    "latest": "2024-03-28"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "alfarabischoolgroup.slack.com",
+      "solucionesgeofisicas.slack.com",
+      "swiftrecruiters.slack.com",
+      "telcomprodicci.slack.com",
+      "tucker-group.slack.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FLIGHTNIGHT"
+  ],
+  "references": [
+    "https://blog.eclecticiq.com/operation-flightnight-indian-government-entities-and-energy-sector-targeted-by-cyber-espionage-campaign",
+    "https://www.virustotal.com/gui/file/0ac787366bb435c11bf55620b4ba671b710c6f8924712575a0e443abd9922e9f/detection",
+    "https://www.virustotal.com/gui/file/4455ca4e12b5ff486c466897522536ad753cd459d0eb3bfb1747ffc79a2ce5dd/detection",
+    "https://www.virustotal.com/gui/file/69c3a92757f79a0020cf1711cda4a724633d535f75bbef2bd74e07a902831d59/detection"
+  ],
+  "related": [],
+  "slug": "FLIGHTNIGHT",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2024-03-28",
+      "indicators": {
+        "domain": [
+          "alfarabischoolgroup.slack.com",
+          "solucionesgeofisicas.slack.com",
+          "swiftrecruiters.slack.com",
+          "telcomprodicci.slack.com",
+          "tucker-group.slack.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.eclecticiq.com/operation-flightnight-indian-government-entities-and-energy-sector-targeted-by-cyber-espionage-campaign",
+        "https://www.virustotal.com/gui/file/4455ca4e12b5ff486c466897522536ad753cd459d0eb3bfb1747ffc79a2ce5dd/detection",
+        "https://www.virustotal.com/gui/file/69c3a92757f79a0020cf1711cda4a724633d535f75bbef2bd74e07a902831d59/detection",
+        "https://www.virustotal.com/gui/file/0ac787366bb435c11bf55620b4ba671b710c6f8924712575a0e443abd9922e9f/detection"
+      ],
+      "total": 5
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1,
+    "ipv4": 5,
+    "url": 2
+  },
+  "first_seen": {
+    "domain": {
+      "vpn599147072.softether.net": "2022-03-30"
+    },
+    "ipv4": {
+      "34.92.40.189:33221": "2022-03-30",
+      "34.92.40.189:443": "2022-03-30",
+      "45.76.98.184:33221": "2022-03-30",
+      "45.76.98.184:443": "2022-03-30",
+      "45.76.98.184:53": "2022-03-30"
+    },
+    "url": {
+      "http://203.160.86.2": "2022-03-30",
+      "http://35.189.145.119": "2022-03-30"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-03-30",
+    "latest": "2022-03-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "vpn599147072.softether.net"
+    ],
+    "ipv4": [
+      "34.92.40.189:33221",
+      "34.92.40.189:443",
+      "45.76.98.184:33221",
+      "45.76.98.184:443",
+      "45.76.98.184:53"
+    ],
+    "url": [
+      "http://203.160.86.2",
+      "http://35.189.145.119"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC3500"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb",
+    "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "G0096"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC3535"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC961"
+    }
+  ],
+  "slug": "UNC3500",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 5,
+        "url": 2
+      },
+      "first_seen": "2022-03-30",
+      "indicators": {
+        "domain": [
+          "vpn599147072.softether.net"
+        ],
+        "ipv4": [
+          "34.92.40.189:33221",
+          "34.92.40.189:443",
+          "45.76.98.184:33221",
+          "45.76.98.184:443",
+          "45.76.98.184:53"
+        ],
+        "url": [
+          "http://203.160.86.2",
+          "http://35.189.145.119"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/mobileiron-log4shell-exploitation",
+        "https://otx.alienvault.com/pulse/6244606893ddbc9a6a5bbdeb"
+      ],
+      "total": 8
+    }
+  ]
+}

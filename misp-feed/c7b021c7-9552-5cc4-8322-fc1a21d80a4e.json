@@ -1,0 +1,91 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1573819631",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "067a4072-b493-5437-a5cf-0f66a6b2fdc3",
+        "value": "ecco0.b13x.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1573819631",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c679706d-ddce-5bd3-a46b-dcd605a4b36d",
+        "value": "kanri.rbridal.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1586881221",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6edcd708-86b0-52f3-a1e7-d290a5a9cf6f",
+        "value": "lite.ultralitedesigns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1573819631",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e644b35a-392f-5929-bbc9-9fd4d62842b3",
+        "value": "satanal.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1573819631",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "21cdeeb3-8ffe-5189-a8f1-90fda1be76c8",
+        "value": "tureg.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1586881221",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "7c7ae29d-215a-53d5-9a6e-64feab94638a",
+        "value": "http://155.207.63.4"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1586881221",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "fc84d397-89ff-52f2-8324-07013323561d",
+        "value": "http://51.159.28.101"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:energeticbear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Dragonfly - G0035\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Dragonfly (G0035) - Maltrail group ENERGETICBEAR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c7b021c7-9552-5cc4-8322-fc1a21d80a4e"
+  }
+}

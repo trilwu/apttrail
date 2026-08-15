@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>VENOMSPIDER · APTtrail</title>
+<meta name=description content="66 indicators attributed to VENOMSPIDER, from 38 source reports, each dated and linked to the write-up that published it.">
+<link rel=canonical href="https://trilwu.github.io/apttrail/by-group/VENOMSPIDER.html">
+<link rel=icon href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%226%22%20fill%3D%22%230b0d11%22%2F%3E%3Cpath%20d%3D%22M11%207v18%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3Ccircle%20cx%3D%2211%22%20cy%3D%2211%22%20r%3D%224%22%20fill%3D%22%23e86f4a%22%2F%3E%3Cpath%20d%3D%22M17%2019h9M17%2024h6%22%20stroke%3D%22%23767d87%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="APTtrail">
+<meta property="og:title" content="VENOMSPIDER · APTtrail">
+<meta property="og:description" content="66 indicators attributed to VENOMSPIDER, from 38 source reports, each dated and linked to the write-up that published it.">
+<meta property="og:url" content="https://trilwu.github.io/apttrail/by-group/VENOMSPIDER.html">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  color-scheme: dark light;
+  --bg: #0b0d11; --panel: #11151b; --ink: #e7e5e1; --muted: #8b919b;
+  /* --faint is the floor: 4.5:1 on --bg, because these labels are 11px mono
+     and the whole page depends on them being legible, not decorative. */
+  --faint: #767d87; --line: #ffffff16; --line-firm: #ffffff2b;
+  --accent: #e86f4a; --warn: #d6a03f;
+  --serif: ui-serif, Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif;
+  --sans: ui-sans-serif, -apple-system, Segoe UI, Helvetica Neue, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, Liberation Mono, monospace;
+  /* Six steps, nothing under 12px. There were fifteen sizes here, eight of
+     them between 12.2 and 15.7px - differences too small to signal anything
+     and large enough to make every block look slightly out of step with the
+     next - and four labels at 10.9px. */
+  --t-h2: 1.5rem; --t-lead: 1.05rem; --t-body: .94rem;
+  --t-small: .84rem; --t-micro: .76rem;
+  --lh-tight: 1.2; --lh-data: 1.5; --lh-prose: 1.65;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fbfaf8; --panel: #fff; --ink: #17181a; --muted: #5d636b;
+          --faint: #6b7178; --line: #0f172014; --line-firm: #0f172030;
+          --accent: #b8412a; --warn: #9a6b12; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/var(--lh-prose) var(--sans);
+       -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 80rem; margin: 0 auto; padding: 0 1.6rem 5rem; }
+a { color: inherit; text-underline-offset: .18em; text-decoration-color: var(--line-firm); }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+h1, h2, h3 { font-weight: 500; }
+p { margin: 0 0 .9rem; }
+
+.topbar { display: flex; justify-content: space-between; align-items: baseline;
+          padding: 1.1rem 0; font: var(--t-micro)/1 var(--mono); letter-spacing: .08em;
+          text-transform: uppercase; color: var(--muted); }
+.topbar .brand { color: var(--faint); }
+
+.masthead { border-top: 1px solid var(--line-firm); padding-top: 1.6rem; }
+/* Flex with baseline alignment: the G-id tag sits on the title's baseline at
+   any clamp size, which vertical-align could not do reliably. */
+h1 { font: 400 clamp(2.1rem, 5.5vw, 3.4rem)/1.05 var(--serif); letter-spacing: -.02em;
+     margin: 0 0 .5rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .1em .5em; }
+h1 .gid { font: 500 .3em/1 var(--mono); letter-spacing: .06em;
+          color: var(--accent); border: 1px solid currentColor; border-radius: 3px;
+          padding: .32em .5em; text-decoration: none; white-space: nowrap; }
+.aka { font: var(--t-small)/var(--lh-prose) var(--mono); color: var(--muted); margin: 0 0 1.4rem;
+       max-width: 62rem; word-spacing: .1em; }
+.aka b { color: var(--ink); font-weight: 500; }
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         gap: 1px; background: var(--line); border: 1px solid var(--line);
+         margin: 0 0 1.5rem; }
+.stats div { background: var(--bg); padding: .7rem .9rem; }
+.stats dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+            color: var(--faint); }
+.stats dd { margin: .15rem 0 0; font: 1.3rem/var(--lh-tight) var(--mono); font-variant-numeric: tabular-nums; }
+.stats dd small { font-size: .62em; color: var(--muted); letter-spacing: .04em; }
+
+.spark { display: flex; align-items: flex-end; gap: 2px; height: 46px; margin: 0 0 .3rem; }
+.spark span { flex: 1; background: var(--line-firm); min-height: 1px; height: var(--h);
+              border-radius: 1px 1px 0 0; }
+.spark span.hot { background: var(--accent); }
+.spark-axis { display: flex; justify-content: space-between; font: var(--t-micro)/1 var(--mono);
+              color: var(--faint); padding-bottom: 1.8rem; border-bottom: 1px solid var(--line-firm); }
+
+.grid { display: grid; grid-template-columns: 16.5rem 1fr; gap: 3.4rem; padding-top: 2rem; }
+@media (max-width: 64rem) { .grid { grid-template-columns: 1fr; gap: 2.2rem; } }
+aside { position: sticky; top: 1.2rem; align-self: start; font-size: var(--t-body); }
+@media (max-width: 64rem) { aside { position: static; } }
+aside h3, .panel h3 { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .09em; text-transform: uppercase;
+                      color: var(--faint); margin: 1.8rem 0 .5rem; }
+aside h3:first-child { margin-top: 0; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav a { display: block; padding: .16rem 0; text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--accent); }
+dl.facts { margin: 0; }
+dl.facts dt { font: var(--t-micro)/var(--lh-data) var(--mono); letter-spacing: .07em; text-transform: uppercase;
+              color: var(--faint); margin-top: .7rem; }
+dl.facts dd { margin: .1rem 0 0; }
+
+main h2 { font: 400 var(--t-h2)/var(--lh-tight) var(--serif); letter-spacing: -.01em; margin: 3rem 0 .2rem;
+          padding-bottom: .4rem; border-bottom: 1px solid var(--line-firm); }
+main h2:first-child { margin-top: 0; }
+main h2 .n { font: .58em/1 var(--mono); color: var(--faint); letter-spacing: .04em; }
+.lede { font: var(--t-lead)/var(--lh-prose) var(--serif); max-width: 44rem; }
+.note { color: var(--muted); font-size: var(--t-small); }
+
+.chips { display: flex; flex-wrap: wrap; gap: .32rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.chips li { border: 1px solid var(--line-firm); border-radius: 2px; padding: .12rem .5rem;
+            font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+.chips a { text-decoration: none; }
+.chips li b { color: var(--ink); font-weight: 500; }
+
+table { border-collapse: collapse; width: 100%; }
+.coverage { margin-top: .9rem; max-width: 34rem; }
+.coverage td { padding: .3rem 0; border-bottom: 1px solid var(--line); font: var(--t-body)/var(--lh-data) var(--mono); }
+.coverage td.n { text-align: right; font-variant-numeric: tabular-nums; }
+.coverage td.f { text-align: right; font-size: var(--t-small); }
+
+.rank { margin: .9rem 0 0; padding: 0; list-style: none; }
+.rank li { margin: 0 0 .6rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.rank .bar { height: 3px; background: var(--accent); opacity: .55; width: var(--w); margin-top: .25rem; }
+.rank .c { float: right; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--faint); }
+
+.tools { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin: .9rem 0 0;
+         font: var(--t-small)/1 var(--mono); }
+.tools input[type=search] { flex: 1; min-width: 12rem; background: var(--panel); color: inherit;
+        border: 1px solid var(--line-firm); border-radius: 2px; padding: .42rem .6rem; font: inherit; }
+.tools label { color: var(--muted); display: flex; gap: .35rem; align-items: center; cursor: pointer; }
+button { background: none; color: var(--muted); border: 1px solid var(--line-firm); border-radius: 2px;
+         padding: .4rem .6rem; font: inherit; cursor: pointer; }
+button:hover { color: var(--accent); border-color: currentColor; }
+#types { margin-top: .5rem; }
+#types button { font: var(--t-small)/var(--lh-data) var(--mono); padding: .1rem .5rem; border-radius: 999px; }
+#types button[aria-pressed=true] { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+ol.timeline { list-style: none; margin: 1.4rem 0 0; padding: 0; }
+ol.timeline > li { position: relative; padding: 0 0 2.4rem 1.5rem; border-left: 1px solid var(--line-firm); }
+ol.timeline > li:last-child { border-left-color: transparent; }
+ol.timeline > li::before { content: ""; position: absolute; left: -3.5px; top: .5rem;
+        width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
+ol.timeline > li.hot::before { background: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+.when { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem;
+        font: var(--t-body)/var(--lh-data) var(--mono); }
+.when .date { color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.when .approx { color: var(--warn); font-size: var(--t-small); border-bottom: 1px dotted currentColor; cursor: help; }
+.when .cnt { color: var(--faint); font-size: var(--t-small); }
+.when .ago { color: var(--faint); font-size: var(--t-small); margin-left: auto; }
+.src { margin: .3rem 0 0; font: var(--t-small)/var(--lh-data) var(--mono); }
+.src a { text-decoration: none; color: var(--muted); }
+.src a:hover .host { color: var(--accent); }
+.src .host { color: var(--ink); border-bottom: 1px solid var(--line-firm); }
+.src .path { color: var(--faint); }
+.src .nosrc { color: var(--faint); font-style: italic; }
+.iocs { margin-top: .5rem; }
+.iocs td { padding: .3rem .8rem .3rem 0; border-bottom: 1px solid var(--line);
+           font: var(--t-small)/var(--lh-data) var(--mono); word-break: break-all; }
+.iocs td.kind { width: 5.5rem; color: var(--faint); font-size: var(--t-micro); white-space: nowrap;
+                text-align: right; padding-right: 1rem; }
+.batch-foot { margin: .35rem 0 0; font: var(--t-micro)/var(--lh-data) var(--mono); color: var(--faint); }
+.batch-foot button { border: 0; padding: 0; color: var(--faint); }
+
+.refs { list-style: none; padding: 0; margin: .9rem 0 0; columns: 2; column-gap: 2rem; }
+@media (max-width: 52rem) { .refs { columns: 1; } }
+.refs li { break-inside: avoid; margin-bottom: .3rem; font: var(--t-small)/var(--lh-data) var(--mono); }
+.refs a { color: var(--muted); text-decoration: none; }
+.refs a:hover { color: var(--accent); }
+
+pre { background: var(--panel); border: 1px solid var(--line); border-radius: 3px;
+      padding: .7rem .8rem; overflow-x: auto; font: var(--t-small)/var(--lh-data) var(--mono); margin: .5rem 0 0; }
+pre .c { color: var(--faint); }
+footer { margin-top: 4rem; padding-top: 1.2rem; border-top: 1px solid var(--line-firm);
+         font-size: var(--t-small); color: var(--muted); }
+.related { list-style: none; padding: 0; margin: 1rem 0 0; }
+.related li { padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.related a { font: 500 var(--t-body)/var(--lh-data) var(--sans); text-decoration: none; }
+.related a:hover { color: var(--accent); }
+.related .gidtag { font: var(--t-micro)/1 var(--mono); color: var(--faint); margin-left: .4rem; }
+.related .why { margin-top: .15rem; font: var(--t-small)/var(--lh-data) var(--mono); color: var(--muted); }
+/* The evidence tiers are not equally strong, and the colour says which. */
+.related .ev.infrastructure { color: var(--accent); }
+.related .ev.reporting { color: var(--ink); }
+.related .ev.technique, .related .ev.software { color: var(--faint); }
+.cta { color: var(--accent); text-decoration: none; font-weight: 500; }
+.cta:hover { text-decoration: underline; }
+.sep { color: var(--faint); }
+[hidden] { display: none !important; }
+/* "/" and Escape make the keyboard a real path through this page, so the focus
+   ring has to be ours rather than whatever the browser defaults to on a dark
+   background. */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+</style>
+<div class=wrap>
+<div class=topbar>
+  <a href="../groups.html">&larr; All actors</a>
+  <a href="../activity.html">Recent activity</a>
+</div>
+
+<header class=masthead>
+<h1>VENOMSPIDER</h1>
+<p class=aka><b>VENOMSPIDER</b> &middot; goldenchickens &middot; moreeggs &middot; revc2 &middot; terracryptor &middot; terraloader &middot; terrastealer &middot; terrastealerv2 &middot; venomlnk &middot; venomloader</p>
+<dl class=stats>
+<div><dt>Indicators</dt><dd>66</dd></div>
+<div><dt>Source reports</dt><dd>38</dd></div>
+<div><dt>Activity span</dt><dd><small>not dated</small></dd></div>
+<div><dt>Newest indicator</dt><dd><small>unknown</small></dd></div>
+<div><dt>Upstream change</dt><dd>2026-01-02</dd></div>
+</dl>
+<div class=spark><span style="--h:68%" title="2019: 12 indicators"></span><span style="--h:20%" title="2020: 1 indicators"></span><span style="--h:0%" title="2021: 0 indicators"></span><span style="--h:0%" title="2022: 0 indicators"></span><span style="--h:0%" title="2023: 0 indicators"></span><span style="--h:100%" title="2024: 26 indicators"></span><span class=hot style="--h:28%" title="2025: 2 indicators"></span><span class=hot style="--h:98%" title="2026: 25 indicators"></span></div>
+<div class=spark-axis><span>2019</span><span>2026</span></div>
+</header>
+
+<div class=grid>
+<aside>
+<h3>On this page</h3>
+<nav><ul><li><a href="#overview">Overview</a></li><li><a href="#reporting">Principal sources</a></li><li><a href="#related">Related groups</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#reading">Further reading</a></li></ul></nav>
+<h3>Attribution</h3>
+<dl class=facts>
+<dt>Upstream trail</dt><dd><a href="https://github.com/stamparm/maltrail/blob/master/trails/static/malware/apt_venomspider.txt">VENOMSPIDER</a></dd>
+</dl>
+<h3>Take the data</h3>
+<pre><span class=c># everything, with sources</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/VENOMSPIDER.json
+
+<span class=c># domains, one per line</span>
+curl -sL https://trilwu.github.io/apttrail/by-group/VENOMSPIDER-domain.txt</pre>
+<p class=note><a href="VENOMSPIDER.json">VENOMSPIDER.json</a> &middot; <a href="VENOMSPIDER-domain.txt">VENOMSPIDER-domain.txt</a></p>
+</aside>
+
+<main>
+<h2 id=overview>Overview <span class=n>66 indicators</span></h2>
+<p class="lede note">No published description. This group is tracked by Maltrail from vendor reporting but is not named in MITRE ATT&amp;CK, so there is no curated profile to show.</p>
+<table class=coverage>
+<tr><td>domain</td><td class=n>49</td><td class=f><a href="VENOMSPIDER-domain.txt">VENOMSPIDER-domain.txt</a></td></tr>
+<tr><td>ipv4</td><td class=n>9</td><td class=f><a href="VENOMSPIDER.json">VENOMSPIDER.json</a></td></tr>
+<tr><td>url</td><td class=n>6</td><td class=f><a href="VENOMSPIDER.json">VENOMSPIDER.json</a></td></tr>
+<tr><td>url_path</td><td class=n>2</td><td class=f><a href="VENOMSPIDER.json">VENOMSPIDER.json</a></td></tr>
+</table>
+
+
+
+
+
+<h2 id=reporting>Principal sources <span class=n>38 reports</span></h2>
+<p class=note>Ranked by how many of this actor's indicators each report brought in.</p>
+<ul class=rank>
+<li><span class=c>13</span><a href="https://community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10927/2734" rel="noopener nofollow"><span class=host>community.emergingthreats.net</span><span class=path>/t/ruleset-update-summary-2025-05-14-v10…</span></a><div class=bar style="--w:100%"></div></li>
+<li><span class=c>8</span><a href="https://www.proofpoint.com/us/threat-insight/post/fake-jobs-campaigns-delivering-moreeggs-backdoor-fake-job-offers" rel="noopener nofollow"><span class=host>proofpoint.com</span><span class=path>/us/threat-insight/post/fake-jobs-campai…</span></a><div class=bar style="--w:62%"></div></li>
+<li><span class=c>7</span><a href="https://x.com/s1dhy/status/1825654074068578528" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/s1dhy/status/1825654074068578528</span></a><div class=bar style="--w:54%"></div></li>
+<li><span class=c>7</span><a href="https://x.com/fr0s7_/status/1826559678668501494" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/fr0s7_/status/1826559678668501494</span></a><div class=bar style="--w:54%"></div></li>
+<li><span class=c>7</span><a href="https://app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d6ff/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/57be831c-884f-4bc5-8287-f31c60c7d…</span></a><div class=bar style="--w:54%"></div></li>
+<li><span class=c>7</span><a href="https://app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59bebec/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/97eb6e11-41c2-4861-a1f5-b48fc59be…</span></a><div class=bar style="--w:54%"></div></li>
+<li><span class=c>7</span><a href="https://app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24a71/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/0397179e-485a-4b4c-bfb6-8c855ad24…</span></a><div class=bar style="--w:54%"></div></li>
+<li><span class=c>6</span><a href="https://x.com/RecordedFuture/status/1919777955368120356" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/RecordedFuture/status/19197779553681203…</span></a><div class=bar style="--w:46%"></div></li>
+</ul>
+
+<h2 id=related>Related groups <span class=n>1</span></h2>
+<p class=note>What the sources have in common &mdash; not a claim that these are the same actor. <a href="../graph.html">See the whole graph</a>.</p>
+<ul class=related>
+<li><a href="G1002.html">BITTER</a> <span class=gidtag>G1002</span><div class=why><span class="ev reporting">1 report cite both</span></div></li>
+</ul>
+
+
+<h2 id=timeline>Timeline <span class=n>66 indicators</span></h2>
+<p class=note>Each entry is a batch of indicators that appeared upstream on one date, under the report it was filed with.</p>
+<div class=tools id=tools hidden data-recent="2024-01-01"><input type=search id=q placeholder="filter indicators  (press /)" aria-label="Filter indicators"><label><input type=checkbox id=defang> defang</label><label><input type=checkbox id=recent> since 2024</label><button type=button data-copy=all>copy</button><button type=button data-copy=csv>copy CSV</button><span class=note><b id=shown>66</b> shown</span></div>
+<div class=chips id=types><button type=button data-type=all aria-pressed=true>all</button><button type=button data-type="domain" aria-pressed=false>domain 49</button><button type=button data-type="ipv4" aria-pressed=false>ipv4 9</button><button type=button data-type="url" aria-pressed=false>url 6</button><button type=button data-type="url_path" aria-pressed=false>url_path 2</button></div>
+
+<p class=note id=empty hidden>No indicator matches. Only the most recent 300 are on this page &mdash; the rest are in the JSON.</p>
+<ol class=timeline id=timeline-list>
+<li id="b-2026-01-02-4d8e77" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-4d8e77"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>13 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10927/2734" rel="noopener nofollow"><span class=host>community.emergingthreats.net</span><span class=path>/t/ruleset-update-summary-2025-05-14-v10…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>api.incapdns.kz</td></tr>
+<tr data-t="domain"><td class=val>beta.w3.org.kz</td></tr>
+<tr data-t="domain"><td class=val>cast.voxcdn.kz</td></tr>
+<tr data-t="domain"><td class=val>developer.master.org.kz</td></tr>
+<tr data-t="domain"><td class=val>incapdns.kz</td></tr>
+<tr data-t="domain"><td class=val>mail.incapdns.kz</td></tr>
+<tr data-t="domain"><td class=val>master.org.kz</td></tr>
+<tr data-t="domain"><td class=val>ryanberardi.com</td></tr>
+<tr data-t="domain"><td class=val>stats.wp.org.kz</td></tr>
+<tr data-t="domain"><td class=val>tool.municipiodechepo.org</td></tr>
+<tr data-t="domain"><td class=val>voxcdn.kz</td></tr>
+<tr data-t="domain"><td class=val>w3.org.kz</td></tr>
+<tr data-t="domain"><td class=val>wp.org.kz</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-1a97b0" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-1a97b0"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>6 domain</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/RecordedFuture/status/1919777955368120356" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/RecordedFuture/status/19197779553681203…</span></a> &middot; <a href="https://x.com/skocherhan/status/1919869645646889308" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/skocherhan/status/1919869645646889308</span></a> &middot; <a href="https://www.recordedfuture.com/research/terrastealerv2-and-terralogger" rel="noopener nofollow"><span class=host>recordedfuture.com</span><span class=path>/research/terrastealerv2-and-terralogger</span></a> &middot; <a href="https://go.recordedfuture.com/hubfs/reports/cta-2025-0501.pdf" rel="noopener nofollow"><span class=host>go.recordedfuture.com</span><span class=path>/hubfs/reports/cta-2025-0501.pdf</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>boldvertex.store</td></tr>
+<tr data-t="domain"><td class=val>jonatechlab.com</td></tr>
+<tr data-t="domain"><td class=val>pub-ee3b9adcbb354679b5c35d5210673997.r2.dev</td></tr>
+<tr data-t="domain"><td class=val>qb-hos.pages.dev</td></tr>
+<tr data-t="domain"><td class=val>swiftvantage.online</td></tr>
+<tr data-t="domain"><td class=val>wetransfers.io</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2026-01-02-2c0072" class=hot>
+<div class=when><a class=date href="#b-2026-01-02-2c0072"><time datetime="2026-01-02">2026-01-02</time></a> <span class=approx title="Upstream history does not reach further back; the indicator may be older">or earlier</span> <span class=cnt>3 domain, 2 ipv4, 1 url</span><span class=ago>this year</span></div>
+<p class=src><a href="https://x.com/DaveLikesMalwre/status/1910770682071539863" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/DaveLikesMalwre/status/1910770682071539…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/0151383431f7d057aa48ddff60feaa3a6511ec0b0eb0b224136e0cbef93daf85/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/0151383431f7d057aa48ddff60feaa…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/18c8117c589f6986ff02504283c5af9906483a2d72ecad764ac597f04fc81ae9/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/18c8117c589f6986ff02504283c5af…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/b24603f97e43ce0445f13d902adad63fb1763e5e1ddf16a31379dd13d467b09f/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/b24603f97e43ce0445f13d902adad6…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/207c283b7877f26e57b555dc638a297633920d3a3df81a492dd4e121d52d1872/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/207c283b7877f26e57b555dc638a29…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>avadgray.org</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>monstrack.org</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>swissblog.org</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.104.138:443</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.104.138:445</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://65.20.104.138</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2025-01-14-b2e428" class=hot>
+<div class=when><a class=date href="#b-2025-01-14-b2e428"><time datetime="2025-01-14">2025-01-14</time></a> <span class=cnt>1 domain, 1 ipv4</span><span class=ago>1 yr ago</span></div>
+<p class=src><a href="https://x.com/DaveLikesMalwre/status/1878933026547040271" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/DaveLikesMalwre/status/1878933026547040…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>waveax.net</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.99.10:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-12-28-cfabd1">
+<div class=when><a class=date href="#b-2024-12-28-cfabd1"><time datetime="2024-12-28">2024-12-28</time></a> <span class=cnt>1 domain, 1 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/DaveLikesMalwre/status/1872840653597823387" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/DaveLikesMalwre/status/1872840653597823…</span></a> &middot; <a href="https://app.any.run/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2cb5" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>finatick.com</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.104.212:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-12-02-a4865f">
+<div class=when><a class=date href="#b-2024-12-02-a4865f"><time datetime="2024-12-02">2024-12-02</time></a> <span class=cnt>1 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://www.zscaler.com/blogs/security-research/unveiling-revc2-and-venom-loader" rel="noopener nofollow"><span class=host>zscaler.com</span><span class=path>/blogs/security-research/unveiling-revc2…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>208.85.17.52:8082</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-10-19-85496c">
+<div class=when><a class=date href="#b-2024-10-19-85496c"><time datetime="2024-10-19">2024-10-19</time></a> <span class=cnt>2 domain, 2 url</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/malwrhunterteam/status/1847583357485416896" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/malwrhunterteam/status/1847583357485416…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/1ddb7d620b40e406d07b5242683583071ef11dc43713ca03cf9c054b284d2fb7/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/1ddb7d620b40e406d07b5242683583…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>drive.fileio.center</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>fileio.center</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://170.75.168.151</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://65.38.121.211</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-10-14-acf892">
+<div class=when><a class=date href="#b-2024-10-14-acf892"><time datetime="2024-10-14">2024-10-14</time></a> <span class=cnt>1 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/DaveLikesMalwre/status/1845590642430529630" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/DaveLikesMalwre/status/1845590642430529…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/b1781a062bfca853a3b556afe982e1800bb1e30cde0771cf7c62ca272503c788/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/b1781a062bfca853a3b556afe982e1…</span></a></p>
+<table class=iocs>
+<tr data-t="ipv4"><td class=val>170.75.168.151:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-09-25-bc9bf1">
+<div class=when><a class=date href="#b-2024-09-25-bc9bf1"><time datetime="2024-09-25">2024-09-25</time></a> <span class=cnt>2 domain, 2 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/k3yp0d/status/1838668770841108608" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/k3yp0d/status/1838668770841108608</span></a> &middot; <a href="https://www.virustotal.com/gui/file/c0579b32a8dfad75f00078c48a25ae34c73950692104cfca6c299dcc9de27b4a/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/c0579b32a8dfad75f00078c48a25ae…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>nopsec.org</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>seopager.xyz</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>217.69.8.13:8082</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.107.145:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-09-16-5ab4f7">
+<div class=when><a class=date href="#b-2024-09-16-5ab4f7"><time datetime="2024-09-16">2024-09-16</time></a> <span class=cnt>1 domain, 1 url, 2 url_path</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/k3yp0d/status/1835549865155154285" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/k3yp0d/status/1835549865155154285</span></a> &middot; <a href="https://www.virustotal.com/gui/file/01446c36f93532f2cd8af96396e22086f37aef1bb8e68b3b03076c9da5ec9737/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/01446c36f93532f2cd8af96396e220…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>yerra.org</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://72.5.43.19</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/aaaQHvrzTFUuAh</td></tr>
+<tr data-t="url_path"><td class=kind>url_path</td><td class=val>/ccckweJYfszthKpQa</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-08-22-a505cc">
+<div class=when><a class=date href="#b-2024-08-22-a505cc"><time datetime="2024-08-22">2024-08-22</time></a> <span class=cnt>5 domain, 2 url</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/s1dhy/status/1825654074068578528" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/s1dhy/status/1825654074068578528</span></a> &middot; <a href="https://x.com/fr0s7_/status/1826559678668501494" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/fr0s7_/status/1826559678668501494</span></a> &middot; <a href="https://app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d6ff/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/57be831c-884f-4bc5-8287-f31c60c7d…</span></a> &middot; <a href="https://app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59bebec/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/97eb6e11-41c2-4861-a1f5-b48fc59be…</span></a> &middot; <a href="https://app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24a71/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/0397179e-485a-4b4c-bfb6-8c855ad24…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>api.sharefiles.center</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>api.totalsphere.center</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>sharefiles.center</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>totalsphere.center</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>vad.totalsphere.center</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://65.38.121.145</td></tr>
+<tr data-t="url"><td class=kind>url</td><td class=val>http://65.38.121.75</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2024-08-19-97346b">
+<div class=when><a class=date href="#b-2024-08-19-97346b"><time datetime="2024-08-19">2024-08-19</time></a> <span class=cnt>2 domain, 1 ipv4</span><span class=ago>2 yrs ago</span></div>
+<p class=src><a href="https://x.com/r3dbU7z/status/1825446509082505613" rel="noopener nofollow"><span class=host>x.com</span><span class=path>/r3dbU7z/status/1825446509082505613</span></a> &middot; <a href="https://www.virustotal.com/gui/file/4ca845b77a71cc1b5d8b367f3329a70cd7753c2d5d056b1dac51860a4815b859/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/4ca845b77a71cc1b5d8b367f3329a7…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/28cb51c171d591b2bb35bc9a4379010fd37f66cfcd317a67cb73b24262dc17c6/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/28cb51c171d591b2bb35bc9a437901…</span></a> &middot; <a href="https://www.virustotal.com/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e2c5e4d0bba2bf117023a00b0b8603ef31d/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>gdrive.rest</td></tr>
+<tr data-t="domain"><td class=kind>domain</td><td class=val>winapi.net</td></tr>
+<tr data-t="ipv4"><td class=kind>ipv4</td><td class=val>65.20.104.150:8080</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2020-06-18-0c44fd">
+<div class=when><a class=date href="#b-2020-06-18-0c44fd"><time datetime="2020-06-18">2020-06-18</time></a> <span class=cnt>1 domain</span><span class=ago>6 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/VK_Intel/status/1286747453849468929" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/VK_Intel/status/1286747453849468929</span></a> &middot; <a href="https://www.virustotal.com/gui/file/38f3a52e1ebd93db75f0fb6ce6172565cc0f27f0f86f32f470fa7a9c8de9f094/detection" rel="noopener nofollow"><span class=host>virustotal.com</span><span class=path>/gui/file/38f3a52e1ebd93db75f0fb6ce61725…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>maps.doaglas.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-12-30-693016">
+<div class=when><a class=date href="#b-2019-12-30-693016"><time datetime="2019-12-30">2019-12-30</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/VK_Intel/status/1211758023376592896" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/VK_Intel/status/1211758023376592896</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>blog.jasonlees.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-12-09-fe1913">
+<div class=when><a class=date href="#b-2019-12-09-fe1913"><time datetime="2019-12-09">2019-12-09</time></a> <span class=cnt>2 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/James_inthe_box/status/1204125950033575937" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/James_inthe_box/status/1204125950033575…</span></a> &middot; <a href="https://app.any.run/tasks/48907a8c-bc47-4552-a705-334e93d0edca/" rel="noopener nofollow"><span class=host>app.any.run</span><span class=path>/tasks/48907a8c-bc47-4552-a705-334e93d0e…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>anuffrost.com</td></tr>
+<tr data-t="domain"><td class=val>dns.hahdyman.com</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-04-19-23f4ed">
+<div class=when><a class=date href="#b-2019-04-19-23f4ed"><time datetime="2019-04-19">2019-04-19</time></a> <span class=cnt>1 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://twitter.com/VK_Intel/status/1119082329324965893" rel="noopener nofollow"><span class=host>twitter.com</span><span class=path>/VK_Intel/status/1119082329324965893</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>report.monicabellucci.kz</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+<li id="b-2019-02-25-861c1a">
+<div class=when><a class=date href="#b-2019-02-25-861c1a"><time datetime="2019-02-25">2019-02-25</time></a> <span class=cnt>8 domain</span><span class=ago>7 yrs ago</span></div>
+<p class=src><a href="https://www.proofpoint.com/us/threat-insight/post/fake-jobs-campaigns-delivering-moreeggs-backdoor-fake-job-offers" rel="noopener nofollow"><span class=host>proofpoint.com</span><span class=path>/us/threat-insight/post/fake-jobs-campai…</span></a></p>
+<table class=iocs>
+<tr data-t="domain"><td class=val>api.cloudservers.kz</td></tr>
+<tr data-t="domain"><td class=val>contactlistsagregator.com</td></tr>
+<tr data-t="domain"><td class=val>interrafcu.com</td></tr>
+<tr data-t="domain"><td class=val>mail.rediffmail.kz</td></tr>
+<tr data-t="domain"><td class=val>onlinemail.kz</td></tr>
+<tr data-t="domain"><td class=val>secure.cloudserv.ink</td></tr>
+<tr data-t="domain"><td class=val>tonsandmillions.com</td></tr>
+<tr data-t="domain"><td class=val>usstaffing.services</td></tr>
+</table>
+<p class=batch-foot><button type=button data-copy=batch>copy batch</button></p>
+</li>
+</ol>
+
+<h2 id=reading>Further reading <span class=n>38</span></h2>
+<ul class=refs>
+<li><a href="https://www.virustotal.com/gui/file/1ddb7d620b40e406d07b5242683583071ef11dc43713ca03cf9c054b284d2fb7/detection" rel="noopener nofollow">virustotal.com/gui/file/1ddb7d620b40e406d07b5242683583…</a></li>
+<li><a href="https://twitter.com/VK_Intel/status/1119082329324965893" rel="noopener nofollow">twitter.com/VK_Intel/status/1119082329324965893</a></li>
+<li><a href="https://www.virustotal.com/gui/file/c0579b32a8dfad75f00078c48a25ae34c73950692104cfca6c299dcc9de27b4a/detection" rel="noopener nofollow">virustotal.com/gui/file/c0579b32a8dfad75f00078c48a25ae…</a></li>
+<li><a href="https://x.com/fr0s7_/status/1826559678668501494" rel="noopener nofollow">x.com/fr0s7_/status/1826559678668501494</a></li>
+<li><a href="https://x.com/r3dbU7z/status/1825446509082505613" rel="noopener nofollow">x.com/r3dbU7z/status/1825446509082505613</a></li>
+<li><a href="https://x.com/DaveLikesMalwre/status/1845590642430529630" rel="noopener nofollow">x.com/DaveLikesMalwre/status/1845590642430529…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/b1781a062bfca853a3b556afe982e1800bb1e30cde0771cf7c62ca272503c788/detection" rel="noopener nofollow">virustotal.com/gui/file/b1781a062bfca853a3b556afe982e1…</a></li>
+<li><a href="https://www.recordedfuture.com/research/terrastealerv2-and-terralogger" rel="noopener nofollow">recordedfuture.com/research/terrastealerv2-and-terralogger</a></li>
+<li><a href="https://www.virustotal.com/gui/file/b24603f97e43ce0445f13d902adad63fb1763e5e1ddf16a31379dd13d467b09f/detection" rel="noopener nofollow">virustotal.com/gui/file/b24603f97e43ce0445f13d902adad6…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/0151383431f7d057aa48ddff60feaa3a6511ec0b0eb0b224136e0cbef93daf85/detection" rel="noopener nofollow">virustotal.com/gui/file/0151383431f7d057aa48ddff60feaa…</a></li>
+<li><a href="https://twitter.com/James_inthe_box/status/1204125950033575937" rel="noopener nofollow">twitter.com/James_inthe_box/status/1204125950033575…</a></li>
+<li><a href="https://twitter.com/VK_Intel/status/1211758023376592896" rel="noopener nofollow">twitter.com/VK_Intel/status/1211758023376592896</a></li>
+<li><a href="https://x.com/DaveLikesMalwre/status/1910770682071539863" rel="noopener nofollow">x.com/DaveLikesMalwre/status/1910770682071539…</a></li>
+<li><a href="https://app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24a71/" rel="noopener nofollow">app.any.run/tasks/0397179e-485a-4b4c-bfb6-8c855ad24…</a></li>
+<li><a href="https://x.com/malwrhunterteam/status/1847583357485416896" rel="noopener nofollow">x.com/malwrhunterteam/status/1847583357485416…</a></li>
+<li><a href="https://x.com/skocherhan/status/1919869645646889308" rel="noopener nofollow">x.com/skocherhan/status/1919869645646889308</a></li>
+<li><a href="https://twitter.com/VK_Intel/status/1286747453849468929" rel="noopener nofollow">twitter.com/VK_Intel/status/1286747453849468929</a></li>
+<li><a href="https://x.com/k3yp0d/status/1838668770841108608" rel="noopener nofollow">x.com/k3yp0d/status/1838668770841108608</a></li>
+<li><a href="https://www.virustotal.com/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e2c5e4d0bba2bf117023a00b0b8603ef31d/detection" rel="noopener nofollow">virustotal.com/gui/file/d2809ea33f5d54c9c6d1c6037f1b3e…</a></li>
+<li><a href="https://community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10927/2734" rel="noopener nofollow">community.emergingthreats.net/t/ruleset-update-summary-2025-05-14-v10…</a></li>
+<li><a href="https://x.com/s1dhy/status/1825654074068578528" rel="noopener nofollow">x.com/s1dhy/status/1825654074068578528</a></li>
+<li><a href="https://x.com/k3yp0d/status/1835549865155154285" rel="noopener nofollow">x.com/k3yp0d/status/1835549865155154285</a></li>
+<li><a href="https://www.virustotal.com/gui/file/01446c36f93532f2cd8af96396e22086f37aef1bb8e68b3b03076c9da5ec9737/detection" rel="noopener nofollow">virustotal.com/gui/file/01446c36f93532f2cd8af96396e220…</a></li>
+<li><a href="https://x.com/DaveLikesMalwre/status/1872840653597823387" rel="noopener nofollow">x.com/DaveLikesMalwre/status/1872840653597823…</a></li>
+<li><a href="https://x.com/DaveLikesMalwre/status/1878933026547040271" rel="noopener nofollow">x.com/DaveLikesMalwre/status/1878933026547040…</a></li>
+<li><a href="https://app.any.run/tasks/48907a8c-bc47-4552-a705-334e93d0edca/" rel="noopener nofollow">app.any.run/tasks/48907a8c-bc47-4552-a705-334e93d0e…</a></li>
+<li><a href="https://app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d6ff/" rel="noopener nofollow">app.any.run/tasks/57be831c-884f-4bc5-8287-f31c60c7d…</a></li>
+<li><a href="https://go.recordedfuture.com/hubfs/reports/cta-2025-0501.pdf" rel="noopener nofollow">go.recordedfuture.com/hubfs/reports/cta-2025-0501.pdf</a></li>
+<li><a href="https://www.virustotal.com/gui/file/28cb51c171d591b2bb35bc9a4379010fd37f66cfcd317a67cb73b24262dc17c6/detection" rel="noopener nofollow">virustotal.com/gui/file/28cb51c171d591b2bb35bc9a437901…</a></li>
+<li><a href="https://www.proofpoint.com/us/threat-insight/post/fake-jobs-campaigns-delivering-moreeggs-backdoor-fake-job-offers" rel="noopener nofollow">proofpoint.com/us/threat-insight/post/fake-jobs-campai…</a></li>
+<li><a href="https://app.any.run/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2cb5" rel="noopener nofollow">app.any.run/tasks/a2b2b424-9c0a-48ca-89a0-5535bfcc2…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/207c283b7877f26e57b555dc638a297633920d3a3df81a492dd4e121d52d1872/detection" rel="noopener nofollow">virustotal.com/gui/file/207c283b7877f26e57b555dc638a29…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/4ca845b77a71cc1b5d8b367f3329a70cd7753c2d5d056b1dac51860a4815b859/detection" rel="noopener nofollow">virustotal.com/gui/file/4ca845b77a71cc1b5d8b367f3329a7…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/18c8117c589f6986ff02504283c5af9906483a2d72ecad764ac597f04fc81ae9/detection" rel="noopener nofollow">virustotal.com/gui/file/18c8117c589f6986ff02504283c5af…</a></li>
+<li><a href="https://www.virustotal.com/gui/file/38f3a52e1ebd93db75f0fb6ce6172565cc0f27f0f86f32f470fa7a9c8de9f094/detection" rel="noopener nofollow">virustotal.com/gui/file/38f3a52e1ebd93db75f0fb6ce61725…</a></li>
+<li><a href="https://app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59bebec/" rel="noopener nofollow">app.any.run/tasks/97eb6e11-41c2-4861-a1f5-b48fc59be…</a></li>
+<li><a href="https://x.com/RecordedFuture/status/1919777955368120356" rel="noopener nofollow">x.com/RecordedFuture/status/19197779553681203…</a></li>
+<li><a href="https://www.zscaler.com/blogs/security-research/unveiling-revc2-and-venom-loader" rel="noopener nofollow">zscaler.com/blogs/security-research/unveiling-revc2…</a></li>
+</ul>
+
+
+<footer>
+<p>Indicators from <a href="https://github.com/stamparm/maltrail">Maltrail</a>; actor profile from the
+<a href="https://github.com/MISP/misp-galaxy">MISP galaxy</a> and
+<a href="https://attack.mitre.org/">MITRE ATT&amp;CK</a>. Attribution is inherited
+from those sources, not independently assessed. Dates are when an indicator entered
+Maltrail, not when the actor first used it; those marked <span class=approx>or
+earlier</span> are a floor, because upstream reset its history in January 2026.</p>
+<p>Generated 2026-08-15T23:20:53+00:00 &middot; rebuilt hourly &middot;
+<a href="https://github.com/trilwu/apttrail">source</a></p>
+</footer>
+</main>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('timeline-list');
+  if (!root) return;
+  var rows = Array.prototype.slice.call(root.querySelectorAll('tr'));
+  if (!rows.length) return;
+  rows.forEach(function (r) { r.dataset.v = r.querySelector('.val').textContent; });
+
+  var tools = document.getElementById('tools');
+  var q = document.getElementById('q');
+  var fang = document.getElementById('defang');
+  var count = document.getElementById('shown');
+  var recent = document.getElementById('recent');
+  var cutoff = tools ? tools.getAttribute('data-recent') : '';
+  var kind = 'all';
+  if (tools) tools.hidden = false;
+
+  // http -> hxxp, https -> hxxps. Capturing the whole scheme and prefixing it
+  // produced "hxxphttp://", which is what shipped and what a reader pasting
+  // into a ticket would have had to clean up by hand.
+  function defanged(v) {
+    return v.replace(/^http(s?):/i, 'hxxp$1:').replace(/\./g, '[.]');
+  }
+  function meta(row) {
+    var li = row.closest('li');
+    var when = li.querySelector('time');
+    var src = li.querySelector('.src a');
+    return {
+      date: when ? when.getAttribute('datetime') : '',
+      source: src ? src.getAttribute('href') : ''
+    };
+  }
+  function apply() {
+    var needle = (q.value || '').trim().toLowerCase();
+    var bite = fang.checked;
+    var visible = 0;
+    rows.forEach(function (r) {
+      var v = r.dataset.v;
+      var hit = (!needle || v.toLowerCase().indexOf(needle) !== -1)
+        && (kind === 'all' || r.dataset.t === kind);
+      if (hit && recent && recent.checked && cutoff) {
+        hit = (meta(r).date || '') >= cutoff;
+      }
+      r.hidden = !hit;
+      if (hit) visible++;
+      r.querySelector('.val').textContent = bite ? defanged(v) : v;
+    });
+    Array.prototype.forEach.call(root.children, function (li) {
+      li.hidden = !li.querySelector('tr:not([hidden])');
+    });
+    count.textContent = visible.toLocaleString();
+    document.getElementById('empty').hidden = visible > 0;
+
+    // The filtered view is worth sharing, so put it in the URL.
+    if (history.replaceState) {
+      history.replaceState(null, '', needle ? '?q=' + encodeURIComponent(needle) : location.pathname);
+    }
+  }
+  q.addEventListener('input', apply);
+  fang.addEventListener('change', apply);
+  if (recent) recent.addEventListener('change', apply);
+
+  var chips = document.getElementById('types');
+  if (chips) {
+    chips.addEventListener('click', function (e) {
+      var chip = e.target.closest('button[data-type]');
+      if (!chip) return;
+      kind = chip.dataset.type;
+      Array.prototype.forEach.call(chips.querySelectorAll('button'), function (b) {
+        b.setAttribute('aria-pressed', String(b === chip));
+      });
+      apply();
+    });
+  }
+
+  // "/" is the filter, everywhere. Escape backs out.
+  document.addEventListener('keydown', function (e) {
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName);
+    if (e.key === '/' && !typing) { e.preventDefault(); q.focus(); q.select(); }
+    else if (e.key === 'Escape' && typing) { q.value = ''; q.blur(); apply(); }
+  });
+
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-copy]');
+    if (!btn) return;
+    var how = btn.getAttribute('data-copy');
+    var scope = how === 'batch' ? btn.closest('li') : root;
+    var cells = Array.prototype.slice.call(scope.querySelectorAll('tr:not([hidden]) .val'));
+    var text;
+    if (how === 'csv') {
+      // Columns an analyst pastes into a ticket or a spreadsheet.
+      text = 'indicator,type,first_seen,source\n' + cells.map(function (c) {
+        var row = c.closest('tr');
+        var m = meta(row);
+        return [c.textContent, row.dataset.t, m.date, m.source].map(function (f) {
+          return /[",\n]/.test(f) ? '"' + f.replace(/"/g, '""') + '"' : f;
+        }).join(',');
+      }).join('\n');
+    } else {
+      text = cells.map(function (c) { return c.textContent; }).join('\n');
+    }
+    var done = function () {
+      var was = btn.textContent;
+      btn.textContent = 'copied ' + cells.length;
+      setTimeout(function () { btn.textContent = was; }, 1400);
+    };
+    if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+  });
+
+  var initial = /[?&]q=([^&]*)/.exec(location.search);
+  if (initial) { q.value = decodeURIComponent(initial[1].replace(/\+/g, ' ')); }
+  apply();
+})();
+</script>
+</html>

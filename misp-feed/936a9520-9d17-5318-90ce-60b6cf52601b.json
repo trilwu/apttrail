@@ -1,0 +1,171 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b7a6d01a-7ab8-53f4-8dd1-7394214805b7",
+        "value": "bizsonet.ayar.biz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c69760cb-f13c-56e6-aad4-40df290e6206",
+        "value": "bizsonet.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8dffa618-95c8-5208-967a-958d36874b76",
+        "value": "client-message.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "129056a5-11a1-5335-9cc2-b8882afa235a",
+        "value": "client-screenfonts.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d902aee3-4ec5-5504-899d-fff92b19e32a",
+        "value": "docsdriver.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "390f5758-a889-5c07-82f4-ce865d2fa98c",
+        "value": "grsvps.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6bb22973-2c61-55b4-8110-dcdbea4c2642",
+        "value": "itservicedesk.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7dbc401a-a948-585b-b55c-b751224a42c0",
+        "value": "pqexport.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "807195a0-5df0-5991-9261-5841ced72276",
+        "value": "scaurri.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "aa4a811d-9017-5912-9224-5add040b7214",
+        "value": "secozco.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2d9ea670-2494-56de-829a-0686efc383b2",
+        "value": "sharedriver.pw"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7c2e5cb0-9a5b-58ca-b787-5701be529d8a",
+        "value": "sharedriver.us"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f35705d3-b2f0-52b2-acae-e4349bb7d6ad",
+        "value": "tempdomain8899.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "7e007d63-9c97-537c-8a09-9c574c3efd17",
+        "value": "world-paper.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1544112332",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e2d8ed48-10db-54ad-98da-588ea0dd1199",
+        "value": "zwfaxi.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1551881751",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "b45506a0-a655-517f-b2ac-e35fddf5809a",
+        "value": "tdalpacafarm.com/files/kr/contents/upload.php"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1556312566",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "c801871e-2fb6-5f9e-91d5-d90ce4465461",
+        "value": "/expres.php"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:stolenpencil"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Stolen Pencil - G0086\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Stolen Pencil (G0086) - Maltrail group STOLENPENCIL",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "936a9520-9d17-5318-90ce-60b6cf52601b"
+  }
+}

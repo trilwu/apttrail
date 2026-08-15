@@ -1,0 +1,101 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3,
+    "url": 3
+  },
+  "first_seen": {
+    "domain": {
+      "asljkdqhkhasdq.softether.net": "2023-08-25",
+      "vpn437972693.sednc.cn": "2023-08-25",
+      "vpn472462384.softether.net": "2023-08-25"
+    },
+    "url": {
+      "http://149.28.137.179": "2026-01-02",
+      "http://158.247.193.93": "2026-01-02",
+      "http://158.247.226.80": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {
+      "http://149.28.137.179": "at-or-before",
+      "http://158.247.193.93": "at-or-before",
+      "http://158.247.226.80": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2023-08-25",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "asljkdqhkhasdq.softether.net",
+      "vpn437972693.sednc.cn",
+      "vpn472462384.softether.net"
+    ],
+    "url": [
+      "http://149.28.137.179",
+      "http://158.247.193.93",
+      "http://158.247.226.80"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "FLAXTYPHOON"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/64e86c65ba511d1d4c4aa590",
+    "https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/",
+    "https://www.virustotal.com/gui/file/a596d4a1ede0d022d77f0b03c723c7071ffec0e89b35f0d30fb9ff15feeb4969/detection",
+    "https://x.com/Cyberteam008/status/1909432341702787180",
+    "https://x.com/skocherhan/status/1920679514096468212"
+  ],
+  "related": [],
+  "slug": "FLAXTYPHOON",
+  "timeline": [
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "url": [
+          "http://149.28.137.179",
+          "http://158.247.193.93",
+          "http://158.247.226.80"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/Cyberteam008/status/1909432341702787180",
+        "https://x.com/skocherhan/status/1920679514096468212",
+        "https://www.virustotal.com/gui/file/a596d4a1ede0d022d77f0b03c723c7071ffec0e89b35f0d30fb9ff15feeb4969/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-08-25",
+      "indicators": {
+        "domain": [
+          "asljkdqhkhasdq.softether.net",
+          "vpn437972693.sednc.cn",
+          "vpn472462384.softether.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2023/08/24/flax-typhoon-using-legitimate-software-to-quietly-access-taiwanese-organizations/",
+        "https://otx.alienvault.com/pulse/64e86c65ba511d1d4c4aa590"
+      ],
+      "total": 3
+    }
+  ]
+}

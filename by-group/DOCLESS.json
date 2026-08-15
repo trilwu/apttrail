@@ -1,0 +1,74 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "ipv4": 1,
+    "url": 1
+  },
+  "first_seen": {
+    "ipv4": {
+      "144.202.54.86:443": "2019-04-16"
+    },
+    "url": {
+      "http://144.202.54.86": "2019-04-16"
+    }
+  },
+  "first_seen_precision": {
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2019-04-16",
+    "latest": "2019-04-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "ipv4": [
+      "144.202.54.86:443"
+    ],
+    "url": [
+      "http://144.202.54.86"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DOCLESS"
+  ],
+  "references": [
+    "https://app.any.run/tasks/748eccd0-8a7c-4401-81ef-0902419819de/",
+    "https://blog.en.elevenpaths.com/2019/04/new-research-docless-vietnam-apt.html",
+    "https://twitter.com/h4ckak/status/1106212438976782337",
+    "https://twitter.com/teoseller/status/1118119539525455874",
+    "https://www.virustotal.com/gui/ip-address/144.202.54.86/relations"
+  ],
+  "related": [],
+  "slug": "DOCLESS",
+  "timeline": [
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2019-04-16",
+      "indicators": {
+        "ipv4": [
+          "144.202.54.86:443"
+        ],
+        "url": [
+          "http://144.202.54.86"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/teoseller/status/1118119539525455874",
+        "https://blog.en.elevenpaths.com/2019/04/new-research-docless-vietnam-apt.html",
+        "https://www.virustotal.com/gui/ip-address/144.202.54.86/relations",
+        "https://twitter.com/h4ckak/status/1106212438976782337",
+        "https://app.any.run/tasks/748eccd0-8a7c-4401-81ef-0902419819de/"
+      ],
+      "total": 2
+    }
+  ]
+}

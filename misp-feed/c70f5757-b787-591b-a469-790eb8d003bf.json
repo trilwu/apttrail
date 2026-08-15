@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e5608b8f-1e3d-5b40-8139-4c32e11ae458",
+        "value": "acquerifec.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5331d168-797f-59b3-997e-145a9f9bd6de",
+        "value": "ayobabelan.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "600130d1-5d5a-579c-bf19-897da583b0df",
+        "value": "b0aweb0.refec.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ec75da8a-90d5-5665-8da5-c39ab7d0abce",
+        "value": "bloggoversikten.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "5cb6b702-855f-50ec-974d-3bb743fdcd33",
+        "value": "outlook-d12.zyns.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c0463d50-3b70-5971-96f2-5873ffbddcc2",
+        "value": "refec.site"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a0203afd-a3b5-556a-be47-b0fc87c29696",
+        "value": "refreb0.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cdefed2e-0a6e-5ba3-ba8e-df06e69109cd",
+        "value": "refreb1.info"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f31a9208-83cb-52da-88c1-be60a9ec5f63",
+        "value": "ws.iferc.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1771325346",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ffebeb48-f0e9-5e4a-aa43-a6ddf371f6f8",
+        "value": "82.221.100.40:443"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1769894247",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "e89b9a13-b15d-53f8-a289-b6a7bfb0e8fa",
+        "value": "95.174.65.218:443"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:punishingowl"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: PUNISHINGOWL",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "c70f5757-b787-591b-a469-790eb8d003bf"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "aliases": [
+    "goreshell"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11,
+    "ipv4": 1
+  },
+  "first_seen": {
+    "domain": {
+      "ccna.organiccrap.com": "2026-01-02",
+      "cloud.trendav.co": "2026-01-02",
+      "downloads.trendav.vip": "2026-01-02",
+      "epp.navy.ddns.info": "2026-01-02",
+      "mail.ccna.organiccrap.com": "2026-01-02",
+      "mail.secmailbox.us": "2026-01-02",
+      "navy.ddns.info": "2026-01-02",
+      "secmailbox.us": "2026-01-02",
+      "sentinelxdr.us": "2026-01-02",
+      "tatacom.duckdns.org": "2026-01-02",
+      "trendav.vip": "2026-01-02"
+    },
+    "ipv4": {
+      "45.13.199.209:443": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "ccna.organiccrap.com": "at-or-before",
+      "cloud.trendav.co": "at-or-before",
+      "downloads.trendav.vip": "at-or-before",
+      "epp.navy.ddns.info": "at-or-before",
+      "mail.ccna.organiccrap.com": "at-or-before",
+      "mail.secmailbox.us": "at-or-before",
+      "navy.ddns.info": "at-or-before",
+      "secmailbox.us": "at-or-before",
+      "sentinelxdr.us": "at-or-before",
+      "tatacom.duckdns.org": "at-or-before",
+      "trendav.vip": "at-or-before"
+    },
+    "ipv4": {
+      "45.13.199.209:443": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ccna.organiccrap.com",
+      "cloud.trendav.co",
+      "downloads.trendav.vip",
+      "epp.navy.ddns.info",
+      "mail.ccna.organiccrap.com",
+      "mail.secmailbox.us",
+      "navy.ddns.info",
+      "secmailbox.us",
+      "sentinelxdr.us",
+      "tatacom.duckdns.org",
+      "trendav.vip"
+    ],
+    "ipv4": [
+      "45.13.199.209:443"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "PURPLEHAZE"
+  ],
+  "references": [
+    "https://www.sentinelone.com/labs/follow-the-smoke-china-nexus-threat-actors-hammer-at-the-doors-of-top-tier-targets/",
+    "https://x.com/milenkowski/status/1932038909455684056"
+  ],
+  "related": [],
+  "slug": "PURPLEHAZE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 11,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ccna.organiccrap.com",
+          "cloud.trendav.co",
+          "downloads.trendav.vip",
+          "epp.navy.ddns.info",
+          "mail.ccna.organiccrap.com",
+          "mail.secmailbox.us",
+          "navy.ddns.info",
+          "secmailbox.us",
+          "sentinelxdr.us",
+          "tatacom.duckdns.org",
+          "trendav.vip"
+        ],
+        "ipv4": [
+          "45.13.199.209:443"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/milenkowski/status/1932038909455684056",
+        "https://www.sentinelone.com/labs/follow-the-smoke-china-nexus-threat-actors-hammer-at-the-doors-of-top-tier-targets/"
+      ],
+      "total": 12
+    }
+  ]
+}

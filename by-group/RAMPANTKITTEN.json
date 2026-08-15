@@ -1,0 +1,126 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 19
+  },
+  "first_seen": {
+    "domain": {
+      "afalr-onedrive.com": "2020-09-26",
+      "afalr-sharepoint.com": "2020-09-26",
+      "alarabiye.net": "2020-09-26",
+      "cpuconfig.com": "2020-09-26",
+      "developerchrome.com": "2020-09-26",
+      "endupload.com": "2020-09-26",
+      "firefox-addons.com": "2018-09-29",
+      "gradleservice.info": "2020-09-26",
+      "mailgoogle.info": "2020-09-26",
+      "picfile.net": "2020-09-26",
+      "telegrambackups.com": "2020-09-26",
+      "telegrambots.me": "2020-09-26",
+      "telegramco.org": "2020-09-26",
+      "telegramdesktop.com": "2020-09-26",
+      "telegramreport.me": "2020-09-26",
+      "telegramup.com": "2020-09-26",
+      "update-help.com": "2020-09-26",
+      "vareangold.de": "2020-09-26",
+      "winchecking.com": "2020-09-26"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2018-09-29",
+    "latest": "2020-09-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "afalr-onedrive.com",
+      "afalr-sharepoint.com",
+      "alarabiye.net",
+      "cpuconfig.com",
+      "developerchrome.com",
+      "endupload.com",
+      "firefox-addons.com",
+      "gradleservice.info",
+      "mailgoogle.info",
+      "picfile.net",
+      "telegrambackups.com",
+      "telegrambots.me",
+      "telegramco.org",
+      "telegramdesktop.com",
+      "telegramreport.me",
+      "telegramup.com",
+      "update-help.com",
+      "vareangold.de",
+      "winchecking.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "RAMPANTKITTEN"
+  ],
+  "references": [
+    "https://otx.alienvault.com/pulse/5f64d3ca157b5eecc4646710",
+    "https://research.checkpoint.com/2020/rampant-kitten-an-iranian-espionage-campaign/"
+  ],
+  "related": [],
+  "slug": "RAMPANTKITTEN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 18
+      },
+      "first_seen": "2020-09-26",
+      "indicators": {
+        "domain": [
+          "afalr-onedrive.com",
+          "afalr-sharepoint.com",
+          "alarabiye.net",
+          "cpuconfig.com",
+          "developerchrome.com",
+          "endupload.com",
+          "gradleservice.info",
+          "mailgoogle.info",
+          "picfile.net",
+          "telegrambackups.com",
+          "telegrambots.me",
+          "telegramco.org",
+          "telegramdesktop.com",
+          "telegramreport.me",
+          "telegramup.com",
+          "update-help.com",
+          "vareangold.de",
+          "winchecking.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2020/rampant-kitten-an-iranian-espionage-campaign/",
+        "https://otx.alienvault.com/pulse/5f64d3ca157b5eecc4646710"
+      ],
+      "total": 18
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-29",
+      "indicators": {
+        "domain": [
+          "firefox-addons.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2020/rampant-kitten-an-iranian-espionage-campaign/",
+        "https://otx.alienvault.com/pulse/5f64d3ca157b5eecc4646710"
+      ],
+      "total": 1
+    }
+  ]
+}

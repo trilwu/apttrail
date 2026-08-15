@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b21e0239-5ac2-584d-941e-2cabf4e02de9",
+        "value": "cktime.ooguy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "405812cd-26a0-524e-91ce-f9a847c1a144",
+        "value": "cond0r.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b35d66d3-3530-59bb-b46f-8b8f1ff42888",
+        "value": "dns361.tk"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "fb7e3628-cc33-55d7-9205-62bd928b9f04",
+        "value": "godblack.cf"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "634cbec7-9248-565e-815f-df1a1f6d5339",
+        "value": "javacheck.ooguy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "af9b9295-3e23-59d8-a566-2dd2af7f9122",
+        "value": "javaupdate.giize.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ac0e6983-14f0-5782-b661-8dbcb66b87a5",
+        "value": "purple76.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "98010156-d91a-5620-bc52-8721ed7acfc7",
+        "value": "sofeter.ml"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "bec6ee9b-be4f-54b4-a123-85237520861e",
+        "value": "solana.onl"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "710e5d43-dd78-5360-9023-ae4d6fc0bbec",
+        "value": "togey.online"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1726692296",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "108169f7-34d1-5747-8aed-577cb175332c",
+        "value": "yeeyeey.top"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:redjuliett"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: REDJULIETT",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "78c6f888-7f40-515d-972f-c435d4412a9d"
+  }
+}

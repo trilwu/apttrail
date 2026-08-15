@@ -1,0 +1,47 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1456189530",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "00a5ef27-7d0a-5f1f-9915-1e7cdcce1a9b",
+        "value": "gezelimmi.com/wp-includes/misc/bb/"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1456189530",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "46596a7b-f6ef-5524-ab59-6ccce9cd909d",
+        "value": "horizons-tourisme.com/_vti_bin/_vti_msc/bb/"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:babar"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: BABAR",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "65932514-b428-5b0f-affe-bf44cd74c777"
+  }
+}

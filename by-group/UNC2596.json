@@ -1,0 +1,812 @@
+{
+  "aliases": [
+    "CVE-2023-36884",
+    "dustyhammock",
+    "meltingclaw",
+    "romcom",
+    "rustyclaw",
+    "shadyhammock",
+    "singlecamper",
+    "snipbot",
+    "uat-5647"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 76,
+    "ipv4": 16,
+    "url": 3,
+    "url_path": 16
+  },
+  "first_seen": {
+    "domain": {
+      "1drv.fileshare.direct": "2024-09-24",
+      "1drv.us.com": "2024-12-23",
+      "4qzm.com": "2022-10-22",
+      "adbefnts.dev": "2024-10-18",
+      "adcreative.pictures": "2024-10-18",
+      "adobe.cloudcreative.digital": "2024-09-24",
+      "advanced-ip-scaner.com": "2022-10-22",
+      "advanced-ip-scanners.com": "2022-10-22",
+      "altimata.org": "2023-08-24",
+      "apisolving.com": "2024-10-18",
+      "aspx.io": "2022-10-22",
+      "bentaxworld.com": "2023-08-24",
+      "budgetnews.org": "2023-10-16",
+      "campanole.com": "2026-01-02",
+      "certifysop.com": "2024-09-24",
+      "cethernet.com": "2024-09-24",
+      "cloudcreative.digital": "2024-09-24",
+      "combinedresidency.org": "2022-08-14",
+      "copdaemi.top": "2024-10-18",
+      "correctiv.sbs": "2024-11-27",
+      "creativeadb.com": "2024-10-18",
+      "cwise.store": "2024-11-27",
+      "dashboard.penofach.com": "2023-08-24",
+      "devhubs.dev": "2024-10-18",
+      "devolredir.com": "2024-11-27",
+      "digitalsolutionstime.com": "2023-09-24",
+      "dns-msn.com": "2024-09-24",
+      "dnsresolver.online": "2024-10-18",
+      "docstorage.link": "2024-09-24",
+      "drv2ms.com": "2024-09-24",
+      "drvmcprotect.com": "2024-09-24",
+      "economistjournal.cloud": "2024-11-27",
+      "fastshare.click": "2024-09-24",
+      "fileshare.direct": "2024-09-24",
+      "finformservice.com": "2023-07-05",
+      "gohazeldale.com": "2026-01-02",
+      "gov.mil.ua.aspx.io": "2022-10-22",
+      "ilogicflow.com": "2024-09-24",
+      "journalctd.live": "2024-11-27",
+      "kayakahead.net": "2023-10-16",
+      "keepas.org": "2023-01-02",
+      "linedrv.com": "2024-09-24",
+      "mcprotect.cloud": "2024-09-24",
+      "mctelemetryzone.com": "2023-10-16",
+      "melamorri.com": "2026-01-02",
+      "mil.ua.aspx.io": "2022-10-22",
+      "mill.co.ua": "2022-10-22",
+      "netstaticsinformation.com": "2023-09-24",
+      "notfiled.com": "2022-10-22",
+      "olminx.com": "2024-09-24",
+      "optasko.com": "2022-08-14",
+      "pap-cut.com": "2023-10-16",
+      "penofach.com": "2023-08-24",
+      "pos-st.top": "2024-10-18",
+      "postnordpakker.com": "2023-05-08",
+      "publicshare.link": "2024-09-24",
+      "rdp-devolutions.com": "2023-05-09",
+      "redditanalytics.pm": "2023-10-16",
+      "redirconnectwise.cloud": "2024-11-27",
+      "redircorrectiv.com": "2024-11-27",
+      "redjournal.cloud": "2024-11-27",
+      "sitepanel.top": "2024-09-24",
+      "speedymarker.com": "2023-10-16",
+      "srlaptop.com": "2026-01-02",
+      "startleague.net": "2023-05-09",
+      "store-images.org": "2024-10-18",
+      "ua.aspx.io": "2022-10-22",
+      "ukrainianworldcongress.info": "2023-07-05",
+      "webtimeapi.com": "2024-09-24",
+      "wexonlake.com": "2023-05-08",
+      "wirelessvezion.com": "2023-09-24",
+      "wirelesszone.top": "2024-10-18",
+      "wplsummit.com": "2023-10-16",
+      "wveeam.com": "2022-11-03",
+      "xeontime.com": "2024-09-24",
+      "you-supported.com": "2023-01-02"
+    },
+    "ipv4": {
+      "104.234.10.207:7931": "2023-05-08",
+      "104.234.239.26:137": "2023-07-05",
+      "104.234.239.26:139": "2023-07-05",
+      "104.234.239.26:445": "2023-07-05",
+      "109.105.198.145:8080": "2023-07-05",
+      "15.235.203.250:444": "2023-05-10",
+      "185.56.137.104:4444": "2022-10-22",
+      "2.57.90.16:7931": "2023-05-09",
+      "201.174.21.202:137": "2023-11-07",
+      "201.174.21.202:139": "2023-11-07",
+      "201.174.21.202:445": "2023-11-07",
+      "217.195.153.39:7931": "2023-05-09",
+      "46.246.98.15:7931": "2023-05-09",
+      "65.21.27.250:8080": "2023-07-05",
+      "69.49.231.103:4444": "2022-10-22",
+      "69.49.245.55:4444": "2022-10-22"
+    },
+    "url": {
+      "http://104.234.239.26": "2023-07-05",
+      "http://201.174.21.202": "2023-11-07",
+      "http://74.50.94.156": "2023-07-05"
+    },
+    "url_path": {
+      "/MSHTML_C7": "2023-08-18",
+      "/MSHTML_C7/RFile.asp": "2023-08-18",
+      "/MSHTML_C7/start.xml": "2023-08-18",
+      "/MSHTML_C7/zip_k1.asp": "2023-08-18",
+      "/MSHTML_C7/zip_k2.asp": "2023-08-18",
+      "/MSHTML_C7/zip_k3.asp": "2023-08-18",
+      "/abc/filename111111111111.url": "2023-11-07",
+      "/filename111111111111.url": "2023-11-07",
+      "/ipns/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm": "2024-10-18",
+      "/itrdd/kcrs/": "2023-05-08",
+      "/itrdd/kcrs/file1.txt": "2023-05-08",
+      "/itrdd/kcrs/file2.txt": "2023-05-08",
+      "/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm": "2024-10-18",
+      "/mds/D--------------------------": "2023-07-05",
+      "/mds/O--------------------------": "2023-07-05",
+      "/mds/s--------------------------": "2023-07-05"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "campanole.com": "at-or-before",
+      "gohazeldale.com": "at-or-before",
+      "melamorri.com": "at-or-before",
+      "srlaptop.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-08-14",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "1drv.fileshare.direct",
+      "1drv.us.com",
+      "4qzm.com",
+      "adbefnts.dev",
+      "adcreative.pictures",
+      "adobe.cloudcreative.digital",
+      "advanced-ip-scaner.com",
+      "advanced-ip-scanners.com",
+      "altimata.org",
+      "apisolving.com",
+      "aspx.io",
+      "bentaxworld.com",
+      "budgetnews.org",
+      "campanole.com",
+      "certifysop.com",
+      "cethernet.com",
+      "cloudcreative.digital",
+      "combinedresidency.org",
+      "copdaemi.top",
+      "correctiv.sbs",
+      "creativeadb.com",
+      "cwise.store",
+      "dashboard.penofach.com",
+      "devhubs.dev",
+      "devolredir.com",
+      "digitalsolutionstime.com",
+      "dns-msn.com",
+      "dnsresolver.online",
+      "docstorage.link",
+      "drv2ms.com",
+      "drvmcprotect.com",
+      "economistjournal.cloud",
+      "fastshare.click",
+      "fileshare.direct",
+      "finformservice.com",
+      "gohazeldale.com",
+      "gov.mil.ua.aspx.io",
+      "ilogicflow.com",
+      "journalctd.live",
+      "kayakahead.net",
+      "keepas.org",
+      "linedrv.com",
+      "mcprotect.cloud",
+      "mctelemetryzone.com",
+      "melamorri.com",
+      "mil.ua.aspx.io",
+      "mill.co.ua",
+      "netstaticsinformation.com",
+      "notfiled.com",
+      "olminx.com",
+      "optasko.com",
+      "pap-cut.com",
+      "penofach.com",
+      "pos-st.top",
+      "postnordpakker.com",
+      "publicshare.link",
+      "rdp-devolutions.com",
+      "redditanalytics.pm",
+      "redirconnectwise.cloud",
+      "redircorrectiv.com",
+      "redjournal.cloud",
+      "sitepanel.top",
+      "speedymarker.com",
+      "srlaptop.com",
+      "startleague.net",
+      "store-images.org",
+      "ua.aspx.io",
+      "ukrainianworldcongress.info",
+      "webtimeapi.com",
+      "wexonlake.com",
+      "wirelessvezion.com",
+      "wirelesszone.top",
+      "wplsummit.com",
+      "wveeam.com",
+      "xeontime.com",
+      "you-supported.com"
+    ],
+    "ipv4": [
+      "104.234.10.207:7931",
+      "104.234.239.26:137",
+      "104.234.239.26:139",
+      "104.234.239.26:445",
+      "109.105.198.145:8080",
+      "15.235.203.250:444",
+      "185.56.137.104:4444",
+      "2.57.90.16:7931",
+      "201.174.21.202:137",
+      "201.174.21.202:139",
+      "201.174.21.202:445",
+      "217.195.153.39:7931",
+      "46.246.98.15:7931",
+      "65.21.27.250:8080",
+      "69.49.231.103:4444",
+      "69.49.245.55:4444"
+    ],
+    "url": [
+      "http://104.234.239.26",
+      "http://201.174.21.202",
+      "http://74.50.94.156"
+    ],
+    "url_path": [
+      "/MSHTML_C7",
+      "/MSHTML_C7/RFile.asp",
+      "/MSHTML_C7/start.xml",
+      "/MSHTML_C7/zip_k1.asp",
+      "/MSHTML_C7/zip_k2.asp",
+      "/MSHTML_C7/zip_k3.asp",
+      "/abc/filename111111111111.url",
+      "/filename111111111111.url",
+      "/ipns/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm",
+      "/itrdd/kcrs/",
+      "/itrdd/kcrs/file1.txt",
+      "/itrdd/kcrs/file2.txt",
+      "/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm",
+      "/mds/D--------------------------",
+      "/mds/O--------------------------",
+      "/mds/s--------------------------"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC2596"
+  ],
+  "references": [
+    "https://app.validin.com/detail?find=185.225.74.94&type=ip4&ref_id=65ec9bcbe4c#tab=resolutions",
+    "https://blog.talosintelligence.com/uat-5647-romcom/",
+    "https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit",
+    "https://cert.gov.ua/article/2394117 (Ukrainian)",
+    "https://cert.gov.ua/article/5077168 (# UAC-0168)",
+    "https://community.emergingthreats.net/t/ruleset-update-summary-2024-11-26-v10753/2171",
+    "https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers",
+    "https://otx.alienvault.com/pulse/62f36c89909d6b719ba8d340",
+    "https://twitter.com/DmitriyMelikov/status/1721991958464205142",
+    "https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185",
+    "https://twitter.com/TLP_R3D/status/1655687889391431680",
+    "https://twitter.com/TLP_R3D/status/1655844785075224576",
+    "https://twitter.com/TLP_R3D/status/1656270702700273666",
+    "https://twitter.com/TLP_R3D/status/1705917480844120192",
+    "https://twitter.com/Unit42_Intel/status/1588199843981402114",
+    "https://twitter.com/blackorbird/status/1694622415006105954",
+    "https://twitter.com/k3yp0d/status/1655840102638137347",
+    "https://twitter.com/k3yp0d/status/1655841493934800896",
+    "https://twitter.com/malware_traffic/status/1588211727891570688",
+    "https://twitter.com/suyog41/status/1692424324874211646",
+    "https://unit42.paloaltonetworks.com/cuba-ransomware-tropical-scorpius/",
+    "https://unit42.paloaltonetworks.com/snipbot-romcom-malware-variant/",
+    "https://www.proofpoint.com/us/daily-ruleset-update-summary-20221104",
+    "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt",
+    "https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html",
+    "https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection",
+    "https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection",
+    "https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection",
+    "https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection",
+    "https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection",
+    "https://www.virustotal.com/gui/file/b595ed2252d82bbfea276d40615c4a2bf580a1da4a6892c47361fdb3f9299204/detection",
+    "https://www.virustotal.com/gui/file/b9ea82bd961210c69cf1141321be7378629e49b84102479d2e476c60e1c00a3f/detection",
+    "https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection",
+    "https://www.virustotal.com/gui/file/c149474f97140c3381bda3ad2451f253e08e7ad4be76a68ac3a6f15bc4bd4e63/detection",
+    "https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection",
+    "https://www.virustotal.com/gui/ip-address/104.234.10.207/relations",
+    "https://www.virustotal.com/gui/ip-address/185.250.150.204/relations",
+    "https://www.virustotal.com/gui/ip-address/201.174.21.202/relations",
+    "https://www.virustotal.com/gui/ip-address/213.139.204.173/relations",
+    "https://www.virustotal.com/gui/ip-address/45.137.155.163/relations",
+    "https://www.welivesecurity.com/en/eset-research/romcom-exploits-firefox-and-windows-zero-days-in-the-wild/",
+    "https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability/"
+  ],
+  "related": [],
+  "slug": "UNC2596",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "campanole.com",
+          "gohazeldale.com",
+          "melamorri.com",
+          "srlaptop.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-12-23",
+      "indicators": {
+        "domain": [
+          "1drv.us.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://community.emergingthreats.net/t/ruleset-update-summary-2024-11-26-v10753/2171"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2024-11-27",
+      "indicators": {
+        "domain": [
+          "correctiv.sbs",
+          "cwise.store",
+          "devolredir.com",
+          "economistjournal.cloud",
+          "journalctd.live",
+          "redirconnectwise.cloud",
+          "redircorrectiv.com",
+          "redjournal.cloud"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/romcom-exploits-firefox-and-windows-zero-days-in-the-wild/"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 10,
+        "url_path": 2
+      },
+      "first_seen": "2024-10-18",
+      "indicators": {
+        "domain": [
+          "adbefnts.dev",
+          "adcreative.pictures",
+          "apisolving.com",
+          "copdaemi.top",
+          "creativeadb.com",
+          "devhubs.dev",
+          "dnsresolver.online",
+          "pos-st.top",
+          "store-images.org",
+          "wirelesszone.top"
+        ],
+        "url_path": [
+          "/ipns/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm",
+          "/k51qzi5uqu5dgn9wgsaxb7cfvinmk27eusoufaxrp8qd1ri5kamf41bg7gpydm"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/uat-5647-romcom/"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2024-09-24",
+      "indicators": {
+        "domain": [
+          "1drv.fileshare.direct",
+          "adobe.cloudcreative.digital",
+          "certifysop.com",
+          "cethernet.com",
+          "cloudcreative.digital",
+          "dns-msn.com",
+          "docstorage.link",
+          "drv2ms.com",
+          "drvmcprotect.com",
+          "fastshare.click",
+          "fileshare.direct",
+          "ilogicflow.com",
+          "linedrv.com",
+          "mcprotect.cloud",
+          "olminx.com",
+          "publicshare.link",
+          "sitepanel.top",
+          "webtimeapi.com",
+          "xeontime.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/snipbot-romcom-malware-variant/",
+        "https://app.validin.com/detail?find=185.225.74.94&type=ip4&ref_id=65ec9bcbe4c#tab=resolutions"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url": 1,
+        "url_path": 2
+      },
+      "first_seen": "2023-11-07",
+      "indicators": {
+        "ipv4": [
+          "201.174.21.202:137",
+          "201.174.21.202:139",
+          "201.174.21.202:445"
+        ],
+        "url": [
+          "http://201.174.21.202"
+        ],
+        "url_path": [
+          "/abc/filename111111111111.url",
+          "/filename111111111111.url"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/DmitriyMelikov/status/1721991958464205142",
+        "https://www.virustotal.com/gui/ip-address/201.174.21.202/relations",
+        "https://www.virustotal.com/gui/file/b9ea82bd961210c69cf1141321be7378629e49b84102479d2e476c60e1c00a3f/detection",
+        "https://www.virustotal.com/gui/file/b595ed2252d82bbfea276d40615c4a2bf580a1da4a6892c47361fdb3f9299204/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2023-10-16",
+      "indicators": {
+        "domain": [
+          "budgetnews.org",
+          "kayakahead.net",
+          "mctelemetryzone.com",
+          "pap-cut.com",
+          "redditanalytics.pm",
+          "speedymarker.com",
+          "wplsummit.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TLP_R3D/status/1705917480844120192",
+        "https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt",
+        "https://www.virustotal.com/gui/ip-address/185.250.150.204/relations",
+        "https://www.virustotal.com/gui/ip-address/45.137.155.163/relations"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-09-24",
+      "indicators": {
+        "domain": [
+          "digitalsolutionstime.com",
+          "netstaticsinformation.com",
+          "wirelessvezion.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TLP_R3D/status/1705917480844120192",
+        "https://www.trendmicro.com/en_us/research/23/j/void-rabisu-targets-female-leaders-with-new-romcom-variant.html",
+        "https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/j/void-rabisu-targets-female-political-leaders/ioc-void-rabisu-targets-female-political-leaders-with-new-slimmed-down-ROMCOM-variant.txt",
+        "https://www.virustotal.com/gui/ip-address/185.250.150.204/relations",
+        "https://www.virustotal.com/gui/ip-address/45.137.155.163/relations"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2023-08-24",
+      "indicators": {
+        "domain": [
+          "altimata.org",
+          "bentaxworld.com",
+          "dashboard.penofach.com",
+          "penofach.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185",
+        "https://twitter.com/suyog41/status/1692424324874211646",
+        "https://twitter.com/blackorbird/status/1694622415006105954",
+        "https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit",
+        "https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers",
+        "https://cert.gov.ua/article/5077168 (# UAC-0168)",
+        "https://www.virustotal.com/gui/ip-address/213.139.204.173/relations",
+        "https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection",
+        "https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection",
+        "https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection",
+        "https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url_path": 6
+      },
+      "first_seen": "2023-08-18",
+      "indicators": {
+        "url_path": [
+          "/MSHTML_C7",
+          "/MSHTML_C7/RFile.asp",
+          "/MSHTML_C7/start.xml",
+          "/MSHTML_C7/zip_k1.asp",
+          "/MSHTML_C7/zip_k2.asp",
+          "/MSHTML_C7/zip_k3.asp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185",
+        "https://twitter.com/suyog41/status/1692424324874211646",
+        "https://twitter.com/blackorbird/status/1694622415006105954",
+        "https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit",
+        "https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers",
+        "https://cert.gov.ua/article/5077168 (# UAC-0168)",
+        "https://www.virustotal.com/gui/ip-address/213.139.204.173/relations",
+        "https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection",
+        "https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection",
+        "https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection",
+        "https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 5,
+        "url": 2,
+        "url_path": 3
+      },
+      "first_seen": "2023-07-05",
+      "indicators": {
+        "domain": [
+          "finformservice.com",
+          "ukrainianworldcongress.info"
+        ],
+        "ipv4": [
+          "104.234.239.26:137",
+          "104.234.239.26:139",
+          "104.234.239.26:445",
+          "109.105.198.145:8080",
+          "65.21.27.250:8080"
+        ],
+        "url": [
+          "http://104.234.239.26",
+          "http://74.50.94.156"
+        ],
+        "url_path": [
+          "/mds/D--------------------------",
+          "/mds/O--------------------------",
+          "/mds/s--------------------------"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Joseliyo_Jstnk/status/1675803590462685185",
+        "https://twitter.com/suyog41/status/1692424324874211646",
+        "https://twitter.com/blackorbird/status/1694622415006105954",
+        "https://blogs.blackberry.com/en/2023/07/romcom-targets-ukraine-nato-membership-talks-at-nato-summit",
+        "https://explore.avertium.com/resource/two-microsoft-zero-day-vulnerabilities-exploited-by-attackers",
+        "https://cert.gov.ua/article/5077168 (# UAC-0168)",
+        "https://www.virustotal.com/gui/ip-address/213.139.204.173/relations",
+        "https://www.virustotal.com/gui/file/3a3138c5add59d2172ad33bc6761f2f82ba344f3d03a2269c623f22c1a35df97/detection",
+        "https://www.virustotal.com/gui/file/a61b2eafcf39715031357df6b01e85e0d1ea2e8ee1dfec241b114e18f7a1163f/detection",
+        "https://www.virustotal.com/gui/file/ddf15e9ed54d18960c28fb9a058662e7a26867776af72900697400cb567c79be/detection",
+        "https://www.virustotal.com/gui/file/6dc514b4b2090ddc852fc6ea62da0965c663d57bbfd1a4120360ef6fb914ec85/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-05-10",
+      "indicators": {
+        "ipv4": [
+          "15.235.203.250:444"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TLP_R3D/status/1655687889391431680",
+        "https://twitter.com/TLP_R3D/status/1655844785075224576",
+        "https://twitter.com/TLP_R3D/status/1656270702700273666",
+        "https://twitter.com/k3yp0d/status/1655840102638137347",
+        "https://twitter.com/k3yp0d/status/1655841493934800896",
+        "https://www.virustotal.com/gui/ip-address/104.234.10.207/relations",
+        "https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection",
+        "https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection",
+        "https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 3
+      },
+      "first_seen": "2023-05-09",
+      "indicators": {
+        "domain": [
+          "rdp-devolutions.com",
+          "startleague.net"
+        ],
+        "ipv4": [
+          "2.57.90.16:7931",
+          "217.195.153.39:7931",
+          "46.246.98.15:7931"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TLP_R3D/status/1655687889391431680",
+        "https://twitter.com/TLP_R3D/status/1655844785075224576",
+        "https://twitter.com/TLP_R3D/status/1656270702700273666",
+        "https://twitter.com/k3yp0d/status/1655840102638137347",
+        "https://twitter.com/k3yp0d/status/1655841493934800896",
+        "https://www.virustotal.com/gui/ip-address/104.234.10.207/relations",
+        "https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection",
+        "https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection",
+        "https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1,
+        "url_path": 3
+      },
+      "first_seen": "2023-05-08",
+      "indicators": {
+        "domain": [
+          "postnordpakker.com",
+          "wexonlake.com"
+        ],
+        "ipv4": [
+          "104.234.10.207:7931"
+        ],
+        "url_path": [
+          "/itrdd/kcrs/",
+          "/itrdd/kcrs/file1.txt",
+          "/itrdd/kcrs/file2.txt"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/TLP_R3D/status/1655687889391431680",
+        "https://twitter.com/TLP_R3D/status/1655844785075224576",
+        "https://twitter.com/TLP_R3D/status/1656270702700273666",
+        "https://twitter.com/k3yp0d/status/1655840102638137347",
+        "https://twitter.com/k3yp0d/status/1655841493934800896",
+        "https://www.virustotal.com/gui/ip-address/104.234.10.207/relations",
+        "https://www.virustotal.com/gui/file/c118895776e75eaa291d2a5f54f1de4f48756aec28cebaa1bf6fd9beb5d36301/detection",
+        "https://www.virustotal.com/gui/file/1308146f161ed60c86532dd2d2de8de8b0401e27023fc56f83903f137fccacfd/detection",
+        "https://www.virustotal.com/gui/file/a5dae9b7ff88276f699eece44eb4b183f1b1de6bef9e159c417ba621a949f744/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-01-02",
+      "indicators": {
+        "domain": [
+          "keepas.org",
+          "you-supported.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.proofpoint.com/us/daily-ruleset-update-summary-20221104"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-03",
+      "indicators": {
+        "domain": [
+          "wveeam.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Unit42_Intel/status/1588199843981402114",
+        "https://twitter.com/malware_traffic/status/1588211727891570688"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 9,
+        "ipv4": 3
+      },
+      "first_seen": "2022-10-22",
+      "indicators": {
+        "domain": [
+          "4qzm.com",
+          "advanced-ip-scaner.com",
+          "advanced-ip-scanners.com",
+          "aspx.io",
+          "gov.mil.ua.aspx.io",
+          "mil.ua.aspx.io",
+          "mill.co.ua",
+          "notfiled.com",
+          "ua.aspx.io"
+        ],
+        "ipv4": [
+          "185.56.137.104:4444",
+          "69.49.231.103:4444",
+          "69.49.245.55:4444"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/2394117 (Ukrainian)",
+        "https://www.virustotal.com/gui/file/c149474f97140c3381bda3ad2451f253e08e7ad4be76a68ac3a6f15bc4bd4e63/detection"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-08-14",
+      "indicators": {
+        "domain": [
+          "combinedresidency.org",
+          "optasko.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/cuba-ransomware-tropical-scorpius/",
+        "https://otx.alienvault.com/pulse/62f36c89909d6b719ba8d340"
+      ],
+      "total": 2
+    }
+  ]
+}

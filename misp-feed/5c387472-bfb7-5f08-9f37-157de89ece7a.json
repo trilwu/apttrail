@@ -1,0 +1,119 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1731755890",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "28503f26-1478-5468-9c5c-287e002320f1",
+        "value": "bashe4aec32kr6zbifwd5x6xgjsmhg4tbowrbx4pneqhc5mqooyifpid.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731755890",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "492fc2e8-c26c-5555-9a31-5b5845886dc6",
+        "value": "basheqtvzqwz4vp6ks5lm2ocq7i6tozqgf6vjcasj4ezmsy4bkpshhyd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1767395415",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "a98c69b4-e925-5458-b1c0-894ec45cb47d",
+        "value": "basherq53eniermxovo3bkduw5qqq5bkqcml3qictfmamgvmzovykyqd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ab583d8b-6cbb-586c-8676-f9e74f895551",
+        "value": "eraleignews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731771099",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0f9df6f1-bec5-58db-93dc-8698e8c7adad",
+        "value": "fleqwmg7xnanypt5km2m75l72q7nlcvlp2m4sdmgjxorsn6tb3zyp3qd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ecea694f-cc52-5074-963a-3186ec708e72",
+        "value": "ns1.eraleignews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b24cb7e5-8fe2-554d-bab9-2c66b4450785",
+        "value": "ns2.eraleignews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2dc0d6f7-bf6b-57ac-a725-2185f0cf7491",
+        "value": "ns3.eraleignews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f40f6d70-7466-59aa-b5ba-75669e084951",
+        "value": "ns4.eraleignews.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1713989523",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8ade4161-3b33-52e0-8b2b-bc52e87c9cf1",
+        "value": "qcgv5tfer4f46ns6ohh72zeyyh5uavoiybypzpt3lmwk5ecyqykptgqd.onion"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1731755890",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "cdb85885-a1c5-59e4-b0bc-0164480b7d5b",
+        "value": "wn6vonooq6fggjdgyocp7bioykmfjket7sbp47cwhgubvowwd7ws5pyd.onion"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:73"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: 73",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "5c387472-bfb7-5f08-9f37-157de89ece7a"
+  }
+}

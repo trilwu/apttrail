@@ -1,0 +1,124 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 6,
+    "url": 4
+  },
+  "first_seen": {
+    "domain": {
+      "arabooks.ch": "2015-03-18",
+      "artas.org": "2015-03-18",
+      "eamtm.com": "2016-02-23",
+      "extremesportsevents.net": "2019-06-16",
+      "news.grouptumbler.com": "2015-03-18",
+      "tsoftonline.com": "2015-03-18"
+    },
+    "url": {
+      "algherolido.it/img/common/thumb/thumb.php": "2019-06-16",
+      "rtproductionsusa.com/wp-includes/images/smilies/icon_gif.php": "2019-06-16",
+      "store.extremesportsevents.net/index.php": "2019-06-16",
+      "tangentialreality.com/cache/template/yoo_cache.php": "2019-06-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2019-06-16"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "arabooks.ch",
+      "artas.org",
+      "eamtm.com",
+      "extremesportsevents.net",
+      "news.grouptumbler.com",
+      "tsoftonline.com"
+    ],
+    "url": [
+      "algherolido.it/img/common/thumb/thumb.php",
+      "rtproductionsusa.com/wp-includes/images/smilies/icon_gif.php",
+      "store.extremesportsevents.net/index.php",
+      "tangentialreality.com/cache/template/yoo_cache.php"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MINIDUKE"
+  ],
+  "references": [
+    "http://blog.crysys.hu/2013/02/miniduke/",
+    "http://www.securelist.com/en/blog/208194129/The_MiniDuke_Mystery_PDF_0_day_Government_Spy_Assembler_0x29A_Micro_Backdoor",
+    "https://securelist.com/miniduke-is-back-nemesis-gemina-and-the-botgen-studio/64107/"
+  ],
+  "related": [],
+  "slug": "MINIDUKE",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "url": 4
+      },
+      "first_seen": "2019-06-16",
+      "indicators": {
+        "domain": [
+          "extremesportsevents.net"
+        ],
+        "url": [
+          "algherolido.it/img/common/thumb/thumb.php",
+          "rtproductionsusa.com/wp-includes/images/smilies/icon_gif.php",
+          "store.extremesportsevents.net/index.php",
+          "tangentialreality.com/cache/template/yoo_cache.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/miniduke-is-back-nemesis-gemina-and-the-botgen-studio/64107/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "eamtm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.securelist.com/en/blog/208194129/The_MiniDuke_Mystery_PDF_0_day_Government_Spy_Assembler_0x29A_Micro_Backdoor",
+        "http://blog.crysys.hu/2013/02/miniduke/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "arabooks.ch",
+          "artas.org",
+          "news.grouptumbler.com",
+          "tsoftonline.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.securelist.com/en/blog/208194129/The_MiniDuke_Mystery_PDF_0_day_Government_Spy_Assembler_0x29A_Micro_Backdoor",
+        "http://blog.crysys.hu/2013/02/miniduke/"
+      ],
+      "total": 4
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "aliases": [
+    "apt-unk2"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 40
+  },
+  "first_seen": {
+    "domain": {
+      "cert-pl.pl": "2024-10-10",
+      "comunicacion-presidencia-gov.es": "2024-10-10",
+      "comunidad-madrid.es": "2024-10-10",
+      "energie-gov.md": "2024-10-10",
+      "eupm-moldova.md": "2024-10-10",
+      "europa-ec.eu": "2024-10-10",
+      "europa-eppo.eu": "2024-10-10",
+      "europa.social": "2024-10-10",
+      "europa.study": "2024-10-10",
+      "freepresunlimited.org": "2024-10-10",
+      "golebewski.pl": "2024-10-10",
+      "gov-md.com": "2024-10-10",
+      "interior-gov.es": "2024-10-10",
+      "isw-org.pl": "2024-10-10",
+      "ivention.pl": "2024-10-10",
+      "litexpo-portal.lt": "2024-10-10",
+      "mailgon.online": "2024-10-10",
+      "mailorun.su": "2024-10-10",
+      "mailos.ru": "2024-10-10",
+      "mc-md.com": "2024-10-10",
+      "mcgov.md": "2024-10-10",
+      "md-mec.com": "2024-10-10",
+      "mec-gov.md": "2024-10-10",
+      "moldova-energie.md": "2024-10-10",
+      "moldova-mediu.md": "2024-10-10",
+      "moldova-social.md": "2024-10-10",
+      "nask-pl.com": "2024-10-10",
+      "nnmnnm.ru": "2024-10-10",
+      "noname05716.ru": "2024-10-10",
+      "otllook.com": "2024-10-10",
+      "pass-check.online": "2024-10-10",
+      "sapsap.site": "2024-10-10",
+      "social-moldova.md": "2024-10-10",
+      "socialisti.md": "2024-10-10",
+      "socialistii.com": "2024-10-10",
+      "sso-log.com": "2024-10-10",
+      "te-storg.com": "2024-10-10",
+      "urm-lt.com": "2024-10-10",
+      "viilnius.lt": "2024-10-10",
+      "vilnius-summit.lt": "2024-10-10"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2024-10-10",
+    "latest": "2024-10-10"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "cert-pl.pl",
+      "comunicacion-presidencia-gov.es",
+      "comunidad-madrid.es",
+      "energie-gov.md",
+      "eupm-moldova.md",
+      "europa-ec.eu",
+      "europa-eppo.eu",
+      "europa.social",
+      "europa.study",
+      "freepresunlimited.org",
+      "golebewski.pl",
+      "gov-md.com",
+      "interior-gov.es",
+      "isw-org.pl",
+      "ivention.pl",
+      "litexpo-portal.lt",
+      "mailgon.online",
+      "mailorun.su",
+      "mailos.ru",
+      "mc-md.com",
+      "mcgov.md",
+      "md-mec.com",
+      "mec-gov.md",
+      "moldova-energie.md",
+      "moldova-mediu.md",
+      "moldova-social.md",
+      "nask-pl.com",
+      "nnmnnm.ru",
+      "noname05716.ru",
+      "otllook.com",
+      "pass-check.online",
+      "sapsap.site",
+      "social-moldova.md",
+      "socialisti.md",
+      "socialistii.com",
+      "sso-log.com",
+      "te-storg.com",
+      "urm-lt.com",
+      "viilnius.lt",
+      "vilnius-summit.lt"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MIDDLEFLOOR"
+  ],
+  "references": [
+    "https://cert.pl/uploads/docs/Raport_CP_2023.pdf",
+    "https://research.checkpoint.com/2024/disinformation-campaign-moldova/"
+  ],
+  "related": [],
+  "slug": "MIDDLEFLOOR",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 40
+      },
+      "first_seen": "2024-10-10",
+      "indicators": {
+        "domain": [
+          "cert-pl.pl",
+          "comunicacion-presidencia-gov.es",
+          "comunidad-madrid.es",
+          "energie-gov.md",
+          "eupm-moldova.md",
+          "europa-ec.eu",
+          "europa-eppo.eu",
+          "europa.social",
+          "europa.study",
+          "freepresunlimited.org",
+          "golebewski.pl",
+          "gov-md.com",
+          "interior-gov.es",
+          "isw-org.pl",
+          "ivention.pl",
+          "litexpo-portal.lt",
+          "mailgon.online",
+          "mailorun.su",
+          "mailos.ru",
+          "mc-md.com",
+          "mcgov.md",
+          "md-mec.com",
+          "mec-gov.md",
+          "moldova-energie.md",
+          "moldova-mediu.md",
+          "moldova-social.md",
+          "nask-pl.com",
+          "nnmnnm.ru",
+          "noname05716.ru",
+          "otllook.com",
+          "pass-check.online",
+          "sapsap.site",
+          "social-moldova.md",
+          "socialisti.md",
+          "socialistii.com",
+          "sso-log.com",
+          "te-storg.com",
+          "urm-lt.com",
+          "viilnius.lt",
+          "vilnius-summit.lt"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://research.checkpoint.com/2024/disinformation-campaign-moldova/",
+        "https://cert.pl/uploads/docs/Raport_CP_2023.pdf"
+      ],
+      "total": 40
+    }
+  ]
+}

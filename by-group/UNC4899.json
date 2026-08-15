@@ -1,0 +1,187 @@
+{
+  "aliases": [
+    "JumpCloud"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 28
+  },
+  "first_seen": {
+    "domain": {
+      "606qipai.com": "2023-08-07",
+      "alwaysckain.com": "2023-07-20",
+      "alwaysswarm.com": "2023-08-02",
+      "asplinc.com": "2023-08-07",
+      "basketsalute.com": "2023-07-25",
+      "bsef.or.kr": "2023-08-07",
+      "canolagroove.com": "2023-07-20",
+      "centos-packages.com": "2023-08-07",
+      "centos-pkg.org": "2023-07-20",
+      "centos-repos.org": "2023-07-20",
+      "contortonset.com": "2023-07-25",
+      "dallynk.com": "2023-08-07",
+      "datadog-cloud.com": "2023-07-20",
+      "datadog-graph.com": "2023-07-20",
+      "launchruse.com": "2023-07-20",
+      "nomadpkg.com": "2023-07-20",
+      "nomadpkgs.com": "2023-07-20",
+      "primerosauxiliosperu.com": "2023-07-20",
+      "prontoposer.com": "2023-07-25",
+      "redhat-packages.com": "2023-08-07",
+      "reggedrobin.com": "2023-07-20",
+      "relysudden.com": "2023-07-25",
+      "rentedpushy.com": "2023-07-25",
+      "sizzlesierra.com": "2023-08-02",
+      "sweptshut.com": "2023-08-02",
+      "toyourownbeat.com": "2023-07-20",
+      "yolenny.com": "2023-08-07",
+      "zscaler-api.org": "2023-07-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-07-20",
+    "latest": "2023-08-07"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "606qipai.com",
+      "alwaysckain.com",
+      "alwaysswarm.com",
+      "asplinc.com",
+      "basketsalute.com",
+      "bsef.or.kr",
+      "canolagroove.com",
+      "centos-packages.com",
+      "centos-pkg.org",
+      "centos-repos.org",
+      "contortonset.com",
+      "dallynk.com",
+      "datadog-cloud.com",
+      "datadog-graph.com",
+      "launchruse.com",
+      "nomadpkg.com",
+      "nomadpkgs.com",
+      "primerosauxiliosperu.com",
+      "prontoposer.com",
+      "redhat-packages.com",
+      "reggedrobin.com",
+      "relysudden.com",
+      "rentedpushy.com",
+      "sizzlesierra.com",
+      "sweptshut.com",
+      "toyourownbeat.com",
+      "yolenny.com",
+      "zscaler-api.org"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "UNC4899"
+  ],
+  "references": [
+    "https://twitter.com/ThreatBookLabs/status/1686582979563581440",
+    "https://twitter.com/blackorbird/status/1683742730617499650",
+    "https://www.mandiant.com/resources/blog/north-korea-supply-chain",
+    "https://www.sentinelone.com/labs/comrades-in-arms-north-korea-compromises-sanctioned-russian-missile-engineering-company/",
+    "https://www.sentinelone.com/labs/jumpcloud-intrusion-attacker-infrastructure-links-compromise-to-north-korean-apt-activity/"
+  ],
+  "related": [],
+  "slug": "UNC4899",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2023-08-07",
+      "indicators": {
+        "domain": [
+          "606qipai.com",
+          "asplinc.com",
+          "bsef.or.kr",
+          "centos-packages.com",
+          "dallynk.com",
+          "redhat-packages.com",
+          "yolenny.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.sentinelone.com/labs/comrades-in-arms-north-korea-compromises-sanctioned-russian-missile-engineering-company/"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2023-08-02",
+      "indicators": {
+        "domain": [
+          "alwaysswarm.com",
+          "sizzlesierra.com",
+          "sweptshut.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ThreatBookLabs/status/1686582979563581440"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2023-07-25",
+      "indicators": {
+        "domain": [
+          "basketsalute.com",
+          "contortonset.com",
+          "prontoposer.com",
+          "relysudden.com",
+          "rentedpushy.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/north-korea-supply-chain"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 13
+      },
+      "first_seen": "2023-07-20",
+      "indicators": {
+        "domain": [
+          "alwaysckain.com",
+          "canolagroove.com",
+          "centos-pkg.org",
+          "centos-repos.org",
+          "datadog-cloud.com",
+          "datadog-graph.com",
+          "launchruse.com",
+          "nomadpkg.com",
+          "nomadpkgs.com",
+          "primerosauxiliosperu.com",
+          "reggedrobin.com",
+          "toyourownbeat.com",
+          "zscaler-api.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1683742730617499650",
+        "https://www.sentinelone.com/labs/jumpcloud-intrusion-attacker-infrastructure-links-compromise-to-north-korean-apt-activity/"
+      ],
+      "total": 13
+    }
+  ]
+}

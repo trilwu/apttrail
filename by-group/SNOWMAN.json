@@ -1,0 +1,75 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 8
+  },
+  "first_seen": {
+    "domain": {
+      "ali.blankchair.com": "2017-04-13",
+      "book.flnet.org": "2017-04-13",
+      "cht.blankchair.com": "2017-04-13",
+      "dll.freshdns.org": "2017-04-13",
+      "icybin.flnet.org": "2017-04-13",
+      "info.flnet.org": "2017-04-13",
+      "me.scieron.com": "2017-04-13",
+      "rt.blankchair.com": "2017-04-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-13",
+    "latest": "2017-04-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "ali.blankchair.com",
+      "book.flnet.org",
+      "cht.blankchair.com",
+      "dll.freshdns.org",
+      "icybin.flnet.org",
+      "info.flnet.org",
+      "me.scieron.com",
+      "rt.blankchair.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "SNOWMAN"
+  ],
+  "references": [
+    "https://www.fireeye.com/blog/threat-research/2014/02/operation-snowman-deputydog-actor-compromises-us-veterans-of-foreign-wars-website.html"
+  ],
+  "related": [],
+  "slug": "SNOWMAN",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8
+      },
+      "first_seen": "2017-04-13",
+      "indicators": {
+        "domain": [
+          "ali.blankchair.com",
+          "book.flnet.org",
+          "cht.blankchair.com",
+          "dll.freshdns.org",
+          "icybin.flnet.org",
+          "info.flnet.org",
+          "me.scieron.com",
+          "rt.blankchair.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2014/02/operation-snowman-deputydog-actor-compromises-us-veterans-of-foreign-wars-website.html"
+      ],
+      "total": 8
+    }
+  ]
+}

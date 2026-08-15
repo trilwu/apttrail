@@ -1,0 +1,171 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "557fe8e7-326e-5bdc-b8ad-74997264c3da",
+        "value": "128.er1620.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "daed77c1-9d8e-537c-97fc-b6fa30b95145",
+        "value": "223-25-233-248.revdns.8toinfinity.com.sg"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "72d76e6c-9897-5c2a-afc8-749b1c276606",
+        "value": "admin.er1620.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b7e96570-46b7-5b0d-8a2f-bdf5ae854420",
+        "value": "exp0day.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1567db1f-a692-5dd2-91f2-9cfcd287208b",
+        "value": "ftp.exp0day.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "437244c3-2600-5675-b71f-338f9d549615",
+        "value": "gmail.bkz88.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712499",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e7c6cae0-93ae-5b25-a7ad-ae71446eeb33",
+        "value": "good.myftp.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c4be2e65-c09e-5d48-8a64-60860a40d0a6",
+        "value": "hello.mjw.bz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b54ebdb9-e7c7-5d7e-9668-da95f319bf18",
+        "value": "info.imly.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d2253a50-2430-5be7-985b-4e944882106b",
+        "value": "login.3bz.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1ab05f60-92d5-5371-8049-85ab73ef57f0",
+        "value": "logo.mjw.bz"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f3673e6e-27be-5513-b0b6-97d583fe7160",
+        "value": "suck.er1620.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8fdb1478-becf-5799-b0a6-25568248d024",
+        "value": "test.3bz.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1426712499",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "385ff617-53c7-5589-ad3e-19c302609bda",
+        "value": "zip.redirectme.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "6c7b0540-e29f-5653-9aff-f47184d79331",
+        "value": "223.25.233.248:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4b1dd5f5-40a4-5322-a09d-f5ab23608397",
+        "value": "http://137.175.4.132"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571491087",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "180d412f-8e9f-53e4-9876-6a18cc004552",
+        "value": "http://223.25.233.248"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:18"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT18 - G0026\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT18 (G0026) - Maltrail group 18",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "7d3028aa-056e-5bb8-926d-92d6d1a4bf78"
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "aliases": [
+    "laundry bear",
+    "pluggyape",
+    "ta-488",
+    "ta488",
+    "uac-0190",
+    "void blizzard"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 41,
+    "ipv4": 4,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "aoc-gov.us": "2026-01-02",
+      "app-v4-mybos.com": "2026-01-02",
+      "avsgroup.au": "2026-01-02",
+      "bidscale.net": "2026-01-02",
+      "defraudatubanco.com": "2026-01-02",
+      "deloittesharepoint.com": "2026-01-02",
+      "ebsum.eu": "2026-01-02",
+      "ebsumlts.eu": "2026-01-02",
+      "ebsummlt.eu": "2026-01-02",
+      "ebsummt.eu": "2026-01-02",
+      "ebsumrnit.eu": "2026-01-02",
+      "ebsurnmit.eu": "2026-01-02",
+      "enticator-secure.com": "2026-01-02",
+      "gertasd.top": "2026-01-13",
+      "hart-hulp-ua.com": "2026-01-13",
+      "harthulp-ua.com": "2026-01-13",
+      "it-sharepoint.com": "2026-01-02",
+      "m-365-app.com": "2026-01-02",
+      "maidservant.shop": "2026-01-02",
+      "mail-forgot.com": "2026-01-02",
+      "max-linear.com": "2026-01-02",
+      "microffice.org": "2026-01-02",
+      "micsrosoftonline.com": "2026-01-02",
+      "miscrsosoft.com": "2026-01-02",
+      "myspringbank.com": "2026-01-02",
+      "ourbelovedsainscore.space": "2026-01-02",
+      "outlook-office.micsrosoftonline.com": "2026-01-02",
+      "portal-microsoftonline.com": "2026-01-02",
+      "propescom.com": "2026-01-02",
+      "redronesolutions.cloud": "2026-01-02",
+      "refundes.net": "2026-01-02",
+      "remerelli.com": "2026-01-02",
+      "saint-daniel.com": "2026-01-13",
+      "saint-daniel.org": "2026-01-13",
+      "saint-daniel.world": "2026-01-13",
+      "solidarity-help.com": "2026-01-13",
+      "solidarity-help.org": "2026-01-13",
+      "spidergov.org": "2026-01-02",
+      "teamsupportonline.top": "2026-01-02",
+      "weblogmail.live": "2026-01-02",
+      "x9a7lm02kqaccountprotectionaccountsecuritynoreply.com": "2026-01-02"
+    },
+    "ipv4": {
+      "108.165.164.155:1883": "2026-01-13",
+      "176.9.23.216:1883": "2026-01-13",
+      "193.23.216.39:1883": "2026-01-13",
+      "193.23.216.39:8765": "2026-01-13"
+    },
+    "url": {
+      "http://144.31.25.222": "2026-01-13"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "aoc-gov.us": "at-or-before",
+      "app-v4-mybos.com": "at-or-before",
+      "avsgroup.au": "at-or-before",
+      "bidscale.net": "at-or-before",
+      "defraudatubanco.com": "at-or-before",
+      "deloittesharepoint.com": "at-or-before",
+      "ebsum.eu": "at-or-before",
+      "ebsumlts.eu": "at-or-before",
+      "ebsummlt.eu": "at-or-before",
+      "ebsummt.eu": "at-or-before",
+      "ebsumrnit.eu": "at-or-before",
+      "ebsurnmit.eu": "at-or-before",
+      "enticator-secure.com": "at-or-before",
+      "it-sharepoint.com": "at-or-before",
+      "m-365-app.com": "at-or-before",
+      "maidservant.shop": "at-or-before",
+      "mail-forgot.com": "at-or-before",
+      "max-linear.com": "at-or-before",
+      "microffice.org": "at-or-before",
+      "micsrosoftonline.com": "at-or-before",
+      "miscrsosoft.com": "at-or-before",
+      "myspringbank.com": "at-or-before",
+      "ourbelovedsainscore.space": "at-or-before",
+      "outlook-office.micsrosoftonline.com": "at-or-before",
+      "portal-microsoftonline.com": "at-or-before",
+      "propescom.com": "at-or-before",
+      "redronesolutions.cloud": "at-or-before",
+      "refundes.net": "at-or-before",
+      "remerelli.com": "at-or-before",
+      "spidergov.org": "at-or-before",
+      "teamsupportonline.top": "at-or-before",
+      "weblogmail.live": "at-or-before",
+      "x9a7lm02kqaccountprotectionaccountsecuritynoreply.com": "at-or-before"
+    },
+    "ipv4": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-13"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "aoc-gov.us",
+      "app-v4-mybos.com",
+      "avsgroup.au",
+      "bidscale.net",
+      "defraudatubanco.com",
+      "deloittesharepoint.com",
+      "ebsum.eu",
+      "ebsumlts.eu",
+      "ebsummlt.eu",
+      "ebsummt.eu",
+      "ebsumrnit.eu",
+      "ebsurnmit.eu",
+      "enticator-secure.com",
+      "gertasd.top",
+      "hart-hulp-ua.com",
+      "harthulp-ua.com",
+      "it-sharepoint.com",
+      "m-365-app.com",
+      "maidservant.shop",
+      "mail-forgot.com",
+      "max-linear.com",
+      "microffice.org",
+      "micsrosoftonline.com",
+      "miscrsosoft.com",
+      "myspringbank.com",
+      "ourbelovedsainscore.space",
+      "outlook-office.micsrosoftonline.com",
+      "portal-microsoftonline.com",
+      "propescom.com",
+      "redronesolutions.cloud",
+      "refundes.net",
+      "remerelli.com",
+      "saint-daniel.com",
+      "saint-daniel.org",
+      "saint-daniel.world",
+      "solidarity-help.com",
+      "solidarity-help.org",
+      "spidergov.org",
+      "teamsupportonline.top",
+      "weblogmail.live",
+      "x9a7lm02kqaccountprotectionaccountsecuritynoreply.com"
+    ],
+    "ipv4": [
+      "108.165.164.155:1883",
+      "176.9.23.216:1883",
+      "193.23.216.39:1883",
+      "193.23.216.39:8765"
+    ],
+    "url": [
+      "http://144.31.25.222"
+    ]
+  },
+  "last_modified": "2026-07-24T10:03:56+00:00",
+  "maltrail_groups": [
+    "VOIDBLIZZARD"
+  ],
+  "references": [
+    "https://cert.gov.ua/article/6286942",
+    "https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/",
+    "https://www.validin.com/blog/laundry_bear_infrastructure_analysis/",
+    "https://x.com/_CERT_UA/status/2010755343345659990"
+  ],
+  "related": [],
+  "slug": "VOIDBLIZZARD",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 8,
+        "ipv4": 4,
+        "url": 1
+      },
+      "first_seen": "2026-01-13",
+      "indicators": {
+        "domain": [
+          "gertasd.top",
+          "hart-hulp-ua.com",
+          "harthulp-ua.com",
+          "saint-daniel.com",
+          "saint-daniel.org",
+          "saint-daniel.world",
+          "solidarity-help.com",
+          "solidarity-help.org"
+        ],
+        "ipv4": [
+          "108.165.164.155:1883",
+          "176.9.23.216:1883",
+          "193.23.216.39:1883",
+          "193.23.216.39:8765"
+        ],
+        "url": [
+          "http://144.31.25.222"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/_CERT_UA/status/2010755343345659990",
+        "https://cert.gov.ua/article/6286942"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 30
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "aoc-gov.us",
+          "app-v4-mybos.com",
+          "avsgroup.au",
+          "bidscale.net",
+          "defraudatubanco.com",
+          "deloittesharepoint.com",
+          "ebsum.eu",
+          "ebsumlts.eu",
+          "ebsummlt.eu",
+          "ebsummt.eu",
+          "ebsurnmit.eu",
+          "enticator-secure.com",
+          "it-sharepoint.com",
+          "m-365-app.com",
+          "maidservant.shop",
+          "mail-forgot.com",
+          "max-linear.com",
+          "microffice.org",
+          "miscrsosoft.com",
+          "myspringbank.com",
+          "ourbelovedsainscore.space",
+          "portal-microsoftonline.com",
+          "propescom.com",
+          "redronesolutions.cloud",
+          "refundes.net",
+          "remerelli.com",
+          "spidergov.org",
+          "teamsupportonline.top",
+          "weblogmail.live",
+          "x9a7lm02kqaccountprotectionaccountsecuritynoreply.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.validin.com/blog/laundry_bear_infrastructure_analysis/"
+      ],
+      "total": 30
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ebsumrnit.eu",
+          "micsrosoftonline.com",
+          "outlook-office.micsrosoftonline.com"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/"
+      ],
+      "total": 3
+    }
+  ]
+}

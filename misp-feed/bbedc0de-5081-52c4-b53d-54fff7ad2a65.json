@@ -1,0 +1,55 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1722083010",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "921e733e-54a1-5218-b01a-1e030896fc57",
+        "value": "84.38.134.56:1337"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1722083010",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "d04f8a82-9d67-5da9-8211-6239089f19b5",
+        "value": "84.38.134.56:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1722083010",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "039de110-c759-5325-8dd4-32df0e2b2cdc",
+        "value": "http://84.38.134.56"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:45"
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: 45",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "bbedc0de-5081-52c4-b53d-54fff7ad2a65"
+  }
+}

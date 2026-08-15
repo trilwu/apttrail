@@ -1,0 +1,115 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1571488257",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "e2096f3c-b30c-530a-a3a5-b51c7617617d",
+        "value": "bedircati.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571488257",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b07e96ec-4643-5040-96b9-af10454cd66a",
+        "value": "lamb-site.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571490133",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "200ac47c-31e1-5737-bbd5-c0f0a87176c6",
+        "value": "link.angellroofing.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571488257",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2620b4da-ea1c-5423-a8af-dfbefe0d5b05",
+        "value": "playboysplus.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571490133",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d53c03eb-d47b-5eaa-a891-5e6bb14b3c22",
+        "value": "psa.perrydale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571490133",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9ad98c4e-1d64-5f44-913a-c380eb196030",
+        "value": "report.perrydale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571490133",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "0139a52b-9a89-523c-92db-7faf635da95d",
+        "value": "rpt.perrydale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1538046027",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3b163833-51ad-5b11-8946-fa0ca0adeee7",
+        "value": "securitywap.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571490133",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "b9acd295-9f74-539e-9f9a-02b040d4cc36",
+        "value": "vic.perrydale.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1538046027",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "20d0473c-5b9f-580d-89ce-f6af4fd81295",
+        "value": "walterclean.com"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:gothicpanda"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"APT3 - G0022\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: APT3 (G0022) - Maltrail group GOTHICPANDA",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "993e02eb-a521-534e-bfa1-2768cda07ec9"
+  }
+}

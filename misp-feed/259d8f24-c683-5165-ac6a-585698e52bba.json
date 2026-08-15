@@ -1,0 +1,107 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1571920084",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "428b5d5d-be25-53ab-be5f-e045c26f0482",
+        "value": "linkrequest.live"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571990572",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f3b461e5-84c0-513f-afdf-717e3719feb6",
+        "value": "matissues.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1546956660",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "ce9a344a-e5b2-592e-bff1-f728e4c003e5",
+        "value": "unique.fontsupdate.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655712508",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "5568e17c-0ed3-55c8-b55c-e74269930325",
+        "value": "212.114.52.20:445"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655712508",
+        "to_ids": true,
+        "type": "ip-dst",
+        "uuid": "ea986e86-7c2a-5e02-abdb-fcd6d591fb31",
+        "value": "45.153.241.33:8080"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1589297018",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "ddb53ca8-3f7d-5984-bfb6-514911517282",
+        "value": "http://185.203.119.184"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571919604",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "0e1ddca4-6337-55bd-b935-598b08ae6b63",
+        "value": "http://212.114.52.148"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1655712508",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "547058aa-0fd4-51ea-af6f-6e5d1c6f6990",
+        "value": "http://212.114.52.20"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1571920084",
+        "to_ids": true,
+        "type": "uri",
+        "uuid": "863ff492-7aed-5354-880f-4069fde8df3a",
+        "value": "/request/httpsrequest"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:hangover"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Patchwork - G0040\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Patchwork (G0040) - Maltrail group HANGOVER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "259d8f24-c683-5165-ac6a-585698e52bba"
+  }
+}

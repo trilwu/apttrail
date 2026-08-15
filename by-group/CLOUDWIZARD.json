@@ -1,0 +1,56 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1
+  },
+  "first_seen": {
+    "domain": {
+      "curveroad.com": "2023-05-20"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2023-05-20",
+    "latest": "2023-05-20"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "curveroad.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "CLOUDWIZARD"
+  ],
+  "references": [
+    "https://securelist.com/cloudwizard-apt/109722/",
+    "https://www.virustotal.com/gui/file/041e4dcdc0c7eea5740a65c3a15b51ed0e1f0ebd6ba820e2c4cd8fa34fb891a2/detection"
+  ],
+  "related": [],
+  "slug": "CLOUDWIZARD",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-05-20",
+      "indicators": {
+        "domain": [
+          "curveroad.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/cloudwizard-apt/109722/",
+        "https://www.virustotal.com/gui/file/041e4dcdc0c7eea5740a65c3a15b51ed0e1f0ebd6ba820e2c4cd8fa34fb891a2/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

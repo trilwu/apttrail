@@ -1,0 +1,2204 @@
+{
+  "aliases": [
+    "apolloshadow",
+    "atg26",
+    "blue python",
+    "kazuar",
+    "kopiluwak",
+    "kypton",
+    "quietcanary",
+    "snake",
+    "stockstay",
+    "storm-0156",
+    "uroburos",
+    "venomous bear",
+    "wainscot",
+    "waterbug",
+    "whitebear",
+    "wraith"
+  ],
+  "attack_id": "G0010",
+  "attack_name": "Turla",
+  "attack_url": "https://attack.mitre.org/groups/G0010/",
+  "counts": {
+    "domain": 225,
+    "ipv4": 18,
+    "url": 77,
+    "url_path": 5
+  },
+  "first_seen": {
+    "domain": {
+      "61paris.fr": "2015-10-20",
+      "academyawards.effers.com": "2015-03-18",
+      "accessdest.strangled.net": "2019-10-07",
+      "adgf.am": "2020-03-12",
+      "adstore.twilightparadox.com": "2018-03-28",
+      "agony.compress.to": "2018-03-28",
+      "api.softwareupdatenews.com": "2026-06-20",
+      "archive-articles.linkpc.net": "2020-02-24",
+      "arctic-zone.bbsindex.com": "2015-03-18",
+      "arinas.tk": "2020-05-26",
+      "auberdine.etowns.net": "2018-03-28",
+      "av.master.dns-cloud.net": "2024-05-17",
+      "avmaster.dns-cloud.net": "2024-05-17",
+      "badget.ignorelist.com": "2020-02-24",
+      "baltdefcol.webredirect.org": "2022-05-24",
+      "bedrost.com": "2020-05-26",
+      "bestfunc.slyip.net": "2020-02-24",
+      "bigpen.ga": "2018-03-28",
+      "blackerror.ignorelist.com": "2020-02-24",
+      "booking.etowns.org": "2015-10-20",
+      "booking.strangled.net": "2020-02-24",
+      "bookstore.strangled.net": "2019-10-07",
+      "branter.tk": "2020-05-26",
+      "bronerg.tk": "2020-05-26",
+      "bug.ignorelist.com": "2019-10-07",
+      "buy-new-car.com": "2024-03-22",
+      "caduff-sa.chjeepcarlease.com": "2024-03-22",
+      "canal1zac1a.onrender.com": "2026-06-26",
+      "carleasingguru.com": "2024-03-22",
+      "cars-online.zapto.org": "2015-03-18",
+      "cdn.datacenterate.com": "2026-06-20",
+      "celestyna.tk": "2020-05-26",
+      "ceremon.2waky.com": "2020-02-24",
+      "cheapflights.etowns.net": "2015-03-18",
+      "chinafood.chickenkiller.com": "2019-10-07",
+      "chjeepcarlease.com": "2024-03-22",
+      "climbent.mooo.com": "2020-02-24",
+      "codewizard.ml": "2019-06-20",
+      "coldriver.strangled.net": "2019-10-07",
+      "communityeu.xp3.biz": "2015-03-18",
+      "connectotels.net": "2024-12-13",
+      "crusider.tk": "2020-05-26",
+      "cyberazov.com": "2022-07-08",
+      "cyberazov.tk": "2022-08-01",
+      "d3hdbjtb1686tn.cloudfront.net": "2022-04-05",
+      "da.anythinktech.com": "2022-04-05",
+      "datacenterate.com": "2026-06-20",
+      "davilta.tk": "2020-05-26",
+      "dellservice.publicvm.com": "2020-02-24",
+      "deme.ml": "2020-05-26",
+      "developarea.mooo.com": "2019-10-07",
+      "dixito.ml": "2020-05-26",
+      "downtown.crabdance.com": "2019-10-07",
+      "driverx86-adobe.onrender.com": "2026-06-26",
+      "dropbox12.com": "2019-06-20",
+      "dsme.info": "2019-09-18",
+      "dubaiexpo2020.cf": "2019-06-20",
+      "duke6.tk": "2020-05-26",
+      "dzerl.com": "2026-06-20",
+      "easport-news.publicvm.com": "2019-10-07",
+      "easports.3d-game.com": "2015-10-20",
+      "ebay-global.publicvm.com": "2018-03-28",
+      "ekrn.ydns.eu": "2026-01-02",
+      "elizabi.tk": "2020-05-26",
+      "en.footballcharge.us": "2026-06-20",
+      "eset.ydns.eu": "2026-01-02",
+      "esetcloud.com": "2026-01-14",
+      "ethdns.mywire.org": "2020-12-02",
+      "eu-sciffi.99k.org": "2015-03-18",
+      "euassociate.6te.net": "2015-03-18",
+      "euland.freevar.com": "2015-03-18",
+      "eunews-online.zapto.org": "2015-03-18",
+      "eurovision.chickenkiller.com": "2019-10-07",
+      "excelupdates.org": "2026-01-02",
+      "f0304768.xsph.ru": "2022-02-01",
+      "fifa-rules.25u.com": "2015-03-18",
+      "fleetwood.tk": "2018-03-28",
+      "foods.jkub.com": "2020-05-26",
+      "footballcharge.us": "2026-06-20",
+      "forum.4dq.com": "2015-03-18",
+      "forum.acmetoy.com": "2015-03-18",
+      "forum.sytes.net": "2015-03-18",
+      "forumgeek.zzux.com": "2020-02-24",
+      "franceonline.sytes.net": "2015-03-18",
+      "freeutils.3utilities.com": "2015-03-18",
+      "gallop.mefound.com": "2018-03-28",
+      "goldenroade.strangled.net": "2019-10-07",
+      "google-ai-labs-it.onrender.com": "2026-06-26",
+      "greateplan.ocry.com": "2019-10-07",
+      "greece-travel.servepics.com": "2015-10-20",
+      "hanagram.jpthefinetreats.com": "2024-03-22",
+      "health-everyday.faqserv.com": "2015-03-18",
+      "highcolumn.webredirect.org": "2020-12-02",
+      "highhills.ignorelist.com": "2019-10-07",
+      "hockey-news.servehttp.com": "2015-10-20",
+      "hofa.tk": "2020-05-26",
+      "hostelhotels.net": "2024-12-13",
+      "hotspot.accesscam.org": "2020-12-02",
+      "hunvin.tk": "2020-05-26",
+      "ies.inquirer.com.ph": "2026-01-02",
+      "in.thedarktower.av.master.dns-cloud.net": "2024-05-17",
+      "industrywork.mooo.com": "2019-10-07",
+      "interesting-news.zapto.org": "2015-03-18",
+      "jadlactnato.webredirect.org": "2022-05-04",
+      "jpthefinetreats.com": "2024-03-22",
+      "jucheafrica.com": "2015-10-20",
+      "july.mypressonline.com": "2015-03-18",
+      "kav-certificate.net": "2026-01-02",
+      "kav-certificates.info": "2026-01-02",
+      "kersachi.ignorelist.com": "2020-02-24",
+      "knowledgetime.slyip.net": "2020-02-24",
+      "lakify.ml": "2020-05-26",
+      "leagueoflegends.servequake.com": "2019-10-07",
+      "lindaztert.net": "2020-05-26",
+      "lucky-king-96d6.mopig92456.workers.dev": "2026-01-02",
+      "mail.mfa.uz.webmails.info": "2023-04-26",
+      "manager.surro.am": "2023-01-05",
+      "marketplace.servehttp.com": "2015-03-18",
+      "markham-travel.com": "2019-06-20",
+      "mediahistory.linkpc.net": "2019-10-07",
+      "mentionedthedarktower.av.master.dns-cloud.net": "2024-05-17",
+      "microsoft.updatemeltdownkb7234.com": "2019-06-20",
+      "minkstore.vip": "2026-06-20",
+      "misters.ml": "2020-05-26",
+      "moscow.stransgroup.com": "2019-06-20",
+      "music-world.servemp3.com": "2015-03-18",
+      "musicplanet.servemp3.com": "2015-10-20",
+      "new-book.linkpc.net": "2019-10-07",
+      "newforum.chickenkiller.com": "2020-02-24",
+      "newgame.2waky.com": "2019-10-07",
+      "news-bbc.podzone.org": "2016-02-23",
+      "newscloud.mn": "2026-06-20",
+      "newshealthsport.com": "2020-07-14",
+      "newutils.3utilities.com": "2015-03-18",
+      "nhl-blog.servegame.com": "2015-03-18",
+      "nightday.comxa.com": "2015-10-20",
+      "nightstreet.toh.info": "2019-10-07",
+      "north-area.bbsindex.com": "2015-10-20",
+      "ns.minkstore.vip": "2026-06-20",
+      "officebuild.4irc.com": "2018-03-28",
+      "olympik-blog.4dq.com": "2015-03-18",
+      "onekey-host.com": "2026-06-20",
+      "onlineshop.sellclassics.com": "2019-10-07",
+      "orl05511cn.temp.swtest.ru": "2019-05-07",
+      "papperbell.effers.com": "2020-02-24",
+      "patherror.publicvm.com": "2020-02-24",
+      "pewyth.ga": "2020-05-26",
+      "pockerroom.servebeer.com": "2015-03-18",
+      "pokerface.servegame.com": "2015-10-20",
+      "pressforum.serveblog.net": "2015-03-18",
+      "priceline.publicvm.com": "2020-02-24",
+      "profound.zzux.com": "2020-02-24",
+      "progress.zyns.com": "2020-05-26",
+      "psychology-blog.ezua.com": "2018-03-28",
+      "radiobutton.mooo.com": "2019-10-07",
+      "robot.wikaba.com": "2018-03-28",
+      "sameera.gq": "2020-05-26",
+      "sanitar.ml": "2020-05-26",
+      "sanky.sportsontheweb.net": "2015-10-20",
+      "scandinavia-facts.sytes.net": "2015-03-18",
+      "scifi.pages.at": "2016-02-23",
+      "scrabble.ikwb.com": "2020-05-26",
+      "sealand.publicvm.com": "2019-10-07",
+      "secdesk.xyz": "2026-01-02",
+      "securesource.strangled.net": "2019-10-07",
+      "sendmessage.mooo.com": "2018-03-28",
+      "skyrim.3d-game.com": "2018-03-28",
+      "smallcloud.ga": "2018-03-28",
+      "softprog.freeoda.com": "2015-03-18",
+      "softstream.strangled.net": "2019-10-07",
+      "softwareupdatenews.com": "2026-06-20",
+      "soheylistore.ir": "2015-10-20",
+      "sportacademy.my03.com": "2019-10-07",
+      "sportmusic.servemp3.com": "2015-03-18",
+      "sportnewspaper.strangled.net": "2019-10-07",
+      "stockholm-blog.hopto.org": "2015-03-18",
+      "stopwar.pro": "2022-07-20",
+      "studiokaspersky.com": "2026-06-20",
+      "sumefu.gq": "2020-05-26",
+      "supercar.ignorelist.com": "2019-10-07",
+      "supernews.instanthq.com": "2019-10-07",
+      "supernews.sytes.net": "2015-03-18",
+      "support4u.5u.com": "2015-10-20",
+      "surro.am": "2023-01-05",
+      "sweeden-history.zapto.org": "2015-03-18",
+      "swim.onlinewebshop.net": "2015-03-18",
+      "tapok121.jhfree.net": "2019-05-03",
+      "tazohor.com": "2015-10-20",
+      "te4step.tripod.com": "2015-10-20",
+      "telesport.mooo.com": "2019-10-07",
+      "tellmemore.4irc.com": "2018-03-28",
+      "thedarktower.av.master.dns-cloud.net": "2024-05-17",
+      "theguardian.webredirect.org": "2020-12-02",
+      "tiger.got-game.org": "2015-03-18",
+      "tiger.netii.net": "2015-10-20",
+      "toolsthem.xp3.biz": "2015-03-18",
+      "top-facts.sytes.net": "2015-03-18",
+      "top100news.my-wan.de": "2020-02-24",
+      "track.strangled.net": "2019-10-07",
+      "treesofter.mooo.com": "2020-02-24",
+      "trytowin.ignorelist.com": "2020-02-24",
+      "umefu.gq": "2020-05-26",
+      "update.studiokaspersky.com": "2026-06-20",
+      "updatenodes.site": "2019-05-01",
+      "vefogy.cf": "2020-05-26",
+      "vision2030.cf": "2019-05-09",
+      "vision2030.tk": "2019-05-09",
+      "vylys.com": "2020-05-26",
+      "wargame.ignorelist.com": "2019-10-07",
+      "waterwinterend.com": "2026-06-20",
+      "weather-online.hopto.org": "2015-03-18",
+      "weatherdataai.theworkpc.com": "2026-06-26",
+      "webfurina.com": "2026-06-20",
+      "wekanda.tk": "2020-05-26",
+      "winter.site11.com": "2015-10-20",
+      "wintersport.mrbasic.com": "2019-10-07",
+      "wintersport.sytes.net": "2015-03-18",
+      "wkoinfo.webredirect.org": "2022-05-04",
+      "wool-basalt-clock.glitch.me": "2026-06-26",
+      "wordlisten.mooo.com": "2020-02-24",
+      "world-weather.zapto.org": "2015-10-20",
+      "worldlist.linkpc.net": "2020-02-24",
+      "worldnews.ath.cx": "2021-04-22",
+      "x-files.zapto.org": "2015-03-18",
+      "zebra.wikaba.com": "2019-06-20"
+    },
+    "ipv4": {
+      "103.136.43.65:443": "2026-06-20",
+      "103.143.40.60:443": "2026-06-20",
+      "103.143.40.91:443": "2026-06-20",
+      "103.30.76.194:443": "2026-06-20",
+      "104.167.16.42:443": "2026-06-20",
+      "134.209.222.206:15363": "2020-03-12",
+      "154.53.42.194:8062": "2026-01-02",
+      "185.126.255.132:443": "2026-01-14",
+      "185.253.116.122:443": "2026-06-20",
+      "194.36.190.17:443": "2026-06-20",
+      "194.67.209.186:443": "2023-01-05",
+      "205.186.64.197:443": "2026-06-20",
+      "38.180.173.194:443": "2026-06-20",
+      "45.64.186.26:443": "2026-06-18",
+      "45.89.107.77:443": "2026-06-20",
+      "46.17.45.93:443": "2026-06-20",
+      "5.252.176.22:443": "2026-06-20",
+      "85.222.235.156:8000": "2020-03-12"
+    },
+    "url": {
+      "61paris.fr/wp-includes/ms-set.php": "2017-04-07",
+      "abrargeospatial.ir/wp-includes/fonts/wp-icons/index.php": "2026-01-02",
+      "adelaida.ua/plugins/vmsearch/wp-config-plugins.php": "2023-07-22",
+      "adelaida.ua/plugins/vmsearch/wp-config-themes.php": "2023-07-22",
+      "adelaida.ua/plugins/vmsearch/wp-file-script.js": "2023-07-22",
+      "aiisa.am/js/chatem/js_rA9bo8_O3Pnw_5wJXExNhtkUMdfBYCifTJctEJ8C_Mg.js": "2020-03-12",
+      "aleimportadora.net/images/slides_logo/": "2023-07-22",
+      "ales.ball-mill.es/ckfinder/core/connector/php/php4/CommandHandler/CommandHandler.php": "2019-05-29",
+      "arianeconseil.online/wp-includes/sitemaps/html/": "2026-01-14",
+      "armconsul.ru/user/themes/ayeps/dist/js/bundle.0eb0f2cb2808b4b35a94.js": "2020-03-12",
+      "atomydoc.kg/src/open_center/": "2023-07-22",
+      "aviasiya.com/murad.by/life/wp-content/plugins/wp-accounting/inc/pages/page-search.php": "2019-05-29",
+      "baby.greenweb.co.il/wp-content/themes/san-kloud/admin.php": "2019-05-29",
+      "balletmaniacs.com/wp-includes/fonts/icons/": "2020-10-28",
+      "berlinguas.com/wp-content/languages/index.php": "2020-10-28",
+      "bombheros.com/wp-content/languages/index.php": "2020-10-28",
+      "brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php": "2026-01-02",
+      "caduff-sa.ch/wordpress/wp-includes/rss.old.php": "2024-02-15",
+      "chagiocaxuanson.esy.es/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ngglegacy/admin/templates/manage_gallery/gallery_preview_page_field.old.php": "2019-05-29",
+      "circoloesteri.elezioni.idnet.it/admin-election/riepilogo.php": "2026-06-26",
+      "crane.mn/wp-content/plugins/jetpack/modules/photon-cdn/": "2023-04-26",
+      "daybreakhealthcare.co.uk/wp-includes/themees.php": "2019-05-29",
+      "doctorshand.org/wp-content/about/": "2017-04-07",
+      "download.originalapk.com/wp-content/plugins/loginizer/styles/": "2026-01-14",
+      "dyskurs.com.ua/wp-admin/includes/map-menu.php": "2019-05-29",
+      "giadinhvabe.net/wp-content/themes/viettemp/out/css/class.php": "2019-05-29",
+      "hanagram.jp/wp/wp-content/themes/hanagram/rss-old.php": "2024-02-15",
+      "hotnews.16mb.com/wp-content/themes/twentysixteen/template-parts/content-header.php": "2019-05-29",
+      "http://169.255.137.203": "2024-05-16",
+      "http://169.255.137.203/rss_0.php": "2018-09-12",
+      "http://185.141.62.32": "2019-06-20",
+      "http://217.171.86.137": "2024-05-16",
+      "http://217.171.86.137/config.php": "2018-09-12",
+      "http://217.171.86.137/rss_0.php": "2018-09-12",
+      "http://37.59.60.199": "2020-03-12",
+      "http://45.8.144.161": "2023-04-02",
+      "http://82.146.35.240": "2022-04-04",
+      "jeepcarlease.com/wp-includes/blocks/rss.old.php": "2024-02-15",
+      "jucheafrica.com/wp-includes/class-wp-edit.php": "2017-04-07",
+      "kennynguyen.esy.es/wp-content/plugins/wp-statistics/vendor/maxmind-db/reader/tests/MaxMind/Db/test/Reader/BuildTest.php": "2019-05-29",
+      "lasac.eu/credit_payment/url/": "2019-05-29",
+      "mail.aet.in.ua/outlook/api/logoff.aspx": "2023-07-22",
+      "mail.aet.in.ua/outlook/api/logon.aspx": "2023-07-22",
+      "mail.arlingtonhousing.us/outlook/api/logoff.aspx": "2023-07-22",
+      "mail.kzp.bg/outlook/api/logoff.aspx": "2023-07-22",
+      "mail.kzp.bg/outlook/api/logon.aspx": "2023-07-22",
+      "mail.lebsack.de/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync": "2023-07-22",
+      "mail.lechateaudelatour.fr/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync": "2023-07-22",
+      "mail.numina.md/owa/scripts/logon.aspx": "2023-07-22",
+      "mnp.nkr.am/wp-includes/js/jquery/jquery-migrate.min.js": "2020-03-12",
+      "mtsoft.hol.es/wp-content/gallery/": "2020-10-28",
+      "northviewcanada.com/wp-content/galler/slider/": "2019-03-18",
+      "octoberoctopus.co.za/wp-includes/sitemaps/web/": "2023-07-22",
+      "outletpiumini.springwaterfeatures.com/wp-includes/pomo/settings.php": "2019-05-29",
+      "pierreagencement.fr/wp-content/languages/index.php": "2023-07-22",
+      "pizzeria-mercy.de/wp-includes/images/media/bar/index.php": "2026-01-02",
+      "polishpod101.com/forum/language/en/sign/": "2020-10-28",
+      "portal.northernfruit.com/wp-content/plugins/file-away/core/": "2026-01-14",
+      "sansaispa.com/wp-includes/images/gallery/": "2023-07-22",
+      "shinestars-lifestyle.com/old_shinstar/includes/old/front_footer.old.php": "2019-05-29",
+      "shoppingexpert.it/wp-content/gallery/": "2019-05-29",
+      "simplecreative.design/wp-content/plugins/calculated-fields-form/single.php": "2019-05-29",
+      "simplifiedhomesales.com/wp-includes/images/index.php": "2020-10-28",
+      "skategirlchina.com/wp-includes/data_from_db_top.php": "2020-03-12",
+      "skategirlchina.com/wp-includes/ms-locale.php": "2020-03-12",
+      "soheylistore.ir/modules/mod_feed/feed.php": "2017-04-07",
+      "soligro.com/wp-includes/pomo/db.php": "2019-05-29",
+      "sonneteck.com/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/licence/templates/panel/activation/activation.php": "2019-05-29",
+      "tazohor.com/wp-includes/feed-rss-comments.php": "2017-04-07",
+      "tekfordummies.com/wp-content/plugins/social-auto-poster/includes/libraries/delicious/Delicious.php": "2019-05-29",
+      "telegram.akipress.news/lsasss.rar": "2023-04-26",
+      "thefinetreats.com/wp-content/themes/twentyseventeen/rss-old.php": "2024-02-15",
+      "warrixmalaysia.com.my/wp-content/plugins/jetpack/modules/contact-form/grunion-table-form.php": "2019-05-29",
+      "weandcats.com/wp-content/plugins/broken-link-checker/modules/checkers/http-module.php": "2019-05-29",
+      "zerogov.com/wp-content/plugins.deactivate/paypal-donations/src/PaypalDonations/SimpleSubsribe.php": "2019-05-29",
+      "zszinhyosz.pe.hu/wp-content/themes/twentyfourteen/page-templates/full-hight.php": "2019-05-29",
+      "zycie-chotomowa.pl/wp-content/languages/index.php": "2019-03-18"
+    },
+    "url_path": {
+      "/CyberAzov.apk": "2022-07-08",
+      "/connect_meta.php": "2019-05-03",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/": "2023-07-22",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/": "2023-07-22",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync": "2023-07-22"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "ekrn.ydns.eu": "at-or-before",
+      "eset.ydns.eu": "at-or-before",
+      "excelupdates.org": "at-or-before",
+      "ies.inquirer.com.ph": "at-or-before",
+      "kav-certificate.net": "at-or-before",
+      "kav-certificates.info": "at-or-before",
+      "lucky-king-96d6.mopig92456.workers.dev": "at-or-before",
+      "secdesk.xyz": "at-or-before"
+    },
+    "ipv4": {
+      "154.53.42.194:8062": "at-or-before"
+    },
+    "url": {
+      "abrargeospatial.ir/wp-includes/fonts/wp-icons/index.php": "at-or-before",
+      "brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php": "at-or-before",
+      "pizzeria-mercy.de/wp-includes/images/media/bar/index.php": "at-or-before"
+    },
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2015-03-18",
+    "latest": "2026-06-26"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "61paris.fr",
+      "academyawards.effers.com",
+      "accessdest.strangled.net",
+      "adgf.am",
+      "adstore.twilightparadox.com",
+      "agony.compress.to",
+      "api.softwareupdatenews.com",
+      "archive-articles.linkpc.net",
+      "arctic-zone.bbsindex.com",
+      "arinas.tk",
+      "auberdine.etowns.net",
+      "av.master.dns-cloud.net",
+      "avmaster.dns-cloud.net",
+      "badget.ignorelist.com",
+      "baltdefcol.webredirect.org",
+      "bedrost.com",
+      "bestfunc.slyip.net",
+      "bigpen.ga",
+      "blackerror.ignorelist.com",
+      "booking.etowns.org",
+      "booking.strangled.net",
+      "bookstore.strangled.net",
+      "branter.tk",
+      "bronerg.tk",
+      "bug.ignorelist.com",
+      "buy-new-car.com",
+      "caduff-sa.chjeepcarlease.com",
+      "canal1zac1a.onrender.com",
+      "carleasingguru.com",
+      "cars-online.zapto.org",
+      "cdn.datacenterate.com",
+      "celestyna.tk",
+      "ceremon.2waky.com",
+      "cheapflights.etowns.net",
+      "chinafood.chickenkiller.com",
+      "chjeepcarlease.com",
+      "climbent.mooo.com",
+      "codewizard.ml",
+      "coldriver.strangled.net",
+      "communityeu.xp3.biz",
+      "connectotels.net",
+      "crusider.tk",
+      "cyberazov.com",
+      "cyberazov.tk",
+      "d3hdbjtb1686tn.cloudfront.net",
+      "da.anythinktech.com",
+      "datacenterate.com",
+      "davilta.tk",
+      "dellservice.publicvm.com",
+      "deme.ml",
+      "developarea.mooo.com",
+      "dixito.ml",
+      "downtown.crabdance.com",
+      "driverx86-adobe.onrender.com",
+      "dropbox12.com",
+      "dsme.info",
+      "dubaiexpo2020.cf",
+      "duke6.tk",
+      "dzerl.com",
+      "easport-news.publicvm.com",
+      "easports.3d-game.com",
+      "ebay-global.publicvm.com",
+      "ekrn.ydns.eu",
+      "elizabi.tk",
+      "en.footballcharge.us",
+      "eset.ydns.eu",
+      "esetcloud.com",
+      "ethdns.mywire.org",
+      "eu-sciffi.99k.org",
+      "euassociate.6te.net",
+      "euland.freevar.com",
+      "eunews-online.zapto.org",
+      "eurovision.chickenkiller.com",
+      "excelupdates.org",
+      "f0304768.xsph.ru",
+      "fifa-rules.25u.com",
+      "fleetwood.tk",
+      "foods.jkub.com",
+      "footballcharge.us",
+      "forum.4dq.com",
+      "forum.acmetoy.com",
+      "forum.sytes.net",
+      "forumgeek.zzux.com",
+      "franceonline.sytes.net",
+      "freeutils.3utilities.com",
+      "gallop.mefound.com",
+      "goldenroade.strangled.net",
+      "google-ai-labs-it.onrender.com",
+      "greateplan.ocry.com",
+      "greece-travel.servepics.com",
+      "hanagram.jpthefinetreats.com",
+      "health-everyday.faqserv.com",
+      "highcolumn.webredirect.org",
+      "highhills.ignorelist.com",
+      "hockey-news.servehttp.com",
+      "hofa.tk",
+      "hostelhotels.net",
+      "hotspot.accesscam.org",
+      "hunvin.tk",
+      "ies.inquirer.com.ph",
+      "in.thedarktower.av.master.dns-cloud.net",
+      "industrywork.mooo.com",
+      "interesting-news.zapto.org",
+      "jadlactnato.webredirect.org",
+      "jpthefinetreats.com",
+      "jucheafrica.com",
+      "july.mypressonline.com",
+      "kav-certificate.net",
+      "kav-certificates.info",
+      "kersachi.ignorelist.com",
+      "knowledgetime.slyip.net",
+      "lakify.ml",
+      "leagueoflegends.servequake.com",
+      "lindaztert.net",
+      "lucky-king-96d6.mopig92456.workers.dev",
+      "mail.mfa.uz.webmails.info",
+      "manager.surro.am",
+      "marketplace.servehttp.com",
+      "markham-travel.com",
+      "mediahistory.linkpc.net",
+      "mentionedthedarktower.av.master.dns-cloud.net",
+      "microsoft.updatemeltdownkb7234.com",
+      "minkstore.vip",
+      "misters.ml",
+      "moscow.stransgroup.com",
+      "music-world.servemp3.com",
+      "musicplanet.servemp3.com",
+      "new-book.linkpc.net",
+      "newforum.chickenkiller.com",
+      "newgame.2waky.com",
+      "news-bbc.podzone.org",
+      "newscloud.mn",
+      "newshealthsport.com",
+      "newutils.3utilities.com",
+      "nhl-blog.servegame.com",
+      "nightday.comxa.com",
+      "nightstreet.toh.info",
+      "north-area.bbsindex.com",
+      "ns.minkstore.vip",
+      "officebuild.4irc.com",
+      "olympik-blog.4dq.com",
+      "onekey-host.com",
+      "onlineshop.sellclassics.com",
+      "orl05511cn.temp.swtest.ru",
+      "papperbell.effers.com",
+      "patherror.publicvm.com",
+      "pewyth.ga",
+      "pockerroom.servebeer.com",
+      "pokerface.servegame.com",
+      "pressforum.serveblog.net",
+      "priceline.publicvm.com",
+      "profound.zzux.com",
+      "progress.zyns.com",
+      "psychology-blog.ezua.com",
+      "radiobutton.mooo.com",
+      "robot.wikaba.com",
+      "sameera.gq",
+      "sanitar.ml",
+      "sanky.sportsontheweb.net",
+      "scandinavia-facts.sytes.net",
+      "scifi.pages.at",
+      "scrabble.ikwb.com",
+      "sealand.publicvm.com",
+      "secdesk.xyz",
+      "securesource.strangled.net",
+      "sendmessage.mooo.com",
+      "skyrim.3d-game.com",
+      "smallcloud.ga",
+      "softprog.freeoda.com",
+      "softstream.strangled.net",
+      "softwareupdatenews.com",
+      "soheylistore.ir",
+      "sportacademy.my03.com",
+      "sportmusic.servemp3.com",
+      "sportnewspaper.strangled.net",
+      "stockholm-blog.hopto.org",
+      "stopwar.pro",
+      "studiokaspersky.com",
+      "sumefu.gq",
+      "supercar.ignorelist.com",
+      "supernews.instanthq.com",
+      "supernews.sytes.net",
+      "support4u.5u.com",
+      "surro.am",
+      "sweeden-history.zapto.org",
+      "swim.onlinewebshop.net",
+      "tapok121.jhfree.net",
+      "tazohor.com",
+      "te4step.tripod.com",
+      "telesport.mooo.com",
+      "tellmemore.4irc.com",
+      "thedarktower.av.master.dns-cloud.net",
+      "theguardian.webredirect.org",
+      "tiger.got-game.org",
+      "tiger.netii.net",
+      "toolsthem.xp3.biz",
+      "top-facts.sytes.net",
+      "top100news.my-wan.de",
+      "track.strangled.net",
+      "treesofter.mooo.com",
+      "trytowin.ignorelist.com",
+      "umefu.gq",
+      "update.studiokaspersky.com",
+      "updatenodes.site",
+      "vefogy.cf",
+      "vision2030.cf",
+      "vision2030.tk",
+      "vylys.com",
+      "wargame.ignorelist.com",
+      "waterwinterend.com",
+      "weather-online.hopto.org",
+      "weatherdataai.theworkpc.com",
+      "webfurina.com",
+      "wekanda.tk",
+      "winter.site11.com",
+      "wintersport.mrbasic.com",
+      "wintersport.sytes.net",
+      "wkoinfo.webredirect.org",
+      "wool-basalt-clock.glitch.me",
+      "wordlisten.mooo.com",
+      "world-weather.zapto.org",
+      "worldlist.linkpc.net",
+      "worldnews.ath.cx",
+      "x-files.zapto.org",
+      "zebra.wikaba.com"
+    ],
+    "ipv4": [
+      "103.136.43.65:443",
+      "103.143.40.60:443",
+      "103.143.40.91:443",
+      "103.30.76.194:443",
+      "104.167.16.42:443",
+      "134.209.222.206:15363",
+      "154.53.42.194:8062",
+      "185.126.255.132:443",
+      "185.253.116.122:443",
+      "194.36.190.17:443",
+      "194.67.209.186:443",
+      "205.186.64.197:443",
+      "38.180.173.194:443",
+      "45.64.186.26:443",
+      "45.89.107.77:443",
+      "46.17.45.93:443",
+      "5.252.176.22:443",
+      "85.222.235.156:8000"
+    ],
+    "url": [
+      "61paris.fr/wp-includes/ms-set.php",
+      "abrargeospatial.ir/wp-includes/fonts/wp-icons/index.php",
+      "adelaida.ua/plugins/vmsearch/wp-config-plugins.php",
+      "adelaida.ua/plugins/vmsearch/wp-config-themes.php",
+      "adelaida.ua/plugins/vmsearch/wp-file-script.js",
+      "aiisa.am/js/chatem/js_rA9bo8_O3Pnw_5wJXExNhtkUMdfBYCifTJctEJ8C_Mg.js",
+      "aleimportadora.net/images/slides_logo/",
+      "ales.ball-mill.es/ckfinder/core/connector/php/php4/CommandHandler/CommandHandler.php",
+      "arianeconseil.online/wp-includes/sitemaps/html/",
+      "armconsul.ru/user/themes/ayeps/dist/js/bundle.0eb0f2cb2808b4b35a94.js",
+      "atomydoc.kg/src/open_center/",
+      "aviasiya.com/murad.by/life/wp-content/plugins/wp-accounting/inc/pages/page-search.php",
+      "baby.greenweb.co.il/wp-content/themes/san-kloud/admin.php",
+      "balletmaniacs.com/wp-includes/fonts/icons/",
+      "berlinguas.com/wp-content/languages/index.php",
+      "bombheros.com/wp-content/languages/index.php",
+      "brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php",
+      "caduff-sa.ch/wordpress/wp-includes/rss.old.php",
+      "chagiocaxuanson.esy.es/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ngglegacy/admin/templates/manage_gallery/gallery_preview_page_field.old.php",
+      "circoloesteri.elezioni.idnet.it/admin-election/riepilogo.php",
+      "crane.mn/wp-content/plugins/jetpack/modules/photon-cdn/",
+      "daybreakhealthcare.co.uk/wp-includes/themees.php",
+      "doctorshand.org/wp-content/about/",
+      "download.originalapk.com/wp-content/plugins/loginizer/styles/",
+      "dyskurs.com.ua/wp-admin/includes/map-menu.php",
+      "giadinhvabe.net/wp-content/themes/viettemp/out/css/class.php",
+      "hanagram.jp/wp/wp-content/themes/hanagram/rss-old.php",
+      "hotnews.16mb.com/wp-content/themes/twentysixteen/template-parts/content-header.php",
+      "http://169.255.137.203",
+      "http://169.255.137.203/rss_0.php",
+      "http://185.141.62.32",
+      "http://217.171.86.137",
+      "http://217.171.86.137/config.php",
+      "http://217.171.86.137/rss_0.php",
+      "http://37.59.60.199",
+      "http://45.8.144.161",
+      "http://82.146.35.240",
+      "jeepcarlease.com/wp-includes/blocks/rss.old.php",
+      "jucheafrica.com/wp-includes/class-wp-edit.php",
+      "kennynguyen.esy.es/wp-content/plugins/wp-statistics/vendor/maxmind-db/reader/tests/MaxMind/Db/test/Reader/BuildTest.php",
+      "lasac.eu/credit_payment/url/",
+      "mail.aet.in.ua/outlook/api/logoff.aspx",
+      "mail.aet.in.ua/outlook/api/logon.aspx",
+      "mail.arlingtonhousing.us/outlook/api/logoff.aspx",
+      "mail.kzp.bg/outlook/api/logoff.aspx",
+      "mail.kzp.bg/outlook/api/logon.aspx",
+      "mail.lebsack.de/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync",
+      "mail.lechateaudelatour.fr/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync",
+      "mail.numina.md/owa/scripts/logon.aspx",
+      "mnp.nkr.am/wp-includes/js/jquery/jquery-migrate.min.js",
+      "mtsoft.hol.es/wp-content/gallery/",
+      "northviewcanada.com/wp-content/galler/slider/",
+      "octoberoctopus.co.za/wp-includes/sitemaps/web/",
+      "outletpiumini.springwaterfeatures.com/wp-includes/pomo/settings.php",
+      "pierreagencement.fr/wp-content/languages/index.php",
+      "pizzeria-mercy.de/wp-includes/images/media/bar/index.php",
+      "polishpod101.com/forum/language/en/sign/",
+      "portal.northernfruit.com/wp-content/plugins/file-away/core/",
+      "sansaispa.com/wp-includes/images/gallery/",
+      "shinestars-lifestyle.com/old_shinstar/includes/old/front_footer.old.php",
+      "shoppingexpert.it/wp-content/gallery/",
+      "simplecreative.design/wp-content/plugins/calculated-fields-form/single.php",
+      "simplifiedhomesales.com/wp-includes/images/index.php",
+      "skategirlchina.com/wp-includes/data_from_db_top.php",
+      "skategirlchina.com/wp-includes/ms-locale.php",
+      "soheylistore.ir/modules/mod_feed/feed.php",
+      "soligro.com/wp-includes/pomo/db.php",
+      "sonneteck.com/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/licence/templates/panel/activation/activation.php",
+      "tazohor.com/wp-includes/feed-rss-comments.php",
+      "tekfordummies.com/wp-content/plugins/social-auto-poster/includes/libraries/delicious/Delicious.php",
+      "telegram.akipress.news/lsasss.rar",
+      "thefinetreats.com/wp-content/themes/twentyseventeen/rss-old.php",
+      "warrixmalaysia.com.my/wp-content/plugins/jetpack/modules/contact-form/grunion-table-form.php",
+      "weandcats.com/wp-content/plugins/broken-link-checker/modules/checkers/http-module.php",
+      "zerogov.com/wp-content/plugins.deactivate/paypal-donations/src/PaypalDonations/SimpleSubsribe.php",
+      "zszinhyosz.pe.hu/wp-content/themes/twentyfourteen/page-templates/full-hight.php",
+      "zycie-chotomowa.pl/wp-content/languages/index.php"
+    ],
+    "url_path": [
+      "/CyberAzov.apk",
+      "/connect_meta.php",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/",
+      "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync"
+    ]
+  },
+  "last_modified": "2026-06-26T15:31:21+00:00",
+  "maltrail_groups": [
+    "TURLA",
+    "UNC4210"
+  ],
+  "references": [
+    "http://artemonsecurity.com/snake_whitepaper.pdf",
+    "http://info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf",
+    "https://blog.google/threat-analysis-group/continued-cyber-activity-in-eastern-europe-observed-by-tag/",
+    "https://blog.sekoia.io/turla-new-phishing-campaign-eastern-europe/",
+    "https://blog.talosintelligence.com/tinyturla-full-kill-chain/",
+    "https://blog.talosintelligence.com/tinyturla-next-generation/",
+    "https://censys.com/blog/2025-state-of-the-internet-malware-investigations",
+    "https://cert.gov.ua/article/5213167 (# UAC-0024, UAC-0003)",
+    "https://cloud.google.com/blog/topics/threat-intelligence/stockstay-turla-intelligence-gathering",
+    "https://cyble.com/blog/tiny-backdoor-goes-undetected-suspected-turla-leveraging-msbuild-to-evade-detection/",
+    "https://github.com/eset/malware-ioc/blob/master/turla/README.adoc",
+    "https://github.com/eset/malware-ioc/tree/master/turla",
+    "https://github.com/eset/malware-ioc/tree/master/turla#gamaredon-x-turla-collab-indicators-of-compromise",
+    "https://github.com/eset/malware-ioc/tree/master/turla#network-indicators",
+    "https://github.com/eset/malware-ioc/tree/master/turla#turla-comrat-v4-indicators-of-compromise",
+    "https://lab52.io/blog/complete-dissection-of-an-apk-with-a-suspicious-c2-server/",
+    "https://otx.alienvault.com/pulse/57b4ad5cd19e030139028e28",
+    "https://otx.alienvault.com/pulse/5e6a1997e4301d0827885c98",
+    "https://otx.alienvault.com/pulse/5f0e0247a1f88359cebcccb2",
+    "https://otx.alienvault.com/pulse/5f99a34fe3c5a08a4093e54d",
+    "https://otx.alienvault.com/pulse/5fc7b28bd5c07b0b777106b9",
+    "https://otx.alienvault.com/pulse/624c2c7f9f25362f604a9606",
+    "https://otx.alienvault.com/pulse/6272996039678903e0b73dd5",
+    "https://otx.alienvault.com/pulse/628ba3b7c4e0efc200be0582",
+    "https://otx.alienvault.com/pulse/64469f924625bdef62b1debc",
+    "https://r136a1.dev/2026/01/14/command-and-evade-turlas-kazuar-v3-loader/",
+    "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/",
+    "https://securelist.com/tomiris-called-they-want-their-turla-malware-back/109552/",
+    "https://thehackernews.com/2022/04/researchers-uncover-new-android-spyware.html",
+    "https://twitter.com/Gi7w0rm/status/1642551370287816704",
+    "https://twitter.com/James_inthe_box/status/1124278816753442818",
+    "https://twitter.com/James_inthe_box/status/1125800284272226304",
+    "https://twitter.com/VK_Intel/status/1089959988116799491",
+    "https://twitter.com/billyleonard/status/1545461166377508865",
+    "https://twitter.com/billyleonard/status/1545461171456729090",
+    "https://twitter.com/daphiel/status/1174324244127322115",
+    "https://twitter.com/rnaksyrn/status/1097522490111418368",
+    "https://twitter.com/sekoia_io/status/1554086468104196096",
+    "https://us-cert.cisa.gov/ncas/analysis-reports/ar20-303a",
+    "https://www.accenture.com/us-en/blogs/cyber-defense/turla-belugasturgeon-compromises-government-entity",
+    "https://www.cyberark.com/resources/threat-research-blog/krypton-stealer-kryptonite-for-credentials",
+    "https://www.mandiant.com/resources/blog/turla-galaxy-opportunity",
+    "https://www.microsoft.com/en-us/security/blog/2024/12/04/frequent-freeloader-part-i-secret-blizzard-compromising-storm-0156-infrastructure-for-espionage/",
+    "https://www.microsoft.com/en-us/security/blog/2025/07/31/frozen-in-transit-secret-blizzards-aitm-campaign-against-diplomats/",
+    "https://www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments",
+    "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf",
+    "https://www.symantec.com/security-center/writeup/2014-011316-1921-99?tabid=2",
+    "https://www.symantec.com/security_response/writeup.jsp?docid=2014-121014-2918-99&tabid=2",
+    "https://www.telsy.com/turla-venomous-bear-updates-its-arsenal-newpass-appears-on-the-apt-threat-scene/",
+    "https://www.virustotal.com/gui/file/13fafb1ae2d5de024e68f2e2fc820bc79ef0690c40dbfd70246bcc394c52ea20/detection",
+    "https://www.virustotal.com/gui/file/267071df79927abd1e57f57106924dd8a68e1c4ed74e7b69403cdcdf6e6a453b/detection",
+    "https://www.virustotal.com/gui/file/3c62b24594ec3cacc14bdca068a0277e855967210e92c2c17bcf7c7d0d6b782a/",
+    "https://www.virustotal.com/gui/file/3ecb09e659bcb500f9f40d022579a09acb11aec3a92c03e7d3fd2e56982d9eea/detection",
+    "https://www.virustotal.com/gui/file/5b4ed1dc85f5551f070693cf1faf801f76a92b7b624bd402e7a6ca42bc8486fa/detection",
+    "https://www.virustotal.com/gui/file/6536b6b50aa1f6899ffa90aaf4b1b67c0ae0f6c0441016f5308b37c12141c61d/detection",
+    "https://www.virustotal.com/gui/file/745e8c90a8e76f81021ff491cbc275bc134cdd7d23826b8dd23e58297fd0dd33/detection",
+    "https://www.virustotal.com/gui/file/8c97df4ca1a5995e22c2c4887bea2945269d6f5f158def98d5ebdd5311bb20c4/detection",
+    "https://www.virustotal.com/gui/file/8d9bb878a18b2b7ef558504e78a59eb644f83a63679658533ff8accf0b85fda3/detection",
+    "https://www.virustotal.com/gui/file/a84f1fe984e6fb04af0e029b67245f2167bcec766959f5033bfbf5ac00f0d396/detection",
+    "https://www.virustotal.com/gui/file/d2fad779289732d1edf932b62278eb3090eb814d624f2e0a4fbbc613495c55e8/detection",
+    "https://www.virustotal.com/gui/file/d6ac21a409f35a80ba9ccfe58ae1ae32883e44ecc724e4ae8289e7465ab2cf40/detection",
+    "https://www.virustotal.com/gui/file/e0eacd72afe39de3b327a164f9c69a78c9c0f672d3ad202271772d816db4fad8/detection",
+    "https://www.virustotal.com/gui/ip-address/107.189.18.66/relations",
+    "https://www.virustotal.com/gui/ip-address/185.141.62.32/relations",
+    "https://www.virustotal.com/gui/ip-address/185.206.180.130/relations",
+    "https://www.virustotal.com/gui/ip-address/45.153.241.162/relations",
+    "https://www.virustotal.com/gui/ip-address/45.61.149.109/relations",
+    "https://www.virustotal.com/gui/ip-address/79.110.52.218/relations",
+    "https://www.virustotal.com/gui/ip-address/94.249.192.182/relations",
+    "https://www.welivesecurity.com/2018/01/09/turlas-backdoor-laced-flash-player-installer/",
+    "https://www.welivesecurity.com/2020/03/12/tracking-turla-new-backdoor-armenian-watering-holes/",
+    "https://www.welivesecurity.com/2020/05/26/agentbtz-comratv4-ten-year-journey/",
+    "https://www.welivesecurity.com/2020/12/02/turla-crutch-keeping-back-door-open/",
+    "https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/",
+    "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/",
+    "https://x.com/BushidoToken/status/1791484308693086437",
+    "https://x.com/TheEnergyStory/status/2011407237038620751",
+    "https://x.com/_IMalihi_/status/2068422081855836300",
+    "https://x.com/phatomcandle/status/2067668684664119330"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0087"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "2 reports cite both",
+          "kind": "reporting",
+          "weight": 2.0
+        }
+      ],
+      "slug": "UNC1151"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1033"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Arp",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0050"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares nbtstat",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G1054"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Systeminfo, Reg",
+          "kind": "software",
+          "weight": 0.333
+        }
+      ],
+      "slug": "G0049"
+    }
+  ],
+  "slug": "G0010",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 5,
+        "url": 1
+      },
+      "first_seen": "2026-06-26",
+      "indicators": {
+        "domain": [
+          "canal1zac1a.onrender.com",
+          "driverx86-adobe.onrender.com",
+          "google-ai-labs-it.onrender.com",
+          "weatherdataai.theworkpc.com",
+          "wool-basalt-clock.glitch.me"
+        ],
+        "url": [
+          "circoloesteri.elezioni.idnet.it/admin-election/riepilogo.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/stockstay-turla-intelligence-gathering"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 15,
+        "ipv4": 12
+      },
+      "first_seen": "2026-06-20",
+      "indicators": {
+        "domain": [
+          "api.softwareupdatenews.com",
+          "cdn.datacenterate.com",
+          "datacenterate.com",
+          "dzerl.com",
+          "en.footballcharge.us",
+          "footballcharge.us",
+          "minkstore.vip",
+          "newscloud.mn",
+          "ns.minkstore.vip",
+          "onekey-host.com",
+          "softwareupdatenews.com",
+          "studiokaspersky.com",
+          "update.studiokaspersky.com",
+          "waterwinterend.com",
+          "webfurina.com"
+        ],
+        "ipv4": [
+          "103.136.43.65:443",
+          "103.143.40.60:443",
+          "103.143.40.91:443",
+          "103.30.76.194:443",
+          "104.167.16.42:443",
+          "185.253.116.122:443",
+          "194.36.190.17:443",
+          "205.186.64.197:443",
+          "38.180.173.194:443",
+          "45.89.107.77:443",
+          "46.17.45.93:443",
+          "5.252.176.22:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/_IMalihi_/status/2068422081855836300"
+      ],
+      "total": 27
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-06-18",
+      "indicators": {
+        "ipv4": [
+          "45.64.186.26:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/phatomcandle/status/2067668684664119330"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1,
+        "url": 3
+      },
+      "first_seen": "2026-01-14",
+      "indicators": {
+        "domain": [
+          "esetcloud.com"
+        ],
+        "ipv4": [
+          "185.126.255.132:443"
+        ],
+        "url": [
+          "arianeconseil.online/wp-includes/sitemaps/html/",
+          "download.originalapk.com/wp-content/plugins/loginizer/styles/",
+          "portal.northernfruit.com/wp-content/plugins/file-away/core/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/TheEnergyStory/status/2011407237038620751",
+        "https://r136a1.dev/2026/01/14/command-and-evade-turlas-kazuar-v3-loader/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "url": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ekrn.ydns.eu",
+          "eset.ydns.eu",
+          "lucky-king-96d6.mopig92456.workers.dev"
+        ],
+        "url": [
+          "abrargeospatial.ir/wp-includes/fonts/wp-icons/index.php",
+          "brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php",
+          "pizzeria-mercy.de/wp-includes/images/media/bar/index.php"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/",
+        "https://github.com/eset/malware-ioc/tree/master/turla#gamaredon-x-turla-collab-indicators-of-compromise",
+        "https://www.virustotal.com/gui/file/3ecb09e659bcb500f9f40d022579a09acb11aec3a92c03e7d3fd2e56982d9eea/detection"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "excelupdates.org",
+          "kav-certificate.net",
+          "kav-certificates.info"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2025/07/31/frozen-in-transit-secret-blizzards-aitm-campaign-against-diplomats/",
+        "https://www.virustotal.com/gui/ip-address/107.189.18.66/relations",
+        "https://www.virustotal.com/gui/ip-address/45.61.149.109/relations",
+        "https://www.virustotal.com/gui/file/13fafb1ae2d5de024e68f2e2fc820bc79ef0690c40dbfd70246bcc394c52ea20/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "secdesk.xyz"
+        ],
+        "ipv4": [
+          "154.53.42.194:8062"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://censys.com/blog/2025-state-of-the-internet-malware-investigations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "ies.inquirer.com.ph"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://cyble.com/blog/tiny-backdoor-goes-undetected-suspected-turla-leveraging-msbuild-to-evade-detection/",
+        "https://www.virustotal.com/gui/file/8c97df4ca1a5995e22c2c4887bea2945269d6f5f158def98d5ebdd5311bb20c4/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-12-13",
+      "indicators": {
+        "domain": [
+          "connectotels.net",
+          "hostelhotels.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.microsoft.com/en-us/security/blog/2024/12/04/frequent-freeloader-part-i-secret-blizzard-compromising-storm-0156-infrastructure-for-espionage/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2024-05-17",
+      "indicators": {
+        "domain": [
+          "av.master.dns-cloud.net",
+          "avmaster.dns-cloud.net",
+          "in.thedarktower.av.master.dns-cloud.net",
+          "mentionedthedarktower.av.master.dns-cloud.net",
+          "thedarktower.av.master.dns-cloud.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/BushidoToken/status/1791484308693086437",
+        "https://www.virustotal.com/gui/ip-address/185.206.180.130/relations",
+        "https://www.virustotal.com/gui/file/d2fad779289732d1edf932b62278eb3090eb814d624f2e0a4fbbc613495c55e8/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2024-05-16",
+      "indicators": {
+        "url": [
+          "http://169.255.137.203",
+          "http://217.171.86.137"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/",
+        "https://github.com/eset/malware-ioc/tree/master/turla#network-indicators"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2024-03-22",
+      "indicators": {
+        "domain": [
+          "buy-new-car.com",
+          "caduff-sa.chjeepcarlease.com",
+          "carleasingguru.com",
+          "chjeepcarlease.com",
+          "hanagram.jpthefinetreats.com",
+          "jpthefinetreats.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/tinyturla-full-kill-chain/"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "url": 4
+      },
+      "first_seen": "2024-02-15",
+      "indicators": {
+        "url": [
+          "caduff-sa.ch/wordpress/wp-includes/rss.old.php",
+          "hanagram.jp/wp/wp-content/themes/hanagram/rss-old.php",
+          "jeepcarlease.com/wp-includes/blocks/rss.old.php",
+          "thefinetreats.com/wp-content/themes/twentyseventeen/rss-old.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.talosintelligence.com/tinyturla-next-generation/",
+        "https://www.virustotal.com/gui/file/267071df79927abd1e57f57106924dd8a68e1c4ed74e7b69403cdcdf6e6a453b/detection",
+        "https://www.virustotal.com/gui/file/d6ac21a409f35a80ba9ccfe58ae1ae32883e44ecc724e4ae8289e7465ab2cf40/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 16,
+        "url_path": 3
+      },
+      "first_seen": "2023-07-22",
+      "indicators": {
+        "url": [
+          "adelaida.ua/plugins/vmsearch/wp-config-plugins.php",
+          "adelaida.ua/plugins/vmsearch/wp-config-themes.php",
+          "adelaida.ua/plugins/vmsearch/wp-file-script.js",
+          "aleimportadora.net/images/slides_logo/",
+          "atomydoc.kg/src/open_center/",
+          "mail.aet.in.ua/outlook/api/logoff.aspx",
+          "mail.aet.in.ua/outlook/api/logon.aspx",
+          "mail.arlingtonhousing.us/outlook/api/logoff.aspx",
+          "mail.kzp.bg/outlook/api/logoff.aspx",
+          "mail.kzp.bg/outlook/api/logon.aspx",
+          "mail.lebsack.de/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync",
+          "mail.lechateaudelatour.fr/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync",
+          "mail.numina.md/owa/scripts/logon.aspx",
+          "octoberoctopus.co.za/wp-includes/sitemaps/web/",
+          "pierreagencement.fr/wp-content/languages/index.php",
+          "sansaispa.com/wp-includes/images/gallery/"
+        ],
+        "url_path": [
+          "/microsoft.exchange.mailboxreplicationservice.proxyservice/",
+          "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/",
+          "/microsoft.exchange.mailboxreplicationservice.proxyservice/rpcwithcert/sync"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://cert.gov.ua/article/5213167 (# UAC-0024, UAC-0003)"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 2
+      },
+      "first_seen": "2023-04-26",
+      "indicators": {
+        "domain": [
+          "mail.mfa.uz.webmails.info"
+        ],
+        "url": [
+          "crane.mn/wp-content/plugins/jetpack/modules/photon-cdn/",
+          "telegram.akipress.news/lsasss.rar"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/tomiris-called-they-want-their-turla-malware-back/109552/",
+        "https://otx.alienvault.com/pulse/64469f924625bdef62b1debc"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-04-02",
+      "indicators": {
+        "url": [
+          "http://45.8.144.161"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Gi7w0rm/status/1642551370287816704"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2023-01-05",
+      "indicators": {
+        "domain": [
+          "manager.surro.am",
+          "surro.am"
+        ],
+        "ipv4": [
+          "194.67.209.186:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.mandiant.com/resources/blog/turla-galaxy-opportunity",
+        "https://www.virustotal.com/gui/file/6536b6b50aa1f6899ffa90aaf4b1b67c0ae0f6c0441016f5308b37c12141c61d/detection",
+        "https://www.virustotal.com/gui/file/8d9bb878a18b2b7ef558504e78a59eb644f83a63679658533ff8accf0b85fda3/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-08-01",
+      "indicators": {
+        "domain": [
+          "cyberazov.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/sekoia_io/status/1554086468104196096"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-20",
+      "indicators": {
+        "domain": [
+          "stopwar.pro"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.google/threat-analysis-group/continued-cyber-activity-in-eastern-europe-observed-by-tag/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2022-07-08",
+      "indicators": {
+        "domain": [
+          "cyberazov.com"
+        ],
+        "url_path": [
+          "/CyberAzov.apk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/billyleonard/status/1545461166377508865",
+        "https://twitter.com/billyleonard/status/1545461171456729090",
+        "https://www.virustotal.com/gui/file/3c62b24594ec3cacc14bdca068a0277e855967210e92c2c17bcf7c7d0d6b782a/",
+        "https://www.virustotal.com/gui/file/745e8c90a8e76f81021ff491cbc275bc134cdd7d23826b8dd23e58297fd0dd33/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-05-24",
+      "indicators": {
+        "domain": [
+          "baltdefcol.webredirect.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.sekoia.io/turla-new-phishing-campaign-eastern-europe/",
+        "https://otx.alienvault.com/pulse/628ba3b7c4e0efc200be0582",
+        "https://www.virustotal.com/gui/ip-address/45.153.241.162/relations",
+        "https://www.virustotal.com/gui/ip-address/79.110.52.218/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-05-04",
+      "indicators": {
+        "domain": [
+          "jadlactnato.webredirect.org",
+          "wkoinfo.webredirect.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/6272996039678903e0b73dd5",
+        "https://blog.sekoia.io/turla-new-phishing-campaign-eastern-europe/",
+        "https://otx.alienvault.com/pulse/628ba3b7c4e0efc200be0582",
+        "https://www.virustotal.com/gui/ip-address/45.153.241.162/relations",
+        "https://www.virustotal.com/gui/ip-address/79.110.52.218/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-04-05",
+      "indicators": {
+        "domain": [
+          "d3hdbjtb1686tn.cloudfront.net",
+          "da.anythinktech.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/complete-dissection-of-an-apk-with-a-suspicious-c2-server/",
+        "https://thehackernews.com/2022/04/researchers-uncover-new-android-spyware.html",
+        "https://otx.alienvault.com/pulse/624c2c7f9f25362f604a9606",
+        "https://www.virustotal.com/gui/file/e0eacd72afe39de3b327a164f9c69a78c9c0f672d3ad202271772d816db4fad8/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-04-04",
+      "indicators": {
+        "url": [
+          "http://82.146.35.240"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://lab52.io/blog/complete-dissection-of-an-apk-with-a-suspicious-c2-server/",
+        "https://thehackernews.com/2022/04/researchers-uncover-new-android-spyware.html",
+        "https://otx.alienvault.com/pulse/624c2c7f9f25362f604a9606",
+        "https://www.virustotal.com/gui/file/e0eacd72afe39de3b327a164f9c69a78c9c0f672d3ad202271772d816db4fad8/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-02-01",
+      "indicators": {
+        "domain": [
+          "f0304768.xsph.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cyberark.com/resources/threat-research-blog/krypton-stealer-kryptonite-for-credentials",
+        "https://www.virustotal.com/gui/file/a84f1fe984e6fb04af0e029b67245f2167bcec766959f5033bfbf5ac00f0d396/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-04-22",
+      "indicators": {
+        "domain": [
+          "worldnews.ath.cx"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/rnaksyrn/status/1097522490111418368",
+        "https://www.virustotal.com/gui/file/5b4ed1dc85f5551f070693cf1faf801f76a92b7b624bd402e7a6ca42bc8486fa/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-12-02",
+      "indicators": {
+        "domain": [
+          "ethdns.mywire.org",
+          "highcolumn.webredirect.org",
+          "hotspot.accesscam.org",
+          "theguardian.webredirect.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2020/12/02/turla-crutch-keeping-back-door-open/",
+        "https://otx.alienvault.com/pulse/5fc7b28bd5c07b0b777106b9"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "url": 6
+      },
+      "first_seen": "2020-10-28",
+      "indicators": {
+        "url": [
+          "balletmaniacs.com/wp-includes/fonts/icons/",
+          "berlinguas.com/wp-content/languages/index.php",
+          "bombheros.com/wp-content/languages/index.php",
+          "mtsoft.hol.es/wp-content/gallery/",
+          "polishpod101.com/forum/language/en/sign/",
+          "simplifiedhomesales.com/wp-includes/images/index.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.accenture.com/us-en/blogs/cyber-defense/turla-belugasturgeon-compromises-government-entity",
+        "https://otx.alienvault.com/pulse/5f99a34fe3c5a08a4093e54d"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-07-14",
+      "indicators": {
+        "domain": [
+          "newshealthsport.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.telsy.com/turla-venomous-bear-updates-its-arsenal-newpass-appears-on-the-apt-threat-scene/",
+        "https://otx.alienvault.com/pulse/5f0e0247a1f88359cebcccb2"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 27
+      },
+      "first_seen": "2020-05-26",
+      "indicators": {
+        "domain": [
+          "arinas.tk",
+          "bedrost.com",
+          "branter.tk",
+          "bronerg.tk",
+          "celestyna.tk",
+          "crusider.tk",
+          "davilta.tk",
+          "deme.ml",
+          "dixito.ml",
+          "duke6.tk",
+          "elizabi.tk",
+          "foods.jkub.com",
+          "hofa.tk",
+          "hunvin.tk",
+          "lakify.ml",
+          "lindaztert.net",
+          "misters.ml",
+          "pewyth.ga",
+          "progress.zyns.com",
+          "sameera.gq",
+          "sanitar.ml",
+          "scrabble.ikwb.com",
+          "sumefu.gq",
+          "umefu.gq",
+          "vefogy.cf",
+          "vylys.com",
+          "wekanda.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2020/05/26/agentbtz-comratv4-ten-year-journey/",
+        "https://us-cert.cisa.gov/ncas/analysis-reports/ar20-303a",
+        "https://github.com/eset/malware-ioc/tree/master/turla#turla-comrat-v4-indicators-of-compromise"
+      ],
+      "total": 27
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 2,
+        "url": 6
+      },
+      "first_seen": "2020-03-12",
+      "indicators": {
+        "domain": [
+          "adgf.am"
+        ],
+        "ipv4": [
+          "134.209.222.206:15363",
+          "85.222.235.156:8000"
+        ],
+        "url": [
+          "aiisa.am/js/chatem/js_rA9bo8_O3Pnw_5wJXExNhtkUMdfBYCifTJctEJ8C_Mg.js",
+          "armconsul.ru/user/themes/ayeps/dist/js/bundle.0eb0f2cb2808b4b35a94.js",
+          "http://37.59.60.199",
+          "mnp.nkr.am/wp-includes/js/jquery/jquery-migrate.min.js",
+          "skategirlchina.com/wp-includes/data_from_db_top.php",
+          "skategirlchina.com/wp-includes/ms-locale.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2020/03/12/tracking-turla-new-backdoor-armenian-watering-holes/",
+        "https://otx.alienvault.com/pulse/5e6a1997e4301d0827885c98"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 21
+      },
+      "first_seen": "2020-02-24",
+      "indicators": {
+        "domain": [
+          "archive-articles.linkpc.net",
+          "badget.ignorelist.com",
+          "bestfunc.slyip.net",
+          "blackerror.ignorelist.com",
+          "booking.strangled.net",
+          "ceremon.2waky.com",
+          "climbent.mooo.com",
+          "dellservice.publicvm.com",
+          "forumgeek.zzux.com",
+          "kersachi.ignorelist.com",
+          "knowledgetime.slyip.net",
+          "newforum.chickenkiller.com",
+          "papperbell.effers.com",
+          "patherror.publicvm.com",
+          "priceline.publicvm.com",
+          "profound.zzux.com",
+          "top100news.my-wan.de",
+          "treesofter.mooo.com",
+          "trytowin.ignorelist.com",
+          "wordlisten.mooo.com",
+          "worldlist.linkpc.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/57b4ad5cd19e030139028e28"
+      ],
+      "total": 21
+    },
+    {
+      "counts": {
+        "domain": 29
+      },
+      "first_seen": "2019-10-07",
+      "indicators": {
+        "domain": [
+          "accessdest.strangled.net",
+          "bookstore.strangled.net",
+          "bug.ignorelist.com",
+          "chinafood.chickenkiller.com",
+          "coldriver.strangled.net",
+          "developarea.mooo.com",
+          "downtown.crabdance.com",
+          "easport-news.publicvm.com",
+          "eurovision.chickenkiller.com",
+          "goldenroade.strangled.net",
+          "greateplan.ocry.com",
+          "industrywork.mooo.com",
+          "leagueoflegends.servequake.com",
+          "mediahistory.linkpc.net",
+          "new-book.linkpc.net",
+          "newgame.2waky.com",
+          "nightstreet.toh.info",
+          "radiobutton.mooo.com",
+          "sealand.publicvm.com",
+          "securesource.strangled.net",
+          "softstream.strangled.net",
+          "sportacademy.my03.com",
+          "sportnewspaper.strangled.net",
+          "supercar.ignorelist.com",
+          "supernews.instanthq.com",
+          "telesport.mooo.com",
+          "track.strangled.net",
+          "wargame.ignorelist.com",
+          "wintersport.mrbasic.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/"
+      ],
+      "total": 29
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-07",
+      "indicators": {
+        "domain": [
+          "highhills.ignorelist.com",
+          "onlineshop.sellclassics.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/",
+        "https://otx.alienvault.com/pulse/57b4ad5cd19e030139028e28"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-09-18",
+      "indicators": {
+        "domain": [
+          "dsme.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/daphiel/status/1174324244127322115"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2019-06-20",
+      "indicators": {
+        "domain": [
+          "codewizard.ml",
+          "dubaiexpo2020.cf",
+          "markham-travel.com",
+          "microsoft.updatemeltdownkb7234.com",
+          "zebra.wikaba.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-06-20",
+      "indicators": {
+        "domain": [
+          "dropbox12.com",
+          "moscow.stransgroup.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/94.249.192.182/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2019-06-20",
+      "indicators": {
+        "url": [
+          "http://185.141.62.32"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/ip-address/185.141.62.32/relations"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 19
+      },
+      "first_seen": "2019-05-29",
+      "indicators": {
+        "url": [
+          "ales.ball-mill.es/ckfinder/core/connector/php/php4/CommandHandler/CommandHandler.php",
+          "aviasiya.com/murad.by/life/wp-content/plugins/wp-accounting/inc/pages/page-search.php",
+          "baby.greenweb.co.il/wp-content/themes/san-kloud/admin.php",
+          "chagiocaxuanson.esy.es/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ngglegacy/admin/templates/manage_gallery/gallery_preview_page_field.old.php",
+          "daybreakhealthcare.co.uk/wp-includes/themees.php",
+          "dyskurs.com.ua/wp-admin/includes/map-menu.php",
+          "giadinhvabe.net/wp-content/themes/viettemp/out/css/class.php",
+          "hotnews.16mb.com/wp-content/themes/twentysixteen/template-parts/content-header.php",
+          "kennynguyen.esy.es/wp-content/plugins/wp-statistics/vendor/maxmind-db/reader/tests/MaxMind/Db/test/Reader/BuildTest.php",
+          "outletpiumini.springwaterfeatures.com/wp-includes/pomo/settings.php",
+          "shinestars-lifestyle.com/old_shinstar/includes/old/front_footer.old.php",
+          "simplecreative.design/wp-content/plugins/calculated-fields-form/single.php",
+          "soligro.com/wp-includes/pomo/db.php",
+          "sonneteck.com/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/licence/templates/panel/activation/activation.php",
+          "tekfordummies.com/wp-content/plugins/social-auto-poster/includes/libraries/delicious/Delicious.php",
+          "warrixmalaysia.com.my/wp-content/plugins/jetpack/modules/contact-form/grunion-table-form.php",
+          "weandcats.com/wp-content/plugins/broken-link-checker/modules/checkers/http-module.php",
+          "zerogov.com/wp-content/plugins.deactivate/paypal-donations/src/PaypalDonations/SimpleSubsribe.php",
+          "zszinhyosz.pe.hu/wp-content/themes/twentyfourteen/page-templates/full-hight.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/turla",
+        "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/",
+        "https://github.com/eset/malware-ioc/tree/master/turla#network-indicators"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2019-05-29",
+      "indicators": {
+        "url": [
+          "lasac.eu/credit_payment/url/",
+          "shoppingexpert.it/wp-content/gallery/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/blob/master/turla/README.adoc",
+        "https://github.com/eset/malware-ioc/tree/master/turla",
+        "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/",
+        "https://github.com/eset/malware-ioc/tree/master/turla#network-indicators"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-05-09",
+      "indicators": {
+        "domain": [
+          "vision2030.cf",
+          "vision2030.tk"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-07",
+      "indicators": {
+        "domain": [
+          "orl05511cn.temp.swtest.ru"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1125800284272226304"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url_path": 1
+      },
+      "first_seen": "2019-05-03",
+      "indicators": {
+        "domain": [
+          "tapok121.jhfree.net"
+        ],
+        "url_path": [
+          "/connect_meta.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/James_inthe_box/status/1124278816753442818"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-01",
+      "indicators": {
+        "domain": [
+          "updatenodes.site"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/blogs/threat-intelligence/waterbug-espionage-governments"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 2
+      },
+      "first_seen": "2019-03-18",
+      "indicators": {
+        "url": [
+          "northviewcanada.com/wp-content/galler/slider/",
+          "zycie-chotomowa.pl/wp-content/languages/index.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/VK_Intel/status/1089959988116799491"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 3
+      },
+      "first_seen": "2018-09-12",
+      "indicators": {
+        "url": [
+          "http://169.255.137.203/rss_0.php",
+          "http://217.171.86.137/config.php",
+          "http://217.171.86.137/rss_0.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/turla"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2018-03-28",
+      "indicators": {
+        "domain": [
+          "adstore.twilightparadox.com",
+          "agony.compress.to",
+          "auberdine.etowns.net",
+          "bigpen.ga",
+          "fleetwood.tk",
+          "gallop.mefound.com",
+          "robot.wikaba.com",
+          "skyrim.3d-game.com",
+          "smallcloud.ga"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2018/01/09/turlas-backdoor-laced-flash-player-installer/",
+        "https://github.com/eset/malware-ioc/tree/master/turla"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2018-03-28",
+      "indicators": {
+        "domain": [
+          "ebay-global.publicvm.com",
+          "officebuild.4irc.com",
+          "psychology-blog.ezua.com",
+          "sendmessage.mooo.com",
+          "tellmemore.4irc.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2018/01/09/turlas-backdoor-laced-flash-player-installer/",
+        "https://github.com/eset/malware-ioc/tree/master/turla",
+        "https://otx.alienvault.com/pulse/57b4ad5cd19e030139028e28"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "url": 5
+      },
+      "first_seen": "2017-04-07",
+      "indicators": {
+        "url": [
+          "61paris.fr/wp-includes/ms-set.php",
+          "doctorshand.org/wp-content/about/",
+          "jucheafrica.com/wp-includes/class-wp-edit.php",
+          "soheylistore.ir/modules/mod_feed/feed.php",
+          "tazohor.com/wp-includes/feed-rss-comments.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/blob/master/turla/README.adoc",
+        "https://github.com/eset/malware-ioc/tree/master/turla",
+        "https://www.welivesecurity.com/en/eset-research/moon-backdoors-lunar-landing-diplomatic-missions/",
+        "https://github.com/eset/malware-ioc/tree/master/turla#network-indicators"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "news-bbc.podzone.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security_response/writeup.jsp?docid=2014-121014-2918-99&tabid=2"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2016-02-23",
+      "indicators": {
+        "domain": [
+          "scifi.pages.at"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "61paris.fr",
+          "booking.etowns.org",
+          "easports.3d-game.com",
+          "greece-travel.servepics.com",
+          "jucheafrica.com",
+          "musicplanet.servemp3.com",
+          "pokerface.servegame.com",
+          "soheylistore.ir",
+          "support4u.5u.com",
+          "tazohor.com",
+          "te4step.tripod.com",
+          "world-weather.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "nightday.comxa.com",
+          "sanky.sportsontheweb.net",
+          "tiger.netii.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security-center/writeup/2014-011316-1921-99?tabid=2",
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "north-area.bbsindex.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/security-center/writeup/2014-011316-1921-99?tabid=2",
+        "http://artemonsecurity.com/snake_whitepaper.pdf",
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "hockey-news.servehttp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf",
+        "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2015-10-20",
+      "indicators": {
+        "domain": [
+          "winter.site11.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://artemonsecurity.com/snake_whitepaper.pdf",
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 14
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "arctic-zone.bbsindex.com",
+          "communityeu.xp3.biz",
+          "euassociate.6te.net",
+          "euland.freevar.com",
+          "eunews-online.zapto.org",
+          "forum.4dq.com",
+          "forum.acmetoy.com",
+          "freeutils.3utilities.com",
+          "interesting-news.zapto.org",
+          "pockerroom.servebeer.com",
+          "scandinavia-facts.sytes.net",
+          "sportmusic.servemp3.com",
+          "stockholm-blog.hopto.org",
+          "sweeden-history.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf",
+        "http://artemonsecurity.com/snake_whitepaper.pdf"
+      ],
+      "total": 14
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "fifa-rules.25u.com",
+          "marketplace.servehttp.com",
+          "music-world.servemp3.com",
+          "newutils.3utilities.com",
+          "olympik-blog.4dq.com",
+          "pressforum.serveblog.net",
+          "tiger.got-game.org",
+          "top-facts.sytes.net",
+          "weather-online.hopto.org",
+          "x-files.zapto.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf",
+        "http://artemonsecurity.com/snake_whitepaper.pdf",
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf",
+        "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 9
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "academyawards.effers.com",
+          "cheapflights.etowns.net",
+          "eu-sciffi.99k.org",
+          "franceonline.sytes.net",
+          "july.mypressonline.com",
+          "softprog.freeoda.com",
+          "swim.onlinewebshop.net",
+          "toolsthem.xp3.biz",
+          "wintersport.sytes.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf",
+        "http://artemonsecurity.com/snake_whitepaper.pdf",
+        "https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf"
+      ],
+      "total": 9
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2015-03-18",
+      "indicators": {
+        "domain": [
+          "cars-online.zapto.org",
+          "forum.sytes.net",
+          "health-everyday.faqserv.com",
+          "nhl-blog.servegame.com",
+          "supernews.sytes.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://info.baesystemsdetica.com/rs/baesystems/images/snake_whitepaper.pdf",
+        "http://artemonsecurity.com/snake_whitepaper.pdf",
+        "https://securelist.com/satellite-turla-apt-command-and-control-in-the-sky/72081/"
+      ],
+      "total": 5
+    }
+  ]
+}

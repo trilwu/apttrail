@@ -1,0 +1,59 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1539870981",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "9506a988-16d1-5ca6-b62c-b280375c7f01",
+        "value": "111.90.149.99/o2"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539870981",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "4a65f85c-61ff-5563-8bd3-0d5f0706c9fc",
+        "value": "94.140.116.124/o2"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539870981",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "e5cd7e80-b141-5140-9e4a-c10088bd0886",
+        "value": "94.140.116.231/o2"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:gallmaker"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Gallmaker - G0084\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Gallmaker (G0084) - Maltrail group GALLMAKER",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "9a78703f-3948-5ffe-8e78-71bc7dd7e718"
+  }
+}

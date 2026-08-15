@@ -1,0 +1,64 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 3
+  },
+  "first_seen": {
+    "domain": {
+      "azure.ms-tech.us": "2021-10-08",
+      "ms-tech.us": "2021-10-08",
+      "whynooneistherefornoneofthem.com": "2021-10-08"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {}
+  },
+  "first_seen_range": {
+    "earliest": "2021-10-08",
+    "latest": "2021-10-08"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "azure.ms-tech.us",
+      "ms-tech.us",
+      "whynooneistherefornoneofthem.com"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "MALKAMAK"
+  ],
+  "references": [
+    "https://www.cybereason.com/blog/operation-ghostshell-novel-rat-targets-global-aerospace-and-telecoms-firms",
+    "https://www.virustotal.com/gui/file/186ab2a5662c5e3994ee1cbfcf9e7842f1e41b1a4041c67f808914dfc8850706",
+    "https://www.virustotal.com/gui/file/a541afa0e73c3942b8c3645a3ba1ea59c4d6e1110e271be34fdb6a8c02a299e2/detection"
+  ],
+  "related": [],
+  "slug": "MALKAMAK",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-10-08",
+      "indicators": {
+        "domain": [
+          "azure.ms-tech.us",
+          "ms-tech.us",
+          "whynooneistherefornoneofthem.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cybereason.com/blog/operation-ghostshell-novel-rat-targets-global-aerospace-and-telecoms-firms",
+        "https://www.virustotal.com/gui/file/a541afa0e73c3942b8c3645a3ba1ea59c4d6e1110e271be34fdb6a8c02a299e2/detection",
+        "https://www.virustotal.com/gui/file/186ab2a5662c5e3994ee1cbfcf9e7842f1e41b1a4041c67f808914dfc8850706"
+      ],
+      "total": 3
+    }
+  ]
+}

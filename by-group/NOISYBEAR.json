@@ -1,0 +1,110 @@
+{
+  "aliases": [],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 1,
+    "ipv4": 3,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "wellfitplan.ru": "2026-01-02"
+    },
+    "ipv4": {
+      "178.159.94.8:443": "2026-01-02",
+      "77.239.125.41:443": "2026-01-02",
+      "77.239.125.41:8443": "2026-01-02"
+    },
+    "url": {
+      "http://178.159.94.8": "2026-01-02"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "wellfitplan.ru": "at-or-before"
+    },
+    "ipv4": {
+      "178.159.94.8:443": "at-or-before",
+      "77.239.125.41:443": "at-or-before",
+      "77.239.125.41:8443": "at-or-before"
+    },
+    "url": {
+      "http://178.159.94.8": "at-or-before"
+    }
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-01-02"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "wellfitplan.ru"
+    ],
+    "ipv4": [
+      "178.159.94.8:443",
+      "77.239.125.41:443",
+      "77.239.125.41:8443"
+    ],
+    "url": [
+      "http://178.159.94.8"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "NOISYBEAR"
+  ],
+  "references": [
+    "https://www.seqrite.com/blog/operation-barrelfire-noisybear-kazakhstan-oil-gas-sector/",
+    "https://www.virustotal.com/gui/file/1bfe65acbb9e509f80efcfe04b23daf31381e8b95a98112b81c9a080bdd65a2d/detection",
+    "https://www.virustotal.com/gui/file/1eecfc1c607be3891e955846c7da70b0109db9f9fdf01de45916d3727bff96e0/detection",
+    "https://www.virustotal.com/gui/file/26f009351f4c645ad4df3c1708f74ae2e5f8d22f3b0bbb4568347a2a72651bee/detection",
+    "https://www.virustotal.com/gui/file/6d6006eb2baa75712bfe867bf5e4f09288a7d860a4623a4176338993b9ddfb4b/detection",
+    "https://www.virustotal.com/gui/file/a40e7eb0cb176d2278c4ab02c4657f9034573ac83cee4cde38096028f243119c/detection",
+    "https://www.virustotal.com/gui/file/d48aeb6afcc5a3834b3e4ca9e0672b61f9d945dd41046c9aaf782382a6044f97/detection",
+    "https://www.virustotal.com/gui/file/da98b0cbcd784879ba38503946898d747ade08ace1d4f38d0fb966703e078bbf/detection",
+    "https://www.virustotal.com/gui/file/fb0f7c35a58a02473f26aabea4f682e2e483db84b606db2eca36aa6c7e7d9cf8/detection",
+    "https://x.com/malwrhunterteam/status/1922587000646848586"
+  ],
+  "related": [],
+  "slug": "NOISYBEAR",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 3,
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "wellfitplan.ru"
+        ],
+        "ipv4": [
+          "178.159.94.8:443",
+          "77.239.125.41:443",
+          "77.239.125.41:8443"
+        ],
+        "url": [
+          "http://178.159.94.8"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/malwrhunterteam/status/1922587000646848586",
+        "https://www.seqrite.com/blog/operation-barrelfire-noisybear-kazakhstan-oil-gas-sector/",
+        "https://www.virustotal.com/gui/file/da98b0cbcd784879ba38503946898d747ade08ace1d4f38d0fb966703e078bbf/detection",
+        "https://www.virustotal.com/gui/file/d48aeb6afcc5a3834b3e4ca9e0672b61f9d945dd41046c9aaf782382a6044f97/detection",
+        "https://www.virustotal.com/gui/file/1eecfc1c607be3891e955846c7da70b0109db9f9fdf01de45916d3727bff96e0/detection",
+        "https://www.virustotal.com/gui/file/a40e7eb0cb176d2278c4ab02c4657f9034573ac83cee4cde38096028f243119c/detection",
+        "https://www.virustotal.com/gui/file/26f009351f4c645ad4df3c1708f74ae2e5f8d22f3b0bbb4568347a2a72651bee/detection",
+        "https://www.virustotal.com/gui/file/6d6006eb2baa75712bfe867bf5e4f09288a7d860a4623a4176338993b9ddfb4b/detection",
+        "https://www.virustotal.com/gui/file/fb0f7c35a58a02473f26aabea4f682e2e483db84b606db2eca36aa6c7e7d9cf8/detection",
+        "https://www.virustotal.com/gui/file/1bfe65acbb9e509f80efcfe04b23daf31381e8b95a98112b81c9a080bdd65a2d/detection"
+      ],
+      "total": 5
+    }
+  ]
+}

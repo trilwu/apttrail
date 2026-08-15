@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1539317484",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "2321f704-a637-5d7c-8cf2-b13a546e26a6",
+        "value": "esetsmart.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1539317484",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "d9b7ed50-70f2-545f-b871-f442089a3bcf",
+        "value": "um10eset.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:telebots"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Sandworm Team - G0034\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Sandworm Team (G0034) - Maltrail group TELEBOTS",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "7b39f8e8-ea5a-51bc-8748-ec7be872f689"
+  }
+}

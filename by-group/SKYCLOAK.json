@@ -1,0 +1,268 @@
+{
+  "aliases": [
+    "vortex werewolf"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 11,
+    "ipv4": 7
+  },
+  "first_seen": {
+    "domain": {
+      "2zrek3mkl72d5b6evpkx2rz2glzrltiorgblpfb2ttg6lacwlsdk4iqd.onion": "2026-04-21",
+      "3xl6xhboulyuez6fuydyhj7pdvkshzn4ogsmgwbb3ukrkvgi6bcwvfyd.onion": "2026-01-30",
+      "e3mnde5uyuxjoztup6t3m7nykbicexbzra76ucligwgsaez65w63y2ad.onion": "2026-01-29",
+      "imnlyhj4mtmtesqrvf7c4ma6dkxeyxw3ae53w6fuz42spndg7zpat6qd.onion": "2026-04-21",
+      "iz4cthf7lios7igq7lvvlgg6xyn5eqowfue5wgsdlgdipueam7av32ad.onion": "2026-02-16",
+      "juliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion": "2026-02-18",
+      "kvk46su7d2qi6g4n43syp4zbsf2rihnc6ztj77qtc2ojvewjqvqilnqd.onion": "2026-01-29",
+      "nytiplwknkinobjaeb5tajjiglip3vtaccju6ta7d47u5u64ktrwhrqd.onion": "2026-04-21",
+      "q35x354qfx43klbx5wd2iw7272wrrhcvgwqqbwut44yiui2hw7cz7fyd.onion": "2026-02-03",
+      "uliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion": "2026-02-18",
+      "yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion": "2026-01-02"
+    },
+    "ipv4": {
+      "176.169.236.210:4431": "2026-02-03",
+      "188.116.26.254:23452": "2026-02-03",
+      "193.138.81.106:8443": "2026-02-03",
+      "74.208.183.104:8008": "2026-02-03",
+      "81.141.112.253:8080": "2026-02-03",
+      "91.208.206.67:9130": "2026-02-03",
+      "95.179.192.8:8080": "2026-02-03"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {
+      "yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion": "at-or-before"
+    },
+    "ipv4": {}
+  },
+  "first_seen_range": {
+    "earliest": "2026-01-02",
+    "latest": "2026-04-21"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "2zrek3mkl72d5b6evpkx2rz2glzrltiorgblpfb2ttg6lacwlsdk4iqd.onion",
+      "3xl6xhboulyuez6fuydyhj7pdvkshzn4ogsmgwbb3ukrkvgi6bcwvfyd.onion",
+      "e3mnde5uyuxjoztup6t3m7nykbicexbzra76ucligwgsaez65w63y2ad.onion",
+      "imnlyhj4mtmtesqrvf7c4ma6dkxeyxw3ae53w6fuz42spndg7zpat6qd.onion",
+      "iz4cthf7lios7igq7lvvlgg6xyn5eqowfue5wgsdlgdipueam7av32ad.onion",
+      "juliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion",
+      "kvk46su7d2qi6g4n43syp4zbsf2rihnc6ztj77qtc2ojvewjqvqilnqd.onion",
+      "nytiplwknkinobjaeb5tajjiglip3vtaccju6ta7d47u5u64ktrwhrqd.onion",
+      "q35x354qfx43klbx5wd2iw7272wrrhcvgwqqbwut44yiui2hw7cz7fyd.onion",
+      "uliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion",
+      "yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion"
+    ],
+    "ipv4": [
+      "176.169.236.210:4431",
+      "188.116.26.254:23452",
+      "193.138.81.106:8443",
+      "74.208.183.104:8008",
+      "81.141.112.253:8080",
+      "91.208.206.67:9130",
+      "95.179.192.8:8080"
+    ]
+  },
+  "last_modified": "2026-04-21T13:01:07+00:00",
+  "maltrail_groups": [
+    "SKYCLOAK"
+  ],
+  "references": [
+    "https://cyble.com/blog/weaponized-military-documents-deliver-backdoor/",
+    "https://mp.weixin.qq.com/s/nJpqvXCYV3ZdvNgYGrG4ow",
+    "https://www.seqrite.com/blog/operation-skycloak-tor-campaign-targets-military-of-russia-belarus/",
+    "https://www.virustotal.com/gui/file/1359c044951e16438251483290799b83da97af9f73dfd081a862b9edd94d512d/detection",
+    "https://www.virustotal.com/gui/file/1fbdb99357ace6d6db830c63850a6e8a4ea3607776c4668feb135f3ff0d95151/detection",
+    "https://www.virustotal.com/gui/file/5b2ca77a39fb4617e1a50797f519e861c2b924c7258c80a4f771418bd0d31291/detection",
+    "https://www.virustotal.com/gui/file/99ec6437f74eec19e33c1a0b4ac8826bcc44848f87cd1a1c2b379fae9df62de9/detection",
+    "https://www.virustotal.com/gui/file/a43e2231b200b294b35dfb50fad446a0a7e42783c4f541981bc85a8930fb670a/detection",
+    "https://www.virustotal.com/gui/file/a79b5162f9a49df3db4f001325938b9dc7bdc471b71108ed178350c89252e3a5/detection",
+    "https://www.virustotal.com/gui/file/f44fa352c430d5f34462143daa726660be9d1bd0666ab2f3672df47adde55986/detection",
+    "https://x.com/PrakkiSathwik/status/1984324320731283614",
+    "https://x.com/PrakkiSathwik/status/2016775145189429494",
+    "https://x.com/PrakkiSathwik/status/2016888288414724367",
+    "https://x.com/PrakkiSathwik/status/2016888291275264519",
+    "https://x.com/PrakkiSathwik/status/2017248214513320070",
+    "https://x.com/PrakkiSathwik/status/2023437611780763851",
+    "https://x.com/PrakkiSathwik/status/2023797472456569074",
+    "https://x.com/smica83/status/1982342773626880217",
+    "https://x.com/smica83/status/2023827560111763702",
+    "https://x.com/t3ft3lb/status/2023910905134686227"
+  ],
+  "related": [],
+  "slug": "SKYCLOAK",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2026-04-21",
+      "indicators": {
+        "domain": [
+          "2zrek3mkl72d5b6evpkx2rz2glzrltiorgblpfb2ttg6lacwlsdk4iqd.onion",
+          "imnlyhj4mtmtesqrvf7c4ma6dkxeyxw3ae53w6fuz42spndg7zpat6qd.onion",
+          "nytiplwknkinobjaeb5tajjiglip3vtaccju6ta7d47u5u64ktrwhrqd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://mp.weixin.qq.com/s/nJpqvXCYV3ZdvNgYGrG4ow"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-02-18",
+      "indicators": {
+        "domain": [
+          "uliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/smica83/status/2023827560111763702",
+        "https://x.com/t3ft3lb/status/2023910905134686227"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-02-18",
+      "indicators": {
+        "domain": [
+          "juliw3eyjz5gx7hup73jbnyeqrdlrzvzxxsbww2tewp3sbh2qtpbasad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2023797472456569074",
+        "https://www.virustotal.com/gui/file/5b2ca77a39fb4617e1a50797f519e861c2b924c7258c80a4f771418bd0d31291/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-02-16",
+      "indicators": {
+        "domain": [
+          "iz4cthf7lios7igq7lvvlgg6xyn5eqowfue5wgsdlgdipueam7av32ad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2023437611780763851",
+        "https://www.virustotal.com/gui/file/a43e2231b200b294b35dfb50fad446a0a7e42783c4f541981bc85a8930fb670a/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 7
+      },
+      "first_seen": "2026-02-03",
+      "indicators": {
+        "domain": [
+          "q35x354qfx43klbx5wd2iw7272wrrhcvgwqqbwut44yiui2hw7cz7fyd.onion"
+        ],
+        "ipv4": [
+          "176.169.236.210:4431",
+          "188.116.26.254:23452",
+          "193.138.81.106:8443",
+          "74.208.183.104:8008",
+          "81.141.112.253:8080",
+          "91.208.206.67:9130",
+          "95.179.192.8:8080"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2016775145189429494"
+      ],
+      "total": 8
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-30",
+      "indicators": {
+        "domain": [
+          "3xl6xhboulyuez6fuydyhj7pdvkshzn4ogsmgwbb3ukrkvgi6bcwvfyd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2017248214513320070",
+        "https://www.virustotal.com/gui/file/a79b5162f9a49df3db4f001325938b9dc7bdc471b71108ed178350c89252e3a5/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-29",
+      "indicators": {
+        "domain": [
+          "kvk46su7d2qi6g4n43syp4zbsf2rihnc6ztj77qtc2ojvewjqvqilnqd.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2016888291275264519",
+        "https://www.virustotal.com/gui/file/1fbdb99357ace6d6db830c63850a6e8a4ea3607776c4668feb135f3ff0d95151/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-29",
+      "indicators": {
+        "domain": [
+          "e3mnde5uyuxjoztup6t3m7nykbicexbzra76ucligwgsaez65w63y2ad.onion"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/PrakkiSathwik/status/2016888288414724367",
+        "https://www.virustotal.com/gui/file/1359c044951e16438251483290799b83da97af9f73dfd081a862b9edd94d512d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "domain": [
+          "yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/smica83/status/1982342773626880217",
+        "https://x.com/PrakkiSathwik/status/1984324320731283614",
+        "https://www.seqrite.com/blog/operation-skycloak-tor-campaign-targets-military-of-russia-belarus/",
+        "https://cyble.com/blog/weaponized-military-documents-deliver-backdoor/",
+        "https://www.virustotal.com/gui/file/99ec6437f74eec19e33c1a0b4ac8826bcc44848f87cd1a1c2b379fae9df62de9/detection",
+        "https://www.virustotal.com/gui/file/f44fa352c430d5f34462143daa726660be9d1bd0666ab2f3672df47adde55986/detection"
+      ],
+      "total": 1
+    }
+  ]
+}

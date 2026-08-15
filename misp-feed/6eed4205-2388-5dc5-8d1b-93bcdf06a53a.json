@@ -1,0 +1,51 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1559926634",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "c9f0ae2f-d03a-52ad-afff-2a27ad6a5fff",
+        "value": "happiness.freevar.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1573236232",
+        "to_ids": true,
+        "type": "url",
+        "uuid": "558d1c1e-149a-5032-955b-8cbf6df319ac",
+        "value": "http://70.39.115.196"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:platinum"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"PLATINUM - G0068\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: PLATINUM (G0068) - Maltrail group PLATINUM",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "6eed4205-2388-5dc5-8d1b-93bcdf06a53a"
+  }
+}

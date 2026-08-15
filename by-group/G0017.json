@@ -1,0 +1,173 @@
+{
+  "aliases": [],
+  "attack_id": "G0017",
+  "attack_name": "DragonOK",
+  "attack_url": "https://attack.mitre.org/groups/G0017/",
+  "counts": {
+    "domain": 14,
+    "url_path": 1
+  },
+  "first_seen": {
+    "domain": {
+      "bbs.donkeyhaws.info": "2020-09-16",
+      "biosnews.info": "2018-05-11",
+      "busserh.mancely.com": "2017-04-13",
+      "donkeyhaws.info": "2024-11-30",
+      "ghostale.com": "2018-05-11",
+      "http.donkeyhaws.info": "2020-09-16",
+      "https.osakaintec.com": "2020-09-16",
+      "jpaols.com": "2018-05-11",
+      "moafee.com": "2018-05-11",
+      "ndbssh.com": "2018-05-11",
+      "php.marbletemps.com": "2020-09-16",
+      "pktmedia.com": "2018-05-11",
+      "skyppee.com": "2018-05-11",
+      "ycbackap.com": "2018-05-11"
+    },
+    "url_path": {
+      "/XpXpXp": "2020-09-16"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-04-13",
+    "latest": "2024-11-30"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "bbs.donkeyhaws.info",
+      "biosnews.info",
+      "busserh.mancely.com",
+      "donkeyhaws.info",
+      "ghostale.com",
+      "http.donkeyhaws.info",
+      "https.osakaintec.com",
+      "jpaols.com",
+      "moafee.com",
+      "ndbssh.com",
+      "php.marbletemps.com",
+      "pktmedia.com",
+      "skyppee.com",
+      "ycbackap.com"
+    ],
+    "url_path": [
+      "/XpXpXp"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "DRAGONOK"
+  ],
+  "references": [
+    "http://www.morphick.com/resources/news/deep-dive-dragonok-rambo-backdoor",
+    "https://app.any.run/tasks/ceb18346-8e01-4abe-89b9-97b44b14c9a0/",
+    "https://app.validin.com/detail?find=153.234.67.222&type=ip4&ref_id=d4329fdcf8a#tab=resolutions",
+    "https://researchcenter.paloaltonetworks.com/2015/04/unit-42-identifies-new-dragonok-backdoor-malware-deployed-against-japanese-targets/",
+    "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-operation-quantum-entanglement.pdf",
+    "https://www.lac.co.jp/english/report/2018/01/23_alert_01.html"
+  ],
+  "related": [],
+  "slug": "G0017",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-11-30",
+      "indicators": {
+        "domain": [
+          "donkeyhaws.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2015/04/unit-42-identifies-new-dragonok-backdoor-malware-deployed-against-japanese-targets/",
+        "https://app.validin.com/detail?find=153.234.67.222&type=ip4&ref_id=d4329fdcf8a#tab=resolutions"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4,
+        "url_path": 1
+      },
+      "first_seen": "2020-09-16",
+      "indicators": {
+        "domain": [
+          "bbs.donkeyhaws.info",
+          "http.donkeyhaws.info",
+          "https.osakaintec.com",
+          "php.marbletemps.com"
+        ],
+        "url_path": [
+          "/XpXpXp"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.lac.co.jp/english/report/2018/01/23_alert_01.html",
+        "https://app.any.run/tasks/ceb18346-8e01-4abe-89b9-97b44b14c9a0/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 7
+      },
+      "first_seen": "2018-05-11",
+      "indicators": {
+        "domain": [
+          "ghostale.com",
+          "jpaols.com",
+          "moafee.com",
+          "ndbssh.com",
+          "pktmedia.com",
+          "skyppee.com",
+          "ycbackap.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-operation-quantum-entanglement.pdf"
+      ],
+      "total": 7
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-05-11",
+      "indicators": {
+        "domain": [
+          "biosnews.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://researchcenter.paloaltonetworks.com/2015/04/unit-42-identifies-new-dragonok-backdoor-malware-deployed-against-japanese-targets/",
+        "https://app.validin.com/detail?find=153.234.67.222&type=ip4&ref_id=d4329fdcf8a#tab=resolutions"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2017-04-13",
+      "indicators": {
+        "domain": [
+          "busserh.mancely.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "http://www.morphick.com/resources/news/deep-dive-dragonok-rambo-backdoor"
+      ],
+      "total": 1
+    }
+  ]
+}

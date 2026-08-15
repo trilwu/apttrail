@@ -1,0 +1,91 @@
+{
+  "Event": {
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "6cf125c8-8fc6-5515-9eac-fc6634adec72",
+        "value": "7daydai1y.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "548cb767-dc21-5720-a9cc-9b67957f76f6",
+        "value": "irrawddy.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "8c098c94-b571-5cfd-ae68-018ef87de2c6",
+        "value": "mmtimes.net"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "1c148505-dc4b-5dfd-8e9b-4b1f678ff64d",
+        "value": "mmtimes.org"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "9e008e03-0c2a-5d28-8e5e-d7f77281bbb0",
+        "value": "mopfi-ferd.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "3c5ec7fb-7354-5b6d-8398-bd3d2dbf8874",
+        "value": "updatecatalogs.com"
+      },
+      {
+        "category": "Network activity",
+        "timestamp": "1626547077",
+        "to_ids": true,
+        "type": "domain",
+        "uuid": "f000bbab-2165-5ff2-bd13-485d532c04f8",
+        "value": "webmail.mmtimes.net"
+      }
+    ],
+    "Orgc": {
+      "name": "APTtrail",
+      "uuid": "294adda8-8976-5374-978d-c484859681b1"
+    },
+    "Tag": [
+      {
+        "colour": "#ffffff",
+        "name": "tlp:clear"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "source:apttrail"
+      },
+      {
+        "colour": "#ff0000",
+        "name": "apt:luminousmoth"
+      },
+      {
+        "colour": "#0088cc",
+        "name": "misp-galaxy:mitre-intrusion-set=\"Mustang Panda - G0129\""
+      }
+    ],
+    "analysis": "2",
+    "date": "2026-08-15",
+    "info": "APTtrail: Mustang Panda (G0129) - Maltrail group LUMINOUSMOTH",
+    "published": true,
+    "threat_level_id": "2",
+    "timestamp": "1786836053",
+    "uuid": "1cf480d3-c7c4-577c-955b-9d1ebb55381d"
+  }
+}

@@ -1,0 +1,3960 @@
+{
+  "aliases": [
+    "SectorF01",
+    "apt-c-00",
+    "apt-c-32",
+    "apt32",
+    "oceanlotus",
+    "phantomlance",
+    "rotajakiro",
+    "spectralviper",
+    "timitator group"
+  ],
+  "attack_id": "G0050",
+  "attack_name": "APT32",
+  "attack_url": "https://attack.mitre.org/groups/G0050/",
+  "counts": {
+    "domain": 501,
+    "ipv4": 27,
+    "url": 13,
+    "url_path": 6
+  },
+  "first_seen": {
+    "domain": {
+      "0b3l1sk.me": "2026-07-25",
+      "163mailservice.com": "2019-05-09",
+      "24.datatimes.org": "2017-06-29",
+      "360skylar.host": "2019-12-05",
+      "365.urielcallum.com": "2019-04-19",
+      "accounts.getmyip.com": "2020-07-31",
+      "ad.ssageevrenue.com": "2019-12-05",
+      "adineohler.com": "2018-07-05",
+      "adobe.riceaub.com": "2024-08-30",
+      "agoras.hopto.org": "2026-07-23",
+      "agoras.zapto.org": "2026-07-23",
+      "aisicoin.com": "2018-07-05",
+      "aki.viperse.com": "2020-04-21",
+      "alicervois.com": "2018-07-05",
+      "aliexpresscn.net": "2019-03-20",
+      "alyerrac.com": "2025-01-05",
+      "anaehler.com": "2020-04-28",
+      "andreafaerber.com": "2025-01-05",
+      "andreagahuvrauvin.com": "2019-03-20",
+      "andreagbridge.com": "2019-03-20",
+      "anessallie.com": "2018-07-05",
+      "annamerrett.com": "2025-01-05",
+      "anofrio.com": "2020-04-28",
+      "antenham.com": "2018-07-05",
+      "aol.straliaenollma.xyz": "2019-03-20",
+      "api.anaehler.com": "2020-04-28",
+      "api.blogdns.com": "2019-05-09",
+      "api.ciscofreak.com": "2021-03-01",
+      "api.myddns.me": "2019-11-07",
+      "apiservice.webhop.net": "2020-12-23",
+      "arbenha.com": "2020-11-06",
+      "arinaurna.com": "2018-07-05",
+      "arkoimmerma.com": "2018-07-05",
+      "art.guillermoespana.com": "2021-03-01",
+      "art.yfieldrainasch.com": "2020-04-21",
+      "asia-kotoba.net": "2020-10-06",
+      "att.illagedrivestralia.xyz": "2019-04-04",
+      "au.charlineopkesston.com": "2019-04-09",
+      "audreybourgeois.com": "2025-01-05",
+      "aulolloy.com": "2018-07-05",
+      "auth.lineage2ez.com": "2019-12-09",
+      "avidilleneu.com": "2018-07-05",
+      "avidsontre.com": "2018-07-05",
+      "aximilian.com": "2018-07-05",
+      "b.cortanazone.com": "2019-05-09",
+      "background.ristians.com": "2019-04-03",
+      "baidu-search.net": "2019-12-05",
+      "baodachieu.com": "2020-11-06",
+      "baomoivietnam.com": "2020-11-06",
+      "base.msteamsapi.com": "2024-08-30",
+      "beaudrysang.xyz": "2019-03-20",
+      "beautifull-font.salebusinesend.com": "2020-10-03",
+      "becreybour.com": "2019-03-20",
+      "benjamiilliams.club": "2025-01-05",
+      "benjamiilliams.icu": "2025-01-05",
+      "beta.officopedia.com": "2019-02-04",
+      "biasatts.com": "2018-07-05",
+      "bit.catalinabonami.com": "2020-04-28",
+      "blank.eatherurg.com": "2024-08-30",
+      "blog.artinhauvin.com": "2019-05-09",
+      "blog.docksugs.org": "2017-06-29",
+      "blog.eduelects.com": "2021-04-28",
+      "blog.panggin.org": "2017-06-29",
+      "bluesky2018man.com": "2019-05-09",
+      "bmw-corp.net": "2019-12-09",
+      "bmwthailand.org": "2019-12-09",
+      "braydenhateaub.com": "2018-07-05",
+      "bucket.serveftp.net": "2020-10-12",
+      "bussinesappinstant.com": "2020-10-22",
+      "byronorenstein.com": "2019-03-20",
+      "carosseda.com": "2018-07-05",
+      "cbo.group": "2020-12-15",
+      "cctv.avidsonec.com": "2018-09-15",
+      "cdn.arlialter.com": "2024-08-30",
+      "cdn.eworldship-news.com": "2019-05-09",
+      "cdn.mirror-codes.net": "2021-04-28",
+      "cdn.redirectme.net": "2019-11-15",
+      "cdn3.onlinesurveygorilla.com": "2019-05-09",
+      "cdnwebmedia.com": "2019-12-05",
+      "cds55.lax8.setalz.com": "2024-08-30",
+      "cert.opennetworklab.com": "2018-09-15",
+      "chart.expocasheuro.com": "2022-01-10",
+      "chascloud.com": "2018-07-05",
+      "check.homeip.net": "2019-02-04",
+      "check.paidprefund.org": "2017-06-29",
+      "check.webhop.org": "2019-02-04",
+      "chinaport.org": "2019-03-20",
+      "christienoll.xyz": "2019-03-20",
+      "christienollmache.xyz": "2019-03-20",
+      "ckoen.dmkatti.com": "2019-05-24",
+      "clip.shangweidesign.com": "2019-12-05",
+      "clipboard.christienoll.xyz": "2019-04-04",
+      "cloud.360cn.info": "2019-03-20",
+      "cloud.anofrio.com": "2020-04-21",
+      "cloud.bussinesappinstant.com": "2020-10-22",
+      "cloud.chinatel.org": "2019-10-18",
+      "cloud.doomdns.org": "2019-08-16",
+      "cloud.reneark.com": "2018-09-15",
+      "cloud.sicaogler.com": "2018-09-15",
+      "clouds.onthewifi.com": "2020-11-03",
+      "cnn.befmann.com": "2018-09-15",
+      "coachcybersecurity.com": "2026-06-12",
+      "coco.cechire.com": "2020-12-23",
+      "colingrovesjama.com": "2025-01-05",
+      "confusion-cerulean-samba.glitch.me": "2022-01-13",
+      "contay.deaftone.com": "2017-06-29",
+      "cooperative-supreme-pisces.glitch.me": "2021-07-30",
+      "copy.byronorenstein.com": "2019-05-10",
+      "cortana.homelinux.com": "2019-02-04",
+      "cortanasyn.com": "2019-02-04",
+      "cortanazone.com": "2019-02-04",
+      "cyn.ettebiermahalet.com": "2020-04-28",
+      "daff.faybilodeau.com": "2019-04-09",
+      "dance-til-dawn.podzone.net": "2020-11-06",
+      "dangky.dinefilly.com": "2020-12-23",
+      "datatimes.org": "2017-06-29",
+      "delicalo.dnsalias.net": "2020-12-23",
+      "deraller.com": "2025-01-05",
+      "dfizm.com": "2024-04-16",
+      "dieordaunt.com": "2018-09-15",
+      "dinefilly.com": "2021-05-27",
+      "dns.chinanews.network": "2019-03-20",
+      "dns.domain-resolve.org": "2019-07-02",
+      "dns.insappstaticanalyze.com": "2020-10-20",
+      "doc.rainaschiffer.com": "2020-04-21",
+      "docksugs.org": "2017-06-29",
+      "dominikmagoffin.com": "2019-05-09",
+      "dreyoddu.com": "2018-07-05",
+      "dupbleanalytics.net": "2024-08-30",
+      "dwarduong.com": "2018-07-05",
+      "dyndns.angusie.com": "2018-09-15",
+      "e.browsersyn.com": "2019-02-04",
+      "earlase.com": "2025-01-05",
+      "eckenbaue.com": "2018-07-05",
+      "ecom.dfizm.com": "2024-04-16",
+      "economy.bloghop.org": "2017-06-29",
+      "eduelects.com": "2021-05-06",
+      "egg.stralisemariegar.com": "2020-04-28",
+      "eighrimeau.com": "2018-07-05",
+      "elemental-future-cheetah.glitch.me": "2022-01-13",
+      "emp.gapte.name": "2017-06-29",
+      "enormousamuses.com": "2019-05-09",
+      "enum.arkoorr.com": "2019-04-03",
+      "erp.manitec.ch": "2026-07-23",
+      "errellawle.com": "2018-07-05",
+      "erstin.com": "2018-07-05",
+      "eu-draytek.com": "2022-11-02",
+      "eworldship-news.com": "2019-05-09",
+      "expocasheuro.com": "2022-01-10",
+      "facebook-cdn.net": "2017-06-29",
+      "facebookdeck.com": "2020-12-11",
+      "fbcn.enantor.com": "2024-08-30",
+      "feeder.blogdns.com": "2020-08-01",
+      "feieraagsbend.com": "2025-01-05",
+      "file.log4jv.info": "2020-04-28",
+      "financemachinelearning.com": "2026-06-12",
+      "fontloading.com": "2020-11-06",
+      "food.letsmiles.org": "2018-09-15",
+      "fox.ailloux.com": "2018-09-15",
+      "fp.rentwoylas.com": "2020-04-21",
+      "frahreiner.com": "2018-07-05",
+      "gacha.knowsitall.info": "2020-10-12",
+      "game2015.net": "2020-04-21",
+      "gameandroid.taiphanmemfacebookmoi.info": "2020-04-21",
+      "gap-facebook.com": "2017-06-29",
+      "gatewayrvcenter.com": "2026-06-12",
+      "get.dupbleanalytics.net": "2024-08-30",
+      "get.freelicenses.net": "2019-08-02",
+      "gifted-boulder-transport.glitch.me": "2021-12-17",
+      "gl-appspot.org": "2017-06-29",
+      "groveskekwiciv.com": "2025-01-05",
+      "gservice.reviews": "2020-11-06",
+      "guilty-patricia-connecticut-pulled.trycloudflare.com": "2024-04-09",
+      "gusercontent.com": "2020-11-06",
+      "h61.p.ctrader.com": "2019-12-09",
+      "heal.lancebarkerwa.com": "2020-04-21",
+      "help.checkonl.org": "2017-06-29",
+      "hieryells.com": "2018-07-05",
+      "high.expbas.net": "2017-06-29",
+      "high.vphelp.net": "2017-06-29",
+      "hmacount.com": "2020-11-06",
+      "hotel.bookingshop.info": "2018-09-15",
+      "houseoasa.com": "2025-01-05",
+      "hr.halettebiermann.com": "2020-04-28",
+      "hristophe.com": "2018-07-05",
+      "huyndai-auto.com": "2019-12-09",
+      "hx-in-f211.popfan.org": "2024-08-30",
+      "hypepodscase.com": "2020-11-06",
+      "ichardt.com": "2018-07-05",
+      "icmannaws.com": "2018-07-05",
+      "icon.torrentart.com": "2017-06-29",
+      "idtpl.org": "2020-11-30",
+      "iecopeland.com": "2018-07-05",
+      "illagedrivestralia.xyz": "2019-03-20",
+      "image.fontstaticloader.com": "2019-05-09",
+      "images.chinabytes.info": "2017-06-29",
+      "imap.jxycnews.com": "2022-11-17",
+      "imaps.qki6.com": "2017-06-29",
+      "imberly.com": "2025-01-05",
+      "img.fanspeed.net": "2017-06-29",
+      "inc.graceneufville.com": "2020-04-21",
+      "infodocs.kginfocom.com": "2021-05-27",
+      "inquirerjs.com": "2020-04-22",
+      "insappstaticanalyze.com": "2020-10-20",
+      "ipv6.uyllain.com": "2018-09-15",
+      "irkaimboeuf.com": "2018-07-05",
+      "isp.cambodiadaily.org": "2018-09-15",
+      "itpk.mostmkru.com": "2020-04-21",
+      "jamedalue.com": "2018-07-05",
+      "jamyer.com": "2018-07-05",
+      "jang.goongnam.com": "2019-05-24",
+      "jaxonsorensen.club": "2023-11-12",
+      "jcdn.jsoid.com": "2019-12-05",
+      "jeanessbinder.com": "2018-07-05",
+      "jeffreyue.com": "2018-07-05",
+      "jessicajoshua.com": "2019-11-29",
+      "jieyitongweb.com": "2024-11-26",
+      "job.supperpow.com": "2017-06-29",
+      "jxycnews.com": "2022-11-17",
+      "karelbecker.com": "2019-03-20",
+      "karolinblair.com": "2019-03-20",
+      "keoucha.com": "2018-07-05",
+      "kermacrescen.com": "2019-04-03",
+      "kginfocom.com": "2021-05-27",
+      "khmer-livenews.com": "2020-11-06",
+      "khmerleaks.com": "2020-11-06",
+      "kingsoftcdn.com": "2019-05-09",
+      "km170.com": "2022-01-01",
+      "kmernews.com": "2020-11-06",
+      "kpi.msccloudapp.com": "2024-08-30",
+      "kristianfiedler.club": "2023-11-12",
+      "land.rellecharlessper.com": "2021-03-01",
+      "laostimenews.com": "2020-11-06",
+      "laotiantimes.com": "2020-11-06",
+      "laudiaouc.com": "2018-07-05",
+      "lauradesnoyers.com": "2019-03-20",
+      "lbertussbau.com": "2018-07-05",
+      "leadingfilipinoteams.com": "2026-06-12",
+      "ledanvietnam.org": "2020-11-06",
+      "letsme.gotdns.com": "2020-05-05",
+      "lginstree.com": "2025-01-05",
+      "libjs.inquirerjs.com": "2019-12-05",
+      "libjss.inquirerjs.com": "2020-04-22",
+      "lighpress.info": "2017-06-29",
+      "load.newappssystems.com": "2019-05-08",
+      "load.updatetag.com": "2019-04-17",
+      "log.osloger.biz": "2020-04-28",
+      "log4jv.info": "2020-04-28",
+      "login.ticketwitheasy.com": "2018-09-15",
+      "loridanase.com": "2018-07-05",
+      "ls.andreagbridge.com": "2019-11-04",
+      "m.topiccore.com": "2020-04-22",
+      "mail.fptservice.net": "2019-02-04",
+      "mailserviceactivation.com": "2019-05-09",
+      "malaynews.org": "2020-11-06",
+      "manitec.ch": "2026-07-23",
+      "manongrover.com": "2019-04-03",
+      "mappingpotentials.com": "2019-05-09",
+      "marrmann.com": "2018-07-05",
+      "menmin.strezf.com": "2017-06-29",
+      "mentosfontcmb.com": "2020-06-28",
+      "meroque.com": "2018-07-05",
+      "mesarigna.com": "2025-01-05",
+      "mihannevis.com": "2020-11-30",
+      "mikus19201.ddns.net": "2019-06-11",
+      "mine.remaariegarcia.com": "2020-04-28",
+      "ming.chujong.com": "2020-04-21",
+      "mirror-codes.net": "2021-05-06",
+      "mobile.pagmobiles.info": "2017-06-29",
+      "mokkha.goongnam.com": "2020-04-21",
+      "moureuxacv.com": "2018-07-05",
+      "msccloudapp.com": "2024-08-30",
+      "msoffice-templates.info": "2019-06-11",
+      "msofficecloud.org": "2023-11-12",
+      "msteamsapi.com": "2024-08-30",
+      "mtk.baimind.com": "2019-05-24",
+      "mxprodesign.com": "2026-06-12",
+      "myaccount.philtimes.org": "2018-09-15",
+      "mykessef.com": "2020-11-30",
+      "myolton.com": "2018-07-05",
+      "nasahlaes.com": "2018-07-05",
+      "ndreafaeraphael.com": "2025-01-05",
+      "netsy.trutanner.com": "2019-12-09",
+      "news.coleope.com": "2018-09-15",
+      "news.denekasd.com": "2018-09-15",
+      "news.exandre.com": "2018-09-15",
+      "news.lighpress.info": "2017-06-29",
+      "news.shangrilaexports.com": "2019-12-05",
+      "news.sqllitlever.info": "2020-04-28",
+      "news.thaprior.net": "2021-04-28",
+      "nhaccuatui.android.zyngacdn.com": "2020-04-21",
+      "nhansudaihoi13.org": "2020-11-06",
+      "node.podzone.org": "2020-10-20",
+      "notificeva.com": "2017-06-29",
+      "ns1.andreafaerber.com": "2025-01-05",
+      "ns1.benjamiilliams.club": "2025-01-05",
+      "ns1.benjamiilliams.icu": "2025-01-05",
+      "ns1.cambodiadaily.org": "2018-09-15",
+      "ns1.colingrovesjama.com": "2025-01-05",
+      "ns1.deraller.com": "2025-01-05",
+      "ns1.earlase.com": "2025-01-05",
+      "ns1.groveskekwiciv.com": "2025-01-05",
+      "ns1.imberly.com": "2025-01-05",
+      "ns1.mesarigna.com": "2025-01-05",
+      "ns1.ndreafaeraphael.com": "2025-01-05",
+      "ns1.ochefort.com": "2025-01-05",
+      "ns1.odyluet.com": "2025-01-05",
+      "ns1.philipppropst.icu": "2025-01-05",
+      "ns1.radeordaunt.com": "2025-01-05",
+      "ns1.rcheterre.com": "2025-01-05",
+      "ns1.rieuenc.com": "2025-01-05",
+      "ns1.roveskekwjascd.com": "2025-01-05",
+      "ns1.ryeisasw.com": "2025-01-05",
+      "ns1.urielcallum.com": "2025-01-05",
+      "ns1.willipropst.icu": "2025-01-05",
+      "ns2.andreafaerber.com": "2025-01-05",
+      "ns2.benjamiilliams.club": "2025-01-05",
+      "ns2.benjamiilliams.icu": "2025-01-05",
+      "ns2.colingrovesjama.com": "2025-01-05",
+      "ns2.deraller.com": "2025-01-05",
+      "ns2.earlase.com": "2025-01-05",
+      "ns2.groveskekwiciv.com": "2025-01-05",
+      "ns2.imberly.com": "2025-01-05",
+      "ns2.mesarigna.com": "2025-01-05",
+      "ns2.ndreafaeraphael.com": "2025-01-05",
+      "ns2.ochefort.com": "2025-01-05",
+      "ns2.odyluet.com": "2025-01-05",
+      "ns2.philipppropst.icu": "2025-01-05",
+      "ns2.radeordaunt.com": "2025-01-05",
+      "ns2.rcheterre.com": "2025-01-05",
+      "ns2.rieuenc.com": "2025-01-05",
+      "ns2.roveskekwjascd.com": "2025-01-05",
+      "ns2.ryeisasw.com": "2025-01-05",
+      "ns2.urielcallum.com": "2025-01-05",
+      "ns2.willipropst.icu": "2025-01-05",
+      "nsquery.net": "2017-06-29",
+      "ntjeilliams.com": "2018-07-05",
+      "ntop.dieordaunt.com": "2019-03-20",
+      "nvidia.benjamiilliams.club": "2019-04-19",
+      "oa.chinarailways.net": "2019-10-18",
+      "ochefort.com": "2025-01-05",
+      "odyluet.com": "2025-01-05",
+      "office.allsafebrowsing.com": "2019-03-22",
+      "office.ourkekwiciver.com": "2019-03-20",
+      "office.windown-update.com": "2019-02-04",
+      "oftonlos.com": "2025-01-05",
+      "omasicase.com": "2018-07-05",
+      "online.stienollmache.xyz": "2019-05-09",
+      "onnaha.com": "2018-07-05",
+      "onteagle.com": "2018-07-05",
+      "open.betaoffice.net": "2019-05-09",
+      "opengroup.homeunix.org": "2019-12-27",
+      "orinneamoure.com": "2018-07-05",
+      "orresto.com": "2018-07-05",
+      "orrislark.com": "2018-07-05",
+      "osloger.biz": "2020-04-28",
+      "ourkekwiciver.com": "2018-09-15",
+      "ousync.kginfocom.com": "2021-05-27",
+      "outlook-client.com": "2020-11-06",
+      "outlook.betamedias.com": "2019-03-22",
+      "outlook.officebetas.com": "2019-03-22",
+      "outlook.updateoffices.net": "2019-02-04",
+      "p12.alerentice.com": "2019-05-09",
+      "pagmobiles.info": "2017-06-29",
+      "paidprefund.org": "2017-06-29",
+      "paste.christienollmache.xyz": "2020-04-28",
+      "philiippinesnews.net": "2020-11-06",
+      "philipppropst.icu": "2025-01-05",
+      "plan.evillese.com": "2019-04-03",
+      "playnetflix.com": "2019-06-11",
+      "pong.dynathome.net": "2019-05-09",
+      "priv.manuelleake.com": "2024-08-30",
+      "ps.andreagahuvrauvin.com": "2019-05-15",
+      "push.relasign.org": "2017-06-29",
+      "quam.viperse.com": "2020-04-21",
+      "rackerasr.com": "2018-07-05",
+      "radeordaunt.com": "2025-01-05",
+      "raffesla.idfnv.net": "2019-12-09",
+      "rcheterre.com": "2025-01-05",
+      "rcuselynac.com": "2018-07-05",
+      "relasign.org": "2017-06-29",
+      "rieuenc.com": "2025-01-05",
+      "rigitteais.com": "2025-01-05",
+      "rio.imbandaad.com": "2019-05-09",
+      "ristineho.com": "2019-02-04",
+      "river-cliff-crate.glitch.me": "2021-12-17",
+      "roveskekwjascd.com": "2025-01-05",
+      "ryeisasw.com": "2025-01-05",
+      "s3.hiahornber.com": "2018-10-03",
+      "sadma.knrowz.com": "2020-04-21",
+      "salebusinesend.com": "2020-08-20",
+      "sanauer.com": "2018-07-05",
+      "sarc.onteagleroad.com": "2019-04-09",
+      "school.obertamy.com": "2018-09-15",
+      "science.tayenthflores.com": "2020-04-21",
+      "screeching-lavish-riverbed.glitch.me": "2022-01-27",
+      "search.webstie.net": "2019-07-02",
+      "seri.volveri.net": "2017-06-29",
+      "serrvice.net": "2020-11-06",
+      "service.serveftp.org": "2019-02-04",
+      "service.windown-update.com": "2019-02-04",
+      "services.serveftp.net": "2021-03-11",
+      "share.codehao.net": "2017-06-29",
+      "shawnabuddicom.com": "2025-01-05",
+      "shortjuvenilebuttons.koobphee.repl.co": "2023-02-17",
+      "sints.infonetcorporation.org": "2023-09-12",
+      "sjbingdu.info": "2021-07-15",
+      "smooth-talented-runner.glitch.me": "2022-01-27",
+      "snort.lauradesnoyers.com": "2019-04-04",
+      "sophiahoule.com": "2019-03-20",
+      "spencerday.com": "2025-01-05",
+      "sqllitlever.info": "2020-04-28",
+      "ssl.arkouthrie.com": "2018-10-03",
+      "ssl.zin0.com": "2017-06-29",
+      "stackbio.com": "2019-05-09",
+      "staff.kristianfiedler.club": "2020-04-28",
+      "static.jg7.org": "2017-06-29",
+      "status.elizongham.com": "2020-04-21",
+      "status.sublineover.net": "2021-04-28",
+      "stellefaff.com": "2019-04-03",
+      "stienollmache.xyz": "2019-03-20",
+      "stopherau.com": "2018-07-05",
+      "straliaenollma.xyz": "2018-09-15",
+      "strengthening-memories-reports-restoration.trycloudflare.com": "2024-09-26",
+      "style.fontstaticloader.com": "2019-05-09",
+      "sublineover.net": "2021-05-06",
+      "sugary-tough-time.glitch.me": "2022-07-25",
+      "summerevent.webhop.net": "2020-06-03",
+      "suricata.radeordaunt.com": "2019-05-10",
+      "syn.browserstime.com": "2019-02-04",
+      "syn.servebbs.com": "2019-02-04",
+      "syn.timeizu.net": "2017-06-29",
+      "sys.genevrebreinl.com": "2019-12-05",
+      "systeminfor.com": "2020-06-15",
+      "taiphanmemfacebookmoi.info": "2020-04-21",
+      "tefanie.com": "2018-07-05",
+      "tefanortin.com": "2018-07-05",
+      "tel.caitlynwells.com": "2019-12-05",
+      "tephens.com": "2018-07-05",
+      "teriava.com": "2017-06-29",
+      "term.ursulapaulet.com": "2020-04-21",
+      "thamcungbisu.org": "2020-11-06",
+      "thaprior.net": "2021-05-06",
+      "theme.blogsite.org": "2019-02-04",
+      "theme.blogwix.com": "2020-11-06",
+      "time.ouisers.com": "2018-09-15",
+      "timeizu.net": "2017-06-29",
+      "tinmoivietnam.com": "2020-11-06",
+      "tinmoivietnam.net": "2020-11-06",
+      "tintuc.dinefilly.com": "2021-05-25",
+      "tips.jasperpfeiffer.com": "2021-03-01",
+      "tocaoonline.org": "2020-11-06",
+      "tonholding.com": "2017-06-29",
+      "topiccore.com": "2020-04-22",
+      "torpid-resisted-sugar.glitch.me": "2022-01-13",
+      "traits.senapusmireault.com": "2020-04-21",
+      "traveroyce.com": "2018-07-05",
+      "tripplekill.mentosfontcmb.com": "2020-10-03",
+      "tsworthoa.com": "2018-07-05",
+      "tulationeva.com": "2017-06-29",
+      "ucaargo.com": "2018-07-05",
+      "ucairtz.com": "2018-07-05",
+      "udt.sophiahoule.com": "2019-06-20",
+      "ugdale.com": "2025-01-05",
+      "ulse.chujong.com": "2020-04-21",
+      "untitled.po9z.com": "2017-06-29",
+      "update-flashs.com": "2017-06-29",
+      "upgrade.coldriverhardware.com": "2019-12-05",
+      "urielcallum.com": "2025-01-05",
+      "urnage.com": "2018-07-05",
+      "ursulapapst.xyz": "2019-03-20",
+      "us.jaxonsorensen.club": "2020-04-28",
+      "us.melvillepitcairn.com": "2019-12-05",
+      "var.alieras.com": "2024-08-30",
+      "venionne.com": "2018-07-05",
+      "video.viodger.com": "2020-04-21",
+      "videos.dyndns.org": "2019-02-04",
+      "vieoulden.com": "2025-01-05",
+      "viewerservice.com": "2020-11-06",
+      "vieweva.com": "2017-06-29",
+      "villagedrivestralia.xyz": "2019-03-22",
+      "viodger.com": "2020-04-28",
+      "virginiaar.com": "2018-07-05",
+      "vitlescaux.com": "2020-03-25",
+      "vnbizcom.com": "2019-05-09",
+      "volveri.net": "2017-06-29",
+      "vphelp.net": "2017-06-29",
+      "wand.gasharontomholt.com": "2020-04-21",
+      "web.dalalepredaa.com": "2019-05-09",
+      "widget.shoreoa.com": "2018-10-03",
+      "willipropst.icu": "2025-01-05",
+      "word.webhop.info": "2019-02-04",
+      "work.windownoffice.com": "2019-02-04",
+      "worker.baraeme.com": "2019-04-03",
+      "ww1.erabend.com": "2024-08-30",
+      "yhsetting.com": "2020-11-06",
+      "yii.yiihao126.net": "2017-06-29",
+      "yourrighttocompensation.com": "2020-10-06",
+      "zabbixasaservice.com": "2022-11-18",
+      "zone.apize.net": "2017-06-29",
+      "zone.servehttp.com": "2019-05-09"
+    },
+    "ipv4": {
+      "103.91.67.74:4443": "2024-12-03",
+      "109.107.171.113:22": "2024-09-18",
+      "109.107.171.113:443": "2024-09-18",
+      "109.107.171.113:51821": "2024-09-18",
+      "139.59.30.109:8090": "2019-05-21",
+      "144.202.46.221:443": "2026-01-02",
+      "152.32.144.5:443": "2026-04-15",
+      "154.93.37.106:443": "2025-01-09",
+      "160.86.38.21:443": "2024-01-30",
+      "178.255.220.115:443": "2025-01-09",
+      "185.161.208.105:8080": "2026-06-24",
+      "185.161.208.105:8888": "2026-06-24",
+      "185.198.57.184:8888": "2024-08-30",
+      "185.225.19.100:443": "2021-07-15",
+      "185.43.220.188:8888": "2024-08-30",
+      "185.82.126.4:8888": "2023-03-24",
+      "190.211.254.203:4443": "2025-01-09",
+      "193.138.195.192:8443": "2025-01-09",
+      "195.12.50.172:46405": "2019-08-05",
+      "202.59.10.170:46405": "2020-08-20",
+      "221.219.213.178:8081": "2021-07-15",
+      "43.254.132.117:46405": "2020-10-22",
+      "43.254.132.212:46405": "2020-10-20",
+      "45.41.204.15:443": "2024-12-11",
+      "45.41.204.18:8443": "2025-01-09",
+      "45.61.139.211:443": "2020-12-15",
+      "45.63.123.237:46405": "2020-10-28"
+    },
+    "url": {
+      "http://109.107.171.113": "2024-09-18",
+      "http://139.180.201.211": "2024-07-22",
+      "http://161.129.34.132": "2023-12-01",
+      "http://167.88.180.198": "2020-06-15",
+      "http://194.87.240.39": "2026-01-02",
+      "http://27.0.232.169": "2024-07-03",
+      "http://38.54.59.112": "2025-01-09",
+      "http://46.37.124.147": "2026-01-02",
+      "http://5.255.86.129": "2021-12-30",
+      "http://5.79.75.210": "2021-12-30",
+      "http://64.176.58.16": "2024-09-30",
+      "http://83.149.110.52": "2021-12-30",
+      "http://86.105.18.241": "2022-04-30"
+    },
+    "url_path": {
+      "/M70uojiYNua5Hx4UYxUMahnmS45He2": "2021-12-30",
+      "/cl_client_cmd.php": "2019-07-02",
+      "/cl_client_cmd_res.php": "2019-07-02",
+      "/cl_client_logs.php": "2019-07-02",
+      "/cl_client_online.php": "2019-07-02",
+      "/dp/B074WC4NHW/": "2019-04-09"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "ipv4": {
+      "144.202.46.221:443": "at-or-before"
+    },
+    "url": {
+      "http://194.87.240.39": "at-or-before",
+      "http://46.37.124.147": "at-or-before"
+    },
+    "url_path": {}
+  },
+  "first_seen_range": {
+    "earliest": "2017-06-29",
+    "latest": "2026-07-25"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "0b3l1sk.me",
+      "163mailservice.com",
+      "24.datatimes.org",
+      "360skylar.host",
+      "365.urielcallum.com",
+      "accounts.getmyip.com",
+      "ad.ssageevrenue.com",
+      "adineohler.com",
+      "adobe.riceaub.com",
+      "agoras.hopto.org",
+      "agoras.zapto.org",
+      "aisicoin.com",
+      "aki.viperse.com",
+      "alicervois.com",
+      "aliexpresscn.net",
+      "alyerrac.com",
+      "anaehler.com",
+      "andreafaerber.com",
+      "andreagahuvrauvin.com",
+      "andreagbridge.com",
+      "anessallie.com",
+      "annamerrett.com",
+      "anofrio.com",
+      "antenham.com",
+      "aol.straliaenollma.xyz",
+      "api.anaehler.com",
+      "api.blogdns.com",
+      "api.ciscofreak.com",
+      "api.myddns.me",
+      "apiservice.webhop.net",
+      "arbenha.com",
+      "arinaurna.com",
+      "arkoimmerma.com",
+      "art.guillermoespana.com",
+      "art.yfieldrainasch.com",
+      "asia-kotoba.net",
+      "att.illagedrivestralia.xyz",
+      "au.charlineopkesston.com",
+      "audreybourgeois.com",
+      "aulolloy.com",
+      "auth.lineage2ez.com",
+      "avidilleneu.com",
+      "avidsontre.com",
+      "aximilian.com",
+      "b.cortanazone.com",
+      "background.ristians.com",
+      "baidu-search.net",
+      "baodachieu.com",
+      "baomoivietnam.com",
+      "base.msteamsapi.com",
+      "beaudrysang.xyz",
+      "beautifull-font.salebusinesend.com",
+      "becreybour.com",
+      "benjamiilliams.club",
+      "benjamiilliams.icu",
+      "beta.officopedia.com",
+      "biasatts.com",
+      "bit.catalinabonami.com",
+      "blank.eatherurg.com",
+      "blog.artinhauvin.com",
+      "blog.docksugs.org",
+      "blog.eduelects.com",
+      "blog.panggin.org",
+      "bluesky2018man.com",
+      "bmw-corp.net",
+      "bmwthailand.org",
+      "braydenhateaub.com",
+      "bucket.serveftp.net",
+      "bussinesappinstant.com",
+      "byronorenstein.com",
+      "carosseda.com",
+      "cbo.group",
+      "cctv.avidsonec.com",
+      "cdn.arlialter.com",
+      "cdn.eworldship-news.com",
+      "cdn.mirror-codes.net",
+      "cdn.redirectme.net",
+      "cdn3.onlinesurveygorilla.com",
+      "cdnwebmedia.com",
+      "cds55.lax8.setalz.com",
+      "cert.opennetworklab.com",
+      "chart.expocasheuro.com",
+      "chascloud.com",
+      "check.homeip.net",
+      "check.paidprefund.org",
+      "check.webhop.org",
+      "chinaport.org",
+      "christienoll.xyz",
+      "christienollmache.xyz",
+      "ckoen.dmkatti.com",
+      "clip.shangweidesign.com",
+      "clipboard.christienoll.xyz",
+      "cloud.360cn.info",
+      "cloud.anofrio.com",
+      "cloud.bussinesappinstant.com",
+      "cloud.chinatel.org",
+      "cloud.doomdns.org",
+      "cloud.reneark.com",
+      "cloud.sicaogler.com",
+      "clouds.onthewifi.com",
+      "cnn.befmann.com",
+      "coachcybersecurity.com",
+      "coco.cechire.com",
+      "colingrovesjama.com",
+      "confusion-cerulean-samba.glitch.me",
+      "contay.deaftone.com",
+      "cooperative-supreme-pisces.glitch.me",
+      "copy.byronorenstein.com",
+      "cortana.homelinux.com",
+      "cortanasyn.com",
+      "cortanazone.com",
+      "cyn.ettebiermahalet.com",
+      "daff.faybilodeau.com",
+      "dance-til-dawn.podzone.net",
+      "dangky.dinefilly.com",
+      "datatimes.org",
+      "delicalo.dnsalias.net",
+      "deraller.com",
+      "dfizm.com",
+      "dieordaunt.com",
+      "dinefilly.com",
+      "dns.chinanews.network",
+      "dns.domain-resolve.org",
+      "dns.insappstaticanalyze.com",
+      "doc.rainaschiffer.com",
+      "docksugs.org",
+      "dominikmagoffin.com",
+      "dreyoddu.com",
+      "dupbleanalytics.net",
+      "dwarduong.com",
+      "dyndns.angusie.com",
+      "e.browsersyn.com",
+      "earlase.com",
+      "eckenbaue.com",
+      "ecom.dfizm.com",
+      "economy.bloghop.org",
+      "eduelects.com",
+      "egg.stralisemariegar.com",
+      "eighrimeau.com",
+      "elemental-future-cheetah.glitch.me",
+      "emp.gapte.name",
+      "enormousamuses.com",
+      "enum.arkoorr.com",
+      "erp.manitec.ch",
+      "errellawle.com",
+      "erstin.com",
+      "eu-draytek.com",
+      "eworldship-news.com",
+      "expocasheuro.com",
+      "facebook-cdn.net",
+      "facebookdeck.com",
+      "fbcn.enantor.com",
+      "feeder.blogdns.com",
+      "feieraagsbend.com",
+      "file.log4jv.info",
+      "financemachinelearning.com",
+      "fontloading.com",
+      "food.letsmiles.org",
+      "fox.ailloux.com",
+      "fp.rentwoylas.com",
+      "frahreiner.com",
+      "gacha.knowsitall.info",
+      "game2015.net",
+      "gameandroid.taiphanmemfacebookmoi.info",
+      "gap-facebook.com",
+      "gatewayrvcenter.com",
+      "get.dupbleanalytics.net",
+      "get.freelicenses.net",
+      "gifted-boulder-transport.glitch.me",
+      "gl-appspot.org",
+      "groveskekwiciv.com",
+      "gservice.reviews",
+      "guilty-patricia-connecticut-pulled.trycloudflare.com",
+      "gusercontent.com",
+      "h61.p.ctrader.com",
+      "heal.lancebarkerwa.com",
+      "help.checkonl.org",
+      "hieryells.com",
+      "high.expbas.net",
+      "high.vphelp.net",
+      "hmacount.com",
+      "hotel.bookingshop.info",
+      "houseoasa.com",
+      "hr.halettebiermann.com",
+      "hristophe.com",
+      "huyndai-auto.com",
+      "hx-in-f211.popfan.org",
+      "hypepodscase.com",
+      "ichardt.com",
+      "icmannaws.com",
+      "icon.torrentart.com",
+      "idtpl.org",
+      "iecopeland.com",
+      "illagedrivestralia.xyz",
+      "image.fontstaticloader.com",
+      "images.chinabytes.info",
+      "imap.jxycnews.com",
+      "imaps.qki6.com",
+      "imberly.com",
+      "img.fanspeed.net",
+      "inc.graceneufville.com",
+      "infodocs.kginfocom.com",
+      "inquirerjs.com",
+      "insappstaticanalyze.com",
+      "ipv6.uyllain.com",
+      "irkaimboeuf.com",
+      "isp.cambodiadaily.org",
+      "itpk.mostmkru.com",
+      "jamedalue.com",
+      "jamyer.com",
+      "jang.goongnam.com",
+      "jaxonsorensen.club",
+      "jcdn.jsoid.com",
+      "jeanessbinder.com",
+      "jeffreyue.com",
+      "jessicajoshua.com",
+      "jieyitongweb.com",
+      "job.supperpow.com",
+      "jxycnews.com",
+      "karelbecker.com",
+      "karolinblair.com",
+      "keoucha.com",
+      "kermacrescen.com",
+      "kginfocom.com",
+      "khmer-livenews.com",
+      "khmerleaks.com",
+      "kingsoftcdn.com",
+      "km170.com",
+      "kmernews.com",
+      "kpi.msccloudapp.com",
+      "kristianfiedler.club",
+      "land.rellecharlessper.com",
+      "laostimenews.com",
+      "laotiantimes.com",
+      "laudiaouc.com",
+      "lauradesnoyers.com",
+      "lbertussbau.com",
+      "leadingfilipinoteams.com",
+      "ledanvietnam.org",
+      "letsme.gotdns.com",
+      "lginstree.com",
+      "libjs.inquirerjs.com",
+      "libjss.inquirerjs.com",
+      "lighpress.info",
+      "load.newappssystems.com",
+      "load.updatetag.com",
+      "log.osloger.biz",
+      "log4jv.info",
+      "login.ticketwitheasy.com",
+      "loridanase.com",
+      "ls.andreagbridge.com",
+      "m.topiccore.com",
+      "mail.fptservice.net",
+      "mailserviceactivation.com",
+      "malaynews.org",
+      "manitec.ch",
+      "manongrover.com",
+      "mappingpotentials.com",
+      "marrmann.com",
+      "menmin.strezf.com",
+      "mentosfontcmb.com",
+      "meroque.com",
+      "mesarigna.com",
+      "mihannevis.com",
+      "mikus19201.ddns.net",
+      "mine.remaariegarcia.com",
+      "ming.chujong.com",
+      "mirror-codes.net",
+      "mobile.pagmobiles.info",
+      "mokkha.goongnam.com",
+      "moureuxacv.com",
+      "msccloudapp.com",
+      "msoffice-templates.info",
+      "msofficecloud.org",
+      "msteamsapi.com",
+      "mtk.baimind.com",
+      "mxprodesign.com",
+      "myaccount.philtimes.org",
+      "mykessef.com",
+      "myolton.com",
+      "nasahlaes.com",
+      "ndreafaeraphael.com",
+      "netsy.trutanner.com",
+      "news.coleope.com",
+      "news.denekasd.com",
+      "news.exandre.com",
+      "news.lighpress.info",
+      "news.shangrilaexports.com",
+      "news.sqllitlever.info",
+      "news.thaprior.net",
+      "nhaccuatui.android.zyngacdn.com",
+      "nhansudaihoi13.org",
+      "node.podzone.org",
+      "notificeva.com",
+      "ns1.andreafaerber.com",
+      "ns1.benjamiilliams.club",
+      "ns1.benjamiilliams.icu",
+      "ns1.cambodiadaily.org",
+      "ns1.colingrovesjama.com",
+      "ns1.deraller.com",
+      "ns1.earlase.com",
+      "ns1.groveskekwiciv.com",
+      "ns1.imberly.com",
+      "ns1.mesarigna.com",
+      "ns1.ndreafaeraphael.com",
+      "ns1.ochefort.com",
+      "ns1.odyluet.com",
+      "ns1.philipppropst.icu",
+      "ns1.radeordaunt.com",
+      "ns1.rcheterre.com",
+      "ns1.rieuenc.com",
+      "ns1.roveskekwjascd.com",
+      "ns1.ryeisasw.com",
+      "ns1.urielcallum.com",
+      "ns1.willipropst.icu",
+      "ns2.andreafaerber.com",
+      "ns2.benjamiilliams.club",
+      "ns2.benjamiilliams.icu",
+      "ns2.colingrovesjama.com",
+      "ns2.deraller.com",
+      "ns2.earlase.com",
+      "ns2.groveskekwiciv.com",
+      "ns2.imberly.com",
+      "ns2.mesarigna.com",
+      "ns2.ndreafaeraphael.com",
+      "ns2.ochefort.com",
+      "ns2.odyluet.com",
+      "ns2.philipppropst.icu",
+      "ns2.radeordaunt.com",
+      "ns2.rcheterre.com",
+      "ns2.rieuenc.com",
+      "ns2.roveskekwjascd.com",
+      "ns2.ryeisasw.com",
+      "ns2.urielcallum.com",
+      "ns2.willipropst.icu",
+      "nsquery.net",
+      "ntjeilliams.com",
+      "ntop.dieordaunt.com",
+      "nvidia.benjamiilliams.club",
+      "oa.chinarailways.net",
+      "ochefort.com",
+      "odyluet.com",
+      "office.allsafebrowsing.com",
+      "office.ourkekwiciver.com",
+      "office.windown-update.com",
+      "oftonlos.com",
+      "omasicase.com",
+      "online.stienollmache.xyz",
+      "onnaha.com",
+      "onteagle.com",
+      "open.betaoffice.net",
+      "opengroup.homeunix.org",
+      "orinneamoure.com",
+      "orresto.com",
+      "orrislark.com",
+      "osloger.biz",
+      "ourkekwiciver.com",
+      "ousync.kginfocom.com",
+      "outlook-client.com",
+      "outlook.betamedias.com",
+      "outlook.officebetas.com",
+      "outlook.updateoffices.net",
+      "p12.alerentice.com",
+      "pagmobiles.info",
+      "paidprefund.org",
+      "paste.christienollmache.xyz",
+      "philiippinesnews.net",
+      "philipppropst.icu",
+      "plan.evillese.com",
+      "playnetflix.com",
+      "pong.dynathome.net",
+      "priv.manuelleake.com",
+      "ps.andreagahuvrauvin.com",
+      "push.relasign.org",
+      "quam.viperse.com",
+      "rackerasr.com",
+      "radeordaunt.com",
+      "raffesla.idfnv.net",
+      "rcheterre.com",
+      "rcuselynac.com",
+      "relasign.org",
+      "rieuenc.com",
+      "rigitteais.com",
+      "rio.imbandaad.com",
+      "ristineho.com",
+      "river-cliff-crate.glitch.me",
+      "roveskekwjascd.com",
+      "ryeisasw.com",
+      "s3.hiahornber.com",
+      "sadma.knrowz.com",
+      "salebusinesend.com",
+      "sanauer.com",
+      "sarc.onteagleroad.com",
+      "school.obertamy.com",
+      "science.tayenthflores.com",
+      "screeching-lavish-riverbed.glitch.me",
+      "search.webstie.net",
+      "seri.volveri.net",
+      "serrvice.net",
+      "service.serveftp.org",
+      "service.windown-update.com",
+      "services.serveftp.net",
+      "share.codehao.net",
+      "shawnabuddicom.com",
+      "shortjuvenilebuttons.koobphee.repl.co",
+      "sints.infonetcorporation.org",
+      "sjbingdu.info",
+      "smooth-talented-runner.glitch.me",
+      "snort.lauradesnoyers.com",
+      "sophiahoule.com",
+      "spencerday.com",
+      "sqllitlever.info",
+      "ssl.arkouthrie.com",
+      "ssl.zin0.com",
+      "stackbio.com",
+      "staff.kristianfiedler.club",
+      "static.jg7.org",
+      "status.elizongham.com",
+      "status.sublineover.net",
+      "stellefaff.com",
+      "stienollmache.xyz",
+      "stopherau.com",
+      "straliaenollma.xyz",
+      "strengthening-memories-reports-restoration.trycloudflare.com",
+      "style.fontstaticloader.com",
+      "sublineover.net",
+      "sugary-tough-time.glitch.me",
+      "summerevent.webhop.net",
+      "suricata.radeordaunt.com",
+      "syn.browserstime.com",
+      "syn.servebbs.com",
+      "syn.timeizu.net",
+      "sys.genevrebreinl.com",
+      "systeminfor.com",
+      "taiphanmemfacebookmoi.info",
+      "tefanie.com",
+      "tefanortin.com",
+      "tel.caitlynwells.com",
+      "tephens.com",
+      "teriava.com",
+      "term.ursulapaulet.com",
+      "thamcungbisu.org",
+      "thaprior.net",
+      "theme.blogsite.org",
+      "theme.blogwix.com",
+      "time.ouisers.com",
+      "timeizu.net",
+      "tinmoivietnam.com",
+      "tinmoivietnam.net",
+      "tintuc.dinefilly.com",
+      "tips.jasperpfeiffer.com",
+      "tocaoonline.org",
+      "tonholding.com",
+      "topiccore.com",
+      "torpid-resisted-sugar.glitch.me",
+      "traits.senapusmireault.com",
+      "traveroyce.com",
+      "tripplekill.mentosfontcmb.com",
+      "tsworthoa.com",
+      "tulationeva.com",
+      "ucaargo.com",
+      "ucairtz.com",
+      "udt.sophiahoule.com",
+      "ugdale.com",
+      "ulse.chujong.com",
+      "untitled.po9z.com",
+      "update-flashs.com",
+      "upgrade.coldriverhardware.com",
+      "urielcallum.com",
+      "urnage.com",
+      "ursulapapst.xyz",
+      "us.jaxonsorensen.club",
+      "us.melvillepitcairn.com",
+      "var.alieras.com",
+      "venionne.com",
+      "video.viodger.com",
+      "videos.dyndns.org",
+      "vieoulden.com",
+      "viewerservice.com",
+      "vieweva.com",
+      "villagedrivestralia.xyz",
+      "viodger.com",
+      "virginiaar.com",
+      "vitlescaux.com",
+      "vnbizcom.com",
+      "volveri.net",
+      "vphelp.net",
+      "wand.gasharontomholt.com",
+      "web.dalalepredaa.com",
+      "widget.shoreoa.com",
+      "willipropst.icu",
+      "word.webhop.info",
+      "work.windownoffice.com",
+      "worker.baraeme.com",
+      "ww1.erabend.com",
+      "yhsetting.com",
+      "yii.yiihao126.net",
+      "yourrighttocompensation.com",
+      "zabbixasaservice.com",
+      "zone.apize.net",
+      "zone.servehttp.com"
+    ],
+    "ipv4": [
+      "103.91.67.74:4443",
+      "109.107.171.113:22",
+      "109.107.171.113:443",
+      "109.107.171.113:51821",
+      "139.59.30.109:8090",
+      "144.202.46.221:443",
+      "152.32.144.5:443",
+      "154.93.37.106:443",
+      "160.86.38.21:443",
+      "178.255.220.115:443",
+      "185.161.208.105:8080",
+      "185.161.208.105:8888",
+      "185.198.57.184:8888",
+      "185.225.19.100:443",
+      "185.43.220.188:8888",
+      "185.82.126.4:8888",
+      "190.211.254.203:4443",
+      "193.138.195.192:8443",
+      "195.12.50.172:46405",
+      "202.59.10.170:46405",
+      "221.219.213.178:8081",
+      "43.254.132.117:46405",
+      "43.254.132.212:46405",
+      "45.41.204.15:443",
+      "45.41.204.18:8443",
+      "45.61.139.211:443",
+      "45.63.123.237:46405"
+    ],
+    "url": [
+      "http://109.107.171.113",
+      "http://139.180.201.211",
+      "http://161.129.34.132",
+      "http://167.88.180.198",
+      "http://194.87.240.39",
+      "http://27.0.232.169",
+      "http://38.54.59.112",
+      "http://46.37.124.147",
+      "http://5.255.86.129",
+      "http://5.79.75.210",
+      "http://64.176.58.16",
+      "http://83.149.110.52",
+      "http://86.105.18.241"
+    ],
+    "url_path": [
+      "/M70uojiYNua5Hx4UYxUMahnmS45He2",
+      "/cl_client_cmd.php",
+      "/cl_client_cmd_res.php",
+      "/cl_client_logs.php",
+      "/cl_client_online.php",
+      "/dp/B074WC4NHW/"
+    ]
+  },
+  "last_modified": "2026-07-25T13:16:37+00:00",
+  "maltrail_groups": [
+    "OCEANLOTUS"
+  ],
+  "references": [
+    "https://app.any.run/tasks/2a8d467c-65e4-417f-a747-b6e59bf037ba/",
+    "https://app.any.run/tasks/92bbc70b-02a6-4b4d-bbb0-2a4922ef204d/",
+    "https://app.any.run/tasks/b3612ff4-c8b2-409d-98d4-77c64c8a01cf/",
+    "https://blog.malwarebytes.com/malwarebytes-news/2020/10/kraken-attack-abuses-wer-service/",
+    "https://blog.netlab.360.com/rotajakiro_linux_version_of_oceanlotus/",
+    "https://blog.netlab.360.com/stealth_rotajakiro_backdoor_en/",
+    "https://blog.trendmicro.com/trendlabs-security-intelligence/new-macos-backdoor-linked-to-oceanlotus-found/",
+    "https://elfdigest.com/brief/19f16a4eceb8b57b2bcad11c76446f05b1e1f4b7c7f23201e08dc8fa07659cf0",
+    "https://github.com/AmnestyTech/investigations/tree/master/2021-02-24_vietnam",
+    "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/Oceanlotus-APK-sample.TXT",
+    "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/Stairwell-threat-report-The-origin-of-APT32-macros.pdf",
+    "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/aptnote0402",
+    "https://github.com/eset/malware-ioc/tree/master/oceanlotus",
+    "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/MHTGlitch/IOCs",
+    "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_APT32-OceanLotus.json",
+    "https://mp.weixin.qq.com/s/FIDg23u6Peb_cR8N7ddzbA",
+    "https://mp.weixin.qq.com/s/IB2w86cXcpmGS8qrOnprKw?ref=www.ctfiot.com",
+    "https://mp.weixin.qq.com/s/YFT0Bx4Suph5yCv6OQiHzA",
+    "https://mp.weixin.qq.com/s/ZpU27cCSKa14aupNcCHcug",
+    "https://mp.weixin.qq.com/s/v2wiJe-YPG0ng87ffBB9FQ (Chinese)",
+    "https://mp.weixin.qq.com/s/zZVmDDWHQx7XuJZ8YO6joA",
+    "https://otx.alienvault.com/pulse/5c9255f84d2d890341e7f6a1",
+    "https://otx.alienvault.com/pulse/5cd5446ba9324bd2a35b3bd4",
+    "https://otx.alienvault.com/pulse/5cff85da279bf2ae275592c5",
+    "https://otx.alienvault.com/pulse/5de9067483d85294ef9e77b4",
+    "https://otx.alienvault.com/pulse/5e063be1a6ed30bd243f100e",
+    "https://otx.alienvault.com/pulse/5ea052d6cc299691b6ed1480",
+    "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee",
+    "https://otx.alienvault.com/pulse/5f7c8a82c21d00312155d28a",
+    "https://otx.alienvault.com/pulse/5fa570762d4ac937ddf1fdbe",
+    "https://otx.alienvault.com/pulse/5fc69d3770679c907b87aea3",
+    "https://otx.alienvault.com/pulse/603d189d3e938ff6555b68c8/",
+    "https://pastebin.com/BiQKjQaK",
+    "https://search.censys.io/hosts/109.107.171.113",
+    "https://securelist.com/apt-phantomlance/96772/",
+    "https://threatbook.io/blog/id/1100",
+    "https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html",
+    "https://threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html",
+    "https://ti.360.net/blog/articles/oceanlotus-targets-chinese-university/",
+    "https://ti.qianxin.com/blog/articles/english-version-of-new-approaches-utilized-by-oceanLotus-to-target-vietnamese-environmentalist/",
+    "https://ti.qianxin.com/blog/articles/oceanlotus-attacks-to-indochinese-peninsula-evolution-of-targets-techniques-and-procedure/",
+    "https://twitter.com/360CoreSec/status/1414520646436999171",
+    "https://twitter.com/360Netlab/status/1390297734981246978",
+    "https://twitter.com/Arkbird_SOLG/status/1157319751238131717",
+    "https://twitter.com/Arkbird_SOLG/status/1312380799514284032",
+    "https://twitter.com/BaoshengbinCumt/status/1465923917793554436",
+    "https://twitter.com/ESETresearch/status/1208032053108850688",
+    "https://twitter.com/GroupIB_GIB/status/1338816922687770624",
+    "https://twitter.com/GroupIB_GIB/status/1338817396069593088",
+    "https://twitter.com/ItsReallyNick/status/1188639544528248832",
+    "https://twitter.com/JAMESWT_MHT/status/1551531206038196225",
+    "https://twitter.com/RedDrip7/status/1130780807318999040",
+    "https://twitter.com/RedDrip7/status/1141598356113780737",
+    "https://twitter.com/RedDrip7/status/1162253139631730689",
+    "https://twitter.com/RedDrip7/status/1430098641528647681",
+    "https://twitter.com/RexorVc0/status/1730499792575299950",
+    "https://twitter.com/Rmy_Reserve/status/1200089355307536384",
+    "https://twitter.com/SethKingHi/status/1626502575225999360",
+    "https://twitter.com/ShadowChasing1/status/1257615428588732417",
+    "https://twitter.com/ShadowChasing1/status/1268200526564343809",
+    "https://twitter.com/ShadowChasing1/status/1289502558948491265",
+    "https://twitter.com/ShadowChasing1/status/1296249969507069952",
+    "https://twitter.com/ShadowChasing1/status/1315679227757305856",
+    "https://twitter.com/ShadowChasing1/status/1315683463983366149",
+    "https://twitter.com/ShadowChasing1/status/1318499224170852353",
+    "https://twitter.com/ShadowChasing1/status/1319238163227815937",
+    "https://twitter.com/ShadowChasing1/status/1321320009054871554",
+    "https://twitter.com/ShadowChasing1/status/1323438687296790528",
+    "https://twitter.com/ShadowChasing1/status/1355866180729245696",
+    "https://twitter.com/ShadowChasing1/status/1355871333192634376",
+    "https://twitter.com/ShadowChasing1/status/1370003071560863744",
+    "https://twitter.com/ShadowChasing1/status/1397057243946774528",
+    "https://twitter.com/ShadowChasing1/status/1397560527929307139",
+    "https://twitter.com/ShadowChasing1/status/1420764436642496513",
+    "https://twitter.com/ThreatBookLabs/status/1155815604332273666",
+    "https://twitter.com/ThreatBookLabs/status/1593199652807245824",
+    "https://twitter.com/ThreatBookLabs/status/1639100138185687045",
+    "https://twitter.com/ThreatBookLabs/status/1665030897220096001",
+    "https://twitter.com/Timele9527/status/1125941317689925632",
+    "https://twitter.com/batrix20/status/1289066669109780480",
+    "https://twitter.com/blackorbird/status/1086186184768815104",
+    "https://twitter.com/blackorbird/status/1086188558413586432",
+    "https://twitter.com/blackorbird/status/1108687601475555328",
+    "https://twitter.com/blackorbird/status/1113328823947264001",
+    "https://twitter.com/blackorbird/status/1113737430501212161",
+    "https://twitter.com/blackorbird/status/1115617606218727425",
+    "https://twitter.com/blackorbird/status/1118396419595837440",
+    "https://twitter.com/blackorbird/status/1119232980801785856",
+    "https://twitter.com/blackorbird/status/1128534704825618432",
+    "https://twitter.com/blackorbird/status/1131862769500737538",
+    "https://twitter.com/blackorbird/status/1337225399177150464",
+    "https://twitter.com/blackorbird/status/1471443630506201090",
+    "https://twitter.com/blackorbird/status/1481527529475559427",
+    "https://twitter.com/blackorbird/status/1587712368901251072",
+    "https://twitter.com/ccxsaber/status/1185104546332213248",
+    "https://twitter.com/ccxsaber/status/1187199752145752064",
+    "https://twitter.com/ccxsaber/status/1277183467889942528",
+    "https://twitter.com/cyber__sloth/status/1272470254141288450",
+    "https://twitter.com/h4ckak/status/1115511637979553792",
+    "https://twitter.com/liqingjia1989/status/1752140516081475763",
+    "https://twitter.com/liqingjia1989/status/1777517072492478907",
+    "https://twitter.com/liqingjia1989/status/1779688782989808055",
+    "https://twitter.com/pancak3lullz/status/1204059496005488642",
+    "https://twitter.com/pancak3lullz/status/1204065037448613889",
+    "https://twitter.com/pancak3lullz/status/1486817995418750979",
+    "https://twitter.com/spider_girl22/status/1192276923784691712",
+    "https://twitter.com/tonydoublezero/status/1421046882575466499",
+    "https://twitter.com/virusbtn/status/1333383787737214977",
+    "https://twitter.com/vxsh4d0w/status/1109030685090680832",
+    "https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/",
+    "https://www.amnesty.org/en/latest/research/2021/02/click-and-bait-vietnamese-human-rights-defenders-targeted-with-spyware-attacks/",
+    "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf",
+    "https://www.cybereason.com/blog/operation-cobalt-kitty-apt",
+    "https://www.fireeye.com/blog/threat-research/2017/05/cyber-espionage-apt32.html",
+    "https://www.fireeye.com/blog/threat-research/2020/04/apt32-targeting-chinese-government-in-covid-19-related-espionage.html",
+    "https://www.google.com/search?q=%22jessicajoshua.com%22",
+    "https://www.huntress.com/blog/advanced-persistent-threat-targeting-vietnamese-human-rights-defenders",
+    "https://www.netskope.com/blog/abusing-microsoft-office-using-malicious-web-archive-files",
+    "https://www.trendmicro.com/en_us/research/20/k/new-macos-backdoor-connected-to-oceanlotus-surfaces.html",
+    "https://www.virustotal.com/#/file/673ee7a57ba3c5a2384aeb17a66058e59f0a4d0cddc4f01fe32f369f6a845c8f/relations",
+    "https://www.virustotal.com/gui/domain/dinefilly.com/detection",
+    "https://www.virustotal.com/gui/domain/kginfocom.com/relations",
+    "https://www.virustotal.com/gui/file/133e629b27bae2309ca9fd39a78b070c9fc5852c1e31c30ee278e184828119c1/detection",
+    "https://www.virustotal.com/gui/file/13a1b25c8f9cbb3771e694945fbcfcefd79639f9f6e9c65df7506c54800dd6eb/detection",
+    "https://www.virustotal.com/gui/file/14515bc33a3e6c8f8cafae1598a1ea5c6989da5643a570a52846e92fe58dc710/detection",
+    "https://www.virustotal.com/gui/file/19f16a4eceb8b57b2bcad11c76446f05b1e1f4b7c7f23201e08dc8fa07659cf0/detection",
+    "https://www.virustotal.com/gui/file/1bd7ad55c5615169706676cd266f52e6bcb685b9ff0929e5c191ecab79af52e6/detection",
+    "https://www.virustotal.com/gui/file/31e812704e41e7e779d96a553500d45409d4b46c7f1007af2ba042407d562b1d/detection",
+    "https://www.virustotal.com/gui/file/3547f3e8f7c5aec3f507d75e7d3d254224d02a29290bf54945b29299950b94b2/detection",
+    "https://www.virustotal.com/gui/file/3a299afeefbe200504b09d168c221077f2ba950fdaaec87282a7dac855b0e08e/detection",
+    "https://www.virustotal.com/gui/file/3ca75ac0393ef0f6ec5bf3add0952361dec1d36023f6c63d6347a69eccaceaab/detection",
+    "https://www.virustotal.com/gui/file/3ec9ba9732737f75168c22c14815de482ca7db5f659adf9d41607fa9eeac8294/detection",
+    "https://www.virustotal.com/gui/file/4199f09978ac8f433f2e554826386b277a53979d64bf7db4044921337b01d812/detection",
+    "https://www.virustotal.com/gui/file/4701084d836ad99f10ca0b17ff49eca07e6c127484b77bff2d3f0d2469b547a5/detection",
+    "https://www.virustotal.com/gui/file/47ba92dc8c9302b2f70db70a0d46fef0ee2972edc3e1c4b637d5c76b4141c7a0/detection",
+    "https://www.virustotal.com/gui/file/489fca69a622195328302e64e29b6183feac90826dce198432d603202ca4d216/detection",
+    "https://www.virustotal.com/gui/file/52ba0fd4b275a8e817dd5896534c51d824032cbb1b6fb12c0ae6e82c97ecb849/detection",
+    "https://www.virustotal.com/gui/file/578a366c15308da2c6c2bb02eafef8ef8db75dc7de31a020eb61fd08f0226bf0/detection",
+    "https://www.virustotal.com/gui/file/5eb715cfaaf1f325c4431e9bfc12db31c136a4410221107809fb4584711a62bf/detection",
+    "https://www.virustotal.com/gui/file/66b58b2afd274591fb8caf2dbfcf14d9c9bcf48d6c87e8df2db30cdefb0d1422/detection",
+    "https://www.virustotal.com/gui/file/68cfaca326fd8953be4a3ece8161c3d30e5bc5b4ffec8f5f7e30f8ea2608fa1b/detection",
+    "https://www.virustotal.com/gui/file/6d901a0ef4e4357aef1bc4919b681cda0160eef98f9600d5b4e38cb0ec8d5fd5/detection",
+    "https://www.virustotal.com/gui/file/741a5533378a3d071ed9029ab0d619f7d306cd3ca8aed250c408632aab74b171/detection",
+    "https://www.virustotal.com/gui/file/7709b376ea5b388e1b415a93fc618c1febddfbd977254cc63e3e8d2daa5fb3c9/detection",
+    "https://www.virustotal.com/gui/file/86cebd189cfdcfb6e76cba7a258d7f90a3ec353348611378c48fa28740bebd98/detection",
+    "https://www.virustotal.com/gui/file/88a67b1b0875495b30e93ec925908ed2fade26005f5d50f59f8c45f51e2fc01b/detection",
+    "https://www.virustotal.com/gui/file/8ccd9591e9438a313a21958c7f8edce4b238bbb147e8284ec4a2b7b488b920ca/detection",
+    "https://www.virustotal.com/gui/file/958fdf608a9c166177c5cfa024f51d11fd88123490a51ce16412163a064e04f0/detection",
+    "https://www.virustotal.com/gui/file/98541970bf7e1de78100bf40add332c6b6f373159d6e85c27e2a1422006ca6e2/detection",
+    "https://www.virustotal.com/gui/file/a030435018a67c07747751766132eb30a9a6bb6af161df225a27c0ec57156b61/detection",
+    "https://www.virustotal.com/gui/file/aa331051db461ff1dc760616f23770293a91257087fd079e2e76c122db7c0561/detection",
+    "https://www.virustotal.com/gui/file/acf0fb4dac33e197de3a3e142eeaa7e5a892607424e8ea8708d49c65f3703d61/detection",
+    "https://www.virustotal.com/gui/file/acf612349fb6ee5d88e2a7da3d39afb3e0699a4ad95ab6a5ff708353498ce76d/detection",
+    "https://www.virustotal.com/gui/file/af50f57eed423ce82e82c857bbdf3e02399d93888fc22b0221ff488861cdec30/detection",
+    "https://www.virustotal.com/gui/file/af68d1a0208dff0240c959996664b71e70072e8814c78c87d95a7c4e1d9c81dc/detection",
+    "https://www.virustotal.com/gui/file/b87c090e422e96f332bcfac4ef3dc52840e399f8026ad79a99239eecc4fe1703/detection",
+    "https://www.virustotal.com/gui/file/bbb84b90e0a90e614b2a46542b576f213caf4d4f32f34eddfffe7d5be1e3a3ba/detection",
+    "https://www.virustotal.com/gui/file/bdf6614cde566b3cca10544729e8700cadbc22c0522cb22bb97683a9c8a6935e/detection",
+    "https://www.virustotal.com/gui/file/be2648d8ac9aca8c1fb338328dccdfa366b341e167dcb1f7c700eaf809a154f7/detection",
+    "https://www.virustotal.com/gui/file/c2abe7c37c2fb5ac50b1039bb03f3bdae66587bdb235c81fd5d8c379d48f1e96/detection",
+    "https://www.virustotal.com/gui/file/c961b128c9ecab3aad2b91d4c1b33f0f14e334a97e974e3f4386340a3596fdac/detection",
+    "https://www.virustotal.com/gui/file/d1cdeea8a081397632c0522476da2122f93c71cb14a36ad4e8d4351b3d65fd6d/detection",
+    "https://www.virustotal.com/gui/file/d83c86431777714878e7ccd93f479bb8cf1f4c4a5d2bce5284e220c181e047c9/detection",
+    "https://www.virustotal.com/gui/file/dbde2b710bee38eb3ff1a72b673f756c27faa45d5c38cbe0f8a5dfccb16c18ba/detection",
+    "https://www.virustotal.com/gui/file/e0b176aa8d4496adef17b4a698a84872b02ed13dd0ffab6a9f040b20578c07d2/detection",
+    "https://www.virustotal.com/gui/file/f0a05aaed382f667c49f74f005a754cf50852cbc9b33a9546469cd6db26b8ece/detection",
+    "https://www.virustotal.com/gui/file/f197ee22e964192080d6c5e2b4deff477da09f58aeb3d99c6fd4ecd038139b9d/detection",
+    "https://www.virustotal.com/gui/file/f6270624e606ec0768b6821cada234b8116df6d79c0a015409359dcbdaebf082/detection",
+    "https://www.virustotal.com/gui/file/fcdd52dd47846377c434056121137cf78057b331fbf4d313839760798cd26f17/detection",
+    "https://www.virustotal.com/gui/file/ffaf7e81f2334fd2e1ccc21d6b861c819b5652e5662e0723c096561460d69e3e/detection",
+    "https://www.virustotal.com/gui/ip-address/179.43.151.13/relations",
+    "https://www.virustotal.com/gui/ip-address/211.4.0.204/relations",
+    "https://www.virustotal.com/gui/ip-address/45.61.139.211/relations",
+    "https://www.volexity.com/blog/2020/11/06/oceanlotus-extending-cyber-espionage-operations-through-fake-websites/",
+    "https://www.welivesecurity.com/2019/03/20/fake-or-fake-keeping-up-with-oceanlotus-decoys/",
+    "https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/",
+    "https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/",
+    "https://x.com/RedDrip7/status/2044239571370815802",
+    "https://x.com/ThreatBookLabs/status/1866495587274641794",
+    "https://x.com/ThreatBookLabs/status/1877263651251392840",
+    "https://x.com/banthisguy9349/status/1875985209746919488",
+    "https://x.com/blackorbird/status/1829074866135532011",
+    "https://x.com/blackorbird/status/1839213152036331887",
+    "https://x.com/blackorbird/status/1861408316561465675",
+    "https://x.com/blackorbird/status/1863941553494135219",
+    "https://x.com/blackorbird/status/1968961523323183313",
+    "https://x.com/blackorbird/status/2079936188832723190",
+    "https://x.com/ginkgo_g/status/1948568231582568853",
+    "https://x.com/liqingjia1989/status/1808401108731417012",
+    "https://x.com/liqingjia1989/status/1836348262665912781",
+    "https://x.com/phatomcandle/status/2069843016844738849",
+    "https://x.com/skocherhan/status/2080796885774680487",
+    "https://x.com/wa1Ile/status/1793822326938829288"
+  ],
+  "related": [
+    {
+      "evidence": [
+        {
+          "detail": "3 shared indicators",
+          "kind": "infrastructure",
+          "weight": 3.0
+        }
+      ],
+      "slug": "G0136"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 shared indicator",
+          "kind": "infrastructure",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0129"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0040"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G0097"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "1 report cite both",
+          "kind": "reporting",
+          "weight": 1.0
+        }
+      ],
+      "slug": "G1002"
+    },
+    {
+      "evidence": [
+        {
+          "detail": "shares Arp",
+          "kind": "software",
+          "weight": 0.5
+        }
+      ],
+      "slug": "G0010"
+    }
+  ],
+  "slug": "G0050",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2026-07-25",
+      "indicators": {
+        "domain": [
+          "0b3l1sk.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/skocherhan/status/2080796885774680487",
+        "https://www.virustotal.com/gui/file/d1cdeea8a081397632c0522476da2122f93c71cb14a36ad4e8d4351b3d65fd6d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2026-07-23",
+      "indicators": {
+        "domain": [
+          "agoras.hopto.org",
+          "agoras.zapto.org",
+          "erp.manitec.ch",
+          "manitec.ch"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/2079936188832723190",
+        "https://mp.weixin.qq.com/s/FIDg23u6Peb_cR8N7ddzbA",
+        "https://www.virustotal.com/gui/ip-address/211.4.0.204/relations"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "ipv4": 2
+      },
+      "first_seen": "2026-06-24",
+      "indicators": {
+        "ipv4": [
+          "185.161.208.105:8080",
+          "185.161.208.105:8888"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/phatomcandle/status/2069843016844738849"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 5
+      },
+      "first_seen": "2026-06-12",
+      "indicators": {
+        "domain": [
+          "coachcybersecurity.com",
+          "financemachinelearning.com",
+          "gatewayrvcenter.com",
+          "leadingfilipinoteams.com",
+          "mxprodesign.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/en/eset-research/oceanlotus-external-espionage-domestic-targeting/"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2026-04-15",
+      "indicators": {
+        "ipv4": [
+          "152.32.144.5:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/RedDrip7/status/2044239571370815802",
+        "https://www.virustotal.com/gui/file/31e812704e41e7e779d96a553500d45409d4b46c7f1007af2ba042407d562b1d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1,
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "ipv4": [
+          "144.202.46.221:443"
+        ],
+        "url": [
+          "http://46.37.124.147"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/blackorbird/status/1968961523323183313",
+        "https://mp.weixin.qq.com/s/zZVmDDWHQx7XuJZ8YO6joA",
+        "https://www.virustotal.com/gui/file/88a67b1b0875495b30e93ec925908ed2fade26005f5d50f59f8c45f51e2fc01b/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2026-01-02",
+      "indicators": {
+        "url": [
+          "http://194.87.240.39"
+        ]
+      },
+      "precision": "at-or-before",
+      "references": [
+        "https://x.com/ginkgo_g/status/1948568231582568853",
+        "https://www.virustotal.com/gui/file/52ba0fd4b275a8e817dd5896534c51d824032cbb1b6fb12c0ae6e82c97ecb849/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 5,
+        "url": 1
+      },
+      "first_seen": "2025-01-09",
+      "indicators": {
+        "ipv4": [
+          "154.93.37.106:443",
+          "178.255.220.115:443",
+          "190.211.254.203:4443",
+          "193.138.195.192:8443",
+          "45.41.204.18:8443"
+        ],
+        "url": [
+          "http://38.54.59.112"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1877263651251392840",
+        "https://threatbook.io/blog/id/1100"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 60
+      },
+      "first_seen": "2025-01-05",
+      "indicators": {
+        "domain": [
+          "andreafaerber.com",
+          "benjamiilliams.club",
+          "benjamiilliams.icu",
+          "colingrovesjama.com",
+          "deraller.com",
+          "earlase.com",
+          "groveskekwiciv.com",
+          "imberly.com",
+          "mesarigna.com",
+          "ndreafaeraphael.com",
+          "ns1.andreafaerber.com",
+          "ns1.benjamiilliams.club",
+          "ns1.benjamiilliams.icu",
+          "ns1.colingrovesjama.com",
+          "ns1.deraller.com",
+          "ns1.earlase.com",
+          "ns1.groveskekwiciv.com",
+          "ns1.imberly.com",
+          "ns1.mesarigna.com",
+          "ns1.ndreafaeraphael.com",
+          "ns1.ochefort.com",
+          "ns1.odyluet.com",
+          "ns1.philipppropst.icu",
+          "ns1.radeordaunt.com",
+          "ns1.rcheterre.com",
+          "ns1.rieuenc.com",
+          "ns1.roveskekwjascd.com",
+          "ns1.ryeisasw.com",
+          "ns1.urielcallum.com",
+          "ns1.willipropst.icu",
+          "ns2.andreafaerber.com",
+          "ns2.benjamiilliams.club",
+          "ns2.benjamiilliams.icu",
+          "ns2.colingrovesjama.com",
+          "ns2.deraller.com",
+          "ns2.earlase.com",
+          "ns2.groveskekwiciv.com",
+          "ns2.imberly.com",
+          "ns2.mesarigna.com",
+          "ns2.ndreafaeraphael.com",
+          "ns2.ochefort.com",
+          "ns2.odyluet.com",
+          "ns2.philipppropst.icu",
+          "ns2.radeordaunt.com",
+          "ns2.rcheterre.com",
+          "ns2.rieuenc.com",
+          "ns2.roveskekwjascd.com",
+          "ns2.ryeisasw.com",
+          "ns2.urielcallum.com",
+          "ns2.willipropst.icu",
+          "ochefort.com",
+          "odyluet.com",
+          "philipppropst.icu",
+          "radeordaunt.com",
+          "rcheterre.com",
+          "rieuenc.com",
+          "roveskekwjascd.com",
+          "ryeisasw.com",
+          "urielcallum.com",
+          "willipropst.icu"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1866495587274641794"
+      ],
+      "total": 60
+    },
+    {
+      "counts": {
+        "domain": 12
+      },
+      "first_seen": "2025-01-05",
+      "indicators": {
+        "domain": [
+          "alyerrac.com",
+          "annamerrett.com",
+          "audreybourgeois.com",
+          "feieraagsbend.com",
+          "houseoasa.com",
+          "lginstree.com",
+          "oftonlos.com",
+          "rigitteais.com",
+          "shawnabuddicom.com",
+          "spencerday.com",
+          "ugdale.com",
+          "vieoulden.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/banthisguy9349/status/1875985209746919488"
+      ],
+      "total": 12
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-11",
+      "indicators": {
+        "ipv4": [
+          "45.41.204.15:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/ThreatBookLabs/status/1866495587274641794"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-12-03",
+      "indicators": {
+        "ipv4": [
+          "103.91.67.74:4443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1863941553494135219"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-11-26",
+      "indicators": {
+        "domain": [
+          "jieyitongweb.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1861408316561465675"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2024-09-30",
+      "indicators": {
+        "url": [
+          "http://64.176.58.16"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1839213152036331887",
+        "https://mp.weixin.qq.com/s/YFT0Bx4Suph5yCv6OQiHzA",
+        "https://www.virustotal.com/gui/file/d83c86431777714878e7ccd93f479bb8cf1f4c4a5d2bce5284e220c181e047c9/detection",
+        "https://www.virustotal.com/gui/file/578a366c15308da2c6c2bb02eafef8ef8db75dc7de31a020eb61fd08f0226bf0/detection",
+        "https://www.virustotal.com/gui/file/af50f57eed423ce82e82c857bbdf3e02399d93888fc22b0221ff488861cdec30/detection",
+        "https://www.virustotal.com/gui/file/acf0fb4dac33e197de3a3e142eeaa7e5a892607424e8ea8708d49c65f3703d61/detection",
+        "https://www.virustotal.com/gui/file/c961b128c9ecab3aad2b91d4c1b33f0f14e334a97e974e3f4386340a3596fdac/detection",
+        "https://www.virustotal.com/gui/file/958fdf608a9c166177c5cfa024f51d11fd88123490a51ce16412163a064e04f0/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-09-26",
+      "indicators": {
+        "domain": [
+          "strengthening-memories-reports-restoration.trycloudflare.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1839213152036331887",
+        "https://mp.weixin.qq.com/s/YFT0Bx4Suph5yCv6OQiHzA",
+        "https://www.virustotal.com/gui/file/d83c86431777714878e7ccd93f479bb8cf1f4c4a5d2bce5284e220c181e047c9/detection",
+        "https://www.virustotal.com/gui/file/578a366c15308da2c6c2bb02eafef8ef8db75dc7de31a020eb61fd08f0226bf0/detection",
+        "https://www.virustotal.com/gui/file/af50f57eed423ce82e82c857bbdf3e02399d93888fc22b0221ff488861cdec30/detection",
+        "https://www.virustotal.com/gui/file/acf0fb4dac33e197de3a3e142eeaa7e5a892607424e8ea8708d49c65f3703d61/detection",
+        "https://www.virustotal.com/gui/file/c961b128c9ecab3aad2b91d4c1b33f0f14e334a97e974e3f4386340a3596fdac/detection",
+        "https://www.virustotal.com/gui/file/958fdf608a9c166177c5cfa024f51d11fd88123490a51ce16412163a064e04f0/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 3,
+        "url": 1
+      },
+      "first_seen": "2024-09-18",
+      "indicators": {
+        "ipv4": [
+          "109.107.171.113:22",
+          "109.107.171.113:443",
+          "109.107.171.113:51821"
+        ],
+        "url": [
+          "http://109.107.171.113"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/liqingjia1989/status/1836348262665912781",
+        "https://search.censys.io/hosts/109.107.171.113",
+        "https://www.virustotal.com/gui/file/3ca75ac0393ef0f6ec5bf3add0952361dec1d36023f6c63d6347a69eccaceaab/detection"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 15,
+        "ipv4": 2
+      },
+      "first_seen": "2024-08-30",
+      "indicators": {
+        "domain": [
+          "adobe.riceaub.com",
+          "base.msteamsapi.com",
+          "blank.eatherurg.com",
+          "cdn.arlialter.com",
+          "cds55.lax8.setalz.com",
+          "dupbleanalytics.net",
+          "fbcn.enantor.com",
+          "get.dupbleanalytics.net",
+          "hx-in-f211.popfan.org",
+          "kpi.msccloudapp.com",
+          "msccloudapp.com",
+          "msteamsapi.com",
+          "priv.manuelleake.com",
+          "var.alieras.com",
+          "ww1.erabend.com"
+        ],
+        "ipv4": [
+          "185.198.57.184:8888",
+          "185.43.220.188:8888"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/blackorbird/status/1829074866135532011",
+        "https://www.huntress.com/blog/advanced-persistent-threat-targeting-vietnamese-human-rights-defenders"
+      ],
+      "total": 17
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2024-07-22",
+      "indicators": {
+        "url": [
+          "http://139.180.201.211"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/wa1Ile/status/1793822326938829288",
+        "https://www.virustotal.com/gui/file/e0b176aa8d4496adef17b4a698a84872b02ed13dd0ffab6a9f040b20578c07d2/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2024-07-03",
+      "indicators": {
+        "url": [
+          "http://27.0.232.169"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://x.com/liqingjia1989/status/1808401108731417012",
+        "https://www.virustotal.com/gui/file/f6270624e606ec0768b6821cada234b8116df6d79c0a015409359dcbdaebf082/detection",
+        "https://www.virustotal.com/gui/file/f197ee22e964192080d6c5e2b4deff477da09f58aeb3d99c6fd4ecd038139b9d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2024-04-16",
+      "indicators": {
+        "domain": [
+          "dfizm.com",
+          "ecom.dfizm.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/liqingjia1989/status/1779688782989808055",
+        "https://www.virustotal.com/gui/ip-address/179.43.151.13/relations",
+        "https://www.virustotal.com/gui/file/13a1b25c8f9cbb3771e694945fbcfcefd79639f9f6e9c65df7506c54800dd6eb/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2024-04-09",
+      "indicators": {
+        "domain": [
+          "guilty-patricia-connecticut-pulled.trycloudflare.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/liqingjia1989/status/1777517072492478907",
+        "https://www.virustotal.com/gui/file/14515bc33a3e6c8f8cafae1598a1ea5c6989da5643a570a52846e92fe58dc710/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2024-01-30",
+      "indicators": {
+        "ipv4": [
+          "160.86.38.21:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/liqingjia1989/status/1752140516081475763",
+        "https://www.virustotal.com/gui/file/be2648d8ac9aca8c1fb338328dccdfa366b341e167dcb1f7c700eaf809a154f7/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2023-12-01",
+      "indicators": {
+        "url": [
+          "http://161.129.34.132"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RexorVc0/status/1730499792575299950",
+        "https://mp.weixin.qq.com/s/IB2w86cXcpmGS8qrOnprKw?ref=www.ctfiot.com",
+        "https://www.virustotal.com/gui/file/acf612349fb6ee5d88e2a7da3d39afb3e0699a4ad95ab6a5ff708353498ce76d/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2023-11-12",
+      "indicators": {
+        "domain": [
+          "jaxonsorensen.club",
+          "kristianfiedler.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-11-12",
+      "indicators": {
+        "domain": [
+          "msofficecloud.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.virustotal.com/gui/file/1bd7ad55c5615169706676cd266f52e6bcb685b9ff0929e5c191ecab79af52e6/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-09-12",
+      "indicators": {
+        "domain": [
+          "sints.infonetcorporation.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ThreatBookLabs/status/1665030897220096001"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2023-03-24",
+      "indicators": {
+        "ipv4": [
+          "185.82.126.4:8888"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ThreatBookLabs/status/1639100138185687045"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2023-02-17",
+      "indicators": {
+        "domain": [
+          "shortjuvenilebuttons.koobphee.repl.co"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/SethKingHi/status/1626502575225999360",
+        "https://www.virustotal.com/gui/file/bdf6614cde566b3cca10544729e8700cadbc22c0522cb22bb97683a9c8a6935e/detection",
+        "https://www.virustotal.com/gui/file/4199f09978ac8f433f2e554826386b277a53979d64bf7db4044921337b01d812/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-18",
+      "indicators": {
+        "domain": [
+          "zabbixasaservice.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ThreatBookLabs/status/1593199652807245824",
+        "https://www.virustotal.com/gui/file/3a299afeefbe200504b09d168c221077f2ba950fdaaec87282a7dac855b0e08e/detection",
+        "https://www.virustotal.com/gui/file/4701084d836ad99f10ca0b17ff49eca07e6c127484b77bff2d3f0d2469b547a5/detection",
+        "https://www.virustotal.com/gui/file/6d901a0ef4e4357aef1bc4919b681cda0160eef98f9600d5b4e38cb0ec8d5fd5/detection",
+        "https://www.virustotal.com/gui/file/741a5533378a3d071ed9029ab0d619f7d306cd3ca8aed250c408632aab74b171/detection",
+        "https://www.virustotal.com/gui/file/98541970bf7e1de78100bf40add332c6b6f373159d6e85c27e2a1422006ca6e2/detection",
+        "https://www.virustotal.com/gui/file/fcdd52dd47846377c434056121137cf78057b331fbf4d313839760798cd26f17/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-11-17",
+      "indicators": {
+        "domain": [
+          "imap.jxycnews.com",
+          "jxycnews.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://elfdigest.com/brief/19f16a4eceb8b57b2bcad11c76446f05b1e1f4b7c7f23201e08dc8fa07659cf0",
+        "https://www.virustotal.com/gui/file/19f16a4eceb8b57b2bcad11c76446f05b1e1f4b7c7f23201e08dc8fa07659cf0/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-11-02",
+      "indicators": {
+        "domain": [
+          "eu-draytek.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1587712368901251072",
+        "https://mp.weixin.qq.com/s/v2wiJe-YPG0ng87ffBB9FQ (Chinese)"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-07-25",
+      "indicators": {
+        "domain": [
+          "sugary-tough-time.glitch.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/JAMESWT_MHT/status/1551531206038196225"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 1
+      },
+      "first_seen": "2022-04-30",
+      "indicators": {
+        "url": [
+          "http://86.105.18.241"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/Stairwell-threat-report-The-origin-of-APT32-macros.pdf",
+        "https://www.virustotal.com/gui/file/66b58b2afd274591fb8caf2dbfcf14d9c9bcf48d6c87e8df2db30cdefb0d1422/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-27",
+      "indicators": {
+        "domain": [
+          "screeching-lavish-riverbed.glitch.me",
+          "smooth-talented-runner.glitch.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/pancak3lullz/status/1486817995418750979"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2022-01-13",
+      "indicators": {
+        "domain": [
+          "confusion-cerulean-samba.glitch.me",
+          "elemental-future-cheetah.glitch.me",
+          "torpid-resisted-sugar.glitch.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1481527529475559427",
+        "https://www.netskope.com/blog/abusing-microsoft-office-using-malicious-web-archive-files",
+        "https://github.com/netskopeoss/NetskopeThreatLabsIOCs/tree/main/MHTGlitch/IOCs"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2022-01-10",
+      "indicators": {
+        "domain": [
+          "chart.expocasheuro.com",
+          "expocasheuro.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1430098641528647681",
+        "https://www.virustotal.com/gui/file/bbb84b90e0a90e614b2a46542b576f213caf4d4f32f34eddfffe7d5be1e3a3ba/detection",
+        "https://www.virustotal.com/gui/file/8ccd9591e9438a313a21958c7f8edce4b238bbb147e8284ec4a2b7b488b920ca/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-01",
+      "indicators": {
+        "domain": [
+          "km170.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/ti-research-io/ti/blob/main/ioc_extender/ET_APT32-OceanLotus.json"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "url": 3,
+        "url_path": 1
+      },
+      "first_seen": "2021-12-30",
+      "indicators": {
+        "url": [
+          "http://5.255.86.129",
+          "http://5.79.75.210",
+          "http://83.149.110.52"
+        ],
+        "url_path": [
+          "/M70uojiYNua5Hx4UYxUMahnmS45He2"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/BaoshengbinCumt/status/1465923917793554436"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2021-12-17",
+      "indicators": {
+        "domain": [
+          "gifted-boulder-transport.glitch.me",
+          "river-cliff-crate.glitch.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1471443630506201090",
+        "https://mp.weixin.qq.com/s/ZpU27cCSKa14aupNcCHcug"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-07-30",
+      "indicators": {
+        "domain": [
+          "cooperative-supreme-pisces.glitch.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1420764436642496513",
+        "https://twitter.com/tonydoublezero/status/1421046882575466499",
+        "https://www.virustotal.com/gui/file/b87c090e422e96f332bcfac4ef3dc52840e399f8026ad79a99239eecc4fe1703/detection",
+        "https://twitter.com/blackorbird/status/1471443630506201090",
+        "https://mp.weixin.qq.com/s/ZpU27cCSKa14aupNcCHcug"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 2
+      },
+      "first_seen": "2021-07-15",
+      "indicators": {
+        "domain": [
+          "sjbingdu.info"
+        ],
+        "ipv4": [
+          "185.225.19.100:443",
+          "221.219.213.178:8081"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360CoreSec/status/1414520646436999171",
+        "https://www.virustotal.com/gui/file/3ec9ba9732737f75168c22c14815de482ca7db5f659adf9d41607fa9eeac8294/detection",
+        "https://www.virustotal.com/gui/file/af68d1a0208dff0240c959996664b71e70072e8814c78c87d95a7c4e1d9c81dc/detection",
+        "https://www.virustotal.com/gui/file/5eb715cfaaf1f325c4431e9bfc12db31c136a4410221107809fb4584711a62bf/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2021-05-27",
+      "indicators": {
+        "domain": [
+          "infodocs.kginfocom.com",
+          "kginfocom.com",
+          "ousync.kginfocom.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1397560527929307139",
+        "https://www.virustotal.com/gui/domain/kginfocom.com/relations",
+        "https://www.virustotal.com/gui/file/489fca69a622195328302e64e29b6183feac90826dce198432d603202ca4d216/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-27",
+      "indicators": {
+        "domain": [
+          "dinefilly.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1397057243946774528",
+        "https://www.virustotal.com/gui/domain/dinefilly.com/detection",
+        "https://www.virustotal.com/gui/file/c2abe7c37c2fb5ac50b1039bb03f3bdae66587bdb235c81fd5d8c379d48f1e96/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-05-25",
+      "indicators": {
+        "domain": [
+          "tintuc.dinefilly.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1397057243946774528",
+        "https://www.virustotal.com/gui/domain/dinefilly.com/detection",
+        "https://www.virustotal.com/gui/file/c2abe7c37c2fb5ac50b1039bb03f3bdae66587bdb235c81fd5d8c379d48f1e96/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-05-06",
+      "indicators": {
+        "domain": [
+          "eduelects.com",
+          "mirror-codes.net",
+          "sublineover.net",
+          "thaprior.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360Netlab/status/1390297734981246978",
+        "https://blog.netlab.360.com/stealth_rotajakiro_backdoor_en/",
+        "https://blog.netlab.360.com/rotajakiro_linux_version_of_oceanlotus/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-04-28",
+      "indicators": {
+        "domain": [
+          "blog.eduelects.com",
+          "cdn.mirror-codes.net",
+          "news.thaprior.net",
+          "status.sublineover.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/360Netlab/status/1390297734981246978",
+        "https://blog.netlab.360.com/stealth_rotajakiro_backdoor_en/",
+        "https://blog.netlab.360.com/rotajakiro_linux_version_of_oceanlotus/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2021-03-11",
+      "indicators": {
+        "domain": [
+          "services.serveftp.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1370003071560863744",
+        "https://www.virustotal.com/gui/file/aa331051db461ff1dc760616f23770293a91257087fd079e2e76c122db7c0561/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2021-03-01",
+      "indicators": {
+        "domain": [
+          "api.ciscofreak.com",
+          "art.guillermoespana.com",
+          "land.rellecharlessper.com",
+          "tips.jasperpfeiffer.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.amnesty.org/en/latest/research/2021/02/click-and-bait-vietnamese-human-rights-defenders-targeted-with-spyware-attacks/",
+        "https://github.com/AmnestyTech/investigations/tree/master/2021-02-24_vietnam",
+        "https://otx.alienvault.com/pulse/603d189d3e938ff6555b68c8/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-12-23",
+      "indicators": {
+        "domain": [
+          "coco.cechire.com",
+          "delicalo.dnsalias.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.amnesty.org/en/latest/research/2021/02/click-and-bait-vietnamese-human-rights-defenders-targeted-with-spyware-attacks/",
+        "https://github.com/AmnestyTech/investigations/tree/master/2021-02-24_vietnam",
+        "https://otx.alienvault.com/pulse/603d189d3e938ff6555b68c8/"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-23",
+      "indicators": {
+        "domain": [
+          "dangky.dinefilly.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1397057243946774528",
+        "https://www.virustotal.com/gui/domain/dinefilly.com/detection",
+        "https://www.virustotal.com/gui/file/c2abe7c37c2fb5ac50b1039bb03f3bdae66587bdb235c81fd5d8c379d48f1e96/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-23",
+      "indicators": {
+        "domain": [
+          "apiservice.webhop.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1355866180729245696",
+        "https://twitter.com/ShadowChasing1/status/1355871333192634376",
+        "https://www.virustotal.com/gui/file/f0a05aaed382f667c49f74f005a754cf50852cbc9b33a9546469cd6db26b8ece/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2020-12-15",
+      "indicators": {
+        "domain": [
+          "cbo.group"
+        ],
+        "ipv4": [
+          "45.61.139.211:443"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/GroupIB_GIB/status/1338816922687770624",
+        "https://twitter.com/GroupIB_GIB/status/1338817396069593088",
+        "https://www.virustotal.com/gui/ip-address/45.61.139.211/relations"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-12-11",
+      "indicators": {
+        "domain": [
+          "facebookdeck.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1337225399177150464"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2020-11-30",
+      "indicators": {
+        "domain": [
+          "idtpl.org",
+          "mihannevis.com",
+          "mykessef.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/virusbtn/status/1333383787737214977",
+        "https://www.trendmicro.com/en_us/research/20/k/new-macos-backdoor-connected-to-oceanlotus-surfaces.html",
+        "https://otx.alienvault.com/pulse/5fc69d3770679c907b87aea3"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 27
+      },
+      "first_seen": "2020-11-06",
+      "indicators": {
+        "domain": [
+          "arbenha.com",
+          "baodachieu.com",
+          "baomoivietnam.com",
+          "dance-til-dawn.podzone.net",
+          "fontloading.com",
+          "gservice.reviews",
+          "gusercontent.com",
+          "hmacount.com",
+          "hypepodscase.com",
+          "khmer-livenews.com",
+          "khmerleaks.com",
+          "kmernews.com",
+          "laostimenews.com",
+          "laotiantimes.com",
+          "ledanvietnam.org",
+          "malaynews.org",
+          "nhansudaihoi13.org",
+          "outlook-client.com",
+          "philiippinesnews.net",
+          "serrvice.net",
+          "thamcungbisu.org",
+          "theme.blogwix.com",
+          "tinmoivietnam.com",
+          "tinmoivietnam.net",
+          "tocaoonline.org",
+          "viewerservice.com",
+          "yhsetting.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.volexity.com/blog/2020/11/06/oceanlotus-extending-cyber-espionage-operations-through-fake-websites/",
+        "https://otx.alienvault.com/pulse/5fa570762d4ac937ddf1fdbe"
+      ],
+      "total": 27
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-11-03",
+      "indicators": {
+        "domain": [
+          "clouds.onthewifi.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1323438687296790528",
+        "https://www.virustotal.com/gui/file/133e629b27bae2309ca9fd39a78b070c9fc5852c1e31c30ee278e184828119c1/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2020-10-28",
+      "indicators": {
+        "ipv4": [
+          "45.63.123.237:46405"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1321320009054871554",
+        "https://www.virustotal.com/gui/file/68cfaca326fd8953be4a3ece8161c3d30e5bc5b4ffec8f5f7e30f8ea2608fa1b/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2020-10-22",
+      "indicators": {
+        "domain": [
+          "bussinesappinstant.com",
+          "cloud.bussinesappinstant.com"
+        ],
+        "ipv4": [
+          "43.254.132.117:46405"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1319238163227815937",
+        "https://www.virustotal.com/gui/file/47ba92dc8c9302b2f70db70a0d46fef0ee2972edc3e1c4b637d5c76b4141c7a0/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "ipv4": 1
+      },
+      "first_seen": "2020-10-20",
+      "indicators": {
+        "domain": [
+          "dns.insappstaticanalyze.com",
+          "insappstaticanalyze.com"
+        ],
+        "ipv4": [
+          "43.254.132.212:46405"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1318499224170852353",
+        "https://www.virustotal.com/gui/file/a030435018a67c07747751766132eb30a9a6bb6af161df225a27c0ec57156b61/detection"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-20",
+      "indicators": {
+        "domain": [
+          "node.podzone.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.amnesty.org/en/latest/research/2021/02/click-and-bait-vietnamese-human-rights-defenders-targeted-with-spyware-attacks/",
+        "https://github.com/AmnestyTech/investigations/tree/master/2021-02-24_vietnam",
+        "https://otx.alienvault.com/pulse/603d189d3e938ff6555b68c8/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-10-12",
+      "indicators": {
+        "domain": [
+          "bucket.serveftp.net",
+          "gacha.knowsitall.info"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1315679227757305856",
+        "https://twitter.com/ShadowChasing1/status/1315683463983366149"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2020-10-06",
+      "indicators": {
+        "domain": [
+          "asia-kotoba.net",
+          "yourrighttocompensation.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.malwarebytes.com/malwarebytes-news/2020/10/kraken-attack-abuses-wer-service/",
+        "https://otx.alienvault.com/pulse/5f7c8a82c21d00312155d28a"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "tripplekill.mentosfontcmb.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1277183467889942528",
+        "https://twitter.com/Arkbird_SOLG/status/1312380799514284032",
+        "https://app.any.run/tasks/2a8d467c-65e4-417f-a747-b6e59bf037ba/",
+        "https://www.virustotal.com/gui/file/dbde2b710bee38eb3ff1a72b673f756c27faa45d5c38cbe0f8a5dfccb16c18ba/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-10-03",
+      "indicators": {
+        "domain": [
+          "beautifull-font.salebusinesend.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1296249969507069952",
+        "https://app.any.run/tasks/92bbc70b-02a6-4b4d-bbb0-2a4922ef204d/",
+        "https://www.virustotal.com/gui/file/ffaf7e81f2334fd2e1ccc21d6b861c819b5652e5662e0723c096561460d69e3e/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "ipv4": 1
+      },
+      "first_seen": "2020-08-20",
+      "indicators": {
+        "domain": [
+          "salebusinesend.com"
+        ],
+        "ipv4": [
+          "202.59.10.170:46405"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1296249969507069952",
+        "https://app.any.run/tasks/92bbc70b-02a6-4b4d-bbb0-2a4922ef204d/",
+        "https://www.virustotal.com/gui/file/ffaf7e81f2334fd2e1ccc21d6b861c819b5652e5662e0723c096561460d69e3e/detection"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-08-01",
+      "indicators": {
+        "domain": [
+          "feeder.blogdns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1289502558948491265",
+        "https://www.virustotal.com/gui/file/3547f3e8f7c5aec3f507d75e7d3d254224d02a29290bf54945b29299950b94b2/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-07-31",
+      "indicators": {
+        "domain": [
+          "accounts.getmyip.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/batrix20/status/1289066669109780480",
+        "https://www.virustotal.com/gui/file/86cebd189cfdcfb6e76cba7a258d7f90a3ec353348611378c48fa28740bebd98/detection",
+        "https://www.virustotal.com/gui/file/7709b376ea5b388e1b415a93fc618c1febddfbd977254cc63e3e8d2daa5fb3c9/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-28",
+      "indicators": {
+        "domain": [
+          "mentosfontcmb.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1277183467889942528",
+        "https://twitter.com/Arkbird_SOLG/status/1312380799514284032",
+        "https://app.any.run/tasks/2a8d467c-65e4-417f-a747-b6e59bf037ba/",
+        "https://www.virustotal.com/gui/file/dbde2b710bee38eb3ff1a72b673f756c27faa45d5c38cbe0f8a5dfccb16c18ba/detection"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1,
+        "url": 1
+      },
+      "first_seen": "2020-06-15",
+      "indicators": {
+        "domain": [
+          "systeminfor.com"
+        ],
+        "url": [
+          "http://167.88.180.198"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/cyber__sloth/status/1272470254141288450"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-06-03",
+      "indicators": {
+        "domain": [
+          "summerevent.webhop.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1268200526564343809",
+        "https://www.volexity.com/blog/2020/11/06/oceanlotus-extending-cyber-espionage-operations-through-fake-websites/",
+        "https://otx.alienvault.com/pulse/5fa570762d4ac937ddf1fdbe"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-05-05",
+      "indicators": {
+        "domain": [
+          "letsme.gotdns.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ShadowChasing1/status/1257615428588732417"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 18
+      },
+      "first_seen": "2020-04-28",
+      "indicators": {
+        "domain": [
+          "anaehler.com",
+          "anofrio.com",
+          "api.anaehler.com",
+          "bit.catalinabonami.com",
+          "cyn.ettebiermahalet.com",
+          "egg.stralisemariegar.com",
+          "file.log4jv.info",
+          "hr.halettebiermann.com",
+          "log.osloger.biz",
+          "log4jv.info",
+          "mine.remaariegarcia.com",
+          "news.sqllitlever.info",
+          "osloger.biz",
+          "paste.christienollmache.xyz",
+          "sqllitlever.info",
+          "staff.kristianfiedler.club",
+          "us.jaxonsorensen.club",
+          "viodger.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 18
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2020-04-22",
+      "indicators": {
+        "domain": [
+          "inquirerjs.com",
+          "libjss.inquirerjs.com",
+          "m.topiccore.com",
+          "topiccore.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2020/04/apt32-targeting-chinese-government-in-covid-19-related-espionage.html",
+        "https://otx.alienvault.com/pulse/5ea052d6cc299691b6ed1480"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 13
+      },
+      "first_seen": "2020-04-21",
+      "indicators": {
+        "domain": [
+          "aki.viperse.com",
+          "cloud.anofrio.com",
+          "game2015.net",
+          "inc.graceneufville.com",
+          "itpk.mostmkru.com",
+          "ming.chujong.com",
+          "mokkha.goongnam.com",
+          "nhaccuatui.android.zyngacdn.com",
+          "quam.viperse.com",
+          "sadma.knrowz.com",
+          "taiphanmemfacebookmoi.info",
+          "term.ursulapaulet.com",
+          "video.viodger.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 13
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2020-04-21",
+      "indicators": {
+        "domain": [
+          "art.yfieldrainasch.com",
+          "doc.rainaschiffer.com",
+          "fp.rentwoylas.com",
+          "gameandroid.taiphanmemfacebookmoi.info",
+          "heal.lancebarkerwa.com",
+          "science.tayenthflores.com",
+          "status.elizongham.com",
+          "traits.senapusmireault.com",
+          "ulse.chujong.com",
+          "wand.gasharontomholt.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2020-03-25",
+      "indicators": {
+        "domain": [
+          "vitlescaux.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://app.any.run/tasks/b3612ff4-c8b2-409d-98d4-77c64c8a01cf/",
+        "https://www.fireeye.com/blog/threat-research/2020/04/apt32-targeting-chinese-government-in-covid-19-related-espionage.html",
+        "https://otx.alienvault.com/pulse/5ea052d6cc299691b6ed1480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-27",
+      "indicators": {
+        "domain": [
+          "opengroup.homeunix.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ESETresearch/status/1208032053108850688",
+        "https://otx.alienvault.com/pulse/5e063be1a6ed30bd243f100e"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 6
+      },
+      "first_seen": "2019-12-09",
+      "indicators": {
+        "domain": [
+          "bmw-corp.net",
+          "bmwthailand.org",
+          "h61.p.ctrader.com",
+          "huyndai-auto.com",
+          "netsy.trutanner.com",
+          "raffesla.idfnv.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/pancak3lullz/status/1204059496005488642"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-09",
+      "indicators": {
+        "domain": [
+          "auth.lineage2ez.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/pancak3lullz/status/1204065037448613889"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 10
+      },
+      "first_seen": "2019-12-05",
+      "indicators": {
+        "domain": [
+          "360skylar.host",
+          "ad.ssageevrenue.com",
+          "baidu-search.net",
+          "cdnwebmedia.com",
+          "clip.shangweidesign.com",
+          "news.shangrilaexports.com",
+          "sys.genevrebreinl.com",
+          "tel.caitlynwells.com",
+          "upgrade.coldriverhardware.com",
+          "us.melvillepitcairn.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5de9067483d85294ef9e77b4"
+      ],
+      "total": 10
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-05",
+      "indicators": {
+        "domain": [
+          "jcdn.jsoid.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5de9067483d85294ef9e77b4",
+        "https://www.fireeye.com/blog/threat-research/2020/04/apt32-targeting-chinese-government-in-covid-19-related-espionage.html",
+        "https://otx.alienvault.com/pulse/5ea052d6cc299691b6ed1480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-12-05",
+      "indicators": {
+        "domain": [
+          "libjs.inquirerjs.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5de9067483d85294ef9e77b4",
+        "https://app.any.run/tasks/b3612ff4-c8b2-409d-98d4-77c64c8a01cf/",
+        "https://www.fireeye.com/blog/threat-research/2020/04/apt32-targeting-chinese-government-in-covid-19-related-espionage.html",
+        "https://otx.alienvault.com/pulse/5ea052d6cc299691b6ed1480"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-11-29",
+      "indicators": {
+        "domain": [
+          "jessicajoshua.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Rmy_Reserve/status/1200089355307536384",
+        "https://www.google.com/search?q=%22jessicajoshua.com%22"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-11-15",
+      "indicators": {
+        "domain": [
+          "cdn.redirectme.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1187199752145752064"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-11-07",
+      "indicators": {
+        "domain": [
+          "api.myddns.me"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/spider_girl22/status/1192276923784691712"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-11-04",
+      "indicators": {
+        "domain": [
+          "ls.andreagbridge.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/h4ckak/status/1115511637979553792"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-10-18",
+      "indicators": {
+        "domain": [
+          "cloud.chinatel.org",
+          "oa.chinarailways.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ccxsaber/status/1185104546332213248"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-16",
+      "indicators": {
+        "domain": [
+          "cloud.doomdns.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1162253139631730689"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2019-08-05",
+      "indicators": {
+        "ipv4": [
+          "195.12.50.172:46405"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Arkbird_SOLG/status/1157319751238131717"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-08-02",
+      "indicators": {
+        "domain": [
+          "get.freelicenses.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/ThreatBookLabs/status/1155815604332273666"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2,
+        "url_path": 4
+      },
+      "first_seen": "2019-07-02",
+      "indicators": {
+        "domain": [
+          "dns.domain-resolve.org",
+          "search.webstie.net"
+        ],
+        "url_path": [
+          "/cl_client_cmd.php",
+          "/cl_client_cmd_res.php",
+          "/cl_client_logs.php",
+          "/cl_client_online.php"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://threatvector.cylance.com/en_us/home/threat-spotlight-ratsnif-new-network-vermin-from-oceanlotus.html"
+      ],
+      "total": 6
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-06-20",
+      "indicators": {
+        "domain": [
+          "udt.sophiahoule.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1141598356113780737",
+        "https://ti.qianxin.com/blog/articles/english-version-of-new-approaches-utilized-by-oceanLotus-to-target-vietnamese-environmentalist/"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-06-11",
+      "indicators": {
+        "domain": [
+          "mikus19201.ddns.net",
+          "msoffice-templates.info",
+          "playnetflix.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cff85da279bf2ae275592c5"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-05-24",
+      "indicators": {
+        "domain": [
+          "ckoen.dmkatti.com",
+          "jang.goongnam.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1131862769500737538",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/Oceanlotus-APK-sample.TXT",
+        "https://www.blackberry.com/content/dam/blackberry-com/asset/enterprise/pdf/direct/mobile-malware-report.pdf",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-24",
+      "indicators": {
+        "domain": [
+          "mtk.baimind.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1131862769500737538",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/Oceanlotus-APK-sample.TXT",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "ipv4": 1
+      },
+      "first_seen": "2019-05-21",
+      "indicators": {
+        "ipv4": [
+          "139.59.30.109:8090"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/RedDrip7/status/1130780807318999040"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-15",
+      "indicators": {
+        "domain": [
+          "ps.andreagahuvrauvin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1128534704825618432",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-05-10",
+      "indicators": {
+        "domain": [
+          "copy.byronorenstein.com",
+          "suricata.radeordaunt.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://otx.alienvault.com/pulse/5cd5446ba9324bd2a35b3bd4"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 24
+      },
+      "first_seen": "2019-05-09",
+      "indicators": {
+        "domain": [
+          "163mailservice.com",
+          "api.blogdns.com",
+          "b.cortanazone.com",
+          "blog.artinhauvin.com",
+          "bluesky2018man.com",
+          "cdn.eworldship-news.com",
+          "cdn3.onlinesurveygorilla.com",
+          "dominikmagoffin.com",
+          "enormousamuses.com",
+          "eworldship-news.com",
+          "image.fontstaticloader.com",
+          "kingsoftcdn.com",
+          "mailserviceactivation.com",
+          "mappingpotentials.com",
+          "online.stienollmache.xyz",
+          "open.betaoffice.net",
+          "p12.alerentice.com",
+          "pong.dynathome.net",
+          "rio.imbandaad.com",
+          "stackbio.com",
+          "style.fontstaticloader.com",
+          "vnbizcom.com",
+          "web.dalalepredaa.com",
+          "zone.servehttp.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.qianxin.com/blog/articles/oceanlotus-attacks-to-indochinese-peninsula-evolution-of-targets-techniques-and-procedure/"
+      ],
+      "total": 24
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-05-08",
+      "indicators": {
+        "domain": [
+          "load.newappssystems.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/Timele9527/status/1125941317689925632"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-04-19",
+      "indicators": {
+        "domain": [
+          "365.urielcallum.com",
+          "nvidia.benjamiilliams.club"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1119232980801785856"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-17",
+      "indicators": {
+        "domain": [
+          "load.updatetag.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1118396419595837440"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 3,
+        "url_path": 1
+      },
+      "first_seen": "2019-04-09",
+      "indicators": {
+        "domain": [
+          "au.charlineopkesston.com",
+          "daff.faybilodeau.com",
+          "sarc.onteagleroad.com"
+        ],
+        "url_path": [
+          "/dp/B074WC4NHW/"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1115617606218727425",
+        "https://www.welivesecurity.com/2019/04/09/oceanlotus-macos-malware-update/"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 2
+      },
+      "first_seen": "2019-04-04",
+      "indicators": {
+        "domain": [
+          "clipboard.christienoll.xyz",
+          "snort.lauradesnoyers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1113737430501212161"
+      ],
+      "total": 2
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-04-04",
+      "indicators": {
+        "domain": [
+          "att.illagedrivestralia.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1113737430501212161",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 4
+      },
+      "first_seen": "2019-04-03",
+      "indicators": {
+        "domain": [
+          "background.ristians.com",
+          "enum.arkoorr.com",
+          "plan.evillese.com",
+          "worker.baraeme.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1113328823947264001",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/aptnote0402",
+        "https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html",
+        "https://twitter.com/ItsReallyNick/status/1188639544528248832"
+      ],
+      "total": 4
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2019-04-03",
+      "indicators": {
+        "domain": [
+          "kermacrescen.com",
+          "manongrover.com",
+          "stellefaff.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1113328823947264001",
+        "https://github.com/blackorbird/APT_REPORT/blob/master/Oceanlotus/aptnote0402",
+        "https://threatvector.cylance.com/en_us/home/report-oceanlotus-apt-group-leveraging-steganography.html"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "domain": [
+          "villagedrivestralia.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/03/20/fake-or-fake-keeping-up-with-oceanlotus-decoys/",
+        "https://otx.alienvault.com/pulse/5c9255f84d2d890341e7f6a1",
+        "https://twitter.com/vxsh4d0w/status/1109030685090680832",
+        "https://pastebin.com/BiQKjQaK"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "domain": [
+          "office.allsafebrowsing.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1108687601475555328"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "domain": [
+          "outlook.betamedias.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1086188558413586432"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-22",
+      "indicators": {
+        "domain": [
+          "outlook.officebetas.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1086186184768815104"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 20
+      },
+      "first_seen": "2019-03-20",
+      "indicators": {
+        "domain": [
+          "aliexpresscn.net",
+          "andreagbridge.com",
+          "aol.straliaenollma.xyz",
+          "beaudrysang.xyz",
+          "becreybour.com",
+          "byronorenstein.com",
+          "chinaport.org",
+          "christienoll.xyz",
+          "christienollmache.xyz",
+          "cloud.360cn.info",
+          "dns.chinanews.network",
+          "illagedrivestralia.xyz",
+          "karelbecker.com",
+          "karolinblair.com",
+          "lauradesnoyers.com",
+          "ntop.dieordaunt.com",
+          "office.ourkekwiciver.com",
+          "sophiahoule.com",
+          "stienollmache.xyz",
+          "ursulapapst.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/03/20/fake-or-fake-keeping-up-with-oceanlotus-decoys/",
+        "https://otx.alienvault.com/pulse/5c9255f84d2d890341e7f6a1",
+        "https://twitter.com/vxsh4d0w/status/1109030685090680832",
+        "https://pastebin.com/BiQKjQaK"
+      ],
+      "total": 20
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2019-03-20",
+      "indicators": {
+        "domain": [
+          "andreagahuvrauvin.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.welivesecurity.com/2019/03/20/fake-or-fake-keeping-up-with-oceanlotus-decoys/",
+        "https://otx.alienvault.com/pulse/5c9255f84d2d890341e7f6a1",
+        "https://twitter.com/vxsh4d0w/status/1109030685090680832",
+        "https://pastebin.com/BiQKjQaK",
+        "https://otx.alienvault.com/pulse/5cff85da279bf2ae275592c5",
+        "https://www.volexity.com/blog/2020/11/06/oceanlotus-extending-cyber-espionage-operations-through-fake-websites/",
+        "https://otx.alienvault.com/pulse/5fa570762d4ac937ddf1fdbe"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 19
+      },
+      "first_seen": "2019-02-04",
+      "indicators": {
+        "domain": [
+          "beta.officopedia.com",
+          "check.homeip.net",
+          "check.webhop.org",
+          "cortana.homelinux.com",
+          "cortanasyn.com",
+          "cortanazone.com",
+          "e.browsersyn.com",
+          "mail.fptservice.net",
+          "office.windown-update.com",
+          "outlook.updateoffices.net",
+          "ristineho.com",
+          "service.serveftp.org",
+          "service.windown-update.com",
+          "syn.browserstime.com",
+          "syn.servebbs.com",
+          "theme.blogsite.org",
+          "videos.dyndns.org",
+          "word.webhop.info",
+          "work.windownoffice.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/"
+      ],
+      "total": 19
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-10-03",
+      "indicators": {
+        "domain": [
+          "s3.hiahornber.com",
+          "ssl.arkouthrie.com",
+          "widget.shoreoa.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://blog.trendmicro.com/trendlabs-security-intelligence/new-macos-backdoor-linked-to-oceanlotus-found/",
+        "https://www.virustotal.com/#/file/673ee7a57ba3c5a2384aeb17a66058e59f0a4d0cddc4f01fe32f369f6a845c8f/relations",
+        "https://securelist.com/apt-phantomlance/96772/",
+        "https://otx.alienvault.com/pulse/5ea84bfc21271700b46efeee",
+        "https://www.amnesty.org/en/latest/research/2021/02/click-and-bait-vietnamese-human-rights-defenders-targeted-with-spyware-attacks/",
+        "https://github.com/AmnestyTech/investigations/tree/master/2021-02-24_vietnam",
+        "https://otx.alienvault.com/pulse/603d189d3e938ff6555b68c8/"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 18
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "cctv.avidsonec.com",
+          "cert.opennetworklab.com",
+          "cloud.reneark.com",
+          "cloud.sicaogler.com",
+          "cnn.befmann.com",
+          "dyndns.angusie.com",
+          "fox.ailloux.com",
+          "hotel.bookingshop.info",
+          "ipv6.uyllain.com",
+          "isp.cambodiadaily.org",
+          "login.ticketwitheasy.com",
+          "myaccount.philtimes.org",
+          "news.coleope.com",
+          "news.denekasd.com",
+          "news.exandre.com",
+          "ns1.cambodiadaily.org",
+          "school.obertamy.com",
+          "time.ouisers.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/oceanlotus-targets-chinese-university/"
+      ],
+      "total": 18
+    },
+    {
+      "counts": {
+        "domain": 3
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "dieordaunt.com",
+          "ourkekwiciver.com",
+          "straliaenollma.xyz"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://ti.360.net/blog/articles/oceanlotus-targets-chinese-university/",
+        "https://www.welivesecurity.com/2019/03/20/fake-or-fake-keeping-up-with-oceanlotus-decoys/",
+        "https://otx.alienvault.com/pulse/5c9255f84d2d890341e7f6a1",
+        "https://twitter.com/vxsh4d0w/status/1109030685090680832",
+        "https://pastebin.com/BiQKjQaK"
+      ],
+      "total": 3
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2018-09-15",
+      "indicators": {
+        "domain": [
+          "food.letsmiles.org"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.cybereason.com/blog/operation-cobalt-kitty-apt"
+      ],
+      "total": 1
+    },
+    {
+      "counts": {
+        "domain": 62
+      },
+      "first_seen": "2018-07-05",
+      "indicators": {
+        "domain": [
+          "adineohler.com",
+          "aisicoin.com",
+          "alicervois.com",
+          "anessallie.com",
+          "antenham.com",
+          "arinaurna.com",
+          "arkoimmerma.com",
+          "aulolloy.com",
+          "avidilleneu.com",
+          "avidsontre.com",
+          "aximilian.com",
+          "biasatts.com",
+          "braydenhateaub.com",
+          "carosseda.com",
+          "chascloud.com",
+          "dreyoddu.com",
+          "dwarduong.com",
+          "eckenbaue.com",
+          "eighrimeau.com",
+          "errellawle.com",
+          "erstin.com",
+          "frahreiner.com",
+          "hieryells.com",
+          "hristophe.com",
+          "ichardt.com",
+          "icmannaws.com",
+          "iecopeland.com",
+          "irkaimboeuf.com",
+          "jamedalue.com",
+          "jamyer.com",
+          "jeanessbinder.com",
+          "jeffreyue.com",
+          "keoucha.com",
+          "laudiaouc.com",
+          "lbertussbau.com",
+          "loridanase.com",
+          "marrmann.com",
+          "meroque.com",
+          "moureuxacv.com",
+          "myolton.com",
+          "nasahlaes.com",
+          "ntjeilliams.com",
+          "omasicase.com",
+          "onnaha.com",
+          "onteagle.com",
+          "orinneamoure.com",
+          "orresto.com",
+          "orrislark.com",
+          "rackerasr.com",
+          "rcuselynac.com",
+          "sanauer.com",
+          "stopherau.com",
+          "tefanie.com",
+          "tefanortin.com",
+          "tephens.com",
+          "traveroyce.com",
+          "tsworthoa.com",
+          "ucaargo.com",
+          "ucairtz.com",
+          "urnage.com",
+          "venionne.com",
+          "virginiaar.com"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://github.com/eset/malware-ioc/tree/master/oceanlotus"
+      ],
+      "total": 62
+    },
+    {
+      "counts": {
+        "domain": 46
+      },
+      "first_seen": "2017-06-29",
+      "indicators": {
+        "domain": [
+          "24.datatimes.org",
+          "blog.docksugs.org",
+          "blog.panggin.org",
+          "check.paidprefund.org",
+          "contay.deaftone.com",
+          "datatimes.org",
+          "docksugs.org",
+          "economy.bloghop.org",
+          "emp.gapte.name",
+          "facebook-cdn.net",
+          "gap-facebook.com",
+          "gl-appspot.org",
+          "help.checkonl.org",
+          "high.expbas.net",
+          "high.vphelp.net",
+          "icon.torrentart.com",
+          "images.chinabytes.info",
+          "imaps.qki6.com",
+          "img.fanspeed.net",
+          "job.supperpow.com",
+          "lighpress.info",
+          "menmin.strezf.com",
+          "mobile.pagmobiles.info",
+          "news.lighpress.info",
+          "notificeva.com",
+          "nsquery.net",
+          "pagmobiles.info",
+          "paidprefund.org",
+          "push.relasign.org",
+          "relasign.org",
+          "seri.volveri.net",
+          "share.codehao.net",
+          "ssl.zin0.com",
+          "static.jg7.org",
+          "syn.timeizu.net",
+          "teriava.com",
+          "timeizu.net",
+          "tonholding.com",
+          "tulationeva.com",
+          "untitled.po9z.com",
+          "update-flashs.com",
+          "vieweva.com",
+          "volveri.net",
+          "vphelp.net",
+          "yii.yiihao126.net",
+          "zone.apize.net"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://www.fireeye.com/blog/threat-research/2017/05/cyber-espionage-apt32.html"
+      ],
+      "total": 46
+    }
+  ]
+}

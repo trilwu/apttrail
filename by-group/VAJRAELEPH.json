@@ -1,0 +1,111 @@
+{
+  "aliases": [
+    "APT-Q-43",
+    "VajraSpy"
+  ],
+  "attack_id": null,
+  "attack_name": null,
+  "attack_url": null,
+  "counts": {
+    "domain": 5,
+    "url": 1
+  },
+  "first_seen": {
+    "domain": {
+      "appplace.shop": "2022-03-31",
+      "appz.live": "2022-01-14",
+      "appzshare.club": "2022-03-31",
+      "appzshare.digital": "2022-03-31",
+      "apzshare.club": "2022-03-31"
+    },
+    "url": {
+      "http://212.24.100.197": "2022-03-31"
+    }
+  },
+  "first_seen_precision": {
+    "domain": {},
+    "url": {}
+  },
+  "first_seen_range": {
+    "earliest": "2022-01-14",
+    "latest": "2022-03-31"
+  },
+  "generated_at": "2026-08-15T23:20:53+00:00",
+  "indicators": {
+    "domain": [
+      "appplace.shop",
+      "appz.live",
+      "appzshare.club",
+      "appzshare.digital",
+      "apzshare.club"
+    ],
+    "url": [
+      "http://212.24.100.197"
+    ]
+  },
+  "last_modified": "2026-01-02T23:10:15+00:00",
+  "maltrail_groups": [
+    "VAJRAELEPH"
+  ],
+  "references": [
+    "https://mp.weixin.qq.com/s/B0ElRhbqLzs-wGQh79fTww (Chinese)",
+    "https://twitter.com/LukasStefanko/status/1509451238366236674",
+    "https://twitter.com/blackorbird/status/1509380434047606785",
+    "https://twitter.com/malwrhunterteam/status/1481312752782258176",
+    "https://twitter.com/malwrhunterteam/status/1481973884719149060",
+    "https://www.virustotal.com/gui/file/5efd92887bb72f3d2186a2c0bcaf7b14b43d3e41722cb70acf0c59dfd4cfd7ba/detection"
+  ],
+  "related": [],
+  "slug": "VAJRAELEPH",
+  "timeline": [
+    {
+      "counts": {
+        "domain": 4,
+        "url": 1
+      },
+      "first_seen": "2022-03-31",
+      "indicators": {
+        "domain": [
+          "appplace.shop",
+          "appzshare.club",
+          "appzshare.digital",
+          "apzshare.club"
+        ],
+        "url": [
+          "http://212.24.100.197"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1509380434047606785",
+        "https://twitter.com/LukasStefanko/status/1509451238366236674",
+        "https://twitter.com/malwrhunterteam/status/1481312752782258176",
+        "https://twitter.com/malwrhunterteam/status/1481973884719149060",
+        "https://mp.weixin.qq.com/s/B0ElRhbqLzs-wGQh79fTww (Chinese)",
+        "https://www.virustotal.com/gui/file/5efd92887bb72f3d2186a2c0bcaf7b14b43d3e41722cb70acf0c59dfd4cfd7ba/detection"
+      ],
+      "total": 5
+    },
+    {
+      "counts": {
+        "domain": 1
+      },
+      "first_seen": "2022-01-14",
+      "indicators": {
+        "domain": [
+          "appz.live"
+        ]
+      },
+      "precision": "exact",
+      "references": [
+        "https://twitter.com/blackorbird/status/1509380434047606785",
+        "https://twitter.com/LukasStefanko/status/1509451238366236674",
+        "https://twitter.com/malwrhunterteam/status/1481312752782258176",
+        "https://twitter.com/malwrhunterteam/status/1481973884719149060",
+        "https://mp.weixin.qq.com/s/B0ElRhbqLzs-wGQh79fTww (Chinese)",
+        "https://www.virustotal.com/gui/file/5efd92887bb72f3d2186a2c0bcaf7b14b43d3e41722cb70acf0c59dfd4cfd7ba/detection"
+      ],
+      "total": 1
+    }
+  ]
+}
